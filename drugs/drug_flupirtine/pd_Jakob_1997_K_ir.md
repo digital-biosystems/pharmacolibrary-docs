@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Flupirtine directly stimulates an inwardly rectifying potassium current in rat hippocampal neurons, an effect that is largely prevented by pretreatment with pertussis toxin. The concentration-response relationship was fitted with a sigmoidal Emax model, yielding an EC50 of 0.6 mM.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jakob_1997`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

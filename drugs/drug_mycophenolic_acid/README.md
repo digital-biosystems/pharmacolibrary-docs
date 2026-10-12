@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;mycophenolic acid&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MycophenolicAcid_Wei2022_reference&quot;,&quot;label&quot;:&quot;Wei_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mycophenolic_acid/MycophenolicAcid_Wei2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MycophenolicAcid_Wei2022_reference&quot;,&quot;label&quot;:&quot;Wei_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mycophenolic_acid/MycophenolicAcid_Wei2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # mycophenolic acid
 
@@ -28,15 +28,15 @@ Mycophenolic acid is an immunosuppressant used to prevent organ transplant rejec
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:37 | 1:42 | 2/0/1 | 1/0/1 | 0/0/0 | 165,869/9,467 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
+| 2026-10-07 00:37 | 1:42 | 0/0/3 | 1/0/1 | 0/0/0 | 165,869/9,467 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Heida_2024_reference](drugs/drug_mycophenolic_acid/MycophenolicAcid_Heida2024_reference.md) | held back | 2-compartment, oral | 3 (+1 cov.) | Heida A et al., Model-informed dose optimization of myc…, European journal of clinica… (2024) | [10.1007/s00228-024-03743-0](https://doi.org/10.1007/s00228-024-03743-0) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wei_2022_reference](drugs/drug_mycophenolic_acid/MycophenolicAcid_Wei2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Wei Y et al., Population pharmacokinetics of mycophen…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.1002628](https://doi.org/10.3389/fphar.2022.1002628) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Kauv_2025_reference](drugs/drug_mycophenolic_acid/MycophenolicAcid_Kauv2025_reference.md) | — | 1-compartment (no model) | 3 | Kauv J et al., Population pharmacokinetics of mycophen…, European journal of pharmac… (2025) | [10.1016/j.ejps.2025.107290](https://doi.org/10.1016/j.ejps.2025.107290) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Heida_2024_reference](drugs/drug_mycophenolic_acid/MycophenolicAcid_Heida2024_reference.md) | held back | 2-compartment, oral | 3 (+1 cov.) | Heida A et al., Model-informed dose optimization of myc…, European journal of clinica… (2024) | [10.1007/s00228-024-03743-0](https://doi.org/10.1007/s00228-024-03743-0) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Kauv_2025_reference](drugs/drug_mycophenolic_acid/MycophenolicAcid_Kauv2025_reference.md) | — | 1-compartment (no model) | 3 | Kauv J et al., Population pharmacokinetics of mycophen…, European journal of pharmac… (2025) | [10.1016/j.ejps.2025.107290](https://doi.org/10.1016/j.ejps.2025.107290) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Wei_2022_reference](drugs/drug_mycophenolic_acid/MycophenolicAcid_Wei2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Wei Y et al., Population pharmacokinetics of mycophen…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.1002628](https://doi.org/10.3389/fphar.2022.1002628) |
 
 ## Pharmacodynamics (PD)
 
@@ -71,7 +71,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 166 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 2  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 3  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

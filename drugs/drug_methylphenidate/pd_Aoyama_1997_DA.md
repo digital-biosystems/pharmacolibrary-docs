@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methylphenidate concentrations (nM, cited PK) drive striatal dialysate dopamine (DA) levels via an indirect response model in which methylphenidate inhibits DA reuptake (inhibition of DA elimination), with a stated inhibition constant Ki of 41.3 ± 73.8 nM; no other potency or rate parameters are given in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Aoyama_1997`
 - **model family:** `indirect_response_ii`
 - **driver:** `cited_pk`

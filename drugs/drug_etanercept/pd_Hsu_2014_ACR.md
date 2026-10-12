@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;etanercept&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/&quot;},{&quot;label&quot;:&quot;Hsu_2014 \u00b7 PD ACR 20/50/70 response rate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etanercept_Ling2024_reference&quot;,&quot;label&quot;:&quot;Ling_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/Etanercept_Ling2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etanercept_Ling2024_reference&quot;,&quot;label&quot;:&quot;Ling_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/Etanercept_Ling2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ACR 20/50/70 response rate — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -17,6 +17,10 @@
 **As extracted:** Etanercept (the dose) drives ACR 20/50/70 response rate: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
+
+> The paper excerpt is unavailable, so no specific mechanism or numerical potency parameters could be verified for etanercept's effect on ACR response rates. The record indicates a dose-only driver with a proportional stimulation form, but the source text is missing to confirm the mechanism or key values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Hsu_2014`
 - **model family:** `categorical`

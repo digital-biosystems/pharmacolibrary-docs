@@ -17,7 +17,7 @@ Co-codamol is a combination of codeine and paracetamol used as a compound analge
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-27 14:32 | 11:43 | 0/0/0 | 0/0/0 | 0/0/1 | 101,179/5,892 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/0 | 3/1 | 0 |
+| 2026-08-27 14:32 | 11:43 | 0/0/0 | 0/0/0 | 0/0/1 | 101,179/5,892 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/2 | 5/1 | 0 |
 
 ## popPK records
 
@@ -27,7 +27,7 @@ _not available_
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> | **CYP2D6** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | formation | [Poikola_2025](drugs/drug_codeine_and_paracetamol/pgx_Poikola_2025_CYP2D6_Q100.md) | Poikola S et al., Does cytochrome 2D6 genotype affect the…, Acta anaesthesiologica Scan… (2025) | [10.1111/aas.14549](https://doi.org/10.1111/aas.14549) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **CYP2D6** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | formation | [Poikola_2025](drugs/drug_codeine_and_paracetamol/pgx_Poikola_2025_CYP2D6_Q100.md) | Poikola S et al., Does cytochrome 2D6 genotype affect the…, Acta anaesthesiologica Scan… (2025) | [10.1111/aas.14549](https://doi.org/10.1111/aas.14549) |
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -53,10 +53,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 38 matched, 36 returned
+- **PubMed hits:** 60 matched, 46 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 

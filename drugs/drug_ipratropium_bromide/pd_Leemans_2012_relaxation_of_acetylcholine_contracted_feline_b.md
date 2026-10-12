@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates ipratropium bromide concentrations to relaxation (%) of acetylcholine-contracted feline bronchial smooth muscle via an Emax-type model, but no full text is available, so the mechanism and any potency or rate values (Emax, EC50, gamma) cannot be stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Leemans_2012`
 - **model family:** `emax`
 - **driver:** `cited_pk`

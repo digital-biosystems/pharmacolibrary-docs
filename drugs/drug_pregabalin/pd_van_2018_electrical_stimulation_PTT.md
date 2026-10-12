@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The electrical stimulation pain tolerance threshold is inhibited by an on/off effect of pregabalin, where the drug reduces the production rate ($k_{in}$) of the response in a turnover compartment model. The model estimated a maximal effect magnitude (Effect pregabalin) of 0.322 (dimensionless in record) and a turnover rate $k_{out}$ of 0.494 /hour.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2018`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`

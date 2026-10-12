@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Rizatriptan stimulates human isolated coronary artery contraction, described in the record as a sigmoid Emax model. The paper reports a maximum effect (Emax) of 22.2% of the 45 mM KCl response and a potency (EC50) of 1.02 mM.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Longmore_1996`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

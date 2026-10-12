@@ -4,7 +4,7 @@
 
 # perindopril — `Perindopril_Parker2005_model_1`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214), gpt-oss:120b (partly confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The model lists perindoprilat as a metabolite formed from perindopril at the central compartment with 2 compartments, but the check found no path from the dose, so the metabolite is unlinked. The central volume V1 is reported as 45 h and the unbound clearance CLu as 380 years, units incompatible with a volume and a clearance; a reported unit also could not be converted to SI. The two readers disagreed on the apparent unbound clearance (59 versus none) and apparent volume of distribution (920 versus none), and the second reader additionally read a dose of 3.1 where this record has none. Extracted — perindoprilat: Bmax 1.5 g L -1, V 26 L, V1 45 h, V2 22 L, CLu 380 years.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of c u50: this record has none, the second reading 0.28; it also differs on 9 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has perindopril, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -93,17 +93,29 @@ Parker E et al., The pharmacokinetics of perindoprilat i…, European journal of
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.214 (3/14 fields) | 11 |
 | `gpt-oss:120b` | partly confirmed | 0.333 (5/15 fields) | 10 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl u /f (3.1 mg) (l h -1 ) single dose]` | not captured | 80 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl u]` | 7.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 12]` | 1.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 1]` | 6.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f (3.1 mg) (l) single dose]` | not captured | 920 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 26 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ clu b]` | not captured | 10 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ v1 a]` | not captured | 54 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ v2]` | not captured | 87 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | perindopril | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | perindoprilat | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[c u50]` | not captured | 0.28 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl u /f]` | not captured | 80 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl u]` | 7.0 | not captured | only_one_extracted |

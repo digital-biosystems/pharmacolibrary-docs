@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide full text or mechanism details; the record indicates cyfluthrin concentration (µg L−1) drives acute toxicity (immobilization/mortality) with reported EC50 values of 0.31 and 0.0015 µg L−1, but no mechanism, Emax, or rate parameters are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lanteigne_2015`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

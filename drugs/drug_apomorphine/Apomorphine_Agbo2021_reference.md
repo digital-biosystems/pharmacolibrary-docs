@@ -4,7 +4,7 @@
 
 # apomorphine — `Apomorphine_Agbo2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The metabolite apomorphine-sulfate was rejected as an orphan compartment with no structural path from the apomorphine dose.**
+
+The record defines the metabolite with a value of 0 for its compartment count, which implies no physical compartment exists. Although a metabolic link parameter is defined, the resulting structure leaves the metabolite unreachable from the parent drug. Consequently, the metabolite is treated as an unlinked orphan, failing the structural connectivity requirement. Extracted — apomorphine: CL/F 80.7 L/h, V1/F 438 L, V2/F 1.42 L, kel 1.28 1/h, Frel 0.202, kel 0.613 1/h, kfm 0.0048 1/h, kabs 14.9 h−1.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Agbo F et al., Population pharmacokinetic analysis of…, Clinical and translational… (2021)

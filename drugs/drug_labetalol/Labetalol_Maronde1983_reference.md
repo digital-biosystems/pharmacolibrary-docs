@@ -4,7 +4,7 @@
 
 # labetalol — `Labetalol_Maronde1983_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714), gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -65,17 +65,20 @@ Maronde RF et al., Study of single and multiple dose pharm…, The American jour
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[dose]` | not captured | 200 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t12 ,z]` | 947.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[elimination half life]` | 7.65 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[elimination half life]` | not captured | 7.65 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | labetalol | unknown | mismatch |

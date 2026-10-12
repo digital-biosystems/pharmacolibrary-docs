@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe a pharmacodynamic mechanism linking lemborexant concentrations (ng/mL) to the binary treatment-emergent adverse event 'flu/influenza'; no potency (IC50/EC50/Emax) or rate parameters (kin, kout, ke0, gamma) are reported for this response, and the exposure-response analysis reports no clinically important exposure-related effect relative to placebo.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lalovic_2020`
 - **model family:** `linear`
 - **driver:** `pk_record`

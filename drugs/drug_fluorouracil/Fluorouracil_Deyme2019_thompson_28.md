@@ -5,7 +5,7 @@
 
 # fluorouracil — `Fluorouracil_Deyme2019_thompson_28`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.083). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.083). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record lists fluorouracil as the measured compound, yet all structural parameters (V2 101 L, V3 196.5 L, Km 23.1 mg/L, Q 0.242 L/h, Q2 0.229 L/h) belong to irinotecan, and the SN38 rate constants (kel 2.28 h⁻¹, k12 2.14 h⁻¹, k21 0.0580 h⁻¹) describe metabolites formed from irinotecan with zero compartments at the central site, leaving them unreachable from the dose. The fluorouracil side carries only a total volume of distribution (160.9 L), an absorption rate constant (0.757 h⁻¹) and a lag time (0.000552 h), with no central volume or elimination parameter. A second reader disputed the dose compound, the primary analyte, the metabolism links (proposing fluorouracil→5FUh2 and 5FDHU instead) and read null for the SN38 constants and Km and Q1; one reported unit could not be converted to SI. Extracted — irinotecan: V2 101 L, V3 196 L, Km 23.1 mg/L, Q 0.242 L/h, Q2 0.229 L/h; SN38: kel 2.28 h⁻¹, k12 2.14 h⁻¹, k21 0.058 h⁻¹; fluorouracil: V 161 L, kabs 0.757 h−1, tlag 0.000552 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has fluorouracil → fluorouracil metabolite 5fuh2 (metabolism); fluorouracil → fluorouracil metabolite 5fdhu (metabolism); irinotecan → sn38 (metabolism) …, the second reading fluorouracil → 5fuh2 (metabolism); fluorouracil → 5fdhu (metabolism); irinotecan → sn38 (metabolism) …; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -142,17 +142,27 @@ Deyme L et al., Population pharmacokinetics of FOLFIRIN…, Cancer chemotherapy 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (3/12 fields) | 9 |
 | `gpt-oss:120b` | not confirmed | 0.083 (1/12 fields) | 11 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['fluorouracil', 'fluorouracil metabolite 5fuh2', 'metabolism'], ['fluorouracil', 'fluorouracil metabolite 5fdhu', 'metabolism'], ['irinotecan', 'sn38', 'metabolism'], ['sn38', 'sn38g', 'metabolism'], ['irinotecan', 'apc', 'metabolism']] | [['fluorouracil', '5fuh2', 'metabolism'], ['fluorouracil', '5fdhu', 'metabolism'], ['irinotecan', 'sn38', 'metabolism'], ['sn38', 'sn38g', 'metabolism'], ['irinotecan', 'apc', 'metabolism'], ['oxaliplatin', 'ultrafiltrated platinum', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[k10]` | 0.358 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` | 7.33 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k21]` | 0.0587 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka, absorption rate constant]` | 0.757 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q1]` | 23.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` | 101 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume]` | 0.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss]` | 196.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [['irinotecan', 'sn38', 'metabolism'], ['sn38', 'sn38g', 'metabolism'], ['sn38', 'apc', 'metabolism']] | [['fluorouracil', '5fuh2', 'metabolism'], ['fluorouracil', '5fdhu', 'metabolism'], ['irinotecan', 'sn38', 'metabolism'], ['sn38', 'sn38g', 'metabolism'], ['irinotecan', 'apc', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[k sn38/10]` | 2.28 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k sn38/12]` | 2.14 | not captured | only_one_extracted |

@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Oxypurinol concentrations inhibit urate excretion (measured as a reduction in plasma urate concentrations) via a sigmoid Emax mechanism, with an IC50 of 3.7 ± 1.4 mg/L, a gamma of 1.1 ± 0.1, and an Emax/E0 of 92 ± 6%.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Day_2007`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

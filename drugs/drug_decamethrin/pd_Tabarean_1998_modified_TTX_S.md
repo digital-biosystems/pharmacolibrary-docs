@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deltamethrin concentration (microM) drives a direct Emax-type increase in the percentage of TTX-S sodium channels modified, with an EC50 of 0.53 microM; the paper excerpts do not state Imax/Emax or a more detailed mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tabarean_1998`
 - **model family:** `emax`
 - **driver:** `cited_pk`

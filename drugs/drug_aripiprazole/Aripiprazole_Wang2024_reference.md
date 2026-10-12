@@ -4,7 +4,7 @@
 
 # aripiprazole — `Aripiprazole_Wang2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286), gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (Fab), so that value has no SI equivalent.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of aom 400: this record has 400, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aripiprazole, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -71,17 +71,23 @@ Wang Y et al., Population Pharmacokinetics and Dosing…, Clinical pharmacology 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 | `gpt-oss:120b` | partly confirmed | 0.8 (4/5 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[aom 400]` | 400 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f rel,aom]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 4.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | aripiprazole | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | aripiprazole | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[aom 400]` | 400 | not captured | only_one_extracted |
 
 </details>

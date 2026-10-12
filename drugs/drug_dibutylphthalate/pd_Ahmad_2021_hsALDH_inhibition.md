@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dibutyl phthalate (DBP) concentration-dependently inhibits human salivary aldehyde dehydrogenase (hsALDH) activity (%), with an IC50 of 285.00 ± 0.14 μM and a binding constant of 1.31 × 10^5 M^-1; the paper excerpts do not state the model family or mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ahmad_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

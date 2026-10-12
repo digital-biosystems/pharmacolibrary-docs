@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Patel2019_met`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.923). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8), gpt-oss:120b (not confirmed, agreement 0.923). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record's structural parameters carry inconsistent units: V1 and V2 are reported as 0.02 and 0.06 in μg/mL units, which is a dimension mismatch for compartment volumes, and the CL/F unit (L/kg*hr) could not be converted to SI, so the clearance of 0.01 L/kg*hr reached the model without an SI value. The topology check found an orphan compartment with no path from the metformin dose. A second reader recorded no value (null) for CL/F against this record's 0.01, disagreeing with the extracted clearance. Extracted — metformin: tmax 1.67 h, t1/2z 2.38 h, MRT 3.78 h, V/F 0.03 L/kg, CL/F 0.01 L/kg*hr, V1 0.02 μg/mL, V2 0.06 μg/mL, k12 0.41, … (+3).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl/f (mg/kg)/: this record has 0.01, the second reading none. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading none → not captured (not captured); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -94,17 +94,21 @@ Patel O et al., Pharmacokinetic Interaction of Green Ro…, Frontiers in pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.8 (12/15 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.923 (12/13 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['none', '', '']] | mismatch |
+| `gpt-oss-120b` | `parameters[ka (h -1 ) absorption rate constant]` | 0.41 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.34 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/f (mg/kg)/]` | 0.01 | not captured | only_one_extracted |
 
 </details>

@@ -5,7 +5,7 @@
 
 # tamoxifen — `Tamoxifen_MuellerSchoell2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.938). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.938), gpt-oss:120b (partly confirmed, agreement 0.938). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The link parameter CL23/F, the clearance for metabolism of tamoxifen to endoxifen, is absent from the extracted parameters, while a second reader assigns it the value 0.459. The absorption rate constant kabs (1.08) is reported with the unit 'unit', which could not be converted to SI, so a dimension mismatch on a structural parameter was flagged. The remaining parameters (tlag 0.442 h, V/F 912 L, CL/F 5.10 and 5.07 L/h, V1/F 400 L for endoxifen) are present with consistent units. Extracted — tamoxifen: kabs 1.08 unit, tlag 0.442 hour, V/F 912 L, CL/F 5.07 L/hour; endoxifen: CL/F 5.1 L/hour, V1/F 400 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl23/f: this record has none, the second reading 0.459. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl23/f: this record has none, the second reading 0.459. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -83,17 +83,19 @@ Mueller-Schoell A et al., Obesity Alters Endoxifen Plasma Levels…, Clinical ph
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.938 (15/16 fields) | 1 |
 | `gpt-oss:120b` | partly confirmed | 0.938 (15/16 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl23/f]` | not captured | 0.459 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl23/f]` | not captured | 0.459 | only_one_extracted |
 
 </details>

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Plasma uricase (rasburicase) concentration (U/L) drives changes in plasma uric acid (ΔC urate,p, mg/L) via an indirect response model with stimulation of input: dR/dt = Kin*[1 + Emax*Cp/(Cp+EC50)] − Kout*R, with Kin = 0.4±0.4 h⁻¹, Kout = 0.4±0.2 h⁻¹, Emax = 57.3±21.4 mg/L, and EC50 = 2.8±2.9 U/L (low EC50 indicating low uricase concentrations suffice for effect).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cai_2014_2`
 - **model family:** `indirect_response_iii`
 - **driver:** `not_resolved`

@@ -1,11 +1,11 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;canrenone&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/&quot;},{&quot;label&quot;:&quot;Lass_2024 \u00b7 estimate_2&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;canrenone&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/&quot;},{&quot;label&quot;:&quot;Lass_2024 \u00b7 reference&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Canrenone_Suyagh2012_final_pharmacokinetic_model&quot;,&quot;label&quot;:&quot;Suyagh_2012_final_pharmacokinetic_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/Canrenone_Suyagh2012_final_pharmacokinetic_model.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canrenone_Suyagh2012_median&quot;,&quot;label&quot;:&quot;Suyagh_2012_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/Canrenone_Suyagh2012_median.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canrenone_Suyagh2013_reference&quot;,&quot;label&quot;:&quot;Suyagh_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_canrenone/Canrenone_Suyagh2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # canrenone — `Canrenone_Lass2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,22 +17,20 @@
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**Canrenone's elimination clearance had no extracted value, so a placeholder was used and the model was quarantined.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — canrenone: V1 103 L.
+The record lists a clearance parameter for 7 alpha-thiomethylspironolactone but provides no elimination clearance value for canrenone. Consequently, a library placeholder was used for canrenone's elimination clearance, causing the model to be held back. The second reader also disagreed on the presence of specific parameter values for the metabolite compartments. Extracted — canrenone: kabs 17.5 1/h, V/F 173 L, fm 0.14, fm 13.4; 7 alpha-thiomethylspironolactone: CL 0.98 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has spironolactone → 7-alpha-thiomethylspironolactone (metabolism); spironolactone → canrenone (metabolism), the second reading spironolactone → tms (metabolism); spironolactone → canrenone (metabolism); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has spironolactone, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:24:28.977837+00:00) predates the upstream re-run (2026-10-06 17:47:20.399688+00:00). Current validate status: `extracted`.
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Lass J et al., Pharmacokinetics of oral spironolactone…, European journal of clinica… (2024)
   ·  DOI: [10.1007/s00228-023-03599-w](https://doi.org/10.1007/s00228-023-03599-w)
 
 ## Model component
-<dbs-pgx drug="canrenone" model-id="Canrenone_Lass2024_reference" status="extracted" stale="true" population="infants with chronic heart failure, ascites and/or oedema" measured-compound="spironolactone" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="canrenone" model-id="Canrenone_Lass2024_reference" status="model_quarantined" stale="false" population="infants with chronic heart failure, ascites and/or oedema" measured-compound="spironolactone" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
 **Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 5 extracted.
@@ -40,6 +38,8 @@ Lass J et al., Pharmacokinetics of oral spironolactone…, European journal of c
 **Parameterization:** CL/F, CLSP/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Ka | `Q49` · kabs | 17.5 | 1/h | 0.004861111111111111 | 1/h | not captured | exact (1.0) | Lass_2024_table_2:row1:col1, Lass_2024_table_2:row1:col2 | — | not captured |
@@ -103,20 +103,40 @@ Lass J et al., Pharmacokinetics of oral spironolactone…, European journal of c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.2 (4/20 fields) | 16 |
+| `gpt-oss:120b` | not confirmed | 0.7 (14/20 fields) | 6 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>22 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['spironolactone', '7-alpha-thiomethylspironolactone', 'metabolism'], ['spironolactone', 'canrenone', 'metabolism']] | [['spironolactone', 'tms', 'metabolism'], ['spironolactone', 'canrenone', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[cltms]` | not captured | 78 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vtms=vcan].parameter_id` | Q63 | Q61 | mismatch |
+| `gpt-oss-120b` | `model.links` | [['spironolactone', '7 alpha-thiomethylspironolactone', 'metabolism'], ['spironolactone', 'canrenone', 'metabolism']] | [['spironolactone', '7-alpha-thiomethylspironolactone', 'metabolism'], ['spironolactone', 'canrenone', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[clsp/f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clsp/f].parameter_id` | Q900 | Q27 | mismatch |
+| `gpt-oss-120b` | `parameters[clsp/f].value` | 51.1 | not captured | mismatch |
+| `gpt-oss-120b` | `parameters[cltms = θ5 x (cw/4300) 0.75]` | 0.98 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cltms = θ5 x (cw/4300) 0.75]` | not captured | 0.98 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fmet]` | 0.14 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fmet]` | not captured | 0.14 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 17.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 17.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vsp/f]` | 172.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vsp/f]` | not captured | 172.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vtms=vcan]` | 115 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vtms=vcan]` | not captured | 115 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | spironolactone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | spironolactone | unknown | mismatch |
+| `gpt-oss:120b` | `model.links` | [['spironolactone', '7 alpha-thiomethylspironolactone', 'metabolism'], ['spironolactone', 'canrenone', 'metabolism']] | [['spironolactone', '7-alpha-thiomethylspironolactone', 'metabolism'], ['spironolactone', 'canrenone', 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `parameters[cltms = θ5 x (cw/4300) 0.75]` | 0.98 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cltms = θ5 x (cw/4300) 0.75]` | not captured | 0.98 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vtms=vcan]` | 115 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vtms=vcan]` | not captured | 115 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[θ4]` | not captured | 9.8 | only_one_extracted |
 
 </details>
 
@@ -142,6 +162,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.98 L/h | not captured | not captured | ['Lass_2024_table_2:row15:col1', 'Lass_2024_table_2:row15:col2'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 173 L | not captured | not captured | ['Lass_2024_table_2:row2:col1'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_param_coverage | not captured | fail | 3 scholar param(s) emitted or defaulted | 2 covered | not captured | neither emitted nor in defaulted[]: ['kabs'] |
+| T3_shared_parameters | not captured | pass | 1 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
+| T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_t_half_beta | reference | skipped | 1.4 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 1.4 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 2.1 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 1.1 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -149,7 +185,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_canrenone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lass_2024` / `Lass_2024::estimate_2`)
+- scholar stages: `../../../knowledgebase/drugs/drug_canrenone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lass_2024` / `Lass_2024::reference`)
+- model: `../../../knowledgebase/drugs/drug_canrenone/models/modelica/_needs_review/Canrenone_Lass2024_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_canrenone/models/modelica/_needs_review/Canrenone_Lass2024_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

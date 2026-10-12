@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Jacobs2026_intravenous`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record reports Vd for metformin as 35.0 L while Vss is given as 4.37 L/kg, so the two volume parameters are not on a comparable scale and the structural-parameter dimension check failed. The unit of the Vd parameter could not be converted to SI, so the parameter reached the model builder without an SI value. Other parameters (C0 25553 ng/mL, CL 499.8 mL/h/kg, t1/2z 85.5 h, kabs 0.41 h⁻¹, tlag 0.34 h) carried no reported issues. Extracted — metformin: C0 2.56e+04 ng/mL, AUC∞ 1.05e+04 h * ng/mL, AUC%ext 0.55, CL 500 mL/h/kg, Vss 4.37 L/kg, t1/2z 85.5 h, V 35 L, kabs 0.41 h -1, … (+1).
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has metformin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -93,14 +93,25 @@ Jacobs ME et al., Metformin in the Horse: Pharmacokinetic…, Drug testing and a
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.615 (8/13 fields) | 5 |
 | `gpt-oss:120b` | confirmed | 1.0 (10/10 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>5 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[ka (h -1 ) absorption rate constant]` | 0.41 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.34 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 35.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | metformin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | metformin | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Solidago altissima flowers extract (extract 1428) concentrations (µg/mL) inhibit SARS-CoV-2 pseudotyped viral entry (% inhibition) in a sigmoid Emax concentration–response relationship, with absolute IC50/EC50 values of 2.60 µg/mL (wild-type), 0.45 µg/mL (Alpha/B.1.1.7), 0.75 µg/mL (Delta/B.1.617.2), 2.98 µg/mL (Beta/B.1.351), and 7.94 µg/mL (Gamma/P.1); the paper does not state a mechanistic PD model beyond direct concentration–response inhibition of viral entry.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Risener_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

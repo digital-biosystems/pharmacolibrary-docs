@@ -5,7 +5,7 @@
 
 # diazepam — `Diazepam_Lscher1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.312). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.312). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Aurélie_2023, Cavallaro_2026) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — diazepam: t1/2β 3.2 hr, Cmax 100 ng/ml, t1/2z 5.7 hr, CL 1.24 L/h, V 4.7 L/kg, kabs 1.21 h−1, tlag 84.2 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has diazepam → desmethyldiazepam (metabolism); desmethyldiazepam → oxazepam (metabolism), the second reading diazepam → desmethyldiazepam (metabolism); diazepam → oxazepam (metabolism); diazepam → 3-hydroxydiazepam (metabolism); it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has diazepam → desmethyldiazepam (metabolism); desmethyldiazepam → oxazepam (metabolism); diazepam → 3-hydroxydiazepam (metabolism), the second reading diazepam → desmethyldiazepam (metabolism); diazepam → oxazepam (metabolism); diazepam → 3-hydroxydiazepam (metabolism); it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -85,17 +85,34 @@ Löscher W et al., Pharmacokinetics of diazepam in the dog, Archives internation
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (4/20 fields) | 16 |
 | `gpt-oss:120b` | not confirmed | 0.312 (5/16 fields) | 11 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>27 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | 74-100% | not captured | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['diazepam', 'desmethyldiazepam', 'metabolism'], ['desmethyldiazepam', 'oxazepam', 'metabolism'], ['diazepam', '3-hydroxydiazepam', 'metabolism']] | [['diazepam', 'desmethyldiazepam', 'metabolism'], ['diazepam', 'oxazepam', 'metabolism'], ['diazepam', '3-hydroxydiazepam', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[average elimination half-life t0.5]` | not captured | 3.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 1.236 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life t0.5]` | 3.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | not captured | 5.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | 5.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[i.v. administration of]` | not captured | 2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka *]` | 1.03 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximal plasma concentrations]` | not captured | 100 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[share of unmetabolized diazepam in the total area under curve after i.v. administration]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[share of unmetabolized diazepam in the total area under curve after oral administration]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady state plasma concentrations of desmethyldiazepam]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time to maximal plasma concentration]` | not captured | 2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.186 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 4.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [['diazepam', 'desmethyldiazepam', 'metabolism'], ['desmethyldiazepam', 'oxazepam', 'metabolism']] | [['diazepam', 'desmethyldiazepam', 'metabolism'], ['diazepam', 'oxazepam', 'metabolism'], ['diazepam', '3-hydroxydiazepam', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[half-life]` | 5.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life]` | not captured | 5.7 | only_one_extracted |

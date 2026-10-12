@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cumulative subcutaneous PQ Grass doses (5100–35600 SU) were related to post-treatment Total Symptom Score after conjunctival provocation testing via an inhibitory Emax-type dose response (TSS decreases with dose); the ED50, the dose reaching at least 50% of the full effect size over placebo, was approximately 2900 SU, with 27600 SU and 35600 SU close to the plateau. The paper does not describe a mechanistic production/elimination or effect-compartment model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zielen_2019`
 - **model family:** `emax`
 - **driver:** `dose_only`

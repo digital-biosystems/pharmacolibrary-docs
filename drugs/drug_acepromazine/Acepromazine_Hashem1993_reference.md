@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;acepromazine&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/&quot;},{&quot;label&quot;:&quot;Hashem_1993 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acepromazine_Garbin2022_reference&quot;,&quot;label&quot;:&quot;Garbin_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/Acepromazine_Garbin2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acepromazine_Steagall2026_reference&quot;,&quot;label&quot;:&quot;Steagall_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/Acepromazine_Steagall2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acepromazine_Garbin2022_reference&quot;,&quot;label&quot;:&quot;Garbin_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/Acepromazine_Garbin2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acepromazine_Steagall2026_reference&quot;,&quot;label&quot;:&quot;Steagall_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/Acepromazine_Steagall2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # acepromazine — `Acepromazine_Hashem1993_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,7 +17,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The acepromazine record was rejected because the paper reports only exposure statistics (t1/2z 0.84 h, tmax 0.4 h, Cmax 59 ng/ml, bioavailability 55.1%) with no distribution volume and no clearance, so it is not a compartmental population PK model.**
+
+No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A dimension mismatch was also flagged on a structural parameter, and the dose entry (0.5 mg/kg) was interpreted as a duration of zero-order input, which does not fit the reported dosing. The record was built from the abstract alone, so the reported summary statistics stood in for a fitted model. Extracted — acepromazine: t1/2z 0.84 h, tmax 0.4 h, Cmax 59 ng/ml, Fab 55.1 %, D1 0.5 mg/kg.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has acepromazine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Hashem A et al., Disposition, bioavailability and clinic…, Journal of veterinary pharm… (1993)
@@ -64,6 +72,38 @@ Hashem A et al., Disposition, bioavailability and clinic…, Journal of veterina
 - no GROBID TEI available — transcribed from abstract in Hashem_1993_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (3/15 fields) | 12 |
+
+<details><summary>12 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[administration]` | not captured | 0.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` | 55.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` | not captured | 55.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 59 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 59 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose]` | 0.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | 0.84 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | not captured | 0.84 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 0.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | not captured | 0.4 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | acepromazine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | acepromazine | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

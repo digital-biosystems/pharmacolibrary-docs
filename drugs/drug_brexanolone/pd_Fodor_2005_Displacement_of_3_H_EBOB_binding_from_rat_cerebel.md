@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Allopregnanolone (the endogenous neurosteroid corresponding to brexanolone) inhibits [(3)H]EBOB binding to rat cerebellar GABAA receptors, with an IC50 of 320 nM, decreasing to 39 nM in the presence of 400 nM GABA and 60 nM SR 95531; the paper excerpts do not state a specific model mechanism beyond this inhibitory displacement.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fodor_2005`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -4,7 +4,7 @@
 
 # bendroflumethiazide — `Bendroflumethiazide_Vergin1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.091), gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — bendroflumethiazide: Vss 0.88 l/kg, CL 269 ml/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has spironolactone → canrenone (metabolism), the second reading spironolactone → canrenone (metabolism); spironolactone → fluorogenic spironolactone metabolites (sum) (metabolism); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bendroflumethiazide, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -72,17 +72,28 @@ Vergin H et al., [Pharmacokinetic studies and bioavailab…, Arzneimittel-Forsch
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.091 (1/11 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.667 (6/9 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['spironolactone', 'canrenone', 'metabolism']] | [['spironolactone', 'canrenone', 'metabolism'], ['spironolactone', 'total fluorogenic spironolactone metabolites', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[oral multiple administration of 2.5 mg bft]` | not captured | 2.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` | 0.88 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` | not captured | 0.88 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal elimination half-life]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal elimination half-life]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total plasma clearance]` | 269.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total plasma clearance]` | not captured | 269.4 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | bendroflumethiazide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | bendroflumethiazide | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [['spironolactone', 'canrenone', 'metabolism']] | [['spironolactone', 'canrenone', 'metabolism'], ['spironolactone', 'fluorogenic spironolactone metabolites (sum)', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[multiple-dose study]` | not captured | 6 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[oral multiple administration]` | not captured | 2.5 | only_one_extracted |

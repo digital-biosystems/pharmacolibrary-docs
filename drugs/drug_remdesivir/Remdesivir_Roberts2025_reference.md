@@ -5,7 +5,7 @@
 
 # remdesivir — `Remdesivir_Roberts2025_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record defines a parent–metabolite structure (remdesivir metabolised to GS-441524), but every parameter with a value belongs to GS-441524, so the parent's PK was left at placeholder defaults and the model was held back rather than published with invented numbers. The builder also assumed F=1 and Fm=1 with no molar correction (apparent parameterization) and defaulted ka, which was not reported in the source. The structure check expected a parent–metabolite model but obtained a one-compartment enteral model, and the covariate effects (age -1.15, eGFR 1.12) were defined but not exercised in simulation. A second reader also disagreed on the dosed compound and primary analyte and returned null for several parameter values, so the extraction is inconclusive on those fields. Extracted — GS-441524: CL 105 L/h, V 121 L, CLfm 15.9 L/h, V1/F 429 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has remdesivir, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has remdesivir, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -89,17 +89,30 @@ Roberts DM et al., Population Pharmacokinetic Modelling of…, Clinical pharmaco
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.286 (4/14 fields) | 10 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>22 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/fm].parameter_id` | Q351 | Q370 | mismatch |
+| `gpt-oss-120b` | `parameters[cl/fm].value` | 15.9 | 13.2 | mismatch |
+| `gpt-oss-120b` | `parameters[cl].parameter_id` | Q351 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[cl].value` | 105 | 69.3 | mismatch |
+| `gpt-oss-120b` | `parameters[egfr_effect_on_cl]` | 1.12 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q22_egfr]` | not captured | 0.78 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q61_age].value` | -1.15 | -1.18 | mismatch |
+| `gpt-oss-120b` | `parameters[v/fm].value` | 429 | 353 | mismatch |
+| `gpt-oss-120b` | `parameters[v].parameter_id` | Q367 | Q61 | mismatch |
+| `gpt-oss-120b` | `parameters[v].value` | 121 | 45.9 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | remdesivir | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | GS-441524 | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl]` | 105 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | not captured | 105 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_cl_egfr]` | 1.12 | not captured | only_one_extracted |
@@ -167,7 +180,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_remdesivir/Remdesivir_Roberts2025_reference/Remdesivir_Roberts2025_reference_modelica.zip" download>Remdesivir_Roberts2025_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Roberts2025_reference/Remdesivir_Roberts2025_reference_matlab.zip" download>Remdesivir_Roberts2025_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Roberts2025_reference/Remdesivir_Roberts2025_reference_matlab_simbio.zip" download>Remdesivir_Roberts2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Roberts2025_reference/Remdesivir_Roberts2025_reference_matlab_simbio.zip" download>Remdesivir_Roberts2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Roberts2025_reference/Remdesivir_Roberts2025_reference_sbml.zip" download>Remdesivir_Roberts2025_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Roberts2025_reference/Remdesivir_Roberts2025_reference_cellml.zip" download>Remdesivir_Roberts2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

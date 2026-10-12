@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not state the mechanism: no full text is available, so how eszopiclone (zopiclone) concentrations act on saccadic peak velocity cannot be determined from the excerpts, and no potency or rate values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luurila_1996`
 - **model family:** `tolerance`
 - **driver:** `not_resolved`

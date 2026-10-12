@@ -5,7 +5,7 @@
 
 # fluorouracil — `Fluorouracil_Bressolle1999_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182), gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — fluorouracil: CL 125 l/h, V 21 l, kabs 0.757 h−1, tlag 0.000552 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has 5-fluorouracil, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -73,17 +73,27 @@ Bressolle F et al., Circadian rhythm of 5-fluorouracil popu…, Cancer chemother
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 | `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>18 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[5-fu loading dose]` | not captured | 400 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[amplitude of the second cyclic component]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl(mean) value twice larger]` | 125 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl(mean)]` | not captured | 125 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka, absorption rate constant]` | 0.757 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | 21 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | not captured | 21 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | 5-fluorouracil | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | 5-fluorouracil | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl(mean) male]` | not captured | 125 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | 125 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[continuous infusion duration]` | not captured | 22 | only_one_extracted |

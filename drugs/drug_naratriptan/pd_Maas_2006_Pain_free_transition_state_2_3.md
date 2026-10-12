@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Naratriptan plasma concentration drives the forward transition rate from mild pain (state 2) to no pain (state 3) through a direct Emax mechanism, defined by the equation r(t) = r(0) + Emax * C(t)/(C(t) + EC50). The reported parameters for this transition are Emax = 0.9, EC50 = 11 nM, and the baseline rate r(0) = 0.26 h-1.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Maas_2006`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

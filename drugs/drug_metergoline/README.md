@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Pauwels_1996_cell_growth](drugs/drug_metergoline/pd_Pauwels_1996_cell_growth.md) | cell growth ← metergoline · direct sigmoid Emax (Hill) effect | — | Pauwels PJ et al., Promotion of cell growth by stimulation…, Naunyn-Schmiedeberg's archi… (1996) | [10.1007/BF00178713](https://doi.org/10.1007/BF00178713) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Pauwels_1996_cell_growth](drugs/drug_metergoline/pd_Pauwels_1996_cell_growth.md) | cell growth ← metergoline · direct sigmoid Emax (Hill) effect | — | Pauwels PJ et al., Promotion of cell growth by stimulation…, Naunyn-Schmiedeberg's archi… (1996) | [10.1007/BF00178713](https://doi.org/10.1007/BF00178713) |
 
 ## ADME sites
 

@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Paracetamol concentrations acting on an effect compartment inhibit ductus arteriosus diameter through a proportional Emax mechanism, with a maximum inhibitory effect (Imax) estimated at 42% and 99%. The provided excerpts do not specify the mechanism of action (production vs. elimination) or provide values for IC50, EC50, or ke0.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Padavia_2025`
 - **model family:** `emax`
 - **driver:** `cited_pk`

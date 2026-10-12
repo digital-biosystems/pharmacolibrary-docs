@@ -4,7 +4,7 @@
 
 # panitumumab — `Panitumumab_Liao2021_mild_1_impairment`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**CL has no unit; the clearance plausibility check could not be computed.**
+
+Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — panitumumab: Cmax 103 µg/mL, Ctrough 108 µg/mL, CL 166 µg/mL, V1 3.22 L, V2 2.49 L, Q 0.38 L/day.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has panitumumab, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Liao MZ et al., The impact of hepatic and renal functio…, Cancer chemotherapy and pha… (2021)
@@ -66,6 +74,38 @@ Liao MZ et al., The impact of hepatic and renal functio…, Cancer chemotherapy 
 - transposed table Liao_2021_table_4: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+
+<details><summary>12 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | 0.208 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 103 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ctrough]` | 108 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[inter-compartmental clearance]` | 0.38 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[inter-compartmental clearance]` | not captured | 0.38 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean (cv) values for cmax and ctrough were 166 ug/ml (37%) and 32 ug/ml (59%), respectively, for patients with normal renal function (table 4). 2).table 4summary of serum panitumumab concentrations in patients with varying degrees of renal function on week 7 before and after iv infusion of panitumumab at 6 mg/kg q2wrenal function, clcr rangecmaxctroughnmean, ug/mlcv, %nmean, ug/mlcv, %normal, &gt; 80 ml/min242166372473259mild impairment, 50-80 ml/min8016537853057moderate impairment, 30-49 ml/min1817227193268clcr creatinine clearance, cmax maximum serum concentration, ctrough trough serum concentration, cv coefficient of variation, iv intravenous, q2w every 2 weeksfig. 2cmax (a) and ctrough (b) in patients with varying degrees of renal dysfunction on week 7 before and after intravenous infusion of panitumumab at 6 mg/kg every 2 weeks. cmax, maximum serum concentration; ctrough, trough serum concentration]` | 166 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[panitumumab v1]` | 3.22 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` | 2.49 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` | not captured | 2.49 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | not captured | 3.22 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | panitumumab | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | panitumumab | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

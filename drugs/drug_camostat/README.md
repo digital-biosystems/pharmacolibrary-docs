@@ -45,7 +45,7 @@ Camostat is a protease inhibitor that blocks trypsin and has been investigated a
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kosinsky_2022_SP](drugs/drug_camostat/pd_Kosinsky_2022_SP.md) | TMPRSS2 activity ← FOY-251 · target-mediated drug disposition | — | Kosinsky Y et al., Semi-Mechanistic Pharmacokinetic-Pharma…, Microbiology spectrum (2022) | [10.1128/spectrum.02167-21](https://doi.org/10.1128/spectrum.02167-21) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> | [Kosinsky_2022_SP](drugs/drug_camostat/pd_Kosinsky_2022_SP.md) | TMPRSS2 activity ← FOY-251 · target-mediated drug disposition | — | Kosinsky Y et al., Semi-Mechanistic Pharmacokinetic-Pharma…, Microbiology spectrum (2022) | [10.1128/spectrum.02167-21](https://doi.org/10.1128/spectrum.02167-21) |
 
 ## ADME sites
 

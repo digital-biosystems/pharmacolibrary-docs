@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Liposomal sertraline (LP-SERT) concentration (μM) inhibits NCTC cell viability measured by MTT after 72 h incubation; the paper reports a CC50 of 12.0 μM but does not state the model mechanism or additional sigmoid-Emax parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Romanelli_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

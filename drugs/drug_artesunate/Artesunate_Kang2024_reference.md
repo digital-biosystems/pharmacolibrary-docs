@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;artesunate&quot;,&quot;href&quot;:&quot;drugs/drug_artesunate/&quot;},{&quot;label&quot;:&quot;Kang_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Artesunate_Ayyoub2015_reference&quot;,&quot;label&quot;:&quot;Ayyoub_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artesunate/Artesunate_Ayyoub2015_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Artesunate_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artesunate/Artesunate_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Artesunate_Ding2024_reference&quot;,&quot;label&quot;:&quot;Ding_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artesunate/Artesunate_Ding2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Artesunate_Lohy2017_reference&quot;,&quot;label&quot;:&quot;Lohy_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artesunate/Artesunate_Lohy2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Artesunate_Pfaffendorf2026_reference&quot;,&quot;label&quot;:&quot;Pfaffendorf_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artesunate/Artesunate_Pfaffendorf2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Artesunate_Ayyoub2015_reference&quot;,&quot;label&quot;:&quot;Ayyoub_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artesunate/Artesunate_Ayyoub2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Artesunate_Ding2024_reference&quot;,&quot;label&quot;:&quot;Ding_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artesunate/Artesunate_Ding2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Artesunate_Pfaffendorf2026_reference&quot;,&quot;label&quot;:&quot;Pfaffendorf_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artesunate/Artesunate_Pfaffendorf2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Artesunate_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artesunate/Artesunate_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Artesunate_Lohy2017_reference&quot;,&quot;label&quot;:&quot;Lohy_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artesunate/Artesunate_Lohy2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # artesunate — `Artesunate_Kang2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.043). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,7 +17,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The artesunate record was rejected because the elimination rate constant kel is recorded as 35.19 with the unit 'artesunate' — a non-convertible unit — and several parameters (kabs 1.54 1/h, V/F 33.03 L/kg, CL/F 13.33 L/h/kg) are attributed to pyronaridine, not artesunate.**
+
+The parameter kel, labelled 'ε (artesunate)', carries the value 35.19 with the unit given as 'artesunate', which is not a rate unit and could not be converted to SI, so the parameter arrived without an SI value. The clearance and volume parameters (CL/F 13.33 L/h/kg, V/F 33.03 L/kg, V2/F 481.05 L/kg, Q/F 82.69 L/h/kg, kabs 1.54 1/h) are listed as belonging to pyronaridine although the record's drug is artesunate, making the magnitudes implausible for this molecule. The metabolite parameters for dihydroartemisinin (V 0.16 L/kg, CL 237.25 L/h/kg, kfm 1.04 1/h) are present, but the unit/scale extraction error on the parent parameters led to rejection. Extracted — pyronaridine: kabs 1.54 1/h, V/F 33 L/kg, CL/F 13.3 L/h/kg, V2/F 481 L/kg, Q/F 82.7 L/h/kg; dihydroartemisinin: V 0.16 L/kg, CL 237 L/h/kg, kfm 1.04 1/h; artesunate: kel 35.2 artesunate.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artesunate, the second reading unknown; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kang DW et al., Inter-Species Pharmacokinetic Modeling…, International journal of mo… (2024)
@@ -90,6 +98,48 @@ Kang DW et al., Inter-Species Pharmacokinetic Modeling…, International journal
 - LLM selected parameter table(s) 1
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.043 (1/23 fields) | 22 |
+
+<details><summary>22 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['artesunate', 'dihydroartemisinin', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 13.33 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 13.33 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2/f]` | not captured | 82.69 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2/f]` | 82.69 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm/]` | not captured | 237.25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm/]` | 237.25 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 1.54 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 1.54 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kenz]` | not captured | 1.04 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kenz]` | 1.04 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | not captured | 33.03 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 33.03 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f]` | not captured | 481.05 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f]` | 481.05 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vm/]` | not captured | 0.16 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vm/]` | 0.16 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ε].parameter_id` | Q900 | Q30 | mismatch |
+| `gpt-oss-120b` | `parameters[ε].rse_percent` | 10.15 | 25.47 | mismatch |
+| `gpt-oss-120b` | `parameters[ε].value` | 0.20 | 194.67 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | artesunate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | artesunate | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

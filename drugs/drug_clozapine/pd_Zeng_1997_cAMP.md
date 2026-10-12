@@ -20,6 +20,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Clozapine concentration-dependently inhibits forskolin-stimulated cAMP accumulation (expressed as % of carbachol maximum) with a direct Emax model: EC50 60 nM and Emax 74% of carbachol maximum. The paper excerpts do not state a mechanism beyond this inhibitory concentration-response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zeng_1997`
 - **model family:** `emax`
 - **driver:** `cited_pk`

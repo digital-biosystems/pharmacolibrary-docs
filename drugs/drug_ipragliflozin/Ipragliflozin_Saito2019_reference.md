@@ -4,7 +4,7 @@
 
 # ipragliflozin — `Ipragliflozin_Saito2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -67,17 +67,26 @@ Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.333 (4/12 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 9.47 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 6.38 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[medians (95% prediction intervals) of auc24h]` | 5417 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[population mean oral clearance]` | 9.47 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f]` | not captured | 6.63 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_gfr]` | not captured | 0.233 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | not captured | 39.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | not captured | 68.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc24h]` | not captured | 5417 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fold increase in auc24h]` | not captured | 1.17 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[medians (95% prediction intervals) of auc24h]` | 5417 | not captured | only_one_extracted |

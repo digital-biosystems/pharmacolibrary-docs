@@ -20,6 +20,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Clozapine plasma concentrations (ng ml−1) stimulate the amplitude of the beta EEG band (µV s−1) in rats via a direct sigmoid Emax model with an effect-compartment link (Kco = 18 h−1, corresponding to an effect-site disappearance half-life of 2.4 min), with an additive effect on a baseline E0 of 79 µV s−1, Emax = 45 µV s−1, EC50 = 508 ng ml−1, and Hill coefficient N = 1.6.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Parker_2001`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

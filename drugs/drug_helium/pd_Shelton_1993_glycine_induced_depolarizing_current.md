@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not state a mechanism beyond an Emax-type fit: helium pressure (50–150 bar) shifts the glycine concentration–response for glycine-induced depolarizing current, raising the glycine EC50 from 216 microM at baseline to 296, 345, and 425 microM at 50, 100, and 150 bar, respectively; no Imax, Emax, kin, kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shelton_1993`
 - **model family:** `emax`
 - **driver:** `dose_only`

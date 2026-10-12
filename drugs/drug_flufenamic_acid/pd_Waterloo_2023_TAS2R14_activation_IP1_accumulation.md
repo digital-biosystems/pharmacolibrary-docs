@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Flufenamic acid stimulates TAS2R14 activation, measured as IP1 accumulation, via an Emax model with an EC50 of 72 nM and a maximum efficacy of 129%. The paper does not provide a description of the specific mechanism by which the drug drives the response beyond this direct activation characterization.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Waterloo_2023`
 - **model family:** `emax`
 - **driver:** `not_resolved`

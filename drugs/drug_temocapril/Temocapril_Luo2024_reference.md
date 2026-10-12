@@ -4,7 +4,7 @@
 
 # temocapril — `Temocapril_Luo2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.059). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,6 +19,8 @@
 **The temocapril record was rejected because it contains no distribution volume and no clearance or elimination rate — only flumazenil exposure values (Cmax 72.1 ng/mL, AUC0–t 0.1600 μg×h/mL) — so it is not a compartmental population PK model.**
 
 The paper reports no distribution volume and no clearance or elimination rate for temocapril; it is an exposure/outcome paper, and the only extracted parameters (a 29 mg zero-order input duration, Cmax 72.1 ng/mL and AUC0–t 0.1600 μg×h/mL) belong to flumazenil, not to temocapril or its metabolite temocaprilat. A structural parameter failed a dimensional consistency check, and the model structure leaves a compartment or metabolite with no path from the dose. Additionally, a reported unit could not be converted to SI, so that parameter reached the model build without an SI value. Extracted — flumazenil: AUCt 0.16 μg × h/mL, Cmax 72.1 ng/mL.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has temocapril hydrochloride, the second reading temocapril; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -87,6 +89,42 @@ Luo X et al., Simultaneously Predicting the Pharmacok…, Pharmaceutics (2024)
 - dropped sensitivity-analysis table(s) 2 from the LLM selection — perturbations of a model, not a model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.059 (1/17 fields) | 16 |
+
+<details><summary>16 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['temocapril', 'temocaprilat', 'hydrolysis'], ['enalapril', 'enalaprilat', 'hydrolysis'], ['benazepril', 'benazeprilat', 'hydrolysis'], ['cilazapril', 'cilazaprilat', 'hydrolysis'], ['perindopril', 'perindoprilat', 'hydrolysis'], ['oseltamivir', 'oseltamivir carboxylate', 'hydrolysis']] | [['enalapril', 'enalaprilat', 'metabolism'], ['benazepril', 'benazeprilat', 'metabolism'], ['cilazapril', 'cilazaprilat', 'metabolism'], ['temocapril', 'temocaprilat', 'metabolism'], ['perindopril', 'perindoprilat', 'metabolism'], ['oseltamivir', 'oseltamivir carboxylate', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[28]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[29]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[29]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-t]` | not captured | 0.1600 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-t]` | not captured | 0.1390 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-t]` | not captured | 0.0998 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-t]` | not captured | 0.1229 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-t]` | 0.1600 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 72.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 139.139 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 33.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 66.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 72.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | temocapril hydrochloride | temocapril | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | temocapril and temocaprilat | temocapril | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

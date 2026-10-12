@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deltamethrin's scaled internal concentration, aggregated into cumulative biological damage D(t), drives survival probability S(t) via a GUTS-IT (Individual Tolerance) toxicodynamic model, in which the TD component converts cumulative damage into survival probability; the paper does not state potency values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) or a specific effect form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baudrot_2025`
 - **model family:** `tte`
 - **driver:** `not_resolved`

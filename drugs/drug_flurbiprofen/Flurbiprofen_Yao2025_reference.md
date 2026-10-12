@@ -5,7 +5,7 @@
 
 # flurbiprofen — `Flurbiprofen_Yao2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The model was built, but flurbiprofen's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — R(-)-flurbiprofen: V 15, CL 2.92, Q 0.32, FG -0.15, Vss 0.03, omega_cov 0.14, add_error 0.003, sigma 0.001.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has R(-)-flurbiprofen and S(+)-flurbiprofen, the second reading flurbiprofen; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flurbiprofen, the second reading flurbiprofen (intravenous); it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -81,17 +81,30 @@ Yao H et al., Exploring the Population Pharmacokineti…, Drug design, developme
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.6 (9/15 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>18 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[bsa on vc]` | 1.37 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl].rse_percent` | 2.92 | not captured | mismatch |
+| `gpt-oss-120b` | `parameters[cl].value` | 11.8 | 16.7 | mismatch |
+| `gpt-oss-120b` | `parameters[gg]` | -2.01 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q].rse_percent` | 0.32 | not captured | mismatch |
+| `gpt-oss-120b` | `parameters[q].value` | 0.45 | 0.39 | mismatch |
+| `gpt-oss-120b` | `parameters[vc].rse_percent` | 15.0 | not captured | mismatch |
+| `gpt-oss-120b` | `parameters[vc].value` | 17.0 | 25.6 | mismatch |
+| `gpt-oss-120b` | `parameters[vp].rse_percent` | 33.5 | not captured | mismatch |
+| `gpt-oss-120b` | `parameters[vp].value` | 79.1 | 32.6 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | flurbiprofen | flurbiprofen (intravenous) | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | S(+)-flurbiprofen, R(-)-flurbiprofen | flurbiprofen enantiomers (R(-) and S(+)) | mismatch |
 | `gpt-oss:120b` | `parameters[ga]` | -0.15 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v c , l].parameter_id` | Q61 | Q63 | mismatch |
 | `gpt-oss:120b` | `parameters[v p , l]` | not captured | 33.5 | only_one_extracted |
@@ -155,7 +168,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_flurbiprofen/Flurbiprofen_Yao2025_reference/Flurbiprofen_Yao2025_reference_matlab.zip" download>Flurbiprofen_Yao2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_flurbiprofen/Flurbiprofen_Yao2025_reference/Flurbiprofen_Yao2025_reference_matlab_simbio.zip" download>Flurbiprofen_Yao2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_flurbiprofen/Flurbiprofen_Yao2025_reference/Flurbiprofen_Yao2025_reference_matlab_simbio.zip" download>Flurbiprofen_Yao2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_flurbiprofen/Flurbiprofen_Yao2025_reference/Flurbiprofen_Yao2025_reference_sbml.zip" download>Flurbiprofen_Yao2025_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_flurbiprofen/Flurbiprofen_Yao2025_reference/Flurbiprofen_Yao2025_reference_cellml.zip" download>Flurbiprofen_Yao2025_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

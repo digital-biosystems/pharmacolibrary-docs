@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Allopregnanolone (ALLO) concentration-dependently potentiates the peak GABA-induced chloride current (I_GABA, co-applied with 2 µM GABA) in rat cerebellar Purkinje cells via a direct positive allosteric modulation of GABAA receptors (no effect-compartment or turnover model), described by a sigmoid Emax fit with Emax 646 ± 37% of control, EC50 0.29 ± 0.06 µM, and Hill coefficient 1.5 ± 0.3.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bukanova_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -4,7 +4,7 @@
 
 # sodium selenite — `SodiumSelenite_Guo1991_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.095). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.095), gpt-oss:120b (not confirmed, agreement 0.095). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sodium selenite: t1/2γ 1.8 h, t1/2ka 3.2 h, AUC 3 ng.h.ml-1, CL 32 ml.kg-1.h-1, V 1.45 L.kg-1, AUMC 130 S1, MRT 55 h, t1/2z 3.4 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has sodium selenite, the second reading unknown; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium selenite, the second reading unknown; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -77,17 +77,37 @@ Guo JA et al., [Pharmacokinetics of sodium selenite in…, Zhongguo yao li xue b
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.095 (2/21 fields) | 19 |
 | `gpt-oss:120b` | not confirmed | 0.095 (2/21 fields) | 19 |
 
-<details><summary>19 field(s) a reader read differently</summary>
+<details><summary>38 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc]` | 3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aumc]` | 130 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aumc]` | not captured | 130 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 32 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 32 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cp]` | 36 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cp]` | not captured | 36 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | 55 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 3.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2g]` | 1.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2g]` | not captured | 1.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2ka]` | 3.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2ka]` | not captured | 3.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tp]` | not captured | 6.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 1.45 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | not captured | 1.45 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vrt]` | not captured | 174 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | sodium selenite | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | selenium | sodium selenite | mismatch |
 | `gpt-oss:120b` | `parameters[auc]` | 3 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[aumc]` | 130 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[aumc]` | not captured | 130 | only_one_extracted |

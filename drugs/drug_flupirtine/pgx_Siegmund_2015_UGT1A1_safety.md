@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;flupirtine&quot;,&quot;href&quot;:&quot;drugs/drug_flupirtine/&quot;},{&quot;label&quot;:&quot;Siegmund_2015 \u00b7 PGx UGT1A1&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# UGT1A1 — PGx  <span class="pk-badge pk-badge--neutral" title="a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.">safety allele</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+# UGT1A1 — PGx  <span class="pk-badge pk-badge--neutral" title="a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.">safety allele</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -26,11 +26,12 @@ Siegmund W et al., Metabolic activation and analgesic effe…, British journal o
   ·  DOI: [10.1111/bcp.12522](https://doi.org/10.1111/bcp.12522)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 | `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
 
 _Every reader agrees on every compared field of this PGx record._

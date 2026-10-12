@@ -5,7 +5,7 @@
 
 # codeine — `Codeine_Ashraf2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.421). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.136), gpt-oss:120b (not confirmed, agreement 0.421). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The coverage check expected 9 parameters emitted or defaulted but obtained 7, with kabs and V1 neither emitted nor defaulted, so the codeine absorption and distribution description would be incomplete. A second reader also disagreed on several entries: it read the codeine clearance as 59.6 L/h where the record had null, read a codeine fraction of 0.4556 where the record had null, and proposed an additional metabolism link from codeine-6-glucuronide to morphine-3-glucuronide that the record does not contain; the record's values 6.49, 59.6 and 231.2 were read as null by that reader. The disagreement on dose compound and primary analyte (codeine vs unknown) remains unresolved. Extracted — codeine: kabs 6.49 1/h, CL 59.6 L/h, V1 231 L; morphine: CL 178 L/h, V 9.45 L, fm 0.108; codeine-6-glucuronide: CL 4.28 L/h, V 5.36 L; morphine-3-glucuronide: CL 4.67 L/h, V 4.17 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has codeine, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has codeine, the second reading unknown; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -106,17 +106,37 @@ Ashraf MW et al., Population Pharmacokinetic Quantificati…, Clinical pharmacok
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.136 (3/22 fields) | 19 |
 | `gpt-oss:120b` | not confirmed | 0.421 (8/19 fields) | 11 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>30 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clc6g].value` | 4.28 | 5.91 | mismatch |
+| `gpt-oss-120b` | `parameters[clcod]` | 59.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clcod]` | not captured | 80.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm3g].value` | 4.67 | 6.90 | mismatch |
+| `gpt-oss-120b` | `parameters[clmor].value` | 178.2 | 256.9 | mismatch |
+| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fcod]` | 0.4556 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fcod]` | not captured | 0.63 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka,cod]` | 6.49 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka,cod]` | not captured | 6.53 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc,c6g].value` | 5.36 | 3.82 | mismatch |
+| `gpt-oss-120b` | `parameters[vc,cod]` | 231.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc,cod]` | not captured | 320.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc,m3g].value` | 4.17 | 5.91 | mismatch |
+| `gpt-oss-120b` | `parameters[vc,mor].value` | 9.447 | 13.3 | mismatch |
+| `gpt-oss-120b` | `parameters[ηfcod]` | not captured | 0.019 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ηvc,cod]` | 0.158 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | codeine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | codeine | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [['codeine', 'morphine', 'metabolism'], ['codeine', 'codeine-6-glucuronide', 'metabolism'], ['morphine', 'morphine-3-glucuronide', 'metabolism']] | [['codeine', 'morphine', 'metabolism'], ['codeine', 'codeine-6-glucuronide', 'metabolism'], ['morphine', 'morphine-3-glucuronide', 'metabolism'], ['codeine-6-glucuronide', 'morphine-3-glucuronide', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[clcod]` | 59.6 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clcod]` | not captured | 59.6 | only_one_extracted |

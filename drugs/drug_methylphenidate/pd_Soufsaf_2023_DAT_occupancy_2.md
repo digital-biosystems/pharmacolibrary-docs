@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes methylphenidate concentrations (PK from the cited Giorgi source) driving DAT occupancy, modelled as a tolerance model with an inhibitory effect direction, but the paper excerpts provide no mechanism details and no potency or rate values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Soufsaf_2023`
 - **model family:** `tolerance`
 - **driver:** `cited_pk`

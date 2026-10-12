@@ -38,7 +38,7 @@ Avatrombopag is a medicine used to treat thrombocytopenia, a shortage of blood p
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Nomoto_2018_PLT](drugs/drug_avatrombopag/pd_Nomoto_2018_PLT.md) | platelet count ← avatrombopag · direct linear effect | — | Nomoto M et al., Population Pharmacokinetic/Pharmacodyna…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1267](https://doi.org/10.1002/jcph.1267) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Nomoto_2018_PLT](drugs/drug_avatrombopag/pd_Nomoto_2018_PLT.md) | platelet count ← avatrombopag · direct linear effect | — | Nomoto M et al., Population Pharmacokinetic/Pharmacodyna…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1267](https://doi.org/10.1002/jcph.1267) |
 
 ## Pharmacogenomics (PGx)
 

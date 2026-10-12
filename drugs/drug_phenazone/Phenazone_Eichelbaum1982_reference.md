@@ -4,7 +4,7 @@
 
 # phenazone — `Phenazone_Eichelbaum1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.222), gpt-oss:120b (partly confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — phenazone: Fab 97 %, t1/2z 9.7 h, V 0.134 l kg -1, kabs 0.158 h -1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 10 mg/kg antipyrine (phenazone) was administered i.v.: this record has none, the second reading 10; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has phenazone, the second reading antipyrine; it also differs on 6 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -54,17 +54,25 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | primary re-run | 0.222 (2/9 fields) | 7 |
 | `gpt-oss:120b` | partly confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | not captured | 97 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[10 mg/kg antipyrine (phenazone) was administered i.v.]` | not captured | 10 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absolute bioavailability of an aqueous solution of antipyrine]` | not captured | 97 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[antipyrine half-life in smokers]` | not captured | 9.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance increase in smokers compared to non-smokers]` | not captured | 14.2 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | phenazone | antipyrine | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | phenazone | antipyrine | mismatch |
 | `gpt-oss:120b` | `parameters[10 mg/kg antipyrine (phenazone) was administered i.v.]` | not captured | 10 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance to this metabolite]` | not captured | 14.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka]` | 0.158 | not captured | only_one_extracted |

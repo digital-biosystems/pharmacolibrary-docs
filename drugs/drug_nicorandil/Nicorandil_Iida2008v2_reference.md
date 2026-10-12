@@ -4,7 +4,7 @@
 
 # nicorandil — `Nicorandil_Iida2008v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5), gpt-oss:120b (partly confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — nicorandil: V3/F 0.257, t1/2γ 0.957.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 14: this record has none, the second reading 7634.66; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 14: this record has none, the second reading 6.6; it also differs on 4 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -93,17 +93,23 @@ Iida S et al., Population pharmacokinetic and pharmaco…, British journal of cl
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.5 (5/10 fields) | 5 |
 | `gpt-oss:120b` | partly confirmed | 0.455 (5/11 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[14]` | not captured | 6.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ppv_sss]` | not captured | 0.320 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[r12]` | not captured | 0.864 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[r23]` | not captured | 0.054 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[r89]` | 0.957 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[14]` | not captured | 7634.66 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[15]` | not captured | 7634.80 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ppv_sss]` | not captured | 0.320 | only_one_extracted |

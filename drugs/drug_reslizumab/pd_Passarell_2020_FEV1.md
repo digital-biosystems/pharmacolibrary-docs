@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide full text to specify the mechanism by which reslizumab acts on forced expiratory volume in 1 second. No potency or rate values are stated.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Passarell_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

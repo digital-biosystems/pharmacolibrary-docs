@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L03A&quot;,&quot;href&quot;:&quot;atc/L03A.md&quot;},{&quot;label&quot;:&quot;interferon beta-1a&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InterferonBeta1a_Savic2017_reference&quot;,&quot;label&quot;:&quot;Savic_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InterferonBeta1a_Savic2017_reference&quot;,&quot;label&quot;:&quot;Savic_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # interferon beta-1a
 
@@ -26,21 +26,21 @@ Interferon beta-1a is a drug used to treat multiple sclerosis, including relapsi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:05 | 4:15 | 1/2/0 | 1/0/0 | 0/0/0 | 166,091/42,288 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
+| 2026-10-06 23:05 | 4:15 | 0/2/1 | 1/0/0 | 0/0/0 | 166,091/42,288 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Savic_2017_reference](drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Savic RM et al., Population Pharmacokinetics of Cladribi…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0516-6](https://doi.org/10.1007/s40262-017-0516-6) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mager_2003_reference](drugs/drug_interferon_beta_1a/InterferonBeta1a_Mager2003_reference.md) | — | parent + metabolite (no model) | 2 | Mager DE et al., Receptor-mediated pharmacokinetics and…, The Journal of pharmacology… (2003) | [10.1124/jpet.103.049502](https://doi.org/10.1124/jpet.103.049502) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Salmon_1996_reference](drugs/drug_interferon_beta_1a/InterferonBeta1a_Salmon1996_reference.md) | — | 1-compartment (no model) | 0 | Salmon P et al., Pharmacokinetics and pharmacodynamics o…, Journal of interferon & cyt… (1996) | [10.1089/jir.1996.16.759](https://doi.org/10.1089/jir.1996.16.759) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F, k21</sub><br><sub>route_to: `scholar`</sub> | [Savic_2017_reference](drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Savic RM et al., Population Pharmacokinetics of Cladribi…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0516-6](https://doi.org/10.1007/s40262-017-0516-6) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mager_2003_reference](drugs/drug_interferon_beta_1a/InterferonBeta1a_Mager2003_reference.md) | — | parent + metabolite (no model) | 2 | Mager DE et al., Receptor-mediated pharmacokinetics and…, The Journal of pharmacology… (2003) | [10.1124/jpet.103.049502](https://doi.org/10.1124/jpet.103.049502) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Salmon_1996_reference](drugs/drug_interferon_beta_1a/InterferonBeta1a_Salmon1996_reference.md) | — | 1-compartment (no model) | 0 | Salmon P et al., Pharmacokinetics and pharmacodynamics o…, Journal of interferon & cyt… (1996) | [10.1089/jir.1996.16.759](https://doi.org/10.1089/jir.1996.16.759) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mager_2002_neopterin](drugs/drug_interferon_beta_1a/pd_Mager_2002_neopterin.md) | neopterin ← interferon_beta_1a · indirect response — drug stimulates the production of neopterin | — | Mager DE et al., Receptor-mediated pharmacokinetic/pharm…, Pharmaceutical research (2002) | [10.1023/a:1020468902694](https://doi.org/10.1023/a:1020468902694) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Mager_2002_neopterin](drugs/drug_interferon_beta_1a/pd_Mager_2002_neopterin.md) | neopterin ← interferon_beta_1a · indirect response — drug stimulates the production of neopterin | — | Mager DE et al., Receptor-mediated pharmacokinetic/pharm…, Pharmaceutical research (2002) | [10.1023/a:1020468902694](https://doi.org/10.1023/a:1020468902694) |
 
 ## ADME sites
 
@@ -62,7 +62,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 16 matched, 16 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

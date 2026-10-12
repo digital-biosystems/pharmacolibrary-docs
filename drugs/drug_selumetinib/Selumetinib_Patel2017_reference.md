@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;selumetinib&quot;,&quot;href&quot;:&quot;drugs/drug_selumetinib/&quot;},{&quot;label&quot;:&quot;Patel_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Selumetinib_Patel2018_reference&quot;,&quot;label&quot;:&quot;Patel_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_selumetinib/Selumetinib_Patel2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Selumetinib_Tong2019_reference&quot;,&quot;label&quot;:&quot;Tong_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_selumetinib/Selumetinib_Tong2019_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Selumetinib_Patel2018_reference&quot;,&quot;label&quot;:&quot;Patel_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_selumetinib/Selumetinib_Patel2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Selumetinib_Tong2019_reference&quot;,&quot;label&quot;:&quot;Tong_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_selumetinib/Selumetinib_Tong2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # selumetinib — `Selumetinib_Patel2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.138). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Selumetinib’s absorption rate constant, 0.622 nmol/hr, has amount-per-time units rather than inverse-time units, so the record was rejected.**
+
+The record identifies kabs as selumetinib’s absorption rate constant but reports it as 0.622 nmol/hr, an amount-per-time unit rather than inverse time. The reported unit could not be converted to SI, leaving this structural parameter without an SI value. Extracted — selumetinib: kabs 0.622 nmol/hr, tlag 0.319 hr, CL 13.5 L/hr, V1 32.6 L, V2 55 L, Q 8.2 L/hr; N-desmethyl-selumetinib: V1 1.37 L, Q 240 L/hr, CL 49.5 L/hr, V2 413 L, CLfm 0.274 L/hr, fm 0.908.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has selumetinib, the second reading unknown; it also differs on 24 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 ## Citation
 Patel YT et al., Population Pharmacokinetics of Selumeti…, CPT: pharmacometrics & syst… (2017)
@@ -145,6 +153,51 @@ Patel YT et al., Population Pharmacokinetics of Selumeti…, CPT: pharmacometric
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.138 (4/29 fields) | 25 |
+
+<details><summary>25 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[θ10]` | not captured | 0.348 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ11]` | not captured | 0.923 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ12]` | not captured | 1.24 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ15].parameter_id` | Q63 | Q305 | mismatch |
+| `qwen3.8-27b` | `parameters[θ16]` | 240 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ17]` | 49.5 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ18]` | 413 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ19]` | 0.274 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ1]` | 0.622 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ1]` | not captured | 0.622 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ20]` | 0.908 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ2]` | 0.319 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ2]` | not captured | 0.319 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ3]` | 13.5 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ3]` | not captured | 13.5 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ4]` | 32.6 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ4]` | not captured | 32.6 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ5]` | 55 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ5]` | not captured | 55 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ6]` | 8.2 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ6]` | not captured | 8.2 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ8]` | 0.117 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ9]` | not captured | 4.09 | only_one_extracted |
+| `qwen3.8-27b` | `screen.dose_compound` | selumetinib | unknown | mismatch |
+| `qwen3.8-27b` | `screen.primary_analyte` | selumetinib | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

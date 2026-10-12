@@ -4,7 +4,7 @@
 
 # chlorhexidine — `Chlorhexidine_Sherertz1993_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has chlorhexidine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -69,14 +69,27 @@ Sherertz RJ et al., Efficacy of antibiotic-coated catheters…, The Journal of i
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 | `gpt-oss:120b` | confirmed | 1.0 (6/6 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[first-compartment t1/2]` | 16.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[first-compartment t1/2]` | not captured | 16.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[second-compartment t1/2]` | 115.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[second-compartment t1/2]` | not captured | 115.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vo]` | 5.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | chlorhexidine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | chlorhexidine | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

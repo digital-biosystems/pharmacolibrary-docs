@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;fruquintinib&quot;,&quot;href&quot;:&quot;drugs/drug_fruquintinib/&quot;},{&quot;label&quot;:&quot;Zhou_2025 \u00b7 estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fruquintinib_Zhou2025_estimate&quot;,&quot;label&quot;:&quot;Zhou_2025_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fruquintinib/Fruquintinib_Zhou2025_estimate.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fruquintinib_Zhou2025_fresco_2_nct04322539&quot;,&quot;label&quot;:&quot;Zhou_2025_fresco_2_nct04322539&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fruquintinib/Fruquintinib_Zhou2025_fresco_2_nct04322539.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fruquintinib_Zhou2025_nct01645215&quot;,&quot;label&quot;:&quot;Zhou_2025_nct01645215&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fruquintinib/Fruquintinib_Zhou2025_nct01645215.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fruquintinib_Zhou2025_nct01975077&quot;,&quot;label&quot;:&quot;Zhou_2025_nct01975077&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fruquintinib/Fruquintinib_Zhou2025_nct01975077.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fruquintinib_Zhou2025_nct04557397&quot;,&quot;label&quot;:&quot;Zhou_2025_nct04557397&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fruquintinib/Fruquintinib_Zhou2025_nct04557397.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fruquintinib_Zhou2025_nct04645940&quot;,&quot;label&quot;:&quot;Zhou_2025_nct04645940&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fruquintinib/Fruquintinib_Zhou2025_nct04645940.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fruquintinib_Zhou2025_overall&quot;,&quot;label&quot;:&quot;Zhou_2025_overall&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fruquintinib/Fruquintinib_Zhou2025_overall.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fruquintinib_Zhou2025_us1_nct03251378&quot;,&quot;label&quot;:&quot;Zhou_2025_us1_nct03251378&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fruquintinib/Fruquintinib_Zhou2025_us1_nct03251378.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fruquintinib_Zhou2025_estimate&quot;,&quot;label&quot;:&quot;Zhou_2025_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fruquintinib/Fruquintinib_Zhou2025_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fruquintinib_Zhou2025_fresco_2_nct04322539&quot;,&quot;label&quot;:&quot;Zhou_2025_fresco_2_nct04322539&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fruquintinib/Fruquintinib_Zhou2025_fresco_2_nct04322539.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fruquintinib_Zhou2025_nct01645215&quot;,&quot;label&quot;:&quot;Zhou_2025_nct01645215&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fruquintinib/Fruquintinib_Zhou2025_nct01645215.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fruquintinib_Zhou2025_nct01975077&quot;,&quot;label&quot;:&quot;Zhou_2025_nct01975077&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fruquintinib/Fruquintinib_Zhou2025_nct01975077.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fruquintinib_Zhou2025_nct04557397&quot;,&quot;label&quot;:&quot;Zhou_2025_nct04557397&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fruquintinib/Fruquintinib_Zhou2025_nct04557397.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fruquintinib_Zhou2025_nct04645940&quot;,&quot;label&quot;:&quot;Zhou_2025_nct04645940&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fruquintinib/Fruquintinib_Zhou2025_nct04645940.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fruquintinib_Zhou2025_overall&quot;,&quot;label&quot;:&quot;Zhou_2025_overall&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fruquintinib/Fruquintinib_Zhou2025_overall.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fruquintinib_Zhou2025_us1_nct03251378&quot;,&quot;label&quot;:&quot;Zhou_2025_us1_nct03251378&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fruquintinib/Fruquintinib_Zhou2025_us1_nct03251378.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fruquintinib — `Fruquintinib_Zhou2025_estimate`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves. · molar_mass_missing:M11: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,27 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+> **Caveats:**
+
+> - `covariates_not_exercised` — the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+> - `molar_mass_missing:M11` — a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule
+
+### Reviewer guidance
+
+**Fruquintinib’s terminal half-life is flagged at 43.22364907201837 versus 0.275, although the paper and model both report 43.2 h.**
+
+The model does not reproduce the paper's terminal half-life (paper 43.2, model 43.2); the numerical comparison reports 0.275 versus 43.22364907201837, but its h-to-SI versus simulated-h unit mismatch makes that check inconclusive. The covariate scenarios were not simulated: the base model was simulated, not the covariate effects the record defines. M11 has no molar mass, and the apparent parameterization assumes F=1, Fm=1, and no molar correction, so it forms 1 mg of metabolite per mg of parent converted rather than one molecule per molecule. Extracted — fruquintinib: CL/F 0.808 L/h, V/F 50.4 L, kabs 2.52 1/h, tlag 0.463 h; M11: CL/F 0.161 L/h, V1/F 11.7 L.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[cl/f].rse_percent`: this record has none, the second reading 1.2; it also differs on 8 more fields. That field does not shape the model.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 ## Citation
 Zhou X et al., Population Pharmacokinetics of Fruquint…, Journal of clinical pharmac… (2025)
   ·  DOI: [10.1002/jcph.70001](https://doi.org/10.1002/jcph.70001)
 
 ## Model component
-<dbs-pgx drug="fruquintinib" model-id="Fruquintinib_Zhou2025_estimate" status="extracted" stale="false" population="patients with refractory metastatic colorectal cancer and healthy volunteers" measured-compound="fruquintinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="fruquintinib" model-id="Fruquintinib_Zhou2025_estimate" status="needs_review" stale="false" population="patients with refractory metastatic colorectal cancer and healthy volunteers" measured-compound="fruquintinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent–metabolite model: parent with 1 compartment(s); metabolite M11: 1 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameters:** 6 extracted, plus 4 covariate effects.
@@ -30,6 +43,8 @@ Zhou X et al., Population Pharmacokinetics of Fruquint…, Journal of clinical p
 **Parameterization:** CL/F, V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F (L/h) | `Q27` · CL/F | 0.808 | L/h | 2.2444444444444445e-07 | [l] / [h] | not captured | exact (1.0) | jcph70001-tbl-0002:row2:col1 | — | not captured |
@@ -100,6 +115,35 @@ Zhou X et al., Population Pharmacokinetics of Fruquint…, Journal of clinical p
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | partly confirmed | 0.571 (12/21 fields) | 9 |
+
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[cl/f].rse_percent` | not captured | 1.2 | mismatch |
+| `qwen3.8-27b` | `parameters[clm/f].rse_percent` | not captured | 2.2 | mismatch |
+| `qwen3.8-27b` | `parameters[ka].rse_percent` | not captured | 7.6 | mismatch |
+| `qwen3.8-27b` | `parameters[lag time].rse_percent` | not captured | 1.1 | mismatch |
+| `qwen3.8-27b` | `parameters[theta_q319_body_weight_power].rse_percent` | not captured | 12.1 | mismatch |
+| `qwen3.8-27b` | `parameters[theta_q319_body_weight_power].rse_percent` | not captured | 9.0 | mismatch |
+| `qwen3.8-27b` | `parameters[v/f ∼ healthy subject fractional change]` | -0.0908 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v/f].rse_percent` | not captured | 0.9 | mismatch |
+| `qwen3.8-27b` | `parameters[vm/f].rse_percent` | not captured | 3.3 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -120,6 +164,25 @@ Zhou X et al., Population Pharmacokinetics of Fruquint…, Journal of clinical p
 | C9_phys_window_Q290 | pass | volume within physiological range | 11.7 L | not captured | not captured | ['jcph70001-tbl-0002:row7:col1'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 50.4 L | not captured | not captured | ['jcph70001-tbl-0002:row3:col1'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_metabolite_built[M11] | not captured | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.0117, 'CL': 4.4722222222222223e-08, 'formation': 2.2444444444444445e-07} | not captured | M11 = compartment M1 with its own numbers |
+| T3_metabolite_output[M11] | not captured | pass | not captured | 3.387245539051647e-05 | not captured | C_M1 (M11) must rise above 0 when the parent is dosed |
+| T3_molar_mass[M11] | not captured | fail | not captured | {'MW': 0.393399, 'MW_m1': 0.0} | not captured | a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule |
+| T3_output_variable | not captured | pass | C_central (measured=fruquintinib) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | ≤2 | 1.9191733286698757e-05 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmin_ss | reference | skipped | ≤2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | pass | 43.2 | 43.22364907201837 | 1.0005 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.275 | 43.22364907201837 | 157.1769 | h→SI vs simulated h |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -128,6 +191,9 @@ Zhou X et al., Population Pharmacokinetics of Fruquint…, Journal of clinical p
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_fruquintinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhou_2025` / `Zhou_2025::estimate`)
+- model: `../../../knowledgebase/drugs/drug_fruquintinib/models/modelica/Fruquintinib_Zhou2025_estimate.mo`
+- deviation: `../../../knowledgebase/drugs/drug_fruquintinib/models/modelica/Fruquintinib_Zhou2025_estimate.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_fruquintinib/models/modelica/Fruquintinib_Zhou2025_estimate.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

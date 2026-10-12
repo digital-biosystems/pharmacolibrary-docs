@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Darchen_1989_3H_RES_binding](drugs/drug_tetrabenazine/pd_Darchen_1989_3H_RES_binding.md) | [3H]reserpine binding to chromaffin granule membranes ← dihydrotetrabenazine (TBZOH) · inhibition effect | — | Darchen F et al., Reserpine binding to chromaffin granule…, Biochemistry (1989) | [10.1021/bi00430a040](https://doi.org/10.1021/bi00430a040) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Darchen_1989_3H_RES_binding](drugs/drug_tetrabenazine/pd_Darchen_1989_3H_RES_binding.md) | [3H]reserpine binding to chromaffin granule membranes ← dihydrotetrabenazine (TBZOH) · inhibition effect | — | Darchen F et al., Reserpine binding to chromaffin granule…, Biochemistry (1989) | [10.1021/bi00430a040](https://doi.org/10.1021/bi00430a040) |
 
 ## ADME sites
 

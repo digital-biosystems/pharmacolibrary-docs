@@ -5,7 +5,7 @@
 
 # amphotericin B — `AmphotericinB_Stott2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778), gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record for liposomal amphotericin B in adults with HIV-associated cryptococcal meningoencephalitis lists CL (0.416 L/h), V (4.566 L) and k21 (2.222 h-1), but k21 — the first-order transfer rate from the peripheral compartment back to the central compartment — was neither emitted nor defaulted, leaving the two-compartment structure (1C) under-parameterized. The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model, which limits confidence in the values. Extracted — amphotericin b: CL 0.416 L/h, V 4.57 L, k21 2.22 h-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has liposomal amphotericin B, the second reading liposomal amphotericin B (AmBisome); it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[first-order transfer of drug from central to peripheral compartments].parameter_id`: this record has Q302, the second reading Q301; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -64,17 +64,20 @@ Stott KE et al., Population pharmacokinetics of liposoma…, The Journal of anti
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[first-order transfer of drug from central to peripheral compartments].parameter_id` | Q302 | Q301 | mismatch |
+| `gpt-oss-120b` | `parameters[first-order transfer of drug from peripheral to central compartment]` | not captured | 2.951 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | 0.416 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | not captured | 0.416 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[first-order transfer of drug from central to peripheral compartments]` | 2.222 | not captured | only_one_extracted |
@@ -138,10 +141,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference/AmphotericinB_Stott2022_reference_modelica.zip" download>AmphotericinB_Stott2022_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference/AmphotericinB_Stott2022_reference_modelica.zip" download>AmphotericinB_Stott2022_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference/AmphotericinB_Stott2022_reference_fmi.zip" download>AmphotericinB_Stott2022_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference/AmphotericinB_Stott2022_reference_matlab.zip" download>AmphotericinB_Stott2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference/AmphotericinB_Stott2022_reference_matlab_simbio.zip" download>AmphotericinB_Stott2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference/AmphotericinB_Stott2022_reference_matlab_simbio.zip" download>AmphotericinB_Stott2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference/AmphotericinB_Stott2022_reference_sbml.zip" download>AmphotericinB_Stott2022_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference/AmphotericinB_Stott2022_reference_cellml.zip" download>AmphotericinB_Stott2022_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

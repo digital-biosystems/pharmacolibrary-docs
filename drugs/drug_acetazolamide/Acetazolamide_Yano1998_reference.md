@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Acetazolamide model rejected due to dimension mismatch on structural parameter V/F, using abstract-only summary statistics.**
+
+The record relies on abstract-only data, where summary statistics stand in for a fitted model. A dimension mismatch was found on the structural parameter for apparent oral volume of distribution. The reported value of 0.231 L/kg(-1) failed the dimensional consistency check. No deviations or substitutions by the model builder were noted. Extracted — acetazolamide: V/F 0.231 l x kg(-1).
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Yano I et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1998)

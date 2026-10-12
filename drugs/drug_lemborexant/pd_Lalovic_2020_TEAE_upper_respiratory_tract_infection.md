@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe a pharmacodynamic mechanism or parameters linking lemborexant plasma concentrations (ng/mL) to the binary TEAE of upper respiratory tract infection; the exposure-response analysis reported no evidence of clinically important drug- or exposure-related activity relative to placebo.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lalovic_2020`
 - **model family:** `linear`
 - **driver:** `pk_record`

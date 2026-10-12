@@ -5,7 +5,7 @@
 
 # Olmesartan — `Olmesartan_Yoshihara2005_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.267), gpt-oss:120b (partly confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — olmesartan: CL/F 6.66 L/h, kabs 1.46 h-1, kel 0.193 h-1, k12 0.061 h-1, k21 0.079 h-1, tlag 0.427 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absorption lag-time: this record has none, the second reading 0.427; it also differs on 10 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption lag-time: this record has none, the second reading 0.427; it also differs on 10 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -72,17 +72,29 @@ Yoshihara K et al., Population pharmacokinetics of olmesart…, Clinical pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.267 (4/15 fields) | 11 |
 | `gpt-oss:120b` | partly confirmed | 0.267 (4/15 fields) | 11 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>22 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption lag-time]` | not captured | 0.427 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption lag-time]` | 0.427 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | not captured | 1.46 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 1.46 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 6.66 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 6.66 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination rate constant]` | not captured | 0.193 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination rate constant]` | 0.193 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rate constant from the central to peripheral compartment]` | not captured | 0.061 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rate constant from the central to peripheral compartment]` | 0.061 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rate constant from the peripheral to central compartment]` | not captured | 0.079 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption lag-time]` | not captured | 0.427 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption lag-time]` | 0.427 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption rate constant]` | not captured | 1.46 | only_one_extracted |

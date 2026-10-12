@@ -5,7 +5,7 @@
 
 # amoxicillin — `Amoxicillin_Arancibia1980_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-5.6-luna (not confirmed, agreement 0.688), gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.588), gpt-5.6-luna (not confirmed, agreement 0.688), gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed 0/3</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (k21, kel, k12 and AUC∞), so that value has no SI equivalent. Extracted — amoxicillin: t1/2z 0.27 h, k21 1.99 h-', kel 1.16 h-', k12 0.92 h-', CL 13.3 liters/h, V 11.8 liters, AUC∞ 37 h-', kabs 0.17 h−1.
 
-A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on `parameters[cib].parameter_id`: this record has Q22, the second reading Q23; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of (mg) f (%)-: this record has none, the second reading 77.4; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -81,15 +81,16 @@ Arancibia A et al., Absorption and disposition kinetics of…, Antimicrobial age
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 3 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.588 (10/17 fields) | 7 |
 | `gpt-5.6-luna` | not confirmed | 0.688 (11/16 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.625 (10/16 fields) | 6 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>18 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -98,6 +99,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-5.6-luna` | `parameters[ka]` | 0.17 | not captured | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[t lagpo]` | 0.25 | not captured | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[urinary recovery over]` | not captured | 287.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[(mg) f (%)-]` | not captured | 77.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc, 0-ac (mg/liter].parameter_id` | Q17 | Q88 | mismatch |
+| `gpt-oss-120b` | `parameters[k,o]` | 1.16 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k2l].parameter_id` | Q302 | Q47 | mismatch |
+| `gpt-oss-120b` | `parameters[ka]` | 0.17 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[urinary recovery over 24 h]` | not captured | 217.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[urinary recovery over]` | not captured | 287.0 | only_one_extracted |
 | `gpt-oss:120b` | `model.bioavailability.theta` | not captured | 100 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc, 0-ac (mg/liter].parameter_id` | Q17 | Q74 | mismatch |
 | `gpt-oss:120b` | `parameters[k,o]` | 1.16 | not captured | only_one_extracted |

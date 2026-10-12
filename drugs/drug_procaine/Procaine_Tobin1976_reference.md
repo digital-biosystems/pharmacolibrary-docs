@@ -5,7 +5,7 @@
 
 # procaine — `Procaine_Tobin1976_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.583), gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,9 +19,13 @@
 
 ### Reviewer guidance
 
+**This paper's disposition core is incomplete; the clearance plausibility check could not be computed.**
+
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Olivarez_2022) cannot stand in for this paper's evidence. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — procaine: t1/2α 5 min, t1/2β 50.2 min, t1/2z 75 minutes, CL 200 mL/h/kg, V 0.51 L/kg.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has procaine, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Tobin T et al., A review of the pharmacology, pharmacok…, British journal of sports m… (1976)
@@ -67,17 +71,23 @@ Tobin T et al., A review of the pharmacology, pharmacok…, British journal of s
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.583 (7/12 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.154 (2/13 fields) | 11 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl]` | 199.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intravenous injection dose]` | not captured | 2.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peak plasma level]` | not captured | 400 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[subcutaneous injection dose]` | not captured | 3.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vz]` | 0.51 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life]` | 75 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life]` | not captured | 75 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[plasma levels peaked]` | not captured | 400 | only_one_extracted |

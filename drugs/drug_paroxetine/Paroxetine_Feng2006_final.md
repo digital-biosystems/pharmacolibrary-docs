@@ -5,7 +5,7 @@
 
 # paroxetine — `Paroxetine_Feng2006_final`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.421), gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 One parameter of the paroxetine three-compartment model was reported in a unit that could not be expressed in SI, so the parameter arrived without a usable value and the dimension check on a structural parameter failed. The fitted parameters themselves are Vmax 32.5 µg h⁻¹, Km 83.4 µg l⁻¹, V2 6.70 l, V3 102.1 l, Q 12.3 l h⁻¹, kabs 8.8 h⁻¹ and Vd/F 1010.0 L. A second reader also disagreed on several covariate-effect values, reading theta_q61_im as 182 and theta_q61_pm as 125 where this record lists theta_q367_im 182, theta_q367_um 3670, theta_vmax_pm 125 and theta_vmax_um as absent. Extracted — paroxetine: Vmax 32.5 µg h -1, Km 83.4 µg l -1, V2 6.7 l, V3 102 l, Q 12.3 l h -1, kabs 8.8 h -1, V 1.01e+03 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has paroxetine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has paroxetine, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -93,17 +93,29 @@ Feng Y et al., Paroxetine: population pharmacokinetic…, British journal of cli
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.421 (8/19 fields) | 11 |
 | `gpt-oss:120b` | not confirmed | 0.429 (9/21 fields) | 12 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>23 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[theta_q352_pm]` | 125 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q367_im]` | 182 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q367_um]` | 3670 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q61_im]` | not captured | 182 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q61_pm]` | not captured | 125 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q61_um]` | not captured | 3670 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q900_wt_v2]` | 1.83 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v2_wt_v2]` | not captured | 1.83 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 2].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | paroxetine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | paroxetine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[theta_q367_em]` | 454 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q367_im]` | 182 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q367_pm]` | 125 | not captured | only_one_extracted |

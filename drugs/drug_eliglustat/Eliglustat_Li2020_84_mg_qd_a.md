@@ -4,7 +4,7 @@
 
 # eliglustat — `Eliglustat_Li2020_84_mg_qd_a`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -62,11 +62,12 @@ JingLi jing.li3@sanofi.com et al., Impact of hepatic and renal impairment… (20
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (5/5 fields) | none |
 | `gpt-oss:120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
 
 <details><summary>2 field(s) a reader read differently</summary>

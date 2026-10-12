@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ciclosporin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclosporin_Han2013_reference&quot;,&quot;label&quot;:&quot;Han_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciclosporin_Kauv2025_reference&quot;,&quot;label&quot;:&quot;Kauv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclosporin_Kauv2025_reference&quot;,&quot;label&quot;:&quot;Kauv_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciclosporin_Han2013_reference&quot;,&quot;label&quot;:&quot;Han_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # ciclosporin
 
@@ -26,15 +26,15 @@ Ciclosporin is an immunosuppressant used to treat autoimmune conditions such as 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:05 | 4:00 | 2/1/0 | 1/0/2 | 0/0/0 | 213,191/21,505 | einfracz / qwen3.8-27b | 9 | 6/3 | 9/0 | 0 |
+| 2026-10-07 00:05 | 4:00 | 1/1/1 | 1/0/2 | 0/0/0 | 213,191/21,505 | einfracz / qwen3.8-27b | 9 | 6/3 | 9/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Han_2013_reference](drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Han K et al., Population pharmacokinetics of cyclospo…, The AAPS journal (2013) | [10.1208/s12248-013-9500-8](https://doi.org/10.1208/s12248-013-9500-8) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kauv_2025_reference](drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Kauv J et al., Population pharmacokinetics of mycophen…, European journal of pharmac… (2025) | [10.1016/j.ejps.2025.107290](https://doi.org/10.1016/j.ejps.2025.107290) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Gao_2022_reference](drugs/drug_ciclosporin/Ciclosporin_Gao2022_reference.md) | — | 2-compartment (no model) | 6 | Gao X et al., Population Pharmacokinetics of Cyclospo…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.933739](https://doi.org/10.3389/fphar.2022.933739) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Kauv_2025_reference](drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Kauv J et al., Population pharmacokinetics of mycophen…, European journal of pharmac… (2025) | [10.1016/j.ejps.2025.107290](https://doi.org/10.1016/j.ejps.2025.107290) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): k12, k21</sub><br><sub>route_to: `scholar`</sub> | [Han_2013_reference](drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Han K et al., Population pharmacokinetics of cyclospo…, The AAPS journal (2013) | [10.1208/s12248-013-9500-8](https://doi.org/10.1208/s12248-013-9500-8) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Gao_2022_reference](drugs/drug_ciclosporin/Ciclosporin_Gao2022_reference.md) | — | 2-compartment (no model) | 6 | Gao X et al., Population Pharmacokinetics of Cyclospo…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.933739](https://doi.org/10.3389/fphar.2022.933739) |
 
 ## Pharmacodynamics (PD)
 
@@ -80,7 +80,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 304 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

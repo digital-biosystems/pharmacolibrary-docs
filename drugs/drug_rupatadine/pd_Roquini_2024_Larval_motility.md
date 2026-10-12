@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R06A&quot;,&quot;href&quot;:&quot;atc/R06A.md&quot;},{&quot;label&quot;:&quot;rupatadine&quot;,&quot;href&quot;:&quot;drugs/drug_rupatadine/&quot;},{&quot;label&quot;:&quot;Roquini_2024 \u00b7 PD Larval motility&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rupatadine_Santamara2017_base&quot;,&quot;label&quot;:&quot;Santamar\u00eda_2017_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rupatadine/Rupatadine_Santamara2017_base.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rupatadine_Santamara2017_base&quot;,&quot;label&quot;:&quot;Santamar\u00eda_2017_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rupatadine/Rupatadine_Santamara2017_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Larval motility — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
@@ -19,6 +19,10 @@
 **As extracted:** Rupatadine (concentrations from the PK model of Santamaria_2021) drives Larval motility (in %): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> The paper describes a concentration- and time-dependent inhibitory effect of rupatadine on larval motility in A. cantonensis L1 larvae, with the EC50 determined via nonlinear regression to be 38.1 μM. No specific mechanism (e.g., production/elimination) or rate constants are provided, only the direct concentration-response relationship.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Roquini_2024`
 - **model family:** `sigmoid_emax`

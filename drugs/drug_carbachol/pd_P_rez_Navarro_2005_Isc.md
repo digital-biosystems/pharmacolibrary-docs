@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates carbachol concentration to the carbachol-evoked short-circuit current (Isc) using an Emax-type stimulation model, but the available excerpts provide no mechanism, no effect form, and no potency or rate parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pérez-Navarro_2005`
 - **model family:** `emax`
 - **driver:** `not_resolved`

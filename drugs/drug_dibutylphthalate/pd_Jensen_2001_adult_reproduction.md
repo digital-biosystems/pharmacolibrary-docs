@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dibutyl phthalate dose (mg/kg) inhibits adult reproduction; the paper excerpts do not state the mechanism or model form. Reported potency values are EC50 = 68 mg/kg and EC10 = 14 mg/kg.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jensen_2001`
 - **model family:** `unknown`
 - **driver:** `dose_only`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Flurazepam concentrations (microM) act on the GABA enhancement of [3H]flunitrazepam binding to BzR (Emax of GABA stimulation), with an EC50 of 1.1 microM; the paper excerpts do not state the mechanism or any other model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wong_1994`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

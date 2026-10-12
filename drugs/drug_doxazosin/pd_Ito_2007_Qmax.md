@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxazosin_Chrisp1990_reference&quot;,&quot;label&quot;:&quot;Chrisp_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Young1988_reference&quot;,&quot;label&quot;:&quot;Young_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Young1988_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_unknown2023_reference&quot;,&quot;label&quot;:&quot;unknown_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Qmax — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.556), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+# Qmax — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -18,7 +18,7 @@
 
 **Model:** No model was generated from this record.
 
-> The paper describes a receptor occupancy model where doxazosin plasma concentrations drive the improvement in maximum urinary flow rate (Qmax) by competitively inhibiting physiological agonists at the alpha-1 adrenoceptor, although the specific mechanism of the transduction step is not fully detailed in the provided excerpts. The record lists an EBSL estimate of 0.0953 ml s-1 and a Tamsulosin KI of 0.04 nm, but the paper does not provide specific potency values (such as IC50 or EC50) or rate constants (such as ke0) for doxazosin.
+> Doxazosin plasma concentrations (ng ml -1) stimulate the maximum urinary flow rate (Qmax, ml s -1) via a receptor occupancy mechanism, with a baseline effect (EBSL) of 0.963 ml s -1 and a maximum effect (EBmax) of 8.86 ml s -1. The model includes a receptor affinity parameter (R0) of 4260 nm, a transducer concentration (T0) of 0.01 nm, and a rate constant (KAR) of 5.17 h -1.
 >
 > <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
@@ -47,26 +47,25 @@ Ito K et al., Assessment of alpha1-adrenoceptor antag…, British journal of cli
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `openai:gpt-6-luna` | not confirmed | 0.556 (5/9 fields) | 4 |
-| `gpt-oss:120b` | not confirmed | 0.5 (4/8 fields) | 4 |
+| `einfracz:gpt-oss-120b` | secondary_empty | 0.0 (0/8 fields) | 8 |
 
 <details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[Q22]` | not captured | 0.0953 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q22]` | not captured | 0.467 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q358]` | 0.0953 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q358]` | 0.467 | not captured | only_one_extracted |
-| `openai:gpt-6-luna` | `driver_compound` | doxazosin (via receptor occupancy ratio) | doxazosin | mismatch |
-| `openai:gpt-6-luna` | `effect_form` | unknown | additive | mismatch |
-| `openai:gpt-6-luna` | `parameters[Q100].value` | 0.01 | 5.17 | mismatch |
-| `openai:gpt-6-luna` | `parameters[Q331]` | 5.17 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `driver_compound` | doxazosin | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_direction` | stimulation | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | unknown | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | unknown | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q100]` | 5.17 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q320]` | 8.86 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q324]` | 0.963 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q333]` | 4260 | not captured | only_one_extracted |
 
 </details>
 

@@ -5,7 +5,7 @@
 
 # fluorouracil — `Fluorouracil_Kuzuya1994_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (primary re-run, agreement 0.111), gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -63,17 +63,26 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | primary re-run | 0.111 (1/9 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.0 (0/13 fields) | 13 |
 
-<details><summary>13 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[clp]` | not captured | 1.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.71 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ratio of peritoneal fluid auc to serum auc]` | not captured | 1400 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2p]` | not captured | 1.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vds/f]` | not captured | 78 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | fluorouracil | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | fluorouracil | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `gpt-oss:120b` | `parameters[clp]` | 1.8 | not captured | only_one_extracted |

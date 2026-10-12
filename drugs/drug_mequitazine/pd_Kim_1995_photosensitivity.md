@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The available record indicates a dose-dependent stimulatory effect of mequitazine on photosensitivity, but no specific pharmacodynamic model family, mechanism, or quantitative parameters are described in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kim_1995`
 - **model family:** `unknown`
 - **driver:** `dose_only`

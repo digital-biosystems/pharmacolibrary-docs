@@ -5,7 +5,7 @@
 
 # ondansetron — `Ondansetron_Baek2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6), gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record lists V as 1.8 mL (labeled 'V brain') alongside CL of 525.0 mL/h for ondansetron in beagles; a volume of distribution of 1.8 mL is far outside any plausible physiological range for this species, which is why the clearance/volume plausibility check failed. The other reported statistics (Cmax 11.5 ng/mL, AUClast 15.9 ng·h/mL, terminal half-life 1.3 h) come from the paper's abstract only, so summary statistics stood in for a fitted model rather than parameter estimates from the full text. Extracted — ondansetron: Cmax 11.5 ng/mL, AUClast 15.9 ng·h/mL, t1/2z 1.3 h, CL 525 mL⋅h -1, V 1.8 mL.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc0‐last: this record has none, the second reading 15.9; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 525.0, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -73,17 +73,22 @@ Baek IH et al., Pharmacokinetic modeling and Monte Carl…, Journal of veterinar
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.6 (6/10 fields) | 4 |
 | `gpt-oss:120b` | partly confirmed | 0.5 (5/10 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl]` | 525.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life calculated from the terminal phase]` | 1.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | not captured | 1.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v brain]` | 1.8 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc0‐last]` | not captured | 15.9 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life calculated from the terminal phase]` | 1.3 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life]` | not captured | 1.3 | only_one_extracted |

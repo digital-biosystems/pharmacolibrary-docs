@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts describing the PD model; the record indicates clomipramine concentrations drive inhibition of [(3)H]DASB and [(3)H]S-citalopram binding to SERT, but no mechanism, model family, or potency/rate values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Apparsundaram_2008`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

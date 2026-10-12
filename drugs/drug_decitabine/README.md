@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Fujimoto_2010_inhibition](drugs/drug_decitabine/pd_Fujimoto_2010_inhibition.md) | cell growth inhibition ← decitabine · direct Emax (saturable) effect | — | Fujimoto J et al., Validation of a novel statistical model…, Cancer prevention research… (2010) | [10.1158/1940-6207.CAPR-10-0129](https://doi.org/10.1158/1940-6207.CAPR-10-0129) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Fujimoto_2010_inhibition](drugs/drug_decitabine/pd_Fujimoto_2010_inhibition.md) | cell growth inhibition ← decitabine · direct Emax (saturable) effect | — | Fujimoto J et al., Validation of a novel statistical model…, Cancer prevention research… (2010) | [10.1158/1940-6207.CAPR-10-0129](https://doi.org/10.1158/1940-6207.CAPR-10-0129) |
 
 ## ADME sites
 

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe the mechanism, stating only that isoflurane concentration in vol% additively inhibits median power frequency. The record lists an intercept C0,iso of 1.30 vol% and a coefficient a of -0.0031 yr-1.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Röpcke_1999`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

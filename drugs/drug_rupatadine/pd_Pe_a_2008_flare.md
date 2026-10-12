@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R06A&quot;,&quot;href&quot;:&quot;atc/R06A.md&quot;},{&quot;label&quot;:&quot;rupatadine&quot;,&quot;href&quot;:&quot;drugs/drug_rupatadine/&quot;},{&quot;label&quot;:&quot;Pe\u00f1a_2008 \u00b7 PD histamine-induced flare reaction&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rupatadine_Santamara2017_base&quot;,&quot;label&quot;:&quot;Santamar\u00eda_2017_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rupatadine/Rupatadine_Santamara2017_base.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rupatadine_Santamara2017_base&quot;,&quot;label&quot;:&quot;Santamar\u00eda_2017_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rupatadine/Rupatadine_Santamara2017_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # histamine-induced flare reaction — PD  <span class="pk-badge pk-badge--red">rejected</span>
@@ -17,6 +17,10 @@
 **As extracted:** Rupatadine, desloratadine drive histamine-induced flare reaction: indirect response — drug inhibits the production of histamine-induced flare reaction.
 
 **Model:** No model was generated from this record.
+
+> The record describes an indirect response model (Inhib-I) where rupatadine (and desloratadine) inhibits the histamine-induced flare reaction, but the provided paper excerpts do not specify the mechanism details, driver concentrations, or any quantitative parameters such as Imax, IC50, or rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Peña_2008`
 - **model family:** `indirect_response_i`

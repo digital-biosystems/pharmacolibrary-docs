@@ -5,7 +5,7 @@
 
 # propacetamol — `Propacetamol_Krekels2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.733). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.733). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record links propacetamol to paracetamol by hydrolysis with no link parameter, so paracetamol has no quantified clearance path from the propacetamol dose (unlinked metabolite). The intercompartmental clearance Q is reported as 1.46 mL/min/kgn, a unit that could not be converted to SI, so the parameter had no usable numeric value. A second reader also disputes the structure, keeping only the paracetamol-to-glucuronide and paracetamol-to-sulphate metabolism links, and reads different additive error parameters (plasma 0.354 mg/L absent, urine 0.223 present, bioavailability factor 11.3 present). Extracted — propacetamol: V1 1.06 L/kg, CL 0.266 mL/min/kg, Q 1.46 mL/min/kgn, n_transit 1.4.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has propacetamol → paracetamol (hydrolysis); paracetamol → paracetamol-glucuronide (metabolism); paracetamol → paracetamol-sulphate (metabolism), the second reading paracetamol → paracetamol-glucuronide (metabolism); paracetamol → paracetamol-sulphate (metabolism); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has propacetamol, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -90,17 +90,30 @@ Krekels EH et al., Developmental changes rather than repea…, European journal 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (3/15 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.733 (11/15 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['propacetamol', 'paracetamol', 'hydrolysis'], ['paracetamol', 'paracetamol-glucuronide', 'metabolism'], ['paracetamol', 'paracetamol-sulphate', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl1]` | not captured | 0.266 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl1]` | 0.266 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2]` | not captured | 1.46 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2]` | 1.46 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl4]` | 0.285 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[n]` | not captured | 1.40 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[n]` | 1.40 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | not captured | 1.06 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | 1.06 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | propacetamol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | paracetamol | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [['propacetamol', 'paracetamol', 'hydrolysis'], ['paracetamol', 'paracetamol-glucuronide', 'metabolism'], ['paracetamol', 'paracetamol-sulphate', 'metabolism']] | [['paracetamol', 'paracetamol-glucuronide', 'metabolism'], ['paracetamol', 'paracetamol-sulphate', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[mf]` | not captured | 11.3 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[p plasma, additive]` | 0.354 | not captured | only_one_extracted |

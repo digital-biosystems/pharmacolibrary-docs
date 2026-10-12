@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Meglumine antimonate (Glucantime) inhibits L. major promastigote viability measured by MTT, with an EC50 of 11.83 ± 0.02 μg/ml; the paper excerpts do not state the mechanism or effect model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zolfaghari_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

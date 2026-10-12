@@ -18,7 +18,7 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> Citalopram concentration (mg l⁻¹) increases the individually heart-rate-corrected QT interval (QTci, ms) via a linear concentration–effect model with an effect compartment (equilibration half-time t_eq = 1.43 h), with a slope of 40.0 ms l mg⁻¹; baseline QTci0 was 429 ms in women and 420 ms in men, with an age covariate ΔQTci0,age of 1.07. An Emax model was also reported (Emax 20 ms, EC50 0.2 mg l⁻¹), but the linear model was selected; the individual heart-rate correction exponent α was 0.364.
+> Citalopram plasma concentration (mg/l) prolongs the individually heart-rate-corrected QT interval (QTci, ms) via a linear concentration-effect model with an effect compartment (effect delay half-life t½,eq = 1.43 h, t_eq ≈ 1.4 h); the slope is 40.0 ms·l·mg⁻¹, with baseline QTci0 of 429 ms in women and 420 ms in men. Although Emax (20 ms) and EC50 (0.2 mg/l) values appear, the paper states the nonlinear Emax models were overparameterized and the linear model was chosen.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

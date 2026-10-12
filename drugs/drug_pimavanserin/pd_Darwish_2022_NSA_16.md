@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pimavanserin AUC0–24 (ng × h/mL) acts on the NSA-16 score via a sigmoid Emax time-course model in which exposure reduces (inhibits) the score proportionately; the time to half-maximal placebo response T50 was 9.58 weeks and the Hill coefficient was 1.19. At the median AUC0–24 of 1465 ng × h/mL (34-mg dose), the predicted NSA-16 reduction at week 26 was 10.5 versus 8.0 for placebo; no Imax, IC50/EC50, Emax, kin, kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Darwish_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

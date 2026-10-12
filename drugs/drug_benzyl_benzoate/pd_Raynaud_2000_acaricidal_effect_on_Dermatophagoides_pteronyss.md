@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Benzyl benzoate dose (g/m2) produces an acaricidal (inhibitory) effect on Dermatophagoides pteronyssinus, with an EC50 of 0.06 g/m2; the paper excerpts do not state the mechanism or model form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Raynaud_2000`
 - **model family:** `unknown`
 - **driver:** `dose_only`

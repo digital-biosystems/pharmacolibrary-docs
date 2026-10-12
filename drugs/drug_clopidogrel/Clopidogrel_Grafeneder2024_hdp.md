@@ -5,7 +5,7 @@
 
 # clopidogrel — `Clopidogrel_Grafeneder2024_hdp`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.118), gpt-5.6-luna (not confirmed, agreement 0.077). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.471), gpt-oss:120b (not confirmed, agreement 0.118), gpt-5.6-luna (not confirmed, agreement 0.077). The first reading is what the record holds.">cross-check: disputed 0/3</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — clopidogrel: Cmax 11 ng/ml, Cmax_ratio 0.4, AUClast 1.69e+03 ng/ml·min; clopidogrel active metabolite: Cmax 4.6 ng/ml, AUClast 129 ng/ml·min; pantoprazole: Cmax 3.4 μg/ml, AUClast 306 μg/ml·min, t1/2z 124 min, CL 790 ml/min, V 4.06e+04 ml.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has clopidogrel, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -154,15 +154,16 @@ Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney internat
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 3 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.471 (8/17 fields) | 9 |
 | `gpt-oss:120b` | not confirmed | 0.118 (2/17 fields) | 15 |
 | `gpt-5.6-luna` | not confirmed | 0.077 (1/13 fields) | 12 |
 
-<details><summary>27 field(s) a reader read differently</summary>
+<details><summary>36 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -178,6 +179,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-5.6-luna` | `parameters[vd]` | not captured | 7528 | only_one_extracted |
 | `gpt-5.6-luna` | `screen.dose_compound` | clopidogrel | clopidogrel and pantoprazole | mismatch |
 | `gpt-5.6-luna` | `screen.primary_analyte` | clopidogrel | clopidogrel and its active metabolite | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[auclast [ug/ml min]]` | 306 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance [ml/min]]` | not captured | 790 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance [ml/min]]` | 790 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax [ug/ml]]` | 3.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 [min]]` | not captured | 124 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 [min]]` | 124 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd [ml]]` | not captured | 40609 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd [ml]]` | 40609 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auclast [ug/ml min]]` | 306 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auclast_cam [ng/ml min]]` | 129 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auclast_clo [ng/ml min]]` | 1686 | not captured | only_one_extracted |

@@ -5,7 +5,7 @@
 
 # telmisartan — `Telmisartan_Huang2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The model was built, but telmisartan's bioavailability, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — telmisartan: CL 25.1 L/h, V2 30 L, V3 958 L, Q 14.6 L/h, kabs 0.571 h -1, Fab 51.1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl].value`: this record has 25.1, the second reading 8.2; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 25.1, the second reading 8.2; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -93,17 +93,25 @@ Huang L et al., Effects of UGT1A1 Polymorphism, Gender…, European journal of d
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.462 (6/13 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.5 (6/12 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl].value` | 25.1 | 8.2 | mismatch |
+| `gpt-oss-120b` | `parameters[f1].value` | 51.1 | 14 | mismatch |
+| `gpt-oss-120b` | `parameters[ka].value` | 0.571 | 9.4 | mismatch |
+| `gpt-oss-120b` | `parameters[q].value` | 14.6 | 12.6 | mismatch |
+| `gpt-oss-120b` | `parameters[v 2].value` | 30 | 20.9 | mismatch |
+| `gpt-oss-120b` | `parameters[v 3].value` | 958 | 21.7 | mismatch |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 500.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl].value` | 25.1 | 8.2 | mismatch |
 | `gpt-oss:120b` | `parameters[f1].value` | 51.1 | 14 | mismatch |
 | `gpt-oss:120b` | `parameters[ka].value` | 0.571 | 9.4 | mismatch |
@@ -170,7 +178,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_telmisartan/Telmisartan_Huang2019_reference/Telmisartan_Huang2019_reference_modelica.zip" download>Telmisartan_Huang2019_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_telmisartan/Telmisartan_Huang2019_reference/Telmisartan_Huang2019_reference_fmi.zip" download>Telmisartan_Huang2019_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Huang2019_reference/Telmisartan_Huang2019_reference_matlab.zip" download>Telmisartan_Huang2019_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Huang2019_reference/Telmisartan_Huang2019_reference_matlab_simbio.zip" download>Telmisartan_Huang2019_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Huang2019_reference/Telmisartan_Huang2019_reference_matlab_simbio.zip" download>Telmisartan_Huang2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Huang2019_reference/Telmisartan_Huang2019_reference_sbml.zip" download>Telmisartan_Huang2019_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Huang2019_reference/Telmisartan_Huang2019_reference_cellml.zip" download>Telmisartan_Huang2019_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

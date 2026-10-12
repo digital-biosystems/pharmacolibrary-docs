@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts or state the mechanism; the record indicates bethanechol stimulates Cl(-) secretion via an Emax-type model, but no potency (EC50, Emax) or rate values are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mrnka_2005`
 - **model family:** `emax`
 - **driver:** `not_resolved`

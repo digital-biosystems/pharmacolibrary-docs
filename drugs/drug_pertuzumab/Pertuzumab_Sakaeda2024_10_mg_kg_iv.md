@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;pertuzumab&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/&quot;},{&quot;label&quot;:&quot;Sakaeda_2024 \u00b7 10_mg_kg_iv&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pertuzumab_Luo2017_reference&quot;,&quot;label&quot;:&quot;Luo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Luo2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pertuzumab_Sakaeda2024_10_mg_kg_iv&quot;,&quot;label&quot;:&quot;Sakaeda_2024_10_mg_kg_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pertuzumab_Luo2017_reference&quot;,&quot;label&quot;:&quot;Luo_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Luo2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pertuzumab_Sakaeda2024_10_mg_kg_iv&quot;,&quot;label&quot;:&quot;Sakaeda_2024_10_mg_kg_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pertuzumab — `Pertuzumab_Sakaeda2024_10_mg_kg_iv`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.059). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,14 +17,22 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The model does not reproduce the paper's time of the peak (tmax) (paper 72, model 0.183).**
+
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax, AUC∞ and AUCt), so that value has no SI equivalent. Extracted — pertuzumab: tmax 0.0833 h, Cmax 288 μg/mL, t1/2z 612 h, AUC∞ 1.08e+05 μg·h/mL, AUCt 5.96e+04 μg·h/mL, CL 0.00158 mL/min/kg, Vss 0.0782 L/kg, MRT 844 h, … (+1).
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pertuzumab, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Sakaeda M et al., [Pharmacological properties and clinica…, Nihon yakurigaku zasshi. Fo… (2024)
   ·  DOI: [10.1254/fpj.24022](https://doi.org/10.1254/fpj.24022)
 
 ## Model component
-<dbs-pgx drug="pertuzumab" model-id="Pertuzumab_Sakaeda2024_10_mg_kg_iv" status="extracted" stale="false" population="healthy adult males" measured-compound="pertuzumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="pertuzumab" model-id="Pertuzumab_Sakaeda2024_10_mg_kg_iv" status="needs_review" stale="false" population="healthy adult males" measured-compound="pertuzumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 9 extracted.
@@ -32,6 +40,8 @@ Sakaeda M et al., [Pharmacological properties and clinica…, Nihon yakurigaku z
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Tmax (h) | `Q56` · tmax | 0.0833 | h | 299.88 | [h] | not captured | exact (1.0) | Sakaeda_2024_table_3:row0:col1 | — | not captured |
@@ -69,6 +79,42 @@ Sakaeda M et al., [Pharmacological properties and clinica…, Nihon yakurigaku z
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.059 (1/17 fields) | 16 |
+
+<details><summary>16 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | not captured | 90.2 | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[auc0-672h].value` | 59600 | 31900 | mismatch |
+| `gpt-oss-120b` | `parameters[aucinf]` | 108000 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 0.0564 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 0.00158 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax].value` | 288 | 101 | mismatch |
+| `gpt-oss-120b` | `parameters[f]` | not captured | 90.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | 844 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pertuzumabfuc+sa+]` | 57.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 612 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax a]` | not captured | 72 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 0.0833 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss]` | 0.0782 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | pertuzumab | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | pertuzumab | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -91,6 +137,25 @@ Sakaeda M et al., [Pharmacological properties and clinica…, Nihon yakurigaku z
 | C9_phys_window_Q61 | pass | volume within physiological range | 4.01 L | not captured | not captured | ['Luo_2017:review'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 5.47 L | not captured | not captured | ['Sakaeda_2024_table_3:row6:col1'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=pertuzumab) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_cmax | reference | skipped | not captured | 0.004985600308996566 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | not captured | 0.004985600308996566 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | not captured | 0.004985600308996566 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | not captured | 0.004985600308996566 | not captured | non-numeric value |
+| T1_tmax | reference | fail | 72.0 | 0.18333333335172414 | 0.0025 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 24.0 | 0.18333333335172414 | 0.0076 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 24.0 | 0.18333333335172414 | 0.0076 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 24.0 | 0.18333333335172414 | 0.0076 | h→SI vs simulated h |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -99,6 +164,9 @@ Sakaeda M et al., [Pharmacological properties and clinica…, Nihon yakurigaku z
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_pertuzumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sakaeda_2024` / `Sakaeda_2024::10_mg_kg_iv`)
+- model: `../../../knowledgebase/drugs/drug_pertuzumab/models/modelica/Pertuzumab_Sakaeda2024_10_mg_kg_iv.mo`
+- deviation: `../../../knowledgebase/drugs/drug_pertuzumab/models/modelica/Pertuzumab_Sakaeda2024_10_mg_kg_iv.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_pertuzumab/models/modelica/Pertuzumab_Sakaeda2024_10_mg_kg_iv.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -110,7 +178,7 @@ Sakaeda M et al., [Pharmacological properties and clinica…, Nihon yakurigaku z
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv/Pertuzumab_Sakaeda2024_10_mg_kg_iv_modelica.zip" download>Pertuzumab_Sakaeda2024_10_mg_kg_iv_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv/Pertuzumab_Sakaeda2024_10_mg_kg_iv_fmi.zip" download>Pertuzumab_Sakaeda2024_10_mg_kg_iv_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv/Pertuzumab_Sakaeda2024_10_mg_kg_iv_matlab.zip" download>Pertuzumab_Sakaeda2024_10_mg_kg_iv_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv/Pertuzumab_Sakaeda2024_10_mg_kg_iv_matlab_simbio.zip" download>Pertuzumab_Sakaeda2024_10_mg_kg_iv_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv/Pertuzumab_Sakaeda2024_10_mg_kg_iv_matlab_simbio.zip" download>Pertuzumab_Sakaeda2024_10_mg_kg_iv_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv/Pertuzumab_Sakaeda2024_10_mg_kg_iv_sbml.zip" download>Pertuzumab_Sakaeda2024_10_mg_kg_iv_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_pertuzumab/Pertuzumab_Sakaeda2024_10_mg_kg_iv/Pertuzumab_Sakaeda2024_10_mg_kg_iv_cellml.zip" download>Pertuzumab_Sakaeda2024_10_mg_kg_iv_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

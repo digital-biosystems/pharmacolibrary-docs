@@ -4,7 +4,7 @@
 
 # eplerenone — `Eplerenone_Oishi2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — eplerenone: CL/F 5.31 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has eplerenone, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has eplerenone, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -68,17 +68,22 @@ Oishi M et al., Population Pharmacokinetics of Eplereno…, Journal of clinical 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[apparent oral clearance]` | not captured | 5.31 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the population mean of apparent oral clearance (cl/f) in japanese chf patients]` | 5.31 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | eplerenone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | eplerenone | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[clcr was decreased from]` | not captured | 80 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[population mean of apparent oral clearance]` | not captured | 5.31 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[the population mean of apparent oral clearance (cl/f) in japanese chf patients]` | 5.31 | not captured | only_one_extracted |

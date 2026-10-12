@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Penfluridol concentrations (microM) inhibit basal PRL secretion with an Emax-type model; the paper reports an EC50 of 0.5–1 microM, but the excerpts do not state the mechanism (e.g., production vs. elimination inhibition) or Imax/Emax values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schettini_1983`
 - **model family:** `emax`
 - **driver:** `not_resolved`

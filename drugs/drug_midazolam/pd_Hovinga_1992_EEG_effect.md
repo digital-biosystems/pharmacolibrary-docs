@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Midazolam plasma concentrations (µg l⁻¹) were directly linked, without a time delay or effect compartment, to the increase in total EEG amplitude in the 11.5–30 Hz fronto-central lead (µV s⁻¹) after a 2.5 mg kg⁻¹ i.v. dose in rats, described by a sigmoid Emax model with baseline E0 = 58 ± 5 µV s⁻¹, absolute Emax = 59 ± 3 µV s⁻¹ (106 ± 10% of baseline), EC50 = 50 ± 6 µg l⁻¹ (unbound EC50 = 2.4 ± 0.7 µg l⁻¹) and shape factor 1.6 ± 0.3; the paper does not state a production/elimination mechanism beyond this direct concentration–effect relation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hovinga_1992`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

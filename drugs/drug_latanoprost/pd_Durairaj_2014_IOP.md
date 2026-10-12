@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper excerpt is unavailable, so the specific mechanism by which latanoprost affects intraocular pressure is not stated. Consequently, key potency and rate values such as IC50 or Emax are not provided in the available text.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Durairaj_2014`
 - **model family:** `disease_progression`
 - **driver:** `not_resolved`

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cocaine plasma concentrations (ng/ml) were linked to heart rate (beats/min) via a linear stimulation model with an effect coefficient of 0.035 beats/min/(ng/ml). The paper excerpts do not describe the underlying mechanism, potency values, or rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Noe_1991`
 - **model family:** `linear`
 - **driver:** `cited_pk`

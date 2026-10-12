@@ -4,7 +4,7 @@
 
 # obinutuzumab — `Obinutuzumab_Gibiansky2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.926). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.964), gpt-oss:120b (not confirmed, agreement 0.926). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
+**The record was rejected because a structural parameter's unit could not be converted to SI, causing a dimension mismatch.**
+
+A reported unit for a structural parameter was not recognized, so the parameter lacked a standard SI value. This resulted in a dimension mismatch on that parameter, leading to rejection. The second reader disagreed on the dose compound and primary analyte, marking them as unknown instead of obinutuzumab. Extracted — obinutuzumab: CL 0.196 L/day, CLint 0.0775 L/day, V1 2.68 L, V2 0.922 L, Q 1.03 L/day.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has obinutuzumab, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Gibiansky E et al., Population Pharmacokinetics of Obinutuz…, CPT: pharmacometrics & syst… (2014)
@@ -104,17 +108,19 @@ Gibiansky E et al., Population Pharmacokinetics of Obinutuz…, CPT: pharmacomet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.964 (27/28 fields) | 1 |
 | `gpt-oss:120b` | not confirmed | 0.926 (25/27 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[kdes]` | not captured | 0.0291 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | obinutuzumab | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | obinutuzumab | unknown | mismatch |
 

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Metaproterenol (orciprenaline) concentrations (μM) stimulate red blood cell deformability, measured as elongation index, via adenylyl cyclase/cAMP-mediated signaling; the EI–concentration relationship was fitted with a sigmoid Emax model, with EC50 of 2.7 ± 0.8 to 4.5 ± 4.2 μM (at shear stresses ≥5 Pa; no effect below 3 Pa).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Semenov_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -5,7 +5,7 @@
 
 # amoxicillin — `Amoxicillin_Foulds1983_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273), gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — amoxicillin: CL 266 ml/min, V 12.3 liters.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has none, the second reading 32; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 266, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,17 +60,26 @@ Foulds G et al., Pharmacokinetics of sulbactam in humans, Antimicrobial agents a
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.273 (3/11 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.583 (7/12 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 266 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | not captured | 32 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | 0.66 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q44]` | 75.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q58]` | 40 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q75]` | 29.0 | 29.0 | mismatch |
+| `gpt-oss-120b` | `values[Q79]` | 65 | 65 | mismatch |
+| `gpt-oss-120b` | `values[Q87]` | not captured | 0.66 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q32]` | not captured | 32 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q44]` | 75.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q58]` | 40 | not captured | only_one_extracted |

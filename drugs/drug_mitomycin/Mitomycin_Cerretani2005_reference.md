@@ -4,7 +4,7 @@
 
 # mitomycin — `Mitomycin_Cerretani2005_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Only clearance was extracted — no volume; aUC has no unit.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mitomycin: Cmax 0.14 microg/ml, AUC 15.8 mg x min/L, t1/2z 83.7 min, CL 72 L/h, fe 7.21 %.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of auc: this record has none, the second reading 15.8; it also differs on 10 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Cerretani D et al., Pharmacokinetics of mitomycin C after r…, Journal of chemotherapy (Fl… (2005)
@@ -60,6 +68,37 @@ Cerretani D et al., Pharmacokinetics of mitomycin C after r…, Journal of chemo
 - no GROBID TEI available — transcribed from abstract in Cerretani_2005_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | partly confirmed | 0.267 (4/15 fields) | 11 |
+
+<details><summary>11 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[auc]` | not captured | 15.8 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cl]` | not captured | 72 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[clearance]` | 72 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cmax]` | not captured | 0.14 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[mean area under the curve]` | 15.8 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[mean maximum plasma concentration]` | 0.14 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[mean percentage of dose recovered unchanged in the urine during 24 hours]` | 7.21 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[percentage of dose recovered unchanged in the urine during 24 hours]` | not captured | 7.21 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[t1/2]` | not captured | 83.7 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[terminal half-life]` | 83.7 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[tmax]` | not captured | 48.7 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

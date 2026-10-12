@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol stimulates GTPase activity (Vmax of GTP hydrolysis) with a direct Emax-type concentration–effect relationship; the paper reports an EC50 of 8.1 microM, but no full text is available to confirm the mechanism or other parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Daeffler_1999`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Remifentanil plasma concentrations (ng/mL) act on the continuous Pupillary Pain Index (PPI) through a sigmoid Emax mechanism, where the drug inhibits the response. The paper reports an EC50 of 2.96 ng/mL, but does not specify the full mechanism details or other rate parameters in the available record.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vide_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

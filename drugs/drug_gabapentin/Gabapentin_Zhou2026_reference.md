@@ -5,7 +5,7 @@
 
 # gabapentin — `Gabapentin_Zhou2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.864). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.955), gpt-oss:120b (partly confirmed, agreement 0.864). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record lists kel (labelled ke1, 0.53 h-1) as the terminal elimination rate constant and λ2 (labelled ke2, 1 h-1) as the slow-phase macro-rate constant of the two-compartment disposition; the dimension check on these structural parameters failed, and one reported unit could not be converted to SI, so that parameter entered model construction without an SI value. A second reader also disagreed on two values: the record carries ke2 as 1 and the eGFR covariate effect on CL/F as 1.34, whereas the second reader left ke2 and the covariate effect unset and instead assigned 1.34 to a power-form eGFR effect on CL/F, so the covariate effect's form and value are not settled. Extracted — gabapentin: tlag 0.34 h, kabs 0.14 h-1, CL/F 10.2 L/h, V1/F 18.2 L, Q 6.58 L/h, V2/F 358 L, kel 0.53 h-1, λ2 1 h-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ke2: this record has 1, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ke2: this record has 1, the second reading none. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -99,17 +99,19 @@ Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmaco
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.955 (21/22 fields) | 1 |
 | `gpt-oss:120b` | partly confirmed | 0.864 (19/22 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[ke2]` | 1 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ke2]` | 1 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[logt_egfr_84.85_on_cl_f]` | 1.34 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_cl_f_egfr_power]` | not captured | 1.34 | only_one_extracted |

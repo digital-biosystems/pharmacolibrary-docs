@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models bethanechol stimulating pepsinogen secretion with an Emax-type model, but the available excerpts do not state the mechanism, potency (EC50/Emax), or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fong_1991`
 - **model family:** `emax`
 - **driver:** `not_resolved`

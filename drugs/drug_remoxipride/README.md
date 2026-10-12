@@ -32,7 +32,7 @@ Remoxipride is an antipsychotic of the benzamide class that was used to treat sc
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Widerlöv_1989_reference](drugs/drug_remoxipride/Remoxipride_Widerlv1989_reference.md) | — | 1-compartment (no model) | 3 | Widerlöv E et al., Effect of urinary pH on the plasma and…, European journal of clinica… (1989) | [10.1007/BF00558500](https://doi.org/10.1007/BF00558500) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Widerlöv_1989_reference](drugs/drug_remoxipride/Remoxipride_Widerlv1989_reference.md) | — | 1-compartment (no model) | 3 | Widerlöv E et al., Effect of urinary pH on the plasma and…, European journal of clinica… (1989) | [10.1007/BF00558500](https://doi.org/10.1007/BF00558500) |
 
 ## Pharmacodynamics (PD)
 

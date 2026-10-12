@@ -18,7 +18,7 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> The model describes the inhibition of PSA growth by [177Lu]Lu-PSMA-I&T tumor concentration using a linear direct effect and a linear delayed effect, with a first-order PSA growth rate (kG) of 0.000408 h−1 and a direct effect parameter (KD, direct) of 0.000335 L·day−1·GBq−1. The paper does not specify the exact mechanistic pathway for the delayed effect, suggesting possibilities such as tumor microenvironment changes or a radiation-induced bystander response.
+> The model describes the effect of [177Lu]Lu-PSMA-I&T on PSA using an effect compartment where the drug acts as a linear elimination term (Edrug) from the PSA compartment, with a direct effect parameter (KD, direct) of 0.000335 L·day−1·GBq−1 and a PSA growth rate (kG) of 0.000408 h−1. A delayed linear effect was also included, characterized by an effect compartment rate constant (ke0) of 0.00128 h−1 and a delayed effect parameter of 0.0000328 L·day−1·MBq−1.
 >
 > <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 

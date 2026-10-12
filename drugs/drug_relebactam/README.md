@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;Relebactam&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Relebactam_Fratoni2022_reference&quot;,&quot;label&quot;:&quot;Fratoni_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/Relebactam_Fratoni2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Relebactam_Fratoni2022_reference&quot;,&quot;label&quot;:&quot;Fratoni_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_relebactam/Relebactam_Fratoni2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Relebactam
 
@@ -28,15 +28,15 @@ Relebactam is a beta-lactamase inhibitor used to treat serious bacterial infecti
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:46 | 3:08 | 2/1/0 | 0/0/0 | 0/0/0 | 199,496/6,840 | einfracz / qwen3.8-27b | 8 | 0/8 | 8/0 | 0 |
+| 2026-10-07 11:46 | 3:08 | 0/1/2 | 0/0/0 | 0/0/0 | 199,496/6,840 | einfracz / qwen3.8-27b | 8 | 0/8 | 8/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bhagunde_2019_reference](drugs/drug_relebactam/Relebactam_Bhagunde2019_reference.md) | held back | 2-compartment, IV | 4 (+2 cov.) | Bhagunde P et al., Population Pharmacokinetic Analysis for…, CPT: pharmacometrics & syst… (2019) | [10.1002/psp4.12462](https://doi.org/10.1002/psp4.12462) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Fratoni_2022_reference](drugs/drug_relebactam/Relebactam_Fratoni2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Fratoni AJ et al., Imipenem/cilastatin/relebactam pharmaco…, The Journal of antimicrobia… (2022) | [10.1093/jac/dkac261](https://doi.org/10.1093/jac/dkac261) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Patel_2022_reference](drugs/drug_relebactam/Relebactam_Patel2022_reference.md) | — | general linear (no model) | 4 | Patel M et al., Population pharmacokinetic/pharmacodyna…, Clinical and translational… (2022) | [10.1111/cts.13158](https://doi.org/10.1111/cts.13158) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd, k12 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Bhagunde_2019_reference](drugs/drug_relebactam/Relebactam_Bhagunde2019_reference.md) | held back | 2-compartment, IV | 4 (+2 cov.) | Bhagunde P et al., Population Pharmacokinetic Analysis for…, CPT: pharmacometrics & syst… (2019) | [10.1002/psp4.12462](https://doi.org/10.1002/psp4.12462) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Fratoni_2022_reference](drugs/drug_relebactam/Relebactam_Fratoni2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Fratoni AJ et al., Imipenem/cilastatin/relebactam pharmaco…, The Journal of antimicrobia… (2022) | [10.1093/jac/dkac261](https://doi.org/10.1093/jac/dkac261) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Patel_2022_reference](drugs/drug_relebactam/Relebactam_Patel2022_reference.md) | — | general linear (no model) | 4 | Patel M et al., Population pharmacokinetic/pharmacodyna…, Clinical and translational… (2022) | [10.1111/cts.13158](https://doi.org/10.1111/cts.13158) |
 
 ## ADME sites
 
@@ -59,7 +59,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 25 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

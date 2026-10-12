@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methacholine concentration (nM) directly constricts airways, with the measured response being the airway lumen area change normalized to basal AW (ΔAW/AWbasal), fitted to a logistic (sigmoid Emax) concentration–response function; the paper does not state a mechanistic effect form beyond this direct concentration–response. EC50 values were 319 nM (control), 455 nM (Ova-asthma), and 616 nM (IL-13TG), with no statistically significant difference between groups (p&gt;0.05); no Emax, Hill coefficient, or rate parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kim_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

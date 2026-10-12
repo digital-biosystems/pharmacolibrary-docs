@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Jarque_2018_tg_mCherry](drugs/drug_potassium_perchlorate/pd_Jarque_2018_tg_mCherry.md) | tg:mcherry fluorescence ← potassium_perchlorate · direct sigmoid Emax (Hill) effect | — | Jarque S et al., An automated screening method for detec…, PloS one (2018) | [10.1371/journal.pone.0203087](https://doi.org/10.1371/journal.pone.0203087) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Jarque_2018_tg_mCherry](drugs/drug_potassium_perchlorate/pd_Jarque_2018_tg_mCherry.md) | tg:mcherry fluorescence ← potassium_perchlorate · direct sigmoid Emax (Hill) effect | — | Jarque S et al., An automated screening method for detec…, PloS one (2018) | [10.1371/journal.pone.0203087](https://doi.org/10.1371/journal.pone.0203087) |
 
 ## ADME sites
 

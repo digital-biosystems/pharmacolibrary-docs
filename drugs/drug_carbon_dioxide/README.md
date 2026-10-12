@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;carbon dioxide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CarbonDioxide_Hellinga2023_reference&quot;,&quot;label&quot;:&quot;Hellinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbon_dioxide/CarbonDioxide_Hellinga2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CarbonDioxide_Hellinga2023_reference&quot;,&quot;label&quot;:&quot;Hellinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbon_dioxide/CarbonDioxide_Hellinga2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # carbon dioxide
 
@@ -25,8 +25,8 @@ Carbon dioxide is a medical gas used in healthcare, for example to stimulate bre
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hellinga_2023_reference](drugs/drug_carbon_dioxide/CarbonDioxide_Hellinga2023_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Hellinga M et al., Oral Oxycodone-Induced Respiratory Depr…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2863](https://doi.org/10.1002/cpt.2863) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kazama_1996_reference](drugs/drug_carbon_dioxide/CarbonDioxide_Kazama1996_reference.md) | — | 1-compartment (no model) | 0 | Kazama T et al., Carbon dioxide output in laparoscopic c…, British journal of anaesthe… (1996) | [10.1093/bja/76.4.530](https://doi.org/10.1093/bja/76.4.530) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.529). The first reading is what the record holds.">cross-check: disputed</span> | [Hellinga_2023_reference](drugs/drug_carbon_dioxide/CarbonDioxide_Hellinga2023_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Hellinga M et al., Oral Oxycodone-Induced Respiratory Depr…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2863](https://doi.org/10.1002/cpt.2863) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kazama_1996_reference](drugs/drug_carbon_dioxide/CarbonDioxide_Kazama1996_reference.md) | — | 1-compartment (no model) | 0 | Kazama T et al., Carbon dioxide output in laparoscopic c…, British journal of anaesthe… (1996) | [10.1093/bja/76.4.530](https://doi.org/10.1093/bja/76.4.530) |
 
 ## Pharmacodynamics (PD)
 

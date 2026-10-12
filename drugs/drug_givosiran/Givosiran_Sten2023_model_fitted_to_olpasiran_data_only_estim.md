@@ -5,7 +5,7 @@
 
 # givosiran — `Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.188). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188), gpt-oss:120b (not confirmed, agreement 0.188). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 All six extracted parameters, including clearance of 27.7 L/h and volume of 27.9 L, are explicitly assigned to olpasiran. Consequently, givosiran's clearance, volume of distribution, absorption lag time, and central-to-peripheral rate constant had no values. A second reader identified a metabolic link to a givosiran metabolite that was absent from the record. Extracted — olpasiran: kabs 0.635 1/h, V1/F 27.9 L, V2/F 1.47e+03 L, V3/F 296 L, CL/F 27.7 L/h, Q/F 2.62 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading givosiran → as(n-1)3’ givosiran (metabolism); it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading givosiran → as(n-1)3’ givosiran (metabolism); it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -72,17 +72,31 @@ Sten S et al., Plasma Pharmacokinetics of N-Acetylgala…, Clinical pharmacokine
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.188 (3/16 fields) | 13 |
 | `gpt-oss:120b` | not confirmed | 0.188 (3/16 fields) | 13 |
 
-<details><summary>13 field(s) a reader read differently</summary>
+<details><summary>26 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['givosiran', 'as(n-1)3’ givosiran', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[cl1/f]` | not captured | 23.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl1/f]` | 27.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2/f]` | not captured | 3.02 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2/f]` | 2.62 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.157 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.635 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f]` | not captured | 18.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f]` | 27.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f]` | not captured | 1340 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f]` | 1470 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3/f]` | not captured | 100 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3/f]` | 296 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [] | [['givosiran', 'as(n-1)3’ givosiran', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[cl1/f]` | not captured | 23.8 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl1/f]` | 27.7 | not captured | only_one_extracted |
@@ -157,7 +171,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_matlab.zip" download>Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_matlab_simbio.zip" download>Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_matlab_simbio.zip" download>Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_sbml.zip" download>Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_cellml.zip" download>Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

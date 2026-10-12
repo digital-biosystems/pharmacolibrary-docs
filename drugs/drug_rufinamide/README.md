@@ -32,7 +32,7 @@ Rufinamide is an anticonvulsant used to treat epilepsy. It is an approved medici
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Arzimanoglou_2016_reference](drugs/drug_rufinamide/Rufinamide_Arzimanoglou2016_reference.md) | — | 1-compartment (no model) | 1 | Arzimanoglou A et al., Safety and pharmacokinetic profile of r…, European journal of paediat… (2016) | [10.1016/j.ejpn.2015.12.015](https://doi.org/10.1016/j.ejpn.2015.12.015) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Arzimanoglou_2016_reference](drugs/drug_rufinamide/Rufinamide_Arzimanoglou2016_reference.md) | — | 1-compartment (no model) | 1 | Arzimanoglou A et al., Safety and pharmacokinetic profile of r…, European journal of paediat… (2016) | [10.1016/j.ejpn.2015.12.015](https://doi.org/10.1016/j.ejpn.2015.12.015) |
 
 ## ADME sites
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol concentration (M) produces endothelium-dependent % relaxation of phenylephrine-precontracted rabbit aortic rings after 45 min incubation with chylomicron remnants (16 µM cholesterol), described by a sigmoid Emax (single-site logistic) model with EC50 = 2.12 × 10^-6 M, Emax = 45.4% and Hill slope 1.04; chylomicron remnants reduce the maximum relaxation, and the paper does not state a specific molecular mechanism beyond impaired endothelium-dependent relaxation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Grieve_1998`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

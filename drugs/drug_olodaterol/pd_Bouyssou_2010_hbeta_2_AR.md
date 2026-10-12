@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Olodaterol concentrations (nM) stimulate cAMP accumulation via the human beta2-adrenoceptor, described by a sigmoid Emax model with EC50 0.1 nM and intrinsic activity of 88% compared with isoprenaline; no further mechanism or rate parameters are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bouyssou_2010`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

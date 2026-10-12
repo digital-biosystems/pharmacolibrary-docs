@@ -4,7 +4,7 @@
 
 # dofetilide — `Dofetilide_Tunblad2008_median`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.8), gpt-oss:120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dofetilide, the second reading unknown; it also differs on 2 more fields. That field does not shape the model.
+**The paper reports none of the model's key parameters.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of theta_q22_creatinine_power: this record has none, the second reading 75. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Tunblad K et al., The use of clinical irrelevance criteri…, Journal of pharmacokinetics… (2008)
@@ -64,17 +68,19 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | primary re-run | 0.8 (4/5 fields) | 1 |
 | `gpt-oss:120b` | primary re-run | 0.4 (2/5 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[theta_q22_creatinine_power]` | not captured | 75 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q22_creatinine_power]` | not captured | 75 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | dofetilide | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | dofetilide | unknown | mismatch |

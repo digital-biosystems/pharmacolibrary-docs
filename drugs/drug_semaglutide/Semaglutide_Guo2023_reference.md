@@ -5,7 +5,7 @@
 
 # semaglutide — `Semaglutide_Guo2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.278). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286), gpt-oss:120b (not confirmed, agreement 0.278). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 For semaglutide, the record reports CL/F of 0.0575 L/hr and V/F of 0.0028 L, the latter derived from CL·t½/ln2. Both magnitudes fall far outside the physiological window for this molecule, so the clearance/volume plausibility check failed. The source is a review-secondary text, and the implausible values point to a unit or scale error during extraction rather than a genuine fitted result. Extracted — semaglutide: CL/F 0.0575 L/hr, V/F 0.0028 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has none, the second reading 11658.1612; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has none, the second reading 11658.1612; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -62,17 +62,33 @@ Guo W et al., Discovery of ecnoglutide - A novel, lon…, Molecular metabolism (
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.286 (6/21 fields) | 15 |
 | `gpt-oss:120b` | not confirmed | 0.278 (5/18 fields) | 13 |
 
-<details><summary>13 field(s) a reader read differently</summary>
+<details><summary>28 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q174]` | not captured | 1.7192 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q17]` | not captured | 11658.1612 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q189]` | 1.8102 | 1.8102 | mismatch |
+| `gpt-oss-120b` | `values[Q21]` | 2.23 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q321]` | 1.996 | 0.012 | mismatch |
+| `gpt-oss-120b` | `values[Q329]` | 6.58 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q330]` | 1.12 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q331]` | 1.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q33]` | 2.11 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 2 | 124.1109 | mismatch |
+| `gpt-oss-120b` | `values[Q60]` | not captured | 128.6007 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q65]` | 10.6958 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q75]` | not captured | 2.322 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q76]` | not captured | 10.6958 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q86]` | not captured | 10.68 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q174]` | not captured | 1.7192 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q17]` | not captured | 11658.1612 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q189]` | 1.8102 | 1.8102 | mismatch |

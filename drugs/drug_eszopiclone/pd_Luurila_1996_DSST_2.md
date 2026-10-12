@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper's PD model for eszopiclone on the digit symbol substitution test (DSST) could not be characterized: no full text is available, the driver concentration (zopiclone) was not resolved to a PK metric, and no mechanism, potency (IC50/EC50/Emax) or rate parameters (kin, kout, ke0) are stated in the available record beyond a tolerance-type, linear inhibitory effect form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luurila_1996`
 - **model family:** `tolerance`
 - **driver:** `not_resolved`

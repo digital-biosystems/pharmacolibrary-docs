@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lindane concentrations (mg L^-1) inhibit chlorophyll biosynthesis in Chlorella kesslerei; the paper excerpts do not state the mechanism or model form, only an EC50 of 7490 mg L^-1.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mostafa_2002`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

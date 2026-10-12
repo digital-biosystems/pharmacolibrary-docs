@@ -4,7 +4,7 @@
 
 # chlortalidone — `Chlortalidone_Fleuren1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364), gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -74,17 +74,25 @@ Fleuren HL et al., Absolute bioavailability of chlorthalid…, European journal 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.364 (4/11 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[mean f from plasma concentrations]` | not captured | 0.61 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean f from urinary excretion measurements]` | not captured | 0.67 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean plasma t1/2 after i.v. dosing]` | 36.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean total of ... % of the intranvenous dose was excreted in urine over infinite time]` | 65.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the mean plasma t1/2 after i.v. dosing was]` | not captured | 36.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the mean plasma t1/2 after oral doses was]` | not captured | 44.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the mean total of]` | not captured | 65.4 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean f from urinary excretion measurements]` | not captured | 0.67 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean plasma t1/2 after i.v. dosing]` | 36.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean plasma t1/2 after i.v. dosing]` | not captured | 36.5 | only_one_extracted |

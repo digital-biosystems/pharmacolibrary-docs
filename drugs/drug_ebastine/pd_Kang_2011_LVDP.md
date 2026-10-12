@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ebastine concentrations inhibited left ventricular developed pressure (LVDP) in an Emax model, with baseline E0 107 ± 5.4 mmHg and EC50 8.9 ng•mL⁻¹. The paper reports that ebastine decreased LVDP but does not specify the pharmacodynamic mechanism.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kang_2011`
 - **model family:** `emax`
 - **driver:** `pk_record`

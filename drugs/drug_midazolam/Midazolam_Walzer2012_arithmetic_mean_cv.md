@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_Walzer2012_arithmetic_mean_cv`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.294). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.471), gpt-oss:120b (partly confirmed, agreement 0.294). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The metabolite N-desmethylclobazam, formed from clobazam in the central compartment, is given 0 compartments, so it is an unlinked metabolite with no path from the dose — the structural reason for rejection. In addition, a reported unit could not be converted to SI, so at least one parameter (e.g. clearance 43.2 ml/kg/hour or an AUC in ng·h/mL) reached the model builder without an SI value. The second reader also disagreed on several extracted values (AUC 0-24 51721, AUC 0-inf 110123, AUC 0-lqc 147459, Cmax 2566, and half-lives 32 and 57 hours), leaving those numbers uncertain. Extracted — midazolam: AUCt 5.17e+04 ng·h/mL, t1/2z 57 hr; N-desmethylclobazam: AUC 1.47e+05 ng·h/mL, AUC∞ 1.1e+05 ng·h/mL, Cmax 2.57e+03 ng/ml, t1/2z 32 hrs; clobazam: CL 43.2 ml/kg/hour.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc 0-24: this record has 51721, the second reading none; it also differs on 11 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has clobazam → n-desmethylclobazam (metabolism); midazolam → 1-hydroxymidazolam (metabolism), the second reading clobazam → n-desmethylclobazam (metabolism); midazolam → 1‐hydroxymidazolam (metabolism); it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -109,17 +109,27 @@ Walzer M et al., Pharmacokinetic drug interactions betwe…, Pharmacotherapy (20
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.471 (8/17 fields) | 9 |
 | `gpt-oss:120b` | partly confirmed | 0.294 (5/17 fields) | 12 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['clobazam', 'n-desmethylclobazam', 'metabolism'], ['midazolam', '1-hydroxymidazolam', 'metabolism']] | [['clobazam', 'n-desmethylclobazam', 'metabolism'], ['midazolam', '1‐hydroxymidazolam', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[auc 0-lqc]` | not captured | 147459 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc 0-lqc]` | 147459 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max]` | not captured | 2566 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max]` | 2566 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1⁄2].rse_percent` | 16 | 36 | mismatch |
+| `gpt-oss-120b` | `parameters[t 1⁄2].rse_percent` | 36 | 16 | mismatch |
+| `gpt-oss-120b` | `parameters[t 1⁄2].value` | 57 | 32 | mismatch |
+| `gpt-oss-120b` | `parameters[t 1⁄2].value` | 32 | 57 | mismatch |
 | `gpt-oss:120b` | `parameters[auc 0-24]` | 51721 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc 0-24]` | not captured | 51721 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc 0-inf]` | 110123 | not captured | only_one_extracted |

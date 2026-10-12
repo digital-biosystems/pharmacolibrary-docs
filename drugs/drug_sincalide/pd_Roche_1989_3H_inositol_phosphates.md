@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Sincalide (CCK-8) concentration (nM) stimulates [3H]inositol phosphates cellular contents with an Emax-type model; the paper reports EC50 = 0.116 ± 0.027 nM, but the excerpts do not state the mechanism or Emax.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Roche_1989`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

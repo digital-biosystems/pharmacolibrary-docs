@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates methacholine concentration to LGC-39 receptor activation (chloride current) using a sigmoid Emax model with a stimulatory effect, but no full text is available, so the mechanism and any potency or rate parameter values (Emax, EC50, gamma) cannot be reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Habibi_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

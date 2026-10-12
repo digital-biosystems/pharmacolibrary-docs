@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism or any parameter values; the record only indicates that cypermethrin stimulates CAR transactivation according to a sigmoid Emax model, with no concentrations, Emax, EC50, or gamma stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baldwin_2009`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

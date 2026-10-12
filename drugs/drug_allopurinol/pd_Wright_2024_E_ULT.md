@@ -18,6 +18,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> The model describes a direct proportional inhibitory effect of plasma oxypurinol concentration on serum urate using a sigmoid Emax formulation with an Imax of 1, a C50 of 139.4 μmol/L, and a Hill coefficient (GAM) of 1.06, which are modified by covariates such as CKD stage and diuretic use. The paper explicitly identifies this as a direct-effects model that does not include an effect compartment, noting that while hysteresis is theoretically possible due to clearance differences, the direct link adequately captures the time course across a single dosing interval.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wright_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

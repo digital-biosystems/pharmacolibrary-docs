@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a pharmacodynamic model summary as no full text or specific model parameters were available in the record or excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sunkaraneni_2018`
 - **model family:** `tte`
 - **driver:** `cited_pk`

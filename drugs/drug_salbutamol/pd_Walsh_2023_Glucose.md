@@ -18,6 +18,10 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
+> Salbutamol plasma concentrations (ng/ml) stimulate blood glucose (mmol/l) via a sigmoid Emax model with baseline E0 5.03 mmol/l, EMAX 3.86 and EC50 1.08 ng/ml; the paper does not state a production/elimination (kin/kout) mechanism, describing only a direct concentration-effect relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Walsh_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

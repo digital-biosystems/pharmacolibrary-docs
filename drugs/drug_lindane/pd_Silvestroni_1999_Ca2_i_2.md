@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lindane (µM concentrations) inhibits the vasopressin- and endothelin-1-induced increase in intracellular calcium ([Ca2+]i); the paper does not state the mechanism or model form, and the only potency value given is IC50 &lt; 10 µM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Silvestroni_1999`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Tong_2020_IC50](drugs/drug_nomifensine/pd_Tong_2020_IC50.md) | MCF7 cell viability inhibition ← nomifensine · inhibition effect | — | Tong XY et al., Identification of NUDT5 Inhibitors From…, Frontiers in molecular bios… (2020) | [10.3389/fmolb.2020.00044](https://doi.org/10.3389/fmolb.2020.00044) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">in vitro</span> | [Tong_2020_IC50](drugs/drug_nomifensine/pd_Tong_2020_IC50.md) | MCF7 cell viability inhibition ← nomifensine · inhibition effect | — | Tong XY et al., Identification of NUDT5 Inhibitors From…, Frontiers in molecular bios… (2020) | [10.3389/fmolb.2020.00044](https://doi.org/10.3389/fmolb.2020.00044) |
 
 ## ADME sites
 

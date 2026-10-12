@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Thiram (mg l(-1)) inhibits potential denitrification, described by a sigmoid Emax model; the paper excerpts do not state the mechanism, and no potency (IC50/EC50, Imax/Emax, gamma) or rate values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Milenkovski_2010`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;nivolumab&quot;,&quot;href&quot;:&quot;drugs/drug_nivolumab/&quot;},{&quot;label&quot;:&quot;Leven_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nivolumab_van2019_reference&quot;,&quot;label&quot;:&quot;van_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nivolumab/Nivolumab_van2019_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nivolumab_van2019_reference&quot;,&quot;label&quot;:&quot;van_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nivolumab/Nivolumab_van2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nivolumab — `Nivolumab_Leven2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q31: this record has none, the second reading 22; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+**The two-compartment model for nivolumab was rejected because the peripheral compartment is unreachable from the dose.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The record defines a central volume of 3.11 L and a peripheral volume of 4.15 L, but lacks the inter-compartmental clearance required to link them. Consequently, the peripheral compartment is an orphan with no path from the dose. A second reader disagreed on several parameter values, including a null entry where they read 22 and a value of 27.4 where they read 14.7. Extracted — nivolumab: CL 0.36 L/day, V1 3.11 L, V2 4.15 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q320: this record has none, the second reading 24.5; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Leven C et al., Immune Checkpoint Inhibitors in Melanom…, Clinical pharmacokinetics (2019)
@@ -55,17 +59,24 @@ Leven C et al., Immune Checkpoint Inhibitors in Melanom…, Clinical pharmacokin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (6/12 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q320]` | not captured | 24.5 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q321]` | not captured | 0.54 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q322]` | 0.54 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 27.4 | 14.7 | mismatch |
+| `gpt-oss-120b` | `values[Q59]` | not captured | 27.4 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q60]` | not captured | 25 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q31]` | not captured | 22 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q57]` | 27.4 | 14.7 | mismatch |
 | `gpt-oss:120b` | `values[Q59]` | not captured | 27.4 | only_one_extracted |

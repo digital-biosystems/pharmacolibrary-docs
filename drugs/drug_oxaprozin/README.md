@@ -32,7 +32,7 @@ Oxaprozin is a non-steroidal anti-inflammatory drug used to treat osteoarthritis
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Janssen_1980_reference](drugs/drug_oxaprozin/Oxaprozin_Janssen1980_reference.md) | — | 1-compartment (no model) | 0 | Janssen FW et al., Metabolism and kinetics of oxaprozin in…, Clinical pharmacology and t… (1980) | [10.1038/clpt.1980.47](https://doi.org/10.1038/clpt.1980.47) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Janssen_1980_reference](drugs/drug_oxaprozin/Oxaprozin_Janssen1980_reference.md) | — | 1-compartment (no model) | 0 | Janssen FW et al., Metabolism and kinetics of oxaprozin in…, Clinical pharmacology and t… (1980) | [10.1038/clpt.1980.47](https://doi.org/10.1038/clpt.1980.47) |
 
 ## Pharmacodynamics (PD)
 

@@ -4,7 +4,7 @@
 
 # misoprostol — `Misoprostol_Vorontsova2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875), gpt-oss:120b (partly confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 For the misoprostol acid metabolite (formed from misoprostol, one compartment), the record lists Vmax/Fb = 5.45 pg/ml and Km = 2.5 pg; a maximum rate of enzymatic metabolism must have units of amount per time, so the pg/ml unit is dimensionally wrong for this parameter. The reported unit also could not be converted to SI, so the parameter arrived without an SI value. A second reader (gpt-oss:120b) disagreed with this record on several parameter fields, reading CL/Fb = 730 L/h, ka = 0.709 1/h, Km = 2.5, V/Fb = 610 L and Vmax/Fb = 5.45 where this record had nulls, and nulls where this record had those values, so the parameter extraction itself is contested. Extracted — misoprostol acid: CLm/F 730 L/h, V 610 L, kabs 0.709 1/h, Vmax 5.45 pg/ml, Km 2.5 pg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl/fb: this record has none, the second reading 730; it also differs on 9 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/fb].parameter_id`: this record has Q351, the second reading Q27; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -94,17 +94,20 @@ Vorontsova Y et al., Pharmacokinetics of vaginal versus bucc…, Clinical and tr
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.875 (14/16 fields) | 2 |
 | `gpt-oss:120b` | partly confirmed | 0.286 (4/14 fields) | 10 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/fb].parameter_id` | Q351 | Q27 | mismatch |
+| `gpt-oss-120b` | `parameters[v/fb].parameter_id` | Q61 | Q76 | mismatch |
 | `gpt-oss:120b` | `parameters[cl/fb]` | not captured | 730 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/fb]` | 730 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka]` | not captured | 0.709 | only_one_extracted |

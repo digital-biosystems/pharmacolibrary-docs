@@ -16,7 +16,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Brinzolamide clearance and volume values are physiologically implausible because micro-scale units failed to convert to standard SI units.**
+
+The extracted clearance (4.12 µL/min) and volume (687 µl) for the rabbit model are far outside physiological limits. These parameters retained micro-scale units that the system could not map to standard SI units, preventing proper magnitude scaling. Consequently, the dimensional checks flagged the values as structurally inconsistent. Extracted — brinzolamide: Cmax 1.96e+03 ng/g, tmax 0.5 h, t1/2z 13 h, AUCt 7.22e+03 h*ng/g, AUC∞ 8.84e+03 h*ng/g, AUC/dose 2 h* /g, CL 4.12 µL/min, V/F 673 µL, … (+1).
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Naageshwaran V et al., Comprehensive Ocular and Systemic Pharm…, Journal of pharmaceutical s… (2021)

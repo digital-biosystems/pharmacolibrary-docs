@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Somatorelin (GHRH) concentration drives a stimulatory Emax-type model of GH release (percent increment over basal), with reported EC50 values of 40.82 ± 12.03 nM and 0.35 ± 0.09 nM; the paper excerpts do not state the mechanism beyond this concentration–response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tena-Sempere_1996`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -5,7 +5,7 @@
 
 # allopurinol — `Allopurinol_Wen2023_base`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625), gpt-5.6-luna (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778), gpt-oss:120b (not confirmed, agreement 0.625), gpt-5.6-luna (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/3</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 None of the extracted parameters is allopurinol's own; they describe oxypurinol.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has allopurinol, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[kfm].parameter_id`: this record has Q49, the second reading Q305; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -88,18 +88,21 @@ Wen YF et al., Population pharmacokinetics, pharmacody…, British journal of cl
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 3 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.625 (5/8 fields) | 3 |
 | `gpt-5.6-luna` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[kfm].parameter_id` | Q49 | Q305 | mismatch |
+| `gpt-oss-120b` | `parameters[v/fm].parameter_id` | Q76 | Q367 | mismatch |
 | `gpt-oss:120b` | `parameters[cl/fm].parameter_id` | Q351 | Q27 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | allopurinol | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | oxypurinol | unknown | mismatch |
@@ -160,7 +163,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_base/Allopurinol_Wen2023_base_modelica.zip" download>Allopurinol_Wen2023_base_modelica.zip</a> <span class="pk-size">(5.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_base/Allopurinol_Wen2023_base_fmi.zip" download>Allopurinol_Wen2023_base_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_base/Allopurinol_Wen2023_base_matlab.zip" download>Allopurinol_Wen2023_base_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_base/Allopurinol_Wen2023_base_matlab_simbio.zip" download>Allopurinol_Wen2023_base_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_base/Allopurinol_Wen2023_base_matlab_simbio.zip" download>Allopurinol_Wen2023_base_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_base/Allopurinol_Wen2023_base_sbml.zip" download>Allopurinol_Wen2023_base_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_base/Allopurinol_Wen2023_base_cellml.zip" download>Allopurinol_Wen2023_base_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

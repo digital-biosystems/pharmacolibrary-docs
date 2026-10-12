@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model characterizes the inhibition of excitatory postsynaptic potentials by isoflurane using an Emax framework with an EC50 of 1 MAC. As the full text is unavailable, the specific mechanism of action (e.g., direct effect vs. indirect) and other rate or potency parameters are not described.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `el-Beheiry_1989`
 - **model family:** `emax`
 - **driver:** `not_resolved`

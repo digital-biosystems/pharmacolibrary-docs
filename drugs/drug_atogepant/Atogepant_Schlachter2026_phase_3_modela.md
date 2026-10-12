@@ -5,7 +5,7 @@
 
 # atogepant — `Atogepant_Schlachter2026_phase_3_modela`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.654). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.517), gpt-oss:120b (not confirmed, agreement 0.654). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Although the paper reports apparent parameters for atogepant (e.g. CL/F 17.4 L/h, V1/F 86.1 L, Q/F 1.43 L/h, V2/F 40.5 L, tlag 0.276 h), the record's clearance, distribution volume, absorption rate constant, lag time, and central↔peripheral rate constants were left with no extracted values, so placeholder values stood in and the model was held back rather than published with invented numbers. The absorption rate constant was not reported in the source and was defaulted, which was judged an invented absorption input and not acceptable. The covariate effects defined in the record (e.g. the itraconazole effect on relative bioavailability 0.949, the dose effect 0.119) were not exercised: only the reference individual was simulated. A second reader also disagreed on several entries, reading a blood-plasma ratio of 0.573 and a fraction of zero-order absorption of 0.693 that this record lacks, and attributing the 0.119 dose effect to a weight power on relative bioavailability instead. Extracted — atogepant: CL/F 17.4, V1/F 86.1, Q/F 1.43, V2/F 40.5, Q2/F 1.68, V3/F 13, tlag 0.276, Frel 0.949.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has atogepant, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has atogepant, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -114,17 +114,32 @@ Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharma
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.517 (15/29 fields) | 14 |
 | `gpt-oss:120b` | not confirmed | 0.654 (17/26 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>23 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[apparent clearance patients [cl/f (l/h)]].covariate_forms` | ['linear_fractional', 'linear_fractional', 'power'] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[blood-plasma ratio]` | not captured | 0.573 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[exponential_dose_effect_on_frel]` | 0.119 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[food_effect_on_alag]` | 0.672 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fraction zero-order absorption]` | not captured | 0.693 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[itraconazole effect on frel].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-oss-120b` | `parameters[lag time [alag (h)]].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_frel_weight_power]` | not captured | 0.119 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q49_formulation]` | not captured | -0.353 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q95_formulation]` | -0.353 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_tlag_food]` | not captured | 0.672 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | atogepant | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | atogepant | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[apparent clearance patients [cl/f (l/h)]].covariate_forms` | ['linear_fractional', 'power'] | ['linear_fractional'] | mismatch |
 | `gpt-oss:120b` | `parameters[apparent first peripheral volume of distribution [v2/f (l)]].parameter_id` | Q82 | Q64 | mismatch |
 | `gpt-oss:120b` | `parameters[exponential_dose_effect_on_frel]` | 0.119 | not captured | only_one_extracted |

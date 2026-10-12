@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04B&quot;,&quot;href&quot;:&quot;atc/G04B.md&quot;},{&quot;label&quot;:&quot;dapoxetine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dapoxetine_Pu2026_reference&quot;,&quot;label&quot;:&quot;Pu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapoxetine/Dapoxetine_Pu2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dapoxetine_Pu2026_reference&quot;,&quot;label&quot;:&quot;Pu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapoxetine/Dapoxetine_Pu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # dapoxetine
 
@@ -33,13 +33,13 @@ Dapoxetine is a urological drug developed for the treatment of premature ejacula
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Pu_2026_reference](drugs/drug_dapoxetine/Dapoxetine_Pu2026_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Pu L et al., Population Pharmacokinetics of Dapoxeti…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70117](https://doi.org/10.1002/jcph.70117) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | [Pu_2026_reference](drugs/drug_dapoxetine/Dapoxetine_Pu2026_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Pu L et al., Population Pharmacokinetics of Dapoxeti…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70117](https://doi.org/10.1002/jcph.70117) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Kim_2017_Kv](drugs/drug_dapoxetine/pd_Kim_2017_Kv.md) | voltage-dependent K+ (Kv) channel currents ← dapoxetine · direct sigmoid Emax (Hill) effect | — | Kim HS et al., The selective serotonin reuptake inhibi…, Clinical and experimental p… (2017) | [10.1111/1440-1681.12723](https://doi.org/10.1111/1440-1681.12723) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Kim_2017_Kv](drugs/drug_dapoxetine/pd_Kim_2017_Kv.md) | voltage-dependent K+ (Kv) channel currents ← dapoxetine · direct sigmoid Emax (Hill) effect | — | Kim HS et al., The selective serotonin reuptake inhibi…, Clinical and experimental p… (2017) | [10.1111/1440-1681.12723](https://doi.org/10.1111/1440-1681.12723) |
 
 ## ADME sites
 

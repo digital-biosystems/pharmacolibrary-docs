@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In MDA-MB-468 cells, dexrazoxane concentrations (µM) inhibit cell viability (%) over 72 h, described by a sigmoid Emax (inhibitory) model with baseline viability R0 = 110%, Imax = 0.825, and IC50 = 36 µM; the paper does not state a specific mechanism for this single-agent effect beyond cell toxicity/growth inhibition contributions.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mody_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

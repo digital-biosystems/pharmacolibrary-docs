@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03B&quot;,&quot;href&quot;:&quot;atc/M03B.md&quot;},{&quot;label&quot;:&quot;baclofen&quot;,&quot;href&quot;:&quot;drugs/drug_baclofen/&quot;},{&quot;label&quot;:&quot;Imbert_2015 \u00b7 PD Obsessive-Compulsive Drinking Scale&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Baclofen_Simon2018_reference&quot;,&quot;label&quot;:&quot;Simon_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_baclofen/Baclofen_Simon2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Baclofen_Vourch2019_reference&quot;,&quot;label&quot;:&quot;Vourch_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_baclofen/Baclofen_Vourch2019_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Baclofen_Simon2018_reference&quot;,&quot;label&quot;:&quot;Simon_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_baclofen/Baclofen_Simon2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Baclofen_Vourch2019_reference&quot;,&quot;label&quot;:&quot;Vourch_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_baclofen/Baclofen_Vourch2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Obsessive-Compulsive Drinking Scale — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -17,6 +17,10 @@
 **As extracted:** Baclofen (concentrations from the PK model of Brunet_2020) drives Obsessive-Compulsive Drinking Scale: direct Emax (saturable) effect.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> The record indicates a direct Emax inhibition model linking baclofen concentrations (mg/l) to the Obsessive-Compulsive Drinking Scale response, with an Emax of 72%. As no full text is available, the paper does not explicitly describe the underlying mechanism or the specific potency parameters beyond the cited Emax and BE50 values for responders (12.6 mg/l) and non-responders (4390 h mg/l).
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Imbert_2015`
 - **model family:** `emax`

@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;ranolazine&quot;,&quot;href&quot;:&quot;drugs/drug_ranolazine/&quot;},{&quot;label&quot;:&quot;Celli\u00e8re_2025 \u00b7 PD placebo-corrected change from baseline in QTc interval duration&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# placebo-corrected change from baseline in QTc interval duration — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+# placebo-corrected change from baseline in QTc interval duration — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Ranolazine plasma concentrations (ng/mL) were linearly related to the placebo-corrected change from baseline in QTc interval duration (ΔΔQTc, ms) via a direct additive effect, with a treatment intercept of 2.441 ms and a concentration slope of 0.004 ms per ng/mL. The paper does not specify a mechanistic basis for this linear relationship, noting only that the linear model was not the best-fitting model in all cases.
+> Ranolazine plasma concentration (ng/mL) directly linearly increases the placebo-corrected change from baseline in QTc interval duration (ΔΔQTc), with a slope (ϴ2) of 0.004 ms per ng/mL and a treatment intercept (ϴ1) of 2.441 ms. The paper does not describe a specific mechanistic mode of action (e.g., inhibition of potassium channels) or rate constants (e.g., ke0) for ranolazine, noting only that the linear model was not the best-fitting model in all cases.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Cellière_2025`
 - **model family:** `linear`
@@ -44,20 +44,18 @@ Cellière G et al., Beyond the linear model in concentratio…, Journal of pharm
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `einfracz:qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.714 (5/7 fields) | 2 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | quinidine | unknown | mismatch |
-| `gpt-oss:120b` | `model_family` | emax | linear | mismatch |
-| `gpt-oss:120b` | `parameters[Q321]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | not captured | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q324]` | not captured | 2.441 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q900]` | 2.441 | not captured | only_one_extracted |
 
 </details>
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Tiotropium dose is modelled with an Emax-type model acting on bradycardia as a continuous response, with the effect described as stimulation; the paper excerpts provide no concentration data, mechanism, or parameter values (Imax, EC50, etc.).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Trifilieff_2015`
 - **model family:** `emax`
 - **driver:** `dose_only`

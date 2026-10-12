@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;tadalafil&quot;,&quot;href&quot;:&quot;drugs/drug_tadalafil/&quot;},{&quot;label&quot;:&quot;Na_2019 \u00b7 group_t&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tadalafil_Kohno2014_reference&quot;,&quot;label&quot;:&quot;Kohno_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tadalafil/Tadalafil_Kohno2014_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tadalafil_Na2019_group_t&quot;,&quot;label&quot;:&quot;Na_2019_group_t&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tadalafil/Tadalafil_Na2019_group_t.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tadalafil_Kohno2014_reference&quot;,&quot;label&quot;:&quot;Kohno_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tadalafil/Tadalafil_Kohno2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tadalafil_Na2019_group_t&quot;,&quot;label&quot;:&quot;Na_2019_group_t&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tadalafil/Tadalafil_Na2019_group_t.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tadalafil — `Tadalafil_Na2019_group_t`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.538), gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,16 +19,20 @@
 
 ### Reviewer guidance
 
+**The model does not reproduce the paper's time of the peak (tmax) (paper 3.22, model 2.26); the model does not reproduce the paper's terminal half-life (paper 3.15, model 5.33).**
+
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — tadalafil: kabs 1.14 1/h, kel 0.13 1/h, V/F 3.36 L/kg.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tadalafil, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Na YG et al., Effect of Ticagrelor, a Cytochrome P450…, Pharmaceutics (2019)
   ·  DOI: [10.3390/pharmaceutics11070354](https://doi.org/10.3390/pharmaceutics11070354)
 
 ## Model component
-<dbs-pgx drug="tadalafil" model-id="Tadalafil_Na2019_group_t" status="extracted" stale="false" population="male rats" measured-compound="tadalafil" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tadalafil" model-id="Tadalafil_Na2019_group_t" status="needs_review" stale="false" population="male rats" measured-compound="tadalafil" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -36,6 +40,8 @@ Na YG et al., Effect of Ticagrelor, a Cytochrome P450…, Pharmaceutics (2019)
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Ka (1/h) | `Q49` · kabs | 1.14 | 1/h | 0.00031666666666666665 | 1/h | not captured | exact (1.0) | pharmaceutics-11-00354-t002:row1:col2 | — | not captured |
@@ -69,17 +75,24 @@ Na YG et al., Effect of Ticagrelor, a Cytochrome P450…, Pharmaceutics (2019)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.538 (7/13 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.125 (2/16 fields) | 14 |
 
-<details><summary>14 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc0-24]` | not captured | 4895.74 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | not captured | 5095.04 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 0.43 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 432.71 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | not captured | 4.47 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | not captured | 3.22 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc0-24]` | not captured | 4895.74 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc0-inf]` | not captured | 5095.04 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/f]` | not captured | 0.43 | only_one_extracted |
@@ -117,6 +130,25 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q76 | pass | volume within physiological range | 235 L | not captured | not captured | ['pharmaceutics-11-00354-t002:row3:col2'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_derived_parameters | not captured | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report | not captured | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | not captured | pass | C_central (measured=tadalafil) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | 1.15 | 0.0004500332804404004 | not captured | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
+| T1_t_half_terminal | reference | fail | 3.15 | 5.331949355004957 | 1.6927 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 4.47 | 5.331949355004957 | 1.1928 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 3.22 | 2.256626527783691 | 0.7008 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.45 | 2.256626527783691 | 1.5563 | h→SI vs simulated h |
+| T1_tmax | reference | skipped | 2.22 | 2.256626527783691 | not captured | unresolved time unit 'fold' |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -125,6 +157,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_tadalafil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Na_2019` / `Na_2019::group_t`)
+- model: `../../../knowledgebase/drugs/drug_tadalafil/models/modelica/Tadalafil_Na2019_group_t.mo`
+- deviation: `../../../knowledgebase/drugs/drug_tadalafil/models/modelica/Tadalafil_Na2019_group_t.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_tadalafil/models/modelica/Tadalafil_Na2019_group_t.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

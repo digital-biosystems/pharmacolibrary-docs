@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates gramicidin S concentrations to growth inhibition of Escherichia coli using a sigmoid Emax model; no excerpts are available, so the mechanism, effect form, and potency or rate parameters (Imax, IC50, Emax, gamma) are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rautenbach_2006`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

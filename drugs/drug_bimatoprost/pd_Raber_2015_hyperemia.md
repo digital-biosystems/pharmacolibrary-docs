@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> No paper text was provided to describe the mechanism or confirm the model structure. The record states that daily bimatoprost dose (in % daily) drives the incidence of hyperemia (%) via an Emax model with stimulation, estimating a maximal difference of 43% and an ED50 of 0.011% daily.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Raber_2015`
 - **model family:** `emax`
 - **driver:** `dose_only`

@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Vegas_2025_HIV_RNA](drugs/drug_lenacapavir/pd_Vegas_2025_HIV_RNA.md) | HIV-RNA biomarker turnover ← lenacapavir | — | Vegas Rodriguez A et al., Integrated Population Pharmacokinetic-p…, The AAPS journal (2025) | [10.1208/s12248-025-01136-4](https://doi.org/10.1208/s12248-025-01136-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> | [Vegas_2025_HIV_RNA](drugs/drug_lenacapavir/pd_Vegas_2025_HIV_RNA.md) | HIV-RNA biomarker turnover ← lenacapavir | — | Vegas Rodriguez A et al., Integrated Population Pharmacokinetic-p…, The AAPS journal (2025) | [10.1208/s12248-025-01136-4](https://doi.org/10.1208/s12248-025-01136-4) |
 
 ## ADME sites
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;protamine&quot;,&quot;href&quot;:&quot;drugs/drug_protamine/&quot;},{&quot;label&quot;:&quot;Orescanin-Dusi\u0107_2009 \u00b7 PD calcium-induced rhythmic contractions of isolated rat uterus (relaxation)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Protamine_Butterworth2002_reference&quot;,&quot;label&quot;:&quot;Butterworth_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protamine/Protamine_Butterworth2002_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Protamine_Butterworth2002_reference&quot;,&quot;label&quot;:&quot;Butterworth_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protamine/Protamine_Butterworth2002_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # calcium-induced rhythmic contractions of isolated rat uterus (relaxation) — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -19,6 +19,10 @@
 **As extracted:** Protamine sulphate drives calcium-induced rhythmic contractions of isolated rat uterus (relaxation): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
+
+> The paper does not provide full text or excerpts, so the mechanism linking protamine sulphate concentrations to inhibition of calcium-induced rhythmic contractions of isolated rat uterus cannot be stated; only an Emax-type inhibitory model is indicated, with no potency or rate values available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Orescanin-Dusić_2009`
 - **model family:** `emax`

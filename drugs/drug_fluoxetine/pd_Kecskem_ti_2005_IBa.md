@@ -20,7 +20,7 @@
 
 **Model:** No model was generated from this record.
 
-> Fluoxetine concentration-dependently inhibits peak Ba2+ current (IBa) through voltage-gated Ca2+ channels, described by a sigmoid Emax inhibition model with EC50 22.3 microM and Hill coefficient 0.87; the excerpts do not state Emax or a mechanistic description beyond this direct concentration–effect relation.
+> Fluoxetine concentration-dependently inhibits peak Ba2+ current (IBa) through voltage-gated Ca2+ channels, described by a sigmoid Emax (proportional inhibition) model with EC50 22.3 microM and a Hill coefficient of 0.87; the paper excerpts do not state a mechanism beyond this direct concentration–effect relation.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

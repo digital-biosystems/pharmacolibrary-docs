@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
+**The elimination rate constant for mexiletine was rejected because its unit could not be converted to standard SI units.**
+
+The record lists the elimination rate constant as 1.915 1/h, but this unit was not recognized for conversion to SI. Consequently, the parameter lacked a valid SI value, triggering a dimension mismatch failure. A second reader also disagreed on the extracted values for AUC, Cmax, and lag time. Extracted — mexiletine: kel 1.92 1/h, tlag 1.38 hr, tmax 1.9 hr, Cmax 0.65 µg/ml, AUC∞ 3.95 µg/ml/hr, AUC 2.88 µg/ml/hr, V 74 L.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc0^inf: this record has 3.949, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Häselbarth V et al., Kinetics and bioavailability of mexilet…, Clinical pharmacology and t… (1981)

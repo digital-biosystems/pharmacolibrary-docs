@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ketotifen concentration produced a direct sigmoid Emax response in percent cell protection, corresponding to reduced SARS-CoV-2 virus yield; the reported EC50 values were 42.2–48.9 μM, with 60% inhibition at the EC50. The paper does not specify a mechanism for reducing virus yield, such as inhibition of its production or elimination.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kiani_2021`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

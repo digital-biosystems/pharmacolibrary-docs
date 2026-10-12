@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rabbit</span> | [Liu_1993_HR](drugs/drug_bevantolol/pd_Liu_1993_HR.md) | heart rate ← bevantolol · delayed effect through an effect compartment | — | Liu XQ et al., Plasma bevantolol concentration and hea…, Zhongguo yao li xue bao = A… (1993) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rabbit</span> | [Liu_1993_HR](drugs/drug_bevantolol/pd_Liu_1993_HR.md) | heart rate ← bevantolol · delayed effect through an effect compartment | — | Liu XQ et al., Plasma bevantolol concentration and hea…, Zhongguo yao li xue bao = A… (1993) | — |
 
 ## ADME sites
 

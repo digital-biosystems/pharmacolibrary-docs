@@ -4,7 +4,7 @@
 
 # sulfamethoxypyridazine — `Sulfamethoxypyridazine_Abdennebi1994_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Sulfamethoxypyridazine absolute bioavailability was rejected because its reported unit could not be converted to SI.**
+
+The absolute bioavailability is listed as 53.9 with the unit 'p.100', which indicates a percentage rather than a dimensionless fraction. This specific unit label was not recognized for conversion to standard SI units. Consequently, the parameter remained without a valid SI value, triggering a dimensional mismatch on a structural parameter and leading to the record's rejection. Extracted — sulfamethoxypyridazine: λ1 5.09 h⁻¹, t1/2z 136 h, kel 61 h⁻¹, k12 3.44e+03 h⁻¹, k21 1.5e+03 h⁻¹, V 165 l/kg, Vss 544 l/kg, Ct 35 l/kg.h, … (+5).
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Abdennebi EH et al., [Pharmacokinetics and plasma protein bi…, Revue d'elevage et de medec… (1994)

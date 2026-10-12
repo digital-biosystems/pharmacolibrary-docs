@@ -5,7 +5,7 @@
 
 # clopidogrel — `Clopidogrel_Grafeneder2024_hv`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.105), gpt-5.6-luna (not confirmed, agreement 0.077). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556), gpt-oss:120b (not confirmed, agreement 0.105), gpt-5.6-luna (not confirmed, agreement 0.077). The first reading is what the record holds.">cross-check: disputed 0/3</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record reports only summary statistics (e.g., clopidogrel Cmax 1.5 ng/ml, AUClast 127 ng/ml·min, t1/2 131 min; active metabolite Cmax 35.4 ng/ml, AUClast 1706 ng/ml·min, t1/2 24 min) and pantoprazole parameters, but no fitted clearance or volume of distribution for clopidogrel itself, so placeholders stood in and the model was held back. The model structure also mismatched: a one-compartment structure was built where a parent–metabolite structure was expected, and the reported output was the parent's central compartment rather than the measured analyte, clopidogrel active metabolite. One reported unit could not be converted to SI, so that parameter reached the model build without an SI value. Some checks could not compute a comparison, and a second reader disagreed on several fields, including the dose compound (clopidogrel versus clopidogrel and pantoprazole) and the primary analyte (clopidogrel versus clopidogrel and its active metabolite). Extracted — clopidogrel: Cmax 1.5 ng/ml, Cmax_ratio 24.2, AUClast 127 ng/ml·min, t1/2z 131 min; clopidogrel active metabolite: Cmax 35.4 ng/ml, AUClast 1.71e+03 ng/ml·min, t1/2z 24 min; pantoprazole: Cmax 18.7 μg/ml, AUClast 492 μg/ml·min, t1/2z 57.3 min, CL 79 ml/min, V 4.13e+03 ml.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has clopidogrel, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -154,15 +154,16 @@ Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney internat
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 3 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.556 (10/18 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.105 (2/19 fields) | 17 |
 | `gpt-5.6-luna` | not confirmed | 0.077 (1/13 fields) | 12 |
 
-<details><summary>29 field(s) a reader read differently</summary>
+<details><summary>37 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -178,6 +179,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-5.6-luna` | `parameters[vd]` | not captured | 7528 | only_one_extracted |
 | `gpt-5.6-luna` | `screen.dose_compound` | clopidogrel | clopidogrel and pantoprazole | mismatch |
 | `gpt-5.6-luna` | `screen.primary_analyte` | clopidogrel | clopidogrel and its active metabolite | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[auclast [ug/ml min]]` | 492 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance [ml/min]]` | not captured | 79 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance [ml/min]]` | 79 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax [ug/ml]]` | 18.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 [min]]` | 57.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd [ml]]` | not captured | 4128 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd [ml]]` | 4128 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auclast [ug/ml min]]` | 492 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auclast_cam [ng/ml min]]` | 1706 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auclast_clo [ng/ml min]]` | 127 | not captured | only_one_extracted |
@@ -268,7 +277,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv/Clopidogrel_Grafeneder2024_hv_matlab.zip" download>Clopidogrel_Grafeneder2024_hv_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv/Clopidogrel_Grafeneder2024_hv_matlab_simbio.zip" download>Clopidogrel_Grafeneder2024_hv_matlab_simbio.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv/Clopidogrel_Grafeneder2024_hv_matlab_simbio.zip" download>Clopidogrel_Grafeneder2024_hv_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv/Clopidogrel_Grafeneder2024_hv_sbml.zip" download>Clopidogrel_Grafeneder2024_hv_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv/Clopidogrel_Grafeneder2024_hv_cellml.zip" download>Clopidogrel_Grafeneder2024_hv_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

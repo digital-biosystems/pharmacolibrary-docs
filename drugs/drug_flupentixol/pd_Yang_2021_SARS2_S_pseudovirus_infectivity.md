@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Flupentixol concentrations (µM) inhibit SARS2-S pseudovirus infectivity (%) in Huh-7 cells, described by a sigmoid Emax inhibition model with EC50 = 1.45 µM and EC90 = 8.68 µM; the paper does not state a pharmacodynamic mechanism beyond suggesting the drugs interfere with SARS-CoV-2 spike protein function.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

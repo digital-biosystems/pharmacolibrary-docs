@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Okuyama-Dobashi_2015_HBV_RNA](drugs/drug_proscillaridin/pd_Okuyama_Dobashi_2015_HBV_RNA.md) | HBV infection ← Proscillaridin A · direct Emax (saturable) effect | — | Okuyama-Dobashi K et al., Hepatitis B virus efficiently infects n…, Scientific reports (2015) | [10.1038/srep17047](https://doi.org/10.1038/srep17047) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Okuyama-Dobashi_2015_HBV_RNA](drugs/drug_proscillaridin/pd_Okuyama_Dobashi_2015_HBV_RNA.md) | HBV infection ← Proscillaridin A · direct Emax (saturable) effect | — | Okuyama-Dobashi K et al., Hepatitis B virus efficiently infects n…, Scientific reports (2015) | [10.1038/srep17047](https://doi.org/10.1038/srep17047) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

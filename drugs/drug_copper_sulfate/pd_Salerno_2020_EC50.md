@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Copper sulfate (as Cu2+) concentration in water is linked to 48-h glochidia mortality, reported as an EC50 of 14.2 μg Cu2+/L; the excerpts provide no mechanism, model family, or additional parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Salerno_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

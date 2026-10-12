@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Somatorelin (human GHRH) stimulates GH release from dispersed pituitary cells in a dose-dependent manner; the paper reports an EC50 of 6.0 x 10(-8) M, but no full text is available to confirm the mechanism or other model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baudet_2003`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentamidine (μM) protects G34 and G36 of tRNA from T1 ribonuclease cleavage in a sigmoid Emax (inhibitory/proportional) concentration–response relationship, with EC50 of 161.3 μM (Hill coefficient 4.9) and 409.8 μM (Hill coefficient 6.3) for the two sites; the paper attributes this to pentamidine non-specifically binding tRNA (hydrophobic intercalation of its aromatic rings into stacked base pairs), disrupting tRNA secondary structure and masking the anticodon loop.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sun_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided record and paper excerpts do not contain sufficient information to determine the specific mechanism or kinetic parameters for levocetirizine's effect on acetylcholine-induced relaxation of aortic rings, as no full text is available and the driver is unresolved.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shawky_2014`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

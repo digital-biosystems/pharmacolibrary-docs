@@ -4,7 +4,7 @@
 
 # gadopentetic acid — `GadopenteticAcid_Steingoetter2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.235). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Gd-DTPA clearance of 0.04 ml s−1 was rejected for an implausible clearance-to-volume scale, attributed to a unit or scale extraction error.**
+
+The record gives a total clearance of 0.04 ml s−1 and a distribution volume of 0.5 mL. The review found their clearance-to-volume scale physiologically implausible and attributed this to a unit or scale extraction error. Extracted — Gd-DTPA (gadopentetic acid): kel 0.013 1/s, k12 0.3 1/s, k21 0.012 1/s, kcomp 0.24 1/s, CL 0.04 ml s−1, V 0.5 mL.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has Gd-DTPA (gadopentetic acid), the second reading Gd-DTPA; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 ## Citation
 Steingoetter A et al., Assessing antiangiogenic therapy respon…, PloS one (2011)
@@ -83,6 +91,39 @@ Steingoetter A et al., Assessing antiangiogenic therapy respon…, PloS one (201
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.235 (4/17 fields) | 13 |
+
+<details><summary>13 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[cl]` | 0.04 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[k c0 = cl / vc].parameter_id` | Q47 | Q86 | mismatch |
+| `qwen3.8-27b` | `parameters[k cl1]` | not captured | 2.9 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[k cm1]` | 0.3 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[k l2l3]` | not captured | 0.027 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[k m1c]` | 0.012 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[k m1m2]` | not captured | 3.6 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[k m2m3]` | 0.24 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[k t2l1]` | not captured | 0.38 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[k t2t3]` | 3.7 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v d per catheter]` | 0.5 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `screen.dose_compound` | Gd-DTPA (gadopentetic acid) | Gd-DTPA | mismatch |
+| `qwen3.8-27b` | `screen.primary_analyte` | Gd-DTPA (gadopentetic acid) | Gd-DTPA | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

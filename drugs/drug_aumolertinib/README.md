@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Ao_2022_cell_viabilities](drugs/drug_aumolertinib/pd_Ao_2022_cell_viabilities.md) | cell viabilities ← aumolertinib · inhibition effect | — | Ao L et al., Sequence-dependent synergistic effect o…, Journal of experimental & c… (2022) | [10.1186/s13046-022-02369-3](https://doi.org/10.1186/s13046-022-02369-3) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Ao_2022_cell_viabilities](drugs/drug_aumolertinib/pd_Ao_2022_cell_viabilities.md) | cell viabilities ← aumolertinib · inhibition effect | — | Ao L et al., Sequence-dependent synergistic effect o…, Journal of experimental & c… (2022) | [10.1186/s13046-022-02369-3](https://doi.org/10.1186/s13046-022-02369-3) |
 
 ## ADME sites
 

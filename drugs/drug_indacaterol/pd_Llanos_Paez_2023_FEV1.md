@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;indacaterol&quot;,&quot;href&quot;:&quot;drugs/drug_indacaterol/&quot;},{&quot;label&quot;:&quot;Llanos-Paez_2023 \u00b7 PD Morning trough FEV1&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Indacaterol_Jiang2015_reference&quot;,&quot;label&quot;:&quot;Jiang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indacaterol/Indacaterol_Jiang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Indacaterol_Jiang2015_reference&quot;,&quot;label&quot;:&quot;Jiang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indacaterol/Indacaterol_Jiang2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Morning trough FEV1 — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,6 +17,10 @@
 **As extracted:** Indacaterol (the dose) drives Morning trough FEV1 (in L): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
+
+> In this model-based meta-analysis, indacaterol dose (µg) stimulates morning trough FEV1 (L) via an Emax dose-response (additive effect form), with ED50 5.37 µg (0.10–287.4), Effref 128.5 mL (113.6–143.3) and Emax 137.7 mL (126.0–567.6); the paper does not describe a mechanistic production/elimination or effect-compartment structure beyond this direct dose-response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Llanos-Paez_2023`
 - **model family:** `emax`

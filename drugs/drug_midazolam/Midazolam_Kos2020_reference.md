@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_Kos2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.455), gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 For midazolam in critically ill children with severe bronchiolitis, the record lists a typical clearance value of 8.52 L/h/70 kg, but F and Cl were defaulted, so the deviations check failed and the model was held back rather than published with an invented number. A second reader also disagreed on the dose compound and primary analyte (both recorded as midazolam) and on a maturation parameter θ pma50, which the record leaves empty while the second reader gives 45.9. Extracted — midazolam: V1 5.71 L/70 kg, V2 39.8 L/70 kg, Q 25.5 L/h/70 kg, kabs 0.14 1/h, tlag 0.08 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has midazolam, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a: this record has 1.77, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -77,17 +77,24 @@ Kos MK et al., Maturation of midazolam clearance in cr…, European journal of p
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.455 (5/11 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.667 (6/9 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a]` | 1.77 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag1]` | 1.23 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ pma50]` | not captured | 41.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ q].value` | 25.5 | 12.1 | mismatch |
+| `gpt-oss-120b` | `parameters[θ v1].value` | 5.71 | 0.417 | mismatch |
+| `gpt-oss-120b` | `parameters[θ v2].value` | 39.8 | 18.5 | mismatch |
 | `gpt-oss:120b` | `parameters[θ pma50]` | not captured | 45.9 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | midazolam | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | midazolam | unknown | mismatch |

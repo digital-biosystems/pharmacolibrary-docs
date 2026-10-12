@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Flunisolide concentration (ng/mL) acts on blood lymphocyte counts via an indirect response model with inhibition of the response production (proportional inhibition); the paper excerpts provide no numeric potency or rate parameters (Imax, IC50, kin, kout).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Möllmann_1997`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`

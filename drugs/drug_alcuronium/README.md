@@ -32,7 +32,7 @@ Alcuronium is a peripherally acting muscle relaxant belonging to the curare alka
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Walker_1983_reference](drugs/drug_alcuronium/Alcuronium_Walker1983_reference.md) | — | 1-compartment (no model) | 1 | Walker JS et al., Alcuronium kinetics and plasma concentr…, Clinical pharmacology and t… (1983) | [10.1038/clpt.1983.69](https://doi.org/10.1038/clpt.1983.69) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Walker_1983_reference](drugs/drug_alcuronium/Alcuronium_Walker1983_reference.md) | — | 1-compartment (no model) | 1 | Walker JS et al., Alcuronium kinetics and plasma concentr…, Clinical pharmacology and t… (1983) | [10.1038/clpt.1983.69](https://doi.org/10.1038/clpt.1983.69) |
 
 ## Pharmacodynamics (PD)
 

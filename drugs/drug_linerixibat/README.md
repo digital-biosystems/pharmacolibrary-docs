@@ -31,7 +31,7 @@ Linerixibat is an investigational bile acid inhibitor being studied for cholesta
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Carreño_2025_C4](drugs/drug_linerixibat/pd_Carre_o_2025_C4.md) | C4 ← linerixibat · indirect response — drug stimulates the production of C4 | model (no simulator) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span> | [Carreño_2025_C4](drugs/drug_linerixibat/pd_Carre_o_2025_C4.md) | C4 ← linerixibat · indirect response — drug stimulates the production of C4 | model (no simulator) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
 
 ## ADME sites
 

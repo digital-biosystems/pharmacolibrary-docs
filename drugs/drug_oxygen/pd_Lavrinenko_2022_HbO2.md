@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Oxygen partial pressure (mm Hg) drives hemoglobin oxygen saturation (HbO2, %) via a sigmoid Emax (Hill-type) stimulation model of cooperative binding; the paper does not describe a drug mechanism such as production/elimination inhibition, as this is a binding curve fit. Key values: p50 = 29.11 and 26.86 mm Hg, Hill slope s = 1.80 and 1.91, maximum Hill coefficient hmax = 2.68 and 2.82 (from hmax(−1) = 1.68 and 1.82), and pmax = 47.82 and 67.28 mm Hg (from ln pmax), where pmax is the partial pressure at maximal cooperativity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lavrinenko_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

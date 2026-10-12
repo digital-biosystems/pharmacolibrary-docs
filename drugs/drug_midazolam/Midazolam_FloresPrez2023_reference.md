@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_FloresPrez2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857), gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -68,17 +68,20 @@ Flores-Pérez C et al., Pharmacokinetic-Pharmacodynamic Modelin…, Pharmaceutic
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.857 (12/14 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.833 (10/12 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a]` | 1.77 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag1]` | 1.23 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | midazolam | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | midazolam | unknown | mismatch |
 

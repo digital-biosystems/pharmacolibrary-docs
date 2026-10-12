@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M04A&quot;,&quot;href&quot;:&quot;atc/M04A.md&quot;},{&quot;label&quot;:&quot;probenecid&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Probenecid_Ahmad2021_reference&quot;,&quot;label&quot;:&quot;Ahmad_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_probenecid/Probenecid_Ahmad2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Probenecid_Stocker2012_reference&quot;,&quot;label&quot;:&quot;Stocker_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_probenecid/Probenecid_Stocker2012_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Probenecid_Ahmad2021_reference&quot;,&quot;label&quot;:&quot;Ahmad_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_probenecid/Probenecid_Ahmad2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Probenecid_Stocker2012_reference&quot;,&quot;label&quot;:&quot;Stocker_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_probenecid/Probenecid_Stocker2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # probenecid
 
@@ -19,15 +19,15 @@ Probenecid is a uricosuric drug used to treat gout, and has also been used in go
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 03:27 | 2:02 | 2/1/0 | 3/0/0 | 0/0/0 | 222,012/12,217 | einfracz / qwen3.8-27b | 20 | 5/4 | 9/0 | 0 |
+| 2026-10-07 03:27 | 2:02 | 1/1/1 | 3/0/0 | 0/0/0 | 222,012/12,217 | einfracz / qwen3.8-27b | 20 | 5/4 | 9/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ahmad_2021_reference](drugs/drug_probenecid/Probenecid_Ahmad2021_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ahmad A et al., Population pharmacokinetic modeling and…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12610](https://doi.org/10.1002/psp4.12610) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Stocker_2012_reference](drugs/drug_probenecid/Probenecid_Stocker2012_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Stocker SL et al., The pharmacokinetics of oxypurinol in p…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04207.x](https://doi.org/10.1111/j.1365-2125.2012.04207.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Cook_2025_reference](drugs/drug_probenecid/Probenecid_Cook2025_reference.md) | — | 1-compartment (no model) | 0 | Cook M et al., Evaluation of the Safety and Pharmacoki…, Journal of veterinary inter… (2025) | [10.1111/jvim.70221](https://doi.org/10.1111/jvim.70221) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> | [Ahmad_2021_reference](drugs/drug_probenecid/Probenecid_Ahmad2021_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ahmad A et al., Population pharmacokinetic modeling and…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12610](https://doi.org/10.1002/psp4.12610) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Stocker_2012_reference](drugs/drug_probenecid/Probenecid_Stocker2012_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Stocker SL et al., The pharmacokinetics of oxypurinol in p…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04207.x](https://doi.org/10.1111/j.1365-2125.2012.04207.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Cook_2025_reference](drugs/drug_probenecid/Probenecid_Cook2025_reference.md) | — | 1-compartment (no model) | 0 | Cook M et al., Evaluation of the Safety and Pharmacoki…, Journal of veterinary inter… (2025) | [10.1111/jvim.70221](https://doi.org/10.1111/jvim.70221) |
 
 ## Pharmacodynamics (PD)
 
@@ -70,7 +70,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 71 matched, 20 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

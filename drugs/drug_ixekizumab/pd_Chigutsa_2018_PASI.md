@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> No pharmacodynamic mechanism or model parameters are described because no paper text is available. Therefore, the specific relationship between ixekizumab concentrations and PASI scores cannot be summarized.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chigutsa_2018`
 - **model family:** `categorical`
 - **driver:** `not_resolved`

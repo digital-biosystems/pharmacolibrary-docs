@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Halothane (mM) directly inhibits oxygen consumption by complex I in isolated mouse brain mitochondria, a dose-dependent effect modeled with an EC50 of 0.47 mM. The paper does not specify the maximum inhibition (Imax) or the underlying mechanism beyond direct inhibition of the complex.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fedorov_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

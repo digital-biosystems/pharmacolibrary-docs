@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Edrophonium concentrations act on heart rate (tachycardiac response) via an effect-compartment model with a stimulatory effect; the paper excerpts do not state the mechanism, effect form, or any potency or rate parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yamamoto_1996`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

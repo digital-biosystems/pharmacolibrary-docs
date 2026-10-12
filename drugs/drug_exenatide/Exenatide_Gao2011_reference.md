@@ -5,7 +5,7 @@
 
 # exenatide — `Exenatide_Gao2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.765), gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — exenatide: CL 8.6 ml/kg/min, V1 90.5 ml/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has exendin-4, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading none → not captured (not captured); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -84,17 +84,22 @@ Gao W et al., Pharmacokinetic and pharmacodynamic mod…, The Journal of pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.765 (13/17 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.857 (12/14 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['none', '', '']] | mismatch |
+| `gpt-oss-120b` | `parameters[clearance]` | 12.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.006 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v c].parameter_id` | Q61 | Q63 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | exendin-4 | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | exendin-4 | unknown | mismatch |
 

@@ -33,7 +33,7 @@ Deflazacort is a glucocorticoid (anti-inflammatory and immunosuppressive) used t
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Möllmann_1995_reference](drugs/drug_deflazacort/Deflazacort_Mllmann1995_reference.md) | — | 1-compartment (no model) | 2 | Möllmann H et al., Pharmacokinetic/pharmacodynamic evaluat…, Pharmaceutical research (1995) | [10.1023/a:1016287104656](https://doi.org/10.1023/a:1016287104656) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Möllmann_1995_reference](drugs/drug_deflazacort/Deflazacort_Mllmann1995_reference.md) | — | 1-compartment (no model) | 2 | Möllmann H et al., Pharmacokinetic/pharmacodynamic evaluat…, Pharmaceutical research (1995) | [10.1023/a:1016287104656](https://doi.org/10.1023/a:1016287104656) |
 
 ## ADME sites
 

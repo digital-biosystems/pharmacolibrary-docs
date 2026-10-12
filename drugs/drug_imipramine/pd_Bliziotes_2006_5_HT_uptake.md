@@ -19,7 +19,7 @@
 
 **Model:** No model was generated from this record.
 
-> Imipramine concentrations (PK from the cited Tamayo record) inhibit specific [3H]5-HT uptake in MLO-Y4 cells; the excerpts provide no mechanism, model form, or potency/rate parameters.
+> Imipramine concentrations inhibit [3H]5-HT uptake in MLO-Y4 cells (measured in pmol/15 min/well), with PK parameters taken from Tamayo_1992; the paper excerpts provide no model family, mechanism, or potency/rate values.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;tiagabine&quot;,&quot;href&quot;:&quot;drugs/drug_tiagabine/&quot;},{&quot;label&quot;:&quot;Cleton_2000 \u00b7 PD amplitude of the 11.5-30 Hz frequency band of the EEG&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tiagabine_Ingwersen2000_reference&quot;,&quot;label&quot;:&quot;Ingwersen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tiagabine/Tiagabine_Ingwersen2000_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tiagabine_Ingwersen2000_reference&quot;,&quot;label&quot;:&quot;Ingwersen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tiagabine/Tiagabine_Ingwersen2000_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amplitude of the 11.5-30 Hz frequency band of the EEG — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -19,6 +19,10 @@
 **As extracted:** Tiagabine (concentrations from the PK model of Cleton_1999_2) drives amplitude of the 11.5-30 Hz frequency band of the EEG: delayed effect through an effect compartment.
 
 **Model:** No model was generated from this record.
+
+> The record specifies an effect-compartment model in which plasma tiagabine concentrations (ng ml-1) drive a stimulatory effect on the amplitude of the 11.5-30 Hz EEG frequency band, with reported EC50 values of 521 and 291 ng ml-1. The paper does not provide excerpts to confirm the specific mechanism or effect equation form.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Cleton_2000`
 - **model family:** `effect_compartment`

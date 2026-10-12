@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes an Emax-type inhibitory model in which edaravone concentrations act on peroxynitrite (ONOO─) scavenging, but no full text is available, so the mechanism, effect form, and potency or rate parameters (Imax, IC50, Emax, kin, kout, gamma) are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2014`
 - **model family:** `emax`
 - **driver:** `not_resolved`

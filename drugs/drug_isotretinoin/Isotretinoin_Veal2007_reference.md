@@ -4,7 +4,7 @@
 
 # isotretinoin — `Isotretinoin_Veal2007_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**AUC has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUC), so that value has no SI equivalent. Extracted — isotretinoin: CL/F 2 l h À1, V/F 2 l, AUC 2 mmol h l À1, tlag 2 min.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Veal GJ et al., Pharmacokinetics and metabolism of 13-c…, British journal of cancer (2007)

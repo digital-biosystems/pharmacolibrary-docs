@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Protriptyline concentration-dependently inhibits high K+ (60 mM)-induced contraction of rat isolated aorta, with an IC50 of 0.69 microM; the paper excerpts do not state the mechanism or model beyond this IC50.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huang_1996`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

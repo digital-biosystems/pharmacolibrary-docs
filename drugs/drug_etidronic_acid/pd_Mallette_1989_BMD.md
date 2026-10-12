@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> No pharmacodynamic model details, mechanism, or quantitative parameter values are provided in the available text.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mallette_1989`
 - **model family:** `unknown`
 - **driver:** `dose_only`

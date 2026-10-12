@@ -5,7 +5,7 @@
 
 # clozapine — `Clozapine_Reeves2024_age_exp_cl_fclozapine_parameter_estimat`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,11 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of iiv cl/f clozapine: this record has none, the second reading 93; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+**The clozapine parameter labelled 'V/F' (value 0.66) is actually described in the paper as the fraction of clozapine converted to norclozapine, so a dimensionless fraction was recorded as a volume of distribution, triggering a dimension-mismatch rejection.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The record lists a parameter with value 0.66 whose verbatim label reads 'k f, the fraction of V/F clozapine converted to V/F norclozapine' — a dimensionless conversion fraction — while its meaning is 'V/F: Volume of distribution adjusted for bioavailability (F)', a structural parameter with volume dimensions; this mismatch (C5) caused rejection. Additionally, the absorption rate constant kabs (0.69) carries the unit 'h À1', a garbled rendering of h−1 that could not be converted to SI units, so the parameter reached the model without an SI value. The two readers also disagreed on the covariate extraction for clozapine clearance: this record has no inter-individual variability value for CL/F where the second reader read 93, and records a smoker effect β of 0.37 where the second reader read none. Extracted — norclozapine: C0 0.02 mg L−1; clozapine: V/F 0.66, kabs 0.69 h À1, CL/F 23.2 L h À1.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Reeves S et al., A population pharmacokinetic model to g…, British journal of clinical… (2024)
@@ -82,28 +84,6 @@ f_norclozapine, σ₀_ᵢₙₜₑᵣcₑₚₖ clozapine (mg l⁻¹))
 - transposed table Reeves_2024_table_2: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
 
 ## Validation
-
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.714 (5/7 fields) | 2 |
-
-<details><summary>2 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[iiv cl/f clozapine]` | not captured | 93 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[βsmoker cl/f clozapine]` | 0.37 | not captured | only_one_extracted |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check legend</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
-</details>
-
 
 **Scholar closed-form checks:**
 

@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Salbutamol concentrations (M) were applied cumulatively to human isolated bronchus (resting tone or precontracted with methacholine 3 x 10^-5 M or acetylcholine 10^-3 M), producing a direct Emax-type concentration-response relaxation expressed as % of theophylline 3 x 10^-3 M maximal relaxation; under resting tone pD2 = 7.12 ± 0.17 (n = 10) with Emax = 83 ± 2.4%, and during acetylcholine 10^-3 M precontraction pD2 = 6.62 ± 0.15 with Emax = 55 ± 6.5%. The paper does not state a mechanistic PD model (no kin/kout/ke0); salbutamol acts as a beta2-adrenoceptor agonist relaxing airway smooth muscle.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Qian_1993`
 - **model family:** `emax`
 - **driver:** `cited_pk`

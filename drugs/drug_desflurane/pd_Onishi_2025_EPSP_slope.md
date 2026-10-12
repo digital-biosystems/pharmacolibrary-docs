@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Desflurane concentration (vol%) inhibits the excitatory postsynaptic potential (EPSP) slope in a sigmoidal Emax model, as it directly suppresses excitatory synaptic input through multiple molecular targets. The median IC50 decreased from 10.4 vol% in the standard environment to 6.5 vol% in the enriched environment, accompanied by a significant increase in the Hill coefficient from 1.9 to 2.9.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Onishi_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

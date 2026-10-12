@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Cabantchik_1989_PRU](drugs/drug_morpholine/pd_Cabantchik_1989_PRU.md) | plasma PRU concentration biomarker turnover ← morpholine | — | Cabantchik ZI et al., Effects of lysosomotropic detergents on…, Biochemical pharmacology (1989) | [10.1016/0006-2952(89)90333-x](https://doi.org/10.1016/0006-2952(89)90333-x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [Cabantchik_1989_PRU](drugs/drug_morpholine/pd_Cabantchik_1989_PRU.md) | plasma PRU concentration biomarker turnover ← morpholine | — | Cabantchik ZI et al., Effects of lysosomotropic detergents on…, Biochemical pharmacology (1989) | [10.1016/0006-2952(89)90333-x](https://doi.org/10.1016/0006-2952(89)90333-x) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

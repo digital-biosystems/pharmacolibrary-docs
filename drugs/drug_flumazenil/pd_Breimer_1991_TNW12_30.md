@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;flumazenil&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/&quot;},{&quot;label&quot;:&quot;Breimer_1991 \u00b7 PD total number of waves between 12 and 30 Hz (aperiodic EEG analysis)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flumazenil_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flumazenil_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flumazenil_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flumazenil_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # total number of waves between 12 and 30 Hz (aperiodic EEG analysis) — PD  <span class="pk-badge pk-badge--red">rejected</span>
@@ -17,6 +17,10 @@
 **As extracted:** Midazolam (effect antagonised competitively by flumazenil) drives total number of waves between 12 and 30 Hz (aperiodic EEG analysis): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> Midazolam plasma concentrations (micrograms/L) stimulate the total number of EEG waves between 12 and 30 Hz (TNW12-30) via a sigmoid Emax model with an effect compartment (t1/2ke0 2.2–3.3 min), with midazolam EC50 of 276±64, 624±187, and 1086±379 micrograms/L in sessions A, B, and C; flumazenil antagonises this effect competitively, doubling the midazolam EC50 at a flumazenil plasma concentration (Cf,2) of 6.5±1.0 micrograms/L. The paper excerpts do not state Emax or gamma values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Breimer_1991`
 - **model family:** `sigmoid_emax`

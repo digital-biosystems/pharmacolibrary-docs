@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not state a mechanism or model for the effect of deltamethrin (nM) on the tail current (INa+) sensitivity in s-kdr housefly neurons; only an EC15 of 133 nM is reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Thompson_2020`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

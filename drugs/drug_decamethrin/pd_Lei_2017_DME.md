@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deltamethrin (decamethrin) inhibits CES1-mediated DME hydrolysis, with an IC50 of 2.39 μM; the paper excerpts do not state the model form or mechanism beyond inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lei_2017`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

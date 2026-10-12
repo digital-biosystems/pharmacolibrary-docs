@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ipratropium bromide concentrations (μM) were related to relaxation of tracheal smooth muscle bronchomotor tone, expressed as % Emax papaverine, using an Emax-type inhibitory model; the excerpts provide no numeric potency (IC50/EC50/Emax) or mechanism details beyond this.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Venkatasamy_2016`
 - **model family:** `emax`
 - **driver:** `cited_pk`

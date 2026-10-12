@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not state a mechanism linking lemborexant plasma concentrations (ng/mL) to the binary treatment-emergent adverse event of urinary tract infection; the exposure-response analysis reports no evidence of clinically important exposure-related activity relative to placebo, and no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lalovic_2020`
 - **model family:** `linear`
 - **driver:** `pk_record`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;abiraterone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abiraterone_Stuyckens2014_final&quot;,&quot;label&quot;:&quot;Stuyckens_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati&quot;,&quot;label&quot;:&quot;Stuyckens_2014_final_chemotherapy_pretreated_patients_final_model_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abiraterone_Stuyckens2014_final&quot;,&quot;label&quot;:&quot;Stuyckens_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati&quot;,&quot;label&quot;:&quot;Stuyckens_2014_final_chemotherapy_pretreated_patients_final_model_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # abiraterone
 
@@ -27,22 +27,22 @@ Abiraterone is an anticancer medicine used to treat prostate cancer. It is autho
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 21:48 | 9:17 | 2/0/0 | 0/0/2 | 0/0/0 | 233,214/15,776 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 4/3 | 5/2 | 0 |
+| 2026-10-07 21:48 | 9:17 | 0/0/2 | 0/0/2 | 0/0/0 | 233,214/15,776 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 4/3 | 5/2 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Stuyckens_2014_final](drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final.md) | ▶ model + simulator | 1-compartment, oral | 5 | Stuyckens K et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (2014) | [10.1007/s40262-014-0178-6](https://doi.org/10.1007/s40262-014-0178-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Stuyckens_2014_final_chemotherapy_pretreated_patients_final_model_1](drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati.md) | ▶ model + simulator | 1-compartment, oral | 5 | Stuyckens K et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (2014) | [10.1007/s40262-014-0178-6](https://doi.org/10.1007/s40262-014-0178-6) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Stuyckens_2014_final](drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final.md) | ▶ model + simulator | 1-compartment, oral | 5 | Stuyckens K et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (2014) | [10.1007/s40262-014-0178-6](https://doi.org/10.1007/s40262-014-0178-6) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Stuyckens_2014_final_chemotherapy_pretreated_patients_final_model_1](drugs/drug_abiraterone/Abiraterone_Stuyckens2014_final_chemotherapy_pretreated_pati.md) | ▶ model + simulator | 1-compartment, oral | 5 | Stuyckens K et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (2014) | [10.1007/s40262-014-0178-6](https://doi.org/10.1007/s40262-014-0178-6) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Boerrigter_2022_OS](drugs/drug_abiraterone/pd_Boerrigter_2022_OS.md) | overall survival ← abiraterone · time-to-event model | — | Boerrigter E et al., The effect of chemotherapy on the expos…, British journal of clinical… (2022) | [10.1111/bcp.15057](https://doi.org/10.1111/bcp.15057) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Boerrigter_2022_PFS](drugs/drug_abiraterone/pd_Boerrigter_2022_PFS.md) | progression-free survival ← abiraterone · time-to-event model | — | Boerrigter E et al., The effect of chemotherapy on the expos…, British journal of clinical… (2022) | [10.1111/bcp.15057](https://doi.org/10.1111/bcp.15057) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [van_2020_PSA_PFS](drugs/drug_abiraterone/pd_van_2020_PSA_PFS.md) | prostate-specific antigen (PSA) independent progression-free survival ← abiraterone · time-to-event model | — | van Nuland M et al., Exposure-response analyses of abiratero…, Prostate cancer and prostat… (2020) | [10.1038/s41391-019-0179-5](https://doi.org/10.1038/s41391-019-0179-5) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Boerrigter_2022_OS](drugs/drug_abiraterone/pd_Boerrigter_2022_OS.md) | overall survival ← abiraterone · time-to-event model | — | Boerrigter E et al., The effect of chemotherapy on the expos…, British journal of clinical… (2022) | [10.1111/bcp.15057](https://doi.org/10.1111/bcp.15057) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Boerrigter_2022_PFS](drugs/drug_abiraterone/pd_Boerrigter_2022_PFS.md) | progression-free survival ← abiraterone · time-to-event model | — | Boerrigter E et al., The effect of chemotherapy on the expos…, British journal of clinical… (2022) | [10.1111/bcp.15057](https://doi.org/10.1111/bcp.15057) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [van_2020_PSA_PFS](drugs/drug_abiraterone/pd_van_2020_PSA_PFS.md) | prostate-specific antigen (PSA) independent progression-free survival ← abiraterone · time-to-event model | — | van Nuland M et al., Exposure-response analyses of abiratero…, Prostate cancer and prostat… (2020) | [10.1038/s41391-019-0179-5](https://doi.org/10.1038/s41391-019-0179-5) |
 
 ## ADME sites
 
@@ -75,7 +75,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 17 matched, 17 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

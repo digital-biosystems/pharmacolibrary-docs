@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clozapine (µM) stimulates [(35)S]GTPgammaS binding at hippocampal 5-HT1A receptors, described by an Emax model with Emax 22% of 5-HT Emax; the paper excerpts give no IC50/EC50 and no mechanism beyond this direct stimulatory effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Newman-Tancredi_2003`
 - **model family:** `emax`
 - **driver:** `cited_pk`

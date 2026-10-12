@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The pharmacodynamic model describes bimatoprost stimulating a contraction response through a proportional Emax mechanism. The cited EC50 for this stimulation is 1130 nM, but the paper excerpts do not specify whether the drug acts on production or elimination, nor do they provide rate parameters such as kin, kout, or ke0.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sharif_2008_2`
 - **model family:** `emax`
 - **driver:** `cited_pk`

@@ -5,7 +5,7 @@
 
 # nicardipine — `Nicardipine_Sadan2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778), gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record lists a total clearance of 0.130 L/hr for nicardipine, a value far below the physiological range for an adult. This magnitude suggests the extracted parameter suffers from a unit or scale error rather than representing true pharmacokinetics. The second reader could not confirm the dose compound or primary analyte, leaving the record's identity unverified. Extracted — nicardipine: V1 0.064 L, CL 0.13 L/hr, V2 0.73 L, Q 0.11 L/hr, tlag 0.55 hr.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has nicardipine, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nicardipine, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -76,17 +76,20 @@ Sadan O et al., Cerebrospinal Fluid Pharmacokinetics of…, medRxiv : the prepri
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `screen.dose_compound` | nicardipine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | nicardipine | unknown | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | nicardipine | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | nicardipine | unknown | mismatch |
 

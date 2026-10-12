@@ -4,7 +4,7 @@
 
 # aceclofenac — `Aceclofenac_Kim2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (primary re-run, agreement 0.429), gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -72,17 +72,22 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | primary re-run | 0.429 (3/7 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['aceclofenac', "4'-hydroxyaceclofenac", 'metabolism'], ['aceclofenac', 'diclofenac', 'hydrolysis'], ['diclofenac', "4'-hydroxydiclofenac", 'metabolism'], ["4'-hydroxyaceclofenac", "4'-hydroxydiclofenac", 'hydrolysis']] | [['aceclofenac', '4‐o‐hydroxyaceclofenac', 'metabolism'], ['aceclofenac', 'diclofenac', 'hydrolysis'], ['4‐o‐hydroxyaceclofenac', '4‐o‐hydroxydiclofenac', 'hydrolysis'], ['diclofenac', '4‐o‐hydroxydiclofenac', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[0.039]` | not captured | 0.63 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[0.13 (9.6) a]` | not captured | 0.94 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[0.745]` | not captured | 0.40 | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [['aceclofenac', "4'-hydroxyaceclofenac", 'metabolism'], ['aceclofenac', 'diclofenac', 'hydrolysis'], ['diclofenac', "4'-hydroxydiclofenac", 'metabolism'], ["4'-hydroxyaceclofenac", "4'-hydroxydiclofenac", 'hydrolysis']] | [['aceclofenac', '4-hydroxyaceclofenac', 'metabolism'], ['aceclofenac', 'diclofenac', 'hydrolysis'], ['diclofenac', '4-hydroxydiclofenac', 'metabolism'], ['4-hydroxyaceclofenac', '4-hydroxydiclofenac', 'hydrolysis']] | mismatch |
 | `gpt-oss:120b` | `parameters[0.039]` | not captured | 0.63 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[0.13 (9.6) a]` | not captured | 0.22 | only_one_extracted |

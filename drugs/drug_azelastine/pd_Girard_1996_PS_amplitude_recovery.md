@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Azelastine concentrations (microM) stimulate recovery of CA1 antidromic population spike amplitude after fluid percussion trauma, expressed as % of initial amplitude; the paper excerpts do not state the mechanism or model form, and the only potency value given is an EC50 of 10 microM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Girard_1996`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

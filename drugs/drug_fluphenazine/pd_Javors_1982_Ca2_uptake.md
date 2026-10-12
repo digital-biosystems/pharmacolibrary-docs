@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Fluphenazine inhibits ATP-stimulated calcium uptake with an IC50 of 55 microM; the paper excerpts provide no further mechanism or model details.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Javors_1982`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

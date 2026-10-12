@@ -18,7 +18,7 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> Midazolam (with clonidine as a co-driver in a joint additive model) drives the COMFORT-B sedation score via an inhibitory sigmoid Emax model, with Emax 6 (score points), EC50 186 ng/mL, and Hill coefficient 2.42; the paper does not state a rate parameter (e.g., ke0) for this effect.
+> Midazolam plasma concentrations (ng/mL) drive the COMFORT-B sedation score via an inhibitory sigmoid Emax model with BASE 6, Emax 6, EC50 186 ng/mL, and Hill coefficient 2.42; a postanesthesia effect (PAEMAX 9.3, TPS50 0.11 h) was included for patients after major surgery, washing out over time.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

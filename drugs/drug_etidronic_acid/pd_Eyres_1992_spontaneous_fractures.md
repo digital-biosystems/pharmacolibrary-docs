@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes etidronic acid as driving spontaneous fractures with a dose-only driver, but does not specify the mechanism, effect direction, or effect form. No potency or rate parameters are provided because the full text is unavailable.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eyres_1992`
 - **model family:** `unknown`
 - **driver:** `dose_only`

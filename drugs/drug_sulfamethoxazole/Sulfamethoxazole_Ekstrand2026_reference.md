@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01E&quot;,&quot;href&quot;:&quot;atc/J01E.md&quot;},{&quot;label&quot;:&quot;sulfamethoxazole&quot;,&quot;href&quot;:&quot;drugs/drug_sulfamethoxazole/&quot;},{&quot;label&quot;:&quot;Ekstrand_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulfamethoxazole_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sulfamethoxazole_Hess1993_reference&quot;,&quot;label&quot;:&quot;Hess_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfamethoxazole/Sulfamethoxazole_Hess1993_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulfamethoxazole_Hess1993_reference&quot;,&quot;label&quot;:&quot;Hess_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfamethoxazole/Sulfamethoxazole_Hess1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfamethoxazole_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sulfamethoxazole — `Sulfamethoxazole_Ekstrand2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,7 +17,13 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The sulfamethoxazole record was held back because its terminal half-life failed to match the paper's reports and key inter-compartmental parameters relied on library defaults rather than study-specific estimates.**
+
+Simulations using the extracted clearance and volume parameters produced a terminal half-life that deviated significantly from the paper's reported values. Additionally, the model builder substituted library defaults for the inter-compartmental clearance terms (k12, k13, k31) rather than using values from the study, leaving these influential parameters unsupported by the paper. Extracted — sulfamethoxazole: CL 0.43 L/h/kg, V1 0.37 L/kg, V2 0.09 L/kg, Q 0.14 L/h/kg, kabs 3.69 1/h, Fab 0.94, V 2.62 L/kg.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 > **Dose compound ≠ measured compound:** dosed `sulfamethoxazole, trimethoprim`, measured `sulfamethoxazole`.
 
@@ -26,7 +32,7 @@ Ekstrand C et al., Comparative pharmacokinetics of trimeth…, BMC veterinary re
   ·  DOI: [10.1186/s12917-026-05604-7](https://doi.org/10.1186/s12917-026-05604-7)
 
 ## Model component
-<dbs-pgx drug="sulfamethoxazole" model-id="Sulfamethoxazole_Ekstrand2026_reference" status="extracted" stale="false" population="Beagle dogs" measured-compound="sulfamethoxazole" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<dbs-pgx drug="sulfamethoxazole" model-id="Sulfamethoxazole_Ekstrand2026_reference" status="needs_review" stale="false" population="Beagle dogs" measured-compound="sulfamethoxazole" parameterization="mechanistic" topology="3C"></dbs-pgx>
 
 **Model structure:** 3-compartment, oral mammillary model — template `PK_3C_enteral`.  
 **Parameters:** 7 extracted.
@@ -34,6 +40,8 @@ Ekstrand C et al., Comparative pharmacokinetics of trimeth…, BMC veterinary re
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Cl | `Q22` · CL | 0.43 | L/h/kg | 8.361111111111111e-06 | L/h | 9.78 | exact (1.0) | Tab2:row3:col2, Tab2:row3:col3, Tab2:row3:col6, Tab2:row3:col7, Tab2:row11:col2, Tab2:row11:col3, Tab2:row11:col6, Tab2:row11:col7, Tab2:row19:col2, Tab2:row19:col3, Tab2:row19:col6, Tab2:row19:col7 | — | 28.47 (None% RSE) |
@@ -105,6 +113,30 @@ Ekstrand C et al., Comparative pharmacokinetics of trimeth…, BMC veterinary re
 | C9_phys_window_Q63 | pass | volume within physiological range | 25.9 L | not captured | not captured | ['Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col6', 'Tab2:row4:col7', 'Tab2:row12:col2', 'Tab2:row12:col3', 'Tab2:row12:col6', 'Tab2:row12:col7'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 6.3 L | not captured | not captured | ['Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row5:col6', 'Tab2:row5:col7', 'Tab2:row13:col2', 'Tab2:row13:col3', 'Tab2:row13:col6', 'Tab2:row13:col7'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=sulfamethoxazole) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 3C → PK_3C* | PK_3C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_t_half_beta | reference | skipped | not captured | 3359.5785423852135 | not captured | non-numeric value |
+| T1_t_half_beta | reference | fail | 7.5 | 3359.5785423852135 | 447.9438 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 12.6 | 3359.5785423852135 | 266.6332 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 4.2 | 3359.5785423852135 | 799.8997 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped | not captured | 3359.5785423852135 | not captured | non-numeric value |
+| T1_t_half_terminal | reference | fail | 0.1 | 3359.5785423852135 | 33595.7854 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.1 | 3359.5785423852135 | 3054.1623 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.39 | 3359.5785423852135 | 8614.304 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.61 | 3359.5785423852135 | 5507.5058 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.19 | 3359.5785423852135 | 17681.9923 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 4.2 | 3359.5785423852135 | 799.8997 | h→SI vs simulated h |
+| T1_tmax | reference | skipped | not captured | 2.693386773547094 | not captured | non-numeric value |
+| T1_tmax | reference | skipped | not captured | 2.693386773547094 | not captured | non-numeric value |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -113,6 +145,9 @@ Ekstrand C et al., Comparative pharmacokinetics of trimeth…, BMC veterinary re
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_sulfamethoxazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ekstrand_2026` / `Ekstrand_2026::reference`)
+- model: `../../../knowledgebase/drugs/drug_sulfamethoxazole/models/modelica/Sulfamethoxazole_Ekstrand2026_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_sulfamethoxazole/models/modelica/Sulfamethoxazole_Ekstrand2026_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_sulfamethoxazole/models/modelica/Sulfamethoxazole_Ekstrand2026_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -124,7 +159,7 @@ Ekstrand C et al., Comparative pharmacokinetics of trimeth…, BMC veterinary re
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference/Sulfamethoxazole_Ekstrand2026_reference_modelica.zip" download>Sulfamethoxazole_Ekstrand2026_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference/Sulfamethoxazole_Ekstrand2026_reference_fmi.zip" download>Sulfamethoxazole_Ekstrand2026_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_3C_enteral.fmu" download>PK_3C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference/Sulfamethoxazole_Ekstrand2026_reference_matlab.zip" download>Sulfamethoxazole_Ekstrand2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference/Sulfamethoxazole_Ekstrand2026_reference_matlab_simbio.zip" download>Sulfamethoxazole_Ekstrand2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference/Sulfamethoxazole_Ekstrand2026_reference_matlab_simbio.zip" download>Sulfamethoxazole_Ekstrand2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference/Sulfamethoxazole_Ekstrand2026_reference_sbml.zip" download>Sulfamethoxazole_Ekstrand2026_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sulfamethoxazole/Sulfamethoxazole_Ekstrand2026_reference/Sulfamethoxazole_Ekstrand2026_reference_cellml.zip" download>Sulfamethoxazole_Ekstrand2026_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

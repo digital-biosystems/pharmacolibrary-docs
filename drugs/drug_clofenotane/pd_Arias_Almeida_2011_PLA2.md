@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the model details: no excerpts are available, so the mechanism by which DDT (driver, in μg l(-1)) acts on phospholipase A2 (PLA2) is not stated, and no potency (IC50/EC50/Emax) or rate parameters (kin, kout, ke0) are reported; only an inhibitory effect direction is indicated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Arias-Almeida_2011`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

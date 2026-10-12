@@ -4,7 +4,7 @@
 
 # spirapril — `Spirapril_Krhenbhl1993_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.083), gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 Three dimensioned parameters — the equilibrium dissociation constant KD (0.45), the extrapolated initial concentration C0 for spirapril (1600) and C0 for spiraprilat (553) — appear in the paper without a unit, so their values cannot be converted to a common measurement system and the model cannot use them. A further unit reported in the paper could not be converted to SI, leaving that parameter without a usable value. The two readers also disagree on the primary analyte (spiraprilat versus spirapril) and on whether the spirapril–spiraprilat link is hydrolysis or metabolism, and several parameter values (a 2.0 h⁻¹ rate constant and an AUC of 820) differ between the extractions. Extracted — spirapril: Cmax 572 ng/ml, tmax 0.8 h, AUC 1.19e+03 µg·h/l, CL/F 0.35 L/h, V/F 46.5 L, KD 0.45, C0 1.6e+03, t1/2z 1.53 h; spiraprilat: t1/2z 2 h, AUCt 611 µg·h/l, AUC 1.03e+03 µg·h/l, kfm 1.03 1/h, C0 553.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has spirapril, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has spiraprilat, the second reading spirapril; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -123,17 +123,40 @@ Krähenbühl S et al., Pharmacokinetics and haemodynamic effec…, European jour
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.083 (2/24 fields) | 22 |
 | `gpt-oss:120b` | not confirmed | 0.182 (4/22 fields) | 18 |
 
-<details><summary>18 field(s) a reader read differently</summary>
+<details><summary>40 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['spirapril', 'spiraprilat', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[auc (0-t) a]` | not captured | 611 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc (0-t) a]` | 611 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 1190 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | not captured | 1190 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c]` | 1600 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c]` | not captured | 1600 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f -]` | 0.35 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f -]` | not captured | 0.35 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cma x]` | 572 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cma x]` | not captured | 572 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kd]` | 0.45 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kd]` | not captured | 0.45 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km b]` | not captured | 1.03 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km b]` | 1.03 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tl/21]` | 1.53 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tl/21]` | not captured | 1.53 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tma-]` | not captured | 0.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tz/2 b]` | 1.29 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vdf -]` | 46.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vdf -]` | not captured | 46.5 | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | spiraprilat | spirapril | mismatch |
 | `gpt-oss:120b` | `parameters[auc]` | 1190 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc]` | not captured | 1190 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[c]` | 1600 | not captured | only_one_extracted |

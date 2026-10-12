@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> In anaesthetised rats, tapentadol plasma concentrations were related to the reduction of the N1 somatosensory evoked potential amplitude (expressed as % of baseline) evoked by low-intensity stimulation, with dose–response data fitted by least squares regression; the paper does not state a specific PD model, mechanism, or potency parameters (no Imax, IC50/EC50, Emax, kin, kout, or ke0 values are given for this relationship).
+> The paper describes a direct inhibition of the N1 amplitude (evoked by low-intensity electrical stimulation) by tapentadol concentration (µM), using a dose–response curve fitted by least squares regression, but does not provide specific numerical values for the mechanism or potency parameters (e.g., IC50, Emax, kout) for tapentadol in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Steel_2026`
 - **model family:** `emax`

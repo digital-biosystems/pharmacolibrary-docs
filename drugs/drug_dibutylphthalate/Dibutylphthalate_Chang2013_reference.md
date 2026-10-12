@@ -16,7 +16,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Only clearance was extracted — no volume; λ1 and AUC have no unit (+1 more).**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — dibutylphthalate: Ct 0.18 μg/mL, λ1 0.15, kel 0.02 1/min, AUC 57.8 min μg/mL, t1/2α 5.77 min, t1/2β 217 min, CL 551 mL/min/kg, MRT 123 min.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Chang LW et al., Pharmacokinetics of dibutyl phthalate (…, International journal of mo… (2013)

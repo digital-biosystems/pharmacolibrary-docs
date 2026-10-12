@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Citalopram concentrations (via a cited pharmacokinetic model) drive QT interval prolongation described by a sigmoid Emax model with stimulation of QT; the paper excerpts provide no mechanism details and no numeric potency (EC50/Emax/gamma) or rate values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mégarbane_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

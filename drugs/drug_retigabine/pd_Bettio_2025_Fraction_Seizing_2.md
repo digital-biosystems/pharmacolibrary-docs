@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In mice, retigabine brain concentrations inhibit the binary response 'Fraction Seizing' via a sigmoid Emax model with an EC50 of 3.58 µM. The paper does not specify the detailed pharmacodynamic mechanism (e.g., rate constants) but notes that RTG is a KV7 potassium channel potentiator.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bettio_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

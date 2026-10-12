@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Procaterol concentration-dependently relaxes carbachol-contracted tracheal smooth muscle (response in %), with a reported EC50 of 3.6 x 10(-10) M; the excerpts do not state the mechanism or other model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Törneke_1997`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

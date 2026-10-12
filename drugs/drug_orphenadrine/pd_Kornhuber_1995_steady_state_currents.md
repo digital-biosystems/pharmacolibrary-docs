@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03B&quot;,&quot;href&quot;:&quot;atc/M03B.md&quot;},{&quot;label&quot;:&quot;Orphenadrine&quot;,&quot;href&quot;:&quot;drugs/drug_orphenadrine/&quot;},{&quot;label&quot;:&quot;Kornhuber_1995 \u00b7 PD steady state currents&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Orphenadrine_Elghazali2008_reference&quot;,&quot;label&quot;:&quot;Elghazali_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_orphenadrine/Orphenadrine_Elghazali2008_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Orphenadrine_Elghazali2008_reference&quot;,&quot;label&quot;:&quot;Elghazali_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_orphenadrine/Orphenadrine_Elghazali2008_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # steady state currents — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,6 +17,10 @@
 **As extracted:** Orphenadrine (concentrations from the PK model of Elghazali_2008) drives steady state currents: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
+
+> Orphenadrine is described in the record as an inhibitor of steady state currents following an Emax model with an IC50 of 16.2 +/- 1.6 microM. The specific mechanism of inhibition and the exact maximum effect (Emax) are not stated in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Kornhuber_1995`
 - **model family:** `emax`

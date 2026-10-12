@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> No full text was available to determine the specific mechanism or key potency and rate values for the effect of mivacurium on adductor pollicis twitch tension.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Markakis_1998`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

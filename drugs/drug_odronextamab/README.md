@@ -23,7 +23,7 @@ Odronextamab is a monoclonal antibody used to treat follicular lymphoma. It is a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Bravo_2026_reference](drugs/drug_odronextamab/Odronextamab_Bravo2026_reference.md) | — | 3-compartment (no model) | 4 | Bravo Padros M et al., Pharmacokinetics of Odronextamab, A Bis…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70162](https://doi.org/10.1002/psp4.70162) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727), gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Bravo_2026_reference](drugs/drug_odronextamab/Odronextamab_Bravo2026_reference.md) | — | 3-compartment (no model) | 4 | Bravo Padros M et al., Pharmacokinetics of Odronextamab, A Bis…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70162](https://doi.org/10.1002/psp4.70162) |
 
 ## ADME sites
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol inhibits isoproterenol-stimulated cAMP accumulation with a sigmoid Emax model: maximal inhibition 58 ± 4% and log half-maximal effective concentration -8.34 ± 0.16; the paper excerpts do not state the mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ethier_1996`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

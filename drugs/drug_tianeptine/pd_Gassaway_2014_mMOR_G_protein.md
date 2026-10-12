@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Tianeptine concentrations (nM) act directly on G-protein activation at mouse MOR measured by BRET, acting as a full MOR agonist (direct Emax-type stimulation); the paper reports an EC50 of 641±120 nM, with no Imax, kin, kout, ke0, or gamma values given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gassaway_2014`
 - **model family:** `emax`
 - **driver:** `cited_pk`

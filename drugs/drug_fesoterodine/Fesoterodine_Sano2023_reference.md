@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04B&quot;,&quot;href&quot;:&quot;atc/G04B.md&quot;},{&quot;label&quot;:&quot;fesoterodine&quot;,&quot;href&quot;:&quot;drugs/drug_fesoterodine/&quot;},{&quot;label&quot;:&quot;Sano_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fesoterodine_Sano2023_reference&quot;,&quot;label&quot;:&quot;Sano_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fesoterodine/Fesoterodine_Sano2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fesoterodine_Sano2023_reference&quot;,&quot;label&quot;:&quot;Sano_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fesoterodine/Fesoterodine_Sano2023_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fesoterodine — `Fesoterodine_Sano2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,17 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+
+### Reviewer guidance
+
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines. None of the extracted parameters is fesoterodine's own; they describe 5-hydroxymethyl tolterodine.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 5-hydroxymethyl tolterodine, the second reading 5-HMT; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `fesoterodine`, measured `5-hydroxymethyl tolterodine`.
 
@@ -24,7 +34,7 @@ Sano Y et al., Population Pharmacokinetic and Pharmaco…, European journal of d
   ·  DOI: [10.1007/s13318-023-00818-8](https://doi.org/10.1007/s13318-023-00818-8)
 
 ## Model component
-<dbs-pgx drug="fesoterodine" model-id="Fesoterodine_Sano2023_reference" status="extracted" stale="false" population="pediatric patients with neurogenic detrusor overactivity or overactive bladder" measured-compound="5-hydroxymethyl tolterodine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="fesoterodine" model-id="Fesoterodine_Sano2023_reference" status="accepted_with_caveats" stale="false" population="pediatric patients with neurogenic detrusor overactivity or overactive bladder" measured-compound="5-hydroxymethyl tolterodine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted, plus 5 covariate effects.
@@ -90,6 +100,47 @@ Sano Y et al., Population Pharmacokinetic and Pharmaco…, European journal of d
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.125 (3/24 fields) | 21 |
+
+<details><summary>21 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[alag]` | not captured | 0.279 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag]` | 0.279 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 71.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 71.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect of fesoterodine formulations on f]` | not captured | 0.65 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect_of_cyp2d6_metabolizer_on_cl_fa]` | 0.534 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.0902 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.0902 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_cyp2d6]` | not captured | 0.534 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_sex]` | not captured | 0.862 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_sex]` | 0.862 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_weight]` | not captured | 0.75 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_weight]` | 0.75 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q76_sex]` | not captured | 0.635 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q76_sex]` | 0.635 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q76_weight]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q76_weight]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd/f]` | not captured | 73.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd/f]` | 73.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | 5-hydroxymethyl tolterodine | 5-HMT | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -105,6 +156,20 @@ Sano Y et al., Population Pharmacokinetic and Pharmaco…, European journal of d
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q76 | pass | volume within physiological range | 73.7 L | not captured | not captured | ['Tab2:row5:col1', 'Tab2:row5:col2', 'Tab2:row5:col3'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=5-hydroxymethyl tolterodine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | 2.55 | 1.9802068228384323e-06 | not captured | unresolved concentration unit (exp 'h', sim 'kg/m3') |
+| T1_t_half_terminal | reference | pass | 7.73 | 7.682793239918832 | 0.9939 | h→SI vs simulated h |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -113,6 +178,9 @@ Sano Y et al., Population Pharmacokinetic and Pharmaco…, European journal of d
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_fesoterodine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sano_2023` / `Sano_2023::reference`)
+- model: `../../../knowledgebase/drugs/drug_fesoterodine/models/modelica/Fesoterodine_Sano2023_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_fesoterodine/models/modelica/Fesoterodine_Sano2023_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_fesoterodine/models/modelica/Fesoterodine_Sano2023_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

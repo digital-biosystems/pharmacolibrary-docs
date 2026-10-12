@@ -4,7 +4,7 @@
 
 # neomycin — `Neomycin_Lentzen1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125), gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc values of neomycin were: this record has none, the second reading 2.5. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has neomycin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -65,17 +65,25 @@ Lentzen H et al., [Comparative study of serum levels and…, Arzneimittel-Forsch
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.125 (1/8 fields) | 7 |
 | `gpt-oss:120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
+| `gpt-oss-120b` | `parameters[distribution half-life]` | 1.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution half-life]` | not captured | 1.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean half-life]` | 2.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean half-life]` | not captured | 2.6 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | neomycin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | neomycin | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[auc values of neomycin were]` | not captured | 2.5 | only_one_extracted |
 
 </details>

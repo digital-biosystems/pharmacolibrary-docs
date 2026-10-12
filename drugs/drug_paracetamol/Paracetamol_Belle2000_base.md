@@ -5,7 +5,7 @@
 
 # paracetamol — `Paracetamol_Belle2000_base`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556), gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The clearance parameter for acetaminophen carries the label 'propofol clearance capacity in a 38 postmenstrual weeks newborn at birth' with value 0.029 l.min−1, inconsistent with the human liver microsome paracetamol context of the other parameters (Km 6.9 M, V 6.35 liters, tlag 4.2 min). The reported unit l.min−1 could not be converted to SI, so the clearance reached the record without an SI value. A second reader recorded 19.8 for this clearance where the record has null, so the disagreement is unresolved. Extracted — paracetamol: Km 6.9 M, CL 0.029 l.min−1, V 6.35 liters, tlag 4.2 min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 1 a: this record has none, the second reading 19.8. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 1 a: this record has none, the second reading 19.8; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -81,17 +81,22 @@ Belle DJ et al., A population approach to enzyme charact…, Pharmaceutical rese
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
 | `gpt-oss:120b` | partly confirmed | 0.833 (5/6 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[1 a]` | not captured | 19.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution volume]` | 0.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[propofol clearance capacity]` | 0.029 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 4.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[1 a]` | not captured | 19.8 | only_one_extracted |
 
 </details>

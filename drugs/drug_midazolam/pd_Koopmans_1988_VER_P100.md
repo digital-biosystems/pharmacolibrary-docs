@@ -18,6 +18,10 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
+> Midazolam plasma concentrations (from a 15 mg oral dose, individual PK fit) drive an increase in VER P-100 latency (msec) via a direct sigmoid Emax model with an effect compartment (hysteresis in four of six subjects, t½-ke0 ranging 0.26–0.60 hour). For VER, EC50 was 48.1 ng/ml (46.3 ng/ml in the threshold Emax model), the sigmoid exponent 2.9 ± 1.4 (or a threshold concentration of 13.8 ng/ml), and Emax − E0 was 11.8 msec (13.8 msec in the threshold model).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koopmans_1988`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

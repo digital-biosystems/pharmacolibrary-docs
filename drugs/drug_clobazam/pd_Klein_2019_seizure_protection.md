@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clobazam (with N-desmethylclobazam) concentrations were related to seizure protection (binary, %) using an Emax-type inhibitory model, with EC50 values of 303 ng/mL and 899 ng/mL; the paper excerpts do not state the mechanism beyond this or other model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Klein_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

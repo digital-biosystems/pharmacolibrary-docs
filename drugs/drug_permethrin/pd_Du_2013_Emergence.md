@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Permethrin brain concentrations (µg/g OC) drive the binary emergence response, with an inhibitory (toxic) effect; the paper reports EC50 = 0.838 ± 0.077 µg/g OC and EC5 = 0.016 ± 0.008 µg/g OC, but the excerpts do not state the mechanism (e.g., Emax form or effect compartment) or any rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Du_2013`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

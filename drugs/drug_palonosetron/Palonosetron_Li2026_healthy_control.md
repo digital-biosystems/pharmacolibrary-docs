@@ -4,7 +4,7 @@
 
 # palonosetron — `Palonosetron_Li2026_healthy_control`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.077). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.067), gpt-oss:120b (not confirmed, agreement 0.077). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (Cmax, AUCt and AUC∞), so that value has no SI equivalent. None of the extracted parameters is palonosetron's own; they describe fosrolapitant, rolapitant and fosrolapitant and rolapitant. Extracted — fosrolapitant: Cmax 139 ng/mL, t1/2z 308 hour; rolapitant: AUCt 6.77e+04 h*ng/mL, AUC∞ 8.56e+04 h*ng/mL; fosrolapitant and rolapitant: CL 7.92 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has Ritanine (fosrolapitant and palonosetron), the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has Ritanine (fosrolapitant and palonosetron), the second reading fosrolapitant; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -79,17 +79,32 @@ Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacolo
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.067 (1/15 fields) | 14 |
 | `gpt-oss:120b` | not confirmed | 0.077 (1/13 fields) | 12 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>26 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['fosrolapitant', 'rolapitant', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | not captured | 34.89 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | 85607.66 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-t]` | not captured | 31.18 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-t]` | 67715.36 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 7.92 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 7.92 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 0.67 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 139.11 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | not captured | 81.80 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 308.36 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | not captured | 839.62 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | Ritanine (fosrolapitant and palonosetron) | fosrolapitant | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | fosrolapitant and rolapitant | fosrolapitant | mismatch |
 | `gpt-oss:120b` | `model.links` | [['fosrolapitant', 'rolapitant', 'metabolism']] | [['fosrolapitant', 'rolapitant', 'metabolism'], ['fosrolapitant', 'm19', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[auc0-inf]` | not captured | 34.89 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc0-inf]` | 85607.66 | not captured | only_one_extracted |

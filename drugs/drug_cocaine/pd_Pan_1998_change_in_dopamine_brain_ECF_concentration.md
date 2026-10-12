@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record identifies a sigmoidal Emax model describing the effect of cocaine brain ECF concentrations on the change in dopamine brain ECF concentration, with an unknown effect direction. The provided paper excerpts do not contain full text, so no specific mechanism (such as inhibition of production or elimination) or numerical potency and rate values (IC50, Imax, kout, etc.) are available to report.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pan_1998`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

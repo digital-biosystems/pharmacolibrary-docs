@@ -5,7 +5,7 @@
 
 # clopidogrel — `Clopidogrel_Jung2024`
 
-> ## <span class="pk-badge pk-badge--green">curated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.852). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">curated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222), gpt-oss:120b (partly confirmed, agreement 0.852). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,7 +17,7 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q p: this record has none, the second reading 587.93; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clopidogrel, the second reading unknown; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
 
 > ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
 
@@ -69,17 +69,39 @@ Jung YS et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.222 (6/27 fields) | 21 |
 | `gpt-oss:120b` | partly confirmed | 0.852 (23/27 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>25 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['clopidogrel', 'clopidogrel h4', 'metabolism'], ['clopidogrel', 'clopidogrel carboxylic acid', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[clm1]` | 74.25 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm2]` | 7.248 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fm1]` | not captured | 0.125 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fm1]` | 0.125 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fm2]` | 0.960 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q c]` | 845.70 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q p]` | not captured | 587.93 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q p]` | 587.93 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_fm_im_power]` | not captured | -0.450 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_fm_im_power]` | -0.450 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_fm_im_power]` | -1.428 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_fm_pm_power]` | not captured | -0.996 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_fm_pm_power]` | -0.996 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_fm_pm_power]` | -2.432 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v m1]` | 51.45 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v m2]` | 17.34 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v p2]` | not captured | 51.89 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v p2]` | 51.89 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | clopidogrel | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | clopidogrel | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[k out]` | not captured | 0.006 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[q m2]` | not captured | 4.476 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[q p]` | not captured | 587.93 | only_one_extracted |

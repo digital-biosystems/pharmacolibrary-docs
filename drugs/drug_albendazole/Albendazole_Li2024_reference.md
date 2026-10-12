@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P02C&quot;,&quot;href&quot;:&quot;atc/P02C.md&quot;},{&quot;label&quot;:&quot;albendazole&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/&quot;},{&quot;label&quot;:&quot;Li_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Albendazole_Algorta2022_reference&quot;,&quot;label&quot;:&quot;Algorta_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Algorta2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Castro2009_reference&quot;,&quot;label&quot;:&quot;Castro_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Castro2009_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Chhonker2023_reference&quot;,&quot;label&quot;:&quot;Chhonker_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Chhonker2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Fimbo2023_reference&quot;,&quot;label&quot;:&quot;Fimbo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Fimbo2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Formentini2001_reference&quot;,&quot;label&quot;:&quot;Formentini_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Formentini2001_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Albendazole_Castro2009_reference&quot;,&quot;label&quot;:&quot;Castro_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Castro2009_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Formentini2001_reference&quot;,&quot;label&quot;:&quot;Formentini_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Formentini2001_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Algorta2022_reference&quot;,&quot;label&quot;:&quot;Algorta_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Algorta2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Chhonker2023_reference&quot;,&quot;label&quot;:&quot;Chhonker_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Chhonker2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Fimbo2023_reference&quot;,&quot;label&quot;:&quot;Fimbo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Fimbo2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # albendazole — `Albendazole_Li2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,14 +17,20 @@
 
 **Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The albendazole parent–metabolite model was quarantined because albendazole's clearance, volume of distribution and absorption lag time had no extracted value and library defaults were used, while all 8 reported parameters describe only albendazole sulphoxide.**
+
+The paper (Li_2024, donkeys) reports only albendazole sulphoxide (ABZSO) parameters — kel 1 1/h, kabs 1 1/h, t1/2z 0.67 h, tmax 3.01 h, Cmax 0.58 μg/mL, V/F 10.92 L/kg, AUC 12.81 μg·h/mL, CLb 0.59 L/h/kg — so albendazole's clearance, volume of distribution and lag time were left at defaults (Cl, Vd, Tlag). The topology also mismatched: a parent–metabolite structure (albendazole sulphoxide metabolized to albendazole sulfone) was expected but a one-compartment enteral structure was obtained, and the apparent parameterization assumed F=1, Fm=1 with no molar correction. Additionally, one reported parameter's unit could not be converted to SI units, so it entered the model without a usable numeric value. Extracted — albendazole sulphoxide (ABZSO): kel 1 1/h, kabs 1 1/h, t1/2z 0.67 h, tmax 3.01 h, Cmax 0.58 μg/mL, V/F 10.9 L/kg, AUC 12.8 μg·h/mL, CLb 0.59 L/h/kg.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Li Z et al., Pharmacokinetics and tissue residues of…, Veterinary medicine and sci… (2024)
   ·  DOI: [10.1002/vms3.1393](https://doi.org/10.1002/vms3.1393)
 
 ## Model component
-<dbs-pgx drug="albendazole" model-id="Albendazole_Li2024_reference" status="extracted" stale="false" population="donkeys" measured-compound="albendazole sulphoxide" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="albendazole" model-id="Albendazole_Li2024_reference" status="model_quarantined" stale="false" population="donkeys" measured-compound="albendazole sulphoxide" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 8 extracted.
@@ -32,6 +38,8 @@ Li Z et al., Pharmacokinetics and tissue residues of…, Veterinary medicine and
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | K e | `Q47` · kel | 1 | 1/h | 0.0002777777777777778 | 1/h | not captured | space_fold (0.95) | vms31393-tbl-0003:row2:col1, vms31393-tbl-0003:row2:col2, vms31393-tbl-0003:row2:col3 | — | not captured |
@@ -102,6 +110,27 @@ Li Z et al., Pharmacokinetics and tissue residues of…, Veterinary medicine and
 | C9_phys_window_Q23 | pass | clearance within physiological range | 41.3 L/h | not captured | not captured | ['vms31393-tbl-0003:row10:col2', 'vms31393-tbl-0003:row10:col3'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 764 L | not captured | not captured | ['vms31393-tbl-0003:row8:col2', 'vms31393-tbl-0003:row8:col3'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | 0.58 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.43 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 3.01 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 3.14 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 0.67 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 12.93 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 12.93 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 14.46 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -110,6 +139,8 @@ Li Z et al., Pharmacokinetics and tissue residues of…, Veterinary medicine and
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_albendazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2024` / `Li_2024::reference`)
+- model: `../../../knowledgebase/drugs/drug_albendazole/models/modelica/_needs_review/Albendazole_Li2024_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_albendazole/models/modelica/_needs_review/Albendazole_Li2024_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -121,7 +152,7 @@ Li Z et al., Pharmacokinetics and tissue residues of…, Veterinary medicine and
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_albendazole/Albendazole_Li2024_reference/Albendazole_Li2024_reference_matlab.zip" download>Albendazole_Li2024_reference_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_albendazole/Albendazole_Li2024_reference/Albendazole_Li2024_reference_matlab_simbio.zip" download>Albendazole_Li2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_albendazole/Albendazole_Li2024_reference/Albendazole_Li2024_reference_matlab_simbio.zip" download>Albendazole_Li2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_albendazole/Albendazole_Li2024_reference/Albendazole_Li2024_reference_sbml.zip" download>Albendazole_Li2024_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_albendazole/Albendazole_Li2024_reference/Albendazole_Li2024_reference_cellml.zip" download>Albendazole_Li2024_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

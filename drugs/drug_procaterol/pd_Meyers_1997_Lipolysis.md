@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Procaterol concentration (nmol/L) stimulates lipolysis with a direct Emax-type effect; the paper reports an EC50 of 83 nmol/L and an intrinsic activity of 59% relative to isoproterenol maxima, but the excerpts do not state the mechanism beyond this concentration–response stimulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Meyers_1997`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

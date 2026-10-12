@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Xia_2026_inflammatory_cytokine_levels](drugs/drug_bergapten/pd_Xia_2026_inflammatory_cytokine_levels.md) | inflammatory cytokine levels ← bergapten · direct sigmoid Emax (Hill) effect | — | Xia J et al., Study on the pharmacodynamic material b…, Journal of pharmaceutical a… (2026) | [10.1016/j.jpba.2025.117227](https://doi.org/10.1016/j.jpba.2025.117227) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Xia_2026_inflammatory_cytokine_levels](drugs/drug_bergapten/pd_Xia_2026_inflammatory_cytokine_levels.md) | inflammatory cytokine levels ← bergapten · direct sigmoid Emax (Hill) effect | — | Xia J et al., Study on the pharmacodynamic material b…, Journal of pharmaceutical a… (2026) | [10.1016/j.jpba.2025.117227](https://doi.org/10.1016/j.jpba.2025.117227) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

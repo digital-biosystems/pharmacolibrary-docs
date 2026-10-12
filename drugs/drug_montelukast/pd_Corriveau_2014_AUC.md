@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes a sigmoid Emax model where montelukast concentration (in μM) inhibits uterine contractility with an IC50 of 1 μM, but the provided excerpts contain no text to confirm this mechanism or verify the value.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Corriveau_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

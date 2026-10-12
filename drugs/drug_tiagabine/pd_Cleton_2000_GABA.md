@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;tiagabine&quot;,&quot;href&quot;:&quot;drugs/drug_tiagabine/&quot;},{&quot;label&quot;:&quot;Cleton_2000 \u00b7 PD extracellular GABA concentration&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tiagabine_Ingwersen2000_reference&quot;,&quot;label&quot;:&quot;Ingwersen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tiagabine/Tiagabine_Ingwersen2000_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tiagabine_Ingwersen2000_reference&quot;,&quot;label&quot;:&quot;Ingwersen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tiagabine/Tiagabine_Ingwersen2000_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # extracellular GABA concentration — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -19,6 +19,10 @@
 **As extracted:** Tiagabine (concentrations from the PK model of Cleton_1999_2) drives extracellular GABA concentration (in microM): delayed effect through an effect compartment.
 
 **Model:** No model was generated from this record.
+
+> The record identifies tiagabine concentrations in ng/ml as the driver for extracellular GABA concentrations in microM, classified as an effect compartment model, but the paper excerpts are unavailable to confirm the specific mechanism or key potency parameters. The record cites two baseline extracellular GABA concentrations of 0.74 microM and 1.58 microM, though no other parameter values are provided in the available data.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Cleton_2000`
 - **model family:** `effect_compartment`

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V08A&quot;,&quot;href&quot;:&quot;atc/V08A.md&quot;},{&quot;label&quot;:&quot;iotalamic acid&quot;,&quot;href&quot;:&quot;drugs/drug_iotalamic_acid/&quot;},{&quot;label&quot;:&quot;Groth_1978 \u00b7 case_6&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IotalamicAcid_Shin2015_reference&quot;,&quot;label&quot;:&quot;Shin_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iotalamic_acid/IotalamicAcid_Shin2015_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IotalamicAcid_Shin2015_reference&quot;,&quot;label&quot;:&quot;Shin_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_iotalamic_acid/IotalamicAcid_Shin2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # iotalamic acid — `IotalamicAcid_Groth1978_case_6`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Rejected: the central volume of distribution V1 for sodium iothalamate is recorded as 0.011 ml and the peripheral volume V2 as 0.082 L, physiologically implausible magnitudes indicating a unit/scale extraction error, with an orphan compartment and a unit that could not be converted to SI.**
+
+The central compartment volume V1 is 0.011 ml and the peripheral volume V2 is 0.082 L for sodium iothalamate, magnitudes far outside any physiological window for a 2-compartment model in adults, consistent with a unit or scale extraction error. The model structure also contains an unreachable/orphan compartment with no path from the dose. One reported unit could not be converted to SI units, so that parameter was recorded without a usable value. Other parameters (CLR 107 ml/min, kel 0.027 min−1, k21 0.012 min−1, Vss 91 ml, V 10.9 l) were extracted, but the dimension mismatch on a structural parameter and the implausible clearance/volume magnitudes led to rejection. Extracted — sodium iothalamate: CLR 107 ml/min, k21 0.012 min−1, kel 0.027 min−1, V1 0.011 ml, CLint 103 ml/min, Vss 91 ml, V 10.9 l, V2 0.082 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium iothalamate, the second reading iotalamic_acid; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Groth T et al., The usefulness of 125I-sodium lothalama…, Upsala journal of medical s… (1978)
@@ -77,6 +85,32 @@ Groth T et al., The usefulness of 125I-sodium lothalama…, Upsala journal of me
 - LLM selected parameter table(s) 1, 2, 3, 5
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.538 (7/13 fields) | 6 |
+
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[extracell. vol. 10% of b.w.]` | 10.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[nosslin's method "random-walk" model]` | 107 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total volume of distr. v1.(1+ (k1/k2))].parameter_id` | Q65 | Q61 | mismatch |
+| `gpt-oss-120b` | `parameters[vpt,bi]` | 0.082 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | sodium iothalamate | iotalamic_acid | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | sodium iothalamate | iotalamic_acid | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -5,7 +5,7 @@
 
 # disopyramide — `Disopyramide_Aso2001_s_dp`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record lists only the elimination rate constant (0.0663 h⁻¹) and volume of distribution (54.1 L), omitting the absorption rate constant. Consequently, the model builder applied default values for the absorption rate constant and lag time. A second reader also failed to identify the dose compound or primary analyte, marking them as unknown. Extracted — disopyramide: kel 0.0663 h⁻¹, V/F 54.1 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has disopyramide, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -72,17 +72,21 @@ Aso R et al., Population pharmacokinetics, protein bi…, International journal 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (3/6 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.125 (1/8 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[ke]` | 0.0663 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd/f]` | 54.1 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [] | [['s(+)-dp', 'r(-)-dp', 'interconversion']] | mismatch |
 | `gpt-oss:120b` | `parameters[ke]` | 0.0663 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ke]` | not captured | 0.0663 | only_one_extracted |

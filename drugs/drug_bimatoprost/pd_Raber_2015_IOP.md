@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes a dose-dependent inhibitory Emax model where daily bimatoprost dose reduces intraocular pressure from a baseline of 25 mmHg, with a placebo-adjusted maximal reduction of -6.27 mmHg and a median effective dose of 0.002% daily. The specific mechanism of action and rate constants are not provided in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Raber_2015`
 - **model family:** `emax`
 - **driver:** `dose_only`

@@ -5,7 +5,7 @@
 
 # paroxetine — `Paroxetine_Feng2006_base`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.524). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.421), gpt-oss:120b (not confirmed, agreement 0.524). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record for paroxetine in elderly subjects with major depressive disorder carries Michaelis–Menten parameters (Vmax 208 µg h⁻¹, Km 157 µg l⁻¹), three-compartment volumes (V2 254 l, V3 2350 l), intercompartmental clearance Q 1.33 l h⁻¹, absorption rate constant kabs 9.24 h⁻¹, and a reported volume of distribution Vd/F of 1010.0 L. One of these reported units could not be expressed in SI units, so the parameter arrived without an SI value and the dimensional check on a structural parameter failed. A second reader also disagreed on several covariate-effect parameters: this record lists theta_vmax_pm 48.8, theta_q367_im 19.4, theta_q367_um 34.6 and a volume of distribution of 1010.0, while the second reader instead read theta_vmax_um 34.6, theta_q3_im 19.4 and theta_q61_pm 48.8, and found no volume of distribution. Extracted — paroxetine: Vmax 208 µg h -1, Km 157 µg l -1, V2 254 l, V3 2.35e+03 l, Q 1.33 l h -1, kabs 9.24 h -1, V 1.01e+03 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has paroxetine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has paroxetine, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -93,17 +93,29 @@ Feng Y et al., Paroxetine: population pharmacokinetic…, British journal of cli
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.421 (8/19 fields) | 11 |
 | `gpt-oss:120b` | not confirmed | 0.524 (11/21 fields) | 10 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[theta_q352_pm]` | 48.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q367_im]` | 19.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q367_um]` | 34.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q61_im]` | not captured | 19.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q61_pm]` | not captured | 48.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q61_um]` | not captured | 34.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q900_wt_v2]` | 50.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v2_wt_v2]` | not captured | 50.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 2].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | paroxetine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | paroxetine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[theta_q367_em]` | 49.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q367_im]` | 19.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q367_pm]` | 48.8 | not captured | only_one_extracted |

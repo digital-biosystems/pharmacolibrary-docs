@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Bethanechol concentration (µM) directly stimulates bladder strip contractile force (g/g) via an Emax model, with EC50 = 3 µM and maximal effect 31.2±5.9 g/g; no further mechanism is stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rocha_2015`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

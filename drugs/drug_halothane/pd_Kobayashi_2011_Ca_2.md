@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model describes the direct sigmoidal Emax stimulation of intracellular calcium concentration by halothane concentration. The paper reports EC50 values of 1.71±0.36 mM and 3.63±0.64 mM for the accelerated and non-accelerated groups, respectively, but does not specify Imax, Hill slope, or other rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kobayashi_2011`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

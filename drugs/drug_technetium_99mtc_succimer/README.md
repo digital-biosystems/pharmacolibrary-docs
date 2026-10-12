@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V09C&quot;,&quot;href&quot;:&quot;atc/V09C.md&quot;},{&quot;label&quot;:&quot;technetium (99mTc) succimer&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Technetium99mtcSuccimer_Storgaard2026v2_reference&quot;,&quot;label&quot;:&quot;Storgaard_2026_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Storgaard2026v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Technetium99mtcSuccimer_Storgaard2026v2_reference&quot;,&quot;label&quot;:&quot;Storgaard_2026_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Storgaard2026v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # technetium (99mTc) succimer
 
@@ -26,15 +26,15 @@ Technetium (99mTc) succimer is a diagnostic radiopharmaceutical used for imaging
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:22 | 11:59 | 1/2/0 | 0/0/0 | 0/0/0 | 347,124/50,230 | openai / gpt-6-luna | 13 | 2/11 | 12/1 | 0 |
+| 2026-10-07 19:22 | 11:59 | 0/2/1 | 0/0/0 | 0/0/0 | 347,124/50,230 | openai / gpt-6-luna | 13 | 2/11 | 12/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Storgaard_2026_2_reference](drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Storgaard2026v2_reference.md) | ▶ model + simulator | 2-compartment, oral | 4 | Storgaard IK et al., Population pharmacokinetic modelling re…, British journal of clinical… (2026) | [10.1002/bcp.70284](https://doi.org/10.1002/bcp.70284) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Gracia_2025_reference](drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Gracia2025_reference.md) | — | 1-compartment (no model) | 2 | Gracia M et al., A population pharmacokinetic approach t…, Pediatric nephrology (Berli… (2025) | [10.1007/s00467-025-06828-9](https://doi.org/10.1007/s00467-025-06828-9) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Plyku_2021_reference](drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Plyku2021_reference.md) | — | 1-compartment (no model) | 0 | Plyku D et al., Renal 99mTc-DMSA pharmacokinetics in pe…, EJNMMI physics (2021) | [10.1186/s40658-021-00401-7](https://doi.org/10.1186/s40658-021-00401-7) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Storgaard_2026_2_reference](drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Storgaard2026v2_reference.md) | ▶ model + simulator | 2-compartment, oral | 4 | Storgaard IK et al., Population pharmacokinetic modelling re…, British journal of clinical… (2026) | [10.1002/bcp.70284](https://doi.org/10.1002/bcp.70284) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Gracia_2025_reference](drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Gracia2025_reference.md) | — | 1-compartment (no model) | 2 | Gracia M et al., A population pharmacokinetic approach t…, Pediatric nephrology (Berli… (2025) | [10.1007/s00467-025-06828-9](https://doi.org/10.1007/s00467-025-06828-9) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Plyku_2021_reference](drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Plyku2021_reference.md) | — | 1-compartment (no model) | 0 | Plyku D et al., Renal 99mTc-DMSA pharmacokinetics in pe…, EJNMMI physics (2021) | [10.1186/s40658-021-00401-7](https://doi.org/10.1186/s40658-021-00401-7) |
 
 ## ADME sites
 
@@ -57,7 +57,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 70 matched, 20 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Screened and excluded

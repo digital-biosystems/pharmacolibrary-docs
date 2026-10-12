@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05C&quot;,&quot;href&quot;:&quot;atc/C05C.md&quot;},{&quot;label&quot;:&quot;Hippocastani semen&quot;,&quot;href&quot;:&quot;drugs/drug_hippocastani_semen/&quot;},{&quot;label&quot;:&quot;Kinoshita_2025 \u00b7 PGx ABCG2&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# ABCG2 — PGx  <span class="pk-badge pk-badge--red" title="not accepted.">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+# ABCG2 — PGx  <span class="pk-badge pk-badge--red" title="not accepted.">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.0), gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -30,17 +30,29 @@ Kinoshita S et al., Influence of pharmacokinetics-related g…, PCN reports : ps
   ·  DOI: [10.1002/pcn5.70164](https://doi.org/10.1002/pcn5.70164)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | secondary_empty | 0.0 (0/11 fields) | 11 |
 | `gpt-oss:120b` | secondary_empty | 0.0 (0/11 fields) | 11 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>22 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `applies_to` | pk | not captured | mismatch |
+| `gpt-oss-120b` | `mechanism` | transport | not captured | mismatch |
+| `gpt-oss-120b` | `reference_category` | *1/*1 | not captured | mismatch |
+| `gpt-oss-120b` | `target_parameter_id` | Q22 | not captured | mismatch |
+| `gpt-oss-120b` | `theta[*1/*1F]` | -0.0891 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `theta[*1/*1]` | 0.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `theta[*1/*2]` | 0.0575 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `theta[*1/*3]` | 0.122 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `theta[*1F/*1F]` | 0.2267 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `theta[*2/*2]` | 0.0952 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `theta[*3/*3]` | 0.0337 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `applies_to` | pk | not captured | mismatch |
 | `gpt-oss:120b` | `mechanism` | transport | not captured | mismatch |
 | `gpt-oss:120b` | `reference_category` | *1/*1 | not captured | mismatch |

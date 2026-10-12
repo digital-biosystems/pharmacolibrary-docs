@@ -38,7 +38,7 @@ Mitiglinide is an anti-diabetic medication intended to lower blood sugar in peop
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.053). The first reading is what the record holds.">cross-check: disputed</span> | [Liu_2017_glucose](drugs/drug_mitiglinide/pd_Liu_2017_glucose.md) | glucose plasma concentration ← mitiglinide · direct sigmoid Emax (Hill) effect | — | Liu S et al., Pharmacokinetic and pharmacodynamic mod…, BMC pharmacology & toxicolo… (2017) | [10.1186/s40360-017-0161-6](https://doi.org/10.1186/s40360-017-0161-6) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Liu_2017_glucose](drugs/drug_mitiglinide/pd_Liu_2017_glucose.md) | glucose plasma concentration ← mitiglinide · direct sigmoid Emax (Hill) effect | — | Liu S et al., Pharmacokinetic and pharmacodynamic mod…, BMC pharmacology & toxicolo… (2017) | [10.1186/s40360-017-0161-6](https://doi.org/10.1186/s40360-017-0161-6) |
 
 ## ADME sites
 

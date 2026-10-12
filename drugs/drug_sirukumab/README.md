@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;sirukumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sirukumab_Xu2011_reference&quot;,&quot;label&quot;:&quot;Xu_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sirukumab/Sirukumab_Xu2011_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sirukumab_Zhuang2013_reference&quot;,&quot;label&quot;:&quot;Zhuang_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sirukumab/Sirukumab_Zhuang2013_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sirukumab_Zhuang2013_reference&quot;,&quot;label&quot;:&quot;Zhuang_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sirukumab/Sirukumab_Zhuang2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sirukumab_Xu2011_reference&quot;,&quot;label&quot;:&quot;Xu_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sirukumab/Sirukumab_Xu2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # sirukumab
 
@@ -18,14 +18,14 @@ Sirukumab, a monoclonal antibody interleukin inhibitor, was investigated for tre
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:36 | 1:40 | 2/0/0 | 0/0/0 | 0/0/0 | 75,908/7,231 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-07 00:36 | 1:40 | 1/0/1 | 0/0/0 | 0/0/0 | 75,908/7,231 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Xu_2011_reference](drugs/drug_sirukumab/Sirukumab_Xu2011_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Xu Z et al., Pharmacokinetics, pharmacodynamics and…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03964.x](https://doi.org/10.1111/j.1365-2125.2011.03964.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhuang_2013_reference](drugs/drug_sirukumab/Sirukumab_Zhuang2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Zhuang Y et al., Pharmacokinetics and safety of sirukuma…, International journal of cl… (2013) | [10.5414/CP201785](https://doi.org/10.5414/CP201785) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> | [Zhuang_2013_reference](drugs/drug_sirukumab/Sirukumab_Zhuang2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Zhuang Y et al., Pharmacokinetics and safety of sirukuma…, International journal of cl… (2013) | [10.5414/CP201785](https://doi.org/10.5414/CP201785) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Xu_2011_reference](drugs/drug_sirukumab/Sirukumab_Xu2011_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Xu Z et al., Pharmacokinetics, pharmacodynamics and…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03964.x](https://doi.org/10.1111/j.1365-2125.2011.03964.x) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -37,7 +37,7 @@ Sirukumab, a monoclonal antibody interleukin inhibitor, was investigated for tre
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

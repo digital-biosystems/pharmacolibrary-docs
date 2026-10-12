@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Linopirdine concentrations inhibit the mixed Na+/K+ inward rectifying current (IQ), with an IC50 reported as &gt;300 microM; the paper does not state the mechanism or model form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schnee_1998`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

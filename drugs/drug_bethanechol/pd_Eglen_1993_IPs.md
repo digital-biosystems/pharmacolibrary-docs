@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Bethanechol concentration (mol/l) directly stimulates total inositol phosphates accumulation via an Emax model, with -log EC50 of 4.1 (-log mol/l) and a maximum stimulation of 43% of that produced by (+)-cis-dioxolane; no further mechanism or rate parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eglen_1993`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

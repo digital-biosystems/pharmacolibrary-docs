@@ -5,7 +5,7 @@
 
 # simvastatin — `Simvastatin_Tsamandouras2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,6 +20,8 @@
 **The simvastatin parent–metabolite PBPK record was rejected because the tissue-to-plasma partition coefficients Kp (35.19 for simvastatin, 61.00 for simvastatin acid) are reported with the unit 'a', which could not be converted to SI, so the dimension check on this structural parameter failed.**
 
 The record contains a presystemic simvastatin acid metabolite formed from simvastatin via the metabolism rate constant Kfm, with parameters including CLint 14.208 µL/min/pmol CYP3A, CL 8001.1 L/h, V 100.0 L, kabs 0.3 h⁻¹ and tlag 0.212 h. The Kp values for both parent and metabolite carry the unit 'a', which could not be converted to SI, so the partition coefficients entered the model without an SI value and the dimensional check on this structural parameter failed. The covariate effect theta_kp_pm also appears with two very different values (4362.8 for simvastatin, 1.4562 for simvastatin acid), consistent with the dimensional inconsistency on the partition-coefficient structure. Extracted — simvastatin: CLint 14.2 µL/min/pmol CYP3A, Kp 35.2 a, V 100 L, kabs 0.3 hour -1, tlag 0.212 hr; simvastatin acid: CLint 0.0504 mL/min/mg of MP, Kp 61 a, CL 8e+03 L/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has simvastatin → simvastatin acid (metabolism), the second reading simvastatin → simvastatin acid (interconversion); it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -100,6 +102,36 @@ Tsamandouras N et al., Development and Application of a Mechan…, Pharmaceutica
 - LLM selected parameter table(s) 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.6 (15/25 fields) | 10 |
+
+<details><summary>10 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['simvastatin', 'simvastatin acid', 'metabolism']] | [['simvastatin', 'simvastatin acid', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `parameters[cl&lt;sub&gt;int,cyp3a,vitro&lt;/sub&gt;]` | 0.0504 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl&lt;sub&gt;int,cyp3a,vitro&lt;/sub&gt;].parameter_id` | Q3 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[k&lt;sub&gt;hydr,hybrid&lt;/sub&gt;]` | not captured | 2.7457 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k&lt;sub&gt;hydr,pl&lt;/sub&gt;]` | not captured | 0.1264 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kp'&lt;sub&gt;t,b,rob&lt;/sub&gt;].value` | 61.00 | 1.0476 | mismatch |
+| `gpt-oss-120b` | `parameters[kp&lt;sub&gt;t,b,rob&lt;/sub&gt;].value` | 35.19 | 18.716 | mismatch |
+| `gpt-oss-120b` | `parameters[lag]` | 0.212 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rate of absorption (ka)]` | 0.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 100.0 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

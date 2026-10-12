@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Elazab_2022_GI](drugs/drug_ceratonia/pd_Elazab_2022_GI.md) | % Inhibition of T. gondii RH ← Ceratonia siliqua · inhibition effect | — | Elazab ST et al., Anti-Toxoplasma Activities of Some Egyp…, Acta parasitologica (2022) | [10.1007/s11686-022-00633-2](https://doi.org/10.1007/s11686-022-00633-2) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Elazab_2022_GI](drugs/drug_ceratonia/pd_Elazab_2022_GI.md) | % Inhibition of T. gondii RH ← Ceratonia siliqua · inhibition effect | — | Elazab ST et al., Anti-Toxoplasma Activities of Some Egyp…, Acta parasitologica (2022) | [10.1007/s11686-022-00633-2](https://doi.org/10.1007/s11686-022-00633-2) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

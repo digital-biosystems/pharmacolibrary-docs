@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Maprotiline concentration (microM) stimulates the intracellular Ca2+ concentration ([Ca2+]i) rise, described by an Emax-type model with an EC50 of 200 microM; the paper excerpts do not state the mechanism or other parameters (e.g. Emax, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hsu_2004_3`
 - **model family:** `emax`
 - **driver:** `not_resolved`

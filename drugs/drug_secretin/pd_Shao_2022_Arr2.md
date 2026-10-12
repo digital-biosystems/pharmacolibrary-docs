@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Secretin concentration–response curves for β-arrestin2 recruitment at SCTR (BRET assay in COS-7 cells) were fitted with a simple Emax model (direct stimulation, no effect-compartment or turnover mechanism described). Reported pEC50/Emax values were 7.2 ± 0.1 / 100 ± 4% (SCTR alone), 6.8 ± 0.2 / 81 ± 6.2% (RAMP1), 7.1 ± 0.2 / 105 ± 6.8% (RAMP2), and 6.9 ± 0.1 / 67 ± 4.2% (RAMP3), with RAMP3 only weakly reducing maximal recruitment.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shao_2022`
 - **model family:** `emax`
 - **driver:** `not_resolved`

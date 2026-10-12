@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dibutylphthalate inhibits P450 aromatase activity in vitro, with an IC50 of 14–15 μM; the paper excerpts do not state the model form or mechanism beyond inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pérez-Albaladejo_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

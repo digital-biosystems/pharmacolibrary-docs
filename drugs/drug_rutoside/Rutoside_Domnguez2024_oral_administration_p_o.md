@@ -5,7 +5,7 @@
 
 # rutoside — `Rutoside_Domnguez2024_oral_administration_p_o`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.13). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154), gpt-oss:120b (not confirmed, agreement 0.13). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record reports apparent parameters for rutin in New Zealand rabbits (CL/F 13.59 L/h/kg, V/F 59.08 L/kg, AUC∞ 7792.96 ng·h/mL) that are already adjusted for bioavailability, so applying the reported Fab of 0.006 again double-corrects them, violating apparent-parameter coherence. The metabolite fraction fm for quercetin is reported as 2.38 with unit 'p.o.', a unit that could not be converted to SI, so it reached the model without an SI value; a value of 2.38 for a fraction is also incoherent. A second reader disagreed on the parameterization (mechanistic rather than apparent) and could not confirm several reported values, including Fab 0.006, AUC∞ 7792.96, CL/F 13.59, Cmax 1166.2 and C0 0.012, leaving those findings inconclusive. Extracted — rutoside: AUC∞ 7.79e+03 ng·h/mL, Cmax 1.17e+03 ng/mL, tmax 0.75 h, V/F 59.1 L/kg, CL/F 13.6 L/h/kg, kel 0.234 h−1, MRT 11.8 h, AUC/dose 0.078 h/L/kg, … (+2); quercetin: fm 2.38 p.o..
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rutin, the second reading unknown; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -115,17 +115,40 @@ Domínguez Moré GP et al., Rutin and Physalis peruviana Extract: P…, Pharmace
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.154 (4/26 fields) | 22 |
 | `gpt-oss:120b` | not confirmed | 0.13 (3/23 fields) | 20 |
 
-<details><summary>20 field(s) a reader read differently</summary>
+<details><summary>42 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc0-inf/dose]` | 0.078 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf/dose]` | not captured | 0.078 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | 7792.96 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | not captured | 7792.96 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl or cl/f]` | 13.59 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl or cl/f]` | not captured | 13.59 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cp0 or cmax/dose]` | 0.012 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cp0 or cmax/dose]` | not captured | 0.012 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cp0 or cmax]` | 1166.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cp0 or cmax]` | not captured | 1166.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | 0.006 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | not captured | 0.006 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | 11.76 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | not captured | 11.76 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 0.75 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | not captured | 0.75 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vz or vz/f]` | 59.08 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vz or vz/f]` | not captured | 59.08 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λz]` | 0.234 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λz]` | not captured | 0.234 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | rutin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | rutin | unknown | mismatch |
 | `gpt-oss:120b` | `model.bioavailability.theta` | 0.006 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[auc0-inf/dose]` | 0.078 | not captured | only_one_extracted |

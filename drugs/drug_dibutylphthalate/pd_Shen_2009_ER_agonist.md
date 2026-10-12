@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism or any potency or rate values for the effect of dibutyl phthalate on estrogen receptor agonist activity in an ER-mediated reporter gene assay; only a stimulatory (agonist) effect direction is indicated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shen_2009`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

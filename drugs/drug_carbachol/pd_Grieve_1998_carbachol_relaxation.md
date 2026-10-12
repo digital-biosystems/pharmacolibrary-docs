@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol concentration (M) produces % relaxation of phenylephrine-precontracted rat aortic rings, described by a sigmoid Emax (single-site logistic) model with EC50 6.59 × 10^-7 M, Emax 85.2%, and Hill slope 1.31; the paper does not state a kinetic mechanism beyond this direct concentration–response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Grieve_1998`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

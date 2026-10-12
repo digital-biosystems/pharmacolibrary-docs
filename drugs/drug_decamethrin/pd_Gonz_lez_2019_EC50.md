@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates deltamethrin exposure to mortality/susceptibility in insects, with an EC50 as the reported potency measure, but no full text is available, so the model family, mechanism, and parameter values (including the EC50 value and units) cannot be stated from the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `González_2019`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

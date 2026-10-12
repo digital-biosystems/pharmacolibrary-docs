@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record specifies a sigmoidal Emax inhibition model where terfenadine concentration (in microM) drives the continuous response of cell viability (%). No mechanism details or quantitative potency/rate parameters (e.g., EC50, Emax) are provided in the paper excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hamid_2004`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

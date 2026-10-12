@@ -20,7 +20,7 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> Fluvoxamine plasma concentrations (ng mL⁻¹) drive ex vivo SERT occupancy in rat frontal cortex via a direct inhibitory Emax model, with Bmax 94.5% and EC50 0.48 ng mL⁻¹; the paper does not state additional rate parameters.
+> Ex vivo fluvoxamine SERT occupancy in rat frontal cortex was related to predicted plasma fluvoxamine concentrations (ng mL−1) by a direct Emax (inhibitory/proportional) model, with Bmax ~94.5–94.9% and EC50 values of 0.48, 0.22, and 14.8 ng mL−1 as reported; the paper does not state an effect-compartment or turnover mechanism.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

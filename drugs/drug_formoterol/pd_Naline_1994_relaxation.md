@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;formoterol&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/&quot;},{&quot;label&quot;:&quot;Naline_1994 \u00b7 PD bronchial relaxation (concentration-response to formoterol)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Formoterol_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_Back2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Formoterol_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_Back2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bronchial relaxation (concentration-response to formoterol) — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,6 +17,10 @@
 **As extracted:** Formoterol (concentrations from the PK model of Back_2020) drives bronchial relaxation (concentration-response to formoterol) (in % of response to theophylline 3 x 10(-3) mol.l-1): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
+
+> Formoterol concentration (mol.l-1) is related to bronchial relaxation, expressed as % of the response to theophylline 3 x 10(-3) mol.l-1, using an Emax-type concentration-response model; the paper excerpts provide no mechanism details and no parameter values (Emax, EC50, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Naline_1994`
 - **model family:** `emax`

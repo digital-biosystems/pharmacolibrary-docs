@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ipratropium bromide concentration (M) drives relaxation of carbachol-induced contractions, described by an Emax-type inhibitory model with an EC50 reported in the range 10(-9)–10(-8) M; the paper excerpts do not state the mechanism beyond this concentration–response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gustafsson_1991`
 - **model family:** `emax`
 - **driver:** `cited_pk`

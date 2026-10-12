@@ -5,7 +5,7 @@
 
 # nefopam — `Nefopam_Mimoz2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4), gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nefopam: V 264 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 264 l: this record has 264, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has desmethyl-nefopam, the second reading nefopam; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -58,17 +58,21 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | primary re-run | 0.4 (2/5 fields) | 3 |
 | `gpt-oss:120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['nefopam', 'desmethyl-nefopam', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[creatinine clearance]` | not captured | 20 | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | desmethyl-nefopam | nefopam | mismatch |
 | `gpt-oss:120b` | `parameters[264 l]` | 264 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[creatinine clearance]` | not captured | not captured | only_one_extracted |
 

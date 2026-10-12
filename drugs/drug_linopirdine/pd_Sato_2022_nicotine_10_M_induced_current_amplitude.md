@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Linopirdine concentration-dependently inhibits the nicotine (10 µM)-induced current amplitude, with an IC50 of 16.9 µM; the paper excerpts do not state the mechanism or effect model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sato_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

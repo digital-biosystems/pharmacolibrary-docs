@@ -23,7 +23,7 @@ Moxetumomab pasudotox is an anticancer monoclonal antibody drug that was used to
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kuruvilla_2020_reference](drugs/drug_moxetumomab_pasudotox/MoxetumomabPasudotox_Kuruvilla2020_reference.md) | — | 1-compartment (no model) | 0 | Kuruvilla D et al., Population pharmacokinetics, efficacy,…, British journal of clinical… (2020) | [10.1111/bcp.14250](https://doi.org/10.1111/bcp.14250) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kuruvilla_2020_reference](drugs/drug_moxetumomab_pasudotox/MoxetumomabPasudotox_Kuruvilla2020_reference.md) | — | 1-compartment (no model) | 0 | Kuruvilla D et al., Population pharmacokinetics, efficacy,…, British journal of clinical… (2020) | [10.1111/bcp.14250](https://doi.org/10.1111/bcp.14250) |
 
 ## ADME sites
 

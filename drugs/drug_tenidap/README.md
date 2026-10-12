@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Pelletier_1993_IL_1R](drugs/drug_tenidap/pd_Pelletier_1993_IL_1R.md) | interleukin-1 receptor level ← tenidap · inhibition effect | — | Pelletier JP et al., Regulation of human normal and osteoart…, Arthritis and rheumatism (1993) | [10.1002/art.1780361106](https://doi.org/10.1002/art.1780361106) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Pelletier_1993_IL_1R](drugs/drug_tenidap/pd_Pelletier_1993_IL_1R.md) | interleukin-1 receptor level ← tenidap · inhibition effect | — | Pelletier JP et al., Regulation of human normal and osteoart…, Arthritis and rheumatism (1993) | [10.1002/art.1780361106](https://doi.org/10.1002/art.1780361106) |
 
 ## ADME sites
 

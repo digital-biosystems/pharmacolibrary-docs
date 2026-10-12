@@ -5,7 +5,7 @@
 
 # paracetamol — `Paracetamol_Wu2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118), gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has paracetamol, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has paracetamol, the second reading propacetamol; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -107,17 +107,33 @@ Wu Y et al., A Novel Maturation Equation for Hepatic…, Journal of clinical pha
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.118 (2/17 fields) | 15 |
 | `gpt-oss:120b` | not confirmed | 0.4 (6/15 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>24 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['paracetamol', 'paracetamol-glucuronide', 'metabolism'], ['paracetamol', 'paracetamol-sulfate', 'metabolism'], ['paracetamol', 'paracetamol-oxidative metabolites', 'metabolism'], ['propacetamol', 'paracetamol', 'interconversion']] | [] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution of the s(-) enantiomer]` | 0.82 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clformation,glu(lh)=tvclbirth×bwb1750θbwb+(tvclmax×bwc1750θbwc-tvclbirth×bwb1750θbwb)×pnahill(ga34θgapna50×tvpna50)hill+pnahill]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clformation,glu(lh)=tvclbirth×bwb1750θbwb+(tvclmax×bwc1750θbwc-tvclbirth×bwb1750θbwb)×pnahill(ga34θgapna50×tvpna50)hill+pnahill]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clformation,oxi(l/h)=tvclbirth×bwb1750θbwb+(tvclmax×bwc1750θbwc-tvclbirth×bwb1750θbwb)×pnahill(ga34θgapna50×tvpna50)hill+pnahill]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clformation,sulf(l/h)=tvclbirth×bwb1750θbwb+(tvclmax×bwc1750θbwc-tvclbirth×bwb1750θbwb)×pnahill(ga34θgapna50×tvpna50)hill+pnahill]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clr,sulf(l/h)=fsulf×gfr+clsecretion,sulf clsecretion,sulf=tvclbirth×bwb1750θbwb+(tvclmax×bwc1750θbwc-tvclbirth×bwb1750θbwb)×pnahill(ga34θgapna50×tvpna50)hill+pnahill]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clr,sulf(l/h)=fsulf×gfr+clsecretion,sulf clsecretion,sulf=tvclbirth×bwb1750θbwb+(tvclmax×bwc1750θbwc-tvclbirth×bwb1750θbwb)×pnahill(ga34θgapna50×tvpna50)hill+pnahill]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 4.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvclbirth]` | 0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θbwb]` | 0.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θbwc]` | not captured | 0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θbwc]` | 0.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | paracetamol | propacetamol | mismatch |
 | `gpt-oss:120b` | `parameters[tvclbirth]` | not captured | 0 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[θbwb]` | 0.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[θbwb]` | not captured | 0.0 | only_one_extracted |

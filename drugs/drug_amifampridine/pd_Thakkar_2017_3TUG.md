@@ -17,6 +17,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> 3,4-DAP plasma concentration (ng/mL) reduces 3TUG time (sec) via a fractional inhibitory Emax model: Effect = 18.2*[1−(0.816*Cp)/(29.8+Cp)], with baseline E0 = 18.2 sec, fractional Emax = 0.816, and EC50 = 29.8 ng/mL (273 nM); no effect-compartment or turnover mechanism is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Thakkar_2017`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

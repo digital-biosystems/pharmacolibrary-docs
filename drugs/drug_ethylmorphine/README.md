@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Mizuta_2012_AP](drugs/drug_ethylmorphine/pd_Mizuta_2012_AP.md) | AP of the Aα/β neuron ← ethylmorphine · direct sigmoid Emax (Hill) effect | — | Mizuta K et al., Inhibition by morphine and its analogs…, Journal of neuroscience res… (2012) | [10.1002/jnr.23059](https://doi.org/10.1002/jnr.23059) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Mizuta_2012_AP](drugs/drug_ethylmorphine/pd_Mizuta_2012_AP.md) | AP of the Aα/β neuron ← ethylmorphine · direct sigmoid Emax (Hill) effect | — | Mizuta K et al., Inhibition by morphine and its analogs…, Journal of neuroscience res… (2012) | [10.1002/jnr.23059](https://doi.org/10.1002/jnr.23059) |
 
 ## ADME sites
 

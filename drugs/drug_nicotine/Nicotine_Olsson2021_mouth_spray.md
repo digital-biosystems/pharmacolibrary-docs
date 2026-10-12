@@ -4,7 +4,7 @@
 
 # nicotine — `Nicotine_Olsson2021_mouth_spray`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The nicotine model record from Olsson_2021 was rejected because a structural parameter failed a dimension (unit-consistency) check, and one reported unit could not be converted to SI, so that parameter entered the model without an SI value.**
+
+The record for nicotine in healthy smokers carries parameters such as the absorption lag time of 0.0230 h, the transit rate constant ktr of 3.70 h−1, and a volume of distribution of 2.6 L, but the rejection was triggered by a dimension mismatch on a structural parameter. Separately, a reported unit could not be converted to SI, meaning one parameter could not be given an SI value before model assembly. The findings do not identify by name which specific parameter failed the dimension check, so the exact parameter concerned is inconclusive from the record. Extracted — nicotine: tlag 0.023 h, FR 1.2, ktr 3.7 h−1, allometric_exponent 4.82, D1 4.84 mg, V 2.6 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has none, the second reading 100; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Olsson Gisleskog PO et al., Nicotine Population Pharmacokinetics in…, Clinical pharmacokinetics (2021)
@@ -123,6 +131,32 @@ Olsson Gisleskog PO et al., Nicotine Population Pharmacokinetics in…, Clinical
 - LLM selected parameter table(s) 3, 4, 5, 6
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.6 (9/15 fields) | 6 |
+
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | not captured | 100 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` | not captured | 100 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pow]` | 4.82 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pre-washout nicotine dose].parameter_id` | Q310 | Q30 | mismatch |
+| `gpt-oss-120b` | `parameters[vtotal]` | 2.6 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

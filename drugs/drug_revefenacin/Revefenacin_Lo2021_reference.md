@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
+**The absorption rate constant for revefenacin is recorded as 200 L/h, a dimensionally invalid unit for a first-order rate constant.**
+
+The record lists the absorption rate constant with a value of 200 and a unit of L/h, which is a volume flow rate rather than a reciprocal time unit. This dimensional mismatch on a structural parameter caused the model to be rejected. A second reader disagreed with this value, suggesting 0, but the primary record retains the invalid unit. Extracted — revefenacin: CL 668 L/h, V1/F 867 L, Q/F 2.61e+03 L/h, V2/F 1.55e+04 L, kabs 200 L/h, Fab 0.553; THRX-195518: CL 53.2 L/h, V1/F 20.4 L, Q/F 36.3 L/h, V2/F 35.8 L, fm 0.21.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[ka].value`: this record has 200, the second reading 0; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Lo A et al., Population Pharmacokinetics of Revefena…, Clinical pharmacokinetics (2021)

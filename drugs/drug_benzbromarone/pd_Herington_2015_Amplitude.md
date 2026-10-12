@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Benzbromarone directly inhibits spontaneous myometrial amplitude via a sigmoidal Emax model, with an IC50 of 8.677e-06 M and a maximum inhibition (Emax) of -88.95%. The paper confirms this is a direct concentration-dependent inhibition of contractile activity, though it does not specify the underlying cellular mechanism or rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Herington_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

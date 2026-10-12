@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deltamethrin exposure (μg L-1) is linked to a binary parasite-behaviour response (normal vs affected) in Lepeophtheirus salmonis, with EC50 values of 0.28 μg L-1 (susceptible strain IoA-00), 40.1 μg L-1 (resistant strain IoA-02), and 9.66 μg L-1 (F3 cross-derived parasites), plus other reported EC50s (0.36, 0.26, 24.8, 80.5 μg L-1); the paper does not state a formal PD model or mechanism beyond noting pyrethroids act mainly via NaV channel interaction.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Carmona-Antoñanzas_2017`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

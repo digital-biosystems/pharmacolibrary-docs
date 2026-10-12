@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;sugammadex&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sugammadex_Hodge2026_reference&quot;,&quot;label&quot;:&quot;Hodge_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/Sugammadex_Hodge2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sugammadex_Ji2023_reference&quot;,&quot;label&quot;:&quot;Ji_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/Sugammadex_Ji2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sugammadex_Ji2023v2_reference&quot;,&quot;label&quot;:&quot;Ji_2023_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/Sugammadex_Ji2023v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sugammadex_Hodge2026_reference&quot;,&quot;label&quot;:&quot;Hodge_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/Sugammadex_Hodge2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sugammadex_Ji2023v2_reference&quot;,&quot;label&quot;:&quot;Ji_2023_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/Sugammadex_Ji2023v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sugammadex_Ji2023_reference&quot;,&quot;label&quot;:&quot;Ji_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/Sugammadex_Ji2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # sugammadex
 
@@ -27,15 +27,15 @@ Sugammadex is an antidote used to reverse neuromuscular blockade caused by muscl
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:46 | 5:30 | 3/0/0 | 5/0/0 | 0/0/0 | 273,159/16,296 | ollama / glm-5.3-flash | 8 | 0/8 | 7/1 | 0 |
+| 2026-10-07 19:46 | 5:30 | 2/0/1 | 5/0/0 | 0/0/0 | 273,159/16,296 | ollama / glm-5.3-flash | 8 | 0/8 | 7/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hodge_2026_reference](drugs/drug_sugammadex/Sugammadex_Hodge2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Hodge AT et al., Plasma levels and postpartum breastmilk…, International journal of ob… (2026) | [10.1016/j.ijoa.2026.104874](https://doi.org/10.1016/j.ijoa.2026.104874) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ji_2023_reference](drugs/drug_sugammadex/Sugammadex_Ji2023_reference.md) | ▶ model + simulator | 2-compartment, IV | 5 | Ji SH et al., Reversal of rocuronium-induced intense…, Clinical and translational… (2023) | [10.1111/cts.13429](https://doi.org/10.1111/cts.13429) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ji_2023_2_reference](drugs/drug_sugammadex/Sugammadex_Ji2023v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ji SH et al., Conventional reversal of rocuronium-ind…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1127932](https://doi.org/10.3389/fphar.2023.1127932) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span> | [Hodge_2026_reference](drugs/drug_sugammadex/Sugammadex_Hodge2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Hodge AT et al., Plasma levels and postpartum breastmilk…, International journal of ob… (2026) | [10.1016/j.ijoa.2026.104874](https://doi.org/10.1016/j.ijoa.2026.104874) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ji_2023_2_reference](drugs/drug_sugammadex/Sugammadex_Ji2023v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ji SH et al., Conventional reversal of rocuronium-ind…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1127932](https://doi.org/10.3389/fphar.2023.1127932) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Ji_2023_reference](drugs/drug_sugammadex/Sugammadex_Ji2023_reference.md) | ▶ model + simulator | 2-compartment, IV | 5 | Ji SH et al., Reversal of rocuronium-induced intense…, Clinical and translational… (2023) | [10.1111/cts.13429](https://doi.org/10.1111/cts.13429) |
 
 ## Pharmacodynamics (PD)
 
@@ -68,7 +68,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 25 matched, 20 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 3  ·  extracted 3  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 2  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

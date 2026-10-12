@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Acetazolamide's maximum metabolic rate of 1510 mg/h uses a unit that could not be converted to standard units, blocking dimensional validation.**
+
+The parameter describing the maximum rate of enzymatic metabolism was recorded with a mass-per-time unit that lacked a standard equivalent. Because this unit could not be converted to SI, the system could not verify if the values were dimensionally consistent. This unresolved unit mismatch caused the rejection of the model record. Extracted — acetazolamide: CLNR 1.53 L/h, V1 5.77 L, Q 10.2 L/h, V2 6.46 L, CL_HD 1.65 L/h, V3 6.14 L, Vmax 1.51e+03 mg/h, Km 12.4 mg/L.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Yue CS et al., Population pharmacokinetic and pharmaco…, Journal of pharmacy & pharm… (2013)

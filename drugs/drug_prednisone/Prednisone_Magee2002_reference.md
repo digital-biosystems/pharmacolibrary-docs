@@ -5,7 +5,7 @@
 
 # prednisone — `Prednisone_Magee2002_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.062). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125), gpt-oss:120b (not confirmed, agreement 0.062). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record was built from the paper's abstract only, so summary statistics (kabs 5.62 1/h, tlag 0.283 h, V/F 44.8 L, CLm/F 13.5 L/h, t1/2z 2.33 h, AUC 1638 ng·h/mL for prednisolone) stood in for a fitted model. The failed check concerns the apparent-parameter assumption: F=1, Fm=1 and no molar correction were substituted, which was judged not acceptable for the metabolite clearance CLm/F. A second reader also disagreed on the dose compound (prednisone vs unknown), the primary analyte (prednisolone vs unknown), the model links (none recorded vs a prednisone-to-prednisolone metabolism link), and the placement of the AUC and CL/F values. Extracted — prednisolone: kabs 5.62 1/h, tlag 0.283 h, V/F 44.8 l, CLm/F 13.5 L/h, t1/2z 2.33 h, AUC 1.64e+03 ng·h/mL.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has prednisone, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has prednisone, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -89,17 +89,32 @@ c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.125 (2/16 fields) | 14 |
 | `gpt-oss:120b` | not confirmed | 0.062 (1/16 fields) | 15 |
 
-<details><summary>15 field(s) a reader read differently</summary>
+<details><summary>29 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc (ngmlx1h) wm]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 1638 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f (lhx1) wm]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 13.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a (hx1) wm]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 5.62 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2 (h) wm]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2]` | 2.33 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t lag (h) wm]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t lag]` | 0.283 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v c /f (l) wm]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v c /f]` | 44.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | prednisone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | prednisolone | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [] | [['prednisone', 'prednisolone', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[auc (ngmlx1h) wm]` | not captured | 1638 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc]` | 1638 | not captured | only_one_extracted |

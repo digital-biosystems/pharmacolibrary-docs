@@ -5,7 +5,7 @@
 
 # remdesivir — `Remdesivir_Humeniuk2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.471), gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — remdesivir: CL 1.17e+03 mL/min, V 93 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has none, the second reading 1.9; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 698, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,17 +64,27 @@ Humeniuk R et al., Pharmacokinetic, Pharmacodynamic, and D…, Clinical pharmaco
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.471 (8/17 fields) | 9 |
 | `gpt-oss:120b` | not confirmed | 0.688 (11/16 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q19]` | 698 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q21]` | not captured | 1.9 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 65.1 | 1171 | mismatch |
+| `gpt-oss-120b` | `values[Q26]` | not captured | 129 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | not captured | 100 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q44]` | not captured | 48.6 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 0.9 | 1 | mismatch |
+| `gpt-oss-120b` | `values[Q59]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q74]` | 2190 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q21]` | not captured | 1.9 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q37]` | not captured | 69.2 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q46]` | 88 | not captured | only_one_extracted |
@@ -122,7 +132,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference/Remdesivir_Humeniuk2021_reference_modelica.zip" download>Remdesivir_Humeniuk2021_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference/Remdesivir_Humeniuk2021_reference_fmi.zip" download>Remdesivir_Humeniuk2021_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference/Remdesivir_Humeniuk2021_reference_matlab.zip" download>Remdesivir_Humeniuk2021_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference/Remdesivir_Humeniuk2021_reference_matlab_simbio.zip" download>Remdesivir_Humeniuk2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference/Remdesivir_Humeniuk2021_reference_matlab_simbio.zip" download>Remdesivir_Humeniuk2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference/Remdesivir_Humeniuk2021_reference_sbml.zip" download>Remdesivir_Humeniuk2021_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference/Remdesivir_Humeniuk2021_reference_cellml.zip" download>Remdesivir_Humeniuk2021_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

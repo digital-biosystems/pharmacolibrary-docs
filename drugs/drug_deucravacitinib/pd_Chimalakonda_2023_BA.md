@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes a relationship between the deucravacitinib dose (in mg) and absolute bioavailability (in %) but provides no model family, mechanism, or parameter values. The paper excerpts are unavailable, so the specific mechanism, potency, or rate values are not stated.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chimalakonda_2023`
 - **model family:** `unknown`
 - **driver:** `dose_only`

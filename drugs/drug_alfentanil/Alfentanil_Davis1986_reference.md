@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;alfentanil&quot;,&quot;href&quot;:&quot;drugs/drug_alfentanil/&quot;},{&quot;label&quot;:&quot;Davis_1986 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alfentanil_Beers2004_reference&quot;,&quot;label&quot;:&quot;Beers_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfentanil/Alfentanil_Beers2004_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfentanil_Bouillon1999_reference&quot;,&quot;label&quot;:&quot;Bouillon_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfentanil/Alfentanil_Bouillon1999_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfentanil_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfentanil/Alfentanil_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfentanil_Davis1989_reference&quot;,&quot;label&quot;:&quot;Davis_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfentanil/Alfentanil_Davis1989_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfentanil_Helmers1984_reference&quot;,&quot;label&quot;:&quot;Helmers_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfentanil/Alfentanil_Helmers1984_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfentanil_Mertens2004_reference&quot;,&quot;label&quot;:&quot;Mertens_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfentanil/Alfentanil_Mertens2004_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alfentanil_Beers2004_reference&quot;,&quot;label&quot;:&quot;Beers_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfentanil/Alfentanil_Beers2004_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfentanil_Bouillon1999_reference&quot;,&quot;label&quot;:&quot;Bouillon_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfentanil/Alfentanil_Bouillon1999_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfentanil_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfentanil/Alfentanil_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfentanil_Helmers1984_reference&quot;,&quot;label&quot;:&quot;Helmers_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfentanil/Alfentanil_Helmers1984_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfentanil_Davis1989_reference&quot;,&quot;label&quot;:&quot;Davis_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfentanil/Alfentanil_Davis1989_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfentanil_Mertens2004_reference&quot;,&quot;label&quot;:&quot;Mertens_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alfentanil/Alfentanil_Mertens2004_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # alfentanil — `Alfentanil_Davis1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The model does not reproduce the paper's terminal half-life (paper 2.48, model 1.51), and further half-life comparisons diverge widely (ratios from 0.0655 to 43.0318), partly because reported times in minutes or hours were compared against simulated hours. The absorption rate constant ka was not reported in the source and was defaulted, which the adjudication deemed not acceptable, and the unit 'times bodyweight' for V/F could not be converted to SI. The two readers also disagree on whether the apparent volume of distribution belongs to alfentanil (null vs 4.5) and on the clearance and volume of distribution values. Extracted — sufentanil: CL 11.3 ml/min/kg, V 0.39 L/kg, V/F 4.5 times bodyweight.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of alfentanil's apparent volume of distribution in adults: this record has none, the second reading 1.0; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has sufentanil, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -74,17 +74,23 @@ Davis PJ et al., Clinical pharmacokinetics of the newer…, Clinical pharmacokin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[alfentanil's apparent volume of distribution in adults]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 4.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 11.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volumes of distribution]` | 0.39 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | sufentanil | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[alfentanil's apparent volume of distribution in adults]` | not captured | 1.0 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[apparent volume of distribution]` | 4.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | 11.3 | not captured | only_one_extracted |

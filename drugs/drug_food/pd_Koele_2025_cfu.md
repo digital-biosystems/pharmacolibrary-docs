@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> BTZ-043total (BTZ-043 + M2) daily AUC0–24 exposure drives the first-phase (0–48 h) decrease in sputum bacterial load (log10 cfu/mL) via an Emax (hyperbolic) exposure–response on the initial killing slope, with EC50 16 900 ng/mL*h (95% CI 5510–44 300), baseline load 6.20 log10 cfu/mL, first slope Emax 0.0270 log10 cfu/mL/h, second slope 0.00254 log10 cfu/mL/h, and node fixed at 48 h; no exposure–response effect was identified over Days 2–14, and the paper does not describe a mechanistic turnover (kin/kout) formulation beyond this bilinear killing model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koele_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

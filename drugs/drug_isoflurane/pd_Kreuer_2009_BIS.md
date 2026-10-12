@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes a sigmoid Emax model where isoflurane concentration inhibits the Bispectral Index (BIS). The effect compartment rate constant ke0 is reported as 0.16 min^-1, but the specific potency values and detailed mechanism are not provided in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kreuer_2009`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

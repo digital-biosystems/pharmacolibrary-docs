@@ -32,7 +32,7 @@ Rezafungin is an antifungal used to treat candidiasis, including invasive candid
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q32, Q36 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Rubino_2021_reference](drugs/drug_rezafungin/Rezafungin_Rubino2021_reference.md) | — | 2-compartment (no model) | 9 (+4 cov.) | Rubino CM et al., Population Pharmacokinetics of Rezafung…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.00842-21](https://doi.org/10.1128/AAC.00842-21) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.348). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q32, Q36 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Rubino_2021_reference](drugs/drug_rezafungin/Rezafungin_Rubino2021_reference.md) | — | 2-compartment (no model) | 9 (+4 cov.) | Rubino CM et al., Population Pharmacokinetics of Rezafung…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.00842-21](https://doi.org/10.1128/AAC.00842-21) |
 
 ## ADME sites
 

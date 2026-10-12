@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clomipramine inhibits voltage-dependent K+ (Kv) channel current with a sigmoid Emax model; the paper reports IC50 = 8.61 ± 4.86 μM and Hill coefficient = 0.58 ± 0.07, but no full text is available to confirm the mechanism or Emax.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

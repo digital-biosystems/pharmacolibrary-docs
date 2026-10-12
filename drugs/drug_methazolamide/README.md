@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Alvarez_2007_cardiomyocyte_hypertrophy_prevented_by_methazolamide](drugs/drug_methazolamide/pd_Alvarez_2007_cardiomyocyte_hypertrophy_prevented_by_methazol.md) | cardiomyocyte hypertrophy (prevented by methazolamide) ← methazolamide · inhibition effect | — | Alvarez BV et al., Carbonic anhydrase inhibition prevents…, The Journal of physiology 5… (2007) | [10.1113/jphysiol.2006.123638](https://doi.org/10.1113/jphysiol.2006.123638) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Alvarez_2007_cardiomyocyte_hypertrophy_prevented_by_methazolamide](drugs/drug_methazolamide/pd_Alvarez_2007_cardiomyocyte_hypertrophy_prevented_by_methazol.md) | cardiomyocyte hypertrophy (prevented by methazolamide) ← methazolamide · inhibition effect | — | Alvarez BV et al., Carbonic anhydrase inhibition prevents…, The Journal of physiology 5… (2007) | [10.1113/jphysiol.2006.123638](https://doi.org/10.1113/jphysiol.2006.123638) |
 
 ## ADME sites
 

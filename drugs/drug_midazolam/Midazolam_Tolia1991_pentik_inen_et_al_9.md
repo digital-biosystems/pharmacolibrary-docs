@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_Tolia1991_pentik_inen_et_al_9`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Allegaert_2014, Jia_2026, Langlois_1987) cannot stand in for this paper's evidence. Extracted — midazolam: CL 6 ml/min/kg, t1/2β 228 min, V 0.6 l.kg-1, kabs 0.14 1/h, tlag 0.08 h.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has midazolam, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -71,14 +71,29 @@ Tolia V et al., Pharmacokinetic and pharmacodynamic stu…, The Journal of pedia
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 | `gpt-oss:120b` | confirmed | 1.0 (6/6 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a]` | 1.77 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag1]` | 1.23 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 6.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 6.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution volume]` | 0.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2β]` | 228 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2β]` | not captured | 228 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | midazolam | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | midazolam | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

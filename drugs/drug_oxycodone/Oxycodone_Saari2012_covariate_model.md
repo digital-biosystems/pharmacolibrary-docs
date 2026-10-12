@@ -5,7 +5,7 @@
 
 # oxycodone — `Oxycodone_Saari2012_covariate_model`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.474). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.588). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record lists the initial distribution half-life for oxycodone as 2.5 minutes, but the system could not convert this time unit to the required SI standard. This omission meant the corresponding structural parameter lacked a usable value, triggering a dimension mismatch error. The model builder also disagreed with the second reader on several extracted parameter values, including the first-order absorption rate constant and the initial distribution half-life. Extracted — oxycodone: Q2 153 litre, V 1.15e+03 L, V2 20.2 L, t1/2α 2.5 min, t1/2β 4.2 h, Vss 286 litre, CL 37.7 L/h, V1 173 litre.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of s 1: this record has none, the second reading 0.110; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 38.03, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -108,26 +108,23 @@ Saari TI et al., Oxycodone clearance is markedly reduced…, British journal of 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.474 (9/19 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.588 (10/17 fields) | 7 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[s 1]` | not captured | 0.110 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1 2 a].parameter_id` | Q57 | Q59 | mismatch |
-| `gpt-oss:120b` | `parameters[u 1].parameter_id` | Q24 | Q22 | mismatch |
-| `gpt-oss:120b` | `parameters[u 2].parameter_id` | Q61 | Q64 | mismatch |
-| `gpt-oss:120b` | `parameters[u 3]` | not captured | 1153 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[u 4]` | not captured | 133 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[u 5 *]` | not captured | 0.549 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v 2 1]` | 0.054 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v 2 2]` | 0.140 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v 2 3]` | 2.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 38.03 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[u 1]` | not captured | 48.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[u 2].parameter_id` | Q99 | Q64 | mismatch |
+| `gpt-oss-120b` | `parameters[u 3].parameter_id` | Q77 | Q308 | mismatch |
+| `gpt-oss-120b` | `parameters[u 5 *]` | 0.549 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[u 7]` | not captured | 4.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 1]` | not captured | 173 | only_one_extracted |
 
 </details>
 

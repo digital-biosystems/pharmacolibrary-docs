@@ -38,7 +38,7 @@ Domperidone is a dopamine-blocking medicine used to treat nausea and vomiting an
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Claassen_2005_I_Kr](drugs/drug_domperidone/pd_Claassen_2005_I_Kr.md) | HERG currents ← domperidone · direct sigmoid Emax (Hill) effect | — | Claassen S et al., Comparison of the effects of metoclopra…, Pharmacology (2005) | [10.1159/000083234](https://doi.org/10.1159/000083234) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Claassen_2005_I_Kr](drugs/drug_domperidone/pd_Claassen_2005_I_Kr.md) | HERG currents ← domperidone · direct sigmoid Emax (Hill) effect | — | Claassen S et al., Comparison of the effects of metoclopra…, Pharmacology (2005) | [10.1159/000083234](https://doi.org/10.1159/000083234) |
 
 ## Pharmacogenomics (PGx)
 

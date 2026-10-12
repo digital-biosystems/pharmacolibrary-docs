@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;cobimetinib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cobimetinib_Duong2026_model_h_h&quot;,&quot;label&quot;:&quot;Duong_2026_model_h_h&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_h_h.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cobimetinib_Duong2026_model_pk_h&quot;,&quot;label&quot;:&quot;Duong_2026_model_pk_h&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pk_h.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cobimetinib_Duong2026_model_pkpd_h&quot;,&quot;label&quot;:&quot;Duong_2026_model_pkpd_h&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pkpd_h.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cobimetinib_Duong2026_model_h_h&quot;,&quot;label&quot;:&quot;Duong_2026_model_h_h&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_h_h.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cobimetinib_Duong2026_model_pk_h&quot;,&quot;label&quot;:&quot;Duong_2026_model_pk_h&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pk_h.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cobimetinib_Duong2026_model_pkpd_h&quot;,&quot;label&quot;:&quot;Duong_2026_model_pkpd_h&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pkpd_h.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # cobimetinib
 
@@ -27,22 +27,22 @@ Cobimetinib is a MEK inhibitor anticancer drug used to treat melanoma, including
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 22:58 | 3:53 | 3/1/0 | 1/0/0 | 0/0/0 | 75,653/23,532 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-06 22:58 | 3:53 | 0/1/3 | 1/0/0 | 0/0/0 | 75,653/23,532 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Duong_2026_model_h_h](drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_h_h.md) | ▶ model + simulator | 1-compartment, oral | 3 | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Duong_2026_model_pk_h](drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pk_h.md) | ▶ model + simulator | 1-compartment, oral | 3 | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Duong_2026_model_pkpd_h](drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pkpd_h.md) | ▶ model + simulator | 1-compartment, oral | 3 | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Han_2015_reference](drugs/drug_cobimetinib/Cobimetinib_Han2015_reference.md) | — | 1-compartment (no model) | 0 | Han K et al., Population pharmacokinetics and dosing…, Cancer chemotherapy and pha… (2015) | [10.1007/s00280-015-2862-0](https://doi.org/10.1007/s00280-015-2862-0) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Duong_2026_model_h_h](drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_h_h.md) | ▶ model + simulator | 1-compartment, oral | 3 | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Duong_2026_model_pk_h](drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pk_h.md) | ▶ model + simulator | 1-compartment, oral | 3 | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Duong_2026_model_pkpd_h](drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pkpd_h.md) | ▶ model + simulator | 1-compartment, oral | 3 | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Han_2015_reference](drugs/drug_cobimetinib/Cobimetinib_Han2015_reference.md) | — | 1-compartment (no model) | 0 | Han K et al., Population pharmacokinetics and dosing…, Cancer chemotherapy and pha… (2015) | [10.1007/s00280-015-2862-0](https://doi.org/10.1007/s00280-015-2862-0) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Duong_2026_resp](drugs/drug_cobimetinib/pd_Duong_2026_resp.md) | instantaneous death rate ← cobimetinib · direct sigmoid Emax (Hill) effect | — | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> | [Duong_2026_resp](drugs/drug_cobimetinib/pd_Duong_2026_resp.md) | instantaneous death rate ← cobimetinib · direct sigmoid Emax (Hill) effect | — | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
 
 ## ADME sites
 
@@ -77,7 +77,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 3  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 3  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

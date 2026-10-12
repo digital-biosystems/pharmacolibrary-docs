@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Filgotinib and its metabolite plasma concentrations (ng/mL) directly inhibit the percentage of pSTAT1-positive cells via a sequential sigmoid Emax model, without an effect compartment. The reported IC50 values are 293 ng/mL for filgotinib and 1,686 ng/mL for the metabolite, with a Hill coefficient (H) of 1.97.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Namour_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

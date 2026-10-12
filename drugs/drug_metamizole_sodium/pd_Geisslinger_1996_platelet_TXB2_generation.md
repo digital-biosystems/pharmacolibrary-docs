@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record links the concentration of 4-methylaminoantipyrine to the inhibition of platelet TXB2 generation via a sigmoid Emax model, with a reported EC50 of 1.2 micrograms ml-1. The paper does not provide full text or additional mechanism details.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Geisslinger_1996`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

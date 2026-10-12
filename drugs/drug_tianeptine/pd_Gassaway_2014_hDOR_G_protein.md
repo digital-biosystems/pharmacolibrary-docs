@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Tianeptine concentration (μM) acts as a full agonist at the human δ-opioid receptor, directly stimulating G-protein activation measured by BRET (Emax-normalized, proportional effect), with an EC50 of 37.4±11.2 μM; the paper does not report an effect-compartment or turnover mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gassaway_2014`
 - **model family:** `emax`
 - **driver:** `cited_pk`

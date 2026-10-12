@@ -5,7 +5,7 @@
 
 # rolapitant — `Rolapitant_Li2026_fosrolapitant`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.9). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0), gpt-oss:120b (not confirmed, agreement 0.9). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record lists only summary exposure statistics for rolapitant (Cmax 10740.00 ng/mL, AUC0-t 10298.30 h*ng/mL, AUC0−∞ 10307.42 h*ng/mL, t1/2 0.42 h) and apparent metabolite parameters (Vm/F 13.64 L, CLm/F 21.98 L/h), but no estimated clearance, volume, ka or Tlag for rolapitant itself, so placeholders stood in. The topology check expected a parent–metabolite structure but obtained a one-compartment enteral structure, and the deviations check flagged defaulted parameters, the apparent assumption (F=1, Fm=1, no molar correction) and an invented absorption constant as unacceptable. Additionally, one reported unit could not be converted to SI, so that parameter reached the model builder without an SI value. A second reader also proposed an extra metabolism link from rolapitant to m19 that this record does not contain. Extracted — rolapitant: Cmax 1.07e+04 ng/mL, AUCt 1.03e+04 h*ng/mL, AUC∞ 1.03e+04 h*ng/mL, t1/2z 0.42 hour, Vm/F 13.6 L, CLm/F 22 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has fosrolapitant → rolapitant (metabolism), the second reading fosrolapitant → rolapitant (metabolism); rolapitant → m19 (metabolism). That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fosrolapitant, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -80,17 +80,34 @@ Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacolo
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.0 (0/16 fields) | 16 |
 | `gpt-oss:120b` | not confirmed | 0.9 (9/10 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['fosrolapitant', 'rolapitant', 'metabolism']] | [['fosrolapitant', 'rolapitant', 'metabolism'], ['rolapitant', 'm19', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | 10307.42 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | not captured | 10307.42 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-t]` | 10298.30 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-t]` | not captured | 10298.30 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 21.98 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 21.98 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 10740.00 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 10740.00 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 0.42 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | not captured | 0.42 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | 13.64 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | not captured | 13.64 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | fosrolapitant | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | rolapitant | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [['fosrolapitant', 'rolapitant', 'metabolism']] | [['fosrolapitant', 'rolapitant', 'metabolism'], ['rolapitant', 'm19', 'metabolism']] | mismatch |
 
 </details>

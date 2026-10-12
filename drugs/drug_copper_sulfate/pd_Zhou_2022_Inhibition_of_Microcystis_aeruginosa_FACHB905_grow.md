@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Copper sulfate concentrations (μM) inhibit the growth of Microcystis aeruginosa FACHB905, with an EC50 of 2.2 μM; the paper excerpts do not state the mechanism or model form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

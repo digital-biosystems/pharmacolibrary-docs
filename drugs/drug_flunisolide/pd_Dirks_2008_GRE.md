@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Flunisolide concentrations (pM, nominal medium concentrations) stimulate SEAP expression via a GRE-dependent reporter in A549 cells (transactivation), described by a sigmoid Emax model; the paper does not state a production/elimination mechanism beyond direct receptor-mediated transactivation. Reported potency: EC50 = 289 pM (SE 33.1).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dirks_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

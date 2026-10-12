@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;temazepam&quot;,&quot;href&quot;:&quot;drugs/drug_temazepam/&quot;},{&quot;label&quot;:&quot;Morino_1986 \u00b7 PD percent anticonvulsant effect (protection against pentylenetetrazole-induced clonic convulsion)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Temazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_temazepam/Temazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Temazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_temazepam/Temazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # percent anticonvulsant effect (protection against pentylenetetrazole-induced clonic convulsion) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -19,6 +19,10 @@
 **As extracted:** Temazepam (concentrations from the PK model of Schwarz_1979::dog) drives percent anticonvulsant effect (protection against pentylenetetrazole-induced clonic convulsion) (in %): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> Temazepam concentrations drive the percent anticonvulsant effect (protection against pentylenetetrazole-induced clonic convulsion) via a sigmoid Emax model with stimulation of effect; the excerpts provide no mechanism details and no numeric potency or rate values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Morino_1986`
 - **model family:** `sigmoid_emax`

@@ -20,7 +20,7 @@
 
 **Model:** No model was generated from this record.
 
-> Fluoxetine directly inhibits mitochondrial ATP-sensitive potassium (mKATP) channel activity, measured as Tl+ flux (% inhibition), with a sigmoid Emax-type concentration-response relationship and IC50 2.39 ± 0.22 μmol/L (paper also states IC50 2.4 μmol/L); the paper does not state Emax, gamma, or a kinetic mechanism beyond a direct channel block.
+> Fluoxetine directly inhibits mitochondrial ATP-sensitive potassium (mKATP) channel activity, measured as Tl+ flux (% inhibition), with a sigmoid Emax-type concentration–response relationship and an IC50 of 2.39 ± 0.22 μmol/L (paper states 2.4 μmol/L); the paper does not give Emax, gamma, or kinetic parameters.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

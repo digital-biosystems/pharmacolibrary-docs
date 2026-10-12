@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that proglumetacin dose inhibits the duration of morning stiffness, but the paper does not provide a mechanism or quantitative parameter values (such as IC50 or Imax) because no full text is available.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bozsoky_1982`
 - **model family:** `unknown`
 - **driver:** `dose_only`

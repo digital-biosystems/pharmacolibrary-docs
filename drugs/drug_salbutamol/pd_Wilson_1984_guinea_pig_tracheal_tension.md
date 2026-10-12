@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts or stated mechanism details; the record indicates salbutamol concentrations act on guinea-pig tracheal tension via an Emax-type inhibitory model, but no potency (IC50/EC50/Emax) or rate values are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wilson_1984`
 - **model family:** `emax`
 - **driver:** `cited_pk`

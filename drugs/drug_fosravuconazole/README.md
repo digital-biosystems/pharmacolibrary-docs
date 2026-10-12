@@ -34,7 +34,7 @@ Fosravuconazole is an investigational antifungal drug, related to agents used fo
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Chu_2025_reference](drugs/drug_fosravuconazole/Fosravuconazole_Chu2025_reference.md) | — | general linear (no model) | 8 (+2 cov.) | Chu WY et al., Pharmacokinetics and Pharmacodynamics o…, The Journal of infectious d… (2025) | [10.1093/infdis/jiaf279](https://doi.org/10.1093/infdis/jiaf279) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.611). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Chu_2025_reference](drugs/drug_fosravuconazole/Fosravuconazole_Chu2025_reference.md) | — | general linear (no model) | 8 (+2 cov.) | Chu WY et al., Pharmacokinetics and Pharmacodynamics o…, The Journal of infectious d… (2025) | [10.1093/infdis/jiaf279](https://doi.org/10.1093/infdis/jiaf279) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Baek_2008 \u00b7 atenolol_50_mg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carvedilol_McTavish1993_reference&quot;,&quot;label&quot;:&quot;McTavish_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_McTavish1993_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final_s_carvedilol_final_model_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carvedilol_McTavish1993_reference&quot;,&quot;label&quot;:&quot;McTavish_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_McTavish1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final_s_carvedilol_final_model_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carvedilol — `Carvedilol_Baek2008_atenolol_50_mg`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.12), gpt-oss:120b (partly confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUCt, Cmax and t1/2ka ), so that value has no SI equivalent. None of the extracted parameters is carvedilol's own; they describe atenolol. Extracted — atenolol: AUCt 3.05 µg·h/mL, Cmax 396 ng/mL, tmax 2.87 h, V/F 158 L, CL 18.1 L/h, kel 0.58 1/h, t1/2ka 0.53 h$^{-1}$, t1/2z 0.88 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc$_{0-24hr}$: this record has 3.05, the second reading none; it also differs on 19 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading not captured → not captured (not captured); it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -86,17 +86,40 @@ Baek IH et al., Pharmacokinetic/pharmacodynamic modelin…, Archives of pharmaca
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.12 (3/25 fields) | 22 |
 | `gpt-oss:120b` | partly confirmed | 0.167 (4/24 fields) | 20 |
 
-<details><summary>20 field(s) a reader read differently</summary>
+<details><summary>42 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['', '', '']] | mismatch |
+| `gpt-oss-120b` | `parameters[auc$_{0-24hr}$]` | 3.05 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc$_{0-30hr}$]` | not captured | 282.55 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c$_{max}$]` | 396.14 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c$_{max}$]` | not captured | 62.74 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 18.15 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | 94.64 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k$_{a}$]` | 0.53 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k$_{a}$]` | not captured | 0.60 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k$_{cp}$]` | 1.84 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k$_{cp}$]` | not captured | 4.52 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k$_{el}$]` | 0.58 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k$_{el}$]` | not captured | 4.45 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k$_{pc}$]` | not captured | 0.19 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t$_{1/α}$]` | 0.88 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t$_{1/α}$]` | not captured | 0.68 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t$_{1/β}$]` | 4.83 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t$_{1/β}$]` | not captured | 15.84 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t$_{max}$]` | 2.87 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t$_{max}$]` | not captured | 1.26 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume/f]` | 157.71 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume/f]` | not captured | 1561.78 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc$_{0-24hr}$]` | 3.05 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc$_{0-30hr}$]` | not captured | 282.55 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[c$_{max}$]` | 396.14 | not captured | only_one_extracted |

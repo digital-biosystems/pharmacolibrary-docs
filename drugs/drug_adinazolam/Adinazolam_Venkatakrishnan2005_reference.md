@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;adinazolam&quot;,&quot;href&quot;:&quot;drugs/drug_adinazolam/&quot;},{&quot;label&quot;:&quot;Venkatakrishnan_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Adinazolam_Venkatakrishnan2005_reference&quot;,&quot;label&quot;:&quot;Venkatakrishnan_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adinazolam/Adinazolam_Venkatakrishnan2005_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Adinazolam_Venkatakrishnan2005_reference&quot;,&quot;label&quot;:&quot;Venkatakrishnan_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_adinazolam/Adinazolam_Venkatakrishnan2005_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # adinazolam — `Adinazolam_Venkatakrishnan2005_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.062). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The adinazolam parent–metabolite record was rejected because the absorption rate constant ka (and Tlag) were left at library defaults instead of values from the paper, and the model structure did not match the measured N-desmethyl adinazolam output.**
+
+The record, built from the abstract only, reports summary statistics for adinazolam and N-desmethyl adinazolam (e.g. Vm/F 100 L, CLm/F 321 mL/min, t1/2z 2.8 h) but no fitted model. The model output was set to the parent drug's concentration in its central compartment rather than to the measured metabolite N-desmethyl adinazolam, and the structure was a single-compartment model with extravascular dosing instead of a parent–metabolite structure. The builder defaulted ka and Tlag, assumed F=1 and Fm=1 without molar correction, and used first-order depot input; the ka default is not supported by the paper and the deviation adjudication found defaulted parameters and invented absorption unacceptable. Extracted — adinazolam: Vm/F 106 L, t1/2z 2.9 hours, CLm/F 444 mL/min; N-desmethyl adinazolam: Vm/F 100 L, t1/2z 2.8 hours, CLm/F 321 mL/min; alprazolam: V 77 L, t1/2z 14.6 hours, CL 84 mL/min.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has adinazolam, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `adinazolam`, measured `N-desmethyl adinazolam`.
 
@@ -24,7 +32,7 @@ Venkatakrishnan K et al., Kinetics and dynamics of intravenous ad…, Journal of
   ·  DOI: [10.1177/0091270004269105](https://doi.org/10.1177/0091270004269105)
 
 ## Model component
-<dbs-pgx drug="adinazolam" model-id="Adinazolam_Venkatakrishnan2005_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="N-desmethyl adinazolam" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="adinazolam" model-id="Adinazolam_Venkatakrishnan2005_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="N-desmethyl adinazolam" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 9 extracted.
@@ -32,6 +40,8 @@ Venkatakrishnan K et al., Kinetics and dynamics of intravenous ad…, Journal of
 **Parameterization:** CLm/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | volume of distribution (L), adinazolam | `Q367` · Vm/F | 106 | L | 0.106 | [l] | not captured | llm_confirmed (0.6) | Venkatakrishnan_2005:abstract | — | not captured |
@@ -74,6 +84,41 @@ Venkatakrishnan K et al., Kinetics and dynamics of intravenous ad…, Journal of
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.062 (1/16 fields) | 15 |
+
+<details><summary>15 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[clearance (ml/min), adinazolam]` | 444 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance (ml/min), alprazolam]` | 84 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance (ml/min), ndmad]` | 321 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | 444 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life (hours), adinazolam]` | 2.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life (hours), alprazolam]` | 14.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life (hours), ndmad]` | 2.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life]` | not captured | 2.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution (l), adinazolam]` | 106 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution (l), alprazolam]` | 77 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution (l), ndmad]` | 100 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 106 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | adinazolam | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | N-desmethyl adinazolam | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -95,6 +140,19 @@ Venkatakrishnan K et al., Kinetics and dynamics of intravenous ad…, Journal of
 | C9_phys_window_Q22 | pass | clearance within physiological range | 5.04 L/h | not captured | not captured | ['Venkatakrishnan_2005:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 77 L | not captured | not captured | ['Venkatakrishnan_2005:abstract'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=N-desmethyl adinazolam) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_shared_parameters | not captured | pass | 3 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -103,24 +161,16 @@ Venkatakrishnan K et al., Kinetics and dynamics of intravenous ad…, Journal of
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_adinazolam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Venkatakrishnan_2005` / `Venkatakrishnan_2005::reference`)
+- model: `../../../knowledgebase/drugs/drug_adinazolam/models/modelica/Adinazolam_Venkatakrishnan2005_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_adinazolam/models/modelica/Adinazolam_Venkatakrishnan2005_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_adinazolam/models/modelica/Adinazolam_Venkatakrishnan2005_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_adinazolam/Adinazolam_Venkatakrishnan2005_reference/Adinazolam_Venkatakrishnan2005_reference_modelica.zip" download>Adinazolam_Venkatakrishnan2005_reference_modelica.zip</a> <span class="pk-size">(5.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_adinazolam/Adinazolam_Venkatakrishnan2005_reference/Adinazolam_Venkatakrishnan2005_reference_fmi.zip" download>Adinazolam_Venkatakrishnan2005_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_adinazolam/Adinazolam_Venkatakrishnan2005_reference/Adinazolam_Venkatakrishnan2005_reference_matlab.zip" download>Adinazolam_Venkatakrishnan2005_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_adinazolam/Adinazolam_Venkatakrishnan2005_reference/Adinazolam_Venkatakrishnan2005_reference_matlab_simbio.zip" download>Adinazolam_Venkatakrishnan2005_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_adinazolam/Adinazolam_Venkatakrishnan2005_reference/Adinazolam_Venkatakrishnan2005_reference_sbml.zip" download>Adinazolam_Venkatakrishnan2005_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_adinazolam/Adinazolam_Venkatakrishnan2005_reference/Adinazolam_Venkatakrishnan2005_reference_cellml.zip" download>Adinazolam_Venkatakrishnan2005_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_adinazolam/Adinazolam_Venkatakrishnan2005_reference/Adinazolam_Venkatakrishnan2005_reference.svg" alt="Adinazolam_Venkatakrishnan2005_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

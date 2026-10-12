@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> No full text or excerpts were available to describe the mechanism or verify the parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lau_1999`
 - **model family:** `emax`
 - **driver:** `cited_pk`

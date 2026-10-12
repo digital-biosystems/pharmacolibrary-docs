@@ -4,7 +4,7 @@
 
 # flucloxacillin — `Flucloxacillin_Drennan2021v2_base`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of a: this record has none, the second reading 0.004; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+**The clearance plausibility check could not be computed.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — flucloxacillin: tlag 0.216 h, kabs 0.478 h−1, V 144 L, CL 183 L h−1, Fab 0.745.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flucloxacillin, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `flucloxacillin`, measured `free flucloxacillin`.
 
@@ -94,22 +98,20 @@ Drennan PG et al., Population pharmacokinetics of free flu…, British journal o
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.7 (14/20 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.667 (8/12 fields) | 4 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[a]` | not captured | 0.004 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[βclprobenecid]` | 0.003 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[γabs]` | 0.184 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[γv]` | 0.082 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ωabs]` | 0.217 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ωv].parameter_id` | Q65 | Q312 | mismatch |
+| `gpt-oss-120b` | `parameters[a].parameter_id` | Q900 | Q86 | mismatch |
+| `gpt-oss-120b` | `parameters[βfferrite].parameter_id` | Q40 | Q47 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | flucloxacillin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | free flucloxacillin | unknown | mismatch |
 
 </details>
 

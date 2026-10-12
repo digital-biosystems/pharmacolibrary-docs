@@ -18,7 +18,7 @@
 
 **Model:** No model was generated from this record.
 
-> Fluvoxamine plasma concentrations (from the cited Chen_2024 PK model) drive receptor/transporter occupancy (%) via an Emax model; the paper excerpts provide no parameter values (Emax, EC50, gamma) and do not state the mechanism beyond this direct concentration–occupancy relationship.
+> The paper relates fluvoxamine concentrations to receptor/transporter occupancy (%), but no full text is available, so the mechanism, effect form, and potency/rate parameters cannot be stated.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_Gibbons2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Both metabolites of enzalutamide, N-desmethyl enzalutamide and the carboxylic acid metabolite, are listed with 0 compartments, so parts of the model structure have no path from the dose. The reported unit ng·h/mL for AUC∞ (9.19) could not be converted to SI units, so no SI value was available. A second reader also disagreed on the structure, reading midazolam, pioglitazone, warfarin and omeprazole metabolite links instead, and gave different values for AUC∞ (30.0 vs 9.19) and Cmax (9.45 vs 3.22). Extracted — midazolam: AUC∞ 9.19 ng·h/mL, Cmax 3.22 ng/mL, Ctrough 12 μg/mL, AUCt 322 μg·h/mL, CL/F 0.52 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has enzalutamide → n-desmethyl enzalutamide (metabolism); enzalutamide → carboxylic acid metabolite (metabolism); n-desmethyl enzalutamide → carboxylic acid metabolite (metabolism), the second reading enzalutamide → n-desmethyl enzalutamide (metabolism); enzalutamide → enzalutamide carboxylic acid metabolite (metabolism); midazolam → 1-hydroxy-midazolam (metabolism) …; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has enzalutamide → n-desmethyl enzalutamide (metabolism); enzalutamide → carboxylic acid metabolite (metabolism); n-desmethyl enzalutamide → carboxylic acid metabolite (metabolism), the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -84,17 +84,26 @@ Gibbons JA et al., Pharmacokinetic Drug Interaction Studie…, Clinical pharmaco
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (8/16 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.455 (5/11 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['enzalutamide', 'n-desmethyl enzalutamide', 'metabolism'], ['enzalutamide', 'carboxylic acid metabolite', 'metabolism'], ['n-desmethyl enzalutamide', 'carboxylic acid metabolite', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[aucτ (ug h/ml)a]` | not captured | 278 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aucτ (ug h/ml)a]` | not captured | 193 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aucτ (ug h/ml)a].parameter_id` | Q19 | Q88 | mismatch |
+| `gpt-oss-120b` | `parameters[c max (ug/ml)a]` | not captured | 12.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max (ug/ml)a]` | not captured | 8.86 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c trough (ug/ml)a]` | not captured | 10.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c trough (ug/ml)a]` | not captured | 6.32 | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [['enzalutamide', 'n-desmethyl enzalutamide', 'metabolism'], ['enzalutamide', 'carboxylic acid metabolite', 'metabolism'], ['n-desmethyl enzalutamide', 'carboxylic acid metabolite', 'metabolism']] | [['enzalutamide', 'n-desmethyl enzalutamide', 'metabolism'], ['enzalutamide', 'enzalutamide carboxylic acid metabolite', 'metabolism'], ['midazolam', '1-hydroxy-midazolam', 'metabolism'], ['pioglitazone', 'hydroxy-pioglitazone', 'metabolism'], ['s-warfarin', '7-hydroxy-s-warfarin', 'metabolism'], ['omeprazole', '5-hydroxy-omeprazole', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[aucinf].value` | 9.19 | 30.0 | mismatch |
 | `gpt-oss:120b` | `parameters[aucτ (ug h/ml)a]` | 322 | not captured | only_one_extracted |

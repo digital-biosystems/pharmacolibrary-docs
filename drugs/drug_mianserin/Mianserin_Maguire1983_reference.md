@@ -5,7 +5,7 @@
 
 # mianserin — `Mianserin_Maguire1983_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.917), gpt-oss:120b (not confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record for mianserin in elderly depressed patients was built from the paper's abstract only, so reported summary statistics (Cmax 117 micrograms/l, tmax 2.2 h, absorption half-life 0.8 h, distribution half-life 3.4 h, terminal half-life 33 h, V/F 20.2 l/kg, CL/F 0.49 l/kg/h) stood in for a fitted model. The refusal rests on a dimension mismatch on a structural parameter: V/F is given per kilogram body weight rather than as an absolute volume, which is inconsistent with the model's parameterization. A second reader also disputed the parameterization itself, reading it as mechanistic rather than apparent, and left all seven parameter values unread, so the disagreement is inconclusive on the numbers. Extracted — mianserin: t1/2ka 0.8 h, Cmax 117 micrograms/l, tmax 2.2 h, t1/2α 3.4 h, t1/2z 33 h, V/F 20.2 1/kg, CL/F 0.49 l/kg/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[elimination half-life].parameter_id`: this record has Q57, the second reading Q60. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -74,17 +74,19 @@ Maguire K et al., The pharmacokinetics of mianserin in el…, Psychiatry researc
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.917 (11/12 fields) | 1 |
 | `gpt-oss:120b` | not confirmed | 0.273 (3/11 fields) | 8 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[elimination half-life].parameter_id` | Q57 | Q60 | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[absorption half-life]` | 0.8 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[apparent volume of distribution]` | 20.2 | not captured | only_one_extracted |

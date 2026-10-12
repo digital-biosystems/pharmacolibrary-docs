@@ -4,7 +4,7 @@
 
 # abatacept — `Abatacept_Gandhi2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.344). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Bioavailability was mislabelled as an excretion fraction with unitless value 6.09, while allometric and covariate exponents were recorded with implausible magnitude and missing SI units.**
+
+The parameter meaning defines fe as the fraction of dose excreted unchanged, yet its value of 6.09 exceeds 1 and its verbatim label describes subcutaneous bioavailability. Several covariate exponents, such as the weight allometric power of 12.8 and sex clearance power of 21.4, were extracted with unitless labels that lacked SI conversion, indicating structural and dimensional mismatches in the model record. Extracted — abatacept: kabs 11 L/h, V1 1.57 Units, CL 1.36 Units, V2 3.71 Units, Q 7.25 L/h, fe 6.09 Units, allometric_exponent 27.3 Units, slope 27.1 Units.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[bioavailability of sc formulation a].parameter_id`: this record has Q44, the second reading Q40; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Gandhi Y et al., Model-Based Selection and Recommendatio…, Journal of clinical pharmac… (2021)
@@ -91,6 +99,47 @@ Gandhi Y et al., Model-Based Selection and Recommendatio…, Journal of clinical
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.344 (11/32 fields) | 21 |
+
+<details><summary>21 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[bioavailability of sc formulation a].parameter_id` | Q44 | Q40 | mismatch |
+| `gpt-oss-120b` | `parameters[cl (l/h) a].covariate_forms` | ['power'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[intercompartmental cl]` | 7.25 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[power of age on bioavailability]` | 27.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[power of body weight on bioavailability].covariate_forms` | ['power', 'power', 'power', 'power'] | ['power'] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_allometric_exponent_body_weight_power]` | 6.99 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_allometric_exponent_sex_power]` | not captured | 21.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_allometric_exponent_weight_power]` | 12.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_sex_power]` | 21.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q23_albumin_power]` | not captured | 9.69 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q23_body_weight_power]` | not captured | 2.93 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q23_gfr_power]` | not captured | 7.19 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q23_weight_power]` | not captured | 12.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q314_albumin_power]` | 9.69 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q900_gfr_power]` | 7.19 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q900_weight_power]` | 12.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_age_power]` | not captured | 23.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_body_weight_power]` | not captured | 6.99 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v2_body_weight_power]` | not captured | 7.20 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc (l) a].covariate_forms` | [] | ['power', 'power'] | mismatch |
+| `gpt-oss-120b` | `parameters[vp (l) a].covariate_forms` | [] | ['power'] | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

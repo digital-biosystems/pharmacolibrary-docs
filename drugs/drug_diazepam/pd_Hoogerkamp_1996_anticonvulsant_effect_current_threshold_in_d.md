@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Diazepam plasma concentrations (mg·l⁻¹) drive the anticonvulsant effect (current threshold in the direct cortical stimulation model) via a sigmoid Emax model; the paper reports EC250 = 0.21 ± 0.03 mg·l⁻¹, but the excerpts do not state the mechanism or other parameters (Emax, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hoogerkamp_1996`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

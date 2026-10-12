@@ -4,7 +4,7 @@
 
 # repaglinide — `Repaglinide_Ruzilawati2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5), gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The volume of distribution of repaglinide is reported as 23.09 L/h, a unit with a time denominator that does not fit a volume parameter, so the magnitude cannot be judged physiologically plausible and a unit or scale extraction error is suspected. The elimination rate constant is 0.58 with unit 'h', which also lacks the expected reciprocal-time dimension. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model, and a second reader read the same values under different parameter labels without resolving the unit problem. Extracted — repaglinide: kel 0.58 h, V 23.1 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of k: this record has none, the second reading 0.58; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k: this record has none, the second reading 0.58; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -69,17 +69,22 @@ Ruzilawati AB et al., Population pharmacokinetic modelling of…, Journal of cli
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 | `gpt-oss:120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[k]` | not captured | 0.58 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean elimination rate constant (k(el))]` | 0.58 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | not captured | 23.09 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution (v(d))]` | 23.09 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k]` | not captured | 0.58 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean elimination rate constant (k(el))]` | 0.58 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v]` | not captured | 23.09 | only_one_extracted |

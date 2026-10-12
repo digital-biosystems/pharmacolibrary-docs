@@ -5,7 +5,7 @@
 
 # pregabalin — `Pregabalin_Bae2016_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286), gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The base model was simulated, not the covariate effects the record defines.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has 13.9, the second reading 13.9; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has none, the second reading 58; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -65,17 +65,23 @@ Bae EK et al., Factors influencing topiramate clearanc…, Seizure (2016)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q312]` | 13.9 | 13.9 | mismatch |
+| `gpt-oss-120b` | `values[Q316]` | 32.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q317]` | 115 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q31]` | not captured | 58 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q76]` | 109 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q312]` | 13.9 | 13.9 | mismatch |
 | `gpt-oss:120b` | `values[Q316]` | 32.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q317]` | 115 | not captured | only_one_extracted |
@@ -138,7 +144,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pregabalin/Pregabalin_Bae2016_reference/Pregabalin_Bae2016_reference_modelica.zip" download>Pregabalin_Bae2016_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pregabalin/Pregabalin_Bae2016_reference/Pregabalin_Bae2016_reference_fmi.zip" download>Pregabalin_Bae2016_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pregabalin/Pregabalin_Bae2016_reference/Pregabalin_Bae2016_reference_matlab.zip" download>Pregabalin_Bae2016_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pregabalin/Pregabalin_Bae2016_reference/Pregabalin_Bae2016_reference_matlab_simbio.zip" download>Pregabalin_Bae2016_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pregabalin/Pregabalin_Bae2016_reference/Pregabalin_Bae2016_reference_matlab_simbio.zip" download>Pregabalin_Bae2016_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_pregabalin/Pregabalin_Bae2016_reference/Pregabalin_Bae2016_reference_sbml.zip" download>Pregabalin_Bae2016_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_pregabalin/Pregabalin_Bae2016_reference/Pregabalin_Bae2016_reference_cellml.zip" download>Pregabalin_Bae2016_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

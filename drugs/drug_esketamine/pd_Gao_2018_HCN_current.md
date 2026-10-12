@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ketamine at a concentration of 20 μM applied for ~5 minutes directly inhibits the maximal HCN current amplitude (measured in pA) in neocortical pyramidal neurons. The paper reports single-concentration effects showing inhibition magnitudes of 9.86% ± 4.08% (P21), 14.95% ± 1.30% (P28), and 22.22% ± 4.89% (P35), but does not provide a specific model mechanism, IC50, Emax, or rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gao_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

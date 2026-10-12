@@ -5,7 +5,7 @@
 
 # paracetamol — `Paracetamol_Fritz1984_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Albert_1984, Allegaert_2014, Gibb_2008) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — paracetamol: Fab 85 %, CL 0.029 l.min−1, V 6.35 liters, tlag 4.2 min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has pentazocine and acetaminophen, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has acetaminophen, pentazocine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -74,17 +74,26 @@ Fritz AK et al., Relative bioavailability and pharmacoki…, Journal of pharmace
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
+| `gpt-oss-120b` | `parameters[average (+/- sd) bioavailability of the tablet relative to that of the solution]` | not captured | 85.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution volume]` | 0.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[propofol clearance capacity]` | 0.029 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the average (+/- sd) bioavailability of the tablet relative to that of the solution was 85.0 +/- 31.1 and 88.6 +/- 13.1% for pentazocine and acetaminophen, respectively.]` | 85.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 4.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | acetaminophen, pentazocine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | acetaminophen, pentazocine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[average (+/- sd) bioavailability]` | not captured | 85.0 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bioavailability of the tablet relative to that of the solution]` | 85.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | pentazocine and acetaminophen | unknown | mismatch |

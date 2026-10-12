@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Secretin concentration (nmol/L) stimulates the extracellular acidification rate (EAR) via a direct Emax model; the paper reports an EC50 of 3 nmol/L, but no full text is available so the mechanism and Emax are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hootman_2005`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

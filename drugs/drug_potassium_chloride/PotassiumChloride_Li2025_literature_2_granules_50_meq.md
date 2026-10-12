@@ -4,7 +4,7 @@
 
 # potassium chloride — `PotassiumChloride_Li2025_literature_2_granules_50_meq`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The paper reports only C0 (4.1 mmol/L), Tmax (1.0 h), Cmax (4.9 mmol/L) and an absorption rate constant kabs (0.1 h-1) for potassium; no distribution volume and no clearance or elimination rate are given, making it an exposure/outcome paper rather than a compartmental population PK model. A dimension mismatch was also flagged on a structural parameter. Additionally, one reported parameter unit could not be converted to SI, so that parameter was carried without an SI value. The second reader disagreed on the dose compound, reading it as potassium chloride extended-release tablets and potassium citrate granules rather than potassium chloride. Extracted — potassium chloride: C0 4.1 mmol/L, tmax 1 h, Cmax 4.9 mmol/L, kabs 0.1 h-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ka: this record has none, the second reading 0.1; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has potassium chloride, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -74,19 +74,21 @@ Li X et al., Plasma pharmacokinetics of the combinat…, Frontiers in cardiovasc
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.778 (7/9 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.556 (5/9 fields) | 4 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[ka of kcl extended-release tablets alone]` | 0.1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` | not captured | 0.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka of kcl extended-release tablets alone]` | 0.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.1 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | potassium chloride | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | potassium | unknown | mismatch |
 
 </details>
 

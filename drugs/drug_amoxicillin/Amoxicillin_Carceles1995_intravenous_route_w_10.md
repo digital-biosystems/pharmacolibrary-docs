@@ -5,7 +5,7 @@
 
 # amoxicillin — `Amoxicillin_Carceles1995_intravenous_route_w_10`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-5.6-luna (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,8 +22,6 @@
 **The clavulanic acid record was rejected because the peripheral volume V2 is reported as 1.51 with a time unit (h) instead of a volume unit, and the two-compartment structure contains an unreachable compartment.**
 
 The parameter labelled '2VlRT(h)' carries the unit h although its meaning is the volume of distribution of the peripheral compartment (V2 = 1.51), a dimension mismatch on a structural parameter; its unit also could not be converted to SI, so the value reached the model without an SI magnitude. The compartmental topology failed the reachability check, indicating an orphan compartment with no path from the dose. A second reader further disputed the record, reading V2 as 1.17 rather than 1.51, classifying the model as mechanistic rather than apparent, and treating both amoxicillin and clavulanic acid as the analyte, while the record lists amoxicillin alone as primary analyte and clavulanic acid parameters only. Extracted — clavulanic acid: t1/2z 0.09 h, Cmax 7.99 mg/1, V/F 2.31 I/kg, AUC 14.3 mg/h/1, V2 1.51 h, MAT 0.34 h, CL/F 1.08 h, Fab 85.5; amoxicillin and clavulanic acid: kabs 0.17 h−1.
-
-A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on which compound was dosed: this record has amoxicillin-clavulanic acid, the second reading amoxicillin and clavulanic acid; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -103,44 +101,6 @@ Carceles CM et al., Pharmacokinetics of amoxicillin-clavula…, Avian pathology 
 - LLM selected parameter table(s) 2
 
 ## Validation
-
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-5.6-luna` | not confirmed | 0.25 (6/24 fields) | 18 |
-
-<details><summary>18 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-5.6-luna` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-5.6-luna` | `parameters[2vlrt].parameter_id` | Q64 | Q60 | mismatch |
-| `gpt-5.6-luna` | `parameters[2vlrt].value` | 1.51 | 1.17 | mismatch |
-| `gpt-5.6-luna` | `parameters[auc].value` | 14.32 | 16.75 | mismatch |
-| `gpt-5.6-luna` | `parameters[civf]` | not captured | 1.02 | only_one_extracted |
-| `gpt-5.6-luna` | `parameters[cuf]` | 1.08 | not captured | only_one_extracted |
-| `gpt-5.6-luna` | `parameters[f k].parameter_id` | Q76 | Q61 | mismatch |
-| `gpt-5.6-luna` | `parameters[f k].value` | 2.311 | 1.59 | mismatch |
-| `gpt-5.6-luna` | `parameters[f]` | not captured | not captured | only_one_extracted |
-| `gpt-5.6-luna` | `parameters[ha].parameter_id` | Q57 | Q95 | mismatch |
-| `gpt-5.6-luna` | `parameters[ii«]` | not captured | 0.09 | only_one_extracted |
-| `gpt-5.6-luna` | `parameters[ka]` | 0.17 | not captured | only_one_extracted |
-| `gpt-5.6-luna` | `parameters[mrt]` | not captured | 1.86 | only_one_extracted |
-| `gpt-5.6-luna` | `parameters[t lagpo]` | 0.25 | not captured | only_one_extracted |
-| `gpt-5.6-luna` | `parameters[tixi]` | not captured | 0.05 | only_one_extracted |
-| `gpt-5.6-luna` | `parameters[¿.(h" 1 ) a,]` | not captured | 14.07 | only_one_extracted |
-| `gpt-5.6-luna` | `screen.dose_compound` | amoxicillin-clavulanic acid | amoxicillin and clavulanic acid | mismatch |
-| `gpt-5.6-luna` | `screen.primary_analyte` | amoxicillin | amoxicillin and clavulanic acid | mismatch |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check legend</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
-</details>
-
 
 **Scholar closed-form checks:**
 

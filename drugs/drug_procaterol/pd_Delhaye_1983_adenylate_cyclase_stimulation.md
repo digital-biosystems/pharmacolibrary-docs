@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models procaterol's stimulation of adenylate cyclase with a sigmoid Emax relationship, but the available excerpts do not state the concentrations acting on the response, the mechanism, or any potency or rate parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Delhaye_1983`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

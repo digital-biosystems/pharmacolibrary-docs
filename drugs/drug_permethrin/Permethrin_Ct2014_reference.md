@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The permethrin record was rejected because it reports only an absorption rate constant (kabs 0.033 h−1 for trans-DCCA) with no distribution volume and no clearance, so it is not a compartmental population PK model, and its metabolites are unlinked.**
+
+The paper (Côté_2014, healthy adult volunteers, measured compound trans-DCCA) is an exposure/outcome study: the only extracted parameter is the absorption rate constant kabs of 0.033 h−1, with no volume of distribution and no clearance or elimination rate. The metabolites cis-DCCA, trans-DCCA and 3-PBA are formed from permethrin (and cypermethrin) but have zero compartments and no path from the dose, leaving them orphan. The metabolism link parameters carry no values, so the model structure could not be completed. Extracted — trans-DCCA: kabs 0.033 h−1.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `cypermethrin`, measured `trans-DCCA`.
 

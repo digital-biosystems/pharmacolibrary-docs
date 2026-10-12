@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methacholine concentration (log M) produces a direct stimulatory Emax-type relaxation of U46619-precontracted small pulmonary veins, with maximum relaxation 50.62% and Log IC50 -6.932 ± 0.1986 (log M); the paper excerpts do not state a mechanism beyond this concentration–response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stack_2016`
 - **model family:** `emax`
 - **driver:** `not_resolved`

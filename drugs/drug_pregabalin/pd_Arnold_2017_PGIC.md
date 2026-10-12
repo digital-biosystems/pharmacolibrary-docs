@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes an Emax model linking pregabalin dose (mg/day) to the stimulation of the Patient Global Impression of Change (PGIC) score. The paper does not state the specific potency or rate parameters (e.g., Emax, ED50) as no full text is available.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Arnold_2017`
 - **model family:** `emax`
 - **driver:** `dose_only`

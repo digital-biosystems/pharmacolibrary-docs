@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">dog</span> | [Nagata_1987_reduction_of_body_weight_gain](drugs/drug_rokitamycin/pd_Nagata_1987_reduction_of_body_weight_gain.md) | reduction of body weight gain ← rokitamycin · model not identified | — | Nagata R et al., [Chronic toxicity and recovery tests of…, The Japanese journal of ant… (1987) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">dog</span> | [Nagata_1987_reduction_of_body_weight_gain](drugs/drug_rokitamycin/pd_Nagata_1987_reduction_of_body_weight_gain.md) | reduction of body weight gain ← rokitamycin · model not identified | — | Nagata R et al., [Chronic toxicity and recovery tests of…, The Japanese journal of ant… (1987) | — |
 
 ## ADME sites
 

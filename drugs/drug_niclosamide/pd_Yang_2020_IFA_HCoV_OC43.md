@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P02D&quot;,&quot;href&quot;:&quot;atc/P02D.md&quot;},{&quot;label&quot;:&quot;niclosamide&quot;,&quot;href&quot;:&quot;drugs/drug_niclosamide/&quot;},{&quot;label&quot;:&quot;Yang_2020 \u00b7 PD HCoV-OC43 nucleocapsid protein expression in HCT-8 cells (inhibition by niclosamide, IFA)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Niclosamide_Zhang2019_reference&quot;,&quot;label&quot;:&quot;Zhang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_niclosamide/Niclosamide_Zhang2019_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Niclosamide_Zhang2019_reference&quot;,&quot;label&quot;:&quot;Zhang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_niclosamide/Niclosamide_Zhang2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # HCoV-OC43 nucleocapsid protein expression in HCT-8 cells (inhibition by niclosamide, IFA) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
@@ -19,6 +19,10 @@
 **As extracted:** Niclosamide (concentrations from the PK model of Kim_2024) drives HCoV-OC43 nucleocapsid protein expression in HCT-8 cells (inhibition by niclosamide, IFA) (in %) (inhibition; the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> Niclosamide concentrations (μM) inhibit HCoV-OC43 nucleocapsid protein expression in HCT-8 cells, measured by indirect immunofluorescent assay after 72 h infection (MOI 0.05), with a reported EC50 of 1.36 ± 0.56 μM. The paper does not describe a pharmacodynamic mechanism (e.g., Emax model or effect compartment) for this inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Yang_2020`
 - **model family:** `unknown`

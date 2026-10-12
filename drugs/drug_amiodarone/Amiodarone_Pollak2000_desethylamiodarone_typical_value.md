@@ -5,7 +5,7 @@
 
 # amiodarone — `Amiodarone_Pollak2000_desethylamiodarone_typical_value`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record specifies a parent-metabolite structure with a peripheral volume of 7830 L, but the model was constructed as a single central compartment. This structural mismatch meant the peripheral volume parameter was excluded from the final set, and the output variable was incorrectly assigned to the central compartment rather than the measured amiodarone. Extracted — amiodarone: V1/F 2.79e+03 L, V2/F 7.83e+03 L, CL/F 254 L/d, Q/F 151 L/d, kel 62 1/day, kabs 0.82 h−1.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amiodarone, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -77,14 +77,33 @@ Pollak PT et al., Population pharmacokinetics of long-ter…, Clinical pharmacol
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.133 (2/15 fields) | 13 |
 | `gpt-oss:120b` | confirmed | 1.0 (13/13 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>13 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl1/f]` | 254 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl1/f]` | not captured | 254 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2/f]` | 151 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2/f]` | not captured | 151 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination]` | 62 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination]` | not captured | 62 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 0.82 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f]` | 2790 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f]` | not captured | 2790 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f]` | 7830 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f]` | not captured | 7830 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | amiodarone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | amiodarone | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

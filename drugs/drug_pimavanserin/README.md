@@ -32,7 +32,7 @@ Pimavanserin is an antipsychotic drug used to treat psychosis associated with Pa
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Darwish_2023_reference](drugs/drug_pimavanserin/Pimavanserin_Darwish2023_reference.md) | — | 1-compartment (no model) | 2 | Darwish M et al., Population Pharmacokinetic Modeling and…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2315](https://doi.org/10.1002/jcph.2315) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Darwish_2023_reference](drugs/drug_pimavanserin/Pimavanserin_Darwish2023_reference.md) | — | 1-compartment (no model) | 2 | Darwish M et al., Population Pharmacokinetic Modeling and…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2315](https://doi.org/10.1002/jcph.2315) |
 
 ## Pharmacodynamics (PD)
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts describing the mechanism; the record indicates a sigmoid Emax model in which somatorelin (GHRH) stimulates the cAMP response of the zebrafish GHRH-LP receptor, with no potency or rate values available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

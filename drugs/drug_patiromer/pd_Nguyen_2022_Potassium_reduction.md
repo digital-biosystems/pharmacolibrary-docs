@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Patiromer dose (g) acts on serum potassium reduction (mEq/L) via a linear dose-response model with a slope of -0.21; the paper excerpts do not state a mechanism beyond this dose-response relationship, and no potency or rate parameters (Imax, IC50, EC50, kin, kout, ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nguyen_2022`
 - **model family:** `linear`
 - **driver:** `dose_only`

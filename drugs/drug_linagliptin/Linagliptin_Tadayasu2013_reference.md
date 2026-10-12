@@ -4,7 +4,7 @@
 
 # linagliptin — `Linagliptin_Tadayasu2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.85). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85), gpt-oss:120b (not confirmed, agreement 0.85). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record for linagliptin in Japanese patients with type 2 diabetes reports a three-compartment disposition model with Fab 1, kabs 1.63 h⁻¹, CL/F 121 L/h, V2/F 633 L, Q3/F 73.0 L/h and V3/F 683 L, plus target-binding parameters Bmax 6.07 nmol/L and KD 0.108 nmol/L. The nmol/L unit on the binding parameters could not be reconciled with the units of the other model parameters, so a dimension mismatch arose on a structural parameter. Separately, the model structure was found to contain an unreachable compartment with no path from the dose. Both findings led to rejection. Extracted — linagliptin: Fab 1, kabs 1.63, CL/F 121 L/h, V2/F 633 L, Q3/F 73 L/h, V3/F 683 L, Bmax 6.07 nmol/L, KD 0.108 nmol/L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has linagliptin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has linagliptin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -87,17 +87,21 @@ Tadayasu Y et al., Population pharmacokinetic/pharmacodyna…, Journal of pharma
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.85 (17/20 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.85 (17/20 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[amax2/f1[nmol]]` | not captured | 534 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | linagliptin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | linagliptin | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[amax2/f1[nmol]]` | not captured | 534 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | linagliptin | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | linagliptin | unknown | mismatch |

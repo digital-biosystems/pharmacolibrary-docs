@@ -5,7 +5,7 @@
 
 # gabapentin — `Gabapentin_Adrian2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.565), gpt-oss:120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — gabapentin: CL 161 mL/kg/hr, V1 129 mL/kg, tlag 0.45 hr, kabs 5.24 1/hr.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has 12.42, the second reading 5.61; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q301: this record has 13.67, the second reading 13.67; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,17 +64,28 @@ Adrian D et al., The pharmacokinetics of gabapentin in c…, Journal of veterina
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.565 (13/23 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.818 (18/22 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q301]` | 13.67 | 13.67 | mismatch |
+| `gpt-oss-120b` | `values[Q302]` | 2.82 | 2.82 | mismatch |
+| `gpt-oss-120b` | `values[Q40]` | 94.8 | 94.8 | mismatch |
+| `gpt-oss-120b` | `values[Q47]` | 1.21 | 1.21 | mismatch |
+| `gpt-oss-120b` | `values[Q49]` | 5.24 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q67]` | 16.97 | 16.97 | mismatch |
+| `gpt-oss-120b` | `values[Q71]` | not captured | 32.77 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q75]` | not captured | 5.61 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q83]` | 0.45 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q900]` | 32.77 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q32]` | 12.42 | 5.61 | mismatch |
 | `gpt-oss:120b` | `values[Q75]` | not captured | 32.77 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q83]` | 0.45 | not captured | only_one_extracted |

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Terfenadine concentration drives a stimulation of field potential duration (FPD) via an indirect response mechanism, although the paper describes the effect as a direct prolongation of repolarization without explicitly detailing the production or elimination pathway. The recorded model specifies a proportional effect with an EC50 of 2.7 µM, while the paper reports a direct concentration-response EC50 of 13.2 µM in the heart-only model and 2.7 µM in the heart:liver model.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `McAleer_2019`
 - **model family:** `indirect_response_iii`
 - **driver:** `cited_pk`

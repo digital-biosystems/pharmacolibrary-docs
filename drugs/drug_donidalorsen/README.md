@@ -29,7 +29,7 @@ Donidalorsen is used to treat hereditary angioedema. It is an approved medicine 
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.591). The first reading is what the record holds.">cross-check: disputed</span> | [Diep_2026_PKK](drugs/drug_donidalorsen/pd_Diep_2026_PKK.md) | prekallikrein ← donidalorsen · indirect response — drug inhibits the production of prekallikrein | — | Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70206](https://doi.org/10.1002/psp4.70206) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Diep_2026_PKK](drugs/drug_donidalorsen/pd_Diep_2026_PKK.md) | prekallikrein ← donidalorsen · indirect response — drug inhibits the production of prekallikrein | — | Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70206](https://doi.org/10.1002/psp4.70206) |
 
 ## ADME sites
 

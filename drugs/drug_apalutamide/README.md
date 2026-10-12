@@ -32,7 +32,7 @@ Apalutamide is an anti-androgen cancer medicine used to treat prostate cancer. I
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Pérez-Ruixo_2020_reference](drugs/drug_apalutamide/Apalutamide_PrezRuixo2020_reference.md) | — | parent + metabolite (no model) | 0 | Pérez-Ruixo C et al., Population Pharmacokinetics of Apalutam…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00808-7](https://doi.org/10.1007/s40262-019-00808-7) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Pérez-Ruixo_2020_reference](drugs/drug_apalutamide/Apalutamide_PrezRuixo2020_reference.md) | — | parent + metabolite (no model) | 0 | Pérez-Ruixo C et al., Population Pharmacokinetics of Apalutam…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00808-7](https://doi.org/10.1007/s40262-019-00808-7) |
 
 ## ADME sites
 

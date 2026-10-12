@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In the ex vivo L. major lymph node explant model, azelastine concentrations (μM) inhibited parasite burden measured by luminometry after 48 h of culture, with an EC50 of 0.05 ± 0.02 μM; the paper does not define a formal PD model, but suggests the activity is likely mediated through anti-inflammatory H1R inhibition (with possible additional direct effects on intracellular amastigotes).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Peniche_2020`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

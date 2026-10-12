@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Gupta_2007_none](drugs/drug_desonide/pd_Gupta_2007_none.md) | none ← desonide · model not identified | — | Gupta VD, Chemical stability of desonide in ear d…, International journal of ph… (2007) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Gupta_2007_none](drugs/drug_desonide/pd_Gupta_2007_none.md) | none ← desonide · model not identified | — | Gupta VD, Chemical stability of desonide in ear d…, International journal of ph… (2007) | — |
 
 ## ADME sites
 

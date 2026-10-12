@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Thioridazine concentrations (mg/liter) were related to the sterilizing effect (kill of M. tuberculosis) using a sigmoid Emax model; the paper excerpts provide no mechanism and no parameter values (Imax, IC50, Emax, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Musuka_2013`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

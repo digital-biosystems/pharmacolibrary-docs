@@ -5,7 +5,7 @@
 
 # rutoside — `Rutoside_Nurfaradilla2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.769), gpt-oss:120b (partly confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,9 +19,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has none, the second reading 0.1734; it also differs on 2 more fields. That field does not shape the model.
+**Rutoside clearance and volume values are implausibly small, indicating a unit or scale extraction error.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The extracted clearance of 0.0257 mL/h·kg and volume of 0.0541 mL/kg fall outside physiological windows. A second reader identified alternative values of 0.1734 and 0.2119, suggesting the original extraction missed correct magnitudes. Extracted — rutoside: CL/F 0.0257 mL/h·kg, V/F 0.0541 mL/kg.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has none, the second reading 0.1745; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Nurfaradilla SA et al., Pharmacokinetic Herb-Drug Interaction b…, Evidence-based complementar… (2020)
@@ -56,17 +60,21 @@ Nurfaradilla SA et al., Pharmacokinetic Herb-Drug Interaction b…, Evidence-bas
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.769 (10/13 fields) | 3 |
 | `gpt-oss:120b` | partly confirmed | 0.769 (10/13 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q21]` | not captured | 0.1745 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q33]` | not captured | 0.2119 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q74]` | not captured | 158.3434 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q21]` | not captured | 0.1734 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q33]` | not captured | 0.2119 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q74]` | not captured | 907.1936 | only_one_extracted |

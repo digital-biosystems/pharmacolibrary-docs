@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;risperidone&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/&quot;},{&quot;label&quot;:&quot;Huang_2024 \u00b7 PD PANSS total scores&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risperidone_Kozielska2012_reference&quot;,&quot;label&quot;:&quot;Kozielska_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/Risperidone_Kozielska2012_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risperidone_Kozielska2012_reference&quot;,&quot;label&quot;:&quot;Kozielska_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/Risperidone_Kozielska2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # PANSS total scores — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,6 +17,10 @@
 **As extracted:** Risperidone (the dose) drives PANSS total scores (in points): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> Risperidone dose (plasma concentrations were not measured) was linked to the proportional decrease in PANSS total scores over time in 144 schizophrenia patients via a proportionally parameterized sigmoid Emax model, with E0 = 90.1 points, Emax = 0.661 (fractional maximum reduction), gamma = 1.31, and ET50 = 5.37 (time to 50% of maximum effect); covariates plasma calcium (on gamma, 2.56), course of disease (0.267) and sex (0.726) on ET50, and lactate dehydrogenase (0.191) on Emax were included. The paper does not state a mechanism at the concentration-effect level (no IC50/EC50/ke0 given), as drug exposure was not measured.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Huang_2024`
 - **model family:** `sigmoid_emax`

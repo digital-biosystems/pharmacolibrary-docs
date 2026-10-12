@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide usable model details: no excerpts are available, so the mechanism linking DDT (clofenotane) exposure to cell viability/cytotoxicity, and any potency or rate parameters, cannot be stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ochiai_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

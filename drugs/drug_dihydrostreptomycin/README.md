@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Peterson_2018_FM_1_43_uptake](drugs/drug_dihydrostreptomycin/pd_Peterson_2018_FM_1_43_uptake.md) | percent fluorescence reduction ← dihydrostreptomycin · inhibition effect | — | Peterson HP et al., Teaching Dose-response Relationships Th…, Journal of undergraduate ne… (2018) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Peterson_2018_FM_1_43_uptake](drugs/drug_dihydrostreptomycin/pd_Peterson_2018_FM_1_43_uptake.md) | percent fluorescence reduction ← dihydrostreptomycin · inhibition effect | — | Peterson HP et al., Teaching Dose-response Relationships Th…, Journal of undergraduate ne… (2018) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -32,7 +32,7 @@ Cefprozil is a second-generation cephalosporin antibiotic used to treat bacteria
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q49 — no SI value to build from</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Jang_2019_reference](drugs/drug_cefprozil/Cefprozil_Jang2019_reference.md) | — | 1-compartment (no model) | 4 | Jang JH et al., Population Pharmacokinetics of, Pharmaceutics (2019) | [10.3390/pharmaceutics11100531](https://doi.org/10.3390/pharmaceutics11100531) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.923). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q49 — no SI value to build from</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Jang_2019_reference](drugs/drug_cefprozil/Cefprozil_Jang2019_reference.md) | — | 1-compartment (no model) | 4 | Jang JH et al., Population Pharmacokinetics of, Pharmaceutics (2019) | [10.3390/pharmaceutics11100531](https://doi.org/10.3390/pharmaceutics11100531) |
 
 ## ADME sites
 

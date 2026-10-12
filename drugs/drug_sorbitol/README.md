@@ -39,7 +39,7 @@ Sorbitol is an osmotic laxative used to treat constipation, and has also been us
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span> | [Takada_2017_inward_current](drugs/drug_sorbitol/pd_Takada_2017_inward_current.md) | inward current biomarker turnover ← sorbitol | — | Takada T et al., A mannitol/sorbitol receptor stimulates…, PloS one (2017) | [10.1371/journal.pone.0186420](https://doi.org/10.1371/journal.pone.0186420) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span> | [Takada_2017_inward_current](drugs/drug_sorbitol/pd_Takada_2017_inward_current.md) | inward current biomarker turnover ← sorbitol | — | Takada T et al., A mannitol/sorbitol receptor stimulates…, PloS one (2017) | [10.1371/journal.pone.0186420](https://doi.org/10.1371/journal.pone.0186420) |
 
 ## ADME sites
 

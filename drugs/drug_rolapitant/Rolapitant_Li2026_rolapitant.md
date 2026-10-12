@@ -5,7 +5,7 @@
 
 # rolapitant — `Rolapitant_Li2026_rolapitant`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0), gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (Cmax, AUCt and AUC∞), so that value has no SI equivalent. Extracted — rolapitant: Cmax 949 ng/mL, AUCt 1.7e+05 h*ng/mL, AUC∞ 2.01e+05 h*ng/mL, t1/2z 265 hour, CLm/F 7.92 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has fosrolapitant → rolapitant (metabolism), the second reading fosrolapitant → rolapitant (metabolism); rolapitant → m19 (metabolism). That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fosrolapitant, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -80,17 +80,32 @@ Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacolo
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.0 (0/14 fields) | 14 |
 | `gpt-oss:120b` | not confirmed | 0.889 (8/9 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['fosrolapitant', 'rolapitant', 'metabolism']] | [['fosrolapitant', 'rolapitant', 'metabolism'], ['rolapitant', 'm19', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | 201065.62 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | not captured | 201065.62 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-t]` | 170208.06 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-t]` | not captured | 170208.06 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 7.92 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 949.38 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 949.38 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[creatinine clearance rate]` | not captured | 60 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 264.80 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | not captured | 264.80 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | fosrolapitant | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | rolapitant | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [['fosrolapitant', 'rolapitant', 'metabolism']] | [['fosrolapitant', 'rolapitant', 'metabolism'], ['rolapitant', 'm19', 'metabolism']] | mismatch |
 
 </details>

@@ -1,5 +1,5 @@
 {
- "dose_source": "WHO ATC DDD 3 mg oral (C02AC02)",
+ "dose_source": "paper",
  "model_id": "Guanfacine_Knebel2015_reference",
  "molar_masses": {
   "central.C": 0.24609299999999998
@@ -7,6 +7,13 @@
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1.0,
+  2.0,
+  3.0,
+  4.0
  ],
  "parameters": {
   "Cl": 9.194444444444445e-06,
@@ -16,7 +23,7 @@
   "VdPerKg": 0.011485714285714287,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 3e-06,
+  "adminMass": 1e-06,
   "ka": 0.00015333333333333334,
   "weight": 70.0
  },
@@ -24,7 +31,7 @@
   "central.C": 20777.55511022044
  },
  "reference_peaks": {
-  "central.C": 3.0268078351837495e-06
+  "central.C": 1.0090402667041622e-06
  },
  "stop_time": 345600.0,
  "template": "PK_1C_enteral",

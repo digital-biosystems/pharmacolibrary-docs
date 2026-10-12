@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Secretin concentration (nM) stimulates accumulation of cellular cyclic AMP (cAMP) via a direct Emax model; the paper reports an EC50 of 0.5 ± 0.2 nM, but the excerpts do not state Emax, the Hill coefficient, or a mechanistic description beyond stimulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Susini_1986`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

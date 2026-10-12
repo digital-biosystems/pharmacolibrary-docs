@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lindane concentrations (nM) stimulate the measured chloride current amplitude, described by an Emax-type model with an EC50 of 116 nM; the paper excerpts provide no further mechanism or additional parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jenson_2016`
 - **model family:** `emax`
 - **driver:** `cited_pk`

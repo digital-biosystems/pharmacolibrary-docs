@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In JIMT-1 cells, dexrazoxane concentrations (µM) inhibit cell viability (%) after 72 h according to a sigmoid Emax (inhibitory) model with R0 = 106%, Imax = 0.74 and IC50 = 97.5 µM; the paper does not state a specific mechanism for this single-agent effect beyond empirical cell viability inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mody_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

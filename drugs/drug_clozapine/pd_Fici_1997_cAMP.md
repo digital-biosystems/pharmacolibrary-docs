@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clozapine inhibits pergolide-induced cAMP formation with an IC50 of 0.97 microM; the paper excerpts provide no further mechanism or model details.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fici_1997`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

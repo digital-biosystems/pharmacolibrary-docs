@@ -4,7 +4,7 @@
 
 # moroxydine — `Moroxydine_Liu2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The moroxydine record from Liu_2016 was rejected because the blood clearance parameter CLb carries the unit h·kg, which is dimensionally inconsistent with a clearance (expected volume per time per kg, e.g. L/(h·kg)).**
+
+The record was built from the paper's abstract only, so the reported summary statistics (t1/2ka 4.29 h, t1/2z 15.87 h, Cmax 2.98 μg/mL, tmax 10.35 h, V/F 4.55 L/kg, CLb 0.25 h·kg, AUC 75.89 μg·h/mL) stood in for a fitted model. The failing check is a dimension mismatch on a structural parameter: CLb is defined as the proportionality factor relating elimination rate to concentration, but its recorded unit h·kg has the wrong dimensions for clearance. The mismatch on this parameter is the stated cause of rejection. Extracted — moroxydine: t1/2ka 4.29 h, t1/2z 15.9 h, Cmax 2.98 μg/mL, tmax 10.3 h, V/F 4.55 L/kg, CLb 0.25 h·kg, AUC 75.9 μg·h/mL.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has moroxydine hydrochloride, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `moroxydine hydrochloride`, measured `moroxydine`.
 
@@ -73,6 +81,42 @@ Liu W et al., Pharmacokinetics and tissue residues of…, Journal of veterinary 
 - no GROBID TEI available — transcribed from abstract in Liu_2016_metadata.yaml (14 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.111 (2/18 fields) | 16 |
+
+<details><summary>16 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[areas under the concentration-time curve]` | not captured | 75.89 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 75.89 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clb]` | 0.25 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clb]` | not captured | 0.25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 2.98 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 2.98 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2ka]` | 4.29 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2ka]` | not captured | 4.29 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2ke]` | 15.87 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2ke]` | not captured | 15.87 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tp]` | 10.35 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tp]` | not captured | 10.35 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd /f]` | not captured | 4.55 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd/f]` | 4.55 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | moroxydine hydrochloride | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | moroxydine | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

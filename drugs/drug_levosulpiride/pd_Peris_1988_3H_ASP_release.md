@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> S-sulpiride (levosulpiride) concentration (nM) stimulates K+-stimulated [3H]D-aspartate release via a direct Emax model, with Emax 75% and EC50 240 nM; the paper excerpts do not state a mechanism beyond this direct effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Peris_1988`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

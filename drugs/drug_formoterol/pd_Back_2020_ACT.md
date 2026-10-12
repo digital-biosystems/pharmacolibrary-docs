@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;formoterol&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/&quot;},{&quot;label&quot;:&quot;Back_2020 \u00b7 PD Asthma control test score&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Formoterol_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_Back2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Formoterol_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_Back2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Asthma control test score — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,6 +17,10 @@
 **As extracted:** Formoterol (concentrations from this paper's PK model) drives Asthma control test score (in score): disease-progression model.
 
 **Model:** No model was generated from this record.
+
+> In the paper, formoterol lung concentrations act on FEV1 (not the ACT score) via a stimulatory indirect response model, stimulating the production of FEV1 (kin,FEV1) rather than inhibiting its loss; no potency (EC50/Emax) or rate values for this formoterol-FEV1 model are given in the excerpts, and the ACT score is instead treated as a disease-progression biomarker (BASEACT 19.70 score).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Back_2020`
 - **model family:** `disease_progression`

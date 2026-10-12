@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Frances_2022_CR](drugs/drug_glofitamab/pd_Frances_2022_CR.md) | cytokine release ← glofitamab · stimulation effect | — | Frances N et al., Novel in Vivo and in Vitro Pharmacokine…, Journal of pharmaceutical s… (2022) | [10.1016/j.xphs.2021.12.019](https://doi.org/10.1016/j.xphs.2021.12.019) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Frances_2022_CR](drugs/drug_glofitamab/pd_Frances_2022_CR.md) | cytokine release ← glofitamab · stimulation effect | — | Frances N et al., Novel in Vivo and in Vitro Pharmacokine…, Journal of pharmaceutical s… (2022) | [10.1016/j.xphs.2021.12.019](https://doi.org/10.1016/j.xphs.2021.12.019) |
 
 ## ADME sites
 

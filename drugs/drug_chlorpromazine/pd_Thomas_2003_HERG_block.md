@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Chlorpromazine concentrations (micro M) inhibit HERG potassium channel block response (%), described by a sigmoid Emax (Hill) model; the paper gives an IC50 of 21.6 micro M and a Hill coefficient of 1.11, with no mechanism beyond direct channel block stated in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Thomas_2003`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

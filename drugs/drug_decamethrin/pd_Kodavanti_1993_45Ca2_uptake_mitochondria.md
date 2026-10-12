@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deltamethrin (decamethrin) concentrations inhibit mitochondrial 45Ca2+ uptake, described by a sigmoid Emax (inhibitory) model with an IC50 of 91.2 microM; the paper excerpts do not state Imax, gamma, or the underlying mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kodavanti_1993`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

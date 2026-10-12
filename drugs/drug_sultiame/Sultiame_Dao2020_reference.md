@@ -4,7 +4,7 @@
 
 # sultiame — `Sultiame_Dao2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Kon has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (kon and Bmax), so that value has no SI equivalent. Extracted — sultiame: CL 9.95 L/h, V1 64.8 L, V 3.27 L, kabs 1.88 h−1, kon 2.02e+03 h−1·µM−1, koff 8.08e+03 h−1, Bmax 111 mg.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Dao K et al., Sultiame pharmacokinetic profile in pla…, Pharmacology research & per… (2020)

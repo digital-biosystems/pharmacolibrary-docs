@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;sodium nitrite&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_nitrite/&quot;},{&quot;label&quot;:&quot;Shelkovnikov_2004 \u00b7 PD relaxing effect of sodium nitrite after precontraction by norepinephrine (1 microM) in rat denuded thoracic aorta&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumNitrite_Grimm2023_reference&quot;,&quot;label&quot;:&quot;Grimm_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumNitrite_Grimm2023_reference&quot;,&quot;label&quot;:&quot;Grimm_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # relaxing effect of sodium nitrite after precontraction by norepinephrine (1 microM) in rat denuded thoracic aorta — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -19,6 +19,10 @@
 **As extracted:** Sodium nitrite drives relaxing effect of sodium nitrite after precontraction by norepinephrine (1 microM) in rat denuded thoracic aorta: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
+
+> Sodium nitrite concentration (microM) drives the relaxing effect of rat denuded thoracic aorta precontracted with 1 microM norepinephrine, modelled with an Emax-type concentration–response relationship; the paper excerpts provide no mechanism details and no numeric parameter values (Emax, EC50, or slope).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Shelkovnikov_2004`
 - **model family:** `emax`

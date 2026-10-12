@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates flurazepam dose (not concentrations) to total sleep time (TST) as a stimulated continuous response, but no full text is available, so the mechanism, model form, and potency/rate parameters are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zheng_2020`
 - **model family:** `unknown`
 - **driver:** `dose_only`

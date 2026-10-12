@@ -4,7 +4,7 @@
 
 # momelotinib — `Momelotinib_Rich2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.676). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**CLm/F has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — momelotinib: CL/F 64.7 L/h, Q/F 36.1 L/h, V/F 383 L, kabs 8.63 1/h, Frel 1.64; M21: CL/F 24.9 L/h, V1/F 2.77 L, V2/F 45.7 L, Q/F 8.84 L/h, CLm/F 0.481.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of median a: this record has none, the second reading none; it also differs on 11 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Rich B et al., Population Pharmacokinetics and Exposur…, Clinical pharmacology and t… (2026)
@@ -171,6 +179,38 @@ Rich B et al., Population Pharmacokinetics and Exposur…, Clinical pharmacology
 - LLM selected parameter table(s) 1
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | partly confirmed | 0.676 (25/37 fields) | 12 |
+
+<details><summary>12 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[cl/f of momelotinib on clm/f]` | 0.481 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[median a]` | not captured | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[mild_hepatic_dysfunction_nci_on_cl_f]` | not captured | 0.914 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[moderate_hepatic_dysfunction_nci_on_cl_f]` | not captured | 0.779 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[strong_cyp3a4_inducer_on_cl_f]` | not captured | 2.01 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_cl_f_cyp3a4].rse_percent` | 3.90 | 12.6 | mismatch |
+| `qwen3.8-27b` | `parameters[theta_cl_f_cyp3a4].value` | 2.01 | 1.39 | mismatch |
+| `qwen3.8-27b` | `parameters[theta_cl_f_hepatic].rse_percent` | 6.93 | 21.8 | mismatch |
+| `qwen3.8-27b` | `parameters[theta_cl_f_hepatic].value` | 0.914 | 0.477 | mismatch |
+| `qwen3.8-27b` | `parameters[theta_q351_crcl]` | not captured | 0.418 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q45_hepatic]` | -0.359 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q900_crcl]` | 0.418 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

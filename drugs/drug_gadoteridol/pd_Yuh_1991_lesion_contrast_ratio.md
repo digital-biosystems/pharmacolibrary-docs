@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Gadoteridol dose (mmol/kg) stimulates lesion contrast ratio in a linear proportional model according to the record, but the paper excerpt does not state the mechanism or any potency or rate values.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yuh_1991`
 - **model family:** `linear`
 - **driver:** `dose_only`

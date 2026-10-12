@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_Maitre1991_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has midazolam, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has midazolam, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -97,17 +97,27 @@ Maitre PO et al., A three-step approach combining Bayesia…, Journal of pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.308 (4/13 fields) | 9 |
 | `gpt-oss:120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a]` | 1.77 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag1]` | 1.23 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution volume]` | 0.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[propofol clearance capacity in a 38 postmenstrual weeks newborn at birth]` | 0.029 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ_age]` | 0.036 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ_age]` | not captured | 0.036 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ_liver].parameter_id` | Q349 | Q25 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | midazolam | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | midazolam | unknown | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | midazolam | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | midazolam | unknown | mismatch |
 

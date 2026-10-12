@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Dorin_2012_CSR](drugs/drug_tetracosactide/pd_Dorin_2012_CSR.md) | cortisol secretion rate ← ACTH · direct sigmoid Emax (Hill) effect | — | Dorin RI et al., Estimation of maximal cortisol secretio…, The Journal of clinical end… (2012) | [10.1210/jc.2011-2227](https://doi.org/10.1210/jc.2011-2227) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Dorin_2012_CSR](drugs/drug_tetracosactide/pd_Dorin_2012_CSR.md) | cortisol secretion rate ← ACTH · direct sigmoid Emax (Hill) effect | — | Dorin RI et al., Estimation of maximal cortisol secretio…, The Journal of clinical end… (2012) | [10.1210/jc.2011-2227](https://doi.org/10.1210/jc.2011-2227) |
 
 ## ADME sites
 

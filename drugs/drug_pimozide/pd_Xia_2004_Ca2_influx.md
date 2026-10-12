@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pimozide inhibits Ca2+ influx with an IC50 of 0.2 microM; the paper excerpts do not state the mechanism or any further model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xia_2004`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

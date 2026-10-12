@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxazosin_Chrisp1990_reference&quot;,&quot;label&quot;:&quot;Chrisp_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Young1988_reference&quot;,&quot;label&quot;:&quot;Young_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Young1988_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_unknown2023_reference&quot;,&quot;label&quot;:&quot;unknown_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Qmax — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+# Qmax — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -17,6 +17,10 @@
 **As extracted:** Doxazosin (concentrations from the PK model of Aljaeid_2019) drives Qmax (in ml s -1): direct linear effect.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> Doxazosin plasma concentrations (ng ml-1) stimulate the maximum urinary flow rate (Qmax, ml s-1) via a linear additive model with a baseline (EBSL) of 0.0953 ml s-1 and a slope of 0.0297 ml s-1 %. The paper describes the underlying mechanism as competitive antagonism of alpha-1 adrenoceptors mediated by receptor occupancy, noting that a ternary complex model was attempted but failed to minimize.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Ito_2007`
 - **model family:** `linear`
@@ -65,19 +69,23 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 | `T4_defaults` | pass | nothing defaulted |
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `openai:gpt-6-luna` | not confirmed | 0.667 (4/6 fields) | 2 |
+| `einfracz:gpt-oss-120b` | secondary_empty | 0.0 (0/6 fields) | 6 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `openai:gpt-6-luna` | `driver_compound` | doxazosin (via receptor occupancy ratio) | doxazosin | mismatch |
-| `openai:gpt-6-luna` | `effect_form` | proportional | additive | mismatch |
+| `einfracz:gpt-oss-120b` | `driver_compound` | doxazosin | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_direction` | stimulation | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | additive | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | linear | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q324]` | 0.0953 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q335]` | 0.0297 | not captured | only_one_extracted |
 
 </details>
 

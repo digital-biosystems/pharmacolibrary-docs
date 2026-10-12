@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Reboxetine concentration (µM) is associated with inhibition of locus coeruleus neuron firing rate; the paper excerpts provide no further detail on the mechanism (e.g., direct effect, turnover, or effect-compartment) and no potency or rate parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Grandoso_2004`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lindane concentrations are linked to the percentage of organisms avoiding contaminated soil (avoidance behaviour, %), but the paper excerpts provide no model description, mechanism, or parameter values (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma are stated).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Loureiro_2005`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

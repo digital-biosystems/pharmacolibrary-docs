@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model describes a direct dose-dependent Emax stimulation of the urate-lowering response rate by allopurinol, with a reported Emax of 50.8%. The paper does not specify the underlying mechanism or other rate parameters, as no full text is available.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sun_2014`
 - **model family:** `emax`
 - **driver:** `dose_only`

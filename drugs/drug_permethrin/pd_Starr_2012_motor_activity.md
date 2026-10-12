@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Permethrin (pooled cis- and trans- brain concentration in a pyrethroid mixture) was modeled with a sigmoid Emax relationship inhibiting motor activity; the paper excerpts provide no mechanism details and no potency or rate parameter values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Starr_2012`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

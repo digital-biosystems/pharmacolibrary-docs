@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Eszopiclone (via zopiclone concentrations) acts on saccadic peak velocity (SPV) with an inhibitory, linear effect described by an effect-compartment model; the paper excerpts provide no numeric potency or rate parameters (Imax, IC50, ke0) and no further mechanistic detail.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luurila_1996`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

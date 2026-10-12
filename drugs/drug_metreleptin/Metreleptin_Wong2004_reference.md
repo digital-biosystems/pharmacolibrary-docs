@@ -4,7 +4,7 @@
 
 # metreleptin — `Metreleptin_Wong2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167), gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record was built from the paper's abstract alone, so reported summary statistics (t1/2z 3.4 h, CL 79 ml/kg.h, Vss 150 ml/kg) stood in for a fitted model. A dimension mismatch on a structural parameter was flagged for the clearance value of 79 ml/kg.h. A second reader disagreed on the dose compound and primary analyte fields (record: r-metHuLeptin, reader: unknown) and read a dose of 0.1 that the record left null, while the record's half-life, clearance and volume values were read as null by that reader. Extracted — metreleptin: t1/2z 3.4 h, CL 79 ml/kg.h, Vss 150 ml/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has r-metHuLeptin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has r-metHuLeptin, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -70,17 +70,28 @@ Wong SL et al., Leptin hormonal kinetics in the fed sta…, The Journal of clini
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>18 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl]` | 79 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 79 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[p]` | not captured | 0.003 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[r-methuleptin dose]` | not captured | 0.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t]` | 3.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t]` | not captured | 3.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` | 150 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` | not captured | 150 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | r-metHuLeptin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | r-metHuLeptin | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl]` | 79 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | not captured | 79 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t]` | 3.4 | not captured | only_one_extracted |

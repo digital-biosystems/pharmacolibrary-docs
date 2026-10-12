@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;alprazolam&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alprazolam_Klein2026_body_weight_50_kg&quot;,&quot;label&quot;:&quot;Klein_2026_body_weight_50_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alprazolam_Klein2026_body_weight_50_kg&quot;,&quot;label&quot;:&quot;Klein_2026_body_weight_50_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # alprazolam
 
@@ -27,16 +27,16 @@ Alprazolam is a short-acting benzodiazepine anxiolytic used to treat anxiety and
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 18:18 | 21:10 | 1/1/2 | 13/1/0 | 0/0/0 | 535,221/30,856 | ollama / glm-5.3-flash | 15 | 2/10 | 13/2 | 0 |
+| 2026-10-06 18:18 | 21:10 | 0/1/3 | 13/1/0 | 0/0/0 | 535,221/30,856 | ollama / glm-5.3-flash | 15 | 2/10 | 13/2 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Klein_2026_body_weight_50_kg](drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg.md) | ▶ model + simulator | 1-compartment, oral | 6 | Klein P et al., Pharmacokinetics and tolerability of si…, Epilepsia (2026) | [10.1111/epi.18643](https://doi.org/10.1111/epi.18643) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Klein_2026_all_patients](drugs/drug_alprazolam/Alprazolam_Klein2026_all_patients.md) | — | 1-compartment (no model) | 3 | Klein P et al., Pharmacokinetics and tolerability of si…, Epilepsia (2026) | [10.1111/epi.18643](https://doi.org/10.1111/epi.18643) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Klein_2026_body_weight_50_kg_2](drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg_2.md) | — | 1-compartment (no model) | 3 | Klein P et al., Pharmacokinetics and tolerability of si…, Epilepsia (2026) | [10.1111/epi.18643](https://doi.org/10.1111/epi.18643) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [DeVane_1993_reference](drugs/drug_alprazolam/Alprazolam_DeVane1993_reference.md) | — | 1-compartment (no model) | 0 | DeVane CL et al., Evaluation of population pharmacokineti…, Clinical pharmacology and t… (1993) | [10.1038/clpt.1993.65](https://doi.org/10.1038/clpt.1993.65) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Klein_2026_all_patients](drugs/drug_alprazolam/Alprazolam_Klein2026_all_patients.md) | — | 1-compartment (no model) | 3 | Klein P et al., Pharmacokinetics and tolerability of si…, Epilepsia (2026) | [10.1111/epi.18643](https://doi.org/10.1111/epi.18643) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Klein_2026_body_weight_50_kg](drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg.md) | ▶ model + simulator | 1-compartment, oral | 6 | Klein P et al., Pharmacokinetics and tolerability of si…, Epilepsia (2026) | [10.1111/epi.18643](https://doi.org/10.1111/epi.18643) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Klein_2026_body_weight_50_kg_2](drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg_2.md) | — | 1-compartment (no model) | 3 | Klein P et al., Pharmacokinetics and tolerability of si…, Epilepsia (2026) | [10.1111/epi.18643](https://doi.org/10.1111/epi.18643) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [DeVane_1993_reference](drugs/drug_alprazolam/Alprazolam_DeVane1993_reference.md) | — | 1-compartment (no model) | 0 | DeVane CL et al., Evaluation of population pharmacokineti…, Clinical pharmacology and t… (1993) | [10.1038/clpt.1993.65](https://doi.org/10.1038/clpt.1993.65) |
 
 ## Pharmacodynamics (PD)
 
@@ -94,7 +94,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 445 matched, 140 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 1  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 3  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;reserpine&quot;,&quot;href&quot;:&quot;drugs/drug_reserpine/&quot;},{&quot;label&quot;:&quot;Alfosea-Cuadrado_2024 \u00b7 PD monoamines (MAs)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# monoamines (MAs) — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.011). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+# monoamines (MAs) — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -19,7 +19,7 @@
 
 **Model:** No model was generated from this record.
 
-> Reserpine concentrations inhibit the production of monoamines (MA) in the prefrontal cortex, spinal cord, and amygdala via a precursor-pool indirect response model with a parallel transit chain. The paper reports a production rate (kin) of 6.1 × 10−3 mg/h, a precursor pool turnover rate (kp) of 8.6 × 10−4 h−1, a degradation rate (kout) of 2.7 × 10−2 h−1, and a transit rate (k0) of 1.9 × 10−1 h−1.
+> Reserpine concentrations act on monoamine (MA) levels in the amygdala, prefrontal cortex, and spinal cord via a precursor-pool indirect response model where the drug stimulates the degradation of MAs (characterized by kout = 2.7 × 10−2 h−1) from a precursor pool (kp = 8.6 × 10−4 h−1). The model includes region-specific precursor synthesis rates (kin = 6.97 mg/h for AMY, 2.10 mg/h for PFC, and 1.78 mg/h for SC) and a parallel transit chain (k0 = 1.9 × 10−1 h−1) to account for delayed effects.
 >
 > <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
@@ -52,109 +52,20 @@ Alfosea-Cuadrado GM et al., Population Pharmacokinetic-Pharmacodyna…, Pharmace
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.011 (1/94 fields) | 93 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.556 (5/9 fields) | 4 |
 
-<details><summary>93 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | reserpine | unknown | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
-| `gpt-oss:120b` | `model_family` | indirect_response_ii | unknown | mismatch |
-| `gpt-oss:120b` | `parameters[Q22]` | 11 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q22]` | 37 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q22]` | 25 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q22]` | not captured | 11 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q22]` | not captured | 37 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q22]` | not captured | 25 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q307]` | 6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q307]` | 9 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q307]` | 67 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q307]` | not captured | 6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q307]` | not captured | 9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q307]` | not captured | 67 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q326]` | 47 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q326]` | 358 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q326]` | 11 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q326]` | 1.25 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q326]` | 20 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q326]` | 74 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q326]` | 18 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | 1.78 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | 19 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | 1.76 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | 6.97 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | 18 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | 97 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | 9 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | 7.04 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | 2.10 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | 18 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | 2.16 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | not captured | 1.78 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | not captured | 19 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | not captured | 1.76 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | not captured | 6.97 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | not captured | 18 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | not captured | 97 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | not captured | 9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | not captured | 7.04 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | not captured | 2.10 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | not captured | 18 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q327]` | not captured | 2.16 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 11 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 22 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 24 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | not captured | 11 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | not captured | 22 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | not captured | 24 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 71 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q40]` | 0.95 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q40]` | 3 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q40]` | 179 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q40]` | 22 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q40]` | not captured | 0.95 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q40]` | not captured | 3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q40]` | not captured | 179 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q40]` | not captured | 22 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | 14 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | 29 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | 37 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | not captured | 14 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | not captured | 29 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | not captured | 37 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | 19.14 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | 45.43 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | 12 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | 32 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | not captured | 19.14 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | not captured | 226 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | not captured | 28 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | not captured | 19.14 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | not captured | 45.43 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | not captured | 12 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | not captured | 32 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | not captured | 30 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q61]` | 1.3 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q61]` | 21 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q61]` | 59 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q61]` | 30 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q61]` | not captured | 1.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q61]` | not captured | 21 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q61]` | not captured | 59 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q61]` | not captured | 30 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q72]` | not captured | 1.25 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q72]` | not captured | 20 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q72]` | not captured | 74 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q72]` | not captured | 18 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q95]` | 19.14 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q95]` | 226 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q95]` | 28 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q100]` | not captured | 1.25 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q327].value` | 8.6 × 10−4 | 6.97 | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q335]` | 1.25 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q338]` | 1.9 × 10−1 | not captured | only_one_extracted |
 
 </details>
 

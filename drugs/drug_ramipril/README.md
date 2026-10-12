@@ -33,7 +33,7 @@ Ramipril is an ACE inhibitor used to treat arterial hypertension and congestive 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.391). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Trobec_2024_reference](drugs/drug_ramipril/Ramipril_Trobec2024_reference.md) | — | parent + metabolite (no model) | 8 (+1 cov.) | Trobec KČ et al., Population pharmacokinetics of ramipril…, Acta pharmaceutica (Zagreb,… (2024) | [10.2478/acph-2024-0018](https://doi.org/10.2478/acph-2024-0018) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636), gpt-oss:120b (not confirmed, agreement 0.391). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Trobec_2024_reference](drugs/drug_ramipril/Ramipril_Trobec2024_reference.md) | — | parent + metabolite (no model) | 8 (+1 cov.) | Trobec KČ et al., Population pharmacokinetics of ramipril…, Acta pharmaceutica (Zagreb,… (2024) | [10.2478/acph-2024-0018](https://doi.org/10.2478/acph-2024-0018) |
 
 ## ADME sites
 

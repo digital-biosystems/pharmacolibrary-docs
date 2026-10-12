@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts, so the mechanism linking pyrethroid brain concentrations (including cypermethrin) to motor activity cannot be stated; the record indicates a sigmoid Emax inhibitory model of motor activity, but no potency or rate values are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Starr_2012`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clenbuterol competes with 125I-cyanopindolol for beta2-adrenoceptor binding in equine tracheal muscle homogenates, with a reported Kd of 24 nM and beta-adrenoceptor density of 45 ± 14.3 fmol/mg protein; the paper excerpts do not state a further mechanism or model form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Törneke_1998`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

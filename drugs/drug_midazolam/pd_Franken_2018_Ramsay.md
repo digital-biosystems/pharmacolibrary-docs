@@ -18,7 +18,7 @@
 
 **Model:** No model was generated from this record.
 
-> Midazolam plasma concentrations (μg l-1) act directly (Emax model, no effect compartment; ke0 could not be estimated) on the probability of each Ramsay sedation score in a differential odds (categorical) model, with a shared Emax of 4.08 and score-specific EC50 values of 30.1, 62.8 and 111.6 μg l-1 for Ramsay scores 2, 3-5 and 6 (structural model). Concomitant haloperidol was associated with a lower midazolam response (shrinkage parameter 1.74).
+> Midazolam plasma concentrations (μg l−1) act directly on the probability of each Ramsay sedation score via a direct Emax model within a differential odds (categorical) model, with score-specific baselines and EC50 values (30.1, 62.8 and 111.6 μg l−1 for scores 2, 3–5 and 6) and a shared Emax; concomitant haloperidol was associated with a lower midazolam response. No effect compartment could be estimated (Ke0 not estimable), and metabolite concentrations did not improve the model.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

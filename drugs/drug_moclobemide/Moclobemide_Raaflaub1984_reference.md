@@ -5,7 +5,7 @@
 
 # moclobemide — `Moclobemide_Raaflaub1984_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.176), gpt-oss:120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — moclobemide: t1/2β 1 h, Fab 44 %, tmax 1 h, CL 63.5 l/h, tlag 0.202 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 44, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has moclobemide, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -80,17 +80,32 @@ Raaflaub J et al., Single-dose pharmacokinetics of the MAO…, Arzneimittel-Fors
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.176 (3/17 fields) | 14 |
 | `gpt-oss:120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorbed fraction]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dosage]` | 50 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dosage]` | not captured | 50 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability]` | 44 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability]` | not captured | 44 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relatively high systemic clearance]` | 63.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2 beta]` | 0.79 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2 beta]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t lag [h]]` | 0.202 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss]` | 0.81 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | moclobemide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | moclobemide | unknown | mismatch |
 | `gpt-oss:120b` | `model.bioavailability.theta` | 44 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[oral bioavailability]` | 44 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[relatively high systemic clearance]` | 63.5 | not captured | only_one_extracted |

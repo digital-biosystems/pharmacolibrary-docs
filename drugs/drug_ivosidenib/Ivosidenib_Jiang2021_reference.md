@@ -4,7 +4,7 @@
 
 # ivosidenib — `Ivosidenib_Jiang2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.074). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**CL has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — ivosidenib: CL/F 5.39 L/h, V1/F 234 L, Q/F 15.8 L/h, V2/F 151 L, kabs 1.38 1/h, tlag 0.27 h, Frel 0.5, CL 1.66.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ivosidenib, the second reading unknown; it also differs on 24 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Jiang X et al., Population pharmacokinetic and exposure…, Clinical and translational… (2021)
@@ -79,6 +87,51 @@ Jiang X et al., Population pharmacokinetic and exposure…, Clinical and transla
 - skipped illustrative/example figure caption(s) cts12959-fig-0001 — per-individual fit, not model parameters
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.074 (2/27 fields) | 25 |
+
+<details><summary>25 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[baseline_albumin_cl_f_exponent]` | 0.82 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[baseline_albumin_vc_f_exponent]` | 0.73 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose_frel_exponent]` | -0.49 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka].value` | 1.38 | 7 | mismatch |
+| `gpt-oss-120b` | `parameters[steady‐state cl/f].covariate_forms` | ['power', 'power', 'power', 'power'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[steady‐state cl/f].value` | 5.39 | 6 | mismatch |
+| `gpt-oss-120b` | `parameters[steady‐state fold change in cl].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-oss-120b` | `parameters[steady‐state fold change in cl].parameter_id` | Q22 | Q31 | mismatch |
+| `gpt-oss-120b` | `parameters[steady‐state fold change in cl].value` | 1.66 | 11 | mismatch |
+| `gpt-oss-120b` | `parameters[steady‐state fold change in frel].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-oss-120b` | `parameters[steady‐state fold change in frel].value` | 0.50 | 7 | mismatch |
+| `gpt-oss-120b` | `parameters[steady‐state q/f].value` | 15.8 | 19 | mismatch |
+| `gpt-oss-120b` | `parameters[steady‐state vc/f].covariate_forms` | ['power'] | ['power', 'power'] | mismatch |
+| `gpt-oss-120b` | `parameters[steady‐state vc/f].value` | 234 | 6 | mismatch |
+| `gpt-oss-120b` | `parameters[steady‐state vp/f].value` | 151 | 22 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_f_albumin_power]` | 0.99 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_ratio_albumin_power]` | not captured | 19 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_frel_weight_power]` | not captured | 19 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_albumin_power]` | not captured | 20 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_wt_power]` | 0.92 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_f_albumin_power].value` | 1.1 | 38 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_v1_f_wt_power]` | not captured | 13 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag].value` | 0.27 | 11 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | ivosidenib | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ivosidenib | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01G&quot;,&quot;href&quot;:&quot;atc/J01G.md&quot;},{&quot;label&quot;:&quot;netilmicin&quot;,&quot;href&quot;:&quot;drugs/drug_netilmicin/&quot;},{&quot;label&quot;:&quot;Winslade_1987_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Netilmicin_Sherwin2008_reference&quot;,&quot;label&quot;:&quot;Sherwin_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_netilmicin/Netilmicin_Sherwin2008_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Netilmicin_Sherwin2008_reference&quot;,&quot;label&quot;:&quot;Sherwin_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_netilmicin/Netilmicin_Sherwin2008_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # netilmicin — `Netilmicin_Winslade1987v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.077), gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The model was built, but netilmicin's volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — tobramycin and netilmicin: CL 48 ml/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tobramycin and netilmicin, the second reading netilmicin, tobramycin; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has netilmicin, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -97,17 +97,30 @@ Winslade NE et al., Single-dose accumulation pharmacokineti…, Antimicrobial ag
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.077 (1/13 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
+| `gpt-oss-120b` | `parameters[k12]` | not captured | 0.06506 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k2l]` | not captured | 0.00492 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[klo]` | not captured | 0.280 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2r (h) clb]` | not captured | 160.71 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance for netilmicin]` | 48 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v,,]` | not captured | 1.828 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v,]` | not captured | 2.014 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | not captured | 0.108 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 28.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | netilmicin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | netilmicin | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[3]` | not captured | 318.5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[total body clearance for netilmicin]` | not captured | 48 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[total body clearance for netilmicin]` | 48 | not captured | only_one_extracted |

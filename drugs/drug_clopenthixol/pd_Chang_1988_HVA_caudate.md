@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts or mechanism details; the record indicates clopenthixol dose was related to stimulated homovanillic acid (HVA) levels in caudate, but no model family, potency, or rate values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chang_1988`
 - **model family:** `unknown`
 - **driver:** `dose_only`

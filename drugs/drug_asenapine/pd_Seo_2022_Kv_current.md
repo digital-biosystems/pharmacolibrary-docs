@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Asenapine concentration (μM) inhibits the Kv current (%) via a sigmoid Emax (proportional inhibition) model, with IC50 8.59 ± 2.25 μM and Hill coefficient 0.64 ± 0.06; no Emax or rate parameters are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Seo_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

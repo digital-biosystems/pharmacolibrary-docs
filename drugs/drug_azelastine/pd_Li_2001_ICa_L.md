@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Azelastine blocks the L-type Ca2+ current (ICa,L) with a sigmoid Emax, proportional inhibition concentration–effect relationship; the paper reports an IC50 of 20.2 µM and a Hill coefficient of 1.1, but the excerpts do not state the mechanism beyond this direct concentration–response blockade.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2001`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

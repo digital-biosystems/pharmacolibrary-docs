@@ -28,8 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Goldberg_1996_CYP3A](drugs/drug_dirithromycin/pd_Goldberg_1996_CYP3A.md) | CYP3A activity ← dirithromycin · inhibition effect | — | Goldberg MJ et al., Effect of dirithromycin on human CYP3A…, Journal of clinical pharmac… (1996) | [10.1002/j.1552-4604.1996.tb04170.x](https://doi.org/10.1002/j.1552-4604.1996.tb04170.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [McConnell_1999_MIC90](drugs/drug_dirithromycin/pd_McConnell_1999_MIC90.md) | in vitro MIC ← dirithromycin · inhibition effect | — | McConnell SA et al., Review and comparison of advanced-gener…, Pharmacotherapy (1999) | [10.1592/phco.19.6.404.31054](https://doi.org/10.1592/phco.19.6.404.31054) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.00).">human + animal</span> | [Goldberg_1996_CYP3A](drugs/drug_dirithromycin/pd_Goldberg_1996_CYP3A.md) | CYP3A activity ← dirithromycin · inhibition effect | — | Goldberg MJ et al., Effect of dirithromycin on human CYP3A…, Journal of clinical pharmac… (1996) | [10.1002/j.1552-4604.1996.tb04170.x](https://doi.org/10.1002/j.1552-4604.1996.tb04170.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [McConnell_1999_MIC90](drugs/drug_dirithromycin/pd_McConnell_1999_MIC90.md) | in vitro MIC ← dirithromycin · inhibition effect | — | McConnell SA et al., Review and comparison of advanced-gener…, Pharmacotherapy (1999) | [10.1592/phco.19.6.404.31054](https://doi.org/10.1592/phco.19.6.404.31054) |
 
 ## ADME sites
 

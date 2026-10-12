@@ -4,7 +4,7 @@
 
 # bepridil — `Bepridil_NielsenKudsk1988_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -18,9 +18,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bepridil, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+**The record lacks distribution volume and clearance, and the abstract-only source prevented extraction of a fitted compartmental model.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The paper reports only an average myocardial concentration of 489 micrograms per gram and a steady-state time of 20 minutes, without any elimination or distribution parameters. Because the record was built from the abstract alone, these summary statistics stand in for a fitted model, making it impossible to construct a valid compartmental population pharmacokinetic model. A second reader also disagreed on the identification of the dose compound and primary analyte, marking them as unknown. Extracted — bepridil: Cavg 489 micrograms g-1, tss 20 min.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bepridil, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Nielsen-Kudsk F et al., Bepridil, myocardial accumulation kinet…, Pharmacology & toxicology (1988)
@@ -65,17 +69,26 @@ Nielsen-Kudsk F et al., Bepridil, myocardial accumulation kinet…, Pharmacology
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[apparent dynamic steady states developed within about]` | 20 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[average concentration of bepridil in the myocardium at steady state]` | 489 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[average concentration of bepridil in the myocardium at steady state]` | not captured | 489 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[drug concentration in the perfusion liquid]` | not captured | 0.54 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dynamic steady states developed within]` | not captured | 20 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[percentage referable to the deepest, presumably intracellular compartment]` | not captured | 43 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | bepridil | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | bepridil | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[apparent dynamic steady states developed within about]` | 20 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[average concentration of bepridil in the myocardium at steady state]` | 489 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[average concentration of bepridil in the myocardium at steady state]` | not captured | 489 | only_one_extracted |

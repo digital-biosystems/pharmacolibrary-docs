@@ -32,7 +32,7 @@ Camazepam is a benzodiazepine drug with sedative properties, used as an anxiolyt
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Legheand_1982_reference](drugs/drug_camazepam/Camazepam_Legheand1982_reference.md) | — | 1-compartment (no model) | 3 | Legheand J et al., Pharmacokinetics of intravenous camazep…, Arzneimittel-Forschung (1982) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Legheand_1982_reference](drugs/drug_camazepam/Camazepam_Legheand1982_reference.md) | — | 1-compartment (no model) | 3 | Legheand J et al., Pharmacokinetics of intravenous camazep…, Arzneimittel-Forschung (1982) | — |
 
 ## Pharmacodynamics (PD)
 

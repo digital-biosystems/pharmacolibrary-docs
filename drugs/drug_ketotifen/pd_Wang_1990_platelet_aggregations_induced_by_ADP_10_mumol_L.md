@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ketotifen concentration inhibited platelet aggregation induced by ADP 10 mumol/L, with an IC50 of 94.5 mumol/L; the available paper excerpt does not state the mechanism.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_1990`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

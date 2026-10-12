@@ -4,7 +4,7 @@
 
 # diamorphine — `Diamorphine_Cai2025_fisher_information_matrix_estimates_stoc`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Rejected because diamorphine model parameters carry implausible negative values: absorption rate constant kabs −1.85 1/h, bioavailability Fab −3.55, k12 −7.19, k21 −10.6, k13 −9.00, k31 −0.448 1/h, and morphine apparent clearance CLm,norm/F −9.98 L/h.**
+
+All reported rate constants, the bioavailability and the morphine metabolite clearance are negative, which is pharmacokinetically impossible for first-order rate constants, fractions reaching systemic circulation, and clearance; the negative-clearance/volume check failed on these base values. The label 'stochastic approximation' for Fab's unit could not be converted to SI, so the bioavailability reached the model without an SI value. The volumes V1 (1.33 L) and V2 (2.84 L) are positive, but the remaining parameters are implausible as reported. Extracted — diamorphine: kabs -1.85 1/h, Fab -3.55 stochastic approximation, V1 1.33 L, V2 2.84 L, k12 -7.19 1/h, k21 -10.6 1/h, k31 -0.448 1/h, k13 -9 1/h; morphine: CLm,norm/F -9.98 L/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has none, the second reading 0.5564729359758813; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `diamorphine`, measured `morphine`.
 
@@ -98,6 +106,46 @@ Cai L et al., Intranasal diamorphine population pharm…, CPT: pharmacometrics &
 - LLM selected parameter table(s) 2, S3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.167 (4/24 fields) | 20 |
+
+<details><summary>20 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | not captured | 0.5564729359758813 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | not captured | 26.0086 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl [l/h/per 70 kg]].value` | -9.98 | 97.05 | mismatch |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 57.3906 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f % [per 70 kg]].parameter_id` | Q40 | Q87 | mismatch |
+| `gpt-oss-120b` | `parameters[f % [per 70 kg]].value` | -3.55 | 0.40 | mismatch |
+| `gpt-oss-120b` | `parameters[f]` | not captured | 0.5564729359758813 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 12 [h-1/per 70 kg]].parameter_id` | Q301 | Q30 | mismatch |
+| `gpt-oss-120b` | `parameters[k 12 [h-1/per 70 kg]].value` | -7.19 | 70.92 | mismatch |
+| `gpt-oss-120b` | `parameters[k 23 [h-1/per 70 kg]]` | -10.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 23 [h-1/per 70 kg]]` | not captured | 73.81 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 3p [h-1/per 70 kg]]` | -0.448 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 3p [h-1/per 70 kg]]` | not captured | 16.62 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a [h-1 per 70 kg]].value` | -1.85 | 2.44 | mismatch |
+| `gpt-oss-120b` | `parameters[k p3 [h-1/per 70 kg]]` | -9.00 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k34]` | not captured | 49.8731671036749 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k43]` | not captured | 5.59181439173388 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 1 [l/per 70 kg]].value` | 1.33 | 6.32 | mismatch |
+| `gpt-oss-120b` | `parameters[v 3 [l/per 70 kg]]` | 2.84 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 3 [l/per 70 kg]]` | not captured | 21.41 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

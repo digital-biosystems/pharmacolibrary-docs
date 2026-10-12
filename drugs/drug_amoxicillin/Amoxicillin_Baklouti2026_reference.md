@@ -5,7 +5,7 @@
 
 # amoxicillin — `Amoxicillin_Baklouti2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.929), gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record for amoxicillin in breastfeeding mothers lists kabs 0.17 h−1, V/F 82.38 L, kel 0.31 h−1, k12 0.028 h−1 and kout_peripheral 0.33 h−1, but clearance and absorption lag time were missing, so placeholder values from a library model stood in for them and the model was held back rather than published with invented numbers. The parameter-coverage check expected 4 parameters emitted or defaulted but covered only 3, with k12 neither emitted nor defaulted. The builder also assumed F=1 and Fm=1 with no molar correction (apparent parameterization). A second reader disagreed with the record's designation of amoxicillin as both the dose compound and the primary analyte, with no stated alternative. Extracted — amoxicillin: kabs 0.17 h−1, V/F 82.4 L, kel 0.31 h−1, k12 0.028 h−1, kout_peripheral 0.33 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has amoxicillin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has amoxicillin, the second reading unknown. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -76,17 +76,19 @@ Baklouti S et al., Population pharmacokinetic modelling of…, British journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.929 (13/14 fields) | 1 |
 | `gpt-oss:120b` | not confirmed | 0.857 (12/14 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `screen.primary_analyte` | amoxicillin | unknown | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | amoxicillin | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | amoxicillin | unknown | mismatch |
 
@@ -153,8 +155,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Baklouti2026_reference/Amoxicillin_Baklouti2026_reference_modelica.zip" download>Amoxicillin_Baklouti2026_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Baklouti2026_reference/Amoxicillin_Baklouti2026_reference_modelica.zip" download>Amoxicillin_Baklouti2026_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Baklouti2026_reference/Amoxicillin_Baklouti2026_reference_fmi.zip" download>Amoxicillin_Baklouti2026_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>

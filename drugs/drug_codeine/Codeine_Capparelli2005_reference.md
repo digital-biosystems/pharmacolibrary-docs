@@ -5,7 +5,7 @@
 
 # codeine — `Codeine_Capparelli2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.353), gpt-oss:120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The extracted parameters for codeine are CL of 0.18 ml/h and V1 of 66 ml, values far outside any plausible human range for this drug. The verbatim label shows these numbers come from a sentence about anti-ClfA and anti-SdrG antibody PK estimates (CL 0.18 ml/h and 0.21 ml/h, V1 66 ml and 73 ml, Vss 179 ml and 204 ml, half-lives 719 h and 701 h), which do not describe codeine, so the values appear to be attached to the wrong compound. A second reader also disagreed on several extracted values, reading 179 for the volume of distribution where the record had none. Extracted — codeine: CL 0.18 ml/h, V1 66 ml.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has 14, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 14; it also differs on 10 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -60,17 +60,29 @@ Capparelli EV et al., Multicenter study to determine antibody…, Antimicrobial 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.353 (6/17 fields) | 11 |
 | `gpt-oss:120b` | partly confirmed | 0.625 (5/8 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q312]` | not captured | 14 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q315]` | not captured | 24 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q316]` | not captured | 13 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 641 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q34]` | 6.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q36]` | 0.22 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q37]` | 0.22 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q60]` | 72 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q61]` | 73 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q71]` | not captured | 6.1 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` | 12.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q312]` | 14 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q34]` | 6.1 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q65]` | not captured | 179 | only_one_extracted |

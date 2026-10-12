@@ -5,7 +5,7 @@
 
 # bisoprolol — `Bisoprolol_Grevel1989_nonmem_data_set_hep`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-Independently confirmed by `gpt-oss:120b`.
+**Only volume was extracted — no clearance.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — bisoprolol: V 55 L, kabs 0.43 h-1, Q 43.5 L/h, Vss 256 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[ka].value`: this record has 0.43, the second reading 0.67; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Grevel J et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (1989)
@@ -61,14 +65,25 @@ Grevel J et al., Population pharmacokinetic analysis of…, Clinical pharmacokin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 | `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>5 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[ka].value` | 0.43 | 0.67 | mismatch |
+| `gpt-oss-120b` | `parameters[q].value` | 43.5 | 44.1 | mismatch |
+| `gpt-oss-120b` | `parameters[regression parameters {]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc].value` | 55.0 | 67.5 | mismatch |
+| `gpt-oss-120b` | `parameters[vss].value` | 256 | 235 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

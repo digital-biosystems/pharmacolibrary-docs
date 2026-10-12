@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methacholine concentration (M) acts on serosal alkalinization (H+ secretion, JHCO3-) / short-circuit current, with an EC50 of 3.7 × 10⁻⁷ M; the paper excerpts do not state the mechanism or model form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `White_1986`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -5,7 +5,7 @@
 
 # mianserin — `Mianserin_Timmer1985_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615), gpt-oss:120b (partly confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 22, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mianserin hydrochloride, the second reading mianserin HCl; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -71,17 +71,23 @@ Timmer CJ et al., Absolute bioavailability of mianserin t…, European journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.615 (8/13 fields) | 5 |
 | `gpt-oss:120b` | partly confirmed | 0.364 (4/11 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absolute bioavailability in terms of extent of absorption for the solution]` | 22 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absolute bioavailability in terms of extent of absorption]` | not captured | 22 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life].parameter_id` | Q57 | Q60 | mismatch |
+| `gpt-oss-120b` | `parameters[mean absorption half-life]` | not captured | 0.43 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | mianserin hydrochloride | mianserin HCl | mismatch |
 | `gpt-oss:120b` | `model.bioavailability.theta` | 22 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absolute bioavailability in terms of extent of absorption]` | 22 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[elimination half-life]` | 33 | not captured | only_one_extracted |
@@ -148,7 +154,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_mianserin/Mianserin_Timmer1985_reference/Mianserin_Timmer1985_reference_modelica.zip" download>Mianserin_Timmer1985_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_mianserin/Mianserin_Timmer1985_reference/Mianserin_Timmer1985_reference_fmi.zip" download>Mianserin_Timmer1985_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_mianserin/Mianserin_Timmer1985_reference/Mianserin_Timmer1985_reference_matlab.zip" download>Mianserin_Timmer1985_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_mianserin/Mianserin_Timmer1985_reference/Mianserin_Timmer1985_reference_matlab_simbio.zip" download>Mianserin_Timmer1985_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_mianserin/Mianserin_Timmer1985_reference/Mianserin_Timmer1985_reference_matlab_simbio.zip" download>Mianserin_Timmer1985_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_mianserin/Mianserin_Timmer1985_reference/Mianserin_Timmer1985_reference_sbml.zip" download>Mianserin_Timmer1985_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_mianserin/Mianserin_Timmer1985_reference/Mianserin_Timmer1985_reference_cellml.zip" download>Mianserin_Timmer1985_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

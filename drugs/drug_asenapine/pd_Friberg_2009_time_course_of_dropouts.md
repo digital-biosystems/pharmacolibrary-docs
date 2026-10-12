@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models the time course of dropouts under asenapine using a time-to-event model driven by asenapine exposure from the cited PK source (Dogterom); the excerpts provide no mechanism, effect form, or potency/rate values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Friberg_2009`
 - **model family:** `tte`
 - **driver:** `cited_pk`

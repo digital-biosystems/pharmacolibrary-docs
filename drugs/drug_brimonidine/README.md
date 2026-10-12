@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Menozzi_2018_EFS_evoked_contractions](drugs/drug_brimonidine/pd_Menozzi_2018_EFS_evoked_contractions.md) | EFS-evoked contractions ← brimonidine · direct Emax (saturable) effect | — | Menozzi A et al., Effects of selective α, Journal of veterinary pharm… (2018) | [10.1111/jvp.12470](https://doi.org/10.1111/jvp.12470) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Menozzi_2018_EFS_evoked_contractions](drugs/drug_brimonidine/pd_Menozzi_2018_EFS_evoked_contractions.md) | EFS-evoked contractions ← brimonidine · direct Emax (saturable) effect | — | Menozzi A et al., Effects of selective α, Journal of veterinary pharm… (2018) | [10.1111/jvp.12470](https://doi.org/10.1111/jvp.12470) |
 
 ## ADME sites
 

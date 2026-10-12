@@ -5,7 +5,7 @@
 
 # azathioprine — `Azathioprine_elYazigi1993_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111), gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Colman_2024) cannot stand in for this paper's evidence. Extracted — azathioprine: V 0.833 L/kg, CL 0.27 L/d.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 1: this record has none, the second reading 0.833; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has azathioprine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -75,17 +75,26 @@ el-Yazigi A et al., Pharmacokinetics of azathioprine after…, Journal of clinic
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.111 (1/9 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[1]` | 0.833 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[creatinine clearance]` | 30.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral clearance]` | not captured | 4.67 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` | not captured | 8.12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | not captured | 1.05 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | azathioprine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | azathioprine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[1]` | not captured | 0.833 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[2]` | not captured | 2.11 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[3]` | not captured | 1.02 | only_one_extracted |

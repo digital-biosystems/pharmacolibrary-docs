@@ -5,7 +5,7 @@
 
 # prazosin — `Prazosin_Meredith1985_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.444), gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -69,17 +69,23 @@ Meredith PA et al., Application of pharmacokinetic-pharmaco…, Journal of cardi
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clearance of doxazosin]` | not captured | 139 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance of prazosin]` | not captured | 327 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance of trimazosin]` | not captured | 67 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 327 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean terminal elimination half-life]` | 2.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance of prazosin]` | not captured | 327 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | 327 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean terminal elimination half-life]` | 2.0 | not captured | only_one_extracted |

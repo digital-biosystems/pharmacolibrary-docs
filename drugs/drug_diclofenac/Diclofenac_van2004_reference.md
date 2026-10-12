@@ -5,7 +5,7 @@
 
 # diclofenac — `Diclofenac_van2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.368). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.19), gpt-oss:120b (not confirmed, agreement 0.368). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record, built from the abstract only of van_2004 (children undergoing tonsillectomy), lists diclofenac volume of distribution as 55 with unit '%', which is not a valid dimension for a volume of distribution. The formation clearances to 4'-hydroxydiclofenac (8.41 l.h(-1)) and 5'-hydroxydiclofenac (3.41 l.h(-1)) are labelled with '% CV' in the source text despite carrying l.h(-1) units. A second reader disagreed on several parameter assignments, including the absorption half-time (null versus 14) and the relative bioavailability (1.26 assigned to a differently worded field). Extracted — 4'-hydroxydiclofenac: CLfm 8.41 l.h(-1); 5'-hydroxydiclofenac: CLfm 3.41 l.h(-1); diclofenac: CL 33 l.h(-1) 70 kg(-1), CL 27.5 l.h(-1) 70 kg(-1), t1/2ka 0.613 h, tlag 0.188 h, V 55 %, Frel 1.26 relative bioavailability.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has diclofenac, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading diclofenac → 4'-hydroxydiclofenac (metabolism); diclofenac → 5'-hydroxydiclofenac (metabolism); it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -82,17 +82,35 @@ van der Marel CD et al., Diclofenac and metabolite pharmacokinet…, Paediatric 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.19 (4/21 fields) | 17 |
 | `gpt-oss:120b` | not confirmed | 0.368 (7/19 fields) | 12 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>29 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['diclofenac', "4'-hydroxydiclofenac", 'metabolism'], ['diclofenac', "5'-hydroxydiclofenac", 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[absorption half-life]` | not captured | 0.613 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance by other routes]` | not captured | 33.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance by other routes]` | 33.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[diclofenac volume of distribution]` | not captured | 55 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination clearance of hydroxyl metabolites]` | not captured | 27.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[formation clearance of the active metabolite 4'-hydroxydiclofenac contributed]` | not captured | 19 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[formation clearance to 4'-hydroxydiclofenac]` | not captured | 8.41 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[formation clearance to 5'-hydroxydiclofenac]` | not captured | 3.41 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time]` | not captured | 0.188 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability of the suppository compared with an enteric-coated tablet]` | not captured | 1.26 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the formation clearance of the active metabolite 4'-hydroxydiclofenac contributed 19% of total clearance (44.82 l.h(-1) 70 kg(-1)).]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the formation clearance to 4'-hydroxydiclofenac]` | 8.41 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the relative bioavailability of the suppository compared with an enteric-coated tablet]` | 1.26 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the suppository formulation had an absorption half-life of]` | 0.613 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 0.23 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[with a lag time of]` | 0.188 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption half-time]` | not captured | 14 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[and to 5'-hydroxydiclofenac]` | 3.41 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[contribution of formation clearance of the active metabolite 4'-hydroxydiclofenac to total clearance]` | not captured | 19 | only_one_extracted |

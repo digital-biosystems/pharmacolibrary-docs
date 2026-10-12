@@ -5,7 +5,7 @@
 
 # s-atenolol — `SAtenolol_Mason1979_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.421). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.688), gpt-oss:120b (not confirmed, agreement 0.421). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — s atenolol: t1/2z 6.06 hr, V 0.173 L/kg, fe 94.1 %, CL 10.7 L/hr, CLR 10.4 L/hr, Fab 0.52 mg, tmax 3 hr, MAT 2 hr.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absolute bioavailability for the 25-... oral doses: this record has 0.52, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absolute bioavailability: this record has none, the second reading 0.52; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -74,17 +74,23 @@ Mason WD et al., Kinetics and absolute bioavailability o…, Clinical pharmacolo
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.688 (11/16 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.421 (8/19 fields) | 11 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absolute bioavailability for the 25-... oral doses]` | 0.52 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absolute bioavailability]` | not captured | 0.52 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[excreted in the urine]` | 94.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intravenous dose excreted in the urine]` | not captured | 94.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time for half of the bioavailable dose to be absorbed].parameter_id` | Q73 | Q95 | mismatch |
 | `gpt-oss:120b` | `parameters[absolute bioavailability for the 25-... oral doses]` | 0.52 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[excreted in the urine]` | 94.1 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[intravenous dose is excreted in the urine]` | not captured | 94.1 | only_one_extracted |

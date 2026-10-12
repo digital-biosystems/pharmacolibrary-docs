@@ -32,7 +32,7 @@ Nomegestrol is a progestogen used in hormonal contraceptives and in combined pro
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Huang_2015_reference](drugs/drug_nomegestrol/Nomegestrol_Huang2015_reference.md) | — | 1-compartment (no model) | 1 | Huang Q et al., Pharmacokinetics, tissue distribution,…, European journal of drug me… (2015) | [10.1007/s13318-014-0224-7](https://doi.org/10.1007/s13318-014-0224-7) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Huang_2015_reference](drugs/drug_nomegestrol/Nomegestrol_Huang2015_reference.md) | — | 1-compartment (no model) | 1 | Huang Q et al., Pharmacokinetics, tissue distribution,…, European journal of drug me… (2015) | [10.1007/s13318-014-0224-7](https://doi.org/10.1007/s13318-014-0224-7) |
 
 ## ADME sites
 

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;artemether&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/&quot;},{&quot;label&quot;:&quot;Ding_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Artemether_Lohy2018_reference&quot;,&quot;label&quot;:&quot;Lohy_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/Artemether_Lohy2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Artemether_Lohy2018_reference&quot;,&quot;label&quot;:&quot;Lohy_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/Artemether_Lohy2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # artemether — `Artemether_Ding2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The artemether record was rejected because the metabolism link from artemether to its metabolite dihydroartemisinin carries no defined transfer parameter, leaving the metabolite unlinked, and the time-dependency factor on artemether clearance (0.551, unit 'ARM') has no SI-convertible unit.**
+
+All three metabolism links (artemether to dihydroartemisinin, lumefantrine to desbutyllumefantrine, amodiaquine to desethylamodiaquine) are recorded with an unknown link parameter, so the metabolites have no quantified formation path from the parent drugs — an unlinked-metabolite finding. The time-dependency parameter on artemether clearance, value 0.551, is reported in the unit 'ARM', which could not be converted to SI, so the parameter arrived without an SI value. The remaining artemether parameters (MTT 5.43 h, 5 transit compartments, Fab 1, CL/F 79.3 L/h, V1/F 141 L, Q/F 21.7 L/h, V2/F 283 L, kabs 1.93 1/h) and the metabolite parameters are present with values and units. Extracted — artemether: MTT 5.43 h, n_transit 5 LF, Fab 1, CL/F 79.3 L/h, V1/F 141 L, Q/F 21.7 L/h, V2/F 283 L, CL 0.551 ARM, … (+1); dihydroartemisinin: CL/F 255 L/h, V1/F 64.1 L; amodiaquine: CL/F 2.25e+03 L/h, Q/F 3.02e+03 L/h; desethylamodiaquine: CL/F 32.2 L/h, V1/F 1.26e+03 L, Q/F 117 L/h, V2/F 1.64e+03 L, Q2/F 37.3 L/h, V3/F 6.44e+03 L; lumefantrine: CL/F 4.35 L/h, V1/F 101 L, Q/F 1.65 L/h, V2/F 311 L; desbutyllumefantrine: CL/F 744 L/h, V1/F 8.53e+03 L, Q/F 1.1e+03 L/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f arm].covariate_forms`: this record has none, the second reading ['linear_fractional']; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Ding J et al., Population pharmacokinetics of artemeth…, British journal of clinical… (2026)
@@ -162,6 +170,35 @@ Ding J et al., Population pharmacokinetics of artemeth…, British journal of cl
 - LLM selected parameter table(s) 2, 3, 4
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.769 (30/39 fields) | 9 |
+
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f aq].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f arm].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f deaq].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f dha].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f dlf].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f lf].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[ka]` | 1.93 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 1.93 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_age]` | not captured | 10.1 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

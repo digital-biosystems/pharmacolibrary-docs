@@ -5,7 +5,7 @@
 
 # salbutamol — `Salbutamol_Courlet2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.615). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.615). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The parameter labelled 'k a2 (h−1)' with value 1.47 is recorded as the half-life of the absorption phase, but a half-life should have dimensions of time, not inverse time — the reported unit h−1 could not be reconciled into a consistent dimension, giving a dimension mismatch on a structural parameter. A second reader also disagreed on this parameter, reading no value where the record holds 1.47, and additionally reported a urine production rate of 0.0426 that is absent from this record. Because the h−1 unit could not be converted to a standard unit, the parameter entered model construction without a consistent value. Extracted — salbutamol: Fab 0.2, kabs 31.6 h−1, t1/2ka 1.47 h−1, V3 203 L, kcomp 0.0432 h−1, CL 28 L h−1, V 167 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has salbutamol, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has salbutamol, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -81,17 +81,24 @@ Courlet P et al., Model-based meta-analysis of salbutamol…, CPT: pharmacometri
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (6/12 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.615 (8/13 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[k 34].value` | 0.0468 | 0.0432 | mismatch |
+| `gpt-oss-120b` | `parameters[logitf 2]` | -0.328 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ur_prod]` | not captured | 0.0426 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ physical,ur_prod]` | -0.153 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | salbutamol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | salbutamol | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[k a2]` | 1.47 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[logitf 2]` | not captured | -0.328 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ur_prod].parameter_id` | Q24 | Q30 | mismatch |

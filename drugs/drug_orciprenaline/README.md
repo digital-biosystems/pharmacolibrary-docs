@@ -32,7 +32,7 @@ Orciprenaline (metaproterenol) is a bronchodilator used to treat asthma and othe
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Dengler_1976_reference](drugs/drug_orciprenaline/Orciprenaline_Dengler1976_reference.md) | — | 1-compartment (no model) | 4 | Dengler HG et al., Metabolism and pharmacokinetics of orci…, Archives internationales de… (1976) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Dengler_1976_reference](drugs/drug_orciprenaline/Orciprenaline_Dengler1976_reference.md) | — | 1-compartment (no model) | 4 | Dengler HG et al., Metabolism and pharmacokinetics of orci…, Archives internationales de… (1976) | — |
 
 ## Pharmacodynamics (PD)
 

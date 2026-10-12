@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Finerenone_Heinig2023_reference&quot;,&quot;label&quot;:&quot;Heinig_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_finerenone/Finerenone_Heinig2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# serum potassium concentration — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.271). The first reading is what the record holds.">cross-check: disputed</span>
+# serum potassium concentration — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -18,7 +18,7 @@
 
 **Model:** No model was generated from this record.
 
-> Finerenone plasma concentrations (µg/L) increase serum potassium concentration (mmol/L) via a turnover model that describes the delayed increase, with the drug effect proportional to the baseline serum potassium concentration. The paper does not provide specific numerical values for potency or rate parameters (e.g., IC50, ke0) for this relationship.
+> The paper states that a log-linear model and a power model were identified for the relationship between finerenone concentrations and serum potassium, but it does not specify the underlying mechanism (e.g., indirect response or direct effect) or provide key potency and rate values such as IC50, Emax, or kout.
 >
 > <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
@@ -37,67 +37,18 @@ _No resolved parameters._
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.271 (19/70 fields) | 51 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
-<details><summary>51 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | finerenone | unknown | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
-| `gpt-oss:120b` | `model_family` | indirect_response_i | unknown | mismatch |
-| `gpt-oss:120b` | `parameters[Q100]` | 33.7 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 24.2 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 49 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 3.6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 38.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 21.1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 44 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 3.6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 192.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 31.1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 65 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 4.3 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 216.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 26.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 64 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 4.2 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 1626 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 41.7 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 78 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 5.0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 1345 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 34.6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 78 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 4.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 33.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 24.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 49 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 3.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 38.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 21.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 44 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 3.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 192.4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 31.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 65 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 4.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 216.4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 26.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 64 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 4.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 1626 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 41.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 78 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 5.0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 1345 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 34.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 78 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 4.8 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `effect_form` | proportional | additive | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | indirect_response_ii | log_linear | mismatch |
 
 </details>
 

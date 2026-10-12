@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Chlorpromazine concentration (microM) inhibits lactate dehydrogenase (LDH) release, with reported EC50 values of 235 +/- 20 microM and 215 +/- 30 microM; the paper excerpts do not state the mechanism or model form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Santone_1989`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

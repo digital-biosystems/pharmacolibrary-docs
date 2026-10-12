@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# respiratory control ratio (RCR) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.429), gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+# respiratory control ratio (RCR) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Azathioprine (with cyclosporine A and prednisolone) decreased the respiratory control ratio (RCR, %) of rat kidney mitochondria in a concentration-dependent, monophasic inhibitory Emax-type manner, with maximal inhibition 10.3% and IC50 5.8 ± 2.5 × 10⁻⁹ M; the paper states azathioprine acts by a Ca²⁺-independent mechanism, but gives no kin/kout or ke0 values.
+> The study models the inhibition of the respiratory control ratio (RCR) in rat kidney mitochondria by azathioprine using a monophasic sigmoid Emax relationship with an IC50 of 5.8 ± 2.5 x 10^-9 M and a maximal inhibition of 10.3%. The mechanism of action is not specified in the provided text, although the observed impairment of ATP synthesis suggests the drug affects mitochondrial function rather than directly altering state 3 or 4 oxygen consumption.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Simon_1997`
 - **model family:** `sigmoid_emax`
@@ -46,23 +46,18 @@ Simon N et al., Prednisolone and azathioprine worsen th…, Life sciences (1997)
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `einfracz:qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `openai:gpt-6-luna` | not confirmed | 0.429 (3/7 fields) | 4 |
-| `gpt-oss:120b` | not confirmed | 0.75 (3/4 fields) | 1 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.833 (5/6 fields) | 1 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | cyclosporine A, azathioprine, prednisolone | cyclosporine A, prednisolone, azathioprine | mismatch |
-| `openai:gpt-6-luna` | `effect_form` | proportional | unknown | mismatch |
-| `openai:gpt-6-luna` | `model_family` | emax | unknown | mismatch |
-| `openai:gpt-6-luna` | `parameters[Q320]` | not captured | 10.3 | only_one_extracted |
-| `openai:gpt-6-luna` | `parameters[Q323]` | 10.3 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `model_family` | sigmoid_emax | emax | mismatch |
 
 </details>
 

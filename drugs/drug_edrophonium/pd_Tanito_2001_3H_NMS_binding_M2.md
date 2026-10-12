@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Edrophonium inhibits specific [3H]N-methylscopolamine binding to guinea pig atrial M2 receptors, with an apparent dissociation constant of 21 microM and a pseudo-Hill coefficient of 1.02; the paper excerpts do not state the mechanism beyond this competitive-binding-type inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tanito_2001`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -4,7 +4,7 @@
 
 # lovastatin — `Lovastatin_Huff1992_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 No value was available for lovastatin's elimination clearance and intercompartmental clearance, so library placeholder values stood in for these missing source values and the model was held back rather than published with invented numbers. The parameter coverage check expected 1 parameter emitted or defaulted but obtained 0 covered, with V2 (0.08, volume of distribution of the peripheral compartment) neither emitted nor defaulted. A second reader also disagreed on several fields, including the dose compound (fish oil (Maxepa) and lovastatin versus VLDL apo B), the primary analyte, the order of the VLDL/IDL/LDL apo B interconversion links, and the values of parameters λ1 (0.654) and V2 (0.08), which the second reader read as null. Extracted — lovastatin: V2 0.08, V3 0.01, C0 8.56, λ1 0.654.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fish oil (Maxepa) and lovastatin, the second reading VLDL apo B; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fish oil (Maxepa) and lovastatin, the second reading lovastatin; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -86,17 +86,24 @@ Huff MW et al., Dietary fish oil plus lovastatin decrea…, Arteriosclerosis and
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (1/7 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['vldl apo b', 'idl apo b', 'interconversion'], ['vldl apo b', 'ldl apo b', 'interconversion']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[l(0,5)]` | 8.56 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[l]` | 0.654 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[m]` | 0.08 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | fish oil (Maxepa) and lovastatin | lovastatin | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | apo B in VLDL and LDL | apo B | mismatch |
 | `gpt-oss:120b` | `model.links` | [['vldl apo b', 'idl apo b', 'interconversion'], ['vldl apo b', 'ldl apo b', 'interconversion']] | [['vldl apo b', 'ldl apo b', 'interconversion'], ['vldl apo b', 'idl apo b', 'interconversion']] | mismatch |
 | `gpt-oss:120b` | `parameters[l(0,5)].parameter_id` | Q86 | Q83 | mismatch |
 | `gpt-oss:120b` | `parameters[l]` | 0.654 | not captured | only_one_extracted |

@@ -30,7 +30,7 @@ Propantheline is an anticholinergic (antispasmodic) drug used for functional gas
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Sadraei_2013_ACh_response](drugs/drug_propantheline/pd_Sadraei_2013_ACh_response.md) | ileum contraction induced by acetylcholine (ACh) ← propantheline · direct sigmoid Emax (Hill) effect | — | Sadraei H et al., Antispasmodic effects of Prangos ferula…, Research in pharmaceutical… (2013) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Sadraei_2013_ACh_response](drugs/drug_propantheline/pd_Sadraei_2013_ACh_response.md) | ileum contraction induced by acetylcholine (ACh) ← propantheline · direct sigmoid Emax (Hill) effect | — | Sadraei H et al., Antispasmodic effects of Prangos ferula…, Research in pharmaceutical… (2013) | — |
 
 ## ADME sites
 

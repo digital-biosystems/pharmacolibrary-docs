@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol stimulates mucin secretion from isolated sublingual acini (measured by radioimmunoassay) with an Emax-type concentration–response relationship; the paper reports an EC50 of 0.3 microM, but the excerpts do not state the mechanism beyond this direct stimulatory effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Watson_1997`
 - **model family:** `emax`
 - **driver:** `not_resolved`

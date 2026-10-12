@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;S02A&quot;,&quot;href&quot;:&quot;atc/S02A.md&quot;},{&quot;label&quot;:&quot;boric acid&quot;,&quot;href&quot;:&quot;drugs/drug_boric_acid/&quot;},{&quot;label&quot;:&quot;Nemcova_2012 \u00b7 PD reproduction (inhibition compared with controls)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BoricAcid_Jansen1984_reference&quot;,&quot;label&quot;:&quot;Jansen_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_boric_acid/BoricAcid_Jansen1984_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BoricAcid_Jansen1984_reference&quot;,&quot;label&quot;:&quot;Jansen_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_boric_acid/BoricAcid_Jansen1984_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # reproduction (inhibition compared with controls) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
@@ -19,6 +19,10 @@
 **As extracted:** Boric acid (concentrations from the PK model of Jansen_1984) drives reproduction (inhibition compared with controls) (inhibition; the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> Boric acid exposure (mg/kg) inhibits reproduction relative to controls; the paper excerpts provide no mechanism or model structure, only a 28-day EC50 of 120 mg/kg.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Nemcova_2012`
 - **model family:** `unknown`

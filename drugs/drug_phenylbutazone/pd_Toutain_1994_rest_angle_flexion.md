@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record identifies phenylbutazone concentrations (cited in micrograms/ml) driving rest angle flexion via an Emax model, but the paper does not provide full text or state the specific mechanism, potency (EC50), or rate parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Toutain_1994`
 - **model family:** `emax`
 - **driver:** `cited_pk`

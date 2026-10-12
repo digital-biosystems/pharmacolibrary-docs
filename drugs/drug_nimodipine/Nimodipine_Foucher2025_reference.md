@@ -5,7 +5,7 @@
 
 # nimodipine — `Nimodipine_Foucher2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-Independently confirmed by `gpt-oss:120b`.
+Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -68,11 +68,12 @@ Foucher A et al., Impact of cerebral vasospasm therapy on…, Journal of the neu
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 | `gpt-oss:120b` | confirmed | 1.0 (7/7 fields) | none |
 
 _Every reader agrees on every compared field of this record._
@@ -130,7 +131,7 @@ _Every reader agrees on every compared field of this record._
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nimodipine/Nimodipine_Foucher2025_reference/Nimodipine_Foucher2025_reference_modelica.zip" download>Nimodipine_Foucher2025_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_nimodipine/Nimodipine_Foucher2025_reference/Nimodipine_Foucher2025_reference_fmi.zip" download>Nimodipine_Foucher2025_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_nimodipine/Nimodipine_Foucher2025_reference/Nimodipine_Foucher2025_reference_matlab.zip" download>Nimodipine_Foucher2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_nimodipine/Nimodipine_Foucher2025_reference/Nimodipine_Foucher2025_reference_matlab_simbio.zip" download>Nimodipine_Foucher2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_nimodipine/Nimodipine_Foucher2025_reference/Nimodipine_Foucher2025_reference_matlab_simbio.zip" download>Nimodipine_Foucher2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_nimodipine/Nimodipine_Foucher2025_reference/Nimodipine_Foucher2025_reference_sbml.zip" download>Nimodipine_Foucher2025_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_nimodipine/Nimodipine_Foucher2025_reference/Nimodipine_Foucher2025_reference_cellml.zip" download>Nimodipine_Foucher2025_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

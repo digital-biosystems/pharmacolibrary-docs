@@ -5,7 +5,7 @@
 
 # abacavir — `Abacavir_Ji2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.48), gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The source text is a review reference that does not report these absorption parameters, so the model builder used standard library placeholders. While the apparent clearance and volume of distribution are explicit, the missing ka means the simulated absorption phase is not supported by the cited source. Second reader disagreements exist on several summary statistics, but the primary rejection cause remains the lack of reported absorption kinetics. Extracted — abacavir: CL/F 70.2 L/h, V/F 3.18e+03 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 62, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has none, the second reading 94; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -66,17 +66,31 @@ Ji Y et al., Use of Pharmacokinetic and Pharmacodyna…, Clinical pharmacokineti
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.48 (12/25 fields) | 13 |
 | `gpt-oss:120b` | not confirmed | 0.6 (12/20 fields) | 8 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q17]` | not captured | 94 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q18]` | 23800 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q19]` | 43.5 | 5747 | mismatch |
+| `gpt-oss-120b` | `values[Q21]` | 8 | 1.03 | mismatch |
+| `gpt-oss-120b` | `values[Q31]` | not captured | 48.5 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q38]` | not captured | 1.9 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q44]` | 8.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q45]` | 19.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q65]` | 1010 | 25.2 | mismatch |
+| `gpt-oss-120b` | `values[Q72]` | not captured | 8 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q76]` | not captured | 1010 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q84]` | 21.6 | 8 | mismatch |
+| `gpt-oss-120b` | `values[Q88]` | not captured | 66.0 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q17]` | 62 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q19]` | 23 | 1920 | mismatch |
 | `gpt-oss:120b` | `values[Q21]` | 1.03 | 1.03 | mismatch |
@@ -142,7 +156,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_abacavir/Abacavir_Ji2024_reference/Abacavir_Ji2024_reference_modelica.zip" download>Abacavir_Ji2024_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_abacavir/Abacavir_Ji2024_reference/Abacavir_Ji2024_reference_fmi.zip" download>Abacavir_Ji2024_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_abacavir/Abacavir_Ji2024_reference/Abacavir_Ji2024_reference_matlab.zip" download>Abacavir_Ji2024_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_abacavir/Abacavir_Ji2024_reference/Abacavir_Ji2024_reference_matlab_simbio.zip" download>Abacavir_Ji2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_abacavir/Abacavir_Ji2024_reference/Abacavir_Ji2024_reference_matlab_simbio.zip" download>Abacavir_Ji2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_abacavir/Abacavir_Ji2024_reference/Abacavir_Ji2024_reference_sbml.zip" download>Abacavir_Ji2024_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_abacavir/Abacavir_Ji2024_reference/Abacavir_Ji2024_reference_cellml.zip" download>Abacavir_Ji2024_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

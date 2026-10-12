@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Seib_2015_bactericidal_antibody_response](drugs/drug_meningococcus_b_multicomponent_vaccine/pd_Seib_2015_bactericidal_antibody_response.md) | bactericidal antibody response ← fHbp · stimulation effect | — | Seib KL et al., Neisseria meningitidis factor H-binding…, Expert review of vaccines (2015) | [10.1586/14760584.2015.1016915](https://doi.org/10.1586/14760584.2015.1016915) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [Seib_2015_bactericidal_antibody_response](drugs/drug_meningococcus_b_multicomponent_vaccine/pd_Seib_2015_bactericidal_antibody_response.md) | bactericidal antibody response ← fHbp · stimulation effect | — | Seib KL et al., Neisseria meningitidis factor H-binding…, Expert review of vaccines (2015) | [10.1586/14760584.2015.1016915](https://doi.org/10.1586/14760584.2015.1016915) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

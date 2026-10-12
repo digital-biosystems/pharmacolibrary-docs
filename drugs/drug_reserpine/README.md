@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.011). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Alfosea-Cuadrado_2024_MA](drugs/drug_reserpine/pd_Alfosea_Cuadrado_2024_MA.md) | monoamines (MAs) ← reserpine · indirect response — drug stimulates the loss of monoamines (MAs) | — | Alfosea-Cuadrado GM et al., Population Pharmacokinetic-Pharmacodyna…, Pharmaceutics (2024) | [10.3390/pharmaceutics16081101](https://doi.org/10.3390/pharmaceutics16081101) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Alfosea-Cuadrado_2024_MA](drugs/drug_reserpine/pd_Alfosea_Cuadrado_2024_MA.md) | monoamines (MAs) ← reserpine · indirect response — drug stimulates the loss of monoamines (MAs) | — | Alfosea-Cuadrado GM et al., Population Pharmacokinetic-Pharmacodyna…, Pharmaceutics (2024) | [10.3390/pharmaceutics16081101](https://doi.org/10.3390/pharmaceutics16081101) |
 
 ## ADME sites
 

@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Ergotamine stimulates coronary artery contraction in human isolated segments, with the response expressed as a percentage of the contraction elicited by 100 mmol/L K+. The paper reports an Emax of 20.5% K+ and an EC50 of 17 nmol/L, but does not specify the underlying mechanism (e.g., receptor subtype or signaling pathway) or kinetic rate parameters.
+> Ergotamine stimulates coronary artery contraction in isolated human tissue via a direct sigmoidal Emax relationship between drug concentration and response. The maximum contractile efficacy (E_max) was 20.5% of the response to 100 mmol/L K+, with a potency (EC_50) of 17 nmol/L.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `MaassenVanDenBrink_1998`
 - **model family:** `sigmoid_emax`

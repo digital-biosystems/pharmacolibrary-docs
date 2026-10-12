@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;candesartan&quot;,&quot;href&quot;:&quot;drugs/drug_candesartan/&quot;},{&quot;label&quot;:&quot;Meineke_1997 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Candesartan_Kassem2021_estimates&quot;,&quot;label&quot;:&quot;Kassem_2021_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_candesartan/Candesartan_Kassem2021_estimates.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Candesartan_Kassem2021_final_model&quot;,&quot;label&quot;:&quot;Kassem_2021_final_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_candesartan/Candesartan_Kassem2021_final_model.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Candesartan_Kassem2021_estimates&quot;,&quot;label&quot;:&quot;Kassem_2021_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_candesartan/Candesartan_Kassem2021_estimates.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Candesartan_Kassem2021_final_model&quot;,&quot;label&quot;:&quot;Kassem_2021_final_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_candesartan/Candesartan_Kassem2021_final_model.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # candesartan — `Candesartan_Meineke1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.071). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071), gpt-oss:120b (not confirmed, agreement 0.071). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has candesartan cilexetil, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+**Candesartan's apparent clearance and intercompartmental clearance were recorded with dimensionless units instead of volume per time.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The record lists candesartan's apparent clearance as 14.1 and intercompartmental clearance as 15.4, both with units of 1.h-1. These parameters require volume per time units, creating a dimensional mismatch. The record was built from the abstract alone, so these summary statistics stand in for a fitted model. Extracted — candesartan: CLm/F 14.1 1.h-1, V1 118 1, V2 272 1, Q 15.4 1.h-1, t1/2β 29 h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has candesartan cilexetil, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 > **Dose compound ≠ measured compound:** dosed `candesartan cilexetil`, measured `candesartan`.
 
@@ -72,17 +76,31 @@ Meineke I et al., Pharmacokinetics and pharmacodynamics o…, European journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.071 (1/14 fields) | 13 |
 | `gpt-oss:120b` | not confirmed | 0.071 (1/14 fields) | 13 |
 
-<details><summary>13 field(s) a reader read differently</summary>
+<details><summary>26 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[central volume of distribution]` | 118 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume of distribution]` | not captured | 118 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 14.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | 14.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cumulation half-life]` | 29 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cumulation half-life]` | not captured | 29 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` | 15.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` | not captured | 15.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume]` | 272 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume]` | not captured | 272 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | candesartan cilexetil | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | candesartan | unknown | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[central volume of distribution]` | not captured | 118 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[central volume of distribution]` | 118 | not captured | only_one_extracted |

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Fenoprofen concentration in microg/mL is associated with the inhibition of thromboxane B2 via a sigmoidal Emax model. The paper does not provide specific potency or rate parameter values (such as IC50, Imax, or gamma) in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Poggi_2006`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

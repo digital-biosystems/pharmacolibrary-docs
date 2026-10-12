@@ -28,8 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Adami_2006_hip_fracture](drugs/drug_strontium_ranelate/pd_Adami_2006_hip_fracture.md) | hip fractures ← none · model not identified | — | Adami S, Protelos: nonvertebral and hip antifrac…, Bone (2006) | [10.1016/j.bone.2005.08.028](https://doi.org/10.1016/j.bone.2005.08.028) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Adami_2006_nonvertebral_fracture](drugs/drug_strontium_ranelate/pd_Adami_2006_nonvertebral_fracture.md) | nonvertebral fractures ← none · model not identified | — | Adami S, Protelos: nonvertebral and hip antifrac…, Bone (2006) | [10.1016/j.bone.2005.08.028](https://doi.org/10.1016/j.bone.2005.08.028) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Adami_2006_hip_fracture](drugs/drug_strontium_ranelate/pd_Adami_2006_hip_fracture.md) | hip fractures ← none · model not identified | — | Adami S, Protelos: nonvertebral and hip antifrac…, Bone (2006) | [10.1016/j.bone.2005.08.028](https://doi.org/10.1016/j.bone.2005.08.028) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Adami_2006_nonvertebral_fracture](drugs/drug_strontium_ranelate/pd_Adami_2006_nonvertebral_fracture.md) | nonvertebral fractures ← none · model not identified | — | Adami S, Protelos: nonvertebral and hip antifrac…, Bone (2006) | [10.1016/j.bone.2005.08.028](https://doi.org/10.1016/j.bone.2005.08.028) |
 
 ## ADME sites
 

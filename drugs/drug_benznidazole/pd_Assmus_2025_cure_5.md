@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;benznidazole&quot;,&quot;href&quot;:&quot;drugs/drug_benznidazole/&quot;},{&quot;label&quot;:&quot;Assmus_2025 \u00b7 PD Parasitological cure (BLI negative after in vivo and ex vivo imaging)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Benznidazole_Frade2022_reference&quot;,&quot;label&quot;:&quot;Frade_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_benznidazole/Benznidazole_Frade2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Benznidazole_Soy2015_reference&quot;,&quot;label&quot;:&quot;Soy_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_benznidazole/Benznidazole_Soy2015_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Benznidazole_Soy2015_reference&quot;,&quot;label&quot;:&quot;Soy_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_benznidazole/Benznidazole_Soy2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Benznidazole_Frade2022_reference&quot;,&quot;label&quot;:&quot;Frade_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_benznidazole/Benznidazole_Frade2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Parasitological cure (BLI negative after in vivo and ex vivo imaging) — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
@@ -19,6 +19,10 @@
 **As extracted:** Benznidazole (concentrations from this paper's PK model) drives Parasitological cure (BLI negative after in vivo and ex vivo imaging): categorical (graded) response model.
 
 **Model:** No model was generated from this record.
+
+> Benznidazole plasma exposure (AUC∞, µg×h/mL) was related to binary parasitological cure in chronically infected mice via a logistic regression model (intercept −1.375, slope 0.026 on log-odds per µg×h/mL); the paper does not state a mechanistic PD model (no Imax/IC50/EC50/kin/kout/ke0), but reports that AUC∞ of ~1500 and ~2000 µg×h/mL correspond to 95% and 99% cure probability, and that 95%/99% cure requires 3.2/4.3 days above IC90 (T&gt;IC90) or a Cmax of ~50 µg/mL for 99% cure.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Assmus_2025`
 - **model family:** `categorical`

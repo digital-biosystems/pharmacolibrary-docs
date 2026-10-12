@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record identifies a sigmoid Emax model describing how naratriptan stimulates [35S]GTPgammaS binding, but no specific mechanism, potency (IC50/EC50), or rate (kin/kout/ke0) values are provided in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wainscott_1998`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

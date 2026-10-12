@@ -4,7 +4,7 @@
 
 # faricimab — `Faricimab_Diack2024v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Faricimab intrinsic and total clearance values are physiologically implausible because a reported unit could not be converted to standard units.**
+
+The intrinsic clearance of 15.6 L/day and total clearance of 2.33 L/day are flagged as having implausible magnitudes. One parameter was reported in a unit that lacks a standard conversion factor, preventing its transformation to base units. This gap led to the dimension mismatch and the physiological range violations that caused the rejection. Extracted — faricimab: V 0.253 mL, CLint 15.6 L/day, CL 2.33 L/day, VH 0.0251, CLnorm 0.0311.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Diack C et al., Ocular Pharmacokinetics of Faricimab Fo…, Translational vision scienc… (2024)

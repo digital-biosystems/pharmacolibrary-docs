@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Permethrin (µg/g OC) inhibits growth, with an EC50 of 1.09 ± 0.56 µg/g OC and an EC5 of 0.034 ± 0.006 µg/g OC; the paper excerpts do not state the mechanism or model form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Du_2013`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

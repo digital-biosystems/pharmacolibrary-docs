@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Asenapine concentrations act on QTcF prolongation (change from baseline, milliseconds) via a linear additive stimulation model; the paper does not state the mechanism beyond this and no potency or rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chapel_2009`
 - **model family:** `linear`
 - **driver:** `cited_pk`

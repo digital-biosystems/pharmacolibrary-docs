@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R06A&quot;,&quot;href&quot;:&quot;atc/R06A.md&quot;},{&quot;label&quot;:&quot;mizolastine&quot;,&quot;href&quot;:&quot;drugs/drug_mizolastine/&quot;},{&quot;label&quot;:&quot;Deschamps_2000 \u00b7 PD wheal&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mizolastine_Mentr2001_reference&quot;,&quot;label&quot;:&quot;Mentr\u00e9_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mizolastine/Mizolastine_Mentr2001_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mizolastine_Mentr2001_reference&quot;,&quot;label&quot;:&quot;Mentr\u00e9_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mizolastine/Mizolastine_Mentr2001_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # wheal — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span>
@@ -17,6 +17,10 @@
 **As extracted:** Mizolastine (concentrations from the PK model of Mesnil_1997) drives wheal (in cm2): indirect response — drug inhibits the production of wheal.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> Mizolastine concentration (ng/mL) inhibits the zero-order production of wheal (cm2) via a proportional effect in an indirect response model. Key parameters include an IC50 of 43.9 ng/mL, a maximum inhibition of 0.87, a spontaneous production rate of 1.9 cm2/h, and a disappearance rate constant of 0.63 h-1.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Deschamps_2000`
 - **model family:** `indirect_response_i`

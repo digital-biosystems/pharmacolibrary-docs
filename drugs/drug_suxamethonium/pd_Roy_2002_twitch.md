@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Suxamethonium inhibits the force of contraction of the adductor pollicis via an effect compartment model with a plasma-effect compartment equilibration rate constant (ke0) of 0.058 min⁻¹. The concentration in the effect compartment required to achieve 50% block is 734 ng/ml.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Roy_2002`
 - **model family:** `effect_compartment`
 - **driver:** `pk_record`

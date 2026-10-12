@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> No mechanism, potency, or rate parameters are provided in the record or excerpts. The paper does not describe the mechanism or specify any key values for eslicarbazepine's effect on seizure freedom.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sunkaraneni_2018`
 - **model family:** `categorical`
 - **driver:** `cited_pk`

@@ -5,7 +5,7 @@
 
 # allopurinol — `Allopurinol_Wen2023_final`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455), gpt-5.6-luna (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636), gpt-oss:120b (not confirmed, agreement 0.455), gpt-5.6-luna (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed 0/3</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record reports oxypurinol apparent clearance CLm/F of 1.05 L/h, apparent volume V/F of 59.3 L, and formation rate constant kfm of 1.1 /h, but the builder assumed F=1 and Fm=1 without molar correction and left Tlag at a default, and the adjudication of these deviations returned 'not acceptable' for both the apparent assumption and the input model. The covariate effect of standardized creatinine clearance on baseline serum urate (power −0.18) was defined but only the reference individual was simulated, so the covariate scenarios were not exercised. A second reader also disagreed on the dose compound (allopurinol vs unknown), the primary analyte (oxypurinol vs unknown), and the creatinine covariate power values (0.45 and −0.18 assigned to different parameters). Extracted — oxypurinol: CLm/F 1.05 L/h, V/F 59.3 L, kfm 1.1 /h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has allopurinol, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[kfm].parameter_id`: this record has Q49, the second reading Q305; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -95,15 +95,16 @@ Wen YF et al., Population pharmacokinetics, pharmacody…, British journal of cl
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 3 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.455 (5/11 fields) | 6 |
 | `gpt-5.6-luna` | not confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -111,6 +112,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-5.6-luna` | `parameters[standardized_creatinine_clearance_power_on_baseline_su]` | -0.18 | not captured | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[theta_q319_creatinine_power]` | not captured | 0.45 | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[theta_q354_creatinine_power]` | not captured | -0.18 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kfm].parameter_id` | Q49 | Q305 | mismatch |
+| `gpt-oss-120b` | `parameters[standardized_creatinine_clearance_power_on_baseline_su]` | -0.18 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q22_creatinine_power]` | not captured | -0.18 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/fm].parameter_id` | Q76 | Q367 | mismatch |
 | `gpt-oss:120b` | `parameters[cl/fm].parameter_id` | Q351 | Q27 | mismatch |
 | `gpt-oss:120b` | `parameters[standardized_creatinine_clearance_power_on_baseline_su]` | -0.18 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q22_creatinine_power]` | not captured | -0.18 | only_one_extracted |
@@ -174,7 +179,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_modelica.zip" download>Allopurinol_Wen2023_final_modelica.zip</a> <span class="pk-size">(5.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_fmi.zip" download>Allopurinol_Wen2023_final_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_matlab.zip" download>Allopurinol_Wen2023_final_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_matlab_simbio.zip" download>Allopurinol_Wen2023_final_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_matlab_simbio.zip" download>Allopurinol_Wen2023_final_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_sbml.zip" download>Allopurinol_Wen2023_final_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_cellml.zip" download>Allopurinol_Wen2023_final_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

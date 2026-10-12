@@ -4,7 +4,7 @@
 
 # desipramine — `Desipramine_Asiimwe2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182), gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — desipramine: V1 892 L, V2 369 L, Q 79 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q: this record has 79.034, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has desipramine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -69,17 +69,27 @@ Asiimwe IG et al., Machine-Learning Assisted Screening of…, The AAPS journal (
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 | `gpt-oss:120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[11c-mibg]` | 3.65 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | 79.034 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | not captured | 79.034 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 891.995 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | not captured | 891.995 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | 368.922 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | not captured | 368.922 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | desipramine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | desipramine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[q]` | 79.034 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vc]` | 891.995 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vp]` | 368.922 | not captured | only_one_extracted |

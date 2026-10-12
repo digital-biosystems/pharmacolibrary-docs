@@ -4,7 +4,7 @@
 
 # diamorphine — `Diamorphine_Rook2006_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The diamorphine record was rejected because the terminal half-life of 6-acetylmorphine was extracted as 13 '%' instead of a time unit, and the metabolites 6-acetylmorphine, morphine and the morphine glucuronides have no compartments, leaving them unreachable from the dose.**
+
+The half-life parameter t1/2z for 6-acetylmorphine carries the unit '%' (value 13), a dimension mismatch for a structural time parameter. All four metabolites (6-acetylmorphine, morphine, morphine-3-glucuronide, morphine-6-glucuronide) were assigned 0 compartments, so they form orphan species with no path from the administered heroin. The clearance of the morphine-glucuronides was recorded without a value, and the record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — heroin (diamorphine): Fab 53 %, CLR 60 mL/min; morphine: CL 73.6 L/h; 6-acetylmorphine: t1/2z 13 %.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has diamorphine (heroin), the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `diamorphine (heroin)`, measured `heroin (diamorphine)`.
 
@@ -70,6 +78,33 @@ Rook EJ et al., Population pharmacokinetics of heroin a…, Clinical pharmacokin
 - no GROBID TEI available — transcribed from abstract in Rook_2006_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.364 (4/11 fields) | 7 |
+
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['heroin (diamorphine)', '6-acetylmorphine', 'metabolism'], ['6-acetylmorphine', 'morphine', 'metabolism'], ['morphine', 'morphine-3-glucuronide', 'metabolism'], ['morphine', 'morphine-6-glucuronide', 'metabolism']] | [['heroin', '6-acetylmorphine', 'metabolism'], ['6-acetylmorphine', 'morphine', 'metabolism'], ['morphine', 'morphine-3-glucuronide', 'metabolism'], ['morphine', 'morphine-6-glucuronide', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[bioavailability of inhaled heroin]` | not captured | 53 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability of inhaled heroin]` | 53 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance of the morphine-glucuronides]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[creatinine clearance]` | 60 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | diamorphine (heroin) | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | heroin (diamorphine) | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

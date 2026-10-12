@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Fluspirilene inhibits N-type Ca2+ channel current with an Emax-type concentration–response relationship; the paper reports an EC50 of 2 microM but the excerpts provide no further mechanism or additional parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sah_1994`
 - **model family:** `emax`
 - **driver:** `not_resolved`

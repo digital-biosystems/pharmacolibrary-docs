@@ -14,49 +14,32 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
 
-> **Dose compound ≠ measured compound:** dosed `artemisinin-naphthoquine`, measured `naphthoquine`.
+**CL/F has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — naphthoquine: t1/2ka 1 h, Cmax 57 μg/liter, t1/2z 22.8 days, CL/F 1.1 liters/h/kg, Frel 25 %, CLnorm/F 4.1 liters/h/kg, V/F 21 liters/kg.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Batty KT et al., Artemisinin-naphthoquine combination th…, Antimicrobial agents and ch… (2012)
   ·  DOI: [10.1128/AAC.06250-11](https://doi.org/10.1128/AAC.06250-11)
 
 ## Model component
-<dbs-pgx drug="Naphthoquine" model-id="Naphthoquine_Batty2012_reference" status="needs_review" stale="false" population="Papua New Guinea children with uncomplicated malaria" measured-compound="naphthoquine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="Naphthoquine" model-id="Naphthoquine_Batty2012_reference" status="needs_review" stale="false" population="Papua New Guinea children with uncomplicated malaria" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 7 extracted.
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
-**Parameterization:** CL/F, CLnorm/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** not captured.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| mean absorption half-life (t(1/2)) | `Q95` · t1/2ka | 1.0 | h | 3600.0 | [h] | not captured | llm_corrected (0.6) | Batty_2012:abstract | — | not captured |
-| predicted median maximum plasma concentrations | `Q32` · Cmax | 57 | μg/liter | not captured | [µg] / [l] | not captured | llm (0.6) | Batty_2012:abstract | — | not captured |
-| mean NQ elimination t(1/2) | `Q57` · t1/2z | 22.8 | days | 1969920.0 | [d] | not captured | llm (0.6) | Batty_2012:abstract | — | not captured |
-| clearance relative to bioavailability (CL/F) | `Q27` · CL/F | 1.1 | liters/h/kg | not captured | not captured | not captured | llm_corrected (0.6) | Batty_2012:abstract | — | not captured |
-| Administration of NQ with fat (8.5 g; 615 kJ) versus water was associated with | `Q87` · Frel | 25 | % | not captured | [%] | not captured | llm (0.6) | Batty_2012:abstract | — | not captured |
-| mean CL/F | `Q355` · CLnorm/F | 4.1 | liters/h/kg | 7.972222222222221e-05 | [l] / [[h] · [kg]] | not captured | llm_corrected (0.6) | Batty_2012:abstract | — | not captured |
-| V/F | `Q76` · V/F | 21 | liters/kg | 1.4700000000000002 | [l] / [kg] | not captured | exact (1.0) | Batty_2012:abstract | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
-
-**Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=naphthoquine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Batty_2012_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model

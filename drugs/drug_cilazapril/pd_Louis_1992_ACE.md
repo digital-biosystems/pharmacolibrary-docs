@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;cilazapril&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/&quot;},{&quot;label&quot;:&quot;Louis_1992 \u00b7 PD plasma angiotensin-converting enzyme (ACE) activity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# plasma angiotensin-converting enzyme (ACE) activity — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+# plasma angiotensin-converting enzyme (ACE) activity — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Plasma concentrations of the active diacids (cilazaprilat, perindoprilat, enalaprilat, from oral prodrug doses of cilazapril 2.5 mg, perindopril 4/8 mg, enalapril 10 mg) inhibit plasma ACE activity, with potency ranked perindoprilat &gt; cilazaprilat &gt; enalaprilat; the relationship was modelled as a sigmoid Emax-type inhibition with only small hysteresis between drug level and ACE effect. The excerpts give no numeric Imax, IC50/EC50, Emax, kin, kout, ke0 or gamma values, only noting that long-term activity requires levels above ~7–10 pmol/L (cilazaprilat, enalaprilat) and 2–3 pmol/L (perindoprilat).
+> The active metabolite cilazaprilat inhibits plasma angiotensin-converting enzyme (ACE) activity via a sigmoid Emax model, with an EC50 of 19 pmol/mL. The paper notes a close relationship between plasma levels and ACE inhibition but does not specify the underlying kinetic mechanism (e.g., production vs. elimination) or provide values for Imax, kin, kout, or ke0.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Louis_1992`
 - **model family:** `sigmoid_emax`
@@ -42,21 +42,19 @@ Louis WJ et al., Comparison of the pharmacokinetics and…, Clinical and experim
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 (0/4 fields) | 4 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.667 (4/6 fields) | 2 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | perindoprilat, cilazaprilat, enalaprilat | not captured | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | not captured | mismatch |
-| `gpt-oss:120b` | `effect_form` | unknown | not captured | mismatch |
-| `gpt-oss:120b` | `model_family` | sigmoid_emax | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q321]` | not captured | 19 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q322]` | 19 | not captured | only_one_extracted |
 
 </details>
 

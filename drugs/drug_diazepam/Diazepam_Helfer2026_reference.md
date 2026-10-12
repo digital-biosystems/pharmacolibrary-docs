@@ -5,7 +5,7 @@
 
 # diazepam — `Diazepam_Helfer2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.043, the second reading 0.02; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.02, the second reading 0.043; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -59,17 +59,24 @@ Helfer VE et al., Population Pharmacokinetics and Dosing…, Journal of clinical
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (6/12 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 0.02 | 0.043 | mismatch |
+| `gpt-oss-120b` | `values[Q319]` | 1.3 | 0.75 | mismatch |
+| `gpt-oss-120b` | `values[Q354]` | 0.04 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q47]` | 0.75 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q65]` | 0.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q900]` | -2.427 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.topology_template` | 1C | 2C | mismatch |
 | `gpt-oss:120b` | `values[Q22]` | 0.043 | 0.02 | mismatch |
 | `gpt-oss:120b` | `values[Q318]` | 7 | not captured | only_one_extracted |

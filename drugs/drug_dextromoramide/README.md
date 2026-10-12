@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;dextromoramide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dextromoramide_Lanon1989_reference&quot;,&quot;label&quot;:&quot;Lan\u00e7on_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dextromoramide/Dextromoramide_Lanon1989_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dextromoramide_Lanon1989_reference&quot;,&quot;label&quot;:&quot;Lan\u00e7on_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dextromoramide/Dextromoramide_Lanon1989_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # dextromoramide
 
@@ -33,7 +33,7 @@ Dextromoramide is a narcotic opioid analgesic, classified among diphenylpropylam
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lançon_1989_reference](drugs/drug_dextromoramide/Dextromoramide_Lanon1989_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Lançon JP et al., [Pharmacokinetics of dextromoramide in…, Annales francaises d'anesth… (1989) | [10.1016/s0750-7658(89)80015-2](https://doi.org/10.1016/s0750-7658(89)80015-2) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Lançon_1989_reference](drugs/drug_dextromoramide/Dextromoramide_Lanon1989_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Lançon JP et al., [Pharmacokinetics of dextromoramide in…, Annales francaises d'anesth… (1989) | [10.1016/s0750-7658(89)80015-2](https://doi.org/10.1016/s0750-7658(89)80015-2) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

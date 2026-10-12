@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Levomepromazine concentration is linked to cytotoxicity in 3D spheroid cultures of rainbow trout hepatocytes (RTH-149/RTHEP) via a sigmoid Emax inhibition model, but the excerpts provide no mechanism, no potency values (IC50/Imax/gamma), and no rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Järvinen_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

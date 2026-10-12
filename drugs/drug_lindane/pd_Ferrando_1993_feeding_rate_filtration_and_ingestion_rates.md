@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lindane exposure (mg/liter) inhibits feeding rate (filtration and ingestion rates, mg/liter) in a concentration-dependent manner; the paper excerpts give an EC50 of 8.5 mg/liter but no full text is available, so the mechanism (e.g., Emax form or turnover model) is not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ferrando_1993`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

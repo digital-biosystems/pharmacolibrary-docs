@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models inhibition of P-type Ca2+ channel current in cerebellar Purkinje neurons as a function of thioridazine concentration (microM) using an Emax-type model, but no full text is available, so the mechanism, effect form, and potency parameters (Imax, IC50, Emax, gamma) are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sah_1994`
 - **model family:** `emax`
 - **driver:** `cited_pk`

@@ -17,7 +17,7 @@ Dextropropoxyphene combination products were opioid painkillers used to relieve 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-27 16:13 | 17:32 | 0/0/0 | 0/0/0 | 0/0/0 | 62,181/9,987 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 0/0 | 6/1 | 0 |
+| 2026-08-27 16:13 | 17:32 | 0/0/0 | 0/0/0 | 0/0/0 | 62,181/9,987 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 1/0 | 6/1 | 0 |
 
 ## popPK records
 
@@ -31,10 +31,10 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 63 matched, 62 returned
+- **PubMed hits:** 74 matched, 72 returned
 - **screened:** 2  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;alminoprofen&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alminoprofen_Tod1995_reference&quot;,&quot;label&quot;:&quot;Tod_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alminoprofen/Alminoprofen_Tod1995_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alminoprofen_Tod1995_reference&quot;,&quot;label&quot;:&quot;Tod_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alminoprofen/Alminoprofen_Tod1995_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # alminoprofen
 
@@ -27,14 +27,14 @@ Alminoprofen is a propionic acid derivative that acts as a non-steroidal anti-in
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:38 | 0:30 | 1/1/0 | 0/0/0 | 0/0/0 | 43,379/3,920 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-07 00:38 | 0:30 | 0/1/1 | 0/0/0 | 0/0/0 | 43,379/3,920 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Tod_1995_reference](drugs/drug_alminoprofen/Alminoprofen_Tod1995_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Tod M et al., A population pharmacokinetic study of a…, Biopharmaceutics & drug dis… (1995) | [10.1002/bdd.2510160803](https://doi.org/10.1002/bdd.2510160803) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Shin_1992_reference](drugs/drug_alminoprofen/Alminoprofen_Shin1992_reference.md) | — | 1-compartment (no model) | 0 | Shin K et al., [Pharmacokinetics of oral alminoprofen…, Nihon Ronen Igakkai zasshi.… (1992) | [10.3143/geriatrics.29.881](https://doi.org/10.3143/geriatrics.29.881) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Tod_1995_reference](drugs/drug_alminoprofen/Alminoprofen_Tod1995_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Tod M et al., A population pharmacokinetic study of a…, Biopharmaceutics & drug dis… (1995) | [10.1002/bdd.2510160803](https://doi.org/10.1002/bdd.2510160803) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Shin_1992_reference](drugs/drug_alminoprofen/Alminoprofen_Shin1992_reference.md) | — | 1-compartment (no model) | 0 | Shin K et al., [Pharmacokinetics of oral alminoprofen…, Nihon Ronen Igakkai zasshi.… (1992) | [10.3143/geriatrics.29.881](https://doi.org/10.3143/geriatrics.29.881) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -46,7 +46,7 @@ Alminoprofen is a propionic acid derivative that acts as a non-steroidal anti-in
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

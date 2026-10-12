@@ -4,7 +4,7 @@
 
 # efavirenz — `Efavirenz_Vucicevic2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 Only the oral clearance of efavirenz (CL/F = 13.9 L/h) was extracted from Vucicevic_2025; Vd, ka and Tlag had no source values and were left at library placeholders, which triggered the hold-back. The builder also assumed F=1 and Fm=1 with no molar correction (apparent parameterization) and used a first-order depot input consistent with extravascular dosing. The deviations check flagged the invented absorption (defaulted ka not reported in the source) as not acceptable. Extracted — efavirenz: CL/F 13.9 L/h.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has efavirenz, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -81,14 +81,29 @@ Vucicevic K et al., Population Pharmacokinetic-Pharmacogene…, Cureus (2025)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.357 (5/14 fields) | 9 |
 | `gpt-oss:120b` | confirmed | 1.0 (5/5 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption lag time]` | 0.825 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 0.397 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θrsa]` | -0.364 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θrsa]` | not captured | -0.364 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θrsb]` | -0.268 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θrsb]` | not captured | -0.268 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | efavirenz | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | efavirenz | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

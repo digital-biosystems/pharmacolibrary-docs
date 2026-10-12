@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model describes the dose-dependent inhibition of adductor pollicis force of contraction by mivacurium using a sigmoid Emax framework. The paper reports ED50 values of 43 and 34 micrograms kg-1, though no full text is available to clarify the specific mechanism or effect form.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Maddineni_1993`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

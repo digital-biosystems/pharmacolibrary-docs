@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;acalabrutinib&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/&quot;},{&quot;label&quot;:&quot;Edlund_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acalabrutinib_Edlund2022_reference&quot;,&quot;label&quot;:&quot;Edlund_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/Acalabrutinib_Edlund2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Acalabrutinib_Hefnawy2022_reference&quot;,&quot;label&quot;:&quot;Hefnawy_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/Acalabrutinib_Hefnawy2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acalabrutinib_Kemal2026_reference&quot;,&quot;label&quot;:&quot;Kemal_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/Acalabrutinib_Kemal2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acalabrutinib_Edlund2022_reference&quot;,&quot;label&quot;:&quot;Edlund_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/Acalabrutinib_Edlund2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Acalabrutinib_Hefnawy2022_reference&quot;,&quot;label&quot;:&quot;Hefnawy_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/Acalabrutinib_Hefnawy2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acalabrutinib_Kemal2026_reference&quot;,&quot;label&quot;:&quot;Kemal_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acalabrutinib/Acalabrutinib_Kemal2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # acalabrutinib — `Acalabrutinib_Edlund2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,22 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Every check that could be run on this record passed.**
+
+A reported unit could not be converted (MTT), so that value has no SI equivalent.
+
+Independently confirmed by `qwen3.8-27b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Edlund H et al., Improved characterization of the pharma…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.14988](https://doi.org/10.1111/bcp.14988)
 
 ## Model component
-<dbs-pgx drug="acalabrutinib" model-id="Acalabrutinib_Edlund2022_reference" status="extracted" stale="false" population="adults with B-cell malignancies and healthy subjects" measured-compound="acalabrutinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="acalabrutinib" model-id="Acalabrutinib_Edlund2022_reference" status="curated_candidate" stale="false" population="adults with B-cell malignancies and healthy subjects" measured-compound="acalabrutinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent–metabolite model: parent with 2 compartment(s); metabolite ACP-5862: 2 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameters:** 11 extracted.
@@ -96,6 +104,21 @@ Edlund H et al., Improved characterization of the pharma…, British journal of 
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | confirmed | 1.0 (15/15 fields) | none |
+
+_Every reader agrees on every compared field of this record._
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -121,6 +144,25 @@ Edlund H et al., Improved characterization of the pharma…, British journal of 
 | C9_phys_window_Q82 | pass | volume within physiological range | 110 L | not captured | not captured | ['bcp14988-tbl-0001:row6:col1'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 89.2 L | not captured | not captured | ['bcp14988-tbl-0001:row12:col1'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_metabolite_built[ACP-5862] | not captured | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.0227, 'CL': 6.055555555555555e-06, 'formation': 3.722222222222222e-05} | not captured | ACP-5862 = compartment M1 with its own numbers |
+| T3_metabolite_output[ACP-5862] | not captured | pass | not captured | 0.00115103511737596 | not captured | C_M1 (ACP-5862) must rise above 0 when the parent is dosed |
+| T3_molar_mass[ACP-5862] | not captured | pass | not captured | {'MW': 0.465517, 'MW_m1': 0.481516} | not captured | formation is molecule-for-molecule |
+| T3_output_variable | not captured | pass | C_central (measured=acalabrutinib) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 9 scholar param(s) emitted or defaulted | 9 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | pass | 0.000461 | 0.0005694587851472592 | 1.2353 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 0.0004613 | 0.0005694587851472592 | 1.2345 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 24 | 0.0005694587851472592 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 14 | 0.0005694587851472592 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -129,6 +171,9 @@ Edlund H et al., Improved characterization of the pharma…, British journal of 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_acalabrutinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Edlund_2022` / `Edlund_2022::reference`)
+- model: `../../../knowledgebase/drugs/drug_acalabrutinib/models/modelica/Acalabrutinib_Edlund2022_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_acalabrutinib/models/modelica/Acalabrutinib_Edlund2022_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_acalabrutinib/models/modelica/Acalabrutinib_Edlund2022_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

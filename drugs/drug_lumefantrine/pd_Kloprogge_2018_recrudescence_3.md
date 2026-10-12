@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;Lumefantrine&quot;,&quot;href&quot;:&quot;drugs/drug_lumefantrine/&quot;},{&quot;label&quot;:&quot;Kloprogge_2018 \u00b7 PD PCR-corrected recrudescent infection (cure) at day 42 \u2014 African children 15\u201325 kg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lumefantrine_Kloprogge2018_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lumefantrine/Lumefantrine_Kloprogge2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lumefantrine_Kloprogge2018_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lumefantrine/Lumefantrine_Kloprogge2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # PCR-corrected recrudescent infection (cure) at day 42 — African children 15–25 kg — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -17,6 +17,10 @@
 **As extracted:** Lumefantrine (concentrations from this paper's PK model) drives PCR-corrected recrudescent infection (cure) at day 42 — African children 15–25 kg: time-to-event model.
 
 **Model:** No model was generated from this record.
+
+> In African children weighing 15–25 kg, lumefantrine venous plasma concentrations (ng/ml) reduce the hazard of PCR-corrected recrudescent malaria infection by day 42 via a constant baseline hazard model with a sigmoidal EMAX (proportional inhibitory) drug effect, with baseline hazard 0.00168 day−1 and IC50 9.79 ng/ml. The paper notes these parameters are apparent and imprecise, since the lumefantrine effect actually sums artemether/dihydroartemisinin and lumefantrine/desbutyl-lumefantrine effects.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Kloprogge_2018`
 - **model family:** `tte`

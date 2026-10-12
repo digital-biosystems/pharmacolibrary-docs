@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper excerpts are unavailable, so the specific mechanism by which sutimlimab affects Hb and any potency or rate parameters are not provided in the text.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Frank_2023`
 - **model family:** `indirect_response_iii`
 - **driver:** `not_resolved`

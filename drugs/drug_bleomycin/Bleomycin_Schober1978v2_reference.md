@@ -5,7 +5,7 @@
 
 # bleomycin — `Bleomycin_Schober1978v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.364), gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -76,14 +76,15 @@ Schober O; Mariss P; Pertynski T; Zimmermann P; Börner P et al. (1978). RoFo : 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `qwen3.8-27b` | partly confirmed | 0.364 (4/11 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -92,6 +93,13 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | `gpt-oss:120b` | `parameters[kontrast k]` | 0.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[kv]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[retentionswerte]` | 48 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cl]` | 218.0 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[exkretion]` | 75 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[ganzkörper]` | not captured | 0.02 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[kontrast k]` | 0.5 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[niere]` | not captured | 0.4 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[retentionswerte]` | 48 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[vz]` | 6290.0 | not captured | only_one_extracted |
 
 </details>
 

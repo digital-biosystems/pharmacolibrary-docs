@@ -4,7 +4,7 @@
 
 # phenazone — `Phenazone_Doyle1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -57,17 +57,22 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | primary re-run | 0.333 (2/6 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[apparent half-life of elimination]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean volume of distribution]` | not captured | 88 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | phenazone | antipyrine | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | phenazone | antipyrine | mismatch |
 | `gpt-oss:120b` | `parameters[apparent half-life of elimination]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[apparent half-life of elimination]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka]` | 0.158 | not captured | only_one_extracted |

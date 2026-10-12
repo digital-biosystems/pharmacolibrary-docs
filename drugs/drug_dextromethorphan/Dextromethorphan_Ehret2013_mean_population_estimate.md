@@ -4,7 +4,7 @@
 
 # dextromethorphan — `Dextromethorphan_Ehret2013_mean_population_estimate`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--orange" title="molar_mass_missing:dextrorphan: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,13 +14,23 @@
 
 **Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+> **Caveat** (`molar_mass_missing:dextrorphan`): a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule
+
+### Reviewer guidance
+
+**The dextromethorphan parent–metabolite model was quarantined because bioavailability (F), clearance (Cl) and absorption lag time (Tlag) were left at library defaults, and the dextrorphan metabolite compartment had no volume, clearance, formation clearance or molar mass.**
+
+Although the record lists fitted values for dextromethorphan (kabs 2.8 h-1, tlag 0.45 h, V 627 l) and dextrorphan (kfm 0.074 h-1, kel 0.21 h-1, V 1700 l), the builder substituted defaults for F, Cl and Tlag, so the model was held back rather than published with invented numbers. The metabolite dextrorphan's own V, CL and formation clearance were all 0, and its molar mass was missing, meaning mass conversion from parent to metabolite would be wrong (1 mg per mg instead of molecule-per-molecule). The topology check also failed: a one-compartment enteral structure was obtained where a three-compartment hepatic parent–metabolite structure was expected. The deviations check returned 'defaulted_parameters: not acceptable'. Extracted — dextromethorphan: kabs 2.8 h-1, tlag 0.45 h, V 627 l; dextrorphan: kfm 0.074 h-1, kel 0.21 h-1, V 1.7e+03 l.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[t1/2g].parameter_id`: this record has Q83, the second reading Q89. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Ehret GB et al., Influence of CYP2D6 activity on pre-emp…, Pain physician (2013)
 
 ## Model component
-<dbs-pgx drug="dextromethorphan" model-id="Dextromethorphan_Ehret2013_mean_population_estimate" status="extracted" stale="false" population="adults with acute post-operative pain (knee ligament surgery) plus healthy volunteers" measured-compound="dextromethorphan" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="dextromethorphan" model-id="Dextromethorphan_Ehret2013_mean_population_estimate" status="model_quarantined" stale="false" population="adults with acute post-operative pain (knee ligament surgery) plus healthy volunteers" measured-compound="dextromethorphan" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.
@@ -28,6 +38,8 @@ Ehret GB et al., Influence of CYP2D6 activity on pre-emp…, Pain physician (201
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | ka (h-1) | `Q49` · kabs | 2.8 | h-1 | 0.0007777777777777777 | [1] / [h] | not captured | exact (1.0) | Ehret_2013_table_p7_1:row0:col1 | — | not captured |
@@ -74,6 +86,27 @@ Ehret GB et al., Influence of CYP2D6 activity on pre-emp…, Pain physician (201
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.909 (10/11 fields) | 1 |
+
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[t1/2g].parameter_id` | Q83 | Q89 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -91,6 +124,21 @@ Ehret GB et al., Influence of CYP2D6 activity on pre-emp…, Pain physician (201
 | C9_phys_window_Q61 | pass | volume within physiological range | 627 L | not captured | not captured | ['Ehret_2013_table_p7_1:row5:col1'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 1.7e+03 L | not captured | not captured | ['Ehret_2013_table_p7_1:row6:col1'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_metabolite_built[dextrorphan] | not captured | fail | own V, CL and formation clearance &gt; 0 | {'V': 0, 'CL': 0, 'formation': 0} | not captured | dextrorphan: V, CL, formation not set — the metabolite's compartment would be the template default |
+| T3_metabolite_output[dextrorphan] | not captured | skipped | not captured | not captured | not captured | the simulation recorded no per-molecule outputs |
+| T3_molar_mass[dextrorphan] | not captured | fail | not captured | {'MW': 0, 'MW_m1': 0} | not captured | a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule |
+| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_rate_constant_conversion | not captured | pass | k12 (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T3_topology_template | not captured | fail | parent_metabolite_hepatic → PK_3M_3C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_t_half_terminal | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -99,6 +147,8 @@ Ehret GB et al., Influence of CYP2D6 activity on pre-emp…, Pain physician (201
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_dextromethorphan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ehret_2013` / `Ehret_2013::mean_population_estimate`)
+- model: `../../../knowledgebase/drugs/drug_dextromethorphan/models/modelica/_needs_review/Dextromethorphan_Ehret2013_mean_population_estimate.mo`
+- deviation: `../../../knowledgebase/drugs/drug_dextromethorphan/models/modelica/_needs_review/Dextromethorphan_Ehret2013_mean_population_estimate.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

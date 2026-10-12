@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Food intake acts on intragastric pH via an indirect response model in which food stimulates the production rate of pH (Kin = 0.435 1/h), with a food-effect scaling factor S f = 0.043 and Slopef fixed at 1; the pH response is characterized by a baseline of 1.090 pH, a maximum achievable pH (pHMax) of 5.570 pH, a circadian amplitude of 0.704 pH, and a gastric emptying rate Kg of 1.820 1/h. The paper does not state an Imax, IC50, EC50, Emax, ke0, or gamma for the food effect itself.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jung_2026`
 - **model family:** `indirect_response_iii`
 - **driver:** `dose_only`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In HEK293 cells expressing κOR, nalfurafine concentration-dependently stimulated κOR activation measured as change in cellular impedance (ΔZiec) via the CellKeyTM system, described by a direct Emax model with Emax = 100.00 ± 3.09 % and log EC50 = −9.64 ± 0.10 M; the paper does not state a production/elimination or effect-compartment mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yamaguchi_2022`
 - **model family:** `emax`
 - **driver:** `not_resolved`

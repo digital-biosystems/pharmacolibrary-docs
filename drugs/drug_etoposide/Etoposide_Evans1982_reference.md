@@ -5,7 +5,7 @@
 
 # etoposide — `Etoposide_Evans1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Etoposide's clearance of 5.2 L/h was extracted from an abstract, while all metabolite elimination rate parameters were missing.**
+
+The model was built from the abstract only, so the reported clearance value stands in for a fitted model. All four metabolic pathways from etoposide and teniposide to their hydroxy acids and picro-lactone isomers have no assigned elimination rate parameter. Consequently, the metabolite compartments are orphaned with no defined elimination route from the dose. Extracted — etoposide: CL 5.2 L/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has teniposide and etoposide, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 > **Dose compound ≠ measured compound:** dosed `teniposide and etoposide`, measured `etoposide`.
 
@@ -59,6 +67,31 @@ Evans WE et al., Pharmacokinetics of Teniposide (VM26) a…, Cancer chemotherapy
 - no GROBID TEI available — transcribed from abstract in Evans_1982_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.167 (1/6 fields) | 5 |
+
+<details><summary>5 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['teniposide', 'teniposide hydroxy acids', 'metabolism'], ['teniposide', 'picro-lactone isomers', 'metabolism'], ['etoposide', 'etoposide hydroxy acids', 'metabolism'], ['etoposide', 'picro-lactone isomers', 'metabolism']] | [['teniposide (vm26)', 'hydroxy acids', 'metabolism'], ['etoposide (vp16-213)', 'hydroxy acids', 'metabolism'], ['teniposide (vm26)', 'picro-lactone isomers', 'metabolism'], ['etoposide (vp16-213)', 'picro-lactone isomers', 'metabolism'], ['teniposide (vm26)', 'aglycones', 'metabolism'], ['etoposide (vp16-213)', 'aglycones', 'metabolism'], ['teniposide (vm26)', 'hydroxy acids', 'hydrolysis'], ['etoposide (vp16-213)', 'hydroxy acids', 'hydrolysis'], ['teniposide (vm26)', 'picro-lactone isomers', 'hydrolysis'], ['etoposide (vp16-213)', 'picro-lactone isomers', 'hydrolysis'], ['teniposide (vm26)', 'aglycones', 'hydrolysis'], ['etoposide (vp16-213)', 'aglycones', 'hydrolysis'], ['teniposide (vm26)', 'hydroxy acids', 'interconversion'], ['etoposide (vp16-213)', 'hydroxy acids', 'interconversion'], ['teniposide (vm26)', 'picro-lactone isomers', 'interconversion'], ['etoposide (vp16-213)', 'picro-lactone isomers', 'interconversion'], ['teniposide (vm26)', 'aglycones', 'interconversion'], ['etoposide (vp16-213)', 'aglycones', 'interconversion'], ['teniposide (vm26)', 'hydroxy acids', 'formation'], ['etoposide (vp16-213)', 'hydroxy acids', 'formation'], ['teniposide (vm26)', 'picro-lactone isomers', 'formation'], ['etoposide (vp16-213)', 'picro-lactone isomers', 'formation'], ['teniposide (vm26)', 'aglycones', 'formation'], ['etoposide (vp16-213)', 'aglycones', 'formation'], ['teniposide (vm26)', 'hydroxy acids', 'clearance'], ['etoposide (vp16-213)', 'hydroxy acids', 'clearance'], ['teniposide (vm26)', 'picro-lactone isomers', 'clearance'], ['etoposide (vp16-213)', 'picro-lactone isomers', 'clearance'], ['teniposide (vm26)', 'aglycones', 'clearance'], ['etoposide (vp16-213)', 'aglycones', 'clearance'], ['teniposide (vm26)', 'hydroxy acids', 'excretion'], ['etoposide (vp16-213)', 'hydroxy acids', 'excretion'], ['teniposide (vm26)', 'picro-lactone isomers', 'excretion'], ['etoposide (vp16-213)', 'picro-lactone isomers', 'excretion'], ['teniposide (vm26)', 'aglycones', 'excretion'], ['etoposide (vp16-213)', 'aglycones', 'excretion'], ['teniposide (vm26)', 'hydroxy acids', 'transport'], ['etoposide (vp16-213)', 'hydroxy acids', 'transport'], ['teniposide (vm26)', 'picro-lactone isomers', 'transport'], ['etoposide (vp16-213)', 'picro-lactone isomers', 'transport'], ['teniposide (vm26)', 'aglycones', 'transport'], ['etoposide (vp16-213)', 'aglycones', 'transport'], ['teniposide (vm26)', 'hydroxy acids', 'binding'], ['etoposide (vp16-213)', 'hydroxy acids', 'binding'], ['teniposide (vm26)', 'picro-lactone isomers', 'binding'], ['etoposide (vp16-213)', 'picro-lactone isomers', 'binding'], ['teniposide (vm26)', 'aglycones', 'binding'], ['etoposide (vp16-213)', 'aglycones', 'binding']] | mismatch |
+| `gpt-oss-120b` | `parameters[systemic clearances determined by model-independent methods]` | 5.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearances]` | not captured | 5.2 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | teniposide and etoposide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | etoposide | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

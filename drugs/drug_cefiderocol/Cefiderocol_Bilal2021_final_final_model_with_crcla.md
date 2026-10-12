@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefiderocol&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/&quot;},{&quot;label&quot;:&quot;Bilal_2021 \u00b7 final_final_model_with_crcla&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefiderocol_Bilal2021_14c_cf_studya&quot;,&quot;label&quot;:&quot;Bilal_2021_14c_cf_studya&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Bilal2021_14c_cf_studya.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_Bilal2021_final&quot;,&quot;label&quot;:&quot;Bilal_2021_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Bilal2021_final.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_Bilal2021_final_final_model_with_crcla&quot;,&quot;label&quot;:&quot;Bilal_2021_final_final_model_with_crcla&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Bilal2021_final_final_model_with_crcla.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cefiderocol_Koenig2025_reference&quot;,&quot;label&quot;:&quot;Koenig_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Koenig2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_SanzCodina2024_reference&quot;,&quot;label&quot;:&quot;Sanz-Codina_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_SanzCodina2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_Zahr2022_reference&quot;,&quot;label&quot;:&quot;Zahr_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Zahr2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefiderocol_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_Bilal2021_14c_cf_studya&quot;,&quot;label&quot;:&quot;Bilal_2021_14c_cf_studya&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Bilal2021_14c_cf_studya.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_Bilal2021_final&quot;,&quot;label&quot;:&quot;Bilal_2021_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Bilal2021_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_Bilal2021_final_final_model_with_crcla&quot;,&quot;label&quot;:&quot;Bilal_2021_final_final_model_with_crcla&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Bilal2021_final_final_model_with_crcla.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cefiderocol_Koenig2025_reference&quot;,&quot;label&quot;:&quot;Koenig_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Koenig2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_SanzCodina2024_reference&quot;,&quot;label&quot;:&quot;Sanz-Codina_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_SanzCodina2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_Zahr2022_reference&quot;,&quot;label&quot;:&quot;Zahr_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Zahr2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cefiderocol — `Cefiderocol_Bilal2021_final_final_model_with_crcla`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,22 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0744, model 0.00245); the model does not reproduce the paper's time of the peak (tmax) (paper 1, model 0.183) (+1 more).**
+
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — cefiderocol: CL 4.83 L/h, V1 7.58 L, Q 5.45 L/h, V2 5.54 L, Q3 0.0969 L/h, V3 0.681 L.
+
+Independently confirmed by `gpt-oss-120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Bilal M et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-021-01063-5](https://doi.org/10.1007/s40262-021-01063-5)
 
 ## Model component
-<dbs-pgx drug="cefiderocol" model-id="Cefiderocol_Bilal2021_final_final_model_with_crcla" status="extracted" stale="false" population="mixed" measured-compound="cefiderocol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="cefiderocol" model-id="Cefiderocol_Bilal2021_final_final_model_with_crcla" status="needs_review" stale="false" population="mixed" measured-compound="cefiderocol" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 6 extracted.
@@ -30,6 +38,8 @@ Bilal M et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL (L/h) | `Q22` · CL | 4.83 | L/h | 1.3416666666666666e-06 | [l] / [h] | not captured | exact (1.0) | Tab2:row2:col5, Tab2:row2:col6 | — | not captured |
@@ -58,6 +68,21 @@ Bilal M et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (10/10 fields) | none |
+
+_Every reader agrees on every compared field of this record._
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -77,6 +102,44 @@ Bilal M et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 | C9_phys_window_Q63 | pass | volume within physiological range | 7.58 L | not captured | not captured | ['Tab2:row3:col5', 'Tab2:row3:col6'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 5.54 L | not captured | not captured | ['Tab2:row5:col5', 'Tab2:row5:col6'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=cefiderocol) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_cmax | reference | fail | 0.07440000000000001 | 0.0024459363713962494 | 0.0329 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.156 | 0.0024459363713962494 | 0.0157 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0681 | 0.0024459363713962494 | 0.0359 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.14100000000000001 | 0.0024459363713962494 | 0.0173 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0729 | 0.0024459363713962494 | 0.0336 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.081 | 0.0024459363713962494 | 0.0302 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.08009999999999999 | 0.0024459363713962494 | 0.0305 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.093 | 0.0024459363713962494 | 0.0263 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.093 | 0.0024459363713962494 | 0.0263 | mg/L→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | fail | 2.26 | 7.733950024942129 | 3.4221 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.74 | 7.733950024942129 | 2.8226 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.19 | 7.733950024942129 | 3.5315 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.4 | 7.733950024942129 | 3.2225 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.3 | 7.733950024942129 | 3.3626 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.8 | 7.733950024942129 | 2.7621 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 6.9 | 7.733950024942129 | 1.1209 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 9.6 | 7.733950024942129 | 0.8056 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 9.6 | 7.733950024942129 | 0.8056 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.0 | 0.18333333335172267 | 0.1833 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.0 | 0.18333333335172267 | 0.1833 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.0 | 0.18333333335172267 | 0.1833 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.0 | 0.18333333335172267 | 0.1833 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.97 | 0.18333333335172267 | 0.189 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.0 | 0.18333333335172267 | 0.1833 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.0 | 0.18333333335172267 | 0.1833 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.0 | 0.18333333335172267 | 0.1833 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.0 | 0.18333333335172267 | 0.1833 | h→SI vs simulated h |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -85,6 +148,9 @@ Bilal M et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_cefiderocol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bilal_2021` / `Bilal_2021::final_final_model_with_crcla`)
+- model: `../../../knowledgebase/drugs/drug_cefiderocol/models/modelica/Cefiderocol_Bilal2021_final_final_model_with_crcla.mo`
+- deviation: `../../../knowledgebase/drugs/drug_cefiderocol/models/modelica/Cefiderocol_Bilal2021_final_final_model_with_crcla.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_cefiderocol/models/modelica/Cefiderocol_Bilal2021_final_final_model_with_crcla.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -96,7 +162,7 @@ Bilal M et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cefiderocol/Cefiderocol_Bilal2021_final_final_model_with_crcla/Cefiderocol_Bilal2021_final_final_model_with_crcla_modelica.zip" download>Cefiderocol_Bilal2021_final_final_model_with_crcla_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cefiderocol/Cefiderocol_Bilal2021_final_final_model_with_crcla/Cefiderocol_Bilal2021_final_final_model_with_crcla_fmi.zip" download>Cefiderocol_Bilal2021_final_final_model_with_crcla_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cefiderocol/Cefiderocol_Bilal2021_final_final_model_with_crcla/Cefiderocol_Bilal2021_final_final_model_with_crcla_matlab.zip" download>Cefiderocol_Bilal2021_final_final_model_with_crcla_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cefiderocol/Cefiderocol_Bilal2021_final_final_model_with_crcla/Cefiderocol_Bilal2021_final_final_model_with_crcla_matlab_simbio.zip" download>Cefiderocol_Bilal2021_final_final_model_with_crcla_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cefiderocol/Cefiderocol_Bilal2021_final_final_model_with_crcla/Cefiderocol_Bilal2021_final_final_model_with_crcla_matlab_simbio.zip" download>Cefiderocol_Bilal2021_final_final_model_with_crcla_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cefiderocol/Cefiderocol_Bilal2021_final_final_model_with_crcla/Cefiderocol_Bilal2021_final_final_model_with_crcla_sbml.zip" download>Cefiderocol_Bilal2021_final_final_model_with_crcla_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_cefiderocol/Cefiderocol_Bilal2021_final_final_model_with_crcla/Cefiderocol_Bilal2021_final_final_model_with_crcla_cellml.zip" download>Cefiderocol_Bilal2021_final_final_model_with_crcla_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

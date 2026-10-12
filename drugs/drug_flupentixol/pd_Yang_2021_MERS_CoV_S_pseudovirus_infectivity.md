@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Flupentixol concentrations (µM) inhibit MERS-CoV S pseudovirus infectivity (%) in Huh-7 cells, described by a sigmoid Emax inhibition model with EC50 = 1.68 ± 0.22 µM and EC90 = 6.80 ± 0.40 µM; the paper does not state a pharmacodynamic mechanism for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes methacholine stimulating Ca(2+) mobilization, but no full text is available, so the concentrations acting on the response, the mechanism, and any potency or rate parameters cannot be stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bartlett_2005`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

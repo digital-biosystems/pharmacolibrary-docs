@@ -18,6 +18,10 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
+> The record describes a sigmoidal Emax model where paracetamol plasma concentration inhibits pain (VAS 0-10), with an Emax of 5.2 (0-10 units), an EC50 of 9.8 mg/l, and a Hill coefficient N of 1. The provided paper excerpts do not specify the mechanism of action or these parameter values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Anderson_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

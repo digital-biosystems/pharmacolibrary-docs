@@ -17,7 +17,7 @@
 
 **Model:** No model was generated from this record.
 
-> Plasma aripiprazole concentration (nmol/L) reduces striatal dopamine D2 receptor binding potential (BP, measured by [11C]raclopride PET) via an inhibitory sigmoid Emax model (BP = BPbaseline − Imax·Conc^r/(IC50^r + Conc^r)), where Imax equals baseline BP at very high doses; the excerpts do not report numeric Imax, IC50, or Hill coefficient values for aripiprazole.
+> Aripiprazole plasma concentration (ng/mL) inhibits striatal dopamine D2 receptor binding potential (BP) measured by [11C]raclopride PET, described by an inhibitory sigmoid Emax model in which BP = BPbaseline − Imax·Conc^r/(IC50^r + Conc^r), with Imax (equal to estimated baseline BP) 1.8, IC50 14.2 ng/mL, and Hill coefficient 0.9.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

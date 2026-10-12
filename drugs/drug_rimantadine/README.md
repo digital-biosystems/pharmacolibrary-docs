@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Kobe_2026_MHV_infectivity_plaque_reduction_post_treatment](drugs/drug_rimantadine/pd_Kobe_2026_MHV_infectivity_plaque_reduction_post_treatment.md) | MHV infectivity (plaque reduction, post-treatment) ← rimantadine · direct sigmoid Emax (Hill) effect | — | Kobe N et al., In silico characterisation of a novel S…, Bioorganic chemistry (2026) | [10.1016/j.bioorg.2026.109949](https://doi.org/10.1016/j.bioorg.2026.109949) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Kobe_2026_MHV_infectivity_plaque_reduction_post_treatment](drugs/drug_rimantadine/pd_Kobe_2026_MHV_infectivity_plaque_reduction_post_treatment.md) | MHV infectivity (plaque reduction, post-treatment) ← rimantadine · direct sigmoid Emax (Hill) effect | — | Kobe N et al., In silico characterisation of a novel S…, Bioorganic chemistry (2026) | [10.1016/j.bioorg.2026.109949](https://doi.org/10.1016/j.bioorg.2026.109949) |
 
 ## ADME sites
 

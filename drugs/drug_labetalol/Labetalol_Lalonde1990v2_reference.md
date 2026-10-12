@@ -4,7 +4,7 @@
 
 # labetalol — `Labetalol_Lalonde1990v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857), gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — labetalol: CL/F 58.7 ml/min/kg, CL 23.2 ml/min/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of area under the curve: this record has none, the second reading 79; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of beta-blockade duration: this record has none, the second reading 8. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -66,17 +66,19 @@ Lalonde RL et al., Labetalol pharmacokinetics and pharmaco…, Clinical pharmaco
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 | `gpt-oss:120b` | partly confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[beta-blockade duration]` | not captured | 8 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[area under the curve]` | not captured | 79 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[beta-blockade]` | not captured | 8 | only_one_extracted |
 

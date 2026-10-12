@@ -28,8 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from keyword rules on the title and abstract — no LLM answer yet).">human + animal</span> | [Brockmeier_1988_reduction_in_exercise_induced_tachycardia](drugs/drug_penbutolol/pd_Brockmeier_1988_reduction_in_exercise_induced_tachycardia.md) | reduction in exercise-induced tachycardia ← penbutolol · direct Emax (saturable) effect | — | Brockmeier D et al., Penbutolol: pharmacokinetics, effect on…, European journal of clinica… (1988) | [10.1007/BF00637597](https://doi.org/10.1007/BF00637597) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Aguirre_1996_HR](drugs/drug_penbutolol/pd_Aguirre_1996_HR.md) | heart rate ← penbutolol · direct linear effect | — | Aguirre C et al., Pharmacokinetics and pharmacodynamics o…, Research communications in… (1996) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Brockmeier_1988_reduction_in_exercise_induced_tachycardia](drugs/drug_penbutolol/pd_Brockmeier_1988_reduction_in_exercise_induced_tachycardia.md) | reduction in exercise-induced tachycardia ← penbutolol · direct Emax (saturable) effect | — | Brockmeier D et al., Penbutolol: pharmacokinetics, effect on…, European journal of clinica… (1988) | [10.1007/BF00637597](https://doi.org/10.1007/BF00637597) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Aguirre_1996_HR](drugs/drug_penbutolol/pd_Aguirre_1996_HR.md) | heart rate ← penbutolol · direct linear effect | — | Aguirre C et al., Pharmacokinetics and pharmacodynamics o…, Research communications in… (1996) | — |
 
 ## ADME sites
 

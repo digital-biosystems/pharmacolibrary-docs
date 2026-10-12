@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Samidorphan unbound brain concentrations (nM) drive dose-dependent DOR receptor occupancy in rat brain, described by a sigmoid Emax (direct effect) relationship with EC50 = 54.7 nM; the paper does not state an explicit mechanism beyond direct binding occupancy.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tan_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

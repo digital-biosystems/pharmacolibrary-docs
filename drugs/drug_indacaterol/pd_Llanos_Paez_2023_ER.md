@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;indacaterol&quot;,&quot;href&quot;:&quot;drugs/drug_indacaterol/&quot;},{&quot;label&quot;:&quot;Llanos-Paez_2023 \u00b7 PD Mean annual rate of moderate or severe exacerbations&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Indacaterol_Jiang2015_reference&quot;,&quot;label&quot;:&quot;Jiang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indacaterol/Indacaterol_Jiang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Indacaterol_Jiang2015_reference&quot;,&quot;label&quot;:&quot;Jiang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indacaterol/Indacaterol_Jiang2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Mean annual rate of moderate or severe exacerbations — PD  <span class="pk-badge pk-badge--green">extracted</span>

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ipratropium concentration (nmol/L) inhibits acetylcholine-induced airway contraction (airway area, %) via a direct inhibitory Emax model; the paper gives an EC50 of 2.3 nmol/L but the excerpts do not state Imax/Emax or the mechanism beyond inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Herbert_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

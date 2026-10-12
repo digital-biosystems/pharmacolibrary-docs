@@ -5,7 +5,7 @@
 
 # diltiazem — `Diltiazem_Hglund1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125), gpt-oss:120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record, built from the abstract alone, contains only a terminal half-life of 6.27 h and a 72% cumulative urinary excretion of radioactivity within 120 h for diltiazem — no volume or clearance. The three metabolites (N-demethyldiltiazem, deacetyldiltiazem, N-demethyldeacetyl­diltiazem) have no formation parameters, leaving them as unlinked metabolites with no path from the dose. A second reader also disputed the metabolism links and read the 72% and 6.27 h values as applying to a single 60 mg dose, while the record left those dose-specific fields empty. Extracted — diltiazem: t1/2z 6.27 h, fe 72 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has diltiazem, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has diltiazem, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -70,17 +70,25 @@ Höglund P et al., Pharmacokinetics of diltiazem and its m…, Therapeutic drug 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.125 (1/8 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.1 (1/10 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['diltiazem', 'n-demethyldiltiazem', 'metabolism'], ['diltiazem', 'deacetyldiltiazem', 'metabolism'], ['n-demethyldiltiazem', 'n-demethyldeacetyldiltiazem', 'metabolism'], ['deacetyldiltiazem', 'n-demethyldeacetyldiltiazem', 'metabolism']] | [['diltiazem', 'n-demethyldiltiazem', 'metabolism'], ['diltiazem', 'deacetyldiltiazem', 'metabolism'], ['diltiazem', 'n-demethyldeacetyldiltiazem', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[cumulative excretion of radioactivity in urine within 120 h after a single dose of 60 mg diltiazem]` | not captured | 72 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cumulative excretions of radioactivity in urine within 120 h]` | 72 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-life after a single dose of 60 mg diltiazem]` | not captured | 6.27 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-lives]` | 6.27 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | diltiazem | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | diltiazem | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [['diltiazem', 'n-demethyldiltiazem', 'metabolism'], ['diltiazem', 'deacetyldiltiazem', 'metabolism'], ['n-demethyldiltiazem', 'n-demethyldeacetyldiltiazem', 'metabolism'], ['deacetyldiltiazem', 'n-demethyldeacetyldiltiazem', 'metabolism']] | [['diltiazem', 'n-demethyldiltiazem', 'metabolism'], ['diltiazem', 'deacetyldiltiazem', 'metabolism'], ['diltiazem', 'n-demethyldeacetyldiltiazem', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[cumulative excretions of radioactivity in urine within 120 h]` | 72 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cumulative excretions of radioactivity in urine within 120 h]` | not captured | 72 | only_one_extracted |

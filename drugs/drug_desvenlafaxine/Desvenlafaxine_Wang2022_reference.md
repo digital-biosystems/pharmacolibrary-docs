@@ -5,7 +5,7 @@
 
 # desvenlafaxine — `Desvenlafaxine_Wang2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111), gpt-oss:120b (partly confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The paper reports CL/F, V/F, CLm/F (22.1 L/h) and Vm/F (238 L), all already adjusted for bioavailability, yet the record also carries an absolute bioavailability Fab of 0.048; applying both corrections violates apparent-parameter coherence. The record is also internally inconsistent: it is filed under desvenlafaxine while the measured compound is venlafaxine, and the metabolite clearance covariate is labelled 'θamisulpride on CLm/F' (0.593 L/h) despite no amesulpride in the model. A second reader disagreed on whether the bioavailability covariate (0.048) and the metabolite parameters CLm/F and Vm/F belong in the record, leaving those fields contested. Extracted — desvenlafaxine: CL/F 80.9 L/h, V/F 628 L, kabs 0.63 1/h, Fab 0.048, CLm/F 0.593 L/h; O-desmethyl venlafaxine: CLm/F 22.1 L/h, Vm/F 238 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 0.048, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has venlafaxine, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -95,17 +95,34 @@ Wang Z et al., Joint population pharmacokinetic modeli…, Frontiers in pharmaco
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.111 (2/18 fields) | 16 |
 | `gpt-oss:120b` | partly confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f]` | 80.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 80.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm/f]` | not captured | 22.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm/f]` | 22.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fp]` | not captured | 0.048 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fp]` | 0.048 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.63 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.63 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v m/f]` | not captured | 238 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v m/f]` | 238 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 628 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | not captured | 628 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θamisulpride on clm/f]` | not captured | 0.593 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θamisulpride on clm/f]` | 0.593 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | venlafaxine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | O-desmethyl venlafaxine | unknown | mismatch |
 | `gpt-oss:120b` | `model.bioavailability.theta` | 0.048 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clm/f]` | not captured | 22.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v m/f]` | not captured | 238 | only_one_extracted |

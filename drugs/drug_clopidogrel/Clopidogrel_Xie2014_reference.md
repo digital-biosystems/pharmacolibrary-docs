@@ -5,7 +5,7 @@
 
 # clopidogrel — `Clopidogrel_Xie2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.545), gpt-5.6-luna (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214), gpt-oss:120b (not confirmed, agreement 0.545), gpt-5.6-luna (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed 0/3</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The link from clopidogrel to its active metabolite uses K12, whose stated meaning is a first-order transfer from the central to the first peripheral compartment, not a metabolism rate, giving the dimension mismatch on a structural parameter. The metabolite is also listed with 0 compartments despite being assigned to the central compartment. A second reader disagreed on whether the parameter K(in) (4.29, dimensionless) exists and on whether the parent–metabolite metabolism link is present at all. Extracted — clopidogrel: k12 0.259 h(-1), CLm/F 179 L x h(-1), Vm/F 632 L; VASP-PRI: kel 4.29 dimensionless, E 0.664 dimensionless.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has clopidogrel → clopidogrel active metabolite (metabolism), the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has clopidogrel → clopidogrel active metabolite (metabolism), the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -77,19 +77,31 @@ Xie C et al., [Population pharmacokinetics and pharma…, Yao xue xue bao = Acta
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 3 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.214 (3/14 fields) | 11 |
 | `gpt-oss:120b` | not confirmed | 0.545 (6/11 fields) | 5 |
 | `gpt-5.6-luna` | not confirmed | 0.889 (8/9 fields) | 1 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-5.6-luna` | `model.links` | [['clopidogrel', 'clopidogrel active metabolite', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `model.links` | [['clopidogrel', 'clopidogrel active metabolite', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f]` | 179 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 179 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[e]` | 0.664 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[e]` | not captured | 0.664 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` | 0.259 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` | not captured | 0.259 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k]` | 4.29 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k]` | not captured | 4.29 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 632 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | not captured | 632 | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [['clopidogrel', 'clopidogrel active metabolite', 'metabolism']] | [] | mismatch |
 | `gpt-oss:120b` | `parameters[e]` | 0.664 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[e]` | not captured | 0.664 | only_one_extracted |

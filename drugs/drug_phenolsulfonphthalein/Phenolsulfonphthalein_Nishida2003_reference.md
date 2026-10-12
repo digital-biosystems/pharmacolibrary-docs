@@ -16,7 +16,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The phenolsulfonphthalein clearance (0.63 ml/min) and volume of distribution (20.4 ml) were judged physiologically implausible, indicating a unit or scale extraction error, so the record was rejected.**
+
+The reported total clearance of 0.63 ml/min and central volume of 20.4 ml for phenolsulfonphthalein in rats fall outside the accepted physiological window, consistent with a unit/scale extraction error. The unit 'min Ϫ1' for the elimination rate constant (0.033) could not be converted to SI, so the parameter reached the model builder without an SI value. The remaining parameters (AUC 1695.1 mg·min/ml, MRT 267.2 min, fu 39.1, biliary metabolite excretion 19.8) were extracted but could not resolve the implausibility of the clearance and volume values. Extracted — phenolsulfonphthalein: AUC 1.7e+03 mg·min/ml, MRT 267 min, kel 0.033 min Ϫ1, V 20.4 ml, CL 0.63 ml/min, fu 39.1, Ae 19.8.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Nishida K et al., Influence of liver disease on phenolsul…, Biological & pharmaceutical… (2003)

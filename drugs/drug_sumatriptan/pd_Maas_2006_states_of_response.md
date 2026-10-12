@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> No full text is available, so the specific mechanism by which sumatriptan concentration (in ng/ml) drives the categorical states of response is not described. The record cites an EC50 of 9 ng/ml, but no other potency or rate parameters are provided.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Maas_2006`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

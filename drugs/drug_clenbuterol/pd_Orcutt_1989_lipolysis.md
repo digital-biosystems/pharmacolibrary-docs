@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clenbuterol stimulates lipolysis rate in adipocytes from untreated mice in a direct Emax-type concentration-effect relationship, with an EC50 of 5 microM; the paper excerpts do not state Imax/Emax or a mechanism beyond stimulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Orcutt_1989`
 - **model family:** `emax`
 - **driver:** `not_resolved`

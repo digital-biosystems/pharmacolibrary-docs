@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Chloroform extract of C. nucifera cotyledon directly inhibits DPPH radical scavenging in a linear dose-response model with an EC50 of 1.47 mg/ml. The paper does not specify the underlying mechanism of radical scavenging, nor does it provide values for rate constants or maximum inhibition (Emax).
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nyayiru_2020`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`

@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
+**The paper reports none of the model's key parameters.**
+
+The values on this record come from other papers. Extracted — garadacimab: ? -5.41, ? 6.09, ? 35, ? 1, ? 1, ? 2, ? 60, ? 13, … (+6).
+
 Independently confirmed by `gpt-oss:120b`.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Garcia R et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2025)

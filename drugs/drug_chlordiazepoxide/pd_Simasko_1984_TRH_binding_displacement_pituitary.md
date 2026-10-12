@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Chlordiazepoxide displaces [3H](3MeHis2)TRH binding in pituitary tissue, described by a sigmoid Emax inhibition model with IC50 290 nM and a Hill coefficient of approximately 1.0; the paper excerpts do not state the mechanism beyond this direct concentration-dependent displacement.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Simasko_1984`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

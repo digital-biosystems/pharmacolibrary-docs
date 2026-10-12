@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pimavanserin concentrations (cited PK) act on the Sheehan Disability Scale score, but the paper excerpts provide no model details: the mechanism, effect direction, and potency/rate parameters are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Darwish_2023_2`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

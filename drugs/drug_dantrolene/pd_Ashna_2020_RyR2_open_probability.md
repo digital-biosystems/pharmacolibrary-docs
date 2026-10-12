@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dantrolene directly inhibits RyR2 open probability via a reversible, concentration-dependent mechanism that reduces mean open time and increases mean closed times. The paper reports an IC50 of 0.14 ± 0.01 mM, a Hill coefficient not significantly different to 1, and a maximal inhibition (Pmax) of approximately 50%.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ashna_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

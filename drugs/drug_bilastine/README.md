@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R06A&quot;,&quot;href&quot;:&quot;atc/R06A.md&quot;},{&quot;label&quot;:&quot;bilastine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bilastine_Togawa2016_caucasianb_5&quot;,&quot;label&quot;:&quot;Togawa_2016_caucasianb_5&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bilastine/Bilastine_Togawa2016_caucasianb_5.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bilastine_Togawa2016_japanesea&quot;,&quot;label&quot;:&quot;Togawa_2016_japanesea&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bilastine/Bilastine_Togawa2016_japanesea.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bilastine_Togawa2016_caucasianb_5&quot;,&quot;label&quot;:&quot;Togawa_2016_caucasianb_5&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bilastine/Bilastine_Togawa2016_caucasianb_5.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bilastine_Togawa2016_japanesea&quot;,&quot;label&quot;:&quot;Togawa_2016_japanesea&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bilastine/Bilastine_Togawa2016_japanesea.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # bilastine
 
@@ -27,15 +27,15 @@ Bilastine is an antihistamine used to treat allergic conditions such as allergic
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:41 | 4:31 | 2/0/1 | 0/0/2 | 0/0/0 | 81,614/10,588 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 22:41 | 4:31 | 0/0/3 | 0/0/2 | 0/0/0 | 81,614/10,588 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Togawa_2016_caucasianb_5](drugs/drug_bilastine/Bilastine_Togawa2016_caucasianb_5.md) | ▶ model + simulator | 2-compartment, oral | 5 | Togawa M et al., Pharmacokinetics, Pharmacodynamics and…, Clinical drug investigation (2016) | [10.1007/s40261-016-0447-2](https://doi.org/10.1007/s40261-016-0447-2) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Togawa_2016_japanesea](drugs/drug_bilastine/Bilastine_Togawa2016_japanesea.md) | ▶ model + simulator | 2-compartment, oral | 5 | Togawa M et al., Pharmacokinetics, Pharmacodynamics and…, Clinical drug investigation (2016) | [10.1007/s40261-016-0447-2](https://doi.org/10.1007/s40261-016-0447-2) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q63 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Kim_2021_reference](drugs/drug_bilastine/Bilastine_Kim2021_reference.md) | — | 3-compartment (no model) | 7 | Kim C et al., Application of a dual mechanistic appro…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12671](https://doi.org/10.1002/psp4.12671) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q63 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Kim_2021_reference](drugs/drug_bilastine/Bilastine_Kim2021_reference.md) | — | 3-compartment (no model) | 7 | Kim C et al., Application of a dual mechanistic appro…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12671](https://doi.org/10.1002/psp4.12671) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Togawa_2016_caucasianb_5](drugs/drug_bilastine/Bilastine_Togawa2016_caucasianb_5.md) | ▶ model + simulator | 2-compartment, oral | 5 | Togawa M et al., Pharmacokinetics, Pharmacodynamics and…, Clinical drug investigation (2016) | [10.1007/s40261-016-0447-2](https://doi.org/10.1007/s40261-016-0447-2) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Togawa_2016_japanesea](drugs/drug_bilastine/Bilastine_Togawa2016_japanesea.md) | ▶ model + simulator | 2-compartment, oral | 5 | Togawa M et al., Pharmacokinetics, Pharmacodynamics and…, Clinical drug investigation (2016) | [10.1007/s40261-016-0447-2](https://doi.org/10.1007/s40261-016-0447-2) |
 
 ## Pharmacodynamics (PD)
 
@@ -70,7 +70,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 2  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 3  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

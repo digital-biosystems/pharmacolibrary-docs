@@ -5,7 +5,7 @@
 
 # mesalazine — `Mesalazine_Cuffari2016_nonmem_estimates`
 
-> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167), gpt-oss:120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record defines 5-ASA with a metabolite Ac-5-ASA formed in the central compartment, but the simulation used a single-compartment enteral model rather than the required parent–metabolite structure. The model builder substituted F=1, Fm=1 and no molar correction, an apparent-parameterization assumption judged not acceptable. In addition, covariate effects such as the weight effects on clearance (0.75) and volume (1) were defined but only the reference individual was simulated, so those scenarios were not exercised. A second reader also disagreed on several extracted values, including the metabolite clearance CLm/F of 75.9 L/h and the renal clearance covariate forms. Extracted — mesalazine: CLR 1.01 L/h, CLm/F 75.9 L/h, V1/F 70.1 L, kabs 0.0207 h−1, tlag 4.31 h, Fab 0.413; Ac-5-ASA: CL/F 2.27 L/h, V1/F 5.31 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has mesalazine, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mesalazine, the second reading mesalamine; it also differs on 24 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -141,17 +141,43 @@ Cuffari C et al., Randomized clinical trial: pharmacokine…, Drug design, devel
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.167 (5/30 fields) | 25 |
 | `gpt-oss:120b` | not confirmed | 0.357 (10/28 fields) | 18 |
 
-<details><summary>18 field(s) a reader read differently</summary>
+<details><summary>43 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[alag1]` | not captured | 4.31 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag1]` | 4.31 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm/f]` | 75.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm/f]` | not captured | 75.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clnrm_f_wt]` | 0.75 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clr/f]` | not captured | 1.01 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clr/f]` | 1.01 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clr_f_wt]` | 0.75 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clrm/f].covariate_forms` | [] | ['power', 'power'] | mismatch |
+| `gpt-oss-120b` | `parameters[clrm_f_wt]` | 0.75 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f1]` | not captured | 0.413 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f1]` | 0.413 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka1]` | not captured | 0.0207 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka1]` | 0.0207 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_wt_power]` | not captured | 0.75 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_clm_f_wt_power]` | 0.75 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q351_wt_power]` | not captured | 0.75 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q79_wt_power]` | not captured | 0.75 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_f_wt_power]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_f_wt_power]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f]` | not captured | 70.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f]` | 70.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vcm/f].covariate_forms` | ['power'] | ['power', 'power'] | mismatch |
+| `gpt-oss-120b` | `parameters[vcm_f_wt]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | mesalazine | mesalamine | mismatch |
 | `gpt-oss:120b` | `parameters[clm/f]` | 75.9 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clm/f]` | not captured | 75.9 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clnrm_f_wt]` | 0.75 | not captured | only_one_extracted |
@@ -239,7 +265,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates/Mesalazine_Cuffari2016_nonmem_estimates_modelica.zip" download>Mesalazine_Cuffari2016_nonmem_estimates_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates/Mesalazine_Cuffari2016_nonmem_estimates_fmi.zip" download>Mesalazine_Cuffari2016_nonmem_estimates_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates/Mesalazine_Cuffari2016_nonmem_estimates_matlab.zip" download>Mesalazine_Cuffari2016_nonmem_estimates_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates/Mesalazine_Cuffari2016_nonmem_estimates_matlab_simbio.zip" download>Mesalazine_Cuffari2016_nonmem_estimates_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates/Mesalazine_Cuffari2016_nonmem_estimates_matlab_simbio.zip" download>Mesalazine_Cuffari2016_nonmem_estimates_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates/Mesalazine_Cuffari2016_nonmem_estimates_sbml.zip" download>Mesalazine_Cuffari2016_nonmem_estimates_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates/Mesalazine_Cuffari2016_nonmem_estimates_cellml.zip" download>Mesalazine_Cuffari2016_nonmem_estimates_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

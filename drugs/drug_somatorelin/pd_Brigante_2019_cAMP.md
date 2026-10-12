@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates an Emax-type model in which somatorelin is linked to intracellular cAMP increase after GHRH as a continuous, stimulation response, but no full text is available, so the paper's mechanism, potency values (EC50/Emax), and rate constants cannot be stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Brigante_2019`
 - **model family:** `emax`
 - **driver:** `not_resolved`

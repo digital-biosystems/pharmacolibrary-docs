@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentylenetetrazol (20 mg/kg) stimulated the measured optogenic photoparoxysmal discharge (oPD) threshold, reducing the I50 from a baseline of 16.4 levels to 14.5 levels. The paper does not specify the pharmacodynamic mechanism (e.g., Emax, IC50) or rate constants for this effect.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Klorig_2019`
 - **model family:** `unknown`
 - **driver:** `dose_only`

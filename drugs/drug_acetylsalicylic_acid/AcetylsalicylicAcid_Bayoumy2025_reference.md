@@ -5,7 +5,7 @@
 
 # acetylsalicylic acid — `AcetylsalicylicAcid_Bayoumy2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625), gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record reports CL/F 4.6 L/h, V/F 270.5 L and kabs 0.33 /h for acetylsalicylic acid, but the apparent-parameterization assumption (F=1, Fm=1, no molar correction) was judged not acceptable, and Tlag was defaulted rather than estimated. A second reader disagreed on several extracted values, reading 0.0125 and 0.75 where this record had none, 39 where it had 100, and 15 where it had none, so the numeric content is not settled. Extracted — acetylsalicylic acid: CL/F 4.6 L/h, V/F 270 L, kabs 0.33 /h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has none, the second reading 0.0125; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has none, the second reading 0.0125; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -65,17 +65,21 @@ Bayoumy AB et al., Population Pharmacokinetics Model of Th…, Clinical pharmaco
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.556 (5/9 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | not captured | 0.0125 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q312]` | 100 | 39 | mismatch |
+| `gpt-oss-120b` | `values[Q316]` | not captured | 15 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q22]` | not captured | 0.0125 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q312]` | 100 | 39 | mismatch |
 | `gpt-oss:120b` | `values[Q316]` | not captured | 15 | only_one_extracted |
@@ -138,7 +142,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Bayoumy2025_reference/AcetylsalicylicAcid_Bayoumy2025_reference_modelica.zip" download>AcetylsalicylicAcid_Bayoumy2025_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Bayoumy2025_reference/AcetylsalicylicAcid_Bayoumy2025_reference_fmi.zip" download>AcetylsalicylicAcid_Bayoumy2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Bayoumy2025_reference/AcetylsalicylicAcid_Bayoumy2025_reference_matlab.zip" download>AcetylsalicylicAcid_Bayoumy2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Bayoumy2025_reference/AcetylsalicylicAcid_Bayoumy2025_reference_matlab_simbio.zip" download>AcetylsalicylicAcid_Bayoumy2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Bayoumy2025_reference/AcetylsalicylicAcid_Bayoumy2025_reference_matlab_simbio.zip" download>AcetylsalicylicAcid_Bayoumy2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Bayoumy2025_reference/AcetylsalicylicAcid_Bayoumy2025_reference_sbml.zip" download>AcetylsalicylicAcid_Bayoumy2025_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Bayoumy2025_reference/AcetylsalicylicAcid_Bayoumy2025_reference_cellml.zip" download>AcetylsalicylicAcid_Bayoumy2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

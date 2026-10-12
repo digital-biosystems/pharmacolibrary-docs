@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Plasma remoxipride (μM) stimulates prolactin (PRL) release via D2 antagonism, described by a pool (tolerance) model with an Emax drug effect on PRL release: Emax,rem,prl = 13.3 and EC50,rem,prl = 0.064 μM, with PRL baseline 7.3 ng/ml, synthesis rate k synth,prl = 41.7 ng/ml/h, release rate k rel,prl = 0.35 h−1, degradation rate k degr,prl = 5.72 h−1, and a pool feedback effect (E max,pf,prl = 3.47, EC50,pf,prl = 12.4 ng/ml).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2017_2`
 - **model family:** `tolerance`
 - **driver:** `cited_pk`

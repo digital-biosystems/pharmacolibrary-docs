@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentagastrin stimulates aminopyrine accumulation in parietal cells (an index of acid production), described by an Emax-type concentration-response relationship with an EC50 of 5.9 ± 4.2 × 10⁻⁸ M; at 10⁻⁶ M pentagastrin the steady-state response was 3.0 ± 1.5 pmol AP per 10⁴ parietal cells. The excerpts provide no further mechanistic detail (e.g., no Imax, kin, kout, or effect-compartment parameters).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Norberg_1986`
 - **model family:** `emax`
 - **driver:** `not_resolved`

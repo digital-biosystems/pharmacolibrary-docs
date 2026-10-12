@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;flunitrazepam&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/&quot;},{&quot;label&quot;:&quot;Bareggi_1998 \u00b7 PD prose delayed recall impairment (Z-score)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flunitrazepam_GmezSegura2022_reference&quot;,&quot;label&quot;:&quot;G\u00f3mez-Segura_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/Flunitrazepam_GmezSegura2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flunitrazepam_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/Flunitrazepam_Han2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flunitrazepam_GmezSegura2022_reference&quot;,&quot;label&quot;:&quot;G\u00f3mez-Segura_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/Flunitrazepam_GmezSegura2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flunitrazepam_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/Flunitrazepam_Han2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # prose delayed recall impairment (Z-score) — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,6 +17,10 @@
 **As extracted:** Flunitrazepam (concentrations from the PK model of Franken_2016) drives prose delayed recall impairment (Z-score) (in Z-score): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
+
+> Flunitrazepam plasma concentrations (ng/ml) were linked to prose delayed recall impairment (Z-score) with an inhibitory Emax model; the paper reports an EC50 of 6.1 ng/ml, but no full text is available to confirm the mechanism or other parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Bareggi_1998`
 - **model family:** `emax`

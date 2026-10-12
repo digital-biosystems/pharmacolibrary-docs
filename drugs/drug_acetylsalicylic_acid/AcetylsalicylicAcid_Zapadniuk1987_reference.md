@@ -5,7 +5,7 @@
 
 # acetylsalicylic acid — `AcetylsalicylicAcid_Zapadniuk1987_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556), gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -71,17 +71,22 @@ Zapadniuk VI et al., [Age-related characteristics of the pha…, Farmakologiia i
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl m /f]` | 2.76 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.33 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag 0]` | 2.81 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vtfv]` | 2660.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life in elderly patients]` | 6.19 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life in elderly patients]` | not captured | 6.19 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | acetylsalicylic_acid | unknown | mismatch |

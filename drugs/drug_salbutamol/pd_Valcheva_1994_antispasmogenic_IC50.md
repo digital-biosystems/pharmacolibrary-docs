@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Salbutamol concentrations (M) inhibit histamine-induced guinea pig tracheal contraction, with an antispasmogenic IC50 of 7.94 x 10(-8) M; the paper excerpts do not state the mechanism or any rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Valcheva_1994`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

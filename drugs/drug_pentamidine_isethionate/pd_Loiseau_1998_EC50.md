@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not state a mechanism; it reports a sigmoid Emax-type concentration–effect relationship in which the organometallic pentamidine derivative Ir(I)-COD-pentamidine tetraphenylborate kills infective larvae of Molinema dessetae, with an EC50 of 6 ± 1 microM. No other potency or rate parameters are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Loiseau_1998`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

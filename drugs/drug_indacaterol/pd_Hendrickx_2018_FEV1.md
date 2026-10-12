@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;indacaterol&quot;,&quot;href&quot;:&quot;drugs/drug_indacaterol/&quot;},{&quot;label&quot;:&quot;Hendrickx_2018 \u00b7 PD Placebo-corrected change in trough FEV1 from baseline (COPD patients, beta-2 agonist class)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Indacaterol_Jiang2015_reference&quot;,&quot;label&quot;:&quot;Jiang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indacaterol/Indacaterol_Jiang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Indacaterol_Jiang2015_reference&quot;,&quot;label&quot;:&quot;Jiang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indacaterol/Indacaterol_Jiang2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Placebo-corrected change in trough FEV1 from baseline (COPD patients, beta-2 agonist class) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 0.70).">rat</span>
@@ -19,6 +19,10 @@
 **As extracted:** Indacaterol (concentrations from the PK model of Bartels_2021) drives Placebo-corrected change in trough FEV1 from baseline (COPD patients, beta-2 agonist class) (in mL): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
+
+> Indacaterol's placebo-corrected change in trough FEV1 (mL) in COPD patients was linked by a direct Emax-type relationship to predicted total lung concentrations at trough (nM) from a human compartmental PK model, with potency normalization by dividing lung concentrations by the in vivo guinea pig total lung IC50; the paper does not report indacaterol-specific Emax, IC50, ER50, or rate parameters, and the stated ER50 range (45–80% of guinea pig IC50) applies to muscarinic antagonists and MABAs, not explicitly to beta-2 agonists.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Hendrickx_2018`
 - **model family:** `emax`

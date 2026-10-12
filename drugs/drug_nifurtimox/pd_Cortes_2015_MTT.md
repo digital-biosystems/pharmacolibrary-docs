@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;nifurtimox&quot;,&quot;href&quot;:&quot;drugs/drug_nifurtimox/&quot;},{&quot;label&quot;:&quot;Cortes_2015 \u00b7 PD T. cruzi trypomastigote viability (MTT reduction)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nifurtimox_Boberg2025_reference&quot;,&quot;label&quot;:&quot;Boberg_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nifurtimox/Nifurtimox_Boberg2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nifurtimox_Boberg2025_reference&quot;,&quot;label&quot;:&quot;Boberg_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nifurtimox/Nifurtimox_Boberg2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # T. cruzi trypomastigote viability (MTT reduction) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
@@ -19,6 +19,10 @@
 **As extracted:** Nifurtimox (concentrations from the PK model of Boberg_2025) drives T. cruzi trypomastigote viability (MTT reduction) (in μM): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> Nifurtimox concentrations (μM) inhibit T. cruzi Y strain trypomastigote viability measured by MTT reduction after 24 h exposure, described by a sigmoid Emax (concentration-response) relationship with EC50 = 4.1 ± 0.9 μM (abstract states 4.1 ± 0.6 μM); the paper does not state a mechanistic PD model (e.g., kin/kout or effect compartment) for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Cortes_2015`
 - **model family:** `sigmoid_emax`

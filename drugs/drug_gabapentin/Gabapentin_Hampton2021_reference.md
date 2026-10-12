@@ -5,7 +5,7 @@
 
 # gabapentin — `Gabapentin_Hampton2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.13), gpt-oss:120b (not confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The clearance for gabapentin is recorded as 1.2 with unit 'kg*min', which is not a valid unit for a clearance parameter and fails the dimensional check on structural parameters. The record was also built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. A second reader returned null for all extracted values, including clearance 1.2, Vss 594 ml/kg, terminal half-life 360 min, and bioavailability 47%, leaving the extraction unconfirmed. Extracted — gabapentin: V 170 ml/kg, CL 1.2 kg*min, Vss 594 ml/kg, t1/2z 360 min, t1/2ka 58 min, Cmax 9.16e+03 ng/ml, tmax 194 min, Fab 47 %, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 47, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gabapentin, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -81,17 +81,38 @@ Hampton CE et al., Pharmacokinetics of oral and compounded…, Journal of veteri
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.13 (3/23 fields) | 20 |
 | `gpt-oss:120b` | not confirmed | 0.267 (4/15 fields) | 11 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>31 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption half-life]` | 58 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption half-life]` | not captured | 58 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[calculated volume of distribution at steady-state]` | 594 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[calculated volume of distribution at steady-state]` | not captured | 594 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 1.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | 1.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[estimated maximal plasma concentration]` | 9155 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[estimated maximal plasma concentration]` | not captured | 9155 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[estimated oral bioavailability]` | not captured | 47 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k01]` | 5.24 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability]` | 47 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-life]` | 360 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-life]` | not captured | 360 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time to reach maximal plasma concentration]` | 194 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time to reach maximal plasma concentration]` | not captured | 194 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.45 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of the central compartment]` | 170 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of the central compartment]` | not captured | 170 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | gabapentin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | gabapentin | unknown | mismatch |
 | `gpt-oss:120b` | `model.bioavailability.theta` | 47 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption half-life]` | 58 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[calculated volume of distribution at steady-state]` | 594 | not captured | only_one_extracted |

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;sodium nitrite&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_nitrite/&quot;},{&quot;label&quot;:&quot;Vega-Villa_2013 \u00b7 PD methemoglobin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumNitrite_Grimm2023_reference&quot;,&quot;label&quot;:&quot;Grimm_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumNitrite_Grimm2023_reference&quot;,&quot;label&quot;:&quot;Grimm_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # methemoglobin — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,6 +17,10 @@
 **As extracted:** Nitrite (concentrations from this paper's PK model) drives methemoglobin (in %): indirect response — drug stimulates the loss of methemoglobin.
 
 **Model:** No model was generated from this record.
+
+> Sodium nitrite (plasma/RBC nitrite, µmol/l) drives methemoglobin (MetHb, %) formation via oxidation of oxyhemoglobin (kNO3_R = 5.91E-06 min−1·µmol−1) and deoxyhemoglobin (kNO_R = 1.42E-04 min−1·µmol−1), with NO–hemoglobin interaction terms (K_HbNO = 2.86E-05 min−2·µmol−1); MetHb is converted back by methemoglobin reductase (kMR(t)), whose activity turns over with loss rate kDEG = 0.016 min−1 and whose production is linearly stimulated by MetHb with slope S_MetHb = 0.045, an indirect-response mechanism explaining the less-than-proportional MetHb rise at higher nitrite doses.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Vega-Villa_2013`
 - **model family:** `indirect_response_iv`

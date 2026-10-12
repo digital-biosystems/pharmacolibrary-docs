@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> No specific model mechanism (e.g., direct Emax, effect compartment, or production/elimination) is described in the provided excerpts, which contain no text. The record reports parameters EC50 = 3.3 and Emax = 0.74 for sumatriptan, but units and the mechanistic relationship between drug concentration and headache relief are not stated.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Maas_2006_2`
 - **model family:** `categorical`
 - **driver:** `cited_pk`

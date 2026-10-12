@@ -19,7 +19,7 @@
 
 **Model:** No model was generated from this record.
 
-> Imipramine reversibly inhibits HERG tail current (I_HERG) in HERG-transfected CHO cells with a sigmoid Emax relationship, IC50 3.4±0.4 mM and Hill coefficient 1.17±0.03 (n=5); the paper does not give an explicit PD model but suggests block of resting and open channels rather than inactivated-state binding.
+> Imipramine reversibly inhibits HERG tail current (I_HERG) in HERG-transfected CHO cells with a sigmoid Emax relationship, IC50 = 3.4±0.4 mM and Hill coefficient 1.17±0.03 (n=5); the block appears to involve binding to resting and open channels, with no effect-compartment or kinetic parameters reported.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

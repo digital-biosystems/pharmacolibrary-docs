@@ -18,7 +18,7 @@
 
 **Model:** No model was generated from this record.
 
-> Duloxetine concentrations (PK from Chen_2024) were linked to the categorical proportion of patients achieving adequate pain relief (a two-point decrease from baseline); the paper excerpts provide no mechanism, effect form, or potency/rate values.
+> Duloxetine concentrations (PK from Chen_2024) were linked to the categorical proportion of patients achieving adequate pain relief (a two-point decrease from baseline); the excerpts provide no mechanism, effect form, or parameter values.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

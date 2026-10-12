@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lindane inhibits glycine-induced 36Cl- influx via the glycine receptor, with an IC50 of 5.0 microM; the paper excerpts do not state the mechanism or model form beyond this potency value.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vale_2003`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

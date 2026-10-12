@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a full text or explicit mechanism description, but the record indicates a sigmoid Emax model where chlorcyclizine concentrations (in µM) stimulate QT prolongation. The relative EC50 is reported as 16–20 µM.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_1998`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Gramicidin S dose (µg) inhibits relative SARS-CoV-2 viral RNA (%) via a sigmoid Emax model; the paper reports an EC50 of 1.571 µg but does not state Imax, Emax, gamma, or a mechanism beyond suggesting gramicidin acts as a viral replication inhibitor.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Enayathullah_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

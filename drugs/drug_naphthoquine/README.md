@@ -14,14 +14,6 @@ Naphthoquine is an antimalarial drug used in combination with artemisinin deriva
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q27290230](https://www.wikidata.org/wiki/Q27290230) and the WHO ATC classification; not checked by a person.</small>
 
-## Molecules and molar masses
-
-> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
-
-| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
-|---|---|---|---|---|---|---|
-| naphthoquine | parent | 409.96 | C24H28ClN3O | DrugBank | — | Ali_2022, Batty_2012 |
-
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
@@ -32,8 +24,8 @@ Naphthoquine is an antimalarial drug used in combination with artemisinin deriva
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Ali_2022_reference](drugs/drug_naphthoquine/Naphthoquine_Ali2022_reference.md) | — | 1-compartment (no model) | 1 | Ali AM et al., Population Pharmacokinetics of Antimala…, Antimicrobial agents and ch… (2022) | [10.1128/aac.01696-21](https://doi.org/10.1128/aac.01696-21) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Batty_2012_reference](drugs/drug_naphthoquine/Naphthoquine_Batty2012_reference.md) | — | 1-compartment (no model) | 7 | Batty KT et al., Artemisinin-naphthoquine combination th…, Antimicrobial agents and ch… (2012) | [10.1128/AAC.06250-11](https://doi.org/10.1128/AAC.06250-11) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Ali_2022_reference](drugs/drug_naphthoquine/Naphthoquine_Ali2022_reference.md) | — | — (no model) | 0 | Ali AM et al., Population Pharmacokinetics of Antimala…, Antimicrobial agents and ch… (2022) | [10.1128/aac.01696-21](https://doi.org/10.1128/aac.01696-21) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Batty_2012_reference](drugs/drug_naphthoquine/Naphthoquine_Batty2012_reference.md) | — | — (no model) | 0 | Batty KT et al., Artemisinin-naphthoquine combination th…, Antimicrobial agents and ch… (2012) | [10.1128/AAC.06250-11](https://doi.org/10.1128/AAC.06250-11) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

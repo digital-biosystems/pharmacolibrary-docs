@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Antazoline hydrochloride concentration (μmol/L) inhibits extracellular HBV DNA in HepAD38 cells via an Emax (inhibitory) model; the paper reports an EC50 of 2.910 μmol/L, but no excerpts are available to confirm the mechanism or other parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Niflumic acid (niflumic_acid) stimulates the peak amplitude of a3b4 nAChR-mediated inward currents by a direct interaction with the receptor, as indicated by the Emax model fit of concentration-dependent potentiation. The paper states an EC50 of 30 pM, a slope factor of 0.88, and a maximum response amplitude of 159% relative to control, while noting that the mechanism is most likely a direct interaction but does not explicitly specify the pharmacodynamic differential equation (e.g., production/elimination rate constants).
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zwart_1995`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

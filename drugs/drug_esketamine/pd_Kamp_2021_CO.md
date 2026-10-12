@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> S-ketamine stimulates cardiac output via a linear proportional effect model that includes an effect compartment with an equilibration half-life of 2.28 min and a C25 (concentration causing 25% increase) of 1.68 nmol ml⁻¹. The model also incorporates a trend term of 0.38 L (300 min)⁻¹.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kamp_2021`
 - **model family:** `linear`
 - **driver:** `not_resolved`

@@ -4,7 +4,7 @@
 
 # inebilizumab — `Inebilizumab_Yan2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.655). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Vmax (832) has a daily rate unit that could not be converted, causing a dimension mismatch that rejected the inebilizumab model.**
+
+The record lists Vmax with a value of 832 and a unit of µg/day. Because this specific unit was unavailable for conversion to standard SI units, the parameter lacked a valid physical value for dimensional analysis. This incompatibility triggered a structural parameter check failure, resulting in the rejection of the entire pharmacokinetic record. Extracted — inebilizumab: CL 188 mL/day, V1 2.95e+03 mL, Q 363 mL/day, V2 2.57e+03 mL, Vmax 832 µg/day, kel 0.00294 /day, Km 5.89 µg/mL.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[km].covariate_forms`: this record has ['linear_fractional'], the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Yan L et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2022)
@@ -72,6 +80,36 @@ Yan L et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokineti
 - LLM selected parameter table(s) 6
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.655 (19/29 fields) | 10 |
+
+<details><summary>10 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[km].covariate_forms` | ['linear_fractional'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_weight]` | not captured | 0.57 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_km_weight]` | 0.57 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q321_weight]` | 0.40 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q49_weight]` | not captured | 0.84 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q76_weight]` | not captured | 0.39 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q900_weight]` | 0.84 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v2_weight]` | not captured | 0.40 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[weight_on_vca]` | 0.39 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

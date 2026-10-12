@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;mirogabalin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mirogabalin_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mirogabalin/Mirogabalin_Li2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mirogabalin_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mirogabalin/Mirogabalin_Li2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # mirogabalin
 
@@ -28,14 +28,14 @@ Mirogabalin is a gabapentinoid drug developed as an analgesic for neuropathic pa
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:27 | 1:55 | 1/1/0 | 1/0/0 | 0/0/0 | 135,601/12,087 | einfracz / qwen3.8-27b | 6 | 2/5 | 6/0 | 0 |
+| 2026-10-07 06:27 | 1:55 | 0/1/1 | 1/0/0 | 0/0/0 | 135,601/12,087 | einfracz / qwen3.8-27b | 6 | 2/5 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Li_2023_reference](drugs/drug_mirogabalin/Mirogabalin_Li2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Li Y et al., Safety, Tolerability and Pharmacokineti…, Advances in therapy (2023) | [10.1007/s12325-022-02424-7](https://doi.org/10.1007/s12325-022-02424-7) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yin_2016_reference](drugs/drug_mirogabalin/Mirogabalin_Yin2016_reference.md) | — | parent + metabolite (no model) | 3 | Yin OQ et al., Population pharmacokinetic modeling and…, Journal of clinical pharmac… (2016) | [10.1002/jcph.584](https://doi.org/10.1002/jcph.584) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Li_2023_reference](drugs/drug_mirogabalin/Mirogabalin_Li2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Li Y et al., Safety, Tolerability and Pharmacokineti…, Advances in therapy (2023) | [10.1007/s12325-022-02424-7](https://doi.org/10.1007/s12325-022-02424-7) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yin_2016_reference](drugs/drug_mirogabalin/Mirogabalin_Yin2016_reference.md) | — | parent + metabolite (no model) | 3 | Yin OQ et al., Population pharmacokinetic modeling and…, Journal of clinical pharmac… (2016) | [10.1002/jcph.584](https://doi.org/10.1002/jcph.584) |
 
 ## Pharmacodynamics (PD)
 
@@ -63,7 +63,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 18 matched, 18 returned
 - **screened:** 5  ·  **relevant:** 4
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

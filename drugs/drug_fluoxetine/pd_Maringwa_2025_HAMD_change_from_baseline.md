@@ -18,7 +18,7 @@
 
 **Model:** No model was generated from this record.
 
-> In an MBMA of HAMD change from baseline, fluoxetine (20, 40, 60 mg/day) showed a constant additive drug effect relative to placebo (constant shift −4.41) rather than a dose–response, with the drug effect scaling with mean baseline HAMD score (multiplicative factor 0.0986) and a typical placebo response of −8.0; no mechanism or potency parameters (Imax, IC50, EC50, kin, kout, ke0) are given.
+> In the model-based meta-analysis, fluoxetine doses (20, 40, 60 mg/day) act on the change from baseline in HAMD score via a constant additive drug effect relative to placebo (constant shift −4.41), with the drug effect scaled by mean baseline HAMD score (multiplicative factor 0.0986) and a typical placebo response of −8.0; no concentration–response, Emax, or potency parameters (IC50/EC50/kin/kout/ke0) are given for fluoxetine, and no mechanistic PD pathway beyond this additive dose effect is described.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

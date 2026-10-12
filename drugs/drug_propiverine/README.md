@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Sugiyama_2005_VUIc](drugs/drug_propiverine/pd_Sugiyama_2005_VUIc.md) | Volume at first involuntary contraction ← propiverine · direct sigmoid Emax (Hill) effect | — | Sugiyama T et al., [Pharmacological evaluation of efficacy…, Nihon Hinyokika Gakkai zass… (2005) | [10.5980/jpnjurol1989.96.670](https://doi.org/10.5980/jpnjurol1989.96.670) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Sugiyama_2005_VUIc](drugs/drug_propiverine/pd_Sugiyama_2005_VUIc.md) | Volume at first involuntary contraction ← propiverine · direct sigmoid Emax (Hill) effect | — | Sugiyama T et al., [Pharmacological evaluation of efficacy…, Nihon Hinyokika Gakkai zass… (2005) | [10.5980/jpnjurol1989.96.670](https://doi.org/10.5980/jpnjurol1989.96.670) |
 
 ## ADME sites
 

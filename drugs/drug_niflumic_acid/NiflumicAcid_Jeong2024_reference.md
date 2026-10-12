@@ -4,7 +4,7 @@
 
 # niflumic acid — `NiflumicAcid_Jeong2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.529). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The niflumic acid metabolite is unlinked from morningumate, and the absorption rate constant has units of L/h instead of 1/h.**
+
+The model structure lists a metabolism link from morningumate to niflumic acid, but the link parameter is marked as none, leaving the parent compound unreachable. The absorption rate constant is assigned a value of 9.89 with units of L/h, conflicting with its definition as a rate constant. Additionally, the steady-state concentration ratio parameter carries units of mL/h, which could not be converted to SI. Extracted — niflumic acid: V1/F 111 L, CL/F 10.4 L/h, V2/F 1e+04 L, Css_ratio 378 mL/h, kabs 9.89 L/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has morningumate, the second reading morni umate; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Jeong SH et al., Modeling population pharmacokinetics of…, Naunyn-Schmiedeberg's archi… (2024)
@@ -80,6 +88,34 @@ Jeong SH et al., Modeling population pharmacokinetics of…, Naunyn-Schmiedeberg
 - LLM selected parameter table(s) 1
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.529 (9/17 fields) | 8 |
+
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['morningumate', 'niflumic acid', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[dv p /fdbmi]` | not captured | 2.37 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvcl p /f]` | 378.36 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvk a3]` | not captured | 23.71 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvv c /f].parameter_id` | Q290 | Q76 | mismatch |
+| `gpt-oss-120b` | `parameters[ε]` | 0.30 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | morningumate | morni umate | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | morningumate | morni umate | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

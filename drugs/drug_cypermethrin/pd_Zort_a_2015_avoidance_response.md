@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism; cypermethrin dose (mg kg-1) stimulates the avoidance response, with an AC50 of 29 mg kg-1.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zortéa_2015`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

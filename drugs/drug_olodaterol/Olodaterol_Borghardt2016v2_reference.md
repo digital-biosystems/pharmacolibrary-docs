@@ -4,7 +4,7 @@
 
 # olodaterol — `Olodaterol_Borghardt2016v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The olodaterol record was rejected because the volume of distribution of 0.178 L is physiologically implausible, indicating a unit or scale extraction error, and the record was built from the paper's abstract only.**
+
+The parameter labelled 'ε, L' was taken as the volume of distribution with a value of 0.178 L, a magnitude far outside the physiological window for olodaterol, which triggered the rejection for implausible clearance/volume. Because only the abstract was read, the reported summary statistics stood in for a fitted model, so the value may reflect a misread scale or symbol rather than a true volume estimate. The other abstract-derived parameters (bioavailability 48.7%, absorption half-life 18.5 h) were not flagged. Extracted — olodaterol: Fab 48.7 %, t1/2ka 18.5 h, V 0.178 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has olodaterol, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Borghardt JM et al., Model-based evaluation of pulmonary pha…, British journal of clinical… (2016)
@@ -61,6 +69,35 @@ Borghardt JM et al., Model-based evaluation of pulmonary pha…, British journal
 - no GROBID TEI available — transcribed from abstract in Borghardt_2016_2_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | not captured | 48.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption half-life of slow fraction in asthma]` | not captured | 18.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption half-life]` | 18.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fraction of pbio characterized by slowest process in healthy volunteers]` | not captured | 74.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pbio]` | 48.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pulmonary bioavailable fraction (pbio) in asthma]` | not captured | 48.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ε]` | 0.178 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | olodaterol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | olodaterol | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

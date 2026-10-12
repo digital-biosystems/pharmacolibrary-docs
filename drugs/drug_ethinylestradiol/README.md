@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G03A&quot;,&quot;href&quot;:&quot;atc/G03A.md&quot;},{&quot;label&quot;:&quot;ethinylestradiol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ethinylestradiol_Trujillode2014_reference&quot;,&quot;label&quot;:&quot;Trujillo-de_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethinylestradiol/Ethinylestradiol_Trujillode2014_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ethinylestradiol_Trujillode2014_reference&quot;,&quot;label&quot;:&quot;Trujillo-de_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethinylestradiol/Ethinylestradiol_Trujillode2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # ethinylestradiol
 
@@ -33,14 +33,14 @@ Ethinylestradiol is an estrogen used mainly in combined birth control pills, and
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Trujillo-de_2014_reference](drugs/drug_ethinylestradiol/Ethinylestradiol_Trujillode2014_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Trujillo-de Santiago G et al., Mathematical modeling of the release of…, Iranian journal of pharmace… (2014) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Reif_2013_reference](drugs/drug_ethinylestradiol/Ethinylestradiol_Reif2013_reference.md) | — | 1-compartment (no model) | 9 | Reif S et al., Characterisation of the pharmacokinetic…, The journal of family plann… (2013) | [10.1136/jfprhc-2012-100397](https://doi.org/10.1136/jfprhc-2012-100397) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed</span> | [Trujillo-de_2014_reference](drugs/drug_ethinylestradiol/Ethinylestradiol_Trujillode2014_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Trujillo-de Santiago G et al., Mathematical modeling of the release of…, Iranian journal of pharmace… (2014) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Reif_2013_reference](drugs/drug_ethinylestradiol/Ethinylestradiol_Reif2013_reference.md) | — | 1-compartment (no model) | 9 | Reif S et al., Characterisation of the pharmacokinetic…, The journal of family plann… (2013) | [10.1136/jfprhc-2012-100397](https://doi.org/10.1136/jfprhc-2012-100397) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Rose_2002_Vtg](drugs/drug_ethinylestradiol/pd_Rose_2002_Vtg.md) | vitellogenin (Vtg) ← 17alpha-ethinylestradiol · categorical (graded) response model | — | Rose J et al., Vitellogenin induction by 17beta-estrad…, Comparative biochemistry an… (2002) | [10.1016/s1532-0456(02)00035-2](https://doi.org/10.1016/s1532-0456(02)00035-2) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Rose_2002_Vtg](drugs/drug_ethinylestradiol/pd_Rose_2002_Vtg.md) | vitellogenin (Vtg) ← 17alpha-ethinylestradiol · categorical (graded) response model | — | Rose J et al., Vitellogenin induction by 17beta-estrad…, Comparative biochemistry an… (2002) | [10.1016/s1532-0456(02)00035-2](https://doi.org/10.1016/s1532-0456(02)00035-2) |
 
 ## ADME sites
 

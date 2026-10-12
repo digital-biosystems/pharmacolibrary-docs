@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;sitafloxacin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sitafloxacin_Paiboonvong2025_reference&quot;,&quot;label&quot;:&quot;Paiboonvong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sitafloxacin/Sitafloxacin_Paiboonvong2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sitafloxacin_Paiboonvong2025_reference&quot;,&quot;label&quot;:&quot;Paiboonvong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sitafloxacin/Sitafloxacin_Paiboonvong2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # sitafloxacin
 
@@ -27,20 +27,20 @@ Sitafloxacin is a fluoroquinolone antibacterial investigated for treating bacter
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:21 | 19:52 | 1/0/1 | 1/0/0 | 0/0/0 | 90,109/3,459 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
+| 2026-10-07 12:21 | 19:52 | 0/0/2 | 1/0/0 | 0/0/0 | 90,109/3,459 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Paiboonvong_2025_reference](drugs/drug_sitafloxacin/Sitafloxacin_Paiboonvong2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 (+1 cov.) | Paiboonvong T et al., Population Pharmacokinetics and Pharmac…, Pharmacology research & per… (2025) | [10.1002/prp2.70081](https://doi.org/10.1002/prp2.70081) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Tanigawara_2013_reference](drugs/drug_sitafloxacin/Sitafloxacin_Tanigawara2013_reference.md) | — | 1-compartment (no model) | 2 | Tanigawara Y et al., Population pharmacokinetics and pharmac…, Journal of infection and ch… (2013) | [10.1007/s10156-013-0580-2](https://doi.org/10.1007/s10156-013-0580-2) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.765). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Paiboonvong_2025_reference](drugs/drug_sitafloxacin/Sitafloxacin_Paiboonvong2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 (+1 cov.) | Paiboonvong T et al., Population Pharmacokinetics and Pharmac…, Pharmacology research & per… (2025) | [10.1002/prp2.70081](https://doi.org/10.1002/prp2.70081) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Tanigawara_2013_reference](drugs/drug_sitafloxacin/Sitafloxacin_Tanigawara2013_reference.md) | — | 1-compartment (no model) | 2 | Tanigawara Y et al., Population pharmacokinetics and pharmac…, Journal of infection and ch… (2013) | [10.1007/s10156-013-0580-2](https://doi.org/10.1007/s10156-013-0580-2) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Guo_2022_killing_effect](drugs/drug_sitafloxacin/pd_Guo_2022_killing_effect.md) | killing effect ← sitafloxacin · direct sigmoid Emax (Hill) effect | — | Guo S et al., Sitafloxacin pharmacokinetics/pharmacod…, The Journal of antimicrobia… (2022) | [10.1093/jac/dkac365](https://doi.org/10.1093/jac/dkac365) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Guo_2022_killing_effect](drugs/drug_sitafloxacin/pd_Guo_2022_killing_effect.md) | killing effect ← sitafloxacin · direct sigmoid Emax (Hill) effect | — | Guo S et al., Sitafloxacin pharmacokinetics/pharmacod…, The Journal of antimicrobia… (2022) | [10.1093/jac/dkac365](https://doi.org/10.1093/jac/dkac365) |
 
 ## ADME sites
 
@@ -60,7 +60,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 2  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

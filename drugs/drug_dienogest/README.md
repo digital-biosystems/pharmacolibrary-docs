@@ -28,8 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Barra_2018_pain_associated_to_endometriosis](drugs/drug_dienogest/pd_Barra_2018_pain_associated_to_endometriosis.md) | pain associated to endometriosis ← dienogest · inhibition effect | — | Barra F et al., Current understanding on pharmacokineti…, Expert opinion on drug meta… (2018) | [10.1080/17425255.2018.1461840](https://doi.org/10.1080/17425255.2018.1461840) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jensen_2023_progestin_serum_concentrations](drugs/drug_dienogest/pd_Jensen_2023_progestin_serum_concentrations.md) | progestin serum concentrations ← dienogest · model not identified | — | Jensen JT et al., Development and validation of an expand…, Contraception (2023) | [10.1016/j.contraception.2023.110130](https://doi.org/10.1016/j.contraception.2023.110130) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Barra_2018_pain_associated_to_endometriosis](drugs/drug_dienogest/pd_Barra_2018_pain_associated_to_endometriosis.md) | pain associated to endometriosis ← dienogest · inhibition effect | — | Barra F et al., Current understanding on pharmacokineti…, Expert opinion on drug meta… (2018) | [10.1080/17425255.2018.1461840](https://doi.org/10.1080/17425255.2018.1461840) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Jensen_2023_progestin_serum_concentrations](drugs/drug_dienogest/pd_Jensen_2023_progestin_serum_concentrations.md) | progestin serum concentrations ← dienogest · model not identified | — | Jensen JT et al., Development and validation of an expand…, Contraception (2023) | [10.1016/j.contraception.2023.110130](https://doi.org/10.1016/j.contraception.2023.110130) |
 
 ## ADME sites
 

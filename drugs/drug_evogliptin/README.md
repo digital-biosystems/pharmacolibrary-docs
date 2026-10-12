@@ -33,13 +33,13 @@ Evogliptin is a DPP-4 inhibitor studied for lowering blood glucose in diabetes. 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.083). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Kim_2025_reference](drugs/drug_evogliptin/Evogliptin_Kim2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+4 cov.) | Kim B et al., Population pharmacokinetic and pharmaco…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13263](https://doi.org/10.1002/psp4.13263) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.65), gpt-oss:120b (not confirmed, agreement 0.083). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Kim_2025_reference](drugs/drug_evogliptin/Evogliptin_Kim2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+4 cov.) | Kim B et al., Population pharmacokinetic and pharmaco…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13263](https://doi.org/10.1002/psp4.13263) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Kim_2025_DPP_4](drugs/drug_evogliptin/pd_Kim_2025_DPP_4.md) | DPP-4 activity ← evogliptin · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Kim B et al., Population pharmacokinetic and pharmaco…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13263](https://doi.org/10.1002/psp4.13263) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span> | [Kim_2025_DPP_4](drugs/drug_evogliptin/pd_Kim_2025_DPP_4.md) | DPP-4 activity ← evogliptin · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Kim B et al., Population pharmacokinetic and pharmaco…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13263](https://doi.org/10.1002/psp4.13263) |
 
 ## ADME sites
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methacholine concentration (log M) stimulates contraction of caudodorsal small pulmonary arteries (%), described by an Emax model with maximum contraction 245.4% and Log EC50 -6.475 ± 0.3341 log M; the paper excerpts do not state a mechanism beyond this direct concentration–response relation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stack_2016`
 - **model family:** `emax`
 - **driver:** `not_resolved`

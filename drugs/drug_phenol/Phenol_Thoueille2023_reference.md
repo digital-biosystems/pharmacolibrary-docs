@@ -32,24 +32,15 @@ Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of a
   ·  DOI: [10.1093/jac/dkad103](https://doi.org/10.1093/jac/dkad103)
 
 ## Model component
-<dbs-pgx drug="phenol" model-id="Phenol_Thoueille2023_reference" status="extracted" stale="true" population="" measured-compound="phenol" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="phenol" model-id="Phenol_Thoueille2023_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 3 extracted.
+**Parameters:** 0 extracted.
 
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** not captured.
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CLTFV | `Q27` · CL/F | 39.9 | L/h | 1.1083333333333333e-05 | L/h | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
-| VTFV | `Q76` · V/F | 2660.0 | L | 2.66 | L | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
-| ka | `Q49` · kabs | 2.0 | h−1 | 0.0005555555555555556 | 1/h | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
@@ -64,7 +55,7 @@ Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of a
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -76,7 +67,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|
 | `gpt-oss:120b` | `values[Q22]` | 30 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q364]` | not captured | 10 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q40]` | 1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 1 | not captured | only_one_ex |
 
 </details>
 
@@ -135,7 +126,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_phenol/Phenol_Thoueille2023_reference/Phenol_Thoueille2023_reference_modelica.zip" download>Phenol_Thoueille2023_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_phenol/Phenol_Thoueille2023_reference/Phenol_Thoueille2023_reference_fmi.zip" download>Phenol_Thoueille2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_phenol/Phenol_Thoueille2023_reference/Phenol_Thoueille2023_reference_matlab.zip" download>Phenol_Thoueille2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_phenol/Phenol_Thoueille2023_reference/Phenol_Thoueille2023_reference_matlab_simbio.zip" download>Phenol_Thoueille2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_phenol/Phenol_Thoueille2023_reference/Phenol_Thoueille2023_reference_matlab_simbio.zip" download>Phenol_Thoueille2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_phenol/Phenol_Thoueille2023_reference/Phenol_Thoueille2023_reference_sbml.zip" download>Phenol_Thoueille2023_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_phenol/Phenol_Thoueille2023_reference/Phenol_Thoueille2023_reference_cellml.zip" download>Phenol_Thoueille2023_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

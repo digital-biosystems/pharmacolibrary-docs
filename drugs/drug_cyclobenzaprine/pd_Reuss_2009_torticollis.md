@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that cyclobenzaprine dose alone drives a binary response of torticollis with a stimulation effect, but no mechanism, potency, or rate values are provided.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Reuss_2009`
 - **model family:** `unknown`
 - **driver:** `dose_only`

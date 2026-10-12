@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;protamine&quot;,&quot;href&quot;:&quot;drugs/drug_protamine/&quot;},{&quot;label&quot;:&quot;Lanoisel\u00e9e_2026 \u00b7 PD activated clotting time&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Protamine_Butterworth2002_reference&quot;,&quot;label&quot;:&quot;Butterworth_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protamine/Protamine_Butterworth2002_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Protamine_Butterworth2002_reference&quot;,&quot;label&quot;:&quot;Butterworth_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protamine/Protamine_Butterworth2002_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # activated clotting time — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,6 +17,10 @@
 **As extracted:** Unfractionated heparin (anti-Xa activity) (concentrations from this paper's PK model) drives activated clotting time (in s): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> Activated clotting time (ACT, s) was related to unfractionated heparin anti-Xa activity (IU ml−1) by a sigmoid Emax model (effect described as stimulation, additive form), with protamine acting not on ACT directly but by neutralising heparin through second-order UFH–protamine binding (rate constant k_ant) into an irreversibly eliminated inactive complex. The excerpts do not report numeric potency values (Emax, EC50, gamma) or an effect-compartment rate, and the paper does not state a direct protamine effect on ACT beyond this neutralisation mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Lanoiselée_2026`
 - **model family:** `sigmoid_emax`

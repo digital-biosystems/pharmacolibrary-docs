@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Fenyvesi_2003_ECT](drugs/drug_lepirudin/pd_Fenyvesi_2003_ECT.md) | ecarin clotting time ← lepirudin · direct linear effect | — | Fenyvesi T et al., Effects of lepirudin, argatroban and me…, Thrombosis research (2003) | [10.1016/j.thromres.2003.08.013](https://doi.org/10.1016/j.thromres.2003.08.013) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Fenyvesi_2003_ECT](drugs/drug_lepirudin/pd_Fenyvesi_2003_ECT.md) | ecarin clotting time ← lepirudin · direct linear effect | — | Fenyvesi T et al., Effects of lepirudin, argatroban and me…, Thrombosis research (2003) | [10.1016/j.thromres.2003.08.013](https://doi.org/10.1016/j.thromres.2003.08.013) |
 
 ## ADME sites
 

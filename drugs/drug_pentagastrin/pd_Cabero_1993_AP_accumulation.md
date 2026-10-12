@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentagastrin concentration (nM) stimulates aminopyrine accumulation (acid production in gastric mucosal/parietal cells) via a direct Emax model, with an apparent EC50 of 5 nM; the paper excerpts do not state Emax, a Hill coefficient, or further mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cabero_1993`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

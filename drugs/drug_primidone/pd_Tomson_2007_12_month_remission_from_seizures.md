@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a full text or any model parameters, so the mechanism and key values are not described.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tomson_2007`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

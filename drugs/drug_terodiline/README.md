@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04B&quot;,&quot;href&quot;:&quot;atc/G04B.md&quot;},{&quot;label&quot;:&quot;terodiline&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Terodiline_Karln1982_reference&quot;,&quot;label&quot;:&quot;Karl\u00e9n_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terodiline/Terodiline_Karln1982_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Terodiline_Karln1982_reference&quot;,&quot;label&quot;:&quot;Karl\u00e9n_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terodiline/Terodiline_Karln1982_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # terodiline
 
@@ -27,22 +27,22 @@ Terodiline is a calcium channel blocker and parasympatholytic drug classified fo
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:12 | 0:53 | 1/0/1 | 2/0/0 | 0/0/0 | 28,828/3,391 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 09:12 | 0:53 | 0/0/2 | 2/0/0 | 0/0/0 | 28,828/3,391 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Karlén_1982_reference](drugs/drug_terodiline/Terodiline_Karln1982_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Karlén B et al., Pharmacokinetics of terodiline in human…, European journal of clinica… (1982) | [10.1007/BF00547566](https://doi.org/10.1007/BF00547566) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Hallén_1994_reference](drugs/drug_terodiline/Terodiline_Halln1994_reference.md) | — | 1-compartment (no model) | 6 | Hallén B et al., Bioavailability and disposition of tero…, Journal of pharmaceutical s… (1994) | [10.1002/jps.2600830911](https://doi.org/10.1002/jps.2600830911) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Hallén_1994_reference](drugs/drug_terodiline/Terodiline_Halln1994_reference.md) | — | 1-compartment (no model) | 6 | Hallén B et al., Bioavailability and disposition of tero…, Journal of pharmaceutical s… (1994) | [10.1002/jps.2600830911](https://doi.org/10.1002/jps.2600830911) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Karlén_1982_reference](drugs/drug_terodiline/Terodiline_Karln1982_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Karlén B et al., Pharmacokinetics of terodiline in human…, European journal of clinica… (1982) | [10.1007/BF00547566](https://doi.org/10.1007/BF00547566) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Jones_1998_IKr](drugs/drug_terodiline/pd_Jones_1998_IKr.md) | IKr ← terodiline · direct sigmoid Emax (Hill) effect | — | Jones SE et al., Inhibition of the rapid component of th…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0702173](https://doi.org/10.1038/sj.bjp.0702173) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Jones_1998_IKs](drugs/drug_terodiline/pd_Jones_1998_IKs.md) | IKs ← terodiline · inhibition effect | — | Jones SE et al., Inhibition of the rapid component of th…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0702173](https://doi.org/10.1038/sj.bjp.0702173) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Webster_2001_MAPD](drugs/drug_terodiline/pd_Webster_2001_MAPD.md) | monophasic action potential duration ← terodiline · direct sigmoid Emax (Hill) effect | — | Webster R et al., Pharmacokinetic/pharmacodynamic assessm…, Xenobiotica; the fate of fo… (2001) | [10.1080/00498250110054632](https://doi.org/10.1080/00498250110054632) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Jones_1998_IKr](drugs/drug_terodiline/pd_Jones_1998_IKr.md) | IKr ← terodiline · direct sigmoid Emax (Hill) effect | — | Jones SE et al., Inhibition of the rapid component of th…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0702173](https://doi.org/10.1038/sj.bjp.0702173) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Jones_1998_IKs](drugs/drug_terodiline/pd_Jones_1998_IKs.md) | IKs ← terodiline · inhibition effect | — | Jones SE et al., Inhibition of the rapid component of th…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0702173](https://doi.org/10.1038/sj.bjp.0702173) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Webster_2001_MAPD](drugs/drug_terodiline/pd_Webster_2001_MAPD.md) | monophasic action potential duration ← terodiline · direct sigmoid Emax (Hill) effect | — | Webster R et al., Pharmacokinetic/pharmacodynamic assessm…, Xenobiotica; the fate of fo… (2001) | [10.1080/00498250110054632](https://doi.org/10.1080/00498250110054632) |
 
 ## ADME sites
 
@@ -63,7 +63,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 9 matched, 9 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

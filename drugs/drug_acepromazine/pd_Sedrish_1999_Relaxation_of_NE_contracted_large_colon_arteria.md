@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;acepromazine&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/&quot;},{&quot;label&quot;:&quot;Sedrish_1999 \u00b7 PD Relaxation of NE-contracted large colon arterial and venous rings&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acepromazine_Garbin2022_reference&quot;,&quot;label&quot;:&quot;Garbin_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/Acepromazine_Garbin2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acepromazine_Steagall2026_reference&quot;,&quot;label&quot;:&quot;Steagall_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/Acepromazine_Steagall2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acepromazine_Garbin2022_reference&quot;,&quot;label&quot;:&quot;Garbin_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/Acepromazine_Garbin2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acepromazine_Steagall2026_reference&quot;,&quot;label&quot;:&quot;Steagall_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/Acepromazine_Steagall2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Relaxation of NE-contracted large colon arterial and venous rings — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
@@ -19,6 +19,10 @@
 **As extracted:** Acepromazine (concentrations from the PK model of Garbin_2022) drives Relaxation of NE-contracted large colon arterial and venous rings (in % maximal relaxation) (stimulation; the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> The paper does not provide the mechanism or model parameters; acepromazine concentrations (M) are linked to % maximal relaxation of NE-contracted equine large colon arterial and venous rings, but no Imax, IC50/EC50, or rate values are available from the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Sedrish_1999`
 - **model family:** `unknown`

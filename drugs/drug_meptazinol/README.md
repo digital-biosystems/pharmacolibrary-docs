@@ -32,7 +32,7 @@ Meptazinol is an opioid compound with pain-relieving (analgesic) and narcotic pr
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Gepts_1987_reference](drugs/drug_meptazinol/Meptazinol_Gepts1987_reference.md) | — | 1-compartment (no model) | 5 | Gepts E et al., Pharmacokinetics of intravenously admin…, European journal of anaesth… (1987) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Gepts_1987_reference](drugs/drug_meptazinol/Meptazinol_Gepts1987_reference.md) | — | 1-compartment (no model) | 5 | Gepts E et al., Pharmacokinetics of intravenously admin…, European journal of anaesth… (1987) | — |
 
 ## ADME sites
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The chloroform extract of C. nucifera cotyledon inhibits the ferric reducing antioxidant power (FRAP) response, with an EC50 of 10.41 mg/ml. The paper does not specify the underlying mechanism (e.g., direct Emax or effect compartment) or kinetic rate parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nyayiru_2020`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`

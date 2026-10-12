@@ -19,7 +19,7 @@
 
 **Model:** No model was generated from this record.
 
-> Sumatriptan directly stimulates human isolated coronary artery contraction, acting as an agonist with a maximal response (Emax) of 14.0% of the response to 100 mmol/L K+ and an EC50 of 803 nmol/L. The study characterizes this direct pharmacodynamic relationship via concentration-response curves without specifying a distinct effect compartment or kinetic rate parameters.
+> Sumatriptan concentration stimulates coronary artery contraction (measured as % of K+ contraction) via a direct Emax model. The maximum effect (Emax) was 14.0 %K+ and the potency (EC50) was 803 nmol/L.
 >
 > <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 

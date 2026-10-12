@@ -24,7 +24,7 @@ Phenytoin is an anti-seizure medication used to treat epilepsy, including tempor
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Della_1998_reference](drugs/drug_phenytoin/Phenytoin_Della1998_reference.md) | — | 1-compartment (no model) | 0 | Della Paschoa OE et al., Modelling of the pharmacodynamic intera…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0702235](https://doi.org/10.1038/sj.bjp.0702235) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Della_1998_reference](drugs/drug_phenytoin/Phenytoin_Della1998_reference.md) | — | 1-compartment (no model) | 0 | Della Paschoa OE et al., Modelling of the pharmacodynamic intera…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0702235](https://doi.org/10.1038/sj.bjp.0702235) |
 
 ## Pharmacodynamics (PD)
 

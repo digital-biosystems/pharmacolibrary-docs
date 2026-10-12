@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Nalorphine concentration (nM) stimulates [35S]GTPgammaS binding (fmol/mg protein) in CHO cell membranes expressing the human kappa opioid receptor, described by an Emax model; the paper reports a maximal response of 68% of full agonists but does not state EC50 or the mechanism beyond this partial agonist stimulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhu_1997`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

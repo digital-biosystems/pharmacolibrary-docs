@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record identifies dornase alfa dose as the driver for the continuous response FEV1, but specifies that the model family, effect direction, and mechanism are unknown. No full text is available to provide the mechanism or key potency and rate values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Geller_1998`
 - **model family:** `unknown`
 - **driver:** `dose_only`

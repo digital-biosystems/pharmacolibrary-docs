@@ -18,7 +18,7 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> Salbutamol plasma concentrations (ng/ml) were linked to heart rate in a sequential population PKPD analysis (two-compartment PK, Emax stimulation model); the paper states only that heart rate increased with salbutamol concentrations and does not report the HR model's mechanism details or any parameter values (EC50, Emax, Hill) for heart rate.
+> Salbutamol plasma concentrations (ng/ml) were linked to heart rate (age-standardised Z-score) via a sigmoid Emax stimulation model with a proportional effect, with baseline E0 = 3.08 z-score, EMAX = 4.16 and EC50 = 385 ng/ml; the paper does not describe a production/elimination or effect-compartment mechanism for this response.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

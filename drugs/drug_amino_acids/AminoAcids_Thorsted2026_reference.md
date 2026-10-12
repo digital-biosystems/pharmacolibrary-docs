@@ -5,7 +5,7 @@
 
 # amino acids — `AminoAcids_Thorsted2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167), gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The source reports only apparent parameters CL/F = 0.113 L/day and V/F = 6.44 L for amino acids; ka and Tlag were not reported and library defaults were substituted, which the adjudication flagged as an invented absorption input not acceptable for publication. The model builder also assumed F=1 and Fm=1 with no molar correction, treating the apparent (/F) parameterization as first-order depot input for extravascular dosing. A second reader further disagreed on several extracted values, including CL/F (0.113 vs 0.093) and a volume-related value (39.4 vs 48.6), and could not confirm several others the record reported. Extracted — amino acids: CL/F 0.113 L/day, V/F 6.44 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q18: this record has 778.8, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q18: this record has 778.8, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -64,17 +64,28 @@ Thorsted A et al., Population Pharmacokinetics and Pharmac…, Journal of clinic
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q18]` | 778.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q27]` | 0.113 | 0.093 | mismatch |
+| `gpt-oss-120b` | `values[Q320]` | not captured | 84.8 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q321]` | not captured | 0.194 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 12.29 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q37]` | 0.585 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` | 8.41 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 39.4 | 48.6 | mismatch |
+| `gpt-oss-120b` | `values[Q76]` | 6.44 | 6.53 | mismatch |
+| `gpt-oss-120b` | `values[Q87]` | 0.88 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q18]` | 778.8 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q27]` | 0.113 | 0.093 | mismatch |
 | `gpt-oss:120b` | `values[Q320]` | not captured | 84.8 | only_one_extracted |
@@ -142,7 +153,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference/AminoAcids_Thorsted2026_reference_modelica.zip" download>AminoAcids_Thorsted2026_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference/AminoAcids_Thorsted2026_reference_fmi.zip" download>AminoAcids_Thorsted2026_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference/AminoAcids_Thorsted2026_reference_matlab.zip" download>AminoAcids_Thorsted2026_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference/AminoAcids_Thorsted2026_reference_matlab_simbio.zip" download>AminoAcids_Thorsted2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference/AminoAcids_Thorsted2026_reference_matlab_simbio.zip" download>AminoAcids_Thorsted2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference/AminoAcids_Thorsted2026_reference_sbml.zip" download>AminoAcids_Thorsted2026_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference/AminoAcids_Thorsted2026_reference_cellml.zip" download>AminoAcids_Thorsted2026_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

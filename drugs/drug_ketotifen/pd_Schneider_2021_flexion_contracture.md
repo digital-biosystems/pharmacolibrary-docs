@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ketotifen fumarate dose reduces measured knee flexion contracture in rabbits; the paper does not specify a pharmacodynamic mechanism for this effect. The reported EC50 is 0.22 mg/kg.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schneider_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

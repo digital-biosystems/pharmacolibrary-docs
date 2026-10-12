@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not specify the mechanism by which mivacurium acts on the neuromuscular blockade response. It reports an Emax model where the dose of mivacurium inhibits the adductor pollicis force, with an ED50 of 54 micrograms.kg-1 and an ED95 of 105 micrograms.kg-1.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `McCluskey_1996`
 - **model family:** `emax`
 - **driver:** `dose_only`

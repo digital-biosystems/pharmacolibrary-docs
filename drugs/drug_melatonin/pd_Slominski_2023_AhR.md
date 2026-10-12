@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;melatonin&quot;,&quot;href&quot;:&quot;drugs/drug_melatonin/&quot;},{&quot;label&quot;:&quot;Slominski_2023 \u00b7 PD AhR-mediated transactivation (Human AhR Reporter Assay)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Melatonin_Merchant2013_reference&quot;,&quot;label&quot;:&quot;Merchant_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melatonin/Melatonin_Merchant2013_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Melatonin_Wang2024_reference&quot;,&quot;label&quot;:&quot;Wang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melatonin/Melatonin_Wang2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Melatonin_Merchant2013_reference&quot;,&quot;label&quot;:&quot;Merchant_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melatonin/Melatonin_Merchant2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Melatonin_Wang2024_reference&quot;,&quot;label&quot;:&quot;Wang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melatonin/Melatonin_Wang2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # AhR-mediated transactivation (Human AhR Reporter Assay) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
@@ -19,6 +19,10 @@
 **As extracted:** Melatonin (concentrations from the PK model of Andersen_2016) drives AhR-mediated transactivation (Human AhR Reporter Assay): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
+
+> Melatonin concentrations (M) act as an agonist on AhR-mediated transactivation in a Human AhR Reporter Assay, modeled as a direct stimulatory Emax relationship; the paper reports an EC50 of 7 × 10−6 ± 7 × 10−6 M (n = 2), with no additional potency, rate, or effect-compartment parameters given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Slominski_2023`
 - **model family:** `emax`

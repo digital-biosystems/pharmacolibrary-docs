@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R01A&quot;,&quot;href&quot;:&quot;atc/R01A.md&quot;},{&quot;label&quot;:&quot;ciclesonide&quot;,&quot;href&quot;:&quot;drugs/drug_ciclesonide/&quot;},{&quot;label&quot;:&quot;Rohatagi_2003 \u00b7 PD endogenous cortisol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclesonide_Xu2010_reference&quot;,&quot;label&quot;:&quot;Xu_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclesonide/Ciclesonide_Xu2010_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclesonide_Xu2010_reference&quot;,&quot;label&quot;:&quot;Xu_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclesonide/Ciclesonide_Xu2010_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # endogenous cortisol — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -17,6 +17,10 @@
 **As extracted:** Ciclesonide--active principle (CIC-AP) (measured concentrations) drives endogenous cortisol (in ng/h): indirect response — drug inhibits the production of endogenous cortisol.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> Ciclesonide active principle (CIC-AP) concentrations inhibit endogenous cortisol release (ng/h) via an indirect response model (inhibition of cortisol production/release), with a maximum cortisol release rate of 3140 ng/h and an EC50 of 0.88 ng/mL; the paper excerpts do not state additional mechanism details.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Rohatagi_2003`
 - **model family:** `indirect_response_i`

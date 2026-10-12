@@ -5,7 +5,7 @@
 
 # acetylsalicylic acid — `AcetylsalicylicAcid_CuestaGragera2015_study_2`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Thoueille_2023) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Cmax), so that value has no SI equivalent. Extracted — acetylsalicylic acid: AUCt 401, Cmax 70.7 mg/L, tmax 2 h, kabs 7 h À1, CL 48.3 L/h, V 2.66e+03 L.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has acetylsalicylic_acid → salicylic_acid (metabolism); salicylic_acid → salicyluric_acid (metabolism), the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -81,14 +81,22 @@ Cuesta-Gragera A et al., Semi-physiologic model validation and b…, European jo
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.8 (8/10 fields) | 2 |
 | `gpt-oss:120b` | confirmed | 1.0 (9/9 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['acetylsalicylic_acid', 'salicylic_acid', 'metabolism'], ['salicylic_acid', 'salicyluric_acid', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[vtfv]` | 2660.0 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

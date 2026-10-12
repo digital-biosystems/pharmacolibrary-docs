@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Brexanolone (via its active moiety allopregnanolone, concentrations in nM) is associated with protection against serum deprivation-induced apoptosis, with an EC50 of 1.5 nM; the paper excerpts do not state the mechanism or model structure.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Charalampopoulos_2004`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

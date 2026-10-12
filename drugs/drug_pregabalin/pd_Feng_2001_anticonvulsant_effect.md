@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model describes a sigmoid Emax effect of pregabalin plasma concentrations on the anticonvulsant response with an EC50 of 95.3 ng/mL and an effect compartment rate constant (ke0) of 0.0092 min-1. The specific mechanism of action (e.g., production vs. elimination inhibition) is not described in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Feng_2001`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

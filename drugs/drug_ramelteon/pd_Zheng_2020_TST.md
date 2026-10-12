@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates ramelteon dose to total sleep time (TST), but the excerpts provide no concentration data, no model structure or mechanism, and no parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zheng_2020`
 - **model family:** `unknown`
 - **driver:** `dose_only`

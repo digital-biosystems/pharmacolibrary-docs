@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deltamethrin (decamethrin) inhibits synaptosomal Ca(2+)-ATPase activity with a sigmoid Emax model; the paper reports an IC50 of 246.9 microM, but the excerpts do not state the mechanism or other parameters (Imax, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kodavanti_1993`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

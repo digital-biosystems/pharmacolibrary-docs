@@ -32,7 +32,7 @@ Phenylpropanolamine is a decongestant that was used to relieve nasal congestion.
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Shargel_1990_reference](drugs/drug_phenylpropanolamine/Phenylpropanolamine_Shargel1990_reference.md) | — | 1-compartment (no model) | 6 | Shargel L et al., Bioavailability and cardiovascular safe…, Biopharmaceutics & drug dis… (1990) | [10.1002/bdd.2510110703](https://doi.org/10.1002/bdd.2510110703) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Shargel_1990_reference](drugs/drug_phenylpropanolamine/Phenylpropanolamine_Shargel1990_reference.md) | — | 1-compartment (no model) | 6 | Shargel L et al., Bioavailability and cardiovascular safe…, Biopharmaceutics & drug dis… (1990) | [10.1002/bdd.2510110703](https://doi.org/10.1002/bdd.2510110703) |
 
 ## ADME sites
 

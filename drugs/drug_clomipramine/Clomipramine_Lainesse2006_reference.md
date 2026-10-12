@@ -4,7 +4,7 @@
 
 # clomipramine — `Clomipramine_Lainesse2006_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.611), gpt-oss:120b (partly confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — clomipramine: t1/2z 12.3 h, AUC∞ 652 ngxh/mL, CL 0.393 L/hxkg, V 5 L/kg, MRT 13.5 h, AUC 948 ngxh/mL, Cmax 87.5 ng/mL, tmax 6.2 h, … (+1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 90, the second reading none; it also differs on 10 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clomipramine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -81,17 +81,25 @@ Lainesse C et al., Pharmacokinetics of clomipramine and de…, Journal of veteri
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.611 (11/18 fields) | 7 |
 | `gpt-oss:120b` | partly confirmed | 0.267 (4/15 fields) | 11 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>18 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc]` | 948.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clomipramine auc]` | 652.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | 12.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean auc]` | not captured | 948.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean clomipramine auc]` | not captured | 652.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean half-life]` | not captured | 12.3 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | clomipramine | unknown | mismatch |
 | `gpt-oss:120b` | `model.bioavailability.theta` | 90 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc]` | 948.3 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[c]` | 87.5 | not captured | only_one_extracted |

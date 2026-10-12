@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Benzbromarone concentration acts on the spontaneous myometrial frequency as a direct sigmoid Emax inhibitor, with the paper describing a mechanism of inhibition of UT-myo cell Ca2+ release that prevents uterine contractions. The key potency values stated are an IC50 of 1.84e-06 M (or 1.90e-06 M) and an Emax of 118.4% (or 130.0%)."
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Herington_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

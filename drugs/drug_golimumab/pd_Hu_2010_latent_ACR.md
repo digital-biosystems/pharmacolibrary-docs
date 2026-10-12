@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;golimumab&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/&quot;},{&quot;label&quot;:&quot;Hu_2010 \u00b7 PD latent variable representing ACR20, ACR50, and ACR70&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Golimumab_Dreesen2020_reference&quot;,&quot;label&quot;:&quot;Dreesen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_Dreesen2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Golimumab_Lee2023_reference&quot;,&quot;label&quot;:&quot;Lee_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_Lee2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Golimumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Golimumab_Dreesen2020_reference&quot;,&quot;label&quot;:&quot;Dreesen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_Dreesen2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Golimumab_Lee2023_reference&quot;,&quot;label&quot;:&quot;Lee_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_Lee2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Golimumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # latent variable representing ACR20, ACR50, and ACR70 — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -17,6 +17,10 @@
 **As extracted:** Golimumab (concentrations from the PK model of Dreesen_2020) drives latent variable representing ACR20, ACR50, and ACR70: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
+
+> The record links golimumab plasma concentrations to a latent categorical response representing ACR20, ACR50, and ACR70 via a sequential fit based on cited PK from Dreesen_2020, but the paper does not provide an excerpt describing the specific pharmacodynamic mechanism or key potency and rate parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Hu_2010`
 - **model family:** `categorical`

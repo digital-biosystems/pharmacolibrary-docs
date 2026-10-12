@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;pegcetacoplan&quot;,&quot;href&quot;:&quot;drugs/drug_pegcetacoplan/&quot;},{&quot;label&quot;:&quot;Crass_2024 \u00b7 PD lactate dehydrogenase&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pegcetacoplan_Crass2025_transformed_estimate&quot;,&quot;label&quot;:&quot;Crass_2025_transformed_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_transformed_estimate.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pegcetacoplan_Crass2025_transformed_estimate&quot;,&quot;label&quot;:&quot;Crass_2025_transformed_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_transformed_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lactate dehydrogenase — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span>
@@ -17,6 +17,10 @@
 **As extracted:** Pegcetacoplan (concentrations from this paper's PK model) drives lactate dehydrogenase (in U/L): direct sigmoid Emax (Hill) effect.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> A direct sigmoid Emax model describes how pegcetacoplan serum concentration inhibits LDH levels, characterized by a baseline of 1920 U/L, a maximal 92% decrease from baseline, an EC50 of 187 μg/mL, and a Hill coefficient of 3.42.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Crass_2024`
 - **model family:** `sigmoid_emax`

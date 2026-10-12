@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L03A&quot;,&quot;href&quot;:&quot;atc/L03A.md&quot;},{&quot;label&quot;:&quot;albinterferon alfa-2b&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AlbinterferonAlfa2b_Riggs2012_reference&quot;,&quot;label&quot;:&quot;Riggs_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albinterferon_alfa_2b/AlbinterferonAlfa2b_Riggs2012_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AlbinterferonAlfa2b_Riggs2012_reference&quot;,&quot;label&quot;:&quot;Riggs_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albinterferon_alfa_2b/AlbinterferonAlfa2b_Riggs2012_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # albinterferon alfa-2b
 
@@ -24,13 +24,13 @@ It was never approved and remains an investigational compound, so it is not in r
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Riggs_2012_reference](drugs/drug_albinterferon_alfa_2b/AlbinterferonAlfa2b_Riggs2012_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Riggs MM et al., Population pharmacokinetics and exposur…, Journal of clinical pharmac… (2012) | [10.1177/0091270011399576](https://doi.org/10.1177/0091270011399576) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> | [Riggs_2012_reference](drugs/drug_albinterferon_alfa_2b/AlbinterferonAlfa2b_Riggs2012_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Riggs MM et al., Population pharmacokinetics and exposur…, Journal of clinical pharmac… (2012) | [10.1177/0091270011399576](https://doi.org/10.1177/0091270011399576) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Osinusi_2014_HCV_RNA](drugs/drug_albinterferon_alfa_2b/pd_Osinusi_2014_HCV_RNA.md) | HCV RNA biomarker turnover ← albinterferon_alfa_2b | — | Osinusi A et al., Comparative efficacy, pharmacokinetic,…, Journal of medical virology (2014) | [10.1002/jmv.23773](https://doi.org/10.1002/jmv.23773) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Osinusi_2014_HCV_RNA](drugs/drug_albinterferon_alfa_2b/pd_Osinusi_2014_HCV_RNA.md) | HCV RNA biomarker turnover ← albinterferon_alfa_2b | — | Osinusi A et al., Comparative efficacy, pharmacokinetic,…, Journal of medical virology (2014) | [10.1002/jmv.23773](https://doi.org/10.1002/jmv.23773) |
 
 ## ADME sites
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Permethrin concentrations inhibit cell viability in RTgutGC cells, described by a sigmoid Emax model; the paper excerpts provide no mechanism details and no potency or rate parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Emberley-Korkmaz_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

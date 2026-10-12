@@ -26,14 +26,14 @@ Olmesartan is an angiotensin II receptor blocker used to treat high blood pressu
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:23 | 7:38 | 1/0/1 | 0/0/0 | 0/0/0 | 134,777/17,568 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 3/14 | 12/0 | 0 |
+| 2026-10-07 08:23 | 7:38 | 0/0/2 | 0/0/0 | 0/0/0 | 134,777/17,568 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 3/14 | 12/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Kodati_2017_reference](drugs/drug_olmesartan_medoxomil/OlmesartanMedoxomil_Kodati2017_reference.md) | held back | 1-compartment, oral | 2 | Kodati D et al., Population Pharmacokinetic Modeling of…, European journal of drug me… (2017) | [10.1007/s13318-016-0371-0](https://doi.org/10.1007/s13318-016-0371-0) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Yoshihara_2005_reference](drugs/drug_olmesartan_medoxomil/OlmesartanMedoxomil_Yoshihara2005_reference.md) | — | 1-compartment (no model) | 5 | Yoshihara K et al., Population pharmacokinetics of olmesart…, Clinical pharmacokinetics (2005) | [10.2165/00003088-200544120-00011](https://doi.org/10.2165/00003088-200544120-00011) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kodati_2017_reference](drugs/drug_olmesartan_medoxomil/OlmesartanMedoxomil_Kodati2017_reference.md) | held back | 1-compartment, oral | 2 | Kodati D et al., Population Pharmacokinetic Modeling of…, European journal of drug me… (2017) | [10.1007/s13318-016-0371-0](https://doi.org/10.1007/s13318-016-0371-0) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133), gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Yoshihara_2005_reference](drugs/drug_olmesartan_medoxomil/OlmesartanMedoxomil_Yoshihara2005_reference.md) | — | 1-compartment (no model) | 5 | Yoshihara K et al., Population pharmacokinetics of olmesart…, Clinical pharmacokinetics (2005) | [10.2165/00003088-200544120-00011](https://doi.org/10.2165/00003088-200544120-00011) |
 
 ## ADME sites
 
@@ -61,7 +61,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 148 matched, 87 returned
 - **screened:** 10  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

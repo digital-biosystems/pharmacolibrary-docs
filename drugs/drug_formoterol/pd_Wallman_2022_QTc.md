@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;formoterol&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/&quot;},{&quot;label&quot;:&quot;Wallman_2022 \u00b7 PD QT interval duration (QTc)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Formoterol_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_Back2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Formoterol_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_Back2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # QT interval duration (QTc) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
@@ -19,6 +19,10 @@
 **As extracted:** Formoterol (concentrations from the PK model of Back_2020) drives QT interval duration (QTc): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> Formoterol concentrations act on QTc interval duration via a sigmoid Emax model with a proportional effect form, but the paper excerpts provide no mechanism, potency (Emax, EC50, gamma), or rate values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Wallman_2022`
 - **model family:** `sigmoid_emax`

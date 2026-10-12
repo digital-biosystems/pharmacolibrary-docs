@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methylphenidate plasma concentrations (from a cited PK model) drive DAT occupancy, described by an Emax model with an inhibitory effect direction; the paper excerpts provide no further mechanism details and no numeric parameter values (Emax, EC50, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Soufsaf_2023`
 - **model family:** `emax`
 - **driver:** `cited_pk`

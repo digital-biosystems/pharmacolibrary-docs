@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Etidronic acid acts on bone resorption, measured as hydroxyproline, by inhibiting it, but the specific mechanism (e.g., inhibition of production or elimination) is not described. No potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are provided in the available text.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hosking_1990`
 - **model family:** `unknown`
 - **driver:** `dose_only`

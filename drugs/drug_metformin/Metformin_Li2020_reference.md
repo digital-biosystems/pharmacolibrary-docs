@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Li2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667), gpt-5.6-luna (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.667), gpt-5.6-luna (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed 0/3</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record for metformin in Chinese patients with type 2 diabetes carries V/F of 438 L, ka of 1.4 h−1, t lag of 0.914 h, and CL/F of 18.0 L/h, but the reference check failed without computing a comparison, so the failure is inconclusive rather than a demonstrated fault. A second reader disagreed on several values: ka 0.6058 versus 1.4 h−1, t lag 0.4042 versus 0.914 h, and V/F 303.6 versus 438 L, and read θ2 as 0.688 and θ3 as 0.914 where this record has none. The second reader also left the dose compound and primary analyte as unknown, against this record's metformin. Extracted — metformin: V/F 438 L, kabs 1.4 h−1, tlag 0.914 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[ka].value`: this record has 1.4, the second reading 0.6058; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl/f: this record has none, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -78,20 +78,26 @@ Li L et al., Population pharmacokinetics and dosing…, Medicine (2020)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 3 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (5/10 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.667 (6/9 fields) | 3 |
 | `gpt-5.6-luna` | partly confirmed | 0.833 (10/12 fields) | 2 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-5.6-luna` | `parameters[θ2]` | not captured | 0.688 | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[θ3]` | not captured | 0.914 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka].value` | 1.4 | 0.6058 | mismatch |
+| `gpt-oss-120b` | `parameters[t lag].value` | 0.914 | 0.4042 | mismatch |
+| `gpt-oss-120b` | `parameters[v/f].value` | 438 | 303.6 | mismatch |
+| `gpt-oss-120b` | `parameters[θ1]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka].value` | 1.4 | 0.6058 | mismatch |
 | `gpt-oss:120b` | `parameters[t lag].value` | 0.914 | 0.4042 | mismatch |
 | `gpt-oss:120b` | `parameters[v/f].value` | 438 | 303.6 | mismatch |

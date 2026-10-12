@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Permethrin concentrations inhibit cell viability in RTL-W1 cells, described by a sigmoid Emax (inhibitory) model; the paper excerpts provide no mechanism details and no parameter values (Imax, IC50, Emax, gamma) are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Emberley-Korkmaz_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

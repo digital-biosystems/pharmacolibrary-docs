@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;temozolomide&quot;,&quot;href&quot;:&quot;drugs/drug_temozolomide/&quot;},{&quot;label&quot;:&quot;B\u00fcsker_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Temozolomide_Bsker2022_reference&quot;,&quot;label&quot;:&quot;B\u00fcsker_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_temozolomide/Temozolomide_Bsker2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Temozolomide_Panetta2003_reference&quot;,&quot;label&quot;:&quot;Panetta_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_temozolomide/Temozolomide_Panetta2003_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Temozolomide_Bsker2022_reference&quot;,&quot;label&quot;:&quot;B\u00fcsker_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_temozolomide/Temozolomide_Bsker2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Temozolomide_Panetta2003_reference&quot;,&quot;label&quot;:&quot;Panetta_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_temozolomide/Temozolomide_Panetta2003_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # temozolomide — `Temozolomide_Bsker2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.938). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875), gpt-oss:120b (not confirmed, agreement 0.938). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The two-compartment model for temozolomide in pediatric CNS tumor patients carries a central clearance of 3.29 liter/h, a central volume of 10.5 liter, and a volume of distribution of 0.09 liter; the clearance/volume plausibility check flagged these magnitudes as outside the physiological window, consistent with a unit or scale extraction error. The intercompartmental clearance Q of 0.0327 liter/h is also very small relative to the clearance. A second reader disagreed on the parameter identifier assigned to Qf, so that field's attribution is not settled. Extracted — temozolomide: kabs 9.64 h−1, CL 3.29 liter/h, V1 10.5 liter, V 0.09 liter, Q 0.0327 liter/h, ktr 0.983 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[qf].parameter_id`: this record has Q30, the second reading Q54. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[vcd].parameter_id`: this record has Q61, the second reading Q63; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -84,17 +84,20 @@ Büsker S et al., Pharmacokinetics of metronomic temozolo…, Cancer chemotherap
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.875 (14/16 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.938 (15/16 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[vcd].parameter_id` | Q61 | Q63 | mismatch |
+| `gpt-oss-120b` | `parameters[vcsfe]` | not captured | 0.09 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[qf].parameter_id` | Q30 | Q54 | mismatch |
 
 </details>
@@ -141,7 +144,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_temozolomide/Temozolomide_Bsker2022_reference/Temozolomide_Bsker2022_reference_modelica.zip" download>Temozolomide_Bsker2022_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_temozolomide/Temozolomide_Bsker2022_reference/Temozolomide_Bsker2022_reference_fmi.zip" download>Temozolomide_Bsker2022_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_temozolomide/Temozolomide_Bsker2022_reference/Temozolomide_Bsker2022_reference_matlab.zip" download>Temozolomide_Bsker2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_temozolomide/Temozolomide_Bsker2022_reference/Temozolomide_Bsker2022_reference_matlab_simbio.zip" download>Temozolomide_Bsker2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_temozolomide/Temozolomide_Bsker2022_reference/Temozolomide_Bsker2022_reference_matlab_simbio.zip" download>Temozolomide_Bsker2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_temozolomide/Temozolomide_Bsker2022_reference/Temozolomide_Bsker2022_reference_sbml.zip" download>Temozolomide_Bsker2022_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_temozolomide/Temozolomide_Bsker2022_reference/Temozolomide_Bsker2022_reference_cellml.zip" download>Temozolomide_Bsker2022_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

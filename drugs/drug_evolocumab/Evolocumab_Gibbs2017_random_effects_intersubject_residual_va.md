@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;evolocumab&quot;,&quot;href&quot;:&quot;drugs/drug_evolocumab/&quot;},{&quot;label&quot;:&quot;Gibbs_2017 \u00b7 random_effects_intersubject_residual_variance&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Evolocumab_Gibbs2017_fixed_effects_population_mean_parameter&quot;,&quot;label&quot;:&quot;Gibbs_2017_fixed_effects_population_mean_parameter&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_evolocumab/Evolocumab_Gibbs2017_fixed_effects_population_mean_parameter.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Evolocumab_Wang2019_reference&quot;,&quot;label&quot;:&quot;Wang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_evolocumab/Evolocumab_Wang2019_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Evolocumab_Gibbs2017_fixed_effects_population_mean_parameter&quot;,&quot;label&quot;:&quot;Gibbs_2017_fixed_effects_population_mean_parameter&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_evolocumab/Evolocumab_Gibbs2017_fixed_effects_population_mean_parameter.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Evolocumab_Wang2019_reference&quot;,&quot;label&quot;:&quot;Wang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_evolocumab/Evolocumab_Wang2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # evolocumab — `Evolocumab_Gibbs2017_random_effects_intersubject_residual_va`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.077). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.077). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has evolocumab, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+**Evolocumab clearance of 0.924 L/day and volume of 0.158 L are physiologically implausible for a monoclonal antibody.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The extracted clearance and volume values are orders of magnitude too small for a large protein, indicating a unit or scale extraction error. The second reader could not verify these parameter values, finding them null in the source. Additionally, the record lacks the base PCSK9 concentration and the drug-target interaction link required for the TMDD model. Extracted — evolocumab: kabs 0.807 1/h, V 0.158 L, CL 0.924 L/day.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading none → none (none); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Gibbs JP et al., Impact of Target-Mediated Elimination o…, Journal of clinical pharmac… (2017)
@@ -80,17 +84,24 @@ Gibbs JP et al., Impact of Target-Mediated Elimination o…, Journal of clinical
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.077 (1/13 fields) | 12 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>18 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
+| `gpt-oss-120b` | `parameters[basepcsk9]` | not captured | 0.00583 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl].value` | 0.924 | 0.260 | mismatch |
+| `gpt-oss-120b` | `parameters[ka].value` | 0.807 | 0.157 | mismatch |
+| `gpt-oss-120b` | `parameters[kint].value` | not captured | 0.00184 | mismatch |
+| `gpt-oss-120b` | `parameters[v].value` | 0.158 | 0.0362 | mismatch |
 | `gpt-oss:120b` | `model.links` | [] | [['evolocumab', 'pcsk9', 'interconversion']] | mismatch |
 | `gpt-oss:120b` | `parameters[basepcsk9]` | not captured | 0.00583 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | 0.924 | not captured | only_one_extracted |

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;lorlatinib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lorlatinib_Hibma2022_reference&quot;,&quot;label&quot;:&quot;Hibma_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorlatinib/Lorlatinib_Hibma2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lorlatinib_Hibma2022_reference&quot;,&quot;label&quot;:&quot;Hibma_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorlatinib/Lorlatinib_Hibma2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # lorlatinib
 
@@ -27,22 +27,22 @@ Lorlatinib is an ALK inhibitor used to treat non-small-cell lung carcinoma. It i
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 02:51 | 4:50 | 2/1/0 | 0/0/1 | 0/0/0 | 112,164/24,126 | openai / gpt-6-luna | 5 | 0/5 | 5/0 | 0 |
+| 2026-10-07 02:51 | 4:50 | 0/1/2 | 0/0/1 | 0/0/0 | 112,164/24,126 | openai / gpt-6-luna | 5 | 0/5 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chen_2021_reference](drugs/drug_lorlatinib/Lorlatinib_Chen2021_reference.md) | held back | 1-compartment, oral | 7 (+2 cov.) | Chen J et al., Population pharmacokinetic model with t…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12585](https://doi.org/10.1002/psp4.12585) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hibma_2022_reference](drugs/drug_lorlatinib/Lorlatinib_Hibma2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Hibma JE et al., Evaluation of the absolute oral bioavai…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-021-04368-1](https://doi.org/10.1007/s00280-021-04368-1) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Damoiseaux_2022_2_reference](drugs/drug_lorlatinib/Lorlatinib_Damoiseaux2022v2_reference.md) | — | 1-compartment (no model) | 1 | Damoiseaux D et al., Predictiveness of the Human-CYP3A4-Tran…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15070860](https://doi.org/10.3390/ph15070860) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.632). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: F, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Chen_2021_reference](drugs/drug_lorlatinib/Lorlatinib_Chen2021_reference.md) | held back | 1-compartment, oral | 7 (+2 cov.) | Chen J et al., Population pharmacokinetic model with t…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12585](https://doi.org/10.1002/psp4.12585) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Hibma_2022_reference](drugs/drug_lorlatinib/Lorlatinib_Hibma2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Hibma JE et al., Evaluation of the absolute oral bioavai…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-021-04368-1](https://doi.org/10.1007/s00280-021-04368-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Damoiseaux_2022_2_reference](drugs/drug_lorlatinib/Lorlatinib_Damoiseaux2022v2_reference.md) | — | 1-compartment (no model) | 1 | Damoiseaux D et al., Predictiveness of the Human-CYP3A4-Tran…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15070860](https://doi.org/10.3390/ph15070860) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Chen_2021_2_Hypercholesterolemia_grade_3](drugs/drug_lorlatinib/pd_Chen_2021_2_Hypercholesterolemia_grade_3.md) | Hypercholesterolemia grade ≥ 3 ← lorlatinib · categorical (graded) response model | — | Chen J et al., Lorlatinib Exposure-Response Analyses f…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2228](https://doi.org/10.1002/cpt.2228) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Chen_2021_2_TEAE](drugs/drug_lorlatinib/pd_Chen_2021_2_TEAE.md) | TEAE grade ≥ 3 ← lorlatinib · categorical (graded) response model | — | Chen J et al., Lorlatinib Exposure-Response Analyses f…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2228](https://doi.org/10.1002/cpt.2228) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Chen_2021_2_Hypercholesterolemia_grade_3](drugs/drug_lorlatinib/pd_Chen_2021_2_Hypercholesterolemia_grade_3.md) | Hypercholesterolemia grade ≥ 3 ← lorlatinib · categorical (graded) response model | — | Chen J et al., Lorlatinib Exposure-Response Analyses f…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2228](https://doi.org/10.1002/cpt.2228) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Chen_2021_2_TEAE](drugs/drug_lorlatinib/pd_Chen_2021_2_TEAE.md) | TEAE grade ≥ 3 ← lorlatinib · categorical (graded) response model | — | Chen J et al., Lorlatinib Exposure-Response Analyses f…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2228](https://doi.org/10.1002/cpt.2228) |
 
 ## ADME sites
 
@@ -69,7 +69,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

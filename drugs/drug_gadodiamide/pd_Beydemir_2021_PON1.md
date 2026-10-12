@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Gadodiamide concentration (mM) inhibits measured PON1 activity (EU mg⁻¹ protein); the available paper excerpt does not specify the mechanism or model form. The record reports Ki = 299.43 ± 2.64 mM.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Beydemir_2021`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

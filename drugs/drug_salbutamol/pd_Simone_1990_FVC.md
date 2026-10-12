@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates salbutamol dose to the measured FVC increase with a linear dose-response model (stimulation); no concentrations, mechanism, or potency/rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are given in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Simone_1990`
 - **model family:** `linear`
 - **driver:** `dose_only`

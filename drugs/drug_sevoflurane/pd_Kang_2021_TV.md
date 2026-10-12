@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes a sigmoid Emax model where sevoflurane concentration inhibits tidal volume, utilizing an effect compartment. Key parameters are a Hill coefficient (gamma) of 8.78 and an effect site equilibration rate constant (ke0) of 2.27 min⁻¹, though the full text is not available to confirm the specific potency values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kang_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

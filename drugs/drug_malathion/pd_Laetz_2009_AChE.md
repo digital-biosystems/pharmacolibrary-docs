@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Malathion exposure (96 hr, water concentration in μg/L) concentration-dependently decreases brain acetylcholinesterase activity in juvenile coho salmon, expressed as % of carrier controls and fit with a sigmoid Emax concentration–response model (inhibition). The paper reports a log EC50 of 1.90 ± 0.05 μg/L (log-transformed) with slope −1.32 ± 0.20; no mechanistic PD model (e.g., kin/kout or effect compartment) is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Laetz_2009`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

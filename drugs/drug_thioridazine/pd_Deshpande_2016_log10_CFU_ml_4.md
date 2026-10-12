@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In the HFS-MAC, thioridazine concentrations (mg/liter) drive an inhibitory sigmoid Emax effect on intracellular MAC bacterial burden (log10 CFU/ml), reflecting direct mycobacterial killing via inhibition of the electron transport chain. On day 3 the Emax was 3.55 ± 0.59 log10 CFU/ml; on day 14 the model gave Econ 6.96 ± 0.17, Emax 7.19 ± 0.30 log10 CFU/ml, Hill slope H 2.75 ± 0.33, and EC50 expressed as a Cmax/MIC of 0.53 ± 0.022 mg/liter (r2 = 0.996).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Deshpande_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

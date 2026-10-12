@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Protriptyline concentration (μM) inhibits the Kv current with a sigmoid Emax model; the paper excerpts do not state the mechanism beyond inhibition. IC50 = 5.05 ± 0.97 μM and Hill coefficient = 0.73 ± 0.04; Emax is not given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `An_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

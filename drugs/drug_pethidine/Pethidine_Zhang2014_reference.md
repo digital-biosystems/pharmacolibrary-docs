@@ -5,7 +5,7 @@
 
 # pethidine — `Pethidine_Zhang2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The source reports only CL/F = 15.92 L·h−1 and V/F = 59.87 L·kg−1 for pethidine; ka and the lag time were missing from the source, so library placeholder values were used, and the invented ka was judged not acceptable. Because the parameters are apparent (/F), the builder assumed F=1 and Fm=1 with no molar correction, and used first-order depot input for extravascular dosing. These deviations from the source triggered the review hold. Extracted — pethidine: CL/F 15.9 L·h−1, V/F 59.9 L·kg−1.
 
-Independently confirmed by `gpt-oss:120b`.
+Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -66,11 +66,12 @@ Zhang C et al., Chronopharmacodynamics and chronopharma…, PloS one (2014)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
 | `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
 
 _Every reader agrees on every compared field of this record._
@@ -129,7 +130,7 @@ _Every reader agrees on every compared field of this record._
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pethidine/Pethidine_Zhang2014_reference/Pethidine_Zhang2014_reference_modelica.zip" download>Pethidine_Zhang2014_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pethidine/Pethidine_Zhang2014_reference/Pethidine_Zhang2014_reference_fmi.zip" download>Pethidine_Zhang2014_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pethidine/Pethidine_Zhang2014_reference/Pethidine_Zhang2014_reference_matlab.zip" download>Pethidine_Zhang2014_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pethidine/Pethidine_Zhang2014_reference/Pethidine_Zhang2014_reference_matlab_simbio.zip" download>Pethidine_Zhang2014_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pethidine/Pethidine_Zhang2014_reference/Pethidine_Zhang2014_reference_matlab_simbio.zip" download>Pethidine_Zhang2014_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_pethidine/Pethidine_Zhang2014_reference/Pethidine_Zhang2014_reference_sbml.zip" download>Pethidine_Zhang2014_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_pethidine/Pethidine_Zhang2014_reference/Pethidine_Zhang2014_reference_cellml.zip" download>Pethidine_Zhang2014_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

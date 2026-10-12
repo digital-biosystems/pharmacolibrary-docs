@@ -5,7 +5,7 @@
 
 # allopurinol — `Allopurinol_Chu2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (confirmed, agreement 1.0), gpt-5.6-luna (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed 1/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667), gpt-oss:120b (confirmed, agreement 1.0), gpt-5.6-luna (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed 1/3</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on which molecule was measured: this record has allopurinol, the second reading allopurinol and oxypurinol; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has allopurinol → oxypurinol (metabolism); hypoxanthine → xanthine (interconversion); xanthine → uric acid (interconversion), the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -74,15 +74,16 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 3 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.667 (4/6 fields) | 2 |
 | `gpt-oss:120b` | confirmed | 1.0 (6/6 fields) | none |
 | `gpt-5.6-luna` | not confirmed | 0.3 (3/10 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -93,6 +94,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-5.6-luna` | `parameters[lag time]` | 0.235 | not captured | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[v ua]` | 19.0 | not captured | only_one_extracted |
 | `gpt-5.6-luna` | `screen.primary_analyte` | allopurinol | allopurinol and oxypurinol | mismatch |
+| `gpt-oss-120b` | `model.links` | [['allopurinol', 'oxypurinol', 'metabolism'], ['hypoxanthine', 'xanthine', 'interconversion'], ['xanthine', 'uric acid', 'interconversion']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[oxypurinol clearance (cl2)a]` | not captured | not captured | only_one_extracted |
 
 </details>
 

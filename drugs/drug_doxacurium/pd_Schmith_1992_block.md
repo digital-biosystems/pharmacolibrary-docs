@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe the mechanism of action or provide key potency and rate parameters. Only linear slope values of 0.67 % block/min and 1.1 % block/min are listed for the relationship between doxacurium dose and neuromuscular block.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schmith_1992`
 - **model family:** `linear`
 - **driver:** `dose_only`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;azlocillin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azlocillin_Pacifici2010_reference&quot;,&quot;label&quot;:&quot;Pacifici_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azlocillin/Azlocillin_Pacifici2010_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azlocillin_Pacifici2010_reference&quot;,&quot;label&quot;:&quot;Pacifici_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azlocillin/Azlocillin_Pacifici2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # azlocillin
 
@@ -27,24 +27,24 @@ Azlocillin is an extended-spectrum penicillin antibiotic used to treat bacterial
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 10:58 | 9:06 | 2/1/3 | 1/0/0 | 0/0/0 | 411,970/20,150 | einfracz / qwen3.8-27b | 10 | 3/7 | 10/0 | 0 |
+| 2026-10-07 10:58 | 9:06 | 1/1/4 | 1/0/0 | 0/0/0 | 411,970/20,150 | einfracz / qwen3.8-27b | 10 | 3/7 | 10/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Modr_1982_reference](drugs/drug_azlocillin/Azlocillin_Modr1982_reference.md) | held back | 1-compartment, IV | 2 | Modr Z et al., [Azlocillin--a new anti-pseudomonas pen…, Infection 10 Suppl (1982) | [10.1007/BF01640668](https://doi.org/10.1007/BF01640668) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Pacifici_2010_reference](drugs/drug_azlocillin/Azlocillin_Pacifici2010_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Pacifici GM, Clinical Pharmacokinetics of Penicillin…, Pharmaceuticals (Basel, Swi… (2010) | [10.3390/ph3082568](https://doi.org/10.3390/ph3082568) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — volume from this paper; review-gap-filled from other p…</sub><br><sub>route_to: `human_review`</sub> | [Krupp_1990_reference](drugs/drug_azlocillin/Azlocillin_Krupp1990_reference.md) | — | 1-compartment (no model) | 3 | Krupp A et al., [The effect of continuous arteriovenous…, Der Anaesthesist (1990) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Lander_1989_reference](drugs/drug_azlocillin/Azlocillin_Lander1989_reference.md) | — | 1-compartment (no model) | 5 | Lander RD et al., Pharmacokinetic comparison of 5 g of az…, Antimicrobial agents and ch… (1989) | [10.1128/AAC.33.5.710](https://doi.org/10.1128/AAC.33.5.710) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Millart_1984_reference](drugs/drug_azlocillin/Azlocillin_Millart1984_reference.md) | — | 1-compartment (no model) | 3 | Millart H et al., [Bone and blood levels of azlocillin af…, Presse medicale (Paris, Fra… (1984) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Drugeon_1984_reference](drugs/drug_azlocillin/Azlocillin_Drugeon1984_reference.md) | — | 1-compartment (no model) | 2 | Drugeon HB et al., [Pharmacokinetics of azlocillin in the…, Presse medicale (Paris, Fra… (1984) | — |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Pacifici_2010_reference](drugs/drug_azlocillin/Azlocillin_Pacifici2010_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Pacifici GM, Clinical Pharmacokinetics of Penicillin…, Pharmaceuticals (Basel, Swi… (2010) | [10.3390/ph3082568](https://doi.org/10.3390/ph3082568) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — volume from this paper; review-gap-filled from other p…</sub><br><sub>route_to: `human_review`</sub> | [Krupp_1990_reference](drugs/drug_azlocillin/Azlocillin_Krupp1990_reference.md) | — | 1-compartment (no model) | 3 | Krupp A et al., [The effect of continuous arteriovenous…, Der Anaesthesist (1990) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Lander_1989_reference](drugs/drug_azlocillin/Azlocillin_Lander1989_reference.md) | — | 1-compartment (no model) | 5 | Lander RD et al., Pharmacokinetic comparison of 5 g of az…, Antimicrobial agents and ch… (1989) | [10.1128/AAC.33.5.710](https://doi.org/10.1128/AAC.33.5.710) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Millart_1984_reference](drugs/drug_azlocillin/Azlocillin_Millart1984_reference.md) | — | 1-compartment (no model) | 3 | Millart H et al., [Bone and blood levels of azlocillin af…, Presse medicale (Paris, Fra… (1984) | — |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Modr_1982_reference](drugs/drug_azlocillin/Azlocillin_Modr1982_reference.md) | held back | 1-compartment, IV | 2 | Modr Z et al., [Azlocillin--a new anti-pseudomonas pen…, Infection 10 Suppl (1982) | [10.1007/BF01640668](https://doi.org/10.1007/BF01640668) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Drugeon_1984_reference](drugs/drug_azlocillin/Azlocillin_Drugeon1984_reference.md) | — | 1-compartment (no model) | 2 | Drugeon HB et al., [Pharmacokinetics of azlocillin in the…, Presse medicale (Paris, Fra… (1984) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Huang_1983_Clinical_scores](drugs/drug_azlocillin/pd_Huang_1983_Clinical_scores.md) | Clinical scores · stimulation effect | — | Huang NN et al., Comparative efficacy and tolerance stud…, The Journal of antimicrobia… (1983) | [10.1093/jac/11.suppl_b.205](https://doi.org/10.1093/jac/11.suppl_b.205) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | [Huang_1983_Clinical_scores](drugs/drug_azlocillin/pd_Huang_1983_Clinical_scores.md) | Clinical scores · stimulation effect | — | Huang NN et al., Comparative efficacy and tolerance stud…, The Journal of antimicrobia… (1983) | [10.1093/jac/11.suppl_b.205](https://doi.org/10.1093/jac/11.suppl_b.205) |
 
 ## ADME sites
 
@@ -66,7 +66,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 82 matched, 72 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 6  ·  extracted 2  ·  needs_review 3  ·  rejected 1  ·  stale 0
+- **records:** 6  ·  extracted 1  ·  needs_review 4  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

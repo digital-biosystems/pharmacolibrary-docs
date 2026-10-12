@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lemborexant concentrations (PK from the cited Lalovic model) act on latency to persistent sleep (LPS) via a linear inhibitory effect; the paper excerpts provide no mechanism details and no potency or rate parameter values (Imax, IC50, kin, kout, ke0, gamma) are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lalovic_2023`
 - **model family:** `linear`
 - **driver:** `cited_pk`

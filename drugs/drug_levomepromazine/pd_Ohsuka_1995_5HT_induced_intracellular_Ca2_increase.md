@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Levomepromazine inhibits the 5HT-induced intracellular Ca2+ increase, but the paper excerpts provide no concentration data, no model structure, and no potency or rate parameters, so the mechanism cannot be specified.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ohsuka_1995`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Sidharta_2019_QTcF](drugs/drug_aprocitentan/pd_Sidharta_2019_QTcF.md) | ΔQTcF ← aprocitentan · direct linear effect | — | Sidharta PN et al., Single- and multiple-dose tolerability,…, Drug design, development an… (2019) | [10.2147/DDDT.S199051](https://doi.org/10.2147/DDDT.S199051) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> | [Sidharta_2019_QTcF](drugs/drug_aprocitentan/pd_Sidharta_2019_QTcF.md) | ΔQTcF ← aprocitentan · direct linear effect | — | Sidharta PN et al., Single- and multiple-dose tolerability,…, Drug design, development an… (2019) | [10.2147/DDDT.S199051](https://doi.org/10.2147/DDDT.S199051) |
 
 ## ADME sites
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> CCK-8 concentration-dependently stimulates IP1 production in HEK293 cells expressing CCK2R via a direct Emax-type concentration-response relationship; in the presence of caripe 11 (10 µM) the CCK-8 EC50 was 71 nM (record value; the paper states CCK-8 alone EC50 = 11.5 nM and caripe 11 as a partial agonist with Emax = 71% and EC50 = 8.5 µM). The paper does not state an explicit kinetic mechanism beyond direct receptor-mediated Gq signaling.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Taghizadeh_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

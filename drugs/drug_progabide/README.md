@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;progabide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Progabide_Johno1982_reference&quot;,&quot;label&quot;:&quot;Johno_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_progabide/Progabide_Johno1982_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Progabide_Johno1982_reference&quot;,&quot;label&quot;:&quot;Johno_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_progabide/Progabide_Johno1982_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # progabide
 
@@ -33,7 +33,7 @@ Progabide is an anticonvulsant drug developed for the treatment of epilepsy, wit
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Johno_1982_reference](drugs/drug_progabide/Progabide_Johno1982_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Johno I et al., Pharmacokinetic profile of progabide, a…, Journal of pharmaceutical s… (1982) | [10.1002/jps.2600710609](https://doi.org/10.1002/jps.2600710609) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Johno_1982_reference](drugs/drug_progabide/Progabide_Johno1982_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Johno I et al., Pharmacokinetic profile of progabide, a…, Journal of pharmaceutical s… (1982) | [10.1002/jps.2600710609](https://doi.org/10.1002/jps.2600710609) |
 
 ## ADME sites
 

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07F&quot;,&quot;href&quot;:&quot;atc/C07F.md&quot;},{&quot;label&quot;:&quot;nifedipine&quot;,&quot;href&quot;:&quot;drugs/drug_nifedipine/&quot;},{&quot;label&quot;:&quot;Kiriyama_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nifedipine_Fu2022_reference&quot;,&quot;label&quot;:&quot;Fu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nifedipine/Nifedipine_Fu2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nifedipine_Fu2022_reference&quot;,&quot;label&quot;:&quot;Fu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nifedipine/Nifedipine_Fu2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nifedipine — `Nifedipine_Kiriyama2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.091). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857), gpt-oss:120b (not confirmed, agreement 0.091). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,9 +19,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has nifedipine, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
+**Nifedipine clearance of 1.35 mL/min and volume of 54.9 L were rejected as physiologically implausible for spontaneously hypertensive rats.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The record lists a total clearance of 1.35 mL/min and a volume of distribution of 54.9 L, values that fall outside the expected physiological range for the rat population. A reported unit could not be converted to SI, so the parameter reached the review without a standardized value. A second reader disagreed with the extraction of the dose compound and primary analyte, marking them as unknown. Extracted — nifedipine: V 54.9 L, kel 0.0218 1/min, k12 0.0121 1/min, k21 0.0165 1/min, AUC 237 ng*min/mL, t1/2z 69 min, CL 1.35 mL/min, Vss 162 mL, … (+1).
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nifedipine, the second reading nifedipine and captopril; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Kiriyama A et al., Exploring the multiple effects of nifed…, Pharmacology research & per… (2024)
@@ -84,17 +88,20 @@ Kiriyama A et al., Exploring the multiple effects of nifed…, Pharmacology rese
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.857 (12/14 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.091 (2/22 fields) | 20 |
 
-<details><summary>20 field(s) a reader read differently</summary>
+<details><summary>22 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[dose]` | not captured | 1.0 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | nifedipine | nifedipine and captopril | mismatch |
 | `gpt-oss:120b` | `parameters[auc]` | 237 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc]` | not captured | 237 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cltot]` | 1.35 | not captured | only_one_extracted |

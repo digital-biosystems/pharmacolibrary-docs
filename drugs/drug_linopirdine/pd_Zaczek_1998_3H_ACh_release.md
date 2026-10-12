@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Linopirdine concentration (microM) stimulates enhancement of [3H]ACh release from rat brain slices, with a reported EC50 of 4.2 microM; the paper excerpts do not state the mechanism or model structure.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zaczek_1998`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

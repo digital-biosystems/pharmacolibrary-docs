@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_Walzer2012_arithmetic_mean_a_cv_drug_cocktail_b_cl`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (partly confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The metabolite N-desmethylclobazam, formed from clobazam in the central compartment, is defined with 0 compartments, leaving it unlinked from the dose — an orphan metabolite in the model structure. Additionally, the reported units (ng·h/mL, ng/ml, ml/kg/hour) could not be converted to SI, so parameters such as the N-desmethylclobazam AUC∞ of 31320 ng·h/mL and clobazam clearance of 43.2 ml/kg/hour reached the record without SI values. A second reader also disagreed on the exposure parameters, reading AUC∞ as 40622 instead of 31320 ng·h/mL, Cmax as 4676 instead of 2208 ng/ml, and AUC 0-lqc as 40028 instead of 30883 ng·h/mL, while the AUC 0-24 value of 8783 ng·h/mL matched. Extracted — N-desmethylclobazam: AUC 3.09e+04 ng·h/mL, AUC∞ 3.13e+04 ng·h/mL, Cmax 2.21e+03 ng/ml; midazolam: AUCt 8.78e+03 ng·h/mL; clobazam: CL 43.2 ml/kg/hour.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc 0-24: this record has 8783, the second reading none; it also differs on 8 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has clobazam → n-desmethylclobazam (metabolism); midazolam → 1-hydroxymidazolam (metabolism), the second reading clobazam → n-desmethylclobazam (metabolism); midazolam → 1‐hydroxymidazolam (metabolism); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -107,17 +107,24 @@ Walzer M et al., Pharmacokinetic drug interactions betwe…, Pharmacotherapy (20
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (6/12 fields) | 6 |
 | `gpt-oss:120b` | partly confirmed | 0.357 (5/14 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['clobazam', 'n-desmethylclobazam', 'metabolism'], ['midazolam', '1-hydroxymidazolam', 'metabolism']] | [['clobazam', 'n-desmethylclobazam', 'metabolism'], ['midazolam', '1‐hydroxymidazolam', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[auc 0-inf].value` | 31320 | 40622 | mismatch |
+| `gpt-oss-120b` | `parameters[auc 0-lqc]` | not captured | 40028 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc 0-lqc]` | 30883 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max]` | not captured | 4676 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max]` | 2208 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc 0-24]` | 8783 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc 0-24]` | not captured | 8783 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc 0-inf]` | 31320 | not captured | only_one_extracted |

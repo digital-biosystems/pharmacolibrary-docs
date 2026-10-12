@@ -29,20 +29,20 @@ Elinzanetant is used to treat hot flashes associated with menopause, including i
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:17 | 1:56 | 1/0/0 | 1/0/0 | 0/0/0 | 74,353/7,258 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-07 08:17 | 1:56 | 0/0/1 | 1/0/0 | 0/0/0 | 74,353/7,258 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Willmann_2024_reference](drugs/drug_elinzanetant/Elinzanetant_Willmann2024_reference.md) | model (no simulator) | 4-compartment general linear | 20 | Willmann S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13226](https://doi.org/10.1002/psp4.13226) |
+| <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Willmann_2024_reference](drugs/drug_elinzanetant/Elinzanetant_Willmann2024_reference.md) | model (no simulator) | 4-compartment general linear | 20 | Willmann S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13226](https://doi.org/10.1002/psp4.13226) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Willmann_2024_NK_1_RO](drugs/drug_elinzanetant/pd_Willmann_2024_NK_1_RO.md) | NK-1 receptor occupancy ← elinzanetant · direct Emax (saturable) effect | — | Willmann S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13226](https://doi.org/10.1002/psp4.13226) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Willmann_2024_NK_3_RO](drugs/drug_elinzanetant/pd_Willmann_2024_NK_3_RO.md) | NK-3 receptor occupancy ← elinzanetant · direct Emax (saturable) effect | — | Willmann S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13226](https://doi.org/10.1002/psp4.13226) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Willmann_2024_NK_1_RO](drugs/drug_elinzanetant/pd_Willmann_2024_NK_1_RO.md) | NK-1 receptor occupancy ← elinzanetant · direct Emax (saturable) effect | — | Willmann S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13226](https://doi.org/10.1002/psp4.13226) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Willmann_2024_NK_3_RO](drugs/drug_elinzanetant/pd_Willmann_2024_NK_3_RO.md) | NK-3 receptor occupancy ← elinzanetant · direct Emax (saturable) effect | — | Willmann S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13226](https://doi.org/10.1002/psp4.13226) |
 
 ## ADME sites
 
@@ -73,7 +73,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 2 matched, 2 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ---

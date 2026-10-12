@@ -5,7 +5,7 @@
 
 # salbutamol — `Salbutamol_Valenzuela2006_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182), gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. A dimension mismatch was flagged on a structural parameter: the volume of distribution V of 167.02 L and total clearance CL of 28.0 L h−1 for salbutamol sulphate in rats are dimensionally implausible for that population. A second reader also disagreed on the absorption rate constant ka (0.636 h−1), Km (0.54 mM) and Vmax (0.726 mM/h), reading no values for these parameters. Extracted — salbutamol: kabs 0.636 h(-1), Vmax 0.726 mM/h, Km 0.54 mM, CL 28 L h−1, V 167 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of k'm: this record has none, the second reading 0.357. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has salbutamol sulphate, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -79,17 +79,27 @@ Valenzuela B et al., Modelling intestinal absorption of salb…, International j
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 | `gpt-oss:120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl]` | 28.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.636 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.636 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km]` | 0.54 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km]` | not captured | 0.54 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vmax]` | 0.726 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vmax]` | not captured | 0.726 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | salbutamol sulphate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | salbutamol sulphate | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[k'm]` | not captured | 0.357 | only_one_extracted |
 
 </details>

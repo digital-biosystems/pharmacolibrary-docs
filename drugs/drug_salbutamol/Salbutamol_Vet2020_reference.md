@@ -5,7 +5,7 @@
 
 # salbutamol — `Salbutamol_Vet2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.733). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.529), gpt-oss:120b (not confirmed, agreement 0.733). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The structure lists interconversion links from salbutamol to R-salbutamol and to S-salbutamol with link parameter 'none' and unknown kind, so the enantiomer compartments have no quantified path from the administered dose — an orphan/unlinked-metabolite finding. A second reader disputed the primary analyte (salbutamol vs R- and S-salbutamol), the links (none vs the two interconversions), and several values: renal clearance 16.3 vs 42 L/h/70 kg, total clearance 8.82 vs 37 L/h/70 kg, and central volume 12.9 vs 281 L/70 kg; the baseline dose was read as 99 by the second reader but null in this record. Extracted — salbutamol: CLR 16.3 L/h/70 kg, CL 8.82 L/h/70 kg, V1 12.9 L/70 kg, Q 20.4 L/h/70 kg, V2 45.5 L/70 kg; R-salbutamol, S-salbutamol: kabs 3.71 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of baseline dose: this record has none, the second reading 99; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has R- and S-salbutamol, the second reading salbutamol (R- and S- enantiomers); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -76,17 +76,26 @@ Vet NJ et al., Population Pharmacokinetics of Intraven…, Clinical pharmacokine
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.529 (9/17 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.733 (11/15 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['salbutamol', 'r-salbutamol', 'interconversion'], ['salbutamol', 's-salbutamol', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `parameters[clr-salbutamol].value` | 16.3 | 42 | mismatch |
+| `gpt-oss-120b` | `parameters[cls-salbutamol].parameter_id` | Q354 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[cls-salbutamol].value` | 8.82 | 37 | mismatch |
+| `gpt-oss-120b` | `parameters[k a1]` | 31.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time before dose-response]` | 15.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc].value` | 12.9 | 281 | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | R- and S-salbutamol | salbutamol (R- and S- enantiomers) | mismatch |
 | `gpt-oss:120b` | `parameters[baseline dose]` | not captured | 99 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clr-salbutamol].value` | 16.3 | 42 | mismatch |
 | `gpt-oss:120b` | `parameters[cls-salbutamol].value` | 8.82 | 37 | mismatch |

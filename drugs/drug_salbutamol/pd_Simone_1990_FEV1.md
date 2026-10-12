@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Salbutamol dose drives an increase in FEV1, described as a linear model with stimulation; the paper excerpts provide no mechanism and no potency or rate values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Simone_1990`
 - **model family:** `linear`
 - **driver:** `dose_only`

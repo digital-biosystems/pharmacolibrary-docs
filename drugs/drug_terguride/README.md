@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yamada_2003_P](drugs/drug_terguride/pd_Yamada_2003_P.md) | Plasma Prolactin Concentration ← terguride · indirect response — drug inhibits the production of Plasma Prolactin Concentration | — | Yamada Y et al., [Pharmacokinetic/pharmacodynamic analys…, Yakugaku zasshi : Journal o… (2003) | [10.1248/yakushi.123.255](https://doi.org/10.1248/yakushi.123.255) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span> | [Yamada_2003_P](drugs/drug_terguride/pd_Yamada_2003_P.md) | Plasma Prolactin Concentration ← terguride · indirect response — drug inhibits the production of Plasma Prolactin Concentration | — | Yamada Y et al., [Pharmacokinetic/pharmacodynamic analys…, Yakugaku zasshi : Journal o… (2003) | [10.1248/yakushi.123.255](https://doi.org/10.1248/yakushi.123.255) |
 
 ## ADME sites
 

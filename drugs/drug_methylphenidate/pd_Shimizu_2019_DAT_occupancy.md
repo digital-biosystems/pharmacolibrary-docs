@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates methylphenidate concentrations to DAT occupancy / fluorescent substrate uptake inhibition, an inhibitory effect, but the available excerpts do not state the model mechanism (e.g., direct Emax, production or elimination inhibition) or any potency or rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shimizu_2019`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

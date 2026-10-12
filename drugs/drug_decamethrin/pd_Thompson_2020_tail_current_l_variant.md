@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deltamethrin (decamethrin) concentration (nM) drives the tail current (INa+) in Xenopus oocytes expressing Drosophila para splice variant l, with an EC50 of 42 nM; the paper excerpts do not state the mechanism or other model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Thompson_2020`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

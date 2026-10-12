@@ -5,7 +5,7 @@
 
 # famotidine — `Famotidine_McCann2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429), gpt-oss:120b (not confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has 42, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 42, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,17 +61,26 @@ McCann S et al., Population Pharmacokinetics of Posacona…, Clinical pharmacoki
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.429 (6/14 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.538 (7/13 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q312]` | 42 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q319]` | 0.75 | 0.75 | mismatch |
+| `gpt-oss-120b` | `values[Q325]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q37]` | not captured | 0.7 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | 0.67 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q43]` | not captured | 17.6 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q49]` | 0.325 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q83]` | 2.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q312]` | 42 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q319]` | 0.75 | 0.75 | mismatch |
 | `gpt-oss:120b` | `values[Q325]` | not captured | 1 | only_one_extracted |
@@ -133,10 +142,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_famotidine/Famotidine_McCann2023_reference/Famotidine_McCann2023_reference_modelica.zip" download>Famotidine_McCann2023_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_famotidine/Famotidine_McCann2023_reference/Famotidine_McCann2023_reference_modelica.zip" download>Famotidine_McCann2023_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_famotidine/Famotidine_McCann2023_reference/Famotidine_McCann2023_reference_fmi.zip" download>Famotidine_McCann2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_famotidine/Famotidine_McCann2023_reference/Famotidine_McCann2023_reference_matlab.zip" download>Famotidine_McCann2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_famotidine/Famotidine_McCann2023_reference/Famotidine_McCann2023_reference_matlab_simbio.zip" download>Famotidine_McCann2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_famotidine/Famotidine_McCann2023_reference/Famotidine_McCann2023_reference_matlab_simbio.zip" download>Famotidine_McCann2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_famotidine/Famotidine_McCann2023_reference/Famotidine_McCann2023_reference_sbml.zip" download>Famotidine_McCann2023_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_famotidine/Famotidine_McCann2023_reference/Famotidine_McCann2023_reference_cellml.zip" download>Famotidine_McCann2023_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

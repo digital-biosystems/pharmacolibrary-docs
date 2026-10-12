@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates diazepam concentrations (nM) to the continuous electroencephalographic (EEG) drug effect, but the available excerpts do not state the PD model family, mechanism, effect direction, or any potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Burkat_2022`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

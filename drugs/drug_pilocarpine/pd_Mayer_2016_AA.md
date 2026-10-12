@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates pilocarpine concentrations to displacement of a radioactive tracer from the muscarinic receptor binding site (anticholinergic activity, AA) using a sigmoid Emax model with an inhibitory direction, but the excerpts provide no concentration data, no mechanism, and no parameter values (Imax, IC50, Emax, gamma) are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mayer_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

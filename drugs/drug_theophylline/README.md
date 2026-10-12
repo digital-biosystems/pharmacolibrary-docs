@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;theophylline&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Theophylline_Frymoyer2020_reference&quot;,&quot;label&quot;:&quot;Frymoyer_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_theophylline/Theophylline_Frymoyer2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Theophylline_Frymoyer2020_reference&quot;,&quot;label&quot;:&quot;Frymoyer_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_theophylline/Theophylline_Frymoyer2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # theophylline
 
@@ -27,14 +27,14 @@ Theophylline is a bronchodilator used to treat breathing problems such as asthma
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:16 | 1:36 | 1/1/0 | 1/0/0 | 0/0/0 | 148,027/6,935 | einfracz / qwen3.8-27b | 6 | 5/1 | 6/0 | 0 |
+| 2026-10-07 22:16 | 1:36 | 0/1/1 | 1/0/0 | 0/0/0 | 148,027/6,935 | einfracz / qwen3.8-27b | 6 | 5/1 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Frymoyer_2020_reference](drugs/drug_theophylline/Theophylline_Frymoyer2020_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 (+1 cov.) | Frymoyer A et al., Theophylline dosing and pharmacokinetic…, Pediatric research (2020) | [10.1038/s41390-020-01140-8](https://doi.org/10.1038/s41390-020-01140-8) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kim_2013_reference](drugs/drug_theophylline/Theophylline_Kim2013_reference.md) | — | 1-compartment (no model) | 0 | Kim SE et al., Population pharmacokinetics of theophyl…, Therapeutic drug monitoring (2013) | [10.1097/FTD.0b013e3182866695](https://doi.org/10.1097/FTD.0b013e3182866695) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Frymoyer_2020_reference](drugs/drug_theophylline/Theophylline_Frymoyer2020_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 (+1 cov.) | Frymoyer A et al., Theophylline dosing and pharmacokinetic…, Pediatric research (2020) | [10.1038/s41390-020-01140-8](https://doi.org/10.1038/s41390-020-01140-8) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kim_2013_reference](drugs/drug_theophylline/Theophylline_Kim2013_reference.md) | — | 1-compartment (no model) | 0 | Kim SE et al., Population pharmacokinetics of theophyl…, Therapeutic drug monitoring (2013) | [10.1097/FTD.0b013e3182866695](https://doi.org/10.1097/FTD.0b013e3182866695) |
 
 ## Pharmacodynamics (PD)
 
@@ -70,7 +70,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 331 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Elkady_2012_mPGES_1](drugs/drug_lonazolac/pd_Elkady_2012_mPGES_1.md) | mPGES-1 ← lonazolac derivative 22 · inhibition effect | — | Elkady M et al., Modified acidic nonsteroidal anti-infla…, Journal of medicinal chemis… (2012) | [10.1021/jm3010543](https://doi.org/10.1021/jm3010543) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Elkady_2012_mPGES_1](drugs/drug_lonazolac/pd_Elkady_2012_mPGES_1.md) | mPGES-1 ← lonazolac derivative 22 · inhibition effect | — | Elkady M et al., Modified acidic nonsteroidal anti-infla…, Journal of medicinal chemis… (2012) | [10.1021/jm3010543](https://doi.org/10.1021/jm3010543) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

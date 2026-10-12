@@ -5,7 +5,7 @@
 
 # canrenone — `Canrenone_Suyagh2013_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4), gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -77,17 +77,24 @@ Suyagh M et al., Potassium canrenoate treatment in paedi…, Journal of hyperten
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.455 (5/11 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 1.11 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 1.11 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[estimated half-life of canrenone based on dbs concentrations]` | 19.99 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | not captured | 20.48 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 20.48 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/f]` | not captured | 12.86 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/f].parameter_id` | Q351 | Q27 | mismatch |
 | `gpt-oss:120b` | `parameters[v/f]` | not captured | 603.3 | only_one_extracted |
@@ -150,7 +157,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2013_reference/Canrenone_Suyagh2013_reference_modelica.zip" download>Canrenone_Suyagh2013_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2013_reference/Canrenone_Suyagh2013_reference_fmi.zip" download>Canrenone_Suyagh2013_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2013_reference/Canrenone_Suyagh2013_reference_matlab.zip" download>Canrenone_Suyagh2013_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2013_reference/Canrenone_Suyagh2013_reference_matlab_simbio.zip" download>Canrenone_Suyagh2013_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2013_reference/Canrenone_Suyagh2013_reference_matlab_simbio.zip" download>Canrenone_Suyagh2013_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2013_reference/Canrenone_Suyagh2013_reference_sbml.zip" download>Canrenone_Suyagh2013_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2013_reference/Canrenone_Suyagh2013_reference_cellml.zip" download>Canrenone_Suyagh2013_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

@@ -5,7 +5,7 @@
 
 # clonidine — `Clonidine_Larsson2011_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158), gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833), gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,11 +21,11 @@
 
 The parameter coverage check expected 5 parameters but found only 4 covered; tlag (absorption lag time, 0.148 h) was neither emitted nor defaulted, so the record was held back for review. Because the source is abstract-only, the reported values (e.g., CL 17.9 L/h, V1 81.2 L·70 kg⁻¹, Fab 55.4%) are summary statistics rather than a fitted model. A second reader disagreed on several fields, reading clearance as 17.9 where this record lists it under a different label, and returning null for the absorption half-life (0.45 h), lag time, between-compartment clearance (121 L/h), and central volume, though the bioavailability value of 55.4% agrees. Extracted — clonidine: t1/2ka 0.45 h, tlag 0.148 h, CL 17.9 L/h, Q 121 L/h, V1 81.2 l·70 kg(-1), V2 113 l·70 kg(-1), Fab 55.4 %.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clonidine, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has clonidine, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:25:37.240226+00:00) predates the upstream re-run (2026-10-08 11:20:38.052933+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:25:37.240226+00:00) predates the upstream re-run (2026-10-09 06:08:40.816373+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Larsson P et al., Oral bioavailability of clonidine in ch…, Paediatric anaesthesia (2011)
@@ -35,7 +35,7 @@ Larsson P et al., Oral bioavailability of clonidine in ch…, Paediatric anaesth
 <dbs-pgx drug="clonidine" model-id="Clonidine_Larsson2011_reference" status="needs_review" stale="true" population="children undergoing adenotonsillectomy" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 7 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -44,13 +44,12 @@ Larsson P et al., Oral bioavailability of clonidine in ch…, Paediatric anaesth
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| absorption half-life (Tabs) | `Q95` · t1/2ka | 0.45 | h | 1620.0 | [h] | not captured | llm_corrected (0.6) | Larsson_2011:abstract | — | not captured |
-| absorption lag time (Tlag) | `Q83` · tlag | 0.148 | h | 532.8 | [h] | not captured | exact (1.0) | Larsson_2011:abstract | — | not captured |
-| Clearance (CL) | `Q22` · CL | 17.9 | l·h(-1) per 70 kg | not captured | [l] / [[h] · [kg] · [per70]] | not captured | exact (1.0) | Larsson_2011:abstract | — | not captured |
-| between compartment clearance (Q) | `Q30` · Q | 121 | l·h(-1) per 70 kg | not captured | [l] / [[h] · [kg] · [per70]] | not captured | llm_corrected (0.6) | Larsson_2011:abstract | — | not captured |
-| central volume (V1) | `Q63` · V1 | 81.2 | l·70 kg(-1) | 5.684 | [l] / [kg] | not captured | exact (1.0) | Larsson_2011:abstract | — | not captured |
-| peripheral volume of distribution (V2) | `Q64` · V2 | 113 | l·70 kg(-1) | 7.91 | [l] / [kg] | not captured | boundary_compartment (0.9) | Larsson_2011:abstract | — | not captured |
-| oral bioavailability | `Q40` · Fab | 55.4 | % | not captured | not captured | not captured | exact (1.0) | Larsson_2011:abstract | — | not captured |
+| CL std (lAEh per 70 kg) | `Q354` · CLnorm | 17.9 | L/h | 4.9722222222222224e-06 | L/h | not captured | space_fold (0.95) | tab_0:row1:col1 | — | 30.3 (None% RSE) |
+| V1 std (lAE70 kg )1 ) | `Q63` · V1 | 81.2 | L | 0.08120000000000001 | L | not captured | llm_confirmed (0.6) | tab_0:row2:col1 | — | 71.5 (None% RSE) |
+| Q std (lAEh per 70 kg) | `Q30` · Q | 121 | L/h | 3.361111111111111e-05 | L/h | not captured | llm (0.6) | tab_0:row3:col1 | — | not captured |
+| V2 std (lAE70 kg )1 ) | `Q64` · V2 | 113 | L | 0.113 | L | not captured | llm_confirmed (0.6) | tab_0:row4:col1 | — | 33.9 (None% RSE) |
+| Tlag | `Q83` · tlag | 0.148 | h | 532.8 | h | not captured | exact (1.0) | tab_0:row6:col1 | — | 91.2 (None% RSE) |
+| F with oral | `Q40` · Fab | 0.554 | not captured | not captured | not captured | not captured | llm (0.6) | tab_0:row9:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,15 +59,38 @@ Larsson P et al., Oral bioavailability of clonidine in ch…, Paediatric anaesth
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'l·h(-1) per 70 kg' (CL)
-- unit_dimension_unknown: 'l·h(-1) per 70 kg' (Q)
+- table section iiv: 'CL std (lAEh per 70 kg)' routed out of structural estimates ('% BSV')
+- table section iiv: 'V1 std (lAE70 kg )1 )' routed out of structural estimates ('% BSV')
+- table section iiv: 'Q std (lAEh per 70 kg)' routed out of structural estimates ('% BSV')
+- table section iiv: 'V2 std (lAE70 kg )1 )' routed out of structural estimates ('% BSV')
+- table section iiv: 'Tabs (h)' routed out of structural estimates ('% BSV')
+- table section iiv: 'Tlag' routed out of structural estimates ('% BSV')
+- table section iiv: 'F with oral' routed out of structural estimates ('% BSV')
+- unit_dimension_unknown: 'lAEh per 70 kg' (CLnorm)
+- unit_dimension_unknown: 'lAEh per 70 kg' (Q)
+- dropped unlinked row (NIL): 'Tabs (h)' — extend the ontology if this is a real PK parameter (source ['tab_0:row5:col1'])
+- dropped unlinked row (NIL): 'TM 50 (weeks)' — extend the ontology if this is a real PK parameter (source ['tab_0:row7:col1'])
+- dropped unlinked row (NIL): 'N' — extend the ontology if this is a real PK parameter (source ['tab_0:row8:col1'])
+- dropped unlinked row (NIL): 'Err' — extend the ontology if this is a real PK parameter (source ['tab_0:row10:col1'])
+- implicit units: 'CL std (lAEh per 70 kg)' → L/h (from the paper text: "The text explicitly states the unit for clearance in the covariate analysis equation: 'CL = CL std ... l h )1' (rendered")
+- implicit units: 'V1 std (lAE70 kg )1 )' → L (from the paper text: "The text describes the model parameterization: 'central volume (V1)'. The table header/footnote context for V1 std is '(")
+- implicit units: 'Q std (lAEh per 70 kg)' → L/h (from the paper text: "The text describes the model parameterization: 'between compartment clearance (Q)'. The standard unit for intercompartme")
+- implicit units: 'V2 std (lAE70 kg )1 )' → L (from the paper text: "The text describes the model parameterization: 'peripheral volume of distribution (V2)'. The standard unit for volume of")
+- implicit units: 'Tlag' → h (from the paper text: "The abstract explicitly states: 'absorption lag time (Tlag), 0.148 (91.2; 0.002-0.316) h'.")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clonidine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Larsson_2011_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- unparsed cell tab_0:row1:col3 = '16, 20.3'
+- unparsed cell tab_0:row2:col3 = '60.7, 105'
+- unparsed cell tab_0:row3:col3 = '80.1, 165'
+- unparsed cell tab_0:row4:col3 = '91, 131'
+- unparsed cell tab_0:row5:col3 = '0.221, 0.884'
+- unparsed cell tab_0:row6:col3 = '0.002, 0.316'
+- unparsed cell tab_0:row7:col3 = '53, 78.8'
+- unparsed cell tab_0:row8:col3 = '1.5, 3.72'
+- unparsed cell tab_0:row9:col3 = '0.469, 0.654'
+- unparsed cell tab_0:row10:col3 = '0.105, 0.155'
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -77,31 +99,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.158 (3/19 fields) | 16 |
-| `gpt-oss:120b` | not confirmed | 0.833 (10/12 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.833 (10/12 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>18 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption half-life]` | 0.45 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption half-life]` | not captured | 0.45 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption lag time]` | 0.148 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption lag time]` | not captured | 0.148 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[between compartment clearance]` | 121 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[between compartment clearance]` | not captured | 121 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[central volume]` | 81.2 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[central volume]` | not captured | 81.2 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | 17.9 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | not captured | 17.9 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[oral bioavailability]` | 55.4 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[oral bioavailability]` | not captured | 55.4 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` | 113 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` | not captured | 113 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | clonidine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | clonidine | unknown | mismatch |
-| `gpt-oss:120b` | `model.bioavailability.theta` | 55.4 | 55.4% | mismatch |
-| `gpt-oss:120b` | `parameters[oral bioavailability].value` | 55.4 | 55.4% | mismatch |
+| `gpt-oss-120b` | `parameters[tabs]` | not captured | 0.454 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tm 50]` | not captured | 61.6 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tabs]` | not captured | 0.454 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tlag]` | 0.148 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | clonidine | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | clonidine | unknown | mismatch |
 
 </details>
 
@@ -115,19 +125,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Larsson_2011:abstract'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Larsson_2011:abstract'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Larsson_2011:abstract'] |
-| C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['Larsson_2011:abstract'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | l·h(-1) per 70 kg | not captured | not captured | ['Larsson_2011:abstract'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | l·h(-1) per 70 kg | not captured | not captured | ['Larsson_2011:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 17.9 | not captured | not captured | ['Larsson_2011:abstract'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row3:col1'] |
+| C5_dimension_Q354 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row1:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row2:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row4:col1'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['tab_0:row6:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q63 | pass | volume within physiological range | 5.68e+03 L | not captured | not captured | ['Larsson_2011:abstract'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 7.91e+03 L | not captured | not captured | ['Larsson_2011:abstract'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 81.2 L | not captured | not captured | ['tab_0:row2:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 113 L | not captured | not captured | ['tab_0:row4:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -176,4 +184,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 11:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-09 06:08 UTC</sub>

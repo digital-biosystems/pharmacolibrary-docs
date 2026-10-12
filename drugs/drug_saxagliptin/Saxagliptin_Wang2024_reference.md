@@ -4,7 +4,7 @@
 
 # saxagliptin — `Saxagliptin_Wang2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.878). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.829), gpt-oss:120b (not confirmed, agreement 0.878). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — saxagliptin: Cmax 3.72e+03 ng/mL, tmax 0.11 h, AUC 585 ng*h/mL, t1/2ka 0.07 h, t1/2α 0.06 h, t1/2β 0.36 h, V 2.31e+03 mL/kg, V2 1.84e+04 mL/kg, … (+4); 5-hydroxy saxagliptin: V1 141 ml/kg, V2 138 ml/kg, CL 882 ml/h/kg, Q 472 ml/h/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[t1/2a].parameter_id`: this record has Q59, the second reading Q95; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has unknown, the second reading saxagliptin (oral) and 5-hydroxy saxagliptin (IV); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -86,17 +86,25 @@ Wang T et al., Pharmacokinetic/Pharmacodynamic modelli…, BMC pharmacology & to
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.829 (34/41 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.878 (36/41 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[k (1/h) 12]` | not captured | 46.22 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k (1/h) 21]` | not captured | 37.47 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2a].parameter_id` | Q59 | Q95 | mismatch |
+| `gpt-oss-120b` | `parameters[t1/2ka].parameter_id` | Q95 | Q49 | mismatch |
+| `gpt-oss-120b` | `parameters[t1/2β].parameter_id` | Q60 | Q47 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | unknown | saxagliptin (oral) and 5-hydroxy saxagliptin (IV) | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | unknown | saxagliptin and 5-hydroxy saxagliptin | mismatch |
 | `gpt-oss:120b` | `parameters[k (1/h) 12]` | not captured | 46.22 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k (1/h) 21]` | not captured | 37.47 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t1/2a].parameter_id` | Q59 | Q95 | mismatch |

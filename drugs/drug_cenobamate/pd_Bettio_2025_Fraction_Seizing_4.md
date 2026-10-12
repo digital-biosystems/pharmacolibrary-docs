@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cenobamate (CNB) brain concentrations directly inhibit the binary response 'Fraction Seizing' according to an Emax model with a brain EC50 of 10.7 µM. The paper does not specify the mechanism of action for CNB in this context, nor does it provide values for Imax, kout, or ke0.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bettio_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Oxypurinol concentration inhibits the urinary ratio of 1-methylurate (1-MU) to 1-methylxanthine (1-MX) following a sigmoidal Emax model with an EC50 of 4.0 ± 0.7 mg/L and a maximum effect (Emax/E0) of 86 ± 6%. The paper describes oxypurinol as a direct inhibitor of xanthine oxidoreductase, but does not specify a link-effect mechanism such as effect compartments or turnover parameters for this specific response.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Day_2007`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

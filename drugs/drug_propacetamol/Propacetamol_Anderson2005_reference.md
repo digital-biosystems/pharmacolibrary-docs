@@ -5,7 +5,7 @@
 
 # propacetamol — `Propacetamol_Anderson2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (primary re-run, agreement 0.167), gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -59,17 +59,28 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | primary re-run | 0.167 (2/12 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | not captured | 0.5 | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [] | [['propacetamol', 'paracetamol', 'hydrolysis']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[central volume (v2/f(oral))]` | not captured | 24 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance (cl/f(oral))]` | not captured | 16 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartment clearance (q/f(oral))]` | not captured | 55 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution (v3/f(oral)) at 27 weeks pca]` | not captured | 45.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution (v3/f(oral))]` | not captured | 30 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability of intravenous propacetamol compared with an oral elixir]` | not captured | 0.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[target concentration]` | not captured | 10 | only_one_extracted |
 | `gpt-oss:120b` | `model.bioavailability.theta` | 0.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [] | [['propacetamol', 'paracetamol', 'hydrolysis']] | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |

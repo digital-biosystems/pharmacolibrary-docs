@@ -4,7 +4,7 @@
 
 # dabrafenib — `Dabrafenib_Balakirouchenane2020_final_tra_model`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dabrafenib, the second reading dabrafenib, trametinib; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+**Dabrafenib’s clearance, volume of distribution, and absorption lag time were missing; the recorded clearance value, 5.83 L/h, belongs to trametinib.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+No value for dabrafenib’s clearance, volume of distribution, or absorption lag time—all six extracted parameters describe trametinib—so library placeholders stood in and the model was held back rather than published with invented numbers. The record describes dabrafenib forming hydroxy-dabrafenib, but the built structure was a one-compartment oral model rather than the expected parent–metabolite structure; one extracted parameter, V2/F, was also neither represented nor defaulted. Defaulting clearance, volume, and lag time was judged unacceptable, and the model assumed F=1 and metabolite bioavailability Fm=1 without molar correction. A second reader also disagreed over whether trametinib was among the dose compounds and over the identity of the absorption-rate parameter. Extracted — trametinib: CL/F 5.83 L/h, V1/F 61.9 L, kabs 0.913 1/h, Q/F 64.9 L/h, V2/F 417 L, tlag 0.709 h.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has dabrafenib and trametinib, the second reading dabrafenib; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 > **Dose compound ≠ measured compound:** dosed `dabrafenib and trametinib`, measured `dabrafenib, hydroxy-dabrafenib, and trametinib`.
 
@@ -27,7 +31,7 @@ Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (
   ·  DOI: [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931)
 
 ## Model component
-<dbs-pgx drug="dabrafenib" model-id="Dabrafenib_Balakirouchenane2020_final_tra_model" status="extracted" stale="false" population="adults with metastatic BRAF-mutated solid tumors" measured-compound="dabrafenib, hydroxy-dabrafenib, and trametinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="dabrafenib" model-id="Dabrafenib_Balakirouchenane2020_final_tra_model" status="model_quarantined" stale="false" population="adults with metastatic BRAF-mutated solid tumors" measured-compound="dabrafenib, hydroxy-dabrafenib, and trametinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.
@@ -35,6 +39,8 @@ Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F (L/h) | `Q27` · CL/F | 5.83 | L/h | 1.6194444444444445e-06 | [l] / [h] | not captured | exact (1.0) | cancers-12-00931-t003:row2:col1, cancers-12-00931-t003:row2:col2 | — | 29.6 (None% RSE) |
@@ -83,18 +89,21 @@ Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.895 (17/19 fields) | 2 |
+| `qwen3.8-27b` | not confirmed | 0.583 (7/12 fields) | 5 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[k a].parameter_id` | Q95 | Q49 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | dabrafenib | dabrafenib, trametinib | mismatch |
+| `qwen3.8-27b` | `model.links` | [['dabrafenib', 'hydroxy-dabrafenib', 'metabolism']] | [] | mismatch |
+| `qwen3.8-27b` | `parameters[v2/f].parameter_id` | Q290 | Q82 | mismatch |
+| `qwen3.8-27b` | `parameters[v3/f].parameter_id` | Q82 | Q78 | mismatch |
+| `qwen3.8-27b` | `screen.dose_compound` | dabrafenib and trametinib | dabrafenib | mismatch |
+| `qwen3.8-27b` | `screen.primary_analyte` | dabrafenib, hydroxy-dabrafenib, and trametinib | dabrafenib | mismatch |
 
 </details>
 
@@ -123,6 +132,17 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | C9_phys_window_Q290 | pass | volume within physiological range | 61.9 L | not captured | not captured | ['cancers-12-00931-t003:row3:col1', 'cancers-12-00931-t003:row3:col2'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 417 L | not captured | not captured | ['cancers-12-00931-t003:row6:col1', 'cancers-12-00931-t003:row6:col2'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_param_coverage | not captured | fail | 6 scholar param(s) emitted or defaulted | 5 covered | not captured | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -131,6 +151,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_dabrafenib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Balakirouchenane_2020` / `Balakirouchenane_2020::final_tra_model`)
+- model: `../../../knowledgebase/drugs/drug_dabrafenib/models/modelica/_needs_review/Dabrafenib_Balakirouchenane2020_final_tra_model.mo`
+- deviation: `../../../knowledgebase/drugs/drug_dabrafenib/models/modelica/_needs_review/Dabrafenib_Balakirouchenane2020_final_tra_model.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -142,7 +164,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model/Dabrafenib_Balakirouchenane2020_final_tra_model_matlab.zip" download>Dabrafenib_Balakirouchenane2020_final_tra_model_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model/Dabrafenib_Balakirouchenane2020_final_tra_model_matlab_simbio.zip" download>Dabrafenib_Balakirouchenane2020_final_tra_model_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model/Dabrafenib_Balakirouchenane2020_final_tra_model_matlab_simbio.zip" download>Dabrafenib_Balakirouchenane2020_final_tra_model_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model/Dabrafenib_Balakirouchenane2020_final_tra_model_sbml.zip" download>Dabrafenib_Balakirouchenane2020_final_tra_model_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_tra_model/Dabrafenib_Balakirouchenane2020_final_tra_model_cellml.zip" download>Dabrafenib_Balakirouchenane2020_final_tra_model_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

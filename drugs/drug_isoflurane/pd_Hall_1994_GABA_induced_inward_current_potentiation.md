@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Isoflurane concentrations act on GABA-induced inward current potentiation through a direct mechanism where isoflurane potentiates the current only in the presence of GABA with no effect in its absence. The dose-response relationship was described by a sigmoidal Hill equation with an EC50 of 320 ± 20 nM and a Hill coefficient (h) of 2.7 ± 0.4.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hall_1994`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

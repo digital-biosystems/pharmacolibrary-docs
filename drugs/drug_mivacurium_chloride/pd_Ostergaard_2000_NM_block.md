@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the full text or specific mechanism details, so the exact mode of action (e.g., inhibition of elimination vs. direct effect) and effect-compartment rate constants (ke0) are not stated. No potency values (IC50, EC50) or Emax parameters are provided in the available record or excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ostergaard_2000`
 - **model family:** `effect_compartment`
 - **driver:** `cited_pk`

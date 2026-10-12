@@ -5,7 +5,7 @@
 
 # sertraline — `Sertraline_Zhang2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375), gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — sertraline: CL/F 76.1, V/F 803, kel 0.098, CL 0.0068.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f].value`: this record has 76.1, the second reading 67.22; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sertraline, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -70,17 +70,23 @@ Zhang Z et al., Population pharmacokinetic approach to…, Heliyon (2024)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.625 (5/8 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f].value` | 76.1 | 67.22 | mismatch |
+| `gpt-oss-120b` | `parameters[v/f].value` | 803 | 372.19 | mismatch |
+| `gpt-oss-120b` | `parameters[θcl-age].value` | 0.0068 | 0.004 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | sertraline | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | sertraline | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl/f].value` | 76.1 | 67.22 | mismatch |
 | `gpt-oss:120b` | `parameters[v/f].value` | 803 | 372.19 | mismatch |
 | `gpt-oss:120b` | `parameters[θcl-age].value` | 0.0068 | 0.004 | mismatch |

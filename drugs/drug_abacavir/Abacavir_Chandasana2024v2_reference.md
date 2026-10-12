@@ -5,7 +5,7 @@
 
 # abacavir — `Abacavir_Chandasana2024v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.893). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667), gpt-oss:120b (not confirmed, agreement 0.893). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Kabs and V/F have no unit; without a unit the values cannot be converted, so the model cannot use them. The record also lists conflicting weight-exponent values for the same covariate effects (0.794, 0.455, 0.758 for clearance; 0.556 versus 0.698 for volume), and a second reader assigned 0.698 to the volume exponent while this record gives 0.556. The weight-based consistency check could not compute a comparison (ratio None), so it is inconclusive rather than a demonstrated fault. The dose compound is also disputed: abacavir versus abacavir/dolutegravir/lamivudine. Extracted — abacavir: CL/F 16.3 L/h, V2/F 10.1 l, kabs 2.08, Q/F 1.69 l/h, V3/F 23 l, Fab 1.62, V1/F 23.1 l, V/F 32.7, … (+1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has abacavir, the second reading abacavir/dolutegravir/lamivudine fixed-dose combination; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has abacavir/dolutegravir/lamivudine FDC, the second reading abacavir/dolutegravir/lamivudine fixed-dose combination; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -108,17 +108,29 @@ Chandasana H et al., Population Pharmacokinetic Modeling of…, Infectious disea
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.667 (22/33 fields) | 11 |
 | `gpt-oss:120b` | not confirmed | 0.893 (25/28 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption rate constant, ka [h-1]].value` | 2.08 | 0.85 | mismatch |
+| `gpt-oss-120b` | `parameters[apparent central volume of distribution, v/f [l]].covariate_forms` | [] | ['power', 'power'] | mismatch |
+| `gpt-oss-120b` | `parameters[apparent central volume of distribution, v/f [l]].parameter_id` | Q290 | Q76 | mismatch |
+| `gpt-oss-120b` | `parameters[apparent central volume of distribution, v/f [l]].value` | 23.1 | 13.6 | mismatch |
+| `gpt-oss-120b` | `parameters[f, solution arrow pk substudy part 2]` | not captured | 1.75 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f, tablet arrow pk substudy part 2].parameter_id` | Q40 | Q87 | mismatch |
+| `gpt-oss-120b` | `parameters[maturation half time, tm50 [pma weeks]]` | 52.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q353_wt_power]` | 0.556 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q76_wt_power]` | 0.677 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v_f_wt_power]` | not captured | 0.556 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | abacavir/dolutegravir/lamivudine FDC | abacavir/dolutegravir/lamivudine fixed-dose combination | mismatch |
 | `gpt-oss:120b` | `parameters[absolute bioavailability (f1) solution po]` | not captured | 0.496 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[f, tablet arrow pk substudy part 2].parameter_id` | Q40 | Q87 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | abacavir | abacavir/dolutegravir/lamivudine fixed-dose combination | mismatch |

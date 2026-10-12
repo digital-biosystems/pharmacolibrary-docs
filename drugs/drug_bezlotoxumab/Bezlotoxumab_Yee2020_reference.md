@@ -5,7 +5,7 @@
 
 # bezlotoxumab — `Bezlotoxumab_Yee2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -18,6 +18,8 @@
 ### Reviewer guidance
 
 **Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 53, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -53,6 +55,30 @@ Yee KL et al., A time-to-event analysis of the exposur…, Journal of pharmacoki
 - volume reported by review
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
+
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q17]` | 53 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q19]` | 100 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 185 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` | not captured | 100 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
@@ -101,7 +127,7 @@ Yee KL et al., A time-to-event analysis of the exposur…, Journal of pharmacoki
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bezlotoxumab/Bezlotoxumab_Yee2020_reference/Bezlotoxumab_Yee2020_reference_modelica.zip" download>Bezlotoxumab_Yee2020_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bezlotoxumab/Bezlotoxumab_Yee2020_reference/Bezlotoxumab_Yee2020_reference_fmi.zip" download>Bezlotoxumab_Yee2020_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bezlotoxumab/Bezlotoxumab_Yee2020_reference/Bezlotoxumab_Yee2020_reference_matlab.zip" download>Bezlotoxumab_Yee2020_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bezlotoxumab/Bezlotoxumab_Yee2020_reference/Bezlotoxumab_Yee2020_reference_matlab_simbio.zip" download>Bezlotoxumab_Yee2020_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bezlotoxumab/Bezlotoxumab_Yee2020_reference/Bezlotoxumab_Yee2020_reference_matlab_simbio.zip" download>Bezlotoxumab_Yee2020_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_bezlotoxumab/Bezlotoxumab_Yee2020_reference/Bezlotoxumab_Yee2020_reference_sbml.zip" download>Bezlotoxumab_Yee2020_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_bezlotoxumab/Bezlotoxumab_Yee2020_reference/Bezlotoxumab_Yee2020_reference_cellml.zip" download>Bezlotoxumab_Yee2020_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

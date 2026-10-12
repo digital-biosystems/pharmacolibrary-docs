@@ -4,7 +4,7 @@
 
 # cibenzoline — `Cibenzoline_Brazzell1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.267), gpt-oss:120b (partly confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of a: this record has 2021, the second reading none; it also differs on 10 more fields. That field does not shape the model.
+**The renal clearance parameter for cibenzoline was rejected because its reported unit, ng/mL, is dimensionally inconsistent with a clearance value.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The record lists the renal portion of total clearance as 265 ng/mL, a concentration unit that cannot represent a volumetric flow rate. This dimensional mismatch prevented the value from being converted to standard SI units, causing the model to be held back. Additionally, the second reader disagreed on the presence of several parameters, including the fast phase coefficient and terminal half-life, which were recorded in this entry but not by the second reader. Extracted — cibenzoline: λ1 0.406 hr-1, kel 0.0717 hr-1, V 23.8 L, kexcr 0.749 hr-1, Ae 50.4 mg, CLR 265 ng/mL, t1/2z 9.4 hr.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a: this record has 2021, the second reading none; it also differs on 10 more fields. That field does not shape the model.
+
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Brazzell RK et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (1985)
@@ -80,17 +84,29 @@ Brazzell RK et al., Pharmacokinetics and pharmacodynamics o…, Journal of clini
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.267 (4/15 fields) | 11 |
 | `gpt-oss:120b` | partly confirmed | 0.267 (4/15 fields) | 11 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>22 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a]` | 2021 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clr]` | 265 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ku]` | 0.749 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[nonrenal clearance]` | not captured | 234 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma clearance]` | not captured | 523 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 9.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 23.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 445 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[xu (0-48)]` | 50.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[α]` | 0.406 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` | 0.0717 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[a]` | 2021 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clr]` | 265 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ku]` | 0.749 | not captured | only_one_extracted |

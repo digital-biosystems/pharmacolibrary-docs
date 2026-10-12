@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Desipramine concentration-dependently inhibits voltage-dependent K+ (Kv) current amplitude, described by a sigmoid Emax (Hill) model with IC50 = 5.91 ± 0.18 μM and Hill coefficient 0.61 ± 0.09; the paper excerpts do not state Emax or the underlying mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shin_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

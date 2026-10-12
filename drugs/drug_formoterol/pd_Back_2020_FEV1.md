@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;formoterol&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/&quot;},{&quot;label&quot;:&quot;Back_2020 \u00b7 PD Forced expiratory volume (FEV1)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Formoterol_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_Back2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Formoterol_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_Back2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Forced expiratory volume (FEV1) — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -17,6 +17,10 @@
 **As extracted:** Formoterol (concentrations from this paper's PK model) drives Forced expiratory volume (FEV1) (in %FEV1): indirect response — drug stimulates the production of Forced expiratory volume (FEV1).
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> Formoterol lung concentration (pg·mL−1) stimulates the production of FEV1 (kin,FEV1) in an indirect response model, with baseline FEV1 (BASE) 85.8%, EC50 0.081 pg·mL−1, and kout 0.000951 hr−1; the EC50 was fixed from a literature value.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Back_2020`
 - **model family:** `indirect_response_iii`

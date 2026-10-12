@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In JIMT-1 cells, dexrazoxane concentrations (µM) combined with doxorubicin were fitted to static % cell viability using a sigmoid Emax competitive interaction model, with an interaction parameter ψ = 1.11 (modest antagonism); the paper does not state a specific mechanism beyond empirical cell viability effects (e.g., cytotoxicity/growth inhibition), and no IC50, Emax, or rate constants are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mody_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

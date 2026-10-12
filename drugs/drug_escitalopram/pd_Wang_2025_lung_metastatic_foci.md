@@ -20,7 +20,7 @@
 
 **Model:** No model was generated from this record.
 
-> The paper does not provide excerpts describing the PD mechanism; the record indicates escitalopram concentrations (PK from Liu_2022) inhibit lung metastatic foci counts in a disease-progression model, with ψ = 2.25, but no potency or rate values are stated.
+> Escitalopram (PK taken from a cited study) was linked to inhibition of lung metastatic foci counts, but the excerpts provide no model family, effect form, or mechanism, and no potency or rate parameters; the only reported value is a synergy index of 2.25.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

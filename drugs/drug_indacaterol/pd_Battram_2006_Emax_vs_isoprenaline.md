@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;indacaterol&quot;,&quot;href&quot;:&quot;drugs/drug_indacaterol/&quot;},{&quot;label&quot;:&quot;Battram_2006 \u00b7 PD human beta2 adrenoceptor agonist effect (relative to maximal isoprenaline effect)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Indacaterol_Jiang2015_reference&quot;,&quot;label&quot;:&quot;Jiang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indacaterol/Indacaterol_Jiang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Indacaterol_Jiang2015_reference&quot;,&quot;label&quot;:&quot;Jiang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indacaterol/Indacaterol_Jiang2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # human beta2 adrenoceptor agonist effect (relative to maximal isoprenaline effect) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.80).">human + animal</span>
@@ -19,6 +19,10 @@
 **As extracted:** Indacaterol (concentrations from the PK model of Bartels_2021) drives human beta2 adrenoceptor agonist effect (relative to maximal isoprenaline effect) (in % of maximal isoprenaline effect): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
+
+> Indacaterol concentration stimulates the human beta2 adrenoceptor response (measured as % of maximal isoprenaline effect), described by a direct Emax model with Emax 73 ± 1 % of the maximal effect of isoprenaline and pEC50 8.06 ± 0.02; the excerpts do not state a mechanism beyond this direct concentration–effect relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Battram_2006`
 - **model family:** `emax`

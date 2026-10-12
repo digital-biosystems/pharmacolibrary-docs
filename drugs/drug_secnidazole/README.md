@@ -28,8 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Darpo_2018_QTcF](drugs/drug_secnidazole/pd_Darpo_2018_QTcF.md) | QTcF ← secnidazole · direct linear effect | — | Darpo B et al., Thorough QT/QTc Evaluation of the Cardi…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1014](https://doi.org/10.1002/jcph.1014) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Gillis_1996_clinical_or_parasitological_cure_rate](drugs/drug_secnidazole/pd_Gillis_1996_clinical_or_parasitological_cure_rate.md) | clinical or parasitological cure rate ← secnidazole · model not identified | — | Gillis JC et al., Secnidazole. A review of its antimicrob…, Drugs (1996) | [10.2165/00003495-199651040-00007](https://doi.org/10.2165/00003495-199651040-00007) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Darpo_2018_QTcF](drugs/drug_secnidazole/pd_Darpo_2018_QTcF.md) | QTcF ← secnidazole · direct linear effect | — | Darpo B et al., Thorough QT/QTc Evaluation of the Cardi…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1014](https://doi.org/10.1002/jcph.1014) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Gillis_1996_clinical_or_parasitological_cure_rate](drugs/drug_secnidazole/pd_Gillis_1996_clinical_or_parasitological_cure_rate.md) | clinical or parasitological cure rate ← secnidazole · model not identified | — | Gillis JC et al., Secnidazole. A review of its antimicrob…, Drugs (1996) | [10.2165/00003495-199651040-00007](https://doi.org/10.2165/00003495-199651040-00007) |
 
 ## ADME sites
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism or parameter values: clofenotane (DDT-related substances) is recorded as stimulating beta-galactosidase activity (ERE-mediated transcriptional activation) in a sigmoid Emax model, but no full text is available to confirm which concentrations act on the response or to report potency or rate values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fu_2007`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

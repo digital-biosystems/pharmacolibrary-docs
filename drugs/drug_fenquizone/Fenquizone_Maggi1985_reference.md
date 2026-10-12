@@ -4,7 +4,7 @@
 
 # fenquizone — `Fenquizone_Maggi1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.636), gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -66,17 +66,22 @@ Maggi GC et al., Single-dose pharmacokinetics of fenquiz…, Arzneimittel-Forsch
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.636 (7/11 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[apparent distribution volume]` | not captured | 686 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma half-life values ... phase alpha]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma half-life values ... phase beta]` | 17 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma half-life]` | not captured | 1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption constant]` | 1055 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption constant]` | not captured | 1055 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[apparent distribution volume]` | not captured | 686 | only_one_extracted |

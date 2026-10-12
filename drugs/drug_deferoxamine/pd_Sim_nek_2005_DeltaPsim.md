@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deferoxamine concentrations (micromol/l) act on protection of mitochondrial membrane potential (DeltaPsim) against H2O2-induced collapse, described by an Emax-type inhibitory model with EC50 = 1300 micromol/l; the paper excerpts do not state the mechanism beyond this direct concentration-effect relation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Simůnek_2005`
 - **model family:** `emax`
 - **driver:** `not_resolved`

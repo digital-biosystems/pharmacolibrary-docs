@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dichlorophen (Inh 17) inhibits recombinant mouse NAPE-PLD activity measured as normalized % PED-A1 hydrolysis, with a reported IC50 of 23.2 µM from a concentration-response fit (0–200 µM inhibitor, log(inhibitor) vs. normalized response, variable slope); the paper does not state a mechanism beyond direct enzyme inhibition, and no Emax, kin, kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Aggarwal_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

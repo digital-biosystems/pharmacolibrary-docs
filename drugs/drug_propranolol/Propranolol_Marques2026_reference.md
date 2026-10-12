@@ -5,7 +5,7 @@
 
 # propranolol — `Propranolol_Marques2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,18 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The model was built but has not been simulated yet.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Marques L et al., Model-Based Virtual Clinical Trial Reve…, Pharmaceutics (2026)
   ·  DOI: [10.3390/pharmaceutics18060636](https://doi.org/10.3390/pharmaceutics18060636)
 
 ## Model component
-<dbs-pgx drug="propranolol" model-id="Propranolol_Marques2026_reference" status="extracted" stale="false" population="virtual patients" measured-compound="propranolol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="propranolol" model-id="Propranolol_Marques2026_reference" status="not_simulated" stale="false" population="virtual patients" measured-compound="propranolol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 5 extracted.
@@ -30,6 +34,8 @@ Marques L et al., Model-Based Virtual Clinical Trial Reve…, Pharmaceutics (202
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_simulated`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | ka (h−1) | `Q49` · kabs | 2.17 | h−1 | 0.0006027777777777777 | [1] / [h] | 4.85 | exact (1.0) | pharmaceutics-18-00636-t008:row2:col1, pharmaceutics-18-00636-t008:row2:col2 | — | not captured |
@@ -76,6 +82,25 @@ Marques L et al., Model-Based Virtual Clinical Trial Reve…, Pharmaceutics (202
 | C9_phys_window_Q63 | pass | volume within physiological range | 12.1 L | not captured | not captured | ['pharmaceutics-18-00636-t008:row3:col1', 'pharmaceutics-18-00636-t008:row3:col2'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 9.27 L | not captured | not captured | ['pharmaceutics-18-00636-t008:row5:col1', 'pharmaceutics-18-00636-t008:row5:col2'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 3.66 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.7 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.0149 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 1.66 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 0.83 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 0.52 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 1.06 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -84,6 +109,8 @@ Marques L et al., Model-Based Virtual Clinical Trial Reve…, Pharmaceutics (202
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_propranolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Marques_2026` / `Marques_2026::reference`)
+- model: `../../../knowledgebase/drugs/drug_propranolol/models/modelica/Propranolol_Marques2026_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_propranolol/models/modelica/Propranolol_Marques2026_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -95,7 +122,7 @@ Marques L et al., Model-Based Virtual Clinical Trial Reve…, Pharmaceutics (202
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_propranolol/Propranolol_Marques2026_reference/Propranolol_Marques2026_reference_modelica.zip" download>Propranolol_Marques2026_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_propranolol/Propranolol_Marques2026_reference/Propranolol_Marques2026_reference_matlab.zip" download>Propranolol_Marques2026_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_propranolol/Propranolol_Marques2026_reference/Propranolol_Marques2026_reference_matlab_simbio.zip" download>Propranolol_Marques2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_propranolol/Propranolol_Marques2026_reference/Propranolol_Marques2026_reference_matlab_simbio.zip" download>Propranolol_Marques2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_propranolol/Propranolol_Marques2026_reference/Propranolol_Marques2026_reference_sbml.zip" download>Propranolol_Marques2026_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_propranolol/Propranolol_Marques2026_reference/Propranolol_Marques2026_reference_cellml.zip" download>Propranolol_Marques2026_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

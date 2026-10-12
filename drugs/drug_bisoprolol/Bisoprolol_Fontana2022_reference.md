@@ -5,7 +5,7 @@
 
 # bisoprolol — `Bisoprolol_Fontana2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 For bisoprolol in Fontana_2022, the record lists tlag 0.149, absorption half-life 2.31, volume of distribution 218.00, clearance 0.382 and blood clearance 0.000882, yet the model builder substituted library placeholder values for the missing clearance and volume of distribution, so the model was held back rather than published with an invented number. The parameter coverage check expected 4 parameters emitted or defaulted but obtained 3, with tlag neither emitted nor defaulted. A second reader disagreed on the blood clearance parameter, reading 0.05 where this record has 0.000882, and on whether the absorption half-life parameter is the absorption half-life or the absorption rate constant, so those values are contested. Extracted — bisoprolol: tlag 0.149, t1/2ka 2.31, V 218, CL 0.382, CLb 0.000882.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of b: this record has none, the second reading 0.05; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bisoprolol, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -72,17 +72,30 @@ Fontana V et al., Chromosomal Region 11p14.1 is Associate…, Pharmacogenomics a
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.727 (8/11 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[b]` | not captured | 0.05 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[beta_cl_diuretic]` | 0.000882 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl_pop]` | 0.382 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl_pop]` | not captured | 13.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka_pop]` | 2.31 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka_pop]` | not captured | 2.31 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag_pop]` | 0.149 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag_pop]` | not captured | 3.17 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v_pop]` | 218.00 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v_pop]` | not captured | 218.00 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | bisoprolol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | bisoprolol | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[b]` | not captured | 0.05 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[beta_cl_diuretic]` | 0.000882 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka_pop].parameter_id` | Q95 | Q49 | mismatch |

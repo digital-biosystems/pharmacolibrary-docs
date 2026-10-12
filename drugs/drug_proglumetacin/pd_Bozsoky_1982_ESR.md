@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that proglumetacin dose acts to inhibit erythrocyte sedimentation rate (ESR), but the driver is defined as dose only. The paper excerpts provide no information on the specific mechanism, potency, or rate parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bozsoky_1982`
 - **model family:** `unknown`
 - **driver:** `dose_only`

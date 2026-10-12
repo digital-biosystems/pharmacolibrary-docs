@@ -32,7 +32,7 @@ Selpercatinib is a protein kinase inhibitor used to treat medullary thyroid canc
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Liu_2025_reference](drugs/drug_selpercatinib/Selpercatinib_Liu2025_reference.md) | — | 1-compartment (no model) | 2 | Liu D et al., Population Pharmacokinetics Modeling of…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70042](https://doi.org/10.1002/psp4.70042) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Liu_2025_reference](drugs/drug_selpercatinib/Selpercatinib_Liu2025_reference.md) | — | 1-compartment (no model) | 2 | Liu D et al., Population Pharmacokinetics Modeling of…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70042](https://doi.org/10.1002/psp4.70042) |
 
 ## ADME sites
 

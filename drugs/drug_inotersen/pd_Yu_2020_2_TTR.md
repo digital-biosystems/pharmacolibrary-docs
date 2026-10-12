@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Inotersen plasma concentrations (ng/mL) inhibit the production (input) rate of serum TTR in an indirect response model (inhibition function on kin), with Imax 0.913, IC50 9.07 ng/mL, kout 0.00308 h−1, and estimated baseline TTR 20.4 mg/dL (disease effect on baseline in healthy volunteers 0.269).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yu_2020_2`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`

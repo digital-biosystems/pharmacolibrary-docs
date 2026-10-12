@@ -5,7 +5,7 @@
 
 # clopidogrel — `Clopidogrel_Yata2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The apparent-parameterization assumption (F=1, Fm=1, no molar correction) was judged not acceptable, so the extracted clopidogrel parameters CL/F 0.97 L/kg/h, V/F 4.03 L/kg and kabs 0.62 /h cannot be taken as absolute values. Tlag was defaulted rather than estimated, an additional deviation. A second reader also disagreed on some extracted values, reading 50 and 5 where this record had none, and 1.1 versus 1.12 for one value; both readers agreed on 1967.04. Extracted — clopidogrel: CL/F 0.97 L/kg/h, V/F 4.03 L/kg, kabs 0.62 /h.
 
-Independently confirmed by `gpt-oss:120b`.
+Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -65,11 +65,12 @@ Yata M et al., Population Pharmacokinetics of Sildenaf…, Journal of veterinary
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (11/11 fields) | none |
 | `gpt-oss:120b` | confirmed | 1.0 (11/11 fields) | none |
 
 _Every reader agrees on every compared field of this record._
@@ -129,7 +130,7 @@ _Every reader agrees on every compared field of this record._
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference/Clopidogrel_Yata2026_reference_modelica.zip" download>Clopidogrel_Yata2026_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference/Clopidogrel_Yata2026_reference_fmi.zip" download>Clopidogrel_Yata2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference/Clopidogrel_Yata2026_reference_matlab.zip" download>Clopidogrel_Yata2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference/Clopidogrel_Yata2026_reference_matlab_simbio.zip" download>Clopidogrel_Yata2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference/Clopidogrel_Yata2026_reference_matlab_simbio.zip" download>Clopidogrel_Yata2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference/Clopidogrel_Yata2026_reference_sbml.zip" download>Clopidogrel_Yata2026_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference/Clopidogrel_Yata2026_reference_cellml.zip" download>Clopidogrel_Yata2026_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

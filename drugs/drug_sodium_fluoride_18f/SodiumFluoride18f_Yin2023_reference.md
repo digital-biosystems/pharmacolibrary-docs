@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — sodium fluoride 18f: CL 204 L/h, V1/F 65.5 L.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has none, the second reading 581; it also differs on 4 more fields. That field does not shape the model.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yin W et al., Population pharmacokinetics, enzyme occ…, Clinical and translational… (2023)

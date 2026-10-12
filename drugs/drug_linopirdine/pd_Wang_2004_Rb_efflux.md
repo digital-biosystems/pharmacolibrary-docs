@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Linopirdine inhibits stimulated Rb(+) efflux from KCNQ2/3-expressing cells with a sigmoid Emax model; the paper reports an IC50 of 1.3 microM, but the excerpts do not state the mechanism, Emax, or slope.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2004`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

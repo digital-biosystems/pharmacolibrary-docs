@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;lebrikizumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lebrikizumab_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lebrikizumab/Lebrikizumab_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lebrikizumab_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lebrikizumab/Lebrikizumab_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # lebrikizumab
 
@@ -24,7 +24,7 @@ Lebrikizumab is a monoclonal antibody used to treat atopic dermatitis. It is aut
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhu_2017_reference](drugs/drug_lebrikizumab/Lebrikizumab_Zhu2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Zhu R et al., Model-based clinical pharmacology profi…, Pulmonary pharmacology & th… (2017) | [10.1016/j.pupt.2017.08.010](https://doi.org/10.1016/j.pupt.2017.08.010) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: partial</span> | [Zhu_2017_reference](drugs/drug_lebrikizumab/Lebrikizumab_Zhu2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Zhu R et al., Model-based clinical pharmacology profi…, Pulmonary pharmacology & th… (2017) | [10.1016/j.pupt.2017.08.010](https://doi.org/10.1016/j.pupt.2017.08.010) |
 
 ## ADME sites
 

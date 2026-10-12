@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dexrazoxane concentrations (µM, from a two-compartment PK model) act on AC16 cardiomyocyte cell viability (%) via a linear turnover model: DEX linearly inhibits/stimulates loss of viability with slope SDEX = 0.00968 µM−1, baseline viability R0 = 101%, and natural growth/death rate constant kg = 0.0115 h−1; no Imax, IC50, EC50, Emax, or ke0 values are reported for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mody_2023_2`
 - **model family:** `linear`
 - **driver:** `cited_pk`

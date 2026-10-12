@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Total cariprazine (sum of cariprazine, DCAR, and DDCAR; time-averaged concentration Cave in nM) acts on the PANSS negative subscale score via a sigmoid Emax-type inhibitory (proportional reduction) relationship; a typical patient with baseline PANSSN of 24 can achieve a maximum reduction of ~18% at a Cave of 73.4 nM (≈4.5 mg/day), while no specific EC50 or gamma values for the PANSSN subscale are stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Periclou_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

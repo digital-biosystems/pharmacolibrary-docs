@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> o,p'DDT (clofenotane) concentration (nM) stimulates ER-CALUX luciferase induction (fold relative to solvent controls) via a direct Emax model; the paper reports an EC50 of 660 nM but no full text is available, so no mechanism beyond stimulation and no Emax or rate values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Legler_1999`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

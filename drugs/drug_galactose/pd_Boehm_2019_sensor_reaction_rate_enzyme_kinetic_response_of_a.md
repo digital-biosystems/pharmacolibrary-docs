@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper (no full text available) relates galactose concentrations (mg/dL) to the sensor reaction rate of an amperometric GOx sensor, modelled as a sigmoid Emax stimulation; no mechanism, Emax, EC50, or slope values are available from the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Boehm_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

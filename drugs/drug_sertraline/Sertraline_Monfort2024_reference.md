@@ -5,7 +5,7 @@
 
 # sertraline — `Sertraline_Monfort2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.706), gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — sertraline: V/F 2.25e+03 L, kabs 0.314 h–1, k21 0.135 h–1, k12 0.367 h–1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of kcm: this record has 0.367, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sertraline, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -72,17 +72,23 @@ Monfort A et al., A population pharmacokinetic model for…, British journal of 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.706 (12/17 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.8 (12/15 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[kcm].parameter_id` | Q301 | Q48 | mismatch |
+| `gpt-oss-120b` | `parameters[kmc].parameter_id` | Q372 | Q301 | mismatch |
+| `gpt-oss-120b` | `parameters[mpr]` | not captured | 1.42 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | sertraline | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | sertraline | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[kcm]` | 0.367 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[kmc].parameter_id` | Q302 | Q301 | mismatch |
 | `gpt-oss:120b` | `parameters[mpr]` | not captured | 1.42 | only_one_extracted |

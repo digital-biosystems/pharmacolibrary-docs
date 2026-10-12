@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol (CCh, 1×10−9 to 1×10−5 M) cumulatively relaxed PE (1×10−6 M)-precontracted aortic rings, fitted by an Emax concentration–response model; the paper does not state a kinetic mechanism beyond direct receptor-mediated endothelium-dependent relaxation. Potency (pD2, −log M) was 6.3±0.1 (young), 6.5±0.05 (adult), 6.2±0.01 (old), with Emax 86±3%, 83±4%, and 73±3% of PE maximum contraction, respectively.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cupitra_2020`
 - **model family:** `emax`
 - **driver:** `not_resolved`

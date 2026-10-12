@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N04B&quot;,&quot;href&quot;:&quot;atc/N04B.md&quot;},{&quot;label&quot;:&quot;levodopa&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/&quot;},{&quot;label&quot;:&quot;Senek_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levodopa_Senek2018_reference&quot;,&quot;label&quot;:&quot;Senek_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/Levodopa_Senek2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levodopa_Senek2018_reference&quot;,&quot;label&quot;:&quot;Senek_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/Levodopa_Senek2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # levodopa — `Levodopa_Senek2018_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273), gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has levodopa/carbidopa, the second reading levodopa; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+**The levodopa model was rejected because its structure is a one-compartment enteral model instead of the parent–metabolite structure the paper describes, its output is the levodopa central compartment rather than the measured analyte compartment, and its terminal half-life (2.40 h) exceeds the reported 1.85 h beyond tolerance.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The record declares levodopa metabolized to dopamine, but the model structure is a single enteral compartment rather than a parent–metabolite structure with a metabolite compartment, and the simulated output is the levodopa central compartment instead of the measured analyte compartment. Simulated as dosed, the terminal half-life is 2.399695109519957 h versus the paper's 1.85 h (ratio 1.2971), outside tolerance. The builder additionally defaulted Tlag and assumed F=1, Fm=1 with no molar correction, and a second reader disputed the dosed compound (levodopa alone versus levodopa/carbidopa) and the presence of the levodopa–dopamine metabolism link. Extracted — levodopa: CL/F 48.5 L/h, V1/F 168 L, kabs 1.2 h−1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has levodopa/carbidopa, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `levodopa/carbidopa`, measured `levodopa`.
 
@@ -28,7 +32,7 @@ Senek M et al., Population pharmacokinetics of levodopa…, European journal of 
   ·  DOI: [10.1007/s00228-018-2497-2](https://doi.org/10.1007/s00228-018-2497-2)
 
 ## Model component
-<dbs-pgx drug="levodopa" model-id="Levodopa_Senek2018_reference" status="extracted" stale="false" population="healthy subjects and Parkinson&#39;s disease patients" measured-compound="levodopa" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="levodopa" model-id="Levodopa_Senek2018_reference" status="rejected" stale="false" population="healthy subjects and Parkinson&#39;s disease patients" measured-compound="levodopa" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -36,6 +40,8 @@ Senek M et al., Population pharmacokinetics of levodopa…, European journal of 
 **Parameterization:** CL/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | LD CL/F (50 mg CD, 70-kg subject) | `Q27` · CL/F | 48.5 | L/h | 1.3472222222222222e-05 | L/h | not captured | boundary (0.8) | Senek_2018:other_prose | — | not captured |
@@ -115,17 +121,26 @@ Senek M et al., Population pharmacokinetics of levodopa…, European journal of 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.273 (3/11 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.667 (6/9 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['levodopa', 'dopamine', 'metabolism']] | [['levodopa', '3-o-methyldopa', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 63 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 1.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ld cl/f]` | 48.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f]` | 168 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f]` | not captured | 168 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | levodopa/carbidopa | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | levodopa | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [['levodopa', 'dopamine', 'metabolism']] | [] | mismatch |
 | `gpt-oss:120b` | `parameters[vc/f].parameter_id` | Q290 | Q76 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | levodopa/carbidopa | levodopa | mismatch |
@@ -151,6 +166,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C9_phys_window_Q27 | pass | clearance within physiological range | 48.5 L/h | not captured | not captured | ['Senek_2018:other_prose'] |
 | C9_phys_window_Q290 | pass | volume within physiological range | 168 L | not captured | not captured | ['Senek_2018:discussion_prose'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=levodopa) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T1_t_half_terminal | reference | fail | 1.8499999999999999 | 2.399695109519957 | 1.2971 | min→SI vs simulated h |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -159,24 +187,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_levodopa/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Senek_2018` / `Senek_2018::reference`)
+- model: `../../../knowledgebase/drugs/drug_levodopa/models/modelica/Levodopa_Senek2018_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_levodopa/models/modelica/Levodopa_Senek2018_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_levodopa/models/modelica/Levodopa_Senek2018_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_levodopa/Levodopa_Senek2018_reference/Levodopa_Senek2018_reference_modelica.zip" download>Levodopa_Senek2018_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_levodopa/Levodopa_Senek2018_reference/Levodopa_Senek2018_reference_fmi.zip" download>Levodopa_Senek2018_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_levodopa/Levodopa_Senek2018_reference/Levodopa_Senek2018_reference_matlab.zip" download>Levodopa_Senek2018_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_levodopa/Levodopa_Senek2018_reference/Levodopa_Senek2018_reference_matlab_simbio.zip" download>Levodopa_Senek2018_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_levodopa/Levodopa_Senek2018_reference/Levodopa_Senek2018_reference_sbml.zip" download>Levodopa_Senek2018_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_levodopa/Levodopa_Senek2018_reference/Levodopa_Senek2018_reference_cellml.zip" download>Levodopa_Senek2018_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_levodopa/Levodopa_Senek2018_reference/Levodopa_Senek2018_reference.svg" alt="Levodopa_Senek2018_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

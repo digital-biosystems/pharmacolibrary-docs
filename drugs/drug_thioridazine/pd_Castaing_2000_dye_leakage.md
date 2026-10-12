@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates thioridazine (in mM) to sulphan blue dye leakage through a liposome membrane, analysed with a sigmoid Emax model; the excerpts provide no mechanism and no parameter values (Imax, IC50/EC50, Emax, gamma) are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Castaing_2000`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

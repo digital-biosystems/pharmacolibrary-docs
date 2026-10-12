@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not state a mechanism beyond an Emax-type concentration–effect relation: acetylcholine (in the presence of 1 microM neostigmine) inhibits voltage-activated Ca current, with an EC50 of 0.11 microM and a mean inhibition of 37%.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Caulfield_1991`
 - **model family:** `emax`
 - **driver:** `not_resolved`

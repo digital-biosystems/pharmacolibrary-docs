@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol concentration-dependently stimulates bladder strip contraction, described by a sigmoid Emax model; the paper reports EC50 values of 0.7, 0.54, 0.93, and 1.2 µM, but the excerpts do not state a mechanism beyond this direct concentration–response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Braverman_1999`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

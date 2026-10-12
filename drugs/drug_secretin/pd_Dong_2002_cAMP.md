@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The secretin photoprobe analogue (OH-Bpa10, des-Gly4 secretin) stimulates intracellular cAMP in a sigmoid Emax relationship, with EC50 4.2 nM and Ki 25.3 nM; the paper excerpts do not state the mechanism or Emax/kin/kout values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dong_2002`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

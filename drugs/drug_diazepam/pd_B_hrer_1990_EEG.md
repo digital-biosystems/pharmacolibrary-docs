@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Diazepam plasma concentrations (ng/ml) drive an increase in EEG voltage via a sigmoid Emax model with an effect-compartment (blood:brain equilibration) delay; EC50 is 958 ng/ml and the half-time of blood:brain equilibration is 1.6 minutes. The paper excerpts do not state Emax, gamma, or the precise mechanism beyond this model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bührer_1990`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

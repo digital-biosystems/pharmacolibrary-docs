@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model describes the additive stimulatory effect of N-acetylcysteine concentration on the international normalized ratio using an Emax model. The maximum effect is reported as 0.325, but the paper does not provide specific potency or rate parameters such as IC50, EC50, or ke0.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Owens_2015`
 - **model family:** `emax`
 - **driver:** `cited_pk`

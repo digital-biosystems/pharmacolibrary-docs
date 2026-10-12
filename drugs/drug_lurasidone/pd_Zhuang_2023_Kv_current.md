@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lurasidone concentration inhibits Kv channel current with a sigmoid Emax (proportional inhibition) model; the paper excerpts give IC50 = 1.88 ± 0.21 μM and Hill coefficient 0.98 ± 0.09, but no Emax or mechanism beyond direct concentration–effect inhibition is stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhuang_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

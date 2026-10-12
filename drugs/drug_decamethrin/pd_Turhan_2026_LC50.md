@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deltamethrin concentrations (3.125–6,400 µg/L) were related to lethality in X. laevis embryos in a FETAX assay, with LC50 values estimated by probit analysis; the paper does not describe a pharmacodynamic mechanism or model. Key potency values are a 96 h LC50 of 68.00 µg/L (95% CI 48.95–94.90) and a 72 h LC50 of 2,035 µg/L (95% CI 1397–3230), indicating time-dependent toxicity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Turhan_2026`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

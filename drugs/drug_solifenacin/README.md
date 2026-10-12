@@ -32,13 +32,13 @@ Solifenacin is a urological medicine used to treat urinary frequency and inconti
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Tannenbaum_2020_reference](drugs/drug_solifenacin/Solifenacin_Tannenbaum2020_reference.md) | — | 2-compartment (no model) | 12 | Tannenbaum S et al., Pharmacokinetics of solifenacin in pedi…, Pharmacology research & per… (2020) | [10.1002/prp2.684](https://doi.org/10.1002/prp2.684) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Tannenbaum_2020_reference](drugs/drug_solifenacin/Solifenacin_Tannenbaum2020_reference.md) | — | 2-compartment (no model) | 12 | Tannenbaum S et al., Pharmacokinetics of solifenacin in pedi…, Pharmacology research & per… (2020) | [10.1002/prp2.684](https://doi.org/10.1002/prp2.684) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cho_2021_IK_M](drugs/drug_solifenacin/pd_Cho_2021_IK_M.md) | M-Type K+ Current ← Solifenacin · direct Emax (saturable) effect | — | Cho HY et al., The Effectiveness in Activating M-Type K, International journal of mo… (2021) | [10.3390/ijms222212399](https://doi.org/10.3390/ijms222212399) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cho_2021_IK_M](drugs/drug_solifenacin/pd_Cho_2021_IK_M.md) | M-Type K+ Current ← Solifenacin · direct Emax (saturable) effect | — | Cho HY et al., The Effectiveness in Activating M-Type K, International journal of mo… (2021) | [10.3390/ijms222212399](https://doi.org/10.3390/ijms222212399) |
 
 ## ADME sites
 

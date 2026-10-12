@@ -5,7 +5,7 @@
 
 # omeprazole — `Omeprazole_Lin2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222), gpt-oss:120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Chung_2022, Khan-Asa_2020, McCann_2023) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — omeprazole: CL/F 23.7 L/h, V/F 47.6 L, kabs 0.95 h−1, tlag 2.5 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of compartment: this record has none, the second reading 1; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has omeprazole, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -68,17 +68,25 @@ Lin S et al., Evaluation of Omeprazole Limited Sampli…, Therapeutic drug monit
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 | `gpt-oss:120b` | partly confirmed | 0.625 (5/8 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[k a]` | 0.95 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time for the drt formulation]` | 2.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median cl/f]` | 23.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median cl/f]` | not captured | 23.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 47.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | omeprazole | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | omeprazole | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[compartment]` | not captured | 1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[n]` | not captured | 71 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[plasma concentrations]` | not captured | 737 | only_one_extracted |

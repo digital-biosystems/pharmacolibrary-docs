@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cardillo_2013_cell_growth](drugs/drug_temsirolimus/pd_Cardillo_2013_cell_growth.md) | cell growth ← temsirolimus · inhibition effect | — | Cardillo TM et al., Targeting both IGF-1R and mTOR synergis…, BMC cancer (2013) | [10.1186/1471-2407-13-170](https://doi.org/10.1186/1471-2407-13-170) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cardillo_2013_cell_growth](drugs/drug_temsirolimus/pd_Cardillo_2013_cell_growth.md) | cell growth ← temsirolimus · inhibition effect | — | Cardillo TM et al., Targeting both IGF-1R and mTOR synergis…, BMC cancer (2013) | [10.1186/1471-2407-13-170](https://doi.org/10.1186/1471-2407-13-170) |
 
 ## ADME sites
 

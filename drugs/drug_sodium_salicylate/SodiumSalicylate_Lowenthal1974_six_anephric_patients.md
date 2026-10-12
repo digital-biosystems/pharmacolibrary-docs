@@ -4,7 +4,7 @@
 
 # sodium salicylate — `SodiumSalicylate_Lowenthal1974_six_anephric_patients`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571), gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — sodium salicylate: V 5.01 liter, t1/2β 316 min, CL 0.04 L/h/kg, kabs 0.64 1/h, tlag 0.42 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has sodium salicylate, the second reading sodium_salicylate; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium salicylate, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -74,17 +74,21 @@ Lowenthal DT et al., Kinetics of salicylate elimination by a…, The Journal of 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[lag time]` | 0.42 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | sodium salicylate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | salicylic acid | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[clearance]` | 0.04 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka]` | 0.64 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[lag time]` | 0.42 | not captured | only_one_extracted |

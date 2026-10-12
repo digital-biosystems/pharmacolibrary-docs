@@ -5,7 +5,7 @@
 
 # minocycline — `Minocycline_Tynan2016_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111), gpt-oss:120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has minocycline, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -77,17 +77,34 @@ Tynan BE et al., Pharmacokinetics of minocycline in dome…, Journal of feline m
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.111 (2/18 fields) | 16 |
 | `gpt-oss:120b` | not confirmed | 0.769 (10/13 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>19 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution at steady-state]` | 1.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution at steady-state]` | not captured | 1.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life (t(1⁄2))]` | 6.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life (t(1⁄2))]` | not captured | 6.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability]` | 62 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability]` | not captured | 62 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral dose]` | not captured | 8.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peak concentration]` | 4.77 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peak concentration]` | not captured | 4.77 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma protein binding]` | 60 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma protein binding]` | not captured | 60 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance]` | 2.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance]` | not captured | 2.9 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | minocycline | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | minocycline | unknown | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `gpt-oss:120b` | `parameters[apparent volume of distribution at steady-state].parameter_id` | Q65 | Q76 | mismatch |
 | `gpt-oss:120b` | `parameters[oral dose]` | not captured | 8.8 | only_one_extracted |
@@ -146,10 +163,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_minocycline/Minocycline_Tynan2016_reference/Minocycline_Tynan2016_reference_modelica.zip" download>Minocycline_Tynan2016_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_minocycline/Minocycline_Tynan2016_reference/Minocycline_Tynan2016_reference_modelica.zip" download>Minocycline_Tynan2016_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_minocycline/Minocycline_Tynan2016_reference/Minocycline_Tynan2016_reference_fmi.zip" download>Minocycline_Tynan2016_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_minocycline/Minocycline_Tynan2016_reference/Minocycline_Tynan2016_reference_matlab.zip" download>Minocycline_Tynan2016_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_minocycline/Minocycline_Tynan2016_reference/Minocycline_Tynan2016_reference_matlab_simbio.zip" download>Minocycline_Tynan2016_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_minocycline/Minocycline_Tynan2016_reference/Minocycline_Tynan2016_reference_matlab_simbio.zip" download>Minocycline_Tynan2016_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_minocycline/Minocycline_Tynan2016_reference/Minocycline_Tynan2016_reference_sbml.zip" download>Minocycline_Tynan2016_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_minocycline/Minocycline_Tynan2016_reference/Minocycline_Tynan2016_reference_cellml.zip" download>Minocycline_Tynan2016_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

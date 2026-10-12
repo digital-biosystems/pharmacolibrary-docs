@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Escitalopram concentrations (cited PK) drive SERT occupancy in the putamen via a sigmoid Emax model with an EC50 of 4.30 (units not stated) and a Hill coefficient of 0.459; the excerpts do not state the mechanism or Emax.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kim_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

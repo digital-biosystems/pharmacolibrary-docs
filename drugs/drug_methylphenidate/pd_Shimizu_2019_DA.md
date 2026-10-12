@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methylphenidate concentrations drive an indirect response (model II) on extracellular dopamine in the nucleus accumbens, acting as an inhibitor; the paper excerpts provide no further mechanism detail and no potency or rate parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shimizu_2019`
 - **model family:** `indirect_response_ii`
 - **driver:** `cited_pk`

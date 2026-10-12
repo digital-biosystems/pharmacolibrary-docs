@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Remoxipride concentrations (nM) inhibit prolactin secretion via a transduction (indirect) model with proportional inhibition; the paper excerpts give only a potency value KI = 113 nM, and no further mechanism details, Imax, kin, kout, or rate constants are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Taneja_2016`
 - **model family:** `transduction`
 - **driver:** `cited_pk`

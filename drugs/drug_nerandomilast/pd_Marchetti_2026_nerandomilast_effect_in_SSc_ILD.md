@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a full text or describe the pharmacodynamic mechanism by which nerandomilast concentrations affect the response in SSc-ILD. No potency or rate parameter values (e.g., IC50, Emax, ke0) are available in the provided records or excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Marchetti_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dietary DDT (clofenotane) dose (ppm in diet) stimulates hepatic CYP2B activity measured as benzyloxyresorufin O-dealkylation (BROD, fold over control) via an Emax model, with ED50 103 ppm in diet and Emax 24 fold; the paper excerpts do not state the mechanism, and in vitro/in-tissue potency values (EC50 1.5 microM; EC50 15 micromol/kg liver tissue) appear in the record without accompanying text.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nims_1998`
 - **model family:** `emax`
 - **driver:** `dose_only`

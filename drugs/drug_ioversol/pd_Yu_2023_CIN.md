@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ioversol dose is associated with binary CIN occurrence, but the excerpts do not state the pharmacodynamic mechanism or any potency or rate values.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yu_2023`
 - **model family:** `categorical`
 - **driver:** `dose_only`

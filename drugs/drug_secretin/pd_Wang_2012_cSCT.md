@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Chicken secretin (cSCT) concentration-dependently stimulates cSCTR activation measured with a pGL3-CRE-luciferase reporter, with a reported EC50 of 0.31 nM. The excerpts provide no further mechanism or additional PD parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2012`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L03A&quot;,&quot;href&quot;:&quot;atc/L03A.md&quot;},{&quot;label&quot;:&quot;aldesleukin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aldesleukin_Chen2000_reference&quot;,&quot;label&quot;:&quot;Chen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aldesleukin/Aldesleukin_Chen2000_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aldesleukin_Chen2000_reference&quot;,&quot;label&quot;:&quot;Chen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aldesleukin/Aldesleukin_Chen2000_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # aldesleukin
 
@@ -24,14 +24,14 @@ Aldesleukin, a form of interleukin-2, is an immunostimulant used to treat cancer
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Chen_2000_reference](drugs/drug_aldesleukin/Aldesleukin_Chen2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Chen SA et al., Plasma and lymph pharmacokinetics of re…, The Journal of pharmacology… (2000) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Lotze_1985_reference](drugs/drug_aldesleukin/Aldesleukin_Lotze1985_reference.md) | — | 1-compartment (no model) | 1 | Lotze MT et al., In vivo administration of purified huma…, Journal of immunology (Balt… (1985) | — |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Chen_2000_reference](drugs/drug_aldesleukin/Aldesleukin_Chen2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Chen SA et al., Plasma and lymph pharmacokinetics of re…, The Journal of pharmacology… (2000) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Lotze_1985_reference](drugs/drug_aldesleukin/Aldesleukin_Lotze1985_reference.md) | — | 1-compartment (no model) | 1 | Lotze MT et al., In vivo administration of purified huma…, Journal of immunology (Balt… (1985) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from keyword rules on the title and abstract — no LLM answer yet).">human + animal</span> | [Nagi_1989_DNA_synthesis](drugs/drug_aldesleukin/pd_Nagi_1989_DNA_synthesis.md) | lymphocyte proliferation ← rHIL-2 · stimulation effect | — | Nagi AM et al., Recombinant human interleukin-2-induced…, Canadian journal of veterin… (1989) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">cattle</span> | [Nagi_1989_DNA_synthesis](drugs/drug_aldesleukin/pd_Nagi_1989_DNA_synthesis.md) | lymphocyte proliferation ← rHIL-2 · stimulation effect | — | Nagi AM et al., Recombinant human interleukin-2-induced…, Canadian journal of veterin… (1989) | — |
 
 ## ADME sites
 

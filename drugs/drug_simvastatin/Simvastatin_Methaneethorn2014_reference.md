@@ -5,7 +5,7 @@
 
 # simvastatin — `Simvastatin_Methaneethorn2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714), gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Devineni_2015) cannot stand in for this paper's evidence. Extracted — simvastatin: kabs 0.7 h -1, V 161 L, CL 12.2 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has simvastatin, the second reading simvastatin, nelfinavir; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has simvastatin → simvastatin hydroxy acid (metabolism); nelfinavir → m8 (metabolism), the second reading simvastatin → simvastatin hydroxy acid (hydrolysis); nelfinavir → nelfinavir m8 (metabolism); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -85,17 +85,20 @@ Methaneethorn J et al., Pharmacokinetic modeling of simvastatin…, Annual Inter
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.714 (5/7 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.667 (4/6 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['simvastatin', 'simvastatin hydroxy acid', 'metabolism'], ['nelfinavir', 'm8', 'metabolism']] | [['simvastatin', 'simvastatin hydroxy acid', 'hydrolysis'], ['nelfinavir', 'nelfinavir m8', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[mean systemic clearance]` | 12.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [['simvastatin', 'simvastatin hydroxy acid', 'metabolism'], ['nelfinavir', 'm8', 'metabolism']] | [['simvastatin', 'simvastatin hydroxy acid', 'hydrolysis'], ['nelfinavir', 'nelfinavir m8', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | simvastatin | simvastatin, nelfinavir | mismatch |
 

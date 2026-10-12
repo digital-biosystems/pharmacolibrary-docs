@@ -5,7 +5,7 @@
 
 # ketanserin — `Ketanserin_Hanff2005_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125), gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record for ketanserin in pre-eclamptic patients (one-compartment, extravascular dosing with apparent parameterization, F=1 and Fm=1) uses a first-order depot input whose ka was defaulted because the source did not report it; Tlag was likewise defaulted. The abstract-only source provided only summary statistics (CLm/F 37.9 L/h, V 0.544 L/kg) standing in for a fitted model, so the absorption parameters are not supported by the paper. A second reader disagreed on the parameterization (mechanistic vs apparent) and on whether 37.9 and 0.544 belong to CL/V1 or to the metabolic clearance and volume fields, leaving those assignments unresolved. Extracted — ketanserin: CLm/F 37.9 L/h, V 0.544 L/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ketanserin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ketanserin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -69,17 +69,25 @@ Hanff LM et al., Population pharmacokinetics of ketanser…, Fundamental & clini
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.125 (1/8 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.125 (1/8 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 37.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[metabolic clearance (cl(m))]` | 37.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | not captured | 0.544 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 0.544 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | ketanserin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ketanserin | unknown | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[cl]` | not captured | 37.9 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[metabolic clearance (cl(m))]` | 37.9 | not captured | only_one_extracted |

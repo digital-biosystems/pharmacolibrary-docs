@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide full text or excerpts, so the mechanism is not stated; the record indicates tiotropium dose acting on hypotension in an Emax model with a stimulatory effect direction, but no potency or rate values are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Trifilieff_2015`
 - **model family:** `emax`
 - **driver:** `dose_only`

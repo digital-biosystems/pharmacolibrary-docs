@@ -5,7 +5,7 @@
 
 # caplacizumab — `Caplacizumab_Jansen2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.0), gpt-oss:120b (partly confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The model for caplacizumab (CL 16.4 mL/h, V1 3620 mL, V2 4730 mL) failed the structure check for an unreachable or orphan compartment, meaning the peripheral compartment has no connection from the dose. A second reader also disagreed on several extracted values, reading 71.8 where this record has none and leaving 16.4, 0.833, 15.9, 3620 and 4730 unconfirmed. The source is a secondary review text rather than the primary fitted analysis. Extracted — caplacizumab: CL 16.4 mL/h, V1 3.62e+03 mL, V2 4.73e+03 mL.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 16.4, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 16.4, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -61,17 +61,24 @@ Jansen E et al., Characterization of the VHH-Fc construc…, PLoS medicine (2026
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.0 (0/6 fields) | 6 |
 | `gpt-oss:120b` | partly confirmed | 0.0 (0/6 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 16.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | not captured | 71.8 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` | 0.833 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 15.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q63]` | 3620 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q64]` | 4730 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q22]` | 16.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q32]` | not captured | 71.8 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q56]` | 0.833 | not captured | only_one_extracted |

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;sodium stibogluconate&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/&quot;},{&quot;label&quot;:&quot;Mehta_2010 \u00b7 PD Drug activity against intracellular Leishmania amazonensis amastigotes (egfp fluorescence) in THP-1 cells&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumStibogluconate_Verrest2021_reference&quot;,&quot;label&quot;:&quot;Verrest_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumStibogluconate_Verrest2021_reference&quot;,&quot;label&quot;:&quot;Verrest_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Drug activity against intracellular Leishmania amazonensis amastigotes (egfp fluorescence) in THP-1 cells — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
@@ -19,6 +19,10 @@
 **As extracted:** Sodium stibogluconate (measured concentrations) drives Drug activity against intracellular Leishmania amazonensis amastigotes (egfp fluorescence) in THP-1 cells: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> Sodium stibogluconate concentrations (mg/ml) inhibit the activity of intracellular Leishmania amazonensis amastigotes (egfp fluorescence) in THP-1 cells, described by a sigmoid Emax model with EC50 = 0.1203±0.018 mg/ml; the paper excerpts do not state Imax, gamma, or the mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Mehta_2010`
 - **model family:** `sigmoid_emax`

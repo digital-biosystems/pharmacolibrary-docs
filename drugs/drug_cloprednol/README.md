@@ -28,8 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Möllmann_1996_granulocytes](drugs/drug_cloprednol/pd_M_llmann_1996_granulocytes.md) | granulocytes ← unbound cloprednol · direct Emax (saturable) effect | — | Möllmann H et al., Pharmacokinetics and pharmacodynamics o…, International journal of cl… (1996) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Möllmann_1996_lymphocytes](drugs/drug_cloprednol/pd_M_llmann_1996_lymphocytes.md) | lymphocytes ← unbound cloprednol · direct Emax (saturable) effect | — | Möllmann H et al., Pharmacokinetics and pharmacodynamics o…, International journal of cl… (1996) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Möllmann_1996_granulocytes](drugs/drug_cloprednol/pd_M_llmann_1996_granulocytes.md) | granulocytes ← unbound cloprednol · direct Emax (saturable) effect | — | Möllmann H et al., Pharmacokinetics and pharmacodynamics o…, International journal of cl… (1996) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Möllmann_1996_lymphocytes](drugs/drug_cloprednol/pd_M_llmann_1996_lymphocytes.md) | lymphocytes ← unbound cloprednol · direct Emax (saturable) effect | — | Möllmann H et al., Pharmacokinetics and pharmacodynamics o…, International journal of cl… (1996) | — |
 
 ## ADME sites
 

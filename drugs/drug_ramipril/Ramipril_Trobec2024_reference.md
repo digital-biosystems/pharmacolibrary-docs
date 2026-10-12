@@ -4,7 +4,7 @@
 
 # ramipril — `Ramipril_Trobec2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.391). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636), gpt-oss:120b (not confirmed, agreement 0.391). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record describes a general linear model for ramipril in chronic heart failure patients with the metabolite ramiprilat formed from ramipril by hydrolysis, but ramiprilat has 0 compartments and no path from the dose, making it an unlinked metabolite. The reported unit '1 %' for the ramiprilat clearance decrease could not be expressed in SI units, so that parameter was recorded without a usable value. A second reader also disagreed on the link relation (metabolism rather than hydrolysis), the parameterization (mechanistic rather than apparent), and read null instead of 209 L h-1 for CL/F and null instead of 1 % for the ramiprilat clearance decrease. Extracted — ramipril: CL/F 209 L h -1, CL 1 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ramipril, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ramipril, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -111,17 +111,26 @@ Trobec KČ et al., Population pharmacokinetics of ramipril…, Acta pharmaceutic
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.636 (14/22 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.391 (9/23 fields) | 14 |
 
-<details><summary>14 field(s) a reader read differently</summary>
+<details><summary>22 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['ramipril', 'ramiprilat', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[b effect of mdrd4 on clm]` | 0.00988 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm]` | not captured | 11.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm]` | 11.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vm]` | not captured | 91.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vm]` | 91.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | ramipril | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ramipril | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl]` | 194 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | not captured | 194 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka]` | 1.80 | not captured | only_one_extracted |

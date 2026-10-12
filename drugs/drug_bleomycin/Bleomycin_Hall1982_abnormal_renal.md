@@ -5,7 +5,7 @@
 
 # bleomycin — `Bleomycin_Hall1982_abnormal_renal`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (confirmed, agreement 1.0), gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -73,11 +73,12 @@ StephenWHall Department of Medicine Reno School of Medicine Reno Veterans Admini
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `qwen3.8-27b` | confirmed | 1.0 (6/6 fields) | none |
 | `gpt-oss:120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
 <details><summary>1 field(s) a reader read differently</summary>

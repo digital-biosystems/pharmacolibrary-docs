@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model links esketamine concentrations (in μg/mL) to the categorical response of CHOWSS score less than 2, using an EC50 of 0.44 μg/mL and a slope of 5.3. The paper does not provide full text to specify the underlying mechanism of action (e.g., production inhibition vs. direct effect).
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Coulter_2014`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

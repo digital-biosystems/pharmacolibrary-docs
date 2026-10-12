@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models clomipramine dose acting on the depression clinical score (response to treatment) using an effect-compartment (link) model with an inhibitory effect; the excerpts provide no concentration values, no mechanism details, and no potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gruwez_2007`
 - **model family:** `effect_compartment`
 - **driver:** `dose_only`

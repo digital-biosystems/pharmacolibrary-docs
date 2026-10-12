@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;capecitabine&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/&quot;},{&quot;label&quot;:&quot;Gieschke_2003 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capecitabine_Panoilia2015_reference&quot;,&quot;label&quot;:&quot;Panoilia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Panoilia2015_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Schmulenson2022_reference&quot;,&quot;label&quot;:&quot;Schmulenson_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Wen2021_reference&quot;,&quot;label&quot;:&quot;Wen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Wen2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capecitabine_Panoilia2015_reference&quot;,&quot;label&quot;:&quot;Panoilia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Panoilia2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Schmulenson2022_reference&quot;,&quot;label&quot;:&quot;Schmulenson_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Wen2021_reference&quot;,&quot;label&quot;:&quot;Wen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Wen2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # capecitabine — `Capecitabine_Gieschke2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.105). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.105). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record lists V3, the volume of the second peripheral compartment of a three-compartment structure, as 0.0213 l, a dimension mismatch flagged on a structural parameter, and the metabolism chain capecitabine → 5′-DFUR → 5-FU → FBAL carries no link parameter values, leaving an unlinked metabolite. The parameter labelled 'Res. Error 5-FU' (0.0885, unit RE) is recorded with the meaning of fraction unbound (fu), a misassignment. The unit 'RE' could not be converted to SI, so that parameter reached the model without an SI value; a second reader also assigned values (e.g. CL1 0.00952 l/h, CL2 0.0337 l/h, KA 0.166 l/h) that this record left null, and disagreed on whether the primary analyte is capecitabine or its metabolites. Extracted — capecitabine metabolites: kabs 0.166 l h -1, V1 30 l, V2 17.8 l, Q 0.0337 l h -1, V3 0.0213 l, fu 0.0885 RE.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has capecitabine metabolites, the second reading capecitabine; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 5-fluorouracil, the second reading capecitabine; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -93,17 +93,33 @@ Gieschke R et al., Population pharmacokinetics and concent…, British journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (5/20 fields) | 15 |
 | `gpt-oss:120b` | not confirmed | 0.105 (2/19 fields) | 17 |
 
-<details><summary>17 field(s) a reader read differently</summary>
+<details><summary>32 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['capecitabine', "5'-deoxy-5-fluorouridine", 'metabolism'], ["5'-deoxy-5-fluorouridine", '5-fluorouracil', 'metabolism'], ['5-fluorouracil', 'fluorobeta-alanine', 'metabolism']] | [['capecitabine', "5'-dfur", 'metabolism'], ["5'-dfur", '5-fu', 'metabolism'], ['5-fu', 'fbal', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[cl1]` | not captured | 24 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl1]` | 24 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2]` | not captured | 33 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2]` | 33 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl3]` | not captured | 32 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl3]` | 32 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | not captured | 30 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | 30 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` | not captured | 17.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` | 17.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3]` | not captured | 26 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3]` | 26 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | 5-fluorouracil | capecitabine | mismatch |
 | `gpt-oss:120b` | `model.links` | [['capecitabine', '5¢-dfur', 'metabolism'], ['5¢-dfur', '5-fu', 'metabolism'], ['5-fu', 'fbal', 'metabolism']] | [['capecitabine', '5′-dfur', 'metabolism'], ['5′-dfur', '5‐fu', 'metabolism'], ['5‐fu', 'fbal', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[cl1]` | not captured | 0.00952 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl2]` | not captured | 0.0337 | only_one_extracted |

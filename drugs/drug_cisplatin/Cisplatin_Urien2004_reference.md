@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;cisplatin&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/&quot;},{&quot;label&quot;:&quot;Urien_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisplatin_Imbs2016_reference&quot;,&quot;label&quot;:&quot;Imbs_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Imbs2016_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_MoritaOgawa2020_reference&quot;,&quot;label&quot;:&quot;Morita-Ogawa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisplatin_Imbs2016_reference&quot;,&quot;label&quot;:&quot;Imbs_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Imbs2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_MoritaOgawa2020_reference&quot;,&quot;label&quot;:&quot;Morita-Ogawa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cisplatin — `Cisplatin_Urien2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.04), gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The parameter labelled f m /V m carries value 0.001 with unit l⁻¹, but its meaning is the fraction of systemically available drug converted to metabolite, which should be dimensionless; this dimension mismatch on a structural parameter caused the rejection. The unit l⁻¹ could not be converted to SI units, so the parameter was passed on without an SI value. A second reader disagreed on the parameterization (mechanistic rather than apparent) and did not accept the V/F value of 0.16, which is labelled f m /V m , q DOSEm and lacks a unit. Extracted — cisplatin: fm 0.001 l -1, V/F 0.16, CL 0.002 h -1, t1/2z 50 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has unbound platinum (cisplatin), the second reading unbound cisplatin; it also differs on 23 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -93,19 +93,44 @@ Urien S et al., Population pharmacokinetics of total an…, British journal of c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.04 (1/25 fields) | 24 |
 | `gpt-oss:120b` | not confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>26 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[f m /v m , q dosem]` | 0.16 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `model.links` | [['cisplatin (unbound platinum)', 'irreversibly protein-bound platinum', 'metabolism']] | [['cisplatin', 'protein-bound platinum', 'interconversion']] | mismatch |
+| `qwen3.8-27b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `qwen3.8-27b` | `parameters[cl m0 /v m]` | 0.014 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cl m0 /v m]` | not captured | 0.014 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cl, q bsa]` | +0.83 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cl]` | not captured | 0.68 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cl]` | 35.6 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[f m /v m , q clcr]` | -0.36 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[f m /v m , q clcr]` | not captured | -0.36 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[f m /v m , q dosem]` | -2 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[f m /v m , q dosem]` | not captured | -2 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[f m /v m]` | 0.017 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[f m /v m]` | not captured | 0.017 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[q]` | not captured | 22.2 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[q]` | 8.64 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[t 1/2 , distribution]` | not captured | 0.45 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[t 1/2 , distribution]` | 0.34 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[t 1/2 , elimination]` | 50 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[t 1/2 , elimination]` | not captured | 50 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v 1]` | not captured | 21.1 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v 1]` | 23.4 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v 2]` | not captured | 42.6 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v 2]` | 12.0 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `screen.primary_analyte` | unbound platinum (cisplatin) | unbound cisplatin | mismatch |
 
 </details>
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dibutylphthalate concentration (mg/l) inhibits normal embryonic development at the blastula stage, with an EC50 of 8.37 mg/l; the paper excerpts do not state the mechanism or any further model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2009`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

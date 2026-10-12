@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;thiopental&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/&quot;},{&quot;label&quot;:&quot;Stanski_1984 \u00b7 PD spectral edge&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thiopental_Marsot2013_reference&quot;,&quot;label&quot;:&quot;Marsot_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_Marsot2013_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thiopental_Russo1997v3_reference&quot;,&quot;label&quot;:&quot;Russo_1997_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_Russo1997v3_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thiopental_SolanaAltabella2025_reference&quot;,&quot;label&quot;:&quot;Solana-Altabella_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_SolanaAltabella2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thiopental_Marsot2013_reference&quot;,&quot;label&quot;:&quot;Marsot_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_Marsot2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thiopental_Russo1997v3_reference&quot;,&quot;label&quot;:&quot;Russo_1997_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_Russo1997v3_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Thiopental_SolanaAltabella2025_reference&quot;,&quot;label&quot;:&quot;Solana-Altabella_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiopental/Thiopental_SolanaAltabella2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # spectral edge — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,6 +17,10 @@
 **As extracted:** Thiopental (concentrations from the PK model of Baggot_1984) drives spectral edge: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> Thiopental inhibits the spectral edge response via a sigmoid Emax mechanism, with an effect compartment rate constant (ke0) of 1.2 +/- 0.30 min. The paper excerpts do not provide a full text or specify additional potency parameters such as IC50 or Imax.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Stanski_1984`
 - **model family:** `sigmoid_emax`

@@ -5,7 +5,7 @@
 
 # polymyxin B — `PolymyxinB_Lakota2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — polymyxin b: CL 100 mg · h/liter.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has polymyxin_b, the second reading polymyxin B; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has polymyxin_b, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -90,17 +90,22 @@ Lakota EA et al., Personalizing Polymyxin B Dosing Using…, Antimicrobial agent
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[population average polymyxin b clearance]` | 0.0276 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ssauc0-24 that resulted in rates of mild nephrotoxicity (≤25% decreases in creatinine clearance [clcr]) in ≤40% of subjects]` | not captured | 100 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | polymyxin_b | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | polymyxin_b | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[2]` | not captured | 1.4 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ssauc0-24 that resulted in rates of mild nephrotoxicity (≤25% decreases in creatinine clearance [clcr]) in ≤40% of subjects]` | 100 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | polymyxin_b | polymyxin B | mismatch |

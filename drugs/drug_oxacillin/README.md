@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;oxacillin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxacillin_Lee2026_reference&quot;,&quot;label&quot;:&quot;Lee_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/Oxacillin_Lee2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxacillin_Murnov2022_reference&quot;,&quot;label&quot;:&quot;Mur\u00ednov\u00e1_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/Oxacillin_Murnov2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxacillin_Lee2026_reference&quot;,&quot;label&quot;:&quot;Lee_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/Oxacillin_Lee2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxacillin_Murnov2022_reference&quot;,&quot;label&quot;:&quot;Mur\u00ednov\u00e1_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxacillin/Oxacillin_Murnov2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # oxacillin
 
@@ -27,22 +27,22 @@ Oxacillin is a penicillin antibiotic used to treat staphylococcal infections, in
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 10:12 | 2:56 | 2/0/0 | 1/0/1 | 0/0/0 | 173,814/8,335 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
+| 2026-10-07 10:12 | 2:56 | 1/0/1 | 1/0/1 | 0/0/0 | 173,814/8,335 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lee_2026_reference](drugs/drug_oxacillin/Oxacillin_Lee2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Lee A et al., Population pharmacokinetics and safety…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01777-25](https://doi.org/10.1128/aac.01777-25) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Murínová_2022_reference](drugs/drug_oxacillin/Oxacillin_Murnov2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Murínová I et al., Population Pharmacokinetic Analysis Pro…, Antibiotics (Basel, Switzer… (2022) | [10.3390/antibiotics11121736](https://doi.org/10.3390/antibiotics11121736) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Lee_2026_reference](drugs/drug_oxacillin/Oxacillin_Lee2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Lee A et al., Population pharmacokinetics and safety…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01777-25](https://doi.org/10.1128/aac.01777-25) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Murínová_2022_reference](drugs/drug_oxacillin/Oxacillin_Murnov2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Murínová I et al., Population Pharmacokinetic Analysis Pro…, Antibiotics (Basel, Switzer… (2022) | [10.3390/antibiotics11121736](https://doi.org/10.3390/antibiotics11121736) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Baudoux_2007_CFU](drugs/drug_oxacillin/pd_Baudoux_2007_CFU.md) | log(10) colony-forming unit changes at 24 h ← oxacillin · direct sigmoid Emax (Hill) effect | — | Baudoux P et al., Combined effect of pH and concentration…, The Journal of antimicrobia… (2007) | [10.1093/jac/dkl489](https://doi.org/10.1093/jac/dkl489) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Rodriguez_2010_E](drugs/drug_oxacillin/pd_Rodriguez_2010_E.md) | net antibacterial effect (log10 CFU/g) after 24 h of treatment ← oxacillin · direct sigmoid Emax (Hill) effect | model (no simulator) | Rodriguez CA et al., In vitro and in vivo comparison of the…, BMC infectious diseases (2010) | [10.1186/1471-2334-10-153](https://doi.org/10.1186/1471-2334-10-153) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Rodriguez_2010_E_2](drugs/drug_oxacillin/pd_Rodriguez_2010_E_2.md) | net antibacterial effect (log10 CFU/g) after 24 h of treatment ← oxacillin · inhibition effect | model (no simulator) | Rodriguez CA et al., In vitro and in vivo comparison of the…, BMC infectious diseases (2010) | [10.1186/1471-2334-10-153](https://doi.org/10.1186/1471-2334-10-153) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Baudoux_2007_CFU](drugs/drug_oxacillin/pd_Baudoux_2007_CFU.md) | log(10) colony-forming unit changes at 24 h ← oxacillin · direct sigmoid Emax (Hill) effect | — | Baudoux P et al., Combined effect of pH and concentration…, The Journal of antimicrobia… (2007) | [10.1093/jac/dkl489](https://doi.org/10.1093/jac/dkl489) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Rodriguez_2010_E](drugs/drug_oxacillin/pd_Rodriguez_2010_E.md) | net antibacterial effect (log10 CFU/g) after 24 h of treatment ← oxacillin · direct sigmoid Emax (Hill) effect | model (no simulator) | Rodriguez CA et al., In vitro and in vivo comparison of the…, BMC infectious diseases (2010) | [10.1186/1471-2334-10-153](https://doi.org/10.1186/1471-2334-10-153) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Rodriguez_2010_E_2](drugs/drug_oxacillin/pd_Rodriguez_2010_E_2.md) | net antibacterial effect (log10 CFU/g) after 24 h of treatment ← oxacillin · inhibition effect | model (no simulator) | Rodriguez CA et al., In vitro and in vivo comparison of the…, BMC infectious diseases (2010) | [10.1186/1471-2334-10-153](https://doi.org/10.1186/1471-2334-10-153) |
 
 ## ADME sites
 
@@ -63,7 +63,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 17 matched, 17 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

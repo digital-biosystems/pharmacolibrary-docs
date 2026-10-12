@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Aceclofenac directly inhibits COX-2 activity in a whole blood assay with an IC50 of 0.8 mM. The paper describes this as a direct inhibition of enzyme activity rather than inhibiting production or elimination.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Henrotin_2001`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

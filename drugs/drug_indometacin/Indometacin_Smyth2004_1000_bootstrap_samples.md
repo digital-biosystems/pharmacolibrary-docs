@@ -4,7 +4,7 @@
 
 # indometacin — `Indometacin_Smyth2004_1000_bootstrap_samples`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625), gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — indometacin: Q 19 L/h, Q3 23.8 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[q 1].value`: this record has 19.0, the second reading 0.00711; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[q 1].value`: this record has 19.0, the second reading 0.00711; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -82,17 +82,21 @@ Smyth JM; Collier PS; Darwish M; Millership JS; Halliday HL; Petersen S; et al. 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.625 (5/8 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[q 1].value` | 19.0 | 0.00711 | mismatch |
+| `gpt-oss-120b` | `parameters[q 3].value` | 23.8 | 0.0338 | mismatch |
+| `gpt-oss-120b` | `parameters[q 4]` | 27.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[q 1].value` | 19.0 | 0.00711 | mismatch |
 | `gpt-oss:120b` | `parameters[q 3].value` | 23.8 | 0.0338 | mismatch |
 | `gpt-oss:120b` | `parameters[q 4]` | 27.5 | not captured | only_one_extracted |

@@ -16,7 +16,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — phenolsulfonphthalein: t1/2z 16.4 minutes, CLnorm 0.00554 L/min/kg, CL 0.00701 L/min/kg.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Hinchcliff KW et al., Pharmacokinetics of phenolsulfonphthale…, American journal of veterin… (1987)

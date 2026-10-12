@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Chlordiazepoxide displaces [3H](3MeHis2)TRH binding in brain tissue with a sigmoid Emax (inhibitory) relationship; IC50 is 5 microM with a Hill coefficient less than one. The paper excerpts do not state the mechanism beyond this direct concentration-effect relation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Simasko_1984`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

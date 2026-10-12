@@ -4,7 +4,7 @@
 
 # timolol — `Timolol_Ishizaki1978_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167), gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — timolol: t1/2z 3.2 hours, tmax 2 hours, V 1.81 liter/kg, CL 557 ml/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[extrapolated volume of distribution].parameter_id`: this record has Q61, the second reading Q65. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has timolol, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -66,17 +66,28 @@ Ishizaki T et al., Clinical pharmacologic observations on…, Journal of clinica
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.889 (8/9 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[extrapolated volume of distribution]` | 1.81 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[extrapolated volume of distribution]` | not captured | 1.81 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[observed peak time]` | 2.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[observed peak time]` | not captured | 2.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[overall elimination half-life]` | 3.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[overall elimination half-life]` | not captured | 3.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total plasma clearance]` | 557 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total plasma clearance]` | not captured | 557 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | timolol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | timolol | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[extrapolated volume of distribution].parameter_id` | Q61 | Q65 | mismatch |
 
 </details>

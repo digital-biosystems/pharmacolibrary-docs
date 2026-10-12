@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Olopatadine dose (as a KPD theoretical concentration, %) acts on the categorical ocular itching score (0–4 units in 0.5 increments) via an inhibitory Emax-type differential odds model, with elimination of the theoretical KPD concentration from the ocular space driven by the observed effect rather than measured concentrations. Key values: Emax 3.40 and EC50 0.03%; the paper does not state kin, kout, ke0, or gamma values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fidler_2018`
 - **model family:** `emax`
 - **driver:** `not_resolved`

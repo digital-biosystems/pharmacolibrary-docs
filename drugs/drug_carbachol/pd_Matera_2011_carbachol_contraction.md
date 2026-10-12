@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol concentration (μM) directly stimulates bronchial contraction (tension, gr), described by a sigmoid Emax model with Emax 9.07 gr; the paper excerpts provide no IC50, slope, or mechanism beyond this direct concentration–response fit.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Matera_2011`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

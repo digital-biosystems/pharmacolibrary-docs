@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record identifies ixekizumab as the driver for the categorical response PASI 90 within a sigmoid Emax framework, but no full text is available to specify the underlying mechanism or direction. Consequently, no potency or rate parameter values (such as EC50 or Emax) can be reported.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

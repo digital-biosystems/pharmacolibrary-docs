@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_Allegaert2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833), gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The clearance parameter carries the verbatim label 'propofol clearance capacity in a 38 postmenstrual weeks newborn at birth' yet is recorded for midazolam, so the value 0.029 l.min−1 does not describe midazolam elimination. The topology check found an unreachable or orphan compartment in the two-compartment structure, meaning part of the model has no path from the dose. A second reader also disagreed on one value, reading 3 where the record holds no value (null). Extracted — midazolam: CL 0.029 l.min−1, V 0.6 l.kg-1, V2 45 l .70 kg−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q54: this record has none, the second reading 3. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q45: this record has 22, the second reading none. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -61,17 +61,19 @@ Allegaert K et al., Neonatal clinical pharmacology, Paediatric anaesthesia (2014
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.833 (5/6 fields) | 1 |
 | `gpt-oss:120b` | partly confirmed | 0.833 (5/6 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q45]` | 22 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q54]` | not captured | 3 | only_one_extracted |
 
 </details>

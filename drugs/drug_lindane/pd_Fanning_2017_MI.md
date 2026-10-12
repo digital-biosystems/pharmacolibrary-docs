@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lindane (molar concentration) inhibits spontaneous myometrial contractions in rat (motility index) via an Emax-type inhibitory model, with an EC50 of 11.8×10⁻⁶ M; the paper excerpts provide no further mechanism or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fanning_2017`
 - **model family:** `emax`
 - **driver:** `cited_pk`

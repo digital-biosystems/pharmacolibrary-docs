@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentagastrin concentration (pmol/L) stimulates cell contraction (percentage decrease in cell length from control) with a direct Emax-type model; the paper reports an EC50 of 30 pmol/L but the excerpts do not state Emax, the mechanism, or other parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Botella_1992`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

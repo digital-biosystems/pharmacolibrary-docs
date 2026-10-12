@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;rufloxacin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rufloxacin_Imbimbo1991_reference&quot;,&quot;label&quot;:&quot;Imbimbo_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rufloxacin/Rufloxacin_Imbimbo1991_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rufloxacin_Mattina1991_reference&quot;,&quot;label&quot;:&quot;Mattina_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rufloxacin/Rufloxacin_Mattina1991_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rufloxacin_Imbimbo1991_reference&quot;,&quot;label&quot;:&quot;Imbimbo_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rufloxacin/Rufloxacin_Imbimbo1991_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rufloxacin_Mattina1991_reference&quot;,&quot;label&quot;:&quot;Mattina_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rufloxacin/Rufloxacin_Mattina1991_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # rufloxacin
 
@@ -27,16 +27,16 @@ Rufloxacin is a fluoroquinolone antibacterial that was developed to treat bacter
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:02 | 6:46 | 2/0/2 | 0/0/0 | 0/0/0 | 135,172/44,252 | einfracz / qwen3.8-27b | 2 | 2/0 | 2/0 | 0 |
+| 2026-10-07 12:02 | 6:46 | 0/0/4 | 0/0/0 | 0/0/0 | 135,172/44,252 | einfracz / qwen3.8-27b | 2 | 2/0 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Imbimbo_1991_reference](drugs/drug_rufloxacin/Rufloxacin_Imbimbo1991_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Imbimbo BP et al., Inter- and intrasubject variabilities i…, Antimicrobial agents and ch… (1991) | [10.1128/AAC.35.2.390](https://doi.org/10.1128/AAC.35.2.390) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mattina_1991_reference](drugs/drug_rufloxacin/Rufloxacin_Mattina1991_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Mattina R et al., Pharmacokinetics of rufloxacin in healt…, Chemotherapy (1991) | [10.1159/000238885](https://doi.org/10.1159/000238885) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>route_to: `human_review`</sub> | [Perry_1993_reference](drugs/drug_rufloxacin/Rufloxacin_Perry1993_reference.md) | — | 1-compartment (no model) | 2 | Perry G et al., Pharmacokinetics of rufloxacin in patie…, Antimicrobial agents and ch… (1993) | [10.1128/AAC.37.4.637](https://doi.org/10.1128/AAC.37.4.637) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Triger_1993_reference](drugs/drug_rufloxacin/Rufloxacin_Triger1993_reference.md) | — | 1-compartment (no model) | 5 | Triger DR et al., Multiple-dose pharmacokinetics of ruflo…, Hepatology (Baltimore, Md.) (1993) | [10.1002/hep.1840180415](https://doi.org/10.1002/hep.1840180415) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.467). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Imbimbo_1991_reference](drugs/drug_rufloxacin/Rufloxacin_Imbimbo1991_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Imbimbo BP et al., Inter- and intrasubject variabilities i…, Antimicrobial agents and ch… (1991) | [10.1128/AAC.35.2.390](https://doi.org/10.1128/AAC.35.2.390) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Mattina_1991_reference](drugs/drug_rufloxacin/Rufloxacin_Mattina1991_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Mattina R et al., Pharmacokinetics of rufloxacin in healt…, Chemotherapy (1991) | [10.1159/000238885](https://doi.org/10.1159/000238885) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>route_to: `human_review`</sub> | [Perry_1993_reference](drugs/drug_rufloxacin/Rufloxacin_Perry1993_reference.md) | — | 1-compartment (no model) | 2 | Perry G et al., Pharmacokinetics of rufloxacin in patie…, Antimicrobial agents and ch… (1993) | [10.1128/AAC.37.4.637](https://doi.org/10.1128/AAC.37.4.637) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Triger_1993_reference](drugs/drug_rufloxacin/Rufloxacin_Triger1993_reference.md) | — | 1-compartment (no model) | 5 | Triger DR et al., Multiple-dose pharmacokinetics of ruflo…, Hepatology (Baltimore, Md.) (1993) | [10.1002/hep.1840180415](https://doi.org/10.1002/hep.1840180415) |
 
 ## ADME sites
 
@@ -56,7 +56,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 14 matched, 14 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 2  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 4  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

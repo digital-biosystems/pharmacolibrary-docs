@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide enough information (no full text available) to describe the PD model linking lemborexant concentrations to subjective sleep efficacy endpoints from the sleep diary; mechanism, effect form, and potency/rate values are not stated in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lalovic_2023`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

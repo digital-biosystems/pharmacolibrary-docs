@@ -5,7 +5,7 @@
 
 # doxycycline — `Doxycycline_Yang2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — doxycycline: V 865 ml/kg, kcomp 2.28 1/h, kel 0.08 1/h, CL 104 ml/h/kg, kabs 2.55 1/h, Cmax 5.88 μg/ml, tmax 1.73 h, Fab 52.3 %.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has doxycycline, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -76,14 +76,38 @@ Yang F et al., Pharmacokinetics of doxycycline in layi…, British poultry scien
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (3/21 fields) | 18 |
 | `gpt-oss:120b` | confirmed | 1.0 (13/13 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>18 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absolute bioavailability]` | 52.33 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absolute bioavailability]` | not captured | 52.33 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 2.55 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | not captured | 2.55 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution rate constant]` | 2.28 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution rate constant]` | not captured | 2.28 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination rate constant]` | 0.08 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination rate constant]` | not captured | 0.08 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peak concentration]` | 5.88 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peak concentration]` | not captured | 5.88 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time to reach cmax]` | 1.73 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time to reach cmax]` | not captured | 1.73 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` | 104.11 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` | not captured | 104.11 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 865.15 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 865.15 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | doxycycline | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | doxycycline | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

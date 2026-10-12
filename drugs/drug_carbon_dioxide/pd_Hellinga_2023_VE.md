@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;carbon dioxide&quot;,&quot;href&quot;:&quot;drugs/drug_carbon_dioxide/&quot;},{&quot;label&quot;:&quot;Hellinga_2023 \u00b7 PD Minute ventilation (ventilatory response to brain tissue carbon dioxide partial pressure)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CarbonDioxide_Hellinga2023_reference&quot;,&quot;label&quot;:&quot;Hellinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbon_dioxide/CarbonDioxide_Hellinga2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CarbonDioxide_Hellinga2023_reference&quot;,&quot;label&quot;:&quot;Hellinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbon_dioxide/CarbonDioxide_Hellinga2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Minute ventilation (ventilatory response to brain tissue carbon dioxide partial pressure) — PD  <span class="pk-badge pk-badge--red">rejected</span>
@@ -17,6 +17,10 @@
 **As extracted:** Carbon dioxide (brain tissue/effect-site PCO2) drives Minute ventilation (ventilatory response to brain tissue carbon dioxide partial pressure) (in L/min): direct linear effect.
 
 **Model:** No model was generated from this record.
+
+> In the oxycodone study, brain effect-site carbon dioxide (PCO2, kPa) drives minute ventilation (VE, L/min) via a linear hypercapnic ventilatory response model with baseline VE 8.0 ± 0.2 L/min, baseline PETCO2 5.3 ± 0.11 kPa, VRT 5.8 ± 0.1 kPa, and slope 16.6 ± 1.5 L/min/kPa; oxycodone depresses this response, with VE55 most sensitive (C50 = 0.05 ng/mL) versus slope (C50 = 0.13 ng/mL) and baseline variables (C50 = 0.33 ng/mL). The excerpts do not state the exact mechanism (e.g., effect-compartment ke0 or inhibitory form) beyond a blood-to-effect-site equilibration being defined.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Hellinga_2023`
 - **model family:** `linear`

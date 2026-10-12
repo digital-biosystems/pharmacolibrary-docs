@@ -32,7 +32,7 @@ Lemborexant is a hypnotic used to treat insomnia. It is an approved orexin recep
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Lalovic_2020_reference](drugs/drug_lemborexant/Lemborexant_Lalovic2020_reference.md) | — | 1-compartment (no model) | 7 (+3 cov.) | Lalovic B et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1683](https://doi.org/10.1002/jcph.1683) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.696). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Lalovic_2020_reference](drugs/drug_lemborexant/Lemborexant_Lalovic2020_reference.md) | — | 1-compartment (no model) | 7 (+3 cov.) | Lalovic B et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1683](https://doi.org/10.1002/jcph.1683) |
 
 ## Pharmacodynamics (PD)
 

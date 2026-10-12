@@ -33,7 +33,7 @@ Ebastine is a systemic antihistamine that blocks H1 receptors, used to treat all
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kang_2011_reference](drugs/drug_ebastine/Ebastine_Kang2011_reference.md) | — | general linear (no model) | 0 | Kang W et al., Myocardial pharmacokinetics of ebastine…, British journal of pharmaco… (2011) | [10.1111/j.1476-5381.2011.01338.x](https://doi.org/10.1111/j.1476-5381.2011.01338.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kang_2011_reference](drugs/drug_ebastine/Ebastine_Kang2011_reference.md) | — | general linear (no model) | 0 | Kang W et al., Myocardial pharmacokinetics of ebastine…, British journal of pharmaco… (2011) | [10.1111/j.1476-5381.2011.01338.x](https://doi.org/10.1111/j.1476-5381.2011.01338.x) |
 
 ## Pharmacodynamics (PD)
 

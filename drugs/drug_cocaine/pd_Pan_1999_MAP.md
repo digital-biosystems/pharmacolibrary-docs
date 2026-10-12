@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record specifies an indirect response model with inhibition for the effect of cocaine on mean arterial blood pressure, but the paper excerpts are unavailable. Consequently, the specific mechanism and key potency or rate values (e.g., IC50, kout) cannot be verified or reported.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pan_1999`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`

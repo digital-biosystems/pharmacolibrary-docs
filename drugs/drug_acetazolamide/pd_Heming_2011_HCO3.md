@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Acetazolamide inhibits the first-order elimination (kout) of serum bicarbonate, which is assumed to be at baseline equilibrium (Bicar0) determined by the ratio of formation (kin) and elimination rate constants. The model assumes a maximal effect (Emax) of 1, with an A50 (dose for half-maximal inhibition) of 117 mg, and estimates kout as 0.395 and baseline Bicar0 as 35.5 mmol/L.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Heming_2011`
 - **model family:** `indirect_response_ii`
 - **driver:** `dose_only`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methacholine concentration (nM) directly drives airway lumen area change (ΔAW/ΔAWMCh-Max, normalized to maximum ΔAW at 100 µM MCh), fitted to a sigmoid Emax (logistic) concentration-response; EC50 values were 258 nM (control), 316 nM (Ova-asthma), and 522 nM (IL-13TG), with differences statistically insignificant (p&gt;0.05). The paper does not state Emax, gamma, or a mechanistic PD model beyond the direct concentration-response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kim_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

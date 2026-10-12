@@ -4,7 +4,7 @@
 
 # acetylcysteine — `Acetylcysteine_Teder2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.526). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The N-acetylcysteine model was rejected because the bioavailability parameter’s unit, 'Standard Error', is not a valid pharmacokinetic unit.**
+
+The absolute bioavailability parameter is recorded with a value of -2.03 and a unit labeled 'Standard Error'. This unit is not a valid pharmacokinetic unit, so the parameter reached the model builder without a valid value. Consequently, the model lacks a defined bioavailability, and the structure contains a compartment with no path from the dose. Extracted — acetylcysteine: t1/2ka 0.33 Standard Error, Fab -2.03 Standard Error, V2 12 L, V3 8.62 L, Q3 43.8 L/h, kabs 0.14 h−1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has N-acetylcysteine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Teder K et al., The Pharmacokinetic Profile and Bioavai…, Medicina (Kaunas, Lithuania) (2021)
@@ -84,6 +92,35 @@ Teder K et al., The Pharmacokinetic Profile and Bioavai…, Medicina (Kaunas, Li
 - LLM selected parameter table(s) 4
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.526 (10/19 fields) | 9 |
+
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl0]` | not captured | 3.57 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f b].parameter_id` | Q40 | Q87 | mismatch |
+| `gpt-oss-120b` | `parameters[ka0].parameter_id` | Q95 | Q49 | mismatch |
+| `gpt-oss-120b` | `parameters[q20]` | not captured | 4.60 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvka]` | 0.14 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v0]` | not captured | 11.80 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v20]` | 12.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | N-acetylcysteine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | N-acetylcysteine | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

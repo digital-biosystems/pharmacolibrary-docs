@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**C5 dimension mismatch on a structural parameter.**
+
+A reported unit could not be converted (Cmax, Cmax/dose, Ctrough and AUCt), so that value has no SI equivalent. Extracted — obinutuzumab: Cmax 0.935 μg ml−1, Cmax/dose 195 μg ml−1 mg−1, Ctrough 0.488 μg ml−1, AUCt 14.7 day·μg ml−1, CL 0.584 L/day.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Zhai J et al., Pharmacokinetics of obinutuzumab in Chi…, British journal of clinical… (2017)

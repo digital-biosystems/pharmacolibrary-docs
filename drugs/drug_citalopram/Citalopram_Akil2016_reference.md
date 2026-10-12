@@ -5,7 +5,7 @@
 
 # citalopram — `Citalopram_Akil2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (add_error), so that value has no SI equivalent. Extracted — citalopram: V/F 1.39e+03, CL 24.4, Vss 167, add_error 13.4 additive.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has R- and S-citalopram and desmethylcitalopram, the second reading citalopram; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has citalopram (racemic), the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -101,17 +101,26 @@ Akil A et al., A population pharmacokinetic model for…, Journal of pharmacokin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.385 (5/13 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.25 (4/16 fields) | 12 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[ka]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q26_category]` | 13 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q27_category]` | not captured | 13 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 1390 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | not captured | 1390 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | citalopram (racemic) | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | R,S-citalopram and R,S-desmethylcitalopram | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl rm /f]` | 24.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka]` | not captured | 1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[r]` | 13.42 | not captured | only_one_extracted |

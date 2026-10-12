@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes teriflunomide (μM) directly inhibiting SARS-CoV-2 viral inhibition (%), but it does not specify the detailed pharmacodynamic mechanism (e.g., production vs. elimination inhibition, Emax, or effect compartment) beyond the general antiviral effect. The key potency value reported is an EC50 of 15.22 μM, with no rate parameters or maximum effect values provided in the excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lang_2023`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

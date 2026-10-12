@@ -5,7 +5,7 @@
 
 # mesalazine — `Mesalazine_Cuffari2016_multimatrix_mesalamine`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record claims a parent–metabolite structure with Ac-5-ASA formed from 5-ASA, but the model was built as a single one-compartment parent model, so the metabolite compartment is absent from the structure. The model's output is the parent central compartment rather than the measured 5-ASA compartment. Simulated as the paper dosed it, the model's time of the peak (tmax) is 0.183 h against paper values of 2, 6, 7.5 and 9 h (ratios 0.0306–0.0917), exceeding the tolerance. Parameter values (apparent metabolic clearance 85.6 L/h, central volume 109 L) were read by only one reader, with the second reader leaving them null. Extracted — mesalazine: CL 85.6 L/h, V1 109 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has mesalazine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mesalazine, the second reading mesalamine; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -116,17 +116,23 @@ Cuffari C et al., Randomized clinical trial: pharmacokine…, Drug design, devel
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[5-asa apparent metabolic clearance]` | not captured | 85.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent metabolic clearance]` | 85.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume of distribution for 5-asa]` | not captured | 109 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume of distribution]` | 109 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | mesalazine | mesalamine | mismatch |
 | `gpt-oss:120b` | `parameters[5-asa apparent metabolic clearance]` | not captured | 85.6 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[apparent metabolic clearance]` | 85.6 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[central volume of distribution for 5-asa]` | not captured | 109 | only_one_extracted |

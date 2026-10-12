@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record specifies that pholcodine concentration in μg/mL acts on fluorescence intensity via a linear, additive, and stimulatory mechanism, but no specific potency or rate parameters are provided. The paper does not give the mechanism because no full text is available.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Elmansi_2022`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`

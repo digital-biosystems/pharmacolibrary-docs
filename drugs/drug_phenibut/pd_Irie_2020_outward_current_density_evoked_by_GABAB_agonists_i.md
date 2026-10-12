@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Phenibut concentration stimulates outward current density evoked by GABAB agonists in cerebellar Purkinje cells, described by a sigmoid Emax model with EC50 = 1362 μM; the paper excerpts provide no further mechanism, Emax, or slope values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Irie_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

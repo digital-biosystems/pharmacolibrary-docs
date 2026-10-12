@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record identifies ixekizumab as the driver for the binary response of static Physician Global Assessment (sPGA) with an inhibitory effect direction, but no mechanism is specified. As no full text is available, the paper does not provide specific potency or rate parameters (such as IC50 or EC50) to describe the pharmacodynamic interaction.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chigutsa_2018`
 - **model family:** `categorical`
 - **driver:** `not_resolved`

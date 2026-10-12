@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the full text, so it does not specify the mechanism or provide any potency or rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for the effect of colfosceril palmitate dose on the alveolar-arterial oxygen gradient.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Berry_1994`
 - **model family:** `unknown`
 - **driver:** `dose_only`

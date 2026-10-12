@@ -5,7 +5,7 @@
 
 # riociguat — `Riociguat_Saleh2016v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — riociguat: CL 1.91 L/h, CLR 0.242 L/h, FG 0.174 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has riociguat, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has riociguat, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -69,17 +69,24 @@ Saleh S et al., Population pharmacokinetics of single-d…, Pulmonary circulatio
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['riociguat', 'm1', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[glomerular filtration]` | 0.174 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[metabolism to m1]` | not captured | 1.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 0.35 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | riociguat | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | riociguat | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [] | [['riociguat', 'm1', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[glomerular filtration]` | 0.174 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[metabolism to m1]` | not captured | 1.2 | only_one_extracted |

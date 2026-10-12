@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> α-Cypermethrin inhibits Enchytraeus crypticus performance in spent mushroom substrate (SMS), with an EC50 of 0.76 mg kg(-1); the paper excerpts do not state the mechanism or model form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sechi_2014`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

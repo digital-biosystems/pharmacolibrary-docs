@@ -5,7 +5,7 @@
 
 # telmisartan — `Telmisartan_Tatami2003_estimated_parameters`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (partly confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — telmisartan: V1/F 106, Q 104, V2/F 106, kabs 102, tlag 101, CL/F 18.3 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 1: this record has none, the second reading 40; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has telmisartan, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -110,17 +110,25 @@ Tatami S et al., Population pharmacokinetics of an angio…, Drug metabolism and
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (7/14 fields) | 7 |
 | `gpt-oss:120b` | partly confirmed | 0.643 (9/14 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[1]` | not captured | 40 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[2]` | not captured | 40 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[3m a l e80]` | not captured | 192 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[5m a l e6 0]` | not captured | 125 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clw f]` | 100.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 102.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | telmisartan | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[1]` | not captured | 40 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[3m a l e80]` | not captured | 192 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[7m a l e6 0]` | not captured | 80 | only_one_extracted |
@@ -173,7 +181,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_parameters/Telmisartan_Tatami2003_estimated_parameters_modelica.zip" download>Telmisartan_Tatami2003_estimated_parameters_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_parameters/Telmisartan_Tatami2003_estimated_parameters_fmi.zip" download>Telmisartan_Tatami2003_estimated_parameters_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_parameters/Telmisartan_Tatami2003_estimated_parameters_matlab.zip" download>Telmisartan_Tatami2003_estimated_parameters_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_parameters/Telmisartan_Tatami2003_estimated_parameters_matlab_simbio.zip" download>Telmisartan_Tatami2003_estimated_parameters_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_parameters/Telmisartan_Tatami2003_estimated_parameters_matlab_simbio.zip" download>Telmisartan_Tatami2003_estimated_parameters_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_parameters/Telmisartan_Tatami2003_estimated_parameters_sbml.zip" download>Telmisartan_Tatami2003_estimated_parameters_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_parameters/Telmisartan_Tatami2003_estimated_parameters_cellml.zip" download>Telmisartan_Tatami2003_estimated_parameters_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>

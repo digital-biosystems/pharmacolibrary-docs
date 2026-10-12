@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pimavanserin concentrations act on the categorical Clinical Global Impression-Improvement (CGI-I) response, but the paper excerpts provide no full text, so the mechanism (e.g., direct Emax, effect compartment, inhibition of production or elimination) and any potency or rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Darwish_2023_2`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hamilton_2020_HCMV_replication_in_TEV_1_trophoblast_cells_at_7_dpi](drugs/drug_cidofovir/pd_Hamilton_2020_HCMV_replication_in_TEV_1_trophoblast_cells_at.md) | HCMV replication in TEV-1 trophoblast cells at 7 dpi ← cidofovir · inhibition effect | — | Hamilton ST et al., Investigational Antiviral Therapy Model…, Antimicrobial agents and ch… (2020) | [10.1128/AAC.01627-20](https://doi.org/10.1128/AAC.01627-20) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hamilton_2020_HCMV_replication_in_TEV_1_trophoblast_cells_at_7_dpi](drugs/drug_cidofovir/pd_Hamilton_2020_HCMV_replication_in_TEV_1_trophoblast_cells_at.md) | HCMV replication in TEV-1 trophoblast cells at 7 dpi ← cidofovir · inhibition effect | — | Hamilton ST et al., Investigational Antiviral Therapy Model…, Antimicrobial agents and ch… (2020) | [10.1128/AAC.01627-20](https://doi.org/10.1128/AAC.01627-20) |
 
 ## ADME sites
 

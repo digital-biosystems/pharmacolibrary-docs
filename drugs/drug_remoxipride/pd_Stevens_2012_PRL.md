@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models remoxipride's effect on plasma prolactin (PRL) as an indirect response with stimulation of PRL production (indirect response model III, proportional effect), driven by remoxipride concentrations in free brain extracellular fluid; no potency or rate parameter values are available from the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stevens_2012`
 - **model family:** `indirect_response_iii`
 - **driver:** `not_resolved`

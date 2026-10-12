@@ -1,11 +1,11 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;cyclophosphamide&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/&quot;},{&quot;label&quot;:&quot;Cohen_1971 \u00b7 cancer patients&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cyclophosphamide_Cao2025_reference&quot;,&quot;label&quot;:&quot;Cao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Cao2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Huang2026_reference&quot;,&quot;label&quot;:&quot;Huang_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Huang2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Iliopoulou2021_reference&quot;,&quot;label&quot;:&quot;Iliopoulou_2021_patients with autoimmune glomerulonephritis&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Iliopoulou2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Shemesh2020_reference&quot;,&quot;label&quot;:&quot;Shemesh_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Shemesh2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Tsyplakova2025_reference&quot;,&quot;label&quot;:&quot;Tsyplakova_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Tsyplakova2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Xie2025_reference&quot;,&quot;label&quot;:&quot;Xie_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Xie2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Zhou2026_reference&quot;,&quot;label&quot;:&quot;Zhou_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Zhou2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;cyclophosphamide&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/&quot;},{&quot;label&quot;:&quot;Cohen_1971 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cyclophosphamide_Cao2025_reference&quot;,&quot;label&quot;:&quot;Cao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Cao2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Huang2026_reference&quot;,&quot;label&quot;:&quot;Huang_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Huang2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Shemesh2020_reference&quot;,&quot;label&quot;:&quot;Shemesh_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Shemesh2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Tsyplakova2025_reference&quot;,&quot;label&quot;:&quot;Tsyplakova_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Tsyplakova2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Xie2025_reference&quot;,&quot;label&quot;:&quot;Xie_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Xie2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Zhou2026_reference&quot;,&quot;label&quot;:&quot;Zhou_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Zhou2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Iliopoulou2021_reference&quot;,&quot;label&quot;:&quot;Iliopoulou_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Iliopoulou2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cyclophosphamide — `Cyclophosphamide_Cohen1971_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,20 +17,20 @@
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**This paper's disposition core is incomplete.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Cao_2025, Luo_2022) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cyclophosphamide: CLR 10.7 ml/minute, V 28.2 L, kabs 0.773 day -1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k a: this record has 0.773, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-15 04:52:14.285674+00:00) predates the upstream re-run (2026-10-07 16:43:06.355246+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Cohen JL et al., Pharmacokinetics of cyclophosphamide in…, British journal of pharmaco… (1971)
   ·  DOI: [10.1111/j.1476-5381.1971.tb07199.x](https://doi.org/10.1111/j.1476-5381.1971.tb07199.x)
 
 ## Model component
-<dbs-pgx drug="cyclophosphamide" model-id="Cyclophosphamide_Cohen1971_reference" status="needs_review" stale="true" population="cancer patients" measured-compound="cyclophosphamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="cyclophosphamide" model-id="Cyclophosphamide_Cohen1971_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="cyclophosphamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -66,6 +66,30 @@ Cohen JL et al., Pharmacokinetics of cyclophosphamide in…, British journal of 
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
+
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[k a]` | 0.773 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean renal clearance]` | not captured | 10.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the mean renal clearance]` | 10.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical vc]` | 28.2 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -85,7 +109,7 @@ Cohen JL et al., Pharmacokinetics of cyclophosphamide in…, British journal of 
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_cyclophosphamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cohen_1971` / `Cohen_1971::cancer patients`)
+- scholar stages: `../../../knowledgebase/drugs/drug_cyclophosphamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cohen_1971` / `Cohen_1971::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

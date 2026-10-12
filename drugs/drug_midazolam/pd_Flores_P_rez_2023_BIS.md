@@ -18,7 +18,7 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> Midazolam plasma concentrations (converted to effect-site concentrations Ce via an effect compartment to collapse the clockwise hysteresis) inhibit the Bispectral Index according to an Imax model: E = E0 × (1 − Imax·Ce/(Ce+IC50)). The paper reports E0 = 57.63, Imax = 0.088 (maximal fraction of inhibition), and IC50 = 13.57 ng/mL; no Hill exponent (γ) value is given, and no kin/kout or ke0 values are stated.
+> Midazolam plasma concentrations (ng/mL) inhibit the Bispectral Index (BIS) in pediatric patients via a sigmoid/Imax inhibitory model with an effect compartment collapsing clockwise hysteresis; the paper reports E0 = 57.63, Imax = 0.088 (maximal fraction of inhibition) and IC50 = 13.57 ng/mL, but does not state ke0 or gamma values.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

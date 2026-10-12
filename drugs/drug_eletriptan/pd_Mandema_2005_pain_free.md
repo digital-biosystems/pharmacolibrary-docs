@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper describes a nonlinear logistic dose-response model where the administered dose of eletriptan (mg) directly determines the probability of the binary response 'pain free' via an Emax mechanism, without specifying a pharmacokinetic driver or effect compartment. The estimated parameters are an Emax of 3.09, an ED50 of 20.9 mg, a placebo intercept (PL0) of -9.22, a placebo slope (PLm) of -1.64, and a time constant (kpl) of 0.99 h-1.
+> Eletriptan dose (mg) acts directly on the binary response of becoming pain-free (%) via a dose-dependent Emax model that captures the difference from placebo. The model parameters are an Emax of 3.09 (dimensionless in the text description, though context implies a probability difference) and an ED50 of 20.9 mg.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Mandema_2005`
 - **model family:** `emax`

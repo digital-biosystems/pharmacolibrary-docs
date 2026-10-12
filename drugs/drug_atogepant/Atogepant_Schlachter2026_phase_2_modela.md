@@ -5,7 +5,7 @@
 
 # atogepant — `Atogepant_Schlachter2026_phase_2_modela`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.591). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.632), gpt-oss:120b (not confirmed, agreement 0.591). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record lists apparent parameters for atogepant (e.g. CL/F 18.2 L/h, V1/F 72.9 L, ka 1.31 /h, tlag 0.298 h), but the model builder substituted placeholder defaults for clearance, volume of distribution, absorption rate constant, lag time, and the central↔peripheral rate constants, and invented the absorption rate constant since it was not reported in the source. The parameterization assumes F=1 and Fm=1 with no molar correction. In addition, the covariate effects defined in the record (e.g. the dose effect on relative bioavailability, 0.163) were never exercised in simulation — only the reference individual was simulated — and a second reader disagreed on which parameters carry power-form covariate effects and on the value 0.163, which this record assigns to the dose effect but the second reader assigns to a relative-bioavailability weight power. Extracted — atogepant: kabs 1.31, CL/F 18.2, V1/F 72.9, Q/F 0.771, V2/F 91.7, Q2/F 1.99, V3/F 22.3, tlag 0.298, … (+1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has atogepant, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has atogepant, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -105,17 +105,25 @@ Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharma
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.632 (12/19 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.591 (13/22 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[blood-plasma ratio]` | not captured | 0.567 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect of solution on frel]` | not captured | -0.547 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_frel_weight_power]` | not captured | 0.163 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q87_weight_power]` | 0.163 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | atogepant | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | atogepant | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[apparent clearance patients [cl/f (l/h)]].covariate_forms` | ['power'] | [] | mismatch |
 | `gpt-oss:120b` | `parameters[apparent first peripheral volume of distribution [v2/f (l)]].parameter_id` | Q82 | Q64 | mismatch |
 | `gpt-oss:120b` | `parameters[blood-plasma ratio]` | not captured | 0.567 | only_one_extracted |
@@ -190,7 +198,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela_modelica.zip" download>Atogepant_Schlachter2026_phase_2_modela_modelica.zip</a> <span class="pk-size">(5.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela_fmi.zip" download>Atogepant_Schlachter2026_phase_2_modela_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela_matlab.zip" download>Atogepant_Schlachter2026_phase_2_modela_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela_matlab_simbio.zip" download>Atogepant_Schlachter2026_phase_2_modela_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela_matlab_simbio.zip" download>Atogepant_Schlachter2026_phase_2_modela_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela_sbml.zip" download>Atogepant_Schlachter2026_phase_2_modela_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela/Atogepant_Schlachter2026_phase_2_modela_cellml.zip" download>Atogepant_Schlachter2026_phase_2_modela_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>

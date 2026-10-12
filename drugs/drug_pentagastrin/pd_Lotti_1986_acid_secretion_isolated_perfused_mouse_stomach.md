@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentagastrin concentration (nM) stimulates acid secretion in the isolated perfused mouse stomach via a direct Emax model; the paper reports an EC50 of 161 nM, but no full text is available so the mechanism beyond stimulation and other parameters are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lotti_1986`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

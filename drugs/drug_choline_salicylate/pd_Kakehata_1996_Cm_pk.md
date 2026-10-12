@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Extracellular salicylate concentrations inhibit the nonlinear peak capacitance (Cm pk) of outer hair cells via a direct sigmoidal Emax mechanism, with a K1/2 of 1.6 mM and a Hill coefficient (n) of 1.0. The paper does not specify the molecular mechanism of action or provide rate constants such as ke0.
+> The model describes salicylate as a direct inhibitor of nonlinear peak capacitance ($C_{m\ pk}$) using a sigmoid Emax mechanism. The extracted potency is a KD of 1.6 mM with a Hill coefficient ($n$) of 1.0, although the paper does not explicitly state the fitting mechanism or provide these specific parameter values in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Kakehata_1996`
 - **model family:** `sigmoid_emax`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> CCK-OP (cholecystokinin-octapeptide) stimulates contractile response of guinea-pig trachea, described by an Emax model with EC50 = 6.18 ± 0.10 × 10⁻⁸ M; the paper excerpts do not state the mechanism beyond this direct concentration–response relationship, and no Emax value is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stretton_1989`
 - **model family:** `emax`
 - **driver:** `not_resolved`

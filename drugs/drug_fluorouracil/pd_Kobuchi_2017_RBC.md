@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Daryani_2016_bioluminescence&quot;,&quot;label&quot;:&quot;Daryani_2016 \u00b7 bioluminescence&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Daryani_2016_bioluminescence.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# erythrocyte counts — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (?, agreement 0.0), gpt-oss:120b (not confirmed, agreement 0.569). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+# erythrocyte counts — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> 5-fluorouracil concentrations in the peripheral compartment inhibit the production of erythrocyte precursors in an indirect response (precursor/circulating cell) model, with a linear drug effect Edrug = k_slope × C2(t); the paper does not state numeric values for k_slope, kin, ktr, or kcirc for the erythrocyte model in the excerpts.
+> 5-Fluorouracil concentrations in the peripheral compartment exert a linear inhibitory effect (defined by a k_slope of 1.7 mL/lg) on the first-order precursor production rate (k_in) of erythrocytes, which subsequently enter the circulation at a transition rate (k_tr) of 0.10 day^-1. The model parameters are estimated from a previous publication (Arshad_2020) and the provided text confirms the structural components of the precursor compartment model, though it does not specify the numerical value for k_in in the excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Kobuchi_2017`
 - **model family:** `indirect_response_i`
@@ -48,52 +48,20 @@ Kobuchi S et al., Population Pharmacokinetic-Pharmacodyna…, European journal o
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `einfracz:qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `openai:gpt-6-luna` | secondary_empty | 0.0 (0/9 fields) | 9 |
-| `gpt-oss:120b` | not confirmed | 0.569 (33/58 fields) | 25 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
 
-<details><summary>34 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `effect_form` | unknown | additive | mismatch |
-| `gpt-oss:120b` | `parameters[Q22]` | 18.0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q22]` | 120.0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q22]` | 16.6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q22]` | 15.9 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q22]` | 0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q22]` | 2.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q22]` | 14.2 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q22]` | 2.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q22]` | 2.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q22]` | 1.7 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 18.0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 120.0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 16.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 15.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 2.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 14.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 2.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 2.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 1.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q56]` | not captured | 22.0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q75]` | 9.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q75]` | 22.0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q75]` | 18 | not captured | only_one_extracted |
-| `openai:gpt-6-luna` | `driver_compound` | 5-fluorouracil | not captured | mismatch |
-| `openai:gpt-6-luna` | `effect_direction` | inhibition | not captured | mismatch |
-| `openai:gpt-6-luna` | `effect_form` | proportional | not captured | mismatch |
-| `openai:gpt-6-luna` | `model_family` | indirect_response_i | not captured | mismatch |
-| `openai:gpt-6-luna` | `parameters[Q312]` | 9.4 | not captured | only_one_extracted |
-| `openai:gpt-6-luna` | `parameters[Q327]` | 135.2 | not captured | only_one_extracted |
-| `openai:gpt-6-luna` | `parameters[Q335]` | 1.7 | not captured | only_one_extracted |
-| `openai:gpt-6-luna` | `parameters[Q336]` | 889.0 | not captured | only_one_extracted |
-| `openai:gpt-6-luna` | `parameters[Q338]` | 0.10 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `driver_compound` | 5-Fluorouracil | 5-FU | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q324]` | not captured | 889.0 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q338]` | 0.10 | not captured | only_one_extracted |
 
 </details>
 

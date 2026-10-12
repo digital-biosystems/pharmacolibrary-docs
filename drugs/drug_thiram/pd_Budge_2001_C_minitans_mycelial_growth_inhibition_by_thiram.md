@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Thiram (µg a.i. ml−1) inhibits C. minitans mycelial growth; the paper excerpts provide no model structure, mechanism, or potency/rate parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Budge_2001`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

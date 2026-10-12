@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lemborexant plasma concentrations (ng/mL) were related to the binary occurrence of treatment-emergent somnolence using a linear (additive) exposure-response model; the paper reports no evidence of clinically important drug- or exposure-related somnolence relative to placebo and does not state a mechanism or any potency (Imax, IC50, EC50, Emax) or rate (kin, kout, ke0, gamma) parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lalovic_2020`
 - **model family:** `linear`
 - **driver:** `pk_record`

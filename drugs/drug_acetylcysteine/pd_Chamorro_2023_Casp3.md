@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes a sigmoidal inhibition of OGD-induced caspase-3 activity by N-acetylcysteine, with the effect direction and mechanism inferred from the reduction in apoptotic markers, but it does not explicitly state a kinetic mechanism such as effect compartments or production rates. The provided text reports EC50 and maximal neuroprotective activity rankings for NAC in comparison to other compounds but does not specify the numerical EC50 or Emax values for NAC itself.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chamorro_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

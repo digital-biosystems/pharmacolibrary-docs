@@ -18,6 +18,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Diazepam plasma concentrations (ng/ml) stimulate the percent 13–30 Hz EEG activity via a sigmoid Emax model, with EC50 269 ng/ml and Emax +19.4%; the paper excerpts do not state the mechanism beyond this direct effect or a Hill (gamma) coefficient.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Greenblatt_1989`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

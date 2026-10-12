@@ -5,7 +5,7 @@
 
 # clonidine — `Clonidine_Paalzow1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.647), gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,53 +23,86 @@
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of intravenously at: this record has none, the second reading 125. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clonidine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:25:37.245454+00:00) predates the upstream re-run (2026-10-08 11:20:29.525890+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:25:37.245454+00:00) predates the upstream re-run (2026-10-09 06:08:45.871559+00:00). Current validate status: `rejected`.
 
 ## Citation
 Paalzow LK et al., Pharmacokinetics of clonidine in the ra…, Journal of pharmacokinetics… (1979)
   ·  DOI: [10.1007/BF01062390](https://doi.org/10.1007/BF01062390)
 
 ## Model component
-<dbs-pgx drug="clonidine" model-id="Clonidine_Paalzow1979_reference" status="rejected" stale="true" population="rats and cats" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="clonidine" model-id="Clonidine_Paalzow1979_reference" status="rejected" stale="true" population="rats and cats" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| A (ng/ml) | `Q900` · equation variable | 109.0 | ng/ml | not captured | [ng] / [ml] | not captured | llm (0.6) | Paalzow_1979_table_1:row0:col1, Paalzow_1979_table_1:row0:col2, Paalzow_1979_table_1:row0:col3 | — | not captured |
+| α (min⁻¹) | `Q67` · λ1 | 0.590 | min⁻¹ | not captured | [1] / [min] | not captured | exact (1.0) | Paalzow_1979_table_1:row1:col1, Paalzow_1979_table_1:row1:col2, Paalzow_1979_table_1:row1:col3 | — | not captured |
+| β (min⁻¹) | `Q47` · kel | 0.0143 | min⁻¹ | 0.00023833333333333334 | [1] / [min] | not captured | exact (1.0) | Paalzow_1979_table_1:row3:col1, Paalzow_1979_table_1:row3:col2, Paalzow_1979_table_1:row3:col3 | — | not captured |
+| AUCᵃ (min-ng/ml) | `Q88` · AUC | 1817.55 | min-ng/ml | not captured | [[min] · [ng]] / [ml] | not captured | llm (0.6) | Paalzow_1979_table_3:row0:col1, Paalzow_1979_table_3:row0:col2, Paalzow_1979_table_3:row0:col3 | — | not captured |
+| AUC dose-normalized (min-ng/ml) | `Q189` · AUC/dose | 1817.55 | min-ng/ml | not captured | [[min] · [ng]] / [ml] | not captured | llm_corrected (0.6) | Paalzow_1979_table_3:row1:col1, Paalzow_1979_table_3:row1:col2, Paalzow_1979_table_3:row1:col3 | — | not captured |
+| Vdareaᵇ (ml/kg) | `Q61` · V | 4826.24 | ml/kg | 0.3378368 | [ml] / [kg] | not captured | llm (0.6) | Paalzow_1979_table_3:row2:col1, Paalzow_1979_table_3:row2:col2, Paalzow_1979_table_3:row2:col3 | — | not captured |
+| Vcᶜ (ml/kg) | `Q63` · V1 | 945.25 | ml/kg | 0.06616749999999999 | [ml] / [kg] | not captured | llm (0.6) | Paalzow_1979_table_3:row3:col1, Paalzow_1979_table_3:row3:col2, Paalzow_1979_table_3:row3:col3 | — | not captured |
+| Vdsᵈ (ml/kg) | `Q65` · Vss | 4349.29 | ml/kg | 0.30445029999999995 | [ml] / [kg] | not captured | llm (0.6) | Paalzow_1979_table_3:row4:col1, Paalzow_1979_table_3:row4:col2, Paalzow_1979_table_3:row4:col3 | — | not captured |
+| Clearanceᵉ (ml/min/kg) | `Q22` · CL | 68.77 | ml/min/kg | 8.023166666666665e-05 | [ml] / [[min] · [kg]] | not captured | llm_confirmed (0.6) | Paalzow_1979_table_3:row5:col1, Paalzow_1979_table_3:row5:col2, Paalzow_1979_table_3:row5:col3 | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
+- unit_dimension_mismatch: 'α (min⁻¹)' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
+- dropped duplicate Q900 ('B (ng/ml)', value '23.3') — already have one for this compound
+- unit_dimension_unknown: 'min-ng/ml' (AUC)
+- unit_dimension_unknown: 'min-ng/ml' (AUC/dose)
+- implicit units: 'AUCᵃ (min-ng/ml)' — the LLM proposed 'min-ng/ml', whose dimension does not fit Q88; left unset
+- implicit units: 'AUC dose-normalized (min-ng/ml)' — the LLM proposed 'min', whose dimension does not fit Q189; left unset
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clonidine
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Paalzow_1979_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
+- no TEI final-model table id; trying text-pointer table recovery
+- LLM selected parameter table(s) 1, 2, 3, 4
+- transposed table Paalzow_1979_table_1: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
+- transposed table Paalzow_1979_table_2: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
+- transposed table Paalzow_1979_table_3: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | primary re-run | 0.8 (4/5 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.647 (11/17 fields) | 6 |
+| `gpt-oss:120b` | partly confirmed | 0.857 (12/14 fields) | 2 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[intravenously at]` | not captured | 125 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[a].parameter_id` | Q900 | Q86 | mismatch |
+| `gpt-oss-120b` | `parameters[auca].parameter_id` | Q88 | Q17 | mismatch |
+| `gpt-oss-120b` | `parameters[vcc].parameter_id` | Q63 | Q61 | mismatch |
+| `gpt-oss-120b` | `parameters[vdareab].parameter_id` | Q61 | Q352 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | clonidine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | clonidine | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[a]` | 109.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[b]` | not captured | 23.3 | only_one_extracted |
 
 </details>
 
@@ -83,9 +116,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Paalzow_1979_table_3:row5:col1', 'Paalzow_1979_table_3:row5:col2', 'Paalzow_1979_table_3:row5:col3'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Paalzow_1979_table_1:row3:col1', 'Paalzow_1979_table_1:row3:col2', 'Paalzow_1979_table_1:row3:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Paalzow_1979_table_3:row2:col1', 'Paalzow_1979_table_3:row2:col2', 'Paalzow_1979_table_3:row2:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Paalzow_1979_table_3:row3:col1', 'Paalzow_1979_table_3:row3:col2', 'Paalzow_1979_table_3:row3:col3'] |
+| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Paalzow_1979_table_3:row4:col1', 'Paalzow_1979_table_3:row4:col2', 'Paalzow_1979_table_3:row4:col3'] |
+| C5_dimension_Q67 | fail | 1 / [time] | min⁻¹ | not captured | not captured | ['Paalzow_1979_table_1:row1:col1', 'Paalzow_1979_table_1:row1:col2', 'Paalzow_1979_table_1:row1:col3'] |
+| C5_unit_missing_Q189 | fail | [mass] * [time] / [length] ** 3 | min-ng/ml | not captured | not captured | ['Paalzow_1979_table_3:row1:col1', 'Paalzow_1979_table_3:row1:col2', 'Paalzow_1979_table_3:row1:col3'] |
+| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | min-ng/ml | not captured | not captured | ['Paalzow_1979_table_3:row0:col1', 'Paalzow_1979_table_3:row0:col2', 'Paalzow_1979_table_3:row0:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 68.77 | not captured | not captured | ['Paalzow_1979_table_3:row5:col1', 'Paalzow_1979_table_3:row5:col2', 'Paalzow_1979_table_3:row5:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 289 L/h | not captured | not captured | ['Paalzow_1979_table_3:row5:col1', 'Paalzow_1979_table_3:row5:col2', 'Paalzow_1979_table_3:row5:col3'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 338 L | not captured | not captured | ['Paalzow_1979_table_3:row2:col1', 'Paalzow_1979_table_3:row2:col2', 'Paalzow_1979_table_3:row2:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 66.2 L | not captured | not captured | ['Paalzow_1979_table_3:row3:col1', 'Paalzow_1979_table_3:row3:col2', 'Paalzow_1979_table_3:row3:col3'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 304 L | not captured | not captured | ['Paalzow_1979_table_3:row4:col1', 'Paalzow_1979_table_3:row4:col2', 'Paalzow_1979_table_3:row4:col3'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -110,4 +157,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 11:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-09 06:08 UTC</sub>

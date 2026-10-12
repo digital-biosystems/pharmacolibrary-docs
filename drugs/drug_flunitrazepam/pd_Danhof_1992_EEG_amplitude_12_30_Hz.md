@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;flunitrazepam&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/&quot;},{&quot;label&quot;:&quot;Danhof_1992 \u00b7 PD amplitudes in the 12-30 Hz frequency band of the EEG&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flunitrazepam_GmezSegura2022_reference&quot;,&quot;label&quot;:&quot;G\u00f3mez-Segura_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/Flunitrazepam_GmezSegura2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flunitrazepam_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/Flunitrazepam_Han2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flunitrazepam_GmezSegura2022_reference&quot;,&quot;label&quot;:&quot;G\u00f3mez-Segura_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/Flunitrazepam_GmezSegura2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flunitrazepam_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/Flunitrazepam_Han2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amplitudes in the 12-30 Hz frequency band of the EEG — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,6 +17,10 @@
 **As extracted:** Flunitrazepam (concentrations from the PK model of Franken_2016) drives amplitudes in the 12-30 Hz frequency band of the EEG: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> Flunitrazepam concentrations act as the driver for the amplitudes in the 12-30 Hz frequency band of the EEG, described by a sigmoid Emax model with a stimulatory effect direction; the paper excerpts provide no mechanism details and no parameter values (Emax, EC50, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Danhof_1992`
 - **model family:** `sigmoid_emax`

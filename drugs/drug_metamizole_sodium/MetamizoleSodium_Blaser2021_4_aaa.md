@@ -5,7 +5,7 @@
 
 # metamizole sodium — `MetamizoleSodium_Blaser2021_4_aaa`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The record for 4-methylaminoantipyrine contains exposure ratios (Cmax 4.85 mg/L) instead of compartmental parameters, leaving the model without volume or clearance.**
+
+The paper is an exposure/outcome study reporting a Cmax ratio of 4.85 mg/L and an AUC ratio of 13.35 for 4-methylaminoantipyrine. It does not provide distribution volumes or elimination clearances required for a compartmental model. Additionally, the structure defines orphan metabolites that lack a valid path from the dose. Extracted — 4-methylaminoantipyrine: Cmax_ratio 4.85 mg/L, AUC ratio 13.3.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 > **Dose compound ≠ measured compound:** dosed `metamizole`, measured `4-methylaminoantipyrine`.
 

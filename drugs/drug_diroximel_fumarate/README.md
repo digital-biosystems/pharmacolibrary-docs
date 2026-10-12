@@ -34,7 +34,7 @@ Diroximel fumarate is an immunosuppressant drug used to treat relapsing-remittin
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Kuchimanchi_2022_reference](drugs/drug_diroximel_fumarate/DiroximelFumarate_Kuchimanchi2022_reference.md) | — | general linear (no model) | 5 | Kuchimanchi M et al., Development of a Population Pharmacokin…, Neurology and therapy (2022) | [10.1007/s40120-021-00316-6](https://doi.org/10.1007/s40120-021-00316-6) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Kuchimanchi_2022_reference](drugs/drug_diroximel_fumarate/DiroximelFumarate_Kuchimanchi2022_reference.md) | — | general linear (no model) | 5 | Kuchimanchi M et al., Development of a Population Pharmacokin…, Neurology and therapy (2022) | [10.1007/s40120-021-00316-6](https://doi.org/10.1007/s40120-021-00316-6) |
 
 ## ADME sites
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lindane concentrations (M) inhibit ecdysteroid antagonist activity measured in the Drosophila melanogaster B(II) cell assay, with a reported EC50 of 3.0 x 10(-5) M; the paper excerpts do not state the mechanism or other model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dinan_2001`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -4,7 +4,7 @@
 
 # atenolol — `Atenolol_Baek2008_carvedilol_25_mg`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.19). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.182), gpt-oss:120b (partly confirmed, agreement 0.19). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record lists AUC, Cmax, and clearance values for carvedilol, yet the drug is identified as atenolol. Consequently, atenolol's clearance, volume of distribution, and absorption lag time had no source values. A second reader also disagreed on the primary analyte and reported different parameter values. Extracted — carvedilol: AUCt 283 ng*h/mL, Cmax 62.7 ng/mL, tmax 1.26 h, V/F 1.56e+03 L, CL 94.6 L/h, kel 4.45 h⁻¹, kabs 4.52 h⁻¹, k21 0.19 h⁻¹, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc&lt;0-24hr&gt;: this record has none, the second reading 3.05; it also differs on 16 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc&lt;0-24hr&gt;: this record has none, the second reading 3.05; it also differs on 17 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -80,17 +80,36 @@ Baek IH et al., Pharmacokinetic/pharmacodynamic modelin…, Archives of pharmaca
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.182 (4/22 fields) | 18 |
 | `gpt-oss:120b` | partly confirmed | 0.19 (4/21 fields) | 17 |
 
-<details><summary>17 field(s) a reader read differently</summary>
+<details><summary>35 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc&lt;0-24hr&gt;]` | not captured | 3.05 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc&lt;0-30hr&gt;]` | 282.55 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c&lt;max&gt;]` | not captured | 396.14 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c&lt;max&gt;]` | 62.74 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | 18.15 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 94.64 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k&lt;el&gt;]` | not captured | 0.58 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k&lt;el&gt;]` | 4.45 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k&lt;pc&gt;]` | not captured | 0.91 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k&lt;pc&gt;]` | 0.19 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t&lt;1/α&gt;]` | not captured | 0.88 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t&lt;1/α&gt;]` | 0.68 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t&lt;1/β&gt;]` | not captured | 4.83 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t&lt;1/β&gt;]` | 15.84 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t&lt;max&gt;]` | not captured | 2.87 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t&lt;max&gt;]` | 1.26 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume/f]` | not captured | 157.71 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume/f]` | 1561.78 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc&lt;0-24hr&gt;]` | not captured | 3.05 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc&lt;0-30hr&gt;]` | 282.55 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[c&lt;max&gt;]` | not captured | 396.14 | only_one_extracted |

@@ -5,7 +5,7 @@
 
 # bleomycin — `Bleomycin_Yadav2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (?, agreement 0.0), gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -56,11 +56,12 @@ Yadav R et al., Utilizing PK and PD Biomarkers to Guide…, Journal of pharmaceu
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `qwen3.8-27b` | secondary_empty | 0.0 | none |
 | `gpt-oss:120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 
 <details><summary>3 field(s) a reader read differently</summary>
@@ -126,7 +127,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_modelica.zip" download>Bleomycin_Yadav2023_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_fmi.zip" download>Bleomycin_Yadav2023_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_matlab.zip" download>Bleomycin_Yadav2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_matlab_simbio.zip" download>Bleomycin_Yadav2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_matlab_simbio.zip" download>Bleomycin_Yadav2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_sbml.zip" download>Bleomycin_Yadav2023_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_cellml.zip" download>Bleomycin_Yadav2023_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

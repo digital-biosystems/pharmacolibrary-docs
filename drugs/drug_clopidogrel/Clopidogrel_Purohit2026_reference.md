@@ -5,7 +5,7 @@
 
 # clopidogrel — `Clopidogrel_Purohit2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6), gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record reports clopidogrel clearance 6.01 L/h, volume of distribution 27.7 L and absorption rate constant 0.4 h−1, but the deviations check found unreported model parameters: F and Tlag were defaulted rather than estimated from the paper. A second reader also disagreed on several extracted values, e.g. reading 0.383 where this record has 0.535, and 1 where this record has null, indicating inconsistent value extraction. The established finding is that the default F values affect the simulated profile but are not supported by this paper and need to be extracted or explicitly justified as conventions. Extracted — clopidogrel: CL 6.01 L/h, V 27.7 L, kabs 0.4 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q410: this record has 0.535, the second reading 0.535; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q303: this record has none, the second reading 0.383; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -62,17 +62,22 @@ Purohit D et al., Impact of High-Dose Rifampicin on Linez…, Open forum infecti
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.6 (6/10 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q303]` | not captured | 0.383 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q410]` | 0.535 | 0.535 | mismatch |
+| `gpt-oss-120b` | `values[Q48]` | 0.383 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q87]` | 1 | 1 | mismatch |
 | `gpt-oss:120b` | `values[Q410]` | 0.535 | 0.535 | mismatch |
 | `gpt-oss:120b` | `values[Q87]` | 1 | 1 | mismatch |
 
@@ -132,7 +137,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference/Clopidogrel_Purohit2026_reference_modelica.zip" download>Clopidogrel_Purohit2026_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference/Clopidogrel_Purohit2026_reference_fmi.zip" download>Clopidogrel_Purohit2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference/Clopidogrel_Purohit2026_reference_matlab.zip" download>Clopidogrel_Purohit2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference/Clopidogrel_Purohit2026_reference_matlab_simbio.zip" download>Clopidogrel_Purohit2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference/Clopidogrel_Purohit2026_reference_matlab_simbio.zip" download>Clopidogrel_Purohit2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference/Clopidogrel_Purohit2026_reference_sbml.zip" download>Clopidogrel_Purohit2026_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference/Clopidogrel_Purohit2026_reference_cellml.zip" download>Clopidogrel_Purohit2026_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

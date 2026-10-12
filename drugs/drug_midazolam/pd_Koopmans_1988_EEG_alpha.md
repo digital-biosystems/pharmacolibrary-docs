@@ -18,6 +18,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Midazolam plasma concentration (after a 15 mg oral dose) drives the decrease in EEG alpha band activity (% of pre-dose) via a sigmoid Emax model with an effect compartment to account for hysteresis (four subjects showed delay; t½-ke0 ranged 0.26–0.60 hour). Mean EC50 was 42.0–48.1 ng/ml (record: 46.2 ng/ml sigmoid model, 42.0 ng/ml threshold model), with a sigmoid exponent of 3.7 ± 1.8 or, alternatively, a threshold concentration of 15.7 ± 11.1 ng/ml; Emax was fixed at 0 (proportional inhibition form).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koopmans_1988`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

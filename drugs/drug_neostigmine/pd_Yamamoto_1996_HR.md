@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models neostigmine's effect on heart rate (bradycardic response) with an effect-compartment PD model, but the excerpts provide no concentration–response details, no mechanism description, and no parameter values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yamamoto_1996`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Flurazepam concentration (µM) potentiates the GABA-induced conductance increase (gGABA) in spinal cord neurons via a saturable Michaelis-Menten (Emax-type) relationship, acting as a partial positive modulator through a benzodiazepine receptor mechanism; maximal potentiation αmax was 164 ± 30% with EC50 = 930 ± 17 nM (0.93 µM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chan_1985`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

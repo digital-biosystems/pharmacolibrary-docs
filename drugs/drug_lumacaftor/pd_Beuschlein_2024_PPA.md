@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided paper excerpts describe the mechanisms of glucocorticoid HPA axis suppression and CYP3A4 drug interactions but do not contain any information regarding lumacaftor or plasma protein A (PPA), making it impossible to verify the mechanism or parameters for the lumacaftor-PPA model described in the record.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Beuschlein_2024`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

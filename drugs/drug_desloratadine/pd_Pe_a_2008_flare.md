@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R06A&quot;,&quot;href&quot;:&quot;atc/R06A.md&quot;},{&quot;label&quot;:&quot;desloratadine&quot;,&quot;href&quot;:&quot;drugs/drug_desloratadine/&quot;},{&quot;label&quot;:&quot;Pe\u00f1a_2008 \u00b7 PD histamine-induced flare reaction&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Desloratadine_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_desloratadine/Desloratadine_Li2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Desloratadine_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_desloratadine/Desloratadine_Li2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # histamine-induced flare reaction — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,6 +17,10 @@
 **As extracted:** Desloratadine (concentrations from the PK model of Gupta_2007) drives histamine-induced flare reaction: indirect response — drug inhibits the production of histamine-induced flare reaction.
 
 **Model:** No model was generated from this record.
+
+> The record indicates desloratadine acts as a proportional inhibitor of the indirect response model for histamine-induced flare, but the mechanism is not described in the provided excerpts. No potency or rate values (e.g., IC50, ke0, kout) are available in the source material.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Peña_2008`
 - **model family:** `indirect_response_i`

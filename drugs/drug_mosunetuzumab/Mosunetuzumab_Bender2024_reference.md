@@ -4,7 +4,7 @@
 
 # mosunetuzumab — `Mosunetuzumab_Bender2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.609). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.542), gpt-oss:120b (not confirmed, agreement 0.609). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has mosunetuzumab, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+**C5 dimension mismatch on a structural parameter.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A reported unit could not be converted (ktr), so that value has no SI equivalent. Extracted — mosunetuzumab: CLb 1.08 L/day, V1 5.49 L, CL 0.584 L/day, ktr 16.3 day, V2 6.17 L, Q 1.46 L/day.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mosunetuzumab, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Bender B et al., Population pharmacokinetics and CD20 bi…, Clinical and translational… (2024)
@@ -96,17 +100,29 @@ Bender B et al., Population pharmacokinetics and CD20 bi…, Clinical and transl
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.542 (13/24 fields) | 11 |
 | `gpt-oss:120b` | not confirmed | 0.609 (14/23 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['rituximab', 'mosunetuzumab', 'none'], ['obinutuzumab', 'mosunetuzumab', 'none']] | mismatch |
+| `gpt-oss-120b` | `parameters[clss].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[hltrans].parameter_id` | Q306 | Q57 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_body_weight]` | not captured | 0.549 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_albumin]` | not captured | -0.481 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_sex]` | not captured | -0.126 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v2_body_weight]` | not captured | 0.737 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1].covariate_forms` | [] | ['linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[v2].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | mosunetuzumab | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | mosunetuzumab | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[clss].covariate_forms` | [] | ['linear_fractional', 'linear_fractional'] | mismatch |
 | `gpt-oss:120b` | `parameters[hltrans].parameter_id` | Q306 | Q57 | mismatch |
 | `gpt-oss:120b` | `parameters[theta_cl_albumin]` | not captured | -1.51 | only_one_extracted |

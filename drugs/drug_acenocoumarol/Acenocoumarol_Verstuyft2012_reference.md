@@ -5,7 +5,7 @@
 
 # acenocoumarol — `Acenocoumarol_Verstuyft2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727), gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The link from acenocoumarol to S-acenocoumarol is listed as interconversion but has no link parameter (kind unknown), so the metabolite compartment has no quantified path from the dose. The central compartment volume V1 is 0.2 L, outside the plausible physiological window, consistent with a unit or scale extraction error. Additionally, a reported unit could not be converted to SI, so that parameter reached the record without an SI value. Extracted — S-acenocoumarol: kabs 1.83 h -1, Q 0.173 L/h, V2 2.77 L, CLm/F 0.18 L h, V1 0.2 L, tlag 0.269 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has acenocoumarol → s-acenocoumarol (interconversion); acenocoumarol → r-acenocoumarol (interconversion), the second reading none → none (none); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has acenocoumarol → s-acenocoumarol (interconversion); acenocoumarol → r-acenocoumarol (interconversion), the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -81,17 +81,21 @@ Verstuyft C et al., A pharmacokinetic-pharmacodynamic model…, Clinical pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.727 (8/11 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.727 (8/11 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['acenocoumarol', 's-acenocoumarol', 'interconversion'], ['acenocoumarol', 'r-acenocoumarol', 'interconversion']] | [] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[o cl].parameter_id` | Q351 | Q22 | mismatch |
 | `gpt-oss:120b` | `model.links` | [['acenocoumarol', 's-acenocoumarol', 'interconversion'], ['acenocoumarol', 'r-acenocoumarol', 'interconversion']] | [['none', 'none', 'none']] | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[o cl].parameter_id` | Q351 | Q22 | mismatch |

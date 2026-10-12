@@ -27,13 +27,13 @@ Amifampridine is a potassium channel blocker used to treat Lambert-Eaton myasthe
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:19 | 3:10 | 1/0/0 | 1/0/0 | 0/0/0 | 194,347/10,933 | ollama / glm-5.3-flash | 6 | 0/6 | 6/0 | 0 |
+| 2026-10-07 04:19 | 3:10 | 0/0/1 | 1/0/0 | 0/0/0 | 194,347/10,933 | ollama / glm-5.3-flash | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Thakkar_2017_reference](drugs/drug_amifampridine/Amifampridine_Thakkar2017_reference.md) | model (no simulator) | 1-compartment, oral | 7 (+1 cov.) | Thakkar N et al., Population Pharmacokinetics/Pharmacodyn…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12218](https://doi.org/10.1002/psp4.12218) |
+| <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Thakkar_2017_reference](drugs/drug_amifampridine/Amifampridine_Thakkar2017_reference.md) | model (no simulator) | 1-compartment, oral | 7 (+1 cov.) | Thakkar N et al., Population Pharmacokinetics/Pharmacodyn…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12218](https://doi.org/10.1002/psp4.12218) |
 
 ## Pharmacodynamics (PD)
 
@@ -66,7 +66,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 51 matched, 20 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

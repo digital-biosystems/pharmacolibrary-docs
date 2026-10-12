@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Flurazepam concentration-dependently potentiates GABA-induced currents in α3β1γ2 GABAA receptors (expressed as % of GABA control response), described by a sigmoid Emax stimulation model with EC50 11.4 μM and maximal potentiation 254 ± 21 % of the GABA control response; the paper does not state a production/elimination mechanism beyond this direct concentration-effect relation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ranna_2006`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

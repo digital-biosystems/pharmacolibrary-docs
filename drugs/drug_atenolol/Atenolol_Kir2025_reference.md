@@ -4,7 +4,7 @@
 
 # atenolol — `Atenolol_Kir2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.353). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,8 +21,6 @@
 **The atenolol model for malnourished and non-malnourished rats fails to reproduce the paper's Cmax (0.025 vs 0.0498) and tmax (5.0 vs 1.81), and its absorption rate constant was invented rather than reported, so it was held back.**
 
 Simulated as the paper dosed it, the model's peak concentration for atenolol exceeds the reported values (0.025, 0.0228, 0.0143, 0.0206) with ratios of 1.9928, 2.1851, 3.484 and 2.4185, and the time of the peak is 1.81 against a reported 5.0 (ratio 0.3613). The absorption rate constant was not reported in the source and was defaulted, which was judged not acceptable; F and Tlag were likewise left at defaults because no source values were extracted. A reported unit could not be converted to SI, so a parameter was used without an SI value, and a second reader disagreed on whether the analyte was atenolol alone or atenolol with metoprolol. Extracted — atenolol: CL 16 mL/min/kg, kabs 1.19 mg/min/kg, V 1.41 L/kg.
-
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has atenolol, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -102,37 +100,6 @@ Kir F et al., Minimal Physiologically-Based Pharmacok…, European journal of dr
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
-
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.353 (6/17 fields) | 11 |
-
-<details><summary>11 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[f c]` | not captured | 0.422 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[f ce]` | not captured | 0.426 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fd1a]` | not captured | 0.464 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fr c]` | not captured | 0.336 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k01 c]` | 1.19 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k01 m]` | not captured | 0.611 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k02 c]` | not captured | 5.57 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k03 cc]` | 0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kp1]` | 4.033 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | atenolol | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | atenolol | unknown | mismatch |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check legend</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
-</details>
-
 
 **Scholar closed-form checks:**
 

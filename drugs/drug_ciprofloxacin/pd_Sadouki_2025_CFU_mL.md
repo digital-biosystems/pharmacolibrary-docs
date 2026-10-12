@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;ciprofloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/&quot;},{&quot;label&quot;:&quot;Sadouki_2025 \u00b7 PD Bacterial load&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Dowling1995_reference&quot;,&quot;label&quot;:&quot;Dowling_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Garg2024_reference&quot;,&quot;label&quot;:&quot;Garg_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Garg2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Guo2022_reference&quot;,&quot;label&quot;:&quot;Guo_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Guo2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Papich2017_reference&quot;,&quot;label&quot;:&quot;Papich_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Papich2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Sang2015_reference&quot;,&quot;label&quot;:&quot;Sang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Sang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Santavy2023_reference&quot;,&quot;label&quot;:&quot;Santavy_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Santavy2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhu_2026_BIS&quot;,&quot;label&quot;:&quot;Zhu_2026 \u00b7 BIS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/pd_Zhu_2026_BIS.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;ciprofloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/&quot;},{&quot;label&quot;:&quot;Sadouki_2025 \u00b7 PD CFU_mL&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Dowling1995_reference&quot;,&quot;label&quot;:&quot;Dowling_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Garg2024_reference&quot;,&quot;label&quot;:&quot;Garg_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Garg2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Guo2022_reference&quot;,&quot;label&quot;:&quot;Guo_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Guo2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Papich2017_reference&quot;,&quot;label&quot;:&quot;Papich_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Papich2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Sang2015_reference&quot;,&quot;label&quot;:&quot;Sang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Sang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Santavy2023_reference&quot;,&quot;label&quot;:&quot;Santavy_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Santavy2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Bacterial load — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+# CFU_mL — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -16,18 +16,17 @@
 
 ## What this record describes
 
-**As extracted:** Ciprofloxacin (concentrations from the PK model of Abadia_1995) drives Bacterial load (in CFU/mL): direct Emax (saturable) effect.
+**As extracted:** Ciprofloxacin (concentrations from the PK model of Abadia_1995) drives the response: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> Ciprofloxacin (constant concentrations, 0.25–16 × MIC) acts on E. coli bacterial load (CFU/mL) via a logistic Emax killing model with a time-dependent drug effect (β) capturing regrowth; the paper does not state a production/elimination mechanism beyond direct bactericidal effect. Reported ciprofloxacin parameters include EMAX 4.55 (37.6%RSE), IC50 0.0106 mg/L (8.58%RSE), hill 3.58 (12.1%RSE), and BETA 1.67%RSE, alongside BMAX 10 CFU/mL; gentamicin (EMAX 4.18, IC50 0.0781 mg/L, hill 2.76) and meropenem (EMAX 5.47, IC50 1.12 mg/L, hill 3.63) were modelled similarly.
+> Ciprofloxacin (modeled with a constant concentration) inhibits the net growth of E. coli (measured as CFU/mL) through a logistic Emax mechanism that reduces the effective net growth rate, characterized by a maximum effect (Emax), half-maximal inhibitory concentration (IC50), and Hill coefficient (gamma). The paper does not report specific parameter estimates for the ciprofloxacin component, stating only that it was modeled using the same structural framework as the other agents.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Sadouki_2025`
 - **model family:** `emax`
 - **driver:** `cited_pk`
-- **tier:** population
 - **effect:** inhibition/proportional
 
 ## Citation
@@ -38,14 +37,6 @@ Sadouki Z et al., Pharmacodynamic interactions among mero…, Scientific reports
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | EMAX | `Q323` · not captured | 4.55 | not captured | not captured | llm (not captured) | Sadouki_2025:pdv3 |
-| PD (effect) | IC50 | `Q322` · not captured | 0.0106 | mg/L | not captured | llm (not captured) | Sadouki_2025:pdv3 |
-| PD (effect) | hill | `Q325` · not captured | 3.58 | not captured | not captured | llm (not captured) | Sadouki_2025:pdv3 |
-| PK (driver) | BETA | `Q47` · not captured | 0.674 | not captured | not captured | exact (not captured) | Sadouki_2025:pdv3 |
-| — | TAU | `Q100` · not captured | 0.359 | not captured | not captured | nil (not captured) | Sadouki_2025:pdv3 |
-| PD (effect) | IC50 (mg/L) | `Q322` · not captured | 0.017 | mg/L | not captured | llm (not captured) | Sadouki_2025:pdv3 |
-| PD (effect) | EMAX | `Q323` · not captured | -4 | not captured | not captured | llm (not captured) | Sadouki_2025:pdv3 |
-| PD (effect) | hill | `Q325` · not captured | 20 | not captured | not captured | llm (not captured) | Sadouki_2025:pdv3 |
-| variability | Additive on logarithmic data | `Q315` · not captured | 0.864 | not captured | not captured | llm (not captured) | Sadouki_2025:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,41 +44,24 @@ Sadouki Z et al., Pharmacodynamic interactions among mero…, Scientific reports
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `einfracz:qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `openai:gpt-6-luna` | not confirmed | 0.5 (5/10 fields) | 5 |
-| `gpt-oss:120b` | not confirmed | 0.625 (30/48 fields) | 18 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
-<details><summary>23 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | meropenem, gentamicin, ciprofloxacin | unknown | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
-| `gpt-oss:120b` | `model_family` | sigmoid_emax | unknown | mismatch |
-| `gpt-oss:120b` | `parameters[Q326]` | not captured | 0.570 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q326]` | not captured | 196 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q326]` | not captured | 0.517 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q326]` | not captured | 146 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q326]` | not captured | 1.35 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q326]` | not captured | 0.359 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q326]` | not captured | 192 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 1.35 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q362]` | 0.570 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q362]` | 196 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q362]` | 0.517 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q362]` | 146 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q362]` | 0.359 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q362]` | 192 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q47]` | 12.9 | not captured | only_one_extracted |
-| `openai:gpt-6-luna` | `effect_form` | proportional | unknown | mismatch |
-| `openai:gpt-6-luna` | `parameters[Q100]` | 0.359 | not captured | only_one_extracted |
-| `openai:gpt-6-luna` | `parameters[Q312]` | not captured | 12.1 | only_one_extracted |
-| `openai:gpt-6-luna` | `parameters[Q320].value` | -4 | − 4 | mismatch |
-| `openai:gpt-6-luna` | `parameters[Q900].value` | -1 | − 0.576 | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | proportional | unknown | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | emax | sigmoid_emax | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q100]` | 0.359 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q322].value` | 0.017 | 0.0106 | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q323].value` | -4 | 4.55 | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q325].value` | 20 | 3.58 | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q47]` | 0.674 | not captured | only_one_extracted |
 
 </details>
 

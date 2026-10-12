@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Finerenone_Heinig2023_reference&quot;,&quot;label&quot;:&quot;Heinig_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_finerenone/Finerenone_Heinig2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# estimated glomerular filtration rate — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.316). The first reading is what the record holds.">cross-check: disputed</span>
+# estimated glomerular filtration rate — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -18,7 +18,7 @@
 
 **Model:** No model was generated from this record.
 
-> Finerenone exposure reduces UACR, which in turn slows the chronic eGFR decline, with the model indicating that the drug's effect on eGFR is completely mediated by its immediate effect on UACR rather than an independent mechanism. The paper does not provide specific potency or rate parameter values (e.g., IC50, EC50, ke0) for the finerenone effect, though it notes a stabilisation point for eGFR decline at 16.2 mL/min/1.73 m2.
+> Finerenone exposure reduces the rate of eGFR decline (chronic slope) indirectly by lowering UACR, which is linked to the chronic eGFR slope, with no additional direct effect on eGFR identified. The paper does not provide specific potency or rate parameter values (e.g., IC50, ke0) for the finerenone effect on eGFR or UACR in the provided excerpts.
 >
 > <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
@@ -37,29 +37,17 @@ _No resolved parameters._
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.316 (6/19 fields) | 13 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.75 (3/4 fields) | 1 |
 
-<details><summary>13 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | finerenone | unknown | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
-| `gpt-oss:120b` | `model_family` | disease_progression | unknown | mismatch |
-| `gpt-oss:120b` | `parameters[Q100]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q340]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q340]` | not captured | 26.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 26.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 140 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `effect_form` | additive | unknown | mismatch |
 
 </details>
 

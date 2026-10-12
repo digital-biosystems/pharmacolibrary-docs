@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Fohlen_2021_viability](drugs/drug_streptozocin/pd_Fohlen_2021_viability.md) | cell viability ← streptozocin · direct sigmoid Emax (Hill) effect | — | Fohlen A et al., Anticancer Drugs for Intra-Arterial Tre…, Pharmaceuticals (Basel, Swi… (2021) | [10.3390/ph14070639](https://doi.org/10.3390/ph14070639) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Fohlen_2021_viability](drugs/drug_streptozocin/pd_Fohlen_2021_viability.md) | cell viability ← streptozocin · direct sigmoid Emax (Hill) effect | — | Fohlen A et al., Anticancer Drugs for Intra-Arterial Tre…, Pharmaceuticals (Basel, Swi… (2021) | [10.3390/ph14070639](https://doi.org/10.3390/ph14070639) |
 
 ## ADME sites
 

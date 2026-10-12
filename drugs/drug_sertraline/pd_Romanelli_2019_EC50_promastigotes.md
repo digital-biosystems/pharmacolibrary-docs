@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Sertraline concentration-dependently reduced the viability of L. (L.) infantum promastigotes (MTT assay, 48 h incubation), fitted to a sigmoid Emax model with an EC50 of 0.7 ± 0.4 μM; the paper does not state a mechanism beyond this inhibitory concentration–response effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Romanelli_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

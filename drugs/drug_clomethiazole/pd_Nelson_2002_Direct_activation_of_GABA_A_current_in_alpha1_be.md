@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clomethiazole directly activates GABA(A) current in alpha1/beta2/gamma2 receptors, described by an Emax (stimulation) model with EC50 = 1.5 mM; no Emax, rate constants, or mechanism beyond direct activation are stated in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nelson_2002`
 - **model family:** `emax`
 - **driver:** `cited_pk`

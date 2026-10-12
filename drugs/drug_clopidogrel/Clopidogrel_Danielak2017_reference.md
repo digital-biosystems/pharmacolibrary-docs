@@ -5,7 +5,7 @@
 
 # clopidogrel — `Clopidogrel_Danielak2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333), gpt-5.6-luna (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357), gpt-oss:120b (not confirmed, agreement 0.333), gpt-5.6-luna (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed 0/3</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record reports CL/F of 14500 L/h and V1/F of 7660 L for clopidogrel, magnitudes flagged as physiologically implausible and consistent with a unit or scale extraction error. The metabolite H4 parameters (V1/F 4.89 L, Q/F 252 L/h, fm 0.045) and absorption rate constant kabs 0.592 1/h were extracted, but a second reader returned different values for fm (0.044) and metabolite V1/F (4.65), leaving several parameter values unconfirmed. Extracted — clopidogrel: kabs 0.592 1/h, V1/F 7.66e+03 L, CL/F 1.45e+04 L/h; H4: fm 0.045, V1/F 4.89 L, Q/F 252 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f [l/h]].value`: this record has 14500, the second reading 13250; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has clopidogrel, the second reading H4; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -77,20 +77,30 @@ Danielak D et al., Influence of genetic co-factors on the…, European journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 3 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.357 (5/14 fields) | 9 |
 | `gpt-oss:120b` | not confirmed | 0.333 (4/12 fields) | 8 |
 | `gpt-5.6-luna` | not confirmed | 0.833 (10/12 fields) | 2 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>19 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-5.6-luna` | `parameters[ka]` | 5.95 | not captured | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[v/f]` | 140.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['clopidogrel', 'h4', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[fm]` | not captured | 0.045 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fm]` | 0.045 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12 [1/h]].parameter_id` | Q49 | Q301 | mismatch |
+| `gpt-oss-120b` | `parameters[q2/f [l/h]]` | 252 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f [l]].parameter_id` | Q290 | Q82 | mismatch |
+| `gpt-oss-120b` | `parameters[v3/f [l]]` | not captured | 4.89 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3/f [l]]` | 4.89 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | clopidogrel | H4 | mismatch |
 | `gpt-oss:120b` | `parameters[cl/f [l/h]].value` | 14500 | 13250 | mismatch |
 | `gpt-oss:120b` | `parameters[fm].value` | 0.045 | 0.044 | mismatch |
 | `gpt-oss:120b` | `parameters[k12 [1/h]].parameter_id` | Q49 | Q30 | mismatch |

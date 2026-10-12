@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Katoh_2000_transcellular_transport_of_3H_daunorubicin](drugs/drug_manidipine/pd_Katoh_2000_transcellular_transport_of_3H_daunorubicin.md) | transcellular transport of [3H]daunorubicin ← manidipine · inhibition effect | — | Katoh M et al., Inhibitory potencies of 1,4-dihydropyri…, Pharmaceutical research (2000) | [10.1023/a:1007568811691](https://doi.org/10.1023/a:1007568811691) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Katoh_2000_transcellular_transport_of_3H_daunorubicin](drugs/drug_manidipine/pd_Katoh_2000_transcellular_transport_of_3H_daunorubicin.md) | transcellular transport of [3H]daunorubicin ← manidipine · inhibition effect | — | Katoh M et al., Inhibitory potencies of 1,4-dihydropyri…, Pharmaceutical research (2000) | [10.1023/a:1007568811691](https://doi.org/10.1023/a:1007568811691) |
 
 ## ADME sites
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Bromelain concentration (microg/ml) is associated with inhibition of the measured proteolytic effect of bromelain. The mechanism and potency or rate values are not given in the available paper excerpt.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hale_2002`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

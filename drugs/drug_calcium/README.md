@@ -36,7 +36,7 @@ Calcium is used as a dietary mineral supplement, often combined with vitamins or
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">mouse</span> | [Walker_2010_force](drugs/drug_calcium/pd_Walker_2010_force.md) | force ← calcium · direct sigmoid Emax (Hill) effect | — | Walker JS et al., Analysing force-pCa curves, Journal of muscle research… (2010) | [10.1007/s10974-010-9208-7](https://doi.org/10.1007/s10974-010-9208-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">mouse</span> | [Walker_2010_force](drugs/drug_calcium/pd_Walker_2010_force.md) | force ← calcium · direct sigmoid Emax (Hill) effect | — | Walker JS et al., Analysing force-pCa curves, Journal of muscle research… (2010) | [10.1007/s10974-010-9208-7](https://doi.org/10.1007/s10974-010-9208-7) |
 
 ## Pharmacogenomics (PGx)
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not state a mechanism; cypermethrin concentration (mg x L(-1)) is linearly related to inhibition of the 2-day population growth rate (r), with no potency or rate parameters given in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dong_2012`
 - **model family:** `linear`
 - **driver:** `not_resolved`

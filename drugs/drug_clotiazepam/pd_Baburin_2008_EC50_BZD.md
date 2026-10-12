@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In Xenopus oocytes expressing GABAA receptors, clotiazepam (saturating 10 μM) potentiates GABA-activated chloride currents, and the BZD-induced shift of the GABA concentration-response curve (ΔEC50(BZD), μM) is linearly related to the baseline GABA EC50, interpreted as BZDs partially relieving a γ-subunit-mediated inhibition of GABA sensitivity (a slope of 1.0 would mean complete elimination). Slope factors of this linear regression were 1.6±0.1 (α1β2γ1), 1.4±0.1 (α1β2γ2S) and 1.1±0.1 (α1β2-R207Cγ2S); no Imax, IC50/EC50 for clotiazepam, kin/kout or ke0 are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baburin_2008`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes a sigmoid Emax model where cocaine stimulates locomotor activity, but the full text is unavailable and no mechanism or numerical potency values are provided.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lau_1999_2`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

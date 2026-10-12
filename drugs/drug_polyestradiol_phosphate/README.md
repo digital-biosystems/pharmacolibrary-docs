@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Johansson_2000_serum_testosterone](drugs/drug_polyestradiol_phosphate/pd_Johansson_2000_serum_testosterone.md) | serum testosterone ← estradiol · indirect response — drug inhibits the production of serum testosterone | — | Johansson CJ et al., Pharmacodynamic model of testosterone s…, The Prostate (2000) | [10.1002/1097-0045(20000615)44:1&lt;26::aid-pros4&gt;3.0.co;2-p](https://doi.org/10.1002/1097-0045(20000615)44:1&lt;26::aid-pros4&gt;3.0.co;2-p) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Johansson_2000_serum_testosterone](drugs/drug_polyestradiol_phosphate/pd_Johansson_2000_serum_testosterone.md) | serum testosterone ← estradiol · indirect response — drug inhibits the production of serum testosterone | — | Johansson CJ et al., Pharmacodynamic model of testosterone s…, The Prostate (2000) | [10.1002/1097-0045(20000615)44:1&lt;26::aid-pros4&gt;3.0.co;2-p](https://doi.org/10.1002/1097-0045(20000615)44:1&lt;26::aid-pros4&gt;3.0.co;2-p) |
 
 ## ADME sites
 

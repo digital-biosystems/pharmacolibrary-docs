@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol concentration (µmol/l) stimulates isometric tension in colonic circular smooth muscle strips via a direct Emax (concentration–effect) model; EC50 values of 4.83, 1.63 and 3.24 µmol/l are reported, but the excerpts do not state the mechanism beyond this concentration–response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Slater_1997`
 - **model family:** `emax`
 - **driver:** `not_resolved`

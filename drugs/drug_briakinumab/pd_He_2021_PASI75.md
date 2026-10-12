@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Briakinumab's dose acts directly on the proportion of patients achieving a PASI75 response through a sigmoid Emax model, with an estimated Emáx of 4.94 and an ED50 of 12.1 mg. The paper does not specify the underlying biological mechanism of this direct dose-response relationship.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `He_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

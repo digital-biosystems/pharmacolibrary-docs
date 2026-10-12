@@ -4,7 +4,7 @@
 
 # papaverine — `Papaverine_Ritschel1977_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — papaverine: V 15 % of the body weight.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has papaverine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has papaverine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -69,17 +69,24 @@ Ritschel WA et al., Pharmacokinetics of papaverine in man, International journal
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[biological half-life]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[biological half-life]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 15 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 15 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | papaverine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | papaverine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[biological half-life]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[biological half-life]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume of distribution]` | 15 | not captured | only_one_extracted |

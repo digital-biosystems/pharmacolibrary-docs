@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes pizotifen causing surmountable antagonism of the concentration-response curve for ergotamine-induced endothelium-dependent relaxation of precontracted porcine pulmonary arteries, but does not explicitly state the underlying pharmacodynamic mechanism (e.g., specific receptor binding or inhibition of production/elimination). Pizotifen was tested at concentrations of 0.1 μm and 0.03 μm, and described as the most potent inhibitory compound among those tested, but no specific potency parameters (such as IC50, pA2, or Kd) or rate constants are provided in the excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Glusa_1996`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

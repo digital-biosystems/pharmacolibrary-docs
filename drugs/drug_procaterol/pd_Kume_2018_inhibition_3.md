@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Procaterol concentrations (nM) were fitted to percent inhibition of methacholine (10 μM)-induced contraction in guinea pig airway smooth muscle pre-exposed to tiotropium (1 nM), described by a direct Emax (concentration-inhibition) model with EC50 = 1.6 ± 0.4 nM and Emax = 94.3 ± 4.6%; the paper does not state a kinetic mechanism (no kin, kout, or ke0), attributing the enhanced inhibition to synergistic interaction with tiotropium exceeding Bliss independence predictions.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kume_2018`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

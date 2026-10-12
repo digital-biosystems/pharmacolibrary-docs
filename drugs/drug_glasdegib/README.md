@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;glasdegib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glasdegib_Lin2020v2_estimate&quot;,&quot;label&quot;:&quot;Lin_2020_2_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Lin2020v2_estimate.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glasdegib_Lin2020v2_final_model&quot;,&quot;label&quot;:&quot;Lin_2020_2_final_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Lin2020v2_final_model.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glasdegib_Shaik2021_reference&quot;,&quot;label&quot;:&quot;Shaik_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Shaik2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glasdegib_Lin2020v2_estimate&quot;,&quot;label&quot;:&quot;Lin_2020_2_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Lin2020v2_estimate.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glasdegib_Lin2020v2_final_model&quot;,&quot;label&quot;:&quot;Lin_2020_2_final_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Lin2020v2_final_model.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glasdegib_Shaik2021_reference&quot;,&quot;label&quot;:&quot;Shaik_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Shaik2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # glasdegib
 
@@ -27,21 +27,21 @@ Glasdegib is a hedgehog pathway inhibitor used to treat acute myeloid leukemia. 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 20:44 | 0:37 | 3/0/0 | 1/0/0 | 0/0/0 | 77,875/2,664 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
+| 2026-10-06 20:44 | 0:37 | 2/0/1 | 1/0/0 | 0/0/0 | 77,875/2,664 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lin_2020_2_estimate](drugs/drug_glasdegib/Glasdegib_Lin2020v2_estimate.md) | ▶ model + simulator | 2-compartment, oral | 5 (+2 cov.) | Lin S et al., Population Pharmacokinetics of Glasdegi…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1556](https://doi.org/10.1002/jcph.1556) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lin_2020_2_final_model](drugs/drug_glasdegib/Glasdegib_Lin2020v2_final_model.md) | ▶ model + simulator | 2-compartment, oral | 5 | Lin S et al., Population Pharmacokinetics of Glasdegi…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1556](https://doi.org/10.1002/jcph.1556) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Shaik_2021_reference](drugs/drug_glasdegib/Glasdegib_Shaik2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Shaik N et al., Evaluation of the impact of renal impai…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04207-9](https://doi.org/10.1007/s00280-020-04207-9) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.526). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Lin_2020_2_estimate](drugs/drug_glasdegib/Glasdegib_Lin2020v2_estimate.md) | ▶ model + simulator | 2-compartment, oral | 5 (+2 cov.) | Lin S et al., Population Pharmacokinetics of Glasdegi…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1556](https://doi.org/10.1002/jcph.1556) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Lin_2020_2_final_model](drugs/drug_glasdegib/Glasdegib_Lin2020v2_final_model.md) | ▶ model + simulator | 2-compartment, oral | 5 | Lin S et al., Population Pharmacokinetics of Glasdegi…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1556](https://doi.org/10.1002/jcph.1556) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Shaik_2021_reference](drugs/drug_glasdegib/Glasdegib_Shaik2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Shaik N et al., Evaluation of the impact of renal impai…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04207-9](https://doi.org/10.1007/s00280-020-04207-9) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Fostvedt_2021_QTcF](drugs/drug_glasdegib/pd_Fostvedt_2021_QTcF.md) | corrected QT interval ← glasdegib · direct linear effect | — | Fostvedt LK et al., Exposure-response modeling of the effec…, Expert review of clinical p… (2021) | [10.1080/17512433.2021.1925538](https://doi.org/10.1080/17512433.2021.1925538) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Fostvedt_2021_QTcF](drugs/drug_glasdegib/pd_Fostvedt_2021_QTcF.md) | corrected QT interval ← glasdegib · direct linear effect | — | Fostvedt LK et al., Exposure-response modeling of the effec…, Expert review of clinical p… (2021) | [10.1080/17512433.2021.1925538](https://doi.org/10.1080/17512433.2021.1925538) |
 
 ## ADME sites
 
@@ -76,7 +76,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 3  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 2  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

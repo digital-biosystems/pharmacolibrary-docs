@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentamidine (as pentamidine isethionate) concentration-dependently increases contraction of guinea-pig isolated main bronchi, expressed as % of the response to acetylcholine (1 mM), described by an Emax (stimulatory) model with Emax = 40 ± 4 % and pD2 = 9.64 ± 0.07. The paper excerpts do not state the underlying mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Biyah_1996`
 - **model family:** `emax`
 - **driver:** `cited_pk`

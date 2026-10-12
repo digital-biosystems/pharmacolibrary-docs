@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Esposito_2003_GH](drugs/drug_sermorelin/pd_Esposito_2003_GH.md) | GH secretion ← Sermorelin · stimulation effect | — | Esposito P et al., PEGylation of growth hormone-releasing…, Advanced drug delivery revi… (2003) | [10.1016/s0169-409x(03)00109-1](https://doi.org/10.1016/s0169-409x(03)00109-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Esposito_2003_GH](drugs/drug_sermorelin/pd_Esposito_2003_GH.md) | GH secretion ← Sermorelin · stimulation effect | — | Esposito P et al., PEGylation of growth hormone-releasing…, Advanced drug delivery revi… (2003) | [10.1016/s0169-409x(03)00109-1](https://doi.org/10.1016/s0169-409x(03)00109-1) |
 
 ## ADME sites
 

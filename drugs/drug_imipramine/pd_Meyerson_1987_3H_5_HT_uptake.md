@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Imipramine concentrations inhibit [3H]5-HT uptake, described by a sigmoid Emax inhibition model; the paper excerpts provide no mechanism detail and no parameter values (Imax, IC50, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Meyerson_1987`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

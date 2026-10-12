@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Escitalopram plasma concentrations (cited PK from Liu_2022) drive SERT occupancy in the dorsal raphe nucleus via a sigmoid Emax model; the paper reports an EC50 of 2.89 (units not stated) and a Hill coefficient of 0.817, but the excerpts do not state Emax or the mechanism beyond direct occupancy.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kim_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

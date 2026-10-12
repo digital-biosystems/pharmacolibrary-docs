@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N04B&quot;,&quot;href&quot;:&quot;atc/N04B.md&quot;},{&quot;label&quot;:&quot;entacapone&quot;,&quot;href&quot;:&quot;drugs/drug_entacapone/&quot;},{&quot;label&quot;:&quot;Heikkinen_2001 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Entacapone_Heikkinen2001_reference&quot;,&quot;label&quot;:&quot;Heikkinen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_entacapone/Entacapone_Heikkinen2001_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Entacapone_Heikkinen2001_reference&quot;,&quot;label&quot;:&quot;Heikkinen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_entacapone/Entacapone_Heikkinen2001_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # entacapone — `Entacapone_Heikkinen2001_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182), gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,16 +17,20 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has entacapone, the second reading entacapone (both labeled i.v. and unlabeled oral); it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
+**Every check that could be run on this record passed.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has entacapone, the second reading 13C-entacapone; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Heikkinen H et al., Pharmacokinetics of entacapone, a perip…, European journal of clinica… (2001)
   ·  DOI: [10.1007/s002280000244](https://doi.org/10.1007/s002280000244)
 
 ## Model component
-<dbs-pgx drug="entacapone" model-id="Entacapone_Heikkinen2001_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="entacapone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="entacapone" model-id="Entacapone_Heikkinen2001_reference" status="curated_candidate" stale="false" population="healthy male volunteers" measured-compound="entacapone" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 9 extracted.
@@ -75,17 +79,36 @@ Heikkinen H et al., Pharmacokinetics of entacapone, a perip…, European journal
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.182 (4/22 fields) | 18 |
 | `gpt-oss:120b` | not confirmed | 0.143 (3/21 fields) | 18 |
 
-<details><summary>18 field(s) a reader read differently</summary>
+<details><summary>36 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc]` | not captured | 409 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 409 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability of oral entacapone]` | not captured | 25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability of oral entacapone]` | 25 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cltot]` | 11.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 457 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 50.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximum concentration]` | not captured | 457 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[recovery of free and conjugated unchanged 13c-entacapone in urine]` | not captured | 38.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[recovery of free and conjugated unchanged 13c-entacapone in urine]` | 38.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time to reach the peak concentration]` | not captured | 0.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 0.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total plasma clearance]` | not captured | 11.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 0.08 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` | not captured | 0.27 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of the central compartment]` | not captured | 0.08 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss]` | 0.27 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | entacapone | 13C-entacapone | mismatch |
 | `gpt-oss:120b` | `parameters[auc]` | not captured | 409 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc]` | 409 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bioavailability of oral entacapone]` | not captured | 25 | only_one_extracted |
@@ -134,6 +157,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C9_phys_window_Q61 | pass | volume within physiological range | 5.6 L | not captured | not captured | ['Heikkinen_2001:abstract'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 18.9 L | not captured | not captured | ['Heikkinen_2001:abstract'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=entacapone) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -142,6 +176,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_entacapone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Heikkinen_2001` / `Heikkinen_2001::reference`)
+- model: `../../../knowledgebase/drugs/drug_entacapone/models/modelica/Entacapone_Heikkinen2001_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_entacapone/models/modelica/Entacapone_Heikkinen2001_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_entacapone/models/modelica/Entacapone_Heikkinen2001_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -153,7 +190,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_modelica.zip" download>Entacapone_Heikkinen2001_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_fmi.zip" download>Entacapone_Heikkinen2001_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_matlab.zip" download>Entacapone_Heikkinen2001_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_matlab_simbio.zip" download>Entacapone_Heikkinen2001_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_matlab_simbio.zip" download>Entacapone_Heikkinen2001_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_sbml.zip" download>Entacapone_Heikkinen2001_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_cellml.zip" download>Entacapone_Heikkinen2001_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

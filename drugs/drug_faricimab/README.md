@@ -23,7 +23,7 @@ Faricimab is a monoclonal antibody used to treat eye conditions involving abnorm
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Diack_2024_2_reference](drugs/drug_faricimab/Faricimab_Diack2024v2_reference.md) | — | 1-compartment (no model) | 5 (+2 cov.) | Diack C et al., Ocular Pharmacokinetics of Faricimab Fo…, Translational vision scienc… (2024) | [10.1167/tvst.13.11.14](https://doi.org/10.1167/tvst.13.11.14) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Diack_2024_2_reference](drugs/drug_faricimab/Faricimab_Diack2024v2_reference.md) | — | 1-compartment (no model) | 5 (+2 cov.) | Diack C et al., Ocular Pharmacokinetics of Faricimab Fo…, Translational vision scienc… (2024) | [10.1167/tvst.13.11.14](https://doi.org/10.1167/tvst.13.11.14) |
 
 ## ADME sites
 

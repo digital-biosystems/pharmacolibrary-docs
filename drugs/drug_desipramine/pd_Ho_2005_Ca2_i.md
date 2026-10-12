@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Desipramine concentrations (microM) stimulate the rise in intracellular Ca2+ concentration ([Ca2+]i) in MDCK renal tubular cells, described by an Emax model with an EC50 of 50 microM; the paper excerpts do not state Emax, a Hill coefficient, or a detailed mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ho_2005`
 - **model family:** `emax`
 - **driver:** `cited_pk`

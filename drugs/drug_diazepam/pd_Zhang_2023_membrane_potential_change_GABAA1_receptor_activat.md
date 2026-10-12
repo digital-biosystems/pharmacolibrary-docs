@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Diazepam concentration stimulates the membrane potential change mediated by GABAA1 receptor activation, described by a sigmoid Emax model; the paper reports an EC50 of 3.22 ± 0.73 μM, but no mechanism beyond receptor activation, Emax, Hill factor, or rate constants are given in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

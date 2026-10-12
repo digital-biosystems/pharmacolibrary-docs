@@ -20,7 +20,7 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> For salbutamol, the paper models heart rate (bpm) as a physiological state variable multiplied by a circadian rhythm (HRmeasured = HR × CRHR) within a semi-mechanistic contractility and haemodynamics model, but the excerpts do not state which salbutamol concentration or dose drives the HR response, nor the mechanism of the drug effect on HR, and no potency (Imax, IC50, EC50, Emax) or rate (kin, kout, ke0, gamma) values for salbutamol are given.
+> Salbutamol concentrations stimulate heart rate in dogs via an indirect response model (type III, stimulation) with a proportional Emax effect on HR turnover, superimposed on a circadian rhythm and haemodynamic feedback (FB 7.55 mmHg-1). Key parameters: Base HR 72.6 bpm, Kout,HR 10 h-1, Emax,HR 0.10, EC50,HR 11.3, slope 0.10, and HR_SV 0.61 (effect of HR on stroke volume); the excerpts do not further describe the salbutamol mechanism beyond this model structure.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

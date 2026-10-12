@@ -4,7 +4,7 @@
 
 # envafolimab — `Envafolimab_Cui2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The envafolimab record, including its reported terminal half-life of 34.0 days, was held back after an inconclusive reference comparison, not a demonstrated parameter fault.**
+
+The reference comparison failed without computing a ratio, so it does not establish that envafolimab’s terminal half-life of 34.0 days—or another reported parameter—is wrong. The record’s hold reflects this inconclusive result. Extracted — envafolimab: t1/2z 34 days, CL 0.0478 L/h, V 15.5 L, kabs 0.0147 1/h.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[cl].value`: this record has 0.0478, the second reading 0.0484; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 ## Citation
 Cui C et al., Model-informed drug development of enva…, The oncologist (2024)
@@ -85,6 +93,32 @@ Cui C et al., Model-informed drug development of enva…, The oncologist (2024)
 - unparsed cell T1:row10:col7 = '(0.0418, 0.0604)'
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.5 (6/12 fields) | 6 |
+
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[cl].covariate_forms` | [] | ['power'] | mismatch |
+| `qwen3.8-27b` | `parameters[cl].value` | 0.0478 | 0.0484 | mismatch |
+| `qwen3.8-27b` | `parameters[epsilon]` | 0.0501 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_cl_crcl_power]` | not captured | 0.474 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_equation_variable_crcl_power]` | 0.475 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v].value` | 15.5 | 15.3 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

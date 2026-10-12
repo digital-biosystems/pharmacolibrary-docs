@@ -5,7 +5,7 @@
 
 # fluorouracil — `Fluorouracil_Daryani2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.765). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667), gpt-oss:120b (not confirmed, agreement 0.765). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Vmax, the maximum rate of enzymatic metabolism for fluorouracil, carries the verbatim unit 'Vmax,plasma,m', which is not a convertible unit and could not be converted to SI, so the parameter arrived without an SI value and failed the dimensional check. The same placeholder-style units appear for Q ('Qm'), V2 ('V2,m') and fu ('fu,m'). The elimination rate constant kel (rate constant of the transit tumor compartment) is listed without any value. A second reader also disagreed on the dose compound and primary analyte (both read as fluorouracil versus unknown) and on the identity of the transit tumor compartment rate constant parameter. Extracted — fluorouracil: Vmax 2.04e+03 Vmax,plasma,m, V1 0.962 L, Q 1.67 Qm, V2 0.332 V2,m, fu 0.37 fu,m, V3 0.001 V3,m, CL 16.6 CLp, kabs 0.757 h−1, … (+1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has 5-fluorouracil, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -133,17 +133,24 @@ Daryani VM et al., Translational Pharmacokinetic-Pharmacod…, CPT: pharmacometr
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.667 (12/18 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.765 (13/17 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[ka, absorption rate constant]` | 0.757 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rate constant transit tumor compartment]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_ktr_category]` | not captured | 0.334 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q48_category]` | not captured | 1.82 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | 5-fluorouracil | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | 5-fluorouracil | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[rate constant transit tumor compartment].parameter_id` | Q47 | Q306 | mismatch |
 | `gpt-oss:120b` | `parameters[theta_q48_category]` | not captured | 1.82 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | fluorouracil | unknown | mismatch |

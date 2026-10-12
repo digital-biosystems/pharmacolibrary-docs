@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided record identifies latanoprost (specifically latanoprost acid) as a stimulator of ciliary artery tension, but the model mechanism is explicitly unknown. No numerical potency or rate parameters (e.g., IC50, EC50, kin, kout) are available in the excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Astin_1998`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -4,7 +4,7 @@
 
 # neomycin — `Neomycin_Samuel1968_control`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has cholesterol-7a-3H, the second reading cholesterol-7α-3H; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has neomycin, the second reading neomycin sulfate; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -78,24 +78,23 @@ Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clin
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.462 (6/13 fields) | 7 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[a. f., 45, f]` | not captured | 20 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[a. f., 45, f]` | not captured | 206 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[m. r., 53, f]` | not captured | 21 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[m. r., 53, f]` | not captured | 216 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[s. s., 62, m]` | not captured | 29 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[s. s., 62, m]` | not captured | 45 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | cholesterol-7a-3H | cholesterol-7α-3H | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | serum cholesterol | cholesterol-7α-3H | mismatch |
+| `gpt-oss-120b` | `parameters[(t1/2)1].parameter_id` | Q57 | Q59 | mismatch |
+| `gpt-oss-120b` | `parameters[(t1/2)2]` | not captured | 48 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[100 e_b/m_b, % day-]` | not captured | 0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[100 r_ab/m_a, % day-]` | not captured | 3.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[100 α2].parameter_id` | Q59 | Q68 | mismatch |
+| `gpt-oss-120b` | `parameters[e_b]` | not captured | 0 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | neomycin | neomycin sulfate | mismatch |
 
 </details>
 

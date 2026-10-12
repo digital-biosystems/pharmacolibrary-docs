@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism; procaterol concentration (M) is related to inhibition of specific [125I]iodocyanopindolol binding to immature rabbit bone marrow erythroblasts, with an apparent Kd of 3.1 × 10⁻⁹ M.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Setchenska_1986`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

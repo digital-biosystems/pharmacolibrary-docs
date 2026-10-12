@@ -4,7 +4,7 @@
 
 # enoxolone — `Enoxolone_Xu2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The record was rejected for an unreachable or orphan metabolite; 3MGA is listed with formation clearance CLfm 737 L/h, but the orphan is not identified.**
+
+All three listed metabolites have zero compartments. The record lists glycyrrhizin hydrolysis to 3MGA and reciprocal metabolism links between glycyrrhetic acid and GAM, but the rejection finding does not specify which metabolite or compartment was unreachable or orphaned. Extracted — glycyrrhizin (GL): k12 20 1/h, k21 0.46 1/h, Vmax 9, Km 0.0014; enoxolone: fu 0.006, fu_tissue 0.012; 3MGA: CLfm 737 L/h; glycyrrhetic acid (GA; enoxolone): Kp 0.14, kfm 0.29 1/h, CL 431 L/h, kabs 0.13 1/h.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 > **Dose compound ≠ measured compound:** dosed `glycyrrhizin (GL) and glycyrrhetic acid (GA; enoxolone)`, measured `glycyrrhetic acid (GA; enoxolone)`.
 

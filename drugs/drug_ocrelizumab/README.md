@@ -23,7 +23,7 @@ Ocrelizumab is an anti-CD20 monoclonal antibody used to treat multiple sclerosis
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Gibiansky_2021_reference](drugs/drug_ocrelizumab/Ocrelizumab_Gibiansky2021_reference.md) | — | 3-compartment (no model) | 6 | Gibiansky E et al., Ocrelizumab in relapsing and primary pr…, British journal of clinical… (2021) | [10.1111/bcp.14658](https://doi.org/10.1111/bcp.14658) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Gibiansky_2021_reference](drugs/drug_ocrelizumab/Ocrelizumab_Gibiansky2021_reference.md) | — | 3-compartment (no model) | 6 | Gibiansky E et al., Ocrelizumab in relapsing and primary pr…, British journal of clinical… (2021) | [10.1111/bcp.14658](https://doi.org/10.1111/bcp.14658) |
 
 ## ADME sites
 

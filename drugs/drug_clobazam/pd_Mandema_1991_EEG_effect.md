@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clobazam plasma concentrations (ng/ml) inhibit EEG amplitude in the 11.5–30 Hz frequency range via a sigmoid Emax model; the paper reports an EC50,U of 277 ± 34 ng/ml, but the excerpts do not state Emax, gamma, or the mechanism beyond inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mandema_1991`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

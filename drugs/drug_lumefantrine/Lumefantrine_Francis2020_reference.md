@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;Lumefantrine&quot;,&quot;href&quot;:&quot;drugs/drug_lumefantrine/&quot;},{&quot;label&quot;:&quot;Francis_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lumefantrine_Kloprogge2018_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lumefantrine/Lumefantrine_Kloprogge2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lumefantrine_Kloprogge2018_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lumefantrine/Lumefantrine_Kloprogge2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Lumefantrine — `Lumefantrine_Francis2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The lumefantrine absorption rate constant kabs was reported with unit 'Ka' instead of 1/h, so no SI value could be derived and the record was rejected for a dimension mismatch on a structural parameter.**
+
+In the Francis_2020 lumefantrine model (two-compartment structure), the first-order absorption rate constant kabs has value 0.727 with unit_verbatim 'Ka', which is not a valid unit for a rate constant and could not be converted to SI. All other parameters carry consistent units (CL 3.28 L/h, V1 60 L, MTT 2.86 h, Q 0.63 L/h, V2 182 L, Q3 1.55 L/h, V3 39.1 L). The rejection is therefore limited to this single parameter's unit problem. Extracted — lumefantrine: CL 3.28 L/h, V1 60 L, Frel 1 F, MTT 2.86 h, n_transit 7.58, kabs 0.727 Ka, Q 0.63 L/h, V2 182 L, … (+3).
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of intercompartmental clearance between central and second peripheral compartment (liters/h)c: this record has 1.55, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Francis J et al., An Individual Participant Data Populati…, Antimicrobial agents and ch… (2020)
@@ -115,6 +123,33 @@ Francis J et al., An Individual Participant Data Populati…, Antimicrobial agen
 - LLM selected parameter table(s) 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.667 (14/21 fields) | 7 |
+
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[intercompartmental clearance between central and second peripheral compartment (liters/h)c]` | 1.55 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lopinavir-ritonavir on f]` | 67.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean absorption transit time].parameter_id` | Q81 | Q73 | mismatch |
+| `gpt-oss-120b` | `parameters[relative oral bioavailability].covariate_forms` | [] | ['additive_shift'] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_frel_category]` | not captured | 2.28 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q900_category]` | 2.28 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vol. of distribution of the second peripheral compartment (liters)c]` | 39.1 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

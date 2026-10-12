@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a full text or describe the specific mechanism by which aceclidine concentration (nmol/l) stimulates tension (mN). The extraction record identifies an Emax model with a maximum response of 80-85%, but no other potency or rate parameters are stated in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ishikawa_1998`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

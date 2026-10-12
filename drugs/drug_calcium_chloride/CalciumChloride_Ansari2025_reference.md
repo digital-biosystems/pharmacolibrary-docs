@@ -5,7 +5,7 @@
 
 # calcium chloride — `CalciumChloride_Ansari2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The structure check found an orphan compartment or unlinked metabolite in the 2-compartment model for ionized calcium (calcium chloride), so the topology is not connected to the dose. The record is abstract-only: the reported values (CL 0.18 l/min, V1 10.9 l, V2 16.5 l) are summary statistics standing in for a fitted model. A second reader left the dose compound (calcium chloride) and primary analyte (ionized calcium) fields unresolved and recorded null for all three parameter values, disagreeing with the extracted 10.9 l, 16.5 l and 0.18 l/min. Extracted — ionized calcium: CL 0.18 l/min, V1 10.9 l, V2 16.5 l.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has calcium chloride, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -68,14 +68,28 @@ Ansari JR et al., Bioequivalence and Pharmacokinetics of…, Anesthesiology (202
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 | `gpt-oss:120b` | confirmed | 1.0 (7/7 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[central volume]` | 10.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume]` | not captured | 10.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume]` | 16.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume]` | not captured | 16.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance]` | 0.18 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance]` | not captured | 0.18 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | calcium chloride | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ionized calcium | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

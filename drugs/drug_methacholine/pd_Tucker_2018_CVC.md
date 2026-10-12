@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methacholine chloride stimulates cutaneous vascular conductance (CVC, %max) with a dose-response EC50 of -3.04 ± 0.12 and -2.98 ± 0.19 log (MCh) M; the paper excerpts do not state the mechanism or other model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tucker_2018`
 - **model family:** `unknown`
 - **driver:** `dose_only`

@@ -4,7 +4,7 @@
 
 # perindopril — `Perindopril_Parker2005_model_2`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.438). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.235), gpt-oss:120b (partly confirmed, agreement 0.438). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record describes perindoprilat, formed from perindopril in the central compartment of a 1-compartment structure, but the metabolite has no path from the administered dose, so the structure was judged to contain an unreachable compartment. Several parameter entries are internally inconsistent: the absolute bioavailability Fab is 426 (a fraction cannot exceed 1), the central volume V1 carries the unit h, and the unbound clearance CLu carries the unit years, which could not be converted to SI so the clearance reached the record without an SI value. A second reader instead read an apparent unbound clearance of 59, an apparent volume of distribution of 920, and a dose of 3.1, values absent from this record, so the clearance and volume entries are disputed. Extracted — perindoprilat: Bmax 0.95 g L -1, Fab 426, V 26 L, V1 45 h, V2 22 L, CLu 380 years.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl u: this record has 7.0, the second reading none; it also differs on 8 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has perindopril, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -95,17 +95,31 @@ Parker E et al., The pharmacokinetics of perindoprilat i…, European journal of
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.235 (4/17 fields) | 13 |
 | `gpt-oss:120b` | partly confirmed | 0.438 (7/16 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>22 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl u /f (3.1 mg) (l h -1 ) single dose]` | not captured | 80 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl u]` | 7.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | 426 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | not captured | 426 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 12]` | 1.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 1]` | 6.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f (3.1 mg) (l) single dose]` | not captured | 920 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 26 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ clu b]` | not captured | 10 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ v1 a]` | not captured | 54 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ v2]` | not captured | 87 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | perindopril | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | perindoprilat | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl u /f]` | not captured | 80 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl u]` | 7.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k 12]` | 1.3 | not captured | only_one_extracted |

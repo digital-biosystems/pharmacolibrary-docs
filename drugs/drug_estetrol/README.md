@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Duijkers_2015_ovulation](drugs/drug_estetrol/pd_Duijkers_2015_ovulation.md) | ovulation ← estetrol · inhibition effect | — | Duijkers IJ et al., Inhibition of ovulation by administrati…, The European journal of con… (2015) | [10.3109/13625187.2015.1074675](https://doi.org/10.3109/13625187.2015.1074675) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Duijkers_2015_ovulation](drugs/drug_estetrol/pd_Duijkers_2015_ovulation.md) | ovulation ← estetrol · inhibition effect | — | Duijkers IJ et al., Inhibition of ovulation by administrati…, The European journal of con… (2015) | [10.3109/13625187.2015.1074675](https://doi.org/10.3109/13625187.2015.1074675) |
 
 ## ADME sites
 

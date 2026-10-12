@@ -4,7 +4,7 @@
 
 # desirudin — `Desirudin_Nafziger2010_normal_renal_function`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — desirudin: λ1 0.63 h-1, kel 0.16 h-1, V 24 L, kabs 0.52 h-1, k12 0.04 h-1, k21 0.3 h-1.
 
-Independently confirmed by `gpt-oss:120b`.
+Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
 
 <sub>the checker's own wording — not yet put into words by an LLM</sub>
 
@@ -79,11 +79,12 @@ Nafziger AN et al., Desirudin dosing and monitoring in mode…, Journal of clini
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (10/10 fields) | none |
 | `gpt-oss:120b` | confirmed | 1.0 (10/10 fields) | none |
 
 _Every reader agrees on every compared field of this record._

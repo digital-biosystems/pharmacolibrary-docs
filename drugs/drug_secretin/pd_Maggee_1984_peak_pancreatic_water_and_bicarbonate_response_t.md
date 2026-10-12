@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models secretin dose (dose-only driver, no concentrations) against the peak pancreatic water and bicarbonate response using an Emax-type stimulation model; the excerpts provide no mechanism detail and no parameter values (Emax, ED50/EC50, gamma) are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Maggee_1984`
 - **model family:** `emax`
 - **driver:** `dose_only`

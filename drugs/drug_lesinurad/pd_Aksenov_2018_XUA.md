@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Plasma lesinurad concentrations increase the urinary excretion rate of uric acid (XUA) by inhibiting uric acid reabsorption in the renal proximal tubule, modeled via a proportional increase in the fractional excretion coefficient. The paper reports a maximum fractional increase (Fmax) of 0.56 and a half-maximal plasma concentration ([P]50,RIN) of 11,000 ng/mL for non-hyperuricemic subjects and 23,000 ng/mL for hyperuricemic subjects.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Aksenov_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

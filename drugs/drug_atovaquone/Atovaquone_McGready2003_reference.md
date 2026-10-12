@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01A&quot;,&quot;href&quot;:&quot;atc/P01A.md&quot;},{&quot;label&quot;:&quot;atovaquone&quot;,&quot;href&quot;:&quot;drugs/drug_atovaquone/&quot;},{&quot;label&quot;:&quot;McGready_2003 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atovaquone_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atovaquone/Atovaquone_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atovaquone_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atovaquone/Atovaquone_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atovaquone — `Atovaquone_McGready2003_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — atovaquone: CLnorm/F 313 ml/h/kg, CL/F 1.11e+03 ml/h/kg, Vnorm/F 13 l/kg, t1/2z 29.1 h, tlag 0.147 h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has proguanil → cycloguanil (metabolism), the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 McGready R et al., The pharmacokinetics of atovaquone and…, European journal of clinica… (2003)
@@ -62,6 +70,35 @@ McGready R et al., The pharmacokinetics of atovaquone and…, European journal o
 - no GROBID TEI available — transcribed from abstract in McGready_2003_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (3/12 fields) | 9 |
+
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['proguanil', 'cycloguanil', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[oral clearance (cl/f) atovaquone]` | 313 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral clearance (cl/f) proguanil]` | 1109 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral clearance]` | not captured | 313 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal elimination half-life atovaquone]` | 29.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal elimination half-life]` | not captured | 29.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag,1]` | 0.147 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total apparent volume of distribution (vd/f) atovaquone]` | 13.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total apparent volume of distribution]` | not captured | 13.0 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

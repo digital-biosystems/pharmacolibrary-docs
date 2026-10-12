@@ -4,7 +4,7 @@
 
 # bopindolol — `Bopindolol_Aellig1986_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429), gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has hydrolysed bopindolol, the second reading bopindolol; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has hydrolysed bopindolol, the second reading bopindolol; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -71,17 +71,22 @@ Aellig WH et al., Relationship between plasma concentrati…, British journal of
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | 70 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absolute bioavailability of the active compound]` | 70 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | 4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | hydrolysed bopindolol | bopindolol | mismatch |
 | `gpt-oss:120b` | `model.bioavailability.theta` | 70 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absolute bioavailability of the active compound]` | 70 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life]` | 4 | not captured | only_one_extracted |

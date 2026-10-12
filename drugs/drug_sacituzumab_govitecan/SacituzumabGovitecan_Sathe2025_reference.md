@@ -4,7 +4,7 @@
 
 # sacituzumab govitecan — `SacituzumabGovitecan_Sathe2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves. · molar_mass_missing:free SN-38: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,14 +14,25 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+> **Caveats:**
+
+> - `covariates_not_exercised` — the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+> - `molar_mass_missing:free SN-38` — a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule
+
+### Reviewer guidance
+
+**Free SN-38 metabolite parameters were not extracted, leaving its compartment undefined, and absorption defaults were used without source support.**
+
+Although the record lists values for free SN-38 clearance and volume, no values were extracted for the model, so library placeholders were used and the metabolite's compartment remained undefined. The absorption rate constant was not reported in the source paper, so library defaults were substituted for the missing estimate. The covariate effects defined in the record were not exercised during simulation, leaving their impact on the model unverified. Extracted — sacituzumab govitecan: CL 0.128 L/h, Q 0.00513 L/h, V1 2.65 L, V2 0.929 L; free SN-38: kfm 0.0937 1/h, CL/F 401 L/h, Q/F 243 L/h, V1/F 49 L, V2/F 2.18e+03 L; total antibody: CL 0.0155 L/h, Q 0.0105 L/h, V1 2.97 L, V2 1.32 L.
+
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Sathe AG et al., Sacituzumab Govitecan Population Pharma…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70291](https://doi.org/10.1111/cts.70291)
 
 ## Model component
-<dbs-pgx drug="sacituzumab govitecan" model-id="SacituzumabGovitecan_Sathe2025_reference" status="extracted" stale="false" population="patients with HR+/HER2− mBC, mTNBC, or other solid tumors" measured-compound="sacituzumab_govitecan" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="sacituzumab govitecan" model-id="SacituzumabGovitecan_Sathe2025_reference" status="needs_review" stale="false" population="patients with HR+/HER2− mBC, mTNBC, or other solid tumors" measured-compound="sacituzumab_govitecan" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 13 extracted, plus 8 covariate effects.
@@ -29,6 +40,8 @@ Sathe AG et al., Sacituzumab Govitecan Population Pharma…, Clinical and transl
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CLSG, L/h | `Q22` · CL | 0.128 | L/h | 3.5555555555555554e-08 | [l] / [h] | 1.01 | llm (0.6) | cts70291-tbl-0002:row1:col1, cts70291-tbl-0002:row1:col2 | — | not captured |
@@ -120,6 +133,21 @@ Sathe AG et al., Sacituzumab Govitecan Population Pharma…, Clinical and transl
 | C9_phys_window_Q64 | pass | volume within physiological range | 1.32 L | not captured | not captured | ['Sathe_2025_table_4:row3:col1', 'Sathe_2025_table_4:row3:col2'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 2.18e+03 L | not captured | not captured | ['Sathe_2025_table_3:row4:col1', 'Sathe_2025_table_3:row4:col2'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_metabolite_built[free SN-38] | not captured | fail | own V, CL and formation clearance &gt; 0 | {'V': 0, 'CL': 0, 'formation': 0} | not captured | free SN-38: V, CL, formation not set — the metabolite's compartment would be the template default |
+| T3_metabolite_output[free SN-38] | not captured | skipped | not captured | not captured | not captured | the simulation recorded no per-molecule outputs |
+| T3_molar_mass[free SN-38] | not captured | fail | not captured | {'MW': 0, 'MW_m1': 0} | not captured | a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule |
+| T3_param_coverage | not captured | fail | 12 scholar param(s) emitted or defaulted | 11 covered | not captured | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T3_topology_template | not captured | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -128,6 +156,8 @@ Sathe AG et al., Sacituzumab Govitecan Population Pharma…, Clinical and transl
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_sacituzumab_govitecan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sathe_2025` / `Sathe_2025::reference`)
+- model: `../../../knowledgebase/drugs/drug_sacituzumab_govitecan/models/modelica/SacituzumabGovitecan_Sathe2025_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_sacituzumab_govitecan/models/modelica/SacituzumabGovitecan_Sathe2025_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -139,7 +169,7 @@ Sathe AG et al., Sacituzumab Govitecan Population Pharma…, Clinical and transl
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference/SacituzumabGovitecan_Sathe2025_reference_modelica.zip" download>SacituzumabGovitecan_Sathe2025_reference_modelica.zip</a> <span class="pk-size">(5.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference/SacituzumabGovitecan_Sathe2025_reference_matlab.zip" download>SacituzumabGovitecan_Sathe2025_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference/SacituzumabGovitecan_Sathe2025_reference_matlab_simbio.zip" download>SacituzumabGovitecan_Sathe2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference/SacituzumabGovitecan_Sathe2025_reference_matlab_simbio.zip" download>SacituzumabGovitecan_Sathe2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference/SacituzumabGovitecan_Sathe2025_reference_sbml.zip" download>SacituzumabGovitecan_Sathe2025_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference/SacituzumabGovitecan_Sathe2025_reference_cellml.zip" download>SacituzumabGovitecan_Sathe2025_reference_cellml.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 </tbody></table>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;amitriptyline&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/&quot;},{&quot;label&quot;:&quot;Koh_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Brsen2001_reference&quot;,&quot;label&quot;:&quot;Br\u00f8sen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_Brsen2001_reference&quot;,&quot;label&quot;:&quot;Br\u00f8sen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amitriptyline — `Amitriptyline_Koh2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — amitriptyline: CL 92.1 L/h, V 155 L, Q 109 L/h, kabs 0.125 1/h, tlag 0.414 h, D1 1.13 h, kcomp 0.00581 1/h, k41 80.4 1/h, … (+1); nortriptyline: CL 58.2 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[d1].value`: this record has 0.95, the second reading 1.13; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amitriptyline, the second reading unknown; it also differs on 23 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -85,17 +85,42 @@ Koh A et al., Quantitative Modeling Analysis Demonstr…, Journal of clinical ph
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (4/28 fields) | 24 |
 | `gpt-oss:120b` | not confirmed | 0.222 (4/18 fields) | 14 |
 
-<details><summary>14 field(s) a reader read differently</summary>
+<details><summary>38 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[d1]` | 1.13 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[d1]` | not captured | 1.13 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k24]` | 0.00581 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k24]` | not captured | 0.00581 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k41]` | 80.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k41]` | not captured | 80.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k56].parameter_id` | Q30 | Q370 | mismatch |
+| `gpt-oss-120b` | `parameters[k65]` | not captured | 0.168 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mtime1 a]` | 4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mtime1 a]` | not captured | 4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvalag]` | 0.414 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvalag]` | not captured | 0.414 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvcl trm, amit]` | 92.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvcl trm, amit]` | not captured | 92.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvka]` | 0.125 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvka]` | not captured | 0.125 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvq]` | 109 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvq]` | not captured | 109 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvv c, amit]` | 155 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvv c, amit]` | not captured | 155 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvv p, amit]` | 1670 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvv p, amit]` | not captured | 1670 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | amitriptyline | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | amitriptyline | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[d1].value` | 0.95 | 1.13 | mismatch |
 | `gpt-oss:120b` | `parameters[k24].value` | 0.00 | 0.00581 | mismatch |
 | `gpt-oss:120b` | `parameters[k41]` | not captured | 80.4 | only_one_extracted |

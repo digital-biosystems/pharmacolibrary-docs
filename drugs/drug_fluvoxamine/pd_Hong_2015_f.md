@@ -20,7 +20,7 @@
 
 **Model:** No model was generated from this record.
 
-> Fluvoxamine (0.1–30 µM) concentration-dependently inhibits the Kv current in rabbit coronary arterial smooth muscle cells, fitted with a Hill (sigmoid Emax) equation giving an IC50 of 3.71±1.09 µM and Hill coefficient of 0.62±0.14 for steady-state inhibition; the paper does not give a kinetic (kin/kout/ke0) mechanism, but suggests inhibition occurs via a shift of the steady-state inactivation curve to more negative potentials (closed-state inhibition), independent of serotonin reuptake inhibition.
+> Fluvoxamine concentration-dependently inhibits the fractional Kv current (f) in rabbit coronary arterial smooth muscle cells, described by a Hill/sigmoid Emax equation with IC50 = 3.71±1.09 µM and Hill coefficient 0.62±0.14 for steady-state inhibition; the paper does not state an Emax or kinetic parameters, and suggests the inhibition occurs via a closed-state channel interaction (leftward shift of steady-state inactivation) independent of serotonin reuptake inhibition.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

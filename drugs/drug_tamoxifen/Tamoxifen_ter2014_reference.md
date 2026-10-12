@@ -5,7 +5,7 @@
 
 # tamoxifen — `Tamoxifen_ter2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.647). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.579), gpt-oss:120b (not confirmed, agreement 0.647). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -96,17 +96,26 @@ ter Heine R et al., Population pharmacokinetic modelling to…, British journal 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.579 (11/19 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.647 (11/17 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl2d6,2]` | 362 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2d6,2]` | not captured | 362 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl3a4,1]` | 44.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl3a4,2]` | not captured | 1840 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k57]` | not captured | 1.11 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k57]` | 1.11 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k68]` | not captured | 13.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k68]` | 13.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k57]` | not captured | 1.11 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k57]` | 1.11 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k68]` | not captured | 13.4 | only_one_extracted |

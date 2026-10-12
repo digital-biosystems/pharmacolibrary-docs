@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Doxacurium acts on neuro-muscular function through an effect compartment model, with the rate constant Ke0 reported as 0.053 min-1. The paper does not specify the exact mechanism of action or other potency parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhu_1997`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

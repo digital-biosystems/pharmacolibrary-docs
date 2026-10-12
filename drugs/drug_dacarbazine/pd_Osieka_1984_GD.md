@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;dacarbazine&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/&quot;},{&quot;label&quot;:&quot;Osieka_1984 \u00b7 PD Growth delay values&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Growth delay values — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.429), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+# Growth delay values — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Dacarbazine (DTIC) doses, expressed as fractions of the LD10/30 value, act on tumor growth delay (GD) in human melanoma xenografts; the dose-response curves were fitted by linear regression, and the paper does not state a mechanism (e.g., no Imax, IC50, EC50, Emax, kin, kout, or ke0 values are given).
+> In this study, the dose of dacarbazine (expressed in mg/kg as a fraction of LD10/30) was found to linearly inhibit the measured response of Growth Delay (GD) values in human melanoma xenografts, calculated via linear regression with a slope of 2.67. The paper does not specify the specific pharmacodynamic mechanism (e.g., production or elimination rates) or potency parameters like EC50 or IC50 for this model.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Osieka_1984`
 - **model family:** `linear`
@@ -44,25 +44,18 @@ Osieka R, Primary and acquired resistance to anti…, Cancer (1984)
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `einfracz:qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `openai:gpt-6-luna` | not confirmed | 0.429 (3/7 fields) | 4 |
-| `gpt-oss:120b` | not confirmed | 0.25 (1/4 fields) | 3 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.833 (5/6 fields) | 1 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | dacarbazine | unknown | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
-| `gpt-oss:120b` | `model_family` | linear | unknown | mismatch |
-| `openai:gpt-6-luna` | `driver_compound` | dacarbazine | dacarbazine (DTIC) | mismatch |
-| `openai:gpt-6-luna` | `effect_direction` | inhibition | stimulation | mismatch |
-| `openai:gpt-6-luna` | `parameters[Q344]` | -0.3 | not captured | only_one_extracted |
-| `openai:gpt-6-luna` | `parameters[Q900]` | not captured | -0.3 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q100]` | not captured | -1.1 | only_one_extracted |
 
 </details>
 

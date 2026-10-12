@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> No mechanistic details, potency parameters, or rate constants are available in the record or excerpts, as the full text is missing. The record only indicates that proglumetacin dose acts to inhibit the articular inflammation score index without specifying the underlying pharmacodynamic form.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bozsoky_1982`
 - **model family:** `unknown`
 - **driver:** `dose_only`

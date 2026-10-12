@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not state the specific pharmacodynamic mechanism for cenobamate in the provided excerpts. The model uses an Emax function where cenobamate plasma concentrations (µM) inhibit the Fraction Seizing response, with an EC50 of 66.0 µM.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bettio_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

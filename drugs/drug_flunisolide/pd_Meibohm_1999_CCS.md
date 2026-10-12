@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Flunisolide concentrations act on cumulative cortisol suppression (CCS, %) via an indirect response model with inhibition of the response (indirect response I); the paper excerpts provide no further mechanism detail and no potency or rate values (Imax, IC50, kin, kout) are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Meibohm_1999`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The plasma concentration of the active metabolite CC112273 directly stimulates the QTcP interval via an additive Emax mechanism. The model estimates a baseline QTcP of 394 msec, a maximum effect (Emax) of 1.26 msec, and an EC50 of 482 pmol/L.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Briggs_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

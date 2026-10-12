@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper reports a 96-h EC50 of 41.5 microM for DDT (p,p'-dichlorodiphenyltrichloroethane) driving malformation incidence (binary response); the mechanism of action is not stated in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Saka_2004`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

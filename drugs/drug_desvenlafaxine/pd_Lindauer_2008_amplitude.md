@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide full text, so the mechanism linking desvenlafaxine concentrations to the amplitude of the pupillary light reflex cannot be confirmed from the excerpts; the record describes a tolerance model with a half-life of development and regression of tolerance of 30 minutes, but no potency values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are stated, and the driver compound is listed as O-desmethylvenlafaxine without a resolved concentration unit.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lindauer_2008`
 - **model family:** `tolerance`
 - **driver:** `not_resolved`

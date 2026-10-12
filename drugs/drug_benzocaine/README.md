@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Long_2024_inhibitory_rate_of_A_alternata_mycelial_growth](drugs/drug_benzocaine/pd_Long_2024_inhibitory_rate_of_A_alternata_mycelial_growth.md) | inhibitory rate of A. alternata mycelial growth biomarker turnover ← benzocaine | — | Long LF et al., Inhibitory effect of benzocaine from Sc…, Scientific reports (2024) | [10.1038/s41598-024-57237-1](https://doi.org/10.1038/s41598-024-57237-1) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Long_2024_inhibitory_rate_of_A_alternata_mycelial_growth](drugs/drug_benzocaine/pd_Long_2024_inhibitory_rate_of_A_alternata_mycelial_growth.md) | inhibitory rate of A. alternata mycelial growth biomarker turnover ← benzocaine | — | Long LF et al., Inhibitory effect of benzocaine from Sc…, Scientific reports (2024) | [10.1038/s41598-024-57237-1](https://doi.org/10.1038/s41598-024-57237-1) |
 
 ## ADME sites
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts or full text, so the mechanism linking carbachol concentrations to 86Rb+ efflux from mouse thalamic synaptosomes cannot be stated; the record indicates only an Emax-type stimulation model with no potency or rate values available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Marks_1996`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model describes an Emax mechanism where aceclidine stimulates vascular tone induced by phenylephrine with an EC50 of 1.26 microM. The paper does not specify whether the drug acts on the production or elimination of the response, nor does it provide values for Imax, Emax, or rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Patil_2002`
 - **model family:** `emax`
 - **driver:** `not_resolved`

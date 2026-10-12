@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;abrocitinib&quot;,&quot;href&quot;:&quot;drugs/drug_abrocitinib/&quot;},{&quot;label&quot;:&quot;Wojciechowski_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abrocitinib_Wojciechowski2022_reference&quot;,&quot;label&quot;:&quot;Wojciechowski_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abrocitinib_Wojciechowski2022_reference&quot;,&quot;label&quot;:&quot;Wojciechowski_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # abrocitinib — `Abrocitinib_Wojciechowski2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.393). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,24 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+
+### Reviewer guidance
+
+**Abrocitinib model was held back because absolute bioavailability and lag time were missing and replaced by defaults, causing peak concentration to exceed the paper's value.**
+
+The record lacks extracted estimates for absolute bioavailability and lag time, so library defaults were used instead of paper-specific values. This deviation, combined with an unconvertible unit for the zero-order input rate, compromised the simulation. Consequently, the model's simulated peak concentration of 0.00166 exceeded the paper's reported value of 0.00112 by a ratio of 1.4763. Additionally, covariate effects such as hepatic impairment and sex were defined in the record but were not exercised in the simulation. Extracted — abrocitinib: CL 21.7 L/h, V1 86.3 L, Q 1.13 L/h, V2 8.11 L, R1 73.1 mg/h, kabs 3.99 h−1, Fab 1.3.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].covariate_forms`: this record has ['linear_fractional', 'linear_fractional'], the second reading ['linear_fractional']; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Wojciechowski J et al., Population Pharmacokinetics of Abrociti…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01104-z](https://doi.org/10.1007/s40262-021-01104-z)
 
 ## Model component
-<dbs-pgx drug="abrocitinib" model-id="Abrocitinib_Wojciechowski2022_reference" status="extracted" stale="false" population="healthy individuals and patients with psoriasis or atopic dermatitis" measured-compound="abrocitinib" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="abrocitinib" model-id="Abrocitinib_Wojciechowski2022_reference" status="needs_review" stale="false" population="healthy individuals and patients with psoriasis or atopic dermatitis" measured-compound="abrocitinib" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted, plus 5 covariate effects.
@@ -30,6 +40,8 @@ Wojciechowski J et al., Population Pharmacokinetics of Abrociti…, Clinical pha
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL, L/h | `Q22` · CL | 21.7 | L/h | 6.027777777777778e-06 | [l] / [h] | not captured | exact (1.0) | Tab2:row4:col1, Tab2:row4:col3 | — | not captured |
@@ -134,6 +146,43 @@ Wojciechowski J et al., Population Pharmacokinetics of Abrociti…, Clinical pha
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.393 (11/28 fields) | 17 |
+
+<details><summary>17 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl].covariate_forms` | ['linear_fractional', 'linear_fractional'] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[combined_effect_of_mild_and_moderate_hepatic_impairment_on_f]` | 1.36 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect of fluconazole or fluvoxamine on f].covariate_forms` | [] | ['linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[effect of fluconazole or fluvoxamine on f].parameter_id` | Q40 | Q87 | mismatch |
+| `gpt-oss-120b` | `parameters[effect of tablet formulations on alag1]` | not captured | 0.184 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect_of_female_sex_on_f]` | 0.348 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rate of change in cl with respect to time (half-life)]` | not captured | 23.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_weight]` | not captured | 0.472 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_frel_hepatic]` | not captured | 1.36 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_frel_race]` | not captured | 0.737 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_frel_sex]` | not captured | 0.348 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q1_weight]` | 0.472 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q43_race]` | 0.737 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q61_weight]` | 0.524 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_weight]` | not captured | 0.524 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -157,6 +206,19 @@ Wojciechowski J et al., Population Pharmacokinetics of Abrociti…, Clinical pha
 | C9_phys_window_Q63 | pass | volume within physiological range | 86.3 L | not captured | not captured | ['Tab2:row5:col1', 'Tab2:row5:col3'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 8.11 L | not captured | not captured | ['Tab2:row7:col1', 'Tab2:row7:col3'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable | not captured | pass | C_central (measured=abrocitinib) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | fail | 0.0011229999999999999 | 0.0016578469880379368 | 1.4763 | ng/mL→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | skipped | 21.6 | 2.9673454993610617 | not captured | unresolved time unit '14.5, 28.7' |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -165,6 +227,9 @@ Wojciechowski J et al., Population Pharmacokinetics of Abrociti…, Clinical pha
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_abrocitinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wojciechowski_2022` / `Wojciechowski_2022::reference`)
+- model: `../../../knowledgebase/drugs/drug_abrocitinib/models/modelica/Abrocitinib_Wojciechowski2022_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_abrocitinib/models/modelica/Abrocitinib_Wojciechowski2022_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_abrocitinib/models/modelica/Abrocitinib_Wojciechowski2022_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -176,7 +241,7 @@ Wojciechowski J et al., Population Pharmacokinetics of Abrociti…, Clinical pha
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference/Abrocitinib_Wojciechowski2022_reference_modelica.zip" download>Abrocitinib_Wojciechowski2022_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference/Abrocitinib_Wojciechowski2022_reference_fmi.zip" download>Abrocitinib_Wojciechowski2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference/Abrocitinib_Wojciechowski2022_reference_matlab.zip" download>Abrocitinib_Wojciechowski2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference/Abrocitinib_Wojciechowski2022_reference_matlab_simbio.zip" download>Abrocitinib_Wojciechowski2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference/Abrocitinib_Wojciechowski2022_reference_matlab_simbio.zip" download>Abrocitinib_Wojciechowski2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference/Abrocitinib_Wojciechowski2022_reference_sbml.zip" download>Abrocitinib_Wojciechowski2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference/Abrocitinib_Wojciechowski2022_reference_cellml.zip" download>Abrocitinib_Wojciechowski2022_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

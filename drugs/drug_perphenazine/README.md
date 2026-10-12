@@ -32,7 +32,7 @@ Perphenazine is an antipsychotic of the phenothiazine class used to treat schizo
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Jin_2010_reference](drugs/drug_perphenazine/Perphenazine_Jin2010_reference.md) | — | 1-compartment (no model) | 2 | Jin Y et al., Population pharmacokinetics of perphena…, Journal of clinical pharmac… (2010) | [10.1177/0091270009343694](https://doi.org/10.1177/0091270009343694) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Jin_2010_reference](drugs/drug_perphenazine/Perphenazine_Jin2010_reference.md) | — | 1-compartment (no model) | 2 | Jin Y et al., Population pharmacokinetics of perphena…, Journal of clinical pharmac… (2010) | [10.1177/0091270009343694](https://doi.org/10.1177/0091270009343694) |
 
 ## Pharmacodynamics (PD)
 

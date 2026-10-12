@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not state the mechanism beyond an Emax-type stimulation: DDT/DDE compounds (p,p'-DDT, o,p'-DDT, p,p'-DDE) stimulate vulture ERalpha estrogen-dependent transcription activity, with EC50 values of 2.41x10(-6) M (p,p'-DDT), 3.47x10(-7) M (o,p'-DDT), and 3.81x10(-5) M (p,p'-DDE); no Emax, kin, kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Naidoo_2008`
 - **model family:** `emax`
 - **driver:** `not_resolved`

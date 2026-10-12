@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The pharmacodynamic model describes a direct Emax stimulation where sumatriptan concentrations induce contractions expressed as a percentage of maximum KCl contraction. The paper does not provide full text to specify if this effect involves an effect compartment, production inhibition, or elimination inhibition, although it reports an Emax of 78% and a pD2 of 6.45.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gul_2002`
 - **model family:** `emax`
 - **driver:** `cited_pk`

@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Daryani_2016_bioluminescence&quot;,&quot;label&quot;:&quot;Daryani_2016 \u00b7 bioluminescence&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Daryani_2016_bioluminescence.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# total WBC count — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+# total WBC count — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -17,6 +17,10 @@
 **As extracted:** 5FU (measured concentrations) drives total WBC count (in × 109/L): disease-progression model.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> 5FU plasma concentrations (mg/L) inhibit the proliferation of the circulating WBC compartment through a semi-mechanistic Friberg model featuring transit delays and a feedback mechanism, with a baseline circulating count (CIRC0) of 6.86 × 109/L, a mean transit time (MTT) of 281 h, and a fixed feedback parameter (γ) of 0.17. The paper utilized linear effect slopes for monotherapy (1.17 L/mg) and combination therapy (2.82 L/mg) rather than an Emax model, as the latter provided no additional goodness-of-fit.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Arshad_2020`
 - **model family:** `disease_progression`
@@ -79,22 +83,23 @@ Blocking:
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+first reading `einfracz:qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `openai:gpt-6-luna` | not confirmed | 0.333 (3/9 fields) | 6 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `openai:gpt-6-luna` | `driver_compound` | 5-fluorouracil | 5FU | mismatch |
-| `openai:gpt-6-luna` | `model_family` | linear | transduction | mismatch |
-| `openai:gpt-6-luna` | `parameters[Q325]` | 0.17 | not captured | only_one_extracted |
-| `openai:gpt-6-luna` | `parameters[Q335].value` | 1.17 | 1.31 | mismatch |
-| `openai:gpt-6-luna` | `parameters[Q336].value` | 6.86 | 7.16 | mismatch |
-| `openai:gpt-6-luna` | `parameters[Q338]` | 281 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `driver_compound` | 5FU | 5‑fluorouracil | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | disease_progression | linear | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q100]` | 0.17 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q324].value` | 6.86 | unit`: | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q325]` | not captured | unit`: | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q335].value` | 2.82 | unit`: | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q338].value` | 281 | unit`: | mismatch |
 
 </details>
 

@@ -5,7 +5,7 @@
 
 # ajmaline — `Ajmaline_Elfner1987_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154), gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has n-propyl-ajmaline-bitartrate, the second reading N-Propylajmaline-bitartrate; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+**Only clearance was extracted — no volume; t1/2α has no unit.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Cmax), so that value has no SI equivalent. None of the extracted parameters is ajmaline's own; they describe n-propyl-ajmaline. Extracted — n-propyl-ajmaline: t1/2α 1.13, t1/2β 11.6 h, kabs 9.48 1/h, tmax 1.58 h, Cmax 182 ng/ml, Vnorm 0.91 L/kg, kel 6.3 1/h, CL 1.58 mL/min/kg.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has n-propyl-ajmaline-bitartrate, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `n-propyl-ajmaline-bitartrate`, measured `n-propyl-ajmaline`.
 
@@ -81,17 +85,29 @@ Elfner R et al., Pharmacokinetics of n-propyl-ajmaline-b…, European journal of
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.154 (2/13 fields) | 11 |
 | `gpt-oss:120b` | not confirmed | 0.154 (2/13 fields) | 11 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>22 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[c_max ng/ml]` | 182 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance ml/min/kg]` | 1.58 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | 4.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka hr-]` | 9.48 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2k_e1 hr]` | 6.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2β hr]` | 11.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t_max hr]` | 1.58 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v_d l/kg]` | 0.91 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[α hr-]` | 1.13 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | n-propyl-ajmaline-bitartrate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | n-propyl-ajmaline | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[c_max ng/ml]` | 182 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance ml/min/kg]` | 1.58 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka hr-]` | 9.48 | not captured | only_one_extracted |

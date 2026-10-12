@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The record was rejected because technetium 99mtc mebrofenin’s blood clearance is listed as 0.035 L/h despite a structural-parameter dimension mismatch.**
+
+The parameter’s stated meaning is blood clearance, and its recorded value is 0.035 L/h; the finding reports a dimension mismatch but does not specify the conflicting dimensions. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — technetium 99mtc mebrofenin: AUCt 277 kcounts*min/sec, CLb 0.035 L/h.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 ## Citation
 Ali I et al., Transporter-Mediated Alterations in Pat…, Clinical pharmacology and t… (2017)

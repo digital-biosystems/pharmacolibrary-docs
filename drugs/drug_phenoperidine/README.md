@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;phenoperidine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenoperidine_Fischler1985_reference&quot;,&quot;label&quot;:&quot;Fischler_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenoperidine/Phenoperidine_Fischler1985_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenoperidine_Fischler1985_reference&quot;,&quot;label&quot;:&quot;Fischler_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenoperidine/Phenoperidine_Fischler1985_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # phenoperidine
 
@@ -33,7 +33,7 @@ Phenoperidine is an opioid used as an analgesic component of general anesthesia.
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Fischler_1985_reference](drugs/drug_phenoperidine/Phenoperidine_Fischler1985_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Fischler M et al., Pharmacokinetics of phenoperidine in an…, British journal of anaesthe… (1985) | [10.1093/bja/57.9.872](https://doi.org/10.1093/bja/57.9.872) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: partial</span> | [Fischler_1985_reference](drugs/drug_phenoperidine/Phenoperidine_Fischler1985_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Fischler M et al., Pharmacokinetics of phenoperidine in an…, British journal of anaesthe… (1985) | [10.1093/bja/57.9.872](https://doi.org/10.1093/bja/57.9.872) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

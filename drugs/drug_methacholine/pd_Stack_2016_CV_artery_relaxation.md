@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methacholine concentration (log M) produces a direct stimulatory Emax-type relaxation of U46619-precontracted cranioventral small pulmonary arteries, with maximum relaxation 40.14% and Log IC50 -6.791 ± 0.1954 (log M); the paper excerpts do not state the mechanism beyond this concentration–response effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stack_2016`
 - **model family:** `emax`
 - **driver:** `not_resolved`

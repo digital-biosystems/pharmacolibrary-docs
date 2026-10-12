@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates clopenthixol dose to homovanillic acid (HVA) levels in the pre-frontal cortex, with an apparent stimulatory (increase) effect direction; no excerpts are available, so the mechanism, model form, and potency or rate parameters are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chang_1988`
 - **model family:** `unknown`
 - **driver:** `dose_only`

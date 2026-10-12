@@ -4,7 +4,7 @@
 
 # tanezumab — `Tanezumab_Shoji2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125), gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record was extracted from the abstract of Shoji_2022 only, so reported summary statistics stood in for a fitted model. The Cmax parameter, which should be the highest observed drug concentration, is reported with the unit 'days', a dimension mismatch on a structural parameter. The two-compartment structure also failed the check for an orphan compartment with no path from the dose. A second reader returned null for all parameter values (CL 0.133 L d-1, Vc 2.6 L, Vp 1.77 L, Km 31.2 μg L-1), disagreeing with the extracted values. Extracted — tanezumab: CL 0.133 L d-1, V1 2.6 L, V2 1.77 L, Km 31.2 μg L-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tanezumab, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tanezumab, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -70,17 +70,32 @@ Shoji S et al., Population pharmacokinetics of tanezuma…, British journal of c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.125 (2/16 fields) | 14 |
 | `gpt-oss:120b` | not confirmed | 0.125 (2/16 fields) | 14 |
 
-<details><summary>14 field(s) a reader read differently</summary>
+<details><summary>28 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | 62 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 0.133 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 0.133 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 8.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km]` | 31.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km]` | not captured | 31.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[sc bioavailability]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 2.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | not captured | 2.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | 1.77 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | not captured | 1.77 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | tanezumab | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | tanezumab | unknown | mismatch |
 | `gpt-oss:120b` | `model.bioavailability.theta` | not captured | -76 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | 0.133 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | not captured | 0.133 | only_one_extracted |

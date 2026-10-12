@@ -5,7 +5,7 @@
 
 # lisinopril — `Lisinopril_Medhora2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.846). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818), gpt-oss:120b (partly confirmed, agreement 0.846). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The two-compartment lisinopril model carries V1 = 0.008 L, far below plausible central volume for a rat, while the peripheral volume V2 = 0.513 L is vastly larger, an implausible magnitude consistent with a unit/scale extraction error. Renal clearance CLR = 0.009 L/h is likewise outside the physiological window. The remaining parameters (kabs 0.279 1/h, Q 0.014 L/h, Fab 0.192, CL_ratio 0.943, Frel 1.326) were extracted, but the implausible clearance/volume magnitudes caused rejection. Extracted — lisinopril: kabs 0.279 1/h, CLR 0.009 L/h, V1 0.008 L, Q 0.014 L/h, V2 0.513 L, Fab 0.192, CL_ratio 0.943, Frel 1.33.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of bioavailability ratio: this record has none, the second reading 1.326; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lisinopril, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -81,17 +81,20 @@ Medhora M et al., Radiation Increases Bioavailability of…, Frontiers in pharma
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.818 (9/11 fields) | 2 |
 | `gpt-oss:120b` | partly confirmed | 0.846 (11/13 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `screen.dose_compound` | lisinopril | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | lisinopril | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[bioavailability ratio]` | not captured | 1.326 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[renal clearance rate ratio]` | not captured | 0.943 | only_one_extracted |
 

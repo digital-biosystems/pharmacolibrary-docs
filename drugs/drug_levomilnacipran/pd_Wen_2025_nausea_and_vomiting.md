@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Levomilnacipran dose was related to the binary incidence of nausea and vomiting in a dose-response meta-analysis, with incidence consistently higher at high doses than at low doses; the paper does not state a pharmacodynamic model, mechanism parameters, or potency/rate values (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wen_2025`
 - **model family:** `unknown`
 - **driver:** `dose_only`

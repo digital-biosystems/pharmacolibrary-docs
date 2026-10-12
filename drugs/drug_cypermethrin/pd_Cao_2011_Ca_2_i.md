@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models cypermethrin's effect on intracellular calcium concentration ([Ca(2+)](i)) with a sigmoid Emax stimulation model, but the available excerpts provide no concentrations, mechanism, or parameter values (Imax, EC50, gamma) to report.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cao_2011`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

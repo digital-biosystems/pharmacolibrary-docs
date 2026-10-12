@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Protriptyline concentration-dependently inhibits the contractile response of rat isolated aorta to noradrenaline (3 microM NA), with an IC50 of 2.57 microM; the paper excerpts do not state the mechanism or an effect model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huang_1996`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

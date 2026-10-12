@@ -4,7 +4,7 @@
 
 # diroximel fumarate — `DiroximelFumarate_Kuchimanchi2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The record was rejected because 2-hydroxyethyl succinimide has no path from the dose.**
+
+The model structure lists 2-hydroxyethyl succinimide as a metabolite of diroximel fumarate but assigns it zero compartments. This configuration leaves the metabolite unlinked, making it an orphan that cannot be reached from the administered dose. Extracted — monomethyl fumarate: CLm/F 13.5 L/h, V 30.4 L, kabs 5.04 1/h; 2-hydroxyethyl succinimide: CL 3.24 L/h, kabs 1.49 1/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has diroximel fumarate, the second reading diroximel_fumarate; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 > **Dose compound ≠ measured compound:** dosed `diroximel fumarate`, measured `monomethyl fumarate`.
 
@@ -110,6 +118,43 @@ Kuchimanchi M et al., Development of a Population Pharmacokin…, Neurology and 
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.0 (0/17 fields) | 17 |
+
+<details><summary>17 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['diroximel fumarate', 'monomethyl fumarate', 'metabolism'], ['diroximel fumarate', '2-hydroxyethyl succinimide', 'metabolism']] | [['diroximel_fumarate', 'monomethyl_fumarate', 'metabolism'], ['diroximel_fumarate', '2-hydroxyethyl_succinimide', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[15]` | not captured | 0.843 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[1]` | 13.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[1]` | not captured | 13.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[2]` | not captured | 30.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[2]` | 30.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[3]` | 5.04 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[3]` | not captured | 5.04 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[6]` | 3.24 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[6]` | not captured | 3.24 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[7]` | 1.49 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[7]` | not captured | 1.49 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[8]` | not captured | 0.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[9]` | not captured | 0.162 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | diroximel fumarate | diroximel_fumarate | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | monomethyl fumarate | monomethyl_fumarate, 2-hydroxyethyl succinimide | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

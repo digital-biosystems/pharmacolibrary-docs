@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Brexanolone (as allopregnanolone, nmol/L) inhibits LDH activity released into the culture medium in a KA-induced excitotoxicity model, with an EC50 of 436 nmol/L; the paper excerpts do not state the mechanism or other model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yu_2002`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

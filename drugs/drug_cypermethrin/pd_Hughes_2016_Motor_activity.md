@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism or any parameter values; the record only indicates a sigmoid Emax model in which summed pyrethroid blood concentration (including cypermethrin) inhibits motor activity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hughes_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

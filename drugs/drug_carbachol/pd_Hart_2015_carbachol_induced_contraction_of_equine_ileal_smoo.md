@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol concentration (mol/l) directly stimulates contraction of equine ileal smooth muscle strips (circular and longitudinal), described by concentration–response (Emax-type) relations; the paper excerpts do not state the mechanism beyond this direct stimulatory effect. Reported EC50 values: circular control 41.57 × 10⁻⁸ mol/l and NBB-treated 0.530 × 10⁻⁸ mol/l; longitudinal control 90.84 × 10⁻⁸ mol/l and NBB-treated 0.243 × 10⁻⁸ mol/l.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hart_2015`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

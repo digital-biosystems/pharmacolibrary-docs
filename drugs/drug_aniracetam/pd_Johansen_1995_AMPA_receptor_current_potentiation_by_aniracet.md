@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models aniracetam concentration (microM) as a driver of AMPA receptor current potentiation using a sigmoid Emax relationship with a stimulatory effect direction; the excerpts provide no mechanism, no Emax, EC50, or Hill (gamma) values, and no rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Johansen_1995`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

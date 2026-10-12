@@ -5,7 +5,7 @@
 
 # diazepam — `Diazepam_Klotz1975_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.267), gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The lag time of 84.2 h for diazepam absorption is a dimension mismatch on a structural parameter, far outside any plausible absorption delay, so the record failed the dimensional check. The terminal half-life t1/2β (47.4) was reported with unit 'B', which could not be converted to SI, so the parameter reached the model without an SI value. A second reader also read several table entries differently, assigning 59.6 and 94.2 to two parameters left empty in this record and null to the half-life, clearance, and volume values, leaving the extraction inconclusive for those entries. Extracted — diazepam: t1/2β 47.4 B, CL 13 ml/min, CLb 24.8 ml/min, V 1.13 liter/kg, kabs 1.21 h−1, tlag 84.2 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has diazepam, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of b. s.: this record has none, the second reading 5.0; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -93,17 +93,29 @@ Klotz U et al., The effects of age and liver disease on…, The Journal of clini
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.267 (4/15 fields) | 11 |
 | `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[b. s.*].parameter_id` | Q900 | Q60 | mismatch |
+| `gpt-oss-120b` | `parameters[b. s.*].value` | 70.8 | 3.9 | mismatch |
+| `gpt-oss-120b` | `parameters[b. s.]` | not captured | 5.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[blood clearance of diazepam]` | not captured | 24.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[calculated blood clearance of diazepam]` | 24.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[drug clearance]` | 13.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka *]` | 1.03 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[m. c.]` | 62.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma clearance of diazepam]` | not captured | 20 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.186 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd(area)/kg,]` | 1.13 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[b. s.]` | 47.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[blood clearance of diazepam]` | 24.8 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[blood clearance of diazepam]` | not captured | 24.8 | only_one_extracted |

@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Bausch_1996_swelling_activated_anionic_channel_blockade](drugs/drug_nizofenone/pd_Bausch_1996_swelling_activated_anionic_channel_blockade.md) | swelling-activated anionic channel blockade ← nizofenone · inhibition effect | — | Bausch AR et al., Volume-sensitive chloride channels bloc…, Glia (1996) | [10.1002/(SICI)1098-1136(199609)18:1&lt;73::AID-GLIA8&gt;3.0.CO;2-4](https://doi.org/10.1002/(SICI)1098-1136(199609)18:1&lt;73::AID-GLIA8&gt;3.0.CO;2-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">in vitro</span> | [Bausch_1996_swelling_activated_anionic_channel_blockade](drugs/drug_nizofenone/pd_Bausch_1996_swelling_activated_anionic_channel_blockade.md) | swelling-activated anionic channel blockade ← nizofenone · inhibition effect | — | Bausch AR et al., Volume-sensitive chloride channels bloc…, Glia (1996) | [10.1002/(SICI)1098-1136(199609)18:1&lt;73::AID-GLIA8&gt;3.0.CO;2-4](https://doi.org/10.1002/(SICI)1098-1136(199609)18:1&lt;73::AID-GLIA8&gt;3.0.CO;2-4) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts describing the mechanism; the record indicates salbutamol concentrations drive a stimulation of rat atrial tension via an Emax model, but no potency (EC50/Emax) or rate values are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wilson_1984`
 - **model family:** `emax`
 - **driver:** `cited_pk`

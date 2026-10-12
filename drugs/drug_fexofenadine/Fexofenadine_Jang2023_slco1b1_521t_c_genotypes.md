@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R06A&quot;,&quot;href&quot;:&quot;atc/R06A.md&quot;},{&quot;label&quot;:&quot;fexofenadine&quot;,&quot;href&quot;:&quot;drugs/drug_fexofenadine/&quot;},{&quot;label&quot;:&quot;Jang_2023 \u00b7 slco1b1_521t_c_genotypes&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fexofenadine_Gaspar2025_reference&quot;,&quot;label&quot;:&quot;Gaspar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexofenadine/Fexofenadine_Gaspar2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fexofenadine_Jang2023_mean_standard_error&quot;,&quot;label&quot;:&quot;Jang_2023_mean_standard_error&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexofenadine/Fexofenadine_Jang2023_mean_standard_error.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fexofenadine_Jang2023_slco1b1_521t_c_genotypes&quot;,&quot;label&quot;:&quot;Jang_2023_slco1b1_521t_c_genotypes&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fexofenadine_Jang2023_slco2b1_1457c_t_genotypes&quot;,&quot;label&quot;:&quot;Jang_2023_slco2b1_1457c_t_genotypes&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco2b1_1457c_t_genotypes.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fexofenadine_Jang2023_mean_standard_error&quot;,&quot;label&quot;:&quot;Jang_2023_mean_standard_error&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexofenadine/Fexofenadine_Jang2023_mean_standard_error.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fexofenadine_Jang2023_slco1b1_521t_c_genotypes&quot;,&quot;label&quot;:&quot;Jang_2023_slco1b1_521t_c_genotypes&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fexofenadine_Jang2023_slco2b1_1457c_t_genotypes&quot;,&quot;label&quot;:&quot;Jang_2023_slco2b1_1457c_t_genotypes&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco2b1_1457c_t_genotypes.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fexofenadine_Gaspar2025_reference&quot;,&quot;label&quot;:&quot;Gaspar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexofenadine/Fexofenadine_Gaspar2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fexofenadine — `Fexofenadine_Jang2023_slco1b1_521t_c_genotypes`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.824). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,22 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Fexofenadine was held back because defaulted ka accompanies mismatched tmax (2 vs 2.69 h), Cmax (0.00045 vs 0.000109 kg/m³), and terminal half-life (2.45 vs 2.4 h).**
+
+Simulated as the paper dosed it, the model’s time of peak (tmax) differs from the paper’s reported value by more than the tolerance (paper 2 h, model 2.69 h). The model’s peak concentration (Cmax) also differs by more than the tolerance (paper 0.00045, model 0.000109 kg/m³), as does its terminal half-life (paper 2.45 h, model 2.4 h). The absorption-rate constant ka and lag time Tlag were defaulted rather than reported estimates; absorption was represented as first-order depot input, with F=1, Fm=1, and no molar correction. A reported unit could not be converted to SI, leaving its parameter without an SI value. Extracted — fexofenadine: t1/2z 2.45 h, tmax 2 h, Cmax 450 ng/mL, AUCt 2.5e+03 h·ng/mL, AUC∞ 2.63e+03 h·ng/mL, V/F 259 L, CL/F 75.9 L/h, MRT 4.44 h, … (+2).
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of auc108-120: this record has none, the second reading 2633.14; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 ## Citation
 Jang JH et al., Quantitative assessment of the relevanc…, Journal of pharmaceutical a… (2023)
   ·  DOI: [10.1016/j.jpha.2023.04.001](https://doi.org/10.1016/j.jpha.2023.04.001)
 
 ## Model component
-<dbs-pgx drug="fexofenadine" model-id="Fexofenadine_Jang2023_slco1b1_521t_c_genotypes" status="extracted" stale="false" population="healthy adults" measured-compound="fexofenadine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="fexofenadine" model-id="Fexofenadine_Jang2023_slco1b1_521t_c_genotypes" status="needs_review" stale="false" population="healthy adults" measured-compound="fexofenadine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 10 extracted.
@@ -30,6 +38,8 @@ Jang JH et al., Quantitative assessment of the relevanc…, Journal of pharmaceu
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | t1/2 (h) | `Q57` · t1/2z | 2.45 | h | 8820.0 | [h] | not captured | exact (1.0) | Jang_2023_table_1:row1:col1, Jang_2023_table_1:row1:col2, Jang_2023_table_1:row1:col3, Jang_2023_table_2:row1:col1, Jang_2023_table_2:row1:col2, Jang_2023_table_2:row1:col3 | — | not captured |
@@ -75,6 +85,29 @@ Jang JH et al., Quantitative assessment of the relevanc…, Journal of pharmaceu
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.824 (14/17 fields) | 3 |
+
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[auc108-120]` | not captured | 2633.14 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[css,mean (ng/ml) a].parameter_id` | Q71 | Q34 | mismatch |
+| `qwen3.8-27b` | `parameters[r value a]` | 1.04 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -97,6 +130,41 @@ Jang JH et al., Quantitative assessment of the relevanc…, Journal of pharmaceu
 | C9_phys_window_Q27 | pass | clearance within physiological range | 75.9 L/h | not captured | not captured | ['Jang_2023_table_1:row7:col1', 'Jang_2023_table_1:row7:col2', 'Jang_2023_table_1:row7:col3', 'Jang_2023_table_2:row7:col1', 'Jang_2023_table_2:row7:col2', 'Jang_2023_table_2:row7:col3'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 259 L | not captured | not captured | ['Jang_2023_table_1:row6:col1', 'Jang_2023_table_1:row6:col2', 'Jang_2023_table_1:row6:col3', 'Jang_2023_table_2:row6:col1', 'Jang_2023_table_2:row6:col2', 'Jang_2023_table_2:row6:col3'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=fexofenadine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | fail | 0.00045017 | 0.0001086665312206624 | 0.2414 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00056164 | 0.0001086665312206624 | 0.1935 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00077089 | 0.0001086665312206624 | 0.141 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00047017 | 0.0001086665312206624 | 0.2311 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00059383 | 0.0001086665312206624 | 0.183 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00084632 | 0.0001086665312206624 | 0.1284 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0009302799999999999 | 0.0001086665312206624 | 0.1168 | ng/mL→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | pass | 2.45 | 2.397564831472877 | 0.9786 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.52 | 2.397564831472877 | 0.9514 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.83 | 2.397564831472877 | 0.8472 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.97 | 2.397564831472877 | 1.217 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.84 | 2.397564831472877 | 1.303 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.09 | 2.397564831472877 | 1.1472 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.92 | 2.397564831472877 | 0.8211 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.38 | 2.397564831472877 | 0.7093 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 2.0 | 2.693386773547094 | 1.3467 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 2.0 | 2.693386773547094 | 1.3467 | h→SI vs simulated h |
+| T1_tmax | reference | pass | 2.5 | 2.693386773547094 | 1.0774 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.84 | 2.693386773547094 | 1.4638 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.93 | 2.693386773547094 | 1.3955 | h→SI vs simulated h |
+| T1_tmax | reference | pass | 2.39 | 2.693386773547094 | 1.1269 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.72 | 2.693386773547094 | 1.5659 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.83 | 2.693386773547094 | 1.4718 | h→SI vs simulated h |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -105,6 +173,9 @@ Jang JH et al., Quantitative assessment of the relevanc…, Journal of pharmaceu
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_fexofenadine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jang_2023` / `Jang_2023::slco1b1_521t_c_genotypes`)
+- model: `../../../knowledgebase/drugs/drug_fexofenadine/models/modelica/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes.mo`
+- deviation: `../../../knowledgebase/drugs/drug_fexofenadine/models/modelica/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_fexofenadine/models/modelica/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -116,7 +187,7 @@ Jang JH et al., Quantitative assessment of the relevanc…, Journal of pharmaceu
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes_modelica.zip" download>Fexofenadine_Jang2023_slco1b1_521t_c_genotypes_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes_fmi.zip" download>Fexofenadine_Jang2023_slco1b1_521t_c_genotypes_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes_matlab.zip" download>Fexofenadine_Jang2023_slco1b1_521t_c_genotypes_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes_matlab_simbio.zip" download>Fexofenadine_Jang2023_slco1b1_521t_c_genotypes_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes_matlab_simbio.zip" download>Fexofenadine_Jang2023_slco1b1_521t_c_genotypes_matlab_simbio.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes_sbml.zip" download>Fexofenadine_Jang2023_slco1b1_521t_c_genotypes_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes_cellml.zip" download>Fexofenadine_Jang2023_slco1b1_521t_c_genotypes_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>

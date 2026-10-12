@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Total cariprazine plasma concentration (TCave, sum of cariprazine, DCAR, and DDCAR) was related to the logit of the probability of treatment-emergent akathisia in a categorical (logistic) model; the excerpts do not state the model's effect form or any potency (e.g., EC50/Imax) or rate parameter values for akathisia.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Periclou_2020`
 - **model family:** `categorical`
 - **driver:** `not_resolved`

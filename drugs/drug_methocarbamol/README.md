@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03B&quot;,&quot;href&quot;:&quot;atc/M03B.md&quot;},{&quot;label&quot;:&quot;methocarbamol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methocarbamol_Rumpler2014_reference&quot;,&quot;label&quot;:&quot;Rumpler_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methocarbamol_Rumpler2014_reference&quot;,&quot;label&quot;:&quot;Rumpler_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # methocarbamol
 
@@ -27,13 +27,13 @@ Methocarbamol is a centrally acting muscle relaxant used for painful muscle spas
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 02:55 | 3:37 | 1/0/0 | 0/0/0 | 0/0/0 | 137,364/4,530 | einfracz / qwen3.8-27b | 9 | 2/0 | 9/0 | 0 |
+| 2026-10-07 02:55 | 3:37 | 0/0/1 | 0/0/0 | 0/0/0 | 137,364/4,530 | einfracz / qwen3.8-27b | 9 | 2/0 | 9/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Rumpler_2014_reference](drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference.md) | ▶ model + simulator | 1-compartment, oral | 8 | Rumpler MJ et al., The pharmacokinetics of methocarbamol a…, Journal of veterinary pharm… (2014) | [10.1111/jvp.12068](https://doi.org/10.1111/jvp.12068) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Rumpler_2014_reference](drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference.md) | ▶ model + simulator | 1-compartment, oral | 8 | Rumpler MJ et al., The pharmacokinetics of methocarbamol a…, Journal of veterinary pharm… (2014) | [10.1111/jvp.12068](https://doi.org/10.1111/jvp.12068) |
 
 ## ADME sites
 
@@ -57,7 +57,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 32 matched, 31 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Fenoprofen inhibits prostaglandin E2 concentrations following a sigmoid Emax model. The paper excerpts do not provide the specific mechanism, potency, or rate parameter values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Poggi_2006`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

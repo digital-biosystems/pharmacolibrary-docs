@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Jacobs2026_oral`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. Extracted — metformin: Cmax 941 ng/mL, tmax 0.86 h, AUC∞ 4.32e+03 h * ng/mL, AUC%ext 1.09, Fab 7.86, t1/2z 85.8 h, CL 0.059 L/h, V 35 L, … (+2).
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has metformin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -92,14 +92,26 @@ Jacobs ME et al., Metformin in the Horse: Pharmacokinetic…, Drug testing and a
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.6 (9/15 fields) | 6 |
 | `gpt-oss:120b` | confirmed | 1.0 (11/11 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl]` | 0.059 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka (h -1 ) absorption rate constant]` | 0.41 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.34 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 35.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | metformin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | metformin | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Bioallethrin (R/S-bioallethrin and esbiol) concentrations in culture medium (mg/L) inhibit the growth of Pseudokirchneriella subcapitata over 72 h, described by a sigmoidal Emax (median-effect) dose–response model; the paper does not state a mechanistic PD pathway beyond growth inhibition. Potency: EC50 = 1.10 ± 0.06 mg/L (R/S-bioallethrin) and 1.73 ± 0.05 mg/L (esbiol), with EC20 = 0.33 ± 0.01 and 0.85 ± 0.03 mg/L respectively, and sigmoidicity factors m = 1.152 (R/S-bioallethrin) and 1.982 (esbiol).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `García_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

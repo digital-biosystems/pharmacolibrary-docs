@@ -5,7 +5,7 @@
 
 # clozapine — `Clozapine_Reeves2024_female_cl_f_clozapine`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of iiv cl/f clozapine: this record has none, the second reading 93; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+**The clozapine record was rejected because the sex effect on CL/F was extracted as −0.28, a negative value that is implausible for a clearance covariate parameter.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The parameter labelled 'Sex CL/F clozapine Parameter estimates' carries the value −0.28 for total oral clearance (CL/F) of clozapine, which triggered the negative-clearance finding. The record also disagrees with a second reader on the IIV of CL/F (recorded as null versus 93) and on the smoker covariate βsmoker (0.37 in this record versus null), so the covariate and variability values are inconsistently read. The model itself is a parent–metabolite structure with clozapine forming norclozapine via the rate constant Kfm, but the implausible clearance value led to rejection. Extracted — clozapine: CL/F -0.28.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clozapine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Reeves S et al., A population pharmacokinetic model to g…, British journal of clinical… (2024)
@@ -79,18 +83,22 @@ f_norclozapine, σ₀_ᵢₙₜₑᵣcₑₚₖ clozapine (mg l⁻¹))
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[iiv cl/f clozapine]` | not captured | 93 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[βsmoker cl/f clozapine]` | 0.37 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[age exp cl/f clozapine relative standard error]` | not captured | 8.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clozapinei]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[sex cl/f clozapine parameter estimates]` | -0.28 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[sex cl/f clozapine parameter estimates]` | not captured | -0.28 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | clozapine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | clozapine | unknown | mismatch |
 
 </details>
 

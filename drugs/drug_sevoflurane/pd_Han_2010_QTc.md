@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Sevoflurane concentration acts on QTc via an additive stimulation model using an effect compartment, characterized by a Ce50 of 2.5 and a ke0 of 2.0. The specific units for Ce50 and ke0 are not explicitly provided in the available excerpts, and the paper text is not available to confirm further mechanistic details.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Han_2010`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dibutylphthalate concentration (μM) is linked to tumor formation (binary response) with a reported EC50 of 0.22 μM; the paper excerpts provide no full text, so the mechanism (e.g., Emax stimulation, production/elimination inhibition) and other parameters are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hsieh_2012`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

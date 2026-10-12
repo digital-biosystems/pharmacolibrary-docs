@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Midazolam plasma concentrations (ng ml-1) were related to the averaged aperiodic EEG amplitude in the 11.5-30 Hz (beta) band of the fronto-central lead (uV s-1) in rats by a direct sigmoid Emax model (stimulation, proportional effect form), with baseline E0 = 61 ± 3 uV s-1, Emax = 85 ± 3 uV s-1, EC50 = 40 ± 3 ng ml-1 and Hill coefficient N = 0.84 ± 0.04; no effect-compartment or tolerance model was needed for this parameter.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mandema_1991_2`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

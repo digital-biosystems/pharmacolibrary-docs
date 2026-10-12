@@ -4,7 +4,7 @@
 
 # aztreonam — `Aztreonam_Das2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The intercompartmental clearance for aztreonam was recorded with area under the curve units, creating a dimension mismatch that prevents simulation.**
+
+The parameter labeled AUC has a meaning describing area under the concentration-time curve, yet its value is 10.7 with units of L/h, which is a clearance unit. The label for this parameter reads Q*WT/70** 0.75 (L/h), indicating it represents intercompartmental clearance, not area under the curve. This inconsistency between the pharmacokinetic meaning, the label, and the units constitutes a dimensional error in the model structure. Extracted — aztreonam: CLnorm 5.21 L/h, V1 6.83 L, AUC 10.7 L/h, V2 5.76 L, Bmax 3.24, CL 10.4 L/h, Q 4.96 L/h, kabs 0.459 1/h, … (+3).
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Das S et al., Dose selection for aztreonam-avibactam,…, European journal of clinica… (2024)

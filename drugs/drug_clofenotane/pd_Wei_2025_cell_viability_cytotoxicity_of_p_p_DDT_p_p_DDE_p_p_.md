@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper links exposure to p,p'-DDT (and its metabolites p,p'-DDE and p,p'-DDD) to reduced cell viability (cytotoxicity) in S. chinensis skin fibroblasts, an inhibitory effect; no excerpts are available, so the mechanism (e.g., direct Emax, production/elimination inhibition) and potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wei_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

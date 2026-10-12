@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lindane (µM concentrations) inhibits contraction induced by vasopressin and endothelin-1, with an IC50 below 10 µM; the paper does not state the mechanism or model form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Silvestroni_1999`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

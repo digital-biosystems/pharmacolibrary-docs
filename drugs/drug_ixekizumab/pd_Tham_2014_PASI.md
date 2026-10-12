@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a full text or specific mechanism description beyond the record's indication that ixekizumab acts via a proportional indirect response inhibition model on absolute PASI scores. No potency or rate parameters (such as Imax, IC50, or kout) are stated in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tham_2014`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

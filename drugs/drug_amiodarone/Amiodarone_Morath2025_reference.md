@@ -5,7 +5,7 @@
 
 # amiodarone — `Amiodarone_Morath2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.0), gpt-oss:120b (partly confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record reports amiodarone CL/F of 3.05 L/h, V/F of 23.7 L and ka of 0.652 /h, but the apparent-parameterization assumption (F=1, Fm=1, no molar correction) failed the deviations check. Tlag was left at a default rather than given an explicit estimate. A second reader also assigned different values than the first reader on several fields, with each reader leaving the other's values null, so the extracted values are not consistently confirmed. Extracted — amiodarone: CL/F 3.05 L/h, V/F 23.7 L, kabs 0.652 /h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL/F: this record has 3.05, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has none, the second reading 77.3; it also differs on 5 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -63,17 +63,24 @@ Morath B et al., Effect of Amiodarone on Apixaban Exposu…, Clinical pharmacoki
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.0 (0/6 fields) | 6 |
 | `gpt-oss:120b` | partly confirmed | 0.0 (0/7 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | not captured | 77.3 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q27]` | 3.05 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q312]` | 29.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q316]` | 31.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q49]` | 0.652 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q76]` | 23.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q27]` | 3.05 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q312]` | 29.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q316]` | 31.4 | not captured | only_one_extracted |

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> For the olodaterol/tiotropium fixed-dose combination, the change from baseline in trough FEV1 (L) was described by an Emax-type time-course model in which the effect reaches its maximum (Emax = 0.170 L) at the start of treatment and then declines over time with a loss-of-efficacy rate constant τ = 0.0113 week⁻¹ (about 0.041 L loss by 24 weeks); the paper does not link a drug concentration to the response, and no IC50/EC50 or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gong_2022`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L03A&quot;,&quot;href&quot;:&quot;atc/L03A.md&quot;},{&quot;label&quot;:&quot;interferon alfa-2b&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InterferonAlfa2b_GarcaGarca2016_reference&quot;,&quot;label&quot;:&quot;Garc\u00eda-Garc\u00eda_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InterferonAlfa2b_GarcaGarca2016_reference&quot;,&quot;label&quot;:&quot;Garc\u00eda-Garc\u00eda_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # interferon alfa-2b
 
@@ -32,13 +32,13 @@ Interferon alfa-2b is an immunostimulant interferon used to treat several cancer
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [García-García_2016_reference](drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | García-García I et al., Pharmacokinetic and pharmacodynamic cha…, BMC pharmacology & toxicolo… (2016) | [10.1186/s40360-016-0103-8](https://doi.org/10.1186/s40360-016-0103-8) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: disputed</span> | [García-García_2016_reference](drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | García-García I et al., Pharmacokinetic and pharmacodynamic cha…, BMC pharmacology & toxicolo… (2016) | [10.1186/s40360-016-0103-8](https://doi.org/10.1186/s40360-016-0103-8) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Talal_2006_HCV_RNA](drugs/drug_interferon_alfa_2b/pd_Talal_2006_HCV_RNA.md) | HCV RNA ← PEG-IFN alpha-2b · indirect response — drug inhibits the production of HCV RNA | model (no simulator) | Talal AH et al., Pharmacodynamics of PEG-IFN alpha diffe…, Hepatology (Baltimore, Md.) (2006) | [10.1002/hep.21136](https://doi.org/10.1002/hep.21136) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Talal_2006_HCV_RNA](drugs/drug_interferon_alfa_2b/pd_Talal_2006_HCV_RNA.md) | HCV RNA ← PEG-IFN alpha-2b · indirect response — drug inhibits the production of HCV RNA | model (no simulator) | Talal AH et al., Pharmacodynamics of PEG-IFN alpha diffe…, Hepatology (Baltimore, Md.) (2006) | [10.1002/hep.21136](https://doi.org/10.1002/hep.21136) |
 
 ## ADME sites
 

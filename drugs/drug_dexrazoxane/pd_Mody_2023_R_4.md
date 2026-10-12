@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In MDA-MB-468 cells, dexrazoxane (µM) combined with doxorubicin acts on % cell viability via a static competitive interaction (sigmoid Emax-type) model, with the interaction parameter ψ estimated at 0.84, indicating a modestly synergistic interaction; the paper does not state a specific mechanism beyond empirical cell viability effects.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mody_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

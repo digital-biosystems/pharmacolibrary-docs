@@ -5,7 +5,7 @@
 
 # dalteparin — `Dalteparin_Damle2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.9). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8), gpt-oss:120b (not confirmed, agreement 0.9). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record describes dalteparin in pediatric venous thromboembolism patients with a two-compartment structure, first-order absorption (kabs = 1.04 1/h) and clearance CL/F = 929 mL/h. The volume parameter V2/F = 7180 mL is defined as the volume of the peripheral compartment, but the model structure leaves that compartment without a path from the dose, making it an orphan compartment. No other failed checks or builder deviations are reported. Extracted — dalteparin: CL/F 929, V2/F 7.18e+03, kabs 1.04, V/F 1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading dalteparin → anti-xa (none). That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dalteparin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -84,17 +84,20 @@ Damle B et al., Population Pharmacokinetic Analysis of…, Journal of clinical p
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.8 (8/10 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.9 (9/10 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `screen.dose_compound` | dalteparin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | anti-Xa | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [] | [['dalteparin', 'anti-xa', 'none']] | mismatch |
 
 </details>
@@ -139,7 +142,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dalteparin/Dalteparin_Damle2021_reference/Dalteparin_Damle2021_reference_matlab.zip" download>Dalteparin_Damle2021_reference_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dalteparin/Dalteparin_Damle2021_reference/Dalteparin_Damle2021_reference_matlab_simbio.zip" download>Dalteparin_Damle2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dalteparin/Dalteparin_Damle2021_reference/Dalteparin_Damle2021_reference_matlab_simbio.zip" download>Dalteparin_Damle2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dalteparin/Dalteparin_Damle2021_reference/Dalteparin_Damle2021_reference_sbml.zip" download>Dalteparin_Damle2021_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dalteparin/Dalteparin_Damle2021_reference/Dalteparin_Damle2021_reference_cellml.zip" download>Dalteparin_Damle2021_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

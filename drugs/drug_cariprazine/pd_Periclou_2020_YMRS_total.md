@@ -17,6 +17,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Total cariprazine plasma concentration (sum of cariprazine, DCAR, and DDCAR, in nM) acts on YMRS total score via an Emax-type relationship modeled as an additive effect on baseline YMRS, with Emax 0.250 (25% placebo-corrected reduction), EC50 62.4 nM, and a Weibull placebo effect (PLmax 0.433, TD 8.41 days, WPOW 1.53) on a baseline YMRS0 of 32.7; the paper does not describe an inhibitory effect on production or elimination of the response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Periclou_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

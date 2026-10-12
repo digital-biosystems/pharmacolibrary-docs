@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Midazolam concentrations (from the cited PK fit) drive a continuous sedation response described by a sigmoid Emax model with an inhibitory effect direction; the paper excerpts provide no mechanism details and no parameter values (Emax, IC50/EC50, gamma, or rate constants) are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhu_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes a sigmoid Emax model where terfenadine at doses in µM stimulates cell death, with a reported EC50 of 74 nM. Since no full text is available, the paper does not specify the underlying mechanism or kinetic rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fujii_2012`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

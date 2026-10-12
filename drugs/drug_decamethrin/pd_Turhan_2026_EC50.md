@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In the FETAX assay, X. laevis embryos exposed for 96 h to deltamethrin (3.125–6,400 µg/L) showed malformation with a median effective concentration EC50 of 7.58 µg/L (95% CI 7.02–8.17), alongside a 96 h LC50 of 68.0 µg/L (TI 8.97, MCIG 3.125 µg/L); the paper reports these as probit-derived concentration–effect endpoints and does not describe a pharmacodynamic mechanism model (no Imax/IC50/kin/kout/ke0 given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Turhan_2026`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Obidoxime concentration (M) was related to relaxation of pre-contracted human small bowel (jejunum/ileum) smooth muscle using an Emax-type inhibitory model; the paper excerpts provide no mechanism, potency (IC50/Emax), or rate values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Marquart_2018`
 - **model family:** `emax`
 - **driver:** `not_resolved`

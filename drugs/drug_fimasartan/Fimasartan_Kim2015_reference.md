@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;fimasartan&quot;,&quot;href&quot;:&quot;drugs/drug_fimasartan/&quot;},{&quot;label&quot;:&quot;Kim_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fimasartan_Kim2014v2_estimate&quot;,&quot;label&quot;:&quot;Kim_2014_2_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fimasartan/Fimasartan_Kim2014v2_estimate.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fimasartan_Kim2014v2_estimate&quot;,&quot;label&quot;:&quot;Kim_2014_2_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fimasartan/Fimasartan_Kim2014v2_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fimasartan — `Fimasartan_Kim2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286), gpt-oss:120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.00).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fimasartan, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bioavailability under fasted relative to fasting conditions: this record has none, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -82,17 +82,28 @@ Kim TH et al., Population Pharmacokinetic Modeling of…, The AAPS journal (2015
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.286 (4/14 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.357 (5/14 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>19 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[bioavailability under fasted relative to fasting conditions]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution clearance from central to liver compartment].value` | 60.2 | not captured | mismatch |
+| `gpt-oss-120b` | `parameters[distribution clearance from shallow peripheral compartment]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life of elimination from liver]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life of transfer from bile to gut at baseline]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[modeled absolute oral bioavailability]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the associated clearance was over]` | 500 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q95_category]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution of central compartment]` | 22.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution of shallow peripheral compartment]` | 25.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[distribution clearance to deep peripheral compartment]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life of elimination from liver].covariate_forms` | ['additive_shift'] | [] | mismatch |
 | `gpt-oss:120b` | `parameters[half-life of elimination from liver].parameter_id` | Q57 | Q60 | mismatch |

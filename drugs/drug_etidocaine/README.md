@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Weinberg_2000_carnitine_stimulated_pyruvate_oxidation](drugs/drug_etidocaine/pd_Weinberg_2000_carnitine_stimulated_pyruvate_oxidation.md) | carnitine-stimulated pyruvate oxidation ← etidocaine · inhibition effect | — | Weinberg GL et al., Bupivacaine inhibits acylcarnitine exch…, Anesthesiology (2000) | [10.1097/00000542-200002000-00036](https://doi.org/10.1097/00000542-200002000-00036) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Weinberg_2000_carnitine_stimulated_pyruvate_oxidation](drugs/drug_etidocaine/pd_Weinberg_2000_carnitine_stimulated_pyruvate_oxidation.md) | carnitine-stimulated pyruvate oxidation ← etidocaine · inhibition effect | — | Weinberg GL et al., Bupivacaine inhibits acylcarnitine exch…, Anesthesiology (2000) | [10.1097/00000542-200002000-00036](https://doi.org/10.1097/00000542-200002000-00036) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

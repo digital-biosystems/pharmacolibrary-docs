@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deltamethrin (decamethrin) concentrations (μM) inhibit CES1-mediated BMBT hydrolysis; the paper excerpts do not state the mechanism or model form beyond an IC50 of 1.58 μM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lei_2017`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

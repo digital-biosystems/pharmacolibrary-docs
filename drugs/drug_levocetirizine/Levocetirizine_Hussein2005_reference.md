@@ -4,7 +4,7 @@
 
 # levocetirizine — `Levocetirizine_Hussein2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.176). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Levocetirizine apparent clearance and volume parameters caused double correction, rejecting the abstract-derived model record.**
+
+The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The apparent clearance and volume of distribution parameters caused double correction, violating parameter coherence. Fitted pharmacokinetic estimates were unavailable because only the abstract was read. Extracted — levocetirizine: CL/F 0.044 L/h/kg, Vnorm 0.639 l kg(-1), CL 0.6 l h(-1), Frel 0.28 in, AUCSS 1.95e+03 ng·h/mL, AUC/dose 2.04e+03 microg l(-1) h, kabs 0.095 h−1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cetirizine, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 > **Dose compound ≠ measured compound:** dosed `cetirizine`, measured `levocetirizine`.
 
@@ -74,6 +82,40 @@ Hussein Z et al., Retrospective population pharmacokineti…, British journal of
 - no GROBID TEI available — transcribed from abstract in Hussein_2005_metadata.yaml (13 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.176 (3/17 fields) | 14 |
+
+<details><summary>14 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc(ss) in compliant subjects]` | not captured | 1952 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc(ss), calculated in compliant subjects using posterior estimates of the final model, was]` | 1952 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f increased linearly with weight by]` | 0.044 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f increased linearly with weight by]` | not captured | 0.044 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[estimated relative bioavailability]` | not captured | 0.28 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[in adults after intake of 5 mg oral solution]` | 2036 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercept of]` | not captured | 0.244 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.095 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[population estimates in children with weights of 8 and 20 kg were]` | 0.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the estimated relative bioavailability was]` | 0.28 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f increased linearly with weight by]` | 0.639 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f increased linearly with weight by]` | not captured | 0.639 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | cetirizine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | levocetirizine | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

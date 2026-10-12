@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deltamethrin (decamethrin) concentration (microM) drives the percentage of TTX-R sodium channels modified, modeled as a stimulation Emax relationship with EC50 = 0.37 microM; the paper excerpts provide no further mechanism or additional parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tabarean_1998`
 - **model family:** `emax`
 - **driver:** `cited_pk`

@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Midazolam concentrations act on the amplitude in the 12-30 Hz EEG frequency band, described by a sigmoid Emax model with an inhibitory (negative) effect direction; the paper excerpts provide no further mechanism, potency (IC50/EC50/Emax/gamma) or rate values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Danhof_1992`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

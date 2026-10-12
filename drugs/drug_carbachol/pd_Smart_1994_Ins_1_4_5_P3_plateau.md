@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol stimulates Ins(1,4,5)P3 formation (plateau phase, pmol/mg protein) described by a sigmoid Emax model, with EC50 of 11.7 and 11.6 microM and maximum Ins(1,4,5)P3 responses of 33.2 and 47.9 pmol/mg protein; the paper excerpts do not state a mechanism beyond this direct concentration-response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Smart_1994`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

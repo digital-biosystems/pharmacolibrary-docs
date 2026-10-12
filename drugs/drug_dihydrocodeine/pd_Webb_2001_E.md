@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not explicitly state the pharmacodynamic mechanism linking dihydrocodeine concentration to the reduction in pain score, though the record specifies an additive effect on the response. The model parameters listed in the record include a slope of 0.063 score·s·pmol–1·ml and a ke0 of 3.3 h–1.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Webb_2001`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

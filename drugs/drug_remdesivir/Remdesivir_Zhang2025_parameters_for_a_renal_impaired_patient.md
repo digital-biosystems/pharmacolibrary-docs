@@ -5,7 +5,7 @@
 
 # remdesivir — `Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.294), gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Humeniuk_2021) cannot stand in for this paper's evidence. Extracted — remdesivir: Q 0.31 L/h, kic 0.037 1/h, CL 2.3 L/h, V 93 L; intermediate metabolites: Q 83.8 L/h; nucleoside monophosphate: Q 50 L/h, CLfm 0.15 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has remdesivir → intermediate metabolites (metabolism); intermediate metabolites → nucleoside monophosphate (metabolism), the second reading remdesivir → intermediate metabolites (im) (metabolism); intermediate metabolites (im) → nucleoside monophosphate (nuc) (metabolism); nucleoside monophosphate (nuc) → gs-443902 (metabolism); it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has remdesivir → intermediate metabolites (im) (metabolism); intermediate metabolites (im) → nucleoside monophosphate (nuc) (metabolism), the second reading remdesivir → intermediate metabolites (metabolism); intermediate metabolites → nucleoside monophosphate (metabolism); remdesivir → gs-443902 (metabolism); it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -98,17 +98,30 @@ Zhang S et al., Pharmacokinetic simulations for remdesi…, Frontiers in pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.294 (5/17 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.375 (6/16 fields) | 10 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>22 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['remdesivir', 'intermediate metabolites (im)', 'metabolism'], ['intermediate metabolites (im)', 'nucleoside monophosphate (nuc)', 'metabolism']] | [['remdesivir', 'intermediate metabolites', 'metabolism'], ['intermediate metabolites', 'nucleoside monophosphate', 'metabolism'], ['remdesivir', 'gs-443902', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[kp,nuc]` | not captured | 0.15 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kp,nuc]` | 0.15 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[parameters]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qim]` | not captured | 83.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qim]` | 83.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qnuc]` | not captured | 50.02 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qnuc]` | 50.02 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qrdv]` | not captured | 0.31 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rdv vz]` | 92.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q370_im]` | not captured | 0.22 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q370_im]` | 0.22 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [['remdesivir', 'intermediate metabolites', 'metabolism'], ['intermediate metabolites', 'nucleoside monophosphate', 'metabolism']] | [['remdesivir', 'intermediate metabolites (im)', 'metabolism'], ['intermediate metabolites (im)', 'nucleoside monophosphate (nuc)', 'metabolism'], ['nucleoside monophosphate (nuc)', 'gs-443902', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[clc,rdv].parameter_id` | Q22 | Q26 | mismatch |
 | `gpt-oss:120b` | `parameters[kp,nuc]` | 0.15 | not captured | only_one_extracted |

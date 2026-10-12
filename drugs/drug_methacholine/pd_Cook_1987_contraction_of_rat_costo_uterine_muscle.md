@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methacholine stimulates contraction of rat costo-uterine muscle, described by an Emax model with an EC50 of 6.7 (units not stated); the paper excerpts provide no further mechanism or additional parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cook_1987`
 - **model family:** `emax`
 - **driver:** `not_resolved`

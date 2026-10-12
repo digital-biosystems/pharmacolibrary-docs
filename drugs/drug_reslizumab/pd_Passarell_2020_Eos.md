@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that reslizumab inhibits blood eosinophil levels, but as no full text is available, the paper does not specify the underlying mechanism or provide key potency and rate values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Passarell_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

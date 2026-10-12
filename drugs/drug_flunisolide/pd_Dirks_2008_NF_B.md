@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Flunisolide concentrations (pM, nominal medium concentrations) inhibit NF-κB-mediated SEAP expression in A549 reporter cells via glucocorticoid transrepression of NF-κB activity, described by a sigmoid Emax model with EC50 = 1563 (630) pM; the average maximal inhibition of NF-κB activity across glucocorticoids was 40% of baseline, and no Hill coefficient or rate constants are reported for flunisolide.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dirks_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

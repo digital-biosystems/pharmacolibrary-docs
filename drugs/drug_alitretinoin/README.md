@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Al-Dhubaibi_2018_PGA](drugs/drug_alitretinoin/pd_Al_Dhubaibi_2018_PGA.md) | physician global assessment ← alitretinoin · inhibition effect | — | Al-Dhubaibi MS et al., The effectiveness of alitretinoin for t…, International journal of he… (2018) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Al-Dhubaibi_2018_PGA](drugs/drug_alitretinoin/pd_Al_Dhubaibi_2018_PGA.md) | physician global assessment ← alitretinoin · inhibition effect | — | Al-Dhubaibi MS et al., The effectiveness of alitretinoin for t…, International journal of he… (2018) | — |
 
 ## ADME sites
 

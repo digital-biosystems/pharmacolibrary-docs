@@ -5,7 +5,7 @@
 
 # semaglutide — `Semaglutide_Choi2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7), gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record for semaglutide (CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1) failed the structure check with an unreachable or orphan compartment, meaning the peripheral compartment has no path from the dose. The second reader also disputed several extracted values: this record gives 0.059 and 46.27 where the second reader gives null and 2.68, and the second reader reports 75.2 and 24.8 where this record has none. The source is a review-secondary text for a review reference population, so the numbers may be summary statistics rather than a fitted model. Extracted — semaglutide: CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q81: this record has 46.27, the second reading 2.68. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 0.059, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -62,17 +62,21 @@ Choi S et al., Population pharmacokinetics of efpeglen…, Frontiers in pharmaco
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.889 (8/9 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 0.059 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q81]` | 46.27 | 2.68 | mismatch |
+| `gpt-oss-120b` | `values[Q87]` | not captured | 24.8 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q81]` | 46.27 | 2.68 | mismatch |
 
 </details>

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Solidago altissima flower extract (1428) concentrations inhibit cell viability/cytotoxicity measured by CellTiter-Glo (HEK-293T-hACE2) and MTS (PBM, Vero) assays; the paper does not state a mechanistic PD model beyond a sigmoid concentration–response (Chou–Talalay/Prism nonlinear regression). Reported values: EC50 for HEK-293T-hACE2 cell viability 191.48 µg/mL, and CC50 &gt; 100 µg/mL in both PBM and Vero cells.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Risener_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

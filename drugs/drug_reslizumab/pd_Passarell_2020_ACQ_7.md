@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the full text or specific details regarding the pharmacodynamic mechanism linking reslizumab concentrations or doses to the Asthma Control Questionnaire (ACQ-7) response. Consequently, no mechanism (e.g., direct Emax, effect compartment) or key potency and rate parameters (e.g., EC50, ke0) can be reported from the available information.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Passarell_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

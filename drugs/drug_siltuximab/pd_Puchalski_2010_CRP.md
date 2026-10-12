@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The extraction record indicates siltuximab acts on C-reactive protein (CRP) concentrations using an indirect response model with an inhibitory effect, but the specific mechanism (e.g., inhibition of production vs. elimination) is not described in the provided paper excerpts. No potency or rate parameters (Imax, IC50, Emax, kin, kout, ke0, gamma) are present in the available record or excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Puchalski_2010`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

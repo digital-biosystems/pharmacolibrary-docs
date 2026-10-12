@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cholecystokinin (CCK) concentrations (nM) stimulate fluid secretion, measured as the rate of duct swelling (nl x min(-1) x mm(-2)), described by an Emax-type model; the paper excerpts provide no mechanism details and no potency or rate parameter values (Imax, EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Szalmay_2001`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Human secretin concentration (nM) stimulates the extracellular acidification rate (EAR); the paper reports an EC50 of 0.1 nM, but the available excerpts do not state the model family or mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ng_1999`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -5,7 +5,7 @@
 
 # pethidine — `Pethidine_Szeto1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of the elimination half-life of meperidine in the fetus: this record has 32.6, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has meperidine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -69,17 +69,24 @@ Szeto HH et al., Urinary excretion of meperidine by the…, The Journal of pharm
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 | `gpt-oss:120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[elimination half-life of meperidine in the fetus]` | not captured | 32.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance of meperidine by the fetus]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the elimination half-life of meperidine in the fetus]` | 32.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the renal clearance of meperidine by the fetus]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | meperidine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | meperidine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[the elimination half-life of meperidine in the fetus]` | 32.6 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[the renal clearance of meperidine by the fetus]` | not captured | not captured | only_one_extracted |
 

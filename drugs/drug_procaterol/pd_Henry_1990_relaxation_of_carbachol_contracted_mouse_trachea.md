@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Procaterol concentration (nM) produces a sigmoid Emax-type stimulation of relaxation in carbachol-contracted mouse trachea (%), with a maximum relaxation of 28 ± 4 %; the paper excerpts give no IC50/EC50 or slope, and no mechanism beyond this direct concentration–effect relationship is stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Henry_1990`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

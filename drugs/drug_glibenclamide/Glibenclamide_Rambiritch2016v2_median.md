@@ -5,7 +5,7 @@
 
 # glibenclamide — `Glibenclamide_Rambiritch2016v2_median`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105), gpt-oss:120b (partly confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The simulated terminal half-life and peak concentration deviate significantly from the paper's reported values of 12.2 hours and 0.000376 kg/m3. The absorption rate constant was left at library defaults rather than using an estimate from the source. A reported unit could not be converted to SI, preventing accurate parameterization. Extracted — glibenclamide: AUC∞ 1.28e+03 ng·h/mL, AUClast 629 ng·h/mL, CL/F 1.71 L/h, Cmax 165 ng/mL, t1/2z 6.25 hours, tmax 1.68 hours, V/F 14.6 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 10: this record has none, the second reading 11.01; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has glibenclamide, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -82,17 +82,35 @@ Rambiritch V et al., Population pharmacokinetic modeling of…, Clinical pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.105 (2/19 fields) | 17 |
 | `gpt-oss:120b` | partly confirmed | 0.769 (10/13 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[20]` | not captured | 7.84 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aucinf]` | 1281.84 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aucinf]` | not captured | 1281.84 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auclast]` | 629.48 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auclast]` | not captured | 629.48 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 1.71 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 1.71 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 164.52 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 164.52 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 6.25 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | not captured | 6.25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 1.68 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | not captured | 1.68 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vz/f]` | 14.61 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vz/f]` | not captured | 14.61 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | glibenclamide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | glibenclamide | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[10]` | not captured | 11.01 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[20]` | not captured | 7.84 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/f]` | 1.71 | not captured | only_one_extracted |
@@ -164,9 +182,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_glibenclamide/Glibenclamide_Rambiritch2016v2_median/Glibenclamide_Rambiritch2016v2_median_modelica.zip" download>Glibenclamide_Rambiritch2016v2_median_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_glibenclamide/Glibenclamide_Rambiritch2016v2_median/Glibenclamide_Rambiritch2016v2_median_fmi.zip" download>Glibenclamide_Rambiritch2016v2_median_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_glibenclamide/Glibenclamide_Rambiritch2016v2_median/Glibenclamide_Rambiritch2016v2_median_matlab.zip" download>Glibenclamide_Rambiritch2016v2_median_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_glibenclamide/Glibenclamide_Rambiritch2016v2_median/Glibenclamide_Rambiritch2016v2_median_matlab_simbio.zip" download>Glibenclamide_Rambiritch2016v2_median_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_glibenclamide/Glibenclamide_Rambiritch2016v2_median/Glibenclamide_Rambiritch2016v2_median_matlab_simbio.zip" download>Glibenclamide_Rambiritch2016v2_median_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_glibenclamide/Glibenclamide_Rambiritch2016v2_median/Glibenclamide_Rambiritch2016v2_median_sbml.zip" download>Glibenclamide_Rambiritch2016v2_median_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_glibenclamide/Glibenclamide_Rambiritch2016v2_median/Glibenclamide_Rambiritch2016v2_median_cellml.zip" download>Glibenclamide_Rambiritch2016v2_median_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>

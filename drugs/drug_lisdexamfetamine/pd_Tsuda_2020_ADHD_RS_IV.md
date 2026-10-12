@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> In a sequential PK/PD analysis, plasma d-amphetamine concentrations (PK from Comiran_2021) were related to the ADHD RS-IV total score, with an inhibitory effect direction; the paper excerpts provide no model family, mechanism, or parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tsuda_2020`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

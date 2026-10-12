@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Verinurad concentrations (ng/mL) drive a semimechanistic uric acid disposition model in which verinurad inhibits renal URAT1-mediated reabsorption (increasing fractional excretion of uric acid, baseline FEUA 7.7%), while febuxostat or oxypurinol (the active metabolite of allopurinol) inhibit uric acid production rate via xanthine oxidase inhibition; the model describes serum uric acid (mg/L) and urinary uric acid excretion. The reported EC50 for verinurad was 29.3 ng/mL (with hyperuricemic covariate effects), and the paper does not state Imax, kout, ke0, or gamma values in the excerpts.
+> Oxypurinol, the active metabolite of allopurinol, inhibits the production rate of serum uric acid (sUA) via a mechanism described as an inhibition of production catalyzed by xanthine oxidase. The paper does not specify the exact functional form or provide a numeric EC50 value for oxypurinol in the provided excerpts, though it confirms the model uses an inhibition term for this drug's effect on uric acid synthesis.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Leander_2021`
 - **model family:** `emax`

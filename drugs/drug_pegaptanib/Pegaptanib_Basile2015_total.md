@@ -4,7 +4,7 @@
 
 # pegaptanib — `Pegaptanib_Basile2015_total`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (AUC∞ and Cmax), so that value has no SI equivalent.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Basile AS et al., Population pharmacokinetics of pegaptan…, Clinical ophthalmology (Auc… (2015)

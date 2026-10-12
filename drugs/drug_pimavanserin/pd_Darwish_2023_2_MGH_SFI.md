@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism or any parameter values linking pimavanserin concentrations to the MGH-SFI response; only the drug–response pairing is known.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Darwish_2023_2`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

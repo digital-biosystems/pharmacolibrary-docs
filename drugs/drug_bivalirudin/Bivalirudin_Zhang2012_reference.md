@@ -4,7 +4,7 @@
 
 # bivalirudin — `Bivalirudin_Zhang2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 In the Zhang_2012 record (healthy young Chinese volunteers, abstract-only), the parameter labelled 'V 1 (%)' carries the value 24.2 with unit '%', which is a dimensionless relative measure and cannot serve as a central volume of distribution in L. The other parameters — CL 0.323 L·h-1·kg-1, V 0.086 L/kg and Q 0.0957 L·h-1·kg-1 — are body-weight-normalised and dimensionally consistent. Because the record was built from the abstract alone, the reported summary statistics stood in for a fitted model, and the dimension mismatch on V1 made the model structure unusable. Extracted — bivalirudin: CL 0.323 L·h-1·kg-1, V 0.086 L/kg, Q 0.0957 L·h-1·kg-1, V1 24.2 %.
 
-Independently confirmed by `gpt-oss:120b`.
+Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -73,11 +73,12 @@ Zhang DM et al., Population pharmacokinetics and pharmac…, Acta pharmacologica
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
 | `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
 
 _Every reader agrees on every compared field of this record._

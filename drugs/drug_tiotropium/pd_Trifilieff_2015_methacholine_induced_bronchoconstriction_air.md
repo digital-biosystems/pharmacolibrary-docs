@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates tiotropium dose to inhibition of methacholine-induced bronchoconstriction (airway resistance) using an Emax-type model, but the available excerpts provide no mechanism description and no potency or rate values (Imax, IC50/EC50, Emax, kin, kout, ke0, gamma) are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Trifilieff_2015`
 - **model family:** `emax`
 - **driver:** `dose_only`

@@ -4,7 +4,7 @@
 
 # necitumumab — `Necitumumab_Long2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5), gpt-oss:120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of central volume of distribution, v 1 (l) b: this record has none, the second reading 3.60; it also differs on 5 more fields. That field does not shape the model.
+**The record was rejected because the peripheral compartment is unreachable from the dose, and the clearance parameter is mislabeled as inter-compartmental clearance.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The model structure defines a two-compartment system, but the parameter labeled 'Inter-compartmental CL' has a meaning defined as total clearance, creating a structural inconsistency. The second reader identified a discrepancy where the record lists 0.0198 L/h for this parameter, while the reader found 0.0113 L/h for the corresponding clearance field. Additionally, the second reader noted that the central volume of distribution was recorded as null in one instance, conflicting with the extracted value of 3.6 L. Extracted — necitumumab: V1 3.6 L, CL 0.0198 L/h, V2 3.31 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of central volume of distribution, v 1 (l)b: this record has 3.6, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Long A et al., Population Pharmacokinetics of Necitumu…, Clinical pharmacokinetics (2017)
@@ -68,17 +72,22 @@ Long A et al., Population Pharmacokinetics of Necitumu…, Clinical pharmacokine
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 | `gpt-oss:120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[central volume of distribution, v 1 (l)b]` | 3.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cltot]` | not captured | 0.0141 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[inter-compartmental cl, q]` | 0.0198 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution, v 2 (l)b]` | 3.31 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[central volume of distribution, v 1 (l) b]` | not captured | 3.60 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[central volume of distribution, v 1 (l)b]` | 3.6 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | not captured | 0.0113 | only_one_extracted |

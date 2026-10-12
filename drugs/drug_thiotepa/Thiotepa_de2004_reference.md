@@ -1,10 +1,10 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;thiotepa&quot;,&quot;href&quot;:&quot;drugs/drug_thiotepa/&quot;},{&quot;label&quot;:&quot;de_2004 \u00b7 patients receiving high-dose chemotherapy&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;thiotepa&quot;,&quot;href&quot;:&quot;drugs/drug_thiotepa/&quot;},{&quot;label&quot;:&quot;de_2004 \u00b7 reference&quot;}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # thiotepa — `Thiotepa_de2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,20 +16,20 @@
 
 ### Reviewer guidance
 
-**No model parameters were extracted from this paper.**
+**The record was rejected because 4-hydroxycyclophosphamide is an unlinked metabolite with no path from the thiotepa dose, and the model is abstract-only.**
 
-Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+The facts list 4-hydroxycyclophosphamide as a metabolite formed from cyclophosphamide, but cyclophosphamide is not the dosed molecule thiotepa, making the compartment unreachable. Additionally, the record is abstract-only, so the reported half-life of 20 hr and elimination rate constant of 0.0343 hr-1 are summary statistics rather than fitted parameters. Extracted — thiotepa: kel 0.0343 hr(-1), t1/2z 20 hr.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has thiotepa, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-15 04:50:36.152899+00:00) predates the upstream re-run (2026-10-07 16:32:03.542161+00:00). Current validate status: `rejected`.
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 de Jonge ME et al., Integrated Population Pharmacokinetic M…, Journal of pharmacokinetics… (2004)
   ·  DOI: [10.1023/b:jopa.0000034405.03895.c2](https://doi.org/10.1023/b:jopa.0000034405.03895.c2)
 
 ## Model component
-<dbs-pgx drug="thiotepa" model-id="Thiotepa_de2004_reference" status="rejected" stale="true" population="patients receiving high-dose chemotherapy" measured-compound="thiotepa" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="thiotepa" model-id="Thiotepa_de2004_reference" status="rejected" stale="false" population="patients receiving high-dose chemotherapy" measured-compound="thiotepa" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -66,6 +66,33 @@ de Jonge ME et al., Integrated Population Pharmacokinetic M…, Journal of pharm
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.125 (1/8 fields) | 7 |
+
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['thiotepa', 'tepa', 'metabolism'], ['cyclophosphamide', '4-hydroxycyclophosphamide', 'metabolism']] | [['cyclophosphamide', '4-hydroxycyclophosphamide', 'metabolism'], ['thiotepa', 'tepa', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[first-order elimination rate constant]` | 0.0343 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[first-order elimination rate constant]` | not captured | 0.0343 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 20 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | not captured | 20 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | thiotepa | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | thiotepa | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -84,7 +111,7 @@ de Jonge ME et al., Integrated Population Pharmacokinetic M…, Journal of pharm
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_thiotepa/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `de_2004` / `de_2004::patients receiving high-dose chemotherapy`)
+- scholar stages: `../../../knowledgebase/drugs/drug_thiotepa/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `de_2004` / `de_2004::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

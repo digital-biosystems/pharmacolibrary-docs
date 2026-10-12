@@ -4,7 +4,7 @@
 
 # naltrexone — `Naltrexone_Li1996_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Christie_2025) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — naltrexone: Fab 15.8 %, CL 39.3 mL/min/kg, V 1.46e+03 mL/kg, kabs 0.484 1/ min.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has naltrexone, the second reading naltrexone hydrochloride; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -75,14 +75,25 @@ Li H et al., [Pharmacokinetics of naltrexone hydroch…, Yao xue xue bao = Acta 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 | `gpt-oss:120b` | confirmed | 1.0 (6/6 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>5 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['naltrexone', 'naltrexone glucuronide', 'metabolism']] | [['naltrexone hydrochloride', 'naltrexone glucuronide', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[first-order absorption rate constant k a]` | 0.484 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma clearance cl p]` | 39.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution v]` | 1458.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | naltrexone | naltrexone hydrochloride | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

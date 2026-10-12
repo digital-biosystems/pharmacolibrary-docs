@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record identifies rimegepant as an inhibitor of CGRP-induced relaxation in human isolated middle meningeal arteries, likely via an Emax mechanism, but the effect form is noted as unknown. No specific mechanism or numerical potency/rate values are provided in the available excerpts or record.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Boucherie_2024`
 - **model family:** `emax`
 - **driver:** `cited_pk`

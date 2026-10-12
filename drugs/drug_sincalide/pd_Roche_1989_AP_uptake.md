@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Sincalide (as CCK-8, in nM) stimulates [14C]aminopyrine (AP) uptake by parietal cells, described by an Emax-type concentration–response model with an EC50 of 0.093 ± 0.065 nM; the excerpts do not state Emax, the effect form, or a mechanistic description beyond stimulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Roche_1989`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clenbuterol concentration-dependently inhibits the contractile response of rat detrusor muscle to 1 Hz electrical field stimulation, described by an Emax (inhibitory) model with an EC50 of 3.4x10(-6) M; the paper excerpts do not state the mechanism beyond this direct concentration-effect relation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hudman_2000`
 - **model family:** `emax`
 - **driver:** `not_resolved`

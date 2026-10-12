@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The methanol extract of Crataegus gracilior flowers stimulates vasorelaxation of isolated rat aortic rings (%), described by an Emax model with EC50 = 1.83 ± 1.39 µg/mL and Emax = 100 ± 3.4 %; the paper excerpts do not state the mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Torres-Ortiz_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

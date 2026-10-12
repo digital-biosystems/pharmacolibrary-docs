@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ketotifen concentration (μM) has a sigmoid Emax concentration–response relationship with percent cell protection (%); the paper does not specify a production or elimination mechanism. The record gives an EC50 &gt;138.6 μM, while the paper reports a ketotifen-alone EC50 of 48.9 μM in the yield-reduction assay.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kiani_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

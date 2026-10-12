@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Alpha-flupentixol inhibits dopamine-stimulated cAMP accumulation, with an antagonist potency (Kb) of approximately 400 nM; the paper excerpts do not state the model form or mechanism beyond this inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sugamori_1995`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

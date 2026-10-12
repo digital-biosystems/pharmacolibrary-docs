@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dibutyl phthalate (DBP) concentrations (μg L-1) inhibit microalgal growth; the paper excerpts do not state the mechanism or model form, only an EC50 of 41.88 μg L-1.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cunha_2019`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

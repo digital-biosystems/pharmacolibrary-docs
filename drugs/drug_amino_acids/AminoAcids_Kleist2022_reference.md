@@ -5,7 +5,7 @@
 
 # amino acids — `AminoAcids_Kleist2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.562). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.474), gpt-oss:120b (not confirmed, agreement 0.562). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The reference check returned ratio None, so it is an inconclusive check rather than a demonstrated fault in the model. A second reader disagreed on the covariate forms: this record lists none for the clearance equation CL = θ1 × (IBW/75)^θ7 and lists linear_fractional for the peripheral volume V3 = θ3 × (IBW/75)^θ9, while the second reader lists linear_fractional for clearance and none for V3. Several parameters (θ2 = 69.5, VD = 0.092 ml g−1, and the covariate effects theta_q64_age_power and theta_v3_body_weight) were read by only one reader, with the second reader recording no value. Extracted — homoarginine: V 0.092 ml g−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[clearance, cl = θ1 × (ibw/75)^θ7 [l/h]].covariate_forms`: this record has none, the second reading ['linear_fractional']; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clearance, cl = θ1 × (ibw/75)^θ7 [l/h]].covariate_forms`: this record has none, the second reading ['linear_fractional']; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -113,17 +113,28 @@ Kleist CJ et al., Population kinetics of homoarginine and…, Amino acids (2022)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.474 (9/19 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.562 (9/16 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clearance, cl = θ1 × (ibw/75)^θ7 [l/h]].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution, v3 = θ3 × (ibw/75)^θ9 [l]].parameter_id` | Q77 | Q64 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_body_weight]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q63_age_power]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q64_age_power]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q77_body_weight]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v2_age]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v3_body_weight]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 0.092 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ2]` | 69.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance, cl = θ1 × (ibw/75)^θ7 [l/h]].covariate_forms` | [] | ['linear_fractional'] | mismatch |
 | `gpt-oss:120b` | `parameters[peripheral volume of distribution, v3 = θ3 × (ibw/75)^θ9 [l]].covariate_forms` | ['linear_fractional'] | [] | mismatch |
 | `gpt-oss:120b` | `parameters[theta_cl_body_weight]` | not captured | not captured | only_one_extracted |

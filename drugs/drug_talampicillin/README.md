@@ -28,8 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Al-Egaily_1978_recurrence](drugs/drug_talampicillin/pd_Al_Egaily_1978_recurrence.md) | recurrence ← talampicillin · model not identified | — | Al-Egaily S et al., Talampicillin and probenecid compared w…, The British journal of vene… (1978) | [10.1136/sti.54.4.243](https://doi.org/10.1136/sti.54.4.243) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Mohanty_1982_Success_rate](drugs/drug_talampicillin/pd_Mohanty_1982_Success_rate.md) | Success rate · model not identified | — | Mohanty KC et al., Treatment of uncomplicated gonorrhoea i…, The British journal of vene… (1982) | [10.1136/sti.58.3.180](https://doi.org/10.1136/sti.58.3.180) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Al-Egaily_1978_recurrence](drugs/drug_talampicillin/pd_Al_Egaily_1978_recurrence.md) | recurrence ← talampicillin · model not identified | — | Al-Egaily S et al., Talampicillin and probenecid compared w…, The British journal of vene… (1978) | [10.1136/sti.54.4.243](https://doi.org/10.1136/sti.54.4.243) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | [Mohanty_1982_Success_rate](drugs/drug_talampicillin/pd_Mohanty_1982_Success_rate.md) | Success rate · model not identified | — | Mohanty KC et al., Treatment of uncomplicated gonorrhoea i…, The British journal of vene… (1982) | [10.1136/sti.58.3.180](https://doi.org/10.1136/sti.58.3.180) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

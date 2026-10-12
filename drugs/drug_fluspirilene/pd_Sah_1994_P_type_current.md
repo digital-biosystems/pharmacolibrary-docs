@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Fluspirilene concentration (microM) inhibits P-type Ca2+ channel current (%) via a direct Emax (inhibitory) model; the paper reports an EC50 of 6 microM, but no full text is available so Imax/Emax, Hill coefficient and mechanism beyond concentration–response inhibition are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sah_1994`
 - **model family:** `emax`
 - **driver:** `not_resolved`

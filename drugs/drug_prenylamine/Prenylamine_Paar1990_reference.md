@@ -4,7 +4,7 @@
 
 # prenylamine — `Prenylamine_Paar1990_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818), gpt-oss:120b (not confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -67,17 +67,20 @@ Paar WD et al., Pharmacokinetics of prenylamine racemat…, Arzneimittel-Forschu
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.818 (9/11 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.909 (10/11 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc of (+)-enantiomer]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc of the (+)-enantiomer]` | 20 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc of the (+)-enantiomer].parameter_id` | Q88 | Q21 | mismatch |
 
 </details>

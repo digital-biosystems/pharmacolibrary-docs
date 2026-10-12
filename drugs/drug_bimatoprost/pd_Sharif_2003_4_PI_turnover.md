@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Bimatoprost acid stimulates the continuous response [(3)H]-IPs (PI turnover) via a sigmoidal Emax model. The estimated EC50 is 112 nM, while no specific values for Imax, Emax, or rate constants (kin, kout, ke0) are provided in the available record or excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sharif_2003_4`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

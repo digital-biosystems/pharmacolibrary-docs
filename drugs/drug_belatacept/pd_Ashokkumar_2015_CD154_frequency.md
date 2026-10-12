@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Belatacept concentration (μg/ml) was linked to the inhibition of CD154+ cell frequency (%) in T-cell subsets using a sigmoid Emax model to calculate an EC50. The paper reports a median EC50 of 26 μg/ml for the Tc subset, but does not specify the underlying mechanism beyond the general description that belatacept blocks CD28-mediated T-cell costimulation.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ashokkumar_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -5,7 +5,7 @@
 
 # rutoside — `Rutoside_Domnguez2021_rutin`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.129). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,8 +22,6 @@
 **The rutoside (rutin) record was rejected because the relative bioavailability parameter Frel is reported with the unit mg/kg, a dimension mismatch for a dimensionless fraction, and its unit could not be converted to SI.**
 
 In the Domínguez_2021 rat model, Frel is defined as relative bioavailability — a fraction reaching systemic circulation — but is recorded with the verbatim unit mg/kg, so the dimension check on this structural parameter failed and no SI value could be produced. The remaining reported parameters (AUC∞ 14853.11 ng*h/mL, Vss 0.11 L/kg, CL 0.10 L/h/kg, kel 1.08 h−1, t1/2z 0.66 h, MRT 1.08 h, V 0.096 L/kg, Cmax 462.78 ng/mL, tmax 6 h, V/F 86.08 L/kg, CL/F 18.36 L/h/kg) carry consistent units, but the record could not be published while Frel's unit remained unconvertible. Extracted — rutin (i.v. model); quercetin representing Q3OG/Q3OS (oral model): AUC∞ 1.49e+04 ng*h/mL, Vss 0.11 L/kg, CL 0.1 L/h/kg, kel 1.08 h−1, t1/2z 0.66 h, MRT 1.08 h, V 0.096 L/kg, AUC/dose 1.02e+04 h/L, … (+5).
-
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rutin, the second reading unknown; it also differs on 26 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -131,53 +129,6 @@ Domínguez Moré GP et al., Matrix Effects of the Hydroethanolic Ex…, Pharmace
 - LLM selected parameter table(s) 2, 3, 4, 5
 
 ## Validation
-
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.129 (4/31 fields) | 27 |
-
-<details><summary>27 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[1.45]` | not captured | 2.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc/dose× 10-3]` | 10243.52 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc/dose× 10-3]` | not captured | 10243.52 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc0-inf]` | 14853.11 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc0-inf]` | not captured | 14853.11 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f]` | 18.36 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f]` | not captured | 18.36 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` | 0.10 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` | not captured | 0.10 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax]` | 462.78 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax]` | not captured | 462.78 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k]` | 1.08 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k]` | not captured | 1.08 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mrt]` | 1.08 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mrt]` | not captured | 1.08 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2]` | 0.66 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/2]` | not captured | 0.66 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax]` | 6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax]` | not captured | 6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vdss]` | 0.11 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vdss]` | not captured | 0.11 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vdz/f]` | 86.08 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vdz/f]` | not captured | 86.08 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vdz]` | 0.096 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vdz]` | not captured | 0.096 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | rutin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | rutin | unknown | mismatch |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check legend</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
-</details>
-
 
 **Scholar closed-form checks:**
 

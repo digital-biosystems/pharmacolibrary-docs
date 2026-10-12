@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methohexital inhibits the low-voltage-activated (LVA) Ca2+ current through a sigmoidal Emax mechanism with an EC50 of 502 µM and a Hill coefficient of 1.3. The paper does not provide the full mechanism details or rate constants as no full text is available.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Todorovic_1998`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

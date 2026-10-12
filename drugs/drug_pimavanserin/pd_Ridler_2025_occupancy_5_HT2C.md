@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pimavanserin plasma concentrations (ng/ml) drive 5-HT2C receptor occupancy in the choroid plexus measured by [11C]CIMBI-36 binding displacement, described by a sigmoid Emax (inhibitory) model; the paper reports an EC50 of 6.0 ng/ml but the excerpts do not state Emax, gamma, or the mechanism beyond receptor occupancy.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ridler_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

@@ -5,7 +5,7 @@
 
 # magnesium (different salts in combination) — `MagnesiumDifferentSaltsInCombination_Brookfield2021_referenc`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571), gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -68,17 +68,21 @@ Brookfield K et al., Magnesium sulfate pharmacokinetics afte…, AJOG global rep
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | 0.86 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absolute bioavailability]` | 0.86 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 0.32 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absolute bioavailability]` | 0.86 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absolute bioavailability]` | not captured | 0.86 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption rate constant]` | 0.32 | not captured | only_one_extracted |

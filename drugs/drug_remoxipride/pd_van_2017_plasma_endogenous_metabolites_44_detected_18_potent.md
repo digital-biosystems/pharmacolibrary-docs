@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates remoxipride dose to changes in plasma endogenous metabolites (44 detected, 18 potential biomarkers), with an inhibitory direction, but the available excerpts provide no model structure, mechanism, or parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2017`
 - **model family:** `unknown`
 - **driver:** `dose_only`

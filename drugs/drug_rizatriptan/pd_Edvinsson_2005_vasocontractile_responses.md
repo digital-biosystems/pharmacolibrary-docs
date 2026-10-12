@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> No mechanism, potency, or rate values are provided because the full text of the paper is unavailable. The record indicates rizatriptan stimulates vasocontractile responses in an Emax model, but no numerical parameters are stated.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Edvinsson_2005`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

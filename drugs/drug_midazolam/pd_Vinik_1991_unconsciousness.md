@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Midazolam dose (mg/kg) acts on loss of consciousness (failure to open eyes on command, % of patients) via a probit dose-response curve; midazolam alone had an ED50 of 0.22 mg/kg, alfentanil alone 0.13 mg/kg, and with fixed midazolam 0.07 mg/kg the alfentanil ED50 fell to 0.028 mg/kg, with fractional ED50 sums of 0.54 indicating a synergistic (supra-additive) interaction; no concentration-driven PD mechanism (e.g. Emax, kin/kout) is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vinik_1991`
 - **model family:** `unknown`
 - **driver:** `dose_only`

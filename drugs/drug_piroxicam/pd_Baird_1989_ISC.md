@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a full text or specific mechanistic details, so the underlying mechanism by which piroxicam concentrations inhibit the short circuit current (bradykinin response) is not described. No potency or rate parameters (e.g., IC50, ke0, kout) are stated in the available record or excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baird_1989`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

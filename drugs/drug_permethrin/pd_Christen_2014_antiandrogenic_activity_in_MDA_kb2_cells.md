@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Permethrin concentrations inhibit antiandrogenic activity measured in MDA-kb2 cells, described by a sigmoid Emax model with an inhibitory effect direction; the paper excerpts provide no mechanism details and no parameter values (Imax, IC50, Emax, gamma) are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Christen_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

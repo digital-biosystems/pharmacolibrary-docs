@@ -26,21 +26,21 @@ Pibrentasvir is an antiviral drug used to treat hepatitis C virus infections. It
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:24 | 2:23 | 1/0/0 | 3/0/0 | 0/0/0 | 171,460/6,476 | ollama / glm-5.3-flash | 4 | 1/3 | 4/0 | 0 |
+| 2026-10-07 16:24 | 2:23 | 0/0/1 | 3/0/0 | 0/0/0 | 171,460/6,476 | ollama / glm-5.3-flash | 4 | 1/3 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Thakre_2026_reference](drugs/drug_pibrentasvir/Pibrentasvir_Thakre2026_reference.md) | held back | 1-compartment, oral | 7 (+2 cov.) | Thakre N et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01637-1](https://doi.org/10.1007/s40262-026-01637-1) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Thakre_2026_reference](drugs/drug_pibrentasvir/Pibrentasvir_Thakre2026_reference.md) | held back | 1-compartment, oral | 7 (+2 cov.) | Thakre N et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01637-1](https://doi.org/10.1007/s40262-026-01637-1) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ng_2017_HCV_replication](drugs/drug_pibrentasvir/pd_Ng_2017_HCV_replication.md) | HCV replication in replicon cells (luciferase reporter activity) ← pibrentasvir · direct sigmoid Emax (Hill) effect | — | Ng TI et al., Antimicrobial agents and ch… (2017) | [10.1128/AAC.02558-16](https://doi.org/10.1128/AAC.02558-16) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Nguyen_2020_RLU](drugs/drug_pibrentasvir/pd_Nguyen_2020_RLU.md) | HCV replicon replication (luciferase activity) ← pibrentasvir · direct sigmoid Emax (Hill) effect | — | Nguyen D et al., Efficacy of NS5A inhibitors against unu…, Journal of hepatology (2020) | [10.1016/j.jhep.2020.05.029](https://doi.org/10.1016/j.jhep.2020.05.029) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Schnell_2018_EC50](drugs/drug_pibrentasvir/pd_Schnell_2018_EC50.md) | HCV replicon replication (luciferase reporter) inhibition by pibrentasvir in transient replicon assay ← pibrentasvir · direct sigmoid Emax (Hill) effect | — | Schnell G et al., Hepatitis C virus genetic diversity by…, PloS one (2018) | [10.1371/journal.pone.0205186](https://doi.org/10.1371/journal.pone.0205186) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ng_2017_HCV_replication](drugs/drug_pibrentasvir/pd_Ng_2017_HCV_replication.md) | HCV replication in replicon cells (luciferase reporter activity) ← pibrentasvir · direct sigmoid Emax (Hill) effect | — | Ng TI et al., Antimicrobial agents and ch… (2017) | [10.1128/AAC.02558-16](https://doi.org/10.1128/AAC.02558-16) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Nguyen_2020_RLU](drugs/drug_pibrentasvir/pd_Nguyen_2020_RLU.md) | HCV replicon replication (luciferase activity) ← pibrentasvir · direct sigmoid Emax (Hill) effect | — | Nguyen D et al., Efficacy of NS5A inhibitors against unu…, Journal of hepatology (2020) | [10.1016/j.jhep.2020.05.029](https://doi.org/10.1016/j.jhep.2020.05.029) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Schnell_2018_EC50](drugs/drug_pibrentasvir/pd_Schnell_2018_EC50.md) | HCV replicon replication (luciferase reporter) inhibition by pibrentasvir in transient replicon assay ← pibrentasvir · direct sigmoid Emax (Hill) effect | — | Schnell G et al., Hepatitis C virus genetic diversity by…, PloS one (2018) | [10.1371/journal.pone.0205186](https://doi.org/10.1371/journal.pone.0205186) |
 
 ## ADME sites
 
@@ -69,7 +69,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

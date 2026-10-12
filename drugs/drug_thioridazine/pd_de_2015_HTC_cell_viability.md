@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Thioridazine concentrations (μM) inhibit HTC cell viability (%), but the paper excerpts provide no model details, so the mechanism (e.g., Emax or turnover inhibition) and potency/rate parameters are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `de_2015`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

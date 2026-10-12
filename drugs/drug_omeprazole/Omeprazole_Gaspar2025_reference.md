@@ -5,7 +5,7 @@
 
 # omeprazole — `Omeprazole_Gaspar2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727), gpt-oss:120b (partly confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The paper reports CL/F 114.64 L/h, V1/F 14.9 L, V2/F 145.7 L and Q/F 52.02 L/h for omeprazole, but ka (and Tlag) are not reported and were defaulted, and the builder assumed F=1, Fm=1 with no molar correction under an apparent (/F) parameterization with first-order depot input. A second reader also disagreed on several extracted values, e.g. reading 77.2 and 0.282 where this record had null, and null where this record had 126.81 and 0.282. The deviations check could not adjudicate these substitutions, so the record is inconclusive pending review. Extracted — omeprazole: CL/F 115 L/h, V1/F 14.9 L, V2/F 146 L, Q/F 52 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 126.81, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has none, the second reading 77.2; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -66,17 +66,21 @@ Gaspar F et al., Improving Understanding of Fexofenadine…, Clinical pharmacoki
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.727 (8/11 fields) | 3 |
 | `gpt-oss:120b` | partly confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | not captured | 77.2 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q49]` | not captured | 0.282 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q68]` | 0.282 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q19]` | 126.81 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q22]` | not captured | 77.2 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q49]` | not captured | 0.282 | only_one_extracted |
@@ -141,7 +145,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_omeprazole/Omeprazole_Gaspar2025_reference/Omeprazole_Gaspar2025_reference_modelica.zip" download>Omeprazole_Gaspar2025_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_omeprazole/Omeprazole_Gaspar2025_reference/Omeprazole_Gaspar2025_reference_fmi.zip" download>Omeprazole_Gaspar2025_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Gaspar2025_reference/Omeprazole_Gaspar2025_reference_matlab.zip" download>Omeprazole_Gaspar2025_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Gaspar2025_reference/Omeprazole_Gaspar2025_reference_matlab_simbio.zip" download>Omeprazole_Gaspar2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Gaspar2025_reference/Omeprazole_Gaspar2025_reference_matlab_simbio.zip" download>Omeprazole_Gaspar2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Gaspar2025_reference/Omeprazole_Gaspar2025_reference_sbml.zip" download>Omeprazole_Gaspar2025_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Gaspar2025_reference/Omeprazole_Gaspar2025_reference_cellml.zip" download>Omeprazole_Gaspar2025_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>

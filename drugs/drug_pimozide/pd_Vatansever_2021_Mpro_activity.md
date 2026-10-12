@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pimozide directly inhibits SARS-CoV-2 main protease (Mpro) activity in a concentration-dependent manner, with an IC50 of 42 ± 2 µM and a Hill slope of 3.1 ± 0.4; the paper does not describe a kinetic mechanism (e.g., kin/kout or effect compartment) beyond direct enzyme inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vatansever_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

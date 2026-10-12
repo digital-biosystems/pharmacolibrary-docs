@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record specifies that proglumetacin dose inhibits the dosage of concomitant basic medication, but the paper excerpts are not available. Consequently, the specific mechanism and key potency or rate parameters (such as IC50, Emax, or ke0) are not provided in the source material.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bozsoky_1982`
 - **model family:** `unknown`
 - **driver:** `dose_only`

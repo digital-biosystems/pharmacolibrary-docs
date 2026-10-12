@@ -4,7 +4,7 @@
 
 # mercaptopurine — `Mercaptopurine_Jost2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.059), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record is an exposure/outcome paper for children with acute lymphoblastic leukemia, measuring absolute neutrophil count, with only ktr (7.19), slope (67.8), γ (16.5) and an additive error (0.226) reported; no volume or clearance/elimination parameters exist, so it is not a compartmental population PK model. The structure check also found an unreachable compartment or unlinked metabolite: the metabolism links from 6-mercaptopurine to 6-thioguanine nucleotides and from methotrexate to methotrexate polyglutamates 2 to 7 have no path from the dose. A second reader disagreed on the dose compound, primary analyte, the links, and the parameter identities for ktr and γ, but these disagreements do not change the missing PK parameters. Extracted — mercaptopurine: ktr 7.19, slope 67.8, t1/2γ 16.5, add_error 0.226.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has 6-mercaptopurine and methotrexate, the second reading 6MP, MTX; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has 6-mercaptopurine and methotrexate, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -70,17 +70,34 @@ Jost F et al., Model-Based Simulation of Maintenance T…, Frontiers in physiolo
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.059 (1/17 fields) | 16 |
 | `gpt-oss:120b` | not confirmed | 0.5 (5/10 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | not captured | 0.22 | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['6-mercaptopurine', '6-thioguanine nucleotides', 'metabolism'], ['methotrexate', 'methotrexate polyglutamates 2 to 7', 'metabolism']] | [['6-mercaptopurine', '6-thioguanine nucleotides', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[f]` | not captured | 0.22 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fm3]` | not captured | 0.019 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k tr]` | 7.19 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k20]` | not captured | 12.72 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 31.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kma]` | not captured | 2.3765 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kme]` | not captured | 9.9216 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[proportional additive error]` | 0.226 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[slope]` | 67.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[x6tgn]` | not captured | 0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[xpr]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[γ]` | 16.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | 6-mercaptopurine and methotrexate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | absolute neutrophil count | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [['6-mercaptopurine', '6-thioguanine nucleotides', 'metabolism'], ['methotrexate', 'methotrexate polyglutamates 2 to 7', 'metabolism']] | [['6mp', '6-tgn', 'metabolism'], ['mtx', 'mtxpg2-7', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[k tr].parameter_id` | Q338 | Q306 | mismatch |
 | `gpt-oss:120b` | `parameters[γ].parameter_id` | Q89 | Q343 | mismatch |

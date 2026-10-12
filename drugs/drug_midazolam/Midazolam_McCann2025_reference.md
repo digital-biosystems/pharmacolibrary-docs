@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_McCann2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,8 +20,6 @@
 **The midazolam 2-compartment model was held back because bioavailability F was left at a library default rather than an estimate from McCann_2025.**
 
 The record reports midazolam parameters CL 14.68 L/h/70 kg, V1 7.09 L/70 kg, Q 44.71 L/h/70 kg, V2 34.07 L/h/70 kg, kabs 0.14 1/h and tlag 0.08 h, but F (bioavailability) has no extracted value and a placeholder default would be used. F affects the simulated concentration profile yet is not supported by the paper, so the record was marked needs_review with the deviation 'defaulted_parameters: not acceptable'. Extracted — midazolam: CL 14.7 L/h/70 kg, V1 7.09 L/70 kg, Q 44.7 L/h/70 kg, V2 34.1 L/70 kg, kabs 0.14 1/h, tlag 0.08 h.
-
-Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -73,21 +71,6 @@ McCann S et al., Physiologically Based and Population Ph…, Clinical and transl
 - LLM selected parameter table(s) 2
 
 ## Validation
-
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
-
-_Every reader agrees on every compared field of this record._
-
-<details class="legend">
-<summary>Cross-check legend</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
-</details>
-
 
 **Scholar closed-form checks:**
 
@@ -141,7 +124,7 @@ _Every reader agrees on every compared field of this record._
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_midazolam/Midazolam_McCann2025_reference/Midazolam_McCann2025_reference_modelica.zip" download>Midazolam_McCann2025_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_midazolam/Midazolam_McCann2025_reference/Midazolam_McCann2025_reference_fmi.zip" download>Midazolam_McCann2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_midazolam/Midazolam_McCann2025_reference/Midazolam_McCann2025_reference_matlab.zip" download>Midazolam_McCann2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_midazolam/Midazolam_McCann2025_reference/Midazolam_McCann2025_reference_matlab_simbio.zip" download>Midazolam_McCann2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_midazolam/Midazolam_McCann2025_reference/Midazolam_McCann2025_reference_matlab_simbio.zip" download>Midazolam_McCann2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_McCann2025_reference/Midazolam_McCann2025_reference_sbml.zip" download>Midazolam_McCann2025_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_McCann2025_reference/Midazolam_McCann2025_reference_cellml.zip" download>Midazolam_McCann2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

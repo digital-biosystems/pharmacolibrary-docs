@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Polmacoxib plasma concentrations inhibit the WOMAC response via an effect compartment model, with a reported Ke0 of 0.408 min⁻¹. The paper excerpt lists a 50% maximum effect concentration of 508 ng/mL, though the specific parameter label (e.g., EC50 or IC50) is not fully distinguished in the provided record.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cho_2022`
 - **model family:** `effect_compartment`
 - **driver:** `conc_no_pk`

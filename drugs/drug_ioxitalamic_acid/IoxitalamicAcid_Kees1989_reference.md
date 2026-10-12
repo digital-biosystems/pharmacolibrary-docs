@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — ioxitalamic acid: CL 441 ml/min, V 35.3 l.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kees F et al., Pharmacokinetics of ciprofloxacin in el…, Arzneimittel-Forschung (1989)

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cocaine concentrations drive a direct, sigmoidal stimulation of the change in dopamine concentration in the nucleus accumbens (measured as % of baseline). The model estimates a maximum effect (Emax) of 1550 % of baseline at a half-maximal effective concentration (EC50) of 2000 ng/mL, though the paper does not specify additional mechanistic details or rate parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pan_1999`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

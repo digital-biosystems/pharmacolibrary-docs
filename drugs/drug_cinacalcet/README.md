@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H05B&quot;,&quot;href&quot;:&quot;atc/H05B.md&quot;},{&quot;label&quot;:&quot;cinacalcet&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cinacalcet_SchappacherTilp2019_reference&quot;,&quot;label&quot;:&quot;Schappacher-Tilp_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cinacalcet/Cinacalcet_SchappacherTilp2019_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cinacalcet_SchappacherTilp2019_reference&quot;,&quot;label&quot;:&quot;Schappacher-Tilp_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cinacalcet/Cinacalcet_SchappacherTilp2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # cinacalcet
 
@@ -27,24 +27,24 @@ Cinacalcet is a calcimimetic anti-parathyroid medicine used to treat hyperparath
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 10:23 | 5:01 | 1/1/0 | 1/1/1 | 0/0/0 | 260,699/15,892 | einfracz / qwen3.8-27b | 9 | 2/7 | 9/0 | 0 |
+| 2026-10-07 10:23 | 5:01 | 0/1/1 | 1/1/1 | 0/0/0 | 260,699/15,892 | einfracz / qwen3.8-27b | 9 | 2/7 | 9/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Schappacher-Tilp_2019_reference](drugs/drug_cinacalcet/Cinacalcet_SchappacherTilp2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Schappacher-Tilp G et al., A Multi-Compartment Model Capturing the…, Cellular physiology and bio… (2019) | [10.33594/000000148](https://doi.org/10.33594/000000148) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Chen_2019_reference](drugs/drug_cinacalcet/Cinacalcet_Chen2019_reference.md) | — | 1-compartment (no model) | 6 | Chen P et al., Bridging adults and paediatrics with se…, British journal of clinical… (2019) | [10.1111/bcp.13900](https://doi.org/10.1111/bcp.13900) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Schappacher-Tilp_2019_reference](drugs/drug_cinacalcet/Cinacalcet_SchappacherTilp2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Schappacher-Tilp G et al., A Multi-Compartment Model Capturing the…, Cellular physiology and bio… (2019) | [10.33594/000000148](https://doi.org/10.33594/000000148) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.938). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Chen_2019_reference](drugs/drug_cinacalcet/Cinacalcet_Chen2019_reference.md) | — | 1-compartment (no model) | 6 | Chen P et al., Bridging adults and paediatrics with se…, British journal of clinical… (2019) | [10.1111/bcp.13900](https://doi.org/10.1111/bcp.13900) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2025_CA](drugs/drug_cinacalcet/pd_Wang_2025_CA.md) | serum calcium ← cinacalcet · inhibition effect | — | Wang Z et al., Pharmacodynamic Modeling of Cinacalcet…, Journal of the Endocrine So… (2025) | [10.1210/jendso/bvaf021](https://doi.org/10.1210/jendso/bvaf021) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2025_P](drugs/drug_cinacalcet/pd_Wang_2025_P.md) | serum phosphorus ← cinacalcet · inhibition effect | — | Wang Z et al., Pharmacodynamic Modeling of Cinacalcet…, Journal of the Endocrine So… (2025) | [10.1210/jendso/bvaf021](https://doi.org/10.1210/jendso/bvaf021) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2025_PTH](drugs/drug_cinacalcet/pd_Wang_2025_PTH.md) | serum parathyroid hormone ← cinacalcet · inhibition effect | — | Wang Z et al., Pharmacodynamic Modeling of Cinacalcet…, Journal of the Endocrine So… (2025) | [10.1210/jendso/bvaf021](https://doi.org/10.1210/jendso/bvaf021) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Serra_2008_PTH](drugs/drug_cinacalcet/pd_Serra_2008_PTH.md) | parathyroid hormone ← cinacalcet · direct Emax (saturable) effect | model (no simulator) | Serra AL et al., Pharmacokinetics and pharmacodynamics o…, American journal of transpl… (2008) | [10.1111/j.1600-6143.2007.02136.x](https://doi.org/10.1111/j.1600-6143.2007.02136.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Chen_2019_iPTH](drugs/drug_cinacalcet/pd_Chen_2019_iPTH.md) | intact parathyroid hormone (iPTH) ← cinacalcet · indirect response — drug inhibits the production of intact parathyroid hormone (iPTH) | model (no simulator) | Chen P et al., Bridging adults and paediatrics with se…, British journal of clinical… (2019) | [10.1111/bcp.13900](https://doi.org/10.1111/bcp.13900) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Wang_2025_CA](drugs/drug_cinacalcet/pd_Wang_2025_CA.md) | serum calcium ← cinacalcet · inhibition effect | — | Wang Z et al., Pharmacodynamic Modeling of Cinacalcet…, Journal of the Endocrine So… (2025) | [10.1210/jendso/bvaf021](https://doi.org/10.1210/jendso/bvaf021) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Wang_2025_P](drugs/drug_cinacalcet/pd_Wang_2025_P.md) | serum phosphorus ← cinacalcet · inhibition effect | — | Wang Z et al., Pharmacodynamic Modeling of Cinacalcet…, Journal of the Endocrine So… (2025) | [10.1210/jendso/bvaf021](https://doi.org/10.1210/jendso/bvaf021) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Wang_2025_PTH](drugs/drug_cinacalcet/pd_Wang_2025_PTH.md) | serum parathyroid hormone ← cinacalcet · inhibition effect | — | Wang Z et al., Pharmacodynamic Modeling of Cinacalcet…, Journal of the Endocrine So… (2025) | [10.1210/jendso/bvaf021](https://doi.org/10.1210/jendso/bvaf021) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> | [Serra_2008_PTH](drugs/drug_cinacalcet/pd_Serra_2008_PTH.md) | parathyroid hormone ← cinacalcet · direct Emax (saturable) effect | model (no simulator) | Serra AL et al., Pharmacokinetics and pharmacodynamics o…, American journal of transpl… (2008) | [10.1111/j.1600-6143.2007.02136.x](https://doi.org/10.1111/j.1600-6143.2007.02136.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Chen_2019_iPTH](drugs/drug_cinacalcet/pd_Chen_2019_iPTH.md) | intact parathyroid hormone (iPTH) ← cinacalcet · indirect response — drug inhibits the production of intact parathyroid hormone (iPTH) | model (no simulator) | Chen P et al., Bridging adults and paediatrics with se…, British journal of clinical… (2019) | [10.1111/bcp.13900](https://doi.org/10.1111/bcp.13900) |
 
 ## ADME sites
 
@@ -71,7 +71,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 20 matched, 19 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

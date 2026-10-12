@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Permethrin inhibits mitochondrial 45Ca2+ uptake (measured in microM) in a concentration-dependent manner, with an IC50 of 4.2 microM; the paper excerpts do not state the model form or mechanism beyond inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kodavanti_1993`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

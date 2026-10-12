@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> [3H]quinupramine concentration (nM) drives specific binding to rat brain membrane fractions (fmol/mg protein), described by a sigmoid Emax model with affinity (Kd) 3.04 nM, maximal binding site number 714 fmol/mg protein, and Hill coefficient 1.08; the paper excerpts do not state a mechanism beyond direct binding.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sakamoto_1987`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record identifies esketamine as the drug driving stimulation of HFO power, but no full text is available to describe the specific mechanism, effect compartment, or mathematical form. Consequently, key potency and rate parameters such as Imax, EC50, or ke0 are not stated in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Flores_2015`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

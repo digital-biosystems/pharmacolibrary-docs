@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Thioridazine concentrations (mg/liter) drive intracellular MAC killing measured as log10 CFU/ml via an inhibitory sigmoid Emax relationship; the drug kills mycobacteria by inhibiting the electron transport chain. Against intracellular bacilli in 12-well plates the Emax was 3.2 log10 CFU/ml with an EC50 of 10.53 mg/liter (r2 = 0.999), and in the HFS-MAC on day 14 the inhibitory sigmoid Emax model (driven by Cmax/MIC) gave Econ of 6.96 ± 0.17 log10 CFU/ml, Emax of 7.19 ± 0.30 log10 CFU/ml, Hill coefficient H of 2.75 ± 0.33, and EC50 of a Cmax/MIC of 0.53 ± 0.022 (r2 = 0.996); no turnover (kin/kout) or effect-compartment parameters were reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Deshpande_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

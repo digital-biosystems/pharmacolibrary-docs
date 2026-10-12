@@ -5,7 +5,7 @@
 
 # exenatide — `Exenatide_Cirincione2017v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.815). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889), gpt-oss:120b (not confirmed, agreement 0.815). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The source reports only CL/F (9.1 l/h) and V (7.04 l) for exenatide; no absorption rate constant or lag time was extracted, so library placeholder values were used in their place, and the invented ka was flagged as not acceptable. The model was built with an apparent parameterization assuming F=1 and Fm=1 without molar correction, using first-order depot input for extravascular dosing. A second reader also disagreed on several extracted values, e.g. reading 1.35 and 96 where this record had none, and 100 where this record had 1. Extracted — exenatide: CL/F 9.1 l h−1, V 7.04 l.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has exenatide, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of vc=vc_int⋅weight84.8vc_wtkg: this record has none, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -99,17 +99,21 @@ Cirincione B et al., Population pharmacokinetics of exenatide, British journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.889 (24/27 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.815 (22/27 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[vc=vc_int⋅weight84.8vc_wtkg]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc_int].parameter_id` | Q61 | Q63 | mismatch |
+| `gpt-oss-120b` | `parameters[vc_wtkg]` | not captured | 2.67 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vc=vc_int⋅weight84.8vc_wtkg]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vc_int].parameter_id` | Q61 | Q63 | mismatch |

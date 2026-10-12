@@ -4,7 +4,7 @@
 
 # fleroxacin — `Fleroxacin_Jiao2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Fleroxacin lacks distribution volume and elimination clearance, while metabolites have zero compartments, preventing a valid compartmental population PK model.**
+
+The record is abstract-only, so no distribution volume or clearance/elimination values exist to define the parent drug's compartmental kinetics. The metabolites N-oxide fleroxacin and N-demethylfleroxacin have n_cmt set to 0, making them unreachable or orphan structures despite having formation clearances of 0.378 L/h and 0.353 L/h. Extracted — N-oxide fleroxacin: CLfm 0.378 L/h; N-demethylfleroxacin: CLfm 0.353 L/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fleroxacin, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Jiao Y et al., First population pharmacokinetic analys…, European journal of pharmac… (2018)
@@ -62,6 +70,35 @@ Jiao Y et al., First population pharmacokinetic analys…, European journal of p
 - no GROBID TEI available — transcribed from abstract in Jiao_2018_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['fleroxacin', 'n-oxide fleroxacin', 'metabolism'], ['fleroxacin', 'n-demethylfleroxacin', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[formation clearance of n‐oxide fleroxacin]` | not captured | 0.52 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[formation clearances of n‐demethylfleroxacin in healthy volunteers]` | 0.353 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[formation clearances of n‐oxide fleroxacin in healthy volunteers]` | 0.378 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[linear nonrenal clearance]` | not captured | 1.01 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance]` | not captured | 1.12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[saturable exsorption clearance into intestine]` | not captured | 0.83 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 0.81 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | fleroxacin | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

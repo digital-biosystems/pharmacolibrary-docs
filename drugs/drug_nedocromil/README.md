@@ -33,7 +33,7 @@ Nedocromil is an anti-allergic, anti-inflammatory drug used for allergic conditi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Neale_1987_reference](drugs/drug_nedocromil/Nedocromil_Neale1987_reference.md) | — | 1-compartment (no model) | 2 | Neale MG et al., The pharmacokinetics of nedocromil sodi…, British journal of clinical… (1987) | [10.1111/j.1365-2125.1987.tb03203.x](https://doi.org/10.1111/j.1365-2125.1987.tb03203.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Neale_1987_reference](drugs/drug_nedocromil/Nedocromil_Neale1987_reference.md) | — | 1-compartment (no model) | 2 | Neale MG et al., The pharmacokinetics of nedocromil sodi…, British journal of clinical… (1987) | [10.1111/j.1365-2125.1987.tb03203.x](https://doi.org/10.1111/j.1365-2125.1987.tb03203.x) |
 
 ## ADME sites
 

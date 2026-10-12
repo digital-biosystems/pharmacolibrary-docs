@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;Piperaquine&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/&quot;},{&quot;label&quot;:&quot;Ding_2024 \u00b7 nonmem_population_estimates_rse_a&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Piperaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Chotsiri2021_population_estimatec&quot;,&quot;label&quot;:&quot;Chotsiri_2021_population_estimatec&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Chotsiri2021_population_estimatec.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Chotsiri2021_prior_estimateb&quot;,&quot;label&quot;:&quot;Chotsiri_2021_prior_estimateb&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Chotsiri2021_prior_estimateb.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Ding2024_nonmem_population_estimates_rse_a&quot;,&quot;label&quot;:&quot;Ding_2024_nonmem_population_estimates_rse_a&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Ding2024_nonmem_population_estimates_rse_a.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Piperaquine_Zaloumis2012_reference&quot;,&quot;label&quot;:&quot;Zaloumis_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Zaloumis2012_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Piperaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Chotsiri2021_population_estimatec&quot;,&quot;label&quot;:&quot;Chotsiri_2021_population_estimatec&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Chotsiri2021_population_estimatec.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Chotsiri2021_prior_estimateb&quot;,&quot;label&quot;:&quot;Chotsiri_2021_prior_estimateb&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Chotsiri2021_prior_estimateb.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Zaloumis2012_reference&quot;,&quot;label&quot;:&quot;Zaloumis_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Zaloumis2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piperaquine_Ding2024_nonmem_population_estimates_rse_a&quot;,&quot;label&quot;:&quot;Ding_2024_nonmem_population_estimates_rse_a&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_piperaquine/Piperaquine_Ding2024_nonmem_population_estimates_rse_a.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Piperaquine — `Piperaquine_Ding2024_nonmem_population_estimates_rse_a`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,22 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The piperaquine model was rejected because its simulated terminal half-life (42.036319922424354 h) is roughly ten times shorter than the paper's reported values (ratios 0.0749–0.1102), the output is the parent compartment rather than the measured analyte, the structure is a one-compartment enteral model instead of the paper's three-compartment parent–metabolite structure, and V2/F and ka were not extracted.**
+
+Simulated as the paper dosed it, the model's terminal half-life of 42.036319922424354 h differs from the paper's reported values by ratios of 0.0749 to 0.1102, far beyond tolerance. Parameter coverage found only 4 of 5 parameters emitted or defaulted, with V2/F (3880 L) missing, and ka was left at library defaults rather than estimated from this paper, which also affects the simulated profile. The model structure expected for a parent–metabolite system with three disposition compartments was instead built as a one-compartment enteral model, and the model output is the parent central compartment rather than the compartment of the measured piperaquine analyte. One reported unit could not be converted to SI, so that parameter reached the model builder without an SI value; the builder also defaulted Tlag and assumed F=1, Fm=1 with no molar correction. Extracted — piperaquine: Fab 100, MTT 2.11 h, n_transit 2, CL/F 69.9 L/h, V1/F 4.24e+03 L, Q/F 265 L/h, V2/F 3.88e+03 L, Q2/F 103 L/h, … (+1).
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has amodiaquine → desethylamodiaquine (metabolism), the second reading none; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Ding J et al., Population pharmacokinetics of amodiaqu…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13211](https://doi.org/10.1002/psp4.13211)
 
 ## Model component
-<dbs-pgx drug="Piperaquine" model-id="Piperaquine_Ding2024_nonmem_population_estimates_rse_a" status="extracted" stale="false" population="pregnant women with uncomplicated Plasmodium falciparum malaria" measured-compound="piperaquine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="Piperaquine" model-id="Piperaquine_Ding2024_nonmem_population_estimates_rse_a" status="rejected" stale="false" population="pregnant women with uncomplicated Plasmodium falciparum malaria" measured-compound="piperaquine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 9 extracted.
@@ -30,6 +38,8 @@ Ding J et al., Population pharmacokinetics of amodiaqu…, CPT: pharmacometrics 
 **Parameterization:** CL/F, Q/F, Q2/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | F (%) | `Q40` · Fab | 100 | not captured | not captured | not captured | not captured | exact (1.0) | psp413211-tbl-0003:row1:col1 | — | not captured |
@@ -97,6 +107,47 @@ Ding J et al., Population pharmacokinetics of amodiaqu…, CPT: pharmacometrics 
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.125 (3/24 fields) | 21 |
+
+<details><summary>21 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | not captured | 100 | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['amodiaquine', 'desethylamodiaquine', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[baseline parasite counts (log scale) were implemented on relative oral bioavailability]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 69.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 69.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose occasion on f]` | not captured | 23.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | 100 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | not captured | 100 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mtt]` | 2.11 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mtt]` | not captured | 2.11 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[number of transit compartments]` | 2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[number of transit compartments]` | not captured | 2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q1/f]` | 265 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q1/f]` | not captured | 265 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q2/f]` | 103 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f]` | 4240 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f]` | not captured | 4240 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp1/f]` | 3880 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp1/f]` | not captured | 3880 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp2/f]` | 22900 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp2/f]` | not captured | 22900 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -116,6 +167,22 @@ Ding J et al., Population pharmacokinetics of amodiaqu…, CPT: pharmacometrics 
 | C9_phys_window_Q290 | pass | volume within physiological range | 4.24e+03 L | not captured | not captured | ['psp413211-tbl-0003:row5:col1'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 3.88e+03 L | not captured | not captured | ['psp413211-tbl-0003:row7:col1'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=piperaquine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_t_half_terminal | reference | fail | 470.40000000000003 | 42.036319922424354 | 0.0894 | days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 561.5999999999999 | 42.036319922424354 | 0.0749 | days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 381.6 | 42.036319922424354 | 0.1102 | days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 420.0 | 42.036319922424354 | 0.1001 | days→SI vs simulated h |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -124,24 +191,16 @@ Ding J et al., Population pharmacokinetics of amodiaqu…, CPT: pharmacometrics 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_piperaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ding_2024` / `Ding_2024::nonmem_population_estimates_rse_a`)
+- model: `../../../knowledgebase/drugs/drug_piperaquine/models/modelica/Piperaquine_Ding2024_nonmem_population_estimates_rse_a.mo`
+- deviation: `../../../knowledgebase/drugs/drug_piperaquine/models/modelica/Piperaquine_Ding2024_nonmem_population_estimates_rse_a.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_piperaquine/models/modelica/Piperaquine_Ding2024_nonmem_population_estimates_rse_a.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_piperaquine/Piperaquine_Ding2024_nonmem_population_estimates_rse_a/Piperaquine_Ding2024_nonmem_population_estimates_rse_a_modelica.zip" download>Piperaquine_Ding2024_nonmem_population_estimates_rse_a_modelica.zip</a> <span class="pk-size">(5.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_piperaquine/Piperaquine_Ding2024_nonmem_population_estimates_rse_a/Piperaquine_Ding2024_nonmem_population_estimates_rse_a_fmi.zip" download>Piperaquine_Ding2024_nonmem_population_estimates_rse_a_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_piperaquine/Piperaquine_Ding2024_nonmem_population_estimates_rse_a/Piperaquine_Ding2024_nonmem_population_estimates_rse_a_matlab.zip" download>Piperaquine_Ding2024_nonmem_population_estimates_rse_a_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_piperaquine/Piperaquine_Ding2024_nonmem_population_estimates_rse_a/Piperaquine_Ding2024_nonmem_population_estimates_rse_a_matlab_simbio.zip" download>Piperaquine_Ding2024_nonmem_population_estimates_rse_a_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_piperaquine/Piperaquine_Ding2024_nonmem_population_estimates_rse_a/Piperaquine_Ding2024_nonmem_population_estimates_rse_a_sbml.zip" download>Piperaquine_Ding2024_nonmem_population_estimates_rse_a_sbml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_piperaquine/Piperaquine_Ding2024_nonmem_population_estimates_rse_a/Piperaquine_Ding2024_nonmem_population_estimates_rse_a_cellml.zip" download>Piperaquine_Ding2024_nonmem_population_estimates_rse_a_cellml.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_piperaquine/Piperaquine_Ding2024_nonmem_population_estimates_rse_a/Piperaquine_Ding2024_nonmem_population_estimates_rse_a.svg" alt="Piperaquine_Ding2024_nonmem_population_estimates_rse_a diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

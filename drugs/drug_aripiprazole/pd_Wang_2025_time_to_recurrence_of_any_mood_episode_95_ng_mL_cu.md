@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Aripiprazole plasma concentrations (ng/mL), predicted from a prior popPK model, act on time to recurrence of any mood episode in BP-I via a time-to-event (Cox-type) model; a categorical cut-off model with a 95 ng/mL threshold gave a hazard ratio of 0.645 for the effect of the aripiprazole cut-off, i.e. higher exposure lowers recurrence risk. The paper does not state a mechanistic PD model (no Imax/IC50/EC50/kin/kout/ke0 values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2025`
 - **model family:** `tte`
 - **driver:** `cited_pk`

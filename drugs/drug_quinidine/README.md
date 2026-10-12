@@ -46,7 +46,7 @@ Quinidine is a class Ia antiarrhythmic used to treat heart rhythm problems such 
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Karbwang_1993_QTc](drugs/drug_quinidine/pd_Karbwang_1993_QTc.md) | rate-corrected QT interval ← quinidine · direct linear effect | — | Karbwang J et al., A comparison of the pharmacokinetic and…, British journal of clinical… (1993) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Karbwang_1993_QTc](drugs/drug_quinidine/pd_Karbwang_1993_QTc.md) | rate-corrected QT interval ← quinidine · direct linear effect | — | Karbwang J et al., A comparison of the pharmacokinetic and…, British journal of clinical… (1993) | — |
 
 ## ADME sites
 

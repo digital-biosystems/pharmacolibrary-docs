@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from keyword rules on the title and abstract — no LLM answer yet).">human + animal</span> | [Ramamoorthy_1997_ER_binding](drugs/drug_biphenylol/pd_Ramamoorthy_1997_ER_binding.md) | [3H]E2 displacement from mouse uterine estrogen receptor (competitive binding) ← biphenylol (HO-PCB3/HO-PCB4 equimolar mixture) · inhibition effect | — | Ramamoorthy K et al., Additive estrogenic activities of a bin…, Toxicology and applied phar… (1997) | [10.1006/taap.1997.8281](https://doi.org/10.1006/taap.1997.8281) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">mouse</span> | [Ramamoorthy_1997_ER_binding](drugs/drug_biphenylol/pd_Ramamoorthy_1997_ER_binding.md) | [3H]E2 displacement from mouse uterine estrogen receptor (competitive binding) ← biphenylol (HO-PCB3/HO-PCB4 equimolar mixture) · inhibition effect | — | Ramamoorthy K et al., Additive estrogenic activities of a bin…, Toxicology and applied phar… (1997) | [10.1006/taap.1997.8281](https://doi.org/10.1006/taap.1997.8281) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -5,7 +5,7 @@
 
 # procaine — `Procaine_Olivarez2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643), gpt-oss:120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,9 +19,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 3586, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+**The clearance plausibility check could not be computed.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — procaine: CL 200 mL/h/kg, V/F 0.55 L/kg.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 3586, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Olivarez JD et al., Pharmacokinetic and pharmacodynamic pro…, Frontiers in veterinary sci… (2022)
@@ -56,17 +60,23 @@ Olivarez JD et al., Pharmacokinetic and pharmacodynamic pro…, Frontiers in vet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.643 (9/14 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.643 (9/14 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q17]` | 3586 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q20]` | 5372 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 3435 | 105 | mismatch |
+| `gpt-oss-120b` | `values[Q74]` | 3422 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q86]` | 2147 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q17]` | 3586 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q20]` | 5372 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q32]` | 3435 | 105 | mismatch |

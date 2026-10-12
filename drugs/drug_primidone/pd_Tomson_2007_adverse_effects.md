@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that primidone concentrations act on binary adverse effects, but the driver type, model family, effect direction, and effect form are not resolved. No full text is available to provide the specific mechanism or key potency and rate values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tomson_2007`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

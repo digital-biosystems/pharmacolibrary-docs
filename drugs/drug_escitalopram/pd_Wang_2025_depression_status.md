@@ -20,7 +20,7 @@
 
 **Model:** No model was generated from this record.
 
-> Escitalopram concentrations (cited PK from Liu_2022) act on depression status in a disease-progression model with an inhibitory effect direction; the paper excerpts provide no further mechanism details and no potency or rate parameter values.
+> The paper models escitalopram concentrations (from a cited PK model) acting on depression status as a continuous response within a disease-progression model framework; the excerpts provide no mechanism, effect form, or potency/rate parameter values.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

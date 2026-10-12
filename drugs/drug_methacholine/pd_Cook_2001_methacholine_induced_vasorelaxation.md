@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methacholine concentrations act on methacholine-induced vasorelaxation, described by a sigmoid Emax model with a stimulatory effect; the paper excerpts provide no mechanism details and no parameter values (Emax, EC50, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cook_2001`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

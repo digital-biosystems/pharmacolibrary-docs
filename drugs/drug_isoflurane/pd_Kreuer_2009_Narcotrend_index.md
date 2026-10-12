@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> No mechanistic description is provided in the available excerpts to explain how isoflurane influences the Narcotrend index. The record lists a ke0 parameter of 0.18 min(-1), but the specific potency values and effect mechanism are not described in the source material.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kreuer_2009`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

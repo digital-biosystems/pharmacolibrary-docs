@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Sertindole (with dehydrosertindole as driver, ng/ml) acts on the binary conditioned avoidance response (CAR) via an Emax-type inhibitory model; the paper excerpts do not state the mechanism beyond this. Reported EC50 values are 424 ng/ml (dehydrosertindole), 345 ng/ml (sertindole, conventional modelling), and 338 ng/ml (effect compartment EC50 for sertindole, competitive model); no Emax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bundgaard_2009`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

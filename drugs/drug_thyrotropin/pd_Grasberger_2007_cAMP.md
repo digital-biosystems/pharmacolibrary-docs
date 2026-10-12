@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models thyrotropin (TSH) concentration stimulating TSH-induced cAMP accumulation using a sigmoid Emax model; no excerpts are available, so the mechanism, effect form, and potency/rate parameters (Emax, EC50, gamma) are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Grasberger_2007`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

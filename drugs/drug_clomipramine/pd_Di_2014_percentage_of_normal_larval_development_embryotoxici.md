@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clomipramine concentrations (μg l−1) were linked to the percentage of normal larval development (D-shaped larvae after 36 h exposure) as an inhibitory embryotoxicity effect; the paper excerpts provide no model family, mechanism, or potency/rate parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Di_2014`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

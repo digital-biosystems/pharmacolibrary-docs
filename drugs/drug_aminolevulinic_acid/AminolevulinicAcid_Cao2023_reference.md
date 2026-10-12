@@ -4,7 +4,7 @@
 
 # aminolevulinic acid — `AminolevulinicAcid_Cao2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The central volume of distribution (0.0515 L) is physiologically implausible for aminolevulinic acid, indicating a unit or scale extraction error.**
+
+The record lists a central volume of 0.0515 L, which is far below the physiological range for a small molecule. This value is inconsistent with the total clearance of 1.13 L/h and the peripheral volume of 4.39 L. The intercompartmental clearance of 2.26 L/h further highlights the structural imbalance caused by the erroneous central volume. Extracted — aminolevulinic acid: CL 1.13 L h−1, V1 0.0515 L, V2 4.39 L, Q 2.26 L h−1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q317: this record has none, the second reading 4.07; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Cao C et al., Intra-Operative Definition of Glioma In…, Advanced science (Weinheim,… (2023)
@@ -52,6 +60,32 @@ Cao C et al., Intra-Operative Definition of Glioma In…, Advanced science (Wein
 - volume reported by review
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.667 (12/18 fields) | 6 |
+
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q317]` | not captured | 4.07 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q358]` | 0.0044 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q38]` | not captured | 51.7 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q87]` | not captured | 27.6 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` | 0.8395 | 0.8395 | mismatch |
+| `gpt-oss-120b` | `values[Q99]` | not captured | 15.6 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

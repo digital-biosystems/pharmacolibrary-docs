@@ -23,7 +23,7 @@ Inotersen is a nervous system drug used to treat amyloidosis. It is authorised i
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 24.0348)</sub><br><sub>route_to: `human_review`</sub> | [Yu_2020_2_reference](drugs/drug_inotersen/Inotersen_Yu2020v2_reference.md) | — | 2-compartment (no model) | 5 | Yu RZ et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeutics (2020) | [10.1089/nat.2019.0822](https://doi.org/10.1089/nat.2019.0822) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C1_half_life_beta failed (ratio 24.0348)</sub><br><sub>route_to: `human_review`</sub> | [Yu_2020_2_reference](drugs/drug_inotersen/Inotersen_Yu2020v2_reference.md) | — | 2-compartment (no model) | 5 | Yu RZ et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeutics (2020) | [10.1089/nat.2019.0822](https://doi.org/10.1089/nat.2019.0822) |
 
 ## Pharmacodynamics (PD)
 

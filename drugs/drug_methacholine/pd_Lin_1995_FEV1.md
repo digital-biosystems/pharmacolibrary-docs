@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates inhaled methacholine dose to the measured FEV1 response as a dose–response (log-linear) relationship, with methacholine acting as a bronchoconstrictor stimulus; no full text is available, so the mechanism, effect form, and potency or rate parameters (e.g., EC50, Emax, gamma) are not stated in the available material.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lin_1995`
 - **model family:** `log_linear`
 - **driver:** `dose_only`

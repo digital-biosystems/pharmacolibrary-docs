@@ -5,7 +5,7 @@
 
 # metamizole sodium — `MetamizoleSodium_Ekobena2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231), gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The failed check concerns the apparent assumption: clearance (CL/F 0.504 L/h), volume (11.6 L), lag time (0.235 h) and absorption rate constant (2.6 h−1) were taken as apparent parameters with bioavailability set to 1 and no molar correction, a deviation ruled not acceptable. A second reader disagreed on multiple values, including the absorption rate constant (2.6 vs 0.64 h−1) and a value of 124 vs 22; several other values were read by only one reader. The disagreements leave the extracted numbers uncertain, so the record needs review. Extracted — metamizole sodium: CL/F 0.504 L/h, V 11.6 L, tlag 0.235 h, kabs 2.6 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL/F: this record has 0.504, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 0.504, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -63,17 +63,28 @@ Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of ant
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>22 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `values[Q27]` | 0.504 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q37]` | 2781 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | 61 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q44]` | 1.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q49]` | 2.6 | 0.64 | mismatch |
+| `gpt-oss-120b` | `values[Q56]` | 4.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 17.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q76]` | 11.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q83]` | 0.235 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `values[Q27]` | 0.504 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q312]` | 124 | 22 | mismatch |
@@ -145,7 +156,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference/MetamizoleSodium_Ekobena2025_reference_modelica.zip" download>MetamizoleSodium_Ekobena2025_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference/MetamizoleSodium_Ekobena2025_reference_fmi.zip" download>MetamizoleSodium_Ekobena2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference/MetamizoleSodium_Ekobena2025_reference_matlab.zip" download>MetamizoleSodium_Ekobena2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference/MetamizoleSodium_Ekobena2025_reference_matlab_simbio.zip" download>MetamizoleSodium_Ekobena2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference/MetamizoleSodium_Ekobena2025_reference_matlab_simbio.zip" download>MetamizoleSodium_Ekobena2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference/MetamizoleSodium_Ekobena2025_reference_sbml.zip" download>MetamizoleSodium_Ekobena2025_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference/MetamizoleSodium_Ekobena2025_reference_cellml.zip" download>MetamizoleSodium_Ekobena2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

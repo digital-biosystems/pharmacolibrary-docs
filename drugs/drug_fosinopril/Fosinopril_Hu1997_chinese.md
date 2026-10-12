@@ -4,7 +4,7 @@
 
 # fosinopril — `Fosinopril_Hu1997_chinese`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.235). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The fe parameter for fosinoprilat carries value 42.58 with unit verbatim 'n = 12', which is not a valid unit for a fraction excreted and could not be converted to SI, so the parameter reached the model builder without an SI value. The remaining fosinoprilat parameters (λ1 6.77 L/hr, kel 0.45 L/hr, t1/2α 0.39 hr, t1/2β 1.73 hr, t1/2γ 5.51 hr, V 2053 mL, Vss 5131 mL, AUC∞ 7761 ng·hr/mL, MRT 5.37 hr, CL 1124 mL/hr) are dimensionally consistent. The failure is confined to this one parameter's unit. Extracted — fosinoprilat: λ1 6.77 L/hr, kel 0.45 L/hr, t1/2α 0.39 hr, t1/2β 1.73 hr, t1/2γ 5.51 hr, V 2.05e+03 mL, Vss 5.13e+03 mL, AUC∞ 7.76e+03 ng · hr/mL, … (+3).
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of aucinf: this record has 7761, the second reading none; it also differs on 12 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -101,14 +101,32 @@ Hu OY et al., Pharmacokinetics of fosinoprilat in Chi…, Journal of clinical ph
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (9/9 fields) | none |
+| `gpt-oss-120b` | partly confirmed | 0.235 (4/17 fields) | 13 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>13 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[aucinf]` | 7761 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl,-]` | not captured | 6.85 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clt]` | 1124 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cue]` | 42.58 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | 5.37 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2α]` | 0.39 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2β]` | 1.73 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2γ,]` | 5.51 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | not captured | 29.38 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 2053 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vdss]` | 5131 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[α]` | 6.77 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` | 0.45 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

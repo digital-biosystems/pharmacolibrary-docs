@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lindane inhibits growth (cell density) of Chlorella kessleri, with an EC50 of 0.003 mg/L; the paper excerpts do not state the mechanism or model structure.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mostafa_2002`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

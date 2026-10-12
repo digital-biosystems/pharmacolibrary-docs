@@ -27,7 +27,7 @@ Prasugrel is a platelet inhibitor used to prevent blood clots in people with acu
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 15:19 | 6:19 | 0/0/1 | 1/1/0 | 0/0/0 | 113,409/14,447 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/2 | 3/0 | 0 |
+| 2026-10-05 15:19 | 6:19 | 0/0/1 | 1/0/0 | 0/0/0 | 113,409/14,447 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/2 | 3/0 | 0 |
 
 ## popPK records
 
@@ -39,8 +39,7 @@ Prasugrel is a platelet inhibitor used to prevent blood clots in people with acu
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ernest_2008_MPA](drugs/drug_prasugrel/pd_Ernest_2008_MPA.md) | maximal platelet aggregation ← prasugrel active metabolite · direct sigmoid Emax (Hill) effect | — | Ernest CS et al., Population pharmacokinetics and pharmac…, Journal of pharmacokinetics… (2008) | [10.1007/s10928-008-9103-7](https://doi.org/10.1007/s10928-008-9103-7) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Kim_2023_MPA](drugs/drug_prasugrel/pd_Kim_2023_MPA.md) | maximal platelet aggregation ← R-138727 · target-mediated drug disposition | — | Kim MJ et al., Pharmacokinetic and Pharmacodynamic Mod…, Clinical pharmacology in dr… (2023) | [10.1002/cpdd.1172](https://doi.org/10.1002/cpdd.1172) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Ernest_2008_MPA](drugs/drug_prasugrel/pd_Ernest_2008_MPA.md) | maximal platelet aggregation ← prasugrel active metabolite · direct sigmoid Emax (Hill) effect | — | Erne | — |
 
 ## ADME sites
 

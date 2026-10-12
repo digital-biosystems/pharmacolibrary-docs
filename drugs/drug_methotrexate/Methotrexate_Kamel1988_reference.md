@@ -5,7 +5,7 @@
 
 # methotrexate — `Methotrexate_Kamel1988_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has methotrexate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl l: this record has 0.159, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -73,17 +73,23 @@ Kamel RS et al., Pharmacokinetics of small doses of meth…, Acta dermato-venere
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.545 (6/11 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl l]` | 0.159 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination phase half-life].parameter_id` | Q57 | Q60 | mismatch |
+| `gpt-oss-120b` | `parameters[ka]` | 0.268 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t lag,oral]` | 0.36 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd threshold]` | 5.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[distribution phase half-life]` | 1.18 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[distribution phase half-life]` | not captured | 1.18 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[elimination phase half-life]` | 5.35 | not captured | only_one_extracted |

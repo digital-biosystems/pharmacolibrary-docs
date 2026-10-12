@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Flunisolide concentrations (pM) inhibit AP-1-driven SEAP expression in A549 cells via glucocorticoid receptor-mediated transrepression of AP-1, described by a sigmoid Emax (inhibitory) concentration-effect model; the paper reports an EC50 of 309 pM (SE 170) but does not state Imax, gamma, or turnover (kin/kout) parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dirks_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

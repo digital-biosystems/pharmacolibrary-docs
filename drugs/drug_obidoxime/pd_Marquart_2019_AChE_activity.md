@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Obidoxime concentration stimulates AChE activity reactivation in sarin-inhibited human small bowel, described by a sigmoid Emax model; the paper reports an EC50 of 197.8 μM but the excerpts do not state Emax, gamma, or the mechanism beyond reactivation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Marquart_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

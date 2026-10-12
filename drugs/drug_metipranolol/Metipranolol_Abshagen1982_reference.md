@@ -4,7 +4,7 @@
 
 # metipranolol — `Metipranolol_Abshagen1982_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.474). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.12), gpt-oss:120b (not confirmed, agreement 0.474). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — metipranolol: tlag 7.3 min, tmax 50 min, t1/2z 6.3 min, fe 4 % of the dose, CL 1.24e+03 ml/min, CLR 149 ml/min, CLNR 1.07e+03 ml/min, fu 70 %, … (+1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metipranolol, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has metipranolol, the second reading metipranolol; deacetyl metipranolol; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -79,17 +79,40 @@ Abshagen U et al., Pharmacokinetics of metipranolol in nor…, European journal 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.12 (3/25 fields) | 22 |
 | `gpt-oss:120b` | not confirmed | 0.474 (9/19 fields) | 10 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>32 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[absolute bioavailability]` | 50 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absolute bioavailability]` | not captured | 50 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution coefficient]` | 3.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution coefficient]` | not captured | 3.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[extra-renal ... clearances]` | 1068 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[extra-renal clearance]` | not captured | 1068 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[invasion half-life]` | 6.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[invasion half-life]` | not captured | 6.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag-time]` | 7.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag-time]` | not captured | 7.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[protein binding]` | 70 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[protein binding]` | not captured | 70 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal ... clearances]` | 149 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance]` | not captured | 149 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 50 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | not captured | 50 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total ... clearances]` | 1237 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total clearance]` | not captured | 1237 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[urinary excretion of unchanged drug]` | 4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[urinary excretion of unchanged drug]` | not captured | 4 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | metipranolol | metipranolol; deacetyl metipranolol | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[distribution coefficient].parameter_id` | Q61 | Q410 | mismatch |
 | `gpt-oss:120b` | `parameters[extra-renal ... clearances]` | 1068 | not captured | only_one_extracted |

@@ -29,7 +29,7 @@ Peginesatide is an antianemic drug that was developed to treat anemia. It was wi
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> | [Naik_2013_Hgb](drugs/drug_peginesatide/pd_Naik_2013_Hgb.md) | hemoglobin ← peginesatide · indirect response — drug stimulates the production of hemoglobin | — | Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013) | [10.1371/journal.pone.0066422](https://doi.org/10.1371/journal.pone.0066422) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span> | [Naik_2013_Hgb](drugs/drug_peginesatide/pd_Naik_2013_Hgb.md) | hemoglobin ← peginesatide · indirect response — drug stimulates the production of hemoglobin | — | Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013) | [10.1371/journal.pone.0066422](https://doi.org/10.1371/journal.pone.0066422) |
 
 ## ADME sites
 

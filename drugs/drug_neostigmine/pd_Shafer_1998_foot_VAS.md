@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes neostigmine acting on foot visual analog scale analgesia with an effect-compartment model and an inhibitory effect direction, but the available excerpts provide no concentration data, mechanism details, or parameter values (Imax, IC50, ke0, etc.).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shafer_1998`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

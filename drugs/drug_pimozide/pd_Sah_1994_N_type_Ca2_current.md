@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pimozide concentrations (microM) act on the N-type Ca2+ channel current in sympathetic neurons as an inhibitory effect modelled with an Emax-type relationship; the paper excerpts provide no mechanism details and no numeric potency (IC50/Imax/Emax) or rate values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sah_1994`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -5,7 +5,7 @@
 
 # dihydroergocristine — `Dihydroergocristine_Grognet1992_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875), gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of dose: this record has none, the second reading 6; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose: this record has none, the second reading 6. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -65,17 +65,19 @@ Grognet JM et al., [The pharmacokinetics of dihydroergocri…, Arzneimittel-Fors
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 | `gpt-oss:120b` | partly confirmed | 0.667 (6/9 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[dose]` | not captured | 6 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[dose]` | not captured | 6 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t1/2]` | 13.6 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[terminal half-life (t1/2]` | not captured | 13.6 | only_one_extracted |
@@ -136,7 +138,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference/Dihydroergocristine_Grognet1992_reference_modelica.zip" download>Dihydroergocristine_Grognet1992_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference/Dihydroergocristine_Grognet1992_reference_fmi.zip" download>Dihydroergocristine_Grognet1992_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference/Dihydroergocristine_Grognet1992_reference_matlab.zip" download>Dihydroergocristine_Grognet1992_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference/Dihydroergocristine_Grognet1992_reference_matlab_simbio.zip" download>Dihydroergocristine_Grognet1992_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference/Dihydroergocristine_Grognet1992_reference_matlab_simbio.zip" download>Dihydroergocristine_Grognet1992_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference/Dihydroergocristine_Grognet1992_reference_sbml.zip" download>Dihydroergocristine_Grognet1992_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference/Dihydroergocristine_Grognet1992_reference_cellml.zip" download>Dihydroergocristine_Grognet1992_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

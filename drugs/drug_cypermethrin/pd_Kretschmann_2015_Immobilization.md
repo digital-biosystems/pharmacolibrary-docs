@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> α-Cypermethrin concentration (nM) drives immobilization (binary response); the paper excerpts do not state the mechanism. EC50 at end of experiment was 3.3±0.5 nM without azoles, 0.26±0.04 nM with propiconazole, and 0.08±0.01 nM with prochloraz.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kretschmann_2015`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

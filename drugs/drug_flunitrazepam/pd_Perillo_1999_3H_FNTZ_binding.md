@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;flunitrazepam&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/&quot;},{&quot;label&quot;:&quot;Perillo_1999 \u00b7 PD [3H]flunitrazepam specific binding to GABAA receptor&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flunitrazepam_GmezSegura2022_reference&quot;,&quot;label&quot;:&quot;G\u00f3mez-Segura_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/Flunitrazepam_GmezSegura2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flunitrazepam_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/Flunitrazepam_Han2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flunitrazepam_GmezSegura2022_reference&quot;,&quot;label&quot;:&quot;G\u00f3mez-Segura_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/Flunitrazepam_GmezSegura2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flunitrazepam_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/Flunitrazepam_Han2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # [3H]flunitrazepam specific binding to GABAA receptor — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
@@ -19,6 +19,10 @@
 **As extracted:** Flunitrazepam (concentrations from the PK model of Franken_2016) drives [3H]flunitrazepam specific binding to GABAA receptor (in fmoles/mg protein) (the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> Flunitrazepam concentrations (nM) act on [3H]flunitrazepam specific binding to the GABAA receptor (fmoles/mg protein), described by a saturable binding relationship with Bmax 488 ± 24 fmoles/mg protein and Kd 3.34 ± 0.36 nM (temperature-shifted values: Bmax,t 500 ± 25 fmoles/mg protein, Kd,t 5.86 ± 0.86 nM); the excerpts provide no further mechanistic description.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Perillo_1999`
 - **model family:** `unknown`

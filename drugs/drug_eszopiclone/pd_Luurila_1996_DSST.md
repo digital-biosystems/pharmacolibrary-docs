@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Eszopiclone (driver compound zopiclone) concentrations act on the digit symbol substitution test (DSST) via an effect-compartment model with an inhibitory, linear effect form; the paper excerpts provide no mechanism details and no potency or rate values (Imax, IC50, ke0, etc.).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luurila_1996`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Maprotiline stimulates intracellular Ca2+ concentration ([Ca2+]i, micromol/L) in PC3 cells, described by an Emax model with an EC50 of 200 micromol/L; the paper excerpts do not state the mechanism, Emax, or any rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hsu_2004`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentagastrin concentration (nM) stimulates histidine decarboxylase (HDC) activity via a direct Emax model, with EC50 = 2.90 ± 0.13 nM; the paper excerpts do not state Emax, a Hill factor, or the mechanism beyond stimulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hollande_1994`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

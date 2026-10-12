@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe the underlying pharmacodynamic mechanism or effect form, only reporting a cited potency value (K(A)) of 450 nM for alcuronium on [3H]NMS binding at M2-receptors.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Franken_2000`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

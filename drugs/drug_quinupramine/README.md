@@ -24,7 +24,7 @@ Quinupramine is a tricyclic antidepressant used to treat depression. It is an ap
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Bouquet_1982_reference](drugs/drug_quinupramine/Quinupramine_Bouquet1982_reference.md) | — | 1-compartment (no model) | 5 | Bouquet S et al., [Crossover pharmacokinetic study of qui…, L'Encephale (1982) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125), gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Bouquet_1982_reference](drugs/drug_quinupramine/Quinupramine_Bouquet1982_reference.md) | — | 1-compartment (no model) | 5 | Bouquet S et al., [Crossover pharmacokinetic study of qui…, L'Encephale (1982) | — |
 
 ## Pharmacodynamics (PD)
 

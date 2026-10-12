@@ -5,7 +5,7 @@
 
 # alglucosidase alfa — `AlglucosidaseAlfa_Tiraboschi2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.455), gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 23.0, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 23.0, the second reading 23.0; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -56,17 +56,24 @@ Tiraboschi G et al., Population pharmacokinetic modeling and…, Journal of phar
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.455 (5/11 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.333 (5/15 fields) | 10 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q19]` | 23.0 | 23.0 | mismatch |
+| `gpt-oss-120b` | `values[Q21]` | not captured | 14.5 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q312]` | not captured | 156 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 21.7 | 18.3 | mismatch |
+| `gpt-oss-120b` | `values[Q33]` | not captured | -20.5 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q84]` | not captured | -28.4 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q19]` | 23.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q26]` | not captured | 50.2 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q311]` | not captured | 10 | only_one_extracted |
@@ -133,7 +140,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Tiraboschi2023_reference/AlglucosidaseAlfa_Tiraboschi2023_reference_modelica.zip" download>AlglucosidaseAlfa_Tiraboschi2023_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Tiraboschi2023_reference/AlglucosidaseAlfa_Tiraboschi2023_reference_fmi.zip" download>AlglucosidaseAlfa_Tiraboschi2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Tiraboschi2023_reference/AlglucosidaseAlfa_Tiraboschi2023_reference_matlab.zip" download>AlglucosidaseAlfa_Tiraboschi2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Tiraboschi2023_reference/AlglucosidaseAlfa_Tiraboschi2023_reference_matlab_simbio.zip" download>AlglucosidaseAlfa_Tiraboschi2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Tiraboschi2023_reference/AlglucosidaseAlfa_Tiraboschi2023_reference_matlab_simbio.zip" download>AlglucosidaseAlfa_Tiraboschi2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Tiraboschi2023_reference/AlglucosidaseAlfa_Tiraboschi2023_reference_sbml.zip" download>AlglucosidaseAlfa_Tiraboschi2023_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_alglucosidase_alfa/AlglucosidaseAlfa_Tiraboschi2023_reference/AlglucosidaseAlfa_Tiraboschi2023_reference_cellml.zip" download>AlglucosidaseAlfa_Tiraboschi2023_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

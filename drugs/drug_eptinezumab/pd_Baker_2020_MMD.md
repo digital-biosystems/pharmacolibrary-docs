@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> A saturable inhibitory Emax model describes how plasma eptinezumab exposure reduces the change in monthly migraine days (MMD) over weeks 1–12, with the relationship characterized by EC50 values ranging from 745 ng/mL to 2.54 μg/mL for concentration-based metrics and 3.78 to 1480 h·μg/mL for AUC-based metrics. The paper does not specify a kinetic mechanism (such as kin/kout or ke0) or an effect compartment for this direct exposure-response relationship.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baker_2020`
 - **model family:** `emax`
 - **driver:** `pk_record`

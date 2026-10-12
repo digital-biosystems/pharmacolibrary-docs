@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In murine precision-cut lung slices, carbachol (0.1–100 µM) directly contracts airway smooth muscle, measured as percent airway lumen narrowing, with a simple Emax concentration-response (no mechanism beyond direct agonism stated): EC50 = 0.65 µM (log EC50 −0.18±0.15 µM) and Emax = 67.0±5.0% at 100 µM in air-exposed controls; ozone exposure shifted potency/efficacy (e.g. 6 ppm ozone: Emax 99.1±0.36%), an effect abrogated by the CYP inhibitor ABT (Emax 81.7±4.7%), implicating CYP-derived eicosanoids such as 20-HETE.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cooper_2010`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

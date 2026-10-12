@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In whole-cell patch-clamp experiments, dextromethorphan and dextrorphan (deuterated and non-deuterated) concentration-dependently block peak current through human recombinant NR1/NR2D NMDA receptors (direct in vitro inhibition); the paper reports only relative potencies — deuteration increased IC50 about two-fold for dextromethorphan and 16-fold for dextrorphan — and does not state absolute IC50, Emax, or rate values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bespalov_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

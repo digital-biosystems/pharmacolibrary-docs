@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lindane concentrations (μg/ml) stimulate the firing rate of primary cultures of cortical neurons measured by MEA; the paper reports an EC50 of 0.6 μg/ml but the excerpts do not state the mechanism or other model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Croom_2015`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

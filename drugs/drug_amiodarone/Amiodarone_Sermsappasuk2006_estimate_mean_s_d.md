@@ -5,7 +5,7 @@
 
 # amiodarone — `Amiodarone_Sermsappasuk2006_estimate_mean_s_d`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 For amiodarone in isolated perfused rat hearts, k12 = 519.0 and k21 = 0.0030 were labelled l/min although their meaning is first-order transfer rate constants, which should be dimensionless per time; this unit could not be converted to SI, so the parameters reached the model without an SI value and the record was refused on a dimension mismatch. The uptake clearance CL D = 31.1 ml/min was also inconsistently captured: a second reader recorded it under a different parameter field, leaving one field null in each reading. The remaining parameters, kabs = 0.82 h−1, were not flagged. Extracted — amiodarone: k12 519 l/min, k21 0.003 l/min, CL 31.1 ml/min, kabs 0.82 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has amiodarone, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amiodarone, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -84,17 +84,25 @@ Sermsappasuk P et al., Kinetic analysis of myocardial uptake a…, European jour
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.364 (4/11 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl d]` | not captured | 31.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 0.82 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvv]` | 30.703 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[uptake clearance cl d]` | 31.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[τ]` | not captured | 11.1 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | amiodarone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | amiodarone | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl d]` | not captured | 31.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[uptake clearance cl d]` | 31.1 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | amiodarone | unknown | mismatch |

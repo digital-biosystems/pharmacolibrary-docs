@@ -4,7 +4,7 @@
 
 # chlortetracycline — `Chlortetracycline_Reinbold2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.118). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.118). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The record was built from the abstract only, so reported summary statistics (V/F 40.9 L/kg, kel 0.0478 h⁻¹, CL/F 1.8 L/kg/h, t1/2z 16.2 h, Cmax/dose 4.5 ng/mL, tmax 23.3 h, AUC/dose 0.29 h·µg/L) stood in for a fitted model. The source never reports ka or Tlag, so library defaults were substituted, and the invented absorption constant was judged not acceptable. Because the parameters are apparent (/F) values, bioavailability was assumed to be 1 with no molar correction, and a first-order depot input was assumed for the extravascular dosing. Extracted — chlortetracycline: V/F 40.9 L/kg, kel 0.0478 h(-1), AUC/dose 0.29 h x microg/L, CL/F 1.8 L/kg/h, t1/2z 16.2 h, Cmax/dose 4.5 ng/mL, tmax 23.3 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has chlortetracycline, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has chlortetracycline, the second reading chlortetracycline HCl; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -83,17 +83,30 @@ Reinbold JB et al., Plasma pharmacokinetics of oral chlorte…, Journal of veter
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (4/16 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.118 (2/17 fields) | 15 |
 
-<details><summary>15 field(s) a reader read differently</summary>
+<details><summary>27 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc/d]` | not captured | 0.29 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 1.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance (cl/f]` | 1.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose-normalized area under the curve (auc/d]` | 0.29 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life]` | 16.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k]` | not captured | 0.0478 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rate constant (k]` | 0.0478 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t]` | not captured | 16.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time of c(max)]` | 23.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | not captured | 40.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution (v/f]` | 40.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | chlortetracycline | chlortetracycline HCl | mismatch |
 | `gpt-oss:120b` | `parameters[auc/d]` | not captured | 0.29 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[c]` | 4.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[c]` | not captured | 4.5 | only_one_extracted |

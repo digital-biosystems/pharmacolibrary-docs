@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Malathion concentration (μM) inhibits ATP-based cell viability (%), modelled as an Emax-type inhibitory relationship; the paper excerpts provide no mechanism details and no potency or rate parameter values (Imax, IC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Horn_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -5,7 +5,7 @@
 
 # fluorouracil — `Fluorouracil_Gieschke2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.308). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1), gpt-oss:120b (not confirmed, agreement 0.308). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The structural parameter kabs for 5'-deoxy-5-fluorouridine carries the unit l h-1 with value 70, which is dimensionally inconsistent with an absorption rate constant, so the record failed the dimension check on a structural parameter. The model links capecitabine to 5'-deoxy-5-fluorouridine, 5'-deoxy-5-fluorouridine to 5-fluorouracil, and 5-fluorouracil to alpha-fluorobeta-alanine by metabolism, but capecitabine has no volume, clearance or dose-giving structure of its own, so the chain is unreachable from the administered dose. Additionally, one reported unit could not be converted to SI units, so that parameter entered the model without a usable numeric value. A second reader attributed the absorption parameters (ka 70, tlag 5.52E-4 h) and the primary analyte differently, reading the model as mechanistic rather than apparent, but these disagreements do not resolve the dimension and linkage failures. Extracted — 5'-deoxy-5-fluorouridine: kabs 70 l h -1, tlag 0.000552 h, V 30 l, CL 24 l h -1; fluorouracil: V 17.8 l, CLm/F 33 l h -1; alpha-fluorobeta-alanine: V 26 l, CL 32 l h -1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has 5-fluorouracil, the second reading capecitabine; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 5-fluorouracil, the second reading 5-FU; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -94,17 +94,36 @@ Gieschke R et al., Population pharmacokinetics and concent…, British journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.1 (2/20 fields) | 18 |
 | `gpt-oss:120b` | not confirmed | 0.308 (8/26 fields) | 18 |
 
-<details><summary>18 field(s) a reader read differently</summary>
+<details><summary>36 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['capecitabine', "5'-deoxy-5-fluorouridine", 'metabolism'], ["5'-deoxy-5-fluorouridine", '5-fluorouracil', 'metabolism'], ['5-fluorouracil', 'alpha-fluorobeta-alanine', 'metabolism']] | [['capecitabine', "5'-dfur", 'metabolism'], ["5'-dfur", '5-fu', 'metabolism'], ['5-fu', 'fbal', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[cl1]` | not captured | 24 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl1]` | 24 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2]` | not captured | 33 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2]` | 33 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl3]` | not captured | 32 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl3]` | 32 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 70 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 70 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | not captured | 5.52E-4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 5.52E-4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | not captured | 30 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | 30 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` | not captured | 17.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` | 17.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3]` | not captured | 26 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3]` | 26 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | 5-fluorouracil | 5-FU | mismatch |
 | `gpt-oss:120b` | `model.links` | [['capecitabine', "5'-deoxy-5-fluorouridine", 'metabolism'], ["5'-deoxy-5-fluorouridine", '5-fluorouracil', 'metabolism'], ['5-fluorouracil', 'alpha-fluorobeta-alanine', 'metabolism']] | [['capecitabine', "5'-deoxy-5-fluorouridine", 'metabolism'], ["5'-deoxy-5-fluorouridine", '5-fluorouracil', 'metabolism'], ['5-fluorouracil', 'fbal', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[5-fu auc]` | not captured | 0.503 | only_one_extracted |

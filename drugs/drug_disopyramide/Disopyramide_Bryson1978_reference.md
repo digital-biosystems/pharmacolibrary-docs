@@ -5,7 +5,7 @@
 
 # disopyramide — `Disopyramide_Bryson1978_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 61.57, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 61.57, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -56,17 +56,23 @@ Bryson SM et al., Disopyramide serum and pharmacologic ef…, British journal of
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 61.57 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q26]` | 32.19 | 69.59 | mismatch |
+| `gpt-oss-120b` | `values[Q47]` | not captured | 5.936 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 6 | 7.96 | mismatch |
+| `gpt-oss-120b` | `values[Q76]` | not captured | 59.97 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q22]` | 61.57 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q26]` | 32.19 | 69.59 | mismatch |
 | `gpt-oss:120b` | `values[Q47]` | not captured | 5.936 | only_one_extracted |

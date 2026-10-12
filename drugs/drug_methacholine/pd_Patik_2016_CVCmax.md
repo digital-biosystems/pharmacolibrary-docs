@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methacholine dose (Log[MCh]M) stimulates cutaneous vascular conductance normalized to maximal response (%CVCmax) at the methacholine site, described by a sigmoid Emax model; EC50 values of -3.796 and -3.852 Log[MCh]M are reported, but the paper excerpts do not state the mechanism, Emax, or slope (gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Patik_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

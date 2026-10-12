@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> No PD model is described because the paper text is unavailable and the record indicates the model family and mechanism are unknown.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tomson_2007`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

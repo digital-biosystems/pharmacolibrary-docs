@@ -18,6 +18,10 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
+> Oxypurinol concentrations inhibit urine urate excretion rate via a sigmoid Emax model, characterized by a C50 of 3.74 mg l-1, Emax of 3.26 mol min-1, baseline Ro of 3.53 mol min-1, and Hill coefficient c of 1.08.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Graham_1996`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

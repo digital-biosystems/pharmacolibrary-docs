@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Permethrin concentrations (µM) inhibit synaptosomal Ca(2+)-ATPase activity; the paper reports an IC50 greater than 400 µM, but the excerpts do not state the model form or mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kodavanti_1993`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

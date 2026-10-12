@@ -18,9 +18,9 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> Gabapentin plasma concentrations inhibit the VAS pain score (0–10) via an Imax model with full inhibition (Imax = 1) linked through an effect compartment with distinct first-order rate constants into and out of the effect compartment (ke1 = 0.53 h⁻¹, ke2 = 1 h⁻¹); baseline pain score E0 was 7.31 and IC50 was 263.11 ng/mL (fixed to reduce parameter uncertainty).
+> Gabapentin plasma concentrations inhibit the Visual Analog Scale (VAS) pain intensity score using a full inhibitory Emax model (Imax = 1, E0 = 7.31) linked via a first-order effect compartment with rate constants ke1 (0.53 h-1) and ke2 (1 h-1). The half-maximal inhibitory concentration (IC50) was fixed at 263.11 ng/mL to reduce parameter uncertainty, reflecting the drug's mechanism of reducing neuronal excitability via binding to the alpha2delta-1 subunit of voltage-gated calcium channels.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Zhou_2026`
 - **model family:** `emax`

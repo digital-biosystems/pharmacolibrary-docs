@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The cypermethrin metabolite record was rejected because it reports only an absorption rate constant (kabs 0.033 h−1 for trans-DCCA) with no distribution volume and no clearance, so it is not a compartmental population PK model.**
+
+The paper (Côté_2014, healthy adult volunteers, measured compound trans-DCCA) is an exposure/outcome study: no distribution volume and no clearance or elimination rate are reported, so the model cannot be parameterized as a compartmental population PK model. The metabolites cis-DCCA, trans-DCCA and 3-PBA are formed from cypermethrin (and permethrin) in the central compartment but have no compartments of their own (n_cmt 0), leaving them unlinked from the dose, and the metabolism link parameters are of unknown kind. The only extracted parameter is kabs = 0.033 h−1 for trans-DCCA. Extracted — trans-DCCA: kabs 0.033 h−1.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `cypermethrin`, measured `trans-DCCA`.
 

@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> The record concerns oliceridine's stimulation of G-protein activation (fractional response), but the paper excerpts do not mention oliceridine; they describe SABRE fits of G-protein activation and β-arrestin recruitment at MOPr using data from McPherson et al. (2010), Hothersall et al. (2017), and Pedersen et al. (2019). The mechanism is a direct concentration–response (Hill/SABRE) stimulation with pathway-dependent signal amplification (γ), not an effect on production or elimination; reported log EC50,Gprt values range from −8.61 to −7.01, Emax,Gprt 92.9–100.0%, with Pedersen et al. giving κGprt of 18.62 and 14.13 and γGprt of 15.51, while β-arrestin responses are right-shifted (κβArr 0.058
+> Oliceridine drives the continuous G protein activation response through a SABRE transduction mechanism that explicitly includes a signal amplification parameter (gamma), although the paper notes this model is primarily detailed for other MOPr agonists like DAMGO and morphine. The extraction identified an efficacy parameter (epsilon) of 0.382, but the provided excerpts do not state the specific gamma, EC50, or IC50 values for oliceridine.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Buchwald_2023`
 - **model family:** `transduction`

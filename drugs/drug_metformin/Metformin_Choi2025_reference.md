@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Choi2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.636), gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,6 +20,8 @@
 **The metformin two-compartment model was rejected because its peripheral compartment is unreachable from the dose, and the two readers disagree on several extracted values (e.g., 5.52 vs none, 21 vs none, 24.8 vs none, 75.2 vs none).**
 
 The record describes metformin with CL/F 0.032 L/h, central volume 2.8 L, peripheral volume 3.96 L, and absorption rate constant 0.006 h-1, but the structure check found an unreachable compartment, meaning the peripheral compartment has no path from the administered dose. The second reader also disagreed on four extracted values: this record has none where the second reader read 21, 24.8, and 75.2, and this record has 5.52 where the second reader read none. Extracted — metformin: CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 0.059, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -60,14 +62,24 @@ Choi S et al., Population pharmacokinetics of efpeglen…, Frontiers in pharmaco
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.636 (7/11 fields) | 4 |
 | `gpt-oss:120b` | secondary_empty | 0.0 | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 0.059 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q311]` | 5.52 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q65]` | 6.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q87]` | not captured | 24.8 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

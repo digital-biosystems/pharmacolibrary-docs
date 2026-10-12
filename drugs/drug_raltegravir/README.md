@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;raltegravir&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Raltegravir_Gurjar2023_reference&quot;,&quot;label&quot;:&quot;Gurjar_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_raltegravir/Raltegravir_Gurjar2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Raltegravir_Gurjar2023_reference&quot;,&quot;label&quot;:&quot;Gurjar_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_raltegravir/Raltegravir_Gurjar2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # raltegravir
 
@@ -27,22 +27,22 @@ Raltegravir is an antiviral drug used to treat HIV infection and HIV/AIDS. It is
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:31 | 4:49 | 2/2/0 | 1/0/0 | 0/0/0 | 299,302/14,111 | ollama / glm-5.3-flash | 10 | 1/9 | 10/0 | 0 |
+| 2026-10-07 16:31 | 4:49 | 0/2/2 | 1/0/0 | 0/0/0 | 299,302/14,111 | ollama / glm-5.3-flash | 10 | 1/9 | 10/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gurjar_2023_reference](drugs/drug_raltegravir/Raltegravir_Gurjar2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Gurjar R et al., Influence of UGT1A1 and SLC22A6 polymor…, The pharmacogenomics journal (2023) | [10.1038/s41397-022-00293-5](https://doi.org/10.1038/s41397-022-00293-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lommerse_2019_reference](drugs/drug_raltegravir/Raltegravir_Lommerse2019_reference.md) | held back | 1-compartment, oral | 6 | Lommerse J et al., Maternal-Neonatal Raltegravir Populatio…, CPT: pharmacometrics & syst… (2019) | [10.1002/psp4.12443](https://doi.org/10.1002/psp4.12443) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Bukkems_2021_reference](drugs/drug_raltegravir/Raltegravir_Bukkems2021_reference.md) | — | 2-compartment (no model) | 7 (+3 cov.) | Bukkems VE et al., A population pharmacokinetics analysis…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12586](https://doi.org/10.1002/psp4.12586) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Rizk_2015_reference](drugs/drug_raltegravir/Raltegravir_Rizk2015_reference.md) | — | 1-compartment (no model) | 2 | Rizk ML et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2015) | [10.1002/jcph.493](https://doi.org/10.1002/jcph.493) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Gurjar_2023_reference](drugs/drug_raltegravir/Raltegravir_Gurjar2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Gurjar R et al., Influence of UGT1A1 and SLC22A6 polymor…, The pharmacogenomics journal (2023) | [10.1038/s41397-022-00293-5](https://doi.org/10.1038/s41397-022-00293-5) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Lommerse_2019_reference](drugs/drug_raltegravir/Raltegravir_Lommerse2019_reference.md) | held back | 1-compartment, oral | 6 | Lommerse J et al., Maternal-Neonatal Raltegravir Populatio…, CPT: pharmacometrics & syst… (2019) | [10.1002/psp4.12443](https://doi.org/10.1002/psp4.12443) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.917). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Bukkems_2021_reference](drugs/drug_raltegravir/Raltegravir_Bukkems2021_reference.md) | — | 2-compartment (no model) | 7 (+3 cov.) | Bukkems VE et al., A population pharmacokinetics analysis…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12586](https://doi.org/10.1002/psp4.12586) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Rizk_2015_reference](drugs/drug_raltegravir/Raltegravir_Rizk2015_reference.md) | — | 1-compartment (no model) | 2 | Rizk ML et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2015) | [10.1002/jcph.493](https://doi.org/10.1002/jcph.493) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Smith_2011_EC50](drugs/drug_raltegravir/pd_Smith_2011_EC50.md) | raltegravir susceptibility of HIV-2 (EC50 in single-cycle assay) ← raltegravir · direct sigmoid Emax (Hill) effect | — | Smith RA et al., Phenotypic susceptibility of HIV-2 to r…, AIDS (London, England) (2011) | [10.1097/QAD.0b013e32834d8e52](https://doi.org/10.1097/QAD.0b013e32834d8e52) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Smith_2011_EC50](drugs/drug_raltegravir/pd_Smith_2011_EC50.md) | raltegravir susceptibility of HIV-2 (EC50 in single-cycle assay) ← raltegravir · direct sigmoid Emax (Hill) effect | — | Smith RA et al., Phenotypic susceptibility of HIV-2 to r…, AIDS (London, England) (2011) | [10.1097/QAD.0b013e32834d8e52](https://doi.org/10.1097/QAD.0b013e32834d8e52) |
 
 ## ADME sites
 
@@ -66,7 +66,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 61 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 2  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

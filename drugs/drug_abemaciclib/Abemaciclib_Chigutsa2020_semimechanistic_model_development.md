@@ -4,7 +4,7 @@
 
 # abemaciclib — `Abemaciclib_Chigutsa2020_semimechanistic_model_development`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Abemaciclib’s M2 and M20 metabolites each have n_cmt = 0, leaving them without a dose-connected compartment and causing rejection.**
+
+Both metabolites are listed at the central site with n_cmt 0, while their metabolism links have no specified parameter and an unknown parameter kind; the record therefore shows no dose-connected path to them. A reported unit could not be converted to SI, but the record does not identify which parameter’s unit was affected. Extracted — abemaciclib: Fab 0.482 F, t1/2z 24.8 h, AUC∞ 4.42e+03 ng·h/mL, Cmax 123 ng/mL, CL 22.8 L/h, kabs 0.31 1/h); M2 (LSN2839567): t1/2z 19.3 h, AUC∞ 1.79e+03 ng.h/mL.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 ## Citation
 Chigutsa E et al., Development and Application of a Mechan…, CPT: pharmacometrics & syst… (2020)

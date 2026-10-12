@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Remoxipride concentrations (nM) inhibit prolactin (PRL) levels via an indirect response model with proportional inhibition; the paper excerpts do not state the mechanism beyond this. Reported EC50: 94.8 nM; no Imax, kin, kout, or ke0 values are available in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Taneja_2016`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

@@ -5,7 +5,7 @@
 
 # doxazosin — `Doxazosin_Aljaeid2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875), gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Total clearance for doxazosin is recorded as 0.027 ml/h and the volume of distribution as 0.0001 L, magnitudes far outside any physiological window for this drug, consistent with a unit or scale error when the values were extracted. The volume is noted as derived from CL·t½/ln2, so the implausible clearance propagates into it. A second reader also disagreed on one value, reading 1 where this record holds 2.03. Extracted — doxazosin: CL 0.027 ml/h, V 0.0001 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has 2.03, the second reading 1. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q32: this record has 2.03, the second reading 1. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -64,17 +64,19 @@ Aljaeid BM et al., Chitosan-TPP nanoparticles stabilized b…, Drug development 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.875 (7/8 fields) | 1 |
 | `gpt-oss:120b` | not confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q32]` | 2.03 | 1 | mismatch |
 | `gpt-oss:120b` | `values[Q32]` | 2.03 | 1 | mismatch |
 
 </details>

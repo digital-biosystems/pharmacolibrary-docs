@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methohexital inhibits 5-HT-induced currents through a sigmoidal Emax mechanism, with a reported IC50 of 95 µM and a Hill coefficient of -1.0. The paper does not specify the kinetic or mechanistic details beyond this concentration-response relationship.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Barann_2000`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

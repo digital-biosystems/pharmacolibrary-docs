@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Niflumic acid acts as a direct, concentration-dependent inhibitor on the peak amplitude of alpha3beta2 nicotinic acetylcholine receptor (nAChR) mediated inward currents, an effect attributed to a direct interaction with the receptors rather than indirect mechanisms. The inhibition follows a model with an IC50 of 260 pM and a slope factor of -1.5.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zwart_1995`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

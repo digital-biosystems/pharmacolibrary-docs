@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M09A&quot;,&quot;href&quot;:&quot;atc/M09A.md&quot;},{&quot;label&quot;:&quot;risdiplam&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risdiplam_Cleary2023_reference&quot;,&quot;label&quot;:&quot;Cleary_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risdiplam/Risdiplam_Cleary2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risdiplam_Cleary2023_reference&quot;,&quot;label&quot;:&quot;Cleary_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risdiplam/Risdiplam_Cleary2023_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # risdiplam
 
@@ -33,7 +33,7 @@ Risdiplam is a medicine used to treat spinal muscular atrophy. It is authorised 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Cleary_2023_reference](drugs/drug_risdiplam/Risdiplam_Cleary2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 (+2 cov.) | Cleary Y et al., Estimation of FMO3 Ontogeny by Mechanis…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01241-7](https://doi.org/10.1007/s40262-023-01241-7) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Cleary_2023_reference](drugs/drug_risdiplam/Risdiplam_Cleary2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 (+2 cov.) | Cleary Y et al., Estimation of FMO3 Ontogeny by Mechanis…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01241-7](https://doi.org/10.1007/s40262-023-01241-7) |
 
 ## ADME sites
 

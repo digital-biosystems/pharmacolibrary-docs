@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Copper sulfate concentrations (mg L−1) act on cell mortality (%) measured after 24 h by flow cytometry, described by a sigmoid Emax inhibitory model with EC50 values of 2.05 ± 0.44, 4.07 ± 0.4, and 3.55 ± 0.42 mg L−1 (apparently for three algal species); the paper excerpts do not state the mechanism or these EC50 values (they discuss hydrogen peroxide instead).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mehdizadeh_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

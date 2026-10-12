@@ -5,7 +5,7 @@
 
 # propranolol — `Propranolol_Salehifar2017_male`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.933). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778), gpt-oss:120b (partly confirmed, agreement 0.933). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — propranolol: Cmax 35.9 ng/ml, tmax 105 min, V 361 L, CL 128 L/h, kabs 0.5 hr -1, t1/2α 0.77 hr, t1/2β 19.7 hr, t1/2z 2.1 hr, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of variable: this record has none, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc 0-10: this record has 169.2, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -108,17 +108,22 @@ Salehifar E et al., Pharmacokinetic Parameters and Over-Res…, Advanced pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.778 (14/18 fields) | 4 |
 | `gpt-oss:120b` | partly confirmed | 0.933 (14/15 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc 0-10]` | 169.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc 0-2].parameter_id` | Q88 | Q19 | mismatch |
+| `gpt-oss-120b` | `parameters[variable]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[‍dose]` | not captured | 0.55 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[variable]` | not captured | not captured | only_one_extracted |
 
 </details>

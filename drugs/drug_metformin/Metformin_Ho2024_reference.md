@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Ho2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4), gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record, taken from a review source (Ho_2024) for metformin, reports total clearance of 12.13 mL/min and a distribution volume of 250.0 mL, magnitudes flagged as physiologically implausible for this drug and consistent with a misread unit or scale. The parameter assignment is also uncertain: a second reader attributed the 12.13 value to the intercompartmental clearance rather than total clearance, and read the intercompartmental clearance as 3 instead of the recorded 15 mL/min. These disagreements mean the mapping of extracted values to clearance and distribution parameters could not be confirmed. Extracted — metformin: CL 12.1 mL/min, V 250 mL, Q 15 mL/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 12.13, the second reading 15; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 12.13, the second reading 15; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -61,17 +61,21 @@ Ho H et al., &lt;i&gt;In silico&lt;/i&gt; modeling for &lt;i&gt;ex viv…, Front
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.4 (2/5 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.topology_template` | 2C | 1C | mismatch |
+| `gpt-oss-120b` | `values[Q22]` | 12.13 | 15 | mismatch |
+| `gpt-oss-120b` | `values[Q30]` | 15 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q22]` | 12.13 | 15 | mismatch |
 | `gpt-oss:120b` | `values[Q30]` | 15 | 3 | mismatch |
 | `gpt-oss:120b` | `values[Q63]` | not captured | 1.34 | only_one_extracted |

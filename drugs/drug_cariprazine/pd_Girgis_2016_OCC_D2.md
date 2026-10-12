@@ -17,6 +17,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Total active cariprazine (cariprazine + DCAR + DDCAR) plasma concentrations were related to D2 receptor occupancy (measured by [11C]-(+)-PHNO PET) via a direct Emax model, Effect (%) = Emax × C/(EC50 + C), with Emax fixed to 100% and an EC50 of 13.03 (±6.8) nM for D2 receptor-rich regions after subchronic dosing; no effect-compartment or turnover mechanism was described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Girgis_2016`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -5,7 +5,7 @@
 
 # captopril — `Captopril_Duchin1982_oral_dose_total_radioactivity`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.095). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1), gpt-oss:120b (not confirmed, agreement 0.095). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Hu_2025) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Cmax, AUC∞ and fe), so that value has no SI equivalent. Extracted — captopril: Cmax 143 ng/ml, tmax 1 hr, AUC∞ 725 ng × hr/ml, fe 60.7 % dose, V 0.7 L/kg, CL 3.31 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has captopril, the second reading unknown; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has captopril, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -78,17 +78,36 @@ Duchin KL et al., Captopril kinetics, Clinical pharmacology and t… (1982)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.1 (2/20 fields) | 18 |
 | `gpt-oss:120b` | not confirmed | 0.095 (2/21 fields) | 19 |
 
-<details><summary>19 field(s) a reader read differently</summary>
+<details><summary>37 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[2]` | not captured | 0.39 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | 724.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl$_t$]` | not captured | 0.62 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 143.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cumulative urinary excretion]` | 60.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k$_12$]` | not captured | 4.64 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k$_13$]` | not captured | 1.02 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k$_21$]` | not captured | 8.62 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k$_31$]` | not captured | 0.44 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k$_e1$]` | not captured | 4.44 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t$_{1/2}β$]` | not captured | 1.98 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 1.00 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v$_c$]` | not captured | 0.14 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd$_b$]` | not captured | 1.78 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd$_ss$]` | not captured | 0.64 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 0.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | captopril | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | captopril | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[2]` | not captured | 0.39 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[3]` | not captured | 0.42 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[4]` | not captured | 0.26 | only_one_extracted |

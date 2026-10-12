@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model describes a direct Emax inhibition of intraocular pressure (mmHg) by acetazolamide plasma concentrations (microg x ml(-1)) with a maximum effect (Emax) of 7.2 mmHg and an EC50 of 1.64 microg x ml(-1). The paper does not provide the specific rate constants or mechanism details beyond the Emax functional form.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yano_1998`
 - **model family:** `emax`
 - **driver:** `pk_record`

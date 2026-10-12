@@ -28,8 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yin_2017_NHE3_799C](drugs/drug_tenapanor/pd_Yin_2017_NHE3_799C.md) | NHE3-799C activity ← tenapanor · direct sigmoid Emax (Hill) effect | — | Yin J et al., A common NHE3 single-nucleotide polymor…, American journal of physiol… (2017) | [10.1152/ajpgi.00044.2017](https://doi.org/10.1152/ajpgi.00044.2017) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yin_2017_NHE3_799R](drugs/drug_tenapanor/pd_Yin_2017_NHE3_799R.md) | NHE3-799R activity ← tenapanor · direct sigmoid Emax (Hill) effect | — | Yin J et al., A common NHE3 single-nucleotide polymor…, American journal of physiol… (2017) | [10.1152/ajpgi.00044.2017](https://doi.org/10.1152/ajpgi.00044.2017) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Yin_2017_NHE3_799C](drugs/drug_tenapanor/pd_Yin_2017_NHE3_799C.md) | NHE3-799C activity ← tenapanor · direct sigmoid Emax (Hill) effect | — | Yin J et al., A common NHE3 single-nucleotide polymor…, American journal of physiol… (2017) | [10.1152/ajpgi.00044.2017](https://doi.org/10.1152/ajpgi.00044.2017) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Yin_2017_NHE3_799R](drugs/drug_tenapanor/pd_Yin_2017_NHE3_799R.md) | NHE3-799R activity ← tenapanor · direct sigmoid Emax (Hill) effect | — | Yin J et al., A common NHE3 single-nucleotide polymor…, American journal of physiol… (2017) | [10.1152/ajpgi.00044.2017](https://doi.org/10.1152/ajpgi.00044.2017) |
 
 ## ADME sites
 

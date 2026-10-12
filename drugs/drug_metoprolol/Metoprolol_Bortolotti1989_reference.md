@@ -4,7 +4,7 @@
 
 # metoprolol — `Metoprolol_Bortolotti1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.105). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846), gpt-oss:120b (not confirmed, agreement 0.105). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The parameter labeled 'Plasma protein binding' with a value of 32% is defined as the unbound fraction (fu), creating a dimension mismatch. The record was built from the abstract alone, so these summary statistics stand in for a fitted model. A second reader could not verify the extracted values for clearance, AUC, or the elimination rate constant. Extracted — metoprolol: fu 32 %, CL 3.7 1/h/kg, MRT 0.77 h, AUC 0.9 mg h/l, kel 3.17 h-1, Ae 1.5 % of the administered dose.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metoprolol, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose: this record has none, the second reading 3.2; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -80,17 +80,20 @@ Bortolotti A et al., Pharmacokinetic and pharmacodynamic mod…, European journa
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.846 (11/13 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.105 (2/19 fields) | 17 |
 
-<details><summary>17 field(s) a reader read differently</summary>
+<details><summary>19 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[dose]` | not captured | 3.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total plasma drug clearance].parameter_id` | Q22 | Q354 | mismatch |
 | `gpt-oss:120b` | `parameters[amount excreted]` | 1.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[amount excreted]` | not captured | 1.5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc]` | 0.9 | not captured | only_one_extracted |

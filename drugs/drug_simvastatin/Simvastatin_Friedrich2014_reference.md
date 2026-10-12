@@ -5,7 +5,7 @@
 
 # simvastatin — `Simvastatin_Friedrich2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667), gpt-oss:120b (partly confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record reports CL/F 15.3 l/h, V1 228.0 l, V2 827.0 l, Q/F 9.79 l/h and kabs 0.3 h⁻¹ for simvastatin, but the deviations check failed with 'apparent_assumption: not acceptable': bioavailability was fixed to 1, metabolite bioavailability to 1, and no molar correction was applied. Tlag was defaulted rather than estimated. A second reader also disagreed on several extracted values, reading Q/F as 9.79 where this record had none, and 50.2 for another quantity absent here. Extracted — simvastatin: CL/F 15.3 l/hour, V1 228 l, V2 827 l, Q/F 9.79 l/hour, kabs 0.3 hour -1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q30: this record has none, the second reading 9.79; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 39.4; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -65,17 +65,22 @@ Friedrich S et al., The pharmacokinetics and pharmacokineti…, CPT: pharmacomet
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.667 (8/12 fields) | 4 |
 | `gpt-oss:120b` | partly confirmed | 0.6 (6/10 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q312]` | not captured | 39.4 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q314]` | not captured | 50.2 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q320]` | not captured | 177 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q321]` | not captured | 5380 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q30]` | not captured | 9.79 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q314]` | not captured | 50.2 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q49]` | 0.3 | not captured | only_one_extracted |
@@ -141,7 +146,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference_modelica.zip" download>Simvastatin_Friedrich2014_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference_fmi.zip" download>Simvastatin_Friedrich2014_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference_matlab.zip" download>Simvastatin_Friedrich2014_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference_matlab_simbio.zip" download>Simvastatin_Friedrich2014_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference_matlab_simbio.zip" download>Simvastatin_Friedrich2014_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference_sbml.zip" download>Simvastatin_Friedrich2014_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference_cellml.zip" download>Simvastatin_Friedrich2014_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

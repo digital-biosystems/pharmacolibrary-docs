@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Cawello_2002_ACE_inhibition](drugs/drug_moexipril/pd_Cawello_2002_ACE_inhibition.md) | ACE inhibition ← moexiprilat · direct sigmoid Emax (Hill) effect | — | Cawello W et al., Moexipril shows a long duration of acti…, International journal of cl… (2002) | [10.5414/cpp40009](https://doi.org/10.5414/cpp40009) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Cawello_2002_ACE_inhibition](drugs/drug_moexipril/pd_Cawello_2002_ACE_inhibition.md) | ACE inhibition ← moexiprilat · direct sigmoid Emax (Hill) effect | — | Cawello W et al., Moexipril shows a long duration of acti…, International journal of cl… (2002) | [10.5414/cpp40009](https://doi.org/10.5414/cpp40009) |
 
 ## ADME sites
 

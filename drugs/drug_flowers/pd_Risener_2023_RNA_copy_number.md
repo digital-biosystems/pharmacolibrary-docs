@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Solidago altissima flower extract (extract 1428) concentrations (0.3–20 µg/mL) were tested against SARS-CoV-2 RNA copy number in Vero cell supernatant in a virus yield reduction assay; the paper does not state a mechanism beyond concentration-dependent inhibition, and no explicit Emax/Imax or Hill parameters are given, with reported potency EC50 = 4.5 µg/mL and EC90 = 9.9 µg/mL (Vero).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Risener_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

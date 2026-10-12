@@ -19,7 +19,7 @@
 
 **Model:** No model was generated from this record.
 
-> Maprotiline concentration-dependently inhibited carbachol-induced acetylcholine receptor-operated potassium current (I K.ACh) in guinea-pig atrial myocytes with an IC50 of 1.81 µM, and inhibited GTPγS-activated I K.ACh with an IC50 of 5.93 µM (IC50 ratio 3.28), suggesting preferential action at the muscarinic M2 receptor; no Emax, kin/kout, ke0 or other rate parameters are given.
+> Maprotiline concentration-dependently inhibited carbachol (CCh)-induced I K.ACh (pA) in guinea-pig atrial myocytes, with an IC50 of 1.81 ± 0.46 µM (sigmoid Emax inhibition); its IC50 for GTPγS-activated I K.ACh was 5.93 µM (IC50 ratio 3.28), suggesting preferential action at the muscarinic M2 receptor rather than downstream G protein/channel sites.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

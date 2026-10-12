@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The gadoteric acid record was rejected because reported clearance (2.51 L/h) and volume (0.161 L) were flagged as physiologically implausible, consistent with unit/scale extraction error.**
+
+The record reports total clearance of 2.51 L/h and volume of distribution of 0.161 L for gadoteric acid. The finding attributes the clearance/volume failure to an implausible magnitude from a unit/scale extraction error but does not identify which value triggered it. Extracted — gadoteric acid: AUC 1.59e+03, CLnorm 0.0602 L/h/kg, Vss 0.0473 L/kg, t1/2β 1.35 h, CL 2.51 L/h, V 0.161 L, Q 0.335 L/h.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 > **Dose compound ≠ measured compound:** dosed `gadoterate meglumine`, measured `gadoteric acid`.
 

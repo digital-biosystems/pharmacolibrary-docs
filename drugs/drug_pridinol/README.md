@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03B&quot;,&quot;href&quot;:&quot;atc/M03B.md&quot;},{&quot;label&quot;:&quot;pridinol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pridinol_Minamijima2026_reference&quot;,&quot;label&quot;:&quot;Minamijima_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pridinol/Pridinol_Minamijima2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pridinol_Minamijima2026_reference&quot;,&quot;label&quot;:&quot;Minamijima_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pridinol/Pridinol_Minamijima2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # pridinol
 
@@ -33,7 +33,7 @@ Pridinol is a centrally acting muscle relaxant used for painful muscle spasms an
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Minamijima_2026_reference](drugs/drug_pridinol/Pridinol_Minamijima2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Minamijima Y et al., Plasma and Urine Pharmacokinetics of In…, Journal of veterinary pharm… (2026) | [10.1111/jvp.70029](https://doi.org/10.1111/jvp.70029) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Minamijima_2026_reference](drugs/drug_pridinol/Pridinol_Minamijima2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Minamijima Y et al., Plasma and Urine Pharmacokinetics of In…, Journal of veterinary pharm… (2026) | [10.1111/jvp.70029](https://doi.org/10.1111/jvp.70029) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

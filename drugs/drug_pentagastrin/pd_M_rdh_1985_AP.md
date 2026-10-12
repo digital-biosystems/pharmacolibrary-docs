@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentagastrin stimulates aminopyrine accumulation (pmol AP/10^4 parietal cells), an index of parietal cell acid production, with an EC50 of 10^-8 M; the paper excerpts do not state the model form or mechanism beyond this potency value.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mårdh_1985`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

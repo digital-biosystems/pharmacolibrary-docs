@@ -1,10 +1,10 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;phenylephrine&quot;,&quot;href&quot;:&quot;drugs/drug_phenylephrine/&quot;},{&quot;label&quot;:&quot;Anderson_2017 \u00b7 children and adults&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;phenylephrine&quot;,&quot;href&quot;:&quot;drugs/drug_phenylephrine/&quot;},{&quot;label&quot;:&quot;Anderson_2017 \u00b7 reference&quot;}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # phenylephrine — `Phenylephrine_Anderson2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,22 +16,20 @@
 
 ### Reviewer guidance
 
-**No model parameters were extracted from this paper.**
+**The clearance plausibility check could not be computed.**
 
-Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — phenylephrine: CL 160 L h-1, V1 13.3 L, Q 25.3 L h-1, V2 225 L, t1/2ka 6.2 minutes, tlag 1.5 minutes, Fab 0.183 Allometry, scaled to a 70-kg person, was used for PK size standardization..
 
 Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-11 08:47:04.830324+00:00) predates the upstream re-run (2026-10-06 10:05:58.017110+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Anderson BJ et al., The phenylephrine concentration-respons…, Paediatric anaesthesia (2017)
   ·  DOI: [10.1111/pan.13221](https://doi.org/10.1111/pan.13221)
 
 ## Model component
-<dbs-pgx drug="phenylephrine" model-id="Phenylephrine_Anderson2017_reference" status="needs_review" stale="true" population="children and adults" measured-compound="phenylephrine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="phenylephrine" model-id="Phenylephrine_Anderson2017_reference" status="needs_review" stale="false" population="children and adults" measured-compound="phenylephrine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.
@@ -115,7 +113,7 @@ _Every reader agrees on every compared field of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_phenylephrine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Anderson_2017` / `Anderson_2017::children and adults`)
+- scholar stages: `../../../knowledgebase/drugs/drug_phenylephrine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Anderson_2017` / `Anderson_2017::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Flunisolide concentrations (ng/mL) inhibit cortisol plasma levels via an indirect response model (inhibition of response production, proportional effect form), but the paper excerpts provide no potency or rate parameter values (Imax, IC50, kin, kout) and no full-text description of the mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Möllmann_1997`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`

@@ -5,7 +5,7 @@
 
 # omeprazole — `Omeprazole_Marques2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5), gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has none, the second reading 3.66; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q38: this record has 78, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -54,17 +54,22 @@ Marques L et al., Model-Based Virtual Clinical Trial Reve…, Pharmaceutics (202
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 | `gpt-oss:120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q38]` | 78 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q44]` | not captured | 3.66 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q54]` | not captured | 40 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q87]` | not captured | 78 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q32]` | not captured | 3.66 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q38]` | 78 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q41]` | not captured | 78 | only_one_extracted |
@@ -125,7 +130,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_omeprazole/Omeprazole_Marques2026_reference/Omeprazole_Marques2026_reference_modelica.zip" download>Omeprazole_Marques2026_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_omeprazole/Omeprazole_Marques2026_reference/Omeprazole_Marques2026_reference_fmi.zip" download>Omeprazole_Marques2026_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Marques2026_reference/Omeprazole_Marques2026_reference_matlab.zip" download>Omeprazole_Marques2026_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Marques2026_reference/Omeprazole_Marques2026_reference_matlab_simbio.zip" download>Omeprazole_Marques2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Marques2026_reference/Omeprazole_Marques2026_reference_matlab_simbio.zip" download>Omeprazole_Marques2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Marques2026_reference/Omeprazole_Marques2026_reference_sbml.zip" download>Omeprazole_Marques2026_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Marques2026_reference/Omeprazole_Marques2026_reference_cellml.zip" download>Omeprazole_Marques2026_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM popPK screen).">pig</span> | [Honerjäger_1986_Fc](drugs/drug_prajmaline/pd_Honerj_ger_1986_Fc.md) | peak force of contraction ← prajmalium bitartrate · direct sigmoid Emax (Hill) effect | — | Honerjäger P et al., Negative inotropic effects of tetrodoto…, Naunyn-Schmiedeberg's archi… (1986) | [10.1007/BF00511411](https://doi.org/10.1007/BF00511411) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6), ollama:gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM popPK screen).">pig</span> | [Honerjäger_1986_Fc](drugs/drug_prajmaline/pd_Honerj_ger_1986_Fc.md) | peak force of contraction ← prajmalium bitartrate · direct sigmoid Emax (Hill) effect | — | Honerjäger P et al., Negative inotropic effects of tetrodoto…, Naunyn-Schmiedeberg's archi… (1986) | [10.1007/BF00511411](https://doi.org/10.1007/BF00511411) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

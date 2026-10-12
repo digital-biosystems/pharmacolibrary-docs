@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Goglia2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8), gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — metformin: CL 500 mL/min, V 216 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q364: this record has none, the second reading 500; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q56: this record has none, the second reading 1.5. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -58,17 +58,19 @@ Goglia U et al., Ianus Bifrons: The Two Faces of Metform…, Cancers (2024)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.8 (4/5 fields) | 1 |
 | `gpt-oss:120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q56]` | not captured | 1.5 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q364]` | not captured | 500 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q46]` | not captured | 425 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q54]` | not captured | 850 | only_one_extracted |

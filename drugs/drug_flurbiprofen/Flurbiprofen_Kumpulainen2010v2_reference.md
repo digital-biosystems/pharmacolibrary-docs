@@ -5,7 +5,7 @@
 
 # flurbiprofen — `Flurbiprofen_Kumpulainen2010v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.824). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.759), gpt-oss:120b (not confirmed, agreement 0.824). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The dimension check failed on structural parameters: kabs, an absorption rate constant, is given in l h⁻¹, and several parameters (CL 0.83, fu 0.00023, V2 0.19, sigma 0.11) carry the unit 'Bootstrap', which is not a physical unit and could not be expressed in SI, so no SI values were available. Volumes are reported only as allometric scaling factors (× WT/70) rather than in litres. A second reader also disagreed on the dosed compound (flurbiprofen axetil versus flurbiprofen) and on a deep peripheral volume parameter identifier, and noted a parameter (uptake to CSF, 6.0) absent from this record. Extracted — flurbiprofen: kabs 2.5 l h⁻¹, Fab 0.045 h, CL 0.83 Bootstrap, V1 2.6 WT/70, Q2 0.58 WT/70, Q 1 WT/70, Vss 0.097 WT/70, fu 0.00023 Bootstrap, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has flurbiprofen axetil, the second reading flurbiprofen; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flurbiprofen axetil; flurbiprofen, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -82,17 +82,25 @@ Kumpulainen E et al., Plasma and cerebrospinal fluid pharmaco…, British journa
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.759 (22/29 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.824 (14/17 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['flurbiprofen axetil', 'flurbiprofen', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[qcsf].covariate_forms` | ['power'] | ['power', 'power'] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q61_wt_power]` | not captured | 0.18 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q64_wt_power]` | not captured | 1.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q99_wt_power]` | 1.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | flurbiprofen axetil; flurbiprofen | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | flurbiprofen | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[uptake to csf]` | not captured | 6.0 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v (deep peripheral) () ×].parameter_id` | Q65 | Q77 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | flurbiprofen axetil | flurbiprofen | mismatch |

@@ -5,7 +5,7 @@
 
 # rutoside — `Rutoside_Domnguez2021_value`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.15). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.412), gpt-oss:120b (not confirmed, agreement 0.15). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — quercetin: kabs 0.104 h−1, t1/2ka 0.281, Fab 0.565, tlag 3.91 h, V1 0.0646 L/kg, V 0.251, kel 1.47 h−1, k12 2.6 h−1, … (+1); rutoside: kabs 38.9 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rutin, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has rutin → quercetin (metabolism), the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -144,17 +144,28 @@ Domínguez Moré GP et al., Matrix Effects of the Hydroethanolic Ex…, Pharmace
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.412 (7/17 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.15 (3/20 fields) | 17 |
 
-<details><summary>17 field(s) a reader read differently</summary>
+<details><summary>27 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['rutin', 'quercetin', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[a]` | 38.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k v]` | -0.701 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka1_pop]` | not captured | 0.104 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka1_pop]` | 0.104 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag2_pop]` | not captured | 3.91 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag2_pop]` | 3.91 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vpop].parameter_id` | Q352 | Q61 | mismatch |
+| `gpt-oss-120b` | `parameters[βkd75]` | not captured | -0.225 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[βvgext]` | not captured | 0.478 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[a]` | 38.9 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[b]` | not captured | 0.128 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[f1_pop]` | not captured | 0.565 | only_one_extracted |

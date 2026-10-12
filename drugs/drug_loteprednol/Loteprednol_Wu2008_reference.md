@@ -4,7 +4,7 @@
 
 # loteprednol — `Loteprednol_Wu2008_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Loteprednol etabonate's metabolism to Delta1-cortienic acid etabonate lacks a defined rate constant, leaving the metabolite structurally orphaned.**
+
+The record lists two metabolic links from loteprednol etabonate to Delta1-cortienic acid etabonate and then to Delta1-cortienic acid, but both links have no associated rate parameter. Because the abstract-only source provided only summary statistics like terminal half-life and clearance rather than specific metabolic rate constants, the model builder could not assign values to these missing links. Consequently, the metabolite compartments are considered unreachable from the dose, resulting in the rejection of the record. Extracted — loteprednol: t1/2β 12.5 min, CL 102 mL min(-1) kg(-1), kel 0.24 min(-1).
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has loteprednol etabonate / Delta1-cortienic acid etabonate / Delta1-cortienic acid, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 > **Dose compound ≠ measured compound:** dosed `loteprednol etabonate / Delta1-cortienic acid etabonate / Delta1-cortienic acid`, measured `Delta1-cortienic acid etabonate / Delta1-cortienic acid`.
 
@@ -66,6 +74,29 @@ Wu WM et al., Pharmacokinetics of the sequential meta…, The Journal of pharmac
 - no GROBID TEI available — transcribed from abstract in Wu_2008_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
+
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['loteprednol etabonate', 'delta1-cortienic acid etabonate', 'metabolism'], ['delta1-cortienic acid etabonate', 'delta1-cortienic acid', 'metabolism']] | [['ae', 'a', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | loteprednol etabonate / Delta1-cortienic acid etabonate / Delta1-cortienic acid | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | Delta1-cortienic acid etabonate / Delta1-cortienic acid | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Remoxipride concentrations in brain ECF (cited PK) stimulate the release of ACTH into plasma (pg/ml), described by a pool model with an Emax effect on ACTH release (E max,rem,ACTH fixed to 10, EC50 2.61 μM, at least 40-fold higher than the PRL EC50 of 0.064 μM), with baseline Bsl ACTH 24.6 pg/ml, k synth,ACTH 603 pg/ml/h, k rel,ACTH 3.13 h−1 and k degr,ACTH 24.5 h−1; the paper suggests this stimulatory ACTH response is an off-target, possibly adrenergic receptor–mediated effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2017_2`
 - **model family:** `tolerance`
 - **driver:** `cited_pk`

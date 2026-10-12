@@ -5,7 +5,7 @@
 
 # flurbiprofen — `Flurbiprofen_Zhang2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385), gpt-oss:120b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 In the Zhang_2018 model of flurbiprofen in Chinese patients with postoperative pain, kel (terminal elimination rate constant) carries value 0.0001 with the unit L/h, which is a clearance-like dimension rather than reciprocal time — a dimension mismatch on a structural parameter. The reported unit could not be converted to SI, so the parameter arrived without an SI value. A second reader assigned 0.2944 to the parameter where this record has no value, disagreeing with the extracted record. The other parameters, Vd 0.5159 L and CL 0.1068 L/h, are dimensionally consistent. Extracted — flurbiprofen: kel 0.0001 L/h, V 0.516 L, CL 0.107 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of s: this record has none, the second reading 0.2944. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flurbiprofen axetil, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -89,17 +89,26 @@ Zhang J et al., Population pharmacokinetic modeling of…, Journal of pain resea
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.385 (5/13 fields) | 8 |
 | `gpt-oss:120b` | partly confirmed | 0.909 (10/11 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[θcl]` | 1.55 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θheight]` | -0.0162 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θheight]` | not captured | -0.0162 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θke].parameter_id` | Q47 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[θweight]` | not captured | -0.0080 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | flurbiprofen axetil | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | flurbiprofen | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[s]` | not captured | 0.2944 | only_one_extracted |
 
 </details>

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Edaravone concentration-dependently potentiates NGF-induced neurite outgrowth in PC12 cells (expressed as % of NGF-alone control) via a sigmoid Emax stimulation model, acting through Nrf2 activation (effects attenuated by Nrf2 siRNA). Reported EC50 is 22.5 nM with Emax of ~4-fold increase over control; no kinetic parameters (kin, kout, ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ishima_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

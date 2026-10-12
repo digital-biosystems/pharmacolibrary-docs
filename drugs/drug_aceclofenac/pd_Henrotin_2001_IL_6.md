@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Aceclofenac directly inhibits IL-6 production by human articular chondrocytes, with the paper reporting a 30% and 22% decrease in normal and osteoarthritic cultures, respectively, at a concentration of 30 mM. The paper does not provide specific Emax, IC50, or kinetic parameters for this effect.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Henrotin_2001`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

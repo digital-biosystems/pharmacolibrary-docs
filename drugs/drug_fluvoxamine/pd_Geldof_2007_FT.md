@@ -20,7 +20,7 @@
 
 **Model:** No model was generated from this record.
 
-> Fluvoxamine plasma concentrations (ng ml−1) were linked to the categorical forepaw trampling (FT) response in a categorical model with an inhibitory effect direction; the paper excerpts provide no mechanism, no effect form, and no potency or rate parameter values.
+> Fluvoxamine plasma concentrations (ng ml(-1)) were linked to the categorical forepaw trampling response (score 0-3) in a sequential PK/PD categorical model with an inhibitory effect direction; the paper excerpts provide no further mechanism or parameter values.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

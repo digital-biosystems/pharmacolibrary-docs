@@ -4,7 +4,7 @@
 
 # tepotinib — `Tepotinib_Xiong2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.733). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Q/F and CL have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — tepotinib: CL/F 20.4 L/h, V1/F 1.02e+03 L, kabs 0.278 h−1, Q2/F 1.32 L/h, V2/F 1.18e+03 L, D1 4.09 h, Fab -0.0412, Frel -0.209, … (+1); MSC2571109A: CL 40.2 L/h, V1 131 L, Q 106 L/h, V2 152 L, CL 0.498, fm -0.398.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cf1 covariate on fpar: this record has none, the second reading -0.656; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Xiong W et al., Population pharmacokinetic analysis of…, Cancer chemotherapy and pha… (2022)
@@ -100,6 +108,34 @@ Xiong W et al., Population pharmacokinetic analysis of…, Cancer chemotherapy a
 - LLM selected parameter table(s) 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.733 (22/30 fields) | 8 |
+
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[cf1 covariate on fpar]` | not captured | -0.656 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[dose covariate on fpar]` | -0.0412 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[fasting state covariate on d1]` | -0.370 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[fasting state covariate on fpar]` | -0.209 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[hepatocellular carcinoma covariate on fm]` | -0.398 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[inr at baseline covariate on qpar/f]` | 3.81 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[non-small cell lung cancer covariate on clmet]` | 0.498 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[qpar/fa].parameter_id` | Q80 | Q309 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

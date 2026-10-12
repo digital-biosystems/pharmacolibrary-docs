@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> In a proportional odds model, average daily pimavanserin AUC0–24 (ng × h/mL) acts additively on the logit of the 7-point CGI-SCH-S negative symptom score (alongside a placebo time course), with higher exposure increasing the probability of lower (better) scores; the E-R relationship was shallow (cumulative probability of score ≤3 at week 26: 0.30 at 34 mg, 0.27 at 20 mg, 0.24 placebo vs 0.07 at baseline), and no potency (IC50/EC50/Emax) or rate parameters are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Darwish_2022`
 - **model family:** `categorical`
 - **driver:** `cited_pk`

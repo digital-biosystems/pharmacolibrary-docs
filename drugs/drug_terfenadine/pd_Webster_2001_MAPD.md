@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Terfenadine acts directly on monophasic action potential duration (MAPD) as a direct proportional stimulatory effect, with a free ED50 of 1.9 nM. The paper excerpts are unavailable, so the specific mechanism of action (e.g., effect compartment vs. direct) is not described beyond the recorded model family and direction.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Webster_2001`
 - **model family:** `emax`
 - **driver:** `cited_pk`

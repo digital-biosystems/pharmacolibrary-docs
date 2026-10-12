@@ -24,7 +24,7 @@ Clomethiazole is a sedative and hypnotic medication, also described as an antico
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Zingmark_2003_reference](drugs/drug_clomethiazole/Clomethiazole_Zingmark2003_reference.md) | — | 1-compartment (no model) | 0 | Zingmark PH et al., Population pharmacokinetics of clomethi…, British journal of clinical… (2003) | [10.1046/j.0306-5251.2003.01850.x](https://doi.org/10.1046/j.0306-5251.2003.01850.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Zingmark_2003_reference](drugs/drug_clomethiazole/Clomethiazole_Zingmark2003_reference.md) | — | 1-compartment (no model) | 0 | Zingmark PH et al., Population pharmacokinetics of clomethi…, British journal of clinical… (2003) | [10.1046/j.0306-5251.2003.01850.x](https://doi.org/10.1046/j.0306-5251.2003.01850.x) |
 
 ## Pharmacodynamics (PD)
 

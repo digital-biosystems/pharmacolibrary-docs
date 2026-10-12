@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates a dose-only Emax inhibition model where parecoxib dose acts on rescue morphine equivalents (mg·kg-1), but the mechanism is explicitly described as unknown and no potency or rate parameters are provided.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tan_2016`
 - **model family:** `emax`
 - **driver:** `dose_only`

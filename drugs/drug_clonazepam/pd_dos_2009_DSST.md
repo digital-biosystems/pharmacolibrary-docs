@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clonazepam plasma concentrations inhibit the Digit Symbol Substitution Test via a proportional sigmoid Emax model with a maximum inhibition of 72%. Specific potency or rate parameters (e.g., IC50, ke0) are not provided in the available record or excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `dos_2009`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

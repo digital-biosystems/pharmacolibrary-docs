@@ -5,7 +5,7 @@
 
 # clozapine — `Clozapine_Reeves2024_weight_v_f_norclozapine`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of iiv cl/f clozapine: this record has none, the second reading 93; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+**Only clearance was extracted — no volume.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — clozapine: kabs 1 1/h, CL/F 1 L/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clozapine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Reeves S et al., A population pharmacokinetic model to g…, British journal of clinical… (2024)
@@ -82,18 +86,23 @@ f_norclozapine, σ₀_ᵢₙₜₑᵣcₑₚₖ clozapine (mg l⁻¹))
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[iiv cl/f clozapine]` | not captured | 93 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[βsmoker cl/f clozapine]` | 0.37 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[base model parameter estimates]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[base model parameter estimates]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clozapinei]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[smoke cl/f clozapine parameter estimates]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[smoke cl/f clozapine parameter estimates]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | clozapine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | clozapine | unknown | mismatch |
 
 </details>
 

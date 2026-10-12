@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism or excerpts; the record indicates deltamethrin (decamethrin) concentrations inhibit microsomal 45Ca2+ uptake with a sigmoid Emax-type model, with IC50 &gt; 200 microM (no Emax, Hill coefficient, or rate values stated).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kodavanti_1993`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

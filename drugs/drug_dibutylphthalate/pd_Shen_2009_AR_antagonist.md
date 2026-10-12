@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dibutyl phthalate (DBP) inhibits androgen receptor activity measured in a luciferase reporter gene assay, with an IC50 of 1.05x10(-6) M; the paper excerpts do not state the mechanism beyond this inhibitory concentration.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shen_2009`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

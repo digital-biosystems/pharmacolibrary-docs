@@ -5,7 +5,7 @@
 
 # oxycodone — `Oxycodone_Shi2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8), gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has none, the second reading 145.73; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q56: this record has 1.06, the second reading 0.083; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -56,17 +56,20 @@ Shi S et al., Pharmacokinetics of intravenous oxycodo…, Frontiers in medicine 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.8 (8/10 fields) | 2 |
 | `gpt-oss:120b` | partly confirmed | 0.833 (10/12 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q56]` | 1.06 | 0.083 | mismatch |
+| `gpt-oss-120b` | `values[Q88]` | 205.59 | 198.31 | mismatch |
 | `gpt-oss:120b` | `values[Q17]` | not captured | 145.73 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q74]` | not captured | 198.31 | only_one_extracted |
 
@@ -125,7 +128,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_oxycodone/Oxycodone_Shi2026_reference/Oxycodone_Shi2026_reference_modelica.zip" download>Oxycodone_Shi2026_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_oxycodone/Oxycodone_Shi2026_reference/Oxycodone_Shi2026_reference_fmi.zip" download>Oxycodone_Shi2026_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_oxycodone/Oxycodone_Shi2026_reference/Oxycodone_Shi2026_reference_matlab.zip" download>Oxycodone_Shi2026_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_oxycodone/Oxycodone_Shi2026_reference/Oxycodone_Shi2026_reference_matlab_simbio.zip" download>Oxycodone_Shi2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_oxycodone/Oxycodone_Shi2026_reference/Oxycodone_Shi2026_reference_matlab_simbio.zip" download>Oxycodone_Shi2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_oxycodone/Oxycodone_Shi2026_reference/Oxycodone_Shi2026_reference_sbml.zip" download>Oxycodone_Shi2026_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_oxycodone/Oxycodone_Shi2026_reference/Oxycodone_Shi2026_reference_cellml.zip" download>Oxycodone_Shi2026_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

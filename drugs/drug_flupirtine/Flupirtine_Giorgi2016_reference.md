@@ -4,7 +4,7 @@
 
 # flupirtine — `Flupirtine_Giorgi2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273), gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 71.4, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flupirtine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -71,17 +71,26 @@ Giorgi M et al., Pharmacokinetics and disposition of flu…, Veterinary journal 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.273 (3/11 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[mean elimination half-life after po]` | 10.27 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean elimination half-life after po]` | not captured | 10.27 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability]` | 71.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability]` | not captured | 71.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral dose]` | not captured | 2.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theoretical flu effective plasma concentration]` | not captured | 187 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | flupirtine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | flupirtine | unknown | mismatch |
 | `gpt-oss:120b` | `model.bioavailability.theta` | 71.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean elimination half-life]` | 10.27 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[oral bioavailability]` | 71.4 | not captured | only_one_extracted |

@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not state the mechanism; R-O-desmethylvenlafaxine (desvenlafaxine metabolite) inhibits a toxicity dose-response in S. scenedesmus, with EC50 3.36 mg·L−1 (11.87 mg·L−1 with β-CD).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

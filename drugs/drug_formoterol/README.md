@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;formoterol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Formoterol_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_Back2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Formoterol_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_Back2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # formoterol
 
@@ -27,14 +27,14 @@ Formoterol is a long-acting inhaled beta-2 agonist used to treat asthma and chro
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:44 | 6:12 | 1/0/1 | 7/1/0 | 0/0/0 | 283,909/23,539 | ollama / glm-5.3-flash | 7 | 0/7 | 7/0 | 0 |
+| 2026-10-07 13:44 | 6:12 | 0/0/2 | 7/1/0 | 0/0/0 | 283,909/23,539 | ollama / glm-5.3-flash | 7 | 0/7 | 7/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Back_2020_reference](drugs/drug_formoterol/Formoterol_Back2020_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Back HM et al., Exposure-Response and Clinical Outcome…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040336](https://doi.org/10.3390/pharmaceutics12040336) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — volume from this paper; review-gap-filled from other p…</sub><br><sub>route_to: `human_review`</sub> | [van_1998_reference](drugs/drug_formoterol/Formoterol_van1998_reference.md) | — | 1-compartment (no model) | 5 | van den Berg BT et al., Pharmacokinetics and effects of formote…, European journal of clinica… (1998) | [10.1007/s002280050494](https://doi.org/10.1007/s002280050494) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Back_2020_reference](drugs/drug_formoterol/Formoterol_Back2020_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Back HM et al., Exposure-Response and Clinical Outcome…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040336](https://doi.org/10.3390/pharmaceutics12040336) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — volume from this paper; review-gap-filled from other p…</sub><br><sub>route_to: `human_review`</sub> | [van_1998_reference](drugs/drug_formoterol/Formoterol_van1998_reference.md) | — | 1-compartment (no model) | 5 | van den Berg BT et al., Pharmacokinetics and effects of formote…, European journal of clinica… (1998) | [10.1007/s002280050494](https://doi.org/10.1007/s002280050494) |
 
 ## Pharmacodynamics (PD)
 
@@ -89,7 +89,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 55 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Bisaso_2014_ALB](drugs/drug_albumin/pd_Bisaso_2014_ALB.md) | plasma albumin concentration ← none · disease-progression model | — | Bisaso KR et al., Characterizing plasma albumin concentra…, In silico pharmacology (2014) | [10.1186/s40203-014-0003-9](https://doi.org/10.1186/s40203-014-0003-9) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Bisaso_2014_ALB](drugs/drug_albumin/pd_Bisaso_2014_ALB.md) | plasma albumin concentration ← none · disease-progression model | — | Bisaso KR et al., Characterizing plasma albumin concentra…, In silico pharmacology (2014) | [10.1186/s40203-014-0003-9](https://doi.org/10.1186/s40203-014-0003-9) |
 
 ## Pharmacogenomics (PGx)
 

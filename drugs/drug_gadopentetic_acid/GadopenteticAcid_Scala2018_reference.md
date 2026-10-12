@@ -4,7 +4,7 @@
 
 # gadopentetic acid — `GadopenteticAcid_Scala2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The gadopentetic acid record was rejected because its reported total clearance of 2.51 L/h was flagged as physiologically implausible in magnitude.**
+
+The record reports total clearance as 2.51 L/h and central-compartment volume as 0.161 L. The finding describes a clearance/volume magnitude outside the physiological window and attributes it to a likely unit or scale extraction error, but does not specify which value triggered it. Extracted — gadopentetic acid: CL 2.51 L/h, V1 0.161 L, Q 0.335 L/h.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q21: this record has none, the second reading 0.62; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 ## Citation
 Scala M et al., A Pharmacokinetics, Efficacy, and Safet…, Investigative radiology (2018)
@@ -49,6 +57,29 @@ Scala M et al., A Pharmacokinetics, Efficacy, and Safet…, Investigative radiol
 - volume reported by review
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | partly confirmed | 0.75 (9/12 fields) | 3 |
+
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `values[Q21]` | not captured | 0.62 | only_one_extracted |
+| `qwen3.8-27b` | `values[Q354]` | 0.06 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `values[Q61]` | 0.2 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

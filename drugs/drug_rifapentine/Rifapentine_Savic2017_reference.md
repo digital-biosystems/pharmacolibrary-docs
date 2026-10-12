@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;rifapentine&quot;,&quot;href&quot;:&quot;drugs/drug_rifapentine/&quot;},{&quot;label&quot;:&quot;Savic_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifapentine_Hibma2020_reference&quot;,&quot;label&quot;:&quot;Hibma_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifapentine/Rifapentine_Hibma2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifapentine_Hibma2020_reference&quot;,&quot;label&quot;:&quot;Hibma_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifapentine/Rifapentine_Hibma2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rifapentine — `Rifapentine_Savic2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.12). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Apparent metabolite clearance and volume parameters double-correct for bioavailability, causing incoherence for rifapentine.**
+
+The record lists apparent metabolite clearance (1.91 L/h) and volume (8.83 L), which already account for the fraction metabolized. Including these alongside parent drug apparent parameters like CL/F (1.86 L/h) leads to double correction errors. Additionally, the 'fraction' unit for the metabolite fraction parameter was not converted to standard SI units. Extracted — rifapentine: CL/F 1.86 L/h, V/F 12.8 L, kabs 0.07 1/h, CLm/F 1.91 L/h, Vm/F 8.83 L, Fab 1 reference, Frel 0.74, fm 1.34 fraction.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rifapentine, the second reading unknown; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Savic RM et al., Defining the optimal dose of rifapentin…, Clinical pharmacology and t… (2017)
@@ -69,6 +77,48 @@ Savic RM et al., Defining the optimal dose of rifapentin…, Clinical pharmacolo
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.12 (3/25 fields) | 22 |
+
+<details><summary>22 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[age_effect_on_cl_yearly_decrease_from_the_median_age_31_y_a]` | -0.00379 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability of 1200‐mg dose (fraction) relative to reference dose]` | 0.74 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability of 450‐mg dose with high fat food]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability of 450‐mg dose with high fat food]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability of 600‐mg dose (fraction) relative to reference dose]` | not captured | 0.91 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 1.86 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 1.86 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm/fm]` | 1.91 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm/fm]` | not captured | 1.91 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose effect (&gt; 600 mg) on fraction metabolized, fm]` | 1.34 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose effect (&gt; 600 mg) on fraction metabolized, fm]` | not captured | 1.34 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.07 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.07 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q22_age]` | not captured | -0.00379 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q22_sex]` | 0.81 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q31_sex]` | not captured | 0.81 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 12.77 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | not captured | 12.77 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vm/fm]` | 8.83 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vm/fm]` | not captured | 8.83 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | rifapentine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | rifapentine | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

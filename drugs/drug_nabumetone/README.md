@@ -32,7 +32,7 @@ Nabumetone is a non-steroidal anti-inflammatory drug used to treat pain and infl
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Brier_1995_reference](drugs/drug_nabumetone/Nabumetone_Brier1995_reference.md) | — | 1-compartment (no model) | 0 | Brier ME et al., Population pharmacokinetics of the acti…, Clinical pharmacology and t… (1995) | [10.1016/0009-9236(95)90224-4](https://doi.org/10.1016/0009-9236(95)90224-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.143). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Brier_1995_reference](drugs/drug_nabumetone/Nabumetone_Brier1995_reference.md) | — | 1-compartment (no model) | 0 | Brier ME et al., Population pharmacokinetics of the acti…, Clinical pharmacology and t… (1995) | [10.1016/0009-9236(95)90224-4](https://doi.org/10.1016/0009-9236(95)90224-4) |
 
 ## ADME sites
 

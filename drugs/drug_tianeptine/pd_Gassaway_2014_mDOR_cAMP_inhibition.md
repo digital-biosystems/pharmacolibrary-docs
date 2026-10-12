@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Tianeptine acts as a full agonist at the mouse δ-opioid receptor, where increasing tianeptine concentrations (μM) directly inhibit forskolin-stimulated cAMP accumulation in a concentration-dependent (Emax/proportional) manner, with an EC50 of 9.46±1.34 μM; the paper does not report Imax, kin, kout, or ke0 for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gassaway_2014`
 - **model family:** `emax`
 - **driver:** `cited_pk`

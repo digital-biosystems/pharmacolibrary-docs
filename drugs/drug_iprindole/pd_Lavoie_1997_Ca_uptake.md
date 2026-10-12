@@ -19,7 +19,7 @@
 
 **Model:** No model was generated from this record.
 
-> Iprindole inhibited net depolarization-induced calcium uptake in rat hippocampus synaptosomes, with an IC50 of 39 microM; the paper excerpts do not state the mechanism or model beyond this potency value.
+> Iprindole concentrations (µM) inhibit net depolarization-induced calcium uptake in rat hippocampus synaptosomes, with an IC50 of 39 µM; the paper excerpts provide no further mechanistic detail.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

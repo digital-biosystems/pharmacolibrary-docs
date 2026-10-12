@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lindane brain concentrations (micrograms/g, PK from Thybaud) drive the binary incidence of tonic seizures via a log-linear model with EC50 = 5.3 micrograms/g; the paper excerpts do not state the mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tusell_1987`
 - **model family:** `log_linear`
 - **driver:** `cited_pk`

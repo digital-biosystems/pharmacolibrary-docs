@@ -5,7 +5,7 @@
 
 # duloxetine — `Duloxetine_Skinner2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833), gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record for duloxetine (Skinner_2004, women with urinary incontinence and healthy women) contains CL/F 52.6 l/h, V/F 954 l and Ka 0.257 h−1, but the apparent-parameter assumption (F=1, Fm=1, no molar correction) was judged not acceptable, and Tlag was defaulted rather than estimated. A second reader also extracted additional parameters absent from this record, including AUC0–t 824.5, AUC0–∞ 699.3, Cmax 49.8, λz 0.072 and tmax 0.139, and did not confirm the Ka value of 0.257 h−1. Extracted — duloxetine: CL/F 52.6 l h -1, V/F 954 l, kabs 0.257 h -1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc 0-t: this record has none, the second reading 824.5; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc 0-•: this record has 699.3, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -89,17 +89,20 @@ Skinner MH et al., Effect of age on the pharmacokinetics o…, British journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.833 (10/12 fields) | 2 |
 | `gpt-oss:120b` | partly confirmed | 0.5 (6/12 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc 0-•]` | 699.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 1.46 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc 0-t]` | not captured | 824.5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc 0-•]` | not captured | 699.3 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[c max]` | not captured | 49.8 | only_one_extracted |

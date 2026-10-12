@@ -16,7 +16,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Brinzolamide AUC/dose of 0.004 h/g was unusable due to unconvertible units, and clearance of 4.12 µL/min was physiologically implausible.**
+
+The recorded AUC/dose parameter used units that could not be converted to standard metric values, preventing necessary dimensional consistency checks. This unit ambiguity caused the dose-normalized exposure metric to fail structural validation. Separately, the estimated total clearance value was deemed too low to be physiologically plausible for the drug in rabbit populations. Extracted — brinzolamide: Cmax 408 ng/g, tmax 1 h, t1/2z 2 h, AUCt 1.78e+04 h*ng/g, AUC∞ 1.96e+03 h*ng/g, AUC/dose 0.004 h* /g, CL 4.12 µL/min, V/F 673 µL, … (+1).
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Naageshwaran V et al., Comprehensive Ocular and Systemic Pharm…, Journal of pharmaceutical s… (2021)

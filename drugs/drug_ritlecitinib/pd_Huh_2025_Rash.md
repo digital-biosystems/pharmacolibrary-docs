@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ritlecitinib concentrations (ng/mL) stimulate the incidence of rash (per 100 patient years) via a linear slope mechanism on the log scale, with an estimated intercept of -6.02 and a slope of 0.142 per ng/mL. The paper reports that a 10-fold increase in exposure was predicted to cause a 4.4-fold increase in the mean incidence of rash, with specific baseline rates of 18.3 and 80.1 per 100 patient years across the relevant exposure range.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huh_2025`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

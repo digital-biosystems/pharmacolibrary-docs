@@ -5,7 +5,7 @@
 
 # caplacizumab — `Caplacizumab_Fan2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.438), gpt-oss:120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.35, the second reading 0.69; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.35, the second reading 0.69; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,17 +63,27 @@ Fan X et al., Pharmacokinetic-pharmacodynamic modelin…, Microbiology spectrum 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.438 (7/16 fields) | 9 |
 | `gpt-oss:120b` | not confirmed | 0.357 (5/14 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>18 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 0.35 | 0.69 | mismatch |
+| `gpt-oss-120b` | `values[Q312]` | 0.87 | 0.87 | mismatch |
+| `gpt-oss-120b` | `values[Q315]` | 0.82 | 0.82 | mismatch |
+| `gpt-oss-120b` | `values[Q322]` | 0.0341 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 175.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 7.47 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q61]` | not captured | 0.12 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q63]` | 26.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q86]` | not captured | 174.7 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q22]` | 0.35 | 0.69 | mismatch |
 | `gpt-oss:120b` | `values[Q312]` | 0.87 | 0.082 | mismatch |
 | `gpt-oss:120b` | `values[Q314]` | not captured | 0.87 | only_one_extracted |
@@ -141,7 +151,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference/Caplacizumab_Fan2025_reference_modelica.zip" download>Caplacizumab_Fan2025_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference/Caplacizumab_Fan2025_reference_fmi.zip" download>Caplacizumab_Fan2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference/Caplacizumab_Fan2025_reference_matlab.zip" download>Caplacizumab_Fan2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference/Caplacizumab_Fan2025_reference_matlab_simbio.zip" download>Caplacizumab_Fan2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference/Caplacizumab_Fan2025_reference_matlab_simbio.zip" download>Caplacizumab_Fan2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference/Caplacizumab_Fan2025_reference_sbml.zip" download>Caplacizumab_Fan2025_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference/Caplacizumab_Fan2025_reference_cellml.zip" download>Caplacizumab_Fan2025_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

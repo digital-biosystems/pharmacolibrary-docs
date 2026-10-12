@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deltamethrin (decamethrin) concentration-dependently stimulates the peak transient voltage-gated Na+ current (INa(T)) in GH3 cells, described by a sigmoid Emax model with an EC50 of 11.2 µM; the paper does not state a mechanism beyond direct stimulation of the current amplitude.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lin_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

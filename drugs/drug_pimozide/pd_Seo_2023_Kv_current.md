@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pimozide concentration (μM) inhibits Kv current with a sigmoid Emax relationship; the paper reports an IC50 of 1.78 ± 0.17 μM and a Hill coefficient of 0.90 ± 0.05, but the excerpts do not state the mechanism beyond this direct concentration–effect inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Seo_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

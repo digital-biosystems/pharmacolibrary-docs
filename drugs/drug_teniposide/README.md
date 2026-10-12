@@ -32,14 +32,14 @@ Teniposide is an anticancer drug used to treat acute lymphocytic leukemia and ot
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Cheng_1999_patients with ovarian cancer](drugs/drug_teniposide/Teniposide_Cheng1999_reference.md) | — | 1-compartment (no model) | 4 | Cheng A et al., [A pharmacokinetic study of teniposide…, Hua xi yi ke da xue xue bao… (1999) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Holthuis_1987_cancer patients](drugs/drug_teniposide/Teniposide_Holthuis1987_reference.md) | — | 1-compartment (no model) | 0 | Holthuis JJ et al., Pharmacokinetics of high-dose teniposide, Cancer treatment reports (1987) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Cheng_1999_reference](drugs/drug_teniposide/Teniposide_Cheng1999_reference.md) | — | 1-compartment (no model) | 4 | Cheng A et al., [A pharmacokinetic study of teniposide…, Hua xi yi ke da xue xue bao… (1999) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Holthuis_1987_reference](drugs/drug_teniposide/Teniposide_Holthuis1987_reference.md) | — | 1-compartment (no model) | 0 | Holthuis JJ et al., Pharmacokinetics of high-dose teniposide, Cancer treatment reports (1987) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Evans_1992_WBC_decrease](drugs/drug_teniposide/pd_Evans_1992_WBC_decrease.md) | percentage decrease in white blood cell count ← unbound teniposide · direct linear effect | — | Evans WE et al., Differences in teniposide disposition a…, The Journal of pharmacology… (1992) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Evans_1992_WBC_decrease](drugs/drug_teniposide/pd_Evans_1992_WBC_decrease.md) | percentage decrease in white blood cell count ← unbound teniposide · direct linear effect | — | Evans WE et al., Differences in teniposide disposition a…, The Journal of pharmacology… (1992) | — |
 
 ## ADME sites
 
@@ -70,7 +70,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 128 matched, 105 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 2
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

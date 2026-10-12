@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chilimuri_2021_S1](drugs/drug_tetanus_toxoid/pd_Chilimuri_2021_S1.md) | SARS-CoV-2 Spike (S1) protein antibodies ← tetanus_toxoid · model not identified | — | Chilimuri S et al., BNT162b2 mRNA Vaccine Interference with…, The American journal of cas… (2021) | [10.12659/AJCR.933003](https://doi.org/10.12659/AJCR.933003) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Chilimuri_2021_S1](drugs/drug_tetanus_toxoid/pd_Chilimuri_2021_S1.md) | SARS-CoV-2 Spike (S1) protein antibodies ← tetanus_toxoid · model not identified | — | Chilimuri S et al., BNT162b2 mRNA Vaccine Interference with…, The American journal of cas… (2021) | [10.12659/AJCR.933003](https://doi.org/10.12659/AJCR.933003) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

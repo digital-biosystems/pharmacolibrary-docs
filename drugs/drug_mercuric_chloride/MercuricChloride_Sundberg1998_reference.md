@@ -4,7 +4,7 @@
 
 # mercuric chloride — `MercuricChloride_Sundberg1998_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167), gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has mercuric chloride, the second reading methylmercuric chloride; mercuric chloride; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mercury (mixed), the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -69,17 +69,23 @@ Sundberg J et al., Kinetics of methylmercury and inorganic…, Toxicology and ap
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.167 (1/6 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['methylmercuric chloride', 'mercuric chloride', 'metabolism']] | [['methylmercuric chloride', 'mercunric chloride', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[mercury concentrations in milk following an iv dose of inorganic mercury decreased with a terminal half-life]` | 107 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-life]` | not captured | 107 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | mercury (mixed) | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | mercury (methylmercury and inorganic mercury) | inorganic mercury | mismatch |
 | `gpt-oss:120b` | `parameters[terminal half-life]` | 107 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[terminal half-life]` | not captured | 107 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | mercuric chloride | methylmercuric chloride; mercuric chloride | mismatch |

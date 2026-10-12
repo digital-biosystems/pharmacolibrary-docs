@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lisdexamfetamine dimesylate dose (mg) acts on change from augmentation baseline in systolic blood pressure (mm Hg) via a linear, additive stimulatory dose-effect model; the paper excerpts provide no mechanism details and no potency or rate parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Richards_2017`
 - **model family:** `linear`
 - **driver:** `dose_only`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Nalorphine dose is linked to analgesia in the acetic acid test (binary response, stimulation); the paper excerpts provide no concentrations, mechanism, or parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stevens_1996`
 - **model family:** `unknown`
 - **driver:** `dose_only`

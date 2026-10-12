@@ -32,7 +32,7 @@ Lormetazepam is a benzodiazepine derivative used as a hypnotic and sedative, mai
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [le_2024_reference](drugs/drug_lormetazepam/Lormetazepam_le2024_reference.md) | — | 1-compartment (no model) | 3 | le Noble JLML et al., Pharmacokinetics of Enteral Lormetazepa…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01455-3](https://doi.org/10.1007/s40262-024-01455-3) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [le_2024_reference](drugs/drug_lormetazepam/Lormetazepam_le2024_reference.md) | — | 1-compartment (no model) | 3 | le Noble JLML et al., Pharmacokinetics of Enteral Lormetazepa…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01455-3](https://doi.org/10.1007/s40262-024-01455-3) |
 
 ## ADME sites
 

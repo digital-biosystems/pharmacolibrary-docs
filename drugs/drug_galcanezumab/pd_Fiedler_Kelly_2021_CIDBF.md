@@ -18,6 +18,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Galcanemuzab concentrations (ng/mL) were linked to the inhibition of capsaicin-induced dermal blood flow (CIDBF) via an effect compartment model, characterized by a maximum inhibitory effect of 70.5% and an IC50 of 1060 ng/mL.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fiedler-Kelly_2021`
 - **model family:** `effect_compartment`
 - **driver:** `pk_record`

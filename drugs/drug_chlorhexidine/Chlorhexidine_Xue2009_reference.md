@@ -4,7 +4,7 @@
 
 # chlorhexidine — `Chlorhexidine_Xue2009_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857), gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -69,17 +69,19 @@ Xue Y et al., High-performance liquid chromatographic…, Journal of analytical 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 | `gpt-oss:120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[vo]` | 5.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[alpha half-life]` | 0.05 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[alpha half-life]` | not captured | 0.05 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[beta half-life]` | 0.55 | not captured | only_one_extracted |

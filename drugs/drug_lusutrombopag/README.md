@@ -38,7 +38,7 @@ Lusutrombopag is a medicine used to treat thrombocytopenia, a condition of low b
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Katsube_2019_PLT](drugs/drug_lusutrombopag/pd_Katsube_2019_PLT.md) | platelet counts ← lusutrombopag · indirect response — drug stimulates the production of platelet counts | — | Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span> | [Katsube_2019_PLT](drugs/drug_lusutrombopag/pd_Katsube_2019_PLT.md) | platelet counts ← lusutrombopag · indirect response — drug stimulates the production of platelet counts | — | Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4) |
 
 ## ADME sites
 

@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Yoshii_2016_ACh](drugs/drug_acotiamide/pd_Yoshii_2016_ACh.md) | acetylcholine ← acotiamide · indirect response — drug inhibits the loss of acetylcholine | — | Yoshii K et al., Physiologically-Based Pharmacokinetic a…, Pharmaceutical research (2016) | [10.1007/s11095-015-1787-y](https://doi.org/10.1007/s11095-015-1787-y) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Yoshii_2016_ACh](drugs/drug_acotiamide/pd_Yoshii_2016_ACh.md) | acetylcholine ← acotiamide · indirect response — drug inhibits the loss of acetylcholine | — | Yoshii K et al., Physiologically-Based Pharmacokinetic a…, Pharmaceutical research (2016) | [10.1007/s11095-015-1787-y](https://doi.org/10.1007/s11095-015-1787-y) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

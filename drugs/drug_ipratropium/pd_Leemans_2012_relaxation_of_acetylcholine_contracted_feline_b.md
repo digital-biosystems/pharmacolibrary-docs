@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts describing the mechanism; the record indicates ipratropium bromide concentrations drive relaxation (% stimulation) of acetylcholine-contracted feline bronchial smooth muscle via an Emax model, but no potency (EC50/Emax) or rate values are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Leemans_2012`
 - **model family:** `emax`
 - **driver:** `cited_pk`

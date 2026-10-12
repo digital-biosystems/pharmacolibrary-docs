@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Bromperidol competes with dopamine at the D2 receptor (KD 1.89E-09 M, koff 3.91E-03 1/s; dopamine KD 10.3 nM, koff 1.69 min-1), and the resulting receptor occupancy (Rtot 1.74 nM, Hill factor h 1.77) drives a mechanistic transduction model of forskolin-stimulated cAMP generation and turnover, including receptor recycling (RR 0.238 min-1), cAMP synthesis (k0max 20.5 AU·min-1, DAFR50 2.25 nM) and active PDE turnover (k5 0.0005 min-1), fitted to cAMP responses in arbitrary units.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `de_2018`
 - **model family:** `transduction`
 - **driver:** `not_resolved`

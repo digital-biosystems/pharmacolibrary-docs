@@ -5,7 +5,7 @@
 
 # paracetamol — `Paracetamol_Gibb2008_t_1_2_abs`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**CL has no unit; the model does not reproduce the paper's terminal half-life (model/paper ratio 0.579).**
+
+Without a unit the value cannot be converted, so the model cannot use it. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (E and CL), so that value has no SI equivalent. Extracted — paracetamol: E 7.3 VAS 0-10, CL 0.25 litre/kg, V 0.94 litre/kg, tlag 4.2 min.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Gibb IA et al., Paracetamol (acetaminophen) pharmacodyn…, Archives of disease in chil… (2008)

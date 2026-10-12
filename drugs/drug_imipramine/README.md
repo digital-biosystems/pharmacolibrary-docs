@@ -32,7 +32,7 @@ Imipramine is a tricyclic antidepressant used for depression, panic disorder, at
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tamayo_1992_reference](drugs/drug_imipramine/Imipramine_Tamayo1992_reference.md) | — | parent + metabolite (no model) | 0 | Tamayo M et al., Population pharmacokinetics of imiprami…, European journal of clinica… (1992) | [10.1007/BF02280761](https://doi.org/10.1007/BF02280761) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75), gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tamayo_1992_reference](drugs/drug_imipramine/Imipramine_Tamayo1992_reference.md) | — | parent + metabolite (no model) | 0 | Tamayo M et al., Population pharmacokinetics of imiprami…, European journal of clinica… (1992) | [10.1007/BF02280761](https://doi.org/10.1007/BF02280761) |
 
 ## Pharmacodynamics (PD)
 

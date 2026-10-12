@@ -4,7 +4,7 @@
 
 # timolol — `Timolol_Ji1993_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The model was built, but timolol's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — timolol: tmax 18.8 h, Cmax 11.2 ng/ml, AUC 266 ng/ml.h, Vss 120 L, kel 0.084 h-1.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has timolol, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -65,14 +65,32 @@ Ji XF et al., [The bioavailability of transdermal the…, Yao xue xue bao = Acta
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 | `gpt-oss:120b` | confirmed | 1.0 (9/9 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>12 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc]` | 265.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | not captured | 265.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 11.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 11.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k]` | 0.084 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k]` | not captured | 0.084 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 18.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | not captured | 18.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss]` | 120.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss]` | not captured | 120.0 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | timolol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | timolol | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

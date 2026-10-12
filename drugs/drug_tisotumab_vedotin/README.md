@@ -31,7 +31,7 @@ Tisotumab vedotin is an antibody-drug conjugate used to treat cervical cancer. I
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q66 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Gibiansky_2022_reference](drugs/drug_tisotumab_vedotin/TisotumabVedotin_Gibiansky2022_reference.md) | — | parent + metabolite (no model) | 14 | Gibiansky L et al., Population pharmacokinetic analysis for…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12850](https://doi.org/10.1002/psp4.12850) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.933). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q66 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Gibiansky_2022_reference](drugs/drug_tisotumab_vedotin/TisotumabVedotin_Gibiansky2022_reference.md) | — | parent + metabolite (no model) | 14 | Gibiansky L et al., Population pharmacokinetic analysis for…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12850](https://doi.org/10.1002/psp4.12850) |
 
 ## ADME sites
 

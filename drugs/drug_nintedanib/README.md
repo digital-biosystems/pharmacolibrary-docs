@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;nintedanib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nintedanib_Schmid2018_reference&quot;,&quot;label&quot;:&quot;Schmid_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/Nintedanib_Schmid2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nintedanib_Schmid2018v2_reference&quot;,&quot;label&quot;:&quot;Schmid_2018_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/Nintedanib_Schmid2018v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nintedanib_Schmid2018_reference&quot;,&quot;label&quot;:&quot;Schmid_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/Nintedanib_Schmid2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nintedanib_Schmid2018v2_reference&quot;,&quot;label&quot;:&quot;Schmid_2018_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/Nintedanib_Schmid2018v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # nintedanib
 
@@ -28,25 +28,24 @@ Nintedanib is a protein kinase inhibitor used to treat idiopathic pulmonary fibr
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 03:23 | 5:01 | 2/0/0 | 2/1/0 | 0/0/0 | 132,562/29,432 | openai / gpt-6-luna | 5 | 0/5 | 5/0 | 0 |
+| 2026-10-07 03:23 | 5:01 | 1/1/0 | 1/1/0 | 0/0/0 | 132,562/29,432 | openai / gpt-6-luna | 5 | 0/5 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Schmid_2018_reference](drugs/drug_nintedanib/Nintedanib_Schmid2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Schmid U et al., Population pharmacokinetics of nintedan…, Pulmonary pharmacology & th… (2018) | [10.1016/j.pupt.2017.11.004](https://doi.org/10.1016/j.pupt.2017.11.004) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Schmid_2018_2_reference](drugs/drug_nintedanib/Nintedanib_Schmid2018v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Schmid U et al., Population pharmacokinetics of nintedan…, Cancer chemotherapy and pha… (2018) | [10.1007/s00280-017-3452-0](https://doi.org/10.1007/s00280-017-3452-0) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> | [Schmid_2018_reference](drugs/drug_nintedanib/Nintedanib_Schmid2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Schmid U et al., Population pharmacokinetics of nintedan…, Pulmonary pharmacology & th… (2018) | [10.1016/j.pupt.2017.11.004](https://doi.org/10.1016/j.pupt.2017.11.004) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.824). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub><br><sub>route_to: `engineer`</sub> | [Schmid_2018_2_reference](drugs/drug_nintedanib/Nintedanib_Schmid2018v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Schmid U et al., Population pharmacokinetics of nintedan…, Cancer chemotherapy and pha… (2018) | [10.1007/s00280-017-3452-0](https://doi.org/10.1007/s00280-017-3452-0) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hartmann_2026_2_FVC](drugs/drug_nintedanib/pd_Hartmann_2026_2_FVC.md) | absolute FVC ← nintedanib · disease-progression model | — | Hartmann S et al., Exposure-Efficacy Meta-Model of Ninteda…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70132](https://doi.org/10.1002/psp4.70132) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hartmann_2026_2_FVC_Z_score](drugs/drug_nintedanib/pd_Hartmann_2026_2_FVC_Z_score.md) | FVC Z‐score ← nintedanib · disease-progression model | — | Hartmann S et al., Exposure-Efficacy Meta-Model of Ninteda…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70132](https://doi.org/10.1002/psp4.70132) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hartmann_2026_2_FVC_predicted](drugs/drug_nintedanib/pd_Hartmann_2026_2_FVC_predicted.md) | FVC %predicted ← nintedanib · disease-progression model | — | Hartmann S et al., Exposure-Efficacy Meta-Model of Ninteda…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70132](https://doi.org/10.1002/psp4.70132) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Vaskeikina_2026_FVC](drugs/drug_nintedanib/pd_Vaskeikina_2026_FVC.md) | change from baseline in forced vital capacity ← nintedanib · direct Emax (saturable) effect | — | Vaskeikina M et al., Systematic Review and Model-Based Meta-…, Pharmaceutics (2026) | [10.3390/pharmaceutics18020250](https://doi.org/10.3390/pharmaceutics18020250) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Hartmann_2026_FVC](drugs/drug_nintedanib/pd_Hartmann_2026_FVC.md) | FVC %predicted ← nintedanib · direct Emax (saturable) effect | model (no simulator) | Hartmann S et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70135](https://doi.org/10.1002/psp4.70135) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Hartmann_2026_FVC_2](drugs/drug_nintedanib/pd_Hartmann_2026_FVC_2.md) | FVC Z-score ← nintedanib · direct Emax (saturable) effect | model (no simulator) | Hartmann S et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70135](https://doi.org/10.1002/psp4.70135) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> | [Hartmann_2026_2_FVC](drugs/drug_nintedanib/pd_Hartmann_2026_2_FVC.md) | absolute FVC ← nintedanib · disease-progression model | — | Hartmann S et al., Exposure-Efficacy Meta-Model of Ninteda…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70132](https://doi.org/10.1002/psp4.70132) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span> | [Hartmann_2026_2_FVC_Z_score](drugs/drug_nintedanib/pd_Hartmann_2026_2_FVC_Z_score.md) | FVC Z‐score ← nintedanib · disease-progression model | — | Hartmann S et al., Exposure-Efficacy Meta-Model of Ninteda…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70132](https://doi.org/10.1002/psp4.70132) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> | [Hartmann_2026_2_FVC_predicted](drugs/drug_nintedanib/pd_Hartmann_2026_2_FVC_predicted.md) | the response · model not identified | — | Hartmann S et al., Exposure-Efficacy Meta-Model of Ninteda…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70132](https://doi.org/10.1002/psp4.70132) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Hartmann_2026_FVC](drugs/drug_nintedanib/pd_Hartmann_2026_FVC.md) | FVC %predicted ← nintedanib · direct Emax (saturable) effect | model (no simulator) | Hartmann S et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70135](https://doi.org/10.1002/psp4.70135) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Hartmann_2026_FVC_2](drugs/drug_nintedanib/pd_Hartmann_2026_FVC_2.md) | FVC Z-score ← nintedanib · direct Emax (saturable) effect | model (no simulator) | Hartmann S et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70135](https://doi.org/10.1002/psp4.70135) |
 
 ## ADME sites
 
@@ -80,7 +79,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 16 matched, 14 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

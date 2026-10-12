@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 0.50).">human + animal</span> | [Haines_2025_HR](drugs/drug_nitisinone/pd_Haines_2025_HR.md) | Hazard ratio ← nitisinone · direct sigmoid Emax (Hill) effect | — | Haines LR et al., Anopheles mosquito survival and pharmac…, Science translational medic… (2025) | [10.1126/scitranslmed.adr4827](https://doi.org/10.1126/scitranslmed.adr4827) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 0.50).">human + animal</span> | [Haines_2025_HR](drugs/drug_nitisinone/pd_Haines_2025_HR.md) | Hazard ratio ← nitisinone · direct sigmoid Emax (Hill) effect | — | Haines LR et al., Anopheles mosquito survival and pharmac…, Science translational medic… (2025) | [10.1126/scitranslmed.adr4827](https://doi.org/10.1126/scitranslmed.adr4827) |
 
 ## ADME sites
 

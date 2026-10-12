@@ -1,11 +1,11 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;tegafur&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/&quot;},{&quot;label&quot;:&quot;Hirose_2010 \u00b7 population_mean&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegafur_Kim2017_multiple_dose&quot;,&quot;label&quot;:&quot;Kim_2017_multiple_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_single_dose&quot;,&quot;label&quot;:&quot;Kim_2017_single_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_single_dose.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;tegafur&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/&quot;},{&quot;label&quot;:&quot;Hirose_2010 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegafur_Kim2017_multiple_dose&quot;,&quot;label&quot;:&quot;Kim_2017_multiple_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_single_dose&quot;,&quot;label&quot;:&quot;Kim_2017_single_dose&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_single_dose.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Zuo2024_reference&quot;,&quot;label&quot;:&quot;Zuo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Zuo2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tegafur — `Tegafur_Hirose2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,13 +17,13 @@
 
 ### Reviewer guidance
 
-**The tegafur/5-fluorouracil model was rejected because the metabolite 5-chloro-2,4-dihydroxypyridine has no path from the dose, and the reported units for clearance and absorption parameters could not be converted to SI.**
+**Tegafur was rejected because its metabolites lack formation paths and a clearance unit was unconvertible.**
 
-The metabolism link from tegafur to 5-chloro-2,4-dihydroxypyridine carries no parameter value, leaving this metabolite unlinked from the dose, so the structure check for unreachable compartments or metabolites failed. The clearance parameter for 5-fluorouracil (80.5) was reported with the unit '(39-174)', which is a range rather than a unit and could not be converted to SI. The absorption rate constant (1.2) was reported with the unit '174.6', likewise not a convertible unit, so these parameters reached the model without SI values. Extracted — 5-fluorouracil: CL 80.5 (39-174), kabs 1.2 174.6.
+The metabolites 5-FU and CDHP are unreachable from the central compartment dose. The clearance parameter of 80.5 ml/min had a unit that could not be converted to standard SI values. Extracted — tegafur: Fab 20.3, CL 80.5 (39-174), kabs 1.2 174.6, V/F 38.8 24.6.
 
-<sub>reviewed by glm-5.3-flash</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has S-1, the second reading tegafur; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:32:09.155609+00:00) predates the upstream re-run (2026-10-07 17:20:03.439659+00:00). Current validate status: `rejected`.
+<sub>reviewed by qwen3.8-27b</sub>
 
 > **Dose compound ≠ measured compound:** dosed `S-1`, measured `tegafur`.
 
@@ -32,7 +32,7 @@ Hirose T et al., Pharmacokinetics of S-1 and CYP2A6 geno…, Oncology reports (2
   ·  DOI: [10.3892/or_00000889](https://doi.org/10.3892/or_00000889)
 
 ## Model component
-<dbs-pgx drug="tegafur" model-id="Tegafur_Hirose2010_reference" status="rejected" stale="true" population="Japanese patients with advanced cancer" measured-compound="tegafur" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="tegafur" model-id="Tegafur_Hirose2010_reference" status="rejected" stale="false" population="Japanese patients with advanced cancer" measured-compound="tegafur" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -78,6 +78,35 @@ Hirose T et al., Pharmacokinetics of S-1 and CYP2A6 geno…, Oncology reports (2
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.1 (1/10 fields) | 9 |
+
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['tegafur', '5-fu', 'metabolism'], ['tegafur', 'cdhp', 'metabolism']] | [['tegafur', '5-fu', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[cdhp ka]` | 1.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cdhp]` | not captured | 25.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[creatinine clearance a]` | 80.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ft]` | not captured | 20.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ft]` | 20.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 38.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | S-1 | tegafur | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -98,7 +127,7 @@ Hirose T et al., Pharmacokinetics of S-1 and CYP2A6 geno…, Oncology reports (2
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_tegafur/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hirose_2010` / `Hirose_2010::population_mean`)
+- scholar stages: `../../../knowledgebase/drugs/drug_tegafur/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hirose_2010` / `Hirose_2010::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

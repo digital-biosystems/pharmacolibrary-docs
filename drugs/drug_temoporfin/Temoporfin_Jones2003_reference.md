@@ -4,7 +4,7 @@
 
 # temoporfin — `Temoporfin_Jones2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The hepatic blood flow parameter for temoporfin is defined with the time unit hours instead of a flow rate.**
+
+The record defines hepatic blood flow as 97.3 h, which is dimensionally inconsistent with the required flow unit. This mismatch prevented the software from converting the value to a standard unit. Consequently, the structural parameter could not be validated, resulting in rejection of the model record. Extracted — m-THPC (temoporfin): t1/2α 0.46 h, t1/2z 6.91 h, t1/2γ 82.5 h, MRT 32.5 h, QH 97.3 h; 14C m-THPC (temoporfin): V 32 ml kg−1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has m-THPC (temoporfin), the second reading m-THPC; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 > **Dose compound ≠ measured compound:** dosed `m-THPC (temoporfin)`, measured `14C m-THPC (temoporfin)`.
 
@@ -80,6 +88,33 @@ Jones HJ et al., Photodynamic therapy effect of m-THPC (…, British journal of 
 - LLM selected parameter table(s) 1, 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.462 (6/13 fields) | 7 |
+
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[half-life]` | not captured | 22.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[initial volume of distribution of the central compartment, calculated from the initial plasma concentration (dose/c0), was estimated to be]` | 32.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[initial volume of distribution of the central compartment]` | not captured | 32.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[liver]` | 97.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 of second compartment].parameter_id` | Q57 | Q60 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | m-THPC (temoporfin) | m-THPC | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | 14C m-THPC (temoporfin) | m-THPC | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -4,7 +4,7 @@
 
 # phenazone — `Phenazone_Wasfi1998_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118), gpt-oss:120b (partly confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A dimension mismatch was found on the elimination half-life parameter. The second reader disagreed on the presence of values for AUC, half-life, and clearance, though the specific numerical values matched. Extracted — phenazone: t1/2z 3.25 hr, V/F 0.691 l/kg, Vss 0.659 l/kg, V1 0.386 l/kg, CLb 0.148 l/kg/hr, AUC∞ 171 micrograms.ml.hr, kabs 0.158 h -1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of area under the curve to infinity: this record has none, the second reading 171.0; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has antipyrine, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -73,17 +73,33 @@ Wasfi IA et al., The activity of mixed function oxidases…, Comparative biochem
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.118 (2/17 fields) | 15 |
 | `gpt-oss:120b` | partly confirmed | 0.538 (7/13 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[apparent volumes of distribution]` | 0.691 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volumes of distribution]` | not captured | 0.691 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[areas under the curves to infinity]` | 171.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[areas under the curves to infinity]` | not captured | 171.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-lives]` | 3.25 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-lives]` | not captured | 3.25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 5.54 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearances]` | 0.148 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearances]` | not captured | 0.148 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of the central compartment of the two-compartment pharmacokinetic model]` | 0.386 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of the central compartment of the two-compartment pharmacokinetic model]` | not captured | 0.386 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volumes of distribution at steady state]` | 0.659 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volumes of distribution at steady state]` | not captured | 0.659 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | antipyrine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | antipyrine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[area under the curve to infinity]` | not captured | 171.0 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[areas under the curves to infinity]` | 171.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[elimination half-life]` | not captured | 3.25 | only_one_extracted |

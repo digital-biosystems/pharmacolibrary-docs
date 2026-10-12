@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Nicolau_2004_Bactericidal_activity](drugs/drug_telithromycin/pd_Nicolau_2004_Bactericidal_activity.md) | Bactericidal activity · inhibition effect | — | Nicolau DP, Clinical use of antimicrobial pharmacod…, Expert opinion on pharmacot… (2004) | [10.1517/14656566.5.2.229](https://doi.org/10.1517/14656566.5.2.229) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | [Nicolau_2004_Bactericidal_activity](drugs/drug_telithromycin/pd_Nicolau_2004_Bactericidal_activity.md) | Bactericidal activity · inhibition effect | — | Nicolau DP, Clinical use of antimicrobial pharmacod…, Expert opinion on pharmacot… (2004) | [10.1517/14656566.5.2.229](https://doi.org/10.1517/14656566.5.2.229) |
 
 ## ADME sites
 

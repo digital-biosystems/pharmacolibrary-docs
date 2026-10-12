@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Tompkins_1989_fractional_urinary_clearance_of_insulin](drugs/drug_cilastatin/pd_Tompkins_1989_fractional_urinary_clearance_of_insulin.md) | fractional urinary clearance of insulin ← cilastatin · inhibition effect | — | Tompkins GC et al., Cilastatin-insulin interaction in the r…, Drug metabolism and disposi… (1989) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.99).">rat</span> | [Tompkins_1989_fractional_urinary_clearance_of_insulin](drugs/drug_cilastatin/pd_Tompkins_1989_fractional_urinary_clearance_of_insulin.md) | fractional urinary clearance of insulin ← cilastatin · inhibition effect | — | Tompkins GC et al., Cilastatin-insulin interaction in the r…, Drug metabolism and disposi… (1989) | — |
 
 ## ADME sites
 

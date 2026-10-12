@@ -5,7 +5,7 @@
 
 # abacavir — `Abacavir_Hurwitz2008_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.083), gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. None of the extracted parameters is abacavir's own; they describe zidovudine. Extracted — zidovudine: CL/F 0.0703, kabs 2.66 h Ϫ1, V/F 344 liters.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has zidovudine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has zidovudine, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -76,17 +76,29 @@ Hurwitz SJ et al., Development of an optimized dose for co…, Antimicrobial age
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.083 (1/12 fields) | 11 |
 | `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['zidovudine', 'zdv-mp', 'metabolism'], ['zdv-mp', 'zdv-dp', 'metabolism'], ['zdv-dp', 'zdv-tp', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[2 cl/f]` | not captured | 0.0703 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[2 cl/f]` | 0.0703 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[a]` | not captured | 120 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | not captured | 2.66 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 2.66 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative tmpk efficiency (zdv-]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | not captured | 344 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 344 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | zidovudine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | zidovudine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[2 cl/f]` | not captured | 0.0703 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[2 cl/f]` | 0.0703 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[a]` | not captured | 120 | only_one_extracted |

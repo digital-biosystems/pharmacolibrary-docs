@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lisdexamfetamine dimesylate dose (mg) was modelled as a linear, additive stimulatory driver of change from augmentation baseline in diastolic blood pressure (mm Hg); the paper excerpts provide no mechanism details and no potency or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Richards_2017`
 - **model family:** `linear`
 - **driver:** `dose_only`

@@ -4,7 +4,7 @@
 
 # levocarnitine — `Levocarnitine_Uematsu1988_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (primary re-run, agreement 0.222), gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -55,17 +55,25 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | primary re-run | 0.222 (2/9 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>19 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[t1/2 gamma]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total 24 h excretion in urine]` | not captured | 4.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[urine recovery in 24 h]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v.]` | not captured | 3.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | l-carnitine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | l-carnitine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[l-carnitine]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t1/2 gamma]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t1/2 gamma]` | not captured | not captured | only_one_extracted |

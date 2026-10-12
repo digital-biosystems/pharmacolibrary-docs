@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record links tapentadol to a time-to-event model for vomiting but provides no mechanism, driver concentration units, or parameter values. The paper does not give the mechanism or any potency or rate values, as no full text is available.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xu_2012`
 - **model family:** `tte`
 - **driver:** `cited_pk`

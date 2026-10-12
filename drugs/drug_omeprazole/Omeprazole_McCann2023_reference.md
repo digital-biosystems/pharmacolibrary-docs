@@ -5,7 +5,7 @@
 
 # omeprazole — `Omeprazole_McCann2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record reports omeprazole clearance 6.5 L/h, volume of distribution 226.0 L, absorption lag time 2.5 h and absorption rate constant 0.325 h⁻¹, but the model builder substituted a default for F (bioavailability) rather than an explicit estimate. The deviations check failed on exactly this point: defaulted parameters are not acceptable. A second reader also disagreed with several extracted values, e.g. reading 75 where this record has 0.67 and 16 where this record has none, so the value extraction itself is contested. Extracted — omeprazole: CL 6.5 L/h, V 226 L, tlag 2.5 h, kabs 0.325 h -1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has 49, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 49, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -63,17 +63,24 @@ McCann S et al., Population Pharmacokinetics of Posacona…, Clinical pharmacoki
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.6 (9/15 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.5 (8/16 fields) | 8 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q312]` | 49 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q318]` | not captured | 16 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q325]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q37]` | not captured | 0.7 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | 0.67 | 0.67 | mismatch |
+| `gpt-oss-120b` | `values[Q46]` | 2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q312]` | 49 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q318]` | not captured | 16 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q319]` | 0.75 | not captured | only_one_extracted |
@@ -140,7 +147,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_omeprazole/Omeprazole_McCann2023_reference/Omeprazole_McCann2023_reference_modelica.zip" download>Omeprazole_McCann2023_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_omeprazole/Omeprazole_McCann2023_reference/Omeprazole_McCann2023_reference_fmi.zip" download>Omeprazole_McCann2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_McCann2023_reference/Omeprazole_McCann2023_reference_matlab.zip" download>Omeprazole_McCann2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_McCann2023_reference/Omeprazole_McCann2023_reference_matlab_simbio.zip" download>Omeprazole_McCann2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_McCann2023_reference/Omeprazole_McCann2023_reference_matlab_simbio.zip" download>Omeprazole_McCann2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_McCann2023_reference/Omeprazole_McCann2023_reference_sbml.zip" download>Omeprazole_McCann2023_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_McCann2023_reference/Omeprazole_McCann2023_reference_cellml.zip" download>Omeprazole_McCann2023_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

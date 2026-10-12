@@ -4,7 +4,7 @@
 
 # iloperidone — `Iloperidone_Pei2016_estimate`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,14 +14,24 @@
 
 **Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+
+### Reviewer guidance
+
+**The iloperidone parent–metabolite model was held back because the parent's elimination clearance had no extracted value and a library placeholder was used instead, so the record was not published with an invented number.**
+
+The record does give an elimination rate constant for iloperidone (K20 = 0.067 h⁻¹), but the elimination clearance itself was left with no value, so a placeholder stood in. Parameter coverage reached 6 of 7 expected parameters, with kabs (2.26 h⁻¹) neither emitted nor defaulted. The model structure also mismatched the required parent–metabolite central structure, and although covariate effects on the metabolite formation constants K23 and K24 (e.g., 1.34 and 0.693) were defined, only the reference individual was simulated, so the covariate scenarios were not exercised. Extracted — iloperidone: kabs 2.26 h -1, kel 0.067 h -1, V1 679 L; M1 (P-88): kel 0.16 h -1, V 10 L, kfm 0.00451 h -1; M2 (P-95): kel 0.106 h -1, V 10 L, kfm 0.00649 h -1.
+
+Independently confirmed by `gpt-oss-120b`.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Pei Q et al., Influences of CYP2D6, Acta pharmacologica Sinica (2016)
   ·  DOI: [10.1038/aps.2016.96](https://doi.org/10.1038/aps.2016.96)
 
 ## Model component
-<dbs-pgx drug="iloperidone" model-id="Iloperidone_Pei2016_estimate" status="extracted" stale="false" population="Chinese schizophrenia patients" measured-compound="iloperidone" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="iloperidone" model-id="Iloperidone_Pei2016_estimate" status="model_quarantined" stale="false" population="Chinese schizophrenia patients" measured-compound="iloperidone" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 9 extracted, plus 3 covariate effects.
@@ -29,6 +39,8 @@ Pei Q et al., Influences of CYP2D6, Acta pharmacologica Sinica (2016)
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | K a (h -1 ) | `Q49` · kabs | 2.26 | h -1 | 0.0006277777777777777 | [1] / [h] | not captured | exact (1.0) | tab_2:row1:col1 | — | not captured |
@@ -80,6 +92,21 @@ Pei Q et al., Influences of CYP2D6, Acta pharmacologica Sinica (2016)
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (16/16 fields) | none |
+
+_Every reader agrees on every compared field of this record._
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -101,6 +128,17 @@ Pei Q et al., Influences of CYP2D6, Acta pharmacologica Sinica (2016)
 | C9_phys_window_Q61 | pass | volume within physiological range | 10 L | not captured | not captured | ['tab_2:row7:col1'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 679 L | not captured | not captured | ['tab_2:row5:col1'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage | not captured | fail | 7 scholar param(s) emitted or defaulted | 6 covered | not captured | neither emitted nor in defaulted[]: ['kabs'] |
+| T3_rate_constant_conversion | not captured | pass | K23 (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T3_topology_template | not captured | fail | parent_metabolite_central → PK_3M_9C* | PK_General_Linear | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -109,6 +147,8 @@ Pei Q et al., Influences of CYP2D6, Acta pharmacologica Sinica (2016)
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_iloperidone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pei_2016` / `Pei_2016::estimate`)
+- model: `../../../knowledgebase/drugs/drug_iloperidone/models/modelica/_needs_review/Iloperidone_Pei2016_estimate.mo`
+- deviation: `../../../knowledgebase/drugs/drug_iloperidone/models/modelica/_needs_review/Iloperidone_Pei2016_estimate.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

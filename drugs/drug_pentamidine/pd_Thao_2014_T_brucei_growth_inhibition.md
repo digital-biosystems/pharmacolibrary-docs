@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentamidine concentrations (μM) inhibit T. brucei growth in vitro, described by a dose-responsive (sigmoid Emax-type) relationship with an EC50 of 0.015 ± 0.003 μM; the paper does not state a mechanism beyond growth inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Thao_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

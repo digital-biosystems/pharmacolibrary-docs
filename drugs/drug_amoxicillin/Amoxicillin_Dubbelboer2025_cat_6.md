@@ -5,7 +5,7 @@
 
 # amoxicillin — `Amoxicillin_Dubbelboer2025_cat_6`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143), gpt-5.6-luna (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818), gpt-oss:120b (not confirmed, agreement 0.143), gpt-5.6-luna (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 0/3</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -86,21 +86,24 @@ Dubbelboer IR et al., Pharmacokinetics of Amoxicillin in the…, Journal of vete
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 3 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.818 (9/11 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 | `gpt-5.6-luna` | not confirmed | 0.75 (9/12 fields) | 3 |
 
-<details><summary>15 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-5.6-luna` | `parameters[ka]` | 0.17 | not captured | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[t lagpo]` | 0.25 | not captured | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[vd]` | 1.73 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.17 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 1.73 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc0‐ꚙpo]` | 17.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc0‐ꚙpo]` | not captured | 17.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[c maxpo]` | 5.2 | not captured | only_one_extracted |

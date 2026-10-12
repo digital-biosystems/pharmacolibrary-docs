@@ -5,7 +5,7 @@
 
 # gabapentin — `Gabapentin_Siao2010_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.176), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gabapentin, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -79,17 +79,32 @@ Siao KT et al., Pharmacokinetics of gabapentin in cats, American journal of vete
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.176 (3/17 fields) | 14 |
 | `gpt-oss:120b` | not confirmed | 0.25 (3/12 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>23 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[apparent volume of distribution at steady state]` | 650 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution at steady state]` | not captured | 650 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of the central compartment]` | 90.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of the central compartment]` | not captured | 90.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | 3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k01]` | 5.24 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic availability]` | 88.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic availability]` | not captured | 88.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-life]` | 170 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-life]` | not captured | 170 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.45 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | gabapentin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | gabapentin | unknown | mismatch |
 | `gpt-oss:120b` | `model.bioavailability.theta` | 88.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[apparent volume of distribution at steady state]` | 650 | not captured | only_one_extracted |
@@ -161,7 +176,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_gabapentin/Gabapentin_Siao2010_reference/Gabapentin_Siao2010_reference_modelica.zip" download>Gabapentin_Siao2010_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_gabapentin/Gabapentin_Siao2010_reference/Gabapentin_Siao2010_reference_fmi.zip" download>Gabapentin_Siao2010_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_gabapentin/Gabapentin_Siao2010_reference/Gabapentin_Siao2010_reference_matlab.zip" download>Gabapentin_Siao2010_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_gabapentin/Gabapentin_Siao2010_reference/Gabapentin_Siao2010_reference_matlab_simbio.zip" download>Gabapentin_Siao2010_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_gabapentin/Gabapentin_Siao2010_reference/Gabapentin_Siao2010_reference_matlab_simbio.zip" download>Gabapentin_Siao2010_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_gabapentin/Gabapentin_Siao2010_reference/Gabapentin_Siao2010_reference_sbml.zip" download>Gabapentin_Siao2010_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_gabapentin/Gabapentin_Siao2010_reference/Gabapentin_Siao2010_reference_cellml.zip" download>Gabapentin_Siao2010_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

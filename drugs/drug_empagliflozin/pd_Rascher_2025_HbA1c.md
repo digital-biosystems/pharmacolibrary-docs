@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Baron_2016_FPG&quot;,&quot;label&quot;:&quot;Baron_2016 \u00b7 FPG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/pd_Baron_2016_FPG.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rascher_2025_HbA1c&quot;,&quot;label&quot;:&quot;Rascher_2025 \u00b7 HbA1c&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/pd_Rascher_2025_HbA1c.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Sato_2024_HbA1c&quot;,&quot;label&quot;:&quot;Sato_2024 \u00b7 HbA1c&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/pd_Sato_2024_HbA1c.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# glycosylated haemoglobin — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
+# glycosylated haemoglobin — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -86,58 +86,18 @@ Advisory:
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.222 (12/54 fields) | 42 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>42 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | empagliflozin | unknown | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
-| `gpt-oss:120b` | `model_family` | indirect_response_i | unknown | mismatch |
-| `gpt-oss:120b` | `parameters[Q19]` | 703 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | 16.1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | 2373 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | 1.00 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | 7.35 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | 3070 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | 1.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | 2682 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 16.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 2373 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 3488 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 3950 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 0.00112 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 2525 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 3366 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q315]` | not captured | 4283 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q315]` | not captured | 1.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q320]` | not captured | 8834 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | not captured | 2.04 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | not captured | 8205 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | not captured | 5127 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | not captured | 1.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | not captured | 1.03 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | not captured | 1.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 7.35 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 1.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 7.35 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 1765 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 1.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 1.15 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 1.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q340]` | not captured | 2937 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q340]` | 1.00 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 2624 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 2198 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 1.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 2531 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 5348 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q88]` | not captured | 703 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q322]` | 703 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q340].value` | 5.64e‐07 | 5.64e-07 | mismatch |
 
 </details>
 
@@ -154,7 +114,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_empagliflozin/Empagliflozin_Rascher2025_PD_hba1c/Empagliflozin_Rascher2025_PD_hba1c_modelica.zip" download>Empagliflozin_Rascher2025_PD_hba1c_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_empagliflozin/Empagliflozin_Rascher2025_PD_hba1c/Empagliflozin_Rascher2025_PD_hba1c_fmi.zip" download>Empagliflozin_Rascher2025_PD_hba1c_fmi.zip</a> <span class="pk-size">(4.7 kB)</span><br><a href="models/fmu/PD_IndirectTurnoverSweep.fmu" download>PD_IndirectTurnoverSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_empagliflozin/Empagliflozin_Rascher2025_PD_hba1c/Empagliflozin_Rascher2025_PD_hba1c_matlab.zip" download>Empagliflozin_Rascher2025_PD_hba1c_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_empagliflozin/Empagliflozin_Rascher2025_PD_hba1c/Empagliflozin_Rascher2025_PD_hba1c_sbml.zip" download>Empagliflozin_Rascher2025_PD_hba1c_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

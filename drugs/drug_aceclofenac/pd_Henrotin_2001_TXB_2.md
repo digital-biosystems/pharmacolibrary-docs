@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> In whole blood, aceclofenac inhibited the production of the response TXB2 via direct cyclooxygenase inhibition, showing a weak effect with a 30% reduction at 100 mM. The paper does not state a specific IC50 for aceclofenac on TXB2 production in this context, although it notes an IC50 &gt; 100 mM for aceclofenac on COX-1 activity in a cell-free system.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Henrotin_2001`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

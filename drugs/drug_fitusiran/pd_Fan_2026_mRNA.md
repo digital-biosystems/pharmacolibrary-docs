@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;fitusiran&quot;,&quot;href&quot;:&quot;drugs/drug_fitusiran/&quot;},{&quot;label&quot;:&quot;Fan_2026 \u00b7 PD target mRNA&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# target mRNA — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.43). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+# target mRNA — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -47,78 +47,25 @@ Fan X et al., A computational model-powered platform…, Molecular therapy. Nucl
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.43 (46/107 fields) | 61 |
+| `einfracz:gpt-oss-120b` | secondary_empty | 0.0 (0/8 fields) | 8 |
 
-<details><summary>61 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | free cytoplasmic siRNA | siRNA (cytoplasmic) | mismatch |
-| `gpt-oss:120b` | `model_family` | indirect_response_ii | transduction | mismatch |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 0.96 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 211 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 56.73 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 144.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q320]` | not captured | 33.79 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q320]` | not captured | 66.48 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q320]` | not captured | 33.79 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q320]` | not captured | 33.79 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | not captured | 0.050 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | not captured | 20.93 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | not captured | 0.0050 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 0.050 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 20.93 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 0.0050 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q325]` | not captured | 0.54 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q325]` | not captured | 1.54 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q325]` | not captured | 0.074 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q325]` | not captured | 1.79 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q325]` | not captured | 0.39 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q325]` | not captured | 0.72 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q326]` | not captured | 0.040 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q326]` | not captured | 0.014 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 0.0022 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 0.0015 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q329]` | not captured | 0.019 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q329]` | not captured | 0.01948 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q329]` | not captured | 0.037 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q329]` | not captured | 0.013 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q329]` | not captured | 0.0051 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q329]` | not captured | 0.013 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q329]` | not captured | 0.18 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q32]` | 33.79 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q32]` | 66.48 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q32]` | 33.79 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q32]` | 33.79 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q331]` | not captured | 0.0083 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q331]` | not captured | 0.0076 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q358]` | 0.037 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q358]` | 0.0083 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q358]` | 0.0076 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q358]` | 0.96 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q358]` | 211 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q358]` | 56.73 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q358]` | 144.7 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q358]` | 0.014 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | not captured | 1.02 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | not captured | 3.19 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | not captured | 1.02 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | not captured | 0.18 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | not captured | 2.04 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | not captured | 1.85 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | not captured | 2.04 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | not captured | 4.24 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q47]` | 0.0051 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q47]` | not captured | 0.0022 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q47]` | not captured | 0.0015 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q47]` | not captured | 0.012 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q47]` | not captured | 0.0012 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q89]` | 0.074 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `driver_compound` | fitusiran | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_direction` | inhibition | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | proportional | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | indirect_response_i | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q322]` | 0.0050 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q323]` | 33.79 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q325]` | 0.074 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q328]` | 0.00016 | not captured | only_one_extracted |
 
 </details>
 

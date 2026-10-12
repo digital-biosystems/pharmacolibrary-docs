@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;daunorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/&quot;},{&quot;label&quot;:&quot;Hempel_2003 \u00b7 11_adults&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_daunorubicin&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_daunorubicin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_daunorubicin.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present_study&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present_study.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_daunorubicin&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_daunorubicin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_daunorubicin.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present_study&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present_study.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # daunorubicin — `Daunorubicin_Hempel2003_11_adults`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has liposomal daunorubicin, the second reading daunorubicin; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+**Daunorubicin’s clearance of 0.39 l h−1 m−2 was associated with an implausible clearance-to-volume magnitude, prompting rejection for a unit/scale extraction error.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The record reports daunorubicin clearance as 0.39 l h−1 m−2 and volume of distribution as 3.2 l m−2; the review found their clearance-to-volume magnitude outside the physiological window. A reported unit could not be converted to SI, so the clearance/volume finding is attributed to a possible unit or scale extraction error. A second reader instead identified liposomal daunorubicin and reported parameter values of 0.15 and 0.208, differing from this record’s compound assignment and parameter extraction. Extracted — daunorubicin: V1 0.222 L, Q 0.208 L/h, V 3.2 l m -2, CL 0.39 l h -1 m -2, t1/2z 7.4 h, AUC 172 mg·h/L.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has daunorubicin (liposomal Daunoxome), the second reading liposomal daunorubicin; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 > **Dose compound ≠ measured compound:** dosed `daunorubicin (liposomal Daunoxome)`, measured `daunorubicin`.
 
@@ -152,19 +156,26 @@ Hempel G et al., Population pharmacokinetics of liposoma…, British journal of 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (3/6 fields) | 3 |
+| `qwen3.8-27b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[12]` | not captured | 0.15 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[2]` | not captured | 0.208 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | liposomal daunorubicin | daunorubicin | mismatch |
+| `qwen3.8-27b` | `parameters[14]` | not captured | 1 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[1]` | 0.222 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[2].parameter_id` | Q30 | Q99 | mismatch |
+| `qwen3.8-27b` | `parameters[2].value` | 0.208 | 2 | mismatch |
+| `qwen3.8-27b` | `parameters[auc (mg l -1 h) at 60 mg m -2]` | 172.4 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cl]` | 0.39 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[dose]` | 100 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[t 1/2]` | 7.4 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v]` | 3.2 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `screen.dose_compound` | daunorubicin (liposomal Daunoxome) | liposomal daunorubicin | mismatch |
 
 </details>
 

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;atomoxetine&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/&quot;},{&quot;label&quot;:&quot;Notsu_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atomoxetine_Li2012_reference&quot;,&quot;label&quot;:&quot;Li_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Li2012_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Tobin2026_reference&quot;,&quot;label&quot;:&quot;Tobin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Tobin_2026_CYP2D6_Q27&quot;,&quot;label&quot;:&quot;Tobin_2026 \u00b7 CYP2D6&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/pgx_Tobin_2026_CYP2D6_Q27.md&quot;,&quot;status&quot;:&quot;quantitative&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atomoxetine_Li2012_reference&quot;,&quot;label&quot;:&quot;Li_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Li2012_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Tobin2026_reference&quot;,&quot;label&quot;:&quot;Tobin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Tobin_2026_CYP2D6_Q27&quot;,&quot;label&quot;:&quot;Tobin_2026 \u00b7 CYP2D6&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/pgx_Tobin_2026_CYP2D6_Q27.md&quot;,&quot;status&quot;:&quot;quantitative&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atomoxetine — `Atomoxetine_Notsu2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.391). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167), gpt-oss:120b (not confirmed, agreement 0.391). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has atomoxetine → 4-hydroxyatomoxetine (metabolism), the second reading none; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -169,17 +169,38 @@ Notsu Y et al., Simple pharmacokinetic models accountin…, Drug metabolism and 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.167 (4/24 fields) | 20 |
 | `gpt-oss:120b` | not confirmed | 0.391 (9/23 fields) | 14 |
 
-<details><summary>14 field(s) a reader read differently</summary>
+<details><summary>34 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['atomoxetine', '4-hydroxyatomoxetine', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[13]` | 0.157 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[18 40]` | not captured | 99.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[18]` | not captured | 57.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[1].parameter_id` | Q900 | Q374 | mismatch |
+| `gpt-oss-120b` | `parameters[21 45]` | not captured | 99.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[23]` | not captured | 57.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[30 63]` | not captured | 99.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[31]` | not captured | 0.157 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[36]` | not captured | 57.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[3]` | 68 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[41]` | not captured | 57.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[44]` | not captured | 57.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[49]` | not captured | 57.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[53]` | not captured | 57.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[54]` | not captured | 0.157 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[59]` | not captured | 57.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[7]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[8 22]` | not captured | 99.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[8]` | 57.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `gpt-oss:120b` | `parameters[11 27]` | not captured | 92 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[18]` | not captured | 83 | only_one_extracted |

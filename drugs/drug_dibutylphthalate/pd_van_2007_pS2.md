@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper links dibutyl phthalate exposure to pS2 expression level with an Emax-type model (stimulation), but no full text is available, so the mechanism and any potency or rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2007`
 - **model family:** `emax`
 - **driver:** `cited_pk`

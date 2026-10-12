@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">cattle</span> | [Durand-Arczynska_1986_I0](drugs/drug_chloropyramine/pd_Durand_Arczynska_1986_I0.md) | short-circuit current I0 across bovine tracheal epithelium ← chloropyramine · inhibition effect | — | Durand-Arczynska W et al., Effects of chloropyramine, dimethindene…, Journal de physiologie (1986) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span> | [Durand-Arczynska_1986_I0](drugs/drug_chloropyramine/pd_Durand_Arczynska_1986_I0.md) | short-circuit current I0 across bovine tracheal epithelium ← chloropyramine · inhibition effect | — | Durand-Arczynska W et al., Effects of chloropyramine, dimethindene…, Journal de physiologie (1986) | — |
 
 ## ADME sites
 

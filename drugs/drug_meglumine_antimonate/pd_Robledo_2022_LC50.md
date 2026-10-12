@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Meglumine antimoniate concentrations (µg/mL) were related to cytotoxicity in U937 human macrophages with a sigmoid Emax (inhibitory) model, giving an LC50 of 416 ± 23 µg/mL; the paper does not state a pharmacodynamic mechanism beyond this concentration-effect relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Robledo_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

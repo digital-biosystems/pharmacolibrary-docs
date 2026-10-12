@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Agomelatine concentration (nM) was related to intraocular pressure reduction (%) via a sigmoid Emax model, with EC50 0.19 nM (pD2 9.7±0.3) and maximal effect 20.8±1.4%; the paper excerpts do not state the mechanism (e.g., production vs. elimination inhibition) or a Hill coefficient.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Martínez-Águila_2013`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">dog</span> | [Lang_1993_dV_dt](drugs/drug_acrivastine/pd_Lang_1993_dV_dt.md) | maximal rate of increase in the AP (dV/dt) ← acrivastine · direct Emax (saturable) effect | — | Lang DG et al., Terfenadine alters action potentials in…, Journal of cardiovascular p… (1993) | [10.1097/00005344-199309000-00014](https://doi.org/10.1097/00005344-199309000-00014) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">dog</span> | [Lang_1993_dV_dt](drugs/drug_acrivastine/pd_Lang_1993_dV_dt.md) | maximal rate of increase in the AP (dV/dt) ← acrivastine · direct Emax (saturable) effect | — | Lang DG et al., Terfenadine alters action potentials in…, Journal of cardiovascular p… (1993) | [10.1097/00005344-199309000-00014](https://doi.org/10.1097/00005344-199309000-00014) |
 
 ## ADME sites
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R02A&quot;,&quot;href&quot;:&quot;atc/R02A.md&quot;},{&quot;label&quot;:&quot;ambroxol&quot;,&quot;href&quot;:&quot;drugs/drug_ambroxol/&quot;},{&quot;label&quot;:&quot;Bocci_2020 \u00b7 PD SARS-CoV-2 cytopathic effect (percent protection from CPE)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ambroxol_Vergin1985_reference&quot;,&quot;label&quot;:&quot;Vergin_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ambroxol/Ambroxol_Vergin1985_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ambroxol_Vergin1985_reference&quot;,&quot;label&quot;:&quot;Vergin_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ambroxol/Ambroxol_Vergin1985_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # SARS-CoV-2 cytopathic effect (percent protection from CPE) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
@@ -19,6 +19,10 @@
 **As extracted:** Ambroxol (concentrations from the PK model of Vergin_1985) drives SARS-CoV-2 cytopathic effect (percent protection from CPE) (in %) (inhibition; the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> Ambroxol concentrations (μM) inhibit SARS-CoV-2-mediated cytopathic effect in Vero E6 cells (percent protection from CPE measured by Cell Titer Glo), with an EC50 of 14.8 μM, CC50 of 202 μM, and SI50 of 13.6; the paper does not state a specific mechanism beyond antiviral activity, and no Emax/kin/kout/ke0 parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Bocci_2020`
 - **model family:** `unknown`

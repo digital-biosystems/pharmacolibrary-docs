@@ -4,7 +4,7 @@
 
 # bumetanide — `Bumetanide_Pentikinen1985_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154), gpt-oss:120b (not confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bumetanide: Vss 22.1 L, t1/2z 1.9 hours, CLR 10 ml/min, CLNR 153 ml/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bumetanide, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bumetanide, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -68,17 +68,29 @@ Pentikäinen PJ et al., Bumetanide kinetics in renal failure, Clinical pharmacol
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.154 (2/13 fields) | 11 |
 | `gpt-oss:120b` | not confirmed | 0.273 (3/11 fields) | 8 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>19 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[bumetanide nonrenal clearance]` | not captured | 153 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bumetanide renal clearance]` | 10 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bumetanide renal clearance]` | not captured | 10 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[creatinine clearance]` | not captured | 0.784 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination t1/2]` | 1.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination t1/2]` | not captured | 1.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[nonrenal clearance]` | 153 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume at steady state]` | 22.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume at steady state]` | not captured | 22.1 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | bumetanide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | bumetanide | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [] | [['bumetanide', 'total 14c', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[creatinine clearance]` | not captured | 0.784 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[elimination t1/2]` | not captured | 1.9 | only_one_extracted |

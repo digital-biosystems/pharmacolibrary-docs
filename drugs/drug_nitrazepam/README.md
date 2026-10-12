@@ -32,7 +32,7 @@ Nitrazepam is a benzodiazepine sedative used as a hypnotic for insomnia, and it 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kangas_1979_reference](drugs/drug_nitrazepam/Nitrazepam_Kangas1979_reference.md) | — | 1-compartment (no model) | 4 | Kangas L et al., Human pharmacokinetics of nitrazepam: e…, European journal of clinica… (1979) | [10.1007/BF00563100](https://doi.org/10.1007/BF00563100) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kangas_1979_reference](drugs/drug_nitrazepam/Nitrazepam_Kangas1979_reference.md) | — | 1-compartment (no model) | 4 | Kangas L et al., Human pharmacokinetics of nitrazepam: e…, European journal of clinica… (1979) | [10.1007/BF00563100](https://doi.org/10.1007/BF00563100) |
 
 ## ADME sites
 

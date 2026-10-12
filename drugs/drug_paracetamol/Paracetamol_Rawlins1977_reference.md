@@ -5,7 +5,7 @@
 
 # paracetamol — `Paracetamol_Rawlins1977_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.455), gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -70,17 +70,24 @@ Rawlins MD et al., Pharmacokinetics of paracetamol (acetam…, European journal 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.455 (5/11 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clearance after intravenous administration]` | 352 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution volume]` | 0.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean clearance after intravenous administration]` | not captured | 352 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability after 500 mg]` | not captured | 0.63 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability]` | 0.63 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 4.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean clearance after intravenous administration]` | 352 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean clearance after intravenous administration]` | not captured | 352 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[oral bioavailability]` | 0.63 | not captured | only_one_extracted |

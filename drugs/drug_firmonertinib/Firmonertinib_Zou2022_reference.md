@@ -4,7 +4,7 @@
 
 # firmonertinib — `Firmonertinib_Zou2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.594). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The record was rejected because AST5902’s apparent clearance CLm/F is −0.258, and structural rate parameters kabs 1.32 and kel 0.00311 have unconvertible recorded units.**
+
+For AST5902, CLm/F is reported as −0.258, a negative apparent metabolite clearance. The structural rate parameters kabs 1.32 and kel 0.00311 are labeled as having units of 1/h, but their recorded units are “units”; that unit could not be converted to SI, leaving a dimensional mismatch. Extracted — firmonertinib: CL/F 70.5 L/h, V1/F 2.84e+03 L, kabs 1.32 units, Q/F 12.6 L/h, V2/F 1.5e+03 L, kel 0.00311 units; AST5902: CL 119 L/h, V 286 L, kcomp 0.054 units, CLm/F -0.258 units.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has furmonertinib (AST2818), the second reading furmonertinib; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 ## Citation
 Zou HX et al., Effect of autoinduction and food on the…, Acta pharmacologica Sinica (2022)
@@ -82,6 +90,39 @@ Zou HX et al., Effect of autoinduction and food on the…, Acta pharmacologica S
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.594 (19/32 fields) | 13 |
+
+<details><summary>13 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `model.links` | [['furmonertinib (ast2818)', 'ast5902', 'metabolism']] | [['furmonertinib', 'ast5902', 'metabolism']] | mismatch |
+| `qwen3.8-27b` | `parameters[cl m /(f • fm)].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `qwen3.8-27b` | `parameters[k 67].covariate_forms` | ['linear_fractional'] | [] | mismatch |
+| `qwen3.8-27b` | `parameters[k 67].parameter_id` | Q900 | Q67 | mismatch |
+| `qwen3.8-27b` | `parameters[k 76]` | 0.0540 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[k enz].parameter_id` | Q47 | Q350 | mismatch |
+| `qwen3.8-27b` | `parameters[theta_cl_food_fm]` | not captured | -0.332 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_equation_variable_food_fm]` | -0.332 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q319_body_weight_power]` | 0.629 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q45_body_weight_power]` | not captured | 0.629 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ clm/(f•fm), alp]` | -0.258 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `screen.dose_compound` | furmonertinib (AST2818) | furmonertinib | mismatch |
+| `qwen3.8-27b` | `screen.primary_analyte` | furmonertinib (AST2818) | furmonertinib | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -4,7 +4,7 @@
 
 # mibefradil — `Mibefradil_Welker1998v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214), gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has mibefradil, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+**This paper's disposition core is incomplete.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Welker_1998) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mibefradil: tmax 2.4 hours, Fab 80 %, V 180 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mibefradil, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Welker HA et al., Clinical pharmacokinetics of mibefradil, Clinical pharmacokinetics (1998)
@@ -70,17 +74,29 @@ Welker HA et al., Clinical pharmacokinetics of mibefradil, Clinical pharmacokine
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.214 (3/14 fields) | 11 |
 | `gpt-oss:120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absolute bioavailability]` | 80 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absolute bioavailability]` | not captured | 80 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral terminal exponential volume of distribution]` | 180.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma protein binding]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma protein binding]` | not captured | 99.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time to maximum plasma concentration]` | 2.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time to maximum plasma concentration]` | not captured | 2.4 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | mibefradil | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | mibefradil | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[absolute bioavailability]` | 80 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absolute bioavailability]` | not captured | 80 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | not captured | not captured | only_one_extracted |

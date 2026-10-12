@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts describing the PD model, so the mechanism linking neostigmine to CSF acetylcholine concentration (pmol/ml) and any potency or rate parameters cannot be stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shafer_1998`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -5,7 +5,7 @@
 
 # diazepam — `Diazepam_Huang2025v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667), gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
+**The diazepam volume of distribution V is recorded as 70.0 L/h, a rate unit for a volume parameter, indicating a unit extraction error that makes the value implausible and led to rejection.**
+
+For diazepam, the record lists V (volume of distribution) with value 70.0 and unit L/h; a volume should be in litres, so the recorded unit/scale is wrong and the clearance/volume pair fell outside the physiological window. The clearance CL of 4.0 L/h is consistent with a plausible diazepam value. A second reader also disagreed on the model structure, reading a one-compartment model where this record used a two-compartment structure, and on several extracted values (e.g. 3.9 versus 4, 66.81 versus 70), with some fields left unread by the second reader. Extracted — diazepam: CL 4 L/h, V 70 L/h.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q1: this record has 231.0, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Huang Z et al., An automated pipeline to generate initi… (2025)
@@ -54,17 +58,20 @@ Huang Z et al., An automated pipeline to generate initi… (2025)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.125 (1/8 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q44]` | not captured | 13.0 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q58]` | not captured | 0.2 | only_one_extracted |
 | `gpt-oss:120b` | `model.topology_template` | 2C | 1C | mismatch |
 | `gpt-oss:120b` | `values[Q1]` | 231.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q22]` | 3.9 | 4 | mismatch |

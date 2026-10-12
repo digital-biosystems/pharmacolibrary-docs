@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Belimumab's steady-state average concentration (Cavg_ss) drives the binary 52-week SLE Responder Index (SRI) response via a direct Emax mechanism within a logistic regression model, with the logit of the probability modeled as the sum of the placebo effect and the Emax term. The paper reports a Ln(EC50) of 2.07 μg mL−1 and a Ln(Emax) of -1.32, with a baseline placebo effect of -0.789.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2025`
 - **model family:** `emax`
 - **driver:** `cited_pk`

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes an Emax model for sumatriptan-induced contractions with histamine precontraction, characterized by an E(max) of 107 and a pD(2) of 6.16. The paper does not describe the mechanism.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gul_2002`
 - **model family:** `emax`
 - **driver:** `cited_pk`

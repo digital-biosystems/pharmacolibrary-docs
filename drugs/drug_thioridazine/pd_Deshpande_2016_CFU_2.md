@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Thioridazine concentrations (mg/liter) drive intracellular MAC killing in the HFS-MAC, described by an inhibitory sigmoid Emax model relating Cmax/MIC to log10 CFU/ml, with Emax 7.19 ± 0.30 log10 CFU/ml, EC50 (Cmax/MIC) 0.53 ± 0.022, Hill factor H 2.75 ± 0.33, and Econ 6.96 ± 0.17 log10 CFU/ml on day 14 (r2 = 0.996); the mechanism is direct concentration-dependent bactericidal killing via inhibition of the mycobacterial electron transport chain, with no kin/kout or ke0 values given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Deshpande_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

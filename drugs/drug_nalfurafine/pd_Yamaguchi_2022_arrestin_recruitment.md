@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In the PathHunter® β-arrestin recruitment assay in U2OS cells stably expressing κORs, nalfurafine concentration-dependently stimulated β-arrestin recruitment, described by a direct Emax model with Emax = 100.00 ± 7.43 % and log EC50 = −9.27 ± 0.19 M; the paper does not state a mechanistic (e.g., production/elimination or effect-compartment) model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yamaguchi_2022`
 - **model family:** `emax`
 - **driver:** `not_resolved`

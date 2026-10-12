@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models edrophonium concentrations acting on twitch tension of the anterior tibialis muscle using an effect-compartment model with a stimulatory effect direction; the paper text is not available, so the effect form, mechanism, and potency/rate parameters (e.g., Emax, EC50, ke0) cannot be stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Unadkat_1986`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

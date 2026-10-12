@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes a model where desflurane concentration drives the Narcotrend index via a sigmoid Emax mechanism with an effect compartment, using a ke0 of 0.43 min⁻¹. The specific mechanism of inhibition and other potency parameters (e.g., IC50, Imax) are not detailed in the provided record or excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kreuer_2009`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

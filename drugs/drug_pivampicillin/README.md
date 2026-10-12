@@ -32,14 +32,14 @@ Pivampicillin is a penicillin antibiotic with an extended spectrum, an ester for
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Ehrnebo_1979_reference](drugs/drug_pivampicillin/Pivampicillin_Ehrnebo1979_reference.md) | — | 1-compartment (no model) | 0 | Ehrnebo M et al., Pharmacokinetics of ampicillin and its…, Journal of pharmacokinetics… (1979) | [10.1007/BF01062386](https://doi.org/10.1007/BF01062386) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Ehrnebo_1979_reference](drugs/drug_pivampicillin/Pivampicillin_Ehrnebo1979_reference.md) | — | 1-compartment (no model) | 0 | Ehrnebo M et al., Pharmacokinetics of ampicillin and its…, Journal of pharmacokinetics… (1979) | [10.1007/BF01062386](https://doi.org/10.1007/BF01062386) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Sjövall_1979_AUC](drugs/drug_pivampicillin/pd_Sj_vall_1979_AUC.md) | Area under the serum concentration time curve of ampicillin ← Ampicillin · direct linear effect | — | Sjövall J, Dose dependence in human absorption of…, Infection 7 Suppl (1979) | [10.1007/BF01659771](https://doi.org/10.1007/BF01659771) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Sjövall_1979_Cmax](drugs/drug_pivampicillin/pd_Sj_vall_1979_Cmax.md) | Peak serum concentration of ampicillin ← Ampicillin · direct linear effect | — | Sjövall J, Dose dependence in human absorption of…, Infection 7 Suppl (1979) | [10.1007/BF01659771](https://doi.org/10.1007/BF01659771) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Sjövall_1979_AUC](drugs/drug_pivampicillin/pd_Sj_vall_1979_AUC.md) | Area under the serum concentration time curve of ampicillin ← Ampicillin · direct linear effect | — | Sjövall J, Dose dependence in human absorption of…, Infection 7 Suppl (1979) | [10.1007/BF01659771](https://doi.org/10.1007/BF01659771) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Sjövall_1979_Cmax](drugs/drug_pivampicillin/pd_Sj_vall_1979_Cmax.md) | Peak serum concentration of ampicillin ← Ampicillin · direct linear effect | — | Sjövall J, Dose dependence in human absorption of…, Infection 7 Suppl (1979) | [10.1007/BF01659771](https://doi.org/10.1007/BF01659771) |
 
 ## ADME sites
 

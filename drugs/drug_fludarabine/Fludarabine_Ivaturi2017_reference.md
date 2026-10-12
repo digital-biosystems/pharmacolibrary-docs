@@ -4,7 +4,7 @@
 
 # fludarabine — `Fludarabine_Ivaturi2017_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,6 +19,8 @@
 **The fludarabine parent–metabolite model was rejected because the metabolite f-ara-ATP is unlinked: despite the metabolism link via kfm (0.005 1/h), the metabolite has no reachable compartment (n_cmt 0), so no path from the dose exists.**
 
 The record describes fludarabine in pediatric hematopoietic cell transplant recipients with a metabolite f-ara-ATP formed from the parent, with a formation rate constant kfm of 0.005 1/h and an elimination rate constant kel of 0.09 1/h. However, the metabolite has no compartments (n_cmt 0), so the structure check found an unlinked metabolite with no path from the administered dose. Parent parameters (CL 3.1 L/h, V1 13.4 L/kg, V2 13.4 L) were extracted, but the metabolite side of the topology is incomplete, which is why the model was refused. Extracted — fludarabine: CL 3.1 L/h, V1 13.4 L/kg, V2 13.4 L; f-ara-ATP: kfm 0.005 1/h, kel 0.09 1/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fludarabine, the second reading fludarabine monophosphate; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -79,6 +81,38 @@ Ivaturi V et al., Pharmacokinetics and Model-Based Dosing…, Biology of blood a
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (3/15 fields) | 12 |
+
+<details><summary>12 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['fludarabine', 'f-ara-atp', 'interconversion']] | [['fludarabine', 'f-ara-atp', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[intercompartmental cl]` | 2.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_creatinine]` | 0.006 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_creatinine]` | not captured | 0.006 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical value forf-ara-a cl, l/h/15 kg]` | 3.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical value forf-ara-a cl, l/h/15 kg]` | not captured | 2.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 13.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | not captured | 11.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | 13.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | not captured | 12.3 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | fludarabine | fludarabine monophosphate | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | fludarabine | fludarabine (f-ara-a) | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -118,7 +152,7 @@ Ivaturi V et al., Pharmacokinetics and Model-Based Dosing…, Biology of blood a
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference/Fludarabine_Ivaturi2017_reference_modelica.zip" download>Fludarabine_Ivaturi2017_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference/Fludarabine_Ivaturi2017_reference_matlab.zip" download>Fludarabine_Ivaturi2017_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference/Fludarabine_Ivaturi2017_reference_matlab_simbio.zip" download>Fludarabine_Ivaturi2017_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference/Fludarabine_Ivaturi2017_reference_matlab_simbio.zip" download>Fludarabine_Ivaturi2017_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference/Fludarabine_Ivaturi2017_reference_sbml.zip" download>Fludarabine_Ivaturi2017_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference/Fludarabine_Ivaturi2017_reference_cellml.zip" download>Fludarabine_Ivaturi2017_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

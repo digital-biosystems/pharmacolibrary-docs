@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Edrophonium (microM concentrations) inhibits specific [3H]N-methylscopolamine binding to guinea pig submandibular gland M3 receptors, with an apparent dissociation constant of 34 microM and a pseudo-Hill coefficient of 1.07; the paper excerpts do not state a further mechanism or model structure.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tanito_2001`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Aripiprazole LAI trough concentrations (Cmin, ng/mL) act on the probability of relapse via a survival (time-to-event) model with an exponential hazard function; the proportional hazard assumption did not hold, so a dichotomous hazard with a cut-off of Cmin = 95 ng/mL was used, giving a 14-day relapse probability of 0.17% per cycle when Cmin &gt; 95 ng/mL and 2.68% per cycle when Cmin &lt; 95 ng/mL. No Emax/IC50-type potency parameters are given; the paper does not state a mechanistic drug effect beyond this threshold-based hazard.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Piena_2022`
 - **model family:** `tte`
 - **driver:** `cited_pk`

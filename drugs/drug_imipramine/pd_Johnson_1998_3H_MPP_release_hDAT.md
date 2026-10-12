@@ -19,7 +19,7 @@
 
 **Model:** No model was generated from this record.
 
-> The paper does not provide the excerpts needed to describe the PD model: no mechanism, potency (IC50/EC50/Emax) or rate values are available for imipramine's effect on [3H]MPP+ release from C6-hDAT cells (% of loaded [3H]MPP+), beyond the record's indication of an Emax-type stimulation model driven by imipramine concentrations.
+> Imipramine concentrations stimulate [3H]MPP+ release from C6-hDAT cells, modelled with an Emax-type relationship; the paper excerpts provide no mechanism and no potency or rate values (Imax, EC50, Emax, gamma).
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

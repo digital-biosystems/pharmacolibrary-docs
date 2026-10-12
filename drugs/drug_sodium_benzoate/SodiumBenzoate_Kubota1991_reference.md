@@ -4,7 +4,7 @@
 
 # sodium benzoate — `SodiumBenzoate_Kubota1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has benzoic acid → hippuric acid (metabolism), the second reading sodium benzoate → benzoic acid (metabolism); benzoic acid → hippuric acid (metabolism); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has benzoic acid → hippuric acid (metabolism), the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -73,17 +73,21 @@ Kubota K et al., Dose-dependent pharmacokinetics of benz…, European journal of
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (3/6 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['benzoic acid', 'hippuric acid', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[mean aucs of benzoic acid after the dose of 80 mg/kg of sodium benzoate were 3.7-times greater than after 40 mg/kg]` | not captured | 3.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean aucs of benzoic acid after the dose of 80 mg/kg of sodium benzoate]` | 3.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [['benzoic acid', 'hippuric acid', 'metabolism']] | [['sodium benzoate', 'benzoic acid', 'metabolism'], ['benzoic acid', 'hippuric acid', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[dose of sodium benzoate]` | not captured | 80 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean auc of benzoic acid after 80 mg/kg relative to 40 mg/kg]` | not captured | 3.7 | only_one_extracted |

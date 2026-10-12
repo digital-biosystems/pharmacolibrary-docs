@@ -5,7 +5,7 @@
 
 # baloxavir marboxil — `BaloxavirMarboxil_Retout2026_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.115). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,6 +22,8 @@
 **Baloxavir marboxil apparent peripheral volume 260 L was not extracted, and covariate effects were not simulated for children aged 1 to &lt;12 years.**
 
 The record lists V2/F as 260 L, but the simulation engine failed to cover this parameter, leaving it undefined in the executed model. Additionally, covariates for race and age on clearance and absorption were not exercised, so only the reference individual was simulated. Extracted — baloxavir: CLm/F 11 L/h, V1/F 735 L, Q/F 2.12 L/h, V2/F 260 L, kabs 1.39 1/h, tlag 0.223 h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has baloxavir acid, the second reading baloxavir; it also differs on 22 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -109,6 +111,49 @@ Retout S et al., Population Pharmacokinetic and Exposure…, Clinical pharmacolo
 - LLM selected parameter table(s) 1
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.115 (3/26 fields) | 23 |
+
+<details><summary>23 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 11.02 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 11.02 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect of bw on cl/f, q/f]` | 0.467 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 1.39 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 1.39 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f]` | not captured | 2.12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f]` | 2.12 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_race]` | not captured | 0.504 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_equation_variable_race]` | 0.504 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_kabs_age]` | not captured | 0.242 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_kabs_age]` | 0.242 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_kabs_sex]` | not captured | 0.205 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_kabs_sex]` | 0.205 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q76_race]` | not captured | 0.335 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q76_race]` | 0.335 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q_f_race]` | not captured | 0.391 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | not captured | 0.223 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.223 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f]` | not captured | 735 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f]` | 735 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp/f]` | not captured | 260 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp/f]` | 260 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | baloxavir acid | baloxavir | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

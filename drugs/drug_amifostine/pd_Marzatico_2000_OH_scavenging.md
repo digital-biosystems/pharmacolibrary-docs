@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Amifostine (WR-2721) concentrations inhibit the measured response (scavenging of hydroxyl radicals, in microM), with reported EC50 values of 255 and 230 microM; the excerpts do not state the mechanism or model form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Marzatico_2000`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

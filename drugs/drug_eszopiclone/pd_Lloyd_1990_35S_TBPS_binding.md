@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Zopiclone concentration-dependently enhances 35S-TBPS binding to rat cerebral cortex membranes, described by a direct Emax model with EC50 = 171 nM and maximal enhancement of 51%; the paper excerpts do not state a mechanism beyond this stimulatory concentration-effect relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lloyd_1990`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

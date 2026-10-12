@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methacholine stimulates the 1,2-diacylglycerol translocation response measured by eGFP-C1(2)-PKCgamma; the paper excerpts provide no further details on the mechanism, model form, or potency/rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bartlett_2005`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

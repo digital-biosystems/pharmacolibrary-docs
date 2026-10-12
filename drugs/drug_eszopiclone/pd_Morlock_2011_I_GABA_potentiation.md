@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models eszopiclone's potentiation of GABA-induced chloride current (I(GABA)) with a sigmoid Emax (stimulation) model, but the excerpts provide no concentrations, mechanism, or parameter values (Imax, EC50, gamma), so the potency and mechanism cannot be stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Morlock_2011`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

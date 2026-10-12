@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Brompheniramine inhibits the calcium current (I(Ca)) via a sigmoidal Emax model with an IC50 of 16.12 µM. The paper does not provide further mechanistic details or rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shin_2006`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

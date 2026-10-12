@@ -4,7 +4,7 @@
 
 # benazepril — `Benazepril_King2003_single_administration_n_5`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.846), gpt-oss:120b (not confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -111,17 +111,20 @@ King JN et al., Pharmacokinetic/pharmacodynamic modelli…, Journal of veterinar
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.846 (11/13 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.786 (11/14 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[t 1/2 k a]` | not captured | 0.62 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2 k a]` | 0.62 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t 1/2 k 10].parameter_id` | Q47 | Q60 | mismatch |
 | `gpt-oss:120b` | `parameters[t 1/2 k a]` | not captured | 0.62 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t 1/2 k a]` | 0.62 | not captured | only_one_extracted |

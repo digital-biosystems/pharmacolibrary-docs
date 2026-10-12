@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05X&quot;,&quot;href&quot;:&quot;atc/B05X.md&quot;},{&quot;label&quot;:&quot;arginine hydrochloride&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/&quot;},{&quot;label&quot;:&quot;Yeo_2013 \u00b7 moderately_severemalaria_ref_15&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ArginineHydrochloride_Gaudinski2018_reference&quot;,&quot;label&quot;:&quot;Gaudinski_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ArginineHydrochloride_Gaudinski2018_reference&quot;,&quot;label&quot;:&quot;Gaudinski_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Gaudinski2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # arginine hydrochloride — `ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
+**Arginine hydrochloride's clearance, volume of distribution, and central-to-peripheral rate constant lacked extracted values, so the model was quarantined.**
+
+Although the record lists specific values for clearance, central volume, peripheral volume, and intercompartmental clearance, the review found these parameters were not extracted and defaulted to library placeholders. A second reader also disagreed on the dose compound and primary analyte, marking them as unknown. Additionally, the second reader identified a missing gradient value of 0.0612 that was null in the record. Extracted — arginine hydrochloride: CL 31 L/h, V1 27 L, V2 21 L, Q 74 L/h.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has L-arginine hydrochloride, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 > **Dose compound ≠ measured compound:** dosed `L-arginine hydrochloride`, measured `L-arginine`.
 
@@ -28,7 +32,7 @@ Yeo TW et al., A randomized pilot study of L-arginine…, PloS one (2013)
   ·  DOI: [10.1371/journal.pone.0069587](https://doi.org/10.1371/journal.pone.0069587)
 
 ## Model component
-<dbs-pgx drug="arginine hydrochloride" model-id="ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1" status="extracted" stale="false" population="adults with severe falciparum malaria" measured-compound="L-arginine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="arginine hydrochloride" model-id="ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1" status="model_quarantined" stale="false" population="adults with severe falciparum malaria" measured-compound="L-arginine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.
@@ -36,6 +40,8 @@ Yeo TW et al., A randomized pilot study of L-arginine…, PloS one (2013)
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL (L/h) | `Q22` · CL | 31 | L/h | 8.611111111111112e-06 | [l] / [h] | not captured | exact (1.0) | pone-0069587-t003:row2:col1 | — | 0.274 (None% RSE) |
@@ -102,6 +108,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C9_phys_window_Q63 | pass | volume within physiological range | 27 L | not captured | not captured | ['pone-0069587-t003:row3:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 21 L | not captured | not captured | ['pone-0069587-t003:row4:col1'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -110,6 +126,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_arginine_hydrochloride/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yeo_2013` / `Yeo_2013::moderately_severemalaria_ref_15`)
+- model: `../../../knowledgebase/drugs/drug_arginine_hydrochloride/models/modelica/_needs_review/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1.mo`
+- deviation: `../../../knowledgebase/drugs/drug_arginine_hydrochloride/models/modelica/_needs_review/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -121,7 +139,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1_matlab.zip" download>ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1_matlab_simbio.zip" download>ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1_matlab_simbio.zip" download>ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1_sbml.zip" download>ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1/ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1_cellml.zip" download>ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

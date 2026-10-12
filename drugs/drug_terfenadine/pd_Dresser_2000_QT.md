@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record identifies terfenadine concentration (via the cited PK record from Lalonde) as the driver for QT prolongation (ms), but the provided excerpts do not specify the pharmacodynamic mechanism or any potency and rate parameter values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dresser_2000`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

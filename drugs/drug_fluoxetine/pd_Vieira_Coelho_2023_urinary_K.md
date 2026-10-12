@@ -20,7 +20,7 @@
 
 **Model:** No model was generated from this record.
 
-> Fluoxetine dose-dependently decreased urinary K+ (mmol/L) in the acute study, described by an inhibitory Emax dose model with ED50 4.2 mg/kg (2.8; 5.5) and maximal effect 62%; the paper excerpts do not state the mechanism.
+> Fluoxetine dose-dependently decreased urinary K+ (mmol/L) in acute in vivo experiments; the paper does not state a mechanism. An Emax-type dose model gave an ED50 of 4.2 mg/kg (2.8; 5.5) and a maximal effect of 62% reduction.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

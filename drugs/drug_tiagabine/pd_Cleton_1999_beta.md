@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;tiagabine&quot;,&quot;href&quot;:&quot;drugs/drug_tiagabine/&quot;},{&quot;label&quot;:&quot;Cleton_1999 \u00b7 PD amplitude of the EEG 11.5-30 Hz frequency band (beta)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tiagabine_Ingwersen2000_reference&quot;,&quot;label&quot;:&quot;Ingwersen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tiagabine/Tiagabine_Ingwersen2000_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tiagabine_Ingwersen2000_reference&quot;,&quot;label&quot;:&quot;Ingwersen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tiagabine/Tiagabine_Ingwersen2000_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amplitude of the EEG 11.5-30 Hz frequency band (beta) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -19,6 +19,10 @@
 **As extracted:** Tiagabine (concentrations from the PK model of Cleton_1999_2) drives amplitude of the EEG 11.5-30 Hz frequency band (beta) (in microV): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> Tiagabine plasma concentrations (ng ml-1) stimulate the amplitude of the EEG beta band (microV) via a direct sigmoid Emax mechanism, characterized by an E0 of 155 +/- 6 microV, a maximum increase (Emax) of 100 +/- 5 microV, an EC50 of 287 +/- 7 ng ml-1, and a Hill factor of 1.8 +/- 0.2. The model incorporates a bidirectional delay with a keo of 0.030 +/- 0.002 min-1, although the paper does not explicitly describe the underlying physiological mechanism for this effect.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Cleton_1999`
 - **model family:** `sigmoid_emax`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Perphenazine (μM) inhibits cell viability with an Emax-type model; the paper excerpts give only an EC50 of 2.76 μM and do not state the mechanism or other parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Otreba_2016`
 - **model family:** `emax`
 - **driver:** `cited_pk`

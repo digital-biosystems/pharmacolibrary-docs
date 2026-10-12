@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;guselkumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Guselkumab_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guselkumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guselkumab_Yao2018_reference&quot;,&quot;label&quot;:&quot;Yao_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_Yao2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Guselkumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guselkumab_Yao2018_reference&quot;,&quot;label&quot;:&quot;Yao_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_Yao2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Guselkumab_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guselkumab/Guselkumab_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # guselkumab
 
@@ -18,16 +18,16 @@ Guselkumab is a monoclonal antibody that acts as an interleukin inhibitor, belon
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:49 | 2:39 | 3/1/0 | 4/0/2 | 0/0/0 | 171,862/11,374 | einfracz / qwen3.8-27b | 6 | 2/4 | 6/0 | 0 |
+| 2026-10-06 23:49 | 2:39 | 2/1/1 | 4/0/2 | 0/0/0 | 171,862/11,374 | einfracz / qwen3.8-27b | 6 | 2/4 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chen_2022_reference](drugs/drug_guselkumab/Guselkumab_Chen2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Chen Y et al., Population pharmacokinetics and exposur…, Clinical and translational… (2022) | [10.1111/cts.13197](https://doi.org/10.1111/cts.13197) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Rodríguez-Fernández_2022_reference](drugs/drug_guselkumab/Guselkumab_RodrguezFernndez2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Rodríguez-Fernández K et al., Impact of Pharmacokinetic and Pharmacod…, Pharmaceutics (2022) | [10.3390/pharmaceutics14030654](https://doi.org/10.3390/pharmaceutics14030654) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yao_2018_reference](drugs/drug_guselkumab/Guselkumab_Yao2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Yao Z et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1063](https://doi.org/10.1002/jcph.1063) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tran_2022_reference](drugs/drug_guselkumab/Guselkumab_Tran2022_reference.md) | — | 1-compartment (no model) | 0 | Tran L et al., Population pharmacokinetics analysis of…, British journal of clinical… (2022) | [10.1111/bcp.15364](https://doi.org/10.1111/bcp.15364) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Rodríguez-Fernández_2022_reference](drugs/drug_guselkumab/Guselkumab_RodrguezFernndez2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Rodríguez-Fernández K et al., Impact of Pharmacokinetic and Pharmacod…, Pharmaceutics (2022) | [10.3390/pharmaceutics14030654](https://doi.org/10.3390/pharmaceutics14030654) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> | [Yao_2018_reference](drugs/drug_guselkumab/Guselkumab_Yao2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Yao Z et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1063](https://doi.org/10.1002/jcph.1063) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Chen_2022_reference](drugs/drug_guselkumab/Guselkumab_Chen2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Chen Y et al., Population pharmacokinetics and exposur…, Clinical and translational… (2022) | [10.1111/cts.13197](https://doi.org/10.1111/cts.13197) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tran_2022_reference](drugs/drug_guselkumab/Guselkumab_Tran2022_reference.md) | — | 1-compartment (no model) | 0 | Tran L et al., Population pharmacokinetics analysis of…, British journal of clinical… (2022) | [10.1111/bcp.15364](https://doi.org/10.1111/bcp.15364) |
 
 ## Pharmacodynamics (PD)
 
@@ -67,7 +67,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 22 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 3  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 2  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

@@ -5,7 +5,7 @@
 
 # alglucosidase alfa — `AlglucosidaseAlfa_Barzel2026_tiraboschi_et_al_2023_22_plasma`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.19). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.19). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The model was built, but alglucosidase alfa's bioavailability, clearance and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — alglucosidase alfa: V 69.1 L, ktr 0.581 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading none → none (none); it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alglucosidase_alfa, the second reading alglucosidase alfa; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -95,17 +95,22 @@ Barzel I et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacoki
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (4/8 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.19 (4/21 fields) | 17 |
 
-<details><summary>17 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | alglucosidase_alfa | alglucosidase alfa | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | alglucosidase_alfa | alglucosidase alfa | mismatch |
 | `gpt-oss:120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
 | `gpt-oss:120b` | `parameters[cendo]` | not captured | 0.93 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | not captured | not captured | only_one_extracted |

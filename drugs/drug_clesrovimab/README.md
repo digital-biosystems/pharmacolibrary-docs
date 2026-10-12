@@ -23,7 +23,7 @@ Clesrovimab is an antiviral monoclonal antibody used to protect against respirat
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Hu_2026_reference](drugs/drug_clesrovimab/Clesrovimab_Hu2026_reference.md) | — | 2-compartment (no model) | 6 | Hu Z et al., Population Pharmacokinetics of Clesrovi…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70199](https://doi.org/10.1002/cpt.70199) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Hu_2026_reference](drugs/drug_clesrovimab/Clesrovimab_Hu2026_reference.md) | — | 2-compartment (no model) | 6 | Hu Z et al., Population Pharmacokinetics of Clesrovi…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70199](https://doi.org/10.1002/cpt.70199) |
 
 ## ADME sites
 

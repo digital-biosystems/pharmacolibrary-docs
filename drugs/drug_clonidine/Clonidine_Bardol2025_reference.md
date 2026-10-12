@@ -5,7 +5,7 @@
 
 # clonidine — `Clonidine_Bardol2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — clonidine: V1 202 L/70 kg; 1-OH midazolam: CLfm 33.4 L/h/70 kg, V 90.8 L/70 kg, CL 212 L/h/70 kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clonidine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has midazolam → 1-oh midazolam (metabolism), the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -102,18 +102,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.5 (5/10 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.333 (4/12 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.556 (5/9 fields) | 4 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['midazolam', '1-oh midazolam', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[clmmid]` | not captured | 33.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clmmid]` | 33.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clommid]` | not captured | 211.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clommid]` | 211.6 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[pma_50mid]` | 73.6 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vclon]` | 202.4 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vclon]` | not captured | 202.4 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | clonidine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | clonidine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[vclon].parameter_id` | Q63 | Q61 | mismatch |
+| `gpt-oss-120b` | `parameters[vmmid]` | 90.8 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vclon]` | 202.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vclon]` | not captured | 202.4 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | clonidine | unknown | mismatch |

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes a sigmoidal concentration-dependent activation (stimulation) of glmS ribozyme self-cleavage by the divalent cations Mg²⁺, Mn²⁺, and Ca²⁺, rather than by glucosamine or glucosamine-6-phosphate as indicated in the record. The paper reports the EC50 values for these divalent cations in the presence of 200 μM GlcN6P, but does not provide the specific EC50 values listed in the record (0.46, 0.38, 223, 1920 μM).
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Esser_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

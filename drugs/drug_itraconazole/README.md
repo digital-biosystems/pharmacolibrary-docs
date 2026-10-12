@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J02A&quot;,&quot;href&quot;:&quot;atc/J02A.md&quot;},{&quot;label&quot;:&quot;itraconazole&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Itraconazole_Comisar2025_reference&quot;,&quot;label&quot;:&quot;Comisar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_itraconazole/Itraconazole_Comisar2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Itraconazole_Comisar2025_reference&quot;,&quot;label&quot;:&quot;Comisar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_itraconazole/Itraconazole_Comisar2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # itraconazole
 
@@ -36,14 +36,14 @@ Itraconazole is an antifungal medicine used to treat a range of fungal infection
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Comisar_2025_reference](drugs/drug_itraconazole/Itraconazole_Comisar2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Comisar CM et al., Population Pharmacokinetic Modeling of…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70051](https://doi.org/10.1002/psp4.70051) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Chu_2025_reference](drugs/drug_itraconazole/Itraconazole_Chu2025_reference.md) | — | general linear (no model) | 8 (+2 cov.) | Chu WY et al., Pharmacokinetics and Pharmacodynamics o…, The Journal of infectious d… (2025) | [10.1093/infdis/jiaf279](https://doi.org/10.1093/infdis/jiaf279) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: partial</span> | [Comisar_2025_reference](drugs/drug_itraconazole/Itraconazole_Comisar2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Comisar CM et al., Population Pharmacokinetic Modeling of…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70051](https://doi.org/10.1002/psp4.70051) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.043). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Chu_2025_reference](drugs/drug_itraconazole/Itraconazole_Chu2025_reference.md) | — | general linear (no model) | 8 (+2 cov.) | Chu WY et al., Pharmacokinetics and Pharmacodynamics o…, The Journal of infectious d… (2025) | [10.1093/infdis/jiaf279](https://doi.org/10.1093/infdis/jiaf279) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Varghese_2022_SFV_Nluc](drugs/drug_itraconazole/pd_Varghese_2022_SFV_Nluc.md) | SFV-Nluc replication ← itraconazole · direct sigmoid Emax (Hill) effect | — | Varghese FS et al., Posaconazole inhibits multiple steps of…, Antiviral research (2022) | [10.1016/j.antiviral.2021.105223](https://doi.org/10.1016/j.antiviral.2021.105223) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Varghese_2022_SFV_Nluc](drugs/drug_itraconazole/pd_Varghese_2022_SFV_Nluc.md) | SFV-Nluc replication ← itraconazole · direct sigmoid Emax (Hill) effect | — | Varghese FS et al., Posaconazole inhibits multiple steps of…, Antiviral research (2022) | [10.1016/j.antiviral.2021.105223](https://doi.org/10.1016/j.antiviral.2021.105223) |
 
 ## ADME sites
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;pegcetacoplan&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pegcetacoplan_Crass2025_transformed_estimate&quot;,&quot;label&quot;:&quot;Crass_2025_transformed_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_transformed_estimate.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pegcetacoplan_Crass2025_transformed_estimate&quot;,&quot;label&quot;:&quot;Crass_2025_transformed_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_transformed_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # pegcetacoplan
 
@@ -18,16 +18,16 @@ Pegcetacoplan is a complement inhibitor used to treat paroxysmal nocturnal hemog
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:09 | 1:04 | 1/2/1 | 2/0/0 | 0/0/0 | 84,747/6,398 | einfracz / qwen3.8-27b | 3 | 3/0 | 3/0 | 0 |
+| 2026-10-07 00:09 | 1:04 | 0/2/2 | 2/0/0 | 0/0/0 | 84,747/6,398 | einfracz / qwen3.8-27b | 3 | 3/0 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Crass_2025_transformed_estimate](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_transformed_estimate.md) | ▶ model + simulator | 1-compartment, oral | 3 (+1 cov.) | Crass RL et al., Population Pharmacokinetics of Pegcetac…, Ophthalmology science (2025) | [10.1016/j.xops.2024.100657](https://doi.org/10.1016/j.xops.2024.100657) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Crass_2025_estimate](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_estimate.md) | — | 1-compartment (no model) | 1 | Crass RL et al., Population Pharmacokinetics of Pegcetac…, Ophthalmology science (2025) | [10.1016/j.xops.2024.100657](https://doi.org/10.1016/j.xops.2024.100657) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Crass_2024_reference](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2024_reference.md) | — | 1-compartment (no model) | 2 | Crass RL et al., Population Pharmacokinetic and Pharmaco…, Drugs in R&D (2024) | [10.1007/s40268-024-00500-7](https://doi.org/10.1007/s40268-024-00500-7) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Crass_2025_2_reference](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025v2_reference.md) | — | 1-compartment (no model) | 2 | Crass RL et al., Pharmacokinetic/pharmacodynamic analysi…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13264](https://doi.org/10.1002/psp4.13264) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Crass_2025_estimate](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_estimate.md) | — | 1-compartment (no model) | 1 | Crass RL et al., Population Pharmacokinetics of Pegcetac…, Ophthalmology science (2025) | [10.1016/j.xops.2024.100657](https://doi.org/10.1016/j.xops.2024.100657) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T1_cmax</sub><br><sub>route_to: `scholar`</sub> | [Crass_2025_transformed_estimate](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_transformed_estimate.md) | ▶ model + simulator | 1-compartment, oral | 3 (+1 cov.) | Crass RL et al., Population Pharmacokinetics of Pegcetac…, Ophthalmology science (2025) | [10.1016/j.xops.2024.100657](https://doi.org/10.1016/j.xops.2024.100657) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Crass_2024_reference](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2024_reference.md) | — | 1-compartment (no model) | 2 | Crass RL et al., Population Pharmacokinetic and Pharmaco…, Drugs in R&D (2024) | [10.1007/s40268-024-00500-7](https://doi.org/10.1007/s40268-024-00500-7) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Crass_2025_2_reference](drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025v2_reference.md) | — | 1-compartment (no model) | 2 | Crass RL et al., Pharmacokinetic/pharmacodynamic analysi…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13264](https://doi.org/10.1002/psp4.13264) |
 
 ## Pharmacodynamics (PD)
 
@@ -57,7 +57,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 1  ·  needs_review 1  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

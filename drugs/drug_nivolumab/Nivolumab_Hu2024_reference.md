@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;nivolumab&quot;,&quot;href&quot;:&quot;drugs/drug_nivolumab/&quot;},{&quot;label&quot;:&quot;Hu_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nivolumab_van2019_reference&quot;,&quot;label&quot;:&quot;van_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nivolumab/Nivolumab_van2019_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nivolumab_van2019_reference&quot;,&quot;label&quot;:&quot;van_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nivolumab/Nivolumab_van2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nivolumab — `Nivolumab_Hu2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.65), gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has nivolumab, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+**The record was rejected because the peritoneal dialysis clearance parameter for nivolumab has an implausible negative value of -0.580.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The parameter labeled 'CL PEDST' is defined as drug clearance by peritoneal dialysis, yet its value is -0.580. Clearance parameters must be non-negative, making this value physiologically impossible. A second reader disagreed on the assignment of several covariate effects, noting that the value 0.0982 was recorded as a generic covariate effect rather than a specific power term, and that a different negative value of -0.382 was expected for a different clearance parameter. Extracted — nivolumab: CL 9.66 mL/h, V 3.9 L, Q 35.8 mL/h, CL_PD -0.58.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl pedst: this record has -0.580, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Hu Z et al., Nivolumab and ipilimumab population pha…, CPT: pharmacometrics & syst… (2024)
@@ -171,17 +175,25 @@ Hu Z et al., Nivolumab and ipilimumab population pha…, CPT: pharmacometrics & 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.65 (13/20 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.571 (12/21 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl pedst]` | -0.580 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl_egfr]` | 0.0982 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q ref]` | 35.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t50]` | not captured | 2670 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_egfr_power]` | not captured | 0.0982 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc ref].parameter_id` | Q61 | Q63 | mismatch |
+| `gpt-oss-120b` | `parameters[vp ref]` | not captured | 3.47 | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
 | `gpt-oss:120b` | `parameters[cl hl]` | not captured | -0.382 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl pedst]` | -0.580 | not captured | only_one_extracted |

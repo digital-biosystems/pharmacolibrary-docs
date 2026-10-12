@@ -5,7 +5,7 @@
 
 # nimodipine — `Nimodipine_Seker2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182), gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has nimodipine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+**The record was rejected because the intercompartmental clearance parameter for nimodipine was assigned a value of 200 ml/min, causing a dimension mismatch.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The parameter labeled 'ICA blood flow' is defined as the apparent intercompartmental clearance between the central and peripheral compartment. A dimension mismatch was found on this structural parameter, which has a value of 200 ml/min. The second reader disagreed with the extraction of all three parameters, marking them as null. Extracted — nimodipine: Q 200 ml/min, CL 70 l/h, Cmax 85 %.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nimodipine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Seker F et al., Pharmacokinetic Modeling of Intra-arter…, Clinical neuroradiology (2017)
@@ -64,17 +68,27 @@ Seker F et al., Pharmacokinetic Modeling of Intra-arter…, Clinical neuroradiol
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 | `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>18 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clearance]` | 70 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | 70 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ica blood flow]` | 200 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ica blood flow]` | not captured | 200 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximal concentration achieved within the first minute of ia infusion]` | not captured | 85 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximal concentration]` | 85 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state cerebral arterial concentration]` | not captured | 200 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | nimodipine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | nimodipine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[clearance]` | 70 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | not captured | 70 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ica blood flow]` | 200 | not captured | only_one_extracted |

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentagastrin concentration (nmol/L) stimulates the increase in transmucosal short-circuit current (SCC) in an Emax-type model; the paper reports an EC50 greater than 1000 nmol/L, and no full text is available to confirm the mechanism or other parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kachur_1991`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

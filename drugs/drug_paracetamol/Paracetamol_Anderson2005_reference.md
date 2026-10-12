@@ -5,7 +5,7 @@
 
 # paracetamol — `Paracetamol_Anderson2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.235), gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The parameter labelled 'CL std /F oral ...' was extracted with value 19.3 and unit 'a', a unit that could not be converted to SI, so it reached the record without an SI value and its dimension does not match a structural parameter. The metabolite paracetamol (formed from propacetamol at the central site) has no path from the dose, making it an unlinked metabolite. A second reader also disputed several fields, including the dose compound (propacetamol versus paracetamol), the absence of a propacetamol-to-paracetamol hydrolysis link, and three parameters (72.1, 0.885, 0.476) recorded as null here. Extracted — paracetamol: kfm 0.007 a, CLm/F 1.87 L/h, V2 45 L, V/F 0.82 L/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has propacetamol, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading propacetamol → paracetamol (hydrolysis); it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -82,17 +82,31 @@ Anderson BJ et al., Pediatric intravenous paracetamol (prop…, Paediatric anaes
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.235 (4/17 fields) | 13 |
 | `gpt-oss:120b` | not confirmed | 0.167 (3/18 fields) | 15 |
 
-<details><summary>15 field(s) a reader read differently</summary>
+<details><summary>28 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['propacetamol', 'paracetamol', 'hydrolysis']] | mismatch |
+| `gpt-oss-120b` | `parameters[19.7]` | not captured | 69 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution of the s(-) enantiomer]` | 0.82 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[b cl]` | not captured | 0.885 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl std /f oral (laeh )1 70 kg )1 ) v 2std /f oral (lae70 kg )1 ) q std /f oral (laeh )1 70 kg )1 ) v 3std /f oral (lae70 kg )1 )]` | not captured | 19.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl std /f oral (laeh )1 70 kg )1 ) v 2std /f oral (lae70 kg )1 ) q std /f oral (laeh )1 70 kg )1 ) v 3std /f oral (lae70 kg )1 )]` | 19.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f iv/oral]` | not captured | 0.499 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f iv/oral]` | 0.499 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f oral]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2 hyd (h) 1⁄4 ln(2)/k a].parameter_id` | Q95 | Q305 | mismatch |
+| `gpt-oss-120b` | `parameters[t cl]` | 26.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 4.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 2 /f oral]` | not captured | 1 | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [] | [['propacetamol', 'paracetamol', 'hydrolysis']] | mismatch |
 | `gpt-oss:120b` | `parameters[22.2]` | not captured | 72.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[b cl]` | not captured | 0.885 | only_one_extracted |

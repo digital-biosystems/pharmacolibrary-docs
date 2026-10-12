@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H01C&quot;,&quot;href&quot;:&quot;atc/H01C.md&quot;},{&quot;label&quot;:&quot;lanreotide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lanreotide_BuilBruna2016v2_reference&quot;,&quot;label&quot;:&quot;Buil-Bruna_2016_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lanreotide/Lanreotide_BuilBruna2016v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lanreotide_BuilBruna2016v2_reference&quot;,&quot;label&quot;:&quot;Buil-Bruna_2016_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lanreotide/Lanreotide_BuilBruna2016v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # lanreotide
 
@@ -27,21 +27,21 @@ Lanreotide is a synthetic somatostatin analogue used as a hormonal and antineopl
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:24 | 3:34 | 1/1/0 | 2/0/0 | 0/0/0 | 177,083/13,036 | einfracz / qwen3.8-27b | 2 | 2/0 | 2/0 | 0 |
+| 2026-10-07 09:24 | 3:34 | 0/1/1 | 2/0/0 | 0/0/0 | 177,083/13,036 | einfracz / qwen3.8-27b | 2 | 2/0 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Buil-Bruna_2016_2_reference](drugs/drug_lanreotide/Lanreotide_BuilBruna2016v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Buil-Bruna N et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2016) | [10.1007/s40262-015-0329-4](https://doi.org/10.1007/s40262-015-0329-4) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Trocóniz_2009_reference](drugs/drug_lanreotide/Lanreotide_Trocniz2009_reference.md) | — | 1-compartment (no model) | 0 | Trocóniz IF et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (2009) | [10.2165/0003088-200948010-00004](https://doi.org/10.2165/0003088-200948010-00004) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Buil-Bruna_2016_2_reference](drugs/drug_lanreotide/Lanreotide_BuilBruna2016v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Buil-Bruna N et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2016) | [10.1007/s40262-015-0329-4](https://doi.org/10.1007/s40262-015-0329-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Trocóniz_2009_reference](drugs/drug_lanreotide/Lanreotide_Trocniz2009_reference.md) | — | 1-compartment (no model) | 0 | Trocóniz IF et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (2009) | [10.2165/0003088-200948010-00004](https://doi.org/10.2165/0003088-200948010-00004) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Cendros_2005_GH](drugs/drug_lanreotide/pd_Cendros_2005_GH.md) | serum growth hormone (GH) concentrations ← lanreotide · direct Emax (saturable) effect | model (no simulator) | Cendros JM et al., Pharmacokinetics and population pharmac…, Metabolism: clinical and ex… (2005) | [10.1016/j.metabol.2005.04.014](https://doi.org/10.1016/j.metabol.2005.04.014) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Kidd_2009_5HT_secretion](drugs/drug_lanreotide/pd_Kidd_2009_5HT_secretion.md) | serotonin secretion ← lanreotide · direct sigmoid Emax (Hill) effect | — | Kidd M et al., IL1beta- and LPS-induced serotonin secr…, Neurogastroenterology and m… (2009) | [10.1111/j.1365-2982.2008.01210.x](https://doi.org/10.1111/j.1365-2982.2008.01210.x) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span> | [Cendros_2005_GH](drugs/drug_lanreotide/pd_Cendros_2005_GH.md) | serum growth hormone (GH) concentrations ← lanreotide · direct Emax (saturable) effect | model (no simulator) | Cendros JM et al., Pharmacokinetics and population pharmac…, Metabolism: clinical and ex… (2005) | [10.1016/j.metabol.2005.04.014](https://doi.org/10.1016/j.metabol.2005.04.014) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Kidd_2009_5HT_secretion](drugs/drug_lanreotide/pd_Kidd_2009_5HT_secretion.md) | serotonin secretion ← lanreotide · direct sigmoid Emax (Hill) effect | — | Kidd M et al., IL1beta- and LPS-induced serotonin secr…, Neurogastroenterology and m… (2009) | [10.1111/j.1365-2982.2008.01210.x](https://doi.org/10.1111/j.1365-2982.2008.01210.x) |
 
 ## ADME sites
 
@@ -66,7 +66,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 15 matched, 15 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

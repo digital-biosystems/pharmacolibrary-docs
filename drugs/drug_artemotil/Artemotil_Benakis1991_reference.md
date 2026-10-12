@@ -4,7 +4,7 @@
 
 # artemotil — `Artemotil_Benakis1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The arteether (artemotil) record from Benakis_1991 in beagle dogs was rejected because a structural parameter failed a dimension check, and the record was built from the abstract alone rather than a fitted model.**
+
+The dimension check on a structural parameter failed (C5), meaning one of the model's structural parameters had a value whose unit did not match the parameter's required dimension; the findings do not identify which of the reported parameters (t1/2ka 0.3 h, t1/2z 27.95 h, Cmax 110 ng/ml, CL/F 1.69 ml/min, AUC 2797 ng/ml/h) triggered the mismatch. In addition, the record was abstract-only: only the paper's abstract was read, so the reported summary statistics stood in for a fitted model rather than parameters estimated from full concentration-time data. Extracted — artemotil: t1/2ka 0.3 h, t1/2z 27.9 h, Cmax 110 ng/ml, CL/F 1.69 ml/min, AUC 2.8e+03 ng/ml/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has arteether, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Benakis A et al., Pharmacokinetics of arteether in dog, European journal of drug me… (1991)
@@ -59,6 +67,38 @@ Benakis A et al., Pharmacokinetics of arteether in dog, European journal of drug
 - no GROBID TEI available — transcribed from abstract in Benakis_1991_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+
+<details><summary>12 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc]` | 2797 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | not captured | 2797 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cltot/f]` | 1.69 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cltot/f]` | not captured | 1.69 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 110 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 110 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean elimination half-life]` | 27.95 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean elimination half-life]` | not captured | 27.95 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2ka]` | 0.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2ka]` | not captured | 0.3 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | arteether | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | arteether | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

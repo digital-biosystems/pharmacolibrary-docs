@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts describing the mechanism by which primidone concentrations act on serum drug concentrations, nor does it specify key potency or rate parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Perucca_1982`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;immunoglobulins, normal human, for extravascular adm.&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe&quot;,&quot;label&quot;:&quot;Zhang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_immunoglobulins_normal_human_for_extravascular_adm/ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe&quot;,&quot;label&quot;:&quot;Zhang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_immunoglobulins_normal_human_for_extravascular_adm/ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # immunoglobulins, normal human, for extravascular adm.
 
@@ -24,7 +24,7 @@ Hizentra is a pharmaceutical product containing normal human immunoglobulin, a c
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2020_reference](drugs/drug_immunoglobulins_normal_human_for_extravascular_adm/ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe.md) | ▶ model + simulator | 2-compartment, IV | 4 | Zhang Y et al., Population pharmacokinetic analysis of…, International immunopharmac… (2020) | [10.1016/j.intimp.2019.106005](https://doi.org/10.1016/j.intimp.2019.106005) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> | [Zhang_2020_reference](drugs/drug_immunoglobulins_normal_human_for_extravascular_adm/ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe.md) | ▶ model + simulator | 2-compartment, IV | 4 | Zhang Y et al., Population pharmacokinetic analysis of…, International immunopharmac… (2020) | [10.1016/j.intimp.2019.106005](https://doi.org/10.1016/j.intimp.2019.106005) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -4,7 +4,7 @@
 
 # quinupramine — `Quinupramine_Bouquet1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125), gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record, built from the paper's abstract only, reports quinupramine summary statistics (AUC∞ 43.7 ng.ml-1.h, Cmax 1.1 ng.ml-1, V/F 34.2 l.kg-1, t1/2z 33.5 h, F 0.75) rather than a fitted model. The coherence check found a double correction: the volume of distribution is already given as V/F (adjusted for bioavailability), so applying F = 0.75 again violates apparent-parameter consistency. A second reader disagreed on the parameterization (mechanistic rather than apparent) and on the bioavailability value and all five parameter values, reading them as null. Extracted — quinupramine: Fab 0.75 F, AUC∞ 43.7 ng.ml-1.h, Cmax 1.1 ng.ml-1, V/F 34.2 l.kg-1, t1/2z 33.5 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has quinupramine, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -66,17 +66,32 @@ Bouquet S et al., [Crossover pharmacokinetic study of qui…, L'Encephale (1982)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.125 (2/16 fields) | 14 |
 | `gpt-oss:120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[a.v.d.]` | not captured | 34.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent terminal half life of elimination]` | 33.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent terminal half life of elimination]` | not captured | 33.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 34.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[area under experimental points of the curves]` | 43.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc 0 leads to infinity]` | not captured | 43.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[blood levels]` | 1.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clr]` | not captured | 2.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 1.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[coefficient of bioavailability]` | not captured | 0.75 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the coefficient of bioavailability]` | 0.75 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | quinupramine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | quinupramine | unknown | mismatch |
 | `gpt-oss:120b` | `model.bioavailability.theta` | 0.75 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[apparent terminal half life of elimination]` | 33.5 | not captured | only_one_extracted |

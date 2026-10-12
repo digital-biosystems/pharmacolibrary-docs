@@ -5,7 +5,7 @@
 
 # tianeptine — `Tianeptine_Szafarz2018_intravenous_1_mg_kg`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846), gpt-oss:120b (not confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The model's terminal half-life of 2.22 h differs from the paper's 7.53 h (ratio 0.2947), beyond tolerance, so the model does not reproduce the reported elimination profile. The absorption rate constant ka (and Tlag) were left at library defaults instead of estimates from this paper, and the deviations were judged not acceptable. The model structure also mismatched: a one-compartment enteral model was built where a parent–metabolite structure was expected, and the output was the parent compartment rather than the measured analyte. A second reader disagreed on the parameterization (mechanistic vs apparent) and on the Cmax value (23.64 vs not extracted). Extracted — tianeptine: tmax 86.6 h, kel 41.7 h−1, t1/2z 64.3 h, V 40.2 L/kg, AUC∞ 19.4 mg∙h/L, CL/F 21.4 L/h/kg, Vss 55.6 L/kg, MRT 32.6 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has tianeptine → mc5 (metabolism), the second reading not captured → not captured (not captured); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -110,17 +110,20 @@ Szafarz M et al., Pharmacokinetic study of tianeptine and…, Naunyn-Schmiedeber
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.846 (11/13 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.786 (11/14 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['tianeptine', 'mc5', 'metabolism']] | [['', '', '']] | mismatch |
+| `gpt-oss-120b` | `parameters[c o/c max]` | not captured | 23.64 | only_one_extracted |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[c o/c max]` | not captured | 23.64 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/(cl/f)].parameter_id` | Q27 | Q87 | mismatch |
@@ -190,7 +193,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg/Tianeptine_Szafarz2018_intravenous_1_mg_kg_modelica.zip" download>Tianeptine_Szafarz2018_intravenous_1_mg_kg_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg/Tianeptine_Szafarz2018_intravenous_1_mg_kg_fmi.zip" download>Tianeptine_Szafarz2018_intravenous_1_mg_kg_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg/Tianeptine_Szafarz2018_intravenous_1_mg_kg_matlab.zip" download>Tianeptine_Szafarz2018_intravenous_1_mg_kg_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg/Tianeptine_Szafarz2018_intravenous_1_mg_kg_matlab_simbio.zip" download>Tianeptine_Szafarz2018_intravenous_1_mg_kg_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg/Tianeptine_Szafarz2018_intravenous_1_mg_kg_matlab_simbio.zip" download>Tianeptine_Szafarz2018_intravenous_1_mg_kg_matlab_simbio.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg/Tianeptine_Szafarz2018_intravenous_1_mg_kg_sbml.zip" download>Tianeptine_Szafarz2018_intravenous_1_mg_kg_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg/Tianeptine_Szafarz2018_intravenous_1_mg_kg_cellml.zip" download>Tianeptine_Szafarz2018_intravenous_1_mg_kg_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>

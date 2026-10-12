@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06A&quot;,&quot;href&quot;:&quot;atc/D06A.md&quot;},{&quot;label&quot;:&quot;chloramphenicol&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/&quot;},{&quot;label&quot;:&quot;Anderson_1983 \u00b7 cow_number_6&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloramphenicol_Anadn1994_reference&quot;,&quot;label&quot;:&quot;Anad\u00f3n_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Anadn1994_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloramphenicol_Kume1986_reference&quot;,&quot;label&quot;:&quot;Kume_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Kume1986_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloramphenicol_Perucca1982_reference&quot;,&quot;label&quot;:&quot;Perucca_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Perucca1982_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloramphenicol_Soback1986_reference&quot;,&quot;label&quot;:&quot;Soback_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Soback1986_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloramphenicol_Anadn1994_reference&quot;,&quot;label&quot;:&quot;Anad\u00f3n_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Anadn1994_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloramphenicol_Kume1986_reference&quot;,&quot;label&quot;:&quot;Kume_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Kume1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloramphenicol_Perucca1982_reference&quot;,&quot;label&quot;:&quot;Perucca_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Perucca1982_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloramphenicol_Soback1986_reference&quot;,&quot;label&quot;:&quot;Soback_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Soback1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # chloramphenicol — `Chloramphenicol_Anderson1983_cow_number_6`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.462). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,9 +19,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 0.33: this record has none, the second reading 4.4; it also differs on 1 more field. That field does not shape the model.
+**This paper's disposition core is incomplete; the model does not reproduce the paper's terminal half-life (model/paper ratio 1.74).**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Anadón_1994, Mayers_1991, Shen_2003) cannot stand in for this paper's evidence. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (AUC), so that value has no SI equivalent. Extracted — chloramphenicol: AUC 226 µg·h/ml, Fab 1.27, CL 0.22 ml/h/kg, V 2.38 l/kg, kabs 1.02 /h, tlag 0 h.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has chloramphenicol, the second reading chloramphenicol base; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Anderson KL et al., Pharmacokinetics of chloramphenicol in…, Journal of veterinary pharm… (1983)
@@ -71,19 +75,24 @@ Anderson KL et al., Pharmacokinetics of chloramphenicol in…, Journal of veteri
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
+| `qwen3.8-27b` | not confirmed | 0.462 (6/13 fields) | 7 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[0.33]` | not captured | 4.4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[0.75]` | not captured | 5.9 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[a]` | 1.02 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[amikacin in: serum t lag]` | 0.0 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[auci.v.].parameter_id` | Q88 | Q17 | mismatch |
+| `qwen3.8-27b` | `parameters[aucs.c.]` | not captured | 286.20 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[ci]` | 0.22 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[vdiareal]` | 2.38 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `screen.dose_compound` | chloramphenicol | chloramphenicol base | mismatch |
 
 </details>
 

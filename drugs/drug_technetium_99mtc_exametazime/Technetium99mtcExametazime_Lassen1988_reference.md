@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The record was rejected because technetium 99mTc exametazime’s Kp tissue-to-plasma partition coefficient is reported as 0.67 ml/g, a structural parameter dimension mismatch.**
+
+Kp is identified as a tissue-to-plasma partition coefficient, but its recorded unit is ml/g. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — hydrophilic HM-PAO: kfm 0.8 min-1; technetium_99mtc_exametazime (lipophilic HM-PAO): kel 0.69 min-1, CL 0.45 ml/g/min, Kp 0.67 ml/g.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 > **Dose compound ≠ measured compound:** dosed `technetium_99mtc_exametazime (HM-PAO)`, measured `technetium_99mtc_exametazime (lipophilic HM-PAO)`.
 

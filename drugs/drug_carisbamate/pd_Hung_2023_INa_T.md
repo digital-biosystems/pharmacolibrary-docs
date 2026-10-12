@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carisbamate concentrations inhibit the amplitude of the transient voltage-gated Na+ current (INa(T)) via a direct, concentration-dependent mechanism described by a modified Hill equation, which alters the current magnitude without shifting the voltage-activation threshold. The fitted IC50 for this inhibition is 56.4 μM.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hung_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

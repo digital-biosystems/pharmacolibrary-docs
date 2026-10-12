@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models motor activity as a continuous response inhibited by a summed pyrethroid mixture that includes deltamethrin (decamethrin), using a sigmoid Emax model; however, no full text is available, so the mechanism, effect form, and potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hughes_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;meropenem&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Meropenem_Bilal2021_reference&quot;,&quot;label&quot;:&quot;Bilal_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meropenem/Meropenem_Bilal2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Meropenem_Liu2025_reference&quot;,&quot;label&quot;:&quot;Liu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meropenem/Meropenem_Liu2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Meropenem_Zyryanov2023_reference&quot;,&quot;label&quot;:&quot;Zyryanov_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meropenem/Meropenem_Zyryanov2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Meropenem_Bilal2021_reference&quot;,&quot;label&quot;:&quot;Bilal_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meropenem/Meropenem_Bilal2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Meropenem_Liu2025_reference&quot;,&quot;label&quot;:&quot;Liu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meropenem/Meropenem_Liu2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Meropenem_Zyryanov2023_reference&quot;,&quot;label&quot;:&quot;Zyryanov_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meropenem/Meropenem_Zyryanov2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # meropenem
 
@@ -27,16 +27,16 @@ Meropenem is a carbapenem antibiotic used to treat serious bacterial infections 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:38 | 5:19 | 4/0/0 | 0/0/0 | 0/0/0 | 263,898/20,538 | einfracz / qwen3.8-27b | 9 | 0/9 | 9/0 | 0 |
+| 2026-10-07 11:38 | 5:19 | 2/0/2 | 0/0/0 | 0/0/0 | 263,898/20,538 | einfracz / qwen3.8-27b | 9 | 0/9 | 9/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bilal_2021_reference](drugs/drug_meropenem/Meropenem_Bilal2021_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Bilal M et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01063-5](https://doi.org/10.1007/s40262-021-01063-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2025_reference](drugs/drug_meropenem/Meropenem_Liu2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Liu Y et al., PopPK and PBPK Models Guide Meropenem D…, Pharmaceutics (2025) | [10.3390/pharmaceutics17121544](https://doi.org/10.3390/pharmaceutics17121544) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Rančić_2024_reference](drugs/drug_meropenem/Meropenem_Rani2024_reference.md) | held back | 1-compartment, IV | 1 | Rančić A et al., Population pharmacokinetics of meropene…, Open medicine (Warsaw, Pola… (2024) | [10.1515/med-2024-1004](https://doi.org/10.1515/med-2024-1004) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zyryanov_2023_reference](drugs/drug_meropenem/Meropenem_Zyryanov2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Zyryanov S et al., Population PK/PD modelling of meropenem…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1079680](https://doi.org/10.3389/fphar.2023.1079680) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.615). The first reading is what the record holds.">cross-check: partial</span> | [Bilal_2021_reference](drugs/drug_meropenem/Meropenem_Bilal2021_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Bilal M et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01063-5](https://doi.org/10.1007/s40262-021-01063-5) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span> | [Liu_2025_reference](drugs/drug_meropenem/Meropenem_Liu2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Liu Y et al., PopPK and PBPK Models Guide Meropenem D…, Pharmaceutics (2025) | [10.3390/pharmaceutics17121544](https://doi.org/10.3390/pharmaceutics17121544) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Rančić_2024_reference](drugs/drug_meropenem/Meropenem_Rani2024_reference.md) | held back | 1-compartment, IV | 1 | Rančić A et al., Population pharmacokinetics of meropene…, Open medicine (Warsaw, Pola… (2024) | [10.1515/med-2024-1004](https://doi.org/10.1515/med-2024-1004) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Zyryanov_2023_reference](drugs/drug_meropenem/Meropenem_Zyryanov2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Zyryanov S et al., Population PK/PD modelling of meropenem…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1079680](https://doi.org/10.3389/fphar.2023.1079680) |
 
 ## ADME sites
 
@@ -58,7 +58,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 395 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 4  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 2  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

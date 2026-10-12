@@ -32,13 +32,13 @@ Ivosidenib is an anticancer medicine (an IDH inhibitor) used to treat acute myel
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Jiang_2021_reference](drugs/drug_ivosidenib/Ivosidenib_Jiang2021_reference.md) | — | 2-compartment (no model) | 8 (+6 cov.) | Jiang X et al., Population pharmacokinetic and exposure…, Clinical and translational… (2021) | [10.1111/cts.12959](https://doi.org/10.1111/cts.12959) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.074). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Jiang_2021_reference](drugs/drug_ivosidenib/Ivosidenib_Jiang2021_reference.md) | — | 2-compartment (no model) | 8 (+6 cov.) | Jiang X et al., Population pharmacokinetic and exposure…, Clinical and translational… (2021) | [10.1111/cts.12959](https://doi.org/10.1111/cts.12959) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Jiang_2021_QTcF](drugs/drug_ivosidenib/pd_Jiang_2021_QTcF.md) | mean change in corrected QT interval using Fridericia's method (ΔQTcF) ← ivosidenib · direct linear effect | — | Jiang X et al., Population pharmacokinetic and exposure…, Clinical and translational… (2021) | [10.1111/cts.12959](https://doi.org/10.1111/cts.12959) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Jiang_2021_QTcF](drugs/drug_ivosidenib/pd_Jiang_2021_QTcF.md) | mean change in corrected QT interval using Fridericia's method (ΔQTcF) ← ivosidenib · direct linear effect | — | Jiang X et al., Population pharmacokinetic and exposure…, Clinical and translational… (2021) | [10.1111/cts.12959](https://doi.org/10.1111/cts.12959) |
 
 ## ADME sites
 

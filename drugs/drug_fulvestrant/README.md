@@ -24,13 +24,13 @@ Fulvestrant is an estrogen receptor antagonist used to treat breast cancer. It i
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Robertson_2004_reference](drugs/drug_fulvestrant/Fulvestrant_Robertson2004_reference.md) | — | 1-compartment (no model) | 0 | Robertson JF et al., Pharmacokinetic profile of intramuscula…, Clinical pharmacokinetics (2004) | [10.2165/00003088-200443080-00003](https://doi.org/10.2165/00003088-200443080-00003) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Robertson_2004_reference](drugs/drug_fulvestrant/Fulvestrant_Robertson2004_reference.md) | — | 1-compartment (no model) | 0 | Robertson JF et al., Pharmacokinetic profile of intramuscula…, Clinical pharmacokinetics (2004) | [10.2165/00003088-200443080-00003](https://doi.org/10.2165/00003088-200443080-00003) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Chigutsa_2026_TS](drugs/drug_fulvestrant/pd_Chigutsa_2026_TS.md) | Tumor size ← abemaciclib + fulvestrant · disease-progression model | — | Chigutsa E et al., Longitudinal Tumor Size and Survival Mo…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70212](https://doi.org/10.1002/cpt.70212) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> | [Chigutsa_2026_TS](drugs/drug_fulvestrant/pd_Chigutsa_2026_TS.md) | Tumor size ← abemaciclib + fulvestrant · disease-progression model | — | Chigutsa E et al., Longitudinal Tumor Size and Survival Mo…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70212](https://doi.org/10.1002/cpt.70212) |
 
 ## ADME sites
 

@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;concizumab&quot;,&quot;href&quot;:&quot;drugs/drug_concizumab/&quot;},{&quot;label&quot;:&quot;Eichler_2019 \u00b7 PD peak thrombin generation&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# peak thrombin generation — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
+# peak thrombin generation — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -43,32 +43,17 @@ Eichler H et al., Concizumab restores thrombin generation…, Haemophilia : the 
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.0 (0/16 fields) | 16 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.8 (4/5 fields) | 1 |
 
-<details><summary>16 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | concizumab | not captured | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | not captured | mismatch |
-| `gpt-oss:120b` | `effect_form` | unknown | not captured | mismatch |
-| `gpt-oss:120b` | `model_family` | sigmoid_emax | not captured | mismatch |
-| `gpt-oss:120b` | `parameters[Q321]` | 62.2 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | 52.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | 72 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | 8.02 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | 62.6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | 21.3 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 81.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 75.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 87.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 3.77 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 19.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 10.2 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
 
 </details>
 

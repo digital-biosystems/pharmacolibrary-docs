@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Müller_1978_specific_3H_diazepam_binding_to_benzodiazepine_receptors](drugs/drug_methaqualone/pd_M_ller_1978_specific_3H_diazepam_binding_to_benzodiazepine_r.md) | specific [3H] diazepam binding to benzodiazepine receptors ← methaqualone · inhibition effect | — | Müller WE et al., Benzodiazepine receptor binding: the in…, Naunyn-Schmiedeberg's archi… (1978) | [10.1007/BF00497002](https://doi.org/10.1007/BF00497002) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Müller_1978_specific_3H_diazepam_binding_to_benzodiazepine_receptors](drugs/drug_methaqualone/pd_M_ller_1978_specific_3H_diazepam_binding_to_benzodiazepine_r.md) | specific [3H] diazepam binding to benzodiazepine receptors ← methaqualone · inhibition effect | — | Müller WE et al., Benzodiazepine receptor binding: the in…, Naunyn-Schmiedeberg's archi… (1978) | [10.1007/BF00497002](https://doi.org/10.1007/BF00497002) |
 
 ## ADME sites
 

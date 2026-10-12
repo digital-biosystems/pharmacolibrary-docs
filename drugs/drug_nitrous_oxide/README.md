@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;nitrous oxide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;NitrousOxide_Hampsey2026_reference&quot;,&quot;label&quot;:&quot;Hampsey_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nitrous_oxide/NitrousOxide_Hampsey2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;NitrousOxide_Hampsey2026_reference&quot;,&quot;label&quot;:&quot;Hampsey_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nitrous_oxide/NitrousOxide_Hampsey2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # nitrous oxide
 
@@ -33,8 +33,8 @@ Nitrous oxide is an inhalational general anaesthetic and non-opioid analgesic us
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hampsey_2026_reference](drugs/drug_nitrous_oxide/NitrousOxide_Hampsey2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hampsey E et al., A systematic review of the pharmacokine…, Journal of psychopharmacolo… (2026) | [10.1177/02698811261453938](https://doi.org/10.1177/02698811261453938) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Lindholm_2026_reference](drugs/drug_nitrous_oxide/NitrousOxide_Lindholm2026_reference.md) | — | 1-compartment (no model) | 6 | Lindholm AØ et al., Concentration and Detection Time of Nit…, Drug testing and analysis (2026) | [10.1002/dta.70053](https://doi.org/10.1002/dta.70053) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Hampsey_2026_reference](drugs/drug_nitrous_oxide/NitrousOxide_Hampsey2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hampsey E et al., A systematic review of the pharmacokine…, Journal of psychopharmacolo… (2026) | [10.1177/02698811261453938](https://doi.org/10.1177/02698811261453938) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Lindholm_2026_reference](drugs/drug_nitrous_oxide/NitrousOxide_Lindholm2026_reference.md) | — | 1-compartment (no model) | 6 | Lindholm AØ et al., Concentration and Detection Time of Nit…, Drug testing and analysis (2026) | [10.1002/dta.70053](https://doi.org/10.1002/dta.70053) |
 
 ## Pharmacodynamics (PD)
 

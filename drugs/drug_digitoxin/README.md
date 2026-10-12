@@ -39,7 +39,7 @@ Digitoxin is a cardiac glycoside used to treat atrial fibrillation, supraventric
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Urtizberea_1991_RBC_K](drugs/drug_digitoxin/pd_Urtizberea_1991_RBC_K.md) | red blood cell K+ ← digitoxin · direct sigmoid Emax (Hill) effect | — | Urtizberea M et al., Relationship between red blood cell pot…, Pharmacology & toxicology (1991) | [10.1111/j.1600-0773.1991.tb01231.x](https://doi.org/10.1111/j.1600-0773.1991.tb01231.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Urtizberea_1991_RBC_K](drugs/drug_digitoxin/pd_Urtizberea_1991_RBC_K.md) | red blood cell K+ ← digitoxin · direct sigmoid Emax (Hill) effect | — | Urtizberea M et al., Relationship between red blood cell pot…, Pharmacology & toxicology (1991) | [10.1111/j.1600-0773.1991.tb01231.x](https://doi.org/10.1111/j.1600-0773.1991.tb01231.x) |
 
 ## ADME sites
 

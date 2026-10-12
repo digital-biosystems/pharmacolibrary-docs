@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_Aarons1991_individual_fitb_x`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.533). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.412). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,9 +19,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has midazolam, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+**The midazolam rat model record was rejected because a structural parameter shows a dimension mismatch: the reported distribution volume of 0.6 l.kg-1 conflicts with the steady-state volume Vss of 1.61 L·kg-1, and one reported unit could not be converted to SI.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The record reports midazolam clearance CL of 0.067 L·min-1·kg-1, Vss of 1.61 L·kg-1, and a separate distribution volume V of 0.6 l.kg-1; the dimension check on this structural parameter failed (C5). A reported unit could not be expressed in standard SI units, so the parameter reached the model builder without an SI value. The second reader also could not confirm the relative standard errors recorded for CL (18%), Vss (15%), fe (40%), kabs (40%) and λ2 (13%), returning no values for them, and disagreed on the dose compound and primary analyte fields, both recorded as midazolam. Extracted — midazolam: CL 0.067 L · min-1 · kg-1, Vss 1.61 L · kg-1, λ1 0.79 min-1, λ2 0.026 min-1, fe 0.39, V 0.6 l.kg-1, kabs 1.77 per h, tlag 1.23 h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has midazolam, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Aarons L et al., A population analysis of the pharmacoki…, Journal of pharmacokinetics… (1991)
@@ -73,23 +77,26 @@ Aarons L et al., A population analysis of the pharmacoki…, Journal of pharmaco
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.533 (8/15 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.412 (7/17 fields) | 10 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl].rse_percent` | 18 | not captured | mismatch |
-| `gpt-oss:120b` | `parameters[fe].rse_percent` | 40 | not captured | mismatch |
-| `gpt-oss:120b` | `parameters[ka].rse_percent` | 40 | not captured | mismatch |
-| `gpt-oss:120b` | `parameters[vss].rse_percent` | 15 | not captured | mismatch |
-| `gpt-oss:120b` | `parameters[λ2].rse_percent` | 13 | not captured | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | midazolam | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | midazolam | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[a]` | 1.77 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag1]` | 1.23 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl].rse_percent` | not captured | 18 | mismatch |
+| `gpt-oss-120b` | `parameters[distribution volume]` | 0.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fe].rse_percent` | not captured | 40 | mismatch |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.073 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss].rse_percent` | not captured | 15 | mismatch |
+| `gpt-oss-120b` | `parameters[λ2].rse_percent` | not captured | 13 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | midazolam | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | midazolam | unknown | mismatch |
 
 </details>
 

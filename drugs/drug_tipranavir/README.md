@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Peatey_2010_EC50](drugs/drug_tipranavir/pd_Peatey_2010_EC50.md) | Plasmodium falciparum asexual-stage parasite growth inhibition ← tipranavir · direct sigmoid Emax (Hill) effect | — | Peatey CL et al., Antimalarial asexual stage-specific and…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.01512-09](https://doi.org/10.1128/AAC.01512-09) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Peatey_2010_EC50](drugs/drug_tipranavir/pd_Peatey_2010_EC50.md) | Plasmodium falciparum asexual-stage parasite growth inhibition ← tipranavir · direct sigmoid Emax (Hill) effect | — | Peatey CL et al., Antimalarial asexual stage-specific and…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.01512-09](https://doi.org/10.1128/AAC.01512-09) |
 
 ## ADME sites
 

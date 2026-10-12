@@ -4,7 +4,7 @@
 
 # fumagillin — `Fumagillin_Laurn1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The fumagillin record was rejected because the reported plasma clearance of 6 mg/kg is given in a dose-per-body-weight unit rather than a clearance unit, a dimension mismatch for a structural parameter.**
+
+The abstract-only source reports clearance as '6 mg/kg', which cannot serve as total clearance (a volume-per-time quantity) for fumagillin in yearling rainbow trout. The other reported values, a rapid phase of 20 min and a terminal half-life of 5.4 days, are time quantities and do not show the same mismatch. Because only the paper's abstract was read, these summary statistics stood in for a fitted model, so the record was not published. Extracted — fumagillin: CL 6 mg/kg, λ1 20 min, t1/2β 5.4 days.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fumagillin dicyclohexylamine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `fumagillin dicyclohexylamine`, measured `fumagillin`.
 
@@ -63,6 +71,34 @@ Laurén DJ et al., Toxicity and pharmacokinetics of the an…, Toxicology and ap
 - no GROBID TEI available — transcribed from abstract in Laurén_1989_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[alpha phase]` | not captured | 20 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[beta phase]` | not captured | 5.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[highest doses]` | not captured | 60 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma clearance at]` | 6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[prolonged beta phase]` | 5.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rapid alpha phase (i.e.,]` | 20 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | fumagillin dicyclohexylamine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | fumagillin | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

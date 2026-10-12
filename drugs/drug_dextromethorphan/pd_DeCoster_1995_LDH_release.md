@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dextromethorphan concentrations (microM) inhibit glutamate-induced neuronal injury measured as LDH release/morphological changes, described by an Emax (inhibitory) model with EC50 = 3.1 microM; the paper excerpts do not state the mechanism or other parameters (e.g. Imax).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `DeCoster_1995`
 - **model family:** `emax`
 - **driver:** `cited_pk`

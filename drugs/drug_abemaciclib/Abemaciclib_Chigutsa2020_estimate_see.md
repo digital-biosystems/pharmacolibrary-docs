@@ -4,7 +4,7 @@
 
 # abemaciclib — `Abemaciclib_Chigutsa2020_estimate_see`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.406). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Abemaciclib Fab, the fraction reaching systemic circulation, is 0.868 with an unconvertible %SEE unit, causing a structural-parameter dimension mismatch and rejection.**
+
+The record gives Fab as 0.868 with unit %SEE, although its meaning is absolute bioavailability—the fraction reaching systemic circulation. That reported unit could not be converted to SI, leaving the structural parameter without an SI value and producing the dimension mismatch. Extracted — abemaciclib: Fab 0.868 %SEE, R1 91.1 µmol/h, MTT 1.44 h, V1 588 L, Q 4.57 L/h, V2 159 L, D1 3.18 h, tlag 1.74 h, … (+1); M2 (LSN2839567): CLfm 280 L/h, CL 254 L/h; M20 (LSN3106726): CLfm 705 L/h, CL 431 L/h.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has abemaciclib → m2 (lsn2839567) (metabolism); abemaciclib → m20 (lsn3106726) (metabolism), the second reading abemaciclib → m2 (metabolism); abemaciclib → m20 (metabolism); it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 ## Citation
 Chigutsa E et al., Development and Application of a Mechan…, CPT: pharmacometrics & syst… (2020)
@@ -128,6 +136,45 @@ Chigutsa E et al., Development and Application of a Mechan…, CPT: pharmacometr
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.406 (13/32 fields) | 19 |
+
+<details><summary>19 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `model.links` | [['abemaciclib', 'm2 (lsn2839567)', 'metabolism'], ['abemaciclib', 'm20 (lsn3106726)', 'metabolism']] | [['abemaciclib', 'm2', 'metabolism'], ['abemaciclib', 'm20', 'metabolism']] | mismatch |
+| `qwen3.8-27b` | `parameters[clint of m2 in liver]` | not captured | 254 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[clint of m2 in liver]` | 254 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[clint of m20 in liver]` | not captured | 431 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[clint of m20 in liver]` | 431 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[clint to form m2 in liver (l/h) c , c]` | not captured | 280 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[clint to form m2 in liver (l/h) c , c]` | 280 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[clint to form m20 in liver (l/h) c , c]` | not captured | 705 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[clint to form m20 in liver (l/h) c , c]` | 705 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[fraction of dose entering gut compartment, f a].parameter_id` | Q40 | Q44 | mismatch |
+| `qwen3.8-27b` | `parameters[ka]` | 0.31 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[maximum rate of absorption, ka,max].parameter_id` | Q307 | Q49 | mismatch |
+| `qwen3.8-27b` | `parameters[theta_q305_category]` | not captured | 0.361 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q305_category]` | 0.361 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q305_category]` | not captured | 0.284 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q305_category]` | 0.284 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q315_category]` | not captured | 0.19 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q49_formulation]` | -0.513 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[zero‐order absorption duration]` | 3.18 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

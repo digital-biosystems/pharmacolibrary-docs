@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the excerpts needed to describe the mechanism; the record indicates a sigmoid Emax model in which summed pyrethroid blood and brain concentrations (including cis- and trans-permethrin) inhibit motor activity, but no potency or rate values are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hughes_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

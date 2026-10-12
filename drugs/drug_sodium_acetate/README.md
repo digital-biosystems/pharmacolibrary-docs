@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Schooley_2014_FS](drugs/drug_sodium_acetate/pd_Schooley_2014_FS.md) | fractional sarcomere shortening ← sodium acetate · direct sigmoid Emax (Hill) effect | — | Schooley JF et al., Acetate transiently inhibits myocardial…, BMC physiology (2014) | [10.1186/s12899-014-0012-2](https://doi.org/10.1186/s12899-014-0012-2) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Schooley_2014_FS](drugs/drug_sodium_acetate/pd_Schooley_2014_FS.md) | fractional sarcomere shortening ← sodium acetate · direct sigmoid Emax (Hill) effect | — | Schooley JF et al., Acetate transiently inhibits myocardial…, BMC physiology (2014) | [10.1186/s12899-014-0012-2](https://doi.org/10.1186/s12899-014-0012-2) |
 
 ## ADME sites
 

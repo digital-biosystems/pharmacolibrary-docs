@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models edaravone's scavenging of NO radicals with an Emax-type inhibitory model, but the excerpts provide no concentration data, no mechanism description, and no parameter values (Imax, IC50, Emax, gamma) to report.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2014`
 - **model family:** `emax`
 - **driver:** `not_resolved`

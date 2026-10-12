@@ -5,7 +5,7 @@
 
 # amiodarone — `Amiodarone_Lesko1989_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.308). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6), gpt-oss:120b (not confirmed, agreement 0.308). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -54,17 +54,22 @@ Lesko LJ, Pharmacokinetic drug interactions with…, Clinical pharmacokinetics (
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.6 (6/10 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.308 (4/13 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q31]` | not captured | 47 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q33]` | not captured | 50 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q79]` | not captured | 33 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q87]` | not captured | 33 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q31]` | not captured | 47 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q33]` | not captured | 50 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q37]` | not captured | 24.1 | only_one_extracted |

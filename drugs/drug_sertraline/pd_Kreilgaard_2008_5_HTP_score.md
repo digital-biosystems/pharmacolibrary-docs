@@ -20,6 +20,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Sertraline serum concentrations (ng mL−1) drive the 5-HTP-potentiated behavioral syndrome score via a sigmoid Emax model with an effect compartment (ke0 1.0/0.0/5.0 h−1 for low/medium/high dose), Emax fixed at 100%, and EC50 80 ng mL−1.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kreilgaard_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

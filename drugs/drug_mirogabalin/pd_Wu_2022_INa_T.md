@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;mirogabalin&quot;,&quot;href&quot;:&quot;drugs/drug_mirogabalin/&quot;},{&quot;label&quot;:&quot;Wu_2022 \u00b7 PD transient (peak) INa (INa(T))&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mirogabalin_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mirogabalin/Mirogabalin_Li2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mirogabalin_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mirogabalin/Mirogabalin_Li2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # transient (peak) INa (INa(T)) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Mirogabalin concentrations (0.3–100 μM) inhibit the peak transient sodium current (INa(T)) in GH3 cells via a concentration-dependent mechanism, with an IC50 of 19.5 μM. The paper does not specify the underlying kinetic mechanism (e.g., production vs. elimination) or rate constants for this inhibition.
+> The paper describes a concentration-dependent inhibition of the peak (transient) INa (INa(T)) by mirogabalin in GH3 cells, modeled using a modified Hill equation, but does not specify the underlying mechanism or rate constants. The calculated IC50 for this inhibition is 19.5 μM.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Wu_2022`
 - **model family:** `sigmoid_emax`

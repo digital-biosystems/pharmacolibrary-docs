@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Azelastine binds ACE2 with an SPR equilibrium dissociation constant KD of (2.58 ± 0.48) × 10−7 M; the paper does not describe a PD model linking concentrations to this binding response. Functionally, azelastine concentration-dependently inhibited SARS-CoV-2 pseudovirus entry into ACE2h cells (EC50 = 3.834 μM; CC50 = 84.140 μM; SI = 21.95), proposed to occur via ACE2 binding.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ge_2021`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

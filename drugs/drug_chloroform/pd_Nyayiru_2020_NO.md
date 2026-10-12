@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The concentration of chloroform extract from C. nucifera cotyledon directly inhibits nitric oxide radical scavenging in a linear model, with an EC50 of 33.99 mg/ml. The paper does not describe a specific pharmacodynamic mechanism beyond the direct concentration-dependent scavenging effect.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nyayiru_2020`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`

@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [Senturk_2008_GR_activity](drugs/drug_rifamycin/pd_Senturk_2008_GR_activity.md) | human erythrocyte glutathione reductase activity ← rifamycin · inhibition effect | — | Senturk M et al., Effects of some antibiotics on human er…, Journal of enzyme inhibitio… (2008) | [10.1080/14756360701342581](https://doi.org/10.1080/14756360701342581) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [Senturk_2008_GR_activity](drugs/drug_rifamycin/pd_Senturk_2008_GR_activity.md) | human erythrocyte glutathione reductase activity ← rifamycin · inhibition effect | — | Senturk M et al., Effects of some antibiotics on human er…, Journal of enzyme inhibitio… (2008) | [10.1080/14756360701342581](https://doi.org/10.1080/14756360701342581) |
 
 ## Pharmacogenomics (PGx)
 

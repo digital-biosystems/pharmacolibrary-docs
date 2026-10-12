@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cleveland_2019_EGF_mediated_JB6_P_colony_formation](drugs/drug_alprenolol/pd_Cleveland_2019_EGF_mediated_JB6_P_colony_formation.md) | EGF-mediated JB6 P+ colony formation ← alprenolol · direct sigmoid Emax (Hill) effect | — | Cleveland KH et al., Carvedilol inhibits EGF-mediated JB6 P+…, PloS one (2019) | [10.1371/journal.pone.0217038](https://doi.org/10.1371/journal.pone.0217038) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cleveland_2019_EGF_mediated_JB6_P_colony_formation](drugs/drug_alprenolol/pd_Cleveland_2019_EGF_mediated_JB6_P_colony_formation.md) | EGF-mediated JB6 P+ colony formation ← alprenolol · direct sigmoid Emax (Hill) effect | — | Cleveland KH et al., Carvedilol inhibits EGF-mediated JB6 P+…, PloS one (2019) | [10.1371/journal.pone.0217038](https://doi.org/10.1371/journal.pone.0217038) |
 
 ## ADME sites
 

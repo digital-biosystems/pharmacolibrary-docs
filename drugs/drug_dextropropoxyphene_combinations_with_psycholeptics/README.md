@@ -17,7 +17,7 @@ This combination of the opioid painkiller dextropropoxyphene with psycholeptics 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-27 16:20 | 6:37 | 0/0/0 | 0/0/0 | 0/0/0 | 19,364/2,545 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/0 | 3/0 | 0 |
+| 2026-08-27 16:20 | 6:37 | 0/0/0 | 0/0/0 | 0/0/0 | 19,364/2,545 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/0 | 3/0 | 0 |
 
 ## popPK records
 
@@ -31,10 +31,10 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 32 matched, 32 returned
+- **PubMed hits:** 43 matched, 42 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 

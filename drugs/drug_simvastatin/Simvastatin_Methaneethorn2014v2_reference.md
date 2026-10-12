@@ -5,7 +5,7 @@
 
 # simvastatin — `Simvastatin_Methaneethorn2014v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111), gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Devineni_2015) cannot stand in for this paper's evidence. Extracted — simvastatin: kabs 0.6 h -1, V 150 L, CL 12.2 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has simvastatin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has simvastatin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -90,17 +90,26 @@ Methaneethorn J et al., A pharmacokinetic drug-drug interaction…, Annual Inter
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.111 (1/9 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.125 (1/8 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['simvastatin', 'simvastatin hydroxy acid', 'metabolism'], ['verapamil', 'norverapamil', 'metabolism']] | [['verapamil', 'norverapamil', 'metabolism'], ['simvastatin', 'simvastatin hydroxy acid', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[ka]` | 0.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean systemic clearance]` | 12.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd(s)]` | 150 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | not captured | 150 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | simvastatin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | simvastatin | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [['simvastatin', 'simvastatin hydroxy acid', 'metabolism'], ['verapamil', 'norverapamil', 'metabolism']] | [['verapamil', 'norverapamil', 'metabolism'], ['simvastatin', 'simvastatin hydroxy acid', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[ka]` | 0.6 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka]` | not captured | 0.6 | only_one_extracted |

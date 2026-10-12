@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Edaravone concentrations (mg/L) inhibit bioluminescence of Aliivibrio fischeri, with EC50 values of 158 ± 10 mg/L (5 min) and 170 ± 13 mg/L (15 min) from fitted concentration-response curves; the paper does not state a mechanism beyond this direct concentration-response (log-linear) relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Álvarez-Escalante_2024`
 - **model family:** `log_linear`
 - **driver:** `conc_no_pk`

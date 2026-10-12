@@ -16,7 +16,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The permethrin record was rejected because its metabolites, m-phenoxybenzyl alcohol and m-phenoxybenzoic acid, are unlinked: their metabolism connections from permethrin carry no parameter value, leaving no quantified path from the dose.**
+
+Both metabolites are listed with zero compartments and their metabolism links from permethrin have an unknown link parameter with no value or kind, so no formation clearance connects them to the parent drug. The record was also built from the paper's abstract alone, so reported summary statistics (t1/2β 8.67 hr, MRT 11.19 hr, CL 0.058 liter/hr, tmax 3.52 hr, Fab 60.69%, t1/2z 23.1 hr, tlag 18.5 h) stood in for a fitted model rather than a model estimated from the data. Extracted — permethrin: t1/2β 8.67 hr, MRT 11.2 hr, CL 0.058 liter/hr, tmax 3.52 hr, Fab 60.7 %, t1/2z 23.1 hr, tlag 18.5 h.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Anadón A et al., Toxicokinetics of permethrin in the rat, Toxicology and applied phar… (1991)

@@ -5,7 +5,7 @@
 
 # telmisartan — `Telmisartan_Ieiri2011_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.846), gpt-oss:120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -79,17 +79,20 @@ Ieiri I et al., Pharmacokinetic and pharmacogenomic pro…, Pharmacogenetics and
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.846 (11/13 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.769 (10/13 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[ka]` | 4.53 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q47_ugt1a3]` | not captured | 2.19 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t g].parameter_id` | Q57 | Q83 | mismatch |
 | `gpt-oss:120b` | `parameters[t lag]` | 0.242 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q51_ugt1a3]` | not captured | 2.19 | only_one_extracted |
@@ -159,7 +162,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference/Telmisartan_Ieiri2011_reference_modelica.zip" download>Telmisartan_Ieiri2011_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference/Telmisartan_Ieiri2011_reference_fmi.zip" download>Telmisartan_Ieiri2011_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference/Telmisartan_Ieiri2011_reference_matlab.zip" download>Telmisartan_Ieiri2011_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference/Telmisartan_Ieiri2011_reference_matlab_simbio.zip" download>Telmisartan_Ieiri2011_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference/Telmisartan_Ieiri2011_reference_matlab_simbio.zip" download>Telmisartan_Ieiri2011_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference/Telmisartan_Ieiri2011_reference_sbml.zip" download>Telmisartan_Ieiri2011_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference/Telmisartan_Ieiri2011_reference_cellml.zip" download>Telmisartan_Ieiri2011_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

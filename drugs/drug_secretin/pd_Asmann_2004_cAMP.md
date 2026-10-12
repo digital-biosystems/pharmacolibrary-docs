@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Secretin stimulates intracellular cAMP according to a sigmoid Emax concentration–response model, with an EC50 of 194 pM and a Ki of 1.4 nM; the available excerpts do not state the mechanism or the Emax.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Asmann_2004`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

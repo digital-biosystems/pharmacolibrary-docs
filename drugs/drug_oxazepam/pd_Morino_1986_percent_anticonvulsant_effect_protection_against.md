@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;oxazepam&quot;,&quot;href&quot;:&quot;drugs/drug_oxazepam/&quot;},{&quot;label&quot;:&quot;Morino_1986 \u00b7 PD percent anticonvulsant effect (protection against pentylenetetrazole-induced clonic convulsion)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxazepam_Imbert2016_reference&quot;,&quot;label&quot;:&quot;Imbert_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxazepam/Oxazepam_Imbert2016_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxazepam_Imbert2016_reference&quot;,&quot;label&quot;:&quot;Imbert_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxazepam/Oxazepam_Imbert2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # percent anticonvulsant effect (protection against pentylenetetrazole-induced clonic convulsion) — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -19,6 +19,10 @@
 **As extracted:** Oxazepam (brain concentration, as active metabolite of camazepam) drive percent anticonvulsant effect (protection against pentylenetetrazole-induced clonic convulsion) (in %): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> Oxazepam brain concentration (as active metabolite of camazepam) drives percent anticonvulsant effect (protection against pentylenetetrazole-induced clonic convulsion, %) via a sigmoid Emax model with an inhibitory effect direction; the paper excerpts provide no mechanism details and no parameter values (Imax, IC50, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Morino_1986`
 - **model family:** `sigmoid_emax`

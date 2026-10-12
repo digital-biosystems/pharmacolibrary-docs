@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cenobamate plasma concentration inhibits the fraction of animals seizing in a mouse maxillofacial (MES) seizure model via an Emax relationship, with a reported EC50 of 15.9 µM. The paper excerpts discuss other drugs (CBZ, LSM, etc.) and their mechanisms (e.g., sodium channel blockade), but do not explicitly state the mechanism for cenobamate.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bettio_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

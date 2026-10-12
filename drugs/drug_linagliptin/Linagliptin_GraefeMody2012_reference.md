@@ -4,7 +4,7 @@
 
 # linagliptin — `Linagliptin_GraefeMody2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4), gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record for linagliptin in adults with type 2 diabetes mellitus contains only exposure and summary parameters — AUC of 150 nmol·h/L, protein binding of 99%, oral bioavailability of 30%, terminal half-life of 100 hours, 5% excreted unchanged, and an absorption rate constant of 1.63 h−1 — but no volume of distribution and no clearance or elimination rate, so it is an exposure/outcome paper rather than a compartmental population PK model. A dimensional check on a structural parameter failed with a dimension mismatch. The record was also built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. Extracted — linagliptin: AUC 150 nmol · h/L, fu 99 %, Fab 30 %, t1/2z 100 hours, fe 5 %, kabs 1.63 h -1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 150, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc: this record has 150, the second reading none; it also differs on 8 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -74,17 +74,27 @@ Graefe-Mody U et al., Clinical pharmacokinetics and pharmacod…, Clinical pharm
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.4 (6/15 fields) | 9 |
 | `gpt-oss:120b` | partly confirmed | 0.5 (7/14 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc]` | 150 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[excreted in the urine]` | 5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka [h -1 ]]` | 1.63 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[protein binding]` | 99 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady‐state auc]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady‐state c]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-life]` | 100 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half‐life]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[urine excretion]` | not captured | 5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc]` | 150 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[excreted in the urine]` | 5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fraction excreted in urine at steady state]` | not captured | 5 | only_one_extracted |

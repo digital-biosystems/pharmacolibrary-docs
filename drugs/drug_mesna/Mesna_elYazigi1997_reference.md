@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The metabolite dimesna is disconnected from the dose, and the abstract-only record lacks a specific metabolism rate constant.**
+
+Dimesna has no elimination pathway and zero compartments, making it an orphan metabolite with no path from the administered dose. The link from mesna to dimesna is missing a quantified rate parameter, as the specific link value is undefined. Because the record is abstract-only, these structural gaps were not resolved by fitted parameters. Extracted — mesna: t1/2α 0.12 hours, t1/2β 2.12 hours, V1 0.324 L/kg, Vss 1.09 L/kg, V2 2.09 L/kg, CL 0.755 L/hr.kg, MRT 6.77 hours, t1/2z 1.29 hours, … (+3).
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 el-Yazigi A et al., Pharmacokinetics of mesna and dimesna a…, Journal of clinical pharmac… (1997)

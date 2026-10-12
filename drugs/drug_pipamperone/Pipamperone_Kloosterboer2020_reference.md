@@ -4,7 +4,7 @@
 
 # pipamperone — `Pipamperone_Kloosterboer2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The pipamperone record was rejected because the paper reports no distribution volume and no clearance, so it is not a compartmental population PK model, and the absorption rate constant kabs is given as 2 L/h, a dimensionally wrong unit for a first-order rate constant (should be 1/h).**
+
+The record for pipamperone (Kloosterboer_2020, children and adolescents with psychiatric disorders) contains only an absorption rate constant (kabs, 2 L/h), an apparent volume of distribution normalized to 70 kg (Vnorm/F, 416 L/70 kg), and an extrapolated concentration at time zero (C0, 0.33 μg/L); no clearance or elimination parameter is present, so the model structure is incomplete as a population PK model — it is an exposure/outcome paper. The absorption rate constant's reported unit L/h does not match the dimension of a rate constant, which is a structural-parameter dimension mismatch. Additionally, the reported unit could not be converted to SI, so the parameter reached the model builder without an SI value. Extracted — pipamperone: kabs 2 L/h, Vnorm/F 416 L/70 kg, C0 0.33 μg/L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pipamperone, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Kloosterboer SM et al., Pipamperone Population Pharmacokinetics…, Clinical pharmacokinetics (2020)
@@ -71,6 +79,34 @@ Kloosterboer SM et al., Pipamperone Population Pharmacokinetics…, Clinical pha
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a]` | 0.33 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[a]` | not captured | 0.33 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kaa]` | 2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kaa]` | not captured | 2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/fb]` | 416 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/fb]` | not captured | 416 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | pipamperone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | pipamperone | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

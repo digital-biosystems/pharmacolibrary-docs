@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentagastrin concentration (nM) stimulates acid secretion in rat isolated gastric mucosa via a direct Emax model; the paper reports an EC50 of 27 nM, but no full text is available to confirm the mechanism or other parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Patel_1992`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

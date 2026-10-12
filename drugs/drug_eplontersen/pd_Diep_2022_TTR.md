@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Eplontersen serum concentrations (ng/ml) inhibit the production of serum TTR (ng/ml) in an indirect response model with proportional inhibition; Imax = 0.970 and IC50 = 0.0283 ng/ml. The paper excerpts do not state the mechanism beyond this.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Diep_2022`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`

@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Abodakpi_2019_MIC](drugs/drug_tazobactam/pd_Abodakpi_2019_MIC.md) | piperacillin MIC ← tazobactam · direct sigmoid Emax (Hill) effect | — | Abodakpi H et al., Optimal Piperacillin-Tazobactam Dosing…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.01906-18](https://doi.org/10.1128/AAC.01906-18) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Abodakpi_2019_MIC](drugs/drug_tazobactam/pd_Abodakpi_2019_MIC.md) | piperacillin MIC ← tazobactam · direct sigmoid Emax (Hill) effect | — | Abodakpi H et al., Optimal Piperacillin-Tazobactam Dosing…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.01906-18](https://doi.org/10.1128/AAC.01906-18) |
 
 ## ADME sites
 

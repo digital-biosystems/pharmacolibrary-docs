@@ -5,7 +5,7 @@
 
 # amiodarone — `Amiodarone_Gaete1995_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amiodarone, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -73,14 +73,35 @@ Gaete LE et al., [Amiodarone absorption and elimination…, Revista medica de Ch
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.167 (3/18 fields) | 15 |
 | `gpt-oss:120b` | confirmed | 1.0 (11/11 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>15 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absolute bioavailability]` | 68.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absolute bioavailability]` | not captured | 68.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 1.17 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 1.17 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution volume]` | 2.99 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution volume]` | not captured | 2.99 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half life]` | 7.53 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half life]` | not captured | 7.53 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 0.82 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 3.25 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | not captured | 3.25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` | 4.25 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` | not captured | 4.25 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | amiodarone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | amiodarone | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

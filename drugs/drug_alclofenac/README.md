@@ -32,7 +32,7 @@ It has been withdrawn and is no longer in use.
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Delbeke_1994_reference](drugs/drug_alclofenac/Alclofenac_Delbeke1994_reference.md) | — | 1-compartment (no model) | 2 | Delbeke FT et al., Disposition of human drug preparations…, Journal of veterinary pharm… (1994) | [10.1111/j.1365-2885.1994.tb00258.x](https://doi.org/10.1111/j.1365-2885.1994.tb00258.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Delbeke_1994_reference](drugs/drug_alclofenac/Alclofenac_Delbeke1994_reference.md) | — | 1-compartment (no model) | 2 | Delbeke FT et al., Disposition of human drug preparations…, Journal of veterinary pharm… (1994) | [10.1111/j.1365-2885.1994.tb00258.x](https://doi.org/10.1111/j.1365-2885.1994.tb00258.x) |
 
 ## ADME sites
 

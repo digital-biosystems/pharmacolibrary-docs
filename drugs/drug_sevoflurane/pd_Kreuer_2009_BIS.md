@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe the specific mechanism by which sevoflurane concentrations inhibit the Bispectral index. It reports a sigmoid Emax model where sevoflurane acts via an effect compartment with a ke0 of 0.24 min⁻¹, although potency values such as IC50 or Imax are not stated.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kreuer_2009`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

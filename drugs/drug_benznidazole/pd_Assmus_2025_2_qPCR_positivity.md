@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;benznidazole&quot;,&quot;href&quot;:&quot;drugs/drug_benznidazole/&quot;},{&quot;label&quot;:&quot;Assmus_2025_2 \u00b7 PD qPCR positivity (proportion of T. cruzi qPCR-positive blood samples post-treatment)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Benznidazole_Frade2022_reference&quot;,&quot;label&quot;:&quot;Frade_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_benznidazole/Benznidazole_Frade2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Benznidazole_Soy2015_reference&quot;,&quot;label&quot;:&quot;Soy_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_benznidazole/Benznidazole_Soy2015_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Benznidazole_Soy2015_reference&quot;,&quot;label&quot;:&quot;Soy_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_benznidazole/Benznidazole_Soy2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Benznidazole_Frade2022_reference&quot;,&quot;label&quot;:&quot;Frade_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_benznidazole/Benznidazole_Frade2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # qPCR positivity (proportion of T. cruzi qPCR-positive blood samples post-treatment) — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -17,6 +17,10 @@
 **As extracted:** Benznidazole (concentrations from this paper's PK model) drives qPCR positivity (proportion of T. cruzi qPCR-positive blood samples post-treatment): categorical (graded) response model.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> Benznidazole exposure (CMAX, AUC∞, T&gt;IC90 with IC90,DBS = 29.3 µM, and treatment duration) was related to the log-odds of post-treatment qPCR positivity (proportion of T. cruzi qPCR-positive blood samples) via a logistic (categorical) model, with odds ratios per unit exposure of 0.640 (CMAX), 0.9995 (AUC∞), 0.236 (log AUC∞), 0.883 (T&gt;3 mg/L), 0.946 (T&gt;6 mg/L), 0.905 (total dosing days), 0.449 (weeks), and 0.888 (total duration days), and 0.911 (0.874 excluding placebo) per unit Ct. However, the paper identifies no clear PK/PD driver: the relationship was driven by the placebo group and was no longer significant after excluding placebo and one influential subject (p &gt; 0.05), with no improveme
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Assmus_2025_2`
 - **model family:** `categorical`

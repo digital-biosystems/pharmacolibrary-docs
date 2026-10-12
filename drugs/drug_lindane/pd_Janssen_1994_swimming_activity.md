@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lindane concentrations (mg/liter) inhibit swimming activity (% of control); the paper excerpts do not state the mechanism or model form, but report EC50 values of 13.7, 16.4, and 18.5 mg/liter.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Janssen_1994`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -4,7 +4,7 @@
 
 # abemaciclib — `Abemaciclib_Chigutsa2020_nca_200_mg`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Abemaciclib’s 22.8 L/h clearance is recorded, but the model was rejected with M2 and M20 represented by zero compartments and no dose-connected pathway.**
+
+The record lists metabolism links from abemaciclib to M2 and M20, but each metabolite has zero compartments and the links have no identified parameter. A reported unit could not be converted to SI, but the record does not identify which parameter has that unit, so its effect is inconclusive. Extracted — abemaciclib: Fab 0.448 F, t1/2z 29.3 h, AUC∞ 3.73e+03 ng·h/mL, Cmax 114 ng/mL, CL 22.8 L/h, kabs 0.31 1/h); M2 (LSN2839567): t1/2z 72.6 h, AUC∞ 1.45e+03 ng.h/mL.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 ## Citation
 Chigutsa E et al., Development and Application of a Mechan…, CPT: pharmacometrics & syst… (2020)

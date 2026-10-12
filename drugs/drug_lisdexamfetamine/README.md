@@ -32,7 +32,7 @@ Lisdexamfetamine is a stimulant medicine used to treat attention deficit hyperac
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Comiran_2021_reference](drugs/drug_lisdexamfetamine/Lisdexamfetamine_Comiran2021_reference.md) | — | general linear (no model) | 0 | Comiran E et al., Lisdexamfetamine and amphetamine pharma…, Biopharmaceutics & drug dis… (2021) | [10.1002/bdd.2254](https://doi.org/10.1002/bdd.2254) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Comiran_2021_reference](drugs/drug_lisdexamfetamine/Lisdexamfetamine_Comiran2021_reference.md) | — | general linear (no model) | 0 | Comiran E et al., Lisdexamfetamine and amphetamine pharma…, Biopharmaceutics & drug dis… (2021) | [10.1002/bdd.2254](https://doi.org/10.1002/bdd.2254) |
 
 ## Pharmacodynamics (PD)
 

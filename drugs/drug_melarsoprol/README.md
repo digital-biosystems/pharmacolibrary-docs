@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;melarsoprol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Melarsoprol_Burri1994_reference&quot;,&quot;label&quot;:&quot;Burri_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Melarsoprol_Burri1994_reference&quot;,&quot;label&quot;:&quot;Burri_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # melarsoprol
 
@@ -33,7 +33,7 @@ Melarsoprol is an arsenic-based antiparasitic drug used to treat sleeping sickne
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Burri_1994_reference](drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Burri C et al., Pharmacokinetics of melarsoprol in unin…, Acta tropica (1994) | [10.1016/0001-706x(94)90120-1](https://doi.org/10.1016/0001-706x(94)90120-1) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Burri_1994_reference](drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Burri C et al., Pharmacokinetics of melarsoprol in unin…, Acta tropica (1994) | [10.1016/0001-706x(94)90120-1](https://doi.org/10.1016/0001-706x(94)90120-1) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

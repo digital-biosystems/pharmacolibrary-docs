@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes the mechanism as a saturable inhibitory Emax model where eptinezumab exposure reduces monthly migraine days, whereas the record specifies a linear slope of 0.428 acting on the ≥75% migraine responder rate in weeks 1–4. No IC50, EC50, or kinetic rate parameters are provided for this specific responder rate endpoint in the excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baker_2020`
 - **model family:** `categorical`
 - **driver:** `pk_record`

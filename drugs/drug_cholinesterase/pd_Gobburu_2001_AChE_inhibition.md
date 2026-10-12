@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts describing the mechanism; the record indicates ZNS 114-666 (NAP 226-90, rivastigmine metabolite) concentrations (microg/L) inhibit acetylcholinesterase (AChE) activity via a sigmoid Emax model with IC50 = 5.4 microg/L.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gobburu_2001`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

@@ -5,7 +5,7 @@
 
 # rutoside — `Rutoside_Ma2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">other organism</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.75), gpt-oss:120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">other organism</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -62,17 +62,21 @@ Ma P et al., Lonicerae Japonicae Flos with the homol…, Frontiers in oncology (
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.75 (9/12 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.818 (9/11 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q32]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q87]` | not captured | 249.4 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q40]` | 30 | 37.39 | mismatch |
 | `gpt-oss:120b` | `values[Q87]` | not captured | 2.79 | only_one_extracted |
 

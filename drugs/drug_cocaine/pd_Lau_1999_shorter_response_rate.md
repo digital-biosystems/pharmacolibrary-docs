@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that cocaine concentration acts as a driver with a sigmoid Emax mechanism on the shorter-response rate, with an EC50 of 0.467 microg/ml. However, the paper does not provide a full text, so the specific mechanism and other parameters are not explicitly described in the excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lau_1999`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

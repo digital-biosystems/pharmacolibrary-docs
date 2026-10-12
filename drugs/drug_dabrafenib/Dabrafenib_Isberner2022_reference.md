@@ -4,7 +4,7 @@
 
 # dabrafenib — `Dabrafenib_Isberner2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,17 @@
 
 **Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+
+### Reviewer guidance
+
+**Dabrafenib’s clearance, volume, absorption rate, and lag time were defaulted or unreported despite listed CL/F 13.5 L/h and V1/F 30.8 L, so the model was held back.**
+
+Although the record lists dabrafenib’s apparent CL/F as 13.5 L/h and V1/F as 30.8 L, the built model had no value for dabrafenib’s clearance, volume, absorption rate constant, or absorption lag time, so library placeholders stood in and the model was held back rather than published with invented numbers. The parent-metabolite record structure differed from the one-compartment enteral structure used to build the model, which also assumed first-order depot input and defaulted an unreported absorption rate. The covariate scenarios were not simulated; only the base model was simulated, not the covariate effects defined in the record. Extracted — dabrafenib: V1/F 30.8 L, CL/F 13.5 L/h; trametinib: Q/F 97.7 L/h.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has dabrafenib and trametinib, the second reading dabrafenib; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 > **Dose compound ≠ measured compound:** dosed `dabrafenib and trametinib`, measured `dabrafenib, hydroxy-dabrafenib, and trametinib`.
 
@@ -23,7 +33,7 @@ Isberner N et al., Monitoring of Dabrafenib and Trametinib…, Cancers (2022)
   ·  DOI: [10.3390/cancers14194566](https://doi.org/10.3390/cancers14194566)
 
 ## Model component
-<dbs-pgx drug="dabrafenib" model-id="Dabrafenib_Isberner2022_reference" status="extracted" stale="false" population="patients with BRAFV600-mutant melanoma" measured-compound="dabrafenib, hydroxy-dabrafenib, and trametinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="dabrafenib" model-id="Dabrafenib_Isberner2022_reference" status="model_quarantined" stale="false" population="patients with BRAFV600-mutant melanoma" measured-compound="dabrafenib, hydroxy-dabrafenib, and trametinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 3 covariate effects.
@@ -31,6 +41,8 @@ Isberner N et al., Monitoring of Dabrafenib and Trametinib…, Cancers (2022)
 **Parameterization:** CL/F, Q/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Ind V1/F [L] | `Q290` · V1/F | 30.8 | L | 0.0308 | [l] | not captured | exact (1.0) | cancers-14-04566-t002:row2:col1, cancers-14-04566-t002:row2:col2, cancers-14-04566-t002:row2:col3, cancers-14-04566-t002:row2:col4, cancers-14-04566-t002:row2:col5, cancers-14-04566-t002:row2:col6, cancers-14-04566-t002:row2:col7, cancers-14-04566-t002:row2:col8, cancers-14-04566-t002:row2:col9, cancers-14-04566-t002:row2:col10, cancers-14-04566-t002:row2:col11, cancers-14-04566-t002:row2:col12, cancers-14-04566-t002:row2:col13, cancers-14-04566-t002:row2:col14, cancers-14-04566-t002:row2:col15, cancers-14-04566-t002:row2:col16, cancers-14-04566-t002:row2:col17, cancers-14-04566-t002:row2:col18, cancers-14-04566-t002:row2:col19, cancers-14-04566-t002:row2:col20, cancers-14-04566-t002:row2:col21, cancers-14-04566-t002:row2:col22, cancers-14-04566-t002:row2:col23 | — | not captured |
@@ -78,6 +90,36 @@ Isberner N et al., Monitoring of Dabrafenib and Trametinib…, Cancers (2022)
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.231 (3/13 fields) | 10 |
+
+<details><summary>10 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[ind cl/f [l/h]]` | not captured | 13.5 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[ind cl/f [l/h]]` | 13.5 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[ind v1/f [l]]` | not captured | 30.8 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[ind v1/f [l]]` | 30.8 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q18_category]` | 11125 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q18_category]` | 326 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q19_category]` | not captured | 11125 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q19_category].value` | 358 | 326 | mismatch |
+| `qwen3.8-27b` | `screen.dose_compound` | dabrafenib and trametinib | dabrafenib | mismatch |
+| `qwen3.8-27b` | `screen.primary_analyte` | dabrafenib, hydroxy-dabrafenib, and trametinib | dabrafenib | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -93,6 +135,17 @@ Isberner N et al., Monitoring of Dabrafenib and Trametinib…, Cancers (2022)
 | C9_phys_window_Q27 | pass | clearance within physiological range | 13.5 L/h | not captured | not captured | ['cancers-14-04566-t002:row3:col2', 'cancers-14-04566-t002:row3:col3', 'cancers-14-04566-t002:row3:col4', 'cancers-14-04566-t002:row3:col5', 'cancers-14-04566-t002:row3:col6', 'cancers-14-04566-t002:row3:col7', 'cancers-14-04566-t002:row3:col8', 'cancers-14-04566-t002:row3:col9', 'cancers-14-04566-t002:row3:col10', 'cancers-14-04566-t002:row3:col11', 'cancers-14-04566-t002:row3:col12', 'cancers-14-04566-t002:row3:col13', 'cancers-14-04566-t002:row3:col14', 'cancers-14-04566-t002:row3:col15', 'cancers-14-04566-t002:row3:col16', 'cancers-14-04566-t002:row3:col17', 'cancers-14-04566-t002:row3:col18', 'cancers-14-04566-t002:row3:col19', 'cancers-14-04566-t002:row3:col20', 'cancers-14-04566-t002:row3:col21', 'cancers-14-04566-t002:row3:col22', 'cancers-14-04566-t002:row3:col23', 'Isberner_2022_table_3:row2:col1', 'Isberner_2022_table_3:row2:col2', 'Isberner_2022_table_3:row2:col3', 'Isberner_2022_table_3:row2:col4', 'Isberner_2022_table_3:row2:col5', 'Isberner_2022_table_3:row2:col6', 'Isberner_2022_table_3:row2:col7'] |
 | C9_phys_window_Q290 | pass | volume within physiological range | 30.8 L | not captured | not captured | ['cancers-14-04566-t002:row2:col1', 'cancers-14-04566-t002:row2:col2', 'cancers-14-04566-t002:row2:col3', 'cancers-14-04566-t002:row2:col4', 'cancers-14-04566-t002:row2:col5', 'cancers-14-04566-t002:row2:col6', 'cancers-14-04566-t002:row2:col7', 'cancers-14-04566-t002:row2:col8', 'cancers-14-04566-t002:row2:col9', 'cancers-14-04566-t002:row2:col10', 'cancers-14-04566-t002:row2:col11', 'cancers-14-04566-t002:row2:col12', 'cancers-14-04566-t002:row2:col13', 'cancers-14-04566-t002:row2:col14', 'cancers-14-04566-t002:row2:col15', 'cancers-14-04566-t002:row2:col16', 'cancers-14-04566-t002:row2:col17', 'cancers-14-04566-t002:row2:col18', 'cancers-14-04566-t002:row2:col19', 'cancers-14-04566-t002:row2:col20', 'cancers-14-04566-t002:row2:col21', 'cancers-14-04566-t002:row2:col22', 'cancers-14-04566-t002:row2:col23'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -101,6 +154,8 @@ Isberner N et al., Monitoring of Dabrafenib and Trametinib…, Cancers (2022)
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_dabrafenib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Isberner_2022` / `Isberner_2022::reference`)
+- model: `../../../knowledgebase/drugs/drug_dabrafenib/models/modelica/_needs_review/Dabrafenib_Isberner2022_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_dabrafenib/models/modelica/_needs_review/Dabrafenib_Isberner2022_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -112,7 +167,7 @@ Isberner N et al., Monitoring of Dabrafenib and Trametinib…, Cancers (2022)
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Isberner2022_reference/Dabrafenib_Isberner2022_reference_matlab.zip" download>Dabrafenib_Isberner2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Isberner2022_reference/Dabrafenib_Isberner2022_reference_matlab_simbio.zip" download>Dabrafenib_Isberner2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Isberner2022_reference/Dabrafenib_Isberner2022_reference_matlab_simbio.zip" download>Dabrafenib_Isberner2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Isberner2022_reference/Dabrafenib_Isberner2022_reference_sbml.zip" download>Dabrafenib_Isberner2022_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Isberner2022_reference/Dabrafenib_Isberner2022_reference_cellml.zip" download>Dabrafenib_Isberner2022_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

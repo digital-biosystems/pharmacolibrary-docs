@@ -5,7 +5,7 @@
 
 # methotrexate — `Methotrexate_Rosario2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record lists total CL of 0.159 L/day, V1 of 3.19 L and V2 of 1.65 L for methotrexate, but no parameter linking the central and peripheral compartments, so the peripheral compartment has no path from the dose. A second reader recorded a value of 10 where the primary reading was null, so that value disagreement remains unresolved. The parameter values themselves come from a review's summary text rather than a fitted model in the source. Extracted — methotrexate: CL 0.159 L/day, V1 3.19 L, V2 1.65 L.
 
-Independently confirmed by `gpt-oss:120b`.
+Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -61,11 +61,12 @@ Rosario M et al., A Review of the Clinical Pharmacokineti…, Clinical pharmacok
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
 | `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
 
 _Every reader agrees on every compared field of this record._

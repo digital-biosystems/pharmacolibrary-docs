@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Gabapentin inhibits the occurrence of hot flashes using an additive Emax model, with a reported maximum effect (Emax) of 14.8%. The paper does not provide the full mechanism or specific potency values such as EC50.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2016`
 - **model family:** `emax`
 - **driver:** `cited_pk`

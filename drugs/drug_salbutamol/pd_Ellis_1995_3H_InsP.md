@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Salbutamol (1–10 000 nM), applied 20 min before histamine (0.1 mM) stimulation, concentration-dependently inhibited histamine-stimulated [3H]-inositol phosphate accumulation in bovine tracheal smooth muscle slices, described by a sigmoid Emax (proportional inhibition) model with IC50 13.8 nM [7.0–27.4]. The paper does not state Imax, kin, kout, ke0 or gamma for this model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ellis_1995`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

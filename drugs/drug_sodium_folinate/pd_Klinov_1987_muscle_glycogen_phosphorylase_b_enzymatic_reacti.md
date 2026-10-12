@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Folinic acid (from sodium folinate) inhibits the muscle glycogen phosphorylase b enzymatic reaction rate, described by a sigmoid Emax model with an IC50 of 3.7 mM; the paper excerpts do not state the mechanism of inhibition, Emax, Hill coefficient, or other rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Klinov_1987`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

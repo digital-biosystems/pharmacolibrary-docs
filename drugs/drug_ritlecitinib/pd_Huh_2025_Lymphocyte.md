@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ritlecitinib plasma concentration (ng/mL) inhibits lymphocyte count (10^9/L) through a semi-mechanistic indirect response model that decreases lymphocyte proliferation via an Emax effect, characterized by an EC50 of 25,800 ng/mL, a maximum effect scaling factor of -1.6, a circulatory turnover rate constant (k) of 1/3.12 day^-1 derived from an MTT of 3.12 days, and a gamma exponent of 0.0154.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huh_2025`
 - **model family:** `emax`
 - **driver:** `cited_pk`

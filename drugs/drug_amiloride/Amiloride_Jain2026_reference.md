@@ -4,7 +4,7 @@
 
 # amiloride — `Amiloride_Jain2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231), gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record, built from the paper's abstract only, reports amiloride apparent clearance of 19 L/h and apparent central volume of 9.83 L together with an absolute bioavailability of 0.133; the apparent-parameter coherence check found a double correction, so the values cannot both be used as reported. A second reader also could not confirm the dose compound and primary analyte as amiloride, and read the four parameter values (0.136 h-1, 19 L/h, 9.83 L, 0.133) as absent from the record. Extracted — amiloride: kabs 0.136 h-1, CL/F 19 L/h, V/F 9.83 L, Fab 0.133 uncertainty.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has amiloride, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amiloride, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -67,17 +67,28 @@ Jain M et al., Population Pharmacokinetics of Intranas…, European journal of d
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[apparent central volume of distribution]` | 9.83 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent central volume of distribution]` | not captured | 9.83 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent clearance]` | 19 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent clearance]` | not captured | 19 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[nasal bioavailability fraction]` | 0.133 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[nasal bioavailability fraction]` | not captured | 0.133 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[slow absorption rate constant]` | 0.136 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[slow absorption rate constant]` | not captured | 0.136 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | amiloride | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | amiloride | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[apparent central volume of distribution]` | 9.83 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[apparent central volume of distribution]` | not captured | 9.83 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[apparent clearance]` | 19 | not captured | only_one_extracted |

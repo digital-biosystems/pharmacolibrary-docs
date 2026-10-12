@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism details: no full text is available, so it cannot be confirmed how salbutamol concentrations act on rat uterus tension beyond an Emax-type inhibitory model, and no potency (IC50/EC50, Emax, gamma) or rate values are stated in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wilson_1984`
 - **model family:** `emax`
 - **driver:** `cited_pk`

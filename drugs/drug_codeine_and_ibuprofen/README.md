@@ -17,7 +17,7 @@ This combination of codeine and ibuprofen is a painkiller used to relieve pain. 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-27 14:14 | 8:44 | 0/0/0 | 0/0/0 | 0/0/0 | 66,472/3,972 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/2 | 3/1 | 0 |
+| 2026-08-27 14:14 | 8:44 | 0/0/0 | 0/0/0 | 0/0/0 | 66,472/3,972 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/2 | 4/1 | 0 |
 
 ## popPK records
 
@@ -31,10 +31,10 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 26 matched, 25 returned
+- **PubMed hits:** 39 matched, 38 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 

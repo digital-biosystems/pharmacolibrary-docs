@@ -4,7 +4,7 @@
 
 # istradefylline — `Istradefylline_Knebel2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The istradefylline record was rejected because its structure is one-compartment while the parameters include V2/F (198 L) and V3/F (307 L) described as peripheral and second peripheral compartment volumes, a dimension mismatch.**
+
+The model structure is stated as 1C (one compartment), yet the extracted parameters contain V2/F = 198 L, described as the volume of the peripheral compartment, and V3/F = 307 L, described as the volume of a second peripheral compartment in a three-compartment model, alongside Q = 21.6 L/h for intercompartmental clearance. These peripheral-compartment parameters cannot belong to a one-compartment structure. The record was also built from the paper's abstract alone, so reported summary statistics (e.g., the 35% increase in steady-state AUC) stood in for a fitted model. Extracted — istradefylline: CL/F 5.76 L/h, V2/F 198 L, Q 21.6 L/h, V3/F 307 L, kabs 0.464 h(-1), AUCSS 35 %.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has istradefylline, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Knebel W et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2011)
@@ -62,6 +70,39 @@ Knebel W et al., Population pharmacokinetic analysis of…, Journal of clinical 
 - no GROBID TEI available — transcribed from abstract in Knebel_2011_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.133 (2/15 fields) | 13 |
+
+<details><summary>13 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f]` | 5.76 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 5.76 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[istradefylline area under the concentration-time curve at steady-state increased]` | 35 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.464 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.464 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | 21.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | not captured | 21.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f]` | 198 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f]` | not captured | 198 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3/f]` | 307 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3/f]` | not captured | 307 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | istradefylline | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | istradefylline | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

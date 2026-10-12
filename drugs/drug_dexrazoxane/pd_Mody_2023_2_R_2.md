@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dexrazoxane (DEX) concentrations (µM, from a two-compartment clinical PK model) act on AC16 cell viability by inhibiting the DOX-induced stimulation of cell death, modeled as a proportional inhibitory (Imax/IC50) function in the cellular turnover TD model. The paper reports an Imax,DEXi of 0.0625 hour−1 and an IC50,DEXi of 39 µM; no effect-compartment link or other potency/rate values are given for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mody_2023_2`
 - **model family:** `emax`
 - **driver:** `cited_pk`

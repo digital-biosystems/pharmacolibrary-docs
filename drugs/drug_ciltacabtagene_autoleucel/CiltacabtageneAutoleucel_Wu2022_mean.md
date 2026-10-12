@@ -4,7 +4,7 @@
 
 # ciltacabtagene autoleucel — `CiltacabtageneAutoleucel_Wu2022_mean`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The ciltacabtagene autoleucel record reports λ1 = 209 day−1, yet provides no distribution volume or clearance and has a structural-parameter dimension mismatch.**
+
+No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. The listed λ1 is a fast-phase disposition rate constant, reported as 209 day−1; the findings identify a structural-parameter dimension mismatch but do not say which parameter has it. A reported unit could not be converted to SI, leaving that parameter without an SI value. Extracted — ciltacabtagene autoleucel: tlag 4.99 days, MTT 10.4 days, λ1 209 day−1, Cmax 3.95e+04, AUCt 4.72e+05, tmax 14.1 days.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 > **Dose compound ≠ measured compound:** dosed `ciltacabtagene autoleucel`, measured `ciltacabtagene autoleucel CAR transgene`.
 

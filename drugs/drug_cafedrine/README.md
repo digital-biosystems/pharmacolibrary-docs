@@ -19,7 +19,7 @@ Cafedrine is a chemical compound described as an antihypertensive drug and vasod
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 04:31 | 1:59 | 1/1/0 | 0/0/2 | 0/0/0 | 68,335/3,145 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 1/4 | 3/1 | 0 |
+| 2026-10-06 04:31 | 1:59 | 1/1/0 | 0/0/0 | 0/0/0 | 68,335/3,145 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 1/4 | 3/1 | 0 |
 
 ## popPK records
 
@@ -27,17 +27,6 @@ Cafedrine is a chemical compound described as an antihypertensive drug and vasod
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Dings_2026_reference](drugs/drug_cafedrine/Cafedrine_Dings2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper (the values present come f…</sub><br><sub>route_to: `human_review`</sub> | [Dings_2024_reference](drugs/drug_cafedrine/Cafedrine_Dings2024_reference.md) | — | 1-compartment (no model) | 2 | Dings C et al., Population kinetic/pharmacodynamic mode…, British journal of clinical… (2024) | [10.1111/bcp.16083](https://doi.org/10.1111/bcp.16083) |
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Dings_2024_DBP](drugs/drug_cafedrine/pd_Dings_2024_DBP.md) | diastolic blood pressure ← cafedrine · direct Emax (saturable) effect | model (no simulator) | Dings C et al., Population kinetic/pharmacodynamic mode…, British journal of clinical… (2024) | [10.1111/bcp.16083](https://doi.org/10.1111/bcp.16083) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Dings_2024_HR](drugs/drug_cafedrine/pd_Dings_2024_HR.md) | heart rate ← cafedrine · direct Emax (saturable) effect | model (no simulator) | Dings C et al., Population kinetic/pharmacodynamic mode…, British journal of clinical… (2024) | [10.1111/bcp.16083](https://doi.org/10.1111/bcp.16083) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Dings_2024_SBP](drugs/drug_cafedrine/pd_Dings_2024_SBP.md) | systolic blood pressure ← cafedrine · direct Emax (saturable) effect | model (no simulator) | Dings C et al., Population kinetic/pharmacodynamic mode…, British journal of clinical… (2024) | [10.1111/bcp.16083](https://doi.org/10.1111/bcp.16083) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Dings_2026_HR](drugs/drug_cafedrine/pd_Dings_2026_HR.md) | Heart rate ← cafedrine/theodrenaline · direct Emax (saturable) effect | model (no simulator) | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Dings_2026_MAP](drugs/drug_cafedrine/pd_Dings_2026_MAP.md) | Mean arterial pressure ← cafedrine/theodrenaline · direct Emax (saturable) effect | model (no simulator) | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Dings_2026_SBP](drugs/drug_cafedrine/pd_Dings_2026_SBP.md) | Systolic blood pressure ← cafedrine/theodrenaline · direct Emax (saturable) effect | model (no simulator) | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

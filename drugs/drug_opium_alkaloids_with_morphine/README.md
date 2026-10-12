@@ -25,14 +25,14 @@ Opium alkaloids with morphine are used as cough suppressants in cough and cold p
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 21:01 | 3:04 | 1/1/0 | 0/0/0 | 0/0/0 | 43,536/4,082 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-07 21:01 | 3:04 | 0/1/1 | 0/0/0 | 0/0/0 | 43,536/4,082 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Simons_2023_reference](drugs/drug_opium_alkaloids_with_morphine/OpiumAlkaloidsWithMorphine_Simons2023_reference.md) | held back | 1-compartment, IV | 7 (+1 cov.) | Simons P et al., Respiratory Effects of Biased Ligand Ol…, Anesthesiology (2023) | [10.1097/ALN.0000000000004473](https://doi.org/10.1097/ALN.0000000000004473) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Säwe_1981_reference](drugs/drug_opium_alkaloids_with_morphine/OpiumAlkaloidsWithMorphine_Swe1981_reference.md) | — | 1-compartment (no model) | 0 | Säwe J et al., Morphine kinetics in cancer patients, Clinical pharmacology and t… (1981) | [10.1038/clpt.1981.214](https://doi.org/10.1038/clpt.1981.214) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.056). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Simons_2023_reference](drugs/drug_opium_alkaloids_with_morphine/OpiumAlkaloidsWithMorphine_Simons2023_reference.md) | held back | 1-compartment, IV | 7 (+1 cov.) | Simons P et al., Respiratory Effects of Biased Ligand Ol…, Anesthesiology (2023) | [10.1097/ALN.0000000000004473](https://doi.org/10.1097/ALN.0000000000004473) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Säwe_1981_reference](drugs/drug_opium_alkaloids_with_morphine/OpiumAlkaloidsWithMorphine_Swe1981_reference.md) | — | 1-compartment (no model) | 0 | Säwe J et al., Morphine kinetics in cancer patients, Clinical pharmacology and t… (1981) | [10.1038/clpt.1981.214](https://doi.org/10.1038/clpt.1981.214) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -44,7 +44,7 @@ Opium alkaloids with morphine are used as cough suppressants in cough and cold p
 
 - **PubMed hits:** 112 matched, 15 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

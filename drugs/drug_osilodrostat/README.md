@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Mohamed_2026_SBP](drugs/drug_osilodrostat/pd_Mohamed_2026_SBP.md) | systolic blood pressure ← osilodrostat · direct linear effect | — | Mohamed KA et al., Dose-Response Relationships and Compara…, Journal of clinical medicine (2026) | [10.3390/jcm15124477](https://doi.org/10.3390/jcm15124477) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Mohamed_2026_SBP](drugs/drug_osilodrostat/pd_Mohamed_2026_SBP.md) | systolic blood pressure ← osilodrostat · direct linear effect | — | Mohamed KA et al., Dose-Response Relationships and Compara…, Journal of clinical medicine (2026) | [10.3390/jcm15124477](https://doi.org/10.3390/jcm15124477) |
 
 ## ADME sites
 

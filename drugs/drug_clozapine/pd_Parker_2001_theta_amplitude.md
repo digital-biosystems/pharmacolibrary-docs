@@ -20,6 +20,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Clozapine plasma concentrations (ng ml−1) stimulate the amplitude of the theta EEG band (µV s−1) in rat via a sigmoid Emax model linked to an effect compartment, with an effect-site disappearance half-life of 2.9 min for theta (Kco 14 h−1). The record reports baseline E0 80 µV s−1 and two stimulatory components (Emax 18 µV s−1, EC50 1260 ng ml−1, N 5.9; and Emax 29 µV s−1, EC50 99 ng ml−1, N 2.4); the excerpts give no theta-band Emax/EC50 values (only beta Emax 45 µV s−1) and do not otherwise describe the mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Parker_2001`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

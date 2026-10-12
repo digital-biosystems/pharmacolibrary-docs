@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Fluspirilene inhibits IP3-induced Ca(2+)-release from Ca(2+)-loaded rat brain microsomes, with an EC50 of 22 microM; the paper excerpts do not state the mechanism or model form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sczekan_1996`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

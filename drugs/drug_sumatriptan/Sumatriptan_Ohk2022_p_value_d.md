@@ -4,7 +4,7 @@
 
 # sumatriptan — `Sumatriptan_Ohk2022_p_value_d`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-Independently confirmed by `gpt-oss:120b`.
+**Only clearance was extracted — no volume; aUCt, AUC∞, Cmax and tmax have no unit.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Extracted — sumatriptan: AUCt 0.002, AUC∞ 0.001, Cmax 0.001, tmax 0.054, t1/2z 0.223 h, CL/F 0.01 L/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sumatriptan, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Ohk B et al., Evaluation of sex differences in the ph…, Biopharmaceutics & drug dis… (2022)
@@ -72,14 +76,22 @@ Ohk B et al., Evaluation of sex differences in the ph…, Biopharmaceutics & dru
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.727 (8/11 fields) | 3 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc0-2, ng∙h/ml a].parameter_id` | Q19 | Q88 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | sumatriptan | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | sumatriptan | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

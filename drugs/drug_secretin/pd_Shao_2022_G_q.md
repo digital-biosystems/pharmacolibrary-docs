@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Secretin concentration–response data for Gαq activation at SCTR (NanoBiT Gαq assay) were fitted with a simple Emax stimulation model; the paper does not state a kinetic mechanism (no kin/kout/ke0). Reported pEC50 values ranged 7.6–8.2 with Emax 97.8–127.7% across conditions (e.g. vector and RAMP co-transfections).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shao_2022`
 - **model family:** `emax`
 - **driver:** `not_resolved`

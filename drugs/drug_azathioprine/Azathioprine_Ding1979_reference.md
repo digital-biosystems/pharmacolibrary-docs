@@ -5,7 +5,7 @@
 
 # azathioprine — `Azathioprine_Ding1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0), gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The azathioprine model forms two metabolites, 6-mercaptopurine and 8-hydroxymercaptopurine, but 8-hydroxymercaptopurine was formed with no compartment (n_cmt: 0) and no link parameter, leaving it unreachable from the dose. Because only the abstract was read, the reported values for 6-mercaptopurine — terminal half-life 41.6 min, apparent clearance 48.4 ml/min/kg, apparent volume of distribution 1.76 liters/kg — are summary statistics rather than a fitted model. A second reader also disagreed on the dose compound (azathioprine), the primary analyte, the relation of azathioprine to 6-mercaptopurine (hydrolysis versus metabolism), the parameterization (mechanistic versus apparent), and could not confirm the three parameter values. Extracted — 6-mercaptopurine: t1/2z 41.6 min, CLm,norm/F 48.4 ml/min/kg, Vm,norm/F 1.76 liters/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has azathioprine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has azathioprine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -74,17 +74,28 @@ Ding TL et al., Comparative bioavailability and pharmac…, Drug metabolism and 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.0 (0/10 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.0 (0/10 fields) | 10 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['azathioprine', '6-mercaptopurine', 'metabolism'], ['azathioprine', '8-hydroxymercaptopurine', 'metabolism']] | [['azathioprine', '6-mercaptopurine', 'hydrolysis'], ['azathioprine', '8-hydroxymercaptopurine', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[mean terminal half-life]` | not captured | 41.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean terminal half-life]` | 41.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma clearance]` | not captured | 48.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma clearance]` | 48.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 1.76 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 1.76 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | azathioprine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | 6-mercaptopurine | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [['azathioprine', '6-mercaptopurine', 'metabolism'], ['azathioprine', '8-hydroxymercaptopurine', 'metabolism']] | [['azathioprine', '6-mercaptopurine', 'hydrolysis'], ['azathioprine', '8-hydroxymercaptopurine', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[mean terminal half-life]` | 41.6 | not captured | only_one_extracted |

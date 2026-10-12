@@ -4,7 +4,7 @@
 
 # indometacin — `Indometacin_Smyth2004v2_original_dataset`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-Independently confirmed by `gpt-oss:120b`.
+**Only clearance was extracted — no volume.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — indometacin: Q 0.00711 L/h, Q3 0.0338 L/h.
+
+Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Smyth JM et al., Intravenous indometacin in preterm infa…, British journal of clinical… (2004)
@@ -78,11 +82,12 @@ Smyth JM et al., Intravenous indometacin in preterm infa…, British journal of 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 | `gpt-oss:120b` | confirmed | 1.0 (7/7 fields) | none |
 
 _Every reader agrees on every compared field of this record._

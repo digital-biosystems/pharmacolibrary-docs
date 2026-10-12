@@ -18,6 +18,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Pregabalin exposure (Cav,ss) directly inhibits the natural log-transformed 28-day seizure rate (LSR28) via an Emax model, with the drug effect added to a placebo response. The model utilizes a common Emax of -0.924 and an EC50 of 4.69 μg/mL for both pediatric and adult populations.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chan_2021`
 - **model family:** `emax`
 - **driver:** `pk_record`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Asenapine plasma concentrations (ng/ml) drive 5-HT2A receptor occupancy, measured as inhibition of in vivo [(3)H]M100907 binding (%), via a sigmoid Emax inhibitory model with EC50 = 0.477 ng/ml; an ED50 of 0.011 mg/kg is also reported. The paper excerpts do not state Emax, gamma, or a mechanistic production/elimination description.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Knauer_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

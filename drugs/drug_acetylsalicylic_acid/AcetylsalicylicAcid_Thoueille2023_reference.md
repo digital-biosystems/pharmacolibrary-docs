@@ -5,7 +5,7 @@
 
 # acetylsalicylic acid — `AcetylsalicylicAcid_Thoueille2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record reports CL/F of 39.9 L/h, V of 2660.0 L and kabs of 2.0 h−1 for acetylsalicylic acid, but the builder assumed F=1 and Fm=1 without molar correction, so the parameters are apparent rather than mechanistic; the T6 deviations check returned 'apparent_assumption: not acceptable'. Tlag was defaulted rather than estimated. A second reader also disagreed on the parameterization (mechanistic vs apparent) and on several values, e.g. reading 39.9 for one field where this record has 30, and 90 and 10 where this record has null. Extracted — acetylsalicylic acid: CL/F 39.9 L/h, V 2.66e+03 L, kabs 2 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has 30, the second reading 39.9; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 30, the second reading 39.9; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -65,17 +65,26 @@ Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of a
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.5 (6/12 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `values[Q22]` | 30 | 39.9 | mismatch |
+| `gpt-oss-120b` | `values[Q27]` | 39.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q301]` | 2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q312]` | 34 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q49]` | 2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 0.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `values[Q22]` | 30 | 39.9 | mismatch |
 | `gpt-oss:120b` | `values[Q27]` | 39.9 | not captured | only_one_extracted |
@@ -140,7 +149,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_modelica.zip" download>AcetylsalicylicAcid_Thoueille2023_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_fmi.zip" download>AcetylsalicylicAcid_Thoueille2023_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_matlab.zip" download>AcetylsalicylicAcid_Thoueille2023_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_matlab_simbio.zip" download>AcetylsalicylicAcid_Thoueille2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_matlab_simbio.zip" download>AcetylsalicylicAcid_Thoueille2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_sbml.zip" download>AcetylsalicylicAcid_Thoueille2023_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_cellml.zip" download>AcetylsalicylicAcid_Thoueille2023_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Meglumine antimoniate concentrations (µg/mL) were tested for cytotoxicity against Detroit 551 human skin fibroblasts, with the response described by a sigmoid Emax inhibitory model; the paper does not state a mechanism beyond concentration-dependent cytotoxicity. The reported LC50 was 492 ± 32 µg/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Robledo_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

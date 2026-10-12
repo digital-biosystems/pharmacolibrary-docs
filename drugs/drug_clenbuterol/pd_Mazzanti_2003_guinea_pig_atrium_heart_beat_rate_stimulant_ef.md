@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clenbuterol concentration (nM) stimulates guinea-pig atrium heart-beat rate via a direct Emax model; the paper reports an EC50 of 15.2 nM, but no full text is available to confirm the mechanism or other parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mazzanti_2003`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

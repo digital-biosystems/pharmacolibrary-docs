@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Secretin stimulates secretin-stimulated cAMP accumulation, with an EC50 of 0.4 nM; the paper excerpts do not state the mechanism or model form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shetzline_1998`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

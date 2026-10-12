@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Acetylcholine activates IK_ACh via the M2R-Gi/o signaling pathway, producing a voltage-dependent direct stimulatory effect characterized by a ~2.8-fold increase in EC50 from 457 nM at -100 mV to 1259 nM at +30 mV. The concentration-response relationship is fitted with a sigmoid Emax model having an Emax of 0.98 to 1.01 and a Hill coefficient (nH) of 1.04 to 1.23.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `López-Serrano_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

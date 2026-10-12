@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide enough information (no full text available) to describe the pharmacodynamic mechanism linking salbutamol concentrations to the responsiveness of human peripheral airways; only -log EC50 values are given: 6.19 for mucosal stimulation and 6.20 for serosal stimulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hulsmann_1994`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

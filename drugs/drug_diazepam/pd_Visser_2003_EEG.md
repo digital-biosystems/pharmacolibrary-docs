@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Diazepam plasma concentrations (ng/ml) drive the EEG amplitude response via a transduction (indirect response) model with stimulation and a proportional effect form; the paper reports an in vivo intrinsic efficacy of 0.54 ± 0.02, but no excerpts are available to confirm the mechanism details or potency/rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Visser_2003`
 - **model family:** `transduction`
 - **driver:** `cited_pk`

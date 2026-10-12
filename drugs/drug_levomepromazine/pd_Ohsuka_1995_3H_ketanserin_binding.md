@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates levomepromazine concentrations to inhibition of 3H-ketanserin binding, but the available excerpts do not state the mechanism, model form, or any potency or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ohsuka_1995`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

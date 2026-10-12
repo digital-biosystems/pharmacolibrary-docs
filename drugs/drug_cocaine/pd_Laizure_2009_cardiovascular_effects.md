@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record identifies cocaine as the driver of continuous cardiovascular effects via an additive Emax model of stimulation using cited PK data, but the paper excerpts do not state the specific mechanism or provide numerical values for Imax, IC50, EC50, Emax, kin, kout, or ke0.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Laizure_2009`
 - **model family:** `emax`
 - **driver:** `cited_pk`

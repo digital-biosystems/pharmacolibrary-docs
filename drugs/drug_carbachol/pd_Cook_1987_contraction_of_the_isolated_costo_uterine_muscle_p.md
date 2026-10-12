@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol concentration stimulates contraction of the isolated costo-uterine muscle preparation via a direct Emax model; the paper reports an EC50 of 6.3 (units not stated) and does not state the mechanism beyond this direct concentration–response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cook_1987`
 - **model family:** `emax`
 - **driver:** `not_resolved`

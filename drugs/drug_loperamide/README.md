@@ -32,7 +32,7 @@ Loperamide is an antidiarrhoeal medicine used to treat diarrhoea, including in c
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Valenzuela_2025_QTcF](drugs/drug_loperamide/pd_Valenzuela_2025_QTcF.md) | placebo-adjusted change from baseline in Fridericia-corrected QT interval ← M1 · delayed effect through an effect compartment | model (no simulator) | Valenzuela B et al., Evaluation of the Effect of Loperamide…, Clinical and translational… (2025) | [10.1111/cts.70114](https://doi.org/10.1111/cts.70114) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Valenzuela_2025_QTcF](drugs/drug_loperamide/pd_Valenzuela_2025_QTcF.md) | placebo-adjusted change from baseline in Fridericia-corrected QT interval ← M1 · delayed effect through an effect compartment | model (no simulator) | Valenzuela B et al., Evaluation of the Effect of Loperamide…, Clinical and translational… (2025) | [10.1111/cts.70114](https://doi.org/10.1111/cts.70114) |
 
 ## Pharmacogenomics (PGx)
 

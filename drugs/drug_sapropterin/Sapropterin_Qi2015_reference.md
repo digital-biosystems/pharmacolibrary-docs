@@ -5,7 +5,7 @@
 
 # sapropterin — `Sapropterin_Qi2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857), gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record for sapropterin in infants, young children and adults with phenylketonuria lists kabs, the absorption rate constant, with value 0.235 and unit 'units' rather than a reciprocal-time unit such as 1/h. Without a proper unit the value could not be converted to a consistent time base, so the dimensional consistency check on this structural parameter failed. The other parameters carry coherent units (CL/F 2710 L/h, V/F 3010 L, tlag 0.321 h, C0 16.6 μg/L), so the failure is confined to kabs. Extracted — sapropterin (BH4): CL/F 2.71e+03 L/h, V/F 3.01e+03 L, kabs 0.235 units, tlag 0.321 h, C0 16.6 μg/L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has sapropterin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sapropterin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -96,17 +96,21 @@ Qi Y et al., A prospective population pharmacokineti…, Clinical pharmacokineti
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.857 (18/21 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.857 (18/21 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[k a h-1].parameter_id` | Q95 | Q49 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | sapropterin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | sapropterin | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[k a h-1].parameter_id` | Q95 | Q49 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | sapropterin | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | sapropterin | unknown | mismatch |

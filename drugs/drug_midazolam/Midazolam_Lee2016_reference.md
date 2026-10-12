@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_Lee2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.318). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.565), gpt-oss:120b (not confirmed, agreement 0.318). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record describes a joint midazolam–raltegravir model in Asian cancer patients, but the link from 1'-hydroxymidazolam to 1'-hydroxymidazolam glucuronide carries no formation parameter (link_parameter 'none'), leaving that metabolite without a rate constant for its formation (unlinked metabolite). Additionally, a parameter's reported unit could not be expressed in SI units, so it reached the model builder without a usable value. A second reader also disputed the dose compound and primary analyte (raltegravir versus midazolam) and read several parameters (CL/F 41.7 L/h, F 1, ka 4.23 1/h, MTT 1.04 h, NN 1.07) as null. Extracted — midazolam: CL/F 41.7 L/h, MTT 1.04 h, Fab 1, kabs 4.23 1/h, n_transit 1.07, V 157 L; raltegravir glucuronide: fm 0.0324, CL 0.715 L/h, V 1 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has raltegravir, the second reading midazolam; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has raltegravir, the second reading midazolam + raltegravir; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -76,17 +76,28 @@ Lee LS et al., Phenotyping of UGT1A1 Activity Using Ra…, PloS one (2016)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.565 (13/23 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.318 (7/22 fields) | 15 |
 
-<details><summary>15 field(s) a reader read differently</summary>
+<details><summary>25 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['raltegravir', 'raltegravir glucuronide', 'metabolism'], ['midazolam', "1'-hydroxymidazolam", 'metabolism'], ["1'-hydroxymidazolam", "1'-hydroxymidazolam glucuronide", 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[clglu]` | not captured | 0.715 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clglu]` | 0.715 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fmet]` | not captured | 0.0324 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fmet]` | 0.0324 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vglu]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vglu]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vral/f].parameter_id` | Q61 | Q76 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | raltegravir | midazolam + raltegravir | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | raltegravir | midazolam | mismatch |
 | `gpt-oss:120b` | `model.links` | [['raltegravir', 'raltegravir glucuronide', 'metabolism'], ['midazolam', "1'-hydroxymidazolam", 'metabolism'], ["1'-hydroxymidazolam", "1'-hydroxymidazolam glucuronide", 'metabolism']] | [['midazolam', "1'-hydroxymidazolam", 'metabolism'], ["1'-hydroxymidazolam", "1'-hydroxymidazolam glucuronide", 'metabolism'], ['raltegravir', 'raltegravir glucuronide', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[clral/f]` | 41.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clral/f]` | not captured | 41.7 | only_one_extracted |

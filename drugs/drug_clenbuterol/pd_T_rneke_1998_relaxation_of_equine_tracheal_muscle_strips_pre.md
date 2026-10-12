@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clenbuterol concentration-dependently relaxes equine tracheal muscle strips precontracted with 40 nM carbachol, described by an Emax model with an EC50 of 2.1 nM; the paper excerpts do not state the mechanism, Emax, or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Törneke_1998`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

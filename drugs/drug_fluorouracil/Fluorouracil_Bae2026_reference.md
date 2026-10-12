@@ -5,7 +5,7 @@
 
 # fluorouracil — `Fluorouracil_Bae2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.615). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.15).">human + animal</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.538), gpt-oss:120b (partly confirmed, agreement 0.615). The first reading is what the record holds.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.15).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record reports fluorouracil parameters CL 2.17 L/h, V1 6.89 L, V2 23.6 L/kg, Q 108.0 L/h and kabs 0.757 h−1, but the model builder substituted default values for the bioavailability F and the absorption lag time Tlag. These defaults affect the simulated profile yet are not supported by the paper, so the record fails the deviations check. A second reader left several value comparisons unconfirmed (16167.4, 10777.2, 94, 2, 87), so those disagreements are inconclusive. Extracted — fluorouracil: CL 2.17 L/h, V1 6.89 L, V2 23.6 L/kg, Q 108 L/h, kabs 0.757 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 16167.4, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 16167.4, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -66,17 +66,24 @@ Bae S et al., Population Pharmacokinetic Analysis of…, Journal of clinical pha
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.538 (7/13 fields) | 6 |
 | `gpt-oss:120b` | partly confirmed | 0.615 (8/13 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q19]` | 16167.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 10777.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | 94 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` | 2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q71]` | 87 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q77]` | 68.3 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q19]` | 16167.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q32]` | 10777.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q40]` | 94 | not captured | only_one_extracted |
@@ -142,7 +149,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference/Fluorouracil_Bae2026_reference_modelica.zip" download>Fluorouracil_Bae2026_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference/Fluorouracil_Bae2026_reference_fmi.zip" download>Fluorouracil_Bae2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference/Fluorouracil_Bae2026_reference_matlab.zip" download>Fluorouracil_Bae2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference/Fluorouracil_Bae2026_reference_matlab_simbio.zip" download>Fluorouracil_Bae2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference/Fluorouracil_Bae2026_reference_matlab_simbio.zip" download>Fluorouracil_Bae2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference/Fluorouracil_Bae2026_reference_sbml.zip" download>Fluorouracil_Bae2026_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference/Fluorouracil_Bae2026_reference_cellml.zip" download>Fluorouracil_Bae2026_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

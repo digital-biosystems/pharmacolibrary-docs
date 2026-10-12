@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper excerpts are unavailable, so the paper does not describe the mechanism or provide values for the effect of tezepelumab on asthma exacerbation rate.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ly_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

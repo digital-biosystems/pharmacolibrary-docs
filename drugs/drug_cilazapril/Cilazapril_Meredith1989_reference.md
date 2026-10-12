@@ -4,7 +4,7 @@
 
 # cilazapril — `Cilazapril_Meredith1989_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V/F and CL), so that value has no SI equivalent. None of the extracted parameters is cilazapril's own; they describe cilazaprilat. Extracted — cilazaprilat: CL/F 0.4, V/F 31 1, CL 15 1 h-1, kabs 0.319 h–1, tlag 2 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading cilazapril → cilazaprilat (metabolism); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -81,17 +81,26 @@ Meredith PA et al., The pharmacokinetics and angiotensin co…, British journal 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['cilazapril', 'cilazaprilat', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[20]` | not captured | 0.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent clearance]` | 0.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 31 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[free drug clearance]` | 15 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.319 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag]` | 2.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[10]` | not captured | 2.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[20]` | not captured | 2.3 | only_one_extracted |

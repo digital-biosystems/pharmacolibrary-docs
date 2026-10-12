@@ -5,7 +5,7 @@
 
 # amoxicillin — `Amoxicillin_Eshelman1978_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-5.6-luna (not confirmed, agreement 0.364), gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222), gpt-5.6-luna (not confirmed, agreement 0.364), gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed 0/3</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — amoxicillin: Cmax 58; amoxicillin and ampicillin: CL 0.18 L/h/kg, V 1.73 L/kg, kabs 0.17 h−1.
 
-A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on `parameters[lode].parameter_id`: this record has Q32, the second reading Q310; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amoxicillin and ampicillin, the second reading amoxicillin; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -98,15 +98,16 @@ Eshelman FN et al., Pharmacokinetics of amoxicillin and amp…, Antimicrobial ag
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 3 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 | `gpt-5.6-luna` | not confirmed | 0.364 (4/11 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.4 (2/5 fields) | 3 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -117,6 +118,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-5.6-luna` | `parameters[t lagpo]` | 0.25 | not captured | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[vd]` | 1.73 | not captured | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[welling et al. (13) 6 fc]` | not captured | 6.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 0.18 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.17 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lode]` | 58.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 1.73 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[welling et al. (13) 6 fc]` | not captured | 6.1 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | amoxicillin and ampicillin | amoxicillin | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | amoxicillin and ampicillin | amoxicillin | mismatch |
 | `gpt-oss:120b` | `parameters[lode]` | 58.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | amoxicillin and ampicillin | amoxicillin, ampicillin | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | amoxicillin and ampicillin | amoxicillin, ampicillin | mismatch |

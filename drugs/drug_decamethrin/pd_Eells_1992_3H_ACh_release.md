@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism or any potency/rate values: no excerpts are available, so only that deltamethrin (decamethrin) stimulates the release of [3H]acetylcholine can be stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eells_1992`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -5,7 +5,7 @@
 
 # acetylsalicylic acid — `AcetylsalicylicAcid_Shi2008_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462), gpt-oss:120b (not confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The model uses an apparent (/F) parameterization assuming F=1 and Fm=1 with no molar correction, and a first-order depot input consistent with extravascular dosing. The absorption parameters ka and Tlag were defaulted rather than estimated from the paper, so the simulated absorption profile is not supported by the source. A second reader also disagreed with several extracted values, e.g. 10.7 versus 60 and 25 versus 1.2, and some values were left null where the second reader gave 25, 80 and 10.7. Extracted — acetylsalicylic acid: CL/F 450 ml/min, V/F 467 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has 10.7, the second reading 60; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has 10.7, the second reading 2.6; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -66,17 +66,25 @@ Shi S et al., Clinical use and pharmacological proper…, European journal of cl
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.462 (6/13 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.538 (7/13 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q21]` | 10.7 | 2.6 | mismatch |
+| `gpt-oss-120b` | `values[Q32]` | 25 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q33]` | not captured | 25 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q45]` | not captured | 60 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` | 2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q84]` | not captured | 10.7 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` | 60 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q21]` | 10.7 | 60 | mismatch |
 | `gpt-oss:120b` | `values[Q32]` | 25 | 1.2 | mismatch |
 | `gpt-oss:120b` | `values[Q33]` | not captured | 25 | only_one_extracted |
@@ -140,7 +148,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Shi2008_reference/AcetylsalicylicAcid_Shi2008_reference_modelica.zip" download>AcetylsalicylicAcid_Shi2008_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Shi2008_reference/AcetylsalicylicAcid_Shi2008_reference_fmi.zip" download>AcetylsalicylicAcid_Shi2008_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Shi2008_reference/AcetylsalicylicAcid_Shi2008_reference_matlab.zip" download>AcetylsalicylicAcid_Shi2008_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Shi2008_reference/AcetylsalicylicAcid_Shi2008_reference_matlab_simbio.zip" download>AcetylsalicylicAcid_Shi2008_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Shi2008_reference/AcetylsalicylicAcid_Shi2008_reference_matlab_simbio.zip" download>AcetylsalicylicAcid_Shi2008_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Shi2008_reference/AcetylsalicylicAcid_Shi2008_reference_sbml.zip" download>AcetylsalicylicAcid_Shi2008_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Shi2008_reference/AcetylsalicylicAcid_Shi2008_reference_cellml.zip" download>AcetylsalicylicAcid_Shi2008_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Plasma doxacurium concentrations drive inhibition of the transcutaneous electrical nerve stimulation (TOF) response through a one-compartment linear effect model, with the time to peak effect governed by the effect compartment rate constant Ke0. The paper lists two reported values for Ke0: 0.053 min⁻¹ and 0.148 min⁻¹.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhu_1997`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

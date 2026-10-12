@@ -29,8 +29,8 @@ Concizumab, a monoclonal antibody, is used to treat hemophilia A and hemophilia 
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Eichler_2019_TFPI](drugs/drug_concizumab/pd_Eichler_2019_TFPI.md) | free TFPI ← concizumab · direct sigmoid Emax (Hill) effect | — | Eichler H et al., Concizumab restores thrombin generation…, Haemophilia : the official… (2019) | [10.1111/hae.13627](https://doi.org/10.1111/hae.13627) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Eichler_2019_peak_TG](drugs/drug_concizumab/pd_Eichler_2019_peak_TG.md) | peak thrombin generation ← concizumab · direct sigmoid Emax (Hill) effect | — | Eichler H et al., Concizumab restores thrombin generation…, Haemophilia : the official… (2019) | [10.1111/hae.13627](https://doi.org/10.1111/hae.13627) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Eichler_2019_TFPI](drugs/drug_concizumab/pd_Eichler_2019_TFPI.md) | free TFPI ← concizumab · direct sigmoid Emax (Hill) effect | — | Eichler H et al., Concizumab restores thrombin generation…, Haemophilia : the official… (2019) | [10.1111/hae.13627](https://doi.org/10.1111/hae.13627) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Eichler_2019_peak_TG](drugs/drug_concizumab/pd_Eichler_2019_peak_TG.md) | peak thrombin generation ← concizumab · direct sigmoid Emax (Hill) effect | — | Eichler H et al., Concizumab restores thrombin generation…, Haemophilia : the official… (2019) | [10.1111/hae.13627](https://doi.org/10.1111/hae.13627) |
 
 ## ADME sites
 

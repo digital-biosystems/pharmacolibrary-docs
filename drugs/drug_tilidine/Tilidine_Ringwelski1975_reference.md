@@ -4,7 +4,7 @@
 
 # tilidine — `Tilidine_Ringwelski1975_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of half-life of this delay: this record has 6.4, the second reading none. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tilidine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -65,17 +65,24 @@ Ringwelski L, [Analog computer analysis of radioactiv…, International journal 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.8 (4/5 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption t1/2]` | not captured | 0.57 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination with feces t1/2]` | not captured | 29.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life of this delay]` | 6.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[transport from plasma into the extravasal compartment t1/2]` | not captured | 3.31 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | tilidine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | tilidine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[half-life of this delay]` | 6.4 | not captured | only_one_extracted |
 
 </details>

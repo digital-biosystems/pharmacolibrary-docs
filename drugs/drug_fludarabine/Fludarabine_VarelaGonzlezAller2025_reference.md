@@ -1,10 +1,10 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;fludarabine&quot;,&quot;href&quot;:&quot;drugs/drug_fludarabine/&quot;},{&quot;label&quot;:&quot;Varela-Gonz\u00e1lez-Aller_2025 \u00b7 shrinkage&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;fludarabine&quot;,&quot;href&quot;:&quot;drugs/drug_fludarabine/&quot;},{&quot;label&quot;:&quot;Varela-Gonz\u00e1lez-Aller_2025 \u00b7 reference&quot;}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fludarabine — `Fludarabine_VarelaGonzlezAller2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,20 +16,20 @@
 
 ### Reviewer guidance
 
-**'shrinkage (%)' is a column of the estimates table, not a study population.**
+**No volume or clearance — not a compartmental population PK model.**
 
-The table was split into one record per column, and 'shrinkage (%)' holds a statistic rather than a second set of estimates.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:26:52.734264+00:00) predates the upstream re-run (2026-10-07 16:51:44.706238+00:00). Current validate status: `rejected`.
 
 ## Citation
 Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pharmaceutics (2025)
   ·  DOI: [10.3390/pharmaceutics17121592](https://doi.org/10.3390/pharmaceutics17121592)
 
 ## Model component
-<dbs-pgx drug="fludarabine" model-id="Fludarabine_VarelaGonzlezAller2025_reference" status="rejected" stale="true" population="patients receiving CAR T-cell therapy" measured-compound="fludarabine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="fludarabine" model-id="Fludarabine_VarelaGonzlezAller2025_reference" status="rejected" stale="false" population="patients receiving CAR T-cell therapy" measured-compound="fludarabine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -75,6 +75,21 @@ Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pha
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (10/10 fields) | none |
+
+_Every reader agrees on every compared field of this record._
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -95,7 +110,7 @@ Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pha
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_fludarabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Varela-González-Aller_2025` / `Varela-González-Aller_2025::shrinkage`)
+- scholar stages: `../../../knowledgebase/drugs/drug_fludarabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Varela-González-Aller_2025` / `Varela-González-Aller_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

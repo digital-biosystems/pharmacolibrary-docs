@@ -27,8 +27,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zuo_2024_OS](drugs/drug_enfortumab_vedotin/pd_Zuo_2024_OS.md) | overall survival ← enfortumab vedotin · model not identified | — | Zuo P et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3383](https://doi.org/10.1002/cpt.3383) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zuo_2024_grade_3_treatment_related_adverse_events](drugs/drug_enfortumab_vedotin/pd_Zuo_2024_grade_3_treatment_related_adverse_events.md) | grade ≥ 3 treatment-related adverse events ← enfortumab vedotin and free MMAE · model not identified | — | Zuo P et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3383](https://doi.org/10.1002/cpt.3383) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Zuo_2024_OS](drugs/drug_enfortumab_vedotin/pd_Zuo_2024_OS.md) | overall survival ← enfortumab vedotin · model not identified | — | Zuo P et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3383](https://doi.org/10.1002/cpt.3383) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Zuo_2024_grade_3_treatment_related_adverse_events](drugs/drug_enfortumab_vedotin/pd_Zuo_2024_grade_3_treatment_related_adverse_events.md) | grade ≥ 3 treatment-related adverse events ← enfortumab vedotin and free MMAE · model not identified | — | Zuo P et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3383](https://doi.org/10.1002/cpt.3383) |
 
 ## ADME sites
 

@@ -5,7 +5,7 @@
 
 # methotrexate — `Methotrexate_Jung2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record for methotrexate in Korean patients with haematologic malignancy carries a two-compartment structure with volumes of distribution V1 = 24.67 L and V2 = 17.93 L, clearance CL = 12.93 L/h, intercompartmental clearance Q = 0.657 L/h, an absorption rate constant of 0.268 day−1 and an oral absorption lag time of 0.36 h. The refusal rests on the model structure: a compartment is unreachable or orphan, i.e. it has no connection from the administered dose, so the topology is invalid. No other failed checks or builder deviations are reported. Extracted — methotrexate: V1 24.7 L, V2 17.9 L, kabs 0.268 day−1, tlag 0.36 hour.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has methotrexate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -105,14 +105,26 @@ Jung YS et al., A population pharmacokinetic model of m…, British journal of c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.571 (8/14 fields) | 6 |
 | `gpt-oss:120b` | confirmed | 1.0 (12/12 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[ka]` | 0.268 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t lag,oral]` | 0.36 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θv1].value` | 25.09 | 24.67 | mismatch |
+| `gpt-oss-120b` | `parameters[θv2].value` | 17.65 | 17.93 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | methotrexate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | methotrexate | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

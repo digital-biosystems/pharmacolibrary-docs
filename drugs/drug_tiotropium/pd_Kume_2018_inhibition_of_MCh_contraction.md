@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Tiotropium concentration-dependently inhibits methacholine (10 μM)-induced contraction of airway smooth muscle, with an Emax model giving EC50 = 12.5 ± 3.2 nM and Emax = 100% (complete inhibition); the paper describes this as concentration-dependent muscarinic antagonism but does not state a kinetic mechanism (no kin, kout, or ke0 values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kume_2018`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

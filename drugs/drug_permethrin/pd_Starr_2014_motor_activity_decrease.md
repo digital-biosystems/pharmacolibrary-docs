@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Permethrin (as part of a total-pyrethroids mixture including cis-/trans-permethrin in brain) is linked to a continuous decrease in motor activity, described by a sigmoid Emax model with an inhibitory effect direction. The paper excerpts provide no further detail on the mechanism, effect form, or potency/rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Starr_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

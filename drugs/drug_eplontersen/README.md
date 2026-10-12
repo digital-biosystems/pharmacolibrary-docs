@@ -23,7 +23,7 @@ Eplontersen is an antisense oligonucleotide used to treat familial amyloid polyn
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Diep_2022_reference](drugs/drug_eplontersen/Eplontersen_Diep2022_reference.md) | — | parent + metabolite (no model) | 2 | Diep JK et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2022) | [10.1111/bcp.15468](https://doi.org/10.1111/bcp.15468) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Diep_2022_reference](drugs/drug_eplontersen/Eplontersen_Diep2022_reference.md) | — | parent + metabolite (no model) | 2 | Diep JK et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2022) | [10.1111/bcp.15468](https://doi.org/10.1111/bcp.15468) |
 
 ## Pharmacodynamics (PD)
 

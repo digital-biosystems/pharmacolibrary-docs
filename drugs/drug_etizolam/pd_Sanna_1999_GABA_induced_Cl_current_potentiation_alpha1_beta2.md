@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Etizolam concentration (nmol/l) stimulates GABA-induced Cl- current potentiation (alpha1 beta2 gamma2S subunit combination) via a direct Emax model, with Emax 73% increase and EC50 92 nmol/l; the paper excerpts do not state a mechanism beyond this concentration-effect relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sanna_1999`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

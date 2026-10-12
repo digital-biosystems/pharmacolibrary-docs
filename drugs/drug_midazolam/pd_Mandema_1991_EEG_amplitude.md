@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Midazolam plasma concentrations (ng/ml) act on EEG amplitude in the 11.5–30 Hz frequency range via a sigmoid Emax model; the paper reports EC50,U = 3.7 ± 0.5 ng/ml, but no full text is available so the mechanism and other parameters (Emax, gamma) are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mandema_1991`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

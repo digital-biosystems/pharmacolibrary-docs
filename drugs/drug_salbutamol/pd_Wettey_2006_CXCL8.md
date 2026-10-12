@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Salbutamol concentrations (nM) inhibit CXCL8 production by keratinocytes, described by a sigmoid Emax model with an IC50 of 1.1 nM; the paper excerpts do not state the mechanism beyond this inhibitory effect, nor Imax, gamma, or kinetic parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wettey_2006`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

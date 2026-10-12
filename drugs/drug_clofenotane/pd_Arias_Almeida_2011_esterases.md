@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts describing the mechanism; the record indicates DDT (clofenotane) concentrations (μg l−1) inhibit an esterase response, with an EC50 of 7.9 × 10−7 μg l−1, but no Imax, kin/kout, ke0, or model structure is stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Arias-Almeida_2011`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -4,7 +4,7 @@
 
 # piretanide — `Piretanide_Marone1984_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.444), gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of elimination half-lives: this record has none, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average recovery: this record has none, the second reading 2.8; it also differs on 4 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -68,17 +68,23 @@ Marone C et al., Pharmacokinetics of high doses of piret…, European journal of
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
 | `gpt-oss:120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[average recovery]` | not captured | 2.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-lives]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[orally administered drug recovered in 24 h urines]` | 2.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2 alpha]` | not captured | 55 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2 beta]` | not captured | 152 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[elimination half-lives]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[orally administered drug recovered in 24 h urines]` | 2.8 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t 1/2 alpha]` | not captured | not captured | only_one_extracted |

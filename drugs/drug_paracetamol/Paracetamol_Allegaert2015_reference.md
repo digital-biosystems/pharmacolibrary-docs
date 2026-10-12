@@ -5,7 +5,7 @@
 
 # paracetamol — `Paracetamol_Allegaert2015_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.733). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.733). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record covers only 4 of the 6 expected parameters; V2 and tlag were neither emitted nor defaulted, meaning no value was extracted and a library placeholder would have been used for the peripheral volume and absorption lag time. The metabolite structure is otherwise specified, with formation clearances of 2.02 L/h to paracetamol-glucuronide and 3.82 L/h to paracetamol-sulphate. A second reader also disagreed on several values, reading Q as absent rather than 1.34 L/h and assigning a different identifier to the total clearance parameter. Extracted — paracetamol-glucuronide: CLfm 2.02 L/h; paracetamol: CLfm 3.82 L/h, CL 0.94 L/h, V1 1.83 L, V2 22.3 L, V3 23.9 L, Q 1.34 L/h, Q2 61.6 L/h, tlag 4.2 min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 34.4: this record has none, the second reading 18.5; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has paracetamol, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -93,17 +93,34 @@ Allegaert K et al., Paracetamol pharmacokinetics and metabo…, BMC anesthesiolo
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (4/20 fields) | 16 |
 | `gpt-oss:120b` | not confirmed | 0.733 (11/15 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[34.4]` | not captured | 18.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clpu]` | 0.94 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clpu]` | not captured | 0.94 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q1]` | 61.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q1]` | not captured | 61.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | 1.34 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | not captured | 1.34 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 4.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | 1.83 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | not captured | 1.83 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` | 22.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` | not captured | 22.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v8]` | 23.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v8]` | not captured | 23.9 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | paracetamol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | paracetamol | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[2.03(8.8) × 7.33 = 14.9]` | not captured | 1.48 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[34.4]` | not captured | 18.5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clpu].parameter_id` | Q22 | Q24 | mismatch |
@@ -173,7 +190,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_paracetamol/Paracetamol_Allegaert2015_reference/Paracetamol_Allegaert2015_reference_modelica.zip" download>Paracetamol_Allegaert2015_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_paracetamol/Paracetamol_Allegaert2015_reference/Paracetamol_Allegaert2015_reference_matlab.zip" download>Paracetamol_Allegaert2015_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_paracetamol/Paracetamol_Allegaert2015_reference/Paracetamol_Allegaert2015_reference_matlab_simbio.zip" download>Paracetamol_Allegaert2015_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_paracetamol/Paracetamol_Allegaert2015_reference/Paracetamol_Allegaert2015_reference_matlab_simbio.zip" download>Paracetamol_Allegaert2015_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_paracetamol/Paracetamol_Allegaert2015_reference/Paracetamol_Allegaert2015_reference_sbml.zip" download>Paracetamol_Allegaert2015_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_paracetamol/Paracetamol_Allegaert2015_reference/Paracetamol_Allegaert2015_reference_cellml.zip" download>Paracetamol_Allegaert2015_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

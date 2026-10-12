@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide full text or specific mechanistic details for how eslicarbazepine concentrations or doses drive the time to first occurrence of dizziness. Consequently, no specific potency, rate, or effect magnitude parameters (such as IC50, Emax, or ke0) are stated in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sunkaraneni_2018`
 - **model family:** `tte`
 - **driver:** `cited_pk`

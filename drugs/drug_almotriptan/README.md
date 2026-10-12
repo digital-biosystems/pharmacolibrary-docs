@@ -32,7 +32,7 @@ Almotriptan is a serotonin receptor agonist used to treat migraine attacks. It i
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Jansat_2002_reference](drugs/drug_almotriptan/Almotriptan_Jansat2002_reference.md) | — | 1-compartment (no model) | 5 | Jansat JM et al., Absolute bioavailability, pharmacokinet…, Journal of clinical pharmac… (2002) | [10.1177/0091270002042012006](https://doi.org/10.1177/0091270002042012006) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Jansat_2002_reference](drugs/drug_almotriptan/Almotriptan_Jansat2002_reference.md) | — | 1-compartment (no model) | 5 | Jansat JM et al., Absolute bioavailability, pharmacokinet…, Journal of clinical pharmac… (2002) | [10.1177/0091270002042012006](https://doi.org/10.1177/0091270002042012006) |
 
 ## ADME sites
 

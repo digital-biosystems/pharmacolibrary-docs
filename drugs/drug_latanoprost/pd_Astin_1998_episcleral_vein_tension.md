@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record associates the driver latanoprost acid with the response episcleral vein tension but provides no model family, effect form, or specific potency and rate parameters. As the paper full text is unavailable and the record marks the model family as unknown, the specific mechanism and numerical values are not described.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Astin_1998`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

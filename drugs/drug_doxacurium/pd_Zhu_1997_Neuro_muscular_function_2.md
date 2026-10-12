@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes the model for doxacurium's inhibition of neuro-muscular function using an effect compartment delay with a Ke0 of 0.148 min-1. Because no full text is available and the record does not specify the specific mechanism (e.g., direct Emax vs. TMDD), the precise pharmacodynamic mechanism cannot be described beyond the delay term.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhu_1997`
 - **model family:** `tmdd`
 - **driver:** `not_resolved`

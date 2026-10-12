@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes the mechanism qualitatively as surmountable antagonism of the (±)-a-methyl-5-HT-induced relaxation, identifying pizotifen as the most potent inhibitory compound tested, but it does not provide specific numerical values for potency or rate constants (such as pA2, IC50, or EC50) for pizotifen.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Glusa_1996`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

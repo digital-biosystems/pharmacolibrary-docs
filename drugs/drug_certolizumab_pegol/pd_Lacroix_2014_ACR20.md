@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;certolizumab pegol&quot;,&quot;href&quot;:&quot;drugs/drug_certolizumab_pegol/&quot;},{&quot;label&quot;:&quot;Lacroix_2014 \u00b7 PD ACR20&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CertolizumabPegol_Menshykau2024_reference&quot;,&quot;label&quot;:&quot;Menshykau_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_certolizumab_pegol/CertolizumabPegol_Menshykau2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CertolizumabPegol_Menshykau2024_reference&quot;,&quot;label&quot;:&quot;Menshykau_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_certolizumab_pegol/CertolizumabPegol_Menshykau2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ACR20 — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -17,6 +17,10 @@
 **As extracted:** Certolizumab_pegol (concentrations from the PK model of Menshykau_2024) drives ACR20: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
+
+> Certolizumab pegol concentration in plasma (driver: certolizumab_pegol) directly drives the probability of achieving a binary ACR20 response using a continuous-time Markov exposure–response model, although the specific functional form for the direct Emax effect is not detailed in the provided excerpts. The paper notes that maximum clinical effect is achieved at a maintenance dose of 200 mg every other week, with ACR20 response rates ranging from 53.7% to 67.3% at week 12 for doses between 50 mg Q2W and 400 mg Q2W.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Lacroix_2014`
 - **model family:** `categorical`

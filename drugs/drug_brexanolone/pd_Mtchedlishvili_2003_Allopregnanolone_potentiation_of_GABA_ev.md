@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Brexanolone (allopregnanolone) potentiates GABA-evoked GABAA receptor currents in dentate granule cells, described by a sigmoid Emax model with EC50 values of 21.1 nM and 94.6 nM; the paper excerpts do not state the mechanism beyond this potentiation or other parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mtchedlishvili_2003`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

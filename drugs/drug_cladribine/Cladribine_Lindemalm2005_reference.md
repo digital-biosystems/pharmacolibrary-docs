@@ -1,11 +1,11 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;cladribine&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/&quot;},{&quot;label&quot;:&quot;Lindemalm_2005 \u00b7 population_average&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_reference&quot;,&quot;label&quot;:&quot;Lindemalm_2005_interindividual_variability&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_reference&quot;,&quot;label&quot;:&quot;Lindemalm_2005_population_average&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cladribine_Lu2024_reference&quot;,&quot;label&quot;:&quot;Lu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lu2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;cladribine&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/&quot;},{&quot;label&quot;:&quot;Lindemalm_2005 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cladribine_Lu2024_reference&quot;,&quot;label&quot;:&quot;Lu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lu2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cladribine_Lindemalm2005_reference&quot;,&quot;label&quot;:&quot;Lindemalm_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cladribine/Cladribine_Lindemalm2005_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cladribine — `Cladribine_Lindemalm2005_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,18 +19,16 @@
 
 **The model does not reproduce the paper's terminal half-life (paper 16, model 8.97).**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — cladribine: CL 39.3 L/h, V1 71.7 L, Q 51.1 L/h, V2 475 L, Q3 105 L/h, V3 73.6 L, kabs 1.31 h-1, Fab 0.353.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — cladribine: CL 39.3 L/h, V1 71.7 L, Q 51.1 L/h, V2 475 L, Q3 105 L/h, V3 73.6 L, kabs 1.31 h-1, fe 0.353.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:25:25.060039+00:00) predates the upstream re-run (2026-10-07 16:37:24.097331+00:00). Current validate status: `extracted`.
 
 ## Citation
 Lindemalm S et al., Application of population pharmacokinet…, BMC pharmacology (2005)
   ·  DOI: [10.1186/1471-2210-5-4](https://doi.org/10.1186/1471-2210-5-4)
 
 ## Model component
-<dbs-pgx drug="cladribine" model-id="Cladribine_Lindemalm2005_reference" status="extracted" stale="true" population="patients with B- and T-cell lymphoid malignancies" measured-compound="cladribine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="cladribine" model-id="Cladribine_Lindemalm2005_reference" status="needs_review" stale="false" population="patients with B- and T-cell lymphoid malignancies" measured-compound="cladribine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 8 extracted.
@@ -38,6 +36,8 @@ Lindemalm S et al., Application of population pharmacokinet…, BMC pharmacology
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Clearance (L/h) | `Q22` · CL | 39.3 | L/h | 1.0916666666666665e-05 | [l] / [h] | not captured | exact (1.0) | T3:row2:col1 | — | 54 (None% RSE) |
@@ -141,10 +141,10 @@ Lindemalm S et al., Application of population pharmacokinet…, BMC pharmacology
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_cladribine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lindemalm_2005` / `Lindemalm_2005::population_average`)
-- model: `../../../knowledgebase/drugs/drug_cladribine/models/modelica/Cladribine_Lindemalm2005_population_average.mo`
-- deviation: `../../../knowledgebase/drugs/drug_cladribine/models/modelica/Cladribine_Lindemalm2005_population_average.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_cladribine/models/modelica/Cladribine_Lindemalm2005_population_average.json`
+- scholar stages: `../../../knowledgebase/drugs/drug_cladribine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lindemalm_2005` / `Lindemalm_2005::reference`)
+- model: `../../../knowledgebase/drugs/drug_cladribine/models/modelica/Cladribine_Lindemalm2005_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_cladribine/models/modelica/Cladribine_Lindemalm2005_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_cladribine/models/modelica/Cladribine_Lindemalm2005_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -156,7 +156,7 @@ Lindemalm S et al., Application of population pharmacokinet…, BMC pharmacology
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cladribine/Cladribine_Lindemalm2005_reference/Cladribine_Lindemalm2005_reference_modelica.zip" download>Cladribine_Lindemalm2005_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cladribine/Cladribine_Lindemalm2005_reference/Cladribine_Lindemalm2005_reference_fmi.zip" download>Cladribine_Lindemalm2005_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cladribine/Cladribine_Lindemalm2005_reference/Cladribine_Lindemalm2005_reference_matlab.zip" download>Cladribine_Lindemalm2005_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cladribine/Cladribine_Lindemalm2005_reference/Cladribine_Lindemalm2005_reference_matlab_simbio.zip" download>Cladribine_Lindemalm2005_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cladribine/Cladribine_Lindemalm2005_reference/Cladribine_Lindemalm2005_reference_matlab_simbio.zip" download>Cladribine_Lindemalm2005_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cladribine/Cladribine_Lindemalm2005_reference/Cladribine_Lindemalm2005_reference_sbml.zip" download>Cladribine_Lindemalm2005_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_cladribine/Cladribine_Lindemalm2005_reference/Cladribine_Lindemalm2005_reference_cellml.zip" download>Cladribine_Lindemalm2005_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

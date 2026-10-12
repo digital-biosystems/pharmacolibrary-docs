@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper excerpts are unavailable and the record lists no response, driver, or mechanism, so the pharmacodynamic model details cannot be summarized.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hanafin_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

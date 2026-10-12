@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H01A&quot;,&quot;href&quot;:&quot;atc/H01A.md&quot;},{&quot;label&quot;:&quot;somatropin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Somatropin_van2021_reference&quot;,&quot;label&quot;:&quot;van_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_somatropin/Somatropin_van2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Somatropin_van2021_reference&quot;,&quot;label&quot;:&quot;van_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_somatropin/Somatropin_van2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # somatropin
 
@@ -18,22 +18,22 @@ Somatropin, a recombinant form of human growth hormone, is used to treat growth 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:25 | 3:19 | 1/2/0 | 0/1/0 | 0/0/0 | 207,936/13,484 | einfracz / qwen3.8-27b | 7 | 1/6 | 6/1 | 0 |
+| 2026-10-07 09:25 | 3:19 | 0/2/1 | 0/1/0 | 0/0/0 | 207,936/13,484 | einfracz / qwen3.8-27b | 7 | 1/6 | 6/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [van_2021_reference](drugs/drug_somatropin/Somatropin_van2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | van Esdonk MJ et al., The power of modelling pulsatile profil…, Journal of pharmacokinetics… (2021) | [10.1007/s10928-021-09743-2](https://doi.org/10.1007/s10928-021-09743-2) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [González-Sales_2015_reference](drugs/drug_somatropin/Somatropin_GonzlezSales2015_reference.md) | — | 1-compartment (no model) | 0 | González-Sales M et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (2015) | [10.1007/s40262-014-0202-x](https://doi.org/10.1007/s40262-014-0202-x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Papathanasiou_2021_reference](drugs/drug_somatropin/Somatropin_Papathanasiou2021_reference.md) | — | general linear (no model) | 0 | Papathanasiou T et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01011-3](https://doi.org/10.1007/s40262-021-01011-3) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [van_2021_reference](drugs/drug_somatropin/Somatropin_van2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | van Esdonk MJ et al., The power of modelling pulsatile profil…, Journal of pharmacokinetics… (2021) | [10.1007/s10928-021-09743-2](https://doi.org/10.1007/s10928-021-09743-2) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [González-Sales_2015_reference](drugs/drug_somatropin/Somatropin_GonzlezSales2015_reference.md) | — | 1-compartment (no model) | 0 | González-Sales M et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (2015) | [10.1007/s40262-014-0202-x](https://doi.org/10.1007/s40262-014-0202-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Papathanasiou_2021_reference](drugs/drug_somatropin/Somatropin_Papathanasiou2021_reference.md) | — | general linear (no model) | 0 | Papathanasiou T et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01011-3](https://doi.org/10.1007/s40262-021-01011-3) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Thorsted_2016_IGF_1](drugs/drug_somatropin/pd_Thorsted_2016_IGF_1.md) | insulin-like growth factor 1 (IGF-1) ← recombinant human growth hormone · indirect response — drug stimulates the production of insulin-like growth factor 1 (IGF-1) | — | Thorsted A et al., Translational mixed-effects PKPD modell…, British journal of pharmaco… (2016) | [10.1111/bph.13473](https://doi.org/10.1111/bph.13473) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Thorsted_2016_bodyweight_gain](drugs/drug_somatropin/pd_Thorsted_2016_bodyweight_gain.md) | bodyweight gain ← insulin-like growth factor 1 · direct linear effect | — | Thorsted A et al., Translational mixed-effects PKPD modell…, British journal of pharmaco… (2016) | [10.1111/bph.13473](https://doi.org/10.1111/bph.13473) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Thorsted_2016_IGF_1](drugs/drug_somatropin/pd_Thorsted_2016_IGF_1.md) | insulin-like growth factor 1 (IGF-1) ← recombinant human growth hormone · indirect response — drug stimulates the production of insulin-like growth factor 1 (IGF-1) | — | Thorsted A et al., Translational mixed-effects PKPD modell…, British journal of pharmaco… (2016) | [10.1111/bph.13473](https://doi.org/10.1111/bph.13473) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Thorsted_2016_bodyweight_gain](drugs/drug_somatropin/pd_Thorsted_2016_bodyweight_gain.md) | bodyweight gain ← insulin-like growth factor 1 · direct linear effect | — | Thorsted A et al., Translational mixed-effects PKPD modell…, British journal of pharmaco… (2016) | [10.1111/bph.13473](https://doi.org/10.1111/bph.13473) |
 
 ## ADME sites
 
@@ -61,7 +61,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 243 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

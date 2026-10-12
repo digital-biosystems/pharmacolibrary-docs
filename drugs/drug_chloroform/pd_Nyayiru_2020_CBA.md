@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The chloroform extract of C. nucifera cotyledon inhibits β-carotene bleaching (% inhibition) in a linear model with an EC50 of 11.45 mg/ml for the cold percolation extract. The paper does not specify the mechanistic basis (e.g., production vs. elimination inhibition) of this antioxidant effect.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nyayiru_2020`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`

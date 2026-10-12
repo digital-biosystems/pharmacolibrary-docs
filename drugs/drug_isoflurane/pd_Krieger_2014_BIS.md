@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model is a sigmoid Emax inhibition model where isoflurane concentrations reduce the continuous Bispectral Index response. The specific mechanism (e.g., direct vs. effect compartment) and key potency or rate values (Imax, IC50, ke0) are not provided in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Krieger_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

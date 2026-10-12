@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not state a specific mechanism (e.g., effect compartment or inhibition of elimination) for N-acetylcysteine's action on cell viability, describing it instead as a neuroprotective agent whose efficacy was characterized by a sigmoidal dose-response curve (implied Emax model) for increasing viability. The record specifies the model as a sigmoid Emax inhibition with additive effect form, but the excerpts only provide EC50 and maximal neuroprotective activity (MNA) values for other compounds (ChN2, QN23, HBN6, PBN) without stating specific numerical EC50, Imax, or MNA values for NAC itself.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chamorro_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

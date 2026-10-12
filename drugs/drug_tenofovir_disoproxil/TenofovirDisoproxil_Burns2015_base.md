@@ -4,7 +4,7 @@
 
 # tenofovir disoproxil — `TenofovirDisoproxil_Burns2015_base`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.211). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,6 +19,8 @@
 **Tenofovir diphosphate is an orphan metabolite, and the intercompartmental clearance parameter uses a rate constant unit.**
 
 The record defines tenofovir diphosphate as a metabolite, but the link from the parent tenofovir has an unknown relation type, making it an unreachable compartment. Additionally, the intercompartmental clearance parameter (Q) has a dimension mismatch, where a rate constant unit was applied to a clearance parameter. A unit for a reported parameter could not be converted to SI units. Extracted — tenofovir disoproxil: kabs 9.81 h−1, V1/F 404 L, Q 0.604 h−1, kel 0.13 h−1, tlag 0.5 h; tenofovir_diphosphate: kfm 0.017 h−1, kel 0.013 h−1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tenofovir disoproxil fumarate, the second reading tenofovir_disoproxil; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -113,6 +115,41 @@ Burns RN et al., Population pharmacokinetics of tenofovi…, Journal of clinical
 - LLM selected parameter table(s) 1
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.211 (4/19 fields) | 15 |
+
+<details><summary>15 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption lag]` | not captured | 0.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption lag]` | 0.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k20]` | not captured | 0.13 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k20]` | 0.13 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k23]` | not captured | 0.604 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k23]` | 0.604 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k24]` | not captured | 0.017 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k24]` | 0.017 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k40].parameter_id` | Q47 | Q305 | mismatch |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 9.81 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 9.81 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[parameter]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f]` | not captured | 404.19 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f]` | 404.19 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | tenofovir disoproxil fumarate | tenofovir_disoproxil | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Duan_2000_normalized_averaged_dose_response_curve](drugs/drug_glutamic_acid/pd_Duan_2000_normalized_averaged_dose_response_curve.md) | normalized, averaged dose-response curve ← glutamic acid · direct sigmoid Emax (Hill) effect | — | Duan S et al., Glutamate and GABA activate different r…, Journal of neurophysiology (2000) | [10.1152/jn.2000.83.1.31](https://doi.org/10.1152/jn.2000.83.1.31) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Duan_2000_normalized_averaged_dose_response_curve](drugs/drug_glutamic_acid/pd_Duan_2000_normalized_averaged_dose_response_curve.md) | normalized, averaged dose-response curve ← glutamic acid · direct sigmoid Emax (Hill) effect | — | Duan S et al., Glutamate and GABA activate different r…, Journal of neurophysiology (2000) | [10.1152/jn.2000.83.1.31](https://doi.org/10.1152/jn.2000.83.1.31) |
 
 ## ADME sites
 

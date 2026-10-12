@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Tan_2026_cell_viability](drugs/drug_ceritinib/pd_Tan_2026_cell_viability.md) | cell viability ← ceritinib and ibuprofen · inhibition effect | — | Tan S et al., Ceritinib-ibuprofen synergistic hepatot…, Toxicology (2026) | [10.1016/j.tox.2025.154321](https://doi.org/10.1016/j.tox.2025.154321) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Tan_2026_cell_viability](drugs/drug_ceritinib/pd_Tan_2026_cell_viability.md) | cell viability ← ceritinib and ibuprofen · inhibition effect | — | Tan S et al., Ceritinib-ibuprofen synergistic hepatot…, Toxicology (2026) | [10.1016/j.tox.2025.154321](https://doi.org/10.1016/j.tox.2025.154321) |
 
 ## ADME sites
 

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Azapropazone serum concentrations inhibit platelet TXB2 generation via a sigmoidal Emax model. The mean serum concentration inhibiting platelet TXB2 generation by 50% (EC50) is 98.1 micrograms ml-1.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pallapies_1994`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

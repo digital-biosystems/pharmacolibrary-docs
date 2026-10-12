@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide full text or specific mechanism details, so the model structure for the unbound drug concentration in plasma is not described. No potency or rate values are available.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chiang_1984`
 - **model family:** `linear`
 - **driver:** `cited_pk`

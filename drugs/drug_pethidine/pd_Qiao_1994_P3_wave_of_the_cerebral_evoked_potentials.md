@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model describes the effect of meperidine concentrations on the P3 wave of cerebral evoked potentials using an effect compartment model with a proportional effect form. Key parameters include a ke0 of 0.3744 +/- 0.2546 min-1, an EC50 of 0.70 +/- 0.33 microgram/ml, a maximal effect of 89.63 +/- 15.63 %, and a Hill coefficient of 2.61 +/- 1.21.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Qiao_1994`
 - **model family:** `effect_compartment`
 - **driver:** `pk_record`

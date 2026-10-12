@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;spironolactone&quot;,&quot;href&quot;:&quot;drugs/drug_spironolactone/&quot;},{&quot;label&quot;:&quot;Lass_2024 \u00b7 model_1&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Spironolactone_Zhou2010_reference&quot;,&quot;label&quot;:&quot;Zhou_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_spironolactone/Spironolactone_Zhou2010_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Spironolactone_Zhou2010_reference&quot;,&quot;label&quot;:&quot;Zhou_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_spironolactone/Spironolactone_Zhou2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # spironolactone — `Spironolactone_Lass2024_model_1`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has spironolactone, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+**The clearance plausibility check could not be computed.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — 7 alphathiomethylspironolactone: V 115 L, CL 99 L/h; spironolactone: kabs 1.63 h -1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has spironolactone → 7 alphathiomethylspironolactone (metabolism); spironolactone → canrenone (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Lass J et al., Pharmacokinetics of oral spironolactone…, European journal of clinica… (2024)
@@ -77,17 +81,24 @@ Lass J et al., Pharmacokinetics of oral spironolactone…, European journal of c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.125 (1/8 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['spironolactone', '7 alphathiomethylspironolactone', 'metabolism'], ['spironolactone', 'canrenone', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl_tms]` | not captured | 99 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl_tms]` | 99 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 1.63 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vtms=vcan]` | not captured | 115 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vtms=vcan]` | 115 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [['spironolactone', '7 alphathiomethylspironolactone', 'metabolism'], ['spironolactone', 'canrenone', 'metabolism']] | [['spironolactone', '7-alpha-thiomethylspironolactone', 'metabolism'], ['spironolactone', 'canrenone', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[cl_tms]` | 99 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl_tms]` | not captured | 99 | only_one_extracted |

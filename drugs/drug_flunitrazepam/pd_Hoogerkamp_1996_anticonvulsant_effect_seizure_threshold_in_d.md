@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;flunitrazepam&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/&quot;},{&quot;label&quot;:&quot;Hoogerkamp_1996 \u00b7 PD anticonvulsant effect (seizure threshold in direct cortical stimulation model)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flunitrazepam_GmezSegura2022_reference&quot;,&quot;label&quot;:&quot;G\u00f3mez-Segura_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/Flunitrazepam_GmezSegura2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flunitrazepam_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/Flunitrazepam_Han2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flunitrazepam_GmezSegura2022_reference&quot;,&quot;label&quot;:&quot;G\u00f3mez-Segura_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/Flunitrazepam_GmezSegura2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flunitrazepam_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flunitrazepam/Flunitrazepam_Han2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # anticonvulsant effect (seizure threshold in direct cortical stimulation model) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -19,6 +19,10 @@
 **As extracted:** Flunitrazepam (concentrations from the PK model of Franken_2016) drives anticonvulsant effect (seizure threshold in direct cortical stimulation model): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> Flunitrazepam plasma concentrations (mg.l-1) were linked to the anticonvulsant effect (seizure threshold in a direct cortical stimulation model) using a sigmoid Emax model; the paper excerpts provide no mechanism, potency (EC50, Emax, gamma) or rate values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Hoogerkamp_1996`
 - **model family:** `sigmoid_emax`

@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Aubry_2025_B](drugs/drug_ceftazidime/pd_Aubry_2025_B.md) | total bacterial population ← ceftazidime/avibactam · direct Emax (saturable) effect | — | Aubry R et al., PKPD modeling of the inoculum effect of…, Antimicrobial agents and ch… (2025) | [10.1128/aac.01797-24](https://doi.org/10.1128/aac.01797-24) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Aubry_2025_B](drugs/drug_ceftazidime/pd_Aubry_2025_B.md) | total bacterial population ← ceftazidime/avibactam · direct Emax (saturable) effect | — | Aubry R et al., PKPD modeling of the inoculum effect of…, Antimicrobial agents and ch… (2025) | [10.1128/aac.01797-24](https://doi.org/10.1128/aac.01797-24) |
 
 ## ADME sites
 

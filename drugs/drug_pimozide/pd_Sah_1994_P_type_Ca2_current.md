@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pimozide (concentrations in microM) inhibits the P-type Ca2+ channel current in cerebellar Purkinje neurons; the paper excerpts provide no mechanism details and no potency or rate values (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma are stated).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sah_1994`
 - **model family:** `emax`
 - **driver:** `not_resolved`

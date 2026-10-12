@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Desflurane concentration (vol%) inhibits the CA1 pyramidal neuron population spike amplitude (PS, % of control) via a sigmoid Emax model, with the IC50 decreasing from 10.4 vol% in the standard environment group to 6.5 vol% in the enriched environment group. The corresponding Hill coefficients were 2.2 and 2.7, respectively.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Onishi_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

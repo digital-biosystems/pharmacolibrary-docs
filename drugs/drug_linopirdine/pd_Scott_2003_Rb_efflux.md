@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Linopirdine inhibits potassium-induced rubidium efflux through KCNQ2, with an IC50 of 2.3 microM; the paper excerpts do not state the mechanism or model form beyond this potency value.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Scott_2003`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

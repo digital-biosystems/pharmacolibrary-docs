@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record reports a sigmoid Emax inhibition of glycine-induced current amplitude (I_gly) by pregnanolone, with an IC50 of 1.0 microM; the paper excerpts are unavailable, so the mechanism beyond inhibitory sigmoid Emax, and any Emax, gamma, or rate values, are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jiang_2006`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

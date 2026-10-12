@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> p,p'-DDT (clofenotane) concentration directly stimulates ER transcriptional activation (relative to 10 nM E2, %), described by a sigmoid Emax dose-response with an additive effect form; the paper reports a maximal induction of 28.70 ± 2.97% but does not state an EC50 or a mechanistic production/elimination model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eze_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

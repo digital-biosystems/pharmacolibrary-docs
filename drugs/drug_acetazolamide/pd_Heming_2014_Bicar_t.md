@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Acetazolamide dose inhibits the production of serum bicarbonate (Bicar(t), mmol l⁻¹) via a proportional indirect response mechanism, with a maximum effect (Emax) of 1 and an IC₅₀ of 163 mg. The model specifies a bicarbonate elimination rate constant (kout) of 0.314 day⁻¹ and a baseline concentration (Bicar₀) of 35.4 mmol l⁻¹.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Heming_2014`
 - **model family:** `indirect_response_i`
 - **driver:** `dose_only`

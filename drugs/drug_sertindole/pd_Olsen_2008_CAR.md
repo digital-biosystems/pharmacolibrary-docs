@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Sertindole (with dehydrosertindole as active moiety) acts on conditioned avoidance response (CAR) suppression, described by a sigmoid Emax model with an inhibitory effect direction; the paper excerpts provide no mechanism details and no numeric potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Olsen_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

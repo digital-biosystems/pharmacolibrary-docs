@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts describing the mechanism; the record indicates a dose-only sigmoid Emax model in which helium dose drives the binary probability of decompression sickness (severe bends symptoms or death), with no potency or rate values available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lillo_1985`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

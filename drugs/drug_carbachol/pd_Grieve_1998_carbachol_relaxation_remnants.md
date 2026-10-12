@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol concentration (M) produces % relaxation of phenylephrine-precontracted rat aortic rings incubated with chylomicron remnants (16 µM cholesterol), fitted to a sigmoid Emax (logistic) concentration–response model; remnants reduced the maximum relaxation, giving EC50 = 1.27 × 10^-6 M, Emax = 62.5%, and Hill slope = 1.19. The paper does not state a mechanistic PD model beyond this direct concentration–response fit (remnants impair endothelium-dependent relaxation, possibly via the L-arginine–NO pathway).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Grieve_1998`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

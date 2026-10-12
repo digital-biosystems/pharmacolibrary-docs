@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model describes a dose-dependent inhibitory effect of omalizumab on the change from baseline in Urticaria Activity Score (CFB-UAS7), characterized by an Emax parameter of -1.16 and an ET50 of 1.26 weeks. Linear coefficients b0 (-9.90) and b1 (-0.0361 mg-1) are included, but the specific mechanistic link between drug exposure and response is not detailed in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhao_2024`
 - **model family:** `unknown`
 - **driver:** `dose_only`

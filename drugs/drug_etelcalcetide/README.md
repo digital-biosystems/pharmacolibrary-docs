@@ -32,13 +32,13 @@ Etelcalcetide is a calcimimetic medicine used to treat secondary hyperparathyroi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Chen_2018_reference](drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference.md) | — | general linear (no model) | 3 | Chen P et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0550-4](https://doi.org/10.1007/s40262-017-0550-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Chen_2018_reference](drugs/drug_etelcalcetide/Etelcalcetide_Chen2018_reference.md) | — | general linear (no model) | 3 | Chen P et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0550-4](https://doi.org/10.1007/s40262-017-0550-4) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chen_2018_PTH](drugs/drug_etelcalcetide/pd_Chen_2018_PTH.md) | serum parathyroid hormone ← etelcalcetide · indirect response — drug inhibits the production of serum parathyroid hormone | — | Chen P et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0550-4](https://doi.org/10.1007/s40262-017-0550-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Chen_2018_PTH](drugs/drug_etelcalcetide/pd_Chen_2018_PTH.md) | serum parathyroid hormone ← etelcalcetide · indirect response — drug inhibits the production of serum parathyroid hormone | — | Chen P et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0550-4](https://doi.org/10.1007/s40262-017-0550-4) |
 
 ## ADME sites
 

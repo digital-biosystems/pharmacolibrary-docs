@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper reports an Emax model describing the concentration-dependent inhibition of isometric tension by halothane. The specific potency (EC50/IC50), maximum effect (Emax), or kinetic parameters are not provided in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tavernier_1994`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

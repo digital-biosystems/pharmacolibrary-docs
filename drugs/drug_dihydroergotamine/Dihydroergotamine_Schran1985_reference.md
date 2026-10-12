@@ -4,7 +4,7 @@
 
 # dihydroergotamine — `Dihydroergotamine_Schran1985_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — dihydroergotamine: V 14.6 l/kg, CL 1.81e+03 ml/min, CLR 91 ml/min, fe 5 %.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dihydroergotamine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,14 +64,28 @@ Schran HF et al., Pharmacokinetics of dihydroergotamine f…, International jour
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 | `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[overall volume of distribution]` | not captured | 14.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma clearance]` | not captured | 1814 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance]` | 91 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance]` | not captured | 91 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the overall volume of distribution]` | 14.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the plasma clearance]` | 1814 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | dihydroergotamine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | dihydroergotamine | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

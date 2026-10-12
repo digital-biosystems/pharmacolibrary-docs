@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 0.50).">human + animal</span> | [Perez_2020_CAC_volume](drugs/drug_calcium_phosphate/pd_Perez_2020_CAC_volume.md) | percent change from baseline to week 52 in coronary artery calcium (CAC) volume ← inhibition of calcium phosphate crystallization · direct linear effect | — | Perez MM et al., A novel assay to measure calcification…, Scientific reports (2020) | [10.1038/s41598-020-74592-x](https://doi.org/10.1038/s41598-020-74592-x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 0.50).">human + animal</span> | [Perez_2020_CAC_volume](drugs/drug_calcium_phosphate/pd_Perez_2020_CAC_volume.md) | percent change from baseline to week 52 in coronary artery calcium (CAC) volume ← inhibition of calcium phosphate crystallization · direct linear effect | — | Perez MM et al., A novel assay to measure calcification…, Scientific reports (2020) | [10.1038/s41598-020-74592-x](https://doi.org/10.1038/s41598-020-74592-x) |
 
 ## ADME sites
 

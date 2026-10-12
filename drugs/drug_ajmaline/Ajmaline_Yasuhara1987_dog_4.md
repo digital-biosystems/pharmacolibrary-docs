@@ -5,7 +5,7 @@
 
 # ajmaline — `Ajmaline_Yasuhara1987_dog_4`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,9 +19,13 @@
 
 ### Reviewer guidance
 
-Independently confirmed by `gpt-oss:120b`.
+**C5 dimension mismatch on a structural parameter.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — ajmaline: V 15 L/kg, λ1 0.21 min-1, k21 0.304 min-1, kel 0.0213 min-1, CL 3 ml/min/kg.
+
+Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Yasuhara M et al., Kinetics of ajmaline disposition and ph…, Journal of pharmacokinetics… (1987)
@@ -72,11 +76,12 @@ Yasuhara M et al., Kinetics of ajmaline disposition and ph…, Journal of pharma
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
 | `gpt-oss:120b` | confirmed | 1.0 (9/9 fields) | none |
 
 _Every reader agrees on every compared field of this record._

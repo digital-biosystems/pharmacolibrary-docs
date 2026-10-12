@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The available paper excerpt does not specify which ebastine concentration or dose affects the measured response, the mechanism, or any potency or rate values.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Desager_1995`
 - **model family:** `linear`
 - **driver:** `not_resolved`

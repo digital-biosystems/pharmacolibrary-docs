@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Salbutamol concentration (nM) inhibits methacholine (10 μM)-induced contraction of guinea pig trachealis via a direct inhibitory Emax concentration-response relationship, with EC50 18.6 ± 6.3 nM and Emax 78.6 ± 8.4% (or EC50 296.4 ± 90.6 nM, Emax 51.0 ± 6.4% under the other condition); in the presence of tiotropium 1 nM, EC50 was 12.8 ± 6.6 nM with Emax 78.3 ± 8.6%. The paper does not state a turnover/kin–kout mechanism, only a direct concentration-dependent inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kume_2018`
 - **model family:** `emax`
 - **driver:** `cited_pk`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;dexamfetamine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexamfetamine_Roberts2015_final_final_plasma_model&quot;,&quot;label&quot;:&quot;Roberts_2015_final_final_plasma_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final_final_plasma_model.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexamfetamine_Roberts2015_final_final_plasma_model&quot;,&quot;label&quot;:&quot;Roberts_2015_final_final_plasma_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final_final_plasma_model.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # dexamfetamine
 
@@ -26,14 +26,14 @@ Dexamfetamine is a stimulant medicine used to treat attention deficit hyperactiv
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:26 | 1:16 | 1/1/0 | 0/1/0 | 0/0/0 | 84,314/4,170 | ollama / glm-5.3-flash | 4 | 0/4 | 3/1 | 0 |
+| 2026-10-07 00:26 | 1:16 | 0/1/1 | 0/1/0 | 0/0/0 | 84,314/4,170 | ollama / glm-5.3-flash | 4 | 0/4 | 3/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Roberts_2015_final_final_plasma_model](drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final_final_plasma_model.md) | ▶ model + simulator | 1-compartment, oral | 4 | Roberts JK et al., A Population Pharmacokinetic Analysis o…, Clinical drug investigation (2015) | [10.1007/s40261-015-0323-5](https://doi.org/10.1007/s40261-015-0323-5) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Roberts_2015_final](drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final.md) | — | 2-compartment (no model) | 5 | Roberts JK et al., A Population Pharmacokinetic Analysis o…, Clinical drug investigation (2015) | [10.1007/s40261-015-0323-5](https://doi.org/10.1007/s40261-015-0323-5) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Roberts_2015_final_final_plasma_model](drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final_final_plasma_model.md) | ▶ model + simulator | 1-compartment, oral | 4 | Roberts JK et al., A Population Pharmacokinetic Analysis o…, Clinical drug investigation (2015) | [10.1007/s40261-015-0323-5](https://doi.org/10.1007/s40261-015-0323-5) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Roberts_2015_final](drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final.md) | — | 2-compartment (no model) | 5 | Roberts JK et al., A Population Pharmacokinetic Analysis o…, Clinical drug investigation (2015) | [10.1007/s40261-015-0323-5](https://doi.org/10.1007/s40261-015-0323-5) |
 
 ## Pharmacodynamics (PD)
 
@@ -63,7 +63,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

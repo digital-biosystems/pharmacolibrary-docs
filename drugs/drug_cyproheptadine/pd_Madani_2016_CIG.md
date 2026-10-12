@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that the dose of cyproheptadine acts on the binary response of clinical improvement (CIG) via a dose-only driver, but the effect form and mechanism are described as unknown. The only quantified parameter provided is an odds ratio of 1.5 (fold) for body mass index, with no values reported for standard PD parameters such as IC50 or ke0.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Madani_2016`
 - **model family:** `categorical`
 - **driver:** `dose_only`

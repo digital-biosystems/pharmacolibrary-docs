@@ -4,7 +4,7 @@
 
 # naltrexone — `Naltrexone_Christie2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.529). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.765), gpt-oss:120b (not confirmed, agreement 0.529). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 For naltrexone, the two-compartment model reports CL/F = −1618.0 mL/min/kg, a negative total clearance following oral administration, alongside V1 = 89.9 mL/kg, V2 = 588.0 mL/kg, Q = 44.6 mL/min/kg and kabs = 0.484 1/min. A negative clearance cannot represent drug elimination and indicates the base value or a covariate shift is wrong. A second reader also disagreed on several extracted values, reading Q as 24.1 instead of 44.6 mL/min/kg, kabs as 0.264 instead of 0.484 1/min, and the central volume as 37.1 instead of 89.9 mL/kg, so the extracted numbers are themselves uncertain. Extracted — naltrexone: CL/F -1.62e+03 mL/ min/kg, V1 89.9 mL/kg, V2 588 mL/ kg, Q 44.6 mL/ min/kg, kabs 0.484 1/ min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has 39.3, the second reading 33.8; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 1896, the second reading 1896; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -62,17 +62,22 @@ Christie JT et al., Pharmacokinetics and Bioavailability of…, Journal of veter
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.765 (13/17 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.529 (9/17 fields) | 8 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q17]` | 1896 | 1896 | mismatch |
+| `gpt-oss-120b` | `values[Q40]` | 0.936 | 0.936 | mismatch |
+| `gpt-oss-120b` | `values[Q64]` | 588 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q74]` | 1452.5 | 1452.5 | mismatch |
 | `gpt-oss:120b` | `values[Q22]` | 39.3 | 33.8 | mismatch |
 | `gpt-oss:120b` | `values[Q30]` | 44.6 | 24.1 | mismatch |
 | `gpt-oss:120b` | `values[Q316]` | 0.284 | not captured | only_one_extracted |

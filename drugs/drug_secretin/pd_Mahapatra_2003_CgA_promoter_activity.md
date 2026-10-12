@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Secretin stimulates CgA promoter activity (transfected CgA promoter/luciferase reporter) with an Emax-type concentration–effect relationship; the paper reports an EC50 of approximately 7 nM, but no full text is available to confirm the mechanism or other parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mahapatra_2003`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

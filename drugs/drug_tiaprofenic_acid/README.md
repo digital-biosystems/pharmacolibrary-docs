@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;tiaprofenic acid&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TiaprofenicAcid_Nilsen1985v2_reference&quot;,&quot;label&quot;:&quot;Nilsen_1985_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tiaprofenic_acid/TiaprofenicAcid_Nilsen1985v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TiaprofenicAcid_Nilsen1985v2_reference&quot;,&quot;label&quot;:&quot;Nilsen_1985_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tiaprofenic_acid/TiaprofenicAcid_Nilsen1985v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # tiaprofenic acid
 
@@ -27,13 +27,13 @@ It is an approved medicine, though it is not widely used today and has largely b
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 01:25 | 0:32 | 1/0/0 | 0/0/0 | 0/0/0 | 11,362/1,114 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 01:25 | 0:32 | 0/0/1 | 0/0/0 | 0/0/0 | 11,362/1,114 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Nilsen_1985_2_reference](drugs/drug_tiaprofenic_acid/TiaprofenicAcid_Nilsen1985v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Nilsen OG et al., Steady state pharmacokinetics of tiapro…, Arzneimittel-Forschung (1985) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Nilsen_1985_2_reference](drugs/drug_tiaprofenic_acid/TiaprofenicAcid_Nilsen1985v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Nilsen OG et al., Steady state pharmacokinetics of tiapro…, Arzneimittel-Forschung (1985) | — |
 
 ## ADME sites
 
@@ -55,7 +55,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

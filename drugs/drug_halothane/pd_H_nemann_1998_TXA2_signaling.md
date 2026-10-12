@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Halothane was modeled as a sigmoidal inhibitor of U-46619-induced Ca2+-activated Cl- currents with an IC50 of 0.46 mM and a Hill slope of 1.6, but the paper does not state the specific mechanism of action (e.g., direct channel block vs. upstream signaling).
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hönemann_1998`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

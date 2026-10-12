@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The available record does not provide specific potency or rate values, nor does it describe the mechanism beyond a dose-only driver for twitch depression. No full text is available to clarify the mechanism or verify these details.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Markakis_1996`
 - **model family:** `emax`
 - **driver:** `dose_only`

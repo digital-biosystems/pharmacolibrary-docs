@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Citalopram concentrations act on QT prolongation (QT,RR combinations above abnormal threshold), with citalopram stimulating the response; the paper excerpts provide no model family, mechanism, or parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Isbister_2006`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

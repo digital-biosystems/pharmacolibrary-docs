@@ -4,7 +4,7 @@
 
 # desipramine — `Desipramine_DeVane1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.688), gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 For desipramine in healthy male volunteers (DeVane_1981), the parameter labeled 'ka [h -1]' with value 0.74 h⁻¹ is a first-order absorption rate constant, but it was interpreted as the half-life of the absorption phase, whose dimension should be time — a dimension mismatch on a structural parameter. The record also contains a unit ('1/kg/h' on the clearance, verbatim 'C1B [1/kg/h]') that could not be converted to SI, so clearance reached the model without an SI value. A second reader additionally disputed several entries: they read no value for the AUCt of 391 h·ng/ml, reported a bioavailability fraction of 0.40 that this record lacks, and assigned different parameter identities for the absorption rate constant, terminal half-life (21.8 h) and volume of distribution (22.4 l/kg). Extracted — desipramine: Cmax 11.5 ng/ml, t1/2ka 0.74, CL 1.86 1/kg/h, Vnorm 22.4 1/kg, t1/2z 21.8 h, AUC 487, Ct 11.8 ng/ml, AUCt 391.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc [h -ng/ml] 243: this record has 391, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc [h -ng/ml] 243: this record has 391, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -74,17 +74,23 @@ DeVane CL; Savett M; Jusko WJ et al. (1981). European journal of clinical pharma
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.688 (11/16 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.688 (11/16 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc [h -ng/ml] 243]` | 391 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f *a]` | not captured | 0.40 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka [h -1]].parameter_id` | Q95 | Q49 | mismatch |
+| `gpt-oss-120b` | `parameters[t'afl [h]].parameter_id` | Q57 | Q83 | mismatch |
+| `gpt-oss-120b` | `parameters[vd- [1/kg]].parameter_id` | Q352 | Q61 | mismatch |
 | `gpt-oss:120b` | `parameters[auc [h -ng/ml] 243]` | 391 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[f *a]` | not captured | 0.40 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka [h -1]].parameter_id` | Q95 | Q49 | mismatch |

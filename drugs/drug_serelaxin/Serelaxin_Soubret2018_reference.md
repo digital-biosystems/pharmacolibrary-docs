@@ -4,7 +4,7 @@
 
 # serelaxin — `Serelaxin_Soubret2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -66,17 +66,21 @@ Soubret A et al., Population pharmacokinetics of serelaxi…, British journal of
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[serelaxin clearance]` | 9.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state volume of distribution (vss) in patients with ahf]` | not captured | 544 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` | 544 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[serelaxin clearance]` | 9.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[serelaxin clearance]` | not captured | 9.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[steady-state volume of distribution]` | 544 | not captured | only_one_extracted |

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Histamine phosphate (dose in mg) acts as a stimulant on total nasal resistance (TNR), a continuous response; the paper excerpts provide no model family, mechanism, or potency/rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zambetti_1999`
 - **model family:** `unknown`
 - **driver:** `dose_only`

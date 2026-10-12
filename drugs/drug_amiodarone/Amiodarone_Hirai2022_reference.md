@@ -5,7 +5,7 @@
 
 # amiodarone — `Amiodarone_Hirai2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385), gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record fixes Fab at 54.0% and Vd at 14.0 L/kg for both amiodarone and N-desethylamiodarone, with CL 7.9 L/h and metabolite CL/F 10.3 L/h, but the apparent assumption F=1 and Fm=1 contradicts the fixed bioavailability and leaves the metabolite link unquantified. The lag time was defaulted rather than estimated, and a second reader additionally reported a daily dose of 200 mg and a mean trough of 1.08 µg/ml that this record lacks. Extracted — amiodarone: CL 7.9 L/h, V 14 L/kg, Fab 54 fixed, kabs 1 1/h; N-desethylamiodarone: CL/F 10.3 L/h, V 14 L/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amiodarone, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -97,17 +97,26 @@ Hirai T et al., Population Pharmacokinetic Model of Ami…, Biological & pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.385 (5/13 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.571 (8/14 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['amiodarone', 'n-desethylamiodarone', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl dea /f m , l/h glucocorticoids on cl dea /f m]` | not captured | 10.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl dea /f m , l/h glucocorticoids on cl dea /f m]` | 10.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[daily dose mg]` | not captured | 200 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean trough amd ug/ml]` | not captured | 1.08 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd dea]` | 14.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | amiodarone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | amiodarone | unknown | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[cl dea /f m , l/h glucocorticoids on cl dea /f m]` | 10.3 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl dea /f m , l/h glucocorticoids on cl dea /f m]` | not captured | 10.3 | only_one_extracted |

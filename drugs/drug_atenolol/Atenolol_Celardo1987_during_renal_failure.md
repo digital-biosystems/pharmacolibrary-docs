@@ -4,7 +4,7 @@
 
 # atenolol — `Atenolol_Celardo1987_during_renal_failure`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.65). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.65). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The total clearance of 0.086 L/h and central volume of 0.36 L fall outside physiological windows for this drug. A reported unit could not be converted to standard units, so the parameter lacked a valid value for review. The second reader disagreed on several extracted values, including blood clearance and mean residence time. Extracted — atenolol: λ1 3.98, λ2 0.039, t1/2α 0.21 h, t1/2β 18.1 h, V 0.36 L, Vss 2.03 L, CL 0.086 L/h, AUC 39.4 mg·h/L, … (+7).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has atenolol, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc d: this record has 39.41, the second reading none; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -110,17 +110,34 @@ Celardo A et al., Pharmacokinetic and pharmacodynamic mod…, European journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (4/20 fields) | 16 |
 | `gpt-oss:120b` | not confirmed | 0.65 (13/20 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>23 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc d]` | 39.41 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl b].value` | 0.095 | 0.54 | mismatch |
+| `gpt-oss-120b` | `parameters[cl c].value` | 0.086 | 0.58 | mismatch |
+| `gpt-oss-120b` | `parameters[cl d].value` | 0.0058 | 0.0028 | mismatch |
+| `gpt-oss-120b` | `parameters[k10]` | 0.28 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` | 3.18 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k21]` | 0.58 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.704 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mdrt]` | 23.85 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2λ1]` | 0.21 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2λ2]` | 18.07 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2λd]` | 18.85 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | 0.36 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss b]` | 2.03 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λ1]` | 3.98 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λ2]` | 0.039 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc d].parameter_id` | Q88 | Q17 | mismatch |
 | `gpt-oss:120b` | `parameters[cl b]` | 0.095 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl d]` | 0.0058 | not captured | only_one_extracted |

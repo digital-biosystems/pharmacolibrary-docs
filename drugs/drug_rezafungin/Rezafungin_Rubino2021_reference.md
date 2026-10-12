@@ -4,7 +4,7 @@
 
 # rezafungin — `Rezafungin_Rubino2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.348). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Cmax and Cmin have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Cmax and Cmin), so that value has no SI equivalent. Extracted — rezafungin: CL 3.74 liter/h, V1 8.87 liter, V2 4.42 liter, Q 8.11 liter/h, V3 11.8 liter, V3/F 8.38 liter, Cmax 16.4 n = 68, Cmin 2.07 n = 68, … (+1).
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Rubino CM et al., Population Pharmacokinetics of Rezafung…, Antimicrobial agents and ch… (2021)
@@ -78,6 +86,41 @@ Rubino CM et al., Population Pharmacokinetics of Rezafung…, Antimicrobial agen
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.348 (8/23 fields) | 15 |
+
+<details><summary>15 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[auc0-168, mg h/literb]` | not captured | 709 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl].value` | 3.74 | 0.254 | mismatch |
+| `gpt-oss-120b` | `parameters[cld2].value` | 8.11 | 0.541 | mismatch |
+| `gpt-oss-120b` | `parameters[proportional change in females]` | not captured | -0.133 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_albumin_power].value` | 9.34 | -0.844 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q319_weight_power]` | not captured | 2.47 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v2_albumin_power].value` | 10.6 | -0.829 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_v2_weight_power].value` | 15.6 | 1.14 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_v3_weight_power]` | 18.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc].value` | 8.87 | 11.1 | mismatch |
+| `gpt-oss-120b` | `parameters[vp1].value` | 4.42 | 14.6 | mismatch |
+| `gpt-oss-120b` | `parameters[vp2].covariate_forms` | ['power'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[vp2].value` | 11.8 | 6.69 | mismatch |
+| `gpt-oss-120b` | `parameters[vp3]` | 8.38 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Remifentanil inhibits the spectral-edge frequency (SEF) via an effect compartment model with a ke0 of 1.09 per minute. The paper does not specify the underlying mechanism or other potency parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eleveld_2017`
 - **model family:** `effect_compartment`
 - **driver:** `cited_pk`

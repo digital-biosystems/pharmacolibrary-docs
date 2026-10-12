@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Choi2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75), gpt-5.6-luna (not confirmed, agreement 0.81). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.682), gpt-oss:120b (not confirmed, agreement 0.75), gpt-5.6-luna (not confirmed, agreement 0.81). The first reading is what the record holds.">cross-check: disputed 0/3</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record's clearance and volume parameters are defined as apparent values adjusted for bioavailability (F), yet the absolute bioavailability Fab (0.289) is carried as a separate parameter, so F would be applied twice — the apparent-parameter coherence violation that caused rejection. Secondary readers also disagreed on several absorption entries: the record lists tlag as 0.5 h while the extracted value is 0.34 h, and readers recorded an absorption lag of 0.250 h where the record has none, plus differing parameter identifications for Ka1 and D2. These disagreements are unresolved in the record. Extracted — metformin: CL/F 76.7 L/h, V1/F 180 L, Q/F 21.3 L/h, V2/F 109 L, t1/2ka 1.19, Fab 0.289, D1 4.49 h, kabs 0.41 h -1, … (+1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metformin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has metformin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -92,15 +92,16 @@ Choi S et al., Population pharmacokinetic analysis of…, Translational and clin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 3 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.682 (15/22 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.75 (15/20 fields) | 5 |
 | `gpt-5.6-luna` | not confirmed | 0.81 (17/21 fields) | 4 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -108,6 +109,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-5.6-luna` | `parameters[ka (h -1 ) absorption rate constant]` | 0.41 | not captured | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[ka1].parameter_id` | Q95 | Q49 | mismatch |
 | `gpt-5.6-luna` | `parameters[tlag]` | 0.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag2]` | not captured | 0.250 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[d2]` | not captured | 4.49 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka (h -1 ) absorption rate constant]` | 0.41 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka1].parameter_id` | Q95 | Q49 | mismatch |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.34 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | metformin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | metformin | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[alag2]` | not captured | 0.250 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[d2]` | not captured | 4.49 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka1].parameter_id` | Q95 | Q49 | mismatch |

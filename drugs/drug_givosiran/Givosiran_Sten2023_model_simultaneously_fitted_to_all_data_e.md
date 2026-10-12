@@ -5,7 +5,7 @@
 
 # givosiran — `Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.938). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.938), gpt-oss:120b (not confirmed, agreement 0.938). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The model builder defaulted the intercompartmental clearance k12 and the lag time Tlag instead of extracting explicit values. A second reader also identified a missing metabolic link to the metabolite as(n-1)3’ givosiran that was absent from the record's structure. Extracted — givosiran: kabs 0.157 1/h, V1/F 18.1 L, V2/F 1.34e+03 L, V3/F 100 L, CL/F 23.8 L/h, Q/F 3.02 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading givosiran → as(n-1)3’ givosiran (metabolism). That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading givosiran → as(n-1)3’ givosiran (metabolism). That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -76,17 +76,19 @@ Sten S et al., Plasma Pharmacokinetics of N-Acetylgala…, Clinical pharmacokine
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.938 (15/16 fields) | 1 |
 | `gpt-oss:120b` | not confirmed | 0.938 (15/16 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['givosiran', 'as(n-1)3’ givosiran', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `model.links` | [] | [['givosiran', 'as(n-1)3’ givosiran', 'metabolism']] | mismatch |
 
 </details>
@@ -151,7 +153,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e_modelica.zip" download>Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e_fmi.zip" download>Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab.zip" download>Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab_simbio.zip" download>Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab_simbio.zip" download>Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab_simbio.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e_sbml.zip" download>Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e_sbml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e_cellml.zip" download>Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e_cellml.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 </tbody></table>

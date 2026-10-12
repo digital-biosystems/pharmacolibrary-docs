@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Salbutamol concentrations (nM) drive intracellular cAMP elevation via a sigmoid Emax stimulation model, with an EC50 of 82 nM; the paper excerpts provide no further mechanism or additional parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wettey_2006`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

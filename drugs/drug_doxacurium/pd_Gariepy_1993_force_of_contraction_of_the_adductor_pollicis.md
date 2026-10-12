@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Plasma concentrations of doxacurium inhibit the force of contraction of the adductor pollicis via an effect compartment model. The model estimates an effect compartment concentration at 50% block of 44.7 ng/ml and an equilibrium rate constant (ke0) of 0.039 min^-1.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gariepy_1993`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

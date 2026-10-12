@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Oral or intraperitoneal lindane dose (mg/kg) drives the binary incidence of tonic seizures via a log-linear dose-response; the paper reports ED50 values of 84 mg/kg (oral) and 131 mg/kg (ip), but the excerpts do not state a mechanism beyond this dose-response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tusell_1987`
 - **model family:** `log_linear`
 - **driver:** `dose_only`

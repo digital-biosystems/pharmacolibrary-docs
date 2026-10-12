@@ -28,14 +28,13 @@ Etirinotecan pegol is an investigational topoisomerase inhibitor studied as a ca
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:58 | 0:52 | 0/2/0 | 0/0/0 | 0/0/0 | 48,974/6,341 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 17:58 | 0:52 | 0/1/0 | 0/0/0 | 0/0/0 | 48,974/6,341 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Sy_2018_parameter](drugs/drug_etirinotecan_pegol/EtirinotecanPegol_Sy2018_reference.md) | — | general linear (no model) | 3 | Sy SKB et al., Integrated population pharmacokinetics…, Cancer chemotherapy and pha… (2018) | [10.1007/s00280-018-3562-3](https://doi.org/10.1007/s00280-018-3562-3) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Sy_2018_population_parameter_estimate_se](drugs/drug_etirinotecan_pegol/EtirinotecanPegol_Sy2018_reference.md) | — | general linear (no model) | 3 | Sy SKB et al., Integrated population pharmacokinetics…, Cancer chemotherapy and pha… (2018) | [10.1007/s00280-018-3562-3](https://doi.org/10.1007/s00280-018-3562-3) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Sy_2018_reference](drugs/drug_etirinotecan_pegol/EtirinotecanPegol_Sy2018_reference.md) | — | general linear (no model) | 3 | Sy SKB et al., Integrated population pharmacokinetics…, Cancer chemotherapy and pha… (2018) | [10.1007/s00280-018-3562-3](https://doi.org/10.1007/s00280-018-3562-3) |
 
 ## ADME sites
 
@@ -56,7 +55,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 2  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 2
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

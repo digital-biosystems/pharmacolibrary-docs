@@ -20,7 +20,7 @@
 
 **Model:** No model was generated from this record.
 
-> Fluvoxamine inhibits [(3)H]DASB and [(3)H]S-citalopram binding to SERT, described by a sigmoid Emax model; the paper excerpts provide no mechanism detail and no potency or rate values (Imax, IC50, EC50, Emax, gamma).
+> Fluvoxamine inhibits [(3)H]DASB and [(3)H]S-citalopram binding to SERT, described by a sigmoid Emax model with a Hill coefficient of 1; no potency values (IC50/EC50/Emax) or mechanism details beyond this are stated in the available excerpts.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

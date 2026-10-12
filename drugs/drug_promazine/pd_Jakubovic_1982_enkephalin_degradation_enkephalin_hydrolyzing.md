@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;promazine&quot;,&quot;href&quot;:&quot;drugs/drug_promazine/&quot;},{&quot;label&quot;:&quot;Jakubovic_1982 \u00b7 PD enkephalin degradation (enkephalin-hydrolyzing activity)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Promazine_McGree2013_reference&quot;,&quot;label&quot;:&quot;McGree_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_promazine/Promazine_McGree2013_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Promazine_McGree2013_reference&quot;,&quot;label&quot;:&quot;McGree_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_promazine/Promazine_McGree2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # enkephalin degradation (enkephalin-hydrolyzing activity) — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,6 +17,10 @@
 **As extracted:** Promazine (concentrations from the PK model of Curry_1990) drives enkephalin degradation (enkephalin-hydrolyzing activity) (inhibition; the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> Promazine inhibits enkephalin degradation (enkephalin-hydrolyzing activity) in vitro, with an IC50 of 200–250 µM; the paper excerpts provide no further mechanism or model details.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Jakubovic_1982`
 - **model family:** `unknown`

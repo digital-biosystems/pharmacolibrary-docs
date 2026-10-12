@@ -23,7 +23,7 @@ It is not yet approved and remains in clinical development.
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Xu_2023_reference](drugs/drug_sabatolimab/Sabatolimab_Xu2023_reference.md) | — | 1-compartment (no model) | 0 | Xu S et al., Sabatolimab (MBG453) model-informed dru…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12962](https://doi.org/10.1002/psp4.12962) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Xu_2023_reference](drugs/drug_sabatolimab/Sabatolimab_Xu2023_reference.md) | — | 1-compartment (no model) | 0 | Xu S et al., Sabatolimab (MBG453) model-informed dru…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12962](https://doi.org/10.1002/psp4.12962) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

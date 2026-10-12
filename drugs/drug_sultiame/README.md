@@ -32,7 +32,7 @@ Sultiame is an anticonvulsant drug used to treat epilepsy. It is an approved med
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q329 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Dao_2020_reference](drugs/drug_sultiame/Sultiame_Dao2020_reference.md) | — | 2-compartment (no model) | 7 | Dao K et al., Sultiame pharmacokinetic profile in pla…, Pharmacology research & per… (2020) | [10.1002/prp2.558](https://doi.org/10.1002/prp2.558) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q329 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Dao_2020_reference](drugs/drug_sultiame/Sultiame_Dao2020_reference.md) | — | 2-compartment (no model) | 7 | Dao K et al., Sultiame pharmacokinetic profile in pla…, Pharmacology research & per… (2020) | [10.1002/prp2.558](https://doi.org/10.1002/prp2.558) |
 
 ## ADME sites
 

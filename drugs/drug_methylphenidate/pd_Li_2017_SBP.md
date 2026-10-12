@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models methylphenidate concentrations (PK from Giorgi) as stimulating systolic blood pressure with a linear model; the excerpts provide no mechanism details and no potency or rate parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2017`
 - **model family:** `linear`
 - **driver:** `cited_pk`

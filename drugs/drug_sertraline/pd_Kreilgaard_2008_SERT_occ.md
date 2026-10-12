@@ -20,6 +20,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Sertraline serum concentrations (ng mL−1) drive cortical SERT occupancy (%) in mice via an effect-compartment (ke0 = 1.0 h−1) sigmoid Emax model, with Emax 100%, EC50 7.1 ng mL−1, EC80 24 ng mL−1 and Hill coefficient 1.2.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kreilgaard_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

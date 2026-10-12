@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lindane concentrations (microM) stimulate an increase in intracellular calcium concentration ([Ca2+]i), with an EC50 of 125 microM; the paper excerpts provide no further mechanism or model details.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Silvestroni_1999`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

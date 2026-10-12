@@ -5,7 +5,7 @@
 
 # clopidogrel — `Clopidogrel_Lee2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.4), gpt-5.6-luna (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: partial 1/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4), gpt-oss:120b (partly confirmed, agreement 0.4), gpt-5.6-luna (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: partial 1/3</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record assigns kel 5.97 h^-1, V1 21.0 L and V2 38.8 L for SR26334 in a two-compartment structure, but the structure check found an unreachable compartment or unlinked metabolite, i.e. no path from the clopidogrel dose. Because the source is abstract-only, the reported summary statistics were used in place of a fitted model. A second reader read the same numbers as elimination and volume parameters (5.97, 21.0, 0.212) where this record left them null, and read 5.97, 21.0 and 38.8 as transfer rate and peripheral volumes where this record placed them, so the parameter assignments are disputed. Extracted — SR26334: kel 5.97 h(-1), V1 21 L, V2 38.8 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of k: this record has none, the second reading 0.126; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k: this record has none, the second reading 0.126; it also differs on 5 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -72,18 +72,25 @@ Lee J et al., Population pharmacokinetic/pharmacodyna…, Journal of clinical ph
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 3 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 | `gpt-oss:120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 | `gpt-5.6-luna` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[k(tr)]` | 5.97 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k]` | not captured | 0.126 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k]` | not captured | 5.97 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v(2)]` | 21.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v(3)]` | 38.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | not captured | 21.0 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k(tr)]` | 5.97 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k]` | not captured | 0.126 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k]` | not captured | 5.97 | only_one_extracted |

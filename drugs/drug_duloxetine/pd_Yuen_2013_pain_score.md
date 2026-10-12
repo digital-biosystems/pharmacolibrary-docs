@@ -18,7 +18,7 @@
 
 **Model:** No model was generated from this record.
 
-> Duloxetine concentrations (cited PK) act on the 24-h average weekly pain score (11-point categorical numerical rating scale) with an inhibitory effect direction; the excerpts provide no mechanism, model form, or potency/rate values.
+> The paper does not state the PD mechanism or any potency or rate values for duloxetine's effect on the 24-h average weekly pain score; only a cited PK source (Chen_2024) is indicated, with no model family, effect form, or parameters available in the excerpts.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

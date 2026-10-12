@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In rats given chronic i.p. desipramine or its metabolite desmethyldesipramine, cortical beta adrenergic receptor density (% downregulation) decreased dose-dependently; an Emax model was fitted with Emax 29% and EC50 467 ng/g for desmethyldesipramine brain/cortex concentration, and ED50 values of 5.10 mg/kg (desipramine) and 7.71 mg/kg (desmethyldesipramine); the paper does not state a mechanistic production/elimination (kin/kout) model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Argenti_1994`
 - **model family:** `emax`
 - **driver:** `not_resolved`

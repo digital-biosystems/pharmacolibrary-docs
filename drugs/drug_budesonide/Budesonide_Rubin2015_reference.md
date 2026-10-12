@@ -4,7 +4,7 @@
 
 # budesonide — `Budesonide_Rubin2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214), gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUC and Cmax), so that value has no SI equivalent. Extracted — budesonide: CL/F 464 L/h, V/F 2.7e+03 L, tlag 0.149 h, AUC 4.31 ng h/mL, Cmax 0.573 ng/mL.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has budesonide, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has budesonide, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -71,17 +71,29 @@ Rubin DT et al., Budesonide Foam Has a Favorable Safety…, Digestive diseases a
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.214 (3/14 fields) | 11 |
 | `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>23 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption lag time]` | 0.149 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption lag time]` | not captured | 0.149 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 4.31 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | not captured | 4.31 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max]` | 0.573 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max]` | not captured | 0.573 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance/f]` | 464 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance/f]` | not captured | 464 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution/f]` | 2700 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution/f]` | not captured | 2700 | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | budesonide | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[absorption lag time]` | 0.149 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption lag time]` | not captured | 0.149 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc]` | 4.31 | not captured | only_one_extracted |

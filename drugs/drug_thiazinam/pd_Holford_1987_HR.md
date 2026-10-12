@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Thiazinamium concentration acts on the measured change in heart rate via a sigmoid Emax model, described as having a stimulatory effect. The model parameters include a maximum increase of 76 beats.min-1 and an EC50 of 176 ng.ml-1.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Holford_1987`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

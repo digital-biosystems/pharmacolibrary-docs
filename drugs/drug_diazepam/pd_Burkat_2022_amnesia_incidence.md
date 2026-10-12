@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper links diazepam concentrations (nM) to amnesia incidence as a binary response, but no full text is available, so the PD model family, mechanism, and any potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Burkat_2022`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

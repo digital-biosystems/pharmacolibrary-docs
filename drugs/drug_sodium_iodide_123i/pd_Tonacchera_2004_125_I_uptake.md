@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Iodide (I⁻) molar concentration inhibits measured (¹²⁵I⁻) uptake; the paper excerpts do not state the mechanism or provide potency or rate values.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tonacchera_2004`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

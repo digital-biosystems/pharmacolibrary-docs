@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models camazepam's percent anticonvulsant effect (%) with a sigmoid Emax relationship driven by camazepam and its active metabolites (temazepam, oxazepam, hydroxy CZ) acting via receptor binding, but the excerpts provide no mechanism detail and no potency or rate parameter values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Morino_1986`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

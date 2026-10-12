@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism or model details: the record indicates (R)-salbutamol stimulates FEV1, but no excerpts are available, so no potency (IC50/EC50/Emax) or rate (kin/kout/ke0) values can be reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Boger_2019`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -4,7 +4,7 @@
 
 # metoprolol — `Metoprolol_Taguchi2004_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875), gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record for metoprolol in middle-aged and elderly Japanese patients lists only Q (3.86), CL/F (29.7), V/F (17.1) and a slope (1.79); the absorption rate constant was not reported in the source and was defaulted, which the adjudication judged an invented absorption input. The parameterization is apparent (F=1, Fm=1, no molar correction) with first-order depot input. A second reader also disagreed on the intercompartmental clearance labels, reading q 1 as 0.835 where this record has null and q 2 as null where this record has 3.86. Extracted — metoprolol: Q 3.86, CL/F 29.7, V/F 17.1, slope 1.79.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q 5: this record has 0.328, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of q 5: this record has 0.328, the second reading none. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -72,17 +72,19 @@ Taguchi M et al., Nonlinear mixed effects model analysis…, Biological & pharma
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 | `gpt-oss:120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[q 5]` | 0.328 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[q 5]` | 0.328 | not captured | only_one_extracted |
 
 </details>

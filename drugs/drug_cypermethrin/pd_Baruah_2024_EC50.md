@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Alpha-cypermethrin inhibits growth of Graesiella emersonii, with a reported 96-h EC50 of 29.40 mg L-1; the paper excerpts do not state the mechanism or further model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baruah_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

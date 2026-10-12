@@ -5,7 +5,7 @@
 
 # erenumab — `Erenumab_Vu2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8), gpt-oss:120b (partly confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record for erenumab (Vu_2017, healthy and migraine subjects) lists intercompartmental clearance Q = 3.34, peripheral volume V2 = 2.73, absorption rate constant kabs = 0.432, bioavailability Fab = 74, binding affinity KD = 18.8 and internalization rate kint = 0.0345 with unit fields containing only the parameter labels (Q, Vp, ka, F, Kss, kint); without a stated unit these values could not be expressed in SI terms, and a dimension mismatch on a structural parameter was flagged. A second reader additionally assigned a receptor degradation rate of 0.22 where this record has none, a disagreement left unresolved. Extracted — erenumab: CL 0.214, V1 4.27, Q 3.34 Q, V2 2.73 Vp, kabs 0.432 ka, Fab 74 F, KD 18.8 Kss, kint 0.0345 kint.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of receptor degradation rate: this record has none, the second reading 0.22. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of central cl: this record has 0.0902, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -106,17 +106,21 @@ Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.8 (12/15 fields) | 3 |
 | `gpt-oss:120b` | partly confirmed | 0.929 (13/14 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[central cl]` | 0.0902 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[nonspecific linear clearance (cl)a]` | not captured | 0.214 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[receptor degradation rate]` | not captured | 0.22 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[receptor degradation rate]` | not captured | 0.22 | only_one_extracted |
 
 </details>

@@ -5,7 +5,7 @@
 
 # doxycycline — `Doxycycline_Petkova2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.923). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769), gpt-oss:120b (partly confirmed, agreement 0.923). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Although the record lists kabs 0.093, V/F 4.73, kel 0.154 and tlag 0.80 for doxycycline, the review found no reported values for clearance, volume of distribution, absorption rate constant and absorption lag time, so generic placeholder values stood in for these parameters and the model was held back rather than published with invented numbers. The builder also assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent. An adjudicated check flagged the defaulted absorption rate constant as an invented absorption process, which was judged not acceptable. Extracted — doxycycline: kabs 0.093, V/F 4.73, kel 0.154, tlag 0.8.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of tvk 12: this record has none, the second reading 4.59. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has doxycycline, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -80,17 +80,21 @@ Petkova T et al., Population Pharmacokinetics of Doxycycl…, Pharmaceutics (202
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.769 (10/13 fields) | 3 |
 | `gpt-oss:120b` | partly confirmed | 0.923 (12/13 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[tvk 12]` | not captured | 4.59 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | doxycycline | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | doxycycline | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[tvk 12]` | not captured | 4.59 | only_one_extracted |
 
 </details>
@@ -145,8 +149,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_doxycycline/Doxycycline_Petkova2022_reference/Doxycycline_Petkova2022_reference_modelica.zip" download>Doxycycline_Petkova2022_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_doxycycline/Doxycycline_Petkova2022_reference/Doxycycline_Petkova2022_reference_modelica.zip" download>Doxycycline_Petkova2022_reference_modelica.zip</a> <span class="pk-size">(5.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_doxycycline/Doxycycline_Petkova2022_reference/Doxycycline_Petkova2022_reference_fmi.zip" download>Doxycycline_Petkova2022_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>

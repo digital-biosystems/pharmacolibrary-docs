@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Iannuzzi_2025_cell_viability](drugs/drug_inavolisib/pd_Iannuzzi_2025_cell_viability.md) | cell viability ← Inavolisib · inhibition effect | — | Iannuzzi CA et al., Caprine herpes virus-1 reduces cell via…, Frontiers in oncology (2025) | [10.3389/fonc.2025.1676296](https://doi.org/10.3389/fonc.2025.1676296) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Iannuzzi_2025_cell_viability](drugs/drug_inavolisib/pd_Iannuzzi_2025_cell_viability.md) | cell viability ← Inavolisib · inhibition effect | — | Iannuzzi CA et al., Caprine herpes virus-1 reduces cell via…, Frontiers in oncology (2025) | [10.3389/fonc.2025.1676296](https://doi.org/10.3389/fonc.2025.1676296) |
 
 ## ADME sites
 

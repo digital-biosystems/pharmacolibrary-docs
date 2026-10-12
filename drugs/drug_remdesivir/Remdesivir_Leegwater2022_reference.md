@@ -5,7 +5,7 @@
 
 # remdesivir — `Remdesivir_Leegwater2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286), gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — remdesivir: CL 152 L/h, CLR 20.7 L/h, V 834 L; GS-441524: CL 20.7 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has remdesivir, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has remdesivir, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -74,17 +74,28 @@ Leegwater E et al., Population Pharmacokinetics of Remdesiv…, Antimicrobial ag
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.286 (4/14 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>22 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[egfr_on_cl]` | 0.31 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[metabolic cl].covariate_forms` | ['linear_fractional'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[renal cl]` | 20.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal cl]` | not captured | 20.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_egfr]` | not captured | 0.31 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | 834 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | not captured | 834 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | remdesivir | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | remdesivir | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl]` | not captured | 20.7 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | 20.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[metabolic cl]` | 152 | not captured | only_one_extracted |
@@ -142,7 +153,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference/Remdesivir_Leegwater2022_reference_matlab.zip" download>Remdesivir_Leegwater2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference/Remdesivir_Leegwater2022_reference_matlab_simbio.zip" download>Remdesivir_Leegwater2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference/Remdesivir_Leegwater2022_reference_matlab_simbio.zip" download>Remdesivir_Leegwater2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference/Remdesivir_Leegwater2022_reference_sbml.zip" download>Remdesivir_Leegwater2022_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference/Remdesivir_Leegwater2022_reference_cellml.zip" download>Remdesivir_Leegwater2022_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

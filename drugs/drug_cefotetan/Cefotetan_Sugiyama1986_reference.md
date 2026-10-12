@@ -4,7 +4,7 @@
 
 # cefotetan — `Cefotetan_Sugiyama1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Only volume was extracted — no clearance; aUC∞ has no unit.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefotetan: t1/2β 2.38 hours, AUC∞ 1e+03 micrograms X hr/ml, V 164 ml/kg, tmax 1.05 hours, Cmax 131 micrograms/ml.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefotetan, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Sugiyama H et al., [Transfer of cefotetan into exudates fr…, The Japanese journal of ant… (1986)
@@ -56,6 +64,37 @@ Sugiyama H et al., [Transfer of cefotetan into exudates fr…, The Japanese jour
 - no GROBID TEI available — transcribed from abstract in Sugiyama_1986_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.154 (2/13 fields) | 11 |
+
+<details><summary>11 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc0----infinity]` | 1000.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax of ctt levels in exudates]` | 131.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax of ctt levels in exudates]` | not captured | 131.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2(beta) of ctt levels in serum]` | 2.38 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2(beta) of ctt levels in serum]` | not captured | 2.38 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax of ctt levels in exudates]` | 1.05 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax of ctt levels in exudates]` | not captured | 1.05 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 164.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | not captured | 164.5 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | cefotetan | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | cefotetan | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

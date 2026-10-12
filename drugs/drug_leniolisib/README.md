@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [De_2024_PI3K](drugs/drug_leniolisib/pd_De_2024_PI3K.md) | PI3Kδ ← leniolisib · inhibition effect | — | De SK, Leniolisib: a novel treatment for activ…, Frontiers in pharmacology (2024) | [10.3389/fphar.2024.1337436](https://doi.org/10.3389/fphar.2024.1337436) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [De_2024_PI3K](drugs/drug_leniolisib/pd_De_2024_PI3K.md) | PI3Kδ ← leniolisib · inhibition effect | — | De SK, Leniolisib: a novel treatment for activ…, Frontiers in pharmacology (2024) | [10.3389/fphar.2024.1337436](https://doi.org/10.3389/fphar.2024.1337436) |
 
 ## ADME sites
 

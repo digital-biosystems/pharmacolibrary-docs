@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;primaquine&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/&quot;},{&quot;label&quot;:&quot;Chairat_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Primaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Primaquine_Sridharan2019_reference&quot;,&quot;label&quot;:&quot;Sridharan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Sridharan2019_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Primaquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Primaquine_Sridharan2019_reference&quot;,&quot;label&quot;:&quot;Sridharan_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_primaquine/Primaquine_Sridharan2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # primaquine — `Primaquine_Chairat2018_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,20 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The primaquine model was held back because the hepatic intercompartmental clearances (90 L/h each way) and the absorption rate constant ka were left at library defaults rather than reported estimates from Chairat_2018.**
+
+The record covers primaquine with its metabolite carboxyprimaquine (presystemic formation, ΔOFV −260, −11.1 and −42.5 for racemic, (+)-S- and (−)-R-enantiomer models), with reported values such as CL/F 23.1 L/h, V3/F 160 L, MTT 0.833 h and 5 transit compartments. However, the hepatic distribution clearances between the compartments (90 L/h) and the absorption rate constant ka were not estimated in the paper; the model builder substituted library defaults, so the simulated profile depends on values unsupported by this source. The builder also assumed F=1 and Fm=1 with no molar correction (apparent parameterization), and one reported unit could not be converted to SI, so that parameter lacked an SI value. Extracted — primaquine: Fab 100, MTT 0.833 h, n_transit 5, CL/F 23.1 L/h, V3/F 160 L, V/F 22.3 L, tlag 0 h; carboxyprimaquine: fm 0.46, CL 0.377 L/h, V 10.5 L.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of antimicrobia… (2018)
   ·  DOI: [10.1093/jac/dky297](https://doi.org/10.1093/jac/dky297)
 
 ## Model component
-<dbs-pgx drug="primaquine" model-id="Primaquine_Chairat2018_reference" status="extracted" stale="false" population="healthy adult volunteers" measured-compound="primaquine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="primaquine" model-id="Primaquine_Chairat2018_reference" status="needs_review" stale="false" population="healthy adult volunteers" measured-compound="primaquine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent–metabolite model: parent with 1 compartment(s) plus a liver compartment (first pass); metabolite carboxyprimaquine: 1 compartment(s); formed in the liver; oral dose — template `PK_3M_3C`.  
 **Parameters:** 10 extracted.
@@ -30,6 +36,8 @@ Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of ant
 **Parameterization:** CL/F, V/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | F (%) | `Q40` · Fab | 100 | not captured | not captured | not captured | not captured | exact (1.0) | dky297-T1:row3:col5 | — | 13.8 (None% RSE) |
@@ -95,6 +103,22 @@ Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of ant
 | C9_phys_window_Q61 | pass | volume within physiological range | 10.5 L | not captured | not captured | ['dky297-T1:row10:col5', 'dky297-T1:row10:col6'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 22.3 L | not captured | not captured | ['dky297-T1:row15:col5', 'dky297-T1:row15:col6', 'dky297-T1:row18:col5', 'dky297-T1:row18:col6'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_metabolite_built[carboxyprimaquine] | not captured | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.0105, 'CL': 1.0472222222222222e-07, 'formation': 2.951666666666667e-06} | not captured | carboxyprimaquine = compartment M1 with its own numbers |
+| T3_metabolite_output[carboxyprimaquine] | not captured | pass | not captured | 0.0010730518256291829 | not captured | C_M1 (carboxyprimaquine) must rise above 0 when the parent is dosed |
+| T3_molar_mass[carboxyprimaquine] | not captured | pass | not captured | {'MW': 0.2593467, 'MW_m1': 0.27432} | not captured | formation is molecule-for-molecule |
+| T3_output_variable | not captured | pass | C_central (measured=primaquine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_shared_parameters | not captured | skipped | not captured | not captured | not captured | parent–metabolite template: every compound has its own slot |
+| T3_topology_template | not captured | pass | parent_metabolite_hepatic → PK_3M_3C* | PK_3M_3C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -103,6 +127,9 @@ Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of ant
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_primaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chairat_2018` / `Chairat_2018::reference`)
+- model: `../../../knowledgebase/drugs/drug_primaquine/models/modelica/Primaquine_Chairat2018_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_primaquine/models/modelica/Primaquine_Chairat2018_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_primaquine/models/modelica/Primaquine_Chairat2018_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

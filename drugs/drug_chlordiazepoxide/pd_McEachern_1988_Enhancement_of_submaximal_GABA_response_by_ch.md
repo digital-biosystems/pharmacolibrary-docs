@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Chlordiazepoxide enhances the submaximal GABA response with an Emax-type concentration–effect relationship; the paper reports an EC50 of 4.6 ± 0.5 µM, but the excerpts do not state the mechanism or other PD parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `McEachern_1988`
 - **model family:** `emax`
 - **driver:** `not_resolved`

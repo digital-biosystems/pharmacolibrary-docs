@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ponesimod&quot;,&quot;href&quot;:&quot;drugs/drug_ponesimod/&quot;},{&quot;label&quot;:&quot;Hoch_2015 \u00b7 PD QTcI&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ponesimod_Valenzuela2021_reference&quot;,&quot;label&quot;:&quot;Valenzuela_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ponesimod/Ponesimod_Valenzuela2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ponesimod_Valenzuela2021_reference&quot;,&quot;label&quot;:&quot;Valenzuela_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ponesimod/Ponesimod_Valenzuela2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # QTcI — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -17,6 +17,10 @@
 **As extracted:** Ponesimod (concentrations from the PK model of Valenzuela_2021) drives QTcI (in ms): direct linear effect.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> The paper does not provide the mechanism, but the record describes a linear additive stimulation model for ponesimod. The model specifies that plasma ponesimod concentration (ng/mL) increases the QTcI interval (ms) with a slope of 0.0053 ms per ng/mL.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Hoch_2015`
 - **model family:** `linear`

@@ -5,7 +5,7 @@
 
 # sotalol — `Sotalol_Salazar1997_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
+**Only volume was extracted — no clearance.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is sotalol's own; they describe d-sotalol. Extracted — d-sotalol: Vss 1.2 L/Kg.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has d-sotalol, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Salazar DE et al., A pharmacokinetic-pharmacodynamic model…, Journal of clinical pharmac… (1997)
@@ -60,17 +64,19 @@ Salazar DE et al., A pharmacokinetic-pharmacodynamic model…, Journal of clinic
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.833 (5/6 fields) | 1 |
 | `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[effect compartment clearance]` | not captured | 12.3 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[dose]` | not captured | 1.5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[effect compartment clearance]` | not captured | 12.3 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[steady-state volume of distribution]` | 1.2 | not captured | only_one_extracted |

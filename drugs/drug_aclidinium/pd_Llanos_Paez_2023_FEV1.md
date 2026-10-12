@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Aclidinium dose acts on morning trough FEV1 via a sigmoid Emax dose-response (stimulation, proportional effect form) in a model-based meta-analysis; for q.d. dosing ED50 was 55.8 µg (37.4–83.3) with Emax 91.0 mL (77.7–103.9) and Effref 71.2 mL (55.9–86.5), and for b.i.d. dosing ED50 was 94.9 µg (35.4–246.6) with Emax 121.4 mL (97.1–167.3) and Effref 98.2 mL (83.7–112.6). The excerpts do not state a mechanistic PD pathway (e.g. kin/kout or effect compartment) beyond this direct dose-response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Llanos-Paez_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

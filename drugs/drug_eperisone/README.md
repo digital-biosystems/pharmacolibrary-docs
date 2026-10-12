@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03B&quot;,&quot;href&quot;:&quot;atc/M03B.md&quot;},{&quot;label&quot;:&quot;eperisone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eperisone_Baek2021_reference&quot;,&quot;label&quot;:&quot;Baek_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eperisone/Eperisone_Baek2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eperisone_Kang2021_reference&quot;,&quot;label&quot;:&quot;Kang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eperisone/Eperisone_Kang2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eperisone_Kang2021_reference&quot;,&quot;label&quot;:&quot;Kang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eperisone/Eperisone_Kang2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eperisone_Baek2021_reference&quot;,&quot;label&quot;:&quot;Baek_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_eperisone/Eperisone_Baek2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # eperisone
 
@@ -27,14 +27,14 @@ Eperisone is a centrally acting muscle relaxant that has been used to treat musc
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 02:49 | 0:33 | 2/0/0 | 0/0/0 | 0/0/0 | 69,482/5,449 | einfracz / qwen3.8-27b | 2 | 0/1 | 2/0 | 0 |
+| 2026-10-07 02:49 | 0:33 | 1/0/1 | 0/0/0 | 0/0/0 | 69,482/5,449 | einfracz / qwen3.8-27b | 2 | 0/1 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Baek_2021_reference](drugs/drug_eperisone/Eperisone_Baek2021_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Baek IH et al., Pharmacokinetics of eperisone following…, Biopharmaceutics & drug dis… (2021) | [10.1002/bdd.2264](https://doi.org/10.1002/bdd.2264) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kang_2021_reference](drugs/drug_eperisone/Eperisone_Kang2021_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kang WH et al., Population Pharmacokinetic Method to Pr…, Pharmaceuticals (Basel, Swi… (2021) | [10.3390/ph14020114](https://doi.org/10.3390/ph14020114) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: partial</span> | [Kang_2021_reference](drugs/drug_eperisone/Eperisone_Kang2021_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kang WH et al., Population Pharmacokinetic Method to Pr…, Pharmaceuticals (Basel, Swi… (2021) | [10.3390/ph14020114](https://doi.org/10.3390/ph14020114) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): k12, k21</sub><br><sub>route_to: `scholar`</sub> | [Baek_2021_reference](drugs/drug_eperisone/Eperisone_Baek2021_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Baek IH et al., Pharmacokinetics of eperisone following…, Biopharmaceutics & drug dis… (2021) | [10.1002/bdd.2264](https://doi.org/10.1002/bdd.2264) |
 
 ## ADME sites
 
@@ -55,7 +55,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

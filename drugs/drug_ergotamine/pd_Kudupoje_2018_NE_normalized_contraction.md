@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Ergotamine tartrate concentrations directly stimulate norepinephrine-normalized percent contractile response in lateral saphenous veins via a sigmoidal Emax model, with a minimum response of 5.7%, a maximum response of 88.5%, and a log EC50 of 6.66 (−log [ETA]).
+> Ergotamine tartrate (ETA) acts as a direct agonist on saphenous vein smooth muscle, inducing a concentration-dependent contractile response described by a four-parameter sigmoidal Emax model without an effect compartment or time-dependent kinetics. The model parameters were a minimum response of 5.7%, a maximum response of 88.5%, and a log EC50 of 6.66 M.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Kudupoje_2018`
 - **model family:** `sigmoid_emax`

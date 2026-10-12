@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided record does not specify the pharmacodynamic mechanism or quantitative parameters (e.g., IC50, ke0, Imax) for mivacurium's inhibition of twitch depression, and the full text is unavailable to verify these details.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Markakis_1996`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

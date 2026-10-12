@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes a linear additive stimulation of QTca by levocetirizine concentrations sourced from the cited PK study Hussein_2005. The paper does not provide specific mechanism details or numerical potency and rate parameters (such as Emax or EC50) in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Komatsu_2019`
 - **model family:** `linear`
 - **driver:** `cited_pk`

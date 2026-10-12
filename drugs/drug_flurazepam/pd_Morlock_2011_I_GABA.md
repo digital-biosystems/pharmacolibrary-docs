@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Flurazepam potentiates GABA-induced chloride current I(GABA), described by an Emax-type model with a stimulatory (positive) effect; the paper excerpts provide no concentration data, mechanism, or parameter values (Emax, EC50, etc.).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Morlock_2011`
 - **model family:** `emax`
 - **driver:** `not_resolved`

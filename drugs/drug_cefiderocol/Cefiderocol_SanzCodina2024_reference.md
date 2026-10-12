@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefiderocol&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/&quot;},{&quot;label&quot;:&quot;Sanz-Codina_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefiderocol_Bilal2021_14c_cf_studya&quot;,&quot;label&quot;:&quot;Bilal_2021_14c_cf_studya&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Bilal2021_14c_cf_studya.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_Bilal2021_final&quot;,&quot;label&quot;:&quot;Bilal_2021_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Bilal2021_final.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_Bilal2021_final_final_model_with_crcla&quot;,&quot;label&quot;:&quot;Bilal_2021_final_final_model_with_crcla&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Bilal2021_final_final_model_with_crcla.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_Koenig2025_reference&quot;,&quot;label&quot;:&quot;Koenig_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Koenig2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_SanzCodina2024_reference&quot;,&quot;label&quot;:&quot;Sanz-Codina_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_SanzCodina2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cefiderocol_Zahr2022_reference&quot;,&quot;label&quot;:&quot;Zahr_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Zahr2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefiderocol_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_Bilal2021_14c_cf_studya&quot;,&quot;label&quot;:&quot;Bilal_2021_14c_cf_studya&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Bilal2021_14c_cf_studya.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_Bilal2021_final&quot;,&quot;label&quot;:&quot;Bilal_2021_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Bilal2021_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_Bilal2021_final_final_model_with_crcla&quot;,&quot;label&quot;:&quot;Bilal_2021_final_final_model_with_crcla&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Bilal2021_final_final_model_with_crcla.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_Koenig2025_reference&quot;,&quot;label&quot;:&quot;Koenig_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Koenig2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cefiderocol_SanzCodina2024_reference&quot;,&quot;label&quot;:&quot;Sanz-Codina_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_SanzCodina2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cefiderocol_Zahr2022_reference&quot;,&quot;label&quot;:&quot;Zahr_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefiderocol/Cefiderocol_Zahr2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cefiderocol — `Cefiderocol_SanzCodina2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,22 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0399, model 0.0247).**
+
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — cefiderocol: CL 11 L/h, V1 11.3 L, fu 0.639, Q2 25.3 L/h, V2 15.1 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefiderocol, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Sanz-Codina M et al., Target-site cefiderocol pharmacokinetic…, The Journal of antimicrobia… (2024)
   ·  DOI: [10.1093/jac/dkae359](https://doi.org/10.1093/jac/dkae359)
 
 ## Model component
-<dbs-pgx drug="cefiderocol" model-id="Cefiderocol_SanzCodina2024_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="cefiderocol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="cefiderocol" model-id="Cefiderocol_SanzCodina2024_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="cefiderocol" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted.
@@ -30,6 +38,8 @@ Sanz-Codina M et al., Target-site cefiderocol pharmacokinetic…, The Journal of
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL (L/h) | `Q22` · CL | 11.0 | L/h | 3.055555555555555e-06 | [l] / [h] | 6.7 | exact (1.0) | dkae359-T2:row2:col2 | — | not captured |
@@ -62,6 +72,37 @@ Sanz-Codina M et al., Target-site cefiderocol pharmacokinetic…, The Journal of
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.154 (2/13 fields) | 11 |
+
+<details><summary>11 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl]` | 11.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 11.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fu]` | 0.639 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fu]` | not captured | 0.639 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q12]` | 25.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 11.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | not captured | 11.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | 15.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | not captured | 15.1 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | cefiderocol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | cefiderocol | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -79,6 +120,20 @@ Sanz-Codina M et al., Target-site cefiderocol pharmacokinetic…, The Journal of
 | C9_phys_window_Q63 | pass | volume within physiological range | 11.3 L | not captured | not captured | ['dkae359-T2:row3:col2'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 15.1 L | not captured | not captured | ['dkae359-T2:row6:col2'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=cefiderocol) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_cmax | reference | fail | 0.0399 | 0.02474336061389529 | 0.6201 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0409 | 0.02474336061389529 | 0.605 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.041600000000000005 | 0.02474336061389529 | 0.5948 | mg/L→SI vs simulated kg/m3 |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -87,6 +142,9 @@ Sanz-Codina M et al., Target-site cefiderocol pharmacokinetic…, The Journal of
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_cefiderocol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sanz-Codina_2024` / `Sanz-Codina_2024::reference`)
+- model: `../../../knowledgebase/drugs/drug_cefiderocol/models/modelica/Cefiderocol_SanzCodina2024_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_cefiderocol/models/modelica/Cefiderocol_SanzCodina2024_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_cefiderocol/models/modelica/Cefiderocol_SanzCodina2024_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -98,7 +156,7 @@ Sanz-Codina M et al., Target-site cefiderocol pharmacokinetic…, The Journal of
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cefiderocol/Cefiderocol_SanzCodina2024_reference/Cefiderocol_SanzCodina2024_reference_modelica.zip" download>Cefiderocol_SanzCodina2024_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cefiderocol/Cefiderocol_SanzCodina2024_reference/Cefiderocol_SanzCodina2024_reference_fmi.zip" download>Cefiderocol_SanzCodina2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cefiderocol/Cefiderocol_SanzCodina2024_reference/Cefiderocol_SanzCodina2024_reference_matlab.zip" download>Cefiderocol_SanzCodina2024_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cefiderocol/Cefiderocol_SanzCodina2024_reference/Cefiderocol_SanzCodina2024_reference_matlab_simbio.zip" download>Cefiderocol_SanzCodina2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cefiderocol/Cefiderocol_SanzCodina2024_reference/Cefiderocol_SanzCodina2024_reference_matlab_simbio.zip" download>Cefiderocol_SanzCodina2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cefiderocol/Cefiderocol_SanzCodina2024_reference/Cefiderocol_SanzCodina2024_reference_sbml.zip" download>Cefiderocol_SanzCodina2024_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_cefiderocol/Cefiderocol_SanzCodina2024_reference/Cefiderocol_SanzCodina2024_reference_cellml.zip" download>Cefiderocol_SanzCodina2024_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

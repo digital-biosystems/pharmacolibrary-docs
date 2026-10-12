@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Ailabouni2026_850_mg`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462), gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Cmax/dose), so that value has no SI equivalent. Extracted — metformin: CL/F 96.6 L/h/70 kg, V/F 545 L, kabs 0.942 1/h, AUC/dose 6.29e+03, Cmax/dose 828 μg/L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metformin, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has metformin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -108,17 +108,25 @@ Ailabouni AS et al., Interindividual variability in metformi…, Pediatric resea
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.462 (6/13 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.714 (10/14 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc (0-12 h)]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc normalized to 500 mg dose]` | 6291.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max normalized to 500 mg dose]` | 828.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[egfr_on_cl_f].value` | 0.761 | 0.750 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | metformin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | metformin | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[egfr_on_cl_f]` | 0.761 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_cl_f_egfr]` | not captured | 0.761 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | metformin | unknown | mismatch |

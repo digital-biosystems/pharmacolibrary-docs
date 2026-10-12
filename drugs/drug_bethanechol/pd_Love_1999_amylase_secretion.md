@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Bethanechol (microM) stimulates amylase secretion (% above basal) with a sigmoid Emax model; EC50 = 6.2 microM and maximal stimulation = 177% above basal. The excerpts do not state a mechanism beyond direct stimulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Love_1999`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

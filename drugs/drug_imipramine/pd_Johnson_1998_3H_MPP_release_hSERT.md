@@ -19,7 +19,7 @@
 
 **Model:** No model was generated from this record.
 
-> Imipramine concentrations act on [3H]MPP+ release from C6-hSERT cells (expressed as % of loaded [3H]MPP+), modelled with an Emax-type stimulation model; the paper excerpts provide no mechanism, potency (EC50/Emax) or rate values.
+> The paper models imipramine's effect on [3H]MPP+ release from C6-hSERT cells with an Emax-type model, with imipramine concentrations acting as the driver; the excerpts provide no mechanism, no potency (EC50/Emax) values, and no rate parameters.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;lanadelumab&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/&quot;},{&quot;label&quot;:&quot;Wang_2020 \u00b7 PD cHMWK&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cHMWK — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.78). The first reading is what the record holds.">cross-check: disputed</span>
+# cHMWK — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> PopPK-predicted lanadelumab concentrations (µg/mL) were linked to cHMWK levels (%) in HAE patients using an indirect-response Imax model in which lanadelumab, by inhibiting plasma kallikrein, suppresses the formation rate of cHMWK (Kin) by a maximum of 53.7% (Imax), with an IC50 of 5.71 µg/mL; typical Kin and Kout were 11.8%/hour and 0.367 hour⁻¹, respectively.
+> Lanadelumab concentrations inhibit the formation (kin) of cHMWK via an indirect-response Imax model, with a maximum inhibition (Imax) of 53.7% and an IC50 of 5.71 µg/mL. The model parameters include a cHMWK formation rate (kin) of 11.8 %/hour and a degradation rate (kout) of 0.367 hour–1.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Wang_2020`
 - **model family:** `indirect_response_i`
@@ -45,32 +45,14 @@ Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translat
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.78 (46/59 fields) | 13 |
+| `einfracz:gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
 
-<details><summary>13 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `effect_form` | unknown | proportional | mismatch |
-| `gpt-oss:120b` | `parameters[Q34]` | 27 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q34]` | 29.2 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q34]` | 28 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q34]` | 8.31 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q34]` | 29 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q34]` | 15.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q71]` | not captured | 27 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q71]` | not captured | 29.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q71]` | not captured | 28 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q71]` | not captured | 8.31 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q71]` | not captured | 29 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q71]` | not captured | 15.8 | only_one_extracted |
-
-</details>
+_Every reader agrees on every compared field of this PD record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>

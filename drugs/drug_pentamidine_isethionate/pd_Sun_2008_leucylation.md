@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentamidine (0–1.5 mM) dose-dependently inhibits LeuRS-catalyzed leucylation (charging) of tRNALeu, fitted to a sigmoidal Emax (variable slope) model with EC50 681.5 μM (Hill coefficient 8.2) and EC50 759.8 μM (Hill coefficient 11.7); the paper attributes the inhibition to non-specific pentamidine binding that disrupts tRNA structure, converting tRNALeu into a conformation not recognized by LeuRS.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sun_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

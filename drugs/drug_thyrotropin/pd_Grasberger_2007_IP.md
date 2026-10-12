@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models TSH concentration stimulating inositol phosphate (IP) accumulation with a sigmoid Emax model; no mechanism, potency, or rate parameters are available from the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Grasberger_2007`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

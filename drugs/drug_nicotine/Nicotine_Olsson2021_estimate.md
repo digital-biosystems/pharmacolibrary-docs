@@ -4,7 +4,7 @@
 
 # nicotine — `Nicotine_Olsson2021_estimate`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.682). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The nicotine two-compartment model record was rejected because a structural parameter failed a dimensional check: the equation variable 'pow' (12.3) has no unit, and the lag-time parameter is reported as 'Start (h)' (5.29 h), a label inconsistent with its meaning as an absorption lag time.**
+
+The record for nicotine in healthy smokers carries structurally consistent disposition parameters (CL 67.4 L/h, V1 117 L, Q 38.6 L/h, V2 130 L, Q3 216 L/h, V3 53.4 L), but the dimensional check failed on a structural parameter. The equation variable 'pow' with value 12.3 is dimensionless and unlabelled, and the absorption lag time is reported under the label 'Start (h)' with value 5.29 h, which does not match its pharmacokinetic meaning. Additionally, one reported unit could not be expressed in SI units, so that parameter was recorded without an SI value; this reflects a limitation of the extraction process rather than an error in the published values. Extracted — nicotine: CL 67.4 L/h, V1 117 L, Q 38.6 L/h, V2 130 L, Q3 216 L/h, V3 53.4 L, D1 3.82 mg, kabs 1.55 h−1, … (+5).
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clch24: this record has none, the second reading 11.6; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Olsson Gisleskog PO et al., Nicotine Population Pharmacokinetics in…, Clinical pharmacokinetics (2021)
@@ -133,6 +141,33 @@ Olsson Gisleskog PO et al., Nicotine Population Pharmacokinetics in…, Clinical
 - LLM selected parameter table(s) 3, 4, 5, 6
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.682 (15/22 fields) | 7 |
+
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clch24]` | not captured | 11.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f study 92nnbt005].parameter_id` | Q87 | Q40 | mismatch |
+| `gpt-oss-120b` | `parameters[f study 93nnbt007]` | not captured | 22.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | 75.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[krel]` | 0.146 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pow]` | 12.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pre-washout nicotine dose]` | 3.82 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -4,7 +4,7 @@
 
 # glutamine — `Glutamine_Sadaf2024v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — glutamine: kabs 0.91 1/h, CL 78.5 L/h/70 kg, V 0.0636 L/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has l-glutamine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has glutamine, the second reading l-glutamine; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -81,17 +81,27 @@ Sadaf A et al., A Population Pharmacokinetic Analysis o…, Clinical pharmacokin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 | `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[ka]` | 0.91 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.78 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | 0.0636 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ɵ1]` | not captured | 67.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ɵ2]` | -0.96 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ3]` | 52.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ4]` | not captured | 0.09 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | glutamine | l-glutamine | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | glutamine | l-glutamine | mismatch |
 | `gpt-oss:120b` | `parameters[ka]` | 0.91 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka]` | not captured | 0.91 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ɵ1]` | not captured | 78.5 | only_one_extracted |

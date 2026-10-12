@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Nalorphine dose (nmol/g) acts on analgesia in the acetic acid test via a log-linear dose-response model; the paper reports an ED50 of 320.9 nmol/g, and no mechanism is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stevens_1994`
 - **model family:** `log_linear`
 - **driver:** `dose_only`

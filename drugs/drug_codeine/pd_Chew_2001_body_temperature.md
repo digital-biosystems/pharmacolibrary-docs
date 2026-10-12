@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model describes the inhibition of body temperature by morphine concentrations, which drive a sigmoid Emax effect. The paper reports an EC50 of 556 +/- 121 ng/ml and a Hill coefficient (n) of 2.9 +/- 1.5, but does not specify the underlying mechanism or rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chew_2001`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

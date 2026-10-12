@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methacholine concentration–response curves (log M) for contraction of human detrusor strips, expressed as % of KCl-induced contraction, were fitted with a sigmoid Emax model; in controls Emax was 177% of KCl-induced contraction with EC50 −6.1 log M, and with 10 µM vibegron Emax was 150% with EC50 −5.7 log M, which the authors interpreted as no biologically relevant attenuation of cholinergic contractions by vibegron.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

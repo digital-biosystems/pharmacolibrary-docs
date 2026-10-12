@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Salbutamol concentrations stimulate rat atrial rate via an Emax model, as recorded; the paper excerpts provide no mechanism details and no parameter values (Imax, EC50, gamma) are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wilson_1984`
 - **model family:** `emax`
 - **driver:** `cited_pk`

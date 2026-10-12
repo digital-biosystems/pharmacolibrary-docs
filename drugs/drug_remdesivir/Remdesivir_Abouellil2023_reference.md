@@ -1,11 +1,11 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Abouellil_2023 \u00b7 remdesivir&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Abouellil_2023 \u00b7 reference&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Humeniuk2021_reference&quot;,&quot;label&quot;:&quot;Humeniuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Abouellil2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,22 +17,18 @@
 
 ### Reviewer guidance
 
-**The remdesivir model was held back because its simulated terminal half-life is 4.3 h versus the paper's 29.4 h, and the central and peripheral volumes V1 (4.89 L) and V2 (46.5 L) were not carried into the record.**
+**The remdesivir two-compartment model was not simulated because the central and peripheral volumes of distribution, V1 (4.89 L) and V2 (46.5 L), were neither emitted nor defaulted in the record.**
 
-Simulated as the paper dosed it, the model's terminal half-life is 4.3 h against the reported 29.4 h (ratio 0.1466), so the disposition of remdesivir is not reproduced. The parameter-coverage check found only 2 of 4 parameters emitted or defaulted, with V1 (central volume of distribution, 4.89 L) and V2 (peripheral volume, 46.5 L) neither emitted nor defaulted. The remaining parameters, inter-compartmental clearance Q (13.2 L/h) and total clearance CL (18.1 L/h), were covered. Extracted — remdesivir: V1 4.89 L, V2 46.5 L, Q 13.2 L/h, CL 18.1 L/h.
-
-Independently confirmed by `gpt-oss:120b`.
+The record for remdesivir in healthy adults (Abouellil_2023) lists V1 = 4.89 L, V2 = 46.5 L, Q = 13.2 L/h and CL = 18.1 L/h, with metabolism to GS-704277 and GS-441524. The parameter-coverage check expected 4 parameters to be emitted or defaulted but obtained only 2, with V1 and V2 missing, so the model was held back and not simulated. The model itself was built; the failure is limited to these two volume parameters not being carried through. Extracted — remdesivir: V1 4.89 L, V2 46.5 L, Q 13.2 L/h, CL 18.1 L/h.
 
 <sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:31:27.529272+00:00) predates the upstream re-run (2026-10-07 16:33:20.492603+00:00). Current validate status: `extracted`.
 
 ## Citation
 Abouellil A et al., A population pharmacokinetic model of r…, Naunyn-Schmiedeberg's archi… (2023)
   ·  DOI: [10.1007/s00210-022-02292-6](https://doi.org/10.1007/s00210-022-02292-6)
 
 ## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Abouellil2023_reference" status="extracted" stale="true" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="remdesivir" model-id="Remdesivir_Abouellil2023_reference" status="not_simulated" stale="false" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 4 extracted.
@@ -40,6 +36,8 @@ Abouellil A et al., A population pharmacokinetic model of r…, Naunyn-Schmiedeb
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_simulated`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Central compartment volume of distribution (L) | `Q63` · V1 | 4.89 | L | 0.004889999999999999 | [l] | not captured | llm_confirmed (0.6) | Tab2:row1:col1 | — | not captured |
@@ -61,21 +59,6 @@ Abouellil A et al., A population pharmacokinetic model of r…, Naunyn-Schmiedeb
 - row roles (LLM): model_class=compartmental; 6/6 row label(s) assigned, 15 linked by role; re-tagged remdesivir→parent ×4, parent→GS-704277 ×3
 
 ## Validation
-
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
-
-_Every reader agrees on every compared field of this record._
-
-<details class="legend">
-<summary>Cross-check legend</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
-</details>
-
 
 **Scholar closed-form checks:**
 
@@ -100,17 +83,14 @@ _Every reader agrees on every compared field of this record._
 |---|---|---|---|---|---|---|
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=remdesivir) | C_central | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 2 covered | not captured | neither emitted nor in defaulted[]: ['V1', 'V2'] |
 | T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_cmax | reference | skipped | 13.7 | 0.012616288171401013 | not captured | unresolved concentration unit (exp 'µM', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 807 | 0.012616288171401013 | not captured | unresolved concentration unit (exp 'nM', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 726 | 0.012616288171401013 | not captured | unresolved concentration unit (exp 'nM', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 645.5 | 0.012616288171401013 | not captured | unresolved concentration unit (exp 'nM', sim 'kg/m3') |
-| T1_t_half_terminal | reference | fail | 29.36 | 4.303332272169723 | 0.1466 | h→SI vs simulated h |
-| T1_tmax | reference | skipped | not captured | 0.183333333351724 | not captured | non-numeric value |
-| T1_tmax | reference | skipped | 1 | 0.183333333351724 | not captured | unresolved time unit 'h after the end of the infusion' |
+| T1_cmax | reference | skipped | 13.7 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 807 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 726 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 645.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 29.36 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -119,10 +99,9 @@ _Every reader agrees on every compared field of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_remdesivir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Abouellil_2023` / `Abouellil_2023::remdesivir`)
-- model: `../../../knowledgebase/drugs/drug_remdesivir/models/modelica/Remdesivir_Abouellil2023_remdesivir.mo`
-- deviation: `../../../knowledgebase/drugs/drug_remdesivir/models/modelica/Remdesivir_Abouellil2023_remdesivir.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_remdesivir/models/modelica/Remdesivir_Abouellil2023_remdesivir.json`
+- scholar stages: `../../../knowledgebase/drugs/drug_remdesivir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Abouellil_2023` / `Abouellil_2023::reference`)
+- model: `../../../knowledgebase/drugs/drug_remdesivir/models/modelica/Remdesivir_Abouellil2023_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_remdesivir/models/modelica/Remdesivir_Abouellil2023_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -134,7 +113,7 @@ _Every reader agrees on every compared field of this record._
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_remdesivir/Remdesivir_Abouellil2023_reference/Remdesivir_Abouellil2023_reference_modelica.zip" download>Remdesivir_Abouellil2023_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Abouellil2023_reference/Remdesivir_Abouellil2023_reference_matlab.zip" download>Remdesivir_Abouellil2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Abouellil2023_reference/Remdesivir_Abouellil2023_reference_matlab_simbio.zip" download>Remdesivir_Abouellil2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Abouellil2023_reference/Remdesivir_Abouellil2023_reference_matlab_simbio.zip" download>Remdesivir_Abouellil2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Abouellil2023_reference/Remdesivir_Abouellil2023_reference_sbml.zip" download>Remdesivir_Abouellil2023_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Abouellil2023_reference/Remdesivir_Abouellil2023_reference_cellml.zip" download>Remdesivir_Abouellil2023_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

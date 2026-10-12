@@ -5,7 +5,7 @@
 
 # didanosine — `Didanosine_Pai1992_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,6 +20,8 @@
 **Every check that could be run on this record passed.**
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has didanosine, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -71,6 +73,39 @@ Pai SM et al., Population pharmacokinetic analysis of…, Journal of clinical ph
 - no GROBID TEI available — transcribed from abstract in Pai_1992_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.188 (3/16 fields) | 13 |
+
+<details><summary>13 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[apparent total body clearance]` | 12.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailable fraction, f]` | 0.34 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailable fraction, f]` | not captured | 0.34 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central compartment volume, vc]` | 0.18 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central compartment volume, vc]` | not captured | 0.18 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[first-order absorption rate constant, ka]` | 1.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[first-order absorption rate constant, ka]` | not captured | 1.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state distribution volume, vdss]` | 0.84 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state distribution volume, vdss]` | not captured | 0.84 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance]` | 0.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance]` | not captured | 0.70 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | didanosine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | didanosine | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

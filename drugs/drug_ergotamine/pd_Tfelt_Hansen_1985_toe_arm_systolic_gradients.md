@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model employs an effect compartment structure where ergotamine plasma concentrations drive the inhibition of toe-arm systolic gradients. Key parameters include a rate constant for equilibration of the drug between plasma and effector site of 0.07 hr-1 and a steady-state plasma concentration resulting in 50% of maximal effect of 0.24 ng/ml.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tfelt-Hansen_1985`
 - **model family:** `effect_compartment`
 - **driver:** `pk_record`

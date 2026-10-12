@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> In TB patients, the first-phase (0–48 h) decrease in sputum TTP (log10 h) was driven by BTZ-043total (BTZ-043 + M2) AUC0–24 via an Emax (bilinear) exposure–response model, with baseline TTP 1.99 log10 h, EC50 16 900 ng/mL*h, first slope 0.00386 −log10h/h, second slope 0.000440 −log10h/h, and node 48 h; no exposure–response effect was seen after Day 2.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koele_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Salicylate concentrations inhibit the first-order elimination of blood glucose (kout_glu = 1.34 1/week) via a proportional effect, while glucose production is described by a zero-order rate constant (kin_glu = 223 mg/dl/week). The paper does not provide specific potency parameters (e.g., IC50, Emax) or effect compartment rate constants (ke0) for the salicylate effect.
+> Blood glucose is described by an indirect response model where zero-order production and first-order elimination (utilization) are proportionally inhibited by two age-related disease factors representing insulin resistance and β-cell dysfunction, which are mitigated by salicylate concentrations. The salicylate effect is characterized by an efficacy index of 0.0116 ml/g/week, an improvement factor of 0.136, and a transduction rate of 1.49 1/week.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Cao_2011`
 - **model family:** `disease_progression`

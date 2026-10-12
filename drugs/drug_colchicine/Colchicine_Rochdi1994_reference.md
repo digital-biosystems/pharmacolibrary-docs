@@ -4,7 +4,7 @@
 
 # colchicine — `Colchicine_Rochdi1994_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Colchicine's terminal half-life of 1.2 hours is dimensionally inconsistent with the fast phase half-life of 9.2 minutes.**
+
+The record lists a macro-rate constant of 9.2 minutes for the fast disposition phase and a terminal half-life of 1.2 hours. Although abstract-only summaries provide these values directly, the dimensional mismatch between the fast and slow phases flags a structural error. Consequently, the record was rejected due to this inconsistency in the reported disposition parameters. Extracted — colchicine: λ1 9.2 min, t1/2β 1.2 h, V 6.7 l.kg-1, Vss 4.2 l.kg-1, CL 10.5 l.h-1, Cmax 5.5 ng.ml-1, Fab 44 %.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has colchicine, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Rochdi M et al., Pharmacokinetics and absolute bioavaila…, European journal of clinica… (1994)
@@ -63,6 +71,42 @@ Rochdi M et al., Pharmacokinetics and absolute bioavaila…, European journal of
 - no GROBID TEI available — transcribed from abstract in Rochdi_1994_metadata.yaml (13 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.158 (3/19 fields) | 16 |
+
+<details><summary>16 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[first distribution half-life]` | not captured | 9.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximal plasma concentration]` | 5.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximal plasma concentration]` | not captured | 5.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean absolute bioavailability of the tablet]` | 44 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean absolute bioavailability]` | not captured | 44 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[second distribution half-life]` | not captured | 1.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 lambda 1]` | 9.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 lambda 2]` | 1.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` | 10.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` | not captured | 10.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 6.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss]` | 4.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss]` | not captured | 4.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vz]` | 6.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | colchicine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | colchicine | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

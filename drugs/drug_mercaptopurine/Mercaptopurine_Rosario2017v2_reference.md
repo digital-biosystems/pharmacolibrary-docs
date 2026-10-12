@@ -4,7 +4,7 @@
 
 # mercaptopurine — `Mercaptopurine_Rosario2017v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record describes a two-compartment structure for mercaptopurine with total clearance 0.159 L/day, central volume of distribution 3.19 L and peripheral volume 1.65 L. The failed check found an unreachable or orphan compartment: the peripheral compartment has no path from the administered dose, so the reported structure is inconsistent with the parameterization. No other parameter values were disputed. Extracted — mercaptopurine: CL 0.159 L/day, V1 3.19 L, V2 1.65 L.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of V2: this record has 4.84, the second reading 1.65. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -60,14 +60,21 @@ Rosario M et al., A Review of the Clinical Pharmacokineti…, Clinical pharmacok
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.875 (7/8 fields) | 1 |
 | `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q64]` | 4.84 | 1.65 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

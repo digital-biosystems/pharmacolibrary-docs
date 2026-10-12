@@ -43,7 +43,7 @@ Epoprostenol (prostacyclin) is used to treat pulmonary hypertension, including p
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.9). The first reading is what the record holds.">cross-check: disputed</span> | [Nicolas_2012_CIn](drugs/drug_epoprostenol/pd_Nicolas_2012_CIn.md) | cardiac index ← 6-keto-prostacyclin F1a · direct linear effect | model (no simulator) | Nicolas LB et al., Integrated pharmacokinetics and pharmac…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04301.x](https://doi.org/10.1111/j.1365-2125.2012.04301.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Nicolas_2012_CIn](drugs/drug_epoprostenol/pd_Nicolas_2012_CIn.md) | cardiac index ← 6-keto-prostacyclin F1a · direct linear effect | model (no simulator) | Nicolas LB et al., Integrated pharmacokinetics and pharmac…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04301.x](https://doi.org/10.1111/j.1365-2125.2012.04301.x) |
 
 ## ADME sites
 

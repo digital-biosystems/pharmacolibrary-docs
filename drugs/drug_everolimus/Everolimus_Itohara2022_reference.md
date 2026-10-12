@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;everolimus&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/&quot;},{&quot;label&quot;:&quot;Itohara_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Everolimus_Hirabatake2022_reference&quot;,&quot;label&quot;:&quot;Hirabatake_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_Hirabatake2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_Moes2012_reference&quot;,&quot;label&quot;:&quot;Moes_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_Moes2012_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_Sakaue2024_base&quot;,&quot;label&quot;:&quot;Sakaue_2024_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_Sakaue2024_base.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_Sakaue2024_final&quot;,&quot;label&quot;:&quot;Sakaue_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_Sakaue2024_final.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_de2016_base&quot;,&quot;label&quot;:&quot;de_2016_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_de2016_base.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_de2016_final&quot;,&quot;label&quot;:&quot;de_2016_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_de2016_final.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Everolimus_Hirabatake2022_reference&quot;,&quot;label&quot;:&quot;Hirabatake_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_Hirabatake2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_Moes2012_reference&quot;,&quot;label&quot;:&quot;Moes_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_Moes2012_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_Sakaue2024_base&quot;,&quot;label&quot;:&quot;Sakaue_2024_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_Sakaue2024_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_Sakaue2024_final&quot;,&quot;label&quot;:&quot;Sakaue_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_Sakaue2024_final.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_de2016_base&quot;,&quot;label&quot;:&quot;de_2016_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_de2016_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_de2016_final&quot;,&quot;label&quot;:&quot;de_2016_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_de2016_final.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # everolimus — `Everolimus_Itohara2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.312). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**For everolimus, CL/F was 6.89 L/h, but V/F was not extracted, so the record was held back.**
+
+Only clearance was extracted—CL/F was 6.89 L/h—and no volume (V/F) was extracted. A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. The reported comparison was inconclusive because no comparison could be computed (ratio None). Extracted — everolimus: kabs 0.823 1/h.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl/f: this record has none, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 ## Citation
 Itohara K et al., Population pharmacokinetics of everolim…, Clinical and translational… (2022)
@@ -75,6 +83,37 @@ Itohara K et al., Population pharmacokinetics of everolim…, Clinical and trans
 - captured model equation CL/F = θ 1 * (BW/57)^0.75 * (TDD/1.0)^θ2 * θ 3 FLCZ * (eGFR/55.2)^θ4 * θ 5 Female
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.312 (5/16 fields) | 11 |
+
+<details><summary>11 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[cl/f]` | not captured | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[ka]` | not captured | 6.07 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_cl_f_egfr_power]` | not captured | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q27_egfr_power]` | not captured | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ 1].covariate_forms` | ['power'] | [] | mismatch |
+| `qwen3.8-27b` | `parameters[θ 1].parameter_id` | Q27 | Q30 | mismatch |
+| `qwen3.8-27b` | `parameters[θ 1].value` | not captured | 6.23 | mismatch |
+| `qwen3.8-27b` | `parameters[θ 2]` | 0.310 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[θ 3].parameter_id` | Q49 | Q308 | mismatch |
+| `qwen3.8-27b` | `parameters[θ 3].value` | 0.823 | 0.722 | mismatch |
+| `qwen3.8-27b` | `parameters[θ 6]` | not captured | 258 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

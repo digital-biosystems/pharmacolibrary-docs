@@ -5,7 +5,7 @@
 
 # azathioprine — `Azathioprine_Lin2021_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.214). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071), gpt-oss:120b (not confirmed, agreement 0.214). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record for 6-thioguanine nucleotides (metabolite of azathioprine, CLm/F 11.6 L/h, V 809 L) lacks an explicit ka; the model builder defaulted ka and Tlag, so the simulated absorption profile is not supported by the source. The apparent parameterization assumes F=1 and Fm=1 with no molar correction, which are unreported deviations. In addition, the covariate effects (tpmt 0.515, θ BW 0.625, θ MESA 0.802) were defined but only the reference individual was simulated, so the covariate scenarios were not exercised. A second reader's disagreements concern only naming of the analyte and parameter fields, not the values themselves. Extracted — 6-thioguanine nucleotides: CLm/F 11.6 L/h, V 809 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has 6-thioguanine nucleotides, the second reading 6-TGN; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has azathioprine, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -87,17 +87,31 @@ Lin R et al., Population pharmacokinetics of azathiop…, Basic & clinical pharm
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.071 (1/14 fields) | 13 |
 | `gpt-oss:120b` | not confirmed | 0.214 (3/14 fields) | 11 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>24 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[cl p]` | not captured | 11.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl p]` | 11.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tpmt]` | not captured | 0.515 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tpmt]` | 0.515 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v p]` | not captured | 809 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v p]` | 809 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ bw]` | 0.625 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ bw]` | not captured | 0.625 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ mesa]` | 0.802 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ mesa]` | not captured | 0.802 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | azathioprine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | 6-thioguanine nucleotides | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl p]` | not captured | 11.6 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl p]` | 11.6 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[tpmt]` | not captured | 0.515 | only_one_extracted |

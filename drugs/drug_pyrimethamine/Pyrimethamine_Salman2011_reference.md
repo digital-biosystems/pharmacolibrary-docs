@@ -4,7 +4,7 @@
 
 # pyrimethamine — `Pyrimethamine_Salman2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The pyrimethamine AUC∞ is dimensionally inconsistent: 2844 μg/day/liter is not an area under the concentration-time curve, so the record was rejected.**
+
+The record reports AUC∞ for pyrimethamine as 2844 μg/day/liter and for sulfadoxine as 1460 mg/day/liter; a unit of concentration per day is a dimension mismatch for an AUC extrapolated to infinity, which failed the dimensional check on a structural parameter. The record was also built from the abstract alone, so reported summary statistics stood in for a fitted model. The metabolite N(4)-acetylsulfadoxine is formed from sulfadoxine with no compartment count given, and the link between sulfadoxine and its metabolite is of unknown kind. Extracted — pyrimethamine: AUC∞ 2.84e+03 μg/day/liter, V 1.33e+03 liters; sulfadoxine: AUC∞ 1.46e+03 mg/day/liter, Frel 32 %.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc(0-inf) double dose pyr: this record has none, the second reading 4915; it also differs on 6 more fields. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `sulfadoxine-pyrimethamine`, measured `pyrimethamine`.
 
@@ -66,6 +74,33 @@ Salman S et al., Pharmacokinetic properties of conventio…, Antimicrobial agent
 - no GROBID TEI available — transcribed from abstract in Salman_2011_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.417 (5/12 fields) | 7 |
+
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[32% reduction in sdx relative bioavailability]` | not captured | 32 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc(0-inf) double dose pyr]` | not captured | 4915 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc(0-inf) double dose sdx]` | not captured | 2434 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc(0-inf) pyr conventional dose]` | 2844 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc(0-inf) sdx conventional dose]` | 1460 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[reduction in sdx relative bioavailability with the double dose]` | 32 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total volume of distribution]` | 1330.0 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

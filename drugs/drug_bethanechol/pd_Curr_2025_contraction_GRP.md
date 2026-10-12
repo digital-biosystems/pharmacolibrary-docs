@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Bethanechol concentration-dependently stimulated contraction of mouse gastric fundus circular muscle (expressed as % of the maximum carbachol 100 μM contraction) in the presence of GRP (10 nM), described by a direct Emax (stimulation) model with pD2 4.9 ± 0.1 and Emax 55.9% ± 4.3%; no kinetic parameters (kin, kout, ke0) or more detailed mechanism are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Currò_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -18,9 +18,9 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> Plasma concentrations of acetaminophen, ibuprofen, and tramadol (mg/L) act on postoperative pain score (PPPM, baseline E0 = 15 pain units) via an effect-compartment model with a fractional Emax function expressing combined drug response (inhibitory, additive), with the observed analgesic delay described by an equilibration half-time (t1/2keo = ln2/keo); ibuprofen's C50 for analgesia was 3.95 mg/L (95% CI 2.57–7.53), and combination acetaminophen–ibuprofen therapy produced a maximum 65% reduction in pain score. Pain resolution over time was captured by an additional Emax disease-progression model (Emax,DIS, T50,DIS, HILLDIS) multiplying the drug effect.
+> Plasma concentrations of paracetamol, ibuprofen, and tramadol are linked to pain score via a fractional sigmoid-Emax model incorporating an effect compartment, which accounts for the delay in analgesic response. For paracetamol, the C50 is 7.06 mg/L and the effect site equilibration half-life (t1/2 keo) is 0.34 h, with the model estimating a maximum effect of 0.648 and a baseline pain score (E0) of 15 pain units.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Hannam_2018`
 - **model family:** `sigmoid_emax`

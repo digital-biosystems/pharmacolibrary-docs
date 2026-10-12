@@ -18,9 +18,9 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> Steady-state plasma oxypurinol (the active metabolite of allopurinol, in mM) inhibits xanthine oxidase, measured as the urinary 1MU/1MX ratio after a 50 mg IV 1MX dose, described by an inhibition sigmoid Emax model with C50 = 26.38±4.87 mM (4.01 mg l−1), slope c = 8.92, and predicted Ro and Emax of 2.63 and 2.27; C90 was 33.75 mM (5.13 mg l−1).
+> The steady-state plasma concentration of oxypurinol acts on the urinary 1MU/1MX ratio via an inhibition sigmoid Emax model to measure xanthine oxidase inhibition. The model parameters are C50 = 4.01 mg l-1, Emax = 2.27, Ro = 2.63, and gamma (c) = 8.92.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Graham_1996`
 - **model family:** `sigmoid_emax`

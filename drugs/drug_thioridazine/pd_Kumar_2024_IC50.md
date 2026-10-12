@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Thioridazine inhibits the growth of Leishmania donovani promastigotes (both Amp-B sensitive and unresponsive variants) in vitro, with a reported IC50 of 0.61 ± 0.15 μM; the paper excerpts do not state the mechanism or model form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kumar_2024`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

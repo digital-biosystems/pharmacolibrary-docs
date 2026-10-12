@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;remimazolam&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/&quot;},{&quot;label&quot;:&quot;Hu_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remimazolam_Chen2025_base_model&quot;,&quot;label&quot;:&quot;Chen_2025_base_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025_base_model.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Chen2025_median_by_1_000_bootstraps&quot;,&quot;label&quot;:&quot;Chen_2025_median_by_1_000_bootstraps&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025_median_by_1_000_bootstraps.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Chen2025v2_reference&quot;,&quot;label&quot;:&quot;Chen_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Colin2025_reference&quot;,&quot;label&quot;:&quot;Colin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Colin2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Schttler2020_reference&quot;,&quot;label&quot;:&quot;Sch\u00fcttler_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Schttler2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_de2025_vellinga_38&quot;,&quot;label&quot;:&quot;de_2025_vellinga_38&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_de2025_vellinga_38.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remimazolam_Chen2025_base_model&quot;,&quot;label&quot;:&quot;Chen_2025_base_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025_base_model.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Chen2025_median_by_1_000_bootstraps&quot;,&quot;label&quot;:&quot;Chen_2025_median_by_1_000_bootstraps&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025_median_by_1_000_bootstraps.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Chen2025v2_reference&quot;,&quot;label&quot;:&quot;Chen_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Colin2025_reference&quot;,&quot;label&quot;:&quot;Colin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Colin2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Schttler2020_reference&quot;,&quot;label&quot;:&quot;Sch\u00fcttler_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Schttler2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_de2025_vellinga_38&quot;,&quot;label&quot;:&quot;de_2025_vellinga_38&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_de2025_vellinga_38.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remimazolam — `Remimazolam_Hu2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Rejected because remimazolam non-compartmental parameters carry unit/scale errors: kel is reported as 0.136 L/min though λz is a rate constant in 1/min, and CL of 0.149 mL/min/kg and V of 0.466 mL/kg are physiologically implausible.**
+
+The terminal elimination rate constant kel (λz) was extracted with the unit L/min, a dimension mismatch for a first-order rate constant that should be in 1/min. The clearance (0.149 mL/min/kg) and volume of distribution (0.466 mL/kg) fall far outside physiological windows for remimazolam, consistent with a unit or scale extraction error. The reported unit could not be converted to SI, so the parameter values reached the record without SI values. The metabolite compartment count is 0, leaving the metabolite structure unspecified. Extracted — remimazolam: t1/2z 0.389 min, AUCt 0.013 μg min/mL, AUC∞ 0.01 μg min/mL, kel 0.136 L/min, V 0.466 mL/kg, CL 0.149 mL/min/kg, MRT 0.268 min.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has remimazolam, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Hu J et al., Pharmacokinetic Properties and Therapeu…, Pharmacology research & per… (2025)
@@ -131,6 +139,42 @@ Hu J et al., Pharmacokinetic Properties and Therapeu…, Pharmacology research &
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.111 (2/18 fields) | 16 |
+
+<details><summary>16 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc0-inf]` | 0.010 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | not captured | 0.010 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-t]` | 0.013 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-t]` | not captured | 0.013 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 0.149 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 0.149 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | 0.268 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | not captured | 0.268 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2]` | 0.389 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2]` | not captured | 0.389 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v d]` | 0.466 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v d]` | not captured | 0.466 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λz]` | 0.136 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λz]` | not captured | 0.136 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | remimazolam | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | remimazolam | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

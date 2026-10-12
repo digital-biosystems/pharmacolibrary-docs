@@ -32,7 +32,7 @@ Azelastine is an antihistamine used for allergic conditions such as seasonal all
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Dings_2022_reference](drugs/drug_azelastine/Azelastine_Dings2022_reference.md) | — | 1-compartment (no model) | 3 | Dings C et al., Pharmacometric Modeling of the Impact o…, Pharmaceutics (2022) | [10.3390/pharmaceutics14102059](https://doi.org/10.3390/pharmaceutics14102059) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Dings_2022_reference](drugs/drug_azelastine/Azelastine_Dings2022_reference.md) | — | 1-compartment (no model) | 3 | Dings C et al., Pharmacometric Modeling of the Impact o…, Pharmaceutics (2022) | [10.3390/pharmaceutics14102059](https://doi.org/10.3390/pharmaceutics14102059) |
 
 ## Pharmacodynamics (PD)
 

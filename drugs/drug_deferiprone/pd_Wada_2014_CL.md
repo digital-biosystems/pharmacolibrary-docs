@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deferiprone concentrations (μM) inhibit luminol chemiluminescence (Fe2+-chelating effect via inhibition of Fenton's reaction), described by a sigmoid Emax model; the excerpts provide no parameter values (Imax, IC50, gamma) or further mechanism detail.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wada_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

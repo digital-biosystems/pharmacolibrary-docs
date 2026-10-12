@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> Oliceridine plasma concentrations inhibit isohypercapnic ventilation (V̇E55, l/min), the slope-derived ventilatory response to hypercapnia, causing rapid respiratory depression after high-dose infusion with return toward baseline within 3 h; the excerpts do not state the PD model structure or parameter values (Imax, IC50, kin, kout, ke0, gamma).
+> Oliceridine plasma concentrations (ng/ml) inhibit the extrapolated ventilation at 55 mmHg Pco2 (l/min) through a linear effect compartment, as evidenced by a ke0 half-life (t½ke0) of 44.3 min. The model uses a gamma (γ) value of 1, indicating that the effect follows the driver concentration directly rather than a sigmoidal transduction function, with an estimated C50 of 29.9 ng/ml.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Simons_2023`
 - **model family:** `sigmoid_emax`

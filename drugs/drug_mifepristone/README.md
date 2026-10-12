@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Babij_2003_beta_gal](drugs/drug_mifepristone/pd_Babij_2003_beta_gal.md) | beta-galactosidase activity ← mifepristone · stimulation effect | — | Babij P et al., "Blue heart": characterization of a mif…, Biochimica et biophysica ac… (2003) | [10.1016/s0167-4781(03)00052-6](https://doi.org/10.1016/s0167-4781(03)00052-6) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Babij_2003_beta_gal](drugs/drug_mifepristone/pd_Babij_2003_beta_gal.md) | beta-galactosidase activity ← mifepristone · stimulation effect | — | Babij P et al., "Blue heart": characterization of a mif…, Biochimica et biophysica ac… (2003) | [10.1016/s0167-4781(03)00052-6](https://doi.org/10.1016/s0167-4781(03)00052-6) |
 
 ## ADME sites
 

@@ -5,7 +5,7 @@
 
 # flurbiprofen — `Flurbiprofen_LoisiosKonstantinidis2020v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Km, CLint and CL/F have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (MW, CLint and CL/F), so that value has no SI equivalent. Extracted — flurbiprofen: MW 244 g/mol, fu 0.01, Km 5.37, Vss 0.074 L/kg, Kp 0.7, CLint 7.88 μL/min/mg proein, CLR 0.066 L/h, CL/F 74 %.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Loisios-Konstantinidis I et al., Physiologically Based Pharmacokinetic/P…, Pharmaceutics (2020)

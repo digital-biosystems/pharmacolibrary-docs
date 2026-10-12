@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;oxazepam&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxazepam_Imbert2016_reference&quot;,&quot;label&quot;:&quot;Imbert_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxazepam/Oxazepam_Imbert2016_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxazepam_Imbert2016_reference&quot;,&quot;label&quot;:&quot;Imbert_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxazepam/Oxazepam_Imbert2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # oxazepam
 
@@ -28,16 +28,16 @@ Oxazepam is a benzodiazepine used to treat anxiety disorders and focal epilepsy,
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 19:59 | 12:23 | 1/3/0 | 4/1/1 | 0/0/0 | 245,313/14,421 | ollama / glm-5.3-flash | 9 | 5/3 | 9/0 | 0 |
+| 2026-10-06 19:59 | 12:23 | 0/3/1 | 4/1/1 | 0/0/0 | 245,313/14,421 | ollama / glm-5.3-flash | 9 | 5/3 | 9/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Imbert_2016_reference](drugs/drug_oxazepam/Oxazepam_Imbert2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Imbert B et al., Population Pharmacokinetics of High-Dos…, Therapeutic drug monitoring (2016) | [10.1097/FTD.0000000000000262](https://doi.org/10.1097/FTD.0000000000000262) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Dingemanse_1988_reference](drugs/drug_oxazepam/Oxazepam_Dingemanse1988_reference.md) | — | 1-compartment (no model) | 0 | Dingemanse J et al., Pharmacokinetic modeling of the anticon…, Journal of pharmacokinetics… (1988) | [10.1007/BF01062261](https://doi.org/10.1007/BF01062261) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Dingemanse_1990_reference](drugs/drug_oxazepam/Oxazepam_Dingemanse1990_reference.md) | — | 1-compartment (no model) | 3 | Dingemanse J et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (1990) | [10.1111/j.1476-5381.1990.tb14653.x](https://doi.org/10.1111/j.1476-5381.1990.tb14653.x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wretlind_1977_reference](drugs/drug_oxazepam/Oxazepam_Wretlind1977_reference.md) | — | general linear (no model) | 0 | Wretlind M et al., Disposition of three benzodiazepines af…, Acta pharmacologica et toxi… (1977) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Imbert_2016_reference](drugs/drug_oxazepam/Oxazepam_Imbert2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Imbert B et al., Population Pharmacokinetics of High-Dos…, Therapeutic drug monitoring (2016) | [10.1097/FTD.0000000000000262](https://doi.org/10.1097/FTD.0000000000000262) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Dingemanse_1988_reference](drugs/drug_oxazepam/Oxazepam_Dingemanse1988_reference.md) | — | 1-compartment (no model) | 0 | Dingemanse J et al., Pharmacokinetic modeling of the anticon…, Journal of pharmacokinetics… (1988) | [10.1007/BF01062261](https://doi.org/10.1007/BF01062261) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Dingemanse_1990_reference](drugs/drug_oxazepam/Oxazepam_Dingemanse1990_reference.md) | — | 1-compartment (no model) | 3 | Dingemanse J et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (1990) | [10.1111/j.1476-5381.1990.tb14653.x](https://doi.org/10.1111/j.1476-5381.1990.tb14653.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wretlind_1977_reference](drugs/drug_oxazepam/Oxazepam_Wretlind1977_reference.md) | — | general linear (no model) | 0 | Wretlind M et al., Disposition of three benzodiazepines af…, Acta pharmacologica et toxi… (1977) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -75,7 +75,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 147 matched, 102 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 1  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> For adolescents with schizophrenia, aripiprazole exposure (average steady-state concentration, PK from the cited Toja-Camba source) was linked to a time-to-event model of dropout probability; the excerpts do not state the mechanism, effect form, or any potency or rate parameters for this dropout model (they only report Emax/EC50-type parameters for the separate PANSS exposure-response model).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2024_2`
 - **model family:** `tte`
 - **driver:** `cited_pk`

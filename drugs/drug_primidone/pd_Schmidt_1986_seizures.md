@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a full text, so the specific pharmacodynamic model linking primidone concentrations to seizure frequency is not described. Consequently, the mechanism and key potency or rate values are not available in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schmidt_1986`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

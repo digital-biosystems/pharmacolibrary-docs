@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Butorphanol acts as a partial agonist at the µ-opioid receptor, directly stimulating mini-Gi recruitment in a cell-based split nanoluciferase assay, described by an Emax model with response normalized to hydromorphone (=100%); the paper does not report specific EC50 or Emax values for butorphanol, and no kinetic parameters (kin, kout, ke0) are given.
+> Butorphanol concentration drives the mini-Gi (G protein) recruitment response via a direct stimulation mechanism, functioning as a partial agonist at the µ-opioid receptor compared to hydromorphone. The paper does not state the specific Emax or EC50 values for butorphanol in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Vandeputte_2020`
 - **model family:** `emax`

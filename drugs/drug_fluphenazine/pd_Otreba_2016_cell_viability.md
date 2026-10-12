@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Fluphenazine concentration (μM) inhibits cell viability; the paper does not state the mechanism or model form beyond an inhibitory concentration–response relationship, with EC50 = 1.24 μM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Otreba_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

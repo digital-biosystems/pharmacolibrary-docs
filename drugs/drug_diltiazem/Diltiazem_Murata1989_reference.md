@@ -5,7 +5,7 @@
 
 # diltiazem — `Diltiazem_Murata1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375), gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absorption rate constant: this record has none, the second reading 0.73; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has diltiazem, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -69,17 +69,23 @@ Murata K et al., Pharmacokinetics of an oral sustained-r…, Journal of pharmace
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | not captured | 0.73 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability of her-sr compared with that of a conventional diltiazem preparation (her) in dogs]` | 80 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` | not captured | 80 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | diltiazem | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | diltiazem | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[absorption rate constant]` | not captured | 0.73 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bioavailability of her-sr compared with that of a conventional diltiazem preparation (her) in dogs].parameter_id` | Q40 | Q87 | mismatch |
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> β-cyfluthrin (cyfluthrin) concentrations in mg L(-1) were related to mortality/efficacy against Callosobruchus maculatus; the paper excerpts do not state the mechanism. Reported EC50 values were 2.2 mg L(-1) (formulation 3c, day 14), 1.58 mg L(-1) (formulation 3d, day 14), and 0.51 mg L(-1) (commercial SC formulation, day 1).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Loha_2012`
 - **model family:** `unknown`
 - **driver:** `dose_only`

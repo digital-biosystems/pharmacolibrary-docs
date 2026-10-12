@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper fits an Emax model of stimulation where halothane concentration (mM) drives the extracellular accumulation of [(3)H]GABA, with an estimated EC50 of 35 μM. No further parameters (e.g., Emax, Imax, rate constants) or mechanistic details (e.g., direct vs. indirect, effect compartment) are provided in the available record.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Diniz_2014`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

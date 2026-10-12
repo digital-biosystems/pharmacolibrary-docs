@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefbuperazone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefbuperazone_Watanabe1984_reference&quot;,&quot;label&quot;:&quot;Watanabe_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefbuperazone/Cefbuperazone_Watanabe1984_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cefbuperazone_Watanabe1984_reference&quot;,&quot;label&quot;:&quot;Watanabe_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cefbuperazone/Cefbuperazone_Watanabe1984_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # cefbuperazone
 
@@ -33,7 +33,7 @@ Cefbuperazone is a second-generation cephalosporin antibiotic used to treat bact
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Watanabe_1984_reference](drugs/drug_cefbuperazone/Cefbuperazone_Watanabe1984_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Watanabe Y et al., [Penetration of cefbuperazone, a new ce…, The Japanese journal of ant… (1984) | — |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Watanabe_1984_reference](drugs/drug_cefbuperazone/Cefbuperazone_Watanabe1984_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Watanabe Y et al., [Penetration of cefbuperazone, a new ce…, The Japanese journal of ant… (1984) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

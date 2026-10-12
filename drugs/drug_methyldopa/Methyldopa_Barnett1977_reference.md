@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;Methyldopa&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/&quot;},{&quot;label&quot;:&quot;Barnett_1977 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methyldopa_Brogden1988_reference&quot;,&quot;label&quot;:&quot;Brogden_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/Methyldopa_Brogden1988_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methyldopa_Singh1985_reference&quot;,&quot;label&quot;:&quot;Singh_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/Methyldopa_Singh1985_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Methyldopa — `Methyldopa_Barnett1977_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222), gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571), gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,11 +21,11 @@
 
 The dimension check on a structural parameter failed for methyldopa: the reported clearance of 11.2 l/h is inconsistent with the reported volume of distribution of 0.29 l/kg and elimination rate constant of 0.56 h-1. The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. A second reader returned null for the elimination constant, clearance and volume values, disagreeing with the extracted 0.56 h-1, 11.2 l/h and 0.29 l/kg, and left the dose compound and primary analyte as unknown rather than methyldopa. Extracted — methyldopa: kel 0.56 h-1, V 0.29 1 kg-1, CL 11.2 1 h-1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has methyldopa, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ke1: this record has 0.56, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:55.945693+00:00) predates the upstream re-run (2026-10-08 11:29:05.378381+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:55.945693+00:00) predates the upstream re-run (2026-10-10 17:17:12.463704+00:00). Current validate status: `rejected`.
 
 ## Citation
 Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and experimental p… (1977)
@@ -71,25 +72,21 @@ Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and exper
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss-120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 | `gpt-oss:120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[ke1]` | 0.56 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[overall elimination constant ke1]` | not captured | 0.56 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[plasma clearance rate]` | 11.2 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution of the central compartment]` | 0.29 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution of the central compartment]` | not captured | 0.29 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | methyldopa | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | methyldopa | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[plasma clearance rate]` | 11.2 | not captured | only_one_extracted |
 
 </details>
@@ -136,4 +133,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 11:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-10 17:17 UTC</sub>

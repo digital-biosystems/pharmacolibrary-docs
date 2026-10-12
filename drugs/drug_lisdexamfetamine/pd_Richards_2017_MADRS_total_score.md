@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates lisdexamfetamine dimesylate dose (mg) to change from augmentation baseline in MADRS total score, but no full text is available, so the mechanism, effect form, and any potency or rate parameters are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Richards_2017`
 - **model family:** `unknown`
 - **driver:** `dose_only`

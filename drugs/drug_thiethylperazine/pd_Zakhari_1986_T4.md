@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Thiethylperazine plasma concentrations inhibit the production of plasma thyroxine (T4) via an indirect response model with a proportional effect. The estimated parameters are Imax 0.85, IC50 42.3 ng/ml, Hill slope 1.2, K_in 25.6 ng/dl/hr, K_out 0.42 1/hr, and baseline T4 61.0 ng/dl.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zakhari_1986`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`

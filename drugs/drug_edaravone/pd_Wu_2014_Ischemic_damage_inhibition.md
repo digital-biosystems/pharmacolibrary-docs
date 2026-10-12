@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Edaravone dose (mg/kg) was related to percent inhibition of ischemic damage via an Emax (inhibitory) model, with Emax 55.7% and ED50 7.17 mg/kg; the paper excerpts do not state the mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2014`
 - **model family:** `emax`
 - **driver:** `dose_only`

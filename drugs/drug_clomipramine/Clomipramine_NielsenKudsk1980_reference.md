@@ -4,7 +4,7 @@
 
 # clomipramine — `Clomipramine_NielsenKudsk1980_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222), gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of biological half-life of amitriptyline in the myocardium: this record has 37.7, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clomipramine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -73,17 +73,25 @@ Nielsen-Kudsk F et al., Myocardial pharmacokinetics of amitript…, Acta pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 | `gpt-oss:120b` | partly confirmed | 0.8 (4/5 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[accumulated amount at steady state]` | 1055 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[biological half-life of amitriptyline in the myocardium]` | 37.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[biological half-life of amitriptyline in the myocardium]` | not captured | 37.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cardiac accumulation of the compound at steady state]` | 340 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cardiac accumulation of the compound at steady state]` | not captured | 340 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | clomipramine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | clomipramine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[biological half-life of amitriptyline in the myocardium]` | 37.7 | not captured | only_one_extracted |
 
 </details>

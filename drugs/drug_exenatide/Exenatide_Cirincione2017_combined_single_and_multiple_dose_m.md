@@ -5,7 +5,7 @@
 
 # exenatide — `Exenatide_Cirincione2017_combined_single_and_multiple_dose_m`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.56). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.609), gpt-oss:120b (not confirmed, agreement 0.56). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The paper reports exenatide clearance as 12.3 L/h, while the two-compartment model's clearance parameters (CLint 110 L/day, Q 89.3 L/day) are on a per-day scale, so the value could not be reconciled dimensionally. Because the per-hour unit could not be converted to the model's per-day scale, the clearance value arrived without a usable SI value. A second reader additionally disagreed on several extracted values, reading Km as null versus 567 pg/mL, CLint as null versus 110 L/day, and Vmax as null versus 0.0372 mg/day, and read a value of 2.4 where this record had none; these disagreements were inconclusive. Extracted — exenatide: kabs 3.85, CLint 110 L/day, V 7.03 L, Fab 1.18, ktr 0.105, Km 567 pg/mL, Vmax 0.0372 mg/day, Q 89.3 L/day, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has exenatide, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has exenatide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -88,17 +88,27 @@ Cirincione B et al., Population Pharmacokinetics of an Exten…, The AAPS journa
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.609 (14/23 fields) | 9 |
 | `gpt-oss:120b` | not confirmed | 0.56 (14/25 fields) | 11 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl_egfr]` | 0.838 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 12.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clint].covariate_forms` | ['power'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[f2]` | not captured | 48.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f3]` | not captured | 50.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q22_egfr_power]` | not captured | 0.838 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vcint].parameter_id` | Q61 | Q63 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | exenatide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | exenatide | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl_egfr]` | 0.838 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clint].covariate_forms` | ['power'] | [] | mismatch |
 | `gpt-oss:120b` | `parameters[f2]` | not captured | 48.0 | only_one_extracted |

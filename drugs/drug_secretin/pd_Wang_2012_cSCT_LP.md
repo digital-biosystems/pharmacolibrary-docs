@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Chicken secretin-like peptide (cSCT-LP) concentration-dependently stimulates cSCTR activation measured as pGL3-CRE-luciferase reporter activity; the paper reports an EC50 of 1.10 nM but the excerpts do not state the mechanism or other model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2012`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -4,7 +4,7 @@
 
 # dabrafenib — `Dabrafenib_Balakirouchenane2020_no_dlt`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (primary re-run, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dabrafenib, the second reading dabrafenib, trametinib; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+**The paper reports none of the model's key parameters.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has dabrafenib and trametinib, the second reading dabrafenib; it also differs on 9 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `dabrafenib and trametinib`, measured `dabrafenib, hydroxy-dabrafenib, and trametinib`.
 
@@ -78,19 +82,27 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.895 (17/19 fields) | 2 |
+| `qwen3.8-27b` | primary re-run | 0.0 (0/10 fields) | 10 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[k a].parameter_id` | Q95 | Q49 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | dabrafenib | dabrafenib, trametinib | mismatch |
+| `qwen3.8-27b` | `model.links` | [['dabrafenib', 'hydroxy-dabrafenib', 'metabolism']] | [] | mismatch |
+| `qwen3.8-27b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `qwen3.8-27b` | `parameters[cl/f]` | not captured | 5.83 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[ka]` | not captured | 0.913 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[q/f]` | not captured | 64.9 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[tlag]` | not captured | 0.709 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v2/f]` | not captured | 61.9 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v3/f]` | not captured | 417.0 | only_one_extracted |
+| `qwen3.8-27b` | `screen.dose_compound` | dabrafenib and trametinib | dabrafenib | mismatch |
+| `qwen3.8-27b` | `screen.primary_analyte` | dabrafenib, hydroxy-dabrafenib, and trametinib | dabrafenib | mismatch |
 
 </details>
 

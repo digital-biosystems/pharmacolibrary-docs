@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The excerpts do not describe a PD model for brexanolone acting on ataxia and sedation; they concern unrelated agents (rosiglitazone/T3D-959, GM6, 2DG), so no mechanism, drug-response linkage, or potency/rate values for this model can be reported from the paper.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `unknown_2018`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

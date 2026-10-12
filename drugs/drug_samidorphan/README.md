@@ -32,7 +32,7 @@ Samidorphan is an opioid antagonist given together with the antipsychotic olanza
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sun_2021_reference](drugs/drug_samidorphan/Samidorphan_Sun2021_reference.md) | — | 2-compartment (no model) | 6 (+13 cov.) | Sun L et al., Population Pharmacokinetics of Olanzapi…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1911](https://doi.org/10.1002/jcph.1911) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.705). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sun_2021_reference](drugs/drug_samidorphan/Samidorphan_Sun2021_reference.md) | — | 2-compartment (no model) | 6 (+13 cov.) | Sun L et al., Population Pharmacokinetics of Olanzapi…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1911](https://doi.org/10.1002/jcph.1911) |
 
 ## Pharmacodynamics (PD)
 

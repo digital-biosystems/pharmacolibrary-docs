@@ -5,7 +5,7 @@
 
 # bisoprolol — `Bisoprolol_Momilovi2019_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667), gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Simulated as the paper dosed it, the model's terminal half-life (131.665565673719 h) differs from the reported 13.5 h by more than the tolerance, an established failure. The model builder substituted library defaults for ka and Tlag, which the source does not report, and adjudication flagged this invented absorption as not acceptable. The model also assumes F=1 and Fm=1 with apparent (/F) parameterization and no molar correction, and a second reader disagreed on the interindividual variance of CL (0.0612 vs 0.82). Extracted — bisoprolol: CL/F 2.7 L/h, V 513 L, CL 0.0612.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bisoprolol, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bisoprolol, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -73,17 +73,20 @@ Momčilović S et al., Population Pharmacokinetic Analysis of…, Journal of car
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.667 (4/6 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `screen.dose_compound` | bisoprolol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | bisoprolol | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl/f].value` | 3.86 | 2.70 | mismatch |
 | `gpt-oss:120b` | `parameters[vd].value` | 700.00 | 512.91 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | bisoprolol | unknown | mismatch |
@@ -146,7 +149,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_modelica.zip" download>Bisoprolol_Momilovi2019_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_fmi.zip" download>Bisoprolol_Momilovi2019_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_matlab.zip" download>Bisoprolol_Momilovi2019_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_matlab_simbio.zip" download>Bisoprolol_Momilovi2019_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_matlab_simbio.zip" download>Bisoprolol_Momilovi2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_sbml.zip" download>Bisoprolol_Momilovi2019_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_cellml.zip" download>Bisoprolol_Momilovi2019_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

@@ -5,7 +5,7 @@
 
 # potassium canrenoate — `PotassiumCanrenoate_Suyagh2012_two_experimentally_determined`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.562). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.562). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. None of the extracted parameters is potassium canrenoate's own; they describe canrenone. Extracted — canrenone: CL/F 12.7 L/h, V/F 520 L, kfm 4.48 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f (l/hr/70 kg) θcl/f].value`: this record has 12.73, the second reading 14.13; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f (l/hr/70 kg) θcl/f].parameter_id`: this record has Q375, the second reading Q27; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -84,17 +84,30 @@ Suyagh M et al., Population pharmacokinetic model of can…, British journal of 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (6/18 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.562 (9/16 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>19 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f (l/hr/70 kg) θcl/f].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f (l/hr/70 kg) θcl/f].parameter_id` | Q375 | Q27 | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f (l/hr/70 kg) θcl/f].value` | 12.73 | 14.13 | mismatch |
+| `gpt-oss-120b` | `parameters[kf (hr-) θkf].parameter_id` | Q305 | Q301 | mismatch |
+| `gpt-oss-120b` | `parameters[kf (hr-) θkf].value` | 4.48 | 5.79 | mismatch |
+| `gpt-oss-120b` | `parameters[mofv]` | not captured | -97.85 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | not captured | 12.09 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_weight_power]` | not captured | 0.833 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_weight_power]` | 0.798 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q76_weight_power]` | 1.07 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v_f_weight_power]` | not captured | 1.07 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f (l/70 kg) θv/f]` | 519.8 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/f (l/hr/70 kg) θcl/f].value` | 12.73 | 14.13 | mismatch |
 | `gpt-oss:120b` | `parameters[kf (hr-) θkf].value` | 4.48 | 5.79 | mismatch |
 | `gpt-oss:120b` | `parameters[mofv]` | not captured | -97.85 | only_one_extracted |

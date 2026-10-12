@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism or parameter values; the record indicates only that edaravone concentrations act on OH radical scavenging via an Emax-type inhibitory model, with no stated Imax, IC50, or rate constants.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2014`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Yun_2015_hERG](drugs/drug_sibutramine/pd_Yun_2015_hERG.md) | hERG channel current ← sibutramine · direct sigmoid Emax (Hill) effect | — | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Yun_2015_hERG](drugs/drug_sibutramine/pd_Yun_2015_hERG.md) | hERG channel current ← sibutramine · direct sigmoid Emax (Hill) effect | — | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
 
 ## ADME sites
 

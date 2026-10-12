@@ -24,7 +24,7 @@ Nizatidine is an H2-receptor antagonist used to treat acid-related conditions su
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Abdel-Rahman_2004_reference](drugs/drug_nizatidine/Nizatidine_AbdelRahman2004_reference.md) | — | parent + metabolite (no model) | 0 | Abdel-Rahman SM et al., Developmental pharmacokinetics and phar…, Journal of pediatric gastro… (2004) | [10.1097/00005176-200404000-00015](https://doi.org/10.1097/00005176-200404000-00015) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.091). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Abdel-Rahman_2004_reference](drugs/drug_nizatidine/Nizatidine_AbdelRahman2004_reference.md) | — | parent + metabolite (no model) | 0 | Abdel-Rahman SM et al., Developmental pharmacokinetics and phar…, Journal of pediatric gastro… (2004) | [10.1097/00005176-200404000-00015](https://doi.org/10.1097/00005176-200404000-00015) |
 
 ## ADME sites
 

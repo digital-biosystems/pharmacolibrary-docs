@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07X&quot;,&quot;href&quot;:&quot;atc/N07X.md&quot;},{&quot;label&quot;:&quot;riluzole&quot;,&quot;href&quot;:&quot;drugs/drug_riluzole/&quot;},{&quot;label&quot;:&quot;Chow_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riluzole_Berges2015_reference&quot;,&quot;label&quot;:&quot;Berges_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riluzole/Riluzole_Berges2015_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Riluzole_Nguyen2021_reference&quot;,&quot;label&quot;:&quot;Nguyen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riluzole/Riluzole_Nguyen2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riluzole_Berges2015_reference&quot;,&quot;label&quot;:&quot;Berges_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riluzole/Riluzole_Berges2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Riluzole_Nguyen2021_reference&quot;,&quot;label&quot;:&quot;Nguyen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_riluzole/Riluzole_Nguyen2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # riluzole — `Riluzole_Chow2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The riluzole record was rejected because the volume of distribution V (Day 3) is reported as 557.1 with unit '/L', a dimensionally inconsistent unit for a structural parameter, and the record was built from the paper's abstract alone rather than a fitted model.**
+
+The volume of distribution for riluzole carries the unit '/L', which does not match the dimension expected for a distribution volume (a volume, e.g. L), so the structural parameter failed the dimension check. The record is abstract-only: the reported values (Cmax 128.9 ng/ml, Cmin 45.6 ng/ml, AUC(0-12) 982.0 ng·h/mL, AUC(0-12) Day 14 521.0 ng·h/mL, CL 49.5 L/hour, ka fixed at 5.0 /h) are summary statistics standing in for a fitted model in adults with acute spinal cord injury. Extracted — riluzole: Cmax 129 ng/ml, Cmin 45.6 ng/ml, AUC 982 ng·h/mL, AUCt 521 ng·h/mL, CL 49.5 L/hour, V 557 /L, kabs 5 /h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc(0-12) on day 14: this record has 521.0, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Chow DS et al., Pharmacology of riluzole in acute spina…, Journal of neurosurgery. Sp… (2012)
@@ -72,6 +80,28 @@ Chow DS et al., Pharmacology of riluzole in acute spina…, Journal of neurosurg
 - no GROBID TEI available — transcribed from abstract in Chow_2012_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.8 (8/10 fields) | 2 |
+
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc(0-12) on day 14]` | 521.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 5.0 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

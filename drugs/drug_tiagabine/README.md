@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;tiagabine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tiagabine_Ingwersen2000_reference&quot;,&quot;label&quot;:&quot;Ingwersen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tiagabine/Tiagabine_Ingwersen2000_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tiagabine_Ingwersen2000_reference&quot;,&quot;label&quot;:&quot;Ingwersen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tiagabine/Tiagabine_Ingwersen2000_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # tiagabine
 
@@ -27,15 +27,15 @@ Tiagabine is an anticonvulsant used to treat focal epilepsy and has also been st
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:53 | 1:35 | 1/1/1 | 3/0/2 | 0/0/0 | 107,360/8,843 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-07 07:53 | 1:35 | 0/1/2 | 3/0/2 | 0/0/0 | 107,360/8,843 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ingwersen_2000_reference](drugs/drug_tiagabine/Tiagabine_Ingwersen2000_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Ingwersen SH et al., Population pharmacokinetics of tiagabin…, European journal of pharmac… (2000) | [10.1016/s0928-0987(00)00109-3](https://doi.org/10.1016/s0928-0987(00)00109-3) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Samara_1998_reference](drugs/drug_tiagabine/Tiagabine_Samara1998_reference.md) | — | 1-compartment (no model) | 1 | Samara EE et al., Population analysis of the pharmacokine…, Epilepsia (1998) | [10.1111/j.1528-1157.1998.tb01182.x](https://doi.org/10.1111/j.1528-1157.1998.tb01182.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Cleton_1999_2_reference](drugs/drug_tiagabine/Tiagabine_Cleton1999v2_reference.md) | — | 1-compartment (no model) | 0 | Cleton A et al., Stereoselective central nervous system…, British journal of pharmaco… (1999) | [10.1038/sj.bjp.0702962](https://doi.org/10.1038/sj.bjp.0702962) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Ingwersen_2000_reference](drugs/drug_tiagabine/Tiagabine_Ingwersen2000_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Ingwersen SH et al., Population pharmacokinetics of tiagabin…, European journal of pharmac… (2000) | [10.1016/s0928-0987(00)00109-3](https://doi.org/10.1016/s0928-0987(00)00109-3) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Samara_1998_reference](drugs/drug_tiagabine/Tiagabine_Samara1998_reference.md) | — | 1-compartment (no model) | 1 | Samara EE et al., Population analysis of the pharmacokine…, Epilepsia (1998) | [10.1111/j.1528-1157.1998.tb01182.x](https://doi.org/10.1111/j.1528-1157.1998.tb01182.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Cleton_1999_2_reference](drugs/drug_tiagabine/Tiagabine_Cleton1999v2_reference.md) | — | 1-compartment (no model) | 0 | Cleton A et al., Stereoselective central nervous system…, British journal of pharmaco… (1999) | [10.1038/sj.bjp.0702962](https://doi.org/10.1038/sj.bjp.0702962) |
 
 ## Pharmacodynamics (PD)
 
@@ -73,7 +73,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 17 matched, 17 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

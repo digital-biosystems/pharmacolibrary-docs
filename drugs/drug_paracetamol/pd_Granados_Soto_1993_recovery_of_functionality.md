@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model uses a sigmoid Emax formulation to link paracetamol concentrations to the stimulation of recovery of functionality. No specific potency or rate values are provided in the available text.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Granados-Soto_1993`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

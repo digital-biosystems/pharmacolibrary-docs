@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper reports that intravenous ketamine (2.5–20 mg/kg) induces a loss-of-righting reflex (LORR) in mice, modeled as a sigmoidal dose-response, with the EC50 decreasing from 14.09 ± 0.23 mg/kg in P14 mice to 9.82 ± 0.20 mg/kg in P35 mice. The excerpt does not provide a specific PD mechanism such as effect compartment rates or Imax parameters, but suggests HCN1 channel inhibition as the underlying molecular target.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gao_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;garadacimab&quot;,&quot;href&quot;:&quot;drugs/drug_garadacimab/&quot;},{&quot;label&quot;:&quot;Pawaskar_2022 \u00b7 PD FXIIa-mediated kallikrein activity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# FXIIa-mediated kallikrein activity — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+# FXIIa-mediated kallikrein activity — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Garadacimab plasma concentrations (nmol/mL) inhibit FXIIa-mediated kallikrein activity (%) via target-mediated drug disposition: garadacimab binds and suppresses FXIIa, with the TMDD binding complex described by a target degradation rate kdeg = 0.0058 1/h and internalization rate kint = 0.004 1/h; the paper does not state an Imax, IC50, or Emax for the inhibition. Predicted inhibition ranged from &lt;10% at 0.1 mg/kg i.v. to &gt;95% (near maximal) at 10 mg/kg i.v.
+> Garadacimab plasma concentrations inhibit FXIIa-mediated kallikrein activity via a target-mediated drug disposition (TMDD) mechanism, characterized by a degradation rate (k deg) of 0.0058 1/h and an internalization rate (k int) of 0.004 1/h. The model includes a binding affinity parameter (α) of 1.59 and a baseline FXIIa concentration (FXIIaB) of 0.3 nmol/ml.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Pawaskar_2022`
 - **model family:** `tmdd`
@@ -47,33 +47,20 @@ Pawaskar D et al., Pharmacokinetic/pharmacodynamic modelin…, Clinical and tran
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 (0/16 fields) | 16 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.667 (6/9 fields) | 3 |
 
-<details><summary>16 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | garadacimab | not captured | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | not captured | mismatch |
-| `gpt-oss:120b` | `effect_form` | unknown | not captured | mismatch |
-| `gpt-oss:120b` | `model_family` | tmdd | not captured | mismatch |
-| `gpt-oss:120b` | `parameters[Q22]` | 0.215 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q315]` | 0.98 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q315]` | 0.426 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 0.0058 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q334]` | 0.004 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q352]` | 89.7 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q358]` | 3.51 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q40]` | 0.529 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | 0.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | 0.0227 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q64]` | 44.9 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q67]` | 1.59 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q324]` | not captured | 0.3 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q333]` | 0.3 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q900]` | 1.59 | not captured | only_one_extracted |
 
 </details>
 

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;sodium nitrite&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_nitrite/&quot;},{&quot;label&quot;:&quot;Vega-Villa_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumNitrite_Grimm2023_reference&quot;,&quot;label&quot;:&quot;Grimm_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumNitrite_Grimm2023_reference&quot;,&quot;label&quot;:&quot;Grimm_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sodium nitrite — `SodiumNitrite_VegaVilla2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.043). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The sodium nitrite model was rejected because the nitric oxide metabolite is unlinked from the dose path, and the parameter kNO3_R (5.91E-06 min−1.µmol−1) carries a unit that could not be converted to SI, so it reached the record without an SI value.**
+
+The structure lists nitric oxide as a metabolite formed from nitrite with 0 compartments, and its link to nitrate via kHbNO2 does not give it a path from the administered dose, so the check for unreachable compartments or unlinked metabolites failed. The unit min−1.µmol−1 on the nitrate formation rate constant kNO3_R could not be converted to SI, leaving that parameter without an SI value. The remaining parameters, including nitrite clearance CL_E0_NO2 of 0.382 l.min−1 and volumes of 12.418 l, were extracted with values. Extracted — nitrite: kcomp 1.75 min−1, ktr 6.83e-05 min−1, CLm/F 0.382 l.min−1, V 12.4 l; nitrate: kcomp 0.16 min−1, CL 0.00941 l.min−1, V 12.4 l, kfm 5.91e-06 min−1.µmol−1; nitric oxide: kfm 0.234 min−1; methemoglobin: V2 3.28 l.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has nitrite, the second reading sodium nitrite; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `sodium nitrite`, measured `nitrite`.
 
@@ -106,6 +114,48 @@ Vega-Villa K et al., Quantitative Systems Pharmacology Model…, CPT: pharmacome
 - final table tbl1: grid unusable → re-running vision table extraction for Vega-Villa_2013
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.043 (1/23 fields) | 22 |
+
+<details><summary>22 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['nitrite', 'nitrate', 'metabolism'], ['nitrite', 'nitric oxide', 'metabolism'], ['nitrate', 'nitrite', 'interconversion'], ['nitric oxide', 'nitrate', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[cl_e0_no2]` | not captured | 0.382 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl_e0_no2]` | 0.382 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl_e0_no3]` | 9.41E-03 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k_hbno]` | not captured | 2.86E-05 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kmyo]` | 0.234 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kno2_rdt]` | not captured | 1.65E-03 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kno3_r]` | 5.91E-06 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kpr_no2]` | not captured | 0.019 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kpt_no2]` | not captured | 0.108 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kpt_no3]` | 0.160 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kt_rdt]` | 6.83E-05 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ktp_no2]` | not captured | 1.745 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ktp_no2]` | 1.745 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[s_methb]` | 0.045 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[s_no3]` | not captured | 0.017 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v_no2_p]` | not captured | 12.418 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v_no2_p]` | 12.418 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v_no3_p]` | 12.418 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v_r_methb]` | 3.284 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | nitrite | sodium nitrite | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dibutyl phthalate (DBP) stimulates androgen receptor agonist activity in a luciferase reporter gene assay, with an EC50 of 6.17x10(-6) M; the paper excerpts do not state the mechanism or any additional model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shen_2009`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

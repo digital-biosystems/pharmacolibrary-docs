@@ -5,7 +5,7 @@
 
 # pregabalin — `Pregabalin_Chan2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.389). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.368), gpt-oss:120b (not confirmed, agreement 0.389). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Extracted — pregabalin: V/F 10.3, kabs 7.44, tlag 0.31.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of body_weight_on_cl_fd: this record has 0.48, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of body_weight_on_cl_fd: this record has 0.48, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -117,17 +117,30 @@ Chan PLS et al., Pregabalin Population Pharmacokinetic a…, Clinical pharmacolo
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.368 (7/19 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.389 (7/18 fields) | 11 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>23 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[body_weight_on_cl_fd]` | 0.48 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[body_weight_on_v_fd]` | 0.64 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[food: fedg]` | not captured | 0.33 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 103 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka fastedf].parameter_id` | Q95 | Q49 | mismatch |
+| `gpt-oss-120b` | `parameters[sex_on_cl_fe]` | 0.88 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q27_body_weight]` | not captured | 0.48 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q27_sex]` | not captured | 0.88 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q44_sex]` | 0.79 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v_f_body_weight]` | not captured | 0.64 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v_f_sex]` | not captured | 0.79 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f].covariate_forms` | [] | ['linear_fractional', 'linear_fractional'] | mismatch |
 | `gpt-oss:120b` | `parameters[body_weight_on_cl_fd]` | 0.48 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[body_weight_on_v_fd]` | 0.64 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[food: fedg]` | not captured | 0.33 | only_one_extracted |

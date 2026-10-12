@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Gabapentin plasma or brain concentrations inhibit CFA-evoked mechanical hyperalgesia via a sigmoidal Emax mechanism with an estimated EC50 of 16.7 μg/mL for plasma and 3.3 μg/mL for brain. The provided excerpts do not state the specific rate or maximum inhibition parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Larsen_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

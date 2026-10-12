@@ -5,7 +5,7 @@
 
 # phenol — `Phenol_Nichols2008_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">fish</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">fish</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Nishida_1995, Thoueille_2023) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — phenyl glucuronide: CL 15.7 ml/kg/h, kfm 0.049 /h; phenol: V 2.66e+03 L, kabs 0.0069 min-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has phenol, the second reading phenyl glucuronide; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has phenol, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -80,17 +80,31 @@ Nichols JW et al., Use of online microdialysis sampling to…, Drug metabolism a
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.188 (3/16 fields) | 13 |
 | `gpt-oss:120b` | not confirmed | 0.5 (3/6 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[depurated for]` | not captured | 48 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fitted pg clearance constant]` | not captured | 15.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fitted pg clearance constant]` | 15.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fraction of infused pg eliminated in urine]` | 93 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fraction of total rate of ph elimination]` | 7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.0069 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[of infused pg was eliminated in urine]` | not captured | 93 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[of the total rate of ph elimination]` | not captured | 7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peak concentrations of pg in urine averaged]` | not captured | 3.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ratio of fitted pg clearance constant to reported glomerular filtration rate]` | 2.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ratio of peak pg concentration in urine to blood]` | 3.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | phenol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | phenol and phenyl glucuronide | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[glucuronidation rate]` | 0.049 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[pg clearance constant]` | 15.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `screen.primary_analyte` | phenol | phenyl glucuronide | mismatch |

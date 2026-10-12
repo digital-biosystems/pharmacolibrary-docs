@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Sevoflurane concentrations, expressed in age-related MAC units, inhibit the continuous Narcotrend index via a sigmoidal Emax model. The paper does not provide the full mechanism or additional potency parameters, but the record specifies an effect-site rate constant (ke0) of 0.26 min(-1).
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kreuer_2009`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

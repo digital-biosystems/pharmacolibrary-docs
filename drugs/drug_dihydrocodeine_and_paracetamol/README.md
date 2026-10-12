@@ -17,7 +17,7 @@ Dihydrocodeine with paracetamol is a combination painkiller used to relieve mode
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-27 20:11 | 1:36 | 0/0/0 | 0/0/0 | 0/0/0 | 1,228/490 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 0/0 | 10/2 | 0 |
+| 2026-08-27 20:11 | 1:36 | 0/0/0 | 0/0/0 | 0/0/0 | 1,228/490 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 1/1 | 10/2 | 0 |
 
 ## popPK records
 
@@ -31,10 +31,10 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 9 matched, 9 returned
+- **PubMed hits:** 10 matched, 10 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 

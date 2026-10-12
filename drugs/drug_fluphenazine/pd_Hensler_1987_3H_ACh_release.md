@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism or model parameters; fluphenazine concentration (nM) is only recorded as inhibiting dopamine-evoked [3H]acetylcholine release from rabbit retina, with no stated IC50, Imax, or effect model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hensler_1987`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

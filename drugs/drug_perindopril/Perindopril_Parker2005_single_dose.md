@@ -4,7 +4,7 @@
 
 # perindopril — `Perindopril_Parker2005_single_dose`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The structural parameter V of perindoprilat carries the verbatim unit 'h' (label 'θ V1 (h)'), which cannot describe a volume of distribution; because this unit could not be converted to SI units, the parameter reached the record without an SI value. The other perindoprilat parameters are CL of 59 L/h (label 'θ CLu (1.5 mg)'), Bmax of 1.3 g/L and a tlag of 6.6 h. A second reader assigned the same clearance value 59 to apparent unbound clearance and a volume of 920 to apparent volume of distribution, whereas this record filed 59 under clu/f and 920 under v/f, and left the dose unextracted where the second reader read 3.1. Extracted — perindoprilat: V 94 h, CL 59 L/h, Bmax 1.3 g L -1, tlag 6.6 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[b max].value`: this record has 2.5, the second reading 1.3; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has perindopril, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -110,17 +110,30 @@ Parker E et al., The pharmacokinetics of perindoprilat i…, European journal of
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (3/15 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.357 (5/14 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[b max].value` | 2.5 | 1.3 | mismatch |
+| `gpt-oss-120b` | `parameters[cl u]` | 7.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cv η(clu/f )]` | not captured | 77 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cv η(v/f)]` | not captured | 70 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 12]` | 1.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t inp].parameter_id` | Q49 | Q83 | mismatch |
+| `gpt-oss-120b` | `parameters[v 1]` | 6.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ clu]` | not captured | 59 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ v1]` | not captured | 94 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ v2 (1.5 mg)]` | not captured | 320 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | perindopril | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | perindoprilat | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[b max].value` | 2.5 | 1.3 | mismatch |
 | `gpt-oss:120b` | `parameters[cl u]` | 7.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cv η(v/f)]` | not captured | 70 | only_one_extracted |

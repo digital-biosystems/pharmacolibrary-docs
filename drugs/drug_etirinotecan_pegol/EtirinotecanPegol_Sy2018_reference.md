@@ -1,10 +1,10 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;etirinotecan pegol&quot;,&quot;href&quot;:&quot;drugs/drug_etirinotecan_pegol/&quot;},{&quot;label&quot;:&quot;Sy_2018 \u00b7 population_parameter_estimate_se&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;etirinotecan pegol&quot;,&quot;href&quot;:&quot;drugs/drug_etirinotecan_pegol/&quot;},{&quot;label&quot;:&quot;Sy_2018 \u00b7 reference&quot;}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # etirinotecan pegol — `EtirinotecanPegol_Sy2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,18 +16,20 @@
 
 ### Reviewer guidance
 
-**The model was built but has not been simulated yet.**
+**The metabolite APC is an unlinked compartment in the etirinotecan pegol model because no metabolic rate parameter connects irinotecan to APC.**
 
-<sub>reviewed by rule template (no LLM)</sub>
+The record defines irinotecan, SN38, SN38-glucuronide, and APC as metabolites formed in the central compartment. While links exist for the conversion of irinotecan to SN38 and SN38 to SN38-glucuronide, the link from irinotecan to APC has a missing rate parameter. This absence renders the APC compartment unreachable from the dose, violating the model's connectivity requirements. Extracted — etirinotecan pegol: CL 0.237 L/h, V1 5.05 L, V2 1.8 L.
 
-> ⚠️ **STALE** — review status `not_simulated` (reviewed 2026-09-28 14:37:58.633921+00:00) predates the upstream re-run (2026-10-07 17:57:18.242536+00:00). Current validate status: `rejected`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etirinotecan_pegol, the second reading etirinotecan pegol; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Sy SKB et al., Integrated population pharmacokinetics…, Cancer chemotherapy and pha… (2018)
   ·  DOI: [10.1007/s00280-018-3562-3](https://doi.org/10.1007/s00280-018-3562-3)
 
 ## Model component
-<dbs-pgx drug="etirinotecan pegol" model-id="EtirinotecanPegol_Sy2018_reference" status="rejected" stale="true" population="cancer patients with solid tumors" measured-compound="etirinotecan_pegol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="etirinotecan pegol" model-id="EtirinotecanPegol_Sy2018_reference" status="rejected" stale="false" population="cancer patients with solid tumors" measured-compound="etirinotecan_pegol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -85,6 +87,34 @@ Sy SKB et al., Integrated population pharmacokinetics…, Cancer chemotherapy an
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.111 (1/9 fields) | 8 |
+
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['etirinotecan_pegol', 'irinotecan', 'metabolism'], ['irinotecan', 'sn38', 'metabolism'], ['sn38', 'sn38-glucuronide', 'metabolism'], ['irinotecan', 'apc', 'metabolism']] | [['etirinotecan pegol', 'irinotecan', 'metabolism'], ['irinotecan', 'sn38', 'metabolism'], ['irinotecan', 'apc', 'metabolism'], ['sn38', 'sn38-glucuronide', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[apc]` | not captured | 0.631 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 0.237 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ep]` | not captured | 0.237 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | 5.05 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2=v2/f12]` | 1.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | etirinotecan_pegol | etirinotecan pegol | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | etirinotecan_pegol | etirinotecan pegol | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -98,18 +128,6 @@ Sy SKB et al., Integrated population pharmacokinetics…, Cancer chemotherapy an
 | C9_phys_window_Q63 | pass | volume within physiological range | 5.05 L | not captured | not captured | ['Sy_2018:other_prose'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 1.8 L | not captured | not captured | ['Sy_2018:other_prose'] |
 
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_shared_parameters | not captured | pass | 3 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
-| T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -117,9 +135,7 @@ Sy SKB et al., Integrated population pharmacokinetics…, Cancer chemotherapy an
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_etirinotecan_pegol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sy_2018` / `Sy_2018::population_parameter_estimate_se`)
-- model: `../../../knowledgebase/drugs/drug_etirinotecan_pegol/models/modelica/EtirinotecanPegol_Sy2018_population_parameter_estimate_se.mo`
-- deviation: `../../../knowledgebase/drugs/drug_etirinotecan_pegol/models/modelica/EtirinotecanPegol_Sy2018_population_parameter_estimate_se.deviation.json`
+- scholar stages: `../../../knowledgebase/drugs/drug_etirinotecan_pegol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sy_2018` / `Sy_2018::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -5,7 +5,7 @@
 
 # atogepant — `Atogepant_Schlachter2026_phase_1_model`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667), gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Although the paper reports apparent parameters for atogepant (CL/F 19.82 L/h, V1/F 73.52 L, Q/F 2.75 L/h, V2/F 47.97 L, ka 2.44 /h, ALAG 0.30 h), the model builder substituted placeholder values for the missing clearance, volume of distribution, absorption rate constant, lag time and both intercompartmental rate constants, so the model was held back rather than published with invented numbers. The builder also assumed F=1 and Fm=1 without molar correction, and defaulted ka even though it was not reported in the source, which was judged not acceptable. The covariate effects defined in the record, such as the female sex effect on CL/F (-0.19) and the famotidine pre-treatment effect on relative bioavailability (-0.15), were not exercised in simulation; only the reference individual was simulated. A second reader disagreed on where the -0.19 female sex effect belongs, reading it as an effect on CL/F sex covariate rather than on female_sex_on_cl_f, and read no value for the absolute bioavailability parameter. Extracted — atogepant: kabs 2.44, CL/F 19.8, V1/F 73.5, Q/F 2.75, V2/F 48, tlag 0.3, Frel -0.15.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has atogepant, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has atogepant, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -95,17 +95,24 @@ Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharma
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.667 (12/18 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.667 (12/18 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[famotidine pre-treatment on ka]` | -0.51 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[female_sex_on_cl_f]` | -0.19 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_sex]` | not captured | -0.19 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | atogepant | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | atogepant | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[apparent first peripheral volume of distribution [v2/f (l)]].parameter_id` | Q82 | Q64 | mismatch |
 | `gpt-oss:120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[female_sex_on_cl_f]` | -0.19 | not captured | only_one_extracted |

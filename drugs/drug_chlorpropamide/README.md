@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | [Lang_2012_KATP_channel_inhibition](drugs/drug_chlorpropamide/pd_Lang_2012_KATP_channel_inhibition.md) | KATP channel inhibition ← chlorpropamide · direct sigmoid Emax (Hill) effect | — | Lang VY et al., Pharmacogenomic analysis of ATP-sensiti…, Pharmacogenetics and genomi… (2012) | [10.1097/FPC.0b013e32835001e7](https://doi.org/10.1097/FPC.0b013e32835001e7) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | [Lang_2012_KATP_channel_inhibition](drugs/drug_chlorpropamide/pd_Lang_2012_KATP_channel_inhibition.md) | KATP channel inhibition ← chlorpropamide · direct sigmoid Emax (Hill) effect | — | Lang VY et al., Pharmacogenomic analysis of ATP-sensiti…, Pharmacogenetics and genomi… (2012) | [10.1097/FPC.0b013e32835001e7](https://doi.org/10.1097/FPC.0b013e32835001e7) |
 
 ## ADME sites
 

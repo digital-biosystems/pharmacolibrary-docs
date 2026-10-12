@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism or model parameters: no excerpts are available, so it cannot be stated how asenapine concentrations drive the placebo-corrected change in QTc (ddQTc, ms), and no potency (IC50/EC50/Emax) or rate values (kin, kout, ke0) are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chapel_2011`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

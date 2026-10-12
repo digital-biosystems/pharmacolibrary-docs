@@ -5,7 +5,7 @@
 
 # omeprazole — `Omeprazole_Yang2026v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3), gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — omeprazole: CL 215 L/h, V1 2.33e+03 L, V2 2.82e+04 L, Q 2.59e+03 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of Q: this record has 2590, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of Q: this record has 2590, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,17 +60,25 @@ Yang M et al., Therapeutic drug monitoring-guided opti…, Frontiers in medicine
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.topology_template` | 2C | 1C | mismatch |
+| `gpt-oss-120b` | `values[Q30]` | 2590 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q310]` | not captured | 600 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q36]` | 2.34 | 5.64 | mismatch |
+| `gpt-oss-120b` | `values[Q63]` | 2330 | 837 | mismatch |
+| `gpt-oss-120b` | `values[Q64]` | 28200 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q99]` | not captured | 200 | only_one_extracted |
 | `gpt-oss:120b` | `model.topology_template` | 2C | 1C | mismatch |
 | `gpt-oss:120b` | `values[Q30]` | 2590 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q364]` | not captured | 600 | only_one_extracted |

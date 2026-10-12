@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Trösken_2004_CYP19_inhibition](drugs/drug_bifonazole/pd_Tr_sken_2004_CYP19_inhibition.md) | inhibition of recombinant human CYP19 (aromatase) ← bifonazole · direct sigmoid Emax (Hill) effect | — | Trösken ER et al., Comparative assessment of the inhibitio…, Endocrine research (2004) | [10.1081/erc-200035093](https://doi.org/10.1081/erc-200035093) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Trösken_2004_CYP19_inhibition](drugs/drug_bifonazole/pd_Tr_sken_2004_CYP19_inhibition.md) | inhibition of recombinant human CYP19 (aromatase) ← bifonazole · direct sigmoid Emax (Hill) effect | — | Trösken ER et al., Comparative assessment of the inhibitio…, Endocrine research (2004) | [10.1081/erc-200035093](https://doi.org/10.1081/erc-200035093) |
 
 ## ADME sites
 

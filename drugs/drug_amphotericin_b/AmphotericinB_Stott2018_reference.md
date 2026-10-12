@@ -5,7 +5,7 @@
 
 # amphotericin B — `AmphotericinB_Stott2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record, built from the paper's abstract only, reports clearance (0.03 liters/h), volume (0.82 liters) and AUC144-168 (5.83 mg·h/liter) for amphotericin B deoxycholate, but neither k12 (5.36 h-1) nor k21 (9.92 h-1) was emitted or defaulted, leaving 2 of 4 parameters covered. Because only the abstract was read, the reported summary statistics stand in for a fitted model, so the two-compartment structure (1C) is not fully parameterized from a fitted model. Extracted — amphotericin_b_deoxycholate: CL 0.03 liters/h, V 0.82 liters, k12 5.36 h-1, k21 9.92 h-1, AUCt 5.83 mg · h/liter.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has amphotericin_b, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amphotericin_b, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -71,17 +71,30 @@ Stott KE et al., Population Pharmacokinetic Model and Me…, Antimicrobial agent
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.154 (2/13 fields) | 11 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>23 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[area under concentration-time curve from h 144 to h 168]` | 5.83 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc144-168]` | not captured | 5.83 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[first-order rate constant from central compartment to peripheral compartment]` | 5.36 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[first-order rate constant from central compartment to peripheral compartment]` | not captured | 5.36 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[first-order rate constant from peripheral compartment to central compartment]` | 9.92 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[first-order rate constant from peripheral compartment to central compartment]` | not captured | 9.92 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | amphotericin_b | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | amphotericin_b | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[area under concentration-time curve from h 144 to h 168]` | 5.83 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | not captured | not captured | only_one_extracted |

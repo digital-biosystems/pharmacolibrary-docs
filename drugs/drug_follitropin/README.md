@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G03G&quot;,&quot;href&quot;:&quot;atc/G03G.md&quot;},{&quot;label&quot;:&quot;Follitropin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Follitropin_Rose2016_reference&quot;,&quot;label&quot;:&quot;Rose_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_follitropin/Follitropin_Rose2016_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Follitropin_Rose2016_reference&quot;,&quot;label&quot;:&quot;Rose_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_follitropin/Follitropin_Rose2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # Follitropin
 
@@ -24,13 +24,13 @@ Follitropin, a follicle-stimulating hormone preparation, is used to treat infert
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Rose_2016_reference](drugs/drug_follitropin/Follitropin_Rose2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Rose TH et al., Characterisation of Population Pharmaco…, Drugs in R&D (2016) | [10.1007/s40268-016-0126-z](https://doi.org/10.1007/s40268-016-0126-z) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span> | [Rose_2016_reference](drugs/drug_follitropin/Follitropin_Rose2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Rose TH et al., Characterisation of Population Pharmaco…, Drugs in R&D (2016) | [10.1007/s40268-016-0126-z](https://doi.org/10.1007/s40268-016-0126-z) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Taketani_2010_Time_to_dominant_follicle_18_mm](drugs/drug_follitropin/pd_Taketani_2010_Time_to_dominant_follicle_18_mm.md) | Time to dominant follicle ≥18 mm ← follitropin · time-to-event model | — | Taketani Y et al., Recombinant follicle-stimulating hormon…, Reproductive medicine and b… (2010) | [10.1007/s12522-009-0044-7](https://doi.org/10.1007/s12522-009-0044-7) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Taketani_2010_Time_to_dominant_follicle_18_mm](drugs/drug_follitropin/pd_Taketani_2010_Time_to_dominant_follicle_18_mm.md) | Time to dominant follicle ≥18 mm ← follitropin · time-to-event model | — | Taketani Y et al., Recombinant follicle-stimulating hormon…, Reproductive medicine and b… (2010) | [10.1007/s12522-009-0044-7](https://doi.org/10.1007/s12522-009-0044-7) |
 
 ## ADME sites
 

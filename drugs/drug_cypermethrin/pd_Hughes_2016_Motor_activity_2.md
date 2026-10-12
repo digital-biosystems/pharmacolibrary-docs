@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts or mechanism details; the record indicates cypermethrin (as part of summed pyrethroid brain concentration) inhibits motor activity via a sigmoid Emax model, but no potency or rate values are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hughes_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

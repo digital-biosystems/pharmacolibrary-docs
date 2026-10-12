@@ -23,7 +23,7 @@ Inebilizumab is a monoclonal antibody used to treat neuromyelitis optica. It is 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yan_2022_reference](drugs/drug_inebilizumab/Inebilizumab_Yan2022_reference.md) | — | 2-compartment (no model) | 7 (+4 cov.) | Yan L et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01071-5](https://doi.org/10.1007/s40262-021-01071-5) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.655). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yan_2022_reference](drugs/drug_inebilizumab/Inebilizumab_Yan2022_reference.md) | — | 2-compartment (no model) | 7 (+4 cov.) | Yan L et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01071-5](https://doi.org/10.1007/s40262-021-01071-5) |
 
 ## Pharmacodynamics (PD)
 

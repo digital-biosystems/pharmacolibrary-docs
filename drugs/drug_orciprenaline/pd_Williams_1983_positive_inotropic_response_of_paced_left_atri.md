@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper (no full text available) relates orciprenaline concentrations to positive inotropic responses in paced left atria/papillary muscles and positive chronotropic responses in spontaneously beating right atria, modelled as a stimulatory Emax model; no potency (EC50, Emax) or rate values are stated in the available material, and the mechanism beyond a direct Emax-type stimulation is not described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Williams_1983`
 - **model family:** `emax`
 - **driver:** `cited_pk`

@@ -32,7 +32,7 @@ Safinamide is a drug used to treat Parkinson's disease. It is authorised in the 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Loprete_2016_reference](drugs/drug_safinamide/Safinamide_Loprete2016_reference.md) | — | 1-compartment (no model) | 4 | Loprete L et al., Population pharmacokinetic and pharmaco…, Pharmacology research & per… (2016) | [10.1002/prp2.251](https://doi.org/10.1002/prp2.251) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Loprete_2016_reference](drugs/drug_safinamide/Safinamide_Loprete2016_reference.md) | — | 1-compartment (no model) | 4 | Loprete L et al., Population pharmacokinetic and pharmaco…, Pharmacology research & per… (2016) | [10.1002/prp2.251](https://doi.org/10.1002/prp2.251) |
 
 ## ADME sites
 

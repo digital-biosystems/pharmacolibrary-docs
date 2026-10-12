@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> No full text is available to describe the mechanism or link the reslizumab concentration to muscle disorder adverse events. Consequently, no model form, potency, or rate parameters (such as IC50, EC50, or ke0) can be reported.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Passarell_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Muto_2011_IGF_I](drugs/drug_pegvisomant/pd_Muto_2011_IGF_I.md) | IGF-I ← pegvisomant · direct sigmoid Emax (Hill) effect | — | Muto C et al., Population pharmacokinetic and pharmaco…, Journal of clinical pharmac… (2011) | [10.1177/0091270010386954](https://doi.org/10.1177/0091270010386954) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Muto_2011_IGF_I](drugs/drug_pegvisomant/pd_Muto_2011_IGF_I.md) | IGF-I ← pegvisomant · direct sigmoid Emax (Hill) effect | — | Muto C et al., Population pharmacokinetic and pharmaco…, Journal of clinical pharmac… (2011) | [10.1177/0091270010386954](https://doi.org/10.1177/0091270010386954) |
 
 ## ADME sites
 

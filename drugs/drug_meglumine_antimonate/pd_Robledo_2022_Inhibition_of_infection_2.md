@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Meglumine antimoniate concentrations (µg/mL) act on the percentage inhibition of infection of intracellular L. tropica amastigotes in infected U937 cells, described by a sigmoid Emax-type concentration–effect relationship with an EC50 of 50.2 ± 1.3 µg/mL; the excerpts do not state a mechanistic model (e.g., kin/kout or effect compartment) or additional potency parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Robledo_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Imipramine inhibits human sperm motility in a concentration-dependent manner, with an EC50 of 160 microM; the paper excerpts do not state the mechanism or model form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hong_1984`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -5,7 +5,7 @@
 
 # ticagrelor — `Ticagrelor_Amilon2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3), gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Henrich_2021, Åstrand_2019) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ticagrelor: CL 22.8 L/h, V 17 L, kabs 5.95 1/h, tlag 0.48 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -73,17 +73,25 @@ Amilon C et al., Population Pharmacokinetics/Pharmacodyn…, Clinical pharmacoki
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[absorption lag time prior mi]` | 0.48 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[estimated oral clearance]` | not captured | 22.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[estimated oral clearance]` | not captured | 9.97 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[estimated oral clearances]` | 22.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 5.95 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vcent]` | 17.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `gpt-oss:120b` | `parameters[estimated oral clearance]` | not captured | 22.8 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[estimated oral clearance]` | not captured | 9.97 | only_one_extracted |

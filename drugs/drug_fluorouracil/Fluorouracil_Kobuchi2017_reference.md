@@ -5,7 +5,7 @@
 
 # fluorouracil — `Fluorouracil_Kobuchi2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571), gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record lists fluorouracil clearance of 2.5 L/h/kg, a central volume of 0.39 L/kg and a peripheral volume of 0.59 L/kg in a two-compartment structure, but the review found an unreachable or orphan compartment, so the structure does not connect the dose to the peripheral space. A second reader also disagreed on the parameter values, reading 2.5 and 18.0 where this record holds 2.5 and no value, so the extracted values are contested. Extracted — fluorouracil: CL 2.5 L/h/kg, V1 0.39 L/kg, V2 0.59 L/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 2.5, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 2.5, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -63,17 +63,21 @@ Kobuchi S et al., Population Pharmacokinetic-Pharmacodyna…, European journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 | `gpt-oss:120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 2.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q30]` | not captured | 2.5 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q31]` | not captured | 18.0 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q22]` | 2.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q30]` | not captured | 2.5 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q31]` | not captured | 18.0 | only_one_extracted |

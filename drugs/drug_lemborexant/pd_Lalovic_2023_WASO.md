@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lemborexant concentrations (PK from the cited Lalovic record) act on wake after sleep onset (WASO) in a linear model with an inhibitory effect direction; the excerpts do not state the mechanism, effect form, or any potency or rate values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lalovic_2023`
 - **model family:** `linear`
 - **driver:** `cited_pk`

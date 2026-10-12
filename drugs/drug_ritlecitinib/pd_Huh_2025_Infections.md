@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ritlecitinib plasma concentration (Cave, ng/mL) is related to the incidence of infections (per 100 patient-years) via a Poisson regression model, indicating a direct stimulation of the event rate rather than a mechanism affecting production or elimination. The model is characterized by an intercept of -9.00 and a slope of 0.0989 per ng/mL, with no specific rate constants (e.g., ke0) or potency parameters (e.g., EC50) reported for this relationship.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huh_2025`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

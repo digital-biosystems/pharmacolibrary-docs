@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bleomycin_Wilde2007_reference&quot;,&quot;label&quot;:&quot;Wilde_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Yadav2023_reference&quot;,&quot;label&quot;:&quot;Yadav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Zhao2025_reference&quot;,&quot;label&quot;:&quot;Zhao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cell viability — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+# cell viability — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Honokiol concentration (µM) inhibits cell viability, measured as normalized absorbance, with IC50 values obtained by fitting to equation 1 (a concentration–response relation where IC50 is the honokiol concentration reducing normalized absorbance to 50%, with A fixed at 100); the paper does not state a specific PD mechanism (e.g., Emax/kin–kout parameters) for the viability response, and no numeric IC50 for cell viability appears in the excerpts.
+> Bleomycin concentration reduced normalized cell viability (absorbance, with no honokiol set to 100%) in an IC₅₀ concentration–response fit; the paper does not state the cellular mechanism of this effect. For MCF7 cells, the record reports −log(IC₅₀) values of 4.9 and 5.3 (24 and 72 h), increasing to 6.0 and 6.3 with honokiol 10 µM; the record labels these values µM.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
 
 - **paper:** `Gowda_2017`
 - **model family:** `sigmoid_emax`
@@ -58,26 +58,22 @@ Gowda AS et al., Honokiol Inhibits DNA Polymerases β and…, Chemical research 
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `openai:gpt-6-luna` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `openai:gpt-6-luna` | not confirmed | 0.333 (2/6 fields) | 4 |
-| `gpt-oss:120b` | not confirmed | 0.0 (0/4 fields) | 4 |
+| `einfracz:qwen3.8-27b` | secondary_empty | 0.0 (0/5 fields) | 5 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | honokiol | not captured | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | not captured | mismatch |
-| `gpt-oss:120b` | `effect_form` | unknown | not captured | mismatch |
-| `gpt-oss:120b` | `model_family` | sigmoid_emax | not captured | mismatch |
-| `openai:gpt-6-luna` | `effect_form` | unknown | proportional | mismatch |
-| `openai:gpt-6-luna` | `model_family` | emax | sigmoid_emax | mismatch |
-| `openai:gpt-6-luna` | `parameters[Q100]` | not captured | 6.3 | only_one_extracted |
-| `openai:gpt-6-luna` | `parameters[Q322]` | 6.3 (6.0, 6.5) | not captured | only_one_extracted |
+| `einfracz:qwen3.8-27b` | `driver_compound` | bleomycin | not captured | mismatch |
+| `einfracz:qwen3.8-27b` | `effect_direction` | inhibition | not captured | mismatch |
+| `einfracz:qwen3.8-27b` | `effect_form` | additive | not captured | mismatch |
+| `einfracz:qwen3.8-27b` | `model_family` | sigmoid_emax | not captured | mismatch |
+| `einfracz:qwen3.8-27b` | `parameters[Q322]` | 6.3 | not captured | only_one_extracted |
 
 </details>
 

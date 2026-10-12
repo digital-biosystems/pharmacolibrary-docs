@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Okada_1994_serum_calcium](drugs/drug_elcatonin/pd_Okada_1994_serum_calcium.md) | serum calcium biomarker turnover ← elcatonin | — | Okada S et al., [Elcatonin Reference Standard (Control…, Eisei Shikenjo hokoku. Bull… (1994) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Okada_1994_serum_calcium](drugs/drug_elcatonin/pd_Okada_1994_serum_calcium.md) | serum calcium biomarker turnover ← elcatonin | — | Okada S et al., [Elcatonin Reference Standard (Control…, Eisei Shikenjo hokoku. Bull… (1994) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

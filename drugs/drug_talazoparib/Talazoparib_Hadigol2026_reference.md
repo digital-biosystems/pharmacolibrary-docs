@@ -4,7 +4,7 @@
 
 # talazoparib — `Talazoparib_Hadigol2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.48). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The absorption rate constant parameters for talazoparib and enzalutamide carry the non-convertible unit mL/ng.**
+
+Both kabs values (0.157 and 3.431) are labeled with units of mL/ng rather than standard rate units. Because this unit cannot be converted to SI, the parameters lack a valid numerical value for the model. Extracted — talazoparib: CL 5.08 L/h, V1/F 14.4 L, V 382 L, Q 15.6 L/h, kabs 0.157 mL/ng; enzalutamide: CL/F 0.425 L/h, V/F 25.3 L, Q/F 20.6 L/h, kabs 3.43 mL/ng, fe 1 Fixed; N-desmethyl enzalutamide: CL 0.286 L/h, V1 44.9 L, Q 9.44 L/h, V2 52.4 L, fm 0.634 Fixed.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has talazoparib, the second reading unknown; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Hadigol M et al., Population Pharmacokinetics Analysis of…, Journal of clinical pharmac… (2026)
@@ -140,6 +148,52 @@ Hadigol M et al., Population Pharmacokinetics Analysis of…, Journal of clinica
 - LLM selected parameter table(s) 1, 2, 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.48 (24/50 fields) | 26 |
+
+<details><summary>26 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[1‐normal]` | not captured | 5.16 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[2‐mild]` | not captured | 4.75 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[]` | 5.078 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[]` | not captured | 5.078 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_body_weight]` | 0.549 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q1_body_weight]` | 0.027 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q22_body_weight]` | not captured | 0.549 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_body_weight]` | 3.495 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q61_body_weight]` | not captured | 3.495 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_body_weight]` | not captured | 0.027 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v_f_age]` | not captured | 1.223 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ cle/fe].covariate_forms` | ['linear_fractional', 'linear_fractional'] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[θ ft]` | not captured | 1.000 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ kat]` | 0.157 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ kat]` | not captured | 0.157 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ qt/ft]` | 15.568 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ qt/ft]` | not captured | 15.568 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ vce/fe].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[θ vcn].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[θ vct/ft]` | 14.389 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ vct/ft]` | not captured | 14.389 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ vpe/fe]` | not captured | 45.928 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ vpt/ft]` | 382.135 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ vpt/ft]` | not captured | 382.135 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | talazoparib | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | talazoparib | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

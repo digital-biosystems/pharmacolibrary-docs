@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Desipramine concentrations (micromol/l) stimulate the intracellular Ca(2+) concentration ([Ca(2+)]i) rise (micromol/l), described by an Emax model with an EC50 of 200 micromol/l; the paper excerpts do not state the mechanism, Emax, or any rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jan_2003`
 - **model family:** `emax`
 - **driver:** `cited_pk`

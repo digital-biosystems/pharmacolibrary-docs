@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cariprazine (total active moiety: cariprazine + DCAR + DDCAR, in nM, as time-averaged concentration Cave between visits) reduces the PANSS positive subscale (PANSSP) score via a sigmoid Emax exposure-response model proportional to baseline, on top of a Weibull placebo model; a typical patient with baseline PANSSP of 26 achieves ~28% maximum reduction at Cave 47 nM (≈3 mg/day), though the paper does not report the specific Emax,P, EC50, and gamma values for PANSSP in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Periclou_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

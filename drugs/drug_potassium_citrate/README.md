@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Aziz_2005_size_of_calcium_oxalate_crystals](drugs/drug_potassium_citrate/pd_Aziz_2005_size_of_calcium_oxalate_crystals.md) | size of calcium oxalate crystals ← potassium citrate · inhibition effect | — | Aziz SA et al., In vitro effects of plantago major extr…, The Malaysian journal of me… (2005) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.99).">in vitro</span> | [Aziz_2005_size_of_calcium_oxalate_crystals](drugs/drug_potassium_citrate/pd_Aziz_2005_size_of_calcium_oxalate_crystals.md) | size of calcium oxalate crystals ← potassium citrate · inhibition effect | — | Aziz SA et al., In vitro effects of plantago major extr…, The Malaysian journal of me… (2005) | — |
 
 ## ADME sites
 

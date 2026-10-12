@@ -5,7 +5,7 @@
 
 # nicardipine — `Nicardipine_Guerret1989_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — nicardipine: CL 800 ml/min, V 1 l/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has nicardipine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nicardipine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -70,17 +70,26 @@ Guerret M et al., Simultaneous study of the pharmacokinet…, European journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[half-life of beta-elimination]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life of beta-elimination]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total plasma clearance]` | 800 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total plasma clearance]` | not captured | 800 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | nicardipine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | nicardipine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[half-life of beta-elimination]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life of beta-elimination]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[total plasma clearance]` | 800 | not captured | only_one_extracted |

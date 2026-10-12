@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Ruiz_2021_luciferase_activity](drugs/drug_ledipasvir/pd_Ruiz_2021_luciferase_activity.md) | HCV genotype 2a susceptibility to sofosbuvir ← sofosbuvir · direct sigmoid Emax (Hill) effect | — | Ruiz I et al., Real-world efficacy and safety of direc…, European journal of gastroe… (2021) | [10.1097/MEG.0000000000002003](https://doi.org/10.1097/MEG.0000000000002003) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ruiz_2021_luciferase_activity](drugs/drug_ledipasvir/pd_Ruiz_2021_luciferase_activity.md) | HCV genotype 2a susceptibility to sofosbuvir ← sofosbuvir · direct sigmoid Emax (Hill) effect | — | Ruiz I et al., Real-world efficacy and safety of direc…, European journal of gastroe… (2021) | [10.1097/MEG.0000000000002003](https://doi.org/10.1097/MEG.0000000000002003) |
 
 ## ADME sites
 

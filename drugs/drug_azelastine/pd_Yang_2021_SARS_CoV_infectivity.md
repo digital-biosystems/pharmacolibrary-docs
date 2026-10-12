@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Azelastine concentrations (µM) inhibit SARS2-S pseudovirus infection of Huh-7 cells (luciferase, % of control), described as a sigmoid Emax inhibitory effect, with an EC50 of 2.36 ± 1.57 µM; the paper attributes activity to interference with the SARS-CoV-2 spike protein function but gives no further mechanistic PD detail.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

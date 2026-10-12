@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper excerpt is not available, so the mechanism by which isoflurane affects spinal anesthesia is not described. The record indicates an Emax model with an EC50 of 0.27 mol/L, but no key rate or potency values beyond this are provided in the source.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guo_2014`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

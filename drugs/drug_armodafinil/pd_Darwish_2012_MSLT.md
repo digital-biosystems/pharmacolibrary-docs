@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Armodafinil plasma concentrations (µg/mL) drive a stimulation of placebo-subtracted MSLT sleep latency (minutes) via an Emax model, with an EC50 of 4.6 µg/mL; the paper excerpts do not state Emax, a rate constant, or a more specific mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Darwish_2012`
 - **model family:** `emax`
 - **driver:** `cited_pk`

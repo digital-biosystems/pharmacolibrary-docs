@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# thyrotropin — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.75), gpt-oss:120b (not confirmed, agreement 0.103). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+# thyrotropin — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -36,45 +36,19 @@ Brun VH et al., Patient-Tailored Levothyroxine Dosage w…, Thyroid : official j
 _No resolved parameters._
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `einfracz:qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `openai:gpt-6-luna` | not confirmed | 0.75 (3/4 fields) | 1 |
-| `gpt-oss:120b` | not confirmed | 0.103 (3/29 fields) | 26 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
-<details><summary>27 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | free thyroxine | free thyroxine (fT4) | mismatch |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 117 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 118 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 144 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 150 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 21 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 17 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 39 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 21 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 15 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 16 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 21 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 21 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 75 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 16 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 18 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q54]` | not captured | 131 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q54]` | not captured | 137 | only_one_extracted |
-| `openai:gpt-6-luna` | `effect_form` | unknown | proportional | mismatch |
+| `einfracz:gpt-oss-120b` | `driver_compound` | free thyroxine | levothyroxine (LT4) | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | proportional | additive | mismatch |
 
 </details>
 

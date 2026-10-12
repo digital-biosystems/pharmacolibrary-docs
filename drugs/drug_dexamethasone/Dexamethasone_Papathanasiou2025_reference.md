@@ -5,7 +5,7 @@
 
 # dexamethasone — `Dexamethasone_Papathanasiou2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.533). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6), gpt-oss:120b (not confirmed, agreement 0.533). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record lists dexamethasone clearance of 0.926 L/day, but the central volume of distribution (12.3 L) carries the label 'cys-mcMMAF Vc' and the peripheral volume (6.63 L) the label 'ADC Vp', suggesting values taken from antibody-drug conjugate parameters rather than dexamethasone. The structural check found an unreachable or orphan compartment, i.e. a compartment with no path from the dose. A second reader also disagreed on the structure, reading a one-compartment model instead of two, and read three values (33.2, 2.03, 13.2) where this record has none, while this record assigns 6.63 and 2.03 to fields the second reader left empty. Extracted — dexamethasone: CL 0.926 L/day, V1 12.3 L, V2 6.63 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.926, the second reading 0.901; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q37: this record has none, the second reading 2.03; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -61,17 +61,24 @@ Papathanasiou T et al., Population Pharmacokinetics for Belanta…, Clinical pha
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.6 (9/15 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.533 (8/15 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.topology_template` | 2C | 1C | mismatch |
+| `gpt-oss-120b` | `values[Q37]` | not captured | 2.03 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 13.0 | 16.8 | mismatch |
+| `gpt-oss-120b` | `values[Q60]` | not captured | 13.0 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q64]` | 6.63 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q75]` | 2.03 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.topology_template` | 2C | 1C | mismatch |
 | `gpt-oss:120b` | `values[Q22]` | 0.926 | 0.901 | mismatch |
 | `gpt-oss:120b` | `values[Q37]` | not captured | 2.03 | only_one_extracted |

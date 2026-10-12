@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Procaterol concentration-dependently inhibits methacholine (10 μM)-induced contraction (with atropine 1 nM present), described by an Emax model with EC50 2.0 ± 0.8 nM and Emax 91.3 ± 6.4%; the paper does not state a kinetic mechanism (no kin/kout/ke0), only that inhibition is via β2-adrenoceptor–mediated relaxation (attenuated by iberiotoxin, augmented by verapamil).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kume_2018`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Zafirlukast concentrations inhibit recombinant human sEH activity (conversion of the substrate PHOME) with an IC50 of 1.97 ± 0.08 μM, most probably via its carbamate function acting as an epoxide mimetic interacting with the enzyme's catalytic triad; montelukast was excluded from this assay due to autofluorescence, so no montelukast–sEH concentration–response model is given in the paper.
+> Montelukast concentrations inhibit sEH activity in HEP-G2 cells via a sigmoid Emax model, with an IC50 of 1.95 μM. The paper describes sEH as an enzyme that hydrolyzes EETs into DHETs, but does not explicitly detail the molecular binding mechanism or rate constants for montelukast in this assay.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Göbel_2019`
 - **model family:** `sigmoid_emax`

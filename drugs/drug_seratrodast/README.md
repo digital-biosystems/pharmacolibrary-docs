@@ -24,7 +24,7 @@ Seratrodast is an antiasthmatic, anti-inflammatory drug developed for obstructiv
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Samara_1997_reference](drugs/drug_seratrodast/Seratrodast_Samara1997_reference.md) | — | 1-compartment (no model) | 0 | Samara E et al., Population analysis of the pharmacokine…, Clinical pharmacology and t… (1997) | [10.1016/S0009-9236(97)90121-1](https://doi.org/10.1016/S0009-9236(97)90121-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Samara_1997_reference](drugs/drug_seratrodast/Seratrodast_Samara1997_reference.md) | — | 1-compartment (no model) | 0 | Samara E et al., Population analysis of the pharmacokine…, Clinical pharmacology and t… (1997) | [10.1016/S0009-9236(97)90121-1](https://doi.org/10.1016/S0009-9236(97)90121-1) |
 
 ## ADME sites
 

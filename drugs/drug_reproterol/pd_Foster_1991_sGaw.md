@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Reproterol dose acts on the increase in specific airways conductance (sGaw) against background bronchoconstriction, described by a linear, additive stimulation model; the paper states a relative potency of reproterol to salbutamol of 0.082, and no mechanism, potency (IC50/EC50/Emax) or rate parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Foster_1991`
 - **model family:** `linear`
 - **driver:** `dose_only`

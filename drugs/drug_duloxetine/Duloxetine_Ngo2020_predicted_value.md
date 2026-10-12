@@ -5,7 +5,7 @@
 
 # duloxetine — `Duloxetine_Ngo2020_predicted_value`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,6 +22,8 @@
 **The duloxetine parent–metabolite model in Sprague-Dawley rats (Ngo_2020) was rejected because the metabolite 4-hydroxy duloxetine is unlinked: it is defined with no compartments (n_cmt = 0), so it is unreachable from the duloxetine dose.**
 
 The record describes duloxetine with 4-hydroxy duloxetine formed presystemically via first-pass and systemic metabolism, with a formation clearance CLfm of 21.8 L/h. However, the metabolite has n_cmt = 0, meaning no compartment carries it and no path from the administered duloxetine dose reaches it, failing the orphan/unlinked-metabolite check. The remaining parameters (kabs 0.687 1/h, CL/F 34.1 L/h, V/F 2460.0 L, kcomp 0.0547 1/h, metabolite CL/F 212 L/h, V2/F 1022 L) are recorded, but the broken metabolite link made the model structure unusable. Extracted — duloxetine: kabs 0.687 1/h, CL/F 34.1 L/h, V2/F 1.02e+03 L, kcomp 0.0547 1/h, V/F 2.46e+03 L; 4-hydroxy duloxetine: CLfm 21.8 L/h, CL/F 212 L/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has duloxetine → 4-hydroxy duloxetine (metabolism), the second reading none; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -86,6 +88,41 @@ Ngo TL et al., Application of an Inter-Species Extrapo…, International journal
 - dropped sensitivity-analysis table(s) 2 from the LLM selection — perturbations of a model, not a model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.167 (3/18 fields) | 15 |
+
+<details><summary>15 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['duloxetine', '4-hydroxy duloxetine', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[clm/fm]` | not captured | 12.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm/fm]` | 212 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clp/fp]` | 34.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clp]` | not captured | 1.97 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clpm/fp]` | not captured | 1.26 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clpm/fp]` | 21.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fpm]` | not captured | 0.589 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka].rse_percent` | not captured | 8.10 | mismatch |
+| `gpt-oss-120b` | `parameters[ka].value` | 0.687 | 1.35 | mismatch |
+| `gpt-oss-120b` | `parameters[kep]` | 0.0547 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 2460.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vm/fm]` | not captured | 84.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp/fp]` | 1022 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | not captured | 14.6 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

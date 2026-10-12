@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Secretin concentration-dependently stimulates cAMP accumulation at the secretin receptor (SCTR) in COS-7 cells, modeled with a direct Emax concentration–response relationship; the paper does not state a kinetic mechanism. Reported potency was pEC50 ≈ 10.7–10.8 with Emax ≈ 99.4–100% across conditions.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shao_2022`
 - **model family:** `emax`
 - **driver:** `not_resolved`

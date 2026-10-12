@@ -5,7 +5,7 @@
 
 # clonidine — `Clonidine_Chiang1986_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3), gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,18 +23,18 @@
 
 The record for clonidine in rabbits was built from the paper's abstract only, so reported summary statistics stood in for a fitted model. The clearance/volume check failed: the ocular clearance Qe of 14.9 microliter/min and the apparent steady-state volume of distribution Vss of 0.53 ml were judged implausible in magnitude, consistent with a unit or scale extraction error. A second reader returned null for all five parameter values (kabs 0.00139 min-1, kel 0.0658 min-1, MRT 35.6 min, Vss 0.53 ml, CL 14.9 microliter/min), so the disagreement on the values could not be resolved. Extracted — clonidine: kabs 0.00139 min-1, kel 0.0658 min-1, MRT 35.6 min, Vss 0.53 ml, CL 14.9 microliter/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has clonidine, the second reading clonidine-3H hydrochloride. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clonidine, the second reading clonidine hydrochloride; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:25:35.615450+00:00) predates the upstream re-run (2026-10-08 11:20:36.649052+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:25:35.615450+00:00) predates the upstream re-run (2026-10-09 06:08:22.062772+00:00). Current validate status: `rejected`.
 
 ## Citation
 Chiang CH et al., Ocular pharmacokinetic models of clonid…, Journal of pharmacokinetics… (1986)
   ·  DOI: [10.1007/BF01065260](https://doi.org/10.1007/BF01065260)
 
 ## Model component
-<dbs-pgx drug="clonidine" model-id="Clonidine_Chiang1986_reference" status="rejected" stale="true" population="rabbits" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="clonidine" model-id="Clonidine_Chiang1986_reference" status="rejected" stale="true" population="New Zealand white rabbits" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -74,18 +74,25 @@ Chiang CH et al., Ocular pharmacokinetic models of clonid…, Journal of pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.889 (8/9 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[apparent steady-state volume of distribution vss]` | 0.53 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aqueous humor elimination rate constant k10]` | 0.0658 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[corneal absorption rate constant ka]` | 0.00139 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean residence time mrtd]` | 35.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean volume of distribution]` | 2.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ocular clearance qe]` | 14.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | clonidine | clonidine hydrochloride | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | clonidine | clonidine-3H hydrochloride | mismatch |
 
 </details>
@@ -138,4 +145,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 11:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-09 06:08 UTC</sub>

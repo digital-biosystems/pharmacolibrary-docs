@@ -5,7 +5,7 @@
 
 # pethidine — `Pethidine_Groll2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.98).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538), gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.98).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record for pethidine carries CL 0.637 L/h, V/F 0.42 L/kg and a peripheral volume V2 of 49.2 L, but the structure check found an orphan compartment with no path from the dose. The V/F parameter's verbatim label reads 'apparent volume of distribution of LAmB' although the compound is pethidine, indicating a mismatched source value. The second reader also disagreed on several extracted values (e.g. 152 vs 127, 54.7 vs 32, and two values the record left null where the reader found 1.65 and 152), so the numeric content is not consistently established. Extracted — pethidine: CL 0.637 L/h, V/F 0.42 L/kg, V2 49.2 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 32, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has none, the second reading 430; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -63,17 +63,24 @@ Groll AH et al., Clinical Pharmacokinetics, Pharmacodyna…, Clinical infectious
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.538 (7/13 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.583 (7/12 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q19]` | not captured | 430 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q352]` | 0.42 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q46]` | not captured | 97 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q59]` | not captured | 1.65 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q76]` | not captured | 0.42 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` | 54.7 | 32 | mismatch |
 | `gpt-oss:120b` | `values[Q19]` | 32 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q57]` | 152 | 127 | mismatch |
 | `gpt-oss:120b` | `values[Q59]` | not captured | 1.65 | only_one_extracted |

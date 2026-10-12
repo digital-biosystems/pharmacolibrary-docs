@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hirabayashi_1985_Clinical_efficacy_excellent_good_poor](drugs/drug_cefminox/pd_Hirabayashi_1985_Clinical_efficacy_excellent_good_poor.md) | Clinical efficacy (excellent/good/poor) ← cefminox · stimulation effect | — | Hirabayashi K et al., [Basic and clinical studies on cefminox…, The Japanese journal of ant… (1985) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Hirabayashi_1985_Clinical_efficacy_excellent_good_poor](drugs/drug_cefminox/pd_Hirabayashi_1985_Clinical_efficacy_excellent_good_poor.md) | Clinical efficacy (excellent/good/poor) ← cefminox · stimulation effect | — | Hirabayashi K et al., [Basic and clinical studies on cefminox…, The Japanese journal of ant… (1985) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

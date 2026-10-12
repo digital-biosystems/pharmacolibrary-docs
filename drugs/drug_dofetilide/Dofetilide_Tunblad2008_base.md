@@ -4,7 +4,7 @@
 
 # dofetilide — `Dofetilide_Tunblad2008_base`
 
-> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral">not_reviewed</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778), gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,16 +16,18 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dofetilide, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+**Every check that could be run on this record passed.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].covariate_forms`: this record has none, the second reading ['linear_fractional']; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Tunblad K et al., The use of clinical irrelevance criteri…, Journal of pharmacokinetics… (2008)
   ·  DOI: [10.1007/s10928-008-9099-z](https://doi.org/10.1007/s10928-008-9099-z)
 
 ## Model component
-<dbs-pgx drug="dofetilide" model-id="Dofetilide_Tunblad2008_base" status="" stale="false" population="patients with arrhythmia" measured-compound="dofetilide" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="dofetilide" model-id="Dofetilide_Tunblad2008_base" status="not_reviewed" stale="false" population="patients with arrhythmia" measured-compound="dofetilide" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -33,7 +35,7 @@ Tunblad K et al., The use of clinical irrelevance criteri…, Journal of pharmac
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `not_reviewed`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -67,17 +69,20 @@ Tunblad K et al., The use of clinical irrelevance criteri…, Journal of pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.556 (5/9 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_f_creatinine]` | not captured | +0.89 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/f].covariate_forms` | [] | ['linear_fractional'] | mismatch |
 | `gpt-oss:120b` | `parameters[theta_cl_f_creatinine]` | not captured | +0.89 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | dofetilide | unknown | mismatch |

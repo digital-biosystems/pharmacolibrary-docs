@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Bethanechol concentration (mol/L) stimulates ileal longitudinal muscle contractile tension, described with an Emax-type concentration-response model; the paper (as available) gives no mechanism beyond stimulation and no numeric potency values, only noting maximal tension is 2-fold higher in adult than in fetus and newborn.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Oyachi_2003`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

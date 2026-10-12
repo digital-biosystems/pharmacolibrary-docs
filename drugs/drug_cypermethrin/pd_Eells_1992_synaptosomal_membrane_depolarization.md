@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cypermethrin concentration (nM) is modelled with an Emax-type stimulation of synaptosomal membrane depolarization (mV); the excerpts provide no mechanism details and no parameter values (Emax, EC50, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eells_1992`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

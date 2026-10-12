@@ -5,7 +5,7 @@
 
 # methotrexate — `Methotrexate_Bremnes1989_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231), gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has methotrexate, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 7-hydroxymethotrexate, the second reading methotrexate; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -78,17 +78,28 @@ Bremnes RM et al., Formation and elimination of 7-hydroxym…, Cancer research (
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[7-oh-mtx concentrations in bile declined monophasically with a half-life of]` | 29.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[7-oh-mtx concentrations in bile declined monophasically with a half-life]` | not captured | 29.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl l]` | 0.159 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.268 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mtx initial phase half-life]` | not captured | 23.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mtx second phase half-life]` | not captured | 86.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[serum concentration curves were analyzed according to a three-compartment open model with an initial elimination half-life of]` | 1.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t lag,oral]` | 0.36 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd threshold]` | 5.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | 7-hydroxymethotrexate | methotrexate | mismatch |
 | `gpt-oss:120b` | `parameters[7-oh-mtx bile half-life]` | not captured | 29.4 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[7-oh-mtx concentrations in bile declined monophasically with a half-life of]` | 29.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mtx initial phase half-life]` | not captured | 23.1 | only_one_extracted |

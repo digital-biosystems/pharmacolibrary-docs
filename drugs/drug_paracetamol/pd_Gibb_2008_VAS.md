@@ -18,9 +18,9 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> Paracetamol plasma concentrations (mg/l) drive pain relief measured on a 0–10 VAS via a sigmoid Emax (inhibitory) relationship, with Emax 10 VAS units, EC50 9.98 mg/l and Hill coefficient 1. The paper does not state a fitted mechanism for this specific model, but discusses that paracetamol's central cyclooxygenase-mediated effect on prostaglandin synthesis could suit an indirect-response (turnover) model, and describes effect-compartment equilibration half-times (Teq) increasing with size (predicted 0.9 h in neonates to 1.93 h in adults).
+> Paracetamol plasma concentrations (mg/l) are linked to VAS pain score reduction via an effect compartment model, with a direct inhibitory Emax relationship (Hill coefficient = 1, Emax = 5.17, EC50 = 9.98 mg/l). The equilibration half-time (Teq) is reported as 53 minutes, reflecting the first-order rate constant for drug movement into the effect compartment.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Gibb_2008`
 - **model family:** `effect_compartment`

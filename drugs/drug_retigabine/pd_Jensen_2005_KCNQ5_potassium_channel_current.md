@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes a direct Emax model where retigabine concentrations stimulate KCNQ5 potassium channel current with an EC50 of 2.0 microM. The paper excerpts are unavailable, so no mechanistic details beyond the recorded Emax framework and potency value can be confirmed.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jensen_2005`
 - **model family:** `emax`
 - **driver:** `not_resolved`

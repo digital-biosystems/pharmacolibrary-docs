@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Samidorphan plasma concentrations (nM) were related to kappa opioid receptor (KOR) occupancy (%) via a sigmoid Emax model, with an EC50 of 42.9 nM; the paper excerpts do not state the mechanism beyond this direct concentration–occupancy relationship or other parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tan_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

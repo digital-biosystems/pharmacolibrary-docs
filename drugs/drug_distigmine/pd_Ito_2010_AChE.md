@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Distigmine concentrations inhibit acetylcholinesterase (AChE) activity in whole blood, described by an effect-compartment (inhibition) model; the paper excerpts provide no mechanism details and no parameter values (Imax, IC50, ke0, gamma) are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ito_2010`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

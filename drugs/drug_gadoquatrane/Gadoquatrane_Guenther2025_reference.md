@@ -16,7 +16,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Gadoquatrane AUC is 874 without a unit, preventing conversion; a second comparison also failed with a ratio of 0.8772.**
+
+AUC has no unit. Without a unit the value cannot be converted, so the model cannot use it. A second numerical comparison failed, with a ratio of 0.8772. Extracted — gadoquatrane: AUC 874, CL 0.114 L/h/kg, Vss 0.169 L/kg, t1/2α 3.39 h, t1/2β 61.6 h, t1/2γ 25.3 h, t1/2z 1.02 h.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 > **Dose compound ≠ measured compound:** dosed `gadoquatrane, Dy-butrol, Tb-DOTA`, measured `gadoquatrane`.
 

@@ -32,7 +32,7 @@ Bamipine is an antihistamine (a histamine antagonist) used against itching and a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Neidlein_1987_3_reference](drugs/drug_bamipine/Bamipine_Neidlein1987v3_reference.md) | — | 1-compartment (no model) | 1 | Neidlein R et al., [Biotransformation and pharmacokinetics…, Arzneimittel-Forschung (1987) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Neidlein_1987_3_reference](drugs/drug_bamipine/Bamipine_Neidlein1987v3_reference.md) | — | 1-compartment (no model) | 1 | Neidlein R et al., [Biotransformation and pharmacokinetics…, Arzneimittel-Forschung (1987) | — |
 
 ## ADME sites
 

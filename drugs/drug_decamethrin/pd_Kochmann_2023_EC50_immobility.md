@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deltamethrin water concentrations (ng/l) act directly on immobility/death of Gammarus roeselii, fitted with two-parameter log-logistic (sigmoid Emax-type) dose-response models; EC50 values were 28.6 vs 48.7 ng/l (uninfected vs infected) at 24 h, 21.3 vs 34.1 ng/l at 48 h, 18.4 vs 28.1 ng/l at 72 h, and 15.0 vs 18.5 ng/l at 96 h, with infected amphipods consistently less sensitive until 96 h. The paper does not describe a mechanistic PD model (no Imax, kin, kout, ke0, or gamma values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kochmann_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

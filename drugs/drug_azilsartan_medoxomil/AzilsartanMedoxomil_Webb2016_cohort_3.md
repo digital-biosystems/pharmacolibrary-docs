@@ -4,7 +4,7 @@
 
 # azilsartan medoxomil — `AzilsartanMedoxomil_Webb2016_cohort_3`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615), gpt-oss:120b (not confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has azilsartan_medoxomil, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+**The record was rejected because the azilsartan metabolite is unlinked from the dose and a structural parameter has a dimension mismatch.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The model structure defines azilsartan as a metabolite formed from azilsartan medoxomil, but the dose is assigned to azilsartan medoxomil, leaving the metabolite compartment unreachable from the input. Additionally, a structural parameter failed a dimension check, indicating an inconsistency in the model's mathematical formulation. A reported unit could not be converted to SI units, preventing the parameter from being processed. Extracted — azilsartan: AUC∞ 2.82e+04 mg/kg, Cmax 5.24e+03 ng/mL, CLm,norm/F 0.03 L/h/kg, V2/F 0.19 L/kg; M-II: Cmax 762 ng/mL.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has azilsartan_medoxomil, the second reading azilsartan medoxomil; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 > **Dose compound ≠ measured compound:** dosed `azilsartan_medoxomil`, measured `azilsartan`.
 
@@ -76,17 +80,23 @@ Webb NJ et al., Single-dose pharmacokinetics and safety…, European journal of 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.615 (8/13 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.538 (7/13 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc0-inf, [ng⋅h/ml]/[mg/kg]].parameter_id` | Q17 | Q189 | mismatch |
+| `gpt-oss-120b` | `parameters[c max, [ng/ml]/[mg/kg].parameter_id` | Q32 | Q174 | mismatch |
+| `gpt-oss-120b` | `parameters[c max, [ng/ml]/[mg/kg]].parameter_id` | Q32 | Q174 | mismatch |
+| `gpt-oss-120b` | `parameters[vz/f].parameter_id` | Q82 | Q76 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | azilsartan_medoxomil | azilsartan medoxomil | mismatch |
 | `gpt-oss:120b` | `parameters[auc0-inf, [ng⋅h/ml]/[mg/kg]].parameter_id` | Q17 | Q189 | mismatch |
 | `gpt-oss:120b` | `parameters[c max, [ng/ml]/[mg/kg].parameter_id` | Q32 | Q174 | mismatch |
 | `gpt-oss:120b` | `parameters[cl/f].parameter_id` | Q375 | Q27 | mismatch |

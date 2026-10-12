@@ -4,7 +4,7 @@
 
 # odronextamab — `Odronextamab_Bravo2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727), gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
+**The record was rejected because the peripheral compartment is unreachable from the dose, and the second reader could not verify any parameter values.**
+
+The model structure defines a peripheral compartment with a volume of 4.42 L, but the review found this compartment is unreachable from the dose. The second reader disagreed with the extracted values for clearance (0.189 L/day) and all volumes, marking them as null. Consequently, the record lacks verified pharmacokinetic parameters for odronextamab. Extracted — odronextamab: V1 4.99 L, V2 4.42 L, V 9.41 L, CL 0.189 L/day.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has odronextamab, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Bravo Padros M et al., Pharmacokinetics of Odronextamab, A Bis…, CPT: pharmacometrics & syst… (2026)
@@ -65,17 +69,21 @@ Bravo Padros M et al., Pharmacokinetics of Odronextamab, A Bis…, CPT: pharmaco
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.727 (8/11 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c min]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[c max]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[c min]` | not captured | not captured | only_one_extracted |

@@ -4,7 +4,7 @@
 
 # pioglitazone — `Pioglitazone_Gibbons2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The model claims pioglitazone as the drug while the measured compound and all parameters (AUC∞ 30.0 ng·h/mL, Cmax 9.45 ng/mL, Ctrough 12.0 μg/mL, AUCτ 322 μg·h/mL, CL/F 0.52 L/h) belong to enzalutamide, and the second reader instead read the parent as 'enalutamide' with pioglitazone metabolite links. Both enzalutamide metabolites are formed in the central compartment with zero compartments and share the same formation clearance, so the carboxylic acid metabolite is unreachable from the dose. The units μg/mL and μg·h/mL for Ctrough and AUCτ could not be converted to SI, so those parameters reached the record without SI values. Extracted — pioglitazone: AUC∞ 30 ng·h/mL, Cmax 9.45 ng/mL, Ctrough 12 μg/mL, AUCt 322 μg·h/mL, CL/F 0.52 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has enzalutamide, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has enzalutamide, the second reading pioglitazone; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -94,17 +94,30 @@ Gibbons JA et al., Pharmacokinetic Drug Interaction Studie…, Clinical pharmaco
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.6 (6/10 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['enzalutamide', 'n-desmethyl enzalutamide', 'metabolism'], ['enzalutamide', 'carboxylic acid metabolite', 'metabolism'], ['n-desmethyl enzalutamide', 'carboxylic acid metabolite', 'metabolism']] | [['enzalutamide', 'n-desmethyl enzalutamide', 'metabolism'], ['enzalutamide', 'carboxylic acid metabolite', 'metabolism'], ['n-desmethyl enzalutamide', 'carboxylic acid metabolite', 'metabolism'], ['pioglitazone', 'hydroxy-pioglitazone', 'metabolism'], ['omeprazole', '5-hydroxy-omeprazole', 'metabolism'], ['midazolam', '1-hydroxy-midazolam', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[aucinf]` | 30.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aucinf]` | not captured | 9.19 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aucτ (ug h/ml)a]` | 322 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aucτ (ug h/ml)a]` | not captured | 322 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max]` | 9.45 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max]` | not captured | 3.22 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c trough (ug/ml)a]` | 12.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c trough (ug/ml)a]` | not captured | 12.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f (l/h)a]` | 0.52 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f (l/h)a]` | not captured | 0.52 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | enzalutamide | pioglitazone | mismatch |
 | `gpt-oss:120b` | `model.links` | [['enzalutamide', 'n-desmethyl enzalutamide', 'metabolism'], ['enzalutamide', 'carboxylic acid metabolite', 'metabolism'], ['n-desmethyl enzalutamide', 'carboxylic acid metabolite', 'metabolism']] | [['enalutamide', 'n-desmethyl enzalutamide', 'metabolism'], ['enalutamide', 'carboxylic acid metabolite', 'metabolism'], ['pioglitazone', 'hydroxy-pioglitazone', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[aucτ (ug h/ml)a].parameter_id` | Q19 | Q88 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | enzalutamide | unknown | mismatch |

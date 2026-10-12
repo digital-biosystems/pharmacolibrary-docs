@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Somatorelin (GHRH-44-NH2) dose was related to growth hormone AUC by a linear model (GH AUC = 457 + 1.226 × dose in micrograms); the paper excerpts do not state a mechanism or potency/rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Khalfallah_1990`
 - **model family:** `linear`
 - **driver:** `dose_only`

@@ -5,7 +5,7 @@
 
 # exenatide — `Exenatide_Choi2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818), gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,6 +20,8 @@
 **The exenatide two-compartment model was rejected because a compartment has no path from the dose, and the extracted parameter values conflict with a second reader's readings (e.g. CL/F 0.044 vs 0.032 L/h).**
 
 The record reports exenatide CL/F 0.044 L/h, central volume 2.8 L, peripheral volume 3.96 L and absorption rate constant 0.006 h-1 in a two-compartment structure, but the structure check found an unreachable or orphan compartment or an unlinked metabolite. A second reader disagreed on many values: CL/F 0.044 vs 0.032 L/h, one value 2.68 vs 46.27, and several values present in one reading and absent in the other (18 vs null, 6 vs null, 21 vs null; null vs 5.52, null vs 24.8, null vs 66.93). The source is a review (secondary text), so the numbers may not come from a fitted model. Extracted — exenatide: CL/F 0.044 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q311: this record has 5.52, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -60,14 +62,22 @@ Choi S et al., Population pharmacokinetics of efpeglen…, Frontiers in pharmaco
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.818 (9/11 fields) | 2 |
 | `gpt-oss:120b` | secondary_empty | 0.0 | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q311]` | 5.52 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q87]` | not captured | 24.8 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

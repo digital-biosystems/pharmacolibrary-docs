@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clomipramine concentrations (mM) were related to sulphan blue dye leakage through liposome membranes using a sigmoid Emax model with a stimulatory effect direction; the paper excerpts provide no mechanism and no parameter values (Emax, EC50, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Castaing_2000`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

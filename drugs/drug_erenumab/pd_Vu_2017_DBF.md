@@ -18,9 +18,9 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> Erenumab serum concentrations (ng/mL) directly inhibit capsaicin-induced dermal blood flow (perfusion units) via a sigmoidal Emax mechanism, with an IC50 of 255 ng/mL and an IC99 of 1134 ng/mL. The model assumes an immediate effect with no delay, as an indirect response model did not significantly improve the fit over the direct response model.
+> Serum erenumab concentrations directly inhibit capsaicin-induced dermal blood flow via a sigmoid Emax model, with a maximum inhibition (Imax) of 89.3% and a potency (IC50) of 255 ng/mL. The paper notes the effect is immediate, as an indirect response model did not describe the data better than the direct response model.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Vu_2017`
 - **model family:** `sigmoid_emax`

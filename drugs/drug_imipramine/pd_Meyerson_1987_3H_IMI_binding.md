@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates imipramine concentrations to inhibition of [3H]IMI binding using a sigmoid Emax model, but no full text is available, so the mechanism and all parameter values (Imax, IC50, gamma) cannot be reported from the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Meyerson_1987`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

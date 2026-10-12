@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Sumatriptan stimulates phenylephrine-precontracted contractions using an Emax model with an Emax of 82+/-17% and a pD(2) of 6.64+/-0.20. The paper does not provide further mechanism or kinetic rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gul_2002`
 - **model family:** `emax`
 - **driver:** `cited_pk`

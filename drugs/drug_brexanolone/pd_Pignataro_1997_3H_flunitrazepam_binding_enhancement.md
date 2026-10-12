@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Allopregnanolone concentrations (microM) stimulate [3H]flunitrazepam binding enhancement via a direct Emax model, with EC50 1.18 ± 0.12 microM and Emax 82.18 ± 5.80 %; the paper excerpts do not state the mechanism beyond this Emax relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pignataro_1997`
 - **model family:** `emax`
 - **driver:** `cited_pk`

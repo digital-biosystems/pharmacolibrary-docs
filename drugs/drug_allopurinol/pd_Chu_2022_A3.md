@@ -18,6 +18,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Allopurinol and oxypurinol concentrations inhibit the elimination (catabolism to xanthine) of hypoxanthine via xanthine oxidase (XO) inhibition, modeled with an indirect response mechanism where the effect factor multiplies the elimination rate constant. The model specifies an IC50 of 0.36 mg/L for the combined drug concentrations, a maximum effect (Emax) of 1, and a baseline hypoxanthine value of 0.036 mg/L.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chu_2022`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`

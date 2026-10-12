@@ -4,7 +4,7 @@
 
 # naltrexone — `Naltrexone_Dunbar2007_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — naltrexone: CL 140 L/h, V 38 L, kabs 0.484 1/ min; 6beta-naltrexol: CL 65.1 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has naltrexone, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has naltrexone → 6beta-naltrexol (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -69,17 +69,24 @@ Dunbar JL et al., Population pharmacokinetics of extended…, Journal of studies
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['naltrexone', '6beta-naltrexol', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[6beta-naltrexol cl]` | 65.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[first-order absorption rate constant k a]` | 0.484 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[naltrexone cl]` | 140 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[naltrexone cl]` | not captured | 140 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[naltrexone v]` | 38 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[naltrexone cl]` | 140 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[naltrexone cl]` | not captured | 140 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[naltrexone v]` | 38 | not captured | only_one_extracted |

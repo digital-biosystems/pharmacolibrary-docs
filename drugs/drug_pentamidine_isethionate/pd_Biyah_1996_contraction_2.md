@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentamidine (from pentamidine isethionate) concentration-dependently increases contraction of human isolated bronchi, expressed as % of the response to acetylcholine (1 mM), described by an Emax (direct stimulation) model with Emax = 34 ± 5 % and pD2 = 9.73 ± 0.06; the paper excerpts do not state a mechanism beyond this direct effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Biyah_1996`
 - **model family:** `emax`
 - **driver:** `cited_pk`

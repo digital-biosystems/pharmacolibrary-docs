@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pranlukast inhibits HBV preS1 binding with an Imax of 92% and an EC50 of 7.6 μM. The paper states the drug is an early-phase inhibitor of HBV infection but does not specify the direct mechanistic link between preS1 binding inhibition and the viral life cycle stage.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2021`
 - **model family:** `emax`
 - **driver:** `cited_pk`

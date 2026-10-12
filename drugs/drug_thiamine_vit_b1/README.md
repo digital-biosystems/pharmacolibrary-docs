@@ -30,7 +30,7 @@ Thiamine (vitamin B1) is used to treat or prevent thiamine deficiency states suc
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Wang_2024_CMT](drugs/drug_thiamine_vit_b1/pd_Wang_2024_CMT.md) | Central macular thickness ← thiamine_vit_b1 · inhibition effect | — | Wang Y et al., Evaluation of the First-Dose Anti-VEGF…, Ophthalmic research (2024) | [10.1159/000534820](https://doi.org/10.1159/000534820) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Wang_2024_CMT](drugs/drug_thiamine_vit_b1/pd_Wang_2024_CMT.md) | Central macular thickness ← thiamine_vit_b1 · inhibition effect | — | Wang Y et al., Evaluation of the First-Dose Anti-VEGF…, Ophthalmic research (2024) | [10.1159/000534820](https://doi.org/10.1159/000534820) |
 
 ## ADME sites
 

@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Salbutamol concentrations (mol/l) act directly (Emax model) on relaxation of carbachol-induced contraction, measured as remaining active tension (% of precontraction); the paper reports -log EC50 = 7.82 (0.08) mol/l, and no mechanism beyond a direct concentration-effect relationship is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lindén_1993`
 - **model family:** `emax`
 - **driver:** `cited_pk`

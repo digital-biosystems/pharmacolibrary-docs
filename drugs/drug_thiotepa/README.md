@@ -34,9 +34,9 @@ Thiotepa is an alkylating anticancer drug used to treat cancers such as lymphoma
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Przepiorka_1995_adults undergoing marrow transplantation](drugs/drug_thiotepa/Thiotepa_Przepiorka1995_reference.md) | — | parent + metabolite (no model) | 5 | Przepiorka D et al., Dosing of thioTEPA for myeloablative th…, Cancer chemotherapy and pha… (1995) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Huitema_2001_patients undergoing high-dose chemotherapy](drugs/drug_thiotepa/Thiotepa_Huitema2001_reference.md) | — | parent + metabolite (no model) | 0 | Huitema AD et al., Population pharmacokinetics of thioTEPA…, British journal of clinical… (2001) | [10.1046/j.1365-2125.2001.01301.x](https://doi.org/10.1046/j.1365-2125.2001.01301.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [de_2004_patients receiving high-dose chemotherapy](drugs/drug_thiotepa/Thiotepa_de2004_reference.md) | — | general linear (no model) | 2 | de Jonge ME et al., Integrated Population Pharmacokinetic M…, Journal of pharmacokinetics… (2004) | [10.1023/b:jopa.0000034405.03895.c2](https://doi.org/10.1023/b:jopa.0000034405.03895.c2) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Przepiorka_1995_reference](drugs/drug_thiotepa/Thiotepa_Przepiorka1995_reference.md) | — | parent + metabolite (no model) | 5 | Przepiorka D et al., Dosing of thioTEPA for myeloablative th…, Cancer chemotherapy and pha… (1995) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Huitema_2001_reference](drugs/drug_thiotepa/Thiotepa_Huitema2001_reference.md) | — | parent + metabolite (no model) | 0 | Huitema AD et al., Population pharmacokinetics of thioTEPA…, British journal of clinical… (2001) | [10.1046/j.1365-2125.2001.01301.x](https://doi.org/10.1046/j.1365-2125.2001.01301.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [de_2004_reference](drugs/drug_thiotepa/Thiotepa_de2004_reference.md) | — | general linear (no model) | 2 | de Jonge ME et al., Integrated Population Pharmacokinetic M…, Journal of pharmacokinetics… (2004) | [10.1023/b:jopa.0000034405.03895.c2](https://doi.org/10.1023/b:jopa.0000034405.03895.c2) |
 
 ## ADME sites
 
@@ -61,7 +61,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 80 matched, 54 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 3
+- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

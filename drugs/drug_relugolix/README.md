@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lee_2023_Testos](drugs/drug_relugolix/pd_Lee_2023_Testos.md) | testosterone ← relugolix · disease-progression model | — | Lee TY et al., Population PK and Semimechanistic PK/PD…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2743](https://doi.org/10.1002/cpt.2743) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Lee_2023_Testos](drugs/drug_relugolix/pd_Lee_2023_Testos.md) | testosterone ← relugolix · disease-progression model | — | Lee TY et al., Population PK and Semimechanistic PK/PD…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2743](https://doi.org/10.1002/cpt.2743) |
 
 ## ADME sites
 

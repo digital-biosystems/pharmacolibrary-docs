@@ -18,6 +18,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> The plasma concentrations of allopurinol and oxypurinol inhibit the xanthine oxidase-catalyzed conversion of hypoxanthine to xanthine (indirectly) and xanthine to uric acid (directly), reducing the formation of xanthine from its upstream precursor and its elimination to uric acid, respectively. The model specifies an IC50 of 0.36 mg/L and an Emax of 1 for the inhibitory effect, along with a baseline xanthine value of 0.1 mg/L and a disease-related initial value of 1.61 mg/L.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chu_2022`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`

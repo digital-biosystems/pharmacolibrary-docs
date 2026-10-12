@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> For adults with schizophrenia, aripiprazole exposure (average steady-state concentration, from a cited PK model) was linked to the time-to-event (probability of dropout) response in a TTE model; the excerpts do not state the model's mechanism, effect form, or any potency (Imax/IC50/EC50/Emax) or rate parameters for this dropout endpoint.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2024_2`
 - **model family:** `tte`
 - **driver:** `cited_pk`

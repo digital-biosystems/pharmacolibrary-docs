@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism or parameter values; the record only indicates that amoxapine inhibits the 5HT-induced intracellular Ca2+ increase, with no concentrations, potency, or rate values stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ohsuka_1995`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

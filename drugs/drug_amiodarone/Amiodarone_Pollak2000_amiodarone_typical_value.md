@@ -5,7 +5,7 @@
 
 # amiodarone — `Amiodarone_Pollak2000_amiodarone_typical_value`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125), gpt-oss:120b (partly confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The topology was built as a one-compartment model instead of the required parent-metabolite structure, omitting the desethylamiodarone compartment. Consequently, the output variable pointed to the central compartment rather than the measured metabolite. The parameter coverage check failed because V2/F was neither emitted nor defaulted, leaving only five of six expected parameters covered. Extracted — amiodarone: V1/F 882 L, V2/F 1.27e+04 L, CL/F 229 L/d, Q/F 588 L/d, kel 55 1/day, kabs 0.82 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of rapid: this record has none, the second reading 17. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amiodarone, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -78,17 +78,32 @@ Pollak PT et al., Population pharmacokinetics of long-ter…, Clinical pharmacol
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.125 (2/16 fields) | 14 |
 | `gpt-oss:120b` | partly confirmed | 0.929 (13/14 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl1/f]` | 229 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl1/f]` | not captured | 229 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2/f]` | 588 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2/f]` | not captured | 588 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination]` | 55 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination]` | not captured | 55 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 0.82 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rapid]` | not captured | 17 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f]` | 882 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f]` | not captured | 882 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f]` | 12700 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f]` | not captured | 12700 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | amiodarone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | amiodarone | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[rapid]` | not captured | 17 | only_one_extracted |
 
 </details>

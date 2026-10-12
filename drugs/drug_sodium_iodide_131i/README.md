@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V09F&quot;,&quot;href&quot;:&quot;atc/V09F.md&quot;},{&quot;label&quot;:&quot;sodium iodide (131I)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumIodide131i_Ly2023_reference&quot;,&quot;label&quot;:&quot;Ly_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_iodide_131i/SodiumIodide131i_Ly2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumIodide131i_Ly2023_reference&quot;,&quot;label&quot;:&quot;Ly_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_iodide_131i/SodiumIodide131i_Ly2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # sodium iodide (131I)
 
@@ -33,8 +33,8 @@ Iodide I-131 is a radioactive form of iodine used both diagnostically and therap
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ly_2023_reference](drugs/drug_sodium_iodide_131i/SodiumIodide131i_Ly2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Ly NS et al., Population Pharmacokinetics and Exposur…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01210-0](https://doi.org/10.1007/s40262-023-01210-0) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Hardiansyah_2025_reference](drugs/drug_sodium_iodide_131i/SodiumIodide131i_Hardiansyah2025_reference.md) | — | 1-compartment (no model) | 3 | Hardiansyah D et al., Non-linear mixed-effects modelling and…, EJNMMI physics (2025) | [10.1186/s40658-025-00735-6](https://doi.org/10.1186/s40658-025-00735-6) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Ly_2023_reference](drugs/drug_sodium_iodide_131i/SodiumIodide131i_Ly2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Ly NS et al., Population Pharmacokinetics and Exposur…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01210-0](https://doi.org/10.1007/s40262-023-01210-0) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Hardiansyah_2025_reference](drugs/drug_sodium_iodide_131i/SodiumIodide131i_Hardiansyah2025_reference.md) | — | 1-compartment (no model) | 3 | Hardiansyah D et al., Non-linear mixed-effects modelling and…, EJNMMI physics (2025) | [10.1186/s40658-025-00735-6](https://doi.org/10.1186/s40658-025-00735-6) |
 
 ## Pharmacodynamics (PD)
 

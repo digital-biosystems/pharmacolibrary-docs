@@ -4,7 +4,7 @@
 
 # piretanide — `Piretanide_Trenk1987_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.188). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818), gpt-oss:120b (not confirmed, agreement 0.188). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -67,17 +67,20 @@ Trenk D et al., Pharmacokinetics and bioavailability of…, Arzneimittel-Forschu
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.818 (9/11 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.188 (3/16 fields) | 13 |
 
-<details><summary>13 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[bioavailability of piretanide following intramuscular administration]` | 0.88 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability of piretanide]` | not captured | 0.88 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bioavailability of piretanide following intramuscular administration]` | 0.88 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bioavailability of piretanide following intramuscular administration]` | not captured | 0.88 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[peak plasma concentrations]` | 366 | not captured | only_one_extracted |

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> CCK-8 (sincalide) concentration-dependently stimulates IP1 production (fold difference over baseline) in HEK293 cells expressing CCK2R via direct Gq-mediated receptor activation, fitted to an Emax model with EC50 = 11.5 ± 1.5 nM and Emax = 100% (normalized to maximal CCK-8 response).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Taghizadeh_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

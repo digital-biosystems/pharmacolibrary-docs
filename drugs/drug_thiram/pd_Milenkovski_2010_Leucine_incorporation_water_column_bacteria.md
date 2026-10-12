@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Thiram concentrations (mg l(-1)) inhibit leucine incorporation by the water column bacterial community, described by a sigmoid Emax inhibition model; the paper excerpts provide no mechanism details and no parameter values (Imax, IC50, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Milenkovski_2010`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

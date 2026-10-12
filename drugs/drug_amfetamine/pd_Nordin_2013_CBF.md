@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates d-amphetamine plasma concentrations (ng/ml) to cerebral blood flow in gray matter, described as an inhibitory effect; no model structure, mechanism, or parameter values (e.g., IC50, Emax) are available from the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nordin_2013`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -5,7 +5,7 @@
 
 # fluorouracil — `Fluorouracil_Coustre1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.235). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3), gpt-oss:120b (not confirmed, agreement 0.235). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The parameter labelled 'Anabolic clearance' has value 39 with unit '%', which fails the dimensional check for a clearance parameter (the proportionality factor relating elimination rate to concentration); urinary clearance is likewise reported as 6.5 %. The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. A second reader also disagreed on several entries, e.g. a bolus dose of 500 (absent here), a half-life of 9.6 min for alpha-fluoro-beta-alanine (absent here), and whether fluorouracil metabolizes directly to alpha-fluoro-beta-ureidopropionic acid and alpha-fluoro-beta-alanine rather than via the sequential chain through dihydrofluorouracil. Extracted — fluorouracil: t1/2z 6.9 min, CL 39 %, CLu 6.5 %, fe 64 %, V 161 L, kabs 0.757 h−1, tlag 0.000552 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading 5-FU; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has 5-fluorouracil → dihydrofluorouracil (metabolism); dihydrofluorouracil → alpha-fluoro-beta-ureidopropionic acid (metabolism); alpha-fluoro-beta-ureidopropionic acid → alpha-fluoro-beta-alanine (metabolism), the second reading 5-fluorouracil → dihydrofluorouracil (metabolism); 5-fluorouracil → alpha-fluoro-beta-ureidopropionic acid (metabolism); 5-fluorouracil → alpha-fluoro-beta-alanine (metabolism); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -78,17 +78,25 @@ Coustère C et al., A mathematical model of the kinetics of…, Cancer chemother
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.235 (4/17 fields) | 13 |
 
-<details><summary>13 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['5-fluorouracil', 'dihydrofluorouracil', 'metabolism'], ['dihydrofluorouracil', 'alpha-fluoro-beta-ureidopropionic acid', 'metabolism'], ['alpha-fluoro-beta-ureidopropionic acid', 'alpha-fluoro-beta-alanine', 'metabolism']] | [['5-fluorouracil', 'dihydrofluorouracil', 'metabolism'], ['5-fluorouracil', 'alpha-fluoro-beta-ureidopropionic acid', 'metabolism'], ['5-fluorouracil', 'alpha-fluoro-beta-alanine', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[anabolic clearance accounted for]` | not captured | 39 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[estimated mean half-life]` | not captured | 6.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka, absorption rate constant]` | 0.757 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[urinary excretion of 5-fu increased up to ... of total drug clearance]` | 64 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[urinary excretion of 5-fu increased up to]` | not captured | 64 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume]` | 0.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [['fluorouracil', 'dihydrofluorouracil', 'metabolism'], ['dihydrofluorouracil', 'alpha-fluoro-beta-ureidopropionic acid', 'metabolism'], ['alpha-fluoro-beta-ureidopropionic acid', 'alpha-fluoro-beta-alanine', 'metabolism']] | [['5-fu', 'fuh2', 'metabolism'], ['5-fu', 'fupa', 'metabolism'], ['5-fu', 'fbal', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[anabolic clearance].parameter_id` | Q22 | Q31 | mismatch |
 | `gpt-oss:120b` | `parameters[bolus injection dose]` | not captured | 500 | only_one_extracted |

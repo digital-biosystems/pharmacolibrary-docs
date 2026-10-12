@@ -5,7 +5,7 @@
 
 # acenocoumarol — `Acenocoumarol_Haustein1999_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.071). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364), gpt-oss:120b (not confirmed, agreement 0.071). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 121, the second reading -127; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 121, the second reading -127; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -56,17 +56,25 @@ Haustein KO, Pharmacokinetic and pharmacodynamic pro…, Seminars in thrombosis 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.364 (4/11 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.071 (1/14 fields) | 13 |
 
-<details><summary>13 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q17]` | 121 | -127 | mismatch |
+| `gpt-oss-120b` | `values[Q22]` | 9.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q26]` | 1.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q75]` | not captured | 1.24 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q86]` | 0.65 | 0.65 | mismatch |
+| `gpt-oss-120b` | `values[Q900]` | 1.24 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q91]` | not captured | 3.35 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q17]` | 121 | -127 | mismatch |
 | `gpt-oss:120b` | `values[Q22]` | 9.3 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q26]` | 1.9 | not captured | only_one_extracted |
@@ -136,7 +144,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference/Acenocoumarol_Haustein1999_reference_modelica.zip" download>Acenocoumarol_Haustein1999_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference/Acenocoumarol_Haustein1999_reference_fmi.zip" download>Acenocoumarol_Haustein1999_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference/Acenocoumarol_Haustein1999_reference_matlab.zip" download>Acenocoumarol_Haustein1999_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference/Acenocoumarol_Haustein1999_reference_matlab_simbio.zip" download>Acenocoumarol_Haustein1999_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference/Acenocoumarol_Haustein1999_reference_matlab_simbio.zip" download>Acenocoumarol_Haustein1999_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference/Acenocoumarol_Haustein1999_reference_sbml.zip" download>Acenocoumarol_Haustein1999_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference/Acenocoumarol_Haustein1999_reference_cellml.zip" download>Acenocoumarol_Haustein1999_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

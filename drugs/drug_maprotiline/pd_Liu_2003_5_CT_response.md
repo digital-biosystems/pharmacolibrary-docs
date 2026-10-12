@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Maprotiline (nmol/l) inhibits the 5-CT-induced contractile response of rat isolated jejunum (5-HT7 receptor-mediated); the paper excerpts do not state the mechanism or model form, only an apparent pKB of 7.67 ± 0.24 (nmol/l).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2003`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

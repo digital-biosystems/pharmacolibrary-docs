@@ -4,7 +4,7 @@
 
 # inotersen — `Inotersen_Yu2020v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The model does not reproduce the paper's terminal half-life (model/paper ratio 24).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — inotersen: CL 3.4 L/h, V1 20.7 L, kabs 0.261 1/h, V2 230 L, Q 0.266 L/h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Yu RZ et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeutics (2020)

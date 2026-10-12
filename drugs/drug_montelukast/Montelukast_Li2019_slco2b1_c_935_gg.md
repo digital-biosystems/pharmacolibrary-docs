@@ -5,7 +5,7 @@
 
 # montelukast — `Montelukast_Li2019_slco2b1_c_935_gg`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of central compartment volume of distribution: this record has 14.0, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+**Montelukast molecular weight was recorded as 3 kg instead of grams, causing a dimension mismatch.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The molecular weight parameter is listed as 3 kg, a unit that cannot be converted to standard SI units, preventing the model from calculating mass-to-mole conversions. A second reader disagreed with the 0.87 L/h clearance value, reporting it as null while identifying a distinct 24.2 value. The reviewer also questioned the 14.0 central volume of distribution and 45.4 peripheral volume of distribution values. Extracted — montelukast: MW 3 kg, CL 0.87 L/h, kabs 0.357 h−1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading 24.2; it also differs on 6 more fields. That field does not shape the model.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Li Q et al., Developmental Pharmacogenetics of SLCO2…, Drug design, development an… (2019)
@@ -70,23 +74,23 @@ Li Q et al., Developmental Pharmacogenetics of SLCO2…, Drug design, developmen
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.364 (4/11 fields) | 7 |
+| `gpt-oss-120b` | partly confirmed | 0.364 (4/11 fields) | 7 |
 
 <details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[central compartment volume of distribution]` | 14.0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl]` | not captured | 24.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[montelukast clearance]` | 0.87 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peripheral volume of distribution]` | 45.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q1]` | not captured | 0.256 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vc]` | not captured | 14.0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vp]` | not captured | 45.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 24.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.357 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[montelukast alone]` | 3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[montelukast clearance]` | 0.87 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q1]` | not captured | 0.256 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | not captured | 14.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | not captured | 45.4 | only_one_extracted |
 
 </details>
 

@@ -4,7 +4,7 @@
 
 # medifoxamine — `Medifoxamine_Saleh1990_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182), gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The clearance value of 1299 l/min for medifoxamine exceeds any physiologically possible blood-flow-limited clearance, and the volume of distribution of 1321 l is likewise implausible, so the clearance/volume check failed on magnitude. The record was built from the paper's abstract only, so the reported summary statistics stood in for a fitted model, which may explain the unit or scale error. A second reader could not confirm any of the parameter values (half-life 1.2 h, clearance 1299, volume 1321) and the urinary excretion fraction was not extracted at all. Extracted — medifoxamine: t1/2z 1.2 h, CL 1.3e+03 l/min, V 1.32e+03 l.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of elimination half-line: this record has 1.2, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has medifoxamine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -67,17 +67,27 @@ Saleh S et al., Tolerability and kinetics of intravenou…, International clinic
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 | `gpt-oss:120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[elimination half-line]` | 1.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-line]` | not captured | 1.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance]` | 1299 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance]` | not captured | 1299 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[urinary excretion of parent drug]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 1321 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 1321 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | medifoxamine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | medifoxamine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[elimination half-line]` | 1.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[systemic clearance]` | 1299 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[urinary excretion of parent drug]` | not captured | not captured | only_one_extracted |

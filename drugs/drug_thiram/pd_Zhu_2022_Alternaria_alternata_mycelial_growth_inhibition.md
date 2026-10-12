@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Thiram concentration (mM) inhibits A. alternata mycelial growth, with an EC50 of 0.52 ± 0.06 mM; the paper does not state a specific mechanism beyond antifungal inhibition, and 5 mM thiram completely inhibited mycelial growth.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhu_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

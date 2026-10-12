@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;ketamine&quot;,&quot;href&quot;:&quot;drugs/drug_ketamine/&quot;},{&quot;label&quot;:&quot;Kaka_1980 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ketamine_Boulanger2025_reference&quot;,&quot;label&quot;:&quot;Boulanger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketamine/Ketamine_Boulanger2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketamine_Eaton2026_reference&quot;,&quot;label&quot;:&quot;Eaton_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketamine/Ketamine_Eaton2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketamine_Herd2007_reference&quot;,&quot;label&quot;:&quot;Herd_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketamine/Ketamine_Herd2007_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketamine_Rantanen2026_reference&quot;,&quot;label&quot;:&quot;Rantanen_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketamine/Ketamine_Rantanen2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketamine_Sukhram2026_reference&quot;,&quot;label&quot;:&quot;Sukhram_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketamine/Ketamine_Sukhram2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ketamine_Boulanger2025_reference&quot;,&quot;label&quot;:&quot;Boulanger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketamine/Ketamine_Boulanger2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketamine_Eaton2026_reference&quot;,&quot;label&quot;:&quot;Eaton_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketamine/Ketamine_Eaton2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketamine_Rantanen2026_reference&quot;,&quot;label&quot;:&quot;Rantanen_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketamine/Ketamine_Rantanen2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketamine_Sukhram2026_reference&quot;,&quot;label&quot;:&quot;Sukhram_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketamine/Ketamine_Sukhram2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ketamine_Herd2007_reference&quot;,&quot;label&quot;:&quot;Herd_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ketamine/Ketamine_Herd2007_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ketamine — `Ketamine_Kaka1980_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,7 +17,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**N-demethylketamine and cyclohexene metabolite are orphan compartments because their metabolic formation rates from ketamine are undefined.**
+
+The record is abstract-only, so summary statistics stand in for a fitted model. The link parameters for the formation of N-demethylketamine from ketamine and cyclohexene from N-demethylketamine are both missing. Consequently, these metabolite compartments have no path from the dose, rendering them unreachable. Extracted — ketamine: t1/2α 1.95 min, t1/2β 61 min, CL 32.2 ml/min/kg, fu 53.5 %, V 6.47 L, kabs 0.66 h−1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ketamine, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Kaka JS et al., Pharmacokinetics of ketamine and two me…, Journal of pharmacokinetics… (1980)
@@ -69,6 +77,43 @@ Kaka JS et al., Pharmacokinetics of ketamine and two me…, Journal of pharmacok
 - no GROBID TEI available — transcribed from abstract in Kaka_1980_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.105 (2/19 fields) | 17 |
+
+<details><summary>17 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[(t 1/2)alpha]` | not captured | 1.95 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[(t 1/2)beta]` | not captured | 61 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ketamine hcl dose]` | not captured | 15 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[met absorption rate in rats]` | 0.66 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma protein binding i]` | not captured | 60.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma protein binding ii]` | not captured | 70.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma protein binding ketamine]` | not captured | 53.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma protein binding]` | 53.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2)alpha]` | 1.95 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2)beta]` | 61 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance (plasma) i]` | not captured | 89.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance (plasma) ii]` | not captured | 8.54 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance (plasma) ketamine]` | not captured | 32.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearances (plasma) of ketamine]` | 32.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | 6.47 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | ketamine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ketamine | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

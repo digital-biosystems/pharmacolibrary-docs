@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In the hollow-fiber model of intracellular Mycobacterium avium complex infection, thioridazine concentrations (driven by Cmax/MIC exposure) reduced intracellular bacterial burden (log10 CFU/ml) via an inhibitory sigmoid Emax model, consistent with killing through inhibition of the mycobacterial electron transport chain. On day 14 the model gave Econ of 6.96 ± 0.17 log10 CFU/ml, Emax of 7.19 ± 0.30 log10 CFU/ml, Hill coefficient H of 2.75 ± 0.33, and EC50 of a Cmax/MIC of 0.53 ± 0.022 (r2 = 0.996); in 12-well intracellular time-kill studies the EC50 was 10.53 mg/liter with Emax of 3.2 log10 CFU/ml, and the thioridazine MIC for MAC was 25 mg/liter.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Deshpande_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

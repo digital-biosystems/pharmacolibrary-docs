@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methylphenidate plasma concentrations (PK from Giorgi) drive NET occupancy as a continuous response with an inhibitory effect direction, but no full text is available, so the model family, mechanism, and potency/rate parameters (e.g., IC50, Emax, ke0) are not stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Soufsaf_2023`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

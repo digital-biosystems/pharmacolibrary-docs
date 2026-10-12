@@ -5,7 +5,7 @@
 
 # sertraline — `Sertraline_Cooper2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182), gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — sertraline: kabs 0.895 h -1, V 5.34e+03 l, CL 130 l h -1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absorption rate constant: this record has 0.895, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sertraline, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -80,17 +80,27 @@ Cooper JM et al., The pharmacokinetics of sertraline in o…, British journal of
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 | `gpt-oss:120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 0.895 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | not captured | 0.895 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 130 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | 130 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 5340 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 5340 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | sertraline | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | sertraline | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[absorption rate constant]` | 0.895 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | 130 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume of distribution]` | 5340 | not captured | only_one_extracted |

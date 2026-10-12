@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism or parameter values; the record only indicates an Emax model relating methacholine concentration to methacholine-induced contraction of bovine tracheal smooth muscle, with no stated IC50, Emax, or units.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `de_2001`
 - **model family:** `emax`
 - **driver:** `not_resolved`

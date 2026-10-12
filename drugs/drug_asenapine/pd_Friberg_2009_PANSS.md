@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Asenapine concentrations (from a cited PK model) act on total PANSS score via an Emax-type inhibitory model; the paper excerpts provide no mechanism detail and no potency or rate values (Imax, IC50, kin, kout, ke0, gamma) are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Friberg_2009`
 - **model family:** `emax`
 - **driver:** `cited_pk`

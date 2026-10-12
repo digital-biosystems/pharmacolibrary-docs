@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Fluspirilene concentration (nM) blocks the N-type calcium current with a sigmoid Emax (inhibitory) relationship; the paper reports an IC50 of 30 nM and a Hill coefficient of 0.25, but no mechanism beyond direct current block and no Emax value is given in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Grantham_1994`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

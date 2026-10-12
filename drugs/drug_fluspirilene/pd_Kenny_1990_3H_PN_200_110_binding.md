@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Fluspirilene concentration-dependently displaces [3H]-PN-200-110 binding to rat cerebral cortical membranes, described by a sigmoid Emax inhibition model with EC50 30 nM and Hill slope 0.66; the paper excerpts do not state a mechanism beyond this binding displacement.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kenny_1990`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;benzylpenicillin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Benzylpenicillin_Shah2023_reference&quot;,&quot;label&quot;:&quot;Shah_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_benzylpenicillin/Benzylpenicillin_Shah2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Benzylpenicillin_Shah2023_reference&quot;,&quot;label&quot;:&quot;Shah_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_benzylpenicillin/Benzylpenicillin_Shah2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # benzylpenicillin
 
@@ -33,8 +33,8 @@ Benzylpenicillin is a penicillin antibiotic used to treat bacterial infections s
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Shah_2023_reference](drugs/drug_benzylpenicillin/Benzylpenicillin_Shah2023_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Shah RV et al., Population Pharmacokinetic Study of Ben…, Antibiotics (Basel, Switzer… (2023) | [10.3390/antibiotics12040643](https://doi.org/10.3390/antibiotics12040643) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Yoo_2025_reference](drugs/drug_benzylpenicillin/Benzylpenicillin_Yoo2025_reference.md) | — | 2-compartment (no model) | 4 | Yoo O et al., Population pharmacokinetics of penicill…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00269-25](https://doi.org/10.1128/aac.00269-25) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> | [Shah_2023_reference](drugs/drug_benzylpenicillin/Benzylpenicillin_Shah2023_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Shah RV et al., Population Pharmacokinetic Study of Ben…, Antibiotics (Basel, Switzer… (2023) | [10.3390/antibiotics12040643](https://doi.org/10.3390/antibiotics12040643) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Yoo_2025_reference](drugs/drug_benzylpenicillin/Benzylpenicillin_Yoo2025_reference.md) | — | 2-compartment (no model) | 4 | Yoo O et al., Population pharmacokinetics of penicill…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00269-25](https://doi.org/10.1128/aac.00269-25) |
 
 ## ADME sites
 

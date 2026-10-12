@@ -17,7 +17,7 @@
 
 **Model:** No model was generated from this record.
 
-> Aripiprazole average steady-state concentration (C avg,ss, mg/L) reduces PANSS total score change from baseline via a proportional inhibitory Emax drug effect on top of a Weibull placebo (disease) model, PANSS(t)=BSL×(1−placebo effect)×(1−drug effect); the maximum proportional drug effect was 9% in adults and 6% in adolescents, with similar Emax and EC50 between populations (no numeric EC50 given in the excerpts).
+> In adults with schizophrenia, aripiprazole average steady-state concentration (C avg,ss, mg/L) was linked to PANSS total score change from baseline via an Emax-type inhibitory drug effect applied proportionally on top of a Weibull placebo (disease) model: PANSS(t) = BSL × (1 − placebo effect) × (1 − drug effect). The maximum proportional drug effect was 9% in adults (6% in adolescents) with an EC50 of 0.03 mg/L; the paper does not state a mechanism beyond this direct proportional Emax inhibition of PANSS score.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

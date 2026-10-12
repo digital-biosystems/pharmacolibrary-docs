@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide enough information (no full text available) to describe the PD model linking carbachol concentrations to carbachol-induced contraction of rat bladder detrusor strips; no mechanism, model family, or potency/rate values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yuan_2014`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

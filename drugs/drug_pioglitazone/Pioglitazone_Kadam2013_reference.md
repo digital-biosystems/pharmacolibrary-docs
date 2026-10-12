@@ -4,7 +4,7 @@
 
 # pioglitazone — `Pioglitazone_Kadam2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375), gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — pioglitazone: V1/F 22.1 L, V/F 26.3 L, kabs 2.08 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[v c /f (l)=θ 2].parameter_id`: this record has Q290, the second reading Q76; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pioglitazone, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -81,17 +81,23 @@ Kadam R et al., Effect of Cytochrome P450 2C8*3 on the…, Biological & pharmace
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[k a (h -1 )=θ 5]` | not captured | 2.08 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v c /f (l)=θ 2].parameter_id` | Q82 | Q290 | mismatch |
+| `gpt-oss-120b` | `parameters[v p /f (l)=θ 4]` | not captured | 26.3 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | pioglitazone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | pioglitazone | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[v c /f (l)=θ 2].parameter_id` | Q290 | Q76 | mismatch |
 | `gpt-oss:120b` | `parameters[v p /f (l)=θ 4].parameter_id` | Q76 | Q82 | mismatch |
 

@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;fenfluramine&quot;,&quot;href&quot;:&quot;drugs/drug_fenfluramine/&quot;},{&quot;label&quot;:&quot;Sheeni_2025 \u00b7 PD minimal motor impairment&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# minimal motor impairment — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.211). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+# minimal motor impairment — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -45,31 +45,20 @@ Sheeni Y et al., Enantioselective comparative analysis o…, Epilepsia (2025)
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.211 (4/19 fields) | 15 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>15 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | l-fenfluramine, d-fenfluramine, l-norfenfluramine, d-norfenfluramine | fenfluramine and norfenfluramine enantiomers | mismatch |
-| `gpt-oss:120b` | `effect_direction` | stimulation | inhibition | mismatch |
-| `gpt-oss:120b` | `model_family` | unknown | emax | mismatch |
-| `gpt-oss:120b` | `parameters[Q321]` | not captured | 1.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | 128 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 2.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 5.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | not captured | 39.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | not captured | 0.85 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | not captured | 7.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q410]` | not captured | 0.61 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `effect_direction` | stimulation | inhibition | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q321]` | 4745 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q322]` | not captured | 4745 | only_one_extracted |
 
 </details>
 

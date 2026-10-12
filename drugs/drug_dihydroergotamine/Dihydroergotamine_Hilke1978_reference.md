@@ -4,7 +4,7 @@
 
 # dihydroergotamine — `Dihydroergotamine_Hilke1978_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167), gpt-oss:120b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — dihydroergotamine: t1/2α 1.35 min, t1/2β 23.2 min, V 0.25 I/kg, CL 1.56e+03 ml/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of alpha-phase half-life: this record has none, the second reading 1.35; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dihydroergotamine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -70,17 +70,28 @@ Hilke H et al., Dihydroergotamine: pharmacokinetics and…, Acta anaesthesiologi
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 | `gpt-oss:120b` | partly confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[alpha-phase half-life]` | not captured | 1.35 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[beta-phase half-life]` | 23.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[beta-phase half-life]` | not captured | 23.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean alpha-phase half-life]` | 1.35 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total plasma clearance]` | 1562.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total plasma clearance]` | not captured | 1562.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at beta-phase]` | 0.25 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at beta-phase]` | not captured | 0.25 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | dihydroergotamine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | dihydroergotamine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[alpha-phase half-life]` | not captured | 1.35 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean alpha-phase half-life]` | 1.35 | not captured | only_one_extracted |
 

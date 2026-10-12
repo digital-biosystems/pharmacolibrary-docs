@@ -20,7 +20,7 @@
 
 **Model:** No model was generated from this record.
 
-> Norfluoxetine inhibits peak Ba2+ current (IBa) through voltage-gated Ca2+ channels with a sigmoid Emax relationship; the paper reports an EC50 of 20.4 microM and a Hill coefficient of 0.86, but the excerpts do not state the mechanism beyond this concentration–response inhibition.
+> Norfluoxetine inhibits peak Ba2+ current (IBa) through voltage-gated Ca2+ channels with a sigmoid Emax model; the paper reports an EC50 of 20.4 microM and a Hill coefficient of 0.86, but the excerpts do not state Emax or the mechanism beyond inhibition.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

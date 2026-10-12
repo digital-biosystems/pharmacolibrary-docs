@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;asciminib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asciminib_Darstein2025_reference&quot;,&quot;label&quot;:&quot;Darstein_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asciminib/Asciminib_Darstein2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asciminib_Darstein2025_reference&quot;,&quot;label&quot;:&quot;Darstein_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asciminib/Asciminib_Darstein2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # asciminib
 
@@ -27,20 +27,20 @@ Asciminib is a BCR-ABL tyrosine kinase inhibitor used to treat chronic myeloid l
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 21:32 | 1:43 | 1/0/0 | 1/0/0 | 0/0/0 | 33,413/8,256 | openai / gpt-6-luna | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-06 21:32 | 1:43 | 0/0/1 | 1/0/0 | 0/0/0 | 33,413/8,256 | openai / gpt-6-luna | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Darstein_2025_reference](drugs/drug_asciminib/Asciminib_Darstein2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Darstein C et al., Population pharmacokinetic modeling of…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04755-y](https://doi.org/10.1007/s00280-025-04755-y) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Darstein_2025_reference](drugs/drug_asciminib/Asciminib_Darstein2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Darstein C et al., Population pharmacokinetic modeling of…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04755-y](https://doi.org/10.1007/s00280-025-04755-y) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Sy_2025_MMR](drugs/drug_asciminib/pd_Sy_2025_MMR.md) | week-48 major molecular response ← asciminib · direct linear effect | — | Sy SKB et al., Exposure-response analysis of asciminib…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04806-4](https://doi.org/10.1007/s00280-025-04806-4) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Sy_2025_worsening_event_for_grade_3_lipase_increase](drugs/drug_asciminib/pd_Sy_2025_worsening_event_for_grade_3_lipase_increase.md) | worsening event for grade ≥ 3 lipase increase ← asciminib · direct linear effect | — | Sy SKB et al., Exposure-response analysis of asciminib…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04806-4](https://doi.org/10.1007/s00280-025-04806-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Sy_2025_MMR](drugs/drug_asciminib/pd_Sy_2025_MMR.md) | week-48 major molecular response ← asciminib · direct linear effect | — | Sy SKB et al., Exposure-response analysis of asciminib…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04806-4](https://doi.org/10.1007/s00280-025-04806-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Sy_2025_worsening_event_for_grade_3_lipase_increase](drugs/drug_asciminib/pd_Sy_2025_worsening_event_for_grade_3_lipase_increase.md) | worsening event for grade ≥ 3 lipase increase ← asciminib · direct linear effect | — | Sy SKB et al., Exposure-response analysis of asciminib…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04806-4](https://doi.org/10.1007/s00280-025-04806-4) |
 
 ## ADME sites
 
@@ -74,7 +74,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

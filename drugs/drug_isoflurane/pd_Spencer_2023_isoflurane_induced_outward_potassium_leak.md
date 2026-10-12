@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes a sigmoid Emax model where isoflurane concentration (expressed in %) directly stimulates the outward potassium leak response with an EC50 of 0.63%. As no full text is available, the specific mechanism of action (e.g., direct binding vs. production/elimination) and other rate constants (such as ke0, kin, or kout) are not stated.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Spencer_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

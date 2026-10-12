@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> BR1 (SonoVue) dose (mL) is modeled as a linear, additive stimulant of integrated fractional enhancement. The excerpts do not state a pharmacologic mechanism or provide potency or rate values.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Correas_2000`
 - **model family:** `linear`
 - **driver:** `dose_only`

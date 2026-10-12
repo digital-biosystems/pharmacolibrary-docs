@@ -5,7 +5,7 @@
 
 # simvastatin — `Simvastatin_Ogungbenro2019_reference`
 
-> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.435). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.435). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The model builder assumed F=1, Fm=1 and no molar correction, and this apparent assumption was ruled not acceptable. Of the 7 parameters expected, only 1 was covered; tlag (0.18 h), CL/F (1300 L/h), V/F (110 L) and the kel values for simvastatin acid (0.13 h−1), 6-hydroxymethyl simvastatin acid (4.91 h−1) and 3,5-dihydrodiol simvastatin (12.9 h−1) were neither emitted nor defaulted. In addition, the covariate effects on metabolite clearance (age fractions 1 and 0.90) were defined but only the reference individual was simulated, so those scenarios were not exercised; a second reader also disputed several values, including BA* (0.78) and the age covariate 0.90. Extracted — simvastatin: kabs 0.39 h−1, tlag 0.18 h, CL/F 1.3e+03 L/h, V/F 110 L; simvastatin acid: kel 0.13 h−1; 6-hydroxymethyl simvastatin acid: kel 4.91 h−1, kfm 0.55 h−1; 3,5-dihydrodiol simvastatin: kel 12.9 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has simvastatin, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has simvastatin → simvastatin acid (metabolism); simvastatin → 6-hydroxymethyl simvastatin (metabolism); simvastatin → 3,5-dihydrodiol simvastatin (metabolism) …, the second reading simvastatin → simvastatin acid (metabolism); simvastatin → 6-hydroxymethyl simvastatin (metabolism); simvastatin → 6-hydroxymethyl simvastatin acid (metabolism) …; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -150,17 +150,30 @@ Ogungbenro K et al., A population pharmacokinetic model for…, European journal
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (12/24 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.435 (10/23 fields) | 13 |
 
-<details><summary>13 field(s) a reader read differently</summary>
+<details><summary>25 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['simvastatin', 'simvastatin acid', 'metabolism'], ['simvastatin', '6-hydroxymethyl simvastatin', 'metabolism'], ['simvastatin', '3,5-dihydrodiol simvastatin', 'metabolism'], ['simvastatin acid', '6-hydroxymethyl simvastatin acid', 'metabolism'], ['6-hydroxymethyl simvastatin', '6-hydroxymethyl simvastatin acid', 'metabolism']] | [['simvastatin', 'simvastatin acid', 'metabolism'], ['simvastatin', '6-hydroxymethyl simvastatin', 'metabolism'], ['simvastatin', '6-hydroxymethyl simvastatin acid', 'metabolism'], ['simvastatin', '3,5-dihydrodiol simvastatin', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[age1_age_fra_on_clhsvae]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[age3_age_fra_on_cldhse]` | 0.90 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ba*].parameter_id` | Q900 | Q87 | mismatch |
+| `gpt-oss-120b` | `parameters[clemax/vhsv]` | not captured | 660 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clhsvhsva/vhsva].parameter_id` | Q305 | Q370 | mismatch |
+| `gpt-oss-120b` | `parameters[clsle/f].covariate_forms` | ['linear_fractional', 'linear_fractional'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[dhsv]` | not captured | 4.11 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[hmsv]` | not captured | 16.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q22_age]` | not captured | 6.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q22_age]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q356_age]` | not captured | 0.90 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[age1_age_fra_on_clhsvae]` | 1 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[age3_age_fra_on_cldhse]` | 0.90 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ba*]` | 0.78 | not captured | only_one_extracted |
@@ -237,7 +250,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_reference/Simvastatin_Ogungbenro2019_reference_modelica.zip" download>Simvastatin_Ogungbenro2019_reference_modelica.zip</a> <span class="pk-size">(5.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_reference/Simvastatin_Ogungbenro2019_reference_matlab.zip" download>Simvastatin_Ogungbenro2019_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_reference/Simvastatin_Ogungbenro2019_reference_matlab_simbio.zip" download>Simvastatin_Ogungbenro2019_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_reference/Simvastatin_Ogungbenro2019_reference_matlab_simbio.zip" download>Simvastatin_Ogungbenro2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_reference/Simvastatin_Ogungbenro2019_reference_sbml.zip" download>Simvastatin_Ogungbenro2019_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_reference/Simvastatin_Ogungbenro2019_reference_cellml.zip" download>Simvastatin_Ogungbenro2019_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

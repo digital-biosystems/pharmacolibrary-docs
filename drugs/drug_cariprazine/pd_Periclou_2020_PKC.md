@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models the logit of the probability of the parkinsonism cluster (PKC) treatment-emergent adverse event as a function of total cariprazine exposure (TCave, the time-averaged total plasma concentration of cariprazine, DCAR, and DDCAR), but the excerpts do not state the functional form, mechanism, or any parameter values (e.g., Imax, IC50, gamma) for this PKC model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Periclou_2020`
 - **model family:** `categorical`
 - **driver:** `not_resolved`

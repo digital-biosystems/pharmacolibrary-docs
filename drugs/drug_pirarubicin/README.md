@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;pirarubicin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pirarubicin_Robert1988_reference&quot;,&quot;label&quot;:&quot;Robert_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pirarubicin/Pirarubicin_Robert1988_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pirarubicin_Robert1988_reference&quot;,&quot;label&quot;:&quot;Robert_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pirarubicin/Pirarubicin_Robert1988_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # pirarubicin
 
@@ -33,14 +33,14 @@ Pirarubicin is an anthracycline cytotoxic antibiotic investigated as an anticanc
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Robert_1988_reference](drugs/drug_pirarubicin/Pirarubicin_Robert1988_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Robert J et al., Pharmacokinetics and metabolism of pira…, European journal of cancer… (1988) | [10.1016/0277-5379(88)90217-9](https://doi.org/10.1016/0277-5379(88)90217-9) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mader_1995_reference](drugs/drug_pirarubicin/Pirarubicin_Mader1995_reference.md) | — | 1-compartment (no model) | 4 | Mader RM et al., Pharmacokinetics of 4'-O-tetrahydropyra…, Cancer chemotherapy and pha… (1995) | [10.1007/BF00685634](https://doi.org/10.1007/BF00685634) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Robert_1988_reference](drugs/drug_pirarubicin/Pirarubicin_Robert1988_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Robert J et al., Pharmacokinetics and metabolism of pira…, European journal of cancer… (1988) | [10.1016/0277-5379(88)90217-9](https://doi.org/10.1016/0277-5379(88)90217-9) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mader_1995_reference](drugs/drug_pirarubicin/Pirarubicin_Mader1995_reference.md) | — | 1-compartment (no model) | 4 | Mader RM et al., Pharmacokinetics of 4'-O-tetrahydropyra…, Cancer chemotherapy and pha… (1995) | [10.1007/BF00685634](https://doi.org/10.1007/BF00685634) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Leca_1998_WBCnadir](drugs/drug_pirarubicin/pd_Leca_1998_WBCnadir.md) | white blood cell nadir count ← pirarubicin · direct log-linear effect | model (no simulator) | Leca FR et al., Pharmacokinetic-pharmacodynamic relatio…, Anti-cancer drugs (1998) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Leca_1998_WBCnadir](drugs/drug_pirarubicin/pd_Leca_1998_WBCnadir.md) | white blood cell nadir count ← pirarubicin · direct log-linear effect | model (no simulator) | Leca FR et al., Pharmacokinetic-pharmacodynamic relatio…, Anti-cancer drugs (1998) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

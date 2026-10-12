@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Remoxipride plasma concentrations (nM) stimulate plasma prolactin (ng·ml-1) via an indirect response model III (stimulation of production), with Emax 3.5, ECu50 95.2 or 94.8 nM across fits, and gamma 1; the excerpts do not state the mechanism beyond the model structure.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Taneja_2016_2`
 - **model family:** `indirect_response_iii`
 - **driver:** `cited_pk`

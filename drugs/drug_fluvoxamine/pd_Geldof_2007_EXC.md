@@ -20,7 +20,7 @@
 
 **Model:** No model was generated from this record.
 
-> Fluvoxamine plasma concentrations (ng ml−1) were linked to a categorical excitation (EXC) response via an inhibitory categorical model, with EC50 values of 237 ng ml−1 for P(Y&lt;1), 174 ng ml−1 for P(Y&lt;2), and 100 ng ml−1 for P(Y&lt;3); the paper excerpts do not state the mechanism beyond this concentration–response inhibition.
+> Fluvoxamine plasma concentrations (ng ml(-1)) were related to a categorical excitation response (score 0-3) in an inhibitory categorical model, with EC50 values of 237+/-39 ng ml(-1) for P(Y&lt;1), 174+/-28 ng ml(-1) for P(Y&lt;2), and 100+/-20 ng ml(-1) for P(Y&lt;3); the paper excerpts do not state the mechanism beyond this categorical probability model.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

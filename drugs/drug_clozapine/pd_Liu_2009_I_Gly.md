@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clozapine non-competitively inhibits the glycine-induced chloride current (I(Gly)); glycine alone yields a half-maximal effect concentration of 25.6 microM with Hill coefficient 1.5, and in the presence of clozapine the half-maximal effect concentration is 28.9 microM with Hill coefficient 1.2. The excerpts do not state an Imax/IC50 for clozapine or further mechanism details.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2009`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

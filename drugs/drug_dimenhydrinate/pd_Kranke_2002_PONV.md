@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model relates dimenhydrinate dose to the binary response of complete absence of postoperative nausea and vomiting within 6 hours, assuming an inhibitory effect, but the paper does not describe the specific mechanism or provide any parameter values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kranke_2002`
 - **model family:** `unknown`
 - **driver:** `dose_only`

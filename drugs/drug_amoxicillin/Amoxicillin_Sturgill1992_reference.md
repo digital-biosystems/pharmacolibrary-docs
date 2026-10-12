@@ -5,7 +5,7 @@
 
 # amoxicillin — `Amoxicillin_Sturgill1992_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — amoxicillin: CL 913 mL/min, V 347 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 913, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 913, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,17 +60,22 @@ Sturgill MG et al., Clarithromycin: review of a new macroli…, The Annals of ph
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (1/5 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.2 (1/5 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 913 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 0.58 | 1 | mismatch |
+| `gpt-oss-120b` | `values[Q56]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 4.39 | 5.8 | mismatch |
 | `gpt-oss:120b` | `values[Q22]` | 913 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q32]` | 0.58 | 1 | mismatch |
 | `gpt-oss:120b` | `values[Q56]` | 1 | not captured | only_one_extracted |

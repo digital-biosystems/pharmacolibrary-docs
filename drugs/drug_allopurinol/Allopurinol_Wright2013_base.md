@@ -5,7 +5,7 @@
 
 # allopurinol — `Allopurinol_Wright2013_base`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333), gpt-5.6-luna (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571), gpt-oss:120b (not confirmed, agreement 0.333), gpt-5.6-luna (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed 0/3</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The structure lists oxypurinol as formed from allopurinol in the central compartment, but the metabolism link's Fm parameter has kind 'unknown' and no value, so the metabolite formation is not quantified and the check for unreachable compartments or unlinked metabolites failed. The extracted parameters are otherwise plausible: a peripheral volume of distribution of 28.9 and an absolute bioavailability of 0.371, though the second reader recorded both as null, disagreeing on whether these values belong to the record. The readers also disagreed on whether the dosed compound is allopurinol and whether the primary analyte is oxypurinol or allopurinol. Extracted — allopurinol: V2 28.9, Fab 0.371.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has allopurinol, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has allopurinol, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -71,19 +71,23 @@ Wright DF et al., The population pharmacokinetics of allo…, European journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 3 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 | `gpt-5.6-luna` | not confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-5.6-luna` | `screen.primary_analyte` | oxypurinol | allopurinol | mismatch |
+| `gpt-oss-120b` | `model.links` | [['allopurinol', 'oxypurinol', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | allopurinol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | oxypurinol | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[peripheral volume; q, inter-]` | 28.9 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[peripheral volume; q, inter-]` | not captured | 28.9 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume; f, bioavailability; ω,]` | 0.371 | not captured | only_one_extracted |

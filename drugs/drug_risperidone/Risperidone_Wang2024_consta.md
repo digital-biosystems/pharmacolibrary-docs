@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;risperidone&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/&quot;},{&quot;label&quot;:&quot;Wang_2024 \u00b7 consta&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risperidone_Kozielska2012_reference&quot;,&quot;label&quot;:&quot;Kozielska_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/Risperidone_Kozielska2012_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risperidone_Kozielska2012_reference&quot;,&quot;label&quot;:&quot;Kozielska_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/Risperidone_Kozielska2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # risperidone — `Risperidone_Wang2024_consta`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The record was rejected because the parameter Q2, the intercompartmental clearance between the central and second peripheral compartment of the risperidone active moiety, is reported as 0.0467 with unit days, a dimension mismatch for a clearance parameter.**
+
+In the Wang_2024 model of risperidone and its metabolite 9-OH-risperidone in adults with schizophrenia, the parameter labelled D2 carries the meaning of an intercompartmental clearance (Q2) but is given in days rather than a flow unit such as l/d, unlike CL which is correctly 108.0 l/d. The reported unit could not be converted to SI, so the parameter reached the model without an SI value, and the dimension check on this structural parameter failed. Extracted — active moiety (risperidone + 9-OH-risperidone): kabs 0.179 1/d, CL 108 l/d, Q2 0.0467 d, tlag 0.0417 d, D1 23.9 d, Fab 0.755.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has risperidone (Rykindo/Consta LAI), the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `risperidone (Rykindo/Consta LAI)`, measured `active moiety (risperidone + 9-OH-risperidone)`.
 
@@ -106,6 +114,42 @@ Wang W et al., Population Pharmacokinetic Analysis to…, Neurology and therapy 
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.111 (2/18 fields) | 16 |
+
+<details><summary>16 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[alag3]` | 0.0417 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2_male_ct-1s01]` | 108.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl2_male_ct-1s01]` | not captured | 186.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[d2]` | 0.0467 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[d2]` | not captured | 0.764 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[d3]` | 23.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f1]` | 0.755 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f1]` | not captured | 0.430 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f2]` | 0.119 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f2]` | not captured | 0.148 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka1_ct-1s01 and ct-usa-104]` | 0.179 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka1_ct-1s01 and ct-usa-104]` | not captured | 0.288 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[middle release fraction, f3]` | not captured | 0.421 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q31_category]` | not captured | 0.675 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | risperidone (Rykindo/Consta LAI) | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | active moiety (risperidone + 9-OH-risperidone) | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

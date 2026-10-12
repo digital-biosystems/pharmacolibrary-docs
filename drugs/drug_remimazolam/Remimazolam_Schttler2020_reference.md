@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;remimazolam&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/&quot;},{&quot;label&quot;:&quot;Sch\u00fcttler_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remimazolam_Chen2025_base_model&quot;,&quot;label&quot;:&quot;Chen_2025_base_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025_base_model.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Chen2025_median_by_1_000_bootstraps&quot;,&quot;label&quot;:&quot;Chen_2025_median_by_1_000_bootstraps&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025_median_by_1_000_bootstraps.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Chen2025v2_reference&quot;,&quot;label&quot;:&quot;Chen_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Colin2025_reference&quot;,&quot;label&quot;:&quot;Colin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Colin2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Schttler2020_reference&quot;,&quot;label&quot;:&quot;Sch\u00fcttler_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Schttler2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Remimazolam_de2025_vellinga_38&quot;,&quot;label&quot;:&quot;de_2025_vellinga_38&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_de2025_vellinga_38.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remimazolam_Chen2025_base_model&quot;,&quot;label&quot;:&quot;Chen_2025_base_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025_base_model.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Chen2025_median_by_1_000_bootstraps&quot;,&quot;label&quot;:&quot;Chen_2025_median_by_1_000_bootstraps&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025_median_by_1_000_bootstraps.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Chen2025v2_reference&quot;,&quot;label&quot;:&quot;Chen_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Colin2025_reference&quot;,&quot;label&quot;:&quot;Colin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Colin2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Schttler2020_reference&quot;,&quot;label&quot;:&quot;Sch\u00fcttler_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Schttler2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Remimazolam_de2025_vellinga_38&quot;,&quot;label&quot;:&quot;de_2025_vellinga_38&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_de2025_vellinga_38.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remimazolam — `Remimazolam_Schttler2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,22 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The remimazolam record was rejected because the metabolite CNS 7054 was left unlinked (0 compartments, unknown link parameter) and the one-compartment structure built from abstract-only summary statistics does not match the parent–metabolite topology, with Vss (35.4 l) substituted for the distribution volume.**
+
+The paper was read at abstract level only, so reported summary statistics (CL 1.15 l/min, Vss 35.4 l, terminal half-life 70 min) stood in for a fitted model. The metabolite CNS 7054 has no compartments and the metabolism link from remimazolam carries an unknown parameter, so the metabolite is effectively orphaned with no path from the dose. The builder used Vss as the distribution volume since no Vc/V was reported, which reproduces AUC and terminal half-life but not the early distribution phase, and the resulting one-compartment structure cannot represent the parent–metabolite system the record claims. Extracted — remimazolam: CL 1.15 l/min, Vss 35.4 l, t1/2z 70 min.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has remimazolam → cns 7054 (metabolism), the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Schüttler J et al., Pharmacokinetics and Pharmacodynamics o…, Anesthesiology (2020)
   ·  DOI: [10.1097/ALN.0000000000003103](https://doi.org/10.1097/ALN.0000000000003103)
 
 ## Model component
-<dbs-pgx drug="remimazolam" model-id="Remimazolam_Schttler2020_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="remimazolam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="remimazolam" model-id="Remimazolam_Schttler2020_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="remimazolam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.
@@ -30,6 +38,8 @@ Schüttler J et al., Pharmacokinetics and Pharmacodynamics o…, Anesthesiology 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | clearance | `Q22` · CL | 1.15 | l/min | 1.9166666666666667e-05 | [l] / [min] | not captured | exact (1.0) | Schüttler_2020:abstract | — | not captured |
@@ -62,6 +72,33 @@ Schüttler J et al., Pharmacokinetics and Pharmacodynamics o…, Anesthesiology 
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
+
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['remimazolam', 'cns 7054', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[clearance]` | 1.15 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | 1.15 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` | 35.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` | not captured | 35.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-life]` | 70 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-life]` | not captured | 70 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -77,6 +114,17 @@ Schüttler J et al., Pharmacokinetics and Pharmacodynamics o…, Anesthesiology 
 | C9_phys_window_Q22 | pass | clearance within physiological range | 69 L/h | not captured | not captured | ['Schüttler_2020:abstract'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 35.4 L | not captured | not captured | ['Schüttler_2020:abstract'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=remimazolam) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -85,24 +133,16 @@ Schüttler J et al., Pharmacokinetics and Pharmacodynamics o…, Anesthesiology 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_remimazolam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Schüttler_2020` / `Schüttler_2020::reference`)
+- model: `../../../knowledgebase/drugs/drug_remimazolam/models/modelica/Remimazolam_Schttler2020_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_remimazolam/models/modelica/Remimazolam_Schttler2020_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_remimazolam/models/modelica/Remimazolam_Schttler2020_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_remimazolam/Remimazolam_Schttler2020_reference/Remimazolam_Schttler2020_reference_modelica.zip" download>Remimazolam_Schttler2020_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_remimazolam/Remimazolam_Schttler2020_reference/Remimazolam_Schttler2020_reference_fmi.zip" download>Remimazolam_Schttler2020_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_remimazolam/Remimazolam_Schttler2020_reference/Remimazolam_Schttler2020_reference_matlab.zip" download>Remimazolam_Schttler2020_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_remimazolam/Remimazolam_Schttler2020_reference/Remimazolam_Schttler2020_reference_matlab_simbio.zip" download>Remimazolam_Schttler2020_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_remimazolam/Remimazolam_Schttler2020_reference/Remimazolam_Schttler2020_reference_sbml.zip" download>Remimazolam_Schttler2020_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_remimazolam/Remimazolam_Schttler2020_reference/Remimazolam_Schttler2020_reference_cellml.zip" download>Remimazolam_Schttler2020_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_remimazolam/Remimazolam_Schttler2020_reference/Remimazolam_Schttler2020_reference.svg" alt="Remimazolam_Schttler2020_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

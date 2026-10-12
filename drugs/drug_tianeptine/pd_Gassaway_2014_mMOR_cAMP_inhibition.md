@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Tianeptine concentrations (μM) inhibit forskolin-stimulated cAMP accumulation at mouse MOR via MOR agonism (Gi/o coupling), described by a direct Emax (proportional inhibition) model with EC50 = 1.03±0.10 μM; the paper does not report Imax, kin, kout, or an effect compartment.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gassaway_2014`
 - **model family:** `emax`
 - **driver:** `cited_pk`

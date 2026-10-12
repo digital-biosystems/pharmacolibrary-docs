@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Brexanolone (allopregnanolone) concentrations (nM) stimulate potentiation of GABA (1 µM)-elicited chloride current in rat cerebellar GABAA receptors, described by an Emax model with EC50 = 14 nM; the paper excerpts do not state Emax, gamma, or the mechanism beyond this direct concentration–effect relation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fodor_2005`
 - **model family:** `emax`
 - **driver:** `cited_pk`

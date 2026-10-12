@@ -4,7 +4,7 @@
 
 # dabigatran etexilate — `DabigatranEtexilate_Liu2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167), gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 Nothing in the extracted data describes the drug's disposition, so there is no model to build.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dabigatran etexilate, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dabigatran etexilate, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -67,17 +67,23 @@ Liu YO et al., Population pharmacokinetic analysis for…, Frontiers in cardiova
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.167 (1/6 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.167 (1/6 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['dabigatran etexilate', 'dabigatran', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f]` | 166 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 166 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | dabigatran etexilate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | dabigatran | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [] | [['dabigatran etexilate', 'dabigatran', 'hydrolysis']] | mismatch |
 | `gpt-oss:120b` | `parameters[cl/f]` | 166 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/f]` | not captured | 166 | only_one_extracted |

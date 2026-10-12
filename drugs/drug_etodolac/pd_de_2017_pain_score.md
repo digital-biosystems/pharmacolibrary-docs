@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;etodolac&quot;,&quot;href&quot;:&quot;drugs/drug_etodolac/&quot;},{&quot;label&quot;:&quot;de_2017 \u00b7 PD pain score&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etodolac_de2017_reference&quot;,&quot;label&quot;:&quot;de_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etodolac/Etodolac_de2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etodolac_de2017_reference&quot;,&quot;label&quot;:&quot;de_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etodolac/Etodolac_de2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pain score — PD  <span class="pk-badge pk-badge--red">rejected</span>
@@ -17,6 +17,10 @@
 **As extracted:** S-etodolac drives pain score: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
+
+> The record reports an Emax model where S-etodolac inhibits pain score, with an IC80 value of 78.1%. The paper excerpts do not provide a full text, so no additional mechanistic details or rate constants are available.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `de_2017`
 - **model family:** `emax`

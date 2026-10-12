@@ -4,7 +4,7 @@
 
 # avalglucosidase alfa — `AvalglucosidaseAlfa_Tiraboschi2023_estimate_cv`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.632). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.722), gpt-oss:120b (not confirmed, agreement 0.632). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The two-compartment model for avalglucosidase alfa carries CL 0.808 L/h, V1 3.37 L, V2 296 L, V3 1.31 L, Q2 0.254 L/h, Q3 1.87 L/h, Vmax 12 mg/h and Km 0.541 µg/mL, but one structural parameter shows a dimension mismatch. Km's reported unit µg/mL could not be converted to SI units, so the parameter arrived without an SI value. A second reader also disagreed on the weight covariate effects: the record assigns 0.463 and 0.896 to the central-volume and clearance effects, while the second reader read 0.896 and 0.463 as effects on the intercompartmental clearances and returned null for the recorded effects; the covariate forms on clearance (linear_fractional) were also disputed. Extracted — avalglucosidase alfa: CL 0.808 L/h, V1 3.37 L, Vmax 12 mg/h, Km 0.541 µg/mL, Q 0.254 L/h, V2 296 L, Q3 1.87 L/h, V3 1.31 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has avalglucosidase_alfa, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has avalglucosidase_alfa, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -251,17 +251,23 @@ Tiraboschi G et al., Population pharmacokinetic modeling and…, Journal of phar
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.722 (13/18 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.632 (12/19 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl].covariate_forms` | ['linear_fractional', 'linear_fractional'] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_wt]` | 0.896 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q27_wt]` | not captured | 0.896 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | avalglucosidase_alfa | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | avalglucosidase_alfa | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl].covariate_forms` | ['linear_fractional', 'linear_fractional'] | [] | mismatch |
 | `gpt-oss:120b` | `parameters[effect_of_wt_on_vmc]` | 0.463 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_cl_wt]` | 0.896 | not captured | only_one_extracted |

@@ -4,7 +4,7 @@
 
 # baricitinib — `Baricitinib_Decker2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The model was rejected because a dialysis compartment is disconnected from the dose, and the bioavailability parameter lacks a numerical value.**
+
+The dialysate flow rate parameter is defined, but the structure lacks a path linking the dose to the dialysis compartment. Additionally, the absolute bioavailability parameter has no extracted value, causing the model to rely on a placeholder rather than a fitted estimate. Extracted — baricitinib: D1 0.263 h, CLNR 2.76 L/h, CLR 7.9 L/h, V1/F 119 L, Qd 2.4 L/h, V2/F 46.8 L, tlag 0.144 h, AUCt 0.75 %SEE, … (+1).
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Decker RL et al., A Population Pharmacokinetic and Exposu…, Clinical pharmacokinetics (2026)

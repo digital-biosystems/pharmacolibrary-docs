@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts or mechanism details; only that dimethyl phthalate (DMP) inhibits bioluminescence of Photobacterium phosphoreum T3, with no potency or rate values stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2016`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

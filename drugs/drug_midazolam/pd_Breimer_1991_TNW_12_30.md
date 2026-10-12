@@ -18,7 +18,7 @@
 
 **Model:** No model was generated from this record.
 
-> Midazolam plasma concentration, linked to an effect compartment (Cem) in equilibrium with plasma, stimulates the EEG parameter TNW 12-30 in healthy volunteers after 15, 30 and 60 mg midazolam doses, described by a sigmoid Emax model; the paper does not state the Emax, EC50, ke0 or gamma values in the excerpts.
+> Midazolam plasma concentration (µg/L), via an effect compartment in equilibrium with plasma, stimulates the EEG response TNW 12-30 (Hz) according to a sigmoid Emax model, with Emax 8.3 ± 1.3 Hz, EC50 276 ± 64 µg/L, Hill coefficient 3.9 ± 1.7, effect-compartment equilibration half-life 2.5 ± 0.2 min, and baseline effect 0.7 Hz.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

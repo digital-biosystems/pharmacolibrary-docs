@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lithium chloride concentration (mM) stimulates cell proliferation (total protein content), with an EC50 of 10.5 mM; the paper excerpts do not state the mechanism or an effect form beyond stimulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Repetto_2001`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

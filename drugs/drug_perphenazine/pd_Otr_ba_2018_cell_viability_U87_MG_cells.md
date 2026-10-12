@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Perphenazine inhibits viability of U87-MG glioblastoma cells in a concentration-dependent manner (viability expressed as % of controls); the paper reports an EC50 of 0.98 μM but does not describe a specific PD mechanism or model (e.g., Emax, kin/kout) beyond this concentration-dependent cytotoxic effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Otręba_2018`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

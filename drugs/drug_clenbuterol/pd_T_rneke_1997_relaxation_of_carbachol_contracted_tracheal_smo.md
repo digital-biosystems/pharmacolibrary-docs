@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clenbuterol concentration (M) drives relaxation of carbachol-contracted tracheal smooth muscle strips via a sigmoid Emax relationship; the paper reports an EC50 of 5.7 x 10(-9) M, but the excerpts do not state the mechanism, Emax, or slope.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Törneke_1997`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

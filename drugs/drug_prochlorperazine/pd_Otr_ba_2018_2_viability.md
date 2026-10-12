@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Prochlorperazine (0.25–10 μM, 24 h) inhibited cell viability of lightly pigmented human melanocytes (WST-1 assay, % of control) in a concentration-dependent manner, with EC50 = 0.63 ± 0.018 μM; the paper does not state a specific PD mechanism or model for the viability loss, though it attributes reduced melanogenesis to inhibition of tyrosinase activity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Otręba_2018_2`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

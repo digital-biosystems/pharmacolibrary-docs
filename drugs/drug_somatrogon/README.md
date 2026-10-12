@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H01A&quot;,&quot;href&quot;:&quot;atc/H01A.md&quot;},{&quot;label&quot;:&quot;somatrogon&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Somatrogon_Wang2025_previous_nonmem_model_estimates&quot;,&quot;label&quot;:&quot;Wang_2025_previous_nonmem_model_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_somatrogon/Somatrogon_Wang2025_previous_nonmem_model_estimates.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Somatrogon_Wang2025_previous_nonmem_model_estimates&quot;,&quot;label&quot;:&quot;Wang_2025_previous_nonmem_model_estimates&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_somatrogon/Somatrogon_Wang2025_previous_nonmem_model_estimates.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # somatrogon
 
@@ -18,14 +18,14 @@ Somatrogon is a long-acting growth hormone analogue used to treat growth disorde
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:21 | 0:48 | 1/1/0 | 0/0/0 | 0/0/0 | 27,196/619 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-07 09:21 | 0:48 | 0/1/1 | 0/0/0 | 0/0/0 | 27,196/619 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2025_previous_nonmem_model_estimates](drugs/drug_somatrogon/Somatrogon_Wang2025_previous_nonmem_model_estimates.md) | ▶ model + simulator | 2-compartment, oral | 6 (+3 cov.) | Wang Y et al., Implementing a Bayesian approach using…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13279](https://doi.org/10.1002/psp4.13279) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wang_2025_nonmem_focei_estimates_previous_analysis](drugs/drug_somatrogon/Somatrogon_Wang2025_nonmem_focei_estimates_previous_analysis.md) | — | 1-compartment (no model) | 0 | Wang Y et al., Implementing a Bayesian approach using…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13279](https://doi.org/10.1002/psp4.13279) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: unreported model parameter default(s): k21</sub><br><sub>route_to: `scholar`</sub> | [Wang_2025_previous_nonmem_model_estimates](drugs/drug_somatrogon/Somatrogon_Wang2025_previous_nonmem_model_estimates.md) | ▶ model + simulator | 2-compartment, oral | 6 (+3 cov.) | Wang Y et al., Implementing a Bayesian approach using…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13279](https://doi.org/10.1002/psp4.13279) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wang_2025_nonmem_focei_estimates_previous_analysis](drugs/drug_somatrogon/Somatrogon_Wang2025_nonmem_focei_estimates_previous_analysis.md) | — | 1-compartment (no model) | 0 | Wang Y et al., Implementing a Bayesian approach using…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13279](https://doi.org/10.1002/psp4.13279) |
 
 ## ADME sites
 
@@ -46,7 +46,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 1 matched, 1 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ---

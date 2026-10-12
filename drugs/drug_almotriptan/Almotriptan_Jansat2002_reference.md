@@ -4,7 +4,7 @@
 
 # almotriptan — `Almotriptan_Jansat2002_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Record rejected because it lacks distribution volume and elimination clearance, providing only summary statistics like bioavailability of 100% instead of a compartmental model.**
+
+The record includes bioavailability, absorption rate, and half-life but omits any distribution volume or elimination clearance parameter. A dimension mismatch was found on a structural parameter during review. Since the data came solely from the abstract, summary statistics stood in for a fitted population model. Extracted — almotriptan: Fab 100 %, tmax 5 minutes, t1/2z 3.4 hours, CLR 50 %, kabs 0.648 h -1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has almotriptan, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Jansat JM et al., Absolute bioavailability, pharmacokinet…, Journal of clinical pharmac… (2002)
@@ -65,6 +73,33 @@ Jansat JM et al., Absolute bioavailability, pharmacokinet…, Journal of clinica
 - no GROBID TEI available — transcribed from abstract in Jansat_2002_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.417 (5/12 fields) | 7 |
+
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[elimination half-life (t(1/2))]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life]` | 3.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 0.648 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance].value` | 50 | not captured | mismatch |
+| `gpt-oss-120b` | `parameters[time to maximum plasma concentration]` | 5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | almotriptan | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

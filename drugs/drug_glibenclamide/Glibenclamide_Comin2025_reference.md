@@ -5,7 +5,7 @@
 
 # glibenclamide — `Glibenclamide_Comin2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.471). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.588), gpt-oss:120b (not confirmed, agreement 0.471). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record lists a glyburide volume of distribution of 0.062 L, which is far below the physiological window for a small molecule. This magnitude suggests a unit or scale error during data extraction. A second reader disagreed on several parameter assignments, including the central volume and transfer rate constants, but the primary rejection cause remains the implausible volume value. Extracted — glibenclamide: V 0.062 L, kel 0.26 h⁻¹, V1 0.12 L, k21 0.12 h⁻¹, k12 0.23 h⁻¹.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has glyburide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k_k1b_pop: this record has none, the second reading 0.23; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -88,17 +88,25 @@ Comin L et al., Modeling Whole-Body Dynamic PET Microdo…, Clinical pharmacokin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.588 (10/17 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.471 (8/17 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[k_k1b_pop]` | not captured | 0.23 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k_k1k2_pop]` | 0.23 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k_l1l2_pop].parameter_id` | Q302 | Q301 | mismatch |
+| `gpt-oss-120b` | `parameters[k_l2l1_pop]` | not captured | 0.12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tk0_pop]` | not captured | 0.26 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v_lpop]` | 0.12 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v_ppop]` | not captured | 0.026 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k_k1k2_pop]` | 0.23 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k_l1b_pop]` | not captured | 0.12 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k_l1l2_pop].parameter_id` | Q302 | Q301 | mismatch |

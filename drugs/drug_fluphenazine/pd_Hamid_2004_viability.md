@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Fluphenazine concentration (microM) is linked to inhibition of HepG2 cell viability measured by alamar blue and MTT assays (%), but the paper excerpts provide no model family, mechanism, or parameter values (Imax, IC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hamid_2004`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

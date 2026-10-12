@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Botulinum toxin dose directly inhibits the MAS score change from baseline via an Emax model, achieving a maximal specific effect (EMax) of -1.11 compared to a placebo effect of -0.308. The dose required to reach half of this maximal effect (D50) is 31.5 Units, with an offset rate constant (Gamma_off) of 0.08.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ojardias_2022`
 - **model family:** `emax`
 - **driver:** `dose_only`

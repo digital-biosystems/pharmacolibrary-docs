@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided record and excerpts do not specify the mechanism, model form, or numerical parameter values for the effect of dimethyl fumarate on inflammatory activity.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jakimovski_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -5,7 +5,7 @@
 
 # lumasiran — `Lumasiran_Sten2023_model_fitted_to_olpasiran_data_only_estim`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.20).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875), gpt-oss:120b (partly confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.20).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 All six extracted parameters describe olpasiran, not the target drug lumasiran. Consequently, lumasiran's clearance, volume of distribution, absorption lag time, and central-to-peripheral rate constant had no values. A second reader also disagreed on the specific numerical values for the olpasiran parameters. Extracted — olpasiran: kabs 0.635 1/h, V1/F 27.9 L, V2/F 1.47e+03 L, V3/F 296 L, CL/F 27.7 L/h, Q/F 2.62 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl1/f: this record has none, the second reading 23.8; it also differs on 11 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has GalNAc-siRNAs, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -75,17 +75,20 @@ Sten S et al., Plasma Pharmacokinetics of N-Acetylgala…, Clinical pharmacokine
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.875 (14/16 fields) | 2 |
 | `gpt-oss:120b` | partly confirmed | 0.25 (4/16 fields) | 12 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `screen.dose_compound` | GalNAc-siRNAs | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | GalNAc-siRNAs | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl1/f]` | not captured | 23.8 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl1/f]` | 27.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl2/f]` | not captured | 3.02 | only_one_extracted |

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cenobamate concentrations in the brain inhibit the fraction of animals showing hindlimb extension in a 4-parameter Emax model. The paper reports a brain EC50 of 12.2 µM in rats, but does not explicitly state the mechanism or provide parameters for mice or other drugs in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bettio_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

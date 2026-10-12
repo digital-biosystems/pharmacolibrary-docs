@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe a pharmacodynamic mechanism or model for lemborexant-related treatment-emergent headache; the exposure-response analysis reports no evidence of clinically important drug- or exposure-related activity relative to placebo, and no potency (IC50/EC50/Emax) or rate parameters for this binary response are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lalovic_2020`
 - **model family:** `linear`
 - **driver:** `pk_record`

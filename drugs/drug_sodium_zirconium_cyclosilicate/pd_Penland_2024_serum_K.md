@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Sodium zirconium cyclosilicate (SZC) dose (g, virtual exposure since the drug is not absorbed) lowers serum potassium (mmol/L) via an indirect-response model in which a sigmoid Emax function inhibits the zero-order input/production rate (Kin) of serum K+; Kout = 0.548 1/h, Emax = 63.3% inhibition, EC50 = 32.8 g, Hill coefficient = 1.36 (full covariate model; base model EC50 15.3 g, Emax 43.4%), with a placebo effect on Kin of 0.923.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Penland_2024`
 - **model family:** `indirect_response_i`
 - **driver:** `dose_only`

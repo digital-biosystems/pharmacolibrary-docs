@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Kiselova_2021_prescription_count](drugs/drug_sodium_borate/pd_Kiselova_2021_prescription_count.md) | Extemporaneous prescription prevalence ← sodium_borate · model not identified | — | Kiselova O et al., Safety Aspects of Extemporaneous Prescr…, International journal of ph… (2021) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Kiselova_2021_prescription_count](drugs/drug_sodium_borate/pd_Kiselova_2021_prescription_count.md) | Extemporaneous prescription prevalence ← sodium_borate · model not identified | — | Kiselova O et al., Safety Aspects of Extemporaneous Prescr…, International journal of ph… (2021) | — |
 
 ## ADME sites
 

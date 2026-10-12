@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Allopurinol (via its metabolite oxypurinol, an XOR inhibitor) lowers plasma urate (mmol/L); the paper models the dose–response as an inhibitory Emax-type relationship U_T = U_R + (U_P − U_R)·(1 − D/(D+ID50))-like function with best-fit ID50 = 226 mg and a 'resistant' urate concentration U_R = 0.20 mmol/L that cannot be lowered by allopurinol, so the dose needed to reach a target urate (e.g. 0.36 mmol/L) is Dose = 1413·(U_P − 0.36), depending on pre-treatment urate U_P. A concentration–response relationship between plasma urate and plasma oxypurinol in healthy individuals is also shown (Graham et al.), but no IC50/EC50, kin/kout or ke0 values are given.
+> The allopurinol dose (mg/day) inhibits plasma urate concentration (mmol/L) via an additive Emax model where the maximum effect is limited by a resistant urate component (U R) that cannot be lowered by inhibition. The best-fit estimates are an ID 50 of 226 mg and a U R of 0.20 mmol/L.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Day_2017`
 - **model family:** `emax`

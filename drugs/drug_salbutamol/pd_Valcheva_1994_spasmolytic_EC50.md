@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Salbutamol concentrations inhibit histamine-induced guinea pig tracheal contraction, with a spasmolytic EC50 of 1.95 x 10(-8) M; the paper excerpts do not describe the mechanism or any other model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Valcheva_1994`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Sertraline exposure concentration (mg L(-1)) is linked to acute toxicity in Daphnia magna (immobilization/mortality), with a reported EC50 of 1.15 mg L(-1); the paper excerpts provide no mechanism or model structure.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Minguez_2014`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

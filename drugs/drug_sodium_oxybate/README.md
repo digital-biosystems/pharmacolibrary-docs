@@ -32,7 +32,7 @@ Sodium oxybate is used to treat narcolepsy, including cataplexy, and has also be
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Chen_2020_reference](drugs/drug_sodium_oxybate/SodiumOxybate_Chen2020_reference.md) | — | 2-compartment (no model) | 7 (+3 cov.) | Chen C et al., Population and Noncompartmental Pharmac…, Clinical and translational… (2020) | [10.1111/cts.12780](https://doi.org/10.1111/cts.12780) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.684). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Chen_2020_reference](drugs/drug_sodium_oxybate/SodiumOxybate_Chen2020_reference.md) | — | 2-compartment (no model) | 7 (+3 cov.) | Chen C et al., Population and Noncompartmental Pharmac…, Clinical and translational… (2020) | [10.1111/cts.12780](https://doi.org/10.1111/cts.12780) |
 
 ## ADME sites
 

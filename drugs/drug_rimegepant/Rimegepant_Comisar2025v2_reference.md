@@ -5,7 +5,7 @@
 
 # rimegepant — `Rimegepant_Comisar2025v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.115), gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rimegepant, the second reading unknown; it also differs on 22 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -105,17 +105,41 @@ Comisar CM et al., Population Pharmacokinetic Modeling of…, CPT: pharmacometri
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.115 (3/26 fields) | 23 |
 | `gpt-oss:120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>30 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[apparent central volume of distribution, vc/f]` | 114 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent central volume of distribution, vc/f]` | not captured | 114 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent clearance, cl/f]` | 24.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent clearance, cl/f]` | not captured | 24.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent inter‐compartmental clearance, q/f]` | 3.94 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent inter‐compartmental clearance, q/f]` | not captured | 3.94 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent peripheral volume of distribution, vp/f]` | 46.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent peripheral volume of distribution, vp/f]` | not captured | 46.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose effect on f1]` | not captured | 0.191 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fed‐status on relative bioavailability]` | -0.315 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fed‐status on relative bioavailability]` | not captured | -0.315 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[first‐order absorption rate constant, ka]` | 3.86 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[first‐order absorption rate constant, ka]` | not captured | 3.86 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_hepatic]` | -0.229 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_hepatic]` | not captured | -0.229 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_ktr_fed]` | not captured | -0.706 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_ktr_formulation]` | 2.03 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_ktr_formulation]` | not captured | 2.03 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q338_fed]` | -0.706 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[transit absorption rate constant, ktr]` | 8.23 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[transit absorption rate constant, ktr]` | not captured | 8.23 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | rimegepant | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | rimegepant | unknown | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[absorption rate constant]` | 3.86 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[apparent central volume of distribution]` | 114.0 | not captured | only_one_extracted |

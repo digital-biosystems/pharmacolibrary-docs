@@ -32,7 +32,7 @@ Terfenadine was a non-sedating antihistamine used to relieve allergy symptoms su
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Lalonde_1996_reference](drugs/drug_terfenadine/Terfenadine_Lalonde1996_reference.md) | — | 2-compartment (no model) | 8 | Lalonde RL et al., Population pharmacokinetics of terfenad…, Pharmaceutical research (1996) | [10.1023/a:1016036624935](https://doi.org/10.1023/a:1016036624935) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.467). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Lalonde_1996_reference](drugs/drug_terfenadine/Terfenadine_Lalonde1996_reference.md) | — | 2-compartment (no model) | 8 | Lalonde RL et al., Population pharmacokinetics of terfenad…, Pharmaceutical research (1996) | [10.1023/a:1016036624935](https://doi.org/10.1023/a:1016036624935) |
 
 ## Pharmacodynamics (PD)
 

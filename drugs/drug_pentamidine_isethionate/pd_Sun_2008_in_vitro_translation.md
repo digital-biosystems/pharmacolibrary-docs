@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentamidine (μM concentrations) dose-dependently inhibited luciferase activity from in vitro translation, attributed to interference with tRNA structure-related functions (e.g. aminoacylation) and possibly rRNA functions; the paper does not state a formal PD model, but sigmoid Emax fits gave EC50 values of 204.4 μM (Hill 6.9), 425.4 μM (Hill 34.5) and 470.0 μM (Hill 14.7), with higher magnesium increasing the pentamidine requirement.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sun_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

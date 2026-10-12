@@ -32,7 +32,7 @@ Tenoxicam is a non-steroidal anti-inflammatory drug of the oxicam class, used to
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Heintz_1984_reference](drugs/drug_tenoxicam/Tenoxicam_Heintz1984_reference.md) | — | 1-compartment (no model) | 1 | Heintz RC et al., Pharmacokinetics of tenoxicam in health…, European journal of rheumat… (1984) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Heintz_1984_reference](drugs/drug_tenoxicam/Tenoxicam_Heintz1984_reference.md) | — | 1-compartment (no model) | 1 | Heintz RC et al., Pharmacokinetics of tenoxicam in health…, European journal of rheumat… (1984) | — |
 
 ## ADME sites
 

@@ -4,7 +4,7 @@
 
 # avalglucosidase alfa — `AvalglucosidaseAlfa_Tiraboschi2023_20_mg_kg`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375), gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has avalglucosidase_alfa, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has avalglucosidase_alfa, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -269,17 +269,23 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[&lt; 45e]` | not captured | 32 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[&lt; 73e]` | not captured | 38 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[≥ 45e]` | not captured | 44 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | avalglucosidase_alfa | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | avalglucosidase_alfa | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[30:60]` | not captured | 1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[&lt; 45e]` | not captured | 32 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[&lt; 6.8e]` | not captured | 33 | only_one_extracted |

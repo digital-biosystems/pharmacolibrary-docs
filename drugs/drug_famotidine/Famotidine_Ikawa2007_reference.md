@@ -5,7 +5,7 @@
 
 # famotidine — `Famotidine_Ikawa2007_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has 133.9, the second reading 133.9; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 11.8, the second reading 12.97; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,17 +63,26 @@ Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (4/12 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.583 (7/12 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q27]` | 11.8 | 12.97 | mismatch |
+| `gpt-oss-120b` | `values[Q320]` | 7.2 | 3.686 | mismatch |
+| `gpt-oss-120b` | `values[Q321]` | 26.5 | 40.68 | mismatch |
+| `gpt-oss-120b` | `values[Q326]` | 0.316 | 0.316 | mismatch |
+| `gpt-oss-120b` | `values[Q32]` | 133.9 | 133.9 | mismatch |
+| `gpt-oss-120b` | `values[Q47]` | 0.329 | 0.329 | mismatch |
+| `gpt-oss-120b` | `values[Q56]` | 1.844 | 1.844 | mismatch |
+| `gpt-oss-120b` | `values[Q76]` | 172 | 42.46 | mismatch |
 | `gpt-oss:120b` | `values[Q321]` | 26.5 | 26.5 | mismatch |
 | `gpt-oss:120b` | `values[Q326]` | 0.316 | 0.316 | mismatch |
 | `gpt-oss:120b` | `values[Q32]` | 133.9 | 133.9 | mismatch |
@@ -135,10 +144,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_modelica.zip" download>Famotidine_Ikawa2007_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_modelica.zip" download>Famotidine_Ikawa2007_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_fmi.zip" download>Famotidine_Ikawa2007_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_matlab.zip" download>Famotidine_Ikawa2007_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_matlab_simbio.zip" download>Famotidine_Ikawa2007_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_matlab_simbio.zip" download>Famotidine_Ikawa2007_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_sbml.zip" download>Famotidine_Ikawa2007_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_famotidine/Famotidine_Ikawa2007_reference/Famotidine_Ikawa2007_reference_cellml.zip" download>Famotidine_Ikawa2007_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

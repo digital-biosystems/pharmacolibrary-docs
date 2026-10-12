@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> DDT (clofenotane) stimulates CYP2B mRNA induction in primary cultured rat hepatocytes, described by an Emax-type concentration–response model with an ED50 of 0.98 microM; the excerpts provide no further mechanism, Emax, or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nims_1998`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Smith_2009_none](drugs/drug_penicillamine/pd_Smith_2009_none.md) | none ← penicillamine · model not identified | — | Smith SW, Chiral toxicology: it's the same thing.…, Toxicological sciences : an… (2009) | [10.1093/toxsci/kfp097](https://doi.org/10.1093/toxsci/kfp097) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Smith_2009_none](drugs/drug_penicillamine/pd_Smith_2009_none.md) | none ← penicillamine · model not identified | — | Smith SW, Chiral toxicology: it's the same thing.…, Toxicological sciences : an… (2009) | [10.1093/toxsci/kfp097](https://doi.org/10.1093/toxsci/kfp097) |
 
 ## ADME sites
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dextromethorphan and its metabolite dextrorphan (deuterated and non-deuterated) block human recombinant NR1/NR2D NMDA receptor peak current in whole-cell patch-clamp, with a sigmoid Emax concentration–response relationship; the paper reports IC50 values (deuteration causing a 16-fold IC50 increase for dextrorphan and about two-fold for dextromethorphan) but does not state the numeric IC50 values, Emax, or Hill coefficient, nor an explicit mechanism beyond direct receptor blockade.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bespalov_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

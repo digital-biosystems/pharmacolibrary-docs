@@ -5,7 +5,7 @@
 
 # codeine — `Codeine_Shah1990_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154), gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — codeine: Vnorm 5.1 liters/kg, CL 6.2 liters/kg/hr, AUC ratio 0.05, Fab 8.3 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has codeine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has codeine, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -72,17 +72,29 @@ Shah J et al., Pharmacokinetics of codeine after paren…, Drug metabolism and d
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.154 (2/13 fields) | 11 |
 | `gpt-oss:120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | 8.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absolute bioavailability of codeine]` | 8.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[anti-sdrg v 1]` | 73.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ratio of aucmorphine/auccodeine]` | 0.05 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ratio of aucmorphine/auccodeine]` | not captured | 0.05 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` | 6.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` | not captured | 6.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[weight normalized volume of distribution of]` | 5.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[weight normalized volume of distribution of]` | not captured | 5.1 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | codeine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | codeine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[absolute bioavailability of codeine calculated]` | not captured | 8.3 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ratio of aucmorphine/auccodeine]` | not captured | 0.05 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[the absolute bioavailability of codeine calculated]` | 8.3 | not captured | only_one_extracted |

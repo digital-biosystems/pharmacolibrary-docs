@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models clozapine concentrations acting on conditioned avoidance response (CAR) suppression with a sigmoid Emax inhibition model, but no full text is available, so the mechanism, effect form, and potency or rate parameters (Imax, IC50, Emax, gamma) are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Olsen_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

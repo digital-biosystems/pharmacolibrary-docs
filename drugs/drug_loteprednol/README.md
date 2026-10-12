@@ -33,7 +33,7 @@ Loteprednol is a corticosteroid used as an eye drop to treat inflammation of the
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Wu_2008_reference](drugs/drug_loteprednol/Loteprednol_Wu2008_reference.md) | — | general linear (no model) | 3 | Wu WM et al., Pharmacokinetics of the sequential meta…, The Journal of pharmacy and… (2008) | [10.1211/jpp.60.3.0003](https://doi.org/10.1211/jpp.60.3.0003) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Wu_2008_reference](drugs/drug_loteprednol/Loteprednol_Wu2008_reference.md) | — | general linear (no model) | 3 | Wu WM et al., Pharmacokinetics of the sequential meta…, The Journal of pharmacy and… (2008) | [10.1211/jpp.60.3.0003](https://doi.org/10.1211/jpp.60.3.0003) |
 
 ## ADME sites
 

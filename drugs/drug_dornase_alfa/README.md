@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Aksenova_2024_purulent_sputum_of_patients](drugs/drug_dornase_alfa/pd_Aksenova_2024_purulent_sputum_of_patients.md) | purulent sputum of patients biomarker turnover ← dornase_alfa | — | Aksenova MS et al., A Study of the Comparability of the Pha…, Doklady. Biochemistry and b… (2024) | [10.1134/S1607672924701151](https://doi.org/10.1134/S1607672924701151) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.40).">human + animal</span> | [Aksenova_2024_purulent_sputum_of_patients](drugs/drug_dornase_alfa/pd_Aksenova_2024_purulent_sputum_of_patients.md) | purulent sputum of patients biomarker turnover ← dornase_alfa | — | Aksenova MS et al., A Study of the Comparability of the Pha…, Doklady. Biochemistry and b… (2024) | [10.1134/S1607672924701151](https://doi.org/10.1134/S1607672924701151) |
 
 ## ADME sites
 

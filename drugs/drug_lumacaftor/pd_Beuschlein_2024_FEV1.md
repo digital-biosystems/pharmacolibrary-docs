@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided excerpts discuss glucocorticoid effects on the HPA axis and do not contain information regarding lumacaftor, FEV1, or the specified model parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Beuschlein_2024`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

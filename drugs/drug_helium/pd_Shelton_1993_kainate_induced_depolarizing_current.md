@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not state a mechanism. Helium pressure (1–100 bar) shifts the potency of kainate-induced depolarizing current, with EC50 values of 113 microM at 1 bar, 111 microM at 50 bar, and 111 microM at 100 bar; no Emax, rate constants, or Hill coefficient are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shelton_1993`
 - **model family:** `emax`
 - **driver:** `dose_only`

@@ -5,7 +5,7 @@
 
 # cangrelor — `Cangrelor_Henrich2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.619). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.65), gpt-oss:120b (partly confirmed, agreement 0.619). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record omits values for bioavailability and lag time, forcing the use of placeholder defaults instead of paper-specific estimates. A second reader identified multiple additional parameter values, such as 0.0071 and 2.49, that were missing from the primary extraction. These discrepancies indicate the model structure relies on unverified assumptions rather than the reported pharmacokinetic data. Extracted — cangrelor: CL 8.51 L/h, V1 17 L, V2 51.4 L, Q 3.19 L/h, kabs 5.95 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q3: this record has none, the second reading 0.0071; it also differs on 7 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q3: this record has none, the second reading 0.00773; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -64,17 +64,25 @@ Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometri
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.65 (13/20 fields) | 7 |
 | `gpt-oss:120b` | partly confirmed | 0.619 (13/21 fields) | 8 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q312]` | not captured | 0.181 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q316]` | 0.14 | 0.14 | mismatch |
+| `gpt-oss-120b` | `values[Q317]` | 3.65 | 3.65 | mismatch |
+| `gpt-oss-120b` | `values[Q329]` | not captured | 6.57 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q343]` | not captured | 2.49 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q3]` | not captured | 0.00773 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q47]` | not captured | 0.0082 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q316]` | 0.14 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q317]` | 3.65 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q325]` | not captured | 2.49 | only_one_extracted |
@@ -143,7 +151,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cangrelor/Cangrelor_Henrich2021_reference/Cangrelor_Henrich2021_reference_modelica.zip" download>Cangrelor_Henrich2021_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cangrelor/Cangrelor_Henrich2021_reference/Cangrelor_Henrich2021_reference_fmi.zip" download>Cangrelor_Henrich2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cangrelor/Cangrelor_Henrich2021_reference/Cangrelor_Henrich2021_reference_matlab.zip" download>Cangrelor_Henrich2021_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cangrelor/Cangrelor_Henrich2021_reference/Cangrelor_Henrich2021_reference_matlab_simbio.zip" download>Cangrelor_Henrich2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cangrelor/Cangrelor_Henrich2021_reference/Cangrelor_Henrich2021_reference_matlab_simbio.zip" download>Cangrelor_Henrich2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cangrelor/Cangrelor_Henrich2021_reference/Cangrelor_Henrich2021_reference_sbml.zip" download>Cangrelor_Henrich2021_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_cangrelor/Cangrelor_Henrich2021_reference/Cangrelor_Henrich2021_reference_cellml.zip" download>Cangrelor_Henrich2021_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

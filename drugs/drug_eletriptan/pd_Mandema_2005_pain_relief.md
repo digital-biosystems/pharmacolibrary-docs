@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper models the binary response of pain relief as a direct dose-dependent Emax effect of eletriptan, with a maximal effect (Emax) of 3.23 and an ED50 of 15.5 mg. The model includes a link function parameterized by PL0 (-5.03), PLm (-0.822), and kpl (1.56 h-1), but the provided excerpts do not specify the mechanistic role of the kem parameter (0.66 h-1) listed in the record.
+> The dose of eletriptan acts on the binary response of pain relief via an Emax model with an additive effect form, where the paper explicitly defines Emax as the maximal difference between placebo and active treatment and ED50 as the dose for 50% of maximal effect. The estimated parameters are Emax of 3.23, ED50 of 15.5 mg, and k_em of 0.66 h-1.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Mandema_2005`
 - **model family:** `emax`

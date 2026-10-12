@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates procaterol concentrations (µmol/L) to oxygen consumption using an Emax-type stimulation model, but the available excerpts do not state the mechanism or any potency or rate parameter values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Meyers_1997`
 - **model family:** `emax`
 - **driver:** `not_resolved`

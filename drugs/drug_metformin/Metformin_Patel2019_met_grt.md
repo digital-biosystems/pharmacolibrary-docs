@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Patel2019_met_grt`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The volumes of distribution of the central and peripheral compartments, V1 = 0.03 and V2 = 0.01, are given in μg/mL, which is a concentration and not dimensionally consistent with a volume, so the structural parameters fail a dimension check. The model structure also contains a compartment with no path from the administered dose, making it unreachable. In addition, the reported units for V/F (L/kg) and CL/F (L/kg*hr) could not be converted to SI units, so those parameters were carried without SI values. Extracted — metformin: tmax 1 h, t1/2z 2.75 h, MRT 4.29 h, V/F 0.04 L/kg, CL/F 0.01 L/kg*hr, V1 0.03 μg/mL, V2 0.01 μg/mL, k12 0.45, … (+3).
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading none → not captured (not captured); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -94,14 +94,23 @@ Patel O et al., Pharmacokinetic Interaction of Green Ro…, Frontiers in pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.8 (12/15 fields) | 3 |
 | `gpt-oss:120b` | confirmed | 1.0 (13/13 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['none', '', '']] | mismatch |
+| `gpt-oss-120b` | `parameters[ka (h -1 ) absorption rate constant]` | 0.41 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.34 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided record and paper excerpts do not specify the underlying pharmacodynamic mechanism (e.g., direct Emax, inhibition of elimination, or effect compartment) or any key potency and rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for the effect of alendronic acid on bone mineral density. Consequently, the specific quantitative relationship between dose and response cannot be summarized from the available data.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ohta_2002`
 - **model family:** `unknown`
 - **driver:** `dose_only`

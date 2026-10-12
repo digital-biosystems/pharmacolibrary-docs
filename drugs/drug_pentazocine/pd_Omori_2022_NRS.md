@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;pentazocine&quot;,&quot;href&quot;:&quot;drugs/drug_pentazocine/&quot;},{&quot;label&quot;:&quot;Omori_2022 \u00b7 PD Pain severity&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pentazocine_Omori2022_reference&quot;,&quot;label&quot;:&quot;Omori_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentazocine/Pentazocine_Omori2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pentazocine_Omori2022_reference&quot;,&quot;label&quot;:&quot;Omori_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentazocine/Pentazocine_Omori2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Pain severity — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span>
@@ -18,9 +18,9 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> Pentazocine plasma concentration acts on the NRS pain score via an indirect response model in which the drug inhibits the production of pain (with an additional time-dependent effect on pain increase), fitted sequentially with a two-compartment PK model. For the original dataset, the reported estimates are EC50 = 176.3 ng/mL, kout = 3.35 /h, PT max = 0.57, PT 50 = 17.9 h, and γ time = 0.63; Emax was fixed at 1.
+> Pentazocine plasma concentrations (ng/mL) inhibit the decrease (elimination) of pain severity (NRS) through an indirect response mechanism that also incorporates a time-dependent effect component, as described in the model equations. Key parameters include an EC50 of 144 ng/mL, kout of 2.82 /h, Emax of 1, a time-dependent PT50 of 17.1 h, and a gamma time value of 0.373.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Omori_2022`
 - **model family:** `indirect_response_ii`

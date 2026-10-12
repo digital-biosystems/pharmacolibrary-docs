@@ -28,8 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ahmad_2012_GUS](drugs/drug_isocarboxazid/pd_Ahmad_2012_GUS.md) | bacterial β-glucuronidase (GUS) activity ← isocarboxazid · inhibition effect | — | Ahmad S et al., Potential repurposing of known drugs as…, Journal of biomolecular scr… (2012) | [10.1177/1087057112444927](https://doi.org/10.1177/1087057112444927) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ahmad_2012_GUS_2](drugs/drug_isocarboxazid/pd_Ahmad_2012_GUS_2.md) | endogenous GUS activity in living intact Escherichia coli ← isocarboxazid · inhibition effect | — | Ahmad S et al., Potential repurposing of known drugs as…, Journal of biomolecular scr… (2012) | [10.1177/1087057112444927](https://doi.org/10.1177/1087057112444927) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">other organism</span> | [Ahmad_2012_GUS](drugs/drug_isocarboxazid/pd_Ahmad_2012_GUS.md) | bacterial β-glucuronidase (GUS) activity ← isocarboxazid · inhibition effect | — | Ahmad S et al., Potential repurposing of known drugs as…, Journal of biomolecular scr… (2012) | [10.1177/1087057112444927](https://doi.org/10.1177/1087057112444927) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">other organism</span> | [Ahmad_2012_GUS_2](drugs/drug_isocarboxazid/pd_Ahmad_2012_GUS_2.md) | endogenous GUS activity in living intact Escherichia coli ← isocarboxazid · inhibition effect | — | Ahmad S et al., Potential repurposing of known drugs as…, Journal of biomolecular scr… (2012) | [10.1177/1087057112444927](https://doi.org/10.1177/1087057112444927) |
 
 ## ADME sites
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates orciprenaline concentrations to positive inotropic response measured as tension (stimulatory effect), but no full text is available, so the model family, mechanism, and potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Broadley_1979`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

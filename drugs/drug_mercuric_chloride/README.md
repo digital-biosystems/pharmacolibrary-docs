@@ -26,20 +26,19 @@ Mercuric chloride, also known as corrosive sublimate, is a mercury compound that
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:37 | 4:32 | 0/1/1 | 0/1/0 | 0/0/0 | 100,443/4,534 | einfracz / qwen3.8-27b | 6 | 0/5 | 5/1 | 0 |
+| 2026-10-07 22:37 | 4:32 | 0/1/0 | 0/1/0 | 0/0/0 | 100,443/4,534 | einfracz / qwen3.8-27b | 6 | 0/5 | 5/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span><br><sub>STALE — current validate: not captured</sub> | [Komsta-Szumska_1984_reference](drugs/drug_mercuric_chloride/MercuricChloride_KomstaSzumska1984_reference.md) | — | — (no model) | 0 | Komsta-Szumska E et al., A kinetic analysis of the interaction b…, Toxicology (1984) | [10.1016/0300-483x(84)90039-8](https://doi.org/10.1016/0300-483x(84)90039-8) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Sundberg_1998_reference](drugs/drug_mercuric_chloride/MercuricChloride_Sundberg1998_reference.md) | — | parent + metabolite (no model) | 1 | Sundberg J et al., Kinetics of methylmercury and inorganic…, Toxicology and applied phar… (1998) | [10.1006/taap.1998.8456](https://doi.org/10.1006/taap.1998.8456) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167), gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Sundberg_1998_reference](drugs/drug_mercuric_chloride/MercuricChloride_Sundberg1998_reference.md) | — | parent + metabolite (no model) | 1 | Sundberg J et al., Kinetics of methylmercury and inorganic…, Toxicology and applied phar… (1998) | [10.1006/taap.1998.8456](https://doi.org/10.1006/taap.1998.8456) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Gassó_2000_3H_NA_release](drugs/drug_mercuric_chloride/pd_Gass_2000_3H_NA_release.md) | [3H]noradrenaline release ← mercuric chloride · direct sigmoid Emax (Hill) effect | — | Gassó S et al., Pharmacological characterization of the…, Life sciences (2000) | [10.1016/s0024-3205(00)00715-3](https://doi.org/10.1016/s0024-3205(00)00715-3) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Gassó_2000_3H_NA_release](drugs/drug_mercuric_chloride/pd_Gass_2000_3H_NA_release.md) | [3H]noradrenaline release ← mercuric chloride · direct sigmoid Emax (Hill) effect | — | Gassó S et al., Pharmacological characterization of the…, Life sciences (2000) | [10.1016/s0024-3205(00)00715-3](https://doi.org/10.1016/s0024-3205(00)00715-3) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -51,7 +50,7 @@ Mercuric chloride, also known as corrosive sublimate, is a mercury compound that
 
 - **PubMed hits:** 126 matched, 70 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 2
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

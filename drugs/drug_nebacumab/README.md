@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;nebacumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nebacumab_Romano1993_reference&quot;,&quot;label&quot;:&quot;Romano_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nebacumab/Nebacumab_Romano1993_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nebacumab_Romano1993_reference&quot;,&quot;label&quot;:&quot;Romano_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nebacumab/Nebacumab_Romano1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # nebacumab
 
@@ -24,7 +24,7 @@ Nebacumab is an antibacterial monoclonal antibody, an immune globulin-type medic
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Romano_1993_reference](drugs/drug_nebacumab/Nebacumab_Romano1993_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Romano MJ et al., Single-dose pharmacokinetics and safety…, The Journal of pediatrics (1993) | [10.1016/s0022-3476(09)90031-2](https://doi.org/10.1016/s0022-3476(09)90031-2) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span> | [Romano_1993_reference](drugs/drug_nebacumab/Nebacumab_Romano1993_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Romano MJ et al., Single-dose pharmacokinetics and safety…, The Journal of pediatrics (1993) | [10.1016/s0022-3476(09)90031-2](https://doi.org/10.1016/s0022-3476(09)90031-2) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

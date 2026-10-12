@@ -18,9 +18,9 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> Steady-state oxypurinol concentrations (mg/L) directly inhibit serum urate (mg/dL) via an inhibitory Emax model, with Imax 7.6 mg/dL and IC50 17.6 mg/L (reduced by −0.27 mg/L per PDZK1 rs12129861 A allele; IC50 17.6/12.8/8.1 mg/L for GG/GA/AA), on a baseline SU of 9 mg/dL scaled by (CrCL/100)^−0.175; the paper states the mechanism as inhibition of xanthine dehydrogenase.
+> Steady-state oxypurinol concentrations inhibit serum urate via a direct additive sigmoid Emax mechanism, with a maximum inhibition (Imax) of 7.6 mg/dL and a half-maximal inhibitory concentration (IC50) of 17.6 mg/L (PDZK1 rs12129861 GG). The model estimates a baseline serum urate (BLurate) of 9.0 mg/dL, which is adjusted by creatinine clearance (exponent -0.18), and the IC50 is modified by the PDZK1 rs12129861 A allele (shift of -0.27).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Wen_2023`
 - **model family:** `sigmoid_emax`

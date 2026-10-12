@@ -4,7 +4,7 @@
 
 # solifenacin — `Solifenacin_Tannenbaum2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Absolute bioavailability for solifenacin is reported as 1.12 Amperes, a unit incompatible with a dimensionless fraction.**
+
+The absolute bioavailability parameter has a value of 1.12 but is assigned the unit Amperes. Electrical current is not a valid unit for a bioavailability fraction, which is dimensionless. This incompatibility prevented the parameter from being converted to standard scientific units, leaving it dimensionally inconsistent. Extracted — solifenacin: CL/F 8.81 L h–1, V2/F 162 L, kabs 0.742 h–1, tlag 0.834 h, Q/F 98.1 L h–1, V3/F 174 L, Fab 1.12 A, AUC/dose 96.7 ng h mL–1 mg–1, … (+4).
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has solifenacin, the second reading unknown; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Tannenbaum S et al., Pharmacokinetics of solifenacin in pedi…, Pharmacology research & per… (2020)
@@ -74,6 +82,52 @@ Tannenbaum S et al., Pharmacokinetics of solifenacin in pedi…, Pharmacology re
 - LLM selected parameter table(s) 3, 4
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.071 (2/28 fields) | 26 |
+
+<details><summary>26 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[alag]` | 0.834 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag]` | not captured | 0.834 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc/d]` | 96.70 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc/d]` | not captured | 96.70 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 8.81 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 8.81 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax/d]` | 5.744 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax/d]` | not captured | 5.744 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ctrough/d]` | 3.184 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ctrough/d]` | not captured | 3.184 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f1]` | 1.12 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f1]` | not captured | 1.12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.742 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.742 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f]` | 98.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f]` | not captured | 98.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 26.75 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | not captured | 26.75 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f]` | 162 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f]` | not captured | 162 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3/f]` | 174 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3/f]` | not captured | 174 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vz/f]` | 300.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vz/f]` | not captured | 300.9 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | solifenacin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | solifenacin | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

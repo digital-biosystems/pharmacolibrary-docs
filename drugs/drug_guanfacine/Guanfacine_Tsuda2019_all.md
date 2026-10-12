@@ -1,0 +1,232 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;guanfacine&quot;,&quot;href&quot;:&quot;drugs/drug_guanfacine/&quot;},{&quot;label&quot;:&quot;Tsuda_2019 \u00b7 all&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Guanfacine_Knebel2015_reference&quot;,&quot;label&quot;:&quot;Knebel_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guanfacine/Guanfacine_Knebel2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+# guanfacine — `Guanfacine_Tsuda2019_all`
+
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+
+<details class="legend">
+<summary>What the badges above mean</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
+
+**Model:** No model was generated from this record.
+
+### Reviewer guidance
+
+**Guanfacine's central volume of distribution is set to 128 L, creating a pharmacokinetically impossible structure with no dose path.**
+
+The central compartment volume is extracted as 128 L, a value inconsistent with typical guanfacine pharmacokinetics. A validation check identified an unreachable compartment, confirming the model structure is broken. The second reader disagreed on the parameterization and noted that several extracted parameters are missing, including values for 66, 75, 67, 87, 91, 95, and 97. Extracted — guanfacine: V1 128 L, V2 129 L, AUCSS 11 ng$hr/mL, Cmax 11 ng/mL.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 29 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+## Citation
+Tsuda Y et al., Population pharmacokinetic and exposure…, Drug metabolism and pharmac… (2019)
+  ·  DOI: [10.1016/j.dmpk.2019.07.001](https://doi.org/10.1016/j.dmpk.2019.07.001)
+
+## Model component
+<dbs-pgx drug="guanfacine" model-id="Guanfacine_Tsuda2019_all" status="rejected" stale="false" population="pediatric ADHD patients" measured-compound="guanfacine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
+
+**Parameterization:** mechanistic.
+
+## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 63 | `Q63` · V1 | 128 | L | 0.128 | L | not captured | llm (0.6) | tab_2:row60:col5 | — | not captured |
+| 64 | `Q64` · V2 | 129 | L | 0.129 | L | not captured | llm (0.6) | tab_2:row61:col5 | — | not captured |
+| AUC ss (ng$hr/mL) | `Q18` · AUCSS | 11 | ng$hr/mL | not captured | [[h] · [ng$]] / [ml] | not captured | space_fold (0.95) | Tsuda_2019_table_3:row1:col4, Tsuda_2019_table_3:row1:col6 | — | not captured |
+| C max,ss (ng/mL) | `Q32` · Cmax | 11 | ng/mL | not captured | [ng] / [ml] | not captured | llm (0.6) | Tsuda_2019_table_3:row4:col4, Tsuda_2019_table_3:row4:col6 | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
+
+## Departures & gaps
+
+**Interpretation flags:**
+- column 'all' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): '1' — extend the ontology if this is a real PK parameter (source ['tab_2:row1:col6'])
+- dropped unlinked row (NIL): '2' — extend the ontology if this is a real PK parameter (source ['tab_2:row2:col6'])
+- dropped unlinked row (NIL): '3' — extend the ontology if this is a real PK parameter (source ['tab_2:row3:col6'])
+- dropped unlinked row (NIL): '4 5' — extend the ontology if this is a real PK parameter (source ['tab_2:row4:col1', 'tab_2:row4:col3'])
+- dropped unlinked row (NIL): '6 7 8' — extend the ontology if this is a real PK parameter (source ['tab_2:row5:col1', 'tab_2:row5:col3'])
+- dropped unlinked row (NIL): '9' — extend the ontology if this is a real PK parameter (source ['tab_2:row6:col6'])
+- dropped unlinked row (NIL): '10' — extend the ontology if this is a real PK parameter (source ['tab_2:row7:col5'])
+- dropped unlinked row (NIL): '11' — extend the ontology if this is a real PK parameter (source ['tab_2:row8:col5'])
+- dropped unlinked row (NIL): '12' — extend the ontology if this is a real PK parameter (source ['tab_2:row9:col5'])
+- dropped unlinked row (NIL): '13' — extend the ontology if this is a real PK parameter (source ['tab_2:row10:col5'])
+- dropped unlinked row (NIL): '14' — extend the ontology if this is a real PK parameter (source ['tab_2:row11:col5'])
+- dropped unlinked row (NIL): '15' — extend the ontology if this is a real PK parameter (source ['tab_2:row12:col5'])
+- dropped unlinked row (NIL): '16' — extend the ontology if this is a real PK parameter (source ['tab_2:row13:col5'])
+- dropped unlinked row (NIL): '17' — extend the ontology if this is a real PK parameter (source ['tab_2:row14:col5'])
+- dropped unlinked row (NIL): '18' — extend the ontology if this is a real PK parameter (source ['tab_2:row15:col5'])
+- dropped unlinked row (NIL): '19' — extend the ontology if this is a real PK parameter (source ['tab_2:row16:col5'])
+- dropped unlinked row (NIL): '20' — extend the ontology if this is a real PK parameter (source ['tab_2:row17:col5'])
+- dropped unlinked row (NIL): '21' — extend the ontology if this is a real PK parameter (source ['tab_2:row18:col5'])
+- dropped unlinked row (NIL): '22' — extend the ontology if this is a real PK parameter (source ['tab_2:row19:col5'])
+- dropped unlinked row (NIL): '23' — extend the ontology if this is a real PK parameter (source ['tab_2:row20:col5'])
+- dropped unlinked row (NIL): '24' — extend the ontology if this is a real PK parameter (source ['tab_2:row21:col5'])
+- dropped unlinked row (NIL): '25' — extend the ontology if this is a real PK parameter (source ['tab_2:row22:col5'])
+- dropped unlinked row (NIL): '26' — extend the ontology if this is a real PK parameter (source ['tab_2:row23:col5'])
+- dropped unlinked row (NIL): '27' — extend the ontology if this is a real PK parameter (source ['tab_2:row24:col5'])
+- dropped unlinked row (NIL): '28' — extend the ontology if this is a real PK parameter (source ['tab_2:row25:col5'])
+- dropped unlinked row (NIL): '29' — extend the ontology if this is a real PK parameter (source ['tab_2:row26:col5'])
+- dropped unlinked row (NIL): '30' — extend the ontology if this is a real PK parameter (source ['tab_2:row27:col5'])
+- dropped unlinked row (NIL): '31' — extend the ontology if this is a real PK parameter (source ['tab_2:row28:col5'])
+- dropped unlinked row (NIL): '32' — extend the ontology if this is a real PK parameter (source ['tab_2:row29:col5'])
+- dropped unlinked row (NIL): '33' — extend the ontology if this is a real PK parameter (source ['tab_2:row30:col5'])
+- dropped unlinked row (NIL): '34' — extend the ontology if this is a real PK parameter (source ['tab_2:row31:col5'])
+- dropped unlinked row (NIL): '35' — extend the ontology if this is a real PK parameter (source ['tab_2:row32:col5'])
+- dropped unlinked row (NIL): '36' — extend the ontology if this is a real PK parameter (source ['tab_2:row33:col5'])
+- dropped unlinked row (NIL): '37' — extend the ontology if this is a real PK parameter (source ['tab_2:row34:col5'])
+- dropped unlinked row (NIL): '38' — extend the ontology if this is a real PK parameter (source ['tab_2:row35:col5'])
+- dropped unlinked row (NIL): '39' — extend the ontology if this is a real PK parameter (source ['tab_2:row36:col5'])
+- dropped unlinked row (NIL): '40' — extend the ontology if this is a real PK parameter (source ['tab_2:row37:col5'])
+- dropped unlinked row (NIL): '41' — extend the ontology if this is a real PK parameter (source ['tab_2:row38:col5'])
+- dropped unlinked row (NIL): '42' — extend the ontology if this is a real PK parameter (source ['tab_2:row39:col5'])
+- dropped unlinked row (NIL): '43' — extend the ontology if this is a real PK parameter (source ['tab_2:row40:col5'])
+- dropped unlinked row (NIL): '44' — extend the ontology if this is a real PK parameter (source ['tab_2:row41:col5'])
+- dropped unlinked row (NIL): '45' — extend the ontology if this is a real PK parameter (source ['tab_2:row42:col5'])
+- dropped unlinked row (NIL): '46' — extend the ontology if this is a real PK parameter (source ['tab_2:row43:col5'])
+- dropped unlinked row (NIL): '47' — extend the ontology if this is a real PK parameter (source ['tab_2:row44:col5'])
+- dropped unlinked row (NIL): '48' — extend the ontology if this is a real PK parameter (source ['tab_2:row45:col5'])
+- dropped unlinked row (NIL): '49' — extend the ontology if this is a real PK parameter (source ['tab_2:row46:col5'])
+- dropped unlinked row (NIL): '50' — extend the ontology if this is a real PK parameter (source ['tab_2:row47:col5'])
+- dropped unlinked row (NIL): '51' — extend the ontology if this is a real PK parameter (source ['tab_2:row48:col5'])
+- dropped unlinked row (NIL): '52' — extend the ontology if this is a real PK parameter (source ['tab_2:row49:col5'])
+- dropped unlinked row (NIL): '53' — extend the ontology if this is a real PK parameter (source ['tab_2:row50:col5'])
+- dropped unlinked row (NIL): '54' — extend the ontology if this is a real PK parameter (source ['tab_2:row51:col5'])
+- dropped unlinked row (NIL): '55' — extend the ontology if this is a real PK parameter (source ['tab_2:row52:col5'])
+- dropped unlinked row (NIL): '56' — extend the ontology if this is a real PK parameter (source ['tab_2:row53:col5'])
+- dropped unlinked row (NIL): '57' — extend the ontology if this is a real PK parameter (source ['tab_2:row54:col5'])
+- dropped unlinked row (NIL): '58' — extend the ontology if this is a real PK parameter (source ['tab_2:row55:col5'])
+- dropped unlinked row (NIL): '59' — extend the ontology if this is a real PK parameter (source ['tab_2:row56:col5'])
+- dropped unlinked row (NIL): '60' — extend the ontology if this is a real PK parameter (source ['tab_2:row57:col5'])
+- dropped unlinked row (NIL): '61' — extend the ontology if this is a real PK parameter (source ['tab_2:row58:col5'])
+- dropped unlinked row (NIL): '62' — extend the ontology if this is a real PK parameter (source ['tab_2:row59:col5'])
+- dropped unlinked row (NIL): '65' — extend the ontology if this is a real PK parameter (source ['tab_2:row62:col5'])
+- implicit units: '63' → L (from the popPK convention: 'V1 is the volume of distribution of the central compartment. In population pharmacokinetic modeling, volumes of distribu')
+- implicit units: '64' → L (from the popPK convention: 'V2 is the volume of distribution of the peripheral compartment. In population pharmacokinetic modeling, volumes of distr')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=guanfacine
+- population split: 'all' subgroup of Tsuda_2019 (paper reports 3 populations: all, child (6e12 years), dose group)
+
+**Extraction notes:**
+- unparsed cell tab_2:row3:col4 = '95% CI of parameter estimate'
+- unparsed cell tab_2:row3:col5 = 'Bootstrap median (95% CI)'
+- unparsed cell tab_2:row4:col4 = '23.7e25.3'
+- unparsed cell tab_2:row4:col5 = '24.5 (23.7e25.3)'
+- unparsed cell tab_2:row4:col6 = '69 70'
+- unparsed cell tab_2:row5:col4 = '0.644e0.834 547e671'
+- unparsed cell tab_2:row5:col5 = '0.741 (0.645e0.836) 608 (550e671)'
+- unparsed cell tab_2:row5:col6 = '71 72 73'
+- unparsed cell Tsuda_2019_table_3:row1:col3 = '45.59 (26.86e76.07)'
+- unparsed cell Tsuda_2019_table_3:row1:col5 = '54.32 (29.73e88.48)'
+- unparsed cell Tsuda_2019_table_3:row1:col7 = '46.05 (26.86e88.48)'
+- unparsed cell Tsuda_2019_table_3:row4:col3 = '2.47 (1.51e3.92)'
+- unparsed cell Tsuda_2019_table_3:row4:col5 = '2.92 (2.06e4.23)'
+- unparsed cell Tsuda_2019_table_3:row4:col7 = '2.59 (1.51e4.23)'
+- companion parameter table 3 transcribed (8 record(s))
+- LLM selected parameter table(s) 3
+
+## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (5/35 fields) | 30 |
+
+<details><summary>30 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[10]` | not captured | 75 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[1]` | not captured | 66 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[22]` | not captured | 87 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[26]` | not captured | 91 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[2]` | not captured | 67 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[30]` | not captured | 95 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[32]` | not captured | 97 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[34]` | not captured | 99 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[36]` | not captured | 101 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[37]` | not captured | 102 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[38]` | not captured | 103 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[39]` | not captured | 104 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[41]` | not captured | 106 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[44]` | not captured | 109 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[45]` | not captured | 110 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[46]` | not captured | 111 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[47]` | not captured | 112 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[48]` | not captured | 113 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[49]` | not captured | 114 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[50]` | not captured | 115 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[51]` | not captured | 116 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[53]` | not captured | 118 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[54]` | not captured | 119 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[56]` | not captured | 121 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[59]` | not captured | 124 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[60]` | not captured | 125 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[65]` | not captured | 130 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc ss]` | 11 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max,ss]` | 11 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q18 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Tsuda_2019_table_3:row1:col4', 'Tsuda_2019_table_3:row1:col6'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tsuda_2019_table_3:row4:col4', 'Tsuda_2019_table_3:row4:col6'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row60:col5'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row61:col5'] |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q63 | pass | volume within physiological range | 128 L | not captured | not captured | ['tab_2:row60:col5'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 129 L | not captured | not captured | ['tab_2:row61:col5'] |
+
+<details class="legend">
+<summary>Check legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
+
+## Raw artifacts
+
+- scholar stages: `../../../knowledgebase/drugs/drug_guanfacine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tsuda_2019` / `Tsuda_2019::all`)
+
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Models
+
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-09 06:32 UTC</sub>

@@ -5,7 +5,7 @@
 
 # paracetamol — `Paracetamol_Brookhuis2021_kulo_et_al_15`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111), gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Anderson_2015, Gibb_2008) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL/F), so that value has no SI equivalent. Extracted — paracetamol: CL/F 36.8 %, V/F 0.82 L/kg, tlag 4.2 min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has paracetamol, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has paracetamol, the second reading acetaminophen; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -105,17 +105,26 @@ Brookhuis SAM et al., Modelling Tools to Characterize Acetami…, Pharmaceutics 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.111 (1/9 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.0 (0/6 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['paracetamol', 'acetaminophen-glucuronide', 'metabolism'], ['paracetamol', 'acetaminophen-sulphate', 'metabolism'], ['paracetamol', 'napqi', 'metabolism']] | [['acetaminophen', 'acetaminophen-glucuronide', 'metabolism'], ['acetaminophen', 'acetaminophen-sulphate', 'metabolism'], ['acetaminophen', 'napqi', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution of the s(-) enantiomer]` | 0.82 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[increase in acetaminophen cl/f in the first trimester]` | not captured | 36.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[increase in acetaminophen cl/f in the first]` | 36.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 4.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | paracetamol | acetaminophen | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | paracetamol | acetaminophen | mismatch |
 | `gpt-oss:120b` | `model.links` | [['paracetamol', 'acetaminophen-glucuronide', 'metabolism'], ['paracetamol', 'acetaminophen-sulphate', 'metabolism'], ['paracetamol', 'napqi', 'metabolism']] | [['acetaminophen', 'acetaminophen-glucuronide', 'metabolism'], ['acetaminophen', 'acetaminophen-sulphate', 'metabolism'], ['acetaminophen', 'oxidative metabolites', 'metabolism'], ['oxidative metabolites', 'napqi', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[f]` | not captured | not captured | only_one_extracted |

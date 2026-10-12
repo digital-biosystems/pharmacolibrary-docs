@@ -4,7 +4,7 @@
 
 # sodium selenite — `SodiumSelenite_Jayachandran2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7), gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The model was built, but sodium selenite's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — sodium selenite: kabs 0.642 h−1, CL/F 1.59 L/h, V/F 42.5 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has sodium selenite, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium selenite, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,17 +64,21 @@ Jayachandran P et al., Clinical Pharmacokinetics of Oral Sodiu…, Drugs in R&D 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.727 (8/11 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['sodium selenite', 'endogenous selenium', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | sodium selenite | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | selenite | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[base]` | not captured | 5270 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | sodium selenite | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | selenite | unknown | mismatch |
@@ -134,7 +138,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference/SodiumSelenite_Jayachandran2021_reference_matlab.zip" download>SodiumSelenite_Jayachandran2021_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference/SodiumSelenite_Jayachandran2021_reference_matlab_simbio.zip" download>SodiumSelenite_Jayachandran2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference/SodiumSelenite_Jayachandran2021_reference_matlab_simbio.zip" download>SodiumSelenite_Jayachandran2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference/SodiumSelenite_Jayachandran2021_reference_sbml.zip" download>SodiumSelenite_Jayachandran2021_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference/SodiumSelenite_Jayachandran2021_reference_cellml.zip" download>SodiumSelenite_Jayachandran2021_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

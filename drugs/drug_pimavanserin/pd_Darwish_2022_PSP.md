@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pimavanserin exposure (average daily Cmax, ng/mL) acts on the PSP scale score via an exponential (log-linear) exposure-response function in a linear time-course model that also estimates a baseline PSP score and a time slope; the relationship is shallow, with response flattening at the highest exposures. The paper does not report potency or rate parameters (no IC50/EC50/Emax/ke0 values) for this model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Darwish_2022`
 - **model family:** `log_linear`
 - **driver:** `cited_pk`

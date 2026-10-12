@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ebastine concentration inhibits measured Mpro activity; the paper does not specify a pharmacodynamic mechanism. The IC50 is 57 ± 12 µM, with a Hill slope of 1.5 ± 0.2.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vatansever_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

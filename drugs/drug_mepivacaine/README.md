@@ -32,7 +32,7 @@ Mepivacaine is a local anesthetic of the amide type used to prevent or relieve p
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Lauven_1990_reference](drugs/drug_mepivacaine/Mepivacaine_Lauven1990_reference.md) | — | 1-compartment (no model) | 4 | Lauven PM et al., [An infusion model for intraoperative p…, Anasthesie, Intensivtherapi… (1990) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Lauven_1990_reference](drugs/drug_mepivacaine/Mepivacaine_Lauven1990_reference.md) | — | 1-compartment (no model) | 4 | Lauven PM et al., [An infusion model for intraoperative p…, Anasthesie, Intensivtherapi… (1990) | — |
 
 ## ADME sites
 

@@ -4,7 +4,7 @@
 
 # evinacumab — `Evinacumab_Dingman2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714), gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
+**This paper's disposition core is incomplete.**
+
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Pu_2021) cannot stand in for this paper's evidence. Extracted — evinacumab: V 4.7 L, CL 0.0955 L/day.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has evinacumab, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Dingman R et al., Evinacumab: Mechanism of action, clinic…, Clinical and translational… (2024)
@@ -67,17 +71,20 @@ Dingman R et al., Evinacumab: Mechanism of action, clinic…, Clinical and trans
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl, l/day for 74.1 kg subject]` | 0.0955 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[exponent on clearance]` | not captured | 0.75 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[exponent on clearance]` | not captured | 0.75 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[steady‐state volume of distribution]` | 4.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[steady‐state volume of distribution]` | not captured | 4.7 | only_one_extracted |

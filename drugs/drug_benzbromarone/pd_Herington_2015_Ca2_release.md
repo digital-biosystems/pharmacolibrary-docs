@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Benzbromarone inhibits oxytocin-induced Ca2+-mobilization in uterine myometrium cells with an EC50 of 1.91e-06 M and a maximum effect (Emax) of 130.03%. The provided text does not specify the mechanism (e.g., receptor antagonism vs. production inhibition) or kinetic rate parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Herington_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

@@ -18,7 +18,7 @@
 
 **Model:** No model was generated from this record.
 
-> Salbutamol plasma concentrations (ng/ml) were linked to the Paediatric Asthma Severity Score (PASS) via an Emax (stimulation) model in a sequential PKPD analysis; the EC50 and Hill slope could not be estimated from the data and were fixed to literature-based FEV1 values of 0.15 ng/ml (1.15 ng/ml in the limitations section) and 3.2, respectively, with current maintenance dosing achieving concentrations above the 90% maximal effect. The paper does not report Imax, kin, kout or ke0 values for the PASS model.
+> Salbutamol plasma concentrations (ng/ml) were linked to the Paediatric Asthma Severity Score (PASS, fraction of 0–9 scale) in a sequential PKPD model, with a sigmoid Emax relationship in which salbutamol inhibits (reduces) the PASS score from a baseline E0 of 0.381 by a maximum EMAX of 0.25; EC50 was fixed to a literature-based FEV1 estimate of 1.15 ng/ml and the Hill slope to 3.2, as neither could be reliably estimated. The paper states current dosing achieves concentrations above the 90% maximal effect, with an infusion of 0.5 µg/kg/min achieving &gt;90% maximal bronchodilation.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

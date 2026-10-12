@@ -4,7 +4,7 @@
 
 # isoflurane — `Isoflurane_Williams2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (reptile), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.98).">reptile</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (reptile), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.98).">reptile</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -71,17 +71,22 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | primary re-run | 0.333 (2/6 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.4 (2/5 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[1-5, inclusive]` | not captured | 0.75 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[2a, ‘rabbit’]` | not captured | 35 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | inhaled anaesthetics | isoflurane | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | arterial blood anaesthetic partial pressure | isoflurane | mismatch |
 | `gpt-oss:120b` | `parameters[2b.]` | not captured | 30 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | inhaled anaesthetics | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | arterial blood anaesthetic partial pressure | unknown | mismatch |

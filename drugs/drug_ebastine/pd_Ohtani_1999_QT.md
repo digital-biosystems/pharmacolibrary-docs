@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes ebastine concentration (µg/mL) acting on QT prolongation (ms) through an additive stimulatory effect-compartment model, with EC50 0.73 µg/mL and Emax 12.5 ms. The paper excerpt does not state the mechanism.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ohtani_1999`
 - **model family:** `effect_compartment`
 - **driver:** `cited_pk`

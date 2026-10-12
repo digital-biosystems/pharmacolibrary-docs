@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ketotifen concentration inhibits platelet aggregation induced by AA 50 µmol/L, with an IC50 of 143.5 µmol/L; the paper excerpt does not specify the mechanism.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_1990`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

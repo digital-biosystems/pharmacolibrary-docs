@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;teneligliptin&quot;,&quot;href&quot;:&quot;drugs/drug_teneligliptin/&quot;},{&quot;label&quot;:&quot;Park_2021 \u00b7 PGx CYP3A4&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# CYP3A4 — PGx  <span class="pk-badge pk-badge--red" title="not accepted.">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+# CYP3A4 — PGx  <span class="pk-badge pk-badge--red" title="not accepted.">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -30,11 +30,12 @@ Park JW et al., Influence of, Frontiers in pharmacology (2021)
   ·  DOI: [10.3389/fphar.2021.736317](https://doi.org/10.3389/fphar.2021.736317)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 | `gpt-oss:120b` | confirmed | 1.0 (6/6 fields) | none |
 
 _Every reader agrees on every compared field of this PGx record._

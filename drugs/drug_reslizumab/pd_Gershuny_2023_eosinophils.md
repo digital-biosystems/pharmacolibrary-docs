@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The extraction record indicates that reslizumab inhibits the elimination of eosinophils via a proportional indirect response mechanism, but the specific drug concentration driver and key potency or rate parameters are not defined in the record. Since no paper text is available, the underlying mechanism and any numerical values such as IC50 or kout cannot be verified or stated.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gershuny_2023`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

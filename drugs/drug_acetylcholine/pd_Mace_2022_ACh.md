@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes acetylcholine as a driver of vasodilation within a sigmoid Emax model, but the effect form is marked as unknown and the full text is not available. Consequently, the specific mechanism and key potency or rate values are not stated in the provided materials.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mace_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

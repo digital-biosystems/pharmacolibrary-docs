@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> In this drug–disease indirect response model, deferiprone exposure (average steady-state concentration, CssAV) acts on serum ferritin (ng/mL) indirectly by stimulating the elimination rate of body iron, which in turn drives ferritin production via a capacity-limited Emax function of iron (FERRITIN = Emaxferritin·IRON/(A50iron+IRON); Emaxferritin 11.7 mg/mL, A50iron 1240 mg). The chelation effect is linear with a deferiprone slope of 0.0109 L/(mg·mo) on CssAV; the paper does not report IC50/EC50, kin, kout or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Borella_2022`
 - **model family:** `indirect_response_iv`
 - **driver:** `cited_pk`

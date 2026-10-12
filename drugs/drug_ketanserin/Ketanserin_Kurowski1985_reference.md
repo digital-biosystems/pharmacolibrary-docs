@@ -5,7 +5,7 @@
 
 # ketanserin — `Ketanserin_Kurowski1985_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1), gpt-oss:120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ketanserin, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ketanserin, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -86,17 +86,36 @@ Kurowski M, Bioavailability and pharmacokinetics of…, European journal of clin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.1 (2/20 fields) | 18 |
 | `gpt-oss:120b` | not confirmed | 0.1 (2/20 fields) | 18 |
 
-<details><summary>18 field(s) a reader read differently</summary>
+<details><summary>36 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['ketanserin', 'ketanserinol', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[1.8-times the auc in one dosing interval]` | not captured | 1.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absolute bioavailability of ketanserin tablets]` | 52.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absolute bioavailability of ketanserin tablets]` | not captured | 52.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[after]` | not captured | 0.97 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc extrapolated to infinity]` | 1200 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc extrapolated to infinity]` | not captured | 1200 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc over one dosing interval at steady-state]` | 666 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc over one dosing interval at steady-state]` | not captured | 666 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | 17.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | not captured | 17.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peak]` | 103.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peak]` | not captured | 103.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability compared to a solution containing an equal quantity of active compound]` | 85.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability compared to a solution containing an equal quantity of active compound]` | not captured | 85.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tablets]` | not captured | 40 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | ketanserin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ketanserin | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [['ketanserin', 'ketanserinol', 'metabolism']] | [] | mismatch |
 | `gpt-oss:120b` | `parameters[absolute bioavailability of ketanserin tablets]` | 52.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absolute bioavailability of ketanserin tablets]` | not captured | 52.7 | only_one_extracted |

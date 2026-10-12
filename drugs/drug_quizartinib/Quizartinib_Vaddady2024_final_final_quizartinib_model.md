@@ -4,7 +4,7 @@
 
 # quizartinib — `Quizartinib_Vaddady2024_final_final_quizartinib_model`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Quizartinib’s clearance-ratio parameter is −0.301, producing the implausible negative-clearance scenario that led to rejection.**
+
+The record identifies this parameter as the ratio of quizartinib clearances with strong CYP3A inhibitors and gives its value as −0.301. The reported finding is an implausible negative clearance in a covariate scenario or the base model. Extracted — quizartinib: CL 6.65 L/h, V1 371 L, Q 40.7 L/h, V2 312 L, Q2 0.757 L/h, V3 91.9 L, tlag 0.196 h, kabs 1.1 1/h, … (+3).
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of fractional_change_in_k_a_for_non_aml_subjects: this record has -0.188, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 ## Citation
 Vaddady P et al., Population pharmacokinetic analysis of…, Clinical and translational… (2024)
@@ -99,6 +107,38 @@ Vaddady P et al., Population pharmacokinetic analysis of…, Clinical and transl
 - captured model equation COVEffWT = (WT/75)^θ
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.6 (18/30 fields) | 12 |
+
+<details><summary>12 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[fractional_change_in_k_a_for_non_aml_subjects]` | -0.188 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[k a].covariate_forms` | [] | ['additive_shift'] | mismatch |
+| `qwen3.8-27b` | `parameters[theta_cl_race]` | not captured | -0.261 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_kabs_category]` | not captured | -0.188 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q900_race]` | -0.261 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_v1_category]` | -0.169 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_v2_age]` | 0.0152 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_v_age]` | not captured | 0.0152 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_v_category]` | not captured | -0.169 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v c,quiz].covariate_forms` | ['additive_shift'] | ['additive_shift', 'linear_fractional'] | mismatch |
+| `qwen3.8-27b` | `parameters[v c,quiz].parameter_id` | Q63 | Q61 | mismatch |
+| `qwen3.8-27b` | `parameters[v p1,quiz].covariate_forms` | ['linear_fractional'] | [] | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

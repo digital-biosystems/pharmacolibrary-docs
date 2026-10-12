@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03A&quot;,&quot;href&quot;:&quot;atc/M03A.md&quot;},{&quot;label&quot;:&quot;gallamine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gallamine_Ramzan1980_reference&quot;,&quot;label&quot;:&quot;Ramzan_1980_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gallamine/Gallamine_Ramzan1980_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gallamine_Ramzan1980_reference&quot;,&quot;label&quot;:&quot;Ramzan_1980_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gallamine/Gallamine_Ramzan1980_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # gallamine
 
@@ -27,19 +27,19 @@ Gallamine is a peripherally acting muscle relaxant that was used to relax muscle
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 02:37 | 7:30 | 1/0/0 | 1/0/0 | 0/0/0 | 176,797/5,100 | einfracz / qwen3.8-27b | 3 | 1/0 | 3/0 | 0 |
+| 2026-10-07 02:37 | 7:30 | 0/0/1 | 1/0/0 | 0/0/0 | 176,797/5,100 | einfracz / qwen3.8-27b | 3 | 1/0 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ramzan_1980_reference](drugs/drug_gallamine/Gallamine_Ramzan1980_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Ramzan MI et al., Pharmacokinetic studies in man with gal…, European journal of clinica… (1980) | [10.1007/BF00562622](https://doi.org/10.1007/BF00562622) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Ramzan_1980_reference](drugs/drug_gallamine/Gallamine_Ramzan1980_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Ramzan MI et al., Pharmacokinetic studies in man with gal…, European journal of clinica… (1980) | [10.1007/BF00562622](https://doi.org/10.1007/BF00562622) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">camelid</span> | [Al-Jafari_1997_AChE_activity](drugs/drug_gallamine/pd_Al_Jafari_1997_AChE_activity.md) | camel retina acetylcholinesterase activity biomarker turnover ← gallamine | — | Al-Jafari AA, The inhibitory effect of the neuromuscu…, Toxicology letters (1997) | [10.1016/s0378-4274(96)03828-3](https://doi.org/10.1016/s0378-4274(96)03828-3) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">camelid</span> | [Al-Jafari_1997_AChE_activity](drugs/drug_gallamine/pd_Al_Jafari_1997_AChE_activity.md) | camel retina acetylcholinesterase activity biomarker turnover ← gallamine | — | Al-Jafari AA, The inhibitory effect of the neuromuscu…, Toxicology letters (1997) | [10.1016/s0378-4274(96)03828-3](https://doi.org/10.1016/s0378-4274(96)03828-3) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -51,7 +51,7 @@ Gallamine is a peripherally acting muscle relaxant that was used to relax muscle
 
 - **PubMed hits:** 139 matched, 68 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models brexanolone (via its active metabolite allopregnanolone, with PK taken from Wald_2022) as a sigmoid Emax stimulation of absolute power spectral density in iEEG frequency bands; the excerpts provide no mechanism details and no numeric potency (EC50, Emax, gamma) or rate values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vuu_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

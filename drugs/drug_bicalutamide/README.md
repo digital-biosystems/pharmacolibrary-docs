@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02A&quot;,&quot;href&quot;:&quot;atc/L02A.md&quot;},{&quot;label&quot;:&quot;bicalutamide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bicalutamide_Ozaksun2025_reference&quot;,&quot;label&quot;:&quot;Ozaksun_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bicalutamide/Bicalutamide_Ozaksun2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bicalutamide_Ozaksun2025_reference&quot;,&quot;label&quot;:&quot;Ozaksun_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bicalutamide/Bicalutamide_Ozaksun2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # bicalutamide
 
@@ -33,13 +33,13 @@ Bicalutamide is an antiandrogen medicine used to treat prostate cancer. It is an
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ozaksun_2025_reference](drugs/drug_bicalutamide/Bicalutamide_Ozaksun2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Ozaksun NT et al., Developing In Vitro-In Vivo Correlation…, Pharmaceutics (2025) | [10.3390/pharmaceutics17091126](https://doi.org/10.3390/pharmaceutics17091126) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Ozaksun_2025_reference](drugs/drug_bicalutamide/Bicalutamide_Ozaksun2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Ozaksun NT et al., Developing In Vitro-In Vivo Correlation…, Pharmaceutics (2025) | [10.3390/pharmaceutics17091126](https://doi.org/10.3390/pharmaceutics17091126) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Tsoi_2025_EC50](drugs/drug_bicalutamide/pd_Tsoi_2025_EC50.md) | DOX resistance biomarker turnover ← bicalutamide | — | Tsoi H et al., BQ323636.1 Employs the AR-CCRK Axis to…, Cells (2025) | [10.3390/cells14171341](https://doi.org/10.3390/cells14171341) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Tsoi_2025_EC50](drugs/drug_bicalutamide/pd_Tsoi_2025_EC50.md) | DOX resistance biomarker turnover ← bicalutamide | — | Tsoi H et al., BQ323636.1 Employs the AR-CCRK Axis to…, Cells (2025) | [10.3390/cells14171341](https://doi.org/10.3390/cells14171341) |
 
 ## ADME sites
 

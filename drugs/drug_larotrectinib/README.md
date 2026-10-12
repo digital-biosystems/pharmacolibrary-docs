@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.99).">human + animal</span> | [Roa_2024_survival_percentage](drugs/drug_larotrectinib/pd_Roa_2024_survival_percentage.md) | survival percentage ← larotrectinib · inhibition effect | — | Roa P et al., Zurletrectinib is a next-generation TRK…, British journal of cancer (2024) | [10.1038/s41416-024-02760-1](https://doi.org/10.1038/s41416-024-02760-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.99).">human + animal</span> | [Roa_2024_survival_percentage](drugs/drug_larotrectinib/pd_Roa_2024_survival_percentage.md) | survival percentage ← larotrectinib · inhibition effect | — | Roa P et al., Zurletrectinib is a next-generation TRK…, British journal of cancer (2024) | [10.1038/s41416-024-02760-1](https://doi.org/10.1038/s41416-024-02760-1) |
 
 ## ADME sites
 

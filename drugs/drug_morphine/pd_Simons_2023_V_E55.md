@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Morphine plasma concentrations inhibit isohypercapnic ventilation (V̇E55, l/min), the slope-derived ventilatory response to hypercapnia, causing a rapid drop within 30 min with a slow (&gt;6 h) return toward baseline after high dose; the excerpts do not state the PD model structure or mechanism (e.g., Emax, inhibitory kin/kout, effect compartment) and give no potency or rate parameter values (only between-subject variability of 0.21 for baseline and 1.95 for σ2).
+> Morphine plasma concentrations inhibit the measured ventilation response (V̇E55) via a proportional sigmoid Emax model linked to the plasma concentration through an effect compartment with a t½ke0 of 214 min. The model estimates a C50 of 21.5 ng/ml and a baseline V̇E55 of 27.8 l/min, with the Hill coefficient (gamma) fixed at 1.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Simons_2023`
 - **model family:** `sigmoid_emax`

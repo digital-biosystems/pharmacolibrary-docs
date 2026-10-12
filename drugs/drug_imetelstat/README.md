@@ -32,7 +32,7 @@ Imetelstat is an anticancer medicine used to treat anemia in people with myelody
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [González-Sales_2024_reference](drugs/drug_imetelstat/Imetelstat_GonzlezSales2024_reference.md) | — | 1-compartment (no model) | 8 (+2 cov.) | González-Sales M et al., Population pharmacokinetics of imetelst…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13160](https://doi.org/10.1002/psp4.13160) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.76). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [González-Sales_2024_reference](drugs/drug_imetelstat/Imetelstat_GonzlezSales2024_reference.md) | — | 1-compartment (no model) | 8 (+2 cov.) | González-Sales M et al., Population pharmacokinetics of imetelst…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13160](https://doi.org/10.1002/psp4.13160) |
 
 ## ADME sites
 

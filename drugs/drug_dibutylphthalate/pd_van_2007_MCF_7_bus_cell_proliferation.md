@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts or stated mechanism details; the record indicates dibutyl phthalate concentrations were linked to MCF-7(bus) cell proliferation via an Emax-type stimulation model, but no potency (IC50/EC50/Emax) or rate values are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2007`
 - **model family:** `emax`
 - **driver:** `cited_pk`

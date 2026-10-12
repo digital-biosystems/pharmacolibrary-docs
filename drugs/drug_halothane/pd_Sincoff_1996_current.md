@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Halothane concentration stimulates the measured response 'current' via a sigmoidal Emax mechanism. The model is characterized by an EC50 of 1.0 mM and a Hill coefficient of 1.5, with no kinetic parameters or elimination terms reported.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sincoff_1996`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

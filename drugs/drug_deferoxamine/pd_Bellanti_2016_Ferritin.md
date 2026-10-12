@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> In β-thalassaemia major patients, deferoxamine acts on serum ferritin (μg/L) in an indirect response (turnover) model with zero-order production (Kin) and first-order elimination (Kout): deferoxamine stimulates ferritin elimination in a proportional manner, while blood transfusions add to ferritin production via a conversion rate (CRT). The record reports a proportional slope of 4.81 μg/conc; the paper does not state Imax, IC50/EC50, or rate values (Kin, Kout) numerically in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bellanti_2016`
 - **model family:** `indirect_response_iv`
 - **driver:** `not_resolved`

@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record links eslicarbazepine concentrations from a cited PK source to a time-to-event response of headache onset using a time-to-event model family with an unknown effect form. No mechanism or quantitative parameters are provided in the available information.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sunkaraneni_2018`
 - **model family:** `tte`
 - **driver:** `cited_pk`

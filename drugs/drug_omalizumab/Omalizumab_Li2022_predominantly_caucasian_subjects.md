@@ -4,7 +4,7 @@
 
 # omalizumab — `Omalizumab_Li2022_predominantly_caucasian_subjects`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Omalizumab clearance of 29 percent uses a unit that cannot be standardized, blocking model completion.**
+
+The parameter for faster clearance of free omalizumab is listed as 29 percent. This unit is not a standard volumetric clearance unit and could not be converted to standard SI units. Consequently, the parameter lacks a usable value for pharmacokinetic modeling, resulting in rejection. Extracted — omalizumab: Cmax 15.9 µg/mL, AUClast 594 d*µg/mL, AUC∞ 659 d*µg/mL, t1/2z 23.8 days, Cmin 6.64 ng/mL, CL 29 %, kabs 0.92 1/day, tlag 0.06 day.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has omalizumab → free ige (interconversion), the second reading omalizumab → free ige (interconversion); omalizumab → total ige (interconversion); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Li J et al., Efficacy and safety of omalizumab in pa…, Asian Pacific journal of al… (2022)
@@ -66,6 +74,32 @@ Li J et al., Efficacy and safety of omalizumab in pa…, Asian Pacific journal o
 - gap-filled Q83 (tlag) from Oh_2023's review values (primary lacked it)
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.571 (8/14 fields) | 6 |
+
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['omalizumab', 'free ige', 'interconversion']] | [['omalizumab', 'free ige', 'interconversion'], ['omalizumab', 'total ige', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `parameters[% decrease of free ige at t max]` | not captured | 490 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[% decrease of free ige at t min]` | not captured | 94.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate]` | 0.92 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[faster clearance of free omalizumab]` | 29 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time]` | 0.06 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

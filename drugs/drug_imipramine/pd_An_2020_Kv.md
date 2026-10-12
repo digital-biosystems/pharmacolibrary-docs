@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Imipramine inhibits voltage-dependent K+ (Kv) channel current with a sigmoid Emax relationship; the paper reports an IC50 of 5.55 ± 1.24 µM and a Hill coefficient of 0.73 ± 0.1, but the excerpts do not state the mechanism beyond this direct concentration–effect inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `An_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

@@ -18,6 +18,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Moclobemide utilisation (DDD/1000 population/day) over time since subsidy listing was fitted with a sigmoid Emax (Hill) model applied to market uptake, with time in quarter years as the driver rather than a pharmacological mechanism; the paper does not describe a drug-response mechanism. Key parameters: Umax 1.8 DDD/1000/day, TU50 6.0 quarter years, slope n 2.0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Birkett_1995`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

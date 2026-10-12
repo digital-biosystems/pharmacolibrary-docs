@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methylphenidate plasma concentrations (ng/mL) inhibit the SKAMP Combined score via a sigmoid Emax model, with a maximal reduction of approximately 38 units and an IC50 (concentration achieving 50% of maximal reduction) of 14.24 ng/mL; the paper excerpts do not state the mechanism beyond this direct concentration-effect relation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Teuscher_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

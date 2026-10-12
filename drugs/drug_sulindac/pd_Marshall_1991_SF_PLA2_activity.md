@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The sulindac metabolite sulindac sulfide inhibits synovial fluid phospholipase A2 activity via an Emax model with an IC50 of 30.2 µM. The paper excerpts do not describe the specific mechanism of inhibition (e.g., production or elimination) or provide rate parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Marshall_1991`
 - **model family:** `emax`
 - **driver:** `not_resolved`

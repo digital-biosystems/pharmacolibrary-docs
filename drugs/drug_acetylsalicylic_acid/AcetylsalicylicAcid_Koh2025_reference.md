@@ -5,7 +5,7 @@
 
 # acetylsalicylic acid — `AcetylsalicylicAcid_Koh2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.852). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.481), gpt-oss:120b (partly confirmed, agreement 0.852). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — acetylsalicylic acid: FR 0.69, kabs 0.22 h−1, tlag 2.81 h, kcomp 2.32 h−1, kcomp 0.57 h−1, kfm 2.97 h−1, k31 1.31, CL/F 2.76 L/h, … (+4); thromboxane_B2: kel 0.023 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of βweight_clm: this record has none, the second reading 1.42; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has acetylsalicylic_acid, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -84,17 +84,32 @@ Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, developme
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.481 (13/27 fields) | 14 |
 | `gpt-oss:120b` | partly confirmed | 0.852 (23/27 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>18 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['acetylsalicylic_acid', 'salicylic_acid', 'metabolism']] | [['acetylsalicylic_acid', 'salicylic_acid', 'hydrolysis']] | mismatch |
+| `gpt-oss-120b` | `parameters[k23]` | 2.32 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k23]` | not captured | 2.32 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k24]` | 0.57 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka capsule]` | 0.22 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka capsule]` | not captured | 0.22 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag0]` | 2.81 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag0]` | not captured | 2.81 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3/f]` | 23.51 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3/f]` | not captured | 23.51 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[βweight_clm]` | not captured | 1.42 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[βweight_k34]` | 1.31 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | acetylsalicylic_acid | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | acetylsalicylic_acid | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[kout]` | not captured | 0.023 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[kout]` | 0.023 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[βweight_clm]` | not captured | 1.42 | only_one_extracted |

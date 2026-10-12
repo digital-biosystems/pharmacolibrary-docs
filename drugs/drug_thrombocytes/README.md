@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Béguin_2024_Thrombocyte_reduction_2](drugs/drug_thrombocytes/pd_B_guin_2024_Thrombocyte_reduction_2.md) | Thrombocyte reduction ← Dose · direct sigmoid Emax (Hill) effect | — | Béguin J et al., Population pharmacokinetics modelling f…, BMC veterinary research (2024) | [10.1186/s12917-024-04404-1](https://doi.org/10.1186/s12917-024-04404-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Béguin_2024_Thrombocyte_reduction_2](drugs/drug_thrombocytes/pd_B_guin_2024_Thrombocyte_reduction_2.md) | Thrombocyte reduction ← Dose · direct sigmoid Emax (Hill) effect | — | Béguin J et al., Population pharmacokinetics modelling f…, BMC veterinary research (2024) | [10.1186/s12917-024-04404-1](https://doi.org/10.1186/s12917-024-04404-1) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

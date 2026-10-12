@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Salbutamol concentration stimulates relaxation of isolated human bronchus (expressed as % of the response to theophylline 3 x 10(-3) mol.l-1) via a direct Emax model; the paper excerpts provide no parameter values (Emax, EC50, or slope) and no further mechanistic detail.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Naline_1994`
 - **model family:** `emax`
 - **driver:** `cited_pk`

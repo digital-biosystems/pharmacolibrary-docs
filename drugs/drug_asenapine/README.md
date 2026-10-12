@@ -26,13 +26,13 @@ Asenapine is an atypical antipsychotic given for schizophrenia and for manic epi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 15:12 | 0:45 | 1/0/0 | 5/0/0 | 0/0/0 | 44,149/4,104 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-06 15:12 | 0:45 | 0/0/1 | 5/0/0 | 0/0/0 | 44,149/4,104 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Dogterom_2018_reference](drugs/drug_asenapine/Asenapine_Dogterom2018_reference.md) | held back | 1-compartment, oral | 5 | Dogterom P et al., Asenapine pharmacokinetics and tolerabi…, Drug design, development an… (2018) | [10.2147/DDDT.S171475](https://doi.org/10.2147/DDDT.S171475) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Dogterom_2018_reference](drugs/drug_asenapine/Asenapine_Dogterom2018_reference.md) | held back | 1-compartment, oral | 5 | Dogterom P et al., Asenapine pharmacokinetics and tolerabi…, Drug design, development an… (2018) | [10.2147/DDDT.S171475](https://doi.org/10.2147/DDDT.S171475) |
 
 ## Pharmacodynamics (PD)
 
@@ -70,7 +70,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 10 matched, 10 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

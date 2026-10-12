@@ -33,7 +33,7 @@ Morniflumate is a non-steroidal compound classified for antiinflammatory and ant
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Jeong_2024_reference](drugs/drug_morniflumate/Morniflumate_Jeong2024_reference.md) | — | parent + metabolite (no model) | 4 | Jeong SH et al., Modeling population pharmacokinetics of…, Naunyn-Schmiedeberg's archi… (2024) | [10.1007/s00210-023-02640-0](https://doi.org/10.1007/s00210-023-02640-0) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.562). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Jeong_2024_reference](drugs/drug_morniflumate/Morniflumate_Jeong2024_reference.md) | — | parent + metabolite (no model) | 4 | Jeong SH et al., Modeling population pharmacokinetics of…, Naunyn-Schmiedeberg's archi… (2024) | [10.1007/s00210-023-02640-0](https://doi.org/10.1007/s00210-023-02640-0) |
 
 ## ADME sites
 

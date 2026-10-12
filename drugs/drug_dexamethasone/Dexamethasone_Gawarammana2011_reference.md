@@ -5,7 +5,7 @@
 
 # dexamethasone — `Dexamethasone_Gawarammana2011_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625), gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — dexamethasone: CL 150 ml min -1, V 1.25e+03 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q54: this record has none, the second reading 200; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q56: this record has none, the second reading 4; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,17 +60,21 @@ Gawarammana IB et al., Medical management of paraquat ingestion, British journal
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.625 (5/8 fields) | 3 |
 | `gpt-oss:120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q56]` | not captured | 4 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q83]` | not captured | 2 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q99]` | not captured | 200 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q54]` | not captured | 200 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q59]` | 6 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q60]` | not captured | 6 | only_one_extracted |

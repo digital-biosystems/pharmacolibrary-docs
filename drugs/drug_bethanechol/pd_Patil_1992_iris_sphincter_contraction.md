@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Bethanechol concentration (µmol/l) stimulates iris sphincter contraction (% maximum contraction) via a direct Emax model; the paper reports a maximum contraction of 95% but no EC50, Hill coefficient, or mechanism beyond this direct stimulatory effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Patil_1992`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Plasma oxypurinol concentrations inhibit the formation of 1-methylurate (1-MU) from 1-methylxanthine (1-MX) by inhibiting xanthine oxidoreductase, measured as a decrease in the urinary 1-MU/1-MX ratio. The in vivo concentration required for 50% inhibition (IC50) was reported as 1.4±0.5 mg/L.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Day_2017`
 - **model family:** `emax`
 - **driver:** `cited_pk`

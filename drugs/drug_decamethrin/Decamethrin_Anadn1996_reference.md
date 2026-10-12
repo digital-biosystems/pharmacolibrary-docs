@@ -16,7 +16,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The deltamethrin record was rejected because the metabolite 4'-HO-deltamethrin is unlinked: the metabolism link from parent to metabolite carries no parameter, leaving the metabolite without a path from the dose, and the model was built from the abstract only.**
+
+The structure is parent–metabolite, with 4'-HO-deltamethrin formed from deltamethrin in the central compartment, but the metabolism link has link parameter 'none' of unknown kind, so the metabolite has no quantitative connection to the dose and counts as an unlinked metabolite. The record is also abstract-only, meaning reported summary statistics (e.g., t1/2z 33.0 hr for deltamethrin and 25.67 hr for 4'-HO-deltamethrin, CL 0.11 liter/hr, Fab 14.43%) stood in for a fitted model rather than being extracted from one. Extracted — decamethrin: t1/2z 33 hr, V2 5.33 liters, V 2.04 liters, CL 0.11 liter/hr, tmax 1.83 hr, Fab 14.4 %, Kp 2.32 deltamethrin, medulla oblongata, AUC ratio 295 deltamethrin, hypothalamus; 4'-HO-deltamethrin: t1/2z 25.7 hr.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Anadón A et al., Toxicokinetics of deltamethrin and its…, Toxicology and applied phar… (1996)

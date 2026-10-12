@@ -26,22 +26,21 @@ Cytarabine is an antineoplastic antimetabolite used to treat blood cancers such 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:41 | 1:47 | 0/2/1 | 1/0/0 | 0/0/0 | 213,963/9,880 | einfracz / qwen3.8-27b | 5 | 3/2 | 5/0 | 0 |
+| 2026-10-07 16:41 | 1:47 | 0/2/0 | 1/0/0 | 0/0/0 | 213,963/9,880 | einfracz / qwen3.8-27b | 5 | 3/2 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>STALE — current validate: not captured</sub> | [Crook_2013_healthy dogs](drugs/drug_cytarabine/Cytarabine_Crook2013_healthy_dogs.md) | — | — (no model) | 0 | Crook KI et al., The pharmacokinetics of cytarabine in d…, Journal of veterinary pharm… (2013) | [10.1111/jvp.12008](https://doi.org/10.1111/jvp.12008) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wang_2019_overall_p_value](drugs/drug_cytarabine/Cytarabine_Wang2019_overall_p_value.md) | — | general linear (no model) | 0 | Wang Q et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1366](https://doi.org/10.1002/jcph.1366) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wang_2019_total_cytarabine](drugs/drug_cytarabine/Cytarabine_Wang2019_total_cytarabine.md) | — | general linear (no model) | 0 | Wang Q et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1366](https://doi.org/10.1002/jcph.1366) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wang_2019_overall_p_value](drugs/drug_cytarabine/Cytarabine_Wang2019_overall_p_value.md) | — | general linear (no model) | 0 | Wang Q et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1366](https://doi.org/10.1002/jcph.1366) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wang_2019_total_cytarabine](drugs/drug_cytarabine/Cytarabine_Wang2019_total_cytarabine.md) | — | general linear (no model) | 0 | Wang Q et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1366](https://doi.org/10.1002/jcph.1366) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Guchelaar_1998_apoptosis](drugs/drug_cytarabine/pd_Guchelaar_1998_apoptosis.md) | apoptotic cells ← cytarabine · direct sigmoid Emax (Hill) effect | — | Guchelaar HJ et al., Apoptosis- and necrosis-inducing potent…, Cancer chemotherapy and pha… (1998) | [10.1007/s002800050788](https://doi.org/10.1007/s002800050788) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Guchelaar_1998_necrosis](drugs/drug_cytarabine/pd_Guchelaar_1998_necrosis.md) | necrotic cells ← cytarabine · direct sigmoid Emax (Hill) effect | — | Guchelaar HJ et al., Apoptosis- and necrosis-inducing potent…, Cancer chemotherapy and pha… (1998) | [10.1007/s002800050788](https://doi.org/10.1007/s002800050788) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Guchelaar_1998_apoptosis](drugs/drug_cytarabine/pd_Guchelaar_1998_apoptosis.md) | apoptotic cells ← cytarabine · direct sigmoid Emax (Hill) effect | — | Guchelaar HJ et al., Apoptosis- and necrosis-inducing potent…, Cancer chemotherapy and pha… (1998) | [10.1007/s002800050788](https://doi.org/10.1007/s002800050788) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Guchelaar_1998_necrosis](drugs/drug_cytarabine/pd_Guchelaar_1998_necrosis.md) | necrotic cells ← cytarabine · direct sigmoid Emax (Hill) effect | — | Guchelaar HJ et al., Apoptosis- and necrosis-inducing potent…, Cancer chemotherapy and pha… (1998) | [10.1007/s002800050788](https://doi.org/10.1007/s002800050788) |
 
 ## ADME sites
 
@@ -69,7 +68,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 53 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

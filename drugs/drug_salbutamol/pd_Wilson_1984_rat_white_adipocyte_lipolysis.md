@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts describing the mechanism; the record indicates salbutamol concentrations stimulate rat white adipocyte lipolysis via an Emax-type model, with no potency or rate parameters stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wilson_1984`
 - **model family:** `emax`
 - **driver:** `cited_pk`

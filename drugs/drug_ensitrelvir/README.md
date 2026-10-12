@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;ensitrelvir&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ensitrelvir_Ishibashi2024_mean&quot;,&quot;label&quot;:&quot;Ishibashi_2024_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ensitrelvir/Ensitrelvir_Ishibashi2024_mean.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ensitrelvir_Ishibashi2024_median&quot;,&quot;label&quot;:&quot;Ishibashi_2024_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ensitrelvir/Ensitrelvir_Ishibashi2024_median.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ensitrelvir_Ishibashi2024_mean&quot;,&quot;label&quot;:&quot;Ishibashi_2024_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ensitrelvir/Ensitrelvir_Ishibashi2024_mean.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ensitrelvir_Ishibashi2024_median&quot;,&quot;label&quot;:&quot;Ishibashi_2024_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ensitrelvir/Ensitrelvir_Ishibashi2024_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # ensitrelvir
 
@@ -27,21 +27,21 @@ Ensitrelvir is an investigational antiviral drug that works as a protease inhibi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:32 | 9:49 | 2/0/0 | 1/0/0 | 0/0/0 | 205,123/52,347 | openai / gpt-6-luna | 7 | 0/7 | 7/0 | 0 |
+| 2026-10-07 15:32 | 9:49 | 0/0/2 | 1/0/0 | 0/0/0 | 205,123/52,347 | openai / gpt-6-luna | 7 | 0/7 | 7/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ishibashi_2024_mean](drugs/drug_ensitrelvir/Ensitrelvir_Ishibashi2024_mean.md) | ▶ model + simulator | 1-compartment, oral | 6 | Ishibashi T et al., Population Pharmacokinetics of Ensitrel…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01446-4](https://doi.org/10.1007/s40262-024-01446-4) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ishibashi_2024_median](drugs/drug_ensitrelvir/Ensitrelvir_Ishibashi2024_median.md) | ▶ model + simulator | 1-compartment, oral | 6 | Ishibashi T et al., Population Pharmacokinetics of Ensitrel…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01446-4](https://doi.org/10.1007/s40262-024-01446-4) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Ishibashi_2024_mean](drugs/drug_ensitrelvir/Ensitrelvir_Ishibashi2024_mean.md) | ▶ model + simulator | 1-compartment, oral | 6 | Ishibashi T et al., Population Pharmacokinetics of Ensitrel…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01446-4](https://doi.org/10.1007/s40262-024-01446-4) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Ishibashi_2024_median](drugs/drug_ensitrelvir/Ensitrelvir_Ishibashi2024_median.md) | ▶ model + simulator | 1-compartment, oral | 6 | Ishibashi T et al., Population Pharmacokinetics of Ensitrel…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01446-4](https://doi.org/10.1007/s40262-024-01446-4) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yamaguchi_2024_Y](drugs/drug_ensitrelvir/pd_Yamaguchi_2024_Y.md) | viral load ← ensitrelvir · direct Emax (saturable) effect | — | Yamaguchi D et al., Modeling the Impact of Ensitrelvir on S…, Infectious diseases and the… (2024) | [10.1007/s40121-024-01046-6](https://doi.org/10.1007/s40121-024-01046-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yamaguchi_2024_Y_2](drugs/drug_ensitrelvir/pd_Yamaguchi_2024_Y_2.md) | viral load ← ensitrelvir · direct Emax (saturable) effect | — | Yamaguchi D et al., Modeling the Impact of Ensitrelvir on S…, Infectious diseases and the… (2024) | [10.1007/s40121-024-01046-6](https://doi.org/10.1007/s40121-024-01046-6) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yamaguchi_2024_Y](drugs/drug_ensitrelvir/pd_Yamaguchi_2024_Y.md) | viral load ← ensitrelvir · direct Emax (saturable) effect | — | Yamaguchi D et al., Modeling the Impact of Ensitrelvir on S…, Infectious diseases and the… (2024) | [10.1007/s40121-024-01046-6](https://doi.org/10.1007/s40121-024-01046-6) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yamaguchi_2024_Y_2](drugs/drug_ensitrelvir/pd_Yamaguchi_2024_Y_2.md) | viral load ← ensitrelvir · direct Emax (saturable) effect | — | Yamaguchi D et al., Modeling the Impact of Ensitrelvir on S…, Infectious diseases and the… (2024) | [10.1007/s40121-024-01046-6](https://doi.org/10.1007/s40121-024-01046-6) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -53,7 +53,7 @@ Ensitrelvir is an investigational antiviral drug that works as a protease inhibi
 
 - **PubMed hits:** 10 matched, 10 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

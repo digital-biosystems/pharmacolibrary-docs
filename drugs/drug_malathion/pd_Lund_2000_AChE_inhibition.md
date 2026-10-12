@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Malathion exposure (µg l(-1)) inhibits AChE activity (% inhibition) in Stage VI embryos, described by a sigmoid Emax model; the paper reports an EC50 of 55.53 µg l(-1), but the excerpts do not state the mechanism, Emax, or Hill coefficient.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lund_2000`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

@@ -5,7 +5,7 @@
 
 # finerenone — `Finerenone_van2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.286), gpt-oss:120b (primary re-run, agreement 0.5). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of all asian ethnicities, except japanese: this record has none, the second reading 0.203; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has finerenone, the second reading unknown; it also differs on 4 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -52,17 +52,23 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | primary re-run | 0.286 (2/7 fields) | 5 |
 | `gpt-oss:120b` | primary re-run | 0.5 (4/8 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[alpha]` | not captured | 1.80 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[black/african-american]` | not captured | 1.02 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[likely_certain_child_pugh_b]` | not captured | 0.699 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | finerenone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | finerenone | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[all asian ethnicities, except japanese]` | not captured | 0.203 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[alpha]` | not captured | 1.80 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[likely_certain_child_pugh_b]` | not captured | 0.699 | only_one_extracted |

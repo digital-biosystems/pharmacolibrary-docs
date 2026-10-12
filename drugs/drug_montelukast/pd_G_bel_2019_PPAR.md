@@ -20,9 +20,9 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> Montelukast concentrations (μM) activated PPARγ in a reporter gene assay with an EC50 of 1.17 μM and 21.9% max. activation; the paper describes this as direct activation (partial agonism) rather than inhibition, and no Imax, kin, kout, ke0 or Hill factor values are given.
+> Montelukast concentrations stimulate PPARγ activity (reporter gene assay) via a sigmoid Emax model. The EC50 is 1.17 μM, and the maximum activation is 21.9%.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Göbel_2019`
 - **model family:** `sigmoid_emax`

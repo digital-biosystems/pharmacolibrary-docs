@@ -5,7 +5,7 @@
 
 # lisinopril — `Lisinopril_Sandra2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — lisinopril: kabs 0.075 h-1, V 31.4 L 70 kg-1, CLnorm 24.2 L h-1 70 kg-1.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lisinopril, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -73,14 +73,28 @@ Sandra L et al., Population pharmacokinetics of lisinopr…, British journal of 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 | `gpt-oss:120b` | confirmed | 1.0 (7/7 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 0.075 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | not captured | 0.075 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination clearance]` | 24.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination clearance]` | not captured | 24.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 31.38 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 31.38 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | lisinopril | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | lisinopril | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -122,7 +136,7 @@ _Every reader agrees on every compared field of this record._
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lisinopril/Lisinopril_Sandra2024_reference/Lisinopril_Sandra2024_reference_modelica.zip" download>Lisinopril_Sandra2024_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lisinopril/Lisinopril_Sandra2024_reference/Lisinopril_Sandra2024_reference_fmi.zip" download>Lisinopril_Sandra2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lisinopril/Lisinopril_Sandra2024_reference/Lisinopril_Sandra2024_reference_matlab.zip" download>Lisinopril_Sandra2024_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lisinopril/Lisinopril_Sandra2024_reference/Lisinopril_Sandra2024_reference_matlab_simbio.zip" download>Lisinopril_Sandra2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lisinopril/Lisinopril_Sandra2024_reference/Lisinopril_Sandra2024_reference_matlab_simbio.zip" download>Lisinopril_Sandra2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lisinopril/Lisinopril_Sandra2024_reference/Lisinopril_Sandra2024_reference_sbml.zip" download>Lisinopril_Sandra2024_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lisinopril/Lisinopril_Sandra2024_reference/Lisinopril_Sandra2024_reference_cellml.zip" download>Lisinopril_Sandra2024_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

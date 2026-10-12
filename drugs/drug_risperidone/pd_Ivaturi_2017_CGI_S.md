@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;risperidone&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/&quot;},{&quot;label&quot;:&quot;Ivaturi_2017 \u00b7 PD CGI-S score (consolidated, 4 categories)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risperidone_Kozielska2012_reference&quot;,&quot;label&quot;:&quot;Kozielska_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/Risperidone_Kozielska2012_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risperidone_Kozielska2012_reference&quot;,&quot;label&quot;:&quot;Kozielska_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/Risperidone_Kozielska2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # CGI-S score (consolidated, 4 categories) — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -17,6 +17,10 @@
 **As extracted:** Total active moiety (risperidone + 9-OH-risperidone) drives CGI-S score (consolidated, 4 categories): categorical (graded) response model.
 
 **Model:** No model was generated from this record.
+
+> In the CGI-S model, total active moiety (risperidone + 9-OH-risperidone) concentrations (ng/ml) enter a logistic regression for the probability of the consolidated CGI-S score (4 categories) being ≥ m, as an additive drug effect fd = CSLP × AM on the logit (with a time effect TSLP × TIME); the paper does not describe a mechanistic production/elimination or Emax structure. Estimated parameters: α4 = 8.5, α5 = -6.5, α6 = -6.4, TSLP = -0.6, CSLP = -0.04 (no IC50/EC50/Emax or rate constants given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Ivaturi_2017`
 - **model family:** `categorical`

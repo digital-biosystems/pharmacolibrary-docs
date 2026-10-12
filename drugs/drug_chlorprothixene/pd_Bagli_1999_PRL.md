@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts, so the mechanism cannot be confirmed beyond the record: chlorprothixene is modelled as stimulating prolactin (PRL) serum concentration via an indirect response model (model III), with no potency (Imax, IC50/EC50) or rate (kin, kout) values available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bagli_1999`
 - **model family:** `indirect_response_iii`
 - **driver:** `not_resolved`

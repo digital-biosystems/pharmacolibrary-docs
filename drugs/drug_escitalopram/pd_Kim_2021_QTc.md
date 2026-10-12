@@ -18,7 +18,7 @@
 
 **Model:** No model was generated from this record.
 
-> Escitalopram concentrations drive an increase in QTc (change from baseline, ms) via an effect-compartment model with an additive/stimulatory effect form, using PK from Liu_2022 in a sequential fit; the paper excerpts provide no mechanism details and no potency or rate values (Imax, IC50/EC50, ke0, gamma).
+> Escitalopram plasma concentrations (from a cited PK model) drive QTc prolongation via an effect-compartment (additive stimulation) model, with an equilibrium half-life for delayed QT prolongation of 1.9 h and maximal QT prolongation (Emax) of 5.4 ms. The excerpts do not state the mechanism beyond this delayed effect-compartment link.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

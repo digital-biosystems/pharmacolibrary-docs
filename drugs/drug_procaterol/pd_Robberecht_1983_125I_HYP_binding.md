@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Procaterol concentration-dependently inhibits specific [125I]HYP binding to beta-adrenergic receptors in human auricular membranes, with a biphasic (sigmoid Emax) competition curve resolved into a beta2 component (EC50 0.23 ± 0.04 µM) and a beta1 component (EC50 17.0 ± 2.5 µM); the paper attributes the Hill coefficients below 1 to two receptor classes rather than stating a kinetic mechanism, and no Imax, kin, kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Robberecht_1983`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

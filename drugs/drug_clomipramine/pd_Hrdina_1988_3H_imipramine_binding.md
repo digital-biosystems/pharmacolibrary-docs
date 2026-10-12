@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clomipramine inhibits sodium-dependent [3H]imipramine binding in rat cerebral cortex with a sigmoid Emax model, IC50 6 nM and a pseudo-Hill coefficient close to unity; the paper excerpts do not state the mechanism beyond this inhibitory concentration-response relation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hrdina_1988`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

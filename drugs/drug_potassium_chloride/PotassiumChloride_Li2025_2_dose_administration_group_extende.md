@@ -4,7 +4,7 @@
 
 # potassium chloride — `PotassiumChloride_Li2025_2_dose_administration_group_extende`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727), gpt-oss:120b (not confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The paper (Li_2025, cardiovascular emergencies) provides no distribution volume and no clearance or elimination rate for potassium; it is an exposure/outcome study, not a compartmental population PK model. A dimension mismatch was also flagged on a structural parameter, and a reported unit could not be converted to SI, so one parameter reached model assembly without an SI value. A second reader disagreed on the dose compound, reading it as potassium chloride extended-release tablets and potassium citrate granules rather than potassium chloride, and on the identifier assigned to the AUC parameter. Extracted — potassium chloride: C0 3.56 mmol/L, tmax 6 h, Cmax 4.14 mmol/L, kabs 0.37 per hour, t1/2z 13.5 h, AUC∞ 107 mmol·h/L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[auclimit].parameter_id`: this record has Q17, the second reading Q88. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has potassium chloride, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -78,17 +78,21 @@ Li X et al., Plasma pharmacokinetics of the combinat…, Frontiers in cardiovasc
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.727 (8/11 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.909 (10/11 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auclimit].parameter_id` | Q17 | Q19 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | potassium chloride | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | potassium | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[auclimit].parameter_id` | Q17 | Q88 | mismatch |
 
 </details>

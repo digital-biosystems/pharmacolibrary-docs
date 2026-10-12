@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper reports a 96 h EC50 of 12.37 mg L-1 for cypermethrin inhibiting population growth, but no full text is available, so the mechanism (e.g., direct Emax or turnover model) and other PD parameters are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fernández_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

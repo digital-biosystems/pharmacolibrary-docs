@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism or model details; it reports an EC50 of 10.24 mg L−1 for S-O-desmethylvenlafaxine toxicity to S. scenedesmus, with an inhibitory dose-response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

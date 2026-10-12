@@ -4,7 +4,7 @@
 
 # mercaptopurine — `Mercaptopurine_Hawwa2008_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8), gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -70,17 +70,19 @@ Hawwa AF et al., Population pharmacokinetic and pharmaco…, British journal of 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.8 (4/5 fields) | 1 |
 | `gpt-oss:120b` | not confirmed | 0.4 (2/5 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[theta_q45_tpmt]` | 0.0191 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [['6-mercaptopurine', '6-thioguanine nucleotides', 'metabolism'], ['6-mercaptopurine', '6-methylmercaptopurine nucleotides', 'metabolism']] | [['6-mercaptopurine', '6-tgns', 'metabolism'], ['6-mercaptopurine', '6-mmpns', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[fm3]` | not captured | 0.0191 | only_one_extracted |
 | `gpt-oss:120b` | `screen.primary_analyte` | 6-thioguanine nucleotides | 6-TGNs | mismatch |

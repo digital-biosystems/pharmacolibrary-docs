@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;promazine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Promazine_McGree2013_reference&quot;,&quot;label&quot;:&quot;McGree_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_promazine/Promazine_McGree2013_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Promazine_McGree2013_reference&quot;,&quot;label&quot;:&quot;McGree_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_promazine/Promazine_McGree2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # promazine
 
@@ -19,20 +19,20 @@ Promazine is a phenothiazine antipsychotic used to treat schizophreniform disord
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 17:02 | 14:14 | 1/1/0 | 2/0/0 | 0/0/0 | 477,092/21,430 | ollama / glm-5.3-flash | 11 | 1/7 | 11/0 | 0 |
+| 2026-10-06 17:02 | 14:14 | 0/1/1 | 2/0/0 | 0/0/0 | 477,092/21,430 | ollama / glm-5.3-flash | 11 | 1/7 | 11/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [McGree_2013_reference](drugs/drug_promazine/Promazine_McGree2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | McGree JM et al., A Bayesian approach for estimating dete…, Journal of veterinary pharm… (2013) | [10.1111/j.1365-2885.2013.01389.x](https://doi.org/10.1111/j.1365-2885.2013.01389.x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Curry_1990_reference](drugs/drug_promazine/Promazine_Curry1990_reference.md) | — | 1-compartment (no model) | 0 | Curry SH et al., A third, "deep," compartment for phenot…, Psychopharmacology bulletin (1990) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [McGree_2013_reference](drugs/drug_promazine/Promazine_McGree2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | McGree JM et al., A Bayesian approach for estimating dete…, Journal of veterinary pharm… (2013) | [10.1111/j.1365-2885.2013.01389.x](https://doi.org/10.1111/j.1365-2885.2013.01389.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Curry_1990_reference](drugs/drug_promazine/Promazine_Curry1990_reference.md) | — | 1-compartment (no model) | 0 | Curry SH et al., A third, "deep," compartment for phenot…, Psychopharmacology bulletin (1990) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ashoor_2011_ACh_induced_current](drugs/drug_promazine/pd_Ashoor_2011_ACh_induced_current.md) | acetylcholine (100 μM)-induced current through α7-nicotinic acetylcholine receptor ← promazine · inhibition effect | — | Ashoor A et al., Effects of phenothiazine-class antipsyc…, European journal of pharmac… (2011) | [10.1016/j.ejphar.2011.10.020](https://doi.org/10.1016/j.ejphar.2011.10.020) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Ashoor_2011_ACh_induced_current](drugs/drug_promazine/pd_Ashoor_2011_ACh_induced_current.md) | acetylcholine (100 μM)-induced current through α7-nicotinic acetylcholine receptor ← promazine · inhibition effect | — | Ashoor A et al., Effects of phenothiazine-class antipsyc…, European journal of pharmac… (2011) | [10.1016/j.ejphar.2011.10.020](https://doi.org/10.1016/j.ejphar.2011.10.020) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Jakubovic_1982_enkephalin_degradation_enkephalin_hydrolyzing_activity](drugs/drug_promazine/pd_Jakubovic_1982_enkephalin_degradation_enkephalin_hydrolyzing.md) | enkephalin degradation (enkephalin-hydrolyzing activity) ← promazine · inhibition effect | — | Jakubovic A, Degradation of met-enkephalin by extrac…, Peptides (1982) | [10.1016/0196-9781(82)90136-x](https://doi.org/10.1016/0196-9781(82)90136-x) |
 
 ## ADME sites
@@ -57,7 +57,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 69 matched, 64 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

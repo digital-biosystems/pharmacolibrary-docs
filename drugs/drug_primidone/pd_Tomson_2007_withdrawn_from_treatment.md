@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe the mechanism or provide any quantitative parameters for the relationship between primidone and the binary response of withdrawal from treatment.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tomson_2007`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

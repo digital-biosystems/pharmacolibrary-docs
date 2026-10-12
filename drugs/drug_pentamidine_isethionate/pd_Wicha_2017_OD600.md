@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentamidine acts on fungal growth measured as OD600 via a sigmoidal Emax model (parameters Emax, EC50, Hill factor H), with inhibition of growth; in the GPDI framework the interaction is quantified as a competitive-type EC50 shift, with an INT value corresponding to a 432% increase in EC50. The excerpts do not state the numeric EC50, Emax, or Hill factor for pentamidine.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wicha_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

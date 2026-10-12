@@ -5,7 +5,7 @@
 
 # amoxicillin — `Amoxicillin_Echizen2016_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6), gpt-oss:120b (not confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The source reports only oral clearance (CL/F 97.5 L/h) and volume of distribution (V 1056.0 L) for amoxicillin; ka and Tlag were left at library defaults because no values were extracted, and the invented ka was judged not acceptable. The model also assumes F=1 and Fm=1 with apparent (/F) parameterization and first-order depot input. A second reader disagreed on one value (4 vs 67), and one comparison could not be computed (ratio None). Extracted — amoxicillin: CL/F 97.5 L/h, V 1.06e+03 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has 1.8, the second reading 1.12; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q33: this record has 1.09, the second reading 1.09; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -64,17 +64,24 @@ Echizen H, The First-in-Class Potassium-Competitiv…, Clinical pharmacokinetics
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.6 (9/15 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.692 (9/13 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q330]` | 7.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q33]` | 1.09 | 1.09 | mismatch |
+| `gpt-oss-120b` | `values[Q410]` | not captured | 0.93 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q44]` | 4 | 67 | mismatch |
+| `gpt-oss-120b` | `values[Q84]` | 13 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` | not captured | 13 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q21]` | 1.8 | 1.12 | mismatch |
 | `gpt-oss:120b` | `values[Q330]` | 7.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q33]` | 1.09 | 1.09 | mismatch |
@@ -133,10 +140,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Echizen2016_reference/Amoxicillin_Echizen2016_reference_modelica.zip" download>Amoxicillin_Echizen2016_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Echizen2016_reference/Amoxicillin_Echizen2016_reference_fmi.zip" download>Amoxicillin_Echizen2016_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Echizen2016_reference/Amoxicillin_Echizen2016_reference_modelica.zip" download>Amoxicillin_Echizen2016_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Echizen2016_reference/Amoxicillin_Echizen2016_reference_fmi.zip" download>Amoxicillin_Echizen2016_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Echizen2016_reference/Amoxicillin_Echizen2016_reference_matlab.zip" download>Amoxicillin_Echizen2016_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Echizen2016_reference/Amoxicillin_Echizen2016_reference_matlab_simbio.zip" download>Amoxicillin_Echizen2016_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Echizen2016_reference/Amoxicillin_Echizen2016_reference_matlab_simbio.zip" download>Amoxicillin_Echizen2016_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Echizen2016_reference/Amoxicillin_Echizen2016_reference_sbml.zip" download>Amoxicillin_Echizen2016_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Echizen2016_reference/Amoxicillin_Echizen2016_reference_cellml.zip" download>Amoxicillin_Echizen2016_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

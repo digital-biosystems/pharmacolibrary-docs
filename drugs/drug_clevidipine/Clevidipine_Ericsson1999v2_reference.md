@@ -5,7 +5,7 @@
 
 # clevidipine — `Clevidipine_Ericsson1999v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.214). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.214). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record, built from the paper's abstract only, contains clevidipine with metabolite H 152/81 formed in the central compartment, and summary statistics standing in for a fitted model. The Vss unit l x kg(-1) is body-weight normalized while CLb is given in L/h, so the structural parameters are dimensionally inconsistent. A second reader also disagreed on whether the clevidipine–H 152/81 metabolism link belongs in the model, and on the values of the initial half-life (1.6 min), blood clearance (0.14 L/h), Vss (0.6 l x kg(-1)), terminal half-life (15 min) and metabolite terminal half-life (9.5 h), which the second reader left as null. Extracted — clevidipine: CLb 0.14 L/h, Vss 0.6 l x kg(-1), t1/2α 1.6 min, t1/2z 15 min; H 152/81: t1/2z 9.5 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has clevidipine → h 152/81 (metabolism), the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has clevidipine → h 152/81 (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -75,17 +75,24 @@ Ericsson H et al., Pharmacokinetics and pharmacodynamics o…, European journal 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.214 (3/14 fields) | 11 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['clevidipine', 'h 152/81', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[initial half-life]` | 1.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean blood clearance]` | 0.14 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean terminal half-life of the inactive primary metabolite]` | 9.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean volume of distribution at steady state]` | 0.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-life]` | 15 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [['clevidipine', 'h 152/81', 'metabolism']] | [] | mismatch |
 | `gpt-oss:120b` | `parameters[initial half-life]` | 1.6 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[initial half-life]` | not captured | 1.6 | only_one_extracted |

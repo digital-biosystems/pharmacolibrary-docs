@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Midazolam plasma concentrations (ng/ml) act directly (sigmoid Emax model, no effect compartment described) on EEG beta (11.5–30 Hz) amplitude in rats, increasing it from baseline E0 = 75 ± 5 µV/s with Emax = 142 ± 9 µV/s, EC50 = 85 ± 15 ng/ml, and Hill factor 1.2 ± 0.2; co-infused ethanol (0.44 ± 0.04 g/l) shifted the concentration–effect curve to lower concentrations without changing midazolam pharmacokinetics.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hoyo-Vadillo_1995`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

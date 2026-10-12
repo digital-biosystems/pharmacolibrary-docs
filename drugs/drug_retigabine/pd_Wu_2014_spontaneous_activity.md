@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Retigabine inhibits spontaneous activity via a sigmoid Emax model driven by extracellular concentrations. The estimated EC50 is 8.0 µM.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

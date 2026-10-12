@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes a direct inhibition of Fraction Seizing by retigabine (a KV7 potassium channel potentiator) but does not provide the specific EC50 or sigmoidal parameters for retigabine in the excerpts. The model assumes a sigmoidal Emax effect of RTG plasma concentration on the binary response of Fraction Seizing.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bettio_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

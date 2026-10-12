@@ -5,7 +5,7 @@
 
 # polymyxin B — `PolymyxinB_Chauzy2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667), gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — polymyxin b: kabs 14.7, CL 0.437, V1 0.74, V2 0.743, Q 0.315, fu 0.166.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has polymyxin_b, the second reading polymyxin B; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has polymyxin_b, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -77,17 +77,25 @@ Chauzy A et al., PKPD Modeling of the Inoculum Effect of, Frontiers in pharmacol
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.667 (14/21 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.7 (14/20 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[amount in the subcutaneous compartment that produces 50% of the maximum absorption rate]` | not captured | 2.24 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bmax: maximum bacterial count reached in the tissue]` | not captured | 8.00 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[knet: apparent growth rate constant]` | not captured | 0.594 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q325_weight_power]` | not captured | 0.162 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q47_category]` | not captured | 1.00 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | polymyxin_b | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | polymyxin_b | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[amount in the subcutaneous compartment that produces 50% of the maximum absorption rate]` | not captured | 2.24 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bmax: maximum bacterial count reached in the tissue]` | not captured | 8.00 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q325_weight_power]` | not captured | 0.162 | only_one_extracted |

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Secretin stimulates cAMP generation with a sigmoid Emax concentration–response model; the paper reports an EC50 of 13 nM, but no full text is available so the mechanism and other parameters (Emax, gamma) are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ganguli_1998`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

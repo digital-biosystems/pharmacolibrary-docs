@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Penfluridol inhibits 8-pcpt-cAMP-induced cortisol secretion in bovine adrenal zona fasciculata cells with an IC50 of 0.33 microM; the paper excerpts do not state the mechanism of this inhibition or any additional model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Enyeart_1996`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

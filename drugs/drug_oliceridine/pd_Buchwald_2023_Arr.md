@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes oliceridine stimulation of β-arrestin2 recruitment using a SABRE quantitative receptor model that explicitly incorporates signal amplification, but the provided excerpts do not state the specific mechanism for oliceridine's right-shifted response or provide any potency values (EC50, Kd) for oliceridine. The record lists an efficacy parameter (ε) of 0.382, but this value does not appear in the paper excerpts and cannot be verified against the source text.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Buchwald_2023`
 - **model family:** `transduction`
 - **driver:** `not_resolved`

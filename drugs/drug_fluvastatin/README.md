@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Faltaos_2006_LDL](drugs/drug_fluvastatin/pd_Faltaos_2006_LDL.md) | LDL cholesterol ← fluvastatin · indirect response — drug inhibits the production of LDL cholesterol | — | Faltaos DW et al., Use of an indirect effect model to desc…, Fundamental & clinical phar… (2006) | [10.1111/j.1472-8206.2006.00404.x](https://doi.org/10.1111/j.1472-8206.2006.00404.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Faltaos_2006_LDL](drugs/drug_fluvastatin/pd_Faltaos_2006_LDL.md) | LDL cholesterol ← fluvastatin · indirect response — drug inhibits the production of LDL cholesterol | — | Faltaos DW et al., Use of an indirect effect model to desc…, Fundamental & clinical phar… (2006) | [10.1111/j.1472-8206.2006.00404.x](https://doi.org/10.1111/j.1472-8206.2006.00404.x) |
 
 ## ADME sites
 

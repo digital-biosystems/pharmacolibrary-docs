@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Oku_1998_diarrhea](drugs/drug_lactulose/pd_Oku_1998_diarrhea.md) | diarrhea ← lactulose · direct linear effect | — | Oku T et al., Transitory laxative threshold of trehal…, Journal of nutritional scie… (1998) | [10.3177/jnsv.44.787](https://doi.org/10.3177/jnsv.44.787) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> | [Oku_1998_diarrhea](drugs/drug_lactulose/pd_Oku_1998_diarrhea.md) | diarrhea ← lactulose · direct linear effect | — | Oku T et al., Transitory laxative threshold of trehal…, Journal of nutritional scie… (1998) | [10.3177/jnsv.44.787](https://doi.org/10.3177/jnsv.44.787) |
 
 ## ADME sites
 

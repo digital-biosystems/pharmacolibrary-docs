@@ -5,7 +5,7 @@
 
 # ticagrelor — `Ticagrelor_Li2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308), gpt-oss:120b (partly confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record defines a parent-metabolite structure, but the model was built as a one-compartment enteral model, creating a structural mismatch. The model output was set to the central compartment concentration rather than the measured ticagrelor concentration. The record was built from the abstract alone, so summary statistics stood in for a fitted model. The model builder also defaulted the absorption lag time and assumed full bioavailability for the metabolite. Extracted — ticagrelor: kabs 0.67 /h, CL 14 L/h, V/F 221 L, Fab 21 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of moderate cyp3a inhibitors effect on apparent ticagrelor clearance: this record has none, the second reading 64; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has ticagrelor → ar-c124910xx (metabolism), the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -78,17 +78,27 @@ Li J et al., Population pharmacokinetics of ticagrel…, International journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.308 (4/13 fields) | 9 |
 | `gpt-oss:120b` | partly confirmed | 0.727 (8/11 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['ticagrelor', 'ar-c124910xx', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[apparent systemic clearance]` | 14 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent systemic clearance]` | not captured | 14 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 221 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | not captured | 221 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[firstorder absorption rate constant]` | 0.67 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[firstorder absorption rate constant]` | not captured | 0.67 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lower ticagrelor bioavailability at treatment initiation (visit 1) versus subsequent visits]` | not captured | 21 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ticagrelor bioavailability]` | 21 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[moderate cyp3a inhibitors effect on apparent ticagrelor clearance]` | not captured | 64 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ticagrelor bioavailability lower at treatment initiation (visit 1) vs subsequent visits]` | not captured | 21 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ticagrelor bioavailability]` | 21 | not captured | only_one_extracted |

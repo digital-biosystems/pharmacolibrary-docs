@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes a saturable inhibitory maximum-effect (Emax) model linking eptinezumab plasma exposure (specifically AUC0-12wk, Cmax, Cavg, or Ctough) to the reduction in monthly migraine days over weeks 1-12, noting that exposures from single doses of 100 mg or 300 mg exceeded the EC90 estimates while 30 mg was below them. The provided record lists a slope parameter of 0.36708 for the ≥50% responder rate, but the paper excerpts do not specify a numerical EC50, EC90, Emax, or IC50 value for eptinezumab.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baker_2020`
 - **model family:** `categorical`
 - **driver:** `pk_record`

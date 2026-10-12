@@ -33,7 +33,7 @@ Indoramin is an alpha-1 adrenergic blocker that was used to treat high blood pre
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Norbury_1983_reference](drugs/drug_indoramin/Indoramin_Norbury1983_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Norbury HM et al., Pharmacokinetics of intravenous indoram…, European journal of clinica… (1983) | [10.1007/BF00543798](https://doi.org/10.1007/BF00543798) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed 1/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Norbury_1983_reference](drugs/drug_indoramin/Indoramin_Norbury1983_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Norbury HM et al., Pharmacokinetics of intravenous indoram…, European journal of clinica… (1983) | [10.1007/BF00543798](https://doi.org/10.1007/BF00543798) |
 
 ## ADME sites
 

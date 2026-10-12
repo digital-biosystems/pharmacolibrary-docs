@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deltamethrin (decamethrin) inhibits hpGSTP1-1 activity (GSH-CDNB conjugation) in vitro, with an IC50 of 6.1 μM and Ki values of 5.61 ± 0.32 μM and 7.96 ± 0.97 μM; the excerpts do not state the model form or further mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Markus_2018`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

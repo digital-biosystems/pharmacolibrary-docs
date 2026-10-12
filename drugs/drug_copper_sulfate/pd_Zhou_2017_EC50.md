@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Copper sulfate concentrations inhibit the growth of Synechocystis sp. PCC 6803, with a reported EC50 of 1.8 μM; the paper excerpts do not state the mechanism or an effect model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

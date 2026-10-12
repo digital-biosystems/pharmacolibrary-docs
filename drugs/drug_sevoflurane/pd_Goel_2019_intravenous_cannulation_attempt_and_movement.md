@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Sevoflurane concentrations inhibit the binary response of intravenous cannulation attempt and movement with an EC50 of 1.32%, but the specific mechanism of this inhibition is not described in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Goel_2019`
 - **model family:** `categorical`
 - **driver:** `not_resolved`

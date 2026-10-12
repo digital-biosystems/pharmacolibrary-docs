@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Metyrapone concentrations (nM) inhibit 11 beta-hydroxylase activity, described by an Emax-type inhibitory model with an EC50 of 300 nM; the paper excerpts do not state the mechanism beyond inhibition, nor Imax, Emax, or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hornsby_1985`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> No specific mechanism is described in the available record or excerpts, but phenylbutazone concentrations are linked to a stimulated response in stride length via an Emax model. The stated parameters are an EC50 of 3.6 micrograms/ml and an Emax of 10.7 %.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Toutain_1994`
 - **model family:** `emax`
 - **driver:** `cited_pk`

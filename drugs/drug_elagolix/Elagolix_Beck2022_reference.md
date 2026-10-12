@@ -4,7 +4,7 @@
 
 # elagolix — `Elagolix_Beck2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Elagolix absorption rate constant 2.46 L/h was rejected because the unit could not be converted to standard time-based units.**
+
+The record lists the absorption rate constant with a value of 2.46 and units of L/h, which is dimensionally inconsistent for a first-order rate constant. This specific unit combination could not be converted to a valid SI unit, so the parameter lacked a valid value. Consequently, a dimension check failed on this structural parameter, resulting in the record's rejection. Extracted — elagolix: CL/F 125 L/h, V1/F 279 L, kabs 2.46 L/h, Q/F 5.63 L/h, V2/F 51.7 L, tlag 0.207 h.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Beck D et al., Population Pharmacokinetics of Elagolix…, Clinical pharmacokinetics (2022)

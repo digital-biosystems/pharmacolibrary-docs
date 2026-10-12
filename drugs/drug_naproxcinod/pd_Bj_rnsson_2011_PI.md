@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe the mechanism by which naproxen (the active driver for naproxcinod) affects pain intensity, though the model fits a sigmoidal Emax inhibition with an EC50 of 0.135 µmol/L. The baseline pain intensity is recorded as 52.7 mm with a maximal placebo effect of 20.2%.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Björnsson_2011`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

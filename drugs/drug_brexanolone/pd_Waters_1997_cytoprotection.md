@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Brexanolone (allopregnanolone, AP) concentrations (nM) stimulate cytoprotection of rabbit renal proximal tubules exposed to antimycin A, described by an Emax model with EC50 0.3 nM and maximal protection of 70%. The paper excerpts do not state the mechanism beyond this direct stimulatory Emax relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Waters_1997`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

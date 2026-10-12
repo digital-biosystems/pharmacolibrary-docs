@@ -18,6 +18,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Clozapine exposure (cited PK driver in mg·L(-1)·h(-1)·d(-1)) acts on total PANSS score via an Emax model with proportional inhibitory effect, with Emax 55.4% and cAUC50 296 mg·L(-1)·h(-1)·d(-1); the excerpts do not state the mechanism beyond this model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shang_2014`
 - **model family:** `emax`
 - **driver:** `cited_pk`

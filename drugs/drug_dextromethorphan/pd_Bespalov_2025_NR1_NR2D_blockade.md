@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dextromethorphan (and its metabolite dextrorphan) concentrations directly inhibit normalized peak current through human recombinant NR1/N2D NMDA receptors in whole-cell patch-clamp experiments, described by a concentration–response (sigmoid Emax/IC50) relationship; the paper reports that deuteration increases the IC50 about two-fold for dextromethorphan and 16-fold for dextrorphan, but does not state the absolute IC50, Emax, or slope values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bespalov_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

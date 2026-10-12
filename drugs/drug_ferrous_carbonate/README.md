@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Liu_2025_UC](drugs/drug_ferrous_carbonate/pd_Liu_2025_UC.md) | ulcerative colitis biomarker turnover ← unknown | — | Liu S et al., Metabolomics and proteomics reveal bloc…, Nature communications (2025) | [10.1038/s41467-025-62217-8](https://doi.org/10.1038/s41467-025-62217-8) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Liu_2025_UC](drugs/drug_ferrous_carbonate/pd_Liu_2025_UC.md) | ulcerative colitis biomarker turnover ← unknown | — | Liu S et al., Metabolomics and proteomics reveal bloc…, Nature communications (2025) | [10.1038/s41467-025-62217-8](https://doi.org/10.1038/s41467-025-62217-8) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

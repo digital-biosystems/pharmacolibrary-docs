@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts or mechanism details; the record indicates total pyrethroid brain concentration (including cypermethrin) was related to motor activity decrease via a sigmoid Emax inhibition model, but no potency (IC50/Emax/gamma) or rate values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Starr_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

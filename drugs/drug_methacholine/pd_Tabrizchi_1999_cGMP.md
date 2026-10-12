@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates methacholine dose to methacholine-stimulated cyclic GMP accumulation, but the available excerpts do not state the PD model, mechanism, or any potency or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tabrizchi_1999`
 - **model family:** `unknown`
 - **driver:** `dose_only`

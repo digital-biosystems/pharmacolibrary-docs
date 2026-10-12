@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;celecoxib&quot;,&quot;href&quot;:&quot;drugs/drug_celecoxib/&quot;},{&quot;label&quot;:&quot;Dhondt_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Celecoxib_Shi2008_reference&quot;,&quot;label&quot;:&quot;Shi_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_celecoxib/Celecoxib_Shi2008_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Celecoxib_Vaddady2011_normo_16&quot;,&quot;label&quot;:&quot;Vaddady_2011_normo_16&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_celecoxib/Celecoxib_Vaddady2011_normo_16.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Celecoxib_Vaddady2011_shock_0_56&quot;,&quot;label&quot;:&quot;Vaddady_2011_shock_0_56&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_celecoxib/Celecoxib_Vaddady2011_shock_0_56.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Celecoxib_Vaddady2011_shock_110&quot;,&quot;label&quot;:&quot;Vaddady_2011_shock_110&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_celecoxib/Celecoxib_Vaddady2011_shock_110.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Celecoxib_Vaddady2011_shock_43&quot;,&quot;label&quot;:&quot;Vaddady_2011_shock_43&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_celecoxib/Celecoxib_Vaddady2011_shock_43.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Celecoxib_Vaddady2011_shock_0_56&quot;,&quot;label&quot;:&quot;Vaddady_2011_shock_0_56&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_celecoxib/Celecoxib_Vaddady2011_shock_0_56.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Celecoxib_Vaddady2011_shock_43&quot;,&quot;label&quot;:&quot;Vaddady_2011_shock_43&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_celecoxib/Celecoxib_Vaddady2011_shock_43.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Celecoxib_Shi2008_reference&quot;,&quot;label&quot;:&quot;Shi_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_celecoxib/Celecoxib_Shi2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Celecoxib_Vaddady2011_normo_16&quot;,&quot;label&quot;:&quot;Vaddady_2011_normo_16&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_celecoxib/Celecoxib_Vaddady2011_normo_16.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Celecoxib_Vaddady2011_shock_110&quot;,&quot;label&quot;:&quot;Vaddady_2011_shock_110&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_celecoxib/Celecoxib_Vaddady2011_shock_110.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # celecoxib — `Celecoxib_Dhondt2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.739). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.238), gpt-oss:120b (not confirmed, agreement 0.739). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record reports only V/F = 19.12 for celecoxib; clearance, volume of distribution, absorption rate constant and absorption lag time had no value in the source, so placeholder numbers would have stood in for the missing parameters and the model was held back rather than published with invented values. The absorption rate constant was invented — not reported in the source — which the deviations check flagged as not acceptable. The model also assumes F=1 and Fm=1 with no molar correction (apparent parameterization) and uses first-order depot input for extravascular dosing. A second reader additionally disagreed on which parameter the reported V/F value corresponds to, and on several half-life and fraction entries that were null in this record. Extracted — celecoxib: V/F 19.1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has celecoxib, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[auc0-inf].value`: this record has 18.81, the second reading 11.67; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -99,17 +99,34 @@ Dhondt L et al., Comparative population pharmacokinetics…, Scientific reports 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.238 (5/21 fields) | 16 |
 | `gpt-oss:120b` | not confirmed | 0.739 (17/23 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>22 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc0-inf].value` | 18.81 | 11.67 | mismatch |
+| `gpt-oss-120b` | `parameters[c0].value` | 10.15 | 8.06 | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f].rse_percent` | 0.122 | 0.055 | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f].value` | 18.82 | 11.67 | mismatch |
+| `gpt-oss-120b` | `parameters[cl].rse_percent` | 0.113 | 0.0418 | mismatch |
+| `gpt-oss-120b` | `parameters[cl].value` | 9.81 | 7.93 | mismatch |
+| `gpt-oss-120b` | `parameters[cmax].value` | 19.12 | 14.27 | mismatch |
+| `gpt-oss-120b` | `parameters[ka].rse_percent` | 1.075 | 0.063 | mismatch |
+| `gpt-oss-120b` | `parameters[ka].value` | 55.88 | 17.37 | mismatch |
+| `gpt-oss-120b` | `parameters[ke].value` | 32.34 | 29.30 | mismatch |
+| `gpt-oss-120b` | `parameters[po std]` | not captured | 0.948 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2a].parameter_id` | Q59 | Q95 | mismatch |
+| `gpt-oss-120b` | `parameters[t1/2a].value` | 55.88 | 17.37 | mismatch |
+| `gpt-oss-120b` | `parameters[t1/2el].value` | 32.34 | 29.31 | mismatch |
+| `gpt-oss-120b` | `parameters[tlag].value` | 8.60 | 39.55 | mismatch |
+| `gpt-oss-120b` | `parameters[tmax].value` | 17.32 | 8.97 | mismatch |
 | `gpt-oss:120b` | `parameters[iv cf 2]` | not captured | 0.148 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[po cf 1]` | not captured | 4.40 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[po std]` | not captured | 0.006 | only_one_extracted |

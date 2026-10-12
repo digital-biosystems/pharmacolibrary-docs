@@ -5,7 +5,7 @@
 
 # bisoprolol — `Bisoprolol_Grevel1989_nonmem_data_set_hyp`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8), gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q: this record has none, the second reading 44.1; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+**Only volume was extracted — no clearance.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — bisoprolol: V 67.5 L, kabs 0.67 h-1, Vss 235 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of q: this record has none, the second reading 44.1; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Grevel J et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (1989)
@@ -66,17 +70,20 @@ Grevel J et al., Population pharmacokinetic analysis of…, Clinical pharmacokin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.8 (8/10 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.8 (8/10 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[q]` | not captured | 44.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[regression parameters {].parameter_id` | Q30 | Q22 | mismatch |
 | `gpt-oss:120b` | `parameters[q]` | not captured | 44.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[regression parameters {].parameter_id` | Q30 | Q22 | mismatch |
 

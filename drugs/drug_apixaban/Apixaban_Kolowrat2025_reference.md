@@ -4,7 +4,7 @@
 
 # apixaban — `Apixaban_Kolowrat2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286), gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record lists apixaban clearance with a value of 33 and a unit of '%', which is incompatible with the required units for a clearance parameter. This error occurred because the record was built from the abstract alone, where summary statistics stood in for a fitted model. A second reader disagreed on the dose compound and primary analyte, marking both as unknown, and failed to extract the clearance value. Extracted — apixaban: CL 33 %, V 21 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has apixaban, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has apixaban, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -69,17 +69,23 @@ Kolowrat S et al., Real-World Impact of Amiodarone on Apix…, Clinical and tran
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[apixaban clearance]` | 33 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apixaban clearance]` | not captured | -33 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 21.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | apixaban | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | apixaban | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[apixaban clearance decrease]` | not captured | 33 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[apixaban clearance]` | 33 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[apixaban]` | not captured | 5 | only_one_extracted |

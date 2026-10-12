@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Plasma midazolam concentrations (ng/ml) were related to the percent reduction of enflurane MAC in dogs by log-linear regression (correlation r = 0.72), with MAC reduction declining as concentrations fell after a 2.5 mg/kg bolus and during infusion (~949 ng/ml); the paper does not state a mechanism (e.g., Imax/IC50 or effect-compartment parameters) and gives no potency values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hall_1988`
 - **model family:** `log_linear`
 - **driver:** `pk_record`

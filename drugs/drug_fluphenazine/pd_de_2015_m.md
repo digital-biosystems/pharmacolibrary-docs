@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Fluphenazine (μM concentrations) inhibits mitochondrial transmembrane potential (ΔΨm) in HTC cells, described by an Emax-type model; the paper excerpts provide no mechanism details and no parameter values (Imax, IC50, Emax, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `de_2015`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

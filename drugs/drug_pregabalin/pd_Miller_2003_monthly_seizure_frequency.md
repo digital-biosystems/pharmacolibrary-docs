@@ -18,6 +18,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Pregabalin dose inhibits monthly seizure frequency via an Emax model, with a maximal seizure reduction of 80% and an ED50 of 186 mg. The specific mechanism of action (e.g., production vs. elimination) is not described in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Miller_2003`
 - **model family:** `emax`
 - **driver:** `dose_only`

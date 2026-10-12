@@ -18,6 +18,10 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
+> Plasma urate concentration is decreased by steady-state plasma oxypurinol concentrations through the inhibition of xanthine oxidase, described by a sigmoid Emax model with a C50 of 36.58 mM and Emax of 2.27 times the baseline rate (Ro of 2.63). The paper does not explicitly state the Hill coefficient (gamma) value for this specific relationship.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Graham_1996`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

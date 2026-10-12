@@ -4,7 +4,7 @@
 
 # galantamine — `Galantamine_Piotrovsky2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The galantamine record was rejected because the parameter labelled CLm/F holds a 60% reduction in metabolic clearance in hepatic dysfunction (Pugh score 7 or higher), not a clearance value, giving a dimension mismatch on a structural parameter.**
+
+For galantamine in Alzheimer's disease patients, the record contains CL of 14.8 L/h (median in male patients) alongside a CLm/F entry whose value is 60 with unit '%', taken from a sentence describing a percent reduction in metabolic clearance rather than an apparent metabolite clearance in L/h. This dimension mismatch on a structural parameter made the record unusable. Additionally, the record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. Extracted — galantamine: CL 14.8 L/h, CLm/F 60 %.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has galantamine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Piotrovsky V et al., Galantamine population pharmacokinetics…, Journal of clinical pharmac… (2003)
@@ -55,6 +63,33 @@ Piotrovsky V et al., Galantamine population pharmacokinetics…, Journal of clin
 - no GROBID TEI available — transcribed from abstract in Piotrovsky_2003_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.125 (1/8 fields) | 7 |
+
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[median clearance in male and female patients with alzheimer's disease (ad) was 14.8 and 12.4 l/h, respectively.]` | 14.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median clearance in male patients with alzheimer's disease]` | not captured | 14.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[metabolic clearance was reduced by 60% in patients with moderate or severe hepatic dysfunction (pugh score 7 or higher).]` | 60 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[metabolic clearance was reduced by 60% in patients with moderate or severe hepatic dysfunction]` | not captured | 60 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | galantamine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | galantamine | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

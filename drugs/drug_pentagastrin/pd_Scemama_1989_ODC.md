@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentagastrin concentration (nM) stimulates ornithine decarboxylase (ODC) activity with an EC50 of 0.4 nM; the paper excerpts do not state the mechanism or effect model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Scemama_1989`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

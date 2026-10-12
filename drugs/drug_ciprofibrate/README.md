@@ -1,21 +1,37 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;ciprofibrate&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;ciprofibrate&quot;}]"></div>
 
 # ciprofibrate
 
-- **generic name:** not captured
-- **ATC codes:** not captured
-- **DrugBank:** not captured · **PubChem:** not captured
-- **groups:** not captured
+- **generic name:** ciprofibrate
+- **ATC codes:** `C10AB08`
+- **DrugBank:** [DB09064](https://go.drugbank.com/drugs/DB09064) · **PubChem:** not captured
+- **molar mass:** 289.15 g/mol (C13H14Cl2O3) — DrugBank
+- **groups:** approved, investigational, withdrawn
+
+## About
+
+Ciprofibrate is a fibrate lipid-lowering drug used to treat hyperlipidemia, including familial forms. It has been withdrawn from the market in some countries and is no longer widely available.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3496452](https://www.wikidata.org/wiki/Q3496452) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 0/0/0 | 0/0/0 | 0/0/0 | not captured | not captured | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 11:33 | 2:59 | 0/0/0 | 0/0/0 | 0/0/0 | 24,468/1,128 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ciprofibrate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: PPARA (target).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -25,10 +41,42 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 0 matched, 0 returned
+- **PubMed hits:** 17 matched, 17 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
+
+## Full text wanted
+
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Kocarek_1989.pdf` | Kocarek TA et al., Quantitative assessment of enzyme induc…, Biochemical pharmacology (1989) | pd | 4 | [10.1016/0006-2952(89)90511-x](https://doi.org/10.1016/0006-2952(89)90511-x) | [2597188](https://www.ncbi.nlm.nih.gov/pubmed/2597188) | metadata signals extractable PD data (EC50) |
+| `Gallagher_1995.pdf` | Gallagher EP et al., The effects of diquat and ciprofibrate…, Toxicology and applied phar… (1995) | pgx | 8 | [10.1006/taap.1995.1171](https://doi.org/10.1006/taap.1995.1171) | [7676460](https://www.ncbi.nlm.nih.gov/pubmed/7676460) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+
+<sub>queue written 2026-10-07T11:32:58.958793+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Bighetti_2009 | not_relevant | 0 | 0 | The paper studies the effect of ciprofibrate on CETP gene expression and lipid metabolism in transgenic mice, but does not report a pharmacogenomic effect (gene variant altering drug PK/PD) for ciprofibrate itself. |
+| PGx | Buckley_2009 | not_relevant | 0 | 0 | The paper studies the induction of UGT mRNA expression in mice by various drugs, including ciprofibrate, but does not report pharmacogenomic effects of genetic variants on ciprofibrate's PK or PD parameters. |
+| popPK | Budroe_1992 | irrelevant | 0 | 0 | The study focuses on toxicological endpoints (enzyme induction, mitogenesis) in mice and does not report pharmacokinetic parameters such as clearance or volume. |
+| PGx | Gallagher_1995 | not_relevant | 0 | 0 | The study investigates the effects of ciprofibrate on hepatic enzyme expression in rats and does not report any pharmacogenomic effects (gene variants) on ciprofibrate's PK or PD parameters. |
+| PGx | Hassett_1998 | not_relevant | 0 | 0 | The paper investigates the effect of ciprofibrate as a chemical inducer on epoxide hydrolase expression, not the effect of genetic variants on ciprofibrate's pharmacokinetics or pharmacodynamics. |
+| PGx | Heydel_2012 | not_relevant | 0 | 0 | The study investigates the effect of ciprofibrate on rat hepatic enzyme expression (drug effect on biology), not the effect of a genetic variant on ciprofibrate's pharmacokinetics or pharmacodynamics. |
+| popPK | Kocarek_1989 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme induction in rat hepatocytes and does not report pharmacokinetic disposition parameters (CL, V, ka, etc.) for ciprofibrate. |
+| PGx | Lake_1996 | not_relevant | 0 | 0 | The paper studies the induction of CYP enzymes by ciprofibrate in liver slices, not the effect of a gene variant on ciprofibrate's PK/PD. |
+| PGx | Le-Niculescu_2021 | not_relevant | 0 | 0 | The paper discusses ciprofibrate only as a potential repurposed drug candidate for mood disorders and does not report any pharmacogenomic effects on its pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Miller_1998 | not_relevant | 0 | 0 | The paper is a general review of fibrate pharmacokinetics and does not report any pharmacogenomic effects or specific gene variants affecting ciprofibrate. |
+| popPK | Mukherjee_2002 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of PPARalpha ligand binding and coactivator recruitment, not a pharmacokinetic study. |
+| popPK | Ochs_1992 | irrelevant | 0 | 0 | The study is a mechanistic/toxicological investigation of hepatic enzyme activity in mice, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Olsson_1982 | irrelevant | 0 | 0 | The study reports pharmacodynamic effects on serum lipoprotein concentrations, not pharmacokinetic parameters. |
+| popPK | Reisenbichler_1993 | irrelevant | 0 | 0 | The study investigates the genotoxic effects of ciprofibrate in rat hepatocytes and does not report any pharmacokinetic parameters. |
+| popPK | Rouffy_1985 | irrelevant | 1 | 0 | The study is a clinical efficacy trial comparing lipid-lowering effects and does not report quantitative pharmacokinetic parameters (CL, V, ka) for ciprofibrate. |
+| PGx | Surry_2000 | not_relevant | 0 | 0 | The paper describes a method for measuring CYP induction in rat hepatocytes and reports Ind50 values for ciprofibrate, but it does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

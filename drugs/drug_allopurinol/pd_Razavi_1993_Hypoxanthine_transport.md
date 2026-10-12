@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that allopurinol concentrations inhibit the continuous response of hypoxanthine transport via a proportional mechanism. The inhibitory potency (Ki) is reported as 274 umol/L, but the paper excerpts do not provide full text details regarding the specific transport mechanism or kinetic rates.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Razavi_1993`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

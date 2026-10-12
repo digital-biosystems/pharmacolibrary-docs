@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;oseltamivir&quot;,&quot;href&quot;:&quot;drugs/drug_oseltamivir/&quot;},{&quot;label&quot;:&quot;Chairat_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oseltamivir_Lin2012_reference&quot;,&quot;label&quot;:&quot;Lin_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oseltamivir/Oseltamivir_Lin2012_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oseltamivir_Lin2012_reference&quot;,&quot;label&quot;:&quot;Lin_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oseltamivir/Oseltamivir_Lin2012_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # oseltamivir — `Oseltamivir_Chairat2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.316). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The oseltamivir parent–metabolite model was rejected because the first-order rate constants kabs (2.81) and kfm (2.13) are reported with unit 'h' instead of h⁻¹, a dimension mismatch on structural parameters.**
+
+The absorption rate constant kabs of oseltamivir and the metabolite formation rate constant kfm for oseltamivir carboxylate carry the verbatim unit 'h', which is dimensionally wrong for first-order rate constants that must be per hour. Because this unit could not be converted to SI, the parameters were recorded without an SI value, triggering the dimension-mismatch refusal. All other reported parameters (Fab 100%, CLm/F 585 and 20.6 l h⁻¹, Vm/F 1110 l, V1/F 159 l) carry consistent units. Extracted — oseltamivir: Fab 100, kabs 2.81 h, CLm/F 585 l h −1, Vm/F 1.11e+03 l; oseltamivir carboxylate: kfm 2.13 h, CLm/F 20.6 l h −1, V1/F 159 l.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has oseltamivir → oseltamivir carboxylate (metabolism), the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `oseltamivir`, measured `oseltamivir carboxylate`.
 
@@ -91,6 +99,39 @@ Chairat K et al., Population pharmacokinetics of oseltami…, British journal of
 - LLM selected parameter table(s) 1, 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.316 (6/19 fields) | 13 |
+
+<details><summary>13 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['oseltamivir', 'oseltamivir carboxylate', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f oc]` | 20.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f os]` | 585 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f os]` | not captured | 585 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f, relative bioavailability]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | 100 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f].value` | not captured | 100 | mismatch |
+| `gpt-oss-120b` | `parameters[k a]` | 2.81 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | not captured | 2.81 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k m].parameter_id` | Q305 | Q1 | mismatch |
+| `gpt-oss-120b` | `parameters[v/f oc]` | 159 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f os]` | 1110 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f os]` | not captured | 1110 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

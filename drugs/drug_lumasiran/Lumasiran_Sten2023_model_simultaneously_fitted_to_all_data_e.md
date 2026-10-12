@@ -5,7 +5,7 @@
 
 # lumasiran — `Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.20).">human + animal</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.20).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record lists a two-compartment structure but includes a parameter for a second peripheral volume, creating a structural mismatch. The model builder explicitly defaulted the intercompartmental clearance k12 and lag time Tlag instead of extracting values from the source. Consequently, the simulated profile relies on unsupported library placeholders for k12 rather than data from the study. Extracted — lumasiran: kabs 0.157 1/h, V1/F 18.1 L, V2/F 1.34e+03 L, V3/F 100 L, CL/F 23.8 L/h, Q/F 3.02 L/h.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has GalNAc-siRNAs, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -74,14 +74,22 @@ Sten S et al., Plasma Pharmacokinetics of N-Acetylgala…, Clinical pharmacokine
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.875 (14/16 fields) | 2 |
 | `gpt-oss:120b` | confirmed | 1.0 (16/16 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `screen.dose_compound` | GalNAc-siRNAs | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | GalNAc-siRNAs | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -143,7 +151,7 @@ _Every reader agrees on every compared field of this record._
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_fmi.zip" download>Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab.zip" download>Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab_simbio.zip" download>Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab_simbio.zip" download>Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_sbml.zip" download>Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_cellml.zip" download>Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

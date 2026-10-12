@@ -5,7 +5,7 @@
 
 # paracetamol — `Paracetamol_Allegaert2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833), gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record describes a two-compartment paracetamol model with total clearance 0.029 l.min−1, distribution volume 0.6 l.kg−1, and peripheral volume of distribution 45.0 l per 70 kg. The rejection cause is an unreachable compartment: the peripheral compartment has no connection from the administered dose, so the structure is not a valid pharmacokinetic topology. A second reader additionally read the clearance as 22 and the distribution volume as 110, whereas this record extracted no values for those fields, so the numeric parameter values are contested. Extracted — paracetamol: CL 0.029 l.min−1, V 0.6 l.kg-1, V2 45 l .70 kg−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q45: this record has none, the second reading 22; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q45: this record has 77, the second reading 22. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -61,17 +61,19 @@ Allegaert K et al., Neonatal clinical pharmacology, Paediatric anaesthesia (2014
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.833 (5/6 fields) | 1 |
 | `gpt-oss:120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q45]` | 77 | 22 | mismatch |
 | `gpt-oss:120b` | `values[Q45]` | not captured | 22 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q84]` | not captured | 110 | only_one_extracted |
 

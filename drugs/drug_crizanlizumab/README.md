@@ -29,7 +29,7 @@ Crizanlizumab, a monoclonal antibody, was used to reduce vaso-occlusive crises i
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Sy_2023_Psel](drugs/drug_crizanlizumab/pd_Sy_2023_Psel.md) | P-selectin ← crizanlizumab · target-mediated drug disposition | — | Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2023) | [10.1007/s40262-022-01193-4](https://doi.org/10.1007/s40262-022-01193-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> | [Sy_2023_Psel](drugs/drug_crizanlizumab/pd_Sy_2023_Psel.md) | P-selectin ← crizanlizumab · target-mediated drug disposition | — | Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2023) | [10.1007/s40262-022-01193-4](https://doi.org/10.1007/s40262-022-01193-4) |
 
 ## ADME sites
 

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Mivacurium chlorides induces neuromuscular block via an Emax model with a proportional effect form. The model estimates an EC50 of 98 microg L(-1) and a gamma (Hill slope) of 3.7.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schiere_2004`
 - **model family:** `emax`
 - **driver:** `cited_pk`

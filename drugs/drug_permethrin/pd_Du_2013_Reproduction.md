@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Permethrin (µg/g OC) inhibits reproduction (count response), but the paper excerpts provide no description of the mechanism or model form. Reported potency values are EC50 = 0.039 ± 0.105 µg/g OC and EC5 = 0.009 ± 0.008 µg/g OC; no Imax, Emax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Du_2013`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

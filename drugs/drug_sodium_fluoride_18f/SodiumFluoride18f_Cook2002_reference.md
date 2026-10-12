@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
+**This paper's disposition core is incomplete; cL has no unit.**
+
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Preijers_2021) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sodium fluoride 18f: CL 1.03 ml/min per milliliter, V 61.8 mL kg−1.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has sodium_fluoride_18f, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Cook GJ et al., Quantification of skeletal kinetic indi…, Journal of bone and mineral… (2002)

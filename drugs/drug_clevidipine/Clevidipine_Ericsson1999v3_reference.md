@@ -5,7 +5,7 @@
 
 # clevidipine — `Clevidipine_Ericsson1999v3_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The paper (rats, rabbits, and dogs) is an exposure/outcome study read from the abstract alone, so reported summary statistics stood in for a fitted model; only half-lives are given (t1/2z 12 s in the rabbit, t1/2α 20 s in the rat), with no volume or clearance parameters. The hydrolysis link from clevidipine to the metabolite H 152/81 carries no link parameter, leaving the metabolite without a path from the dose. A second reader disagreed on whether the clevidipine–H 152/81 hydrolysis link exists and on which species each half-life value (12 s and 20 s) belongs to. Extracted — clevidipine: t1/2z 12 s, t1/2α 20 s.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has clevidipine → h 152/81 (hydrolysis), the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has clevidipine → h 152/81 (hydrolysis), the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -73,17 +73,21 @@ Ericsson H et al., Pharmacokinetics of new calcium channel…, Drug metabolism a
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (3/6 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['clevidipine', 'h 152/81', 'hydrolysis']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[median initial half-life of the individual value (bayesian estimates) in the rabbit]` | 12 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median initial half-life of the individual value (bayesian estimates) in the rat]` | 20 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [['clevidipine', 'h 152/81', 'hydrolysis']] | [] | mismatch |
 | `gpt-oss:120b` | `parameters[median initial half-life of the individual value (bayesian estimates) in the rabbit]` | 12 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[median initial half-life of the individual value (bayesian estimates) in the rat]` | 20 | not captured | only_one_extracted |

@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Salbutamol concentrations (nM) stimulate androgen production via a direct Emax model, with an EC50 of 9 nM; the paper excerpts do not state further mechanism details or additional parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Anakwe_1984`
 - **model family:** `emax`
 - **driver:** `cited_pk`

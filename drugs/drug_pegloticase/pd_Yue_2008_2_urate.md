@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that pegloticase concentration acts on continuous uric acid response via an emax model with proportional inhibition, but the paper excerpts do not provide the mechanism or any key potency and rate values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yue_2008_2`
 - **model family:** `emax`
 - **driver:** `not_resolved`

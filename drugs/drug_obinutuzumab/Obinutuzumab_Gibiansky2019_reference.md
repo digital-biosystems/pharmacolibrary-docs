@@ -4,7 +4,7 @@
 
 # obinutuzumab — `Obinutuzumab_Gibiansky2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.462). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667), gpt-oss:120b (partly confirmed, agreement 0.462). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of bone marrow involvement at baseline, yes vs no: this record has none, the second reading 0.8759; it also differs on 6 more fields. That field does not shape the model.
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A reported unit could not be converted (Cavg and CL), so that value has no SI equivalent. Extracted — obinutuzumab: Cavg -0.0027 mg/L, CL 0.11 day−1, V2 1.23 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clt: this record has none, the second reading 0.154; it also differs on 3 more fields. That field does not shape the model.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Gibiansky E et al., Pharmacokinetics, exposure, efficacy an…, British journal of clinical… (2019)
@@ -88,17 +92,22 @@ Gibiansky E et al., Pharmacokinetics, exposure, efficacy an…, British journal 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.667 (8/12 fields) | 4 |
 | `gpt-oss:120b` | partly confirmed | 0.462 (6/13 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clt]` | not captured | 0.154 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[decay coefficient of time dependent clearance]` | 0.11 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` | 1.23 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` | not captured | 1.23 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bone marrow involvement at baseline, yes vs no]` | not captured | 0.8759 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clt]` | not captured | 0.154 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cmean]` | -0.0027 | not captured | only_one_extracted |

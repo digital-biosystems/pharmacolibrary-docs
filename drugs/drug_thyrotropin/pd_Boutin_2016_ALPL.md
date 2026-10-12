@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Thyrotropin (TSH) concentration stimulates alkaline phosphatase (ALPL) expression with a direct concentration–effect relationship; the paper reports EC50 values of 395 nM and 19 nM, but the excerpts do not state the mechanism or model form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Boutin_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

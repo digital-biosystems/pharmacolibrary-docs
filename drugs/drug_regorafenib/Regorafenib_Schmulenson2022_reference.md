@@ -4,7 +4,7 @@
 
 # regorafenib — `Regorafenib_Schmulenson2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The regorafenib record was rejected for a disconnected capecitabine metabolite pathway, although it reports regorafenib CL/F of 1.94 L/h.**
+
+Regorafenib is linked to M-2 and M-5, but the separate capecitabine–DFCR–DFUR pathway has no connection to regorafenib. The reported regorafenib CL/F is 1.94 L/h. Extracted — regorafenib: CL/F 1.94 L/h, V1/F 10.4 L, MAT 3.01 h, V2/F 63.9 L, Q/F 13.5 L/h, kabs 0.41 h−1; M-2: CL/F 0.936 L/h, kfm 0.265 1/h, MAT 1.9 h, CLm/F 25.2; M-5: CL/F 2.01 L/h, CLm/F 75.6.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has regorafenib and capecitabine, the second reading regorafenib; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 > **Dose compound ≠ measured compound:** dosed `regorafenib and capecitabine`, measured `regorafenib`.
 
@@ -101,6 +109,36 @@ Schmulenson E et al., Population pharmacokinetic analyses of…, British journal
 - LLM region Schmulenson_2022:other_prose: no JSON records returned
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.643 (18/28 fields) | 10 |
+
+<details><summary>10 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `model.links` | [['regorafenib', 'm-2', 'metabolism'], ['regorafenib', 'm-5', 'metabolism'], ['capecitabine', "5'-deoxy-5-fluorocytidine (dfcr)", 'metabolism'], ["5'-deoxy-5-fluorocytidine (dfcr)", "5'-deoxy-5-fluorouridine (dfur)", 'metabolism']] | [['regorafenib', 'm-2', 'metabolism'], ['regorafenib', 'm-5', 'metabolism'], ['capecitabine', "5'-deoxy-5-fluorocytidine", 'metabolism'], ['capecitabine', "5'-deoxy-5-fluorouridine", 'metabolism']] | mismatch |
+| `qwen3.8-27b` | `parameters[clregorafenib/f [l/h]]` | not captured | 1.94 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[clregorafenib/f [l/h]]` | 1.94 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[kg,met [1/h]]` | not captured | 0.265 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[kg,met [1/h]]` | 0.265 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[matm-2 [h]].parameter_id` | Q73 | Q49 | mismatch |
+| `qwen3.8-27b` | `parameters[matregorafenib [h]]` | not captured | 3.01 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[matregorafenib [h]]` | 3.01 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[reg ka ireg]` | 0.41 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `screen.dose_compound` | regorafenib and capecitabine | regorafenib | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

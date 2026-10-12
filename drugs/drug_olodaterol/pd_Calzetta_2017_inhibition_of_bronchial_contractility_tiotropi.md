@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not state the mechanism beyond a direct concentration–effect relationship: inhibition of bronchial contractility (%) by the tiotropium plus olodaterol 5:5 combination was described by a sigmoid Emax model with Emax 102.7 ± 8.4 % and pEC50 9.0 ± 0.7 (EC50 ≈ 1 nM); no rate constants are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Calzetta_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

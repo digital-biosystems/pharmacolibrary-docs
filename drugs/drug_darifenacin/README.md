@@ -33,13 +33,13 @@ Darifenacin is a muscarinic antagonist used to treat urinary frequency and incon
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kerbusch_2003_reference](drugs/drug_darifenacin/Darifenacin_Kerbusch2003_reference.md) | — | parent + metabolite (no model) | 4 (+1 cov.) | Kerbusch T et al., Population pharmacokinetic modelling of…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01967.x](https://doi.org/10.1046/j.1365-2125.2003.01967.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kerbusch_2003_reference](drugs/drug_darifenacin/Darifenacin_Kerbusch2003_reference.md) | — | parent + metabolite (no model) | 4 (+1 cov.) | Kerbusch T et al., Population pharmacokinetic modelling of…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01967.x](https://doi.org/10.1046/j.1365-2125.2003.01967.x) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kerbusch_2004_SF](drugs/drug_darifenacin/pd_Kerbusch_2004_SF.md) | salivary flow ← active moiety (darifenacin and hydroxylated metabolite) · target-mediated drug disposition | — | Kerbusch T et al., Assessment of the relative in vivo pote…, British journal of clinical… (2004) | [10.1046/j.1365-2125.2003.01988.x](https://doi.org/10.1046/j.1365-2125.2003.01988.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span> | [Kerbusch_2004_SF](drugs/drug_darifenacin/pd_Kerbusch_2004_SF.md) | salivary flow ← active moiety (darifenacin and hydroxylated metabolite) · target-mediated drug disposition | — | Kerbusch T et al., Assessment of the relative in vivo pote…, British journal of clinical… (2004) | [10.1046/j.1365-2125.2003.01988.x](https://doi.org/10.1046/j.1365-2125.2003.01988.x) |
 
 ## ADME sites
 

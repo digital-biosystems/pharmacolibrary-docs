@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deltamethrin (decamethrin) concentrations (nM) act on the tail sodium current (INa+) in Xenopus oocytes expressing the Drosophila para k splice variant; the paper does not state the mechanism or model form, only an EC50 of 866 nM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Thompson_2020`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

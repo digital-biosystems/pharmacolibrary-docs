@@ -29,7 +29,7 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Madani_2016_CIG](drugs/drug_cyproheptadine/pd_Madani_2016_CIG.md) | clinical improvement ← cyproheptadine · categorical (graded) response model | — | Madani S et al., Cyproheptadine Use in Children With Fun…, Journal of pediatric gastro… (2016) | [10.1097/MPG.0000000000000964](https://doi.org/10.1097/MPG.0000000000000964) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">pig</span> | [Dohmoto_2003_Ca_2_currents](drugs/drug_cyproheptadine/pd_Dohmoto_2003_Ca_2_currents.md) | Ca(2+) currents ← cyproheptadine · inhibition effect | — | Dohmoto H et al., Cardiac Ca(2+) channel-blocking effects…, Journal of pharmacological… (2003) | [10.1254/jphs.91.163](https://doi.org/10.1254/jphs.91.163) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">pig</span> | [Dohmoto_2003_Ca_2_currents](drugs/drug_cyproheptadine/pd_Dohmoto_2003_Ca_2_currents.md) | Ca(2+) currents ← cyproheptadine · inhibition effect | — | Dohmoto H et al., Cardiac Ca(2+) channel-blocking effects…, Journal of pharmacological… (2003) | [10.1254/jphs.91.163](https://doi.org/10.1254/jphs.91.163) |
 
 ## ADME sites
 

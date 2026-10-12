@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;pegcetacoplan&quot;,&quot;href&quot;:&quot;drugs/drug_pegcetacoplan/&quot;},{&quot;label&quot;:&quot;Crass_2025_2 \u00b7 PD GA lesion area&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pegcetacoplan_Crass2025_transformed_estimate&quot;,&quot;label&quot;:&quot;Crass_2025_transformed_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_transformed_estimate.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pegcetacoplan_Crass2025_transformed_estimate&quot;,&quot;label&quot;:&quot;Crass_2025_transformed_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pegcetacoplan/Pegcetacoplan_Crass2025_transformed_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # GA lesion area — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,6 +17,10 @@
 **As extracted:** Pegcetacoplan (concentrations from this paper's PK model) drives GA lesion area (in mm 2): disease-progression model.
 
 **Model:** No model was generated from this record.
+
+> Log-transformed vitreous pegcetacoplan concentration inhibits the growth of GA lesion area (baseline 7.73 mm², rate 2.02 mm²/year) through a proportional effect mechanism, resulting in a 2.6% treatment effect. The paper quantifies the treatment effect as 20.4% and 17.2% reductions in lesion area change for monthly and every-other-month 15 mg doses, respectively, but does not provide specific PD potency parameters (e.g., IC50, EC50, ke0).
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Crass_2025_2`
 - **model family:** `disease_progression`

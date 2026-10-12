@@ -4,7 +4,7 @@
 
 # nicotinic acid — `NicotinicAcid_Iwaki1996_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222), gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Leander_2015) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nicotinic acid: fu 40 %, V 1 L kg−1, kabs 0.1 min−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has nicotinic acid, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nicotinic acid, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -75,17 +75,25 @@ Iwaki M et al., Acute dose-dependent disposition studie…, Drug metabolism and 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.143 (1/7 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[bound fraction]` | 40 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose]` | not captured | 15 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 0.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total niac concentrations]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | 1.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | nicotinic acid | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | nicotinic acid | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [['nicotinic acid', 'nicotinuric acid', 'metabolism']] | [] | mismatch |
 | `gpt-oss:120b` | `parameters[bound fraction]` | 40 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[dose]` | not captured | 15 | only_one_extracted |

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Terfenadine concentrations (ng mL-1) stimulate the QT interval via an Emax model. The paper does not provide the mechanism details, but the record cites an EC50 range of 792-1039 ng mL-1.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ohtani_1997`
 - **model family:** `emax`
 - **driver:** `cited_pk`

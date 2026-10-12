@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;modafinil&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Modafinil_Tao2010_reference&quot;,&quot;label&quot;:&quot;Tao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_modafinil/Modafinil_Tao2010_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Modafinil_Tao2010_reference&quot;,&quot;label&quot;:&quot;Tao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_modafinil/Modafinil_Tao2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # modafinil
 
@@ -31,15 +31,15 @@ Modafinil is a wakefulness-promoting stimulant used for sleep disorders such as 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:58 | 2:31 | 2/1/0 | 1/0/0 | 0/0/0 | 136,913/10,057 | ollama / glm-5.3-flash | 3 | 2/1 | 2/1 | 0 |
+| 2026-10-07 00:58 | 2:31 | 1/1/1 | 1/0/0 | 0/0/0 | 136,913/10,057 | ollama / glm-5.3-flash | 3 | 2/1 | 2/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Tao_2010_reference](drugs/drug_modafinil/Modafinil_Tao2010_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Tao G et al., Population pharmacokinetics of modafini…, Therapeutic drug monitoring (2010) | [10.1097/FTD.0b013e3181cf27d3](https://doi.org/10.1097/FTD.0b013e3181cf27d3) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wu_2012_reference](drugs/drug_modafinil/Modafinil_Wu2012_reference.md) | model (no simulator) | 1-compartment, oral | 7 | Wu KH et al., Population pharmacokinetics of modafini…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.124](https://doi.org/10.1038/aps.2012.124) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Willavize_2017_reference](drugs/drug_modafinil/Modafinil_Willavize2017_reference.md) | — | general linear (no model) | 4 | Willavize S et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.800](https://doi.org/10.1002/jcph.800) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span> | [Tao_2010_reference](drugs/drug_modafinil/Modafinil_Tao2010_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Tao G et al., Population pharmacokinetics of modafini…, Therapeutic drug monitoring (2010) | [10.1097/FTD.0b013e3181cf27d3](https://doi.org/10.1097/FTD.0b013e3181cf27d3) |
+| <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span> | [Wu_2012_reference](drugs/drug_modafinil/Modafinil_Wu2012_reference.md) | model (no simulator) | 1-compartment, oral | 7 | Wu KH et al., Population pharmacokinetics of modafini…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.124](https://doi.org/10.1038/aps.2012.124) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Willavize_2017_reference](drugs/drug_modafinil/Modafinil_Willavize2017_reference.md) | — | general linear (no model) | 4 | Willavize S et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.800](https://doi.org/10.1002/jcph.800) |
 
 ## Pharmacodynamics (PD)
 
@@ -73,7 +73,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 10 matched, 10 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

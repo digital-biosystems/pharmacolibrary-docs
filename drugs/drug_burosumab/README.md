@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M05B&quot;,&quot;href&quot;:&quot;atc/M05B.md&quot;},{&quot;label&quot;:&quot;burosumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Burosumab_Lee2022_reference&quot;,&quot;label&quot;:&quot;Lee_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_burosumab/Burosumab_Lee2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Burosumab_Mehta2025_reference&quot;,&quot;label&quot;:&quot;Mehta_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_burosumab/Burosumab_Mehta2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Burosumab_Lee2022_reference&quot;,&quot;label&quot;:&quot;Lee_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_burosumab/Burosumab_Lee2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Burosumab_Mehta2025_reference&quot;,&quot;label&quot;:&quot;Mehta_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_burosumab/Burosumab_Mehta2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # burosumab
 
@@ -18,14 +18,14 @@ Burosumab, a monoclonal antibody, is used to treat bone-mineralisation disorders
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 03:14 | 0:38 | 2/0/0 | 1/0/1 | 0/0/0 | 66,685/5,489 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 03:14 | 0:38 | 0/0/2 | 1/0/1 | 0/0/0 | 66,685/5,489 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lee_2022_reference](drugs/drug_burosumab/Burosumab_Lee2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 (+2 cov.) | Lee SK et al., Population Pharmacokinetics and Pharmac…, Journal of clinical pharmac… (2022) | [10.1002/jcph.1950](https://doi.org/10.1002/jcph.1950) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mehta_2025_reference](drugs/drug_burosumab/Burosumab_Mehta2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Mehta K et al., Pharmacodynamic Exposure-Response Analy…, Journal of clinical pharmac… (2025) | [10.1002/jcph.6140](https://doi.org/10.1002/jcph.6140) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Lee_2022_reference](drugs/drug_burosumab/Burosumab_Lee2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 (+2 cov.) | Lee SK et al., Population Pharmacokinetics and Pharmac…, Journal of clinical pharmac… (2022) | [10.1002/jcph.1950](https://doi.org/10.1002/jcph.1950) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Mehta_2025_reference](drugs/drug_burosumab/Burosumab_Mehta2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Mehta K et al., Pharmacodynamic Exposure-Response Analy…, Journal of clinical pharmac… (2025) | [10.1002/jcph.6140](https://doi.org/10.1002/jcph.6140) |
 
 ## Pharmacodynamics (PD)
 
@@ -54,7 +54,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

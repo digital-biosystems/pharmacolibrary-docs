@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentagastrin concentration (nM) stimulates histamine release from isolated rabbit fundic mucosal F1 cells, described by an Emax model with EC50 = 0.92 ± 0.15 nM; the paper excerpts do not state Emax, gamma, or a mechanism beyond stimulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hollande_1993`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

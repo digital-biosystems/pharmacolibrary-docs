@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;octopamine&quot;,&quot;href&quot;:&quot;drugs/drug_octopamine/&quot;},{&quot;label&quot;:&quot;Schendzielorz_2015 \u00b7 PD cAMP&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cAMP — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
+# cAMP — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Octopamine (OA) applied to hawkmoth antennae (40 μM in incubations) stimulates cAMP production (pmol/mg, measured by ELISA) via OA receptors of the OctαR type, as the OA-receptor antagonist EPI (40 μM) prevented the cAMP rise; the paper does not state an explicit Emax/IC50/kin/kout/ke0 for this model. It reports that the EC50 for OA-receptor activation decreased during the moth's activity phase (daytime-dependent receptor sensitization), but no numeric EC50 for this preparation is given in the excerpts (the only numeric EC50 cited, 3 x 10–8 M, is for D. melanogaster DmOA2).
+> Octopamine stimulates cAMP production in hawkmoth antennae via a direct Emax mechanism, with EC50 values of 234.5 nM and 703.5 nM and maximal cAMP levels of 187.8 pmol/mg and 191.2 pmol/mg.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Schendzielorz_2015`
 - **model family:** `emax`
@@ -48,32 +48,21 @@ Schendzielorz T et al., Octopamine regulates antennal sensory n…, PloS one (20
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (4/20 fields) | 16 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 
-<details><summary>16 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 87.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 81.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 153.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 146.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | not captured | 143.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | not captured | 8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 111.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 95.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q75]` | not captured | 95.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q75]` | not captured | 8 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | emax | sigmoid_emax | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q320].value` | 191.2 | 191.2 pmol/mg | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q321]` | 703.5 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q322]` | not captured | 234.5 nM | only_one_extracted |
 
 </details>
 

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide enough information to describe the PD model: no excerpts are available, and the record only indicates that ramelteon dose was related to dropout rate without stating concentrations, mechanism, or parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zheng_2020`
 - **model family:** `unknown`
 - **driver:** `dose_only`

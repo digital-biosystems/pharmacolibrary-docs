@@ -4,7 +4,7 @@
 
 # disulfiram — `Disulfiram_Lee2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The disulfiram record was held back because its model structure is nonlinear — the metabolism links from disulfiram to DDTC and from DDTC to DDTC-Me use Vmax/Km (nonlinear) rather than linear clearance parameters.**
+
+The record describes disulfiram (Antabuse) in HIV+ ART-suppressed adults with a four-step metabolite cascade (DDTC, DDTC-Me, DETC-MeSO, carbamathione), where the first two metabolism steps are specified as Vmax/Km (nonlinear) links. Only parent parameters were extracted: CL 0.53 L/hr, V 1.3 L, and absorption rate constant kabs 0.08 hr−1; no values exist for the metabolite compartments (each has n_cmt 0) or the link parameters. This nonlinear topology falls outside the model structures that can be built, so the record was marked needs_review rather than published. Extracted — disulfiram: CL 0.53 L/hr, V 1.3 L, kabs 0.08 hr−1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has disulfiram → ddtc (m1) (metabolism); ddtc (m1) → ddtc-me (m2) (metabolism); ddtc-me (m2) → detc-meso (m3) (metabolism) …, the second reading disulfiram → n,n-diethyldithiocarbamate (ddtc) (metabolism); n,n-diethyldithiocarbamate (ddtc) → diethyldithiocarbamate-methyl ester (ddtc-me) (metabolism); diethyldithiocarbamate-methyl ester (ddtc-me) → s-methyl-n,n-diethylthiolcarbamate sulfoxide (detc-meso) (metabolism) …. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Lee SA et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacology and t… (2019)
@@ -80,6 +88,27 @@ Lee SA et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacology
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.857 (6/7 fields) | 1 |
+
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['disulfiram', 'ddtc (m1)', 'metabolism'], ['ddtc (m1)', 'ddtc-me (m2)', 'metabolism'], ['ddtc-me (m2)', 'detc-meso (m3)', 'metabolism'], ['detc-meso (m3)', 'carbamathione (m4)', 'metabolism']] | [['disulfiram', 'n,n-diethyldithiocarbamate (ddtc)', 'metabolism'], ['n,n-diethyldithiocarbamate (ddtc)', 'diethyldithiocarbamate-methyl ester (ddtc-me)', 'metabolism'], ['diethyldithiocarbamate-methyl ester (ddtc-me)', 's-methyl-n,n-diethylthiolcarbamate sulfoxide (detc-meso)', 'metabolism'], ['s-methyl-n,n-diethylthiolcarbamate sulfoxide (detc-meso)', 'carbamathione', 'metabolism']] | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

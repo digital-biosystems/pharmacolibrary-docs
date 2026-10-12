@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Dao_2020_cell_growth_inhibition](drugs/drug_plicamycin/pd_Dao_2020_cell_growth_inhibition.md) | cell growth inhibition ← plicamycin · direct sigmoid Emax (Hill) effect | — | Dao Trong P et al., Large-Scale Drug Screening in Patient-D…, Cells (2020) | [10.3390/cells9061389](https://doi.org/10.3390/cells9061389) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Dao_2020_cell_growth_inhibition](drugs/drug_plicamycin/pd_Dao_2020_cell_growth_inhibition.md) | cell growth inhibition ← plicamycin · direct sigmoid Emax (Hill) effect | — | Dao Trong P et al., Large-Scale Drug Screening in Patient-D…, Cells (2020) | [10.3390/cells9061389](https://doi.org/10.3390/cells9061389) |
 
 ## ADME sites
 

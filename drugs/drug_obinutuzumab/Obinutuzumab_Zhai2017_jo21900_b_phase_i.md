@@ -4,7 +4,7 @@
 
 # obinutuzumab — `Obinutuzumab_Zhai2017_jo21900_b_phase_i`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.9). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7), gpt-oss:120b (partly confirmed, agreement 0.9). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of obinutuzumab dose: this record has none, the second reading 601. That field does not shape the model.
+**The steady-state clearance parameter for obinutuzumab was rejected due to a dimension mismatch and a missing dose value.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The record lists a steady-state clearance of 0.584 L/day, which failed a dimensional consistency check. Additionally, the dose parameter is null in this record, whereas a second reader identified a value of 601. This missing dose value prevented the calculation of dose-normalized metrics and contributed to the rejection. Extracted — obinutuzumab: Cmax 0.751 μg ml−1, Cmax/dose 416 μg ml−1 mg−1, Ctrough 0.52 μg ml−1, AUCt 11.4 day·μg ml−1, AUC/dose 9.35 day·μg ml−1 mg−1, CL 0.584 L/day.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has obinutuzumab, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Zhai J et al., Pharmacokinetics of obinutuzumab in Chi…, British journal of clinical… (2017)
@@ -84,17 +88,21 @@ Zhai J et al., Pharmacokinetics of obinutuzumab in Chi…, British journal of cl
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 | `gpt-oss:120b` | partly confirmed | 0.9 (9/10 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clss]` | 0.584 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | obinutuzumab | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | obinutuzumab | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[obinutuzumab dose]` | not captured | 601 | only_one_extracted |
 
 </details>

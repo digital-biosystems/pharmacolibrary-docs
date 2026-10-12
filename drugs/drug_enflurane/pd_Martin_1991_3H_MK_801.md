@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Enflurane inhibits glutamate-stimulated [3H]MK-801 binding, with the record describing a sigmoid Emax model mechanism. The stated potency value is an IC50 of 0.4 mM, but the paper does not provide full text to confirm the specific functional form or additional rate parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Martin_1991`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

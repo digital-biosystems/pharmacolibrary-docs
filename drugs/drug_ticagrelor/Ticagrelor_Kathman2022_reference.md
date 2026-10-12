@@ -5,7 +5,7 @@
 
 # ticagrelor — `Ticagrelor_Kathman2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.195). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,6 +20,8 @@
 **Rejected: the record is not a compartmental population PK model for ticagrelor/PB2452 — it reports no distribution volume and no clearance or elimination rate — and the association rate constant kon carries the unit 'THETA2', a dimension mismatch on a structural parameter.**
 
 The paper (Kathman_2022, healthy volunteers, PB2452 measured) is an exposure/outcome study: no volume of distribution and no clearance or elimination parameter exist for the model, so it fails the requirement of being a compartmental population PK model. A dimension check also failed on a structural parameter: kon, the second-order association rate constant for drug-target binding, is labelled 'Kon (nmol−1 × h−1) = EXP(THETA2)' but its unit is recorded as 'THETA2', which does not match the expected dimensions. The parameter list mixes ticagrelor parameters (CL/F = EXP(2.81) L/h, V1/F = EXP(5.04) L, V2/F = EXP(4.02) L, Q3/F = EXP(2.34) L/h) with metabolite parameters (CL = EXP(THETA11 + THETA10*(LOG(WT)−4.35)) L/h, V1 = EXP(1.95) L, V2 = EXP(3.74) L, Q = EXP(−0.765) L/h), while Q2 carries the value 1.05 under a THETA2 label, consistent with the kon/THETA2 confusion. Extracted — ticagrelor: Q2 1.05.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ticagrelor, PB2452, the second reading unknown; it also differs on 32 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -150,6 +152,59 @@ Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometr
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.195 (8/41 fields) | 33 |
+
+<details><summary>33 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['ticagrelor', 'tam', 'metabolism']] | [['ticagrelor', 'ticagrelor metabolite', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f (l/h) = exp(2.81) clearance of tica]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f (l/h) = exp(2.81) clearance of tica]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl_ant (l/h) = exp(0.631) clearance of pb2452]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm (l/h) = exp(theta11 + theta10*(log(wt)-4.35)) clearance of tam]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm (l/h) = exp(theta11 + theta10*(log(wt)-4.35)) clearance of tam]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[koff2 = kon*kd2].parameter_id` | Q900 | Q330 | mismatch |
+| `gpt-oss-120b` | `parameters[q1/f l (h) = exp(2.34) intercompartmental clearance of tica]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q1/f l (h) = exp(2.34) intercompartmental clearance of tica]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q2m (l/h) = exp(1.48) intercompartment clearance of tam]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q_ant (l/h) = exp(-0.765) intercompartmental clearance of pb2452]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q_ant (l/h) = exp(-0.765) intercompartmental clearance of pb2452]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta2]` | 1.05 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta3]` | not captured | -0.770 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta4]` | not captured | 1.24 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta6]` | not captured | 2.98 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q45_category]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q45_category]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q49_category]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q49_category]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1 (l) = exp]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f (l) = exp(5.04) central volume of tica]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f (l) = exp(5.04) central volume of tica]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f (l) = exp(4.02) peripheral volume of tica]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f (l) = exp(4.02) peripheral volume of tica]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v_ant (l) = exp(1.05) central volume of pb2452]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v_ant_perp (l) = exp(1.28) peripheral volume of pb2452]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vm1 (l) = exp(1.95) central volume of tam]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vm1 (l) = exp(1.95) central volume of tam]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vm2 (l) = exp(3.74) peripheral volume of tam]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vm2 (l) = exp(3.74) peripheral volume of tam]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | ticagrelor, PB2452 | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | PB2452 | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

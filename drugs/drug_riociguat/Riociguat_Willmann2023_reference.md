@@ -5,7 +5,7 @@
 
 # riociguat — `Riociguat_Willmann2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[apparent clearance of riociguat].value`: this record has 2.2, the second reading 2.08. That field shapes the model, so the record is marked disputed.
+**Only clearance was extracted — no volume.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — riociguat: CL/F 2.2 L/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has riociguat, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Willmann S et al., Population pharmacokinetics of riocigua…, Pediatric pulmonology (2023)
@@ -62,17 +66,22 @@ Willmann S et al., Population pharmacokinetics of riocigua…, Pediatric pulmono
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.8 (4/5 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[apparent clearance of riociguat]` | 2.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent clearance]` | not captured | 2.08 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | riociguat | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | riociguat | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[apparent clearance of riociguat].value` | 2.2 | 2.08 | mismatch |
 
 </details>

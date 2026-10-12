@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bischoff_2000_HERG](drugs/drug_sparfloxacin/pd_Bischoff_2000_HERG.md) | HERG outward currents ← sparfloxacin · direct Emax (saturable) effect | — | Bischoff U et al., Effects of fluoroquinolones on HERG cur…, European journal of pharmac… (2000) | [10.1016/s0014-2999(00)00693-2](https://doi.org/10.1016/s0014-2999(00)00693-2) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bischoff_2000_HERG](drugs/drug_sparfloxacin/pd_Bischoff_2000_HERG.md) | HERG outward currents ← sparfloxacin · direct Emax (saturable) effect | — | Bischoff U et al., Effects of fluoroquinolones on HERG cur…, European journal of pharmac… (2000) | [10.1016/s0014-2999(00)00693-2](https://doi.org/10.1016/s0014-2999(00)00693-2) |
 
 ## ADME sites
 

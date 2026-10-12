@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that articaine causes a continuous nerve block through an inhibitory effect, but the paper excerpts are unavailable. Consequently, no specific mechanism (e.g., Emax, effect compartment) or potency and rate values (e.g., IC50, Emax, ke0) can be provided.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stankovicová_1993`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

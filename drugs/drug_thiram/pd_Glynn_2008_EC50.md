@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Thiram (with carboxin) inhibits in vitro growth of Microdochium isolates, with an EC50 of 22.8 mg L(-1); the paper excerpts do not describe the mechanism or model beyond this potency value.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Glynn_2008`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

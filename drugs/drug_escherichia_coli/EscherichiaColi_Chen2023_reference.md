@@ -5,7 +5,7 @@
 
 # escherichia coli — `EscherichiaColi_Chen2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.462). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.462), gpt-oss:120b (partly confirmed, agreement 0.462). The first reading is what the record holds.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — escherichia coli: CL 447 mL/h/kg, V 6.59e+03 mL/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q20: this record has 49.94, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q20: this record has 49.94, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -62,17 +62,25 @@ Chen JC et al., Pharmacokinetics of Danofloxacin in Gus…, Metabolites (2023)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.462 (6/13 fields) | 7 |
 | `gpt-oss:120b` | partly confirmed | 0.462 (6/13 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q20]` | 49.94 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 446.86 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q53]` | 10.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q61]` | 6590.63 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q65]` | 3035.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q73]` | 3.15 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q84]` | 2.34 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q20]` | 49.94 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q22]` | 446.86 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q53]` | 10.2 | not captured | only_one_extracted |

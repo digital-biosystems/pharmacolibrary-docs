@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record classifies the model as a sigmoid Emax model where ixekizumab acts as an inhibitor on the categorical response PASI 75. No mechanism, potency, or rate parameters are provided in the paper excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

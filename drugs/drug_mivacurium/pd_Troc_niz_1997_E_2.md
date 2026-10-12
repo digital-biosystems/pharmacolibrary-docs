@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Mivacurium concentrations (in microgram mL-1) inhibit evoked tibialis anterior muscle tension via a sigmoid Emax model, characterized by a C50 of 0.57 microgram mL-1.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Trocóniz_1997`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

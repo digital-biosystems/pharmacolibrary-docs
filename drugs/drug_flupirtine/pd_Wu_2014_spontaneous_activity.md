@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes an Emax model where flupirtine concentrations (in µM) inhibit spontaneous activity with an EC50 of 4.0 µM. Because no full text is available, the specific mechanism of inhibition (e.g., production vs. elimination) is not stated.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2014`
 - **model family:** `emax`
 - **driver:** `cited_pk`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pralidoxime concentration (mg/l) drives whole-blood cholinesterase activity (diethylparaoxon-inactivated, in vitro reactivation) in an indirect response model (type III) with a stimulatory effect; the paper reports an EC50 of 4.67 mg/l, and the excerpts do not state further mechanism details or additional parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Houzé_2010`
 - **model family:** `indirect_response_iii`
 - **driver:** `conc_no_pk`

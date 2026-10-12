@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts describing the mechanism; based on the record, deltamethrin brain concentration drives inhibition of motor activity via a sigmoid Emax model, but no potency (IC50, Emax, gamma) or rate values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Starr_2012`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;etodolac&quot;,&quot;href&quot;:&quot;drugs/drug_etodolac/&quot;},{&quot;label&quot;:&quot;Boni_1999 \u00b7 PD pain intensity difference scores&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etodolac_de2017_reference&quot;,&quot;label&quot;:&quot;de_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etodolac/Etodolac_de2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etodolac_de2017_reference&quot;,&quot;label&quot;:&quot;de_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etodolac/Etodolac_de2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pain intensity difference scores — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -17,6 +17,10 @@
 **As extracted:** Etodolac (concentrations from this paper's PK model) drives pain intensity difference scores: indirect response — drug inhibits the production of pain intensity difference scores.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> The model posits that etodolac concentrations inhibit the turnover of pain intensity difference scores via an indirect response mechanism with a Hill coefficient of 3.34, an IC50 of 14.0 mg/L, and a baseline turnover rate (kout) of 1.62 h-1. The provided record does not specify whether the drug inhibits the production or elimination of the response, nor is full text available to clarify this mechanistic distinction.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Boni_1999`
 - **model family:** `indirect_response_i`

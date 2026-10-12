@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> (-)-Reboxetine concentration-dependently inhibits (±)-epibatidine-induced Ca2+ influx in human adult muscle AChR (hα1β1εδ), described by a sigmoid Emax inhibition model with IC50 = 1.92 ± 0.48 μM; the paper excerpts do not state Emax, gamma, or the mechanism beyond this inhibitory concentration–response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Arias_2013`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Chlorpromazine brain concentration (picomoles/cc3, from the cited PK model) acts on the metric tensor component of perceived visual space via a sigmoid (Hill) Emax-type inhibitory relationship, with a half-effect concentration of 4.96 picomoles/cc3 and a Hill coefficient of 50.3 (units as stated). The paper describes the mechanism only as a Hill-equation modulation index of visual-spatial perception and does not explicitly state a production/elimination inhibition mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Purohit_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

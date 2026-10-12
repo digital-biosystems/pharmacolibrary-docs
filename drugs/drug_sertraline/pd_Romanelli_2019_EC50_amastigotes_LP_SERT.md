@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Liposomal sertraline (LP-SERT) concentrations (μM) inhibit intracellular amastigotes of L. (L.) infantum in infected macrophages, with a sigmoid Emax-type concentration–response giving an EC50 of 2.5 ± 1.6 μM; the paper does not state a mechanism beyond this inhibitory effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Romanelli_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

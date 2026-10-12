@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a full text to specify the mechanism of action or provide numerical parameter values (such as Imax, IC50, or rate constants) for the effect of codeine on NMDA neurotoxicity. The record indicates a cited PK driver in microM, but without the source text, the specific model structure and potency cannot be described.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Choi_1988`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

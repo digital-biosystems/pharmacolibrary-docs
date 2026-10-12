@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Remibrutinib directly inhibits Fc receptor-mediated TNFα secretion in human iPSC-derived microglia via a sigmoidal Emax mechanism, with a reported IC50 of 1.1 nM. The paper does not specify distinct kinetic parameters (e.g., ke0) for this concentration-response relationship.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nuesslein-Hildesheim_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

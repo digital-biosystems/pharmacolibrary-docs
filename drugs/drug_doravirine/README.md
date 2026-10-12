@@ -33,7 +33,7 @@ Doravirine is an antiviral medicine used to treat HIV infections, acting as a no
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Thoueille_2024_reference](drugs/drug_doravirine/Doravirine_Thoueille2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 (+1 cov.) | Thoueille P et al., Population pharmacokinetic analysis of…, British journal of clinical… (2024) | [10.1111/bcp.15975](https://doi.org/10.1111/bcp.15975) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Thoueille_2024_reference](drugs/drug_doravirine/Doravirine_Thoueille2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 (+1 cov.) | Thoueille P et al., Population pharmacokinetic analysis of…, British journal of clinical… (2024) | [10.1111/bcp.15975](https://doi.org/10.1111/bcp.15975) |
 
 ## ADME sites
 

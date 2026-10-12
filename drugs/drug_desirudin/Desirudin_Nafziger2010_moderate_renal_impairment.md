@@ -4,7 +4,7 @@
 
 # desirudin — `Desirudin_Nafziger2010_moderate_renal_impairment`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record lists desirudin parameters including a volume of distribution of 27.3 L and rate constants in h-1. The review identified a dimension mismatch on a structural parameter due to a unit that could not be converted to SI. Consequently, the parameter lacked a valid SI value, leading to the rejection of the record. Extracted — desirudin: λ1 0.25 h-1, kel 0.03 h-1, V 27.3 L, kabs 0.63 h-1, k12 0.014 h-1, k21 0.03 h-1.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of measured clcr: this record has none, the second reading 31. That field does not shape the model.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -80,14 +80,21 @@ Nafziger AN et al., Desirudin dosing and monitoring in mode…, Journal of clini
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.909 (10/11 fields) | 1 |
 | `gpt-oss:120b` | confirmed | 1.0 (10/10 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[measured clcr]` | not captured | 31 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

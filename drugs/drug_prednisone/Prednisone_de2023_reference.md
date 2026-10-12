@@ -5,7 +5,7 @@
 
 # prednisone — `Prednisone_de2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5), gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The value 27.6 L/h is defined as CLm/F, the apparent clearance of the metabolite prednisolone formed from prednisone, but its verbatim label describes the unbound clearance (CLu) and volume of distribution of free prednisolone allometrically scaled to 70 kg, so the parameter's meaning and its label do not match dimensionally. A second reader also extracted a volume of distribution of free prednisolone of 101 that is absent from this record, and the two readers disagreed on how the ciclosporin cotreatment effect on CLu (67%) and the 27.6 L/h clearance were assigned. The record was additionally built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — prednisolone: CLm/F 27.6 L/h, CLu 67 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ciclosporin cotreatment decreased clu: this record has none, the second reading 67; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has none, the second reading 27.6; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -70,17 +70,22 @@ de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 | `gpt-oss:120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[ciclosporin cotreatment decreased clu by]` | 67 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | 27.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the clearance (clu ) and volume of distribution of free prednisolone allometrically scaled to 70 kg]` | 27.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution of free prednisolone allometrically scaled to 70 kg]` | not captured | 101 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ciclosporin cotreatment decreased clu by]` | 67 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ciclosporin cotreatment decreased clu]` | not captured | 67 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | not captured | 27.6 | only_one_extracted |

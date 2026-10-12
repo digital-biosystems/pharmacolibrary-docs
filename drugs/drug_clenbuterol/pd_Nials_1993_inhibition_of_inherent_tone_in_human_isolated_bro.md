@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clenbuterol concentration (nM) is related to inhibition of inherent tone in human isolated bronchial smooth muscle via an Emax-type model; the paper excerpts provide no mechanism details and no potency or rate parameter values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nials_1993`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

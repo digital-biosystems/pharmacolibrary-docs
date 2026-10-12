@@ -28,8 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hull_1994_Estrogen_status](drugs/drug_nafarelin/pd_Hull_1994_Estrogen_status.md) | Estrogen status ← nafarelin · model not identified | — | Hull ME et al., Nafarelin in the treatment of endometri…, Gynecologic and obstetric i… (1994) | [10.1159/000292574](https://doi.org/10.1159/000292574) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Swerdloff_1986_spermatogenesis](drugs/drug_nafarelin/pd_Swerdloff_1986_spermatogenesis.md) | spermatogenesis ← Nafarelin · inhibition effect | — | Swerdloff RS et al., Gonadotropin releasing hormone (GnRH) a…, Medical biology (1986) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Hull_1994_Estrogen_status](drugs/drug_nafarelin/pd_Hull_1994_Estrogen_status.md) | Estrogen status ← nafarelin · model not identified | — | Hull ME et al., Nafarelin in the treatment of endometri…, Gynecologic and obstetric i… (1994) | [10.1159/000292574](https://doi.org/10.1159/000292574) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Swerdloff_1986_spermatogenesis](drugs/drug_nafarelin/pd_Swerdloff_1986_spermatogenesis.md) | spermatogenesis ← Nafarelin · inhibition effect | — | Swerdloff RS et al., Gonadotropin releasing hormone (GnRH) a…, Medical biology (1986) | — |
 
 ## ADME sites
 

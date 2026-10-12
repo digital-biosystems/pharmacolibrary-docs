@@ -30,7 +30,7 @@ Glycerol is used to treat constipation, and has also been used for dermatitis. I
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Huber_1990_haemodynamic_effects](drugs/drug_glycerol/pd_Huber_1990_haemodynamic_effects.md) | haemodynamic effects ← glycerol trinitrate · direct Emax (saturable) effect | — | Huber T et al., Bioaequivalence of sublingual glycerol…, Arzneimittel-Forschung (1990) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Huber_1990_haemodynamic_effects](drugs/drug_glycerol/pd_Huber_1990_haemodynamic_effects.md) | haemodynamic effects ← glycerol trinitrate · direct Emax (saturable) effect | — | Huber T et al., Bioaequivalence of sublingual glycerol…, Arzneimittel-Forschung (1990) | — |
 
 ## ADME sites
 

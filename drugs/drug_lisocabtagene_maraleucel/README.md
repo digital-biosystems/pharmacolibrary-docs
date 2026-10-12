@@ -23,7 +23,7 @@ Lisocabtagene maraleucel is a cell and gene therapy used to treat certain B-cell
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Ogasawara_2021_reference](drugs/drug_lisocabtagene_maraleucel/LisocabtageneMaraleucel_Ogasawara2021_reference.md) | — | 1-compartment (no model) | 4 | Ogasawara K et al., Population Cellular Kinetics of Lisocab…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01039-5](https://doi.org/10.1007/s40262-021-01039-5) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Ogasawara_2021_reference](drugs/drug_lisocabtagene_maraleucel/LisocabtageneMaraleucel_Ogasawara2021_reference.md) | — | 1-compartment (no model) | 4 | Ogasawara K et al., Population Cellular Kinetics of Lisocab…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01039-5](https://doi.org/10.1007/s40262-021-01039-5) |
 
 ## ADME sites
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H03B&quot;,&quot;href&quot;:&quot;atc/H03B.md&quot;},{&quot;label&quot;:&quot;propylthiouracil&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propylthiouracil_Gwka2018_reference&quot;,&quot;label&quot;:&quot;G\u0142\u00f3wka_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propylthiouracil/Propylthiouracil_Gwka2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propylthiouracil_Gwka2018_reference&quot;,&quot;label&quot;:&quot;G\u0142\u00f3wka_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propylthiouracil/Propylthiouracil_Gwka2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # propylthiouracil
 
@@ -27,20 +27,20 @@ Propylthiouracil is an antithyroid medicine used to treat hyperthyroidism, goite
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:48 | 1:17 | 1/1/0 | 1/0/0 | 0/0/0 | 78,227/8,236 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-07 09:48 | 1:17 | 0/1/1 | 1/0/0 | 0/0/0 | 78,227/8,236 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Główka_2018_reference](drugs/drug_propylthiouracil/Propylthiouracil_Gwka2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Główka FK et al., Bioavailability of propylthiouracil fro…, Die Pharmazie (2018) | [10.1691/ph.2018.8552](https://doi.org/10.1691/ph.2018.8552) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Okuno_1983_reference](drugs/drug_propylthiouracil/Propylthiouracil_Okuno1983_reference.md) | — | 1-compartment (no model) | 1 | Okuno A et al., Pharmacokinetics of propylthiouracil in…, Pediatric pharmacology (New… (1983) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Główka_2018_reference](drugs/drug_propylthiouracil/Propylthiouracil_Gwka2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Główka FK et al., Bioavailability of propylthiouracil fro…, Die Pharmazie (2018) | [10.1691/ph.2018.8552](https://doi.org/10.1691/ph.2018.8552) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Okuno_1983_reference](drugs/drug_propylthiouracil/Propylthiouracil_Okuno1983_reference.md) | — | 1-compartment (no model) | 1 | Okuno A et al., Pharmacokinetics of propylthiouracil in…, Pediatric pharmacology (New… (1983) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Soto_2018_taste_aversion](drugs/drug_propylthiouracil/pd_Soto_2018_taste_aversion.md) | taste aversion ← propylthiouracil · model not identified | — | Soto J et al., Rats can predict aversiveness of Active…, European journal of pharmac… (2018) | [10.1016/j.ejpb.2018.09.027](https://doi.org/10.1016/j.ejpb.2018.09.027) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Soto_2018_taste_aversion](drugs/drug_propylthiouracil/pd_Soto_2018_taste_aversion.md) | taste aversion ← propylthiouracil · model not identified | — | Soto J et al., Rats can predict aversiveness of Active…, European journal of pharmac… (2018) | [10.1016/j.ejpb.2018.09.027](https://doi.org/10.1016/j.ejpb.2018.09.027) |
 
 ## ADME sites
 
@@ -65,7 +65,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 18 matched, 18 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

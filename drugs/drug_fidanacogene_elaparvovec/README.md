@@ -29,7 +29,7 @@ Fidanacogene elaparvovec is a gene therapy used to treat hemophilia B. It is an 
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wojciechowski_2025_FIX](drugs/drug_fidanacogene_elaparvovec/pd_Wojciechowski_2025_FIX.md) | FIX activity ← fidanacogene elaparvovec · direct linear effect | — | Wojciechowski J et al., Population Modeling of Factor IX Activi…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01535-y](https://doi.org/10.1007/s40262-025-01535-y) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> | [Wojciechowski_2025_FIX](drugs/drug_fidanacogene_elaparvovec/pd_Wojciechowski_2025_FIX.md) | FIX activity ← fidanacogene elaparvovec · direct linear effect | — | Wojciechowski J et al., Population Modeling of Factor IX Activi…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01535-y](https://doi.org/10.1007/s40262-025-01535-y) |
 
 ## ADME sites
 

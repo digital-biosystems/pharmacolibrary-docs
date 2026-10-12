@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Nalfurafine concentration-dependently inhibits forskolin-stimulated intracellular cAMP (GloSensor® assay, % inhibition) in HEK293 cells expressing κOR, acting as a full κOR agonist via G-protein-mediated signaling; the paper does not describe a kinetic mechanism beyond a direct concentration-dependent inhibitory Emax model, with Emax = 100.00 ± 1.74 % and log EC50 = −10.09 ± 0.06 M.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yamaguchi_2022`
 - **model family:** `emax`
 - **driver:** `not_resolved`

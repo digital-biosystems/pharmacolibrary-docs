@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N04B&quot;,&quot;href&quot;:&quot;atc/N04B.md&quot;},{&quot;label&quot;:&quot;amantadine&quot;,&quot;href&quot;:&quot;drugs/drug_amantadine/&quot;},{&quot;label&quot;:&quot;Aoki_1985 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amantadine_Jaber2021_reference&quot;,&quot;label&quot;:&quot;Jaber_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amantadine/Amantadine_Jaber2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amantadine_Ohk2022_reference&quot;,&quot;label&quot;:&quot;Ohk_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amantadine/Amantadine_Ohk2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amantadine_Riley2026_reference&quot;,&quot;label&quot;:&quot;Riley_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amantadine/Amantadine_Riley2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amantadine_Jaber2021_reference&quot;,&quot;label&quot;:&quot;Jaber_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amantadine/Amantadine_Jaber2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amantadine_Ohk2022_reference&quot;,&quot;label&quot;:&quot;Ohk_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amantadine/Amantadine_Ohk2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amantadine_Riley2026_reference&quot;,&quot;label&quot;:&quot;Riley_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amantadine/Amantadine_Riley2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amantadine — `Amantadine_Aoki1985_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.286), gpt-oss:120b (partly confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of median ratio of renal amantadine clearance to creatinine clearance: this record has none, the second reading 2.07; it also differs on 6 more fields. That field does not shape the model.
+**This paper's disposition core is incomplete; cL_ratio has no unit.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Jaber_2021) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — amantadine: t1/2z 28.9 hr, fe 88 %, CL_ratio 2.07, CL 22.6 L/h/70 kg, V 38.9 L/70 kg, kabs 3.3 h−1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 22.6, the second reading none; it also differs on 9 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Aoki FY et al., Amantadine kinetics in healthy elderly…, Clinical pharmacology and t… (1985)
@@ -67,17 +71,28 @@ Aoki FY et al., Amantadine kinetics in healthy elderly…, Clinical pharmacology
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.286 (4/14 fields) | 10 |
 | `gpt-oss:120b` | partly confirmed | 0.364 (4/11 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl]` | 22.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 3.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median ratio of renal amantadine clearance to creatinine clearance]` | not captured | 2.07 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median t1/2]` | not captured | 28.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peak concentration time after dosing]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ratio of renal amantadine clearance to creatinine clearance]` | 2.07 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[recovery of single doses in urine]` | not captured | 88 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[recovery of the single doses in urine]` | 88 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 28.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | 38.9 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[median ratio of renal amantadine clearance to creatinine clearance]` | not captured | 2.07 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[median t1/2]` | not captured | 28.9 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[peak concentration occurred]` | not captured | not captured | only_one_extracted |

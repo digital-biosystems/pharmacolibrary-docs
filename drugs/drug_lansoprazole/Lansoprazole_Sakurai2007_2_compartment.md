@@ -5,7 +5,7 @@
 
 # lansoprazole — `Lansoprazole_Sakurai2007_2_compartment`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444), gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record for lansoprazole (Sakurai_2007, healthy Japanese males) reports only intercompartmental clearances — Q at 0.110 L/kg between central and peripheral compartments and Q3 at 0.612 between central and the third compartment — with no distribution volume and no clearance or elimination, consistent with an exposure/outcome paper rather than a compartmental population PK model. The Q value is given per kilogram (L/kg), a dimension mismatch on a structural parameter, and that unit could not be converted to SI. A second reader also disagreed on the parameterization (mechanistic versus apparent) and on several parameter values, reading q 2 = 0.154 and q 3 = 0.547 where this record had none, and q 1 = 0.181 and q 5 = 0.179 where this record had 0.110 and 0.612 for q 1 and q 3. Extracted — lansoprazole: Q 0.11 l/kg, Q3 0.612.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q 5: this record has none, the second reading 0.201. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lansoprazole, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -80,17 +80,23 @@ Sakurai Y et al., Population pharmacokinetics and proton…, Biological & pharma
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 | `gpt-oss:120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl]` | 4.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q 5]` | not captured | 0.201 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 11.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | lansoprazole | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | lansoprazole | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[q 5]` | not captured | 0.201 | only_one_extracted |
 
 </details>

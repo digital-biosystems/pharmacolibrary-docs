@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not report a fitted sigmoid Emax concentration-response model or specific plasma EC50 for retigabine, stating only that it produced a 50% reduction in the fraction seizing at the highest dose (35 mg/kg) in mice without expanding the curve. The record's EC50 value of 2.26 µM is not present in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bettio_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

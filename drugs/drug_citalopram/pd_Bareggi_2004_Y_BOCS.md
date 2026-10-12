@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Citalopram plasma concentrations (microg/L) act on the Y-BOCS score via a sigmoid Emax inhibitory model, with an EC50 of 152 microg/L; the paper excerpts do not state the mechanism, Emax, gamma, or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bareggi_2004`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;mirogabalin&quot;,&quot;href&quot;:&quot;drugs/drug_mirogabalin/&quot;},{&quot;label&quot;:&quot;Wu_2022 \u00b7 PD sustained (late) INa (INa(L))&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mirogabalin_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mirogabalin/Mirogabalin_Li2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mirogabalin_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mirogabalin/Mirogabalin_Li2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sustained (late) INa (INa(L)) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
@@ -20,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Mirogabalin concentration (0.3–100 μM) directly inhibits the sustained (late) sodium current (INa(L)) in GH3 cells via a sigmoidal Emax model, with an IC50 of 7.3 μM. The paper does not specify a distinct kinetic mechanism (e.g., effect compartment or production/elimination rates) for this direct concentration-dependent block.
+> The paper describes a concentration-dependent inhibitory effect of mirogabalin on the sustained sodium current (INa(L)) in GH3 cells, characterized as a direct block of the channel that likely destabilizes the open conformation rather than acting on production or elimination kinetics. The concentration-response relationship was fit with a three-parameter logistic model yielding an IC50 of 7.3 μM, with no Imax or kinetic rate constants provided in the text.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Wu_2022`
 - **model family:** `sigmoid_emax`

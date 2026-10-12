@@ -5,7 +5,7 @@
 
 # etofylline nicotinate — `EtofyllineNicotinate_Lcker1980_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125), gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has etofylline clofibrate → etofylline (hydrolysis); etofylline clofibrate → clofibric acid (hydrolysis), the second reading etofylline clofibrate → clofibric acid (metabolism); etofylline clofibrate → etofylline (metabolism); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+**The record lacks distribution volume and clearance, and the etofylline metabolite is unreachable from the dose.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The paper is an exposure/outcome study that reports no distribution volume or clearance, so it is not a compartmental population PK model. The etofylline metabolite is defined as formed from etofylline clofibrate, but no dose is administered to that parent compound, leaving the metabolite unreachable. The record was built from the abstract alone, so summary statistics stand in for a fitted model. Extracted — etofylline nicotinate: t1/2z 12.1 h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etofylline clofibrate, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 > **Dose compound ≠ measured compound:** dosed `etofylline clofibrate`, measured `etofylline`.
 
@@ -66,17 +70,25 @@ Lücker PW et al., [Metabolism and pharmacokinetics of eto…, Arzneimittel-Fors
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.125 (1/8 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.667 (4/6 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['etofylline clofibrate', 'etofylline', 'hydrolysis'], ['etofylline clofibrate', 'clofibric acid', 'hydrolysis']] | [['etofylline clofibrate', 'clofibric acid', 'metabolism'], ['etofylline clofibrate', 'etofylline', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[elimination half-life]` | 12.12 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life]` | not captured | 12.12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life]` | not captured | 4.33 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[invasion half-life]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | etofylline clofibrate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | etofylline | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [['etofylline clofibrate', 'etofylline', 'hydrolysis'], ['etofylline clofibrate', 'clofibric acid', 'hydrolysis']] | [['etofylline clofibrate', 'clofibric acid', 'metabolism'], ['etofylline clofibrate', 'etofylline', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[invasion half-life]` | not captured | not captured | only_one_extracted |
 

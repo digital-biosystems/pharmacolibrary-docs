@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;lasmiditan&quot;,&quot;href&quot;:&quot;drugs/drug_lasmiditan/&quot;},{&quot;label&quot;:&quot;Tsai_2021 \u00b7 lasmiditan_geometric_mean_cv&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv&quot;,&quot;label&quot;:&quot;Tsai_2021_lasmiditan_geometric_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lasmiditan/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv&quot;,&quot;label&quot;:&quot;Tsai_2021_lasmiditan_geometric_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lasmiditan/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lasmiditan — `Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.952). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.263). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,16 +17,20 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ntr: this record has none, the second reading 25.3. That field does not shape the model.
+**The model does not reproduce the paper's time of the peak (tmax) (paper 1.5, model 4.3).**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax, AUClast and AUC∞), so that value has no SI equivalent. Extracted — lasmiditan: Cmax 426 ng/mL, AUClast 2.22e+03 ng*h/mL, AUC∞ 2.05e+03 ng*h/mL, CL/F 48.9 L/h, V/F 261 L, kabs 0.295 1/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of aucinf: this record has 2050, the second reading none; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Tsai M et al., Pharmacokinetics, Safety, and Tolerabil…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-020-00966-z](https://doi.org/10.1007/s40262-020-00966-z)
 
 ## Model component
-<dbs-pgx drug="lasmiditan" model-id="Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv" status="extracted" stale="false" population="pediatric patients with migraine" measured-compound="lasmiditan" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="lasmiditan" model-id="Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv" status="needs_review" stale="false" population="pediatric patients with migraine" measured-compound="lasmiditan" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.
@@ -34,6 +38,8 @@ Tsai M et al., Pharmacokinetics, Safety, and Tolerabil…, Clinical pharmacokine
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Cmax, ng/mL | `Q32` · Cmax | 426 | ng/mL | not captured | [ng] / [ml] | 46.7 | exact (1.0) | Tsai_2021_table_2:row1:col1, Tsai_2021_table_2:row1:col2 | — | not captured |
@@ -73,18 +79,31 @@ Tsai M et al., Pharmacokinetics, Safety, and Tolerabil…, Clinical pharmacokine
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.952 (20/21 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.263 (5/19 fields) | 14 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[ntr]` | not captured | 25.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aucinf]` | 2050 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auctlast]` | 2220 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | [] | ['additive_shift'] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f].rse_percent` | 38.4 | 22.7 | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f].value` | 48.9 | 107 | mismatch |
+| `gpt-oss-120b` | `parameters[cmax]` | 426 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka].rse_percent` | not captured | 0 | mismatch |
+| `gpt-oss-120b` | `parameters[mtt]` | not captured | 0.436 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f]` | not captured | 21.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_body_weight]` | not captured | 0.877 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v2_f_body_weight]` | not captured | 1.15 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f]` | not captured | 127 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3/f]` | not captured | 172 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vz/f]` | 261 | not captured | only_one_extracted |
 
 </details>
 
@@ -113,6 +132,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C9_phys_window_Q27 | pass | clearance within physiological range | 48.9 L/h | not captured | not captured | ['Tsai_2021_table_2:row6:col1'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 261 L | not captured | not captured | ['Tsai_2021_table_2:row7:col1'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=lasmiditan) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T1_t_half_beta | reference | pass | 4.0 | 3.888509166905623 | 0.9721 | h→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 4.0 | 3.888509166905623 | 0.9721 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.5 | 4.30060120240481 | 2.8671 | h→SI vs simulated h |
+| T1_tmax | reference | skipped | not captured | 4.30060120240481 | not captured | non-numeric value |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -121,6 +156,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_lasmiditan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tsai_2021` / `Tsai_2021::lasmiditan_geometric_mean_cv`)
+- model: `../../../knowledgebase/drugs/drug_lasmiditan/models/modelica/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv.mo`
+- deviation: `../../../knowledgebase/drugs/drug_lasmiditan/models/modelica/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_lasmiditan/models/modelica/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -132,7 +170,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lasmiditan/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv_modelica.zip" download>Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lasmiditan/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv_fmi.zip" download>Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lasmiditan/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv_matlab.zip" download>Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lasmiditan/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv_matlab_simbio.zip" download>Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lasmiditan/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv_matlab_simbio.zip" download>Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lasmiditan/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv_sbml.zip" download>Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lasmiditan/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv/Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv_cellml.zip" download>Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

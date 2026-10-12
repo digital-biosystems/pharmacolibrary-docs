@@ -5,7 +5,7 @@
 
 # irbesartan — `Irbesartan_Carlucci2013_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 2.30, the second reading 0.960; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 2.30, the second reading 0.96; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -58,17 +58,26 @@ Carlucci L et al., Pharmacokinetics and pharmacodynamics (…, Polish journal of
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q17]` | 2.30 | 0.96 | mismatch |
+| `gpt-oss-120b` | `values[Q22]` | 0.35 | 2.3 | mismatch |
+| `gpt-oss-120b` | `values[Q32]` | 0.439 | 2.83 | mismatch |
+| `gpt-oss-120b` | `values[Q352]` | 1.89 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` | 2.83 | 1.3 | mismatch |
+| `gpt-oss-120b` | `values[Q59]` | 0.38 | 1.89 | mismatch |
+| `gpt-oss-120b` | `values[Q60]` | 1.30 | 0.38 | mismatch |
+| `gpt-oss-120b` | `values[Q61]` | 2.54 | 0.35 | mismatch |
 | `gpt-oss:120b` | `values[Q17]` | 2.30 | 0.960 | mismatch |
 | `gpt-oss:120b` | `values[Q22]` | 0.35 | 2.30 | mismatch |
 | `gpt-oss:120b` | `values[Q32]` | 0.439 | 2.83 | mismatch |
@@ -133,7 +142,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_irbesartan/Irbesartan_Carlucci2013_reference/Irbesartan_Carlucci2013_reference_modelica.zip" download>Irbesartan_Carlucci2013_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_irbesartan/Irbesartan_Carlucci2013_reference/Irbesartan_Carlucci2013_reference_fmi.zip" download>Irbesartan_Carlucci2013_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_irbesartan/Irbesartan_Carlucci2013_reference/Irbesartan_Carlucci2013_reference_matlab.zip" download>Irbesartan_Carlucci2013_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_irbesartan/Irbesartan_Carlucci2013_reference/Irbesartan_Carlucci2013_reference_matlab_simbio.zip" download>Irbesartan_Carlucci2013_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_irbesartan/Irbesartan_Carlucci2013_reference/Irbesartan_Carlucci2013_reference_matlab_simbio.zip" download>Irbesartan_Carlucci2013_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_irbesartan/Irbesartan_Carlucci2013_reference/Irbesartan_Carlucci2013_reference_sbml.zip" download>Irbesartan_Carlucci2013_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_irbesartan/Irbesartan_Carlucci2013_reference/Irbesartan_Carlucci2013_reference_cellml.zip" download>Irbesartan_Carlucci2013_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

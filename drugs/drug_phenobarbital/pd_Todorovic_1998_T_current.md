@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Phenobarbital inhibits the T-type Ca2+ current via a sigmoid Emax model with an EC50 of 1. 7 mM and a Hill coefficient of 1.2. The provided excerpts do not state the specific kinetic mechanism.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Todorovic_1998`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

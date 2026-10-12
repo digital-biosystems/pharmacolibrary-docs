@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01G&quot;,&quot;href&quot;:&quot;atc/J01G.md&quot;},{&quot;label&quot;:&quot;plazomicin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Plazomicin_Kuti2019v2_reference&quot;,&quot;label&quot;:&quot;Kuti_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_plazomicin/Plazomicin_Kuti2019v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Plazomicin_Trang2019v2_geometric_mean_value_cv_d&quot;,&quot;label&quot;:&quot;Trang_2019_2_geometric_mean_value_cv_d&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Plazomicin_Kuti2019v2_reference&quot;,&quot;label&quot;:&quot;Kuti_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_plazomicin/Plazomicin_Kuti2019v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Plazomicin_Trang2019v2_geometric_mean_value_cv_d&quot;,&quot;label&quot;:&quot;Trang_2019_2_geometric_mean_value_cv_d&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # plazomicin
 
@@ -27,16 +27,15 @@ Plazomicin is an aminoglycoside antibacterial used to treat serious bacterial in
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:59 | 2:11 | 2/0/2 | 0/0/0 | 0/0/0 | 147,828/7,523 | einfracz / qwen3.8-27b | 12 | 0/2 | 2/0 | 0 |
+| 2026-10-07 15:59 | 2:11 | 2/0/1 | 0/0/0 | 0/0/0 | 147,828/7,523 | einfracz / qwen3.8-27b | 12 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kuti_2019_2_reference](drugs/drug_plazomicin/Plazomicin_Kuti2019v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kuti JL et al., Evaluation of Plazomicin, Tigecycline,…, Infectious diseases and the… (2019) | [10.1007/s40121-019-0251-4](https://doi.org/10.1007/s40121-019-0251-4) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Trang_2019_2_geometric_mean_value_cv_d](drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.md) | ▶ model + simulator | 1-compartment, IV | 9 | Trang M et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Trang_2019_2_final_model](drugs/drug_plazomicin/Plazomicin_Trang2019v2_final_model.md) | — | 1-compartment (no model) | 3 (+5 cov.) | Trang M et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18) |
-| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Trang_2019_2_reference](drugs/drug_plazomicin/Plazomicin_Trang2019v2_reference.md) | — | — (no model) | 0 | Trang M et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span> | [Kuti_2019_2_reference](drugs/drug_plazomicin/Plazomicin_Kuti2019v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kuti JL et al., Evaluation of Plazomicin, Tigecycline,…, Infectious diseases and the… (2019) | [10.1007/s40121-019-0251-4](https://doi.org/10.1007/s40121-019-0251-4) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> | [Trang_2019_2_geometric_mean_value_cv_d](drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.md) | ▶ model + simulator | 1-compartment, IV | 9 | Trang M et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.381). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Trang_2019_2_final_model](drugs/drug_plazomicin/Plazomicin_Trang2019v2_final_model.md) | — | 1-compartment (no model) | 3 (+5 cov.) | Trang M et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18) |
 
 ## ADME sites
 
@@ -60,7 +59,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 4  ·  extracted 2  ·  needs_review 1  ·  rejected 0  ·  stale 1
+- **records:** 3  ·  extracted 2  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

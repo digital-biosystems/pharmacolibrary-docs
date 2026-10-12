@@ -4,7 +4,7 @@
 
 # cilnidipine — `Cilnidipine_Suryawanshi2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.636), gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The volume of distribution value of 100.0 µl falls outside the physiological window, indicating an extraction error. A second reader disagreed on the dose equivalent and fold increase, which were not extracted in this record. Extracted — cilnidipine: Cmax 892 ng/mL, tmax 1 h, AUC∞ 6.12e+03 ng·h/mL, MRT 11.2 h, V 100 µl.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of dose equivalent to: this record has none, the second reading 10; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 2.65-fold: this record has none, the second reading 2.65; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -68,17 +68,22 @@ Suryawanshi A et al., Preclinical evaluation of cilnidipine n…, Annales pharma
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.636 (7/11 fields) | 4 |
 | `gpt-oss:120b` | partly confirmed | 0.8 (8/10 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[2.65-fold]` | not captured | 2.65 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose]` | not captured | 10 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax].value` | 1 | not captured | mismatch |
+| `gpt-oss-120b` | `parameters[volume spread]` | 100.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[dose equivalent to]` | not captured | 10 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fold increase]` | not captured | 2.65 | only_one_extracted |
 

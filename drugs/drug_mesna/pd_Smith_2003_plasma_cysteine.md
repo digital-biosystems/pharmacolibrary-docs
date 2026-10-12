@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Mesna inhibits plasma cysteine levels following a direct Emax model with an Emax of 31.7 microg/mL and an EC50 of 10.3 microg/mL. The paper does not specify the underlying biological mechanism, such as whether it affects production or elimination.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Smith_2003`
 - **model family:** `emax`
 - **driver:** `pk_record`

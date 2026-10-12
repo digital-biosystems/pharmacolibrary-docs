@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper excerpt is unavailable, so the specific mechanism linking latanoprostene bunod to cGMP levels is not described. The record indicates a direct Emax model for drug concentration stimulating cGMP levels with an EC50 of 1.5 μM.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cavet_2015`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -4,7 +4,7 @@
 
 # atenolol — `Atenolol_Celardo1987_before_renal_failure`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.65). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.65). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -114,17 +114,32 @@ Celardo A et al., Pharmacokinetic and pharmacodynamic mod…, European journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.333 (7/21 fields) | 14 |
 | `gpt-oss:120b` | not confirmed | 0.65 (13/20 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc d]` | 5.34 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clr]` | 0.36 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k10]` | 1.32 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` | 2.20 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k21]` | 1.02 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.704 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mdrt]` | 3.33 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2λ1]` | 0.18 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2λ2]` | 2.22 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2λd]` | 2.53 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | 0.48 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss b]` | 1.56 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λ1]` | 4.36 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λ2]` | 0.32 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl b]` | 0.54 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl d]` | 0.0028 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clr]` | 0.36 | not captured | only_one_extracted |

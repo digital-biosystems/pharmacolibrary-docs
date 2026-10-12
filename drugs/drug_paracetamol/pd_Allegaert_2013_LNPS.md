@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Paracetamol effect-compartment concentrations (mg/L) were linked to the Leuven Neonatal Pain Score via an Emax model with a delayed effect compartment (ke0 half-life 1.58 h), where paracetamol reduces the pain score from baseline E0 = 4.15 pain units (Emax equivalent to E0) with an EC50 of 2.07 mg/L; an effect-compartment concentration of 10 mg/L was associated with a pain score reduction of 3.4 pain units.
+> A modified Emax model with a delayed effect compartment (ADVAN6) describes the inhibitory effect of paracetamol effect compartment concentrations on the Leuven Neonatal Pain Score. The model was fitted with a baseline pain score (E0) of 4.15 pain units, an EC50 of 2.07 mg/L, and an effect compartment half-life (T1/2 keo) of 1.58 h.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Allegaert_2013`
 - **model family:** `emax`

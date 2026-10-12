@@ -23,7 +23,7 @@ It is an approved antiviral monoclonal antibody, though it has also been investi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Lin_2024_reference](drugs/drug_imdevimab/Imdevimab_Lin2024_reference.md) | — | 2-compartment (no model) | 6 (+4 cov.) | Lin KJ et al., Population Pharmacokinetics of Casirivi…, Pharmaceutical research (2024) | [10.1007/s11095-024-03764-5](https://doi.org/10.1007/s11095-024-03764-5) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.559). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Lin_2024_reference](drugs/drug_imdevimab/Imdevimab_Lin2024_reference.md) | — | 2-compartment (no model) | 6 (+4 cov.) | Lin KJ et al., Population Pharmacokinetics of Casirivi…, Pharmaceutical research (2024) | [10.1007/s11095-024-03764-5](https://doi.org/10.1007/s11095-024-03764-5) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

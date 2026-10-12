@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clomipramine concentrations (μg l(-1)) act on the metamorphosis rate (%) of 21-day-old pediveliger larvae after 24 h exposure, with an inhibitory effect direction; the paper excerpts provide no model family, mechanism, or potency/rate parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Di_2014`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

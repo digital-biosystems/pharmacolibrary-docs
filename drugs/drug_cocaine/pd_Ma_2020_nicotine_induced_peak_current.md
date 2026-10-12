@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cocaine inhibits the peak amplitude of nicotine-induced inward currents through a non-competitive mechanism that accelerates desensitization. The fitted parameters for this inhibition are an IC50 of 1.56 µM (reported as 1.5 µM in the text) and a Hill coefficient of 1.04.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ma_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

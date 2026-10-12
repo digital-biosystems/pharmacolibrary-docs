@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Brain concentrations of retigabine (RTG) inhibit the binary 'Fraction Seizing' response via a sigmoid Emax model, with an EC50 of 3.01 µM. The paper does not provide specific rate constants (e.g., ke0, kin, kout) for this concentration-response relationship.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bettio_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

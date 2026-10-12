@@ -5,7 +5,7 @@
 
 # diltiazem — `Diltiazem_Fu1987_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625), gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -67,17 +67,21 @@ Fu M et al., Pharmacokinetics and pharmacodynamic ef…, Journal of clinical pha
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.625 (5/8 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[area under the concentration-time curve]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life]` | 3.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean elimination half-life]` | not captured | 3.8 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[area under the concentration-time curve]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[elimination half-life]` | 3.8 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean distribution half-life]` | 15.8 | not captured | only_one_extracted |

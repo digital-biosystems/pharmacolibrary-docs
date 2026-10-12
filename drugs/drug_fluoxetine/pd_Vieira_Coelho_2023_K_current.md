@@ -20,7 +20,7 @@
 
 **Model:** No model was generated from this record.
 
-> Fluoxetine (μM concentrations) inhibits K+ currents in OK cells, described by an Emax (inhibitory) model with an EC50 of 107 μM (84.8; 129.5 μM); the excerpts do not state the mechanism beyond this direct concentration–response relationship, and no Imax/Emax or rate parameters are given.
+> Fluoxetine concentrations (μM) inhibit K+ currents in OK cells in vitro, described by an Emax inhibition model; the paper reports an EC50 of 107 μM (84.8; 129.5), but no mechanism or additional parameters are given.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

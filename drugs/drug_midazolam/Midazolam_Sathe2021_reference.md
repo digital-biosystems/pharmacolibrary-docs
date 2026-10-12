@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_Sathe2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The two-compartment oral model for midazolam (CL/F 73.9 L/h, Q/F 26.6 L/h, V2/F 130 L, V/F 1.65 L/kg, Ka 0.14 1/h, tlag 0.08 h) is missing V2/F in the extracted parameter set, so a library placeholder would have been used instead of the published 130 L. The record also defines covariate effects on weight and age, but only the reference individual was simulated, so these effects were not exercised. The builder assumed F=1 and Fm=1 with no molar correction (apparent parameterization). A second reader additionally disputed the age covariate value (-0.217 vs null) and its naming, and left the dose compound and primary analyte fields unresolved. Extracted — midazolam: CL/F 73.9 L/h, Q/F 26.6 L/h, V2/F 130 L, V/F 1.65 L/kg, kabs 0.14 1/h, tlag 0.08 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has midazolam, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has midazolam, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -80,17 +80,24 @@ Sathe AG et al., Therapeutic Protein Drug Interaction Po…, Journal of clinical
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.538 (7/13 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.5 (5/10 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a]` | 1.77 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag1]` | 1.23 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 1.65 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_age_power]` | not captured | -0.334 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | midazolam | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | midazolam | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [] | [['', '', '']] | mismatch |
 | `gpt-oss:120b` | `parameters[theta_q290_age_power]` | -0.217 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q319_age_power]` | not captured | -0.217 | only_one_extracted |
@@ -158,7 +165,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_midazolam/Midazolam_Sathe2021_reference/Midazolam_Sathe2021_reference_modelica.zip" download>Midazolam_Sathe2021_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_midazolam/Midazolam_Sathe2021_reference/Midazolam_Sathe2021_reference_fmi.zip" download>Midazolam_Sathe2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Sathe2021_reference/Midazolam_Sathe2021_reference_matlab.zip" download>Midazolam_Sathe2021_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Sathe2021_reference/Midazolam_Sathe2021_reference_matlab_simbio.zip" download>Midazolam_Sathe2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Sathe2021_reference/Midazolam_Sathe2021_reference_matlab_simbio.zip" download>Midazolam_Sathe2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_Sathe2021_reference/Midazolam_Sathe2021_reference_sbml.zip" download>Midazolam_Sathe2021_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_Sathe2021_reference/Midazolam_Sathe2021_reference_cellml.zip" download>Midazolam_Sathe2021_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The concentration of the chloroform extract of C. nucifera cotyledon directly inhibits thiobarbituric acid (TBA) radical formation, as indicated by the reported EC50 of 9.21 mg/ml. The paper does not describe a specific pharmacodynamic mechanism (e.g., Emax, effect compartment) or kinetic rates, providing only the concentration-response potency for this direct assay.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nyayiru_2020`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`

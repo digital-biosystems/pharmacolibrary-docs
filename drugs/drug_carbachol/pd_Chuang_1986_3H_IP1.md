@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol stimulates 3H-inositol-1-phosphate (3H-IP1) accumulation with an Emax-type concentration–response relationship; the paper reports an EC50 of about 50 microM and does not state the mechanism beyond this direct stimulatory effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chuang_1986`
 - **model family:** `emax`
 - **driver:** `not_resolved`

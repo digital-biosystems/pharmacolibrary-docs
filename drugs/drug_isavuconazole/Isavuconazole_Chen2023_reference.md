@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J02A&quot;,&quot;href&quot;:&quot;atc/J02A.md&quot;},{&quot;label&quot;:&quot;isavuconazole&quot;,&quot;href&quot;:&quot;drugs/drug_isavuconazole/&quot;},{&quot;label&quot;:&quot;Chen_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Isavuconazole_Kovanda2016_dimorphic_fungi&quot;,&quot;label&quot;:&quot;Kovanda_2016_dimorphic_fungi&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_dimorphic_fungi.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isavuconazole_Kovanda2016_ia_with_renal_impairment&quot;,&quot;label&quot;:&quot;Kovanda_2016_ia_with_renal_impairment&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_ia_with_renal_impairment.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isavuconazole_Kovanda2016_im&quot;,&quot;label&quot;:&quot;Kovanda_2016_im&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_im.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isavuconazole_Kovanda2016_mixed_infection&quot;,&quot;label&quot;:&quot;Kovanda_2016_mixed_infection&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_mixed_infection.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isavuconazole_Kovanda2016_non_candida_yeasts&quot;,&quot;label&quot;:&quot;Kovanda_2016_non_candida_yeasts&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_non_candida_yeasts.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isavuconazole_Kovanda2016_other_filamentous_fungi_and_molds&quot;,&quot;label&quot;:&quot;Kovanda_2016_other_filamentous_fungi_and_molds&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_other_filamentous_fungi_and_molds.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isavuconazole_Kovanda2016_overall&quot;,&quot;label&quot;:&quot;Kovanda_2016_overall&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_overall.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isavuconazole_Kovanda2016_patients_with_no_pathogen_identifi&quot;,&quot;label&quot;:&quot;Kovanda_2016_patients_with_no_pathogen_identified&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_patients_with_no_pathogen_identifi.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Isavuconazole_Kovanda2016_dimorphic_fungi&quot;,&quot;label&quot;:&quot;Kovanda_2016_dimorphic_fungi&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_dimorphic_fungi.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isavuconazole_Kovanda2016_ia_with_renal_impairment&quot;,&quot;label&quot;:&quot;Kovanda_2016_ia_with_renal_impairment&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_ia_with_renal_impairment.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isavuconazole_Kovanda2016_im&quot;,&quot;label&quot;:&quot;Kovanda_2016_im&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_im.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isavuconazole_Kovanda2016_mixed_infection&quot;,&quot;label&quot;:&quot;Kovanda_2016_mixed_infection&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_mixed_infection.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isavuconazole_Kovanda2016_non_candida_yeasts&quot;,&quot;label&quot;:&quot;Kovanda_2016_non_candida_yeasts&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_non_candida_yeasts.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isavuconazole_Kovanda2016_other_filamentous_fungi_and_molds&quot;,&quot;label&quot;:&quot;Kovanda_2016_other_filamentous_fungi_and_molds&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_other_filamentous_fungi_and_molds.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isavuconazole_Kovanda2016_overall&quot;,&quot;label&quot;:&quot;Kovanda_2016_overall&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_overall.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Isavuconazole_Kovanda2016_patients_with_no_pathogen_identifi&quot;,&quot;label&quot;:&quot;Kovanda_2016_patients_with_no_pathogen_identified&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isavuconazole/Isavuconazole_Kovanda2016_patients_with_no_pathogen_identifi.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # isavuconazole — `Isavuconazole_Chen2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,22 @@
 
 **Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Isavuconazole's clearance had no extracted value, so a library placeholder was used and the model was held back.**
+
+The record lists isavuconazole's total clearance with a unit of L/h but lacks a numerical value. Consequently, no specific clearance parameter was provided for the two-compartment model. This omission forced the use of a default placeholder instead of an estimated value, resulting in the model being quarantined. Extracted — isavuconazole: V1 50.3 L, Q 33.7 L/h, V2 263 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Chen N et al., Population Pharmacokinetics of Isavucon…, Infection and drug resistan… (2023)
   ·  DOI: [10.2147/IDR.S434622](https://doi.org/10.2147/IDR.S434622)
 
 ## Model component
-<dbs-pgx drug="isavuconazole" model-id="Isavuconazole_Chen2023_reference" status="extracted" stale="false" population="adults (healthy volunteers and patients with invasive fungal infections)" measured-compound="isavuconazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="isavuconazole" model-id="Isavuconazole_Chen2023_reference" status="model_quarantined" stale="false" population="adults (healthy volunteers and patients with invasive fungal infections)" measured-compound="isavuconazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 3 extracted.
@@ -30,6 +38,8 @@ Chen N et al., Population Pharmacokinetics of Isavucon…, Infection and drug re
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | median volume of central compartment distribution | `Q63` · V1 | 50.3 | L | 0.0503 | L | not captured | boundary_compartment (0.9) | Chen_2023:other_prose | — | not captured |
@@ -93,6 +103,32 @@ Chen N et al., Population Pharmacokinetics of Isavucon…, Infection and drug re
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.455 (5/11 fields) | 6 |
+
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median volume of central compartment distribution]` | 50.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` | not captured | 288.78 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total clearance]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | not captured | 50.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp].value` | 263.0 | 341 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -104,6 +140,17 @@ Chen N et al., Population Pharmacokinetics of Isavucon…, Infection and drug re
 | C9_phys_window_Q63 | pass | volume within physiological range | 50.3 L | not captured | not captured | ['Chen_2023:other_prose'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 263 L | not captured | not captured | ['Chen_2023:other_prose'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_cmin_ss | reference | skipped | 3.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -112,6 +159,8 @@ Chen N et al., Population Pharmacokinetics of Isavucon…, Infection and drug re
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_isavuconazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chen_2023` / `Chen_2023::reference`)
+- model: `../../../knowledgebase/drugs/drug_isavuconazole/models/modelica/_needs_review/Isavuconazole_Chen2023_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_isavuconazole/models/modelica/_needs_review/Isavuconazole_Chen2023_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

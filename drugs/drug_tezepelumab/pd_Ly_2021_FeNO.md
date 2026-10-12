@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided record indicates that tezepelumab inhibits fractional exhaled nitric oxide (FeNO), but the paper excerpts contain no full text to confirm the mechanism or specific potency values. Consequently, the mechanism and key PD parameters such as IC50 or Emax are not described in the available material.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ly_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

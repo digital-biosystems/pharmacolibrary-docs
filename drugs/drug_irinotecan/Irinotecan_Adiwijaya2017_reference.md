@@ -4,7 +4,7 @@
 
 # irinotecan — `Irinotecan_Adiwijaya2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL), so that value has no SI equivalent. None of the extracted parameters is irinotecan's own; they describe total irinotecan. Extracted — total irinotecan: CL 0 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has liposomal irinotecan, the second reading nal-IRI; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has irinotecan, the second reading nal-IRI; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -59,17 +59,20 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.167 (1/6 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['irinotecan', 'sn-38', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | irinotecan | nal-IRI | mismatch |
 | `gpt-oss:120b` | `model.links` | [['irinotecan', 'sn-38', 'metabolism']] | [['irinotecan', 'sn-38', 'metabolism'], ['irinotecan', 'usn38', 'metabolism'], ['irinotecan', 'esn38', 'interconversion']] | mismatch |
 | `gpt-oss:120b` | `parameters[estimated clearance difference]` | 0.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[sn‐38 clearance factor]` | not captured | 1.0 | only_one_extracted |

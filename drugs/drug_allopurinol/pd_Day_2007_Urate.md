@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model describes the inhibitory effect of oxypurinol concentration (in mg/L) on plasma urate using a sigmoid Emax function, with an EC50 of 5.6 ± 1.3 mg/L, a gamma of 1.2 ± 0.5, and a maximum inhibition of 83 ± 13% of baseline. The provided excerpts confirm that oxypurinol is the active metabolite responsible for hypouricaemic efficacy but do not specify the underlying physiological mechanism (e.g., inhibition of production vs. elimination).
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Day_2007`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

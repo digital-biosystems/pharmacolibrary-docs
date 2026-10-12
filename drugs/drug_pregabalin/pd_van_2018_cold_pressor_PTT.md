@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pregabalin concentrations (mg/L) inhibit the cold pressor PTT (seconds) by linearly decreasing the production rate (kin) of the effect compartment, with a slope of 0.135 1/mg/L and an elimination rate (kout) of 0.39 /hour. A sigmoidal Emax relationship was tested but did not significantly improve the model fit compared to the linear effect on kin.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2018`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`

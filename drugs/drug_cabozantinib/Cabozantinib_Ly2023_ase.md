@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;cabozantinib&quot;,&quot;href&quot;:&quot;drugs/drug_cabozantinib/&quot;},{&quot;label&quot;:&quot;Ly_2023 \u00b7 ase&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cabozantinib_DAngelo2020_reference&quot;,&quot;label&quot;:&quot;DAngelo_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cabozantinib/Cabozantinib_DAngelo2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cabozantinib_Lacy2018_reference&quot;,&quot;label&quot;:&quot;Lacy_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cabozantinib/Cabozantinib_Lacy2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cabozantinib_Ly2023_ase&quot;,&quot;label&quot;:&quot;Ly_2023_ase&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cabozantinib/Cabozantinib_Ly2023_ase.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cabozantinib_Ly2023_estimate&quot;,&quot;label&quot;:&quot;Ly_2023_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cabozantinib/Cabozantinib_Ly2023_estimate.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cabozantinib_Miles2016v2_reference&quot;,&quot;label&quot;:&quot;Miles_2016_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cabozantinib/Cabozantinib_Miles2016v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cabozantinib_Nguyen2019_reference&quot;,&quot;label&quot;:&quot;Nguyen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cabozantinib/Cabozantinib_Nguyen2019_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cabozantinib_Tan2024_estimates_in_the_registration_file&quot;,&quot;label&quot;:&quot;Tan_2024_estimates_in_the_registration_file&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cabozantinib/Cabozantinib_Tan2024_estimates_in_the_registration_file.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cabozantinib_DAngelo2020_reference&quot;,&quot;label&quot;:&quot;DAngelo_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cabozantinib/Cabozantinib_DAngelo2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cabozantinib_Lacy2018_reference&quot;,&quot;label&quot;:&quot;Lacy_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cabozantinib/Cabozantinib_Lacy2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cabozantinib_Ly2023_ase&quot;,&quot;label&quot;:&quot;Ly_2023_ase&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cabozantinib/Cabozantinib_Ly2023_ase.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cabozantinib_Ly2023_estimate&quot;,&quot;label&quot;:&quot;Ly_2023_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cabozantinib/Cabozantinib_Ly2023_estimate.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cabozantinib_Miles2016v2_reference&quot;,&quot;label&quot;:&quot;Miles_2016_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cabozantinib/Cabozantinib_Miles2016v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cabozantinib_Nguyen2019_reference&quot;,&quot;label&quot;:&quot;Nguyen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cabozantinib/Cabozantinib_Nguyen2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cabozantinib_Tan2024_estimates_in_the_registration_file&quot;,&quot;label&quot;:&quot;Tan_2024_estimates_in_the_registration_file&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cabozantinib/Cabozantinib_Tan2024_estimates_in_the_registration_file.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cabozantinib — `Cabozantinib_Ly2023_ase`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.208). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,24 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+
+### Reviewer guidance
+
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[alag4].value`: this record has 0.0404, the second reading 19.1; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Ly NS et al., Population Pharmacokinetics and Exposur…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01210-0](https://doi.org/10.1007/s40262-023-01210-0)
 
 ## Model component
-<dbs-pgx drug="cabozantinib" model-id="Cabozantinib_Ly2023_ase" status="extracted" stale="false" population="patients with various cancer types and healthy volunteers" measured-compound="cabozantinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="cabozantinib" model-id="Cabozantinib_Ly2023_ase" status="accepted_with_caveats" stale="false" population="patients with various cancer types and healthy volunteers" measured-compound="cabozantinib" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted, plus 2 covariate effects.
@@ -80,6 +90,45 @@ Ly NS et al., Population Pharmacokinetics and Exposur…, Clinical pharmacokinet
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.208 (5/24 fields) | 19 |
+
+<details><summary>19 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[alag4].rse_percent` | not captured | 0.2 | mismatch |
+| `qwen3.8-27b` | `parameters[alag4].value` | 0.0404 | 19.1 | mismatch |
+| `qwen3.8-27b` | `parameters[cl/f].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `qwen3.8-27b` | `parameters[cl/f].rse_percent` | not captured | 1.6 | mismatch |
+| `qwen3.8-27b` | `parameters[cl/f].value` | 0.0323 | 2.05 | mismatch |
+| `qwen3.8-27b` | `parameters[f1].rse_percent` | not captured | 2.3 | mismatch |
+| `qwen3.8-27b` | `parameters[f1].value` | 0.017 | 0.735 | mismatch |
+| `qwen3.8-27b` | `parameters[ka].rse_percent` | not captured | 5.2 | mismatch |
+| `qwen3.8-27b` | `parameters[ka].value` | 0.175 | 3.39 | mismatch |
+| `qwen3.8-27b` | `parameters[q/f].rse_percent` | not captured | 6.3 | mismatch |
+| `qwen3.8-27b` | `parameters[q/f].value` | 0.976 | 15.5 | mismatch |
+| `qwen3.8-27b` | `parameters[theta_q319_weight]` | 0.0614 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_v1_f_weight].rse_percent` | not captured | 13.3 | mismatch |
+| `qwen3.8-27b` | `parameters[theta_v1_f_weight].value` | 0.270 | 2.03 | mismatch |
+| `qwen3.8-27b` | `parameters[v3/f].rse_percent` | not captured | 2.4 | mismatch |
+| `qwen3.8-27b` | `parameters[v3/f].value` | 4.32 | 178 | mismatch |
+| `qwen3.8-27b` | `parameters[vc/f].rse_percent` | not captured | 7.8 | mismatch |
+| `qwen3.8-27b` | `parameters[vc/f].value` | 7.69 | 98.8 | mismatch |
+| `qwen3.8-27b` | `parameters[weight_on_cl_f]` | not captured | 0.144 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -99,6 +148,22 @@ Ly NS et al., Population Pharmacokinetics and Exposur…, Clinical pharmacokinet
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.0323 L/h | not captured | not captured | ['Tab2:row1:col2'] |
 | C9_phys_window_Q290 | pass | volume within physiological range | 7.69 L | not captured | not captured | ['Tab2:row2:col2'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=cabozantinib) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | &lt; 14 | 0.0071185839819652074 | not captured | unresolved concentration unit (exp '% change', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 23 | 0.0071185839819652074 | not captured | unresolved concentration unit (exp '% higher', sim 'kg/m3') |
+| T1_cmin_ss | reference | skipped | &lt; 4 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | 29 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -107,6 +172,9 @@ Ly NS et al., Population Pharmacokinetics and Exposur…, Clinical pharmacokinet
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_cabozantinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ly_2023` / `Ly_2023::ase`)
+- model: `../../../knowledgebase/drugs/drug_cabozantinib/models/modelica/Cabozantinib_Ly2023_ase.mo`
+- deviation: `../../../knowledgebase/drugs/drug_cabozantinib/models/modelica/Cabozantinib_Ly2023_ase.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_cabozantinib/models/modelica/Cabozantinib_Ly2023_ase.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -118,7 +186,7 @@ Ly NS et al., Population Pharmacokinetics and Exposur…, Clinical pharmacokinet
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cabozantinib/Cabozantinib_Ly2023_ase/Cabozantinib_Ly2023_ase_modelica.zip" download>Cabozantinib_Ly2023_ase_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cabozantinib/Cabozantinib_Ly2023_ase/Cabozantinib_Ly2023_ase_fmi.zip" download>Cabozantinib_Ly2023_ase_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cabozantinib/Cabozantinib_Ly2023_ase/Cabozantinib_Ly2023_ase_matlab.zip" download>Cabozantinib_Ly2023_ase_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cabozantinib/Cabozantinib_Ly2023_ase/Cabozantinib_Ly2023_ase_matlab_simbio.zip" download>Cabozantinib_Ly2023_ase_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cabozantinib/Cabozantinib_Ly2023_ase/Cabozantinib_Ly2023_ase_matlab_simbio.zip" download>Cabozantinib_Ly2023_ase_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cabozantinib/Cabozantinib_Ly2023_ase/Cabozantinib_Ly2023_ase_sbml.zip" download>Cabozantinib_Ly2023_ase_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_cabozantinib/Cabozantinib_Ly2023_ase/Cabozantinib_Ly2023_ase_cellml.zip" download>Cabozantinib_Ly2023_ase_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

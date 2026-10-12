@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide full text details on the specific mechanism (e.g., direct effect vs. inhibition of elimination) or rate constants, but the record indicates retigabine stimulates potassium-stimulated efflux (Rb flux) via an Emax model with an EC50 of 0.5 microM.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Scott_2003`
 - **model family:** `emax`
 - **driver:** `not_resolved`

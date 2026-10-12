@@ -5,7 +5,7 @@
 
 # bleomycin — `Bleomycin_Giri1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.714), gpt-oss:120b (primary re-run, agreement 0.667). The first reading is what the record holds.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The values on this record come from other papers. Extracted — bleomycin: CL 0.962 L/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of fat: this record has none, the second reading 4.3; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl: this record has 218.0, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -77,19 +77,22 @@ Giri SN, Pharmacokinetics, subcellular distribut…, Experimental and molecular�
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `qwen3.8-27b` | partly confirmed | 0.714 (5/7 fields) | 2 |
 | `gpt-oss:120b` | primary re-run | 0.667 (4/6 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[fat]` | not captured | 4.3 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[spleen]` | not captured | 2.0 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cl]` | 218.0 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[vz]` | 6290.0 | not captured | only_one_extracted |
 
 </details>
 

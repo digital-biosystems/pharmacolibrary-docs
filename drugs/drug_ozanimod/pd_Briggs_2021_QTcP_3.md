@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models the additive effect of plasma concentration of CC1084037 (pmol/L) on the continuous response QTcP (msec) using a maximum effect (Emax) function, where the drug stimulates QTcP with an Emax of 1.39 msec and an EC50 of 57.4 pmol/L.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Briggs_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

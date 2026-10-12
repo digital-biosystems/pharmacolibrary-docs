@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Thioridazine concentration acts on anticholinergic activity (displacement of a radioactive tracer from the muscarinic receptor binding site) via an Emax-type inhibitory model; the paper excerpts provide no parameter values (Imax, IC50, Emax, gamma) and no further mechanistic detail.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mayer_2016`
 - **model family:** `emax`
 - **driver:** `cited_pk`

@@ -65,7 +65,7 @@ Digoxin is a plant-derived cardiac glycoside used for heart conditions such as a
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Vetticaden_1989_percentage_decrease_in_heart_rate](drugs/drug_digoxin/pd_Vetticaden_1989_percentage_decrease_in_heart_rate.md) | percentage decrease in heart rate ← digoxin · delayed effect through an effect compartment | — | Vetticaden SJ et al., Pharmacodynamic modeling of digoxin-ind…, Journal of pharmacokinetics… (1989) | [10.1007/BF01059089](https://doi.org/10.1007/BF01059089) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Vetticaden_1989_percentage_decrease_in_heart_rate](drugs/drug_digoxin/pd_Vetticaden_1989_percentage_decrease_in_heart_rate.md) | percentage decrease in heart rate ← digoxin · delayed effect through an effect compartment | — | Vetticaden SJ et al., Pharmacodynamic modeling of digoxin-ind…, Journal of pharmacokinetics… (1989) | [10.1007/BF01059089](https://doi.org/10.1007/BF01059089) |
 
 ## Pharmacogenomics (PGx)
 

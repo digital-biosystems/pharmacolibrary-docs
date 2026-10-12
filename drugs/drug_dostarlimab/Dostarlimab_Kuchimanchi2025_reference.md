@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;dostarlimab&quot;,&quot;href&quot;:&quot;drugs/drug_dostarlimab/&quot;},{&quot;label&quot;:&quot;Kuchimanchi_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dostarlimab_Kuchimanchi2025_reference&quot;,&quot;label&quot;:&quot;Kuchimanchi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dostarlimab/Dostarlimab_Kuchimanchi2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dostarlimab_Melhem2022_mean&quot;,&quot;label&quot;:&quot;Melhem_2022_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dostarlimab/Dostarlimab_Melhem2022_mean.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dostarlimab_Shang2022_reference&quot;,&quot;label&quot;:&quot;Shang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dostarlimab/Dostarlimab_Shang2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dostarlimab_Melhem2022_mean&quot;,&quot;label&quot;:&quot;Melhem_2022_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dostarlimab/Dostarlimab_Melhem2022_mean.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dostarlimab_Shang2022_reference&quot;,&quot;label&quot;:&quot;Shang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dostarlimab/Dostarlimab_Shang2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dostarlimab_Kuchimanchi2025_reference&quot;,&quot;label&quot;:&quot;Kuchimanchi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dostarlimab/Dostarlimab_Kuchimanchi2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dostarlimab — `Dostarlimab_Kuchimanchi2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.522). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,24 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+
+### Reviewer guidance
+
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.382, model 0.138); the covariate scenarios were not simulated.**
+
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — dostarlimab: CL 0.00732 L/h, V1 3.09 L, Q 0.0191 L/h, V2 2.48 L, t1/2z 145 days.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[central volume of distribution (vc (l))].covariate_forms`: this record has ['linear_fractional'], the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kuchimanchi M et al., Population pharmacokinetics and exposur…, British journal of clinical… (2025)
   ·  DOI: [10.1111/bcp.16325](https://doi.org/10.1111/bcp.16325)
 
 ## Model component
-<dbs-pgx drug="dostarlimab" model-id="Dostarlimab_Kuchimanchi2025_reference" status="extracted" stale="false" population="patients with primary advanced or recurrent endometrial cancer" measured-compound="dostarlimab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="dostarlimab" model-id="Dostarlimab_Kuchimanchi2025_reference" status="needs_review" stale="false" population="patients with primary advanced or recurrent endometrial cancer" measured-compound="dostarlimab" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted, plus 3 covariate effects.
@@ -30,6 +40,8 @@ Kuchimanchi M et al., Population pharmacokinetics and exposur…, British journa
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Clearance (CL [L·h−1]) | `Q22` · CL | 0.00732 | L/h | 2.0333333333333333e-09 | L/h | 2.03 | exact (1.0) | bcp16325-tbl-0002:row1:col1, bcp16325-tbl-0002:row1:col2, bcp16325-tbl-0002:row1:col3 | — | None (6.97% RSE) |
@@ -81,6 +93,37 @@ Kuchimanchi M et al., Population pharmacokinetics and exposur…, British journa
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.522 (12/23 fields) | 11 |
+
+<details><summary>11 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[central volume of distribution (vc (l))].covariate_forms` | ['linear_fractional'] | [] | mismatch |
+| `qwen3.8-27b` | `parameters[clearance].covariate_forms` | ['linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
+| `qwen3.8-27b` | `parameters[effect of alb on vc]` | not captured | -0.132 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[effect of alt on cl]` | -0.0623 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[effect_of_age_on_cl]` | not captured | -0.238 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[effect_of_wt_on_cl]` | not captured | 0.523 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[effect_of_wt_on_vc_and_vp]` | not captured | 0.48 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[t50]` | 145 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_cl_age]` | -0.238 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q319_wt]` | 0.523 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_v1_wt]` | 0.48 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -100,6 +143,24 @@ Kuchimanchi M et al., Population pharmacokinetics and exposur…, British journa
 | C9_phys_window_Q63 | pass | volume within physiological range | 3.09 L | not captured | not captured | ['bcp16325-tbl-0002:row2:col1', 'bcp16325-tbl-0002:row2:col2', 'bcp16325-tbl-0002:row2:col3'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 2.48 L | not captured | not captured | ['bcp16325-tbl-0002:row6:col1', 'bcp16325-tbl-0002:row6:col2', 'bcp16325-tbl-0002:row6:col3'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable | not captured | pass | C_central (measured=dostarlimab) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_cmax | reference | fail | 0.382 | 0.13773091363802034 | 0.3606 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 1.72 | 0.13773091363802034 | not captured | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
+| T1_cmax | reference | pass | 0.147 | 0.13773091363802034 | 0.9369 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 0.145 | 0.13773091363802034 | 0.9499 | mg/L→SI vs simulated kg/m3 |
+| T1_cmin_ss | reference | skipped | 39.70 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | 39.50 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | 15.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -108,6 +169,9 @@ Kuchimanchi M et al., Population pharmacokinetics and exposur…, British journa
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_dostarlimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kuchimanchi_2025` / `Kuchimanchi_2025::reference`)
+- model: `../../../knowledgebase/drugs/drug_dostarlimab/models/modelica/Dostarlimab_Kuchimanchi2025_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_dostarlimab/models/modelica/Dostarlimab_Kuchimanchi2025_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_dostarlimab/models/modelica/Dostarlimab_Kuchimanchi2025_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -119,7 +183,7 @@ Kuchimanchi M et al., Population pharmacokinetics and exposur…, British journa
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dostarlimab/Dostarlimab_Kuchimanchi2025_reference/Dostarlimab_Kuchimanchi2025_reference_modelica.zip" download>Dostarlimab_Kuchimanchi2025_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dostarlimab/Dostarlimab_Kuchimanchi2025_reference/Dostarlimab_Kuchimanchi2025_reference_fmi.zip" download>Dostarlimab_Kuchimanchi2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dostarlimab/Dostarlimab_Kuchimanchi2025_reference/Dostarlimab_Kuchimanchi2025_reference_matlab.zip" download>Dostarlimab_Kuchimanchi2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dostarlimab/Dostarlimab_Kuchimanchi2025_reference/Dostarlimab_Kuchimanchi2025_reference_matlab_simbio.zip" download>Dostarlimab_Kuchimanchi2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dostarlimab/Dostarlimab_Kuchimanchi2025_reference/Dostarlimab_Kuchimanchi2025_reference_matlab_simbio.zip" download>Dostarlimab_Kuchimanchi2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dostarlimab/Dostarlimab_Kuchimanchi2025_reference/Dostarlimab_Kuchimanchi2025_reference_sbml.zip" download>Dostarlimab_Kuchimanchi2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dostarlimab/Dostarlimab_Kuchimanchi2025_reference/Dostarlimab_Kuchimanchi2025_reference_cellml.zip" download>Dostarlimab_Kuchimanchi2025_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

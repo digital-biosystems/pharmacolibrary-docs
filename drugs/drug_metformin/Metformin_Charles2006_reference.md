@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Charles2006_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222), gpt-5.6-luna (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.385), gpt-oss:120b (not confirmed, agreement 0.222), gpt-5.6-luna (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/3</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -78,15 +78,16 @@ Charles B et al., Population pharmacokinetics of metformi…, Therapeutic drug m
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 3 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.385 (5/13 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 | `gpt-5.6-luna` | not confirmed | 0.333 (4/12 fields) | 8 |
 
-<details><summary>15 field(s) a reader read differently</summary>
+<details><summary>23 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -98,6 +99,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-5.6-luna` | `parameters[maternal clearance]` | not captured | 28 | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[tlag]` | 0.5 | not captured | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[volume of distribution]` | not captured | 190 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[allometrically scaled maternal clearance]` | not captured | 28 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[allometrically scaled maternal volume of distribution]` | not captured | 190 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 0.059 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka (h -1 ) absorption rate constant]` | 0.41 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean (range) metformin concentrations in cord plasma]` | not captured | 0.81 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean (range) metformin concentrations in maternal plasma]` | not captured | 1.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.34 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 35.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[allometrically scaled maternal clearance]` | not captured | 28 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[derived population-wide half-life]` | 5.1 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[maternal plasma metformin concentration]` | not captured | 1.2 | only_one_extracted |

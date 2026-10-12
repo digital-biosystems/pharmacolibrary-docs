@@ -4,7 +4,7 @@
 
 # enoxolone — `Enoxolone_Lu2008_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The record was rejected because glycyrrhetic acid’s distribution volume, V, was 2.427 L/kg, a structural parameter with a dimensional mismatch.**
+
+The reported V is the volume of distribution, and the finding identifies a dimension mismatch on a structural parameter. The record was built from the abstract alone, so the reported summary statistics stood in for a fitted model. Extracted — glycyrrhetic acid (GA; enoxolone): t1/2α 0.153 h, t1/2β 2.37 h, Cmax 2.07 mg x L(-1), CL 0.715 L/h, V 2.43 L x kg(-1), AUC 1.3 mg x h(-1) x L(-1).
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has glycyrrhetic acid (GA; enoxolone), the second reading glycyrrhetic acid; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 ## Citation
 Lu Y et al., [Study on pharmacokinetics of glycyrrhe…, Zhongguo Zhong yao za zhi =… (2008)
@@ -68,6 +76,40 @@ Lu Y et al., [Study on pharmacokinetics of glycyrrhe…, Zhongguo Zhong yao za z
 - no GROBID TEI available — transcribed from abstract in Lu_2008_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.125 (2/16 fields) | 14 |
+
+<details><summary>14 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[auc]` | not captured | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[auc]` | 1.302 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[c]` | not captured | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[c]` | 2.074 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cl]` | not captured | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cl]` | 0.715 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[t1/2alpha]` | not captured | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[t1/2alpha]` | 0.153 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[t1/2beta]` | not captured | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[t1/2beta]` | 2.365 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v]` | not captured | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v]` | 2.427 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `screen.dose_compound` | glycyrrhetic acid (GA; enoxolone) | glycyrrhetic acid | mismatch |
+| `qwen3.8-27b` | `screen.primary_analyte` | glycyrrhetic acid (GA; enoxolone) | glycyrrhetic acid | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

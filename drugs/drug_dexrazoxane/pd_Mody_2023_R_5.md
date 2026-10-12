@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In JIMT-1 cells, dexrazoxane (µM) acts on % cell viability in a transduction (indirect-like) model where viability grows at kg = 0.0171 h−1 from R0 = 100%, and DEX stimulates the death/loss rate with Smax,DEX = 0.0482 h−1, SC50,DEX = 21.2 µM, and a transduction rate 1/τDEX = 0.0335 h−1; the paper does not state a specific molecular mechanism, describing the model as empirical with cell viability as a surrogate, and the DOX–DEX interaction parameter ψ ≈ 2 indicated antagonism in JIMT-1.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mody_2023`
 - **model family:** `transduction`
 - **driver:** `cited_pk`

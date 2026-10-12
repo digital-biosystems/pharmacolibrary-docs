@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Malathion concentration (µg/L) inhibits brain acetylcholinesterase (AChE) activity, described by a sigmoid Emax model; the paper excerpts provide no mechanism details and no parameter values (Imax, IC50, Emax, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Laetz_2013`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

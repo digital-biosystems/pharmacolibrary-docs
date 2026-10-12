@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;proguanil&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/&quot;},{&quot;label&quot;:&quot;Hussein_1996 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Proguanil_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Proguanil_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # proguanil — `Proguanil_Hussein1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The proguanil record was rejected because a structural parameter carries a dimension mismatch: CL/F is recorded as 13 '%' although clearance must be in volume per time, not a percentage.**
+
+The parameter labelled 'CLo higher in Orientals than Blacks and Malays' is given as 13 '%' for proguanil, a unit incompatible with oral clearance (CL/F), which the same record elsewhere reports in l h-1 (54.0 l h-1 in Blacks). The record was also built from the abstract alone, so reported summary statistics stood in for a fitted model. Other extracted values include V/F of 562 l in children (≤ 15 years), an absorption lag time of 0.147 h, and an implausible metabolite fraction (fm) of 114 in 'poor' metabolizers, which cannot exceed 1 as a fraction. Extracted — proguanil: CL/F 13 %, CL 54 l h-1, V/F 562 l, fm 114, tlag 0.147 h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has proguanil, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Hussein Z et al., Population pharmacokinetics of proguani…, British journal of clinical… (1996)
@@ -75,6 +83,35 @@ Hussein Z et al., Population pharmacokinetics of proguani…, British journal of
 - no GROBID TEI available — transcribed from abstract in Hussein_1996_metadata.yaml (17 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clo higher in orientals than blacks and malays]` | 13 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[final population estimate of v/f in children]` | not captured | 562 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[final population estimates of clo in blacks]` | 54.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[final population estimates of v/f in children]` | 562 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[orientals vs blacks and malays clo increase]` | not captured | 13 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[patients classified as 'poor' metabolizers]` | 114 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag,1]` | 0.147 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | proguanil | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | proguanil | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;roxadustat&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/&quot;},{&quot;label&quot;:&quot;Czock_2022 \u00b7 parameter_value&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Roxadustat_Takada2022v2_reference&quot;,&quot;label&quot;:&quot;Takada_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Roxadustat_Takada2022v2_reference&quot;,&quot;label&quot;:&quot;Takada_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # roxadustat — `Roxadustat_Czock2022_parameter_value`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Simulated as the paper dosed it, the model's terminal half-life (11.8 h) and peak concentration (0.00135 vs 0.01) deviate beyond tolerance from the reported values. The absorption rate constant ka was not reported in the source, so a default value was substituted, and the lag time before absorption (Tlag) likewise had no source value and was left at a placeholder default; the adjudication deemed the invented absorption not acceptable. The builder also assumed F=1 and Fm=1 with apparent (/F) parameterization and first-order depot input. The fu parameter carries a reported unit of 'h' despite being a fraction, and that unit could not be converted to SI, so the parameter arrived without an SI value. Extracted — roxadustat: tmax 9, t1/2z 10, AUC 480 h·ng/mL per mg, CL/F 2.29 L/h, fu 0.94 h, V/F 39 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 480, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has roxadustat, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -164,17 +164,25 @@ Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (7/14 fields) | 7 |
 | `gpt-oss:120b` | partly confirmed | 0.75 (9/12 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc]` | 480 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auec1 epo].parameter_id` | Q17 | Q88 | mismatch |
+| `gpt-oss-120b` | `parameters[t1⁄2 or t1⁄2α and t1⁄2ß]` | 15.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ted50 = t1⁄2 epo]` | not captured | 10 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd/f]` | 39.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | roxadustat | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | roxadustat | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[auc]` | 480 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auec1 epo]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ce05 epo = cthreshold roxa]` | not captured | not captured | only_one_extracted |

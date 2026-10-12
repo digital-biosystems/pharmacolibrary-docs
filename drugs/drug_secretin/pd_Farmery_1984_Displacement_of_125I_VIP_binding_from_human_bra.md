@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Secretin (µM concentrations) inhibits 125I-VIP binding to human brain membranes, with an IC50 of approximately 8 µM; the paper excerpts do not state a mechanism beyond this displacement/inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Farmery_1984`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

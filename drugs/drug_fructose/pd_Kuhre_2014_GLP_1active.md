@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In GLUTag cells, fructose (mM) stimulates GLP-1active secretion dose-dependently with a sigmoid Emax relationship (EC50 = 0.155 mM, maximal response at ~1 mM), acting via metabolism-driven KATP channel closure and cell depolarization; no Imax, Emax, kin/kout, ke0, or gamma values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kuhre_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

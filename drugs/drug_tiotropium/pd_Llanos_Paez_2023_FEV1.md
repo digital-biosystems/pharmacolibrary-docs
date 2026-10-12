@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Tiotropium dose was linked to morning trough FEV1 (L) in a model-based meta-analysis using a direct Emax-type dose-response (stimulation, additive on a reference effect Effref), with no effect-compartment or turnover mechanism described. Potency estimates were ED50 = 2.32 µg (0.84–6.44) with Effref = 121.9 mL (111.6–132.2) and Emax = 137.6 mL (126.7–160.7) in one parameterization, and ED50 = 0.74 µg (0.51–1.42) with Effref = 119.7 mL (111.6–127.8) and Emax = 137.6 mL (126.7–160.7) in another; no kin, kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Llanos-Paez_2023`
 - **model family:** `emax`
 - **driver:** `dose_only`

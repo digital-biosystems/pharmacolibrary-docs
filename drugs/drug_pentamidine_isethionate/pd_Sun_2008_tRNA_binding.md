@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pentamidine (μM) binds tRNALeu measured as the gel-shift bound fraction, fitted with a sigmoid Emax (inhibitory) model; the paper reports five EC50 values of 158.3, 218.7, 381.4, 621.0 and 785.1 μM with Hill coefficients of 3.1, 5.8, 8.1, 7.4 and 8.3, respectively, and attributes binding to non-specific insertion of pentamidine's aromatic rings into tRNA helices (two classes of sites), disrupting tRNA structure and masking the anticodon loop.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sun_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

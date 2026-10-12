@@ -4,7 +4,7 @@
 
 # fenbendazole — `Fenbendazole_Bach2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.68). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The record was rejected because the peripheral volume of distribution V2 for fenbendazole is reported as 34.7 mg — a mass unit for a structural volume parameter — a dimension mismatch, and the absolute bioavailability Fab carries no value.**
+
+The parameter θ2, meaning the volume of distribution of the peripheral compartment (V2), is given as 34.7 with unit 'mg', which is dimensionally incompatible with a volume; the reported unit could not be converted to SI, so the parameter arrived without an SI value. In addition, the absolute bioavailability Fab (label 'F') is listed without any value or unit. All other parameters (CL 0.541 L/h, kabs 1.59 h−1, V/F 35.2 L, metabolite rate constants) carry consistent units. Extracted — fenbendazole: CL 0.541 L/h, V2 34.7 mg, kabs 1.59 h−1, V/F 35.2 liters, fm 0.000162, kel 0.0942 h−1; oxfendazole sulfone: kfm 0.00134 h−1, fm 0.0042, kel 0.105 h−1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has fenbendazole, the second reading oxfendazole; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `oxfendazole`, measured `fenbendazole`.
 
@@ -81,6 +89,34 @@ Bach T et al., Population Pharmacokinetic Model of Oxf…, Antimicrobial agents 
 - unparsed cell Bach_2021_table_p6_1:row16:col1 = 'Variance of interindividual variability on FM2'
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.68 (17/25 fields) | 8 |
+
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[cloxf]` | not captured | 2.57 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[voxf].parameter_id` | Q76 | Q61 | mismatch |
+| `gpt-oss-120b` | `parameters[θ1]` | 0.541 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ2].parameter_id` | Q64 | Q30 | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | fenbendazole | oxfendazole | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

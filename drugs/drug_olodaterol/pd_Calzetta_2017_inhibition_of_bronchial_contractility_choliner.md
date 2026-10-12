@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Olodaterol concentrations act on inhibition of bronchial contractility (cholinergic contractile tone, %) via a sigmoid Emax model with proportional inhibition; Emax = 76.9 ± 17.9 % and pEC50 = 8.3 ± 0.6 (EC50 ≈ 5 nM). The paper excerpts do not state the mechanism beyond this direct Emax effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Calzetta_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

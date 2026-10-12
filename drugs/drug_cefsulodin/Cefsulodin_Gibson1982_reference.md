@@ -4,7 +4,7 @@
 
 # cefsulodin — `Cefsulodin_Gibson1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The model record for cefsulodin in Gibson_1982 was rejected because the structural parameter Q has a dimension mismatch.**
+
+The parameter Q is defined as apparent intercompartmental clearance but carries units of ml/min, which is inconsistent with its structural role. Additionally, the drug concentration parameter Ct is recorded with units of percent. The record was built from the abstract only, so summary statistics were used in place of fitted model parameters. Extracted — cefsulodin: Vss 0.26 l/kg, t1/2z 1.9 hr, CL 2.01 ml/kg/min, CLR 1.09 ml/kg/ in, Q 122 ml/min, Ct 60 %.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefsulodin, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Gibson TP et al., Cefsulodin kinetics in renal impairment, Clinical pharmacology and t… (1982)
@@ -66,6 +74,40 @@ Gibson TP et al., Cefsulodin kinetics in renal impairment, Clinical pharmacology
 - no GROBID TEI available — transcribed from abstract in Gibson_1982_metadata.yaml (15 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.125 (2/16 fields) | 14 |
+
+<details><summary>14 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[average plasma flow]` | 122 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[average plasma flow]` | not captured | 122 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life]` | 1.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life]` | not captured | 1.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma drug concentration was reduced by]` | not captured | 60 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma drug concentration]` | 60 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance]` | 1.09 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance]` | not captured | 1.09 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` | 0.26 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` | not captured | 0.26 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` | 2.01 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` | not captured | 2.01 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | cefsulodin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | cefsulodin | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

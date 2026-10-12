@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Thiazinamium stimulates the bronchodilator response (FEV1) via a sigmoid Emax model, with a maximum increase of 33.9% and an EC50 of 12.8 ng.ml-1. The paper does not provide specific kinetic parameters or mechanistic details beyond the direct concentration-response relationship.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Holford_1987`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

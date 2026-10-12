@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide enough information (no full text available) to describe the PD model linking ramelteon dose or concentrations to sleep latency, including mechanism or potency/rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zheng_2020`
 - **model family:** `unknown`
 - **driver:** `dose_only`

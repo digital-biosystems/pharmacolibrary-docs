@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ceruletide stimulates smooth muscle contraction in isolated intestinal preparations and gallbladders, described by an Emax-type model; the paper excerpts provide no further detail on mechanism or parameter values (no Imax, EC50, Emax, or rate constants are available).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zetler_1984`
 - **model family:** `emax`
 - **driver:** `not_resolved`

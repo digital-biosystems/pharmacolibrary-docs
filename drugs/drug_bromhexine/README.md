@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R05C&quot;,&quot;href&quot;:&quot;atc/R05C.md&quot;},{&quot;label&quot;:&quot;bromhexine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bromhexine_Barzel2026_reference&quot;,&quot;label&quot;:&quot;Barzel_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bromhexine/Bromhexine_Barzel2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bromhexine_Behrens2026_reference&quot;,&quot;label&quot;:&quot;Behrens_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bromhexine/Bromhexine_Behrens2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bromhexine_Gao2026_reference&quot;,&quot;label&quot;:&quot;Gao_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bromhexine/Bromhexine_Gao2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bromhexine_Behrens2026_reference&quot;,&quot;label&quot;:&quot;Behrens_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bromhexine/Bromhexine_Behrens2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bromhexine_Gao2026_reference&quot;,&quot;label&quot;:&quot;Gao_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bromhexine/Bromhexine_Gao2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bromhexine_Barzel2026_reference&quot;,&quot;label&quot;:&quot;Barzel_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bromhexine/Bromhexine_Barzel2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # bromhexine
 
@@ -19,23 +19,23 @@ Bromhexine is a mucolytic medicine used to treat cough by helping clear mucus fr
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:48 | 17:26 | 3/1/0 | 1/1/0 | 0/0/0 | 915,638/33,084 | einfracz / qwen3.8-27b | 43 | 1/26 | 43/0 | 0 |
+| 2026-10-07 22:48 | 17:26 | 2/1/1 | 1/1/0 | 0/0/0 | 915,638/33,084 | einfracz / qwen3.8-27b | 43 | 1/26 | 43/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Barzel_2026_reference](drugs/drug_bromhexine/Bromhexine_Barzel2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 3 | Barzel I et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01636-2](https://doi.org/10.1007/s40262-026-01636-2) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Behrens_2026_reference](drugs/drug_bromhexine/Bromhexine_Behrens2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Behrens E et al., Prospective study of pharmacokinetics o…, Annals of intensive care (2026) | [10.1016/j.aicoj.2026.100082](https://doi.org/10.1016/j.aicoj.2026.100082) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gao_2026_reference](drugs/drug_bromhexine/Bromhexine_Gao2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Gao X et al., Population Pharmacokinetics of Trastuzu…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70259](https://doi.org/10.1002/psp4.70259) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Bechgaard_1982_reference](drugs/drug_bromhexine/Bromhexine_Bechgaard1982_reference.md) | — | 1-compartment (no model) | 0 | Bechgaard E et al., Bioavailability of bromhexine tablets a…, Biopharmaceutics & drug dis… (1982) | [10.1002/bdd.2510030407](https://doi.org/10.1002/bdd.2510030407) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Behrens_2026_reference](drugs/drug_bromhexine/Bromhexine_Behrens2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Behrens E et al., Prospective study of pharmacokinetics o…, Annals of intensive care (2026) | [10.1016/j.aicoj.2026.100082](https://doi.org/10.1016/j.aicoj.2026.100082) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: partial</span> | [Gao_2026_reference](drugs/drug_bromhexine/Bromhexine_Gao2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Gao X et al., Population Pharmacokinetics of Trastuzu…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70259](https://doi.org/10.1002/psp4.70259) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): k21</sub><br><sub>route_to: `scholar`</sub> | [Barzel_2026_reference](drugs/drug_bromhexine/Bromhexine_Barzel2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 3 | Barzel I et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01636-2](https://doi.org/10.1007/s40262-026-01636-2) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Bechgaard_1982_reference](drugs/drug_bromhexine/Bromhexine_Bechgaard1982_reference.md) | — | 1-compartment (no model) | 0 | Bechgaard E et al., Bioavailability of bromhexine tablets a…, Biopharmaceutics & drug dis… (1982) | [10.1002/bdd.2510030407](https://doi.org/10.1002/bdd.2510030407) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Bergogne-Bérézin_1985_bronchial_serum_ratio_of_amoxycillin](drugs/drug_bromhexine/pd_Bergogne_B_r_zin_1985_bronchial_serum_ratio_of_amoxycillin.md) | bronchial/serum ratio of amoxycillin biomarker turnover ← bromhexine | — | Bergogne-Bérézin E et al., Influence of a fluidifying agent (bromh…, International journal of cl… (1985) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Kukita_1992_sorption_of_bromhexine_HCl](drugs/drug_bromhexine/pd_Kukita_1992_sorption_of_bromhexine_HCl.md) | sorption of bromhexine HCl ← bromhexine HCl · model not identified | — | Kukita T et al., Interaction between polyethylene films…, Chemical & pharmaceutical b… (1992) | [10.1248/cpb.40.3110](https://doi.org/10.1248/cpb.40.3110) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Kukita_1992_sorption_of_bromhexine_HCl](drugs/drug_bromhexine/pd_Kukita_1992_sorption_of_bromhexine_HCl.md) | sorption of bromhexine HCl ← bromhexine HCl · model not identified | — | Kukita T et al., Interaction between polyethylene films…, Chemical & pharmaceutical b… (1992) | [10.1248/cpb.40.3110](https://doi.org/10.1248/cpb.40.3110) |
 
 ## ADME sites
 
@@ -59,7 +59,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 2217 matched, 70 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 4  ·  extracted 3  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 2  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

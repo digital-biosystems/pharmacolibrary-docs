@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Peficitinib concentrations inhibit the production rate constant of DAS28-CRP (0.0816) via a sigmoidal Emax mechanism, with a half-maximal effective area under the concentration-time curve (EX50) of 3630 ng/mL. The maximum effect (Emax) was fixed at 1 following a preliminary analysis indicating it was close to 1.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Toyoshima_2021_2`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

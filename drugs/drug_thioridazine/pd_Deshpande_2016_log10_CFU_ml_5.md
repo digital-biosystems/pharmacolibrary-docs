@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In 7-day extracellular time-kill experiments against MAC, thioridazine concentrations (mg/liter) reduced log10 CFU/ml via an inhibitory sigmoid Emax relationship (direct concentration-effect; mechanism of kill is inhibition of the mycobacterial electron transport chain), with Emax 2.6 log10 CFU/ml and EC50 33.68 mg/liter (r2 = 0.946); no rate constants (kin, kout, ke0) or Hill slope are reported for this model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Deshpande_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

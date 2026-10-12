@@ -14,14 +14,6 @@ Epinastine is an antihistamine used to treat allergic conditions, including alle
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q632405](https://www.wikidata.org/wiki/Q632405) and the WHO ATC classification; not checked by a person.</small>
 
-## Molecules and molar masses
-
-> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
-
-| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
-|---|---|---|---|---|---|---|
-| epinastine | parent | 249.31 | C16H15N3 | DrugBank | [3241](https://pubchem.ncbi.nlm.nih.gov/compound/3241) | Sarashina_2005 |
-
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
@@ -32,9 +24,9 @@ Epinastine is an antihistamine used to treat allergic conditions, including alle
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Jang_2025_reference](drugs/drug_epinastine/Epinastine_Jang2025_reference.md) | — | 1-compartment (no model) | 0 | Jang JH et al., Population modeling of pharmacokinetic…, Naunyn-Schmiedeberg's archi… (2025) | [10.1007/s00210-025-04299-1](https://doi.org/10.1007/s00210-025-04299-1) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Sarashina_2005_estimated_value](drugs/drug_epinastine/Epinastine_Sarashina2005_estimated_value.md) | — | 1-compartment (no model) | 3 | Sarashina A et al., Population pharmacokinetics of epinasti…, British journal of clinical… (2005) | [10.1111/j.1365-2125.2005.2250](https://doi.org/10.1111/j.1365-2125.2005.2250) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Sarashina_2005_hypothesized_value](drugs/drug_epinastine/Epinastine_Sarashina2005_hypothesized_value.md) | — | 1-compartment (no model) | 3 | Sarashina A et al., Population pharmacokinetics of epinasti…, British journal of clinical… (2005) | [10.1111/j.1365-2125.2005.2250](https://doi.org/10.1111/j.1365-2125.2005.2250) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Jang_2025_reference](drugs/drug_epinastine/Epinastine_Jang2025_reference.md) | — | — (no model) | 0 | Jang JH et al., Population modeling of pharmacokinetic…, Naunyn-Schmiedeberg's archi… (2025) | [10.1007/s00210-025-04299-1](https://doi.org/10.1007/s00210-025-04299-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Sarashina_2005_estimated_value](drugs/drug_epinastine/Epinastine_Sarashina2005_estimated_value.md) | — | — (no model) | 0 | Sarashina A et al., Population pharmacokinetics of epinasti…, British journal of clinical… (2005) | [10.1111/j.1365-2125.2005.2250](https://doi.org/10.1111/j.1365-2125.2005.2250) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Sarashina_2005_hypothesized_value](drugs/drug_epinastine/Epinastine_Sarashina2005_hypothesized_value.md) | — | — (no model) | 0 | Sarashina A et al., Population pharmacokinetics of epinasti…, British journal of clinical… (2005) | [10.1111/j.1365-2125.2005.2250](https://doi.org/10.1111/j.1365-2125.2005.2250) |
 
 ## ADME sites
 

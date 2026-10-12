@@ -4,7 +4,7 @@
 
 # ribociclib — `Ribociclib_Ji2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — ribociclib: CL/F 38.4 L/h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Ji Y et al., Quantitative Pharmacology Justifying Ri…, Clinical pharmacokinetics (2026)

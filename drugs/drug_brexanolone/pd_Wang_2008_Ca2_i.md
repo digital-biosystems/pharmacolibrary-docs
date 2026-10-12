@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Allopregnanolone (APα) concentration drives a rapid, transient increase in intracellular calcium ([Ca2+]i, nM) in E18 rat hippocampal neurons, described by a direct stimulatory Emax model with EC50 = 124 ± 15 nM and maximal response 135 ± 14 nM [Ca2+]i (at 250 nM APα, not further increased at 500–1000 nM); the rise is attributed mainly to influx of extracellular Ca2+ (abolished in calcium-free medium and reduced by L-type channel blockade with nifedipine). The paper does not state a separate effect-compartment or turnover mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2008`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

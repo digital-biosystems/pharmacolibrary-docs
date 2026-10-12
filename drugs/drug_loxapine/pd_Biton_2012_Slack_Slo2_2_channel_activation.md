@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Loxapine concentration (μM) stimulates Slack (Slo2.2) channel activation, described by an Emax-type model with an EC50 of 4.4 μM; the paper excerpts provide no further mechanism or additional parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Biton_2012`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

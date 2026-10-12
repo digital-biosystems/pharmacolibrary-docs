@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ipratropium bromide concentrations (in M) act on relaxation of carbachol-induced contractions in an Emax-type inhibitory model; the paper excerpts provide no mechanism details and no potency or rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gustafsson_1991`
 - **model family:** `emax`
 - **driver:** `cited_pk`

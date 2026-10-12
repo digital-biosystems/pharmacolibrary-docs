@@ -5,7 +5,7 @@
 
 # omeprazole — `Omeprazole_Katashima1995_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556), gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -70,17 +70,22 @@ Katashima M et al., Comparative pharmacokinetic/pharmacodyn…, Drug metabolism 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[apparent turnover rate of h+,k+-atpase]` | not captured | 8.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 0.95 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time for the drt formulation]` | 2.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | 0.653 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[apparent turnover rate of h+,k+-atpase]` | not captured | 8.8 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[total body clearance]` | 57.6 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[total body clearance]` | not captured | 57.6 | only_one_extracted |

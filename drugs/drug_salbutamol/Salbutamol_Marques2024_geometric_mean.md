@@ -5,7 +5,7 @@
 
 # salbutamol — `Salbutamol_Marques2024_geometric_mean`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.636), gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -78,17 +78,22 @@ Marques L et al., Improving Individualized Salbutamol Tre…, Pharmaceutics (202
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.636 (7/11 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[0.94-1.60]` | 2.28 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[1.60-2.37]` | 1.45 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a1]` | 31.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time before dose-response]` | 15.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | 77.9 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | not captured | 77.9 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mtt]` | 0.21 | not captured | only_one_extracted |

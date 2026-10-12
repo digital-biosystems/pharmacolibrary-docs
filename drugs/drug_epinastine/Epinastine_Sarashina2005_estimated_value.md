@@ -4,7 +4,7 @@
 
 # epinastine — `Epinastine_Sarashina2005_estimated_value`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,62 +14,34 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of absorption lag time: food: this record has none, the second reading 0.234; it also differs on 7 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Sarashina A et al., Population pharmacokinetics of epinasti…, British journal of clinical… (2005)
   ·  DOI: [10.1111/j.1365-2125.2005.2250](https://doi.org/10.1111/j.1365-2125.2005.2250)
 
 ## Model component
-<dbs-pgx drug="epinastine" model-id="Epinastine_Sarashina2005_estimated_value" status="rejected" stale="false" population="healthy adults and paediatric atopic dermatitis patients" measured-compound="epinastine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="epinastine" model-id="Epinastine_Sarashina2005_estimated_value" status="rejected" stale="false" population="healthy adults and paediatric atopic dermatitis patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
-**Parameterization:** Q/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** not captured.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| q 1 | `Q30` · Q | 19.1 | L/h | 5.3055555555555565e-06 | L/h | not captured | space_fold (0.95) | tab_2:row12:col5, tab_2:row12:col6 | — | None (None% RSE) |
-| q 3 | `Q308` · Q3 | 34.4 | L/h | 9.555555555555555e-06 | L/h | not captured | space_fold (0.95) | tab_2:row14:col5, tab_2:row14:col6 | — | not captured |
-| q 5 | `Q900` · equation variable | 1.18 | not captured | not captured | not captured | not captured | llm (0.6) | tab_2:row16:col5, tab_2:row16:col6 | — | not captured |
-| q 6 | `Q69` · Q/F | 1.41 | not captured | not captured | not captured | not captured | llm (0.6) | tab_2:row17:col5, tab_2:row17:col6, Sarashina_2005_table_2:row0:col3 | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
-
-**Interpretation flags:**
-- table section iiv: 'CL/F' routed out of structural estimates ('Interindividual variability was necessary for CL/F, V 1 /F, Q, V 2 /F and Ka.')
-- table section iiv: 'V 1 /F' routed out of structural estimates ('Interindividual variability was necessary for CL/F, V 1 /F, Q, V 2 /F and Ka.')
-- table section iiv: 'Q' routed out of structural estimates ('Interindividual variability was necessary for CL/F, V 1 /F, Q, V 2 /F and Ka.')
-- table section iiv: 'V 2 /F' routed out of structural estimates ('Interindividual variability was necessary for CL/F, V 1 /F, Q, V 2 /F and Ka.')
-- table section iiv: 'Ka' routed out of structural estimates ('Interindividual variability was necessary for CL/F, V 1 /F, Q, V 2 /F and Ka.')
-- dropped unlinked row (NIL): 'FOOD' — extend the ontology if this is a real PK parameter (source ['tab_2:row9:col1', 'tab_2:row9:col3'])
-- dropped duplicate Q30 ('q 2', value '174') — already have one for this compound
-- dropped duplicate Q30 ('q 4', value '452') — already have one for this compound
-- dropped duplicate Q900 ('q 7', value '1.75') — already have one for this compound
-- dropped duplicate Q30 ('q 8', value '0.234') — already have one for this compound
-- dropped duplicate Q900 ('q 9', value '1.06') — already have one for this compound
-- dropped duplicate Q30 ('q 10', value '0.805') — already have one for this compound
-- dropped unlinked row (NIL): 'q 11' — extend the ontology if this is a real PK parameter (source ['tab_2:row22:col5', 'tab_2:row22:col6', 'Sarashina_2005_table_2:row5:col3'])
-- documentation only: 'CL/F' → Q27 (CL/F) comes from ['fig_0:caption'], not from a located parameter table — not emitted as a model parameter
-- dropped duplicate Q30 ('Q', value None) — already have one for this compound
-- documentation only: 'Ka' → Q49 (kabs) comes from ['fig_0:caption'], not from a located parameter table — not emitted as a model parameter
-- documentation only: 'ALAG' → Q83 (tlag) comes from ['fig_0:caption'], not from a located parameter table — not emitted as a model parameter
-- NIL: refused to back-fill base 'CL/F' from footnote/prose loose number None (source ['fig_0:caption']); the table cell was unparseable — needs review
-- implicit units: 'q 1' → L/h (from the paper text: 'The equation states “CL/F(litres h-1) = q1 ...”, so q1 has units of L/h.')
-- implicit units: 'q 3' → L/h (from the paper text: 'The equation states “Q(litres h-1) = q3 exp(ηQ)”, so q3 has units of L/h.')
-- implicit units: 'q 6' — the LLM proposed 'dimensionless', whose dimension does not fit Q69; left unset
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=epinastine
-- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
-- population split: 'estimated value' subgroup of Sarashina_2005 (paper reports 2 populations: estimated value, hypothesized value)
 
 **Extraction notes:**
 - unparsed cell tab_2:row9:col4 = 'if fed if fasted 1 ,'
@@ -83,6 +55,34 @@ Sarashina A et al., Population pharmacokinetics of epinasti…, British journal 
 - no LLM table selection; kept 2 deterministically-scored parameter table(s)
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | partly confirmed | 0.429 (6/14 fields) | 8 |
+
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[absorption lag time: food]` | not captured | 0.234 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[cl/f]` | not captured | 19.1 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[ka]` | not captured | 1.18 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[q 4]` | not captured | 452 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[q 5]` | 1.18 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[q 6]` | 1.41 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v 1 /f]` | not captured | 174 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[v 2 /f]` | not captured | 452 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

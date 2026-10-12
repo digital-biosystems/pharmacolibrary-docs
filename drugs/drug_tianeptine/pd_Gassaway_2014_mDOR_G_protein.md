@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Tianeptine concentration (μM) directly stimulates G-protein activation at mouse DOR measured by BRET, acting as a full DOR agonist via a direct Emax model; the paper reports EC50 = 14.5±6.6 μM, with no other PD parameters given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gassaway_2014`
 - **model family:** `emax`
 - **driver:** `cited_pk`

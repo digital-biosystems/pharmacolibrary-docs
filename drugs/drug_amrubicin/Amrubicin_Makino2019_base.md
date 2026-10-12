@@ -4,7 +4,7 @@
 
 # amrubicin — `Amrubicin_Makino2019_base`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Amrubicinol’s first-order metabolite-formation rate constant kfm was reported as 0.1 L/h, a dimension mismatch that led to rejection.**
+
+The record defines kfm as a first-order rate constant for formation of amrubicinol from amrubicin, but reports its unit as L/h, a clearance unit. L/h could not be converted to SI, so no SI value was available for this parameter. Extracted — amrubicin: V2 10.1 L, Q 9.1 L/h, V3 32.7 L, Q2 50.5 L/h, MTT 157; amrubicinol: V 1.03e+03 L, CLfm 19.4 L/h, CL 97 L/h, kfm 0.1 L/h.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has amrubicin and amrubicinol, the second reading amrubicin; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 > **Dose compound ≠ measured compound:** dosed `amrubicin`, measured `amrubicin and amrubicinol`.
 
@@ -74,6 +82,31 @@ Makino Y et al., Individual optimal dose of amrubicin to…, Cancer science (201
 - LLM selected parameter table(s) 1
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.667 (10/15 fields) | 5 |
+
+<details><summary>5 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[kdc=tvkdc ecovslc28a3(kdc) (slc28a3) eηkdc]` | not captured | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[tvgamma‐m, γm]` | 0.2 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[tvkdc]` | 0.1 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[tvmmt]` | 157.0 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `screen.primary_analyte` | amrubicin and amrubicinol | amrubicin | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

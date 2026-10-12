@@ -5,7 +5,7 @@
 
 # betamethasone — `Betamethasone_Krzyzanski2021v2_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.611). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.611). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 In the Krzyzanski_2021_2 model for betamethasone in healthy nonpregnant Indian women, the parameter labeled kaIMa is documented as the half-life of the absorption phase, which should be expressed in hours, but its reported unit is 1/h, matching a rate constant rather than a half-life. This dimension mismatch on a structural parameter triggered the rejection. Additionally, the unit of this parameter could not be converted to SI, so it reached the model builder without an SI value. The remaining parameters (CLm/F 9.29 L/h, V/F 51.3 L, kabs 0.460 1/h, CL/F 0.538 L/h, FR 1.04, Fab 0.819) show no such conflict. Extracted — betamethasone: CLm/F 9.29 L/h, V/F 51.3 L, kabs 0.46 1/h, t1/2ka 0.00638 1/h, FR 1.04, Fab 0.819, CL/F 0.538 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has betamethasone, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has betamethasone, the second reading betamethasone phosphate; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -83,17 +83,27 @@ Krzyzanski W et al., Population pharmacokinetic modeling of…, Journal of pharm
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (9/18 fields) | 9 |
 | `gpt-oss:120b` | not confirmed | 0.611 (11/18 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/fim].parameter_id` | Q351 | Q27 | mismatch |
+| `gpt-oss-120b` | `parameters[cl/fim].value` | 9.29 | 5.95 | mismatch |
+| `gpt-oss-120b` | `parameters[cld/fim]` | 0.538 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fr].value` | 1.04 | 0.935 | mismatch |
+| `gpt-oss-120b` | `parameters[kaim].value` | 0.460 | 0.971 | mismatch |
+| `gpt-oss-120b` | `parameters[vp/fim].parameter_id` | Q76 | Q78 | mismatch |
+| `gpt-oss-120b` | `parameters[vp/fim].value` | 51.3 | 67.5 | mismatch |
+| `gpt-oss-120b` | `parameters[vt/fim]` | not captured | 4.94 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | betamethasone | betamethasone phosphate | mismatch |
 | `gpt-oss:120b` | `model.links` | [] | [['dexamethasone phosphate', 'dexamethasone', 'hydrolysis'], ['betamethasone phosphate', 'betamethasone', 'hydrolysis'], ['betamethasone acetate', 'betamethasone', 'hydrolysis']] | mismatch |
 | `gpt-oss:120b` | `parameters[cl/fim].parameter_id` | Q351 | Q27 | mismatch |
 | `gpt-oss:120b` | `parameters[cld/fim]` | 0.538 | not captured | only_one_extracted |
@@ -142,10 +152,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference/Betamethasone_Krzyzanski2021v2_reference_modelica.zip" download>Betamethasone_Krzyzanski2021v2_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference/Betamethasone_Krzyzanski2021v2_reference_modelica.zip" download>Betamethasone_Krzyzanski2021v2_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference/Betamethasone_Krzyzanski2021v2_reference_fmi.zip" download>Betamethasone_Krzyzanski2021v2_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference/Betamethasone_Krzyzanski2021v2_reference_matlab.zip" download>Betamethasone_Krzyzanski2021v2_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference/Betamethasone_Krzyzanski2021v2_reference_matlab_simbio.zip" download>Betamethasone_Krzyzanski2021v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference/Betamethasone_Krzyzanski2021v2_reference_matlab_simbio.zip" download>Betamethasone_Krzyzanski2021v2_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference/Betamethasone_Krzyzanski2021v2_reference_sbml.zip" download>Betamethasone_Krzyzanski2021v2_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference/Betamethasone_Krzyzanski2021v2_reference_cellml.zip" download>Betamethasone_Krzyzanski2021v2_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

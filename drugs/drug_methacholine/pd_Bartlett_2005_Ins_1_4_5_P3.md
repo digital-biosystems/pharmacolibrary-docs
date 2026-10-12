@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide enough information (no full text available) to describe the PD model linking methacholine concentrations to the Ins(1,4,5)P3 translocation response; the record indicates stimulation but no mechanism, model family, or parameter values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bartlett_2005`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

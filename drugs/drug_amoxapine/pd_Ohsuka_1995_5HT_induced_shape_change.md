@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide enough information to characterize the PD model: no full text is available, so the mechanism by which amoxapine inhibits 5HT-induced shape change, and any potency or rate parameters, are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ohsuka_1995`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

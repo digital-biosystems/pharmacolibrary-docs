@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;thiosulfate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thiosulfate_Petric2023_reference&quot;,&quot;label&quot;:&quot;Petric_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiosulfate/Thiosulfate_Petric2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thiosulfate_Petric2023_reference&quot;,&quot;label&quot;:&quot;Petric_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiosulfate/Thiosulfate_Petric2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # thiosulfate
 
@@ -18,14 +18,14 @@ Thiosulfate (sodium thiosulfate) is an antidote used to treat cyanide poisoning.
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 20:00 | 13:41 | 1/1/0 | 1/0/0 | 0/0/0 | 666,627/25,668 | ollama / glm-5.3-flash | 29 | 2/22 | 28/1 | 0 |
+| 2026-10-07 20:00 | 13:41 | 0/1/1 | 1/0/0 | 0/0/0 | 666,627/25,668 | ollama / glm-5.3-flash | 29 | 2/22 | 28/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Petric_2023_reference](drugs/drug_thiosulfate/Thiosulfate_Petric2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Petric Z et al., Clinical Pharmacology of Vinpocetine: P…, Pharmaceutics (2023) | [10.3390/pharmaceutics15102502](https://doi.org/10.3390/pharmaceutics15102502) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Shea_1984_reference](drugs/drug_thiosulfate/Thiosulfate_Shea1984_reference.md) | — | 1-compartment (no model) | 3 | Shea M et al., Kinetics of sodium thiosulfate, a cispl…, Clinical pharmacology and t… (1984) | [10.1038/clpt.1984.53](https://doi.org/10.1038/clpt.1984.53) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Petric_2023_reference](drugs/drug_thiosulfate/Thiosulfate_Petric2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Petric Z et al., Clinical Pharmacology of Vinpocetine: P…, Pharmaceutics (2023) | [10.3390/pharmaceutics15102502](https://doi.org/10.3390/pharmaceutics15102502) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Shea_1984_reference](drugs/drug_thiosulfate/Thiosulfate_Shea1984_reference.md) | — | 1-compartment (no model) | 3 | Shea M et al., Kinetics of sodium thiosulfate, a cispl…, Clinical pharmacology and t… (1984) | [10.1038/clpt.1984.53](https://doi.org/10.1038/clpt.1984.53) |
 
 ## Pharmacodynamics (PD)
 
@@ -43,7 +43,7 @@ Thiosulfate (sodium thiosulfate) is an antidote used to treat cyanide poisoning.
 
 - **PubMed hits:** 112 matched, 92 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

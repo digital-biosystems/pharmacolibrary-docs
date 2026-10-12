@@ -4,7 +4,7 @@
 
 # tenecteplase — `Tenecteplase_Tang2023_final_model_value`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — tenecteplase: CL 91.3 mL/min, V1 3.61e+03 mL, Q 10 mL/min, V2 914 mL.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Tang F et al., Population Pharmacokinetics of Tenectep…, Journal of clinical pharmac… (2023)

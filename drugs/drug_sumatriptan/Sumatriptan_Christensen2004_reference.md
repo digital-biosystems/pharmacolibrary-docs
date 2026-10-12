@@ -4,7 +4,7 @@
 
 # sumatriptan — `Sumatriptan_Christensen2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.222), gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — sumatriptan: Cmax 8.1 ng/mL, t1/2z 1.4 hours, AUC 27.8 ng*h/mL, CL 197 L/h, V 751 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 27.8, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sumatriptan, the second reading unknown; it also differs on 6 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -55,17 +55,25 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | primary re-run | 0.222 (2/9 fields) | 7 |
 | `gpt-oss:120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc]` | not captured | 27.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | 197 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | not captured | 1.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximum concentration]` | not captured | 8.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 751 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | sumatriptan | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | sumatriptan | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[auc]` | 27.8 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | 197 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life]` | 1.4 | not captured | only_one_extracted |

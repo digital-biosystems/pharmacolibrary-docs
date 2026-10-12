@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Permethrin concentrations (µg/g OC) act on survival (lethality) in a binary response; the paper does not state a mechanism beyond a concentration–lethality relationship, with LC50 values of 1.83 ± 1.13 µg/g OC at 20 days and 1.20 ± 0.55 µg/g OC at 58 days.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Du_2013`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

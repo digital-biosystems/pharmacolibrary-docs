@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Enoxolone (driver compound: glycyrrhetic acid; exposure metric unresolved) inhibits the urinary cortisol-cortisone ratio. The excerpts do not specify the mechanism or any potency or rate parameters.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ploeger_2001`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

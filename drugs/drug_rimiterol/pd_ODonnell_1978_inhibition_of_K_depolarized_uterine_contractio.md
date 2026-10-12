@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Rimiterol inhibits K(+)-depolarized uterine contractions (relaxation) with an Emax-type relationship; the paper gives only a relative potency of 13.5 versus isoprenaline (=100) and does not state concentrations, mechanism, or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `ODonnell_1978`
 - **model family:** `emax`
 - **driver:** `not_resolved`

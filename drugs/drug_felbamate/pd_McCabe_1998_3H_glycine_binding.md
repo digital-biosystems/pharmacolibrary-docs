@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe the mechanism of action or the driver-response relationship. The extracted record describes a sigmoidal Emax stimulation model for [3H]glycine binding with an EC50 of 485 microM, an Emax of 211% of control, and an nH of 1.8.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `McCabe_1998`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

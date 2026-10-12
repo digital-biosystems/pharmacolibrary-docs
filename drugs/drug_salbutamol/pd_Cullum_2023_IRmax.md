@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Salbutamol concentrations (M) stimulate cAMP GloSensor luminescence in HEK293 cells expressing endogenous β2-adrenoceptors, modelled with a sigmoid Emax (Hill) equation fitted to the initial rate of response (IRmax, from the rise-and-fall time-course equation of Hoare et al.). Salbutamol showed IRmax = 30.34 ± 2.75 % of 1 μM isoprenaline with log L50 = −6.68 ± 0.14; the paper does not state a production/elimination mechanism beyond agonist-stimulated cAMP generation with desensitisation (k1) and phosphodiesterase-mediated decay (k2) attenuating the response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cullum_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

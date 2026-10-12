@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Rose_1988_growth_of_human_endometrial_cells](drugs/drug_ethisterone/pd_Rose_1988_growth_of_human_endometrial_cells.md) | growth of human endometrial cells ← ethisterone · model not identified | — | Rose GL et al., The inhibitory effects of danazol, dana…, Fertility and sterility (1988) | [10.1016/s0015-0282(16)59706-4](https://doi.org/10.1016/s0015-0282(16)59706-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Rose_1988_growth_of_human_endometrial_cells](drugs/drug_ethisterone/pd_Rose_1988_growth_of_human_endometrial_cells.md) | growth of human endometrial cells ← ethisterone · model not identified | — | Rose GL et al., The inhibitory effects of danazol, dana…, Fertility and sterility (1988) | [10.1016/s0015-0282(16)59706-4](https://doi.org/10.1016/s0015-0282(16)59706-4) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

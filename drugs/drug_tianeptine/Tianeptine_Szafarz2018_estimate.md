@@ -5,7 +5,7 @@
 
 # tianeptine — `Tianeptine_Szafarz2018_estimate`
 
-> ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.438), gpt-oss:120b (not confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,7 +25,7 @@
 
 The record declares a tianeptine→MC5 metabolism link, but the built model is a single central compartment rather than the required parent–metabolite structure, and its output is the central concentration instead of the metabolite compartment. Parameter coverage failed: of 4 reported parameters, only 2 were covered, with k12 (0.504 h−1) and k21 (0.628 h−1) neither emitted nor defaulted. The terminal half-life check failed against both reported values (7.53 h, ratio 0.024; 1.16 h, ratio 0.1559), and the covariate effect theta_kel_em (0.416) was defined but never exercised in simulation. A second reader also disagreed on the parameter identifier for the normalized volume Vnorm (2.971 L/kg). Extracted — tianeptine: V1 0.761 L/kg, Vnorm 2.97 L/kg, kel 2.79 h−1, k12 0.504 h−1, k21 0.628 h−1, Fab 0.694.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[v m/f m].parameter_id`: this record has Q352, the second reading Q61. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has tianeptine → mc5 (metabolism), the second reading not captured → not captured (not captured); it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -111,17 +111,27 @@ Szafarz M et al., Pharmacokinetic study of tianeptine and…, Naunyn-Schmiedeber
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.438 (7/16 fields) | 9 |
 | `gpt-oss:120b` | not confirmed | 0.929 (13/14 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['tianeptine', 'mc5', 'metabolism']] | [['', '', '']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[k 12].parameter_id` | Q30 | Q301 | mismatch |
+| `gpt-oss-120b` | `parameters[k 21]` | not captured | 0.628 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k e].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_kel_em]` | not captured | 0.416 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q47_em]` | 0.416 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v m/f m]` | not captured | 2.971 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v m/f m]` | 2.971 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v m/f m].parameter_id` | Q352 | Q61 | mismatch |
 
 </details>

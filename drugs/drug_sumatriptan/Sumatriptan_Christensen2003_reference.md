@@ -4,7 +4,7 @@
 
 # sumatriptan — `Sumatriptan_Christensen2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889), gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record reports apparent oral parameters for sumatriptan in healthy adolescent migraineurs: Cmax 13.9 ng/mL, AUC∞ 57.3 ng/mL·h, terminal half-life 2.0 h, CL/F 316 L and V/F 1070 L. The refusal reason is a dimension mismatch on a structural parameter, meaning one of these values is not dimensionally consistent with what it is meant to represent. Because only the abstract was read, these are reported summary statistics rather than parameters of a fitted model. A second reader also disagreed on the parameterization, reading it as mechanistic rather than apparent, and returned no values for all five parameters. Extracted — sumatriptan: Cmax 13.9 ng/mL, AUC∞ 57.3 ng/mL.h, t1/2z 2 hours, CL/F 316 L, V/F 1.07e+03 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sumatriptan, the second reading unknown. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -69,17 +69,19 @@ Christensen ML et al., Pharmacokinetics of sumatriptan nasal s…, Journal of cl
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.889 (8/9 fields) | 1 |
 | `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `screen.dose_compound` | sumatriptan | unknown | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[auc infinity]` | 57.3 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/f]` | 316 | not captured | only_one_extracted |

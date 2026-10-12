@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> No full text is available to describe the specific pharmacodynamic mechanism, effect form, or quantitative parameters for tapentadol's effect on constipation.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xu_2012`
 - **model family:** `tte`
 - **driver:** `cited_pk`

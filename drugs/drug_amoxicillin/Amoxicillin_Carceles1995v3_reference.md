@@ -5,7 +5,7 @@
 
 # amoxicillin — `Amoxicillin_Carceles1995v3_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5), gpt-5.6-luna (not confirmed, agreement 0.08). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.529), gpt-oss:120b (not confirmed, agreement 0.5), gpt-5.6-luna (not confirmed, agreement 0.08). The first reading is what the record holds.">cross-check: disputed 0/3</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUC and Cmax), so that value has no SI equivalent. Extracted — amoxicillin: t1/2α 143, k21 3.04 1/h, CL 0.11 L/h, AUC 186 mg*h/L, MRT 1.57 h, kabs 1 1/h, tlag 0.209 h, Cmax 5.75 mg/L, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has amoxicillin, the second reading amoxicillin + clavulanic acid; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 1(12: this record has none, the second reading 3.0803; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -106,15 +106,16 @@ Carceles CM et al., Pharmacokinetics of amoxicillin/clavula…, The veterinary q
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 3 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.529 (9/17 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.5 (8/16 fields) | 8 |
 | `gpt-5.6-luna` | not confirmed | 0.08 (2/25 fields) | 23 |
 
-<details><summary>31 field(s) a reader read differently</summary>
+<details><summary>39 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -141,6 +142,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-5.6-luna` | `parameters[vd]` | 1.73 | not captured | only_one_extracted |
 | `gpt-5.6-luna` | `screen.dose_compound` | amoxicillin | amoxicillin and clavulanic acid | mismatch |
 | `gpt-5.6-luna` | `screen.primary_analyte` | amoxicillin | amoxicillin and clavulanic acid | mismatch |
+| `gpt-oss-120b` | `parameters[1(12]` | not captured | 3.0803 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[a].parameter_id` | Q59 | Q67 | mismatch |
+| `gpt-oss-120b` | `parameters[cmax]` | 5.7500 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.9996 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mat]` | 2.60 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2a]` | not captured | 0.1014 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.2094 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 1.73 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[1(12]` | not captured | 3.0803 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[a].parameter_id` | Q59 | Q67 | mismatch |
 | `gpt-oss:120b` | `parameters[cmax]` | 5.7500 | not captured | only_one_extracted |

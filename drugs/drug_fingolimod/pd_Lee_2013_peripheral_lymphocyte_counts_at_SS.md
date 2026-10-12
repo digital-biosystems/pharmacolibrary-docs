@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Fingolimod phosphate concentration at steady state inhibits peripheral lymphocyte counts at steady state via a direct sigmoid Emax mechanism, with the paper describing the relationship using Emax, EC50, and a Hill coefficient (h) but not providing numerical values for these parameters or rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lee_2013`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

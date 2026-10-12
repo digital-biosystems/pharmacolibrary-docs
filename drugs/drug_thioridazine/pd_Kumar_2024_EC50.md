@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Thioridazine concentrations (μM) inhibit intracellular L. donovani amastigotes in human macrophage cell lines, with a reported EC50 of 0.91 μM; the paper excerpts do not state the mechanism or an effect model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kumar_2024`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

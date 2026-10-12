@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from keyword rules on the title and abstract — no LLM answer yet).">human + animal</span> | [Kataoka_1983_concentration_in_prostatic_tissues](drugs/drug_cefaloridine/pd_Kataoka_1983_concentration_in_prostatic_tissues.md) | concentration in prostatic tissues ← Cefaloridine · model not identified | — | Kataoka N, [Concentration of antimicrobial agents…, Hinyokika kiyo. Acta urolog… (1983) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.50).">human + animal</span> | [Kataoka_1983_concentration_in_prostatic_tissues](drugs/drug_cefaloridine/pd_Kataoka_1983_concentration_in_prostatic_tissues.md) | concentration in prostatic tissues ← Cefaloridine · model not identified | — | Kataoka N, [Concentration of antimicrobial agents…, Hinyokika kiyo. Acta urolog… (1983) | — |
 
 ## ADME sites
 

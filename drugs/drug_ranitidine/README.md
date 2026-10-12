@@ -39,7 +39,7 @@ Ranitidine is an H2-receptor antagonist that was used to treat acid-related stom
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Koch_1997_pH](drugs/drug_ranitidine/pd_Koch_1997_pH.md) | gastric pH ← ranitidine · direct sigmoid Emax (Hill) effect | — | Koch KM et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1997) | [10.1007/s002280050279](https://doi.org/10.1007/s002280050279) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Koch_1997_pH](drugs/drug_ranitidine/pd_Koch_1997_pH.md) | gastric pH ← ranitidine · direct sigmoid Emax (Hill) effect | — | Koch KM et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1997) | [10.1007/s002280050279](https://doi.org/10.1007/s002280050279) |
 
 ## Pharmacogenomics (PGx)
 

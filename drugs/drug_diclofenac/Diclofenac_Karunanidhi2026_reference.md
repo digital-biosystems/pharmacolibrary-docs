@@ -5,7 +5,7 @@
 
 # diclofenac — `Diclofenac_Karunanidhi2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6), gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,9 +19,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has 14.7, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+**The record was rejected because diclofenac clearance (0.026 L/h) and volume of distribution (0.23 L) are physiologically implausible magnitudes.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+These parameter values fall outside the acceptable physiological window for diclofenac, indicating a unit or scale extraction error. The review reference status means these summary statistics stand in for a fitted model rather than representing individual data. A second reader disagreed with the extracted values for two specific fields but provided no alternative numbers. Extracted — diclofenac: CL 0.026 L/h, V 0.23 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has 16, the second reading 14.7; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Karunanidhi A et al., Ceftazidime/avibactam and aztreonam com…, Antimicrobial agents and ch… (2026)
@@ -56,17 +60,22 @@ Karunanidhi A et al., Ceftazidime/avibactam and aztreonam com…, Antimicrobial 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.6 (6/10 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q21]` | 16 | 14.7 | mismatch |
+| `gpt-oss-120b` | `values[Q310]` | 3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q33]` | not captured | 3.8 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q900]` | 0.3 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q21]` | 14.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q310]` | 3 | 0.5 | mismatch |
 

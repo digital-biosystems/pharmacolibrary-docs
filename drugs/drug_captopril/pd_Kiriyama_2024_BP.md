@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Captopril_Hu2025_reference&quot;,&quot;label&quot;:&quot;Hu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/Captopril_Hu2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# blood pressure — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.541). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+# blood pressure — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -20,9 +20,9 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> In spontaneously hypertensive rats, BP (mmHg) is driven by plasma nifedipine and captopril concentrations (ng/mL): nifedipine lowers BP via an effect-compartment Emax effect (Emax,1 = 67.1 mmHg, EC50,1 = 86.3 ng/mL) counteracted by a homeostatic feedback modelled as a precursor-dependent indirect response in which an endogenous hypertensive substance is produced and degraded at rate kEHS,out = 0.0119 with linear feedback slope α = 1.17 (baseline E0 = 96.8 mmHg), whereas captopril's milder, concentration-following hypotensive effect is described by a sigmoid Emax model with an effect compartment (Emax = 41.8 mmHg, EC50,2 = 1450 ng/mL, γ = 0.662, E0 = 105 mmHg), with the combined effect given
+> Captopril plasma concentrations (ng/mL) inhibit blood pressure (mmHg) via a direct sigmoid Emax model linked to the plasma concentration through an effect compartment (ke0 = 0.0400 min−1). The model parameters are EC50 = 7885 ng/mL, Emax = 41.8 mmHg, E0 = 105 mmHg, and γ = 0.662.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Kiriyama_2024`
 - **model family:** `sigmoid_emax`
@@ -80,36 +80,14 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 | `T4_defaults` | pass | nothing defaulted |
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.541 (20/37 fields) | 17 |
+| `einfracz:gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
 
-<details><summary>17 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | nifedipine and captopril (parent plasma concentrations; no metabolite driver) | nifedipine and captopril | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
-| `gpt-oss:120b` | `effect_form` | unknown | additive | mismatch |
-| `gpt-oss:120b` | `model_family` | indirect_response_i | sigmoid_emax | mismatch |
-| `gpt-oss:120b` | `parameters[Q320]` | 0.0400 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q320]` | 0.0117 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q325]` | not captured | 0.1347 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q326]` | not captured | 0.0119 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 0.0119 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q335]` | 0.1347 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q343]` | not captured | 1.4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0.0400 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | 0.135 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q88]` | 151.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q88]` | 213.2 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q89]` | 1.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q900]` | 220.0 | not captured | only_one_extracted |
-
-</details>
+_Every reader agrees on every compared field of this PD record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>

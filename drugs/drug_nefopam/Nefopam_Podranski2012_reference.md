@@ -5,7 +5,7 @@
 
 # nefopam — `Nefopam_Podranski2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (partly confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 For nefopam in healthy adults, the elimination clearance is reported as 52.9 litre h 21, a unit that could not be converted to a standard (SI) expression, so no SI value could be established for this parameter. The structure check also flagged an unreachable or orphan compartment in the two-compartment topology. A second reader additionally disagreed on the extracted values, reading null for the clearance (52.9), V1 (24.3 litre) and V2 (183.3 litre), and reporting 4481 for a parameter absent from this record. Extracted — nefopam: V1 24.3 litre, V2 183 litre, CL 52.9 litre h 21.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of elimination clearance [cl el (se %)]: this record has 52.9, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nefopam, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -77,17 +77,24 @@ Podranski T et al., Compartmental pharmacokinetics of nefop…, British journal 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 | `gpt-oss:120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[elimination clearance]` | not captured | 0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[npd]` | 4481 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 1]` | not captured | 24.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 2]` | not captured | 183.3 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | nefopam | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | nefopam | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[elimination clearance [cl el (se %)]]` | 52.9 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[npd]` | not captured | 4481 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v 1]` | 24.3 | not captured | only_one_extracted |

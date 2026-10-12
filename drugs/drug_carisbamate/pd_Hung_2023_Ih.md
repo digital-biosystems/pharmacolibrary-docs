@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carisbamate directly inhibits the hyperpolarization-activated cation current (Ih) in GH3 cells, with the paper describing a sigmoidal relationship where the current amplitude decreases from a control of 136 ± 18 pA to 103 ± 17 pA at 10 μM and 73 ± 12 pA at 30 μM. The fitted model specifies an IC50 of 38 μM for this inhibition, though the paper does not explicitly state this parameter value or the maximum inhibition magnitude.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hung_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

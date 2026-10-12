@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Abicipar inhibits the response of VEGF concentrations in the vitreous and aqueous humor via a target-mediated drug disposition (TMDD) mechanism, where the drug binds VEGF with an on-rate of 8 x 10^9/M/s and an off-rate derived from a Kd of 4.34 pM. The model includes a VEGF degradation rate (k deg) of ln2/2.46 h and a drug-receptor complex internalization rate (k INT) of 404 day^-1, yielding an in vivo human IC50 of 0.017 nM.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luu_2020`
 - **model family:** `tmdd`
 - **driver:** `not_resolved`

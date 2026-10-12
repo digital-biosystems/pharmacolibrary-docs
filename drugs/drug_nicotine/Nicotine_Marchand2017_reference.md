@@ -4,7 +4,7 @@
 
 # nicotine — `Nicotine_Marchand2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The nicotine record from Marchand_2017 was rejected because its apparent (F-adjusted) parameters were corrected a second time via the relative bioavailability Frel = 1, and a structural parameter (the formation clearance dCldCYP2A6 = 1.6, reported without a convertible unit) had a dimension mismatch.**
+
+The nicotine parameters V1/F = 1.9 L, CL/F = 2.5 L/min, V2/F = 29.4 L and Q/F = 14.3 L/min are already adjusted for bioavailability, so applying the relative bioavailability Frel = 1 as an additional correction constitutes a double correction of the apparent parameters. The formation clearance to metabolite (dCldCYP2A6 = 1.6) was reported without a unit that could be converted to SI, so it reached the model without an SI value and failed the dimension check on a structural parameter. The remaining nicotine parameters (D1 = 12.4 min, C0 = 22.6 ng/mL, λ1 = 0.00858 1/min, kel = 0.000678 1/min, t1/2α = 1.35 h, t1/2z = 17.0 h) are not implicated. Extracted — nicotine: V1/F 1.9 L, CL/F 2.5 L/min, V2/F 29.4 L, Q/F 14.3 L/min, D1 12.4 min, Frel 1, C0 22.6 ng/mL, CLfm 1.6, … (+4).
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[c0].value`: this record has 22.6, the second reading 0.358; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Marchand M et al., Nicotine Population Pharmacokinetics in…, European journal of drug me… (2017)
@@ -83,6 +91,36 @@ Marchand M et al., Nicotine Population Pharmacokinetics in…, European journal 
 - LLM selected parameter table(s) 3, 4
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (10/20 fields) | 10 |
+
+<details><summary>10 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[c0].value` | 22.6 | 0.358 | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f].value` | 2.5 | 0.407 | mismatch |
+| `gpt-oss-120b` | `parameters[cl2/f].value` | 14.3 | 0.171 | mismatch |
+| `gpt-oss-120b` | `parameters[dc0dcyp2a6]` | 1.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dcldcyp2a6].parameter_id` | Q370 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[dcldcyp2a6].value` | 1.6 | 0.322 | mismatch |
+| `gpt-oss-120b` | `parameters[dvdmenth]` | not captured | 0.0912 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tdur]` | 12.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f].value` | 1.9 | 70.0 | mismatch |
+| `gpt-oss-120b` | `parameters[v2/f].value` | 29.4 | 171 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

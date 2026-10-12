@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> No full text is available, so the mechanism cannot be stated beyond what the record reports: somatorelin reduces the cAMP response to GHRH stimulation, described as a 50% reduction in Emax with a 100-fold increase in EC50; no units, potency values, or rate constants are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gregory_2016`
 - **model family:** `emax`
 - **driver:** `not_resolved`

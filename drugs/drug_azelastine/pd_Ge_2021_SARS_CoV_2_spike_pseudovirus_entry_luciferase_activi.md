@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Azelastine (0.1–50 μM range) concentration-dependently inhibits SARS-CoV-2 spike pseudovirus entry into ACE2h cells (luciferase activity, % viropexis), with a sigmoid Emax-type inhibition EC50 of 3.834 μM; cytotoxicity CC50 is 84.140 μM (selective index 21.95). The paper does not state a specific PD mechanism for the entry inhibition, only speculating via H1 antagonism and possible binding to the viral main protease or sigma-1 receptor.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ge_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

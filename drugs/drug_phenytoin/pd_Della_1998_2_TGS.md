@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model assumes a sigmoid Emax relationship where phenytoin plasma concentrations (in microg ml-1) stimulate the threshold for generalized seizure activity (TGS) additively. The paper provides a parameter B of 2.0 microA ml microg-1 and a Hill coefficient n of 2.7, but does not describe the mechanism of action or specify rate constants such as ke0.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Della_1998_2`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

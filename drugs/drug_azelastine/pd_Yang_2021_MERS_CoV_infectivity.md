@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Azelastine concentrations (µM) inhibit MERS-CoV S pseudovirus infection of cells, measured as luciferase signal (% of control), described by a sigmoid Emax inhibition model with EC50 = 2.59 ± 0.88 µM. The paper does not state a mechanistic pathway for azelastine beyond noting it is a histamine receptor antagonist with less activity than clemastine.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

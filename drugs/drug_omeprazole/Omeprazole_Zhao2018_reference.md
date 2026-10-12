@@ -5,7 +5,7 @@
 
 # omeprazole — `Omeprazole_Zhao2018_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.588), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -109,17 +109,25 @@ Zhao W et al., Developmental pharmacogenetics of CYP2C…, British journal of cl
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.588 (10/17 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.5 (9/18 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl omz-m2 (l h]` | not captured | 0.140 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl omz-m2 (l h]` | 0.140 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f_cyp2c19_em_um]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 0.95 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time for the drt formulation]` | 2.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q87_cyp2c19]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ2]` | 0.658 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [['omeprazole', '5-hydroxy-omeprazole', 'metabolism'], ['omeprazole', 'omeprazole sulfone', 'metabolism']] | [['omeprazole', '5-hydroxy-omeprazole', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[cl omz-m2 (l h]` | not captured | 0.140 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl omz-m2 (l h]` | 0.140 | not captured | only_one_extracted |

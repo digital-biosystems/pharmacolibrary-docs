@@ -18,6 +18,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> The plasma concentrations of allopurinol and its active metabolite oxypurinol inhibit the production of uric acid by inhibiting xanthine oxidase (XO) in a saturable (Emax) manner. The model characterizes this inhibition with an IC50 of 0.36 mg/L and an Emax of 1, while describing the elimination of uric acid using a Kout5 value of 0.035 mg/L × h.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chu_2022`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`

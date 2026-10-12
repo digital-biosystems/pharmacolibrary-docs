@@ -4,7 +4,7 @@
 
 # perindopril — `Perindopril_Parker2005_multiple_dose`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 For perindoprilat, the parameter labelled θ V1 carries the unit h, so the volume of distribution (57) is expressed in time units instead of a volume unit; the reported unit could not be converted to SI, so the parameter reached the model builder without an SI value. The other perindoprilat parameters are CL of 7.4 (no unit given), Bmax of 1.2 g/L and a zero-order input duration D1 of 3.6 h. A second reader instead read the apparent unbound clearance as 59 and the apparent volume of distribution as 920, values this record leaves unassigned, and additionally read a dose of 3.1 that this record does not contain, so the two readings disagree on which numbers belong to clearance, volume and dose. Extracted — perindoprilat: V 57 h, CL 7.4, Bmax 1.2 g L -1, D1 3.6 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[b max].value`: this record has 2.5, the second reading 1.2; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has perindopril, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -104,17 +104,30 @@ Parker E et al., The pharmacokinetics of perindoprilat i…, European journal of
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (3/15 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.357 (5/14 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[b max].value` | 2.5 | 1.2 | mismatch |
+| `gpt-oss-120b` | `parameters[cl u]` | 7.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cv η(clu/f )]` | not captured | 43 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cv η(v/f)]` | not captured | 50 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 12]` | 1.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t inp].parameter_id` | Q49 | Q83 | mismatch |
+| `gpt-oss-120b` | `parameters[v 1]` | 6.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ clu]` | not captured | 7.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ v1]` | not captured | 57 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ v2 (1.5 mg)]` | not captured | 36 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | perindopril | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | perindoprilat | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[b max].value` | 2.5 | 1.2 | mismatch |
 | `gpt-oss:120b` | `parameters[cl u]` | 7.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cv η(v/f)]` | not captured | 50 | only_one_extracted |

@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Santos_2023_abnormal_larvae](drugs/drug_aluminium_oxide/pd_Santos_2023_abnormal_larvae.md) | percentage of abnormal larval development ← PAVAL® (PV) aluminum oxide leachate · direct sigmoid Emax (Hill) effect | — | Santos J et al., Eco-toxicity assessment of industrial b…, Journal of environmental ma… (2023) | [10.1016/j.jenvman.2023.118100](https://doi.org/10.1016/j.jenvman.2023.118100) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other animal</span> | [Santos_2023_abnormal_larvae](drugs/drug_aluminium_oxide/pd_Santos_2023_abnormal_larvae.md) | percentage of abnormal larval development ← PAVAL® (PV) aluminum oxide leachate · direct sigmoid Emax (Hill) effect | — | Santos J et al., Eco-toxicity assessment of industrial b…, Journal of environmental ma… (2023) | [10.1016/j.jenvman.2023.118100](https://doi.org/10.1016/j.jenvman.2023.118100) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -17,6 +17,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Total active cariprazine (cariprazine + DCAR + DDCAR) plasma concentration was related to D3 receptor occupancy (%) via a direct Emax model with Emax fixed to 100%; EC50 values of 1.42 nM and 3.84 nM are reported (the paper does not explain the two EC50 values in the excerpts).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Girgis_2016`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

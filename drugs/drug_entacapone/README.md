@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N04B&quot;,&quot;href&quot;:&quot;atc/N04B.md&quot;},{&quot;label&quot;:&quot;entacapone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Entacapone_Heikkinen2001_reference&quot;,&quot;label&quot;:&quot;Heikkinen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_entacapone/Entacapone_Heikkinen2001_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Entacapone_Heikkinen2001_reference&quot;,&quot;label&quot;:&quot;Heikkinen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_entacapone/Entacapone_Heikkinen2001_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # entacapone
 
@@ -33,14 +33,14 @@ Entacapone is a COMT inhibitor used to treat Parkinson's disease. It is an appro
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> | [Heikkinen_2001_reference](drugs/drug_entacapone/Entacapone_Heikkinen2001_reference.md) | ▶ model + simulator | 1-compartment, oral | 9 | Heikkinen H et al., Pharmacokinetics of entacapone, a perip…, European journal of clinica… (2001) | [10.1007/s002280000244](https://doi.org/10.1007/s002280000244) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182), gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed 0/2</span> | [Heikkinen_2001_reference](drugs/drug_entacapone/Entacapone_Heikkinen2001_reference.md) | ▶ model + simulator | 1-compartment, oral | 9 | Heikkinen H et al., Pharmacokinetics of entacapone, a perip…, European journal of clinica… (2001) | [10.1007/s002280000244](https://doi.org/10.1007/s002280000244) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Alqahtani_2015_PD](drugs/drug_entacapone/pd_Alqahtani_2015_PD.md) | PD parameters (COMT inhibition pharmacodynamic response) ← entacapone · inhibition effect | — | Alqahtani S et al., Development of a physiologically based…, Biopharmaceutics & drug dis… (2015) | [10.1002/bdd.1986](https://doi.org/10.1002/bdd.1986) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Forsberg_2002_COMT_inhibition_in_erythrocytes](drugs/drug_entacapone/pd_Forsberg_2002_COMT_inhibition_in_erythrocytes.md) | COMT inhibition in erythrocytes ← entacapone · direct Emax (saturable) effect | — | Forsberg M et al., Pharmacodynamic response of entacapone…, Pharmacology & toxicology (2002) | [10.1034/j.1600-0773.2002.900606.x](https://doi.org/10.1034/j.1600-0773.2002.900606.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Alqahtani_2015_PD](drugs/drug_entacapone/pd_Alqahtani_2015_PD.md) | PD parameters (COMT inhibition pharmacodynamic response) ← entacapone · inhibition effect | — | Alqahtani S et al., Development of a physiologically based…, Biopharmaceutics & drug dis… (2015) | [10.1002/bdd.1986](https://doi.org/10.1002/bdd.1986) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Forsberg_2002_COMT_inhibition_in_erythrocytes](drugs/drug_entacapone/pd_Forsberg_2002_COMT_inhibition_in_erythrocytes.md) | COMT inhibition in erythrocytes ← entacapone · direct Emax (saturable) effect | — | Forsberg M et al., Pharmacodynamic response of entacapone…, Pharmacology & toxicology (2002) | [10.1034/j.1600-0773.2002.900606.x](https://doi.org/10.1034/j.1600-0773.2002.900606.x) |
 
 ## ADME sites
 

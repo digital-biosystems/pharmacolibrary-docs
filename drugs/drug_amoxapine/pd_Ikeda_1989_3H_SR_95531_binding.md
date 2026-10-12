@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Amoxapine concentration-dependently inhibits [3H]SR 95531 binding to the GABAA receptor, described by a sigmoid Emax model with IC50 3.45 microM and a pseudo Hill coefficient of 0.83; the paper excerpts do not state Emax or a mechanistic basis beyond this binding inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ikeda_1989`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

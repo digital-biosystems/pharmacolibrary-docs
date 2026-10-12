@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes a sigmoid Emax model in which isoflurane concentration inhibits the Bispectral index, with a reported 50% effective dose of 0.85%, but the provided excerpts do not specify the underlying mechanism (e.g., effect compartment or direct inhibition) or other rate parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Whyte_2004`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Meglumine antimoniate concentrations (µg/mL) inhibit infection of intracellular L. braziliensis amastigotes in U937 macrophages (72 h exposure, % inhibition), described by a sigmoid Emax model with EC50 = 13.7 ± 0.9 µg/mL; the paper does not state a mechanism beyond direct concentration-effect inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Robledo_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

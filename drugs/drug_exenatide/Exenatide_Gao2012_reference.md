@@ -5,7 +5,7 @@
 
 # exenatide — `Exenatide_Gao2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.067). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.312), gpt-oss:120b (not confirmed, agreement 0.067). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record reports total clearance of 3.62 ml/min and a central volume of 43.2 ml for exenatide, magnitudes flagged as implausible for this molecule and consistent with a unit/scale extraction error. The source is a review (review-secondary) rather than a primary fitted model. A second reader also disagreed with several extracted values, leaving some fields with conflicting or missing numbers (e.g., 0.0207 versus 0.0153, and values present in one reading but null in the other). Extracted — exenatide: CL 3.62 ml/min, V1 43.2 ml.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 3.62, the second reading none; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q3: this record has 0.0966, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -64,17 +64,29 @@ Gao W et al., Target-mediated pharmacokinetic and pha…, Drug metabolism and di
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.312 (5/16 fields) | 11 |
 | `gpt-oss:120b` | not confirmed | 0.067 (1/15 fields) | 14 |
 
-<details><summary>14 field(s) a reader read differently</summary>
+<details><summary>25 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q303]` | 0.00273 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q329]` | 0.0207 | 0.0153 | mismatch |
+| `gpt-oss-120b` | `values[Q32]` | 4.67 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q330]` | 0.0153 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q331]` | not captured | 0.826 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q333]` | 5.21 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q3]` | 0.0966 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q47]` | 0.0839 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | not captured | 7 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q63]` | 43.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q22]` | 3.62 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q303]` | 0.00273 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q320]` | not captured | 4.67 | only_one_extracted |

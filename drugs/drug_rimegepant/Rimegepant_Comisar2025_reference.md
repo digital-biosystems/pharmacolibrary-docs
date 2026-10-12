@@ -5,7 +5,7 @@
 
 # rimegepant — `Rimegepant_Comisar2025_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.735), gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The base model was simulated, not the covariate effects the record defines.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of body_weight_effect_on_cl_f_and_q_f: this record has 0.575, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of body_weight_effect_on_cl_f_and_q_f: this record has 0.575, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -97,17 +97,27 @@ Comisar CM et al., Exposure Matching Using Population Phar…, Clinical and tran
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.735 (25/34 fields) | 9 |
 | `gpt-oss:120b` | not confirmed | 0.625 (20/32 fields) | 12 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[body_weight_effect_on_cl_f_and_q_f]` | 0.575 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[dose effect on f1].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[fed_on_f1]` | -0.331 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k tr].covariate_forms` | ['linear_fractional'] | ['linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_f_body_weight]` | not captured | 0.575 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_fab_fed]` | not captured | -0.331 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_ktr_fed]` | not captured | -0.698 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q338_fed]` | -0.698 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[body_weight_effect_on_cl_f_and_q_f]` | 0.575 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[body_weight_effect_on_v1_f_and_v2_f]` | 1.18 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[capsule_formulation_on_k_tr]` | 2.19 | not captured | only_one_extracted |
@@ -183,7 +193,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference_modelica.zip" download>Rimegepant_Comisar2025_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference_fmi.zip" download>Rimegepant_Comisar2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference_matlab.zip" download>Rimegepant_Comisar2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference_matlab_simbio.zip" download>Rimegepant_Comisar2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference_matlab_simbio.zip" download>Rimegepant_Comisar2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference_sbml.zip" download>Rimegepant_Comisar2025_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference_cellml.zip" download>Rimegepant_Comisar2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

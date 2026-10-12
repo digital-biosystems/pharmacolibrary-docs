@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deferasirox steady-state concentration (mg/L) acts on serum ferritin (ng/mL) via an indirect response model in which chelation increases the iron elimination rate (linear function, SlopeDrug 0.0013 L/(mg·mo)); ferritin is linked to body iron by a hyperbolic Emax function with Emaxferritin 11.7 mg/mL and A50iron 1240 mg. The paper does not report an IC50/EC50 or ke0 for deferasirox.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Borella_2022`
 - **model family:** `indirect_response_iv`
 - **driver:** `not_resolved`

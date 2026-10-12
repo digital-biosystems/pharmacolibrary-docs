@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In GH3 cells, deltamethrin (DLT) concentration-dependently stimulates the sustained voltage-gated Na+ current (INa(L), measured in pA at the end of a 20-ms depolarizing pulse from −80 to −10 mV) via a direct sigmoid Emax (stimulatory) effect, with an EC50 of 2.5 µM; the paper does not report Emax, Hill coefficient, or kinetic (kin/kout/ke0) values, and the mechanism is a direct stimulation of current amplitude rather than altered production or elimination of a response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lin_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

@@ -20,6 +20,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Salbutamol concentrations act on total peripheral resistance (TPR) via an indirect response model in which the drug inhibits the production (Kin) of TPR, with a proportional Emax effect (Emax,TPR = 0.99, EC50,TPR = 131.0, units not stated in the excerpts) and loss parameter Kout,TPR = 10 h−1; baseline TPR was 0.49 with a feedback factor FB of 7.55 mmHg−1. The excerpts describe the platform generally (drug effects on Kin of CON, HR and TPR with MAP feedback) and do not give salbutamol-specific mechanism text beyond the record.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Venkatasubramanian_2020`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

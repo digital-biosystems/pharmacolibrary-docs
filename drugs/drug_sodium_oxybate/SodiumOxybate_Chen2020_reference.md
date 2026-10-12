@@ -4,7 +4,7 @@
 
 # sodium oxybate — `SodiumOxybate_Chen2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.684). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Peripheral volume of distribution has an unconvertible unit, and an orphan compartment renders the model structurally invalid.**
+
+The peripheral volume of distribution (5.33) is recorded with an ambiguous unit label that cannot be converted to standard SI units, leaving the parameter dimensionally undefined. Furthermore, the model structure contains an unreachable compartment, meaning part of the distribution pathway has no valid link from the dose administration site. Extracted — sodium oxybate: Vmax 1.51e+03 mg/h, Km 22 mg/L, V1 29.5 L, V2 5.33 units, kabs 4.12 h−1, Fab 1 NA, kcomp 0.0968 h−1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium oxybate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Chen C et al., Population and Noncompartmental Pharmac…, Clinical and translational… (2020)
@@ -88,6 +96,32 @@ Chen C et al., Population and Noncompartmental Pharmac…, Clinical and translat
 - LLM selected parameter table(s) 2, S4
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.684 (13/19 fields) | 6 |
+
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[central compartment volume of distribution (vc)].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[ka].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_kabs_food]` | not captured | -0.681 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_age]` | not captured | 0.201 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | sodium oxybate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | sodium oxybate | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

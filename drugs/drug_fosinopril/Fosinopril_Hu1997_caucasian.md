@@ -4,7 +4,7 @@
 
 # fosinopril — `Fosinopril_Hu1997_caucasian`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.235). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 For fosinoprilat, λ1 (fast disposition phase, 3.85) and kel (terminal elimination, 0.55) are macro-rate constants, so their unit should be per hour; the record gives L/hr, a flow dimension, which fails the dimensional check on structural parameters. The excretion fraction fe is reported as 45.90 with 'n = 9' — a subject count, not a unit — so this parameter reached the model without an SI value. The remaining fosinoprilat parameters (e.g. t1/2α 0.33 hr, t1/2β 1.58 hr, t1/2γ 8.24 hr, V 58.14 mL/kg, Vss 11638 mL, AUC∞ 3423 ng·hr/mL, MRT 4.71 hr, CL 1222 mL/hr) carry consistent units and show no dimensional problem. Extracted — fosinoprilat: λ1 3.85 L/hr, kel 0.55 L/hr, t1/2α 0.33 hr, t1/2β 1.58 hr, t1/2γ 8.24 hr, V 58.1 mL/kg, Vss 1.16e+04 mL, AUC∞ 3.42e+03 ng · hr/mL, … (+3).
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of aucinf: this record has 3423, the second reading none; it also differs on 12 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -96,14 +96,32 @@ Hu OY et al., Pharmacokinetics of fosinoprilat in Chi…, Journal of clinical ph
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (9/9 fields) | none |
+| `gpt-oss-120b` | partly confirmed | 0.235 (4/17 fields) | 13 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>13 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[aucinf]` | 3423 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl,-]` | not captured | 6.85 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clnr]` | 1222 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cue]` | 45.90 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | 4.71 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2α]` | 0.33 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2β]` | 1.58 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2γ,]` | 8.24 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | not captured | 29.38 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 58.14 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vdss]` | 11638 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[α]` | 3.85 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` | 0.55 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

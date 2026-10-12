@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Oxamniquine stimulates the contractile response of chick isolated esophagus in a direct Emax-type concentration-effect relationship, with an EC50 of 4.2 × 10⁻⁵ M; the paper excerpts do not state Emax, a Hill coefficient, or a mechanistic production/elimination model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Adewunmi_1987`
 - **model family:** `emax`
 - **driver:** `not_resolved`

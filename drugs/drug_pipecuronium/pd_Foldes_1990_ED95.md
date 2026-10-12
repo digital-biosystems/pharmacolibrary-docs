@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03A&quot;,&quot;href&quot;:&quot;atc/M03A.md&quot;},{&quot;label&quot;:&quot;Pipecuronium&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium/&quot;},{&quot;label&quot;:&quot;Foldes_1990 \u00b7 PD neuromuscular blockade&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pipecuronium_Caldwell1988_reference&quot;,&quot;label&quot;:&quot;Caldwell_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium/Pipecuronium_Caldwell1988_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pipecuronium_Caldwell1988_reference&quot;,&quot;label&quot;:&quot;Caldwell_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pipecuronium/Pipecuronium_Caldwell1988_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # neuromuscular blockade — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -17,6 +17,10 @@
 **As extracted:** Pipecuronium (the dose) drives neuromuscular blockade: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
+
+> The paper does not provide the full text, so the specific mechanism by which pipecuronium dose (in micrograms/kg) causes neuromuscular blockade is not described. Consequently, key potency and rate parameters such as ED95, IC50, or ke0 cannot be reported.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Foldes_1990`
 - **model family:** `categorical`

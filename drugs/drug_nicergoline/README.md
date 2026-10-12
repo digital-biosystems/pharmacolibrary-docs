@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Perrier_1992_Ca_i](drugs/drug_nicergoline/pd_Perrier_1992_Ca_i.md) | intracellular calcium levels ← nicergoline · direct Emax (saturable) effect | — | Perrier ML et al., Dihydropyridine- and omega-conotoxin-re…, The Journal of pharmacology… (1992) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">rat</span> | [Perrier_1992_Ca_i](drugs/drug_nicergoline/pd_Perrier_1992_Ca_i.md) | intracellular calcium levels ← nicergoline · direct Emax (saturable) effect | — | Perrier ML et al., Dihydropyridine- and omega-conotoxin-re…, The Journal of pharmacology… (1992) | — |
 
 ## ADME sites
 

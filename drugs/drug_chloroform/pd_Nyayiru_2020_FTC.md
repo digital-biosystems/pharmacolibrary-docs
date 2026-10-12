@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The chloroform extract of C. nucifera cotyledon inhibits Ferric thiocyanate radical scavenging with an EC50 of 13.31 mg/ml. The paper does not specify the pharmacodynamic mechanism (e.g., inhibition of production or elimination) or rate parameters, reporting only the concentration-response relationship.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nyayiru_2020`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`

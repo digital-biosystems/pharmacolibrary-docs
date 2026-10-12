@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a formal pharmacodynamic model or explicit potency parameters such as IC50 or Emax values for aceclofenac. It reports only that aceclofenac decreased prostaglandin E2 production in a dose-dependent manner at concentrations ranging from 1 to 30 mM, but does not specify the underlying mechanism or quantitative effect kinetics.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Henrotin_2001`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

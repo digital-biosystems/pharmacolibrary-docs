@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper links ramelteon dose to sleep quality as a continuous response, but no excerpts are available, so the mechanism, model form, and potency or rate parameters cannot be stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zheng_2020`
 - **model family:** `unknown`
 - **driver:** `dose_only`

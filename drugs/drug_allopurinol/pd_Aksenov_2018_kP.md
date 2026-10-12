@@ -18,6 +18,10 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
+> The model describes oxypurinol inhibiting the production rate of uric acid (kP, mg/h) via an Emax mechanism, with a maximum fractional inhibition (R max) of 0.84 and a plasma concentration for half-maximal inhibition ([P] 50,PIN) of 14,000 ng/mL. The paper does not specify a rate constant for the effect compartment or other time-dependent mechanism parameters in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Aksenov_2018`
 - **model family:** `emax`
 - **driver:** `cited_pk`

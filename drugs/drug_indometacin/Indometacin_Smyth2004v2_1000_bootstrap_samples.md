@@ -4,7 +4,7 @@
 
 # indometacin — `Indometacin_Smyth2004v2_1000_bootstrap_samples`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714), gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[q 1].value`: this record has 19.0, the second reading 0.00711; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+**Only clearance was extracted — no volume.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — indometacin: Q 19 L/h, Q3 23.8 L/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[q 1].value`: this record has 19.0, the second reading 0.00711; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Smyth JM et al., Intravenous indometacin in preterm infa…, British journal of clinical… (2004)
@@ -78,17 +82,20 @@ Smyth JM et al., Intravenous indometacin in preterm infa…, British journal of 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.714 (5/7 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.714 (5/7 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[q 1].value` | 19.0 | 0.00711 | mismatch |
+| `gpt-oss-120b` | `parameters[q 3].value` | 23.8 | 0.0338 | mismatch |
 | `gpt-oss:120b` | `parameters[q 1].value` | 19.0 | 0.00711 | mismatch |
 | `gpt-oss:120b` | `parameters[q 3].value` | 23.8 | 0.0338 | mismatch |
 

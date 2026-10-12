@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> GHRH concentration (nM) stimulates GH plaque area (microns2) in a direct Emax model; the paper excerpts do not state a mechanism beyond this concentration-response stimulation. Reported Emax values include 26.4 +/- 3.9 x 10(6) microns2 (control), 16.8 +/- 2.4 (Cx), and 27.5 +/- 4.1 (Cx + T), with GHRH EC50 of 2.8 +/- 0.7 nM (M), 10.9 +/- 2.3 nM (Cx + E), and 7.9 +/- 1.6 nM (F).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ho_1988`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

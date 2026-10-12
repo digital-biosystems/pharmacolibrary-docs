@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H03B&quot;,&quot;href&quot;:&quot;atc/H03B.md&quot;},{&quot;label&quot;:&quot;thiamazole&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thiamazole_Kharouba2025_reference&quot;,&quot;label&quot;:&quot;Kharouba_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiamazole/Thiamazole_Kharouba2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thiamazole_Kharouba2025_reference&quot;,&quot;label&quot;:&quot;Kharouba_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiamazole/Thiamazole_Kharouba2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # thiamazole
 
@@ -32,8 +32,8 @@ Thiamazole (methimazole) is an antithyroid medicine used to treat hyperthyroidis
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kharouba_2025_reference](drugs/drug_thiamazole/Thiamazole_Kharouba2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kharouba M et al., The Impact of Augmented Renal Clearance…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70007](https://doi.org/10.1002/jcph.70007) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Okamura_1986_reference](drugs/drug_thiamazole/Thiamazole_Okamura1986_reference.md) | — | 1-compartment (no model) | 0 | Okamura Y et al., Pharmacokinetics of methimazole in norm…, Endocrinologia japonica (1986) | [10.1507/endocrj1954.33.605](https://doi.org/10.1507/endocrj1954.33.605) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Kharouba_2025_reference](drugs/drug_thiamazole/Thiamazole_Kharouba2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kharouba M et al., The Impact of Augmented Renal Clearance…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70007](https://doi.org/10.1002/jcph.70007) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Okamura_1986_reference](drugs/drug_thiamazole/Thiamazole_Okamura1986_reference.md) | — | 1-compartment (no model) | 0 | Okamura Y et al., Pharmacokinetics of methimazole in norm…, Endocrinologia japonica (1986) | [10.1507/endocrj1954.33.605](https://doi.org/10.1507/endocrj1954.33.605) |
 
 ## ADME sites
 

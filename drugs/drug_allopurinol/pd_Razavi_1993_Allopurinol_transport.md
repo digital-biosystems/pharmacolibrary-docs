@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record specifies a proportional inhibition model where allopurinol concentrations (driver: umol/L) affect allopurinol transport (response: pmol/microL intracellular volume/sec) with a reported Km of 268 umol/L. The mechanism, as stated in the record, is proportional inhibition, though the paper excerpts are not available to verify specific rate constants or maximum effect parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Razavi_1993`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

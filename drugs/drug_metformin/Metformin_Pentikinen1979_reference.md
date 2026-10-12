@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Pentikinen1979_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462), gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — metformin: t1/2z 1.7 h, CLR 454 ml/min, V 35 L, kabs 0.41 h -1, tlag 0.34 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metformin, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bioavailability: this record has none, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -77,17 +77,25 @@ Pentikäinen PJ et al., Pharmacokinetics of metformin after int…, European jou
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.462 (6/13 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[bioavailability of metformin tablets]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life from plasma].parameter_id` | Q57 | Q60 | mismatch |
+| `gpt-oss-120b` | `parameters[ka (h -1 ) absorption rate constant]` | 0.41 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal elimination phase half-life]` | not captured | 8.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.34 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 35.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.bioavailability.theta` | not captured | -60 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bioavailability of metformin tablets]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bioavailability of metformin tablets]` | not captured | not captured | only_one_extracted |

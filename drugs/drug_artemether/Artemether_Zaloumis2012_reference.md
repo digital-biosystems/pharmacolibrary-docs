@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;artemether&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/&quot;},{&quot;label&quot;:&quot;Zaloumis_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Artemether_Lohy2018_reference&quot;,&quot;label&quot;:&quot;Lohy_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/Artemether_Lohy2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Artemether_Lohy2018_reference&quot;,&quot;label&quot;:&quot;Lohy_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_artemether/Artemether_Lohy2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # artemether — `Artemether_Zaloumis2012_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,22 @@
 
 **Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The artemether parent–metabolite model was quarantined because artemether's clearance, volume of distribution and absorption lag time had no values and library placeholders were used, while all 5 extracted parameters (ka 0.37 /h, CL/F 180 L/h, V1/F 217 L, Q/F 4.08 L/h, V2/F 272 L) describe dihydroartemisinin only.**
+
+All extracted parameters belong to the metabolite dihydroartemisinin, formed from artesunate, so artemether itself has no clearance, distribution volume or lag time; the model builder substituted defaults for Cl, Vd and Tlag, and the parameter-coverage check found only 4 of 5 parameters covered, with V2/F neither emitted nor defaulted. The structure also mismatched: the parent–metabolite topology was expected but a one-compartment enteral structure was used. The model additionally assumed apparent parameterization with F=1, Fm=1 and no molar correction. Extracted — dihydroartemisinin: kabs 0.37 /h, CL/F 180 L/h, V1/F 217 L, Q/F 4.08 L/h, V2/F 272 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has artesunate → dihydroartemisinin (metabolism), the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Zaloumis S et al., Assessing the utility of an anti-malari…, Malaria journal (2012)
   ·  DOI: [10.1186/1475-2875-11-303](https://doi.org/10.1186/1475-2875-11-303)
 
 ## Model component
-<dbs-pgx drug="artemether" model-id="Artemether_Zaloumis2012_reference" status="extracted" stale="false" population="simulated P. falciparum malaria patients" measured-compound="artemether" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="artemether" model-id="Artemether_Zaloumis2012_reference" status="model_quarantined" stale="false" population="simulated P. falciparum malaria patients" measured-compound="artemether" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.
@@ -30,6 +38,8 @@ Zaloumis S et al., Assessing the utility of an anti-malari…, Malaria journal (
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | ka (/h) | `Q49` · kabs | 0.37 | /h | 0.00010277777777777778 | [1] / [h] | not captured | exact (1.0) | T2:row2:col2, T2:row2:col3, T2:row2:col5 | — | not captured |
@@ -67,6 +77,38 @@ Zaloumis S et al., Assessing the utility of an anti-malari…, Malaria journal (
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (3/15 fields) | 12 |
+
+<details><summary>12 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['artesunate', 'dihydroartemisinin', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 180 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 180 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.37 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.37 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f]` | not captured | 4.08 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f]` | 4.08 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | not captured | 217 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 217 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f]` | not captured | 103 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp/f]` | not captured | 272 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp/f]` | 272 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -85,6 +127,17 @@ Zaloumis S et al., Assessing the utility of an anti-malari…, Malaria journal (
 | C9_phys_window_Q290 | pass | volume within physiological range | 217 L | not captured | not captured | ['T2:row6:col2'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 272 L | not captured | not captured | ['T2:row12:col3', 'T2:row12:col5'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -93,6 +146,8 @@ Zaloumis S et al., Assessing the utility of an anti-malari…, Malaria journal (
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_artemether/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zaloumis_2012` / `Zaloumis_2012::reference`)
+- model: `../../../knowledgebase/drugs/drug_artemether/models/modelica/_needs_review/Artemether_Zaloumis2012_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_artemether/models/modelica/_needs_review/Artemether_Zaloumis2012_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -104,7 +159,7 @@ Zaloumis S et al., Assessing the utility of an anti-malari…, Malaria journal (
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_artemether/Artemether_Zaloumis2012_reference/Artemether_Zaloumis2012_reference_matlab.zip" download>Artemether_Zaloumis2012_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_artemether/Artemether_Zaloumis2012_reference/Artemether_Zaloumis2012_reference_matlab_simbio.zip" download>Artemether_Zaloumis2012_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_artemether/Artemether_Zaloumis2012_reference/Artemether_Zaloumis2012_reference_matlab_simbio.zip" download>Artemether_Zaloumis2012_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_artemether/Artemether_Zaloumis2012_reference/Artemether_Zaloumis2012_reference_sbml.zip" download>Artemether_Zaloumis2012_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_artemether/Artemether_Zaloumis2012_reference/Artemether_Zaloumis2012_reference_cellml.zip" download>Artemether_Zaloumis2012_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

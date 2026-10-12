@@ -20,7 +20,7 @@
 
 **Model:** No model was generated from this record.
 
-> In bovine tracheal smooth muscle, salbutamol (and salmeterol) stimulate cyclic AMP accumulation via β2-adrenoceptor agonism, described by a sigmoid Emax concentration–response relationship; salbutamol's EC50 for cAMP accumulation is 169 [99–290] nM (salmeterol: 5.3 [1.8–15.2] nM), and salbutamol also inhibits histamine-stimulated [3H]-inositol phosphate accumulation with IC50 = 13.8 [7.0–27.4] nM. The paper does not state a kinetic (kin/kout/ke0) mechanism, only noting salbutamol's cAMP effects are more rapid (maximal within 5 min) than salmeterol's (30–40 min).
+> Salbutamol (concentrations in nM) stimulates cyclic AMP accumulation (pmol mg-1 protein) in bovine tracheal smooth muscle via β2-adrenoceptor agonism, described by a sigmoid Emax model with EC50 = 169 [99-290] nM; the paper does not state Imax, kin, kout, ke0 or gamma values for this model.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

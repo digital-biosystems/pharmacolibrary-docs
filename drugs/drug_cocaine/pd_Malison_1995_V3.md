@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model describes cocaine dose-dependent inhibition of the specific to non-specific equilibrium partition coefficient (V3") using a sigmoidal Emax framework. The paper does not provide the full text to clarify the specific mechanistic details (e.g., whether the dose affects production or elimination), but quantifies the potency as an ED50 of 2.8 mg/kg with a Hill coefficient of 0.51.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Malison_1995`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

@@ -5,7 +5,7 @@
 
 # fluorouracil — `Fluorouracil_Mielke2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -94,17 +94,26 @@ Mielke H et al., 5-Fluorouracil Toxicity: Revisiting the…, Pharmaceuticals (Ba
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.5 (8/16 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.5 (6/12 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl5fu]` | 256.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fat]` | not captured | 19.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka, absorption rate constant]` | 0.757 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[liver]` | not captured | 99.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[red marrow]` | not captured | 11.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[skin]` | not captured | 20 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vessel-rich tissue]` | not captured | 44.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume]` | 0.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[brain]` | not captured | 1.45 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fat]` | not captured | 18.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[liver]` | not captured | 1.8 | only_one_extracted |

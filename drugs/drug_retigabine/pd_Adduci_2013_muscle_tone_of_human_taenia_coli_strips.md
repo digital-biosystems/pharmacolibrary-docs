@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Retigabine concentration (in μM) stimulates the muscle tone of human taenia coli strips (expressed as % of maximal bethanechol-induced contraction) via an additive Emax model. The model parameters are EC50 = 19.2 μM and Emax = 79.2%, with the specific mechanism of action not described in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Adduci_2013`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

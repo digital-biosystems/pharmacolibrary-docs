@@ -32,7 +32,7 @@ Piroxicam is a non-steroidal anti-inflammatory drug used to treat inflammatory a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Schiantarelli_1981_reference](drugs/drug_piroxicam/Piroxicam_Schiantarelli1981_reference.md) | — | 1-compartment (no model) | 2 | Schiantarelli P et al., Some pharmacokinetic properties and bio…, Arzneimittel-Forschung (1981) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Schiantarelli_1981_reference](drugs/drug_piroxicam/Piroxicam_Schiantarelli1981_reference.md) | — | 1-compartment (no model) | 2 | Schiantarelli P et al., Some pharmacokinetic properties and bio…, Arzneimittel-Forschung (1981) | — |
 
 ## Pharmacodynamics (PD)
 

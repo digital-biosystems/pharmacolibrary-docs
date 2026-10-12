@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The record was refused because manganese’s mean transit time (MTT) of 3.8 days has a dimension mismatch on a structural parameter.**
+
+MTT is the mean time for a drug molecule to transit through the body from administration to elimination; the finding identifies a dimension mismatch involving this structural parameter. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — mangafodipir: CLm/F 23.1 L/h, V1 35.4 L, V2 1.09e+03 L, Q 27.3 L; manganese: MTT 3.8 days.
+
+<sub>reviewed by gpt-6-luna</sub>
 
 > **Dose compound ≠ measured compound:** dosed `mangafodipir`, measured `manganese`.
 

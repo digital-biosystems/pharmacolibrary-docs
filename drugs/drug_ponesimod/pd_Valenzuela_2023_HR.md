@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ponesimod&quot;,&quot;href&quot;:&quot;drugs/drug_ponesimod/&quot;},{&quot;label&quot;:&quot;Valenzuela_2023 \u00b7 PD heart rate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ponesimod_Valenzuela2021_reference&quot;,&quot;label&quot;:&quot;Valenzuela_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ponesimod/Ponesimod_Valenzuela2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ponesimod_Valenzuela2021_reference&quot;,&quot;label&quot;:&quot;Valenzuela_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ponesimod/Ponesimod_Valenzuela2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # heart rate — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,6 +17,10 @@
 **As extracted:** Ponesimod (concentrations from the PK model of Valenzuela_2021) drives heart rate (inhibition; the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> The model describes ponesimod as inhibiting heart rate, with a maximal effect parameter of a 23.5% decrease, though the specific mechanism of action is not provided in the available excerpts. No other potency or rate parameters (such as EC50 or ke0) are stated in the record or the paper excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Valenzuela_2023`
 - **model family:** `unknown`

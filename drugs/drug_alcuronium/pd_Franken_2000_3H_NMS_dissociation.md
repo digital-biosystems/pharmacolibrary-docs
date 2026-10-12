@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> No full text is available to confirm the specific mechanism by which alcuronium acts on [3H]NMS dissociation at M2-receptors. The record reports a proportional inhibition effect with an EC50 of 53 nM.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Franken_2000`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

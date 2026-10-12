@@ -5,7 +5,7 @@
 
 # rutoside — `Rutoside_Domnguez2021_stochastic_approximation`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.158). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.389), gpt-oss:120b (not confirmed, agreement 0.158). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. None of the extracted parameters is rutoside's own; they describe quercetin. Extracted — quercetin: kabs 0.0129 h−1, t1/2ka 0.167, Fab 0.0275, tlag 0.021 h, V1 1.14 L/kg, V 0.0951, kel 0.119 h−1, KD 0.231, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rutin, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has rutin → quercetin (metabolism), the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -146,17 +146,29 @@ Domínguez Moré GP et al., Matrix Effects of the Hydroethanolic Ex…, Pharmace
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.389 (7/18 fields) | 11 |
 | `gpt-oss:120b` | not confirmed | 0.158 (3/19 fields) | 16 |
 
-<details><summary>16 field(s) a reader read differently</summary>
+<details><summary>27 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['rutin', 'quercetin', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[a]` | 2.49 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f1_pop]` | not captured | 0.0275 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k v]` | 0.111 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka1_pop]` | not captured | 0.0129 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka1_pop]` | 0.0129 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag2_pop]` | not captured | 0.021 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag2_pop]` | 0.021 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vpop].parameter_id` | Q352 | Q61 | mismatch |
+| `gpt-oss-120b` | `parameters[βka1d1000]` | not captured | 0.175 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[βkd1000]` | not captured | 0.231 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[a]` | 2.49 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[f1_pop]` | not captured | 0.0275 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k12_pop]` | 0.0802 | not captured | only_one_extracted |

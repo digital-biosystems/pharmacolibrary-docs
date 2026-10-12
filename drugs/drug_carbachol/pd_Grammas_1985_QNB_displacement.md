@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol concentration-dependently displaces quinuclidinyl benzilate (QNB) binding, described by a sigmoid Emax inhibition model, with IC50 1.5 ± 0.45 × 10⁻⁴ M and Hill coefficient 0.54 ± 0.07 (4.7 ± 0.16 × 10⁻⁴ M and 0.76 ± 0.18 in the presence of GTP); the paper excerpts do not state the mechanism beyond this binding displacement.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Grammas_1985`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

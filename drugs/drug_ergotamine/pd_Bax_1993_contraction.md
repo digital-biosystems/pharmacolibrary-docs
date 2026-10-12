@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not explicitly describe the underlying mechanism of action, but the extracted model classifies ergotamine as a stimulator of isolated human coronary artery contraction. The recorded parameters for this model are a pD2 of 8.4 and an Emax of 19.4 mN.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bax_1993`
 - **model family:** `emax`
 - **driver:** `cited_pk`

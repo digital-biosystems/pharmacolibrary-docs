@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Chlorpromazine concentrations (microM) inhibit PrP(Sc) formation with an EC50 of 3 microM; the paper excerpts do not state the mechanism or model structure beyond this inhibitory potency.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Korth_2001`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

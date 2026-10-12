@@ -4,7 +4,7 @@
 
 # olmesartan medoxomil — `OlmesartanMedoxomil_Yoshihara2005_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133), gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has olmesartan medoxomil, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+**Only clearance was extracted — no volume.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — olmesartan medoxomil: CL/F 6.66 L/h, kabs 1.46 h-1, kel 0.193 h-1, k21 0.061 h-1, tlag 0.427 h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has olmesartan medoxomil, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `olmesartan medoxomil`, measured `olmesartan`.
 
@@ -65,17 +69,31 @@ Yoshihara K et al., Population pharmacokinetics of olmesart…, Clinical pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.133 (2/15 fields) | 13 |
 | `gpt-oss:120b` | not confirmed | 0.133 (2/15 fields) | 13 |
 
-<details><summary>13 field(s) a reader read differently</summary>
+<details><summary>26 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption lag-time]` | not captured | 0.427 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption lag-time]` | 0.427 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | not captured | 1.46 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 1.46 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 6.66 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 6.66 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination rate constant]` | not captured | 0.193 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination rate constant]` | 0.193 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rate constant from the central to peripheral compartment]` | not captured | 0.061 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rate constant from the central to peripheral compartment]` | 0.061 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rate constant from the peripheral to central compartment]` | not captured | 0.079 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | olmesartan medoxomil | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | olmesartan | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[absorption lag-time]` | not captured | 0.427 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption lag-time]` | 0.427 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption rate constant]` | not captured | 1.46 | only_one_extracted |

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model describes the inhibition of KATP channel activity by ketamine using a sigmoidal Emax equation with a half-maximal inhibitory concentration of 62.9 µM and a Hill coefficient of 0.54. As no full text is provided, the specific pharmacokinetic mechanism (e.g., direct effect vs. effect compartment) is not stated in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ko_1997`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

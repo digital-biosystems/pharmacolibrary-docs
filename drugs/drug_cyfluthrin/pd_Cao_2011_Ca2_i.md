@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models β-cyfluthrin concentration as stimulating intracellular calcium concentration ([Ca2+]i) via a sigmoid Emax relationship, but the available excerpts do not state the mechanism, and no potency or rate parameter values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cao_2011`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

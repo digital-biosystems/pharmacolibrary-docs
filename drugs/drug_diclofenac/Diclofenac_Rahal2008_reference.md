@@ -5,7 +5,7 @@
 
 # diclofenac — `Diclofenac_Rahal2008_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — diclofenac: t1/2β 1.03 h, AUC 12.2 microg h ml(-1), V 0.14 Lkg(-1), MRT 1.36 h, CL 0.1 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has diclofenac, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has diclofenac, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -75,17 +75,30 @@ Rahal A et al., Pharmacokinetics of diclofenac and its…, Research in veterinar
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>24 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc]` | 12.17 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | not captured | 12.17 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 0.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 0.10 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | 1.36 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | not captured | 1.36 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t]` | 1.03 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t]` | not captured | 1.03 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 0.14 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | not captured | 0.14 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | diclofenac | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | diclofenac | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[auc]` | 12.17 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc]` | not captured | 12.17 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | 0.1 | not captured | only_one_extracted |

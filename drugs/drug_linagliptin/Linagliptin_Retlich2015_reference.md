@@ -4,7 +4,7 @@
 
 # linagliptin — `Linagliptin_Retlich2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.409). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.409), gpt-oss:120b (not confirmed, agreement 0.409). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Bmax), so that value has no SI equivalent. Extracted — linagliptin: kabs 0.933, t1/2ka 0.795, k13 0.441, V1/F 715 L, Q/F 412, V 1.65e+03, CL/F 258 L/h, Bmax 4.97 nmol/L, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has linagliptin, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has linagliptin, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -94,17 +94,31 @@ Retlich S et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacok
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.409 (9/22 fields) | 13 |
 | `gpt-oss:120b` | not confirmed | 0.409 (9/22 fields) | 13 |
 
-<details><summary>13 field(s) a reader read differently</summary>
+<details><summary>26 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | not captured | 100 | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [] | [['linagliptin', 'dpp-4 activity', 'binding']] | mismatch |
+| `gpt-oss-120b` | `parameters[corr f_cl]` | -0.765 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose_b max,c g]` | not captured | 3.41 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f in study 4]` | not captured | 169 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ggt_cle,f]` | not captured | -0.0339 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a,2]` | 0.795 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a,3]` | 0.441 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability]` | not captured | 100 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v p/f (l)d].parameter_id` | Q61 | Q78 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | linagliptin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | linagliptin | unknown | mismatch |
 | `gpt-oss:120b` | `model.bioavailability.theta` | not captured | 100 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[arelative bioavailability]` | not captured | 100 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[corr f_cl]` | -0.765 | not captured | only_one_extracted |

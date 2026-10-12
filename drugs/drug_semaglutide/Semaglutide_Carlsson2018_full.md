@@ -5,7 +5,7 @@
 
 # semaglutide — `Semaglutide_Carlsson2018_full`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.944), gpt-5.6-luna (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.944), gpt-5.6-luna (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 2/3</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -106,11 +106,12 @@ Carlsson Petri KC et al., Semaglutide s.c. Once-Weekly in Type 2…, Diabetes th
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  2 of 3 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (36/36 fields) | none |
 | `gpt-oss:120b` | not confirmed | 0.944 (34/36 fields) | 2 |
 | `gpt-5.6-luna` | confirmed | 1.0 (36/36 fields) | none |
 
@@ -179,7 +180,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_semaglutide/Semaglutide_Carlsson2018_full/Semaglutide_Carlsson2018_full_modelica.zip" download>Semaglutide_Carlsson2018_full_modelica.zip</a> <span class="pk-size">(5.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_semaglutide/Semaglutide_Carlsson2018_full/Semaglutide_Carlsson2018_full_fmi.zip" download>Semaglutide_Carlsson2018_full_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_semaglutide/Semaglutide_Carlsson2018_full/Semaglutide_Carlsson2018_full_matlab.zip" download>Semaglutide_Carlsson2018_full_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_semaglutide/Semaglutide_Carlsson2018_full/Semaglutide_Carlsson2018_full_matlab_simbio.zip" download>Semaglutide_Carlsson2018_full_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_semaglutide/Semaglutide_Carlsson2018_full/Semaglutide_Carlsson2018_full_matlab_simbio.zip" download>Semaglutide_Carlsson2018_full_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_semaglutide/Semaglutide_Carlsson2018_full/Semaglutide_Carlsson2018_full_sbml.zip" download>Semaglutide_Carlsson2018_full_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_semaglutide/Semaglutide_Carlsson2018_full/Semaglutide_Carlsson2018_full_cellml.zip" download>Semaglutide_Carlsson2018_full_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

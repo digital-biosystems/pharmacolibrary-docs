@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Salbutamol concentrations (M) stimulate cAMP GloSensor luminescence in HEK293 cells via β2-adrenoceptor activation, fitted at the peak response with a sigmoid Emax (Hill) model; Emax was 44.74 ± 3.80% of 1 μM isoprenaline and log EC50 was −6.73 ± 0.01. The paper does not report a mechanism beyond direct receptor-mediated stimulation of cAMP production.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cullum_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;spironolactone&quot;,&quot;href&quot;:&quot;drugs/drug_spironolactone/&quot;},{&quot;label&quot;:&quot;Chaiben_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Spironolactone_Zhou2010_reference&quot;,&quot;label&quot;:&quot;Zhou_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_spironolactone/Spironolactone_Zhou2010_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Spironolactone_Zhou2010_reference&quot;,&quot;label&quot;:&quot;Zhou_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_spironolactone/Spironolactone_Zhou2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # spironolactone — `Spironolactone_Chaiben2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417), gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has 40.7, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+**The clearance plausibility check could not be computed.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — spironolactone: CL 629 L/h, V 1.81e+03 L, V2 517 L, Q 89.9 L/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 40.7, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Chaiben S et al., Blood Never Lies: The PopPK-Based Lie D…, Clinical pharmacokinetics (2026)
@@ -56,17 +60,25 @@ Chaiben S et al., Blood Never Lies: The PopPK-Based Lie D…, Clinical pharmacok
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.417 (5/12 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q312]` | 40.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q351]` | 17 | 217 | mismatch |
+| `gpt-oss-120b` | `values[Q45]` | 0.7 | 0.7 | mismatch |
+| `gpt-oss-120b` | `values[Q57]` | 2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q61]` | not captured | 448 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q77]` | 777 | 777 | mismatch |
+| `gpt-oss-120b` | `values[Q88]` | 0.66 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q312]` | 40.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q351]` | 17 | 217 | mismatch |
 | `gpt-oss:120b` | `values[Q45]` | 0.7 | 0.7 | mismatch |

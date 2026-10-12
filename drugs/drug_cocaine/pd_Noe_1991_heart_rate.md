@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe the mechanism by which cocaine affects heart rate. The model is described as an Emax model where cocaine (in ng/ml) stimulates heart rate, with an Emax of 64 beats/min and an EC50 of 838 ng/ml.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Noe_1991`
 - **model family:** `emax`
 - **driver:** `cited_pk`

@@ -5,7 +5,7 @@
 
 # bisoprolol — `Bisoprolol_Momilovi2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -75,17 +75,20 @@ Momčilović S et al., Population pharmacokinetic analysis of…, European journ
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[apparent clearance (cl/f) of bisoprolol]` | not captured | 6.45 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical, population value of the apparent clearance of bisoprolol]` | 6.45 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[apparent clearance of bisoprolol]` | not captured | 6.45 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[estimated, population value of the clearance of bisoprolol]` | 2.48 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[estimated, population value of the clearance of bisoprolol]` | not captured | 2.48 | only_one_extracted |

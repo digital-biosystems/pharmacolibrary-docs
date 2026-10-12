@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes a sigmoid Emax dose-response model in which secretin dose stimulates the nadir pancreatic water and bicarbonate response, but no excerpts are available, so the mechanism and any potency or rate parameters (Emax, EC50, gamma) are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Maggee_1984`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

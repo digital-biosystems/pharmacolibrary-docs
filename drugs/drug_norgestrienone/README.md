@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Bartsch_1977_ViT](drugs/drug_norgestrienone/pd_Bartsch_1977_ViT.md) | volume density of the interductular tissue ← ethinyl-norgestrienone · inhibition effect | — | Bartsch G et al., The effect of a synthetic progestine on…, Andrologia (1977) | [10.1111/j.1439-0272.1977.tb01266.x](https://doi.org/10.1111/j.1439-0272.1977.tb01266.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Bartsch_1977_ViT](drugs/drug_norgestrienone/pd_Bartsch_1977_ViT.md) | volume density of the interductular tissue ← ethinyl-norgestrienone · inhibition effect | — | Bartsch G et al., The effect of a synthetic progestine on…, Andrologia (1977) | [10.1111/j.1439-0272.1977.tb01266.x](https://doi.org/10.1111/j.1439-0272.1977.tb01266.x) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

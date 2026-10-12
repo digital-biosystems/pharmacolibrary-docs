@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts describing the mechanism; the record indicates clozapine concentrations (nM) stimulate NMDA-evoked facilitation responses via an Emax model with EC50 = 14 nM, but no Imax, Emax, or rate parameters are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Arvanov_1997`
 - **model family:** `emax`
 - **driver:** `cited_pk`

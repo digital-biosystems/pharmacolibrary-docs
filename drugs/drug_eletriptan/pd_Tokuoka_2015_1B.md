@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Electriptan plasma concentrations drive the continuous response of serotonin 5-HT1B receptor occupancy (Φ1B) through a direct proportional mechanism, although the provided excerpts do not specify the underlying kinetic details or potency values. The text notes that eletriptan maintained Φ1B at a low level but does not report specific numerical parameters such as IC50, Emax, or rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tokuoka_2015`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`

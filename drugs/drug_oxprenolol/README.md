@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jonkers_1989_plasma_potassium_concentrations](drugs/drug_oxprenolol/pd_Jonkers_1989_plasma_potassium_concentrations.md) | plasma potassium concentrations ← oxprenolol · inhibition effect | — | Jonkers R et al., A nonsteady-state agonist antagonist in…, The Journal of pharmacology… (1989) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Jonkers_1989_plasma_potassium_concentrations](drugs/drug_oxprenolol/pd_Jonkers_1989_plasma_potassium_concentrations.md) | plasma potassium concentrations ← oxprenolol · inhibition effect | — | Jonkers R et al., A nonsteady-state agonist antagonist in…, The Journal of pharmacology… (1989) | — |
 
 ## ADME sites
 

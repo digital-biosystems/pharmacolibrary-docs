@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Aripiprazole plasma C tau (ng/mL), predicted from a population PK model, acts on time to recurrence of any mood episode in bipolar I disorder via a continuous time-to-event (Cox-type) model in which higher exposure lowers the recurrence hazard (additive log-hazard effect, coefficient -0.00346 per ng/mL, hazard ratio 0.99655, i.e. 0.34% hazard decrease per 1 ng/mL increase); a categorical model showed a 36% (1.55-fold) lower risk at ≥95 vs &lt;95 ng/mL (P = .0270). No Imax/IC50/EC50/kin/kout/ke0 values are given, and the paper does not describe a mechanistic PD pathway beyond this statistical exposure-response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2025`
 - **model family:** `tte`
 - **driver:** `cited_pk`

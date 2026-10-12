@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;sodium stibogluconate&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/&quot;},{&quot;label&quot;:&quot;Jaser_1995 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumStibogluconate_Verrest2021_reference&quot;,&quot;label&quot;:&quot;Verrest_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumStibogluconate_Verrest2021_reference&quot;,&quot;label&quot;:&quot;Verrest_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sodium stibogluconate — `SodiumStibogluconate_Jaser1995_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.067). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The sodium stibogluconate (antimony) record was rejected because the equilibrium dissociation constant KD was reported as 0.391 hr-1, a rate dimension, whereas a dissociation constant must carry concentration units.**
+
+In the Jaser_1995 abstract-only record for adults with cutaneous leishmaniasis, the parameter labelled 'kd' with value 0.391 hr-1 is defined as the equilibrium dissociation constant for drug-target binding (koff/kon), which is a ratio of concentrations, not a first-order rate; its hr-1 unit therefore fails the dimensional check on a structural parameter. The record was also built from the abstract alone, so the reported summary statistics stood in for a fitted model. The other antimony parameters (kabs 1.71 hr-1, CL 17.67 L/hr, V 45.7 L, fe 0.8, CLR 12.7 L/hr) are dimensionally consistent with their meanings. Extracted — antimony: kabs 1.71 hr-1, KD 0.391 hr-1, CL 17.7 L/hr, V 45.7 L, fe 0.8, CLR 12.7 L/hr.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium stibogluconate, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `sodium stibogluconate`, measured `antimony`.
 
@@ -67,6 +75,40 @@ Jaser MA et al., Pharmacokinetics of antimony in patient…, Pharmaceutical rese
 - no GROBID TEI available — transcribed from abstract in Jaser_1995_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.067 (1/15 fields) | 14 |
+
+<details><summary>14 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['sodium stibogluconate', 'antimony (sb)', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[area-under-the-curve (auc) low exposure]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fraction of dose of sb excreted in the urine]` | 0.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fraction of dose of sb excreted in the urine]` | not captured | 0.80 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 1.71 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kd]` | 0.391 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance]` | 12.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance]` | not captured | 12.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tbc]` | 17.67 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` | not captured | 17.67 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 45.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 45.7 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | sodium stibogluconate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | antimony | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

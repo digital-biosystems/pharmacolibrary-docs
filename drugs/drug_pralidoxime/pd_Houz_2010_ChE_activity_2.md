@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pralidoxime plasma concentrations (mg/l) stimulate blood cholinesterase activity in vivo via an indirect response model of class III (stimulation of the response), but the paper excerpts provide no parameter values (Imax, IC50, kin, kout) and no further mechanistic detail.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Houzé_2010`
 - **model family:** `indirect_response_iii`
 - **driver:** `conc_no_pk`

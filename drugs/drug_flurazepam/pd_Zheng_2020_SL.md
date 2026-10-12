@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates flurazepam dose to sleep latency (SL) as a continuous response with an inhibitory effect direction, but no excerpts are available, so the model family, mechanism, and any potency or rate parameters are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zheng_2020`
 - **model family:** `unknown`
 - **driver:** `dose_only`

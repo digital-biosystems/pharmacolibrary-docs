@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AcetylsalicylicAcid_Bayoumy2025_reference&quot;,&quot;label&quot;:&quot;Bayoumy_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Bayoumy2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Shi2008_reference&quot;,&quot;label&quot;:&quot;Shi_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Shi2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koh_2025_TXB2&quot;,&quot;label&quot;:&quot;Koh_2025 \u00b7 TXB2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/pd_Koh_2025_TXB2.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# thromboxane B2 — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.618). The first reading is what the record holds.">cross-check: disputed</span>
+# thromboxane B2 — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -76,37 +76,20 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.618 (34/55 fields) | 21 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.556 (5/9 fields) | 4 |
 
-<details><summary>21 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model_family` | sigmoid_emax | indirect_response_i | mismatch |
-| `gpt-oss:120b` | `parameters[Q302]` | 4.11 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q303]` | 2.32 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q304]` | 2.97 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | 1.09 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 13.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 15 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 0.49 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q47]` | not captured | 2.32 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q47]` | not captured | 11.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | not captured | 1.09 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | not captured | 14.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | not captured | 0.22 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | not captured | 21.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | not captured | 0.053 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q76]` | 2.6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q86]` | 1.58 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q86]` | 15.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q95]` | 0.22 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q95]` | 21.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q95]` | 0.053 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `driver_compound` | acetylsalicylic acid | acetylsalicylic_acid | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q322]` | 0.0036 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q323]` | 1 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q325]` | 1 | not captured | only_one_extracted |
 
 </details>
 

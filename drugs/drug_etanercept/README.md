@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;etanercept&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etanercept_Ling2024_reference&quot;,&quot;label&quot;:&quot;Ling_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/Etanercept_Ling2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etanercept_Ling2024_reference&quot;,&quot;label&quot;:&quot;Ling_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etanercept/Etanercept_Ling2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # etanercept
 
@@ -18,14 +18,14 @@ Etanercept is a TNF inhibitor used to treat inflammatory conditions such as rheu
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:00 | 1:23 | 1/1/0 | 2/0/3 | 0/0/0 | 96,560/9,137 | einfracz / qwen3.8-27b | 5 | 0/5 | 5/0 | 0 |
+| 2026-10-07 00:00 | 1:23 | 0/1/1 | 2/0/3 | 0/0/0 | 96,560/9,137 | einfracz / qwen3.8-27b | 5 | 0/5 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ling_2024_reference](drugs/drug_etanercept/Etanercept_Ling2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Ling SF et al., Population Pharmacokinetic Analysis and…, Pharmaceutics (2024) | [10.3390/pharmaceutics16060702](https://doi.org/10.3390/pharmaceutics16060702) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Zhou_2004_reference](drugs/drug_etanercept/Etanercept_Zhou2004_reference.md) | — | 1-compartment (no model) | 0 | Zhou H et al., Unaltered etanercept pharmacokinetics w…, Journal of clinical pharmac… (2004) | [10.1177/0091270004268049](https://doi.org/10.1177/0091270004268049) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Ling_2024_reference](drugs/drug_etanercept/Etanercept_Ling2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Ling SF et al., Population Pharmacokinetic Analysis and…, Pharmaceutics (2024) | [10.3390/pharmaceutics16060702](https://doi.org/10.3390/pharmaceutics16060702) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Zhou_2004_reference](drugs/drug_etanercept/Etanercept_Zhou2004_reference.md) | — | 1-compartment (no model) | 0 | Zhou H et al., Unaltered etanercept pharmacokinetics w…, Journal of clinical pharmac… (2004) | [10.1177/0091270004268049](https://doi.org/10.1177/0091270004268049) |
 
 ## Pharmacodynamics (PD)
 
@@ -62,7 +62,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 30 matched, 17 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

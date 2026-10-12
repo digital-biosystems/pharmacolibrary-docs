@@ -5,7 +5,7 @@
 
 # potassium canrenoate — `PotassiumCanrenoate_Suyagh2013_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3), gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record reports canrenone CL/F of 1.11 l/h, V/F of 20.48 l and a terminal half-life of 19.99 h, but the absorption rate constant ka is not reported in the source, so a library default would have been used for it and for Tlag. The model builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input. The record was built from the paper's abstract alone, so summary statistics stood in for a fitted model. A second reader disagreed on the dosed compound (unknown vs potassium canrenoate) and the primary analyte, and returned conflicting null and non-null values for CL/F and V/F (12.86 l/h and 603.3 l vs 1.11 l/h and 20.48 l). Extracted — canrenone: CL/F 1.11 l/h, V/F 20.5 l, t1/2z 20 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of estimated half-life of canrenone based on dbs concentrations: this record has 19.99, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has potassium canrenoate, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -75,17 +75,25 @@ Suyagh M et al., Potassium canrenoate treatment in paedi…, Journal of hyperten
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 | `gpt-oss:120b` | partly confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f].parameter_id` | Q351 | Q27 | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f].value` | 1.11 | not captured | mismatch |
+| `gpt-oss-120b` | `parameters[estimated half-life of canrenone based on dbs concentrations]` | 19.99 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | not captured | 19.99 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f].parameter_id` | Q367 | Q76 | mismatch |
+| `gpt-oss-120b` | `parameters[v/f].value` | 20.48 | not captured | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | potassium canrenoate | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[estimated half-life of canrenone based on dbs concentrations]` | 19.99 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life]` | not captured | 19.99 | only_one_extracted |
 
@@ -144,7 +152,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference/PotassiumCanrenoate_Suyagh2013_reference_modelica.zip" download>PotassiumCanrenoate_Suyagh2013_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference/PotassiumCanrenoate_Suyagh2013_reference_fmi.zip" download>PotassiumCanrenoate_Suyagh2013_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference/PotassiumCanrenoate_Suyagh2013_reference_matlab.zip" download>PotassiumCanrenoate_Suyagh2013_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference/PotassiumCanrenoate_Suyagh2013_reference_matlab_simbio.zip" download>PotassiumCanrenoate_Suyagh2013_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference/PotassiumCanrenoate_Suyagh2013_reference_matlab_simbio.zip" download>PotassiumCanrenoate_Suyagh2013_reference_matlab_simbio.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference/PotassiumCanrenoate_Suyagh2013_reference_sbml.zip" download>PotassiumCanrenoate_Suyagh2013_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference/PotassiumCanrenoate_Suyagh2013_reference_cellml.zip" download>PotassiumCanrenoate_Suyagh2013_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>

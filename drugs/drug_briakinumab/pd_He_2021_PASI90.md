@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Briakinumab dose (in mg) directly drives the binary response of achieving PASI90 via a sigmoidal Emax effect described by the model equation P(response) = g(E0 + Edrug). The estimated parameters are an Emax of 4.9 and an ED50 of 9.47 mg.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `He_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol concentration (µmol l-1) is modelled with an Emax-type inhibitory effect on force of contraction (negative inotropy in the presence of isoprenaline); the excerpts provide no mechanism details and no potency or rate parameter values (Imax, IC50, kin, kout, etc.).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Böhm_1986`
 - **model family:** `emax`
 - **driver:** `not_resolved`

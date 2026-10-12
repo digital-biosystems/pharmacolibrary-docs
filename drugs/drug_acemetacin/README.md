@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">other animal</span> | [Suzuki_2018_CAP](drugs/drug_acemetacin/pd_Suzuki_2018_CAP.md) | peak amplitude of compound action potential ← acemetacin · direct Emax (saturable) effect | — | Suzuki R et al., Inhibition by non-steroidal anti-inflam…, Biomedicine & pharmacothera… (2018) | [10.1016/j.biopha.2018.04.041](https://doi.org/10.1016/j.biopha.2018.04.041) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other animal</span> | [Suzuki_2018_CAP](drugs/drug_acemetacin/pd_Suzuki_2018_CAP.md) | peak amplitude of compound action potential ← acemetacin · direct Emax (saturable) effect | — | Suzuki R et al., Inhibition by non-steroidal anti-inflam…, Biomedicine & pharmacothera… (2018) | [10.1016/j.biopha.2018.04.041](https://doi.org/10.1016/j.biopha.2018.04.041) |
 
 ## ADME sites
 

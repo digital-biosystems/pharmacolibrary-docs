@@ -4,7 +4,7 @@
 
 # tanezumab — `Tanezumab_Jonsson2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.619), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The two-compartment tanezumab model carries clearance 0.135 l day–1, central volume 2.71 l, intercompartmental clearance 0.371 l day–1, peripheral volume 1.98 l, plus target-mediated parameters Km 27.7 ng ml–1 and Vmax 8.03 μg day–1 and weight and gender covariate effects. One of the reported units could not be converted to a standard SI unit, so that parameter entered the model without a consistent dimension, and the dimension check on a structural parameter failed. The record was therefore rejected. Extracted — tanezumab: CL 0.135 l day –1, V1 2.71 l, Q 0.371 l day –1, V2 1.98 l, Km 27.7 ng ml –1, Vmax 8.03 μg day –1.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of gender_on_cl: this record has 0.143, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -105,14 +105,28 @@ Jonsson EN et al., Population pharmacokinetics of tanezuma…, British journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.619 (13/21 fields) | 8 |
 | `gpt-oss:120b` | confirmed | 1.0 (18/18 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[gender_on_cl]` | 0.143 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_gender]` | not captured | 0.143 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q314_wt]` | 0.302 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q3_wt]` | 0.554 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_wt]` | not captured | 0.554 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v2_wt]` | not captured | 0.302 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 1].covariate_forms` | ['linear_fractional'] | ['linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[v 2].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

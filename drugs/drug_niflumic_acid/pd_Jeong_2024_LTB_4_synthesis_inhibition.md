@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Niflumic acid concentration (in µg/mL) directly inhibits the synthesis of leukotriene B4 (LTB4) via a sigmoidal Emax model with baseline (E0) of 0.06%, maximum inhibition (Emax) of 58.45%, EC50 of 20.08 µg/mL, and gamma (γ) of 5.38. The paper describes this as a direct link from plasma niflumic acid concentration to LTB4 synthesis inhibition without specifying a distinct effect compartment turnover rate (ke0) for this specific PD component.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jeong_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

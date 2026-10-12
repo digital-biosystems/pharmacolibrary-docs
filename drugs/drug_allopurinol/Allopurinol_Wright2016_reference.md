@@ -5,7 +5,7 @@
 
 # allopurinol — `Allopurinol_Wright2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 For oxypurinol the record reports an apparent metabolite clearance CLm/F of 0.848 L/h, a volume of distribution of 41.6 L, and a terminal elimination rate constant kel of 1.09 with unit given as h rather than 1/h; this dimension mismatch on a structural parameter triggered the refusal. A further kel entry for urate carries the label 'λ (Hill coefficient)' with unit 1/h, another dimension mismatch. One reported parameter's unit could not be converted to SI, so it was recorded without an SI value. Extracted — oxypurinol: CLm/F 0.848 L/h, V 41.6 l, kel 1.09 h; urate: kel 1.3 1/h.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of λ: this record has 1.30, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -128,14 +128,22 @@ Wright DF et al., Predicting allopurinol response in pati…, British journal of
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.818 (9/11 fields) | 2 |
 | `gpt-oss:120b` | confirmed | 1.0 (11/11 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[λ]` | 1.30 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λ]` | not captured | 1.45 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

@@ -20,7 +20,7 @@
 
 **Model:** No model was generated from this record.
 
-> The paper links fluvoxamine concentrations (ng/ml, from a cited PK source) to 5-HIAA concentration in rat frontal cortex microdialysate, but the available excerpts do not state the model form, mechanism, or any potency or rate parameters.
+> Fluvoxamine plasma concentrations (ng/ml, from a cited PK model, Chen_2024, sequential fitting) drive 5-HIAA concentration in rat frontal cortex microdialysate via an indirect response model with inhibition and a proportional effect form; the paper excerpts provide no mechanism detail beyond this and no potency (IC50/Imax) or rate parameter values.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

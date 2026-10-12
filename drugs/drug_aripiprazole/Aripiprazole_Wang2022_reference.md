@@ -4,7 +4,7 @@
 
 # aripiprazole — `Aripiprazole_Wang2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.909), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL/F and CL), so that value has no SI equivalent. Extracted — aripiprazole: CL/F 24 % lower, CL 42 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl/f in presence of strong cyp3a4 inhibitors relative change: this record has none, the second reading 24; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of minimum value of the objective function = 48892.907: this record has none, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -98,17 +98,20 @@ Wang X et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.909 (20/22 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[minimum value of the objective function = 48892.907]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q1/f: intercompartmental cl/f].parameter_id` | Q309 | Q69 | mismatch |
 | `gpt-oss:120b` | `parameters[cl/f in presence of strong cyp3a4 inhibitors relative change]` | not captured | 24 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/f in the presence of strong cyp3a4 inhibitors]` | 24 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[reduction in clearance for cyp2d6 pms]` | 42 | not captured | only_one_extracted |

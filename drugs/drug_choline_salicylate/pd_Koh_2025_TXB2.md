@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> The model describes the inhibition of thromboxane B2 (TXB2) production by acetylsalicylic acid (ASA) using an indirect response model with a proportional Emax function. Key parameters include a baseline TXB2 (R0) of 26.4 μg/L, a turnover rate (kout) of 0.023 h⁻¹, a maximum inhibition (Imax) of 1, and an IC50 of 0.0036 mol/L.
+> The model uses acetylsalicylic acid (ASA) concentrations to inhibit the production of thromboxane B2 (TXB2) via a turnover model, characterized by a baseline response (R0) of 26.4 μg/L, an elimination rate constant (kout) of 0.023 h⁻¹, a maximum inhibition (Imax) of 1, an IC50 of 0.0036 mol/L, and a gamma value of 1.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Koh_2025`
 - **model family:** `indirect_response_i`

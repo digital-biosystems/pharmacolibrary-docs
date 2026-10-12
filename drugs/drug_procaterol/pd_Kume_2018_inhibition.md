@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Procaterol concentration-dependently inhibits methacholine (10 μM)-induced contraction of airway smooth muscle, described by a direct Emax model with EC50 = 1.9 ± 0.6 nM and Emax = 97.6 ± 2.2% inhibition; in the presence of tiotropium (1 nM) the EC50 decreased to 1.6 ± 0.4 nM and maximal inhibition increased to 94.3 ± 4.6%. The excerpts do not state a kinetic mechanism (no kin, kout, or ke0 values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kume_2018`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V04C&quot;,&quot;href&quot;:&quot;atc/V04C.md&quot;},{&quot;label&quot;:&quot;indocyanine green&quot;,&quot;href&quot;:&quot;drugs/drug_indocyanine_green/&quot;},{&quot;label&quot;:&quot;Meijer_1988 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IndocyanineGreen_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indocyanine_green/IndocyanineGreen_Han2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IndocyanineGreen_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indocyanine_green/IndocyanineGreen_Han2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # indocyanine green — `IndocyanineGreen_Meijer1988_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The indocyanine green record was rejected because the extracted volume of distribution of 3.01 mL and clearance of 230 ml.min-1 fail the physiological plausibility check, indicating a unit or scale extraction error.**
+
+The volume of distribution was recorded as 3.01 mL, a magnitude far below any plausible value for indocyanine green, and the clearance of 230 ml.min-1 was flagged as outside the physiological window; both point to a dimension mismatch on a structural parameter, likely from misreading units in the abstract. The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model, which limits what could be extracted. Other parameters, such as the terminal half-life of 67.6 min and the biliary excretion half-life of 5 min, were recorded but the implausible clearance and volume caused the rejection. Extracted — indocyanine green: t1/2z 67.6 min, kexcr 5 min, t1/2β 73 min, tmax 1.3 h, CL 230 ml.min-1, V 3.01 mL.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has indocyanine green, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Meijer DK et al., Pharmacokinetics of biliary excretion i…, European journal of clinica… (1988)
@@ -66,6 +74,38 @@ Meijer DK et al., Pharmacokinetics of biliary excretion i…, European journal o
 - no GROBID TEI available — transcribed from abstract in Meijer_1988_metadata.yaml (13 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+
+<details><summary>12 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clearance]` | 230 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose-dependent apparent t1/2]` | 67.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose]` | not captured | 0.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean t1/2 of ascending phase of biliary excretion rate curve]` | 5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 of the descending phase]` | 73 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time of maximal excretion]` | 1.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time of maximal excretion]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution v]` | 3.01 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | indocyanine green | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | indocyanine green | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

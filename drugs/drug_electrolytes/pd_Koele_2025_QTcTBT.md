@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05B&quot;,&quot;href&quot;:&quot;atc/B05B.md&quot;},{&quot;label&quot;:&quot;electrolytes&quot;,&quot;href&quot;:&quot;drugs/drug_electrolytes/&quot;},{&quot;label&quot;:&quot;Koele_2025 \u00b7 PD QTcTBT&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# QTcTBT — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+# QTcTBT — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> QTcTBT (ms) was described by a linear exposure–response model in which QTcTBT prolongation increased linearly with bedaquiline M2 metabolite AUC0–24, with a treatment-related increase of 13.2 ms (95% CI: 10.9–15.3) from a baseline of 400 ms within the first week and no further increase thereafter; no slope, potency (IC50/EC50/Emax) or rate parameters are reported, and no effect of sutezolid or delpazolid exposure was identified.
+> The paper describes a linear additive model where bedaquiline M2 exposure (AUC0-24) drives a 13.2 ms increase in QTcTBT, with a slope of 0.783 ms/mg/L*h, but does not specify the underlying physiological mechanism (e.g., direct Emax or effect compartment).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Koele_2025`
 - **model family:** `linear`
@@ -44,20 +44,24 @@ Koele SE et al., Cardiac safety of bedaquiline, delamani…, The Journal of anti
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (3/6 fields) | 3 |
+| `einfracz:gpt-oss-120b` | secondary_empty | 0.0 (0/7 fields) | 7 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `effect_form` | unknown | additive | mismatch |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q30]` | not captured | 0 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `driver_compound` | bedaquiline M2 | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_direction` | stimulation | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | additive | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | linear | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q320]` | 13.2 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q324]` | 400 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q335]` | 0.783 | not captured | only_one_extracted |
 
 </details>
 

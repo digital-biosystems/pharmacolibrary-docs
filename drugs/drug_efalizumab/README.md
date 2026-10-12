@@ -23,7 +23,7 @@ Efalizumab, a monoclonal antibody immunosuppressant, was used to treat psoriasis
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sun_2005_reference](drugs/drug_efalizumab/Efalizumab_Sun2005_reference.md) | — | 1-compartment (no model) | 0 | Sun YN et al., Population pharmacokinetics of efalizum…, Journal of clinical pharmac… (2005) | [10.1177/0091270004272731](https://doi.org/10.1177/0091270004272731) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sun_2005_reference](drugs/drug_efalizumab/Efalizumab_Sun2005_reference.md) | — | 1-compartment (no model) | 0 | Sun YN et al., Population pharmacokinetics of efalizum…, Journal of clinical pharmac… (2005) | [10.1177/0091270004272731](https://doi.org/10.1177/0091270004272731) |
 
 ## Pharmacodynamics (PD)
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record identifies a sigmoid Emax model linking terfenadine plasma concentrations to a stimulated change in the RT interval, but the paper excerpts are unavailable. Consequently, the specific mechanism and key potency or rate parameters (such as Emax, EC50, or IC50) are not provided in the available information.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nolan_2006`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

@@ -5,7 +5,7 @@
 
 # metamizole sodium — `MetamizoleSodium_Wehrfritz2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dipyrone, the second reading metamizole_sodium; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dipyrone, the second reading metamizole; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -77,17 +77,21 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (1/4 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.25 (1/4 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['dipyrone', '4-methylaminoantipyrine', 'hydrolysis'], ['4-methylaminoantipyrine', '4-aminoantipyrine', 'metabolism']] | [['metamizole', '4-methylaminoantipyrine', 'hydrolysis']] | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | dipyrone | metamizole | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | 4-methylaminoantipyrine | 4-methylaminoantipyrine and 4-aminoantipyrine | mismatch |
 | `gpt-oss:120b` | `model.links` | [['dipyrone', '4-methylaminoantipyrine', 'hydrolysis'], ['4-methylaminoantipyrine', '4-aminoantipyrine', 'metabolism']] | [['metamizole_sodium', '4-maa', 'hydrolysis']] | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | dipyrone | metamizole_sodium | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | 4-methylaminoantipyrine | 4-MAA | mismatch |

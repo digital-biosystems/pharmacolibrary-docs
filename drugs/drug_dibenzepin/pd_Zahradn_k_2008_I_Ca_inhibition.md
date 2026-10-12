@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dibenzepin concentration (µM) inhibits L-type calcium channel current (I_Ca, %) via a sigmoid Emax model; the paper reports an IC50 of 364 µM, but no full text is available to confirm the mechanism or other parameters (Emax, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zahradník_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

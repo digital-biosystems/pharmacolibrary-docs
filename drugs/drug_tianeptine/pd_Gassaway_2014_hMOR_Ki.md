@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Tianeptine displaces radioligand binding at the human μ-opioid receptor (hMOR) with a Ki of 383±183 nM; this is an in vitro binding affinity measurement, not a PD model, and the paper does not describe a kinetic mechanism (no Imax, kin, kout, ke0, or gamma reported).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gassaway_2014`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

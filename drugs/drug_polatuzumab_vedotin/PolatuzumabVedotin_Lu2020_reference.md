@@ -4,7 +4,7 @@
 
 # polatuzumab vedotin — `PolatuzumabVedotin_Lu2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.535). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**C5 dimension mismatch on a structural parameter.**
+
+A reported unit could not be converted (Vmax, Km, Vmax and Css), so that value has no SI equivalent. None of the extracted parameters is polatuzumab vedotin's own; they describe acMMAE and unconjugated MMAE. Extracted — acMMAE: kel 0.0046 1/h, CL 0.00623 L/hour, V1 3.15 L, V2 3.98 L, Q 0.0145 L/hour, Vmax 0.0203 ng/mL/hour, Km 0.604 ng/mL; unconjugated MMAE: V1 82.2 L, CL 1.89 L/hour, Q 36.3 L/hour, V2 200 L, Vmax 0.0307 ng/mL/hour, Css 0.581 ng/mL, CLfm 3.7.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has polatuzumab_vedotin, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `polatuzumab_vedotin`, measured `acMMAE`.
 
@@ -100,6 +108,46 @@ Lu D et al., Integrated Two-Analyte Population Pharm…, CPT: pharmacometrics & 
 - LLM selected parameter table(s) 1
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.535 (23/43 fields) | 20 |
+
+<details><summary>20 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['acmmae', 'unconjugated mmae', 'metabolism']] | [['polatuzumab vedotin', 'unconjugated mmae', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[alph]` | not captured | 0.167 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clinf]` | not captured | 0.0344 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clmmae].covariate_forms` | [] | ['linear_fractional', 'power'] | mismatch |
+| `gpt-oss-120b` | `parameters[clt].covariate_forms` | [] | ['linear_fractional', 'power'] | mismatch |
+| `gpt-oss-120b` | `parameters[fracclt].parameter_id` | Q370 | Q45 | mismatch |
+| `gpt-oss-120b` | `parameters[fracecog]` | not captured | 0.905 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fracwt]` | not captured | -0.467 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k des,naïve]` | not captured | 3.38 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k des]` | 0.0046 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k des]` | not captured | 0.0046 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k ss]` | 0.581 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_sex_clinf]` | not captured | 1.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_wt_power]` | not captured | 0.73 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_wt_v_1_v_2_wt_q_wt]` | not captured | 0.50 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 1].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[v max,mmae]` | 0.0307 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v mmae].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | polatuzumab_vedotin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | acMMAE | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

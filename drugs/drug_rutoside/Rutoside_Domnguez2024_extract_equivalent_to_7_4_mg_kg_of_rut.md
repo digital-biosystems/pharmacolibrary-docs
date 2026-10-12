@@ -5,7 +5,7 @@
 
 # rutoside — `Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.211). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158), gpt-oss:120b (partly confirmed, agreement 0.211). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record declares a parent–metabolite structure (rutin forming quercetin in the central compartment), but the fitted topology is a single-compartment model, so the required three-compartment parent–metabolite structure was not built. The model output is the central compartment amount rather than the measured analyte compartment for rutin. Additionally, a reported unit could not be converted to SI, so that parameter reached the model builder without an SI value, and the second reader disputed several values (e.g., V 0.32 vs none, k12 4.02 vs none, MRT 22.12 vs none). Extracted — quercetin: AUC∞ 8.27e+03 ng ·h/mL, Cmax 614 ng/mL, Frel 12 Equivalent to 7.4 mg/kg of Rutin; rutoside: kel 0.043 h−1, MRT 22.1 h, V 0.084 L/kg, CL 0.079 L/h/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 12.0, the second reading none; it also differs on 14 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rutin, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -108,17 +108,34 @@ Domínguez Moré GP et al., Rutin and Physalis peruviana Extract: P…, Pharmace
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.158 (3/19 fields) | 16 |
 | `gpt-oss:120b` | partly confirmed | 0.211 (4/19 fields) | 15 |
 
-<details><summary>15 field(s) a reader read differently</summary>
+<details><summary>31 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc0-inf]` | 8273.24 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | not captured | 8273.24 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 0.079 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 0.079 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 613.95 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 613.95 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[frel]` | 12.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[frel]` | not captured | 12.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | 22.12 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | not captured | 22.12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vz]` | 0.084 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vz]` | not captured | 0.084 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λz]` | 0.043 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λz]` | not captured | 0.043 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | rutin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | rutin | unknown | mismatch |
 | `gpt-oss:120b` | `model.bioavailability.theta` | 12.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc0-inf]` | 8273.24 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | 0.079 | not captured | only_one_extracted |
@@ -194,7 +211,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_modelica.zip" download>Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_modelica.zip</a> <span class="pk-size">(5.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_fmi.zip" download>Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_matlab.zip" download>Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_matlab_simbio.zip" download>Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_matlab_simbio.zip" download>Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_sbml.zip" download>Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_cellml.zip" download>Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> α-Cypermethrin concentration (pmol/L) drives immobilization (binary response) with an EC50 of 1580 ± 980 pmol/L alone, reduced to 83 ± 10 pmol/L with R-imazalil and 53 ± 8 pmol/L with S-imazalil; the paper excerpts do not state the mechanism or model form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kuhlmann_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -5,7 +5,7 @@
 
 # canrenone — `Canrenone_Suyagh2012_median`
 
-> ## <span class="pk-badge pk-badge--green" title="molar_mass_missing:canrenone: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="molar_mass_missing:canrenone: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889), gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record describes canrenone (CL/F 11.4 l h⁻¹ 70 kg⁻¹, V/F 20.04 l 70 kg⁻¹, kfm 57.84 h⁻¹, t1/2z 12.09 h) formed from potassium canrenoate, but the metabolite's volume of distribution, clearance and formation clearance were all 0, so placeholder values would have been used instead. The model structure (one-compartment with enteral absorption) did not match the expected parent–metabolite structure with the metabolite in the central compartment. The absorption rate constant ka and the lag time were not reported in the paper and were left at library defaults, and the molar mass of canrenone is missing, so metabolite amounts would be formed as 1 mg per mg of parent converted rather than molecule per molecule; the F=1, Fm=1 apparent parameterization was also assumed rather than estimated. Extracted — canrenone: CL/F 11.4 l h -1 70 kg -1, V/F 20 l 70 kg -1, kfm 57.8 h -1, t1/2z 12.1 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has potassium canrenoate, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].parameter_id`: this record has Q351, the second reading Q27. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -88,17 +88,19 @@ Suyagh M et al., Population pharmacokinetic model of can…, British journal of 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.889 (8/9 fields) | 1 |
 | `gpt-oss:120b` | not confirmed | 0.667 (6/9 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f].parameter_id` | Q351 | Q27 | mismatch |
 | `gpt-oss:120b` | `parameters[cl/f].parameter_id` | Q351 | Q27 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | potassium canrenoate | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | canrenone | unknown | mismatch |
@@ -161,7 +163,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_median/Canrenone_Suyagh2012_median_modelica.zip" download>Canrenone_Suyagh2012_median_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_median/Canrenone_Suyagh2012_median_fmi.zip" download>Canrenone_Suyagh2012_median_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_median/Canrenone_Suyagh2012_median_matlab.zip" download>Canrenone_Suyagh2012_median_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_median/Canrenone_Suyagh2012_median_matlab_simbio.zip" download>Canrenone_Suyagh2012_median_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_median/Canrenone_Suyagh2012_median_matlab_simbio.zip" download>Canrenone_Suyagh2012_median_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_median/Canrenone_Suyagh2012_median_sbml.zip" download>Canrenone_Suyagh2012_median_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_canrenone/Canrenone_Suyagh2012_median/Canrenone_Suyagh2012_median_cellml.zip" download>Canrenone_Suyagh2012_median_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

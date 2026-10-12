@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04C&quot;,&quot;href&quot;:&quot;atc/G04C.md&quot;},{&quot;label&quot;:&quot;tamsulosin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamsulosin_Tsuda2010_reference&quot;,&quot;label&quot;:&quot;Tsuda_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamsulosin_Tsuda2010_reference&quot;,&quot;label&quot;:&quot;Tsuda_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # tamsulosin
 
@@ -33,8 +33,8 @@ Tamsulosin is an alpha-blocker used to treat prostate problems such as enlarged 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Tsuda_2010_reference](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Tsuda Y et al., Population pharmacokinetics of tamsulos…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03662.x](https://doi.org/10.1111/j.1365-2125.2010.03662.x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Nikolic_2024_reference](drugs/drug_tamsulosin/Tamsulosin_Nikolic2024_reference.md) | — | 1-compartment (no model) | 0 | Nikolic VN et al., Population pharmacokinetics of tamsulos…, World journal of urology (2024) | [10.1007/s00345-024-05115-w](https://doi.org/10.1007/s00345-024-05115-w) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span> | [Tsuda_2010_reference](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Tsuda Y et al., Population pharmacokinetics of tamsulos…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03662.x](https://doi.org/10.1111/j.1365-2125.2010.03662.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Nikolic_2024_reference](drugs/drug_tamsulosin/Tamsulosin_Nikolic2024_reference.md) | — | 1-compartment (no model) | 0 | Nikolic VN et al., Population pharmacokinetics of tamsulos…, World journal of urology (2024) | [10.1007/s00345-024-05115-w](https://doi.org/10.1007/s00345-024-05115-w) |
 
 ## ADME sites
 

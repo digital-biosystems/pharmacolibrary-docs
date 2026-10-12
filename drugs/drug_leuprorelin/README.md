@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Snelder_2019_T](drugs/drug_leuprorelin/pd_Snelder_2019_T.md) | testosterone ← leuprorelin · inhibition effect | — | Snelder N et al., Population pharmacokinetic-pharmacodyna…, British journal of clinical… (2019) | [10.1111/bcp.13891](https://doi.org/10.1111/bcp.13891) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Snelder_2019_T](drugs/drug_leuprorelin/pd_Snelder_2019_T.md) | testosterone ← leuprorelin · inhibition effect | — | Snelder N et al., Population pharmacokinetic-pharmacodyna…, British journal of clinical… (2019) | [10.1111/bcp.13891](https://doi.org/10.1111/bcp.13891) |
 
 ## ADME sites
 

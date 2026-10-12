@@ -32,7 +32,7 @@ Iopromide is an iodinated X-ray contrast agent used to make body structures visi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hackstein_2002_reference](drugs/drug_iopromide/Iopromide_Hackstein2002_reference.md) | — | 1-compartment (no model) | 3 | Hackstein N et al., Lopromide one-sample clearance as a mea…, Clinical physiology and fun… (2002) | [10.1046/j.1365-2281.2002.00394.x](https://doi.org/10.1046/j.1365-2281.2002.00394.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hackstein_2002_reference](drugs/drug_iopromide/Iopromide_Hackstein2002_reference.md) | — | 1-compartment (no model) | 3 | Hackstein N et al., Lopromide one-sample clearance as a mea…, Clinical physiology and fun… (2002) | [10.1046/j.1365-2281.2002.00394.x](https://doi.org/10.1046/j.1365-2281.2002.00394.x) |
 
 ## ADME sites
 

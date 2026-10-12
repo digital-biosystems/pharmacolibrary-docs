@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates methacholine concentrations (mol/l) to MCh-induced bronchial constriction measured as bronchial cross-section reduction, with an apparent stimulatory (constrictive) effect; no full text is available, so the model family, mechanism, and potency or rate parameters (e.g. Emax, EC50, gamma) are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Barton_2010`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

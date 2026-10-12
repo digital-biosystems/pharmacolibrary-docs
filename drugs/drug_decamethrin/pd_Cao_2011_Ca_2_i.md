@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts, so the mechanism cannot be confirmed beyond the record: deltamethrin (decamethrin) concentrations act as a stimulatory Emax-type driver on intracellular calcium concentration ([Ca(2+)]i), with no potency (EC50/Emax) or rate values stated in the available material.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cao_2011`
 - **model family:** `emax`
 - **driver:** `cited_pk`

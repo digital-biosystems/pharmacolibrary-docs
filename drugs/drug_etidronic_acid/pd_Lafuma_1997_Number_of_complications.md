@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The available records indicate that etidronic acid dose (mg/day) inhibits the number of complications, but the paper excerpts are unavailable to specify the mechanism or provide any numerical potency or rate values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lafuma_1997`
 - **model family:** `unknown`
 - **driver:** `dose_only`

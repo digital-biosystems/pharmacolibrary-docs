@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deferoxamine concentrations (μM) inhibit chemiluminescence (Fe2+-chelating effect) with a sigmoid Emax model; the paper reports EC50 = 9.57 ± 0.64 μM, but the excerpts do not state the mechanism beyond this chelation-mediated inhibition nor Imax/Emax, gamma, or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wada_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

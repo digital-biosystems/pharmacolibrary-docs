@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper reports that the increase in the incidence of herpes zoster (infections) was described by a Poisson regression model using ritlecitinib exposure as the driver, but does not specify the mechanistic form or provide any numerical parameter values (e.g., IC50, EC50, or rate constants) for this specific endpoint in the provided text.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huh_2025`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

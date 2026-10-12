@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record identifies a dose-dependent Emax model where pregabalin (mg/day) stimulates sleep quality, but no mechanism or potency values are provided as the paper excerpts are unavailable.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Arnold_2017`
 - **model family:** `emax`
 - **driver:** `dose_only`

@@ -5,7 +5,7 @@
 
 # allopurinol — `Allopurinol_Wright2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4), gpt-5.6-luna (not confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7), gpt-oss:120b (not confirmed, agreement 0.4), gpt-5.6-luna (not confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: disputed 0/3</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record describes oxypurinol, the metabolite of allopurinol, in a one-compartment structure with apparent clearance CLm,norm/F of 1.20 L/h/70 kg, volume 48.7 L, and absorption rate constant 0.941 h⁻¹. The apparent assumption (F=1, Fm=1, no molar correction) was judged not acceptable, and the lag time was defaulted rather than estimated. Additionally, the covariate effects defined in the record were not exercised: only the reference individual was simulated, so the covariate scenarios stand untested. A second reader also disagreed on the parameterization (mechanistic rather than apparent) and on whether the 0.54 value belongs to the renal-function exponent parameter. Extracted — oxypurinol: CLm,norm/F 1.2 L/h/70 kg, V 48.7 L, kabs 0.941 h -1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has allopurinol, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -95,15 +95,16 @@ Wright DF et al., A population pharmacokinetic model to p…, European journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 3 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.4 (4/10 fields) | 6 |
 | `gpt-5.6-luna` | not confirmed | 0.692 (9/13 fields) | 4 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -111,6 +112,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-5.6-luna` | `parameters[θ cl (l/h/70 kg].covariate_forms` | ['categorical_fractional'] | [] | mismatch |
 | `gpt-5.6-luna` | `parameters[θ cl (l/h/70 kg].parameter_id` | Q22 | Q354 | mismatch |
 | `gpt-5.6-luna` | `parameters[θ rfexp].parameter_id` | Q900 | Q319 | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[θ cl (l/h/70 kg].parameter_id` | Q375 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[θ clhd]` | not captured | 8.23 | only_one_extracted |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[θ cl (l/h/70 kg].parameter_id` | Q375 | Q22 | mismatch |
 | `gpt-oss:120b` | `parameters[θ rfexp]` | 0.54 | not captured | only_one_extracted |

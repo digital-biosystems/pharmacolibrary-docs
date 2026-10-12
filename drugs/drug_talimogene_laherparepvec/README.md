@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Dharmadhikari_2015_durable_response_rate](drugs/drug_talimogene_laherparepvec/pd_Dharmadhikari_2015_durable_response_rate.md) | durable response rate ← talimogene laherparepvec · stimulation effect | — | Dharmadhikari N et al., Oncolytic virus immunotherapy for melan…, Current treatment options i… (2015) | [10.1007/s11864-014-0326-0](https://doi.org/10.1007/s11864-014-0326-0) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Dharmadhikari_2015_durable_response_rate](drugs/drug_talimogene_laherparepvec/pd_Dharmadhikari_2015_durable_response_rate.md) | durable response rate ← talimogene laherparepvec · stimulation effect | — | Dharmadhikari N et al., Oncolytic virus immunotherapy for melan…, Current treatment options i… (2015) | [10.1007/s11864-014-0326-0](https://doi.org/10.1007/s11864-014-0326-0) |
 
 ## ADME sites
 

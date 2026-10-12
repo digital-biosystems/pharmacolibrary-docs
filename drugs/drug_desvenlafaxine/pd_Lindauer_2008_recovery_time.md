@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not state the mechanism in the available excerpts; desvenlafaxine (via its active moiety O-desmethylvenlafaxine) was modelled against recovery time of the pupillary light reflex using a tolerance model, with a half-life of development and regression of tolerance of 40 minutes. No potency (IC50/EC50/Emax) or rate values beyond the tolerance half-life are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lindauer_2008`
 - **model family:** `tolerance`
 - **driver:** `not_resolved`

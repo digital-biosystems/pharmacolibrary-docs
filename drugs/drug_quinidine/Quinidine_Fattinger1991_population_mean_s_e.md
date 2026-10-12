@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
+**Only volume was extracted — no clearance; cLR and Q have no unit.**
+
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Extracted — quinidine: CLR 0.0242, V1 14 l, Q 5.8, V2 16.4 l, tmax 0.04 h, Fab 0.12.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has quinidine, the second reading quinidine sulphate and quinidine bisulphate; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Fattinger K; Vozeh S; Ha HR; Borner M; Follath F et al. (1991). British journal of clinical pharmacology 31

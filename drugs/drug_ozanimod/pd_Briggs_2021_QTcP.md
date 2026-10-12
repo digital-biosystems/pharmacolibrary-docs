@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Ozanimod plasma concentrations act on QTcP via a direct maximum effect (Emax) model, producing a stimulatory effect on the QTcP interval. The reported parameters include a baseline of 394 msec, an Emax of 0.972 msec, and an EC50 of 195 pmol/L.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Briggs_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

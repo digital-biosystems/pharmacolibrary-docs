@@ -24,7 +24,7 @@ Sulbenicillin is an extended-spectrum penicillin antibiotic. It is considered in
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Yamaoka_1979_reference](drugs/drug_sulbenicillin/Sulbenicillin_Yamaoka1979_reference.md) | — | 1-compartment (no model) | 0 | Yamaoka K et al., High-performance liquid chromatographic…, Journal of chromatography (1979) | [10.1016/s0021-9673(00)80708-6](https://doi.org/10.1016/s0021-9673(00)80708-6) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Yamaoka_1979_reference](drugs/drug_sulbenicillin/Sulbenicillin_Yamaoka1979_reference.md) | — | 1-compartment (no model) | 0 | Yamaoka K et al., High-performance liquid chromatographic…, Journal of chromatography (1979) | [10.1016/s0021-9673(00)80708-6](https://doi.org/10.1016/s0021-9673(00)80708-6) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

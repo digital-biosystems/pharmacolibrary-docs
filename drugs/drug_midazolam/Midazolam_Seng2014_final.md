@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_Seng2014_final`
 
-> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.032). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.03), gpt-oss:120b (not confirmed, agreement 0.032). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record defines a general linear structure for midazolam with metabolites 1'-hydroxymidazolam (presystemic) and 1'-hydroxymidazolam glucuronide, with parameters such as CL 14.5 L/h, V 27.3 L and Q 18.3 L/h for midazolam. The parameter-coverage check expected 9 parameters emitted or defaulted but obtained only 7; kabs and tlag were missing from both, so the model was held back. The covariate-effect parameters (theta_cl_cyp3a5 0.783, theta_cl_bodyweight 1.55, theta_q319_bodyweight 1.96, theta_cl_creatinine 0.627) were defined but only the reference individual was simulated, so the covariate scenarios were not exercised. A second reader also disagreed on the dose compound, primary analyte, the metabolism links (1-hydroxy vs 1'-hydroxy naming) and left several parameter values unread. Extracted — midazolam: CL 14.5 L h À1, V 27.3 L, Q 18.3 L h À1, kabs 0.14 1/h, tlag 0.08 h; 1'-hydroxymidazolam: fm 0.6, CL 138 L h À1, V 90 L; 1'-hydroxymidazolam glucuronide: fm 0.265, CL 2.01 L h À1, V 1 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has midazolam, the second reading unknown; it also differs on 29 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has midazolam, the second reading unknown; it also differs on 31 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -120,17 +120,50 @@ Seng KY et al., CYP3A5*3 and bilirubin predict midazola…, Journal of clinical 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.03 (1/33 fields) | 32 |
 | `gpt-oss:120b` | not confirmed | 0.032 (1/31 fields) | 30 |
 
-<details><summary>30 field(s) a reader read differently</summary>
+<details><summary>62 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['midazolam', "1'-hydroxymidazolam", 'metabolism'], ["1'-hydroxymidazolam", "1'-hydroxymidazolam glucuronide", 'metabolism']] | [['midazolam', '1-hydroxymidazolam', 'metabolism'], ['1-hydroxymidazolam', '1-hydroxymidazolam glucuronide', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[a]` | 1.77 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag1]` | 1.23 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl 1ohm]` | 138 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl 1ohm]` | not captured | 138 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl hmg]` | 2.01 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl hmg]` | not captured | 2.01 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl mdz]` | 14.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl mdz]` | not captured | 14.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f 1ohm/mdz]` | 0.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f 1ohm/mdz]` | not captured | 0.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f hmg/1ohm]` | 0.265 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f hmg/1ohm]` | not captured | 0.265 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | 18.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | not captured | 18.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_bodyweight]` | 1.55 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_bodyweight]` | not captured | 1.55 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_creatinine]` | 0.627 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_creatinine]` | not captured | 0.627 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_cyp3a5]` | 0.783 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_cyp3a5]` | not captured | 0.783 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_bodyweight]` | 1.96 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_bodyweight]` | not captured | 1.96 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 1ohm]` | 90.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 1ohm]` | not captured | 90.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v hmg]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v hmg]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v mdz,c]` | 27.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v mdz,c]` | not captured | 27.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v mdz,p]` | not captured | 36.1 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | midazolam | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | midazolam | unknown | mismatch |
 | `gpt-oss:120b` | `model.links` | [['midazolam', "1'-hydroxymidazolam", 'metabolism'], ["1'-hydroxymidazolam", "1'-hydroxymidazolam glucuronide", 'metabolism']] | [['midazolam', '1-hydroxymidazolam', 'metabolism'], ['1-hydroxymidazolam', '1-hydroxymidazolam glucuronide', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[cl 1ohm]` | 138 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl 1ohm]` | not captured | 138 | only_one_extracted |
@@ -228,7 +261,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_midazolam/Midazolam_Seng2014_final/Midazolam_Seng2014_final_modelica.zip" download>Midazolam_Seng2014_final_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Seng2014_final/Midazolam_Seng2014_final_matlab.zip" download>Midazolam_Seng2014_final_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Seng2014_final/Midazolam_Seng2014_final_matlab_simbio.zip" download>Midazolam_Seng2014_final_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Seng2014_final/Midazolam_Seng2014_final_matlab_simbio.zip" download>Midazolam_Seng2014_final_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_Seng2014_final/Midazolam_Seng2014_final_sbml.zip" download>Midazolam_Seng2014_final_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_Seng2014_final/Midazolam_Seng2014_final_cellml.zip" download>Midazolam_Seng2014_final_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

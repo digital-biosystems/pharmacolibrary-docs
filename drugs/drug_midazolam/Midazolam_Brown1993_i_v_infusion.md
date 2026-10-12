@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_Brown1993_i_v_infusion`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -83,17 +83,26 @@ Brown SA et al., Pharmacokinetics of midazolam administe…, Journal of veterina
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.333 (4/12 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a]` | 5560 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag1]` | 1.23 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 29800 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clβ]` | 17.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | 32.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd(ss)]` | 0.577 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[α]` | 0.514 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` | 0.0220 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[a]` | 5560 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc]` | 29800 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clβ]` | 17.4 | not captured | only_one_extracted |

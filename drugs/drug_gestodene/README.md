@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Martin_2025_RER](drugs/drug_gestodene/pd_Martin_2025_RER.md) | respiratory exchange ratio (RER) · inhibition effect | — | Martin D et al., Effect of oral contraceptive consumptio…, European journal of applied… (2025) | [10.1007/s00421-025-05733-1](https://doi.org/10.1007/s00421-025-05733-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | [Martin_2025_RER](drugs/drug_gestodene/pd_Martin_2025_RER.md) | respiratory exchange ratio (RER) · inhibition effect | — | Martin D et al., Effect of oral contraceptive consumptio…, European journal of applied… (2025) | [10.1007/s00421-025-05733-1](https://doi.org/10.1007/s00421-025-05733-1) |
 
 ## ADME sites
 

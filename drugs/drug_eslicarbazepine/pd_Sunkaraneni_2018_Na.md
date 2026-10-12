@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that eslicarbazepine exerts a linear, additive inhibitory effect on serum sodium levels, but the provided paper excerpts contain no full text to confirm this mechanism. Consequently, no specific potency (e.g., EC50) or rate parameters (e.g., ke0) can be extracted as they are not present in the source material.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sunkaraneni_2018`
 - **model family:** `linear`
 - **driver:** `cited_pk`

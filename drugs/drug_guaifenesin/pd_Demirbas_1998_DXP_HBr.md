@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes the effect of guaifenesin on dextromethorphan bioavailability without specifying the underlying pharmacodynamic mechanism or dose-response relationship. It reports relative bioavailability values of 113% and 110% for dextromethorphan, but no potency, rate, or Emax parameters are provided.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Demirbas_1998`
 - **model family:** `unknown`
 - **driver:** `dose_only`

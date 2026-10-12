@@ -4,7 +4,7 @@
 
 # patritumab deruxtecan — `PatritumabDeruxtecan_Lu2023_mean`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.033). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The record was rejected because the unit for the metabolite formation rate constant could not be converted to standard SI units, causing a dimension mismatch.**
+
+The parameter governing the formation of deruxtecan from patritumab deruxtecan is reported with a unit of 1/h. This specific unit was not recognized for conversion to standard SI units, so the value could not be standardized. Consequently, the parameter lacked a valid SI value, causing a dimension mismatch on this structural parameter. Extracted — patritumab deruxtecan: CL 0.342 L/d, V1 2.94 L, Vmax 4.35e+03 μg/d, Km 576 ng/mL, Q 0.443 L/d, V2 5.37 L; deruxtecan: kfm 0.03 1/h, CL 5.71 L/h, kel 0.18 1/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has patritumab_deruxtecan, the second reading patritumab deruxtecan; it also differs on 28 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Lu Y et al., Population Pharmacokinetics of Patritum…, Journal of clinical pharmac… (2023)
@@ -101,6 +109,55 @@ Lu Y et al., Population Pharmacokinetics of Patritum…, Journal of clinical pha
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.033 (1/30 fields) | 29 |
+
+<details><summary>29 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['patritumab_deruxtecan', 'deruxtecan', 'metabolism']] | [['dxd-conjugated antibody', 'unconjugated dxd', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[cldxd]` | 5.713 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cldxd]` | not captured | 5.713 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cllin]` | 0.342 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cllin]` | not captured | 0.342 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km]` | 575.9 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km]` | not captured | 575.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[krel]` | 0.030 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[krel]` | not captured | 0.030 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | 0.443 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | not captured | 0.443 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_hepatic_impairment_mild_cldxd]` | not captured | 0.706 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_hepatic_impairment_moderate_data_missing_cldxd]` | 0.532 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_hepatic_impairment_moderate_data_missing_cldxd]` | not captured | 0.532 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q25_hepatic_impairment_mild_cldxd]` | 0.706 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 2.943 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | not captured | 2.943 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vmax]` | 4352.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vmax]` | not captured | 4352.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | 5.369 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | not captured | 5.369 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[weight-cllin]` | not captured | 0.911 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[weight_krel]` | -0.467 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[weight_krel]` | not captured | -0.467 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` | 0.180 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` | not captured | 0.180 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ]` | not captured | 0.648 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | patritumab_deruxtecan | patritumab deruxtecan | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | patritumab_deruxtecan | DXd-conjugated antibody | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

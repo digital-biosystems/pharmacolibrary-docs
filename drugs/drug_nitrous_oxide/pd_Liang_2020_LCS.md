@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;nitrous oxide&quot;,&quot;href&quot;:&quot;drugs/drug_nitrous_oxide/&quot;},{&quot;label&quot;:&quot;Liang_2020 \u00b7 PD lung collapse&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;NitrousOxide_Hampsey2026_reference&quot;,&quot;label&quot;:&quot;Hampsey_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nitrous_oxide/NitrousOxide_Hampsey2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;NitrousOxide_Hampsey2026_reference&quot;,&quot;label&quot;:&quot;Hampsey_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nitrous_oxide/NitrousOxide_Hampsey2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lung collapse — PD  <span class="pk-badge pk-badge--red">rejected</span>
@@ -17,6 +17,10 @@
 **As extracted:** Nitrous oxide drives lung collapse: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
+
+> The paper determines the relationship between the fraction of inhaled nitrous oxide and the binary lung collapse score (LCS, where ≥8 indicates success) using probit regression, identifying an EC50 of 27.7% and an EC95 of 48.7%. The underlying mechanism is attributed to a “second gas” effect, concentration effect, or gas solubility facilitating gas uptake, rather than a direct pharmacodynamic Emax model with defined kinetic parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Liang_2020`
 - **model family:** `emax`

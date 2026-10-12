@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Albin_2012_pubertal_growth_up_to_PHV](drugs/drug_estradiol/pd_Albin_2012_pubertal_growth_up_to_PHV.md) | pubertal growth up to PHV biomarker turnover ← estradiol | — | Albin AK et al., Estradiol and pubertal growth in girls, Hormone research in paediat… (2012) | [10.1159/000343076](https://doi.org/10.1159/000343076) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> | [Albin_2012_pubertal_growth_up_to_PHV](drugs/drug_estradiol/pd_Albin_2012_pubertal_growth_up_to_PHV.md) | pubertal growth up to PHV biomarker turnover ← estradiol | — | Albin AK et al., Estradiol and pubertal growth in girls, Hormone research in paediat… (2012) | [10.1159/000343076](https://doi.org/10.1159/000343076) |
 
 ## ADME sites
 

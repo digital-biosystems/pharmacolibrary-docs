@@ -5,7 +5,7 @@
 
 # guanfacine — `Guanfacine_Knebel2015_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,11 +21,11 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has guanfacine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:08.791376+00:00) predates the upstream re-run (2026-10-08 11:26:39.912039+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:08.791376+00:00) predates the upstream re-run (2026-10-09 06:31:43.110224+00:00). Current validate status: `extracted`.
 
 ## Citation
 Knebel W et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2015)
@@ -42,10 +42,10 @@ Knebel W et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokin
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| apparent clearance (CL/F) | `Q27` · CL/F | 33.1 | L/h | 9.194444444444445e-06 | [l] / [h] | not captured | exact (1.0) | Knebel_2015:abstract | — | not captured |
-| apparent volume of distribution | `Q76` · V/F | 804 | L | 0.804 | [l] | not captured | exact (1.0) | Knebel_2015:abstract | — | not captured |
-| absorption rate constant | `Q49` · kabs | 0.552 | h(-1) | 0.00015333333333333334 | [1] / [h] | not captured | exact (1.0) | Knebel_2015:abstract | — | not captured |
-| absorption lag time | `Q83` · tlag | 0.651 | h | 2343.6 | [h] | not captured | exact (1.0) | Knebel_2015:abstract | — | not captured |
+| CL/F | `Q27` · CL/F | 33.1 | L/h | 9.194444444444445e-06 | L/h | not captured | exact (1.0) | Knebel_2015:results_prose | — | not captured |
+| V/F | `Q76` · V/F | 804 | L | 0.804 | L | not captured | exact (1.0) | Knebel_2015:results_prose | — | not captured |
+| Ka | `Q49` · kabs | 0.552 | h -1 | 0.00015333333333333334 | 1/h | not captured | exact (1.0) | Knebel_2015:results_prose | — | not captured |
+| ALAG | `Q83` · tlag | 0.651 | h | 2343.6 | h | not captured | exact (1.0) | Knebel_2015:results_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,25 +58,58 @@ Knebel W et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokin
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
+- table section iiv: 'X 1.1CL/F' routed out of structural estimates ('Interindividual variance (% SE)')
+- table section iiv: 'X 1.2 COV CL/F-V/F' routed out of structural estimates ('Interindividual variance (% SE)')
+- table section iiv: 'X 2.2V/F' routed out of structural estimates ('Interindividual variance (% SE)')
+- table section iiv: 'X 1.3 COV CL/F-Ka' routed out of structural estimates ('Interindividual variance (% SE)')
+- table section iiv: 'X 2.4 COV V/F-Ka' routed out of structural estimates ('Interindividual variance (% SE)')
+- table section iiv: 'X 3.3Ka' routed out of structural estimates ('Interindividual variance (% SE)')
+- dropped unlinked row (NIL): 'r 2 pro' — extend the ontology if this is a real PK parameter (source ['tab_2:row19:col1', 'tab_2:row19:col2'])
+- routed 'r 2 add' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
+- salvaged Q27 ('CL/F'=33.1) from results prose — parameter table was unreadable
+- salvaged Q76 ('V/F'=804) from results prose — parameter table was unreadable
+- salvaged Q49 ('Ka'=0.552) from results prose — parameter table was unreadable
+- salvaged Q83 ('ALAG'=0.651) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=guanfacine
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Knebel_2015_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- unparsed cell tab_2:row12:col3 = '0.134 to 0.227'
+- unparsed cell tab_2:row13:col3 = '-0.0466 to 0.0515'
+- unparsed cell tab_2:row14:col3 = '0.216 to 0.427'
+- unparsed cell tab_2:row15:col3 = '-0.128 to 0.0373'
+- unparsed cell tab_2:row16:col3 = '0.311 to 0.628'
+- unparsed cell tab_2:row17:col3 = '0.573 to 1.12'
+- unparsed cell tab_2:row19:col3 = '0.0377 to 0.0552'
+- unparsed cell tab_2:row20:col3 = '0.0125 to 0.0340'
+- LLM selected parameter table(s) 3
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.25 (3/12 fields) | 9 |
 | `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[alag]` | 0.651 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag]` | not captured | 0.651 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 33.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 33.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.552 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.552 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 804 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | not captured | 804 | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | guanfacine | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -91,14 +124,10 @@ _Every reader agrees on every compared field of this record._
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Knebel_2015:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Knebel_2015:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Knebel_2015:abstract'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Knebel_2015:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 33.1 L/h | not captured | not captured | ['Knebel_2015:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 804 L | not captured | not captured | ['Knebel_2015:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 33.1 L/h | not captured | not captured | ['Knebel_2015:results_prose'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 804 L | not captured | not captured | ['Knebel_2015:results_prose'] |
 
 **Reviewer per-scenario checks:**
 
@@ -131,10 +160,10 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_guanfacine/Guanfacine_Knebel2015_reference/Guanfacine_Knebel2015_reference_modelica.zip" download>Guanfacine_Knebel2015_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_guanfacine/Guanfacine_Knebel2015_reference/Guanfacine_Knebel2015_reference_modelica.zip" download>Guanfacine_Knebel2015_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_guanfacine/Guanfacine_Knebel2015_reference/Guanfacine_Knebel2015_reference_fmi.zip" download>Guanfacine_Knebel2015_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_guanfacine/Guanfacine_Knebel2015_reference/Guanfacine_Knebel2015_reference_matlab.zip" download>Guanfacine_Knebel2015_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_guanfacine/Guanfacine_Knebel2015_reference/Guanfacine_Knebel2015_reference_matlab_simbio.zip" download>Guanfacine_Knebel2015_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_guanfacine/Guanfacine_Knebel2015_reference/Guanfacine_Knebel2015_reference_matlab_simbio.zip" download>Guanfacine_Knebel2015_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_guanfacine/Guanfacine_Knebel2015_reference/Guanfacine_Knebel2015_reference_sbml.zip" download>Guanfacine_Knebel2015_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_guanfacine/Guanfacine_Knebel2015_reference/Guanfacine_Knebel2015_reference_cellml.zip" download>Guanfacine_Knebel2015_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
@@ -144,7 +173,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 3 mg, single dose, first-order absorption (ka 0.552 /h, lag 39.1 min, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 3 mg oral (C02AC02) (defined daily dose)._
+**Administration: oral** — 1 mg, single dose, first-order absorption (ka 0.552 /h, lag 39.1 min, F 1). Doses in the paper: 1, 2, 3, 4 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_guanfacine/Guanfacine_Knebel2015_reference/Guanfacine_Knebel2015_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_guanfacine/Guanfacine_Knebel2015_reference/Guanfacine_Knebel2015_reference_sim_controls.json"></dbs-fmusim>
 
@@ -153,4 +182,4 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 11:26 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-09 06:31 UTC</sub>

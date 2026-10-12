@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In Aethina tumida larval feeding bioassays, permethrin (ppm) increased larval mortality, with an EC50 of 3.37 ppm; the paper does not describe a pharmacodynamic mechanism or model beyond this potency value.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Roth_2025`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

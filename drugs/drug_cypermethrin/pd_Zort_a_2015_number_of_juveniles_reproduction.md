@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cypermethrin (soil concentration, mg kg-1) inhibits reproduction (number of juveniles) in a concentration–response relationship; the paper reports an EC50 of 15.05 mg kg-1, but the excerpts do not state the model form or mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zortéa_2015`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

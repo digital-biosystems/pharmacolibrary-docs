@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> N-acetylcysteine is described as acting on superoxide production via a sigmoid Emax inhibitory model, but the provided paper excerpts only report the concentration-response curves for other compounds (such as ChN2 and QN23) and explicitly state that the EC50 and MNA values for the five assayed compounds showed no statistically significant differences, without providing specific potency or rate constants for acetylcysteine itself.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chamorro_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

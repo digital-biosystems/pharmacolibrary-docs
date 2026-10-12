@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Cao_2025_ferritin](drugs/drug_saccharated_iron_oxide/pd_Cao_2025_ferritin.md) | serum ferritin ← iron · indirect response — drug stimulates the production of serum ferritin | — | Cao K et al., Computational Prediction of Tissue Iron…, International journal of na… (2025) | [10.2147/ijn.s534063](https://doi.org/10.2147/ijn.s534063) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Cao_2025_ferritin](drugs/drug_saccharated_iron_oxide/pd_Cao_2025_ferritin.md) | serum ferritin ← iron · indirect response — drug stimulates the production of serum ferritin | — | Cao K et al., Computational Prediction of Tissue Iron…, International journal of na… (2025) | [10.2147/ijn.s534063](https://doi.org/10.2147/ijn.s534063) |
 
 ## ADME sites
 

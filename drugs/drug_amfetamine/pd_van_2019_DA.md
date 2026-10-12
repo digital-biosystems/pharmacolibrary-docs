@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> d-Amphetamine concentrations drive an increase in extracellular striatal dopamine via an indirect response model (type III, stimulation of response production/effect proportional to concentrations), fitted sequentially; the excerpts provide no potency or rate parameter values and no further mechanistic detail.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2019`
 - **model family:** `indirect_response_iii`
 - **driver:** `not_resolved`

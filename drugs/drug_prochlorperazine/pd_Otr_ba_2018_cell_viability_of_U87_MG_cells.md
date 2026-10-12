@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Prochlorperazine inhibits the viability of U87-MG glioblastoma cells in a concentration-dependent manner (viability expressed as % of controls), with a reported EC50 of 0.97 μM; the paper does not state a specific mechanism beyond this concentration-dependent cytotoxic effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Otręba_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Niflumic acid concentration (in microM) was modelled against the continuous response gSCN using a sigmoidal Emax inhibition model. The paper reports an IC50 (labeled Ki) of 28 microM and a Hill coefficient of 1.2, but the full text is unavailable to confirm the specific mechanism (e.g., production vs. elimination) or rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Robson_1995`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

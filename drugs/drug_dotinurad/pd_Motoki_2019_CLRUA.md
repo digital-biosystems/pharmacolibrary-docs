@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models dotinurad's effect on renal urate clearance (CLRUA) using a simple Emax inhibition model, where the mean plasma concentration drives a proportional decrease in the baseline response (described mechanistically as URAT1 inhibition). The key parameters are Emax = 0.51 and EC50 = 196 ng/mL, with an estimated freabs of 0.943 noted in the record.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Motoki_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

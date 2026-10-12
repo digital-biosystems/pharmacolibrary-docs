@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_Bardol2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214), gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -18,6 +18,8 @@
 ### Reviewer guidance
 
 **Every check that could be run on this record passed.**
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 28.0, the second reading 14.6; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -54,14 +56,31 @@ Bardol M et al., Pharmacokinetic and Pharmacodynamic Mod…, Paediatric anaesthe
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.214 (3/14 fields) | 11 |
 | `gpt-oss:120b` | secondary_empty | 0.0 | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>11 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 28.0 | 14.6 | mismatch |
+| `gpt-oss-120b` | `values[Q312]` | 49.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q316]` | 43.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q317]` | 1.24 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q319]` | not captured | 0.75 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q320]` | 6 | 6 | mismatch |
+| `gpt-oss-120b` | `values[Q325]` | 2.42 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q336]` | not captured | 200 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | not captured | 17 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q61]` | 85.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q86]` | 15.6 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -116,7 +135,7 @@ _Every reader agrees on every compared field of this record._
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_midazolam/Midazolam_Bardol2025_reference/Midazolam_Bardol2025_reference_modelica.zip" download>Midazolam_Bardol2025_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_midazolam/Midazolam_Bardol2025_reference/Midazolam_Bardol2025_reference_fmi.zip" download>Midazolam_Bardol2025_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Bardol2025_reference/Midazolam_Bardol2025_reference_matlab.zip" download>Midazolam_Bardol2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Bardol2025_reference/Midazolam_Bardol2025_reference_matlab_simbio.zip" download>Midazolam_Bardol2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Bardol2025_reference/Midazolam_Bardol2025_reference_matlab_simbio.zip" download>Midazolam_Bardol2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_Bardol2025_reference/Midazolam_Bardol2025_reference_sbml.zip" download>Midazolam_Bardol2025_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_Bardol2025_reference/Midazolam_Bardol2025_reference_cellml.zip" download>Midazolam_Bardol2025_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

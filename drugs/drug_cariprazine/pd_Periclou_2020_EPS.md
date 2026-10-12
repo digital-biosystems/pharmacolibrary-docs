@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> For treatment-emergent extrapyramidal symptoms (EPS without akathisia or restlessness), the paper models the logit of the probability of the event (pTEAE) as a function of TCave, the predicted total plasma concentration of cariprazine plus its active metabolites DCAR and DDCAR (total active moiety), with higher exposure increasing the probability (stimulation of risk). The excerpts do not state the specific model parameters (e.g., Imax, IC50/EC50, or Hill coefficient) for the EPS endpoint, nor a mechanistic production/elimination (kin/kout) or effect-compartment component; the safety models were fitted with Laplacian estimation in NONMEM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Periclou_2020`
 - **model family:** `categorical`
 - **driver:** `not_resolved`

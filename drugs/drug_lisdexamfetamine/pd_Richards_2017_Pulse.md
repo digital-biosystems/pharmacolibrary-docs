@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Lisdexamfetamine dimesylate dose (mg) acts on change from augmentation baseline in pulse (bpm) via a linear, additive stimulation model; the paper excerpts provide no mechanism details and no potency or rate values (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma are stated).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Richards_2017`
 - **model family:** `linear`
 - **driver:** `dose_only`

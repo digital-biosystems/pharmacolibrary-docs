@@ -27,8 +27,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Smith_2000_Ad](drugs/drug_collagen/pd_Smith_2000_Ad.md) | adrenaline (Ad) efflux ← collagen · direct sigmoid Emax (Hill) effect | — | Smith CT et al., Platelet noradrenaline and adrenaline e…, Platelets (2000) | [10.1080/09537100020000166](https://doi.org/10.1080/09537100020000166) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Smith_2000_NA](drugs/drug_collagen/pd_Smith_2000_NA.md) | noradrenaline (NA) efflux ← collagen · direct sigmoid Emax (Hill) effect | — | Smith CT et al., Platelet noradrenaline and adrenaline e…, Platelets (2000) | [10.1080/09537100020000166](https://doi.org/10.1080/09537100020000166) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Smith_2000_Ad](drugs/drug_collagen/pd_Smith_2000_Ad.md) | adrenaline (Ad) efflux ← collagen · direct sigmoid Emax (Hill) effect | — | Smith CT et al., Platelet noradrenaline and adrenaline e…, Platelets (2000) | [10.1080/09537100020000166](https://doi.org/10.1080/09537100020000166) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Smith_2000_NA](drugs/drug_collagen/pd_Smith_2000_NA.md) | noradrenaline (NA) efflux ← collagen · direct sigmoid Emax (Hill) effect | — | Smith CT et al., Platelet noradrenaline and adrenaline e…, Platelets (2000) | [10.1080/09537100020000166](https://doi.org/10.1080/09537100020000166) |
 
 ## Pharmacogenomics (PGx)
 

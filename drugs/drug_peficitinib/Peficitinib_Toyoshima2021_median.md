@@ -4,7 +4,7 @@
 
 # peficitinib — `Peficitinib_Toyoshima2021_median`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Kabs has no unit; the clearance plausibility check could not be computed.**
+
+Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — peficitinib: CL 91.7 L/h, V1 280 L, V2 122 L, Q 10.2 L/h, kabs 5.83 L/h, tlag 0.132 h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has peficitinib, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Toyoshima J et al., Population pharmacokinetic analysis of…, British journal of clinical… (2021)
@@ -67,6 +75,41 @@ Toyoshima J et al., Population pharmacokinetic analysis of…, British journal o
 - unparsed cell Toyoshima_2021_table_p6_1:row11:col4 = '49.6 C'
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.118 (2/17 fields) | 15 |
+
+<details><summary>15 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[alag]` | 0.132 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag]` | not captured | 0.132 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 91.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 91.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 5.83 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 5.83 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | 10.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | not captured | 10.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[structural pk]` | 91.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 280 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | not captured | 280 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | 122 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | not captured | 122 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | peficitinib | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | peficitinib | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

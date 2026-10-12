@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L03A&quot;,&quot;href&quot;:&quot;atc/L03A.md&quot;},{&quot;label&quot;:&quot;interferon alfa-2b&quot;,&quot;href&quot;:&quot;drugs/drug_interferon_alfa_2b/&quot;},{&quot;label&quot;:&quot;Garc\u00eda-Garc\u00eda_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InterferonAlfa2b_GarcaGarca2016_reference&quot;,&quot;label&quot;:&quot;Garc\u00eda-Garc\u00eda_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InterferonAlfa2b_GarcaGarca2016_reference&quot;,&quot;label&quot;:&quot;Garc\u00eda-Garc\u00eda_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # interferon alfa-2b — `InterferonAlfa2b_GarcaGarca2016_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Every check that could be run on this record passed.**
+
+A reported unit could not be converted (equation variable), so that value has no SI equivalent.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has interferon_alfa_2b and interferon_gamma, the second reading interferon alpha-2b and interferon gamma (co-formulated); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `interferon_alfa_2b and interferon_gamma`, measured `interferon_alfa_2b`.
 
@@ -24,7 +32,7 @@ García-García I et al., Pharmacokinetic and pharmacodynamic cha…, BMC pharma
   ·  DOI: [10.1186/s40360-016-0103-8](https://doi.org/10.1186/s40360-016-0103-8)
 
 ## Model component
-<dbs-pgx drug="interferon alfa-2b" model-id="InterferonAlfa2b_GarcaGarca2016_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="interferon_alfa_2b" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="interferon alfa-2b" model-id="InterferonAlfa2b_GarcaGarca2016_reference" status="curated_candidate" stale="false" population="healthy male volunteers" measured-compound="interferon_alfa_2b" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.
@@ -70,6 +78,30 @@ García-García I et al., Pharmacokinetic and pharmacodynamic cha…, BMC pharma
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.692 (9/13 fields) | 4 |
+
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[s0].parameter_id` | Q900 | Q86 | mismatch |
+| `gpt-oss-120b` | `parameters[tk0]` | not captured | 5.71 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | interferon_alfa_2b and interferon_gamma | interferon alpha-2b and interferon gamma (co-formulated) | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | interferon_alfa_2b | interferon alpha-2b | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -86,6 +118,17 @@ García-García I et al., Pharmacokinetic and pharmacodynamic cha…, BMC pharma
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.8 L/h | not captured | not captured | ['García-García_2016_table_3:row6:col2', 'García-García_2016_table_3:row6:col3'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 38.4 L | not captured | not captured | ['García-García_2016_table_3:row4:col2', 'García-García_2016_table_3:row4:col3'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=interferon_alfa_2b) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -94,6 +137,9 @@ García-García I et al., Pharmacokinetic and pharmacodynamic cha…, BMC pharma
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_interferon_alfa_2b/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `García-García_2016` / `García-García_2016::reference`)
+- model: `../../../knowledgebase/drugs/drug_interferon_alfa_2b/models/modelica/InterferonAlfa2b_GarcaGarca2016_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_interferon_alfa_2b/models/modelica/InterferonAlfa2b_GarcaGarca2016_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_interferon_alfa_2b/models/modelica/InterferonAlfa2b_GarcaGarca2016_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -105,7 +151,7 @@ García-García I et al., Pharmacokinetic and pharmacodynamic cha…, BMC pharma
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference/InterferonAlfa2b_GarcaGarca2016_reference_modelica.zip" download>InterferonAlfa2b_GarcaGarca2016_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference/InterferonAlfa2b_GarcaGarca2016_reference_fmi.zip" download>InterferonAlfa2b_GarcaGarca2016_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference/InterferonAlfa2b_GarcaGarca2016_reference_matlab.zip" download>InterferonAlfa2b_GarcaGarca2016_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference/InterferonAlfa2b_GarcaGarca2016_reference_matlab_simbio.zip" download>InterferonAlfa2b_GarcaGarca2016_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference/InterferonAlfa2b_GarcaGarca2016_reference_matlab_simbio.zip" download>InterferonAlfa2b_GarcaGarca2016_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference/InterferonAlfa2b_GarcaGarca2016_reference_sbml.zip" download>InterferonAlfa2b_GarcaGarca2016_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference/InterferonAlfa2b_GarcaGarca2016_reference_cellml.zip" download>InterferonAlfa2b_GarcaGarca2016_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

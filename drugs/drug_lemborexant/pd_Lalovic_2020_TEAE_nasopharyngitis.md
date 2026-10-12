@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe a pharmacodynamic mechanism linking lemborexant plasma concentrations (ng/mL) to the binary response of treatment-emergent nasopharyngitis; no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are reported for this response, and the exposure-response analysis is stated to show no evidence of clinically important drug- or exposure-related activity relative to placebo.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lalovic_2020`
 - **model family:** `linear`
 - **driver:** `pk_record`

@@ -5,7 +5,7 @@
 
 # tapentadol — `Tapentadol_Joczyk2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.368), gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Cmax, Cmin, AUCt and AUCSS), so that value has no SI equivalent. Extracted — tapentadol: Cmax 159 ng/mL, Cmin 22.2 ng/mL, AUCt 231 h•ng/mL, AUCSS 292 h•ng/mL, CL 93.7 L/h, CL/F 272 L/h, V/F 1.2e+03 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tapentadol, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -83,17 +83,30 @@ Jończyk R et al., Multiple Dose Pharmacokinetics of Tapen…, Journal of pain r
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.368 (7/19 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.688 (11/16 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['tapentadol', 'tapentadol-o-glucuronide', 'metabolism'], ['tapentadol', 'tapentadol-o-sulfate', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[af]` | not captured | 1.28 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aucτ,sd].parameter_id` | Q19 | Q88 | mismatch |
+| `gpt-oss-120b` | `parameters[aucτ,ss]` | not captured | 292.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 272 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 272 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tapentadol mature cl]` | 93.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tapentadol mature cl]` | not captured | 93.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 1203 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | not captured | 1203 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | tapentadol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | tapentadol | unknown | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[af]` | not captured | 1.28 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/f]` | 272 | not captured | only_one_extracted |

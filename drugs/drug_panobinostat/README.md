@@ -32,7 +32,7 @@ Panobinostat is an anticancer medicine (a histone deacetylase inhibitor) used to
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Savelieva_2015_reference](drugs/drug_panobinostat/Panobinostat_Savelieva2015_reference.md) | — | 1-compartment (no model) | 1 (+3 cov.) | Savelieva M et al., Population pharmacokinetics of intraven…, European journal of clinica… (2015) | [10.1007/s00228-015-1846-7](https://doi.org/10.1007/s00228-015-1846-7) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Savelieva_2015_reference](drugs/drug_panobinostat/Panobinostat_Savelieva2015_reference.md) | — | 1-compartment (no model) | 1 (+3 cov.) | Savelieva M et al., Population pharmacokinetics of intraven…, European journal of clinica… (2015) | [10.1007/s00228-015-1846-7](https://doi.org/10.1007/s00228-015-1846-7) |
 
 ## ADME sites
 

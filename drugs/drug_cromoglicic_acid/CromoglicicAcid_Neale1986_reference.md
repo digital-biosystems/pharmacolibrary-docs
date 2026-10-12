@@ -4,7 +4,7 @@
 
 # cromoglicic acid — `CromoglicicAcid_Neale1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is cromoglicic acid's own; they describe sodium cromoglycate.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[slower rate constant].parameter_id`: this record has Q47, the second reading Q68. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium cromoglycate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -66,17 +66,24 @@ Neale MG et al., The pharmacokinetics of sodium cromogly…, British journal of 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[fast absorption rate constant]` | 0.54 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fast absorption rate constant]` | not captured | 0.54 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[slower rate constant]` | 0.0097 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[slower rate constant]` | not captured | 0.0097 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | sodium cromoglycate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | sodium cromoglycate | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[slower rate constant].parameter_id` | Q47 | Q68 | mismatch |
 
 </details>

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Hexylresorcinol concentration-dependently blocks depolarisation-induced whole-cell sodium inward current (NaV1.2), described by an Emax-type inhibitory model with EC50 23.1 microM and inactivated-state affinity 1.88 microM; the paper excerpts do not state the mechanism beyond this direct concentration-effect relation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Buchholz_2009`
 - **model family:** `emax`
 - **driver:** `not_resolved`

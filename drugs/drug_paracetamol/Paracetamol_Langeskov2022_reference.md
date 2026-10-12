@@ -5,7 +5,7 @@
 
 # paracetamol — `Paracetamol_Langeskov2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.118). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643), gpt-oss:120b (not confirmed, agreement 0.118). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record for paracetamol in healthy obese adults (Langeskov_2022, two-compartment structure) carries only apparent parameters, and the model builder substituted F=1, Fm=1 and no molar correction to obtain them; this apparent assumption was flagged as not acceptable, so the record needs review. A second reader returned no values (null) for CL/F, Q/F, ka, tlag, V1/F and V2/F and marked the dose compound and primary analyte as unknown, so the disagreements on these fields are inconclusive. Extracted — paracetamol: kabs 9.4 1/h, V1/F 48.5 L, CL/F 25.9 L/h, V2/F 55.4 L, Q/F 199 L/h, tlag 0.16 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has paracetamol, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl2/f: this record has 199, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -139,17 +139,23 @@ Langeskov EK et al., Population pharmacokinetic of paracetam…, Pharmacology re
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.643 (9/14 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.118 (2/17 fields) | 15 |
 
-<details><summary>15 field(s) a reader read differently</summary>
+<details><summary>20 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl2/f]` | 199 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka (h-1)].value` | 9.4 | 5.72 | mismatch |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.16 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θkacovariate]` | 0.525 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θktrcovariate]` | 0.791 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/f]` | 25.9 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/f]` | not captured | 25.9 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl2/f]` | 199 | not captured | only_one_extracted |

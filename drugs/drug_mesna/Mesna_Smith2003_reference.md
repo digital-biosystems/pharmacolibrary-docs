@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**AUC and R1 have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mesna: AUC 4 mg x min/mL, R1 0.95, Vss 15.3 L, CL 4.6 L/h, t1/2z 2.2 hours.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Smith PF et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2003)

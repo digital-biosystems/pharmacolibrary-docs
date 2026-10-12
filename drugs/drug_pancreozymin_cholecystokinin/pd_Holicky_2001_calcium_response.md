@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cholecystokinin (pancreozymin) concentration (pM) stimulates the intracellular calcium response, described by an Emax-type concentration–effect model; the paper reports an EC50 of 6.6 ± 2.1 pM, but the excerpts do not state Emax, the effect form, or the mechanism beyond stimulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Holicky_2001`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

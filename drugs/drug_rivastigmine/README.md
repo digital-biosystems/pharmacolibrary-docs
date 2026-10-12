@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;rivastigmine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rivastigmine_Gobburu2001_reference&quot;,&quot;label&quot;:&quot;Gobburu_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivastigmine/Rivastigmine_Gobburu2001_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rivastigmine_Gobburu2001_reference&quot;,&quot;label&quot;:&quot;Gobburu_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivastigmine/Rivastigmine_Gobburu2001_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # rivastigmine
 
@@ -28,21 +28,21 @@ Rivastigmine is an anticholinesterase medicine used to treat dementia, including
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 03:11 | 6:02 | 1/0/0 | 2/1/0 | 0/0/0 | 323,080/26,412 | ollama / glm-5.3-flash | 7 | 0/7 | 7/0 | 0 |
+| 2026-10-07 03:11 | 6:02 | 0/1/0 | 2/1/0 | 0/0/0 | 323,080/26,412 | ollama / glm-5.3-flash | 7 | 0/7 | 7/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gobburu_2001_reference](drugs/drug_rivastigmine/Rivastigmine_Gobburu2001_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Gobburu JV et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001) | [10.1177/00912700122012689](https://doi.org/10.1177/00912700122012689) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.235). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub><br><sub>route_to: `engineer`</sub> | [Gobburu_2001_reference](drugs/drug_rivastigmine/Rivastigmine_Gobburu2001_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Gobburu JV et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001) | [10.1177/00912700122012689](https://doi.org/10.1177/00912700122012689) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Manalo_2017_AChE_inhibition](drugs/drug_rivastigmine/pd_Manalo_2017_AChE_inhibition.md) | Acetylcholinesterase inhibition (positive control Rivastigmine) ← Rivastigmine · direct Emax (saturable) effect | — | Manalo RV et al., Coconut (Cocos nucifera) Ethanolic Leaf…, Biomedicines (2017) | [10.3390/biomedicines5020017](https://doi.org/10.3390/biomedicines5020017) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ndongo_2021_AChE_inhibition](drugs/drug_rivastigmine/pd_Ndongo_2021_AChE_inhibition.md) | acetylcholinesterase inhibition ← rivastigmine · inhibition effect | — | Ndongo TM et al., Microsequential injection analysis/lab-…, Archiv der Pharmazie (2021) | [10.1002/ardp.202100150](https://doi.org/10.1002/ardp.202100150) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Gobburu_2001_AChE_inhibition](drugs/drug_rivastigmine/pd_Gobburu_2001_AChE_inhibition.md) | acetylcholinesterase activity inhibition ← ZNS 114-666 (NAP 226-90, rivastigmine metabolite) · direct Emax (saturable) effect | — | Gobburu JV et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001) | [10.1177/00912700122012689](https://doi.org/10.1177/00912700122012689) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Manalo_2017_AChE_inhibition](drugs/drug_rivastigmine/pd_Manalo_2017_AChE_inhibition.md) | Acetylcholinesterase inhibition (positive control Rivastigmine) ← Rivastigmine · direct Emax (saturable) effect | — | Manalo RV et al., Coconut (Cocos nucifera) Ethanolic Leaf…, Biomedicines (2017) | [10.3390/biomedicines5020017](https://doi.org/10.3390/biomedicines5020017) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ndongo_2021_AChE_inhibition](drugs/drug_rivastigmine/pd_Ndongo_2021_AChE_inhibition.md) | acetylcholinesterase inhibition ← rivastigmine · inhibition effect | — | Ndongo TM et al., Microsequential injection analysis/lab-…, Archiv der Pharmazie (2021) | [10.1002/ardp.202100150](https://doi.org/10.1002/ardp.202100150) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Gobburu_2001_AChE_inhibition](drugs/drug_rivastigmine/pd_Gobburu_2001_AChE_inhibition.md) | acetylcholinesterase activity inhibition ← ZNS 114-666 (NAP 226-90, rivastigmine metabolite) · direct Emax (saturable) effect | — | Gobburu JV et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001) | [10.1177/00912700122012689](https://doi.org/10.1177/00912700122012689) |
 
 ## ADME sites
 
@@ -68,7 +68,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 21 matched, 17 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

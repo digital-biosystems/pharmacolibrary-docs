@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Safamansouri_2014_amylase_inhibition](drugs/drug_acarbose/pd_Safamansouri_2014_amylase_inhibition.md) | α-amylase inhibitory activity ← Acarbose · direct sigmoid Emax (Hill) effect | — | Safamansouri H et al., α-Amylase inhibitory activity of some t…, Journal of diabetes and met… (2014) | [10.1186/s40200-014-0114-1](https://doi.org/10.1186/s40200-014-0114-1) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Safamansouri_2014_amylase_inhibition](drugs/drug_acarbose/pd_Safamansouri_2014_amylase_inhibition.md) | α-amylase inhibitory activity ← Acarbose · direct sigmoid Emax (Hill) effect | — | Safamansouri H et al., α-Amylase inhibitory activity of some t…, Journal of diabetes and met… (2014) | [10.1186/s40200-014-0114-1](https://doi.org/10.1186/s40200-014-0114-1) |
 
 ## ADME sites
 

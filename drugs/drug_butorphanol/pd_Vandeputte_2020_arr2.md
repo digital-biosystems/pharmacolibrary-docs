@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Butorphanol concentration (nM) stimulates the recruitment of β-arrestin 2 (βarr2) via a direct Emax mechanism, but the paper does not provide specific numerical values for Emax or EC50 for butorphanol.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vandeputte_2020`
 - **model family:** `emax`
 - **driver:** `cited_pk`

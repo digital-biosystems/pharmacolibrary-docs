@@ -19,7 +19,7 @@
 
 **Model:** No model was generated from this record.
 
-> Imipramine concentrations (nmol l-1) drive a direct stimulatory Emax effect on 3H-5-HT efflux from platelets, expressed as % of the 3H-5-HT content of cells; the paper reports Emax = 6.6% but no IC50/EC50 or mechanism beyond this direct effect.
+> Imipramine concentrations drive a stimulatory Emax model of drug-induced 3H-5-HT efflux from platelets (expressed as % of the 3H-5-HT content of cells), with a reported Emax of 6.6%; the excerpts provide no mechanism, potency (EC50/IC50), or rate parameters.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 

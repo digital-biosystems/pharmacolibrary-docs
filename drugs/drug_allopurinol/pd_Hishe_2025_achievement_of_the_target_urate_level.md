@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided record identifies allopurinol and its active metabolite oxypurinol in a dose-only model predicting the binary response of achieving the target urate level. No full text was available to determine the specific mechanism or provide any quantitative parameter values such as EC50 or Emax.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hishe_2025`
 - **model family:** `categorical`
 - **driver:** `dose_only`

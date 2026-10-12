@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Flufenamic acid (NFA) stimulates Slo2.1 currents by stabilizing the channel open state, with the concentration-dependent activation fitted using a Hill equation. The model yields an EC50 of 1.43 mM and a Hill coefficient (nH) of 1.9.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dai_2010`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

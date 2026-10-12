@@ -4,7 +4,7 @@
 
 # palonosetron — `Palonosetron_Li2026_palonosetron`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.062), gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 All six extracted parameters (Cmax 0.67 ng/mL, AUCt 31.18 h*ng/mL, AUC∞ 34.89 h*ng/mL, t1/2z 81.80 h, V 839.62 L, CL 7.92 L/h) describe fosrolapitant, while palonosetron's clearance and volume of distribution had no value, so placeholders stood in and the model was held back rather than published with invented numbers. The topology check expected a parent–metabolite structure but obtained a one-compartment model, and the deviations check flagged the defaulted clearance and volume of distribution as not acceptable. A second reader also disagreed on the dose compound, the primary analyte, and an additional fosrolapitant-to-m19 metabolism link not present in this record. Extracted — fosrolapitant: Cmax 0.67 ng/mL, AUCt 31.2 h*ng/mL, AUC∞ 34.9 h*ng/mL, t1/2z 81.8 hour, V 840 L, CL 7.92 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has Ritanine (fosrolapitant and palonosetron), the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has Ritanine (fosrolapitant and palonosetron), the second reading fosrolapitant; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -78,17 +78,33 @@ Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacolo
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.062 (1/16 fields) | 15 |
 | `gpt-oss:120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>18 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['fosrolapitant', 'rolapitant', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | not captured | 34.89 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | 34.89 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-t]` | not captured | 31.18 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-t]` | 31.18 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 7.92 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 7.92 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 0.67 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 0.67 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | not captured | 81.80 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 81.80 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | not captured | 839.62 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | 839.62 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | Ritanine (fosrolapitant and palonosetron) | fosrolapitant | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | fosrolapitant and rolapitant | fosrolapitant | mismatch |
 | `gpt-oss:120b` | `model.links` | [['fosrolapitant', 'rolapitant', 'metabolism']] | [['fosrolapitant', 'rolapitant', 'metabolism'], ['fosrolapitant', 'm19', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | Ritanine (fosrolapitant and palonosetron) | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | fosrolapitant and rolapitant | unknown | mismatch |
@@ -163,7 +179,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron/Palonosetron_Li2026_palonosetron_matlab.zip" download>Palonosetron_Li2026_palonosetron_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron/Palonosetron_Li2026_palonosetron_matlab_simbio.zip" download>Palonosetron_Li2026_palonosetron_matlab_simbio.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron/Palonosetron_Li2026_palonosetron_matlab_simbio.zip" download>Palonosetron_Li2026_palonosetron_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron/Palonosetron_Li2026_palonosetron_sbml.zip" download>Palonosetron_Li2026_palonosetron_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron/Palonosetron_Li2026_palonosetron_cellml.zip" download>Palonosetron_Li2026_palonosetron_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

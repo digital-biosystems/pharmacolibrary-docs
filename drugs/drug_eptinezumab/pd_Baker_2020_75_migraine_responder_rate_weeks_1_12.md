@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper uses a saturable inhibitory Emax model to describe the relationship between eptinezumab exposure (specifically AUC0-12wk, with units of h·μg mL−1) and the reduction in monthly migraine days, noting that exposures from 100-mg and 300-mg doses exceeded EC90 estimates. The provided record, however, describes a separate additive model for the binary '≥75% migraine responder rate (weeks 1–12)' driven by exposure in h·μg mL−1 with a Slope of 0.35367, for which the paper does not specify the mechanism or potency values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baker_2020`
 - **model family:** `categorical`
 - **driver:** `pk_record`

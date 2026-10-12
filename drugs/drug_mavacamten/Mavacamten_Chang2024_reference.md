@@ -4,7 +4,7 @@
 
 # mavacamten — `Mavacamten_Chang2024_reference`
 
-> ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909), gpt-oss:120b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The parameter labelled 'Creatinine clearance, mL/min' with value 115 mL/min is a participant biomarker covariate, not mavacamten clearance, so the analyte identity check failed. The true drug parameters are apparent oral values: CL/F 0.914 L/h, V2/F 6.63 L, Q/F 16.3 L/h and absorption rate constant 0.301 h-1, with F=1 and Fm=1 assumed and no molar correction. Vd and Tlag had no source values, so library defaults were substituted. A second reader places the 115 mL/min value as the participants' mean creatinine clearance rather than a disposition parameter, and reads a CYP2C19 rapid-metabolizer effect on CL/F of 0.2 that this record lacks; the covariate effects were defined but only the reference individual was simulated. Extracted — mavacamten: CL 115 mL/min, CL/F 0.914 L/h, V2/F 6.63 L, Q/F 16.3 L/h, kabs 0.301 h -1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of alag1: this record has none, the second reading 0.192. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of alag1: this record has none, the second reading 0.192. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -77,17 +77,19 @@ Chang P et al., Characterization of mavacamten pharmaco…, CPT: pharmacometrics
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.909 (10/11 fields) | 1 |
 | `gpt-oss:120b` | partly confirmed | 0.909 (10/11 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[alag1]` | not captured | 0.192 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[alag1]` | not captured | 0.192 | only_one_extracted |
 
 </details>

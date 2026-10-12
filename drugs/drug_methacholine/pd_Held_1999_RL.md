@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methacholine concentration (microM) directly stimulates an increase in airway resistance (RL, cmH2O s ml(-1)) via an Emax model, with EC50 of 6.1 microM in IPL and 1.5 microM in slices, maximum increase 0.6 cmH2O s ml(-1) (IPL), and EC50 of 0.6 microM under hyperresponsiveness with U46619 10 nM; the paper excerpts do not state the mechanism beyond this direct concentration-effect relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Held_1999`
 - **model family:** `emax`
 - **driver:** `not_resolved`

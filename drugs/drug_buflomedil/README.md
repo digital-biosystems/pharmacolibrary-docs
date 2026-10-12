@@ -32,7 +32,7 @@ Buflomedil is a vasodilator that was used to improve blood flow in peripheral va
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Rey_1984_reference](drugs/drug_buflomedil/Buflomedil_Rey1984_reference.md) | — | 1-compartment (no model) | 2 | Rey E et al., Pharmacokinetics of buflomedil after in…, International journal of cl… (1984) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Rey_1984_reference](drugs/drug_buflomedil/Buflomedil_Rey1984_reference.md) | — | 1-compartment (no model) | 2 | Rey E et al., Pharmacokinetics of buflomedil after in…, International journal of cl… (1984) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

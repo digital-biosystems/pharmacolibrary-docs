@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol concentration-dependently induces contraction of human detrusor smooth muscle (expressed as % of KCl-induced contraction), fitted with sigmoid Emax models; NSC23766 (100 µM) acts as a competitive muscarinic receptor antagonist, shifting curves rightward with reduced pEC50 (e.g. male 6.8±0.5 to 5.5±0.5) and unchanged or elevated Emax (122%±30% to 149%±36%), whereas EHT1864 (100 µM) inhibits noncompetitively, reducing Emax (e.g. male 120%±32% to 61%±32%) with modest pEC50 decreases (8.2±1.8 to 6.5±0.4).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

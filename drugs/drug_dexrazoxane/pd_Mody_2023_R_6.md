@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> In MDA-MB-468 cells, dexrazoxane (DEX) concentrations (µM, driven by simulated PK) act on % cell viability in a transduction model: viability grows at kg = 0.0167 h⁻¹ from R0 = 100%, and DEX adds stimulation of cell killing with Smax = 0.29 h⁻¹, SC50 = 17.5 µM, and a transduction rate 1/τ = 0.0182 h⁻¹, with ψ ≈ 1 (additive interaction with doxorubicin). The paper does not state a specific molecular mechanism beyond empirical cell viability changes (e.g., cell toxicity or cell growth inhibition).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mody_2023`
 - **model family:** `transduction`
 - **driver:** `cited_pk`

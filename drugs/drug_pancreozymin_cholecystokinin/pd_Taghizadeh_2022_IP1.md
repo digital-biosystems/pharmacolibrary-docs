@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cholecystokinin-8 (CCK-8) concentration-dependently stimulates IP1 production in HEK293 cells expressing CCK2R via Gq-mediated signaling, fitted to an Emax model normalized to the maximal CCK-8 response, with EC50 = 11.5 ± 1.5 nM and Emax = 100%. The paper does not describe a kinetic (production/elimination) mechanism beyond direct receptor agonism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Taghizadeh_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -33,8 +33,8 @@ Emicizumab, a monoclonal antibody, is used to treat hemophilia A. It is an appro
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Donners_2021_ABR](drugs/drug_emicizumab/pd_Donners_2021_ABR.md) | annualized bleeding rate of treated [joint] bleeds ← emicizumab · direct Emax (saturable) effect | — | Donners AAMT et al., Pharmacokinetics and Associated Efficac…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01042-w](https://doi.org/10.1007/s40262-021-01042-w) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jonsson_2021_ABR](drugs/drug_emicizumab/pd_Jonsson_2021_ABR.md) | bleeding frequency ← emicizumab · direct Emax (saturable) effect | — | Jonsson F et al., Exposure-Bleeding Count Modeling of Emi…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01006-0](https://doi.org/10.1007/s40262-021-01006-0) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Donners_2021_ABR](drugs/drug_emicizumab/pd_Donners_2021_ABR.md) | annualized bleeding rate of treated [joint] bleeds ← emicizumab · direct Emax (saturable) effect | — | Donners AAMT et al., Pharmacokinetics and Associated Efficac…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01042-w](https://doi.org/10.1007/s40262-021-01042-w) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Jonsson_2021_ABR](drugs/drug_emicizumab/pd_Jonsson_2021_ABR.md) | bleeding frequency ← emicizumab · direct Emax (saturable) effect | — | Jonsson F et al., Exposure-Bleeding Count Modeling of Emi…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01006-0](https://doi.org/10.1007/s40262-021-01006-0) |
 
 ## ADME sites
 

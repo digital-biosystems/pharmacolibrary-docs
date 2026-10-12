@@ -5,7 +5,7 @@
 
 # bleomycin — `Bleomycin_Wilde2007_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.111), gpt-oss:120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -58,14 +58,15 @@ Wilde S et al., Population pharmacokinetics of the BEAC…, Clinical pharmacokin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `qwen3.8-27b` | partly confirmed | 0.111 (1/9 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.1 (1/10 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -78,6 +79,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `values[Q47]` | 1.009 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q64]` | 789.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q88]` | 0.721 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `values[Q22]` | 0.962 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `values[Q301]` | 4.67 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `values[Q303]` | 3.84 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `values[Q30]` | 1.22 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `values[Q347]` | 2.86 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `values[Q47]` | 1.009 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `values[Q64]` | 789.7 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `values[Q88]` | 0.721 | not captured | only_one_extracted |
 
 </details>
 
@@ -137,7 +146,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bleomycin/Bleomycin_Wilde2007_reference/Bleomycin_Wilde2007_reference_modelica.zip" download>Bleomycin_Wilde2007_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bleomycin/Bleomycin_Wilde2007_reference/Bleomycin_Wilde2007_reference_fmi.zip" download>Bleomycin_Wilde2007_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Wilde2007_reference/Bleomycin_Wilde2007_reference_matlab.zip" download>Bleomycin_Wilde2007_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Wilde2007_reference/Bleomycin_Wilde2007_reference_matlab_simbio.zip" download>Bleomycin_Wilde2007_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Wilde2007_reference/Bleomycin_Wilde2007_reference_matlab_simbio.zip" download>Bleomycin_Wilde2007_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Wilde2007_reference/Bleomycin_Wilde2007_reference_sbml.zip" download>Bleomycin_Wilde2007_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Wilde2007_reference/Bleomycin_Wilde2007_reference_cellml.zip" download>Bleomycin_Wilde2007_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

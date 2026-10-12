@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide excerpts describing the mechanism; the record indicates cyfluthrin (within a pyrethroid mixture) inhibits motor activity via a sigmoid Emax model driven by brain pyrethroid concentration, but no potency or rate values are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Starr_2012`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

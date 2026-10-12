@@ -5,7 +5,7 @@
 
 # glibenclamide — `Glibenclamide_Savic2007_lag`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,6 +20,8 @@
 **The glibenclamide model was quarantined because bioavailability, clearance, volume of distribution, absorption rate constant and lag time were left at library placeholder values, and the transit micro-rate kcomp (0.34) was never carried into the model.**
 
 The record reports glibenclamide parameters (kel 1.13 1/h, V 3.84 l, kabs 0.51 1/h, F 0.94, CL 14.5 l/h, MTT -0.359 h, n_transit 10.8), yet the model builder substituted library placeholders for F, Cl, Vd, ka and Tlag, so the published values were not carried into the model. The transit-compartment micro-rate kcomp (0.34) was neither emitted nor defaulted, leaving parameter coverage at 4 of 5. The absorption deviation was judged invented because ka was defaulted rather than reported in the source. Additionally, one reported unit could not be converted to SI, so that parameter reached the model without an SI value. Extracted — glibenclamide: kel 1.13, V 3.84 l, kcomp 0.34, kabs 0.51, MTT -0.359 h, n_transit 10.8, Fab 0.94 F, CL 14.5 l/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has glibenclamide, furosemide, amiloride, moxonidine, the second reading glibenclamide; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -90,6 +92,35 @@ Savic RM; Jonker DM; Kerbusch T; Karlsson MO et al. (2007). Journal of pharmacok
 - LLM selected parameter table(s) 2, 3, 4, 5
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.308 (4/13 fields) | 9 |
+
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[bioavailbility].value` | 0.94 | 0.96 | mismatch |
+| `gpt-oss-120b` | `parameters[cl].value` | 14.5 | 0.354 | mismatch |
+| `gpt-oss-120b` | `parameters[k a].value` | 0.51 | 1.77 | mismatch |
+| `gpt-oss-120b` | `parameters[k23].value` | 0.34 | 0.363 | mismatch |
+| `gpt-oss-120b` | `parameters[n].value` | 10.8 | 8.15 | mismatch |
+| `gpt-oss-120b` | `parameters[t lag (h) mt t].parameter_id` | Q81 | Q83 | mismatch |
+| `gpt-oss-120b` | `parameters[v].value` | 3.84 | 487 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | glibenclamide, furosemide, amiloride, moxonidine | glibenclamide | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | glibenclamide, furosemide, amiloride, moxonidine | glibenclamide | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

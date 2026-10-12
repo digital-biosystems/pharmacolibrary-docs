@@ -5,7 +5,7 @@
 
 # colistin — `Colistin_Xie2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record describes colistin sulfate in critically ill adults with a two-compartment structure, but the structural check flagged an unreachable or orphan compartment — a compartment with no path from the administered dose. The second reader also disagrees on the dose compound and primary analyte (colistin sulfate vs unknown) and on a dialysis clearance parameter, which this record leaves absent while the reader reports 0.0766. The parameter values themselves (V 16.1 L, V2 50.5 L, CL 1.50 L/h) are therefore contested between the two readings. Extracted — colistin: V 16.1 L, V2 50.5 L, CL 1.5 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has colistin sulfate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[tvcl].value`: this record has 1.50, the second reading 0.69; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -67,17 +67,21 @@ Xie YL et al., Population pharmacokinetics of intraven…, Frontiers in pharmaco
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[tvcl].value` | 1.50 | 0.69 | mismatch |
+| `gpt-oss-120b` | `parameters[tvv2].value` | 50.5 | 24.8 | mismatch |
+| `gpt-oss-120b` | `parameters[tvv].value` | 16.1 | 12.9 | mismatch |
 | `gpt-oss:120b` | `parameters[dcldcrcl]` | not captured | 0.0766 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[tvcl].value` | 1.50 | 0.69 | mismatch |
 | `gpt-oss:120b` | `parameters[tvv2].value` | 50.5 | 24.8 | mismatch |

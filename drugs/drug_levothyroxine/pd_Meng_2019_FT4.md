@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# serum free thyroxine — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+# serum free thyroxine — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -18,7 +18,7 @@
 
 **Model:** No model was generated from this record.
 
-> The model describes the anti-thyroid drug dose acting on free thyroxine (FT4) via an indirect response mechanism where the drug inhibits FT4 synthesis, as evidenced by the solution form y(t) = A(1−d/(IC50+d))e^(...) + C... which modifies the synthesis term. The paper identifies parameters for synthesis rate (A), decay rate (C), and IC50, but does not provide specific numerical values for IC50 or rates in the text, stating instead that these are estimated individually for each patient's data.
+> The paper models the effect of anti-thyroid drug dose (mg) on serum free thyroxine (FT4, pmol l−1) using an ordinary differential equation where the drug proportionally inhibits FT4 production (implied by the asymptotic value scaling with IC50) rather than acting via an indirect response mechanism on elimination or production rates as specified in the record. No specific numeric values for IC50, synthesis rate, or decay rate are provided in the excerpts, though patient data suggests an initial FT4 of 75 pmol l−1.
 >
 > <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
@@ -36,25 +36,21 @@ Meng F et al., Hyperthyroidism in the personalized med…, Journal of the Royal 
 _No resolved parameters._
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `einfracz:qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (4/12 fields) | 8 |
+| `einfracz:gpt-oss-120b` | secondary_empty | 0.0 (0/4 fields) | 4 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | anti-thyroid drug (ATD) | carbimazole | mismatch |
-| `gpt-oss:120b` | `effect_form` | unknown | proportional | mismatch |
-| `gpt-oss:120b` | `model_family` | indirect_response_i | sigmoid_emax | mismatch |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0.052 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 5.194 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q75]` | not captured | 0.003 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q75]` | not captured | 0.371 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q75]` | not captured | 0.246 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `driver_compound` | anti-thyroid drug | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_direction` | inhibition | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | proportional | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | indirect_response_i | not captured | mismatch |
 
 </details>
 

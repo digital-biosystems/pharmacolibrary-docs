@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> No summary can be generated because no full text or excerpts were provided for this record.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wakamori_1991`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

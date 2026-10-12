@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates bethanechol concentrations to the maximum response of circular colon muscle strips using an Emax-type model with stimulation, but no excerpts are available, so the mechanism and any potency or rate values (Emax, EC50, gamma) cannot be stated from the provided material.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `McDougal_1984`
 - **model family:** `emax`
 - **driver:** `not_resolved`

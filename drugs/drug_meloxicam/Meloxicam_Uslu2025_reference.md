@@ -5,7 +5,7 @@
 
 # meloxicam — `Meloxicam_Uslu2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,6 +22,8 @@
 **The peripheral compartment volume parameter was rejected because the model structure left that compartment unreachable from the dose.**
 
 The record defines a two-compartment structure for meloxicam with central and peripheral volumes of distribution set to 0.13 L/kg and 0.08 L/kg, respectively. However, the review findings indicate that the peripheral compartment lacks a connection to the dose, meaning it is an orphan compartment. Consequently, the model was refused due to this structural inconsistency. Extracted — meloxicam: CL 0.17 L/h/kg, V1 0.13 L/kg, V2 0.08 L/kg.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q301: this record has 1.1, the second reading none; it also differs on 9 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -60,6 +62,36 @@ Uslu M et al., Effect of Meloxicam on the Pharmacokine…, Veterinary medicine a
 - volume reported by review
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.286 (4/14 fields) | 10 |
+
+<details><summary>10 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q301]` | 1.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q302]` | 1.83 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q352]` | 0.28 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q47]` | 1.33 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q53]` | 1.21 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q63]` | 0.13 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q64]` | 0.08 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q67]` | 3.96 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q86]` | 15.38 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` | 14.46 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

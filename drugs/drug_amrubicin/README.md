@@ -33,14 +33,14 @@ Amrubicin is an anthracycline-type cytotoxic antibiotic investigated as an antic
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Makino_2019_base](drugs/drug_amrubicin/Amrubicin_Makino2019_base.md) | — | parent + metabolite (no model) | 9 | Makino Y et al., Individual optimal dose of amrubicin to…, Cancer science (2019) | [10.1111/cas.14194](https://doi.org/10.1111/cas.14194) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Makino_2019_final](drugs/drug_amrubicin/Amrubicin_Makino2019_final.md) | — | parent + metabolite (no model) | 11 | Makino Y et al., Individual optimal dose of amrubicin to…, Cancer science (2019) | [10.1111/cas.14194](https://doi.org/10.1111/cas.14194) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Makino_2019_base](drugs/drug_amrubicin/Amrubicin_Makino2019_base.md) | — | parent + metabolite (no model) | 9 | Makino Y et al., Individual optimal dose of amrubicin to…, Cancer science (2019) | [10.1111/cas.14194](https://doi.org/10.1111/cas.14194) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.526). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Makino_2019_final](drugs/drug_amrubicin/Amrubicin_Makino2019_final.md) | — | parent + metabolite (no model) | 11 | Makino Y et al., Individual optimal dose of amrubicin to…, Cancer science (2019) | [10.1111/cas.14194](https://doi.org/10.1111/cas.14194) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Yanaihara_2007_percentage_decrease_of_neutrophils](drugs/drug_amrubicin/pd_Yanaihara_2007_percentage_decrease_of_neutrophils.md) | percentage decrease of neutrophils · direct sigmoid Emax (Hill) effect | — | Yanaihara T et al., Phase I and pharmacologic study of irin…, Cancer chemotherapy and pha… (2007) | [10.1007/s00280-006-0279-5](https://doi.org/10.1007/s00280-006-0279-5) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | [Yanaihara_2007_percentage_decrease_of_neutrophils](drugs/drug_amrubicin/pd_Yanaihara_2007_percentage_decrease_of_neutrophils.md) | percentage decrease of neutrophils · direct sigmoid Emax (Hill) effect | — | Yanaihara T et al., Phase I and pharmacologic study of irin…, Cancer chemotherapy and pha… (2007) | [10.1007/s00280-006-0279-5](https://doi.org/10.1007/s00280-006-0279-5) |
 
 ## ADME sites
 

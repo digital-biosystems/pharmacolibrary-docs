@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_Lammers2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3), gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Davis_1986, Jia_2026, Langlois_1987) cannot stand in for this paper's evidence. Extracted — midazolam: CL 5.6 L/h, CL/F 34 L/h, V/F 1.65 L/kg, kabs 0.14 1/h, tlag 0.08 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f posthoc].value`: this record has 34, the second reading 5.6; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading not captured → not captured (not captured); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -74,17 +74,25 @@ Lammers LA et al., Short-term fasting alters cytochrome P4…, Drug metabolism a
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['', '', '']] | mismatch |
+| `gpt-oss-120b` | `parameters[a]` | 1.77 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag1]` | 1.23 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 1.65 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f posthoc].value` | 34 | 5.6 | mismatch |
+| `gpt-oss-120b` | `parameters[median caffeine clearance]` | 5.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[midazolam clearance]` | not captured | 92 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl/f posthoc].value` | 34 | 5.6 | mismatch |
 | `gpt-oss:120b` | `parameters[median caffeine clearance]` | 5.6 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[midazolam clearance]` | not captured | 92 | only_one_extracted |

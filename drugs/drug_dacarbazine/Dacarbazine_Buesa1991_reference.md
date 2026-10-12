@@ -4,7 +4,7 @@
 
 # dacarbazine — `Dacarbazine_Buesa1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (primary re-run, agreement 0.0), gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -57,17 +57,25 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | primary re-run | 0.0 (0/7 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['dtic', 'aica', 'metabolism']] | [['dacarbazine', 'aica', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution (vb) for dtic]` | not captured | 1.49 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean total body clearance of dtic]` | not captured | 0.58 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean volume of the central compartment]` | not captured | 0.42 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | DTIC | dacarbazine | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | DTIC | dacarbazine | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `gpt-oss:120b` | `parameters[apparent volume of distribution (vb) for dtic]` | not captured | 1.49 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean total body clearance of dtic]` | not captured | 0.58 | only_one_extracted |

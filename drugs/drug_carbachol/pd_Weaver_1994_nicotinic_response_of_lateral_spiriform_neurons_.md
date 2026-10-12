@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol concentration (microM) directly stimulates a depolarizing nicotinic response in lateral spiriform neurons, described by a sigmoid Emax concentration–response model with EC50 = 25 ± 5 microM and Hill coefficient 1.4 ± 0.1; no Emax value or further mechanism is given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Weaver_1994`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

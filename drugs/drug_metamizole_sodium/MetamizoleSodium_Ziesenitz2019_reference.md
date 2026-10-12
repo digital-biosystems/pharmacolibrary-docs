@@ -5,7 +5,7 @@
 
 # metamizole sodium — `MetamizoleSodium_Ziesenitz2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375), gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record is abstract-only, so the reported summary statistic (AUC∞ of 4-methylaminoantipyrine in children 2–6 years, 29.9 mg/L/h) stood in for a fitted model, and no volume or clearance parameters exist. A dimension mismatch was also flagged on a structural parameter. A second reader disagreed on the dose compound (metamizole), the primary analyte (4-methylaminoantipyrine), and the model links, arguing the metabolite 4-methylaminoantipyrine should be linked to metamizole sodium by hydrolysis, whereas the record has no such link. Extracted — 4-methylaminoantipyrine: AUC∞ 29.9 mg/L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metamizole, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has metamizole, the second reading metamizole_sodium; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -75,17 +75,23 @@ Ziesenitz VC et al., Dose evaluation of intravenous metamizo…, European journa
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.4 (2/5 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[95% ci lower]` | not captured | 15.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aucref]` | not captured | 39.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[iv dosing in infants &lt; 1 year]` | not captured | 5 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | metamizole | metamizole_sodium | mismatch |
 | `gpt-oss:120b` | `model.links` | [] | [['metamizole sodium', '4-methylaminoantipyrine', 'hydrolysis']] | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | metamizole | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | 4-methylaminoantipyrine | unknown | mismatch |

@@ -24,7 +24,7 @@ Cefozopran is a fourth-generation cephalosporin antibiotic used to treat bacteri
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sakurai_1999_reference](drugs/drug_cefozopran/Cefozopran_Sakurai1999_reference.md) | — | 1-compartment (no model) | 0 | Sakurai Y et al., [Pharmacokinetic analysis of cefozopran…, The Japanese journal of ant… (1999) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sakurai_1999_reference](drugs/drug_cefozopran/Cefozopran_Sakurai1999_reference.md) | — | 1-compartment (no model) | 0 | Sakurai Y et al., [Pharmacokinetic analysis of cefozopran…, The Japanese journal of ant… (1999) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -4,7 +4,7 @@
 
 # cariprazine — `Cariprazine_Periclou2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,14 +14,20 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The cariprazine population model was not published because three of its six parameters — the apparent central volume V1/F (266 l), the peripheral volume V2 (149 l) and the DCAR central volume V1 (128 l) — were never extracted, leaving only 3 of 6 parameters covered.**
+
+The record contains values for kabs (0.352 h−1), CL/F (21.5 l/h) and Q/F (0.431 l/h), but the three volume parameters V1/F, V2 and V1 were neither emitted nor defaulted, so the parameter coverage check found only 3 of 6 expected parameters. Because these volumes were left at library placeholder defaults, the model was held back and not simulated. The model builder additionally assumed apparent parameterization with F=1, Fm=1 and no molar correction. The model structure includes the metabolites DCAR and DDCAR formed from cariprazine in the central compartment. Extracted — cariprazine: kabs 0.352 h−1, CL 21.5 l/h, V1/F 266 l, Q 0.431 l/h, V2 149 l, V1 128 l.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Periclou A et al., Population Pharmacokinetics of Caripraz…, European journal of drug me… (2021)
   ·  DOI: [10.1007/s13318-020-00650-4](https://doi.org/10.1007/s13318-020-00650-4)
 
 ## Model component
-<dbs-pgx drug="cariprazine" model-id="Cariprazine_Periclou2021_reference" status="extracted" stale="false" population="adults with schizophrenia or bipolar mania" measured-compound="cariprazine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="cariprazine" model-id="Cariprazine_Periclou2021_reference" status="not_simulated" stale="false" population="adults with schizophrenia or bipolar mania" measured-compound="cariprazine" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
 **Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 6 extracted.
@@ -29,6 +35,8 @@ Periclou A et al., Population Pharmacokinetics of Caripraz…, European journal 
 **Parameterization:** V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_simulated`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Ka First-order absorption rate constant | `Q49` · kabs | 0.352 | h−1 | 9.777777777777777e-05 | 1/h | not captured | boundary (0.8) | Periclou_2021:results_prose | — | not captured |
@@ -135,6 +143,26 @@ Periclou A et al., Population Pharmacokinetics of Caripraz…, European journal 
 | C9_phys_window_Q63 | pass | volume within physiological range | 128 L | not captured | not captured | ['Periclou_2021:results_prose'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 149 L | not captured | not captured | ['Periclou_2021:results_prose'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_param_coverage | not captured | fail | 6 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['V1/F', 'V2', 'V1'] |
+| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T1_t_half_beta | reference | skipped | 10.1 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 5.9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 19.1 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 18.9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 1.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 1.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 7.0 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 5.8 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -143,6 +171,8 @@ Periclou A et al., Population Pharmacokinetics of Caripraz…, European journal 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_cariprazine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Periclou_2021` / `Periclou_2021::reference`)
+- model: `../../../knowledgebase/drugs/drug_cariprazine/models/modelica/Cariprazine_Periclou2021_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_cariprazine/models/modelica/Cariprazine_Periclou2021_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -154,7 +184,7 @@ Periclou A et al., Population Pharmacokinetics of Caripraz…, European journal 
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cariprazine/Cariprazine_Periclou2021_reference/Cariprazine_Periclou2021_reference_modelica.zip" download>Cariprazine_Periclou2021_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cariprazine/Cariprazine_Periclou2021_reference/Cariprazine_Periclou2021_reference_matlab.zip" download>Cariprazine_Periclou2021_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cariprazine/Cariprazine_Periclou2021_reference/Cariprazine_Periclou2021_reference_matlab_simbio.zip" download>Cariprazine_Periclou2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cariprazine/Cariprazine_Periclou2021_reference/Cariprazine_Periclou2021_reference_matlab_simbio.zip" download>Cariprazine_Periclou2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cariprazine/Cariprazine_Periclou2021_reference/Cariprazine_Periclou2021_reference_sbml.zip" download>Cariprazine_Periclou2021_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_cariprazine/Cariprazine_Periclou2021_reference/Cariprazine_Periclou2021_reference_cellml.zip" download>Cariprazine_Periclou2021_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

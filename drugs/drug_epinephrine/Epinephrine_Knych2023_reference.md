@@ -4,7 +4,7 @@
 
 # epinephrine — `Epinephrine_Knych2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.882), gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The record describes a two-compartment epinephrine model with clearance 15.0 mL/min, central volume 410.4 L, peripheral volume 1579.7 L, and absorption rate constant 1.92 1/h, taken from a secondary review source. The structural check found a compartment or metabolite with no path from the administered dose, which is why the record was refused. A second reader returned no values for the extracted parameters, so the value disagreements could not be resolved. Extracted — epinephrine: CL 15 mL/min, V 410 L, V2 1.58e+03 L, kabs 1.92 1/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 15, the second reading 8452.6; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 15, the second reading 8452.6; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -63,17 +63,20 @@ Knych HK et al., Pharmacokinetics and metabolism of lido…, BMC veterinary rese
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.882 (15/17 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.778 (14/18 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 15 | 8452.6 | mismatch |
+| `gpt-oss-120b` | `values[Q95]` | not captured | 0.361 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q22]` | 15 | 8452.6 | mismatch |
 | `gpt-oss:120b` | `values[Q312]` | not captured | 0.071 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q57]` | 3.78 | 3.97 | mismatch |

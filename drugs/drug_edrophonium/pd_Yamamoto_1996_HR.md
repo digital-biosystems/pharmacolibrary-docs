@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models edrophonium's effect on heart rate (bradycardiac response) with an effect-compartment model, with edrophonium concentrations acting as the driver and an inhibitory effect direction; the excerpts provide no further detail on the effect form, mechanism, or potency/rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yamamoto_1996`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

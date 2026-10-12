@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cholecystokinin octapeptide (nonsulfated) stimulates histamine release from enterochromaffinlike (ECL) cells, described by an Emax model with an EC50 of 0.04 nmol/L; the paper excerpts do not state Emax, the Hill factor, or the mechanism beyond stimulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Prinz_1993`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

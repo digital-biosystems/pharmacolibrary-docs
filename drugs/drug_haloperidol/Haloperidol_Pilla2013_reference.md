@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;haloperidol&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/&quot;},{&quot;label&quot;:&quot;Pilla_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Haloperidol_Franken2017_reference&quot;,&quot;label&quot;:&quot;Franken_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Franken2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Haloperidol_Li2022_base&quot;,&quot;label&quot;:&quot;Li_2022_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Li2022_base.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Haloperidol_Li2022_final&quot;,&quot;label&quot;:&quot;Li_2022_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Li2022_final.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Haloperidol_Franken2017_reference&quot;,&quot;label&quot;:&quot;Franken_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Franken2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Haloperidol_Li2022_base&quot;,&quot;label&quot;:&quot;Li_2022_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Li2022_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Haloperidol_Li2022_final&quot;,&quot;label&quot;:&quot;Li_2022_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_haloperidol/Haloperidol_Li2022_final.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # haloperidol — `Haloperidol_Pilla2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.294), gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The ka value of 6 (unit 'h j1') and the lag time tlag of 6 were not extracted from the source; library defaults were used instead, which the adjudication judged an invented absorption process and not acceptable. The model was parameterized as apparent (F=1, Fm=1, no molar correction), so all reported clearances and volumes (CL/F 86 L/h, Q/F 12 L/h, V1/F 9 L, V2/F 12 L) are bioavailability-adjusted. The reported unit 'h j1' for ka could not be converted to SI, so that parameter was carried without an SI value. A second reader disagreed on the classification of the placebo-effect parameter (maximum placebo effect, 0.1 1/d) and of the elimination rate constant kel (6 1/d). Extracted — haloperidol: CL/F 86 L/h, Q/F 12 L/h, V1/F 9 L, V2/F 12 L, kabs 6 h j1, sigma 0.44, E0 0.5, Cmax 4, … (+5).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[bhaz: placebo].parameter_id`: this record has Q341, the second reading Q342; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of baseline panss: this record has 0.5, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -112,17 +112,30 @@ Pilla Reddy V et al., Population pharmacokinetic-pharmacodyna…, Journal of cli
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.294 (5/17 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.895 (17/19 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[baseline panss]` | 0.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bhaz: placebo]` | 0.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f].value` | 86 | not captured | mismatch |
+| `gpt-oss-120b` | `parameters[e max]` | 0.29 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ec 50]` | 2.71 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka].value` | 6 | 0.236 | mismatch |
+| `gpt-oss-120b` | `parameters[kt].value` | 6 | 0.116 | mismatch |
+| `gpt-oss-120b` | `parameters[p max]` | 4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f].value` | 12 | 233 | mismatch |
+| `gpt-oss-120b` | `parameters[ruv proportional]` | 0.44 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f].value` | 9 | 669 | mismatch |
+| `gpt-oss-120b` | `parameters[vp/f].value` | 12 | 2500 | mismatch |
 | `gpt-oss:120b` | `parameters[bhaz: placebo].parameter_id` | Q341 | Q342 | mismatch |
 | `gpt-oss:120b` | `parameters[kt].parameter_id` | Q47 | Q306 | mismatch |
 

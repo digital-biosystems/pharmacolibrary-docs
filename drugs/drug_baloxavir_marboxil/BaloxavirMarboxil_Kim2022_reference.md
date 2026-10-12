@@ -5,7 +5,7 @@
 
 # baloxavir marboxil — `BaloxavirMarboxil_Kim2022_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,6 +22,8 @@
 **The baloxavir acid model fails the Cmax check and is missing the V2/F parameter.**
 
 The simulated peak concentration is 7.10419045677101e-05, while the expected value is 2.7799999999999998e-05. The record shows that V2/F was neither emitted nor included in the defaults. Covariate scenarios involving body weight were also not exercised during simulation. Extracted — baloxavir acid: CLm/F 7.43 L/h, Q/F 51 L/h, Q2/F 2.69 L/h, V1/F 251 L, V2/F 309 L, V3/F 224 L, Fab 0.625, kabs 0.917 1/h, … (+1).
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[alag1].value`: this record has 12.7, the second reading 0.175; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -95,6 +97,40 @@ Kim Y et al., Pharmacokinetics and safety of a novel…, Clinical and translatio
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.222 (4/18 fields) | 14 |
+
+<details><summary>14 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[alag1].value` | 12.7 | 0.175 | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f].parameter_id` | Q351 | Q27 | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f].value` | 4.5 | 6.76 | mismatch |
+| `gpt-oss-120b` | `parameters[d 2].value` | 8.3 | 2.11 | mismatch |
+| `gpt-oss-120b` | `parameters[f 1].value` | 9.6 | 0.50 | mismatch |
+| `gpt-oss-120b` | `parameters[k a].value` | 11.3 | 0.684 | mismatch |
+| `gpt-oss-120b` | `parameters[q 1/f].value` | 9.8 | 43.8 | mismatch |
+| `gpt-oss-120b` | `parameters[q 2/f]` | 2.86 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_body_weight].value` | 74 | 0.617 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q76_body_weight].value` | 29.3 | 0.161 | mismatch |
+| `gpt-oss-120b` | `parameters[v c/f].value` | 9.0 | 192 | mismatch |
+| `gpt-oss-120b` | `parameters[v p1/f].value` | 4.7 | 269 | mismatch |
+| `gpt-oss-120b` | `parameters[v p2/f].value` | 228 | 196 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model uses an effect compartment approach where total omalizumab concentration in the effect compartment (C bio) linearly inhibits the weekly itch severity score, with an effect-site elimination rate constant (ke0) of 0.0937 1/d and a linear slope term of 0.0172. A parallel additive placebo effect is described with a baseline score of 13.5, a plateau effect of 6.73, and an onset rate of 0.033 1/d.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Oh_2023`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

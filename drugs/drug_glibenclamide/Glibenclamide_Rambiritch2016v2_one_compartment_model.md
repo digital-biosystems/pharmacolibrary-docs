@@ -5,7 +5,7 @@
 
 # glibenclamide — `Glibenclamide_Rambiritch2016v2_one_compartment_model`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record defines a one-compartment structure but includes a parameter for the peripheral volume of distribution. This creates an orphan compartment with no path from the dose, making the model structurally invalid. Extracted — glibenclamide: kabs 2.39 1/h, CL/F 1.52 L/h, V2/F 38.9 L.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has glibenclamide, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -70,14 +70,28 @@ Rambiritch V et al., Population pharmacokinetic modeling of…, Clinical pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 | `gpt-oss:120b` | confirmed | 1.0 (7/7 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f]` | 1.52 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 1.52 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 2.39 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 2.39 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f]` | 38.90 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f]` | not captured | 38.90 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | glibenclamide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | glibenclamide | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

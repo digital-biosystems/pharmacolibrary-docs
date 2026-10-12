@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_Burtin1994_mean_estimate_se_whole_data_set`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The two-compartment midazolam model reports total clearance of 0.0704 L/hr/kg, a magnitude judged implausible for midazolam in critically ill neonates and consistent with a unit or scale error in extraction. The remaining parameters — central volume 0.591 L/kg, peripheral volume 0.419 L, intercompartmental clearance 0.290 L/hr, absorption rate constant 0.14 1/h and lag time 0.08 h — were recorded, but the implausible clearance alone caused rejection. Extracted — midazolam: CL 0.0704 L/hr/kg, V1 0.591 L/kg, V2 0.419 L, Q 0.29 L/hr, kabs 0.14 1/h, tlag 0.08 h.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a: this record has 1.77, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -76,14 +76,24 @@ Burtin P et al., Population pharmacokinetics of midazola…, Clinical pharmacolo
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.667 (8/12 fields) | 4 |
 | `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a]` | 1.77 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag1]` | 1.23 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[if c &lt; 200 ng/ml]` | 780 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[if c ≥ 200 ng/ml]` | not captured | 0.126 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

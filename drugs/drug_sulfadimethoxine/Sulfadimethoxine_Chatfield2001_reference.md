@@ -4,7 +4,7 @@
 
 # sulfadimethoxine — `Sulfadimethoxine_Chatfield2001_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,14 +16,22 @@
 
 **Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Sulfadimethoxine clearance was left at library defaults, so the model was quarantined instead of published.**
+
+The record was built from the abstract alone, meaning no fitted clearance value existed to replace the placeholder. Because clearance was missing, a library default stood in for the pharmacokinetic model. Additionally, volume of distribution at steady state was used as the distribution volume, meaning the early distribution phase was not accurately represented. Extracted — sulfadimethoxine: Cmax 19.3 microg/ml, kel 0.09 /hr, t1/2z 11.7 hr, Vss 0.393 L/kg, Fab 103 %.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sulfadimethoxine, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Chatfield J et al., Disposition of sulfadimethoxine in came…, Journal of zoo and wildlife… (2001)
   ·  DOI: [10.1638/1042-7260(2001)032[0430:DOSICC]2.0.CO;2](https://doi.org/10.1638/1042-7260(2001)032[0430:DOSICC]2.0.CO;2)
 
 ## Model component
-<dbs-pgx drug="sulfadimethoxine" model-id="Sulfadimethoxine_Chatfield2001_reference" status="extracted" stale="false" population="adult camels" measured-compound="sulfadimethoxine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="sulfadimethoxine" model-id="Sulfadimethoxine_Chatfield2001_reference" status="model_quarantined" stale="false" population="adult camels" measured-compound="sulfadimethoxine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.
@@ -31,6 +39,8 @@ Chatfield J et al., Disposition of sulfadimethoxine in came…, Journal of zoo a
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | mean dosage | `Q900` · equation variable | 17.5 | mg/kg | not captured | [mg] / [kg] | not captured | llm (0.6) | Chatfield_2001:abstract | — | not captured |
@@ -63,6 +73,41 @@ Chatfield J et al., Disposition of sulfadimethoxine in came…, Journal of zoo a
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.167 (3/18 fields) | 15 |
+
+<details><summary>15 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[elimination half-life]` | 11.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life]` | not captured | 11.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination rate constant]` | 0.09 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination rate constant]` | not captured | 0.09 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean dosage]` | 17.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean dosage]` | not captured | 17.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean maximum serum concentration]` | 19.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean maximum serum concentration]` | not captured | 19.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean volume of distribution at steady state]` | 0.393 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean volume of distribution at steady state]` | not captured | 0.393 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability]` | 103 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability]` | not captured | 103 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time to maximum serum concentration]` | not captured | 11.41 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | sulfadimethoxine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | sulfadimethoxine | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -77,6 +122,16 @@ Chatfield J et al., Disposition of sulfadimethoxine in came…, Journal of zoo a
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q65 | pass | volume within physiological range | 27.5 L | not captured | not captured | ['Chatfield_2001:abstract'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -85,6 +140,8 @@ Chatfield J et al., Disposition of sulfadimethoxine in came…, Journal of zoo a
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_sulfadimethoxine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chatfield_2001` / `Chatfield_2001::reference`)
+- model: `../../../knowledgebase/drugs/drug_sulfadimethoxine/models/modelica/_needs_review/Sulfadimethoxine_Chatfield2001_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_sulfadimethoxine/models/modelica/_needs_review/Sulfadimethoxine_Chatfield2001_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

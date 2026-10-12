@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Flupenthixol concentrations (µM) inhibit SARS-CoV-2 replication in Vero E6 cells, reducing supernatant viral RNA load ~10-fold at 24 h post infection; the paper does not state a specific PD mechanism beyond antiviral entry/replication inhibition, and the effect was fitted with a sigmoid Emax model with EC50 = 2.95 µM (no Imax, Emax, gamma, or rate parameters reported).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

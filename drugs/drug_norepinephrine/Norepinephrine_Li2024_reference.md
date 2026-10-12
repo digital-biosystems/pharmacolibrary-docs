@@ -1,10 +1,10 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;norepinephrine&quot;,&quot;href&quot;:&quot;drugs/drug_norepinephrine/&quot;},{&quot;label&quot;:&quot;Li_2024 \u00b7 parameter&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;norepinephrine&quot;,&quot;href&quot;:&quot;drugs/drug_norepinephrine/&quot;},{&quot;label&quot;:&quot;Li_2024 \u00b7 reference&quot;}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # norepinephrine — `Norepinephrine_Li2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.333). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,22 +16,20 @@
 
 ### Reviewer guidance
 
-**No model parameters were extracted from this paper.**
+**The paper reports none of the model's key parameters.**
 
-Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has norepinephrine, the second reading unknown; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:11.753795+00:00) predates the upstream re-run (2026-10-06 09:38:12.785350+00:00). Current validate status: `rejected`.
 
 ## Citation
 Li Y et al., Population Pharmacokinetic Modelling of…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01430-y](https://doi.org/10.1007/s40262-024-01430-y)
 
 ## Model component
-<dbs-pgx drug="norepinephrine" model-id="Norepinephrine_Li2024_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="norepinephrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="norepinephrine" model-id="Norepinephrine_Li2024_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="norepinephrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -64,14 +62,23 @@ _No resolved parameters._
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss:120b` | primary re-run | 0.333 (2/6 fields) | 4 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[clearance parameters and production rate]` | not captured | 0.75 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[lag time parameter]` | not captured | 0.25 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | norepinephrine | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | norepinephrine | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -94,7 +101,7 @@ _Every reader agrees on every compared field of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_norepinephrine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2024` / `Li_2024::parameter`)
+- scholar stages: `../../../knowledgebase/drugs/drug_norepinephrine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2024` / `Li_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

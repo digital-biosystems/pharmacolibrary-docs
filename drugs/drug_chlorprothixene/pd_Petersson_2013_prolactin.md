@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper models chlorprothixene concentrations acting on prolactin as an inhibitory effect, but the available excerpts do not state the mechanism, model form, or any potency or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Petersson_2013`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

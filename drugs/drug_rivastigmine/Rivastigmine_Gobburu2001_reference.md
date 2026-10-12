@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;rivastigmine&quot;,&quot;href&quot;:&quot;drugs/drug_rivastigmine/&quot;},{&quot;label&quot;:&quot;Gobburu_2001 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rivastigmine_Gobburu2001_reference&quot;,&quot;label&quot;:&quot;Gobburu_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivastigmine/Rivastigmine_Gobburu2001_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rivastigmine_Gobburu2001_reference&quot;,&quot;label&quot;:&quot;Gobburu_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivastigmine/Rivastigmine_Gobburu2001_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rivastigmine — `Rivastigmine_Gobburu2001_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.235). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,22 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The rivastigmine parent–metabolite record was rejected because the absorption rate constant ka (and Tlag) was never reported in the paper and library defaults were used, and the model structure did not match the declared parent–metabolite topology.**
+
+The record was built from the abstract of Gobburu_2001 alone, so summary statistics stood in for a fitted model. The reported parameters are CL/F 120 L/h, V 236 L and Frel 140% at the 6 mg dose for rivastigmine, and CL 100 L/h and V 256 L for the metabolite ZNS 114-666 (NAP 226-90). The declared structure is parent–metabolite, but the model was built as a one-compartment enteral model rather than the required parent–metabolite structure, and the model output was the plasma concentration in the central compartment rather than the measured analyte compartment. The builder also assumed F=1, Fm=1 and no molar correction, and defaulted ka and Tlag, which are not supported by the paper. Extracted — rivastigmine: CL/F 120 L/h, V 236 L, Frel 140 %; ZNS 114-666 (NAP 226-90): CL 100 L/h, V 256 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has rivastigmine → zns 114-666 (nap 226-90) (metabolism), the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Gobburu JV et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001)
   ·  DOI: [10.1177/00912700122012689](https://doi.org/10.1177/00912700122012689)
 
 ## Model component
-<dbs-pgx drug="rivastigmine" model-id="Rivastigmine_Gobburu2001_reference" status="extracted" stale="false" population="patients with Alzheimer&#39;s disease" measured-compound="rivastigmine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="rivastigmine" model-id="Rivastigmine_Gobburu2001_reference" status="rejected" stale="false" population="patients with Alzheimer&#39;s disease" measured-compound="rivastigmine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.
@@ -30,6 +38,8 @@ Gobburu JV et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinic
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | apparent clearance | `Q27` · CL/F | 120 | L/h | 3.3333333333333335e-05 | [l] / [h] | not captured | exact (1.0) | Gobburu_2001:abstract | — | not captured |
@@ -72,6 +82,39 @@ Gobburu JV et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinic
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.235 (4/17 fields) | 13 |
+
+<details><summary>13 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['rivastigmine', 'zns 114-666 (nap 226-90)', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[apparent clearance]` | 120 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent clearance]` | not captured | 120 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance of the metabolite]` | not captured | 100 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 100 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[equilibration half-life (metabolite) in csf]` | not captured | 0.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[equilibration half-life (parent) in csf]` | not captured | 0.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability at the 6 mg dose]` | 140 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability]` | not captured | 140 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution of the metabolite]` | not captured | 256 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 236 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 256 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 236 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -90,6 +133,18 @@ Gobburu JV et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinic
 | C9_phys_window_Q61 | pass | volume within physiological range | 236 L | not captured | not captured | ['Gobburu_2001:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 256 L | not captured | not captured | ['Gobburu_2001:abstract'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=rivastigmine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -98,24 +153,16 @@ Gobburu JV et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinic
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_rivastigmine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gobburu_2001` / `Gobburu_2001::reference`)
+- model: `../../../knowledgebase/drugs/drug_rivastigmine/models/modelica/Rivastigmine_Gobburu2001_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_rivastigmine/models/modelica/Rivastigmine_Gobburu2001_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_rivastigmine/models/modelica/Rivastigmine_Gobburu2001_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rivastigmine/Rivastigmine_Gobburu2001_reference/Rivastigmine_Gobburu2001_reference_modelica.zip" download>Rivastigmine_Gobburu2001_reference_modelica.zip</a> <span class="pk-size">(5.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rivastigmine/Rivastigmine_Gobburu2001_reference/Rivastigmine_Gobburu2001_reference_fmi.zip" download>Rivastigmine_Gobburu2001_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rivastigmine/Rivastigmine_Gobburu2001_reference/Rivastigmine_Gobburu2001_reference_matlab.zip" download>Rivastigmine_Gobburu2001_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rivastigmine/Rivastigmine_Gobburu2001_reference/Rivastigmine_Gobburu2001_reference_matlab_simbio.zip" download>Rivastigmine_Gobburu2001_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rivastigmine/Rivastigmine_Gobburu2001_reference/Rivastigmine_Gobburu2001_reference_sbml.zip" download>Rivastigmine_Gobburu2001_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_rivastigmine/Rivastigmine_Gobburu2001_reference/Rivastigmine_Gobburu2001_reference_cellml.zip" download>Rivastigmine_Gobburu2001_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_rivastigmine/Rivastigmine_Gobburu2001_reference/Rivastigmine_Gobburu2001_reference.svg" alt="Rivastigmine_Gobburu2001_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

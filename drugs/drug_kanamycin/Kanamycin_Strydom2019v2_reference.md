@@ -5,7 +5,7 @@
 
 # kanamycin — `Kanamycin_Strydom2019v2_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364), gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[central volume].parameter_id`: this record has Q61, the second reading Q63; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[central volume].parameter_id`: this record has Q61, the second reading Q63; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -68,17 +68,25 @@ Strydom N et al., Tuberculosis drugs' distribution and em…, PLoS medicine (201
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.364 (4/11 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.364 (4/11 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>14 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[central volume].parameter_id` | Q61 | Q63 | mismatch |
+| `gpt-oss-120b` | `parameters[central volume].value` | 30.6 | 52.3 | mismatch |
+| `gpt-oss-120b` | `parameters[clearance].value` | 4.61 | 5.72 | mismatch |
+| `gpt-oss-120b` | `parameters[intercomp clearance]` | not captured | 6.43 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time]` | not captured | 0.130 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume]` | not captured | 40.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rate of absorption].value` | 1.65 | 1.55 | mismatch |
 | `gpt-oss:120b` | `parameters[central volume].parameter_id` | Q61 | Q63 | mismatch |
 | `gpt-oss:120b` | `parameters[central volume].value` | 30.6 | 52.3 | mismatch |
 | `gpt-oss:120b` | `parameters[clearance].value` | 4.61 | 5.72 | mismatch |
@@ -140,10 +148,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference/Kanamycin_Strydom2019v2_reference_modelica.zip" download>Kanamycin_Strydom2019v2_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference/Kanamycin_Strydom2019v2_reference_modelica.zip" download>Kanamycin_Strydom2019v2_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference/Kanamycin_Strydom2019v2_reference_fmi.zip" download>Kanamycin_Strydom2019v2_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference/Kanamycin_Strydom2019v2_reference_matlab.zip" download>Kanamycin_Strydom2019v2_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference/Kanamycin_Strydom2019v2_reference_matlab_simbio.zip" download>Kanamycin_Strydom2019v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference/Kanamycin_Strydom2019v2_reference_matlab_simbio.zip" download>Kanamycin_Strydom2019v2_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference/Kanamycin_Strydom2019v2_reference_sbml.zip" download>Kanamycin_Strydom2019v2_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference/Kanamycin_Strydom2019v2_reference_cellml.zip" download>Kanamycin_Strydom2019v2_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>

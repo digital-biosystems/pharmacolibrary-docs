@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
+**C5 dimension mismatch on a structural parameter.**
+
+A reported unit could not be converted (Cmax, AUC∞ and AUC), so that value has no SI equivalent. Extracted — mexiletine: kel 1.11 1/h, tlag 1 hr, tmax 4.29 hr, Cmax 0.94 µg/ml, AUC∞ 15.5 µg/ml/hr, AUC 13.4 µg/ml/hr, V 74 L.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc0^inf: this record has 15.492, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ## Citation
 Häselbarth V et al., Kinetics and bioavailability of mexilet…, Clinical pharmacology and t… (1981)

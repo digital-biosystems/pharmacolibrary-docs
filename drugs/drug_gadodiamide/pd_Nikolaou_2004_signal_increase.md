@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Gadodiamide concentration (mmol/L) acts on the measured signal increase; the paper excerpts do not specify the mechanism or any potency or rate values.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nikolaou_2004`
 - **model family:** `linear`
 - **driver:** `cited_pk`

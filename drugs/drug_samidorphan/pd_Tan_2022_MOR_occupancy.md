@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Samidorphan plasma concentrations (nM, from cited PK) drive in vivo brain MOR receptor occupancy (%) in rats, described by a sigmoid Emax model with EC50 = 5.1 nM; the paper does not state the mechanism beyond receptor engagement (displacement of tracer), nor Imax, gamma, or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tan_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

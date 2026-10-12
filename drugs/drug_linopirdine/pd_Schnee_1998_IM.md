@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Linopirdine inhibits the M-type K+ current (IM), with an IC50 of 2.4 ± 0.4 µM. The paper excerpts do not state the mechanism (e.g., direct Emax effect or turnover model) or other PD parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schnee_1998`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

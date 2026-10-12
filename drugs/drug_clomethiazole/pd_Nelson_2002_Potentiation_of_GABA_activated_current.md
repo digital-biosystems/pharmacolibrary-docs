@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Clomethiazole concentrations (micro M) act on potentiation of GABA-activated current, described by an Emax model with stimulation; the paper excerpts provide no mechanism details and no potency or rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nelson_2002`
 - **model family:** `emax`
 - **driver:** `cited_pk`

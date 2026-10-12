@@ -23,13 +23,13 @@ Romosozumab is a monoclonal antibody used to treat osteoporosis. It is authorise
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Eudy_2015_reference](drugs/drug_romosozumab/Romosozumab_Eudy2015_reference.md) | — | 1-compartment (no model) | 0 | Eudy RJ et al., Connecting the Dots: Linking Osteocyte…, CPT: pharmacometrics & syst… (2015) | [10.1002/psp4.12013](https://doi.org/10.1002/psp4.12013) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Eudy_2015_reference](drugs/drug_romosozumab/Romosozumab_Eudy2015_reference.md) | — | 1-compartment (no model) | 0 | Eudy RJ et al., Connecting the Dots: Linking Osteocyte…, CPT: pharmacometrics & syst… (2015) | [10.1002/psp4.12013](https://doi.org/10.1002/psp4.12013) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Martin_2020_BMD](drugs/drug_romosozumab/pd_Martin_2020_BMD.md) | bone mineral density ← romosozumab · target-mediated drug disposition | — | Martin M et al., Assessment of romosozumab efficacy in t…, Bone (2020) | [10.1016/j.bone.2020.115223](https://doi.org/10.1016/j.bone.2020.115223) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Martin_2020_BMD](drugs/drug_romosozumab/pd_Martin_2020_BMD.md) | bone mineral density ← romosozumab · target-mediated drug disposition | — | Martin M et al., Assessment of romosozumab efficacy in t…, Bone (2020) | [10.1016/j.bone.2020.115223](https://doi.org/10.1016/j.bone.2020.115223) |
 
 ## ADME sites
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Aniracetam concentrations (microM) potentiate AMPA-induced spreading depression, described by a sigmoid Emax model with an EC50 of 1383 microM; the paper excerpts do not state Emax, gamma, or the mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kertész_2004`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

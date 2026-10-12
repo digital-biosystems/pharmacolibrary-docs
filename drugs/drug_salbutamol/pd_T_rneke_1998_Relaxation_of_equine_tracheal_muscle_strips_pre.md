@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Salbutamol concentration (nM) stimulates relaxation of equine tracheal muscle strips precontracted with 40 nM carbachol via a direct Emax model, with EC50 5.6 nM and Kd 1100 nM; the paper excerpts do not state further mechanism details.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Törneke_1998`
 - **model family:** `emax`
 - **driver:** `cited_pk`

@@ -32,7 +32,7 @@ Glyceryl trinitrate (nitroglycerin) is a vasodilator medication used for cardiac
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Eugene_2016_FBF](drugs/drug_glyceryl_trinitrate/pd_Eugene_2016_FBF.md) | forearm blood flow ← glyceryl_trinitrate · direct sigmoid Emax (Hill) effect | — | Eugene AR, A Model-Based Meta-Analysis Evaluating…, MEDtube science (2016) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Eugene_2016_FBF](drugs/drug_glyceryl_trinitrate/pd_Eugene_2016_FBF.md) | forearm blood flow ← glyceryl_trinitrate · direct sigmoid Emax (Hill) effect | — | Eugene AR, A Model-Based Meta-Analysis Evaluating…, MEDtube science (2016) | — |
 
 ## Pharmacogenomics (PGx)
 

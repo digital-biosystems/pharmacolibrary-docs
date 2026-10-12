@@ -5,7 +5,7 @@
 
 # diclofenac — `Diclofenac_Yuan2017_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6), gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 2501, the second reading 3356; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 2501, the second reading 3356; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,17 +60,24 @@ Yuan J et al., A pharmacokinetic study of diclofenac s…, Biomedical reports (2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.6 (9/15 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.6 (9/15 fields) | 6 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q17]` | 2501 | 3356 | mismatch |
+| `gpt-oss-120b` | `values[Q22]` | 0.81 | 0.6 | mismatch |
+| `gpt-oss-120b` | `values[Q47]` | not captured | 0.57 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 1.12 | 1.22 | mismatch |
+| `gpt-oss-120b` | `values[Q61]` | 1.29 | 1.05 | mismatch |
+| `gpt-oss-120b` | `values[Q67]` | 0.63 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q17]` | 2501 | 3356 | mismatch |
 | `gpt-oss:120b` | `values[Q22]` | 0.81 | 0.60 | mismatch |
 | `gpt-oss:120b` | `values[Q47]` | not captured | 0.57 | only_one_extracted |
@@ -133,7 +140,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_diclofenac/Diclofenac_Yuan2017_reference/Diclofenac_Yuan2017_reference_modelica.zip" download>Diclofenac_Yuan2017_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_diclofenac/Diclofenac_Yuan2017_reference/Diclofenac_Yuan2017_reference_fmi.zip" download>Diclofenac_Yuan2017_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_diclofenac/Diclofenac_Yuan2017_reference/Diclofenac_Yuan2017_reference_matlab.zip" download>Diclofenac_Yuan2017_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_diclofenac/Diclofenac_Yuan2017_reference/Diclofenac_Yuan2017_reference_matlab_simbio.zip" download>Diclofenac_Yuan2017_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_diclofenac/Diclofenac_Yuan2017_reference/Diclofenac_Yuan2017_reference_matlab_simbio.zip" download>Diclofenac_Yuan2017_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_diclofenac/Diclofenac_Yuan2017_reference/Diclofenac_Yuan2017_reference_sbml.zip" download>Diclofenac_Yuan2017_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_diclofenac/Diclofenac_Yuan2017_reference/Diclofenac_Yuan2017_reference_cellml.zip" download>Diclofenac_Yuan2017_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

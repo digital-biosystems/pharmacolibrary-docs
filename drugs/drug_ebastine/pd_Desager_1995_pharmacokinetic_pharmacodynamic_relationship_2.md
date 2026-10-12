@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record identifies ebastine and a continuous pharmacokinetic–pharmacodynamic relationship, but does not specify the drug concentration or dose driver or a measured endpoint. The available paper excerpts do not state the mechanism or any potency or rate values.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Desager_1995`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

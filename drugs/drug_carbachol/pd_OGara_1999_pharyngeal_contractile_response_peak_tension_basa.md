@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol concentration stimulates the pharyngeal contractile response (peak tension, basal tonus, and integrated area) via an Emax-type model; the paper excerpts provide no mechanism details and no potency or rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `OGara_1999`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deltamethrin (decamethrin) concentrations (nM) stimulate synaptosomal membrane depolarization (mV) via a direct Emax model, with EC50 = 30 nM and Emax = 27 mV; the paper excerpts do not state a more specific mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eells_1992`
 - **model family:** `emax`
 - **driver:** `cited_pk`

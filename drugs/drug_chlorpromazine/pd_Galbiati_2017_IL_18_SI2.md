@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper links chlorpromazine concentrations to the measured IL-18 release response (IL-18 SI2), but the excerpts provide no full text, so the mechanism (e.g., direct Emax, turnover, or effect compartment) and any potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Galbiati_2017`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -16,7 +16,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The permethrin record for broiler chickens was rejected because a structural parameter has a dimension mismatch: the absorption lag time tlag is 18.5 h, inconsistent with the reported tmax of 0.55 h and terminal half-life of 4.73 h.**
+
+The record was built from the paper's abstract alone, so reported summary statistics (AUC∞ 16.45 mg/h/l, Cmax 0.6 μg/ml, MRT 5.06 h, bioavailability 0.11, clearance 6.94 L/h for a 37.6 kg typical individual) stood in for a fitted model. The dimension check on a structural parameter failed, pointing to the absorption lag time of 18.5 h, which is dimensionally inconsistent with the other time parameters of permethrin in this population. Extracted — permethrin: t1/2z 4.73 h, MRT 5.06 h, AUC∞ 16.4 mg/h/l, Cmax 0.6 μg/ml, tmax 0.55 h, Fab 0.11, CL 6.94 L/h, tlag 18.5 h.
+
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Gögebakan T et al., Single-dose toxicokinetics of permethri…, British poultry science (2015)

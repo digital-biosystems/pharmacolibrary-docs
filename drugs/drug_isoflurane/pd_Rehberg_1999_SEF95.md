@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Isoflurane inhibits the spectral edge frequency at the 95th percentile (SEF95) via a sigmoidal Emax model with a rate of equilibration (Ke0) of 0.29+/-0.04 min^-1. The estimated half-maximal effective concentration (EC50) is 0.66+/-0.08 vol% and the slope is 0.86+/-0.06.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rehberg_1999`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

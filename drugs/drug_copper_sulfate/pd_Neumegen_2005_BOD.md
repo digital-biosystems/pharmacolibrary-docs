@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Copper sulfate (pentahydrate) concentrations (mg/L) inhibit the BOD degradation rate constant via a sigmoid Emax (proportional inhibition) model; the paper reports an EC50 of 18.3 ± 0.37 mg/L, but no full text is available to confirm the mechanism or other parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Neumegen_2005`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

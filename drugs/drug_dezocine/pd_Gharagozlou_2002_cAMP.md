@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Dezocine concentrations (nM) inhibit cAMP production (pmole/well) with an Emax-type inhibitory model; the paper excerpts provide no mechanism details and no parameter values (Imax, IC50, Emax, gamma) are stated.
+> The paper does not provide the full text or specific model details, so the exact mechanism and key potency values are not stated, although the record indicates dezocine inhibits cAMP production.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Gharagozlou_2002`
 - **model family:** `unknown`

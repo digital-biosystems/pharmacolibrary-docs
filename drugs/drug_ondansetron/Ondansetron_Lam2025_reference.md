@@ -5,7 +5,7 @@
 
 # ondansetron — `Ondansetron_Lam2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545), gpt-oss:120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 For ondansetron in neonates with neonatal opioid withdrawal syndrome, the two-compartment model reports total clearance of 0.58 L/h and a central volume of distribution of 0.29 L, magnitudes flagged as physiologically implausible and consistent with a unit or scale extraction error. The peripheral volume (0.91 L) and intercompartmental clearance (6.15 L/h) exceed the central volume, further straining the parameter set. The remaining parameters — absorption rate constant 0.19 h−1 and bioavailability 0.62 — were not themselves flagged. Extracted — ondansetron: CL 0.58 L/h, V 0.29 L, V2 0.91 L, Q 6.15 L/h, kabs 0.19 h−1, Fab 0.62.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ondansetron, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 0.58, the second reading 33743; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -81,17 +81,23 @@ Lam K et al., Bayesian Population Pharmacokinetic Mod…, Clinical and translati
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.545 (6/11 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.818 (9/11 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl].value` | 0.58 | 33743 | mismatch |
+| `gpt-oss-120b` | `parameters[ka].value` | 0.19 | 3101 | mismatch |
+| `gpt-oss-120b` | `parameters[q].value` | 6.15 | 6105 | mismatch |
+| `gpt-oss-120b` | `parameters[v2].value` | 0.91 | 3864 | mismatch |
+| `gpt-oss-120b` | `parameters[v].value` | 0.29 | 6080 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | ondansetron | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | ondansetron | unknown | mismatch |
 

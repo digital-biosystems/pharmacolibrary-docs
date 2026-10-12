@@ -5,7 +5,7 @@
 
 # pregabalin — `Pregabalin_Hong2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727), gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -109,17 +109,24 @@ Hong T et al., Comparison of oral absorption models fo…, Drug design, developm
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.727 (16/22 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.667 (18/27 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 2.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kafast]` | not captured | 5.69 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time]` | 0.495 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mttfast]` | not captured | 0.494 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mttfed]` | 0.879 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[u 2 apparent volume of distribution]` | 109.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption rate constant]` | 2.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clt/f].covariate_forms` | ['categorical_fractional'] | [] | mismatch |
 | `gpt-oss:120b` | `parameters[kafast]` | not captured | 5.69 | only_one_extracted |

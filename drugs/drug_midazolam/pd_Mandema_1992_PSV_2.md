@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> Peak saccadic velocity (deg/sec) was related to plasma a-hydroxymidazolam concentrations (ng/ml) with a sigmoid Emax model (with an effect compartment used to model equilibration delay), producing inhibition (decrease) of PSV; the paper reports an EC50 of 49 ± 10 ng/ml for a-hydroxymidazolam (vs 40 ± 7 ng/ml for midazolam), but does not state the Emax, gamma, or ke0 values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mandema_1992`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -5,7 +5,7 @@
 
 # clonidine — `Clonidine_Potts2007_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.562), gpt-oss:120b (not confirmed, agreement 0.158). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.471), gpt-oss:120b (not confirmed, agreement 0.647). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,38 +21,34 @@
 
 The record for clonidine in children was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The dimension mismatch concerns the central volume of distribution, given as 62.5 l 70 kg(-1), which is not a valid volume dimension. Other parameters (clearance 14.6 L/h, intercompartmental clearance 157 l x h(-1) 70 kg(-1), peripheral volume 119 l 70 kg(-1), terminal half-life 25.7 weeks, absorption half-life 0.98 h, bioavailability 1) were extracted, but a second reader returned null for all of them and marked the dose compound and primary analyte as unknown. Extracted — clonidine: CL 14.6 L/h, V1 62.5 l 70 kg(-1), Q 157 l x h(-1) 70 kg(-1), V2 119 l 70 kg(-1), t1/2z 25.7 weeks, t1/2ka 0.98 h, Fab 1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clonidine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:25:37.254006+00:00) predates the upstream re-run (2026-10-08 11:20:38.934452+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:25:37.254006+00:00) predates the upstream re-run (2026-10-09 06:09:00.066873+00:00). Current validate status: `rejected`.
 
 ## Citation
 Potts AL et al., Clonidine disposition in children; a po…, Paediatric anaesthesia (2007)
   ·  DOI: [10.1111/j.1460-9592.2007.02251.x](https://doi.org/10.1111/j.1460-9592.2007.02251.x)
 
 ## Model component
-<dbs-pgx drug="clonidine" model-id="Clonidine_Potts2007_reference" status="rejected" stale="true" population="children (0-15 years) after cardiac surgery and other indications" measured-compound="clonidine" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="clonidine" model-id="Clonidine_Potts2007_reference" status="rejected" stale="true" population="children" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 9 extracted.
+**Parameters:** 5 extracted.
 
-**Parameterization:** CLm,norm/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| clearance (CL) | `Q22` · CL | 14.6 | L/h | 4.055555555555556e-06 | L/h | not captured | exact (1.0) | Potts_2007:abstract | — | not captured |
-| central volume of distribution (V1) | `Q63` · V1 | 62.5 | l 70 kg(-1) | 4.375 | [l] / [kg] | not captured | boundary_compartment (0.9) | Potts_2007:abstract | — | not captured |
-| intercompartment clearance (Q) | `Q30` · Q | 157 | l x h(-1) 70 kg(-1) | not captured | [l] / [[h] · [kg]] | not captured | llm_corrected (0.6) | Potts_2007:abstract | — | not captured |
-| peripheral volume of distribution (V2) | `Q64` · V2 | 119 | l 70 kg(-1) | 8.33 | [l] / [kg] | not captured | boundary_compartment (0.9) | Potts_2007:abstract | — | not captured |
-| Clearance at birth | `Q23` · CLb | 3.8 | l x h(-1) 70 kg(-1) | not captured | [l] / [[h] · [kg]] | not captured | llm_corrected (0.6) | Potts_2007:abstract | — | not captured |
-| half-time | `Q57` · t1/2z | 25.7 | weeks | not captured | [weeks] | not captured | llm (0.6) | Potts_2007:abstract | — | not captured |
-| adult rate | `Q375` · CLm,norm/F | 82 | % | not captured | [%] | not captured | llm (0.6) | Potts_2007:abstract | — | not captured |
-| absorption half-life from the epidural space | `Q95` · t1/2ka | 0.98 | h | 3528.0 | [h] | not captured | llm_corrected (0.6) | Potts_2007:abstract | — | not captured |
-| F | `Q40` · Fab | 1 | not captured | not captured | not captured | not captured | exact (1.0) | Potts_2007:abstract | — | not captured |
+| T abs epidural (h) | `Q49` · kabs | 24.5 | h | not captured | [h] | not captured | llm (0.6) | tab_0:row6:col1, tab_0:row6:col2 | — | not captured |
+| Lag rectal (min) | `Q83` · tlag | 73.2 | min | 4392.0 | [min] | not captured | llm (0.6) | tab_0:row8:col1, tab_0:row8:col2 | — | not captured |
+| b cl | `Q22` · CL | 0.262 | c | not captured | [c] | 27.4 | llm_confirmed (0.6) | tab_0:row9:col2, tab_0:row9:col4 | — | not captured |
+| FV1 | `Q63` · V1 | 1.23 | not captured | not captured | not captured | 20.4 | llm (0.6) | tab_0:row11:col2, tab_0:row11:col4 | — | not captured |
+| FV2 | `Q64` · V2 | 1.26 | not captured | not captured | not captured | 12.6 | llm (0.6) | tab_0:row12:col2, tab_0:row12:col4 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -62,23 +58,21 @@ Potts AL et al., Clonidine disposition in children; a po…, Paediatric anaesthe
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'l x h(-1 )70 kg(-1)' (CL)
-- unit_dimension_mismatch: 'intercompartment clearance (Q)' → Q30 (unit '[luminosity] / [length] ** 2 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_mismatch: 'Clearance at birth' → Q23 (unit '[luminosity] / [length] ** 2 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_mismatch: 'adult rate' → Q375 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_mismatch: 'V1' → Q63 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
-- dropped duplicate Q63 ('V1', value 123) — already have one for this compound
-- unit_dimension_mismatch: 'V2' → Q64 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
-- dropped duplicate Q64 ('V2', value 126) — already have one for this compound
-- dropped duplicate Q95 ('absorption half-life from the rectum', value 0.26) — already have one for this compound
-- implicit units: 'clearance (CL)' → L/h (from the popPK convention: 'No unit is stated in the provided text or captions. In population pharmacokinetics, total clearance (CL) is most commonl')
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=clonidine
+- table section iiv: 'T abs epidural (h)' routed out of structural estimates ('%BSV')
+- table section iiv: 'T abs rectal (h)' routed out of structural estimates ('%BSV')
+- table section iiv: 'Lag rectal (min)' routed out of structural estimates ('%BSV')
+- unit_dimension_mismatch: 'T abs epidural (h)' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
+- unit_dimension_mismatch: 'T abs rectal (h)' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
+- dropped duplicate Q49 ('T abs rectal (h)', value '32.3') — already have one for this compound
+- unit_dimension_mismatch: 'b cl' → Q22 (unit '[length] / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped unlinked row (NIL): 'T cl (weeks)' — extend the ontology if this is a real PK parameter (source ['tab_0:row10:col2', 'tab_0:row10:col4'])
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (b cl); Q63 (FV1); Q64 (FV2)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clonidine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Potts_2007_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -87,36 +81,28 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.562 (9/16 fields) | 7 |
-| `gpt-oss:120b` | not confirmed | 0.158 (3/19 fields) | 16 |
+| `gpt-oss-120b` | not confirmed | 0.471 (8/17 fields) | 9 |
+| `gpt-oss:120b` | not confirmed | 0.647 (11/17 fields) | 6 |
 
-<details><summary>23 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss-120b` | `parameters[absorption half-life from the epidural space]` | 0.98 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption half-life]` | not captured | 0.98 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[adult rate]` | 82 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance at birth]` | 3.8 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[f]` | 1 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[relative bioavailability]` | not captured | 1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absorption half-life from the epidural space]` | 0.98 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absorption half-life]` | not captured | 0.98 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[central volume of distribution]` | 62.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[central volume of distribution]` | not captured | 62.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | 14.6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | not captured | 14.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[f]` | 1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[half-time]` | 25.7 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[half-time]` | not captured | 25.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[intercompartment clearance]` | 157 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[intercompartment clearance]` | not captured | 157 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peripheral volume of distribution]` | 119 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peripheral volume of distribution]` | not captured | 119 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[relative bioavailability]` | not captured | 1 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | clonidine | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | clonidine | unknown | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[fv1].parameter_id` | Q63 | Q290 | mismatch |
+| `gpt-oss-120b` | `parameters[lag rectal]` | 73.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t abs epidural].parameter_id` | Q49 | Q83 | mismatch |
+| `gpt-oss-120b` | `parameters[t cl]` | not captured | 25.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | clonidine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | clonidine | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[b cl].parameter_id` | Q22 | Q23 | mismatch |
+| `gpt-oss:120b` | `parameters[cl]` | not captured | 1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[lag rectal]` | 73.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q]` | not captured | 0.538 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t abs epidural].parameter_id` | Q49 | Q83 | mismatch |
+| `gpt-oss:120b` | `parameters[t abs rectal]` | not captured | 32.3 | only_one_extracted |
 
 </details>
 
@@ -130,22 +116,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Potts_2007:abstract'] |
-| C5_dimension_Q23 | fail | [luminosity] / [length] ** 2 / [time] | l x h(-1) 70 kg(-1) | not captured | not captured | ['Potts_2007:abstract'] |
-| C5_dimension_Q30 | fail | [luminosity] / [length] ** 2 / [time] | l x h(-1) 70 kg(-1) | not captured | not captured | ['Potts_2007:abstract'] |
-| C5_dimension_Q375 | fail | dimensionless | % | not captured | not captured | ['Potts_2007:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Potts_2007:abstract'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Potts_2007:abstract'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Potts_2007:abstract'] |
-| C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['Potts_2007:abstract'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 14.6 L/h | not captured | not captured | ['Potts_2007:abstract'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 4.38e+03 L | not captured | not captured | ['Potts_2007:abstract'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 8.33e+03 L | not captured | not captured | ['Potts_2007:abstract'] |
+| C5_dimension_Q22 | fail | [length] / [time] | c | not captured | not captured | ['tab_0:row9:col2', 'tab_0:row9:col4'] |
+| C5_dimension_Q49 | fail | [time] | h | not captured | not captured | ['tab_0:row6:col1', 'tab_0:row6:col2'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['tab_0:row8:col1', 'tab_0:row8:col2'] |
+| C5_unit_missing_Q63 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row11:col2', 'tab_0:row11:col4'] |
+| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row12:col2', 'tab_0:row12:col4'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.262 | not captured | not captured | ['tab_0:row9:col2', 'tab_0:row9:col4'] |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -170,4 +150,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 11:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-09 06:09 UTC</sub>

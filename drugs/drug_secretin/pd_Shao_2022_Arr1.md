@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Secretin concentration directly stimulates β-arrestin1 recruitment at SCTR in a BRET assay, fitted with a simple Emax concentration–response model (no effect-compartment or turnover mechanism described). Reported pEC50 values ranged 6.8–7.1 with Emax 69.1–105.9%, the lowest Emax (69.1 ± 4.9%) corresponding to the condition with RAMP3 co-expressed.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shao_2022`
 - **model family:** `emax`
 - **driver:** `not_resolved`

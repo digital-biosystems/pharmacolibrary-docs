@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pimavanserin concentrations (PK from the cited Darwish record) act on the HAMD-17 total score via a sigmoid Emax model with an inhibitory, additive effect form; the paper excerpts provide no mechanism details and no potency (IC50/EC50/Emax/gamma) or rate values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Darwish_2023_2`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

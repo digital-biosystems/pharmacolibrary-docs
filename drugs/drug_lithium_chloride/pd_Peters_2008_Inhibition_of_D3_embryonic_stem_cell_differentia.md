@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper relates lithium chloride concentrations (µM) to inhibition of D3 embryonic stem cell differentiation into cardiomyocytes, but the available excerpts do not state the mechanism, model form, or any potency or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Peters_2008`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

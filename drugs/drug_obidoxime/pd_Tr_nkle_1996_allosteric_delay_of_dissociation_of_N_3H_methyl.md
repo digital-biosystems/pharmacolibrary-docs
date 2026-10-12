@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Obidoxime concentration (nM) inhibits (delays) the dissociation of N-[3H]methylscopolamine from porcine heart M2 receptors, with an EC50 of approximately 100,000 nM; the paper excerpts do not state the model form or mechanism beyond this inhibitory concentration-response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tränkle_1996`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

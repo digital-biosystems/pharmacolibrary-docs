@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record specifies a sigmoid Emax model where meperidine concentrations inhibit isometric tension, but because no paper excerpts are provided, the specific mechanism, potency values, and rate parameters are not described.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Turan_2005`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;ampicillin&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/&quot;},{&quot;label&quot;:&quot;Padari_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ampicillin_Bardhi2026_reference&quot;,&quot;label&quot;:&quot;Bardhi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Bardhi2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ampicillin_Gastine2022_reference&quot;,&quot;label&quot;:&quot;Gastine_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Gastine2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ampicillin_Judy2024_reference&quot;,&quot;label&quot;:&quot;Judy_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Judy2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ampicillin_Onita2026_reference&quot;,&quot;label&quot;:&quot;Onita_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Onita2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ampicillin_Padari2021_reference&quot;,&quot;label&quot;:&quot;Padari_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Padari2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ampicillin_Yin2026_reference&quot;,&quot;label&quot;:&quot;Yin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Yin2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ampicillin_Bardhi2026_reference&quot;,&quot;label&quot;:&quot;Bardhi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Bardhi2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ampicillin_Onita2026_reference&quot;,&quot;label&quot;:&quot;Onita_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Onita2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ampicillin_Yin2026_reference&quot;,&quot;label&quot;:&quot;Yin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Yin2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ampicillin_Gastine2022_reference&quot;,&quot;label&quot;:&quot;Gastine_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Gastine2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ampicillin_Judy2024_reference&quot;,&quot;label&quot;:&quot;Judy_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Judy2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ampicillin_Padari2021_reference&quot;,&quot;label&quot;:&quot;Padari_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ampicillin/Ampicillin_Padari2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ampicillin — `Ampicillin_Padari2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,22 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Bioavailability F and intercompartmental clearances k13 and k31 for ampicillin were left at library defaults, unsupported by the abstract-only source.**
+
+The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The bioavailability and intercompartmental clearance parameters were not explicitly estimated or justified in the text, resulting in the use of placeholder values. Consequently, the model was held back because these structural parameters lack empirical support from the provided data. Extracted — ampicillin: t1/2z 7.21 hours, V 1.07 L, CL 0.2 L/h, AUCt 349 mg*h/L, V1 24.9 L/70kg, V2 1.04 L, Q 7.07 L/h, kabs 6.45 h-1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ampicillin, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Padari H et al., Ampicillin Pharmacokinetics During Firs…, The Pediatric infectious di… (2021)
   ·  DOI: [10.1097/INF.0000000000003061](https://doi.org/10.1097/INF.0000000000003061)
 
 ## Model component
-<dbs-pgx drug="ampicillin" model-id="Ampicillin_Padari2021_reference" status="extracted" stale="false" population="preterm and term neonates" measured-compound="ampicillin" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<dbs-pgx drug="ampicillin" model-id="Ampicillin_Padari2021_reference" status="needs_review" stale="false" population="preterm and term neonates" measured-compound="ampicillin" parameterization="mechanistic" topology="3C"></dbs-pgx>
 
 **Model structure:** 3-compartment, oral mammillary model — template `PK_3C_enteral`.  
 **Parameters:** 8 extracted.
@@ -30,6 +38,8 @@ Padari H et al., Ampicillin Pharmacokinetics During Firs…, The Pediatric infec
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | half-life | `Q57` · t1/2z | 7.21 | hours | 25956.0 | [h] | not captured | llm (0.6) | Padari_2021:abstract | — | not captured |
@@ -65,6 +75,43 @@ Padari H et al., Ampicillin Pharmacokinetics During Firs…, The Pediatric infec
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.105 (2/19 fields) | 17 |
+
+<details><summary>17 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[24-hour area under the concentration-time curve]` | 348.92 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[24-hour area under the concentration-time curve]` | not captured | 348.92 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central vd]` | 24.87 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central vd]` | not captured | 24.87 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 0.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | 0.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | 7.21 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | not captured | 7.21 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental cl]` | not captured | 0.39 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 6.45 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral vd]` | 1.039 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral vd]` | not captured | 1.039 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q (l/h) = θq]` | 7.07 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 1.07 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 1.07 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | ampicillin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ampicillin | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -87,6 +134,17 @@ Padari H et al., Ampicillin Pharmacokinetics During Firs…, The Pediatric infec
 | C9_phys_window_Q63 | pass | volume within physiological range | 24.9 L | not captured | not captured | ['Padari_2021:abstract'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 1.04 L | not captured | not captured | ['Padari_2021:abstract'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=ampicillin) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 3C → PK_3C* | PK_3C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -95,6 +153,9 @@ Padari H et al., Ampicillin Pharmacokinetics During Firs…, The Pediatric infec
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_ampicillin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Padari_2021` / `Padari_2021::reference`)
+- model: `../../../knowledgebase/drugs/drug_ampicillin/models/modelica/Ampicillin_Padari2021_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_ampicillin/models/modelica/Ampicillin_Padari2021_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_ampicillin/models/modelica/Ampicillin_Padari2021_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -106,7 +167,7 @@ Padari H et al., Ampicillin Pharmacokinetics During Firs…, The Pediatric infec
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ampicillin/Ampicillin_Padari2021_reference/Ampicillin_Padari2021_reference_modelica.zip" download>Ampicillin_Padari2021_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ampicillin/Ampicillin_Padari2021_reference/Ampicillin_Padari2021_reference_fmi.zip" download>Ampicillin_Padari2021_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_3C_enteral.fmu" download>PK_3C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ampicillin/Ampicillin_Padari2021_reference/Ampicillin_Padari2021_reference_matlab.zip" download>Ampicillin_Padari2021_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ampicillin/Ampicillin_Padari2021_reference/Ampicillin_Padari2021_reference_matlab_simbio.zip" download>Ampicillin_Padari2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ampicillin/Ampicillin_Padari2021_reference/Ampicillin_Padari2021_reference_matlab_simbio.zip" download>Ampicillin_Padari2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ampicillin/Ampicillin_Padari2021_reference/Ampicillin_Padari2021_reference_sbml.zip" download>Ampicillin_Padari2021_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ampicillin/Ampicillin_Padari2021_reference/Ampicillin_Padari2021_reference_cellml.zip" download>Ampicillin_Padari2021_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [unknown_1976_Clinical_and_bacteriological_results](drugs/drug_sulfamoxole/pd_unknown_1976_Clinical_and_bacteriological_results.md) | Clinical and bacteriological results biomarker turnover ← endogenous kinetics | — | unknown, [The effect of a new broad-spectrum ant…, Medizinische Klinik (1976) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | [unknown_1976_Clinical_and_bacteriological_results](drugs/drug_sulfamoxole/pd_unknown_1976_Clinical_and_bacteriological_results.md) | Clinical and bacteriological results biomarker turnover ← endogenous kinetics | — | unknown, [The effect of a new broad-spectrum ant…, Medizinische Klinik (1976) | — |
 
 ## ADME sites
 

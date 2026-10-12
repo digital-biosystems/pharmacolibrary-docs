@@ -4,7 +4,7 @@
 
 # sodium salicylate — `SodiumSalicylate_Lowenthal1974_patients`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The 0.00879 min⁻¹ rate constant was rejected because its unit could not be converted to SI, causing a dimension mismatch.**
+
+The record reports a micro-rate constant (k₆₁) of 0.00879 min⁻¹. Although the unit is standard, it was not recognized by the review system, so the parameter lacked a valid SI value. This prevented the dimensional consistency check from passing, resulting in the model's rejection. Extracted — sodium salicylate: λ1 0.408 min⁻¹, kel 0.0026 1/min, k13 0.281 min⁻¹, k31 0.121 min⁻¹, kcomp 0.00879 min⁻¹, V 0.05 liter/kg, Vnorm 0.168 liter/kg, t1/2z 266 min, … (+1).
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 > **Dose compound ≠ measured compound:** dosed `sodium salicylate`, measured `salicylic acid`.
 

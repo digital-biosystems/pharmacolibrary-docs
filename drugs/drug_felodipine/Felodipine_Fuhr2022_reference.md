@@ -4,7 +4,7 @@
 
 # felodipine — `Felodipine_Fuhr2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.533). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.438), gpt-oss:120b (partly confirmed, agreement 0.533). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of amp12: this record has none, the second reading 5.93; it also differs on 6 more fields. That field does not shape the model.
+**Only clearance was extracted — no volume.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (MW), so that value has no SI equivalent. Extracted — felodipine: MW 384 g/mol, fu 0.36, tlag 0.4 h; dehydrofelodipine: CL 2.76 L/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cellular permeability: this record has none, the second reading 0.42; it also differs on 8 more fields. That field does not shape the model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Fuhr LM et al., A Physiologically Based Pharmacokinetic…, Pharmaceutics (2022)
@@ -96,17 +100,27 @@ Fuhr LM et al., A Physiologically Based Pharmacokinetic…, Pharmaceutics (2022)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.438 (7/16 fields) | 9 |
 | `gpt-oss:120b` | partly confirmed | 0.533 (8/15 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cellular permeability]` | not captured | 0.42 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl-hepatic]` | not captured | 2.76 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl-hepatic]` | 2.76 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[gfr fraction]` | not captured | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kcat_cyp3a4]` | 250.44 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_cyp3a4]` | 35.74 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q22_cyp3a4]` | not captured | 35.74 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q305_cyp3a4]` | not captured | 250.44 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[amp12]` | not captured | 5.93 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cellular permeability]` | not captured | 0.42 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl-hepatic]` | not captured | 2.76 | only_one_extracted |

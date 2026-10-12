@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper reports EC50 values for phenytoin's inhibition of Fraction Seizing in plasma and brain but does not specify the pharmacodynamic mechanism (e.g., direct Emax, effect compartment) in the provided excerpts. The record lists EC50 values of 27.6 µM (plasma) and 30.6 µM (brain) for mice, and 3.20 µM (plasma) and 2.66 µM (brain) for rats.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bettio_2025`
 - **model family:** `categorical`
 - **driver:** `cited_pk`

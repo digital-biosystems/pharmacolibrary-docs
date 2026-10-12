@@ -5,7 +5,7 @@
 
 # alglucosidase alfa — `AlglucosidaseAlfa_Barzel2026_gras_colomer_et_al_2021_25_plas`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.318). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.588), gpt-oss:120b (not confirmed, agreement 0.318). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 In the two-compartment structure, Q (0.0206 L/h) equals k21 (0.0206 d−1) in value but not in dimension, and the unit d−1 could not be converted to SI, so the parameter arrived without an SI value. The total clearance CL is listed without any value. A second reader also disputed the dose compound and primary analyte assignments and read the intercompartmental clearance between central and first peripheral compartment as having no value. Extracted — alglucosidase alfa: V1 3.35 L, Q2 0.254 L/h, V2 296 L, k21 0.0206 d−1, Vmax 9.82 mg/h, Km 0.451 µg/mL, Q3 1.87 L/h, V3 1.31 L, … (+1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading none → none (none); it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alglucosidase_alfa, the second reading alglucosidase alfa; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -103,17 +103,25 @@ Barzel I et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacoki
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.588 (10/17 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.318 (7/22 fields) | 15 |
 
-<details><summary>15 field(s) a reader read differently</summary>
+<details><summary>22 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/q2].parameter_id` | Q99 | Q30 | mismatch |
+| `gpt-oss-120b` | `parameters[qpc]` | not captured | 0.0206 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qpc].parameter_id` | Q30 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[qpc].value` | 0.0206 | not captured | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | alglucosidase_alfa | alglucosidase alfa | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | alglucosidase_alfa | alglucosidase alfa | mismatch |
 | `gpt-oss:120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
 | `gpt-oss:120b` | `parameters[cendo]` | not captured | 0.93 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl]` | not captured | not captured | only_one_extracted |

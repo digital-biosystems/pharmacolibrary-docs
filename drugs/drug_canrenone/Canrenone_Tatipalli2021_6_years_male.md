@@ -5,7 +5,7 @@
 
 # canrenone — `Canrenone_Tatipalli2021_6_years_male`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.938). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.938). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has spironolactone, the second reading canrenone. That field shapes the model, so the record is marked disputed.
+**The clearance plausibility check could not be computed.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — canrenone: CL 259 L/h, V1 159 L, Q 37.1 L/h, V2 238 L, kabs 5.22 1/h, V1 58 L, CL 7.01 L/h, Q 24.7 L/h, … (+4).
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has spironolactone, the second reading canrenone; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Tatipalli M et al., Model-Informed Optimization of a Pediat…, Pharmaceutics (2021)
@@ -85,17 +89,32 @@ Tatipalli M et al., Model-Informed Optimization of a Pediat…, Pharmaceutics (2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (7/21 fields) | 14 |
 | `gpt-oss:120b` | not confirmed | 0.938 (15/16 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['spironolactone', 'canrenone', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[clm1]` | 89.47 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm]` | not captured | 7.01 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm]` | 7.01 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fm]` | not captured | 0.70 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fm]` | 0.70 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q1]` | 24.74 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2].parameter_id` | Q63 | Q64 | mismatch |
+| `gpt-oss-120b` | `parameters[v3].parameter_id` | Q64 | Q77 | mismatch |
+| `gpt-oss-120b` | `parameters[v4]` | 58.00 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v5]` | not captured | 137.47 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v5]` | 137.47 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | spironolactone | canrenone | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | spironolactone | canrenone | mismatch |
 
 </details>

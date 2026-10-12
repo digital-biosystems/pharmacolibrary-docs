@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Kodama_1996_EC50](drugs/drug_brivudine/pd_Kodama_1996_EC50.md) | HSV-induced cytopathogenicity in MKN-28 cells (MTT assay) ← brivudine (BVDU) · inhibition effect | — | Kodama E et al., Evaluation of antiherpetic compounds us…, Microbiology and immunology (1996) | [10.1111/j.1348-0421.1996.tb01080.x](https://doi.org/10.1111/j.1348-0421.1996.tb01080.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Kodama_1996_EC50](drugs/drug_brivudine/pd_Kodama_1996_EC50.md) | HSV-induced cytopathogenicity in MKN-28 cells (MTT assay) ← brivudine (BVDU) · inhibition effect | — | Kodama E et al., Evaluation of antiherpetic compounds us…, Microbiology and immunology (1996) | [10.1111/j.1348-0421.1996.tb01080.x](https://doi.org/10.1111/j.1348-0421.1996.tb01080.x) |
 
 ## ADME sites
 

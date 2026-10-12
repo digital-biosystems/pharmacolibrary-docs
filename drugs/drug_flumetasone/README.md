@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Knych_2019_cortisol](drugs/drug_flumetasone/pd_Knych_2019_cortisol.md) | cortisol ← flumetasone · indirect response — drug inhibits the production of cortisol | — | Knych HK et al., Pharmacokinetics of intravenous flumeta…, Equine veterinary journal (2019) | [10.1111/evj.13002](https://doi.org/10.1111/evj.13002) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Knych_2019_cortisol](drugs/drug_flumetasone/pd_Knych_2019_cortisol.md) | cortisol ← flumetasone · indirect response — drug inhibits the production of cortisol | — | Knych HK et al., Pharmacokinetics of intravenous flumeta…, Equine veterinary journal (2019) | [10.1111/evj.13002](https://doi.org/10.1111/evj.13002) |
 
 ## ADME sites
 

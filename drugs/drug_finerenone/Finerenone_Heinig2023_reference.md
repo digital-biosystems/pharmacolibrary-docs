@@ -5,7 +5,7 @@
 
 # finerenone — `Finerenone_Heinig2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.656). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.594), gpt-oss:120b (partly confirmed, agreement 0.656). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The simulated peak concentration was 1.04e-05 kg/m3, far below the paper's reported 9.62e-05 kg/m3, and the time of peak was 0.543 h versus the paper's 0.75 h. The terminal half-life was simulated as 2.63 h, differing from the paper's 2.25 h. The intercompartmental clearance parameter was not emitted or defaulted, leaving the model structure incomplete. Additionally, the covariate effects on clearance and volume were not exercised in the simulation. Extracted — finerenone: kabs 22.5 1/h, CL/F 29.9 L/h, V/F 113 L, Q/F 0.335 L/h, tlag 0.215 h, Frel 1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of effect_of_body_height_on_cl_f_and_f: this record has 0.720, the second reading none; it also differs on 10 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has finerenone, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -95,17 +95,31 @@ Heinig R et al., The Pharmacokinetics of the Nonsteroida…, Clinical pharmacoki
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.594 (19/32 fields) | 13 |
 | `gpt-oss:120b` | partly confirmed | 0.656 (21/32 fields) | 11 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>24 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[effect_of_body_height_on_cl_f_and_f]` | 0.720 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect_of_creatinine_on_cl_f_and_f]` | 0.118 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect_of_cyp3a4_inhibitor_use_other_categories_on_cl_f_and_f]` | 0.996 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect_of_cyp3a4_inhibitor_use_weak_moderate_or_strong_ge_50_of_on_treatment_period_on_cl_f_and_f]` | 0.951 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect_of_egfr_epi_time_varying_on_cl_f_and_f]` | 0.155 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect_of_smoking_current_or_former_smokers_on_cl_f_and_f]` | 1.04 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_creatinine]` | not captured | 0.118 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_cyp3a4]` | not captured | 0.951 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_egfr]` | not captured | 0.155 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_height]` | not captured | 0.720 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_smoking]` | not captured | 1.04 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | finerenone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | finerenone | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[effect_of_body_height_on_cl_f_and_f]` | 0.720 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[effect_of_creatinine_on_cl_f_and_f]` | 0.118 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[effect_of_cyp3a4_inhibitor_use_other_categories_on_cl_f_and_f]` | 0.996 | not captured | only_one_extracted |
@@ -210,7 +224,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_finerenone/Finerenone_Heinig2023_reference/Finerenone_Heinig2023_reference_modelica.zip" download>Finerenone_Heinig2023_reference_modelica.zip</a> <span class="pk-size">(5.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_finerenone/Finerenone_Heinig2023_reference/Finerenone_Heinig2023_reference_fmi.zip" download>Finerenone_Heinig2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_finerenone/Finerenone_Heinig2023_reference/Finerenone_Heinig2023_reference_matlab.zip" download>Finerenone_Heinig2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_finerenone/Finerenone_Heinig2023_reference/Finerenone_Heinig2023_reference_matlab_simbio.zip" download>Finerenone_Heinig2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_finerenone/Finerenone_Heinig2023_reference/Finerenone_Heinig2023_reference_matlab_simbio.zip" download>Finerenone_Heinig2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_finerenone/Finerenone_Heinig2023_reference/Finerenone_Heinig2023_reference_sbml.zip" download>Finerenone_Heinig2023_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_finerenone/Finerenone_Heinig2023_reference/Finerenone_Heinig2023_reference_cellml.zip" download>Finerenone_Heinig2023_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

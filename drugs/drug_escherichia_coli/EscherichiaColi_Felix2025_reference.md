@@ -5,7 +5,7 @@
 
 # escherichia coli — `EscherichiaColi_Felix2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538), gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — escherichia coli: CL 210 ml/kg/h, V1 786 ml/kg, V2 3.23e+03 ml/kg, Q 1.65e+03 ml/kg/h, kabs 0.42 /h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has none, the second reading 42; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 42; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -65,17 +65,24 @@ Felix LA et al., Pharmacokinetics, pharmacodynamic effic…, Open veterinary jou
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.538 (7/13 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.667 (8/12 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q312]` | not captured | 42 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q314]` | 42 | 26 | mismatch |
+| `gpt-oss-120b` | `values[Q316]` | not captured | 0.17 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q40]` | 0.87 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q87]` | not captured | 0.87 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q900]` | 0.17 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q312]` | not captured | 42 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q314]` | 42 | 26 | mismatch |
 | `gpt-oss:120b` | `values[Q316]` | not captured | 0.17 | only_one_extracted |

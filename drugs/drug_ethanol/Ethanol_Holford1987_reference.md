@@ -4,7 +4,7 @@
 
 # ethanol — `Ethanol_Holford1987_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125), gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ethanol, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+**The ethanol record was rejected because breath clearance was 0.16 L/h while volume of distribution was 37 L, a dimensionally inconsistent parameter pairing.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The source text was abstract-only, so summary statistics stood in for a fitted model. The recorded breath clearance value was 0.16 L/h. The recorded volume of distribution value was 37 L. A second reader disagreed that these values could be identified from the abstract. Extracted — ethanol: V 37 L/70 kg, Ae 0.3 %, fe 0.1 %, E 0.2, CL 0.16 L/h, CLR 0.06 L/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ethanol, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Holford NH, Clinical pharmacokinetics of ethanol, Clinical pharmacokinetics (1987)
@@ -68,17 +72,32 @@ Holford NH, Clinical pharmacokinetics of ethanol, Clinical pharmacokinetics (198
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.125 (2/16 fields) | 14 |
 | `gpt-oss:120b` | not confirmed | 0.125 (2/16 fields) | 14 |
 
-<details><summary>14 field(s) a reader read differently</summary>
+<details><summary>28 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[amounts excreted in sweat]` | 0.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[amounts excreted in urine]` | 0.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[blood:expired air ratio]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[breath clearance at rest]` | 0.16 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[breath clearance]` | not captured | 0.16 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[breath excretion]` | not captured | 0.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[extraction ratio]` | not captured | 0.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance of ethanol]` | 0.06 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance]` | not captured | 0.06 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical extraction ratio]` | 0.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution estimated from blood concentrations]` | 37 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 37 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | ethanol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ethanol | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[blood:expired air ratio]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[breath clearance at rest]` | 0.16 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[breath clearance at rest]` | not captured | 0.16 | only_one_extracted |

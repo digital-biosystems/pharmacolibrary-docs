@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deltamethrin (decamethrin) concentrations stimulate [3H]norepinephrine release (PTZ-induced, Ba2+ medium), with a reported EC50 of 2.4 x 10(-10) M; the paper excerpts provide no further mechanism or model details.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Clark_1989`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

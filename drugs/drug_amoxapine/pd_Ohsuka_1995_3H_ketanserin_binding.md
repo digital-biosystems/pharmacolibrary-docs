@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide enough information to characterise the pharmacodynamic model: no excerpts are available, so the concentration–response relationship between amoxapine and inhibition of 3H-ketanserin binding, the mechanism, and any potency or rate parameters cannot be stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ohsuka_1995`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

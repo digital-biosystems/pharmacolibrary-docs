@@ -5,7 +5,7 @@
 
 # telmisartan — `Telmisartan_Petersen2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5), gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record defines telmisartan apparent clearance (13.4 mL/min/kg) and apparent volume of distribution (5.8 L/kg) with an ABCC2 covariate effect, but ka and Tlag were left at library defaults because the source did not report them — an invented absorption input that was judged not acceptable. Bioavailability was assumed to be 1 (F=1, Fm=1, no molar correction) in an apparent parameterization with first-order depot input. The ABCC2 covariate scenarios (C/T −0.0269, T/T −0.0853) were defined but only the reference individual was simulated, so the covariate effects were not exercised. A second reader additionally reported values for several parameters that this record left empty. Extracted — telmisartan: CL/F 13.4 mL/min/kg, V/F 5.8 L/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has none, the second reading 9.4; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has none, the second reading 24; it also differs on 5 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -68,17 +68,24 @@ Petersen KU et al., Carboxylesterase 1-Based Drug-Drug Inte…, Current drug met
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.5 (6/12 fields) | 6 |
 | `gpt-oss:120b` | partly confirmed | 0.667 (6/9 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q21]` | not captured | 24 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q31]` | not captured | 27 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q320]` | not captured | 9.8 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 0.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q33]` | not captured | 15 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q84]` | not captured | 28 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q22]` | not captured | 9.4 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q32]` | 0.6 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q61]` | not captured | 5.8 | only_one_extracted |
@@ -139,7 +146,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_telmisartan/Telmisartan_Petersen2024_reference/Telmisartan_Petersen2024_reference_modelica.zip" download>Telmisartan_Petersen2024_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_telmisartan/Telmisartan_Petersen2024_reference/Telmisartan_Petersen2024_reference_fmi.zip" download>Telmisartan_Petersen2024_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Petersen2024_reference/Telmisartan_Petersen2024_reference_matlab.zip" download>Telmisartan_Petersen2024_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Petersen2024_reference/Telmisartan_Petersen2024_reference_matlab_simbio.zip" download>Telmisartan_Petersen2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Petersen2024_reference/Telmisartan_Petersen2024_reference_matlab_simbio.zip" download>Telmisartan_Petersen2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Petersen2024_reference/Telmisartan_Petersen2024_reference_sbml.zip" download>Telmisartan_Petersen2024_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Petersen2024_reference/Telmisartan_Petersen2024_reference_cellml.zip" download>Telmisartan_Petersen2024_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

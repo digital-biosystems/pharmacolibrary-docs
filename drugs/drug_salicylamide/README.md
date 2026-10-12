@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Mehanna_2005_CCB](drugs/drug_salicylamide/pd_Mehanna_2005_CCB.md) | calcium channel blocking activity ← thiosalicylamides · inhibition effect | — | Mehanna AS et al., Design, synthesis, and biological testi…, Bioorganic & medicinal chem… (2005) | [10.1016/j.bmc.2005.04.012](https://doi.org/10.1016/j.bmc.2005.04.012) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Mehanna_2005_CCB](drugs/drug_salicylamide/pd_Mehanna_2005_CCB.md) | calcium channel blocking activity ← thiosalicylamides · inhibition effect | — | Mehanna AS et al., Design, synthesis, and biological testi…, Bioorganic & medicinal chem… (2005) | [10.1016/j.bmc.2005.04.012](https://doi.org/10.1016/j.bmc.2005.04.012) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

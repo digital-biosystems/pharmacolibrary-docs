@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Harisha_2025_positive_cells](drugs/drug_omacetaxine_mepesuccinate/pd_Harisha_2025_positive_cells.md) | Percentage of RABV-infected cells ← homoharringtonine · direct sigmoid Emax (Hill) effect | — | Harisha KR et al., Homoharringtonine Inhibits CVS-11 and C…, Viruses (2025) | [10.3390/v17070945](https://doi.org/10.3390/v17070945) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Harisha_2025_positive_cells](drugs/drug_omacetaxine_mepesuccinate/pd_Harisha_2025_positive_cells.md) | Percentage of RABV-infected cells ← homoharringtonine · direct sigmoid Emax (Hill) effect | — | Harisha KR et al., Homoharringtonine Inhibits CVS-11 and C…, Viruses (2025) | [10.3390/v17070945](https://doi.org/10.3390/v17070945) |
 
 ## ADME sites
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Carbachol stimulates peak Ins(1,4,5)P3 formation (pmol/mg protein) described by a sigmoid Emax model; the paper excerpts do not state the mechanism. Reported values: maximum Ins(1,4,5)P3 response 79.9 and 124.8 pmol/mg protein with IC50 9.4 and 12.7 microM (labels as given in the record; no gamma, kin, kout, or ke0 stated).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Smart_1994`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

@@ -32,13 +32,13 @@ Ornidazole is a nitroimidazole antimicrobial used against protozoal and anaerobi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Turcant_1987_reference](drugs/drug_ornidazole/Ornidazole_Turcant1987_reference.md) | — | 1-compartment (no model) | 2 | Turcant A et al., Pharmacokinetics of ornidazole in neona…, European journal of clinica… (1987) | [10.1007/BF00609970](https://doi.org/10.1007/BF00609970) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Turcant_1987_reference](drugs/drug_ornidazole/Ornidazole_Turcant1987_reference.md) | — | 1-compartment (no model) | 2 | Turcant A et al., Pharmacokinetics of ornidazole in neona…, European journal of clinica… (1987) | [10.1007/BF00609970](https://doi.org/10.1007/BF00609970) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Guo_2017_MIC](drugs/drug_ornidazole/pd_Guo_2017_MIC.md) | MIC (Minimum Inhibitory Concentration) biomarker turnover ← levornidazole | — | Guo B et al., Clinical Pharmacokinetics of Levornidaz…, Clinical therapeutics (2017) | [10.1016/j.clinthera.2017.05.350](https://doi.org/10.1016/j.clinthera.2017.05.350) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Guo_2017_MIC](drugs/drug_ornidazole/pd_Guo_2017_MIC.md) | MIC (Minimum Inhibitory Concentration) biomarker turnover ← levornidazole | — | Guo B et al., Clinical Pharmacokinetics of Levornidaz…, Clinical therapeutics (2017) | [10.1016/j.clinthera.2017.05.350](https://doi.org/10.1016/j.clinthera.2017.05.350) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

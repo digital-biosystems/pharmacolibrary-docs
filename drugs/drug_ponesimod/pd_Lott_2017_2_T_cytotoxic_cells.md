@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ponesimod&quot;,&quot;href&quot;:&quot;drugs/drug_ponesimod/&quot;},{&quot;label&quot;:&quot;Lott_2017_2 \u00b7 PD T cytotoxic cells&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ponesimod_Valenzuela2021_reference&quot;,&quot;label&quot;:&quot;Valenzuela_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ponesimod/Ponesimod_Valenzuela2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ponesimod_Valenzuela2021_reference&quot;,&quot;label&quot;:&quot;Valenzuela_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ponesimod/Ponesimod_Valenzuela2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # T cytotoxic cells — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,6 +17,10 @@
 **As extracted:** Ponesimod (concentrations from the PK model of Valenzuela_2021) drives T cytotoxic cells: indirect response — drug inhibits the loss of T cytotoxic cells.
 
 **Model:** No model was generated from this record.
+
+> The record describes an indirect response model of Type II where ponesimod plasma concentrations inhibit the production of T cytotoxic cells with a maximum effect (Imax) of 95%. No full text or further parameters such as IC50 or kout are provided in the excerpts, and the specific mechanism (e.g., effect compartment or kinetic rates) is not described in the available source material.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Lott_2017_2`
 - **model family:** `indirect_response_ii`

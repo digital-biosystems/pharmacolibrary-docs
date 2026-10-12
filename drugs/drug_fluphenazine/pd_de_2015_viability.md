@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Fluphenazine concentration (μM) is linked to HTC cell viability in an Emax-type inhibitory model, but the paper excerpts provide no mechanism and no parameter values (Imax, IC50, gamma) are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `de_2015`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

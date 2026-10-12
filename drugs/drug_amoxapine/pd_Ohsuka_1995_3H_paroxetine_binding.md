@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Amoxapine inhibits 3H-paroxetine binding; the paper excerpts provide no concentration data, mechanism, or potency/rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ohsuka_1995`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

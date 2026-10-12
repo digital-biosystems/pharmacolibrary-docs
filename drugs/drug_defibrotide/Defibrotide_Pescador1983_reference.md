@@ -5,7 +5,7 @@
 
 # defibrotide — `Defibrotide_Pescador1983_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.308), gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -90,17 +90,27 @@ Pescador R et al., Pharmacokinetics of Defibrotide and of…, Thrombosis researc
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.308 (4/13 fields) | 9 |
 | `gpt-oss:120b` | not confirmed | 0.286 (4/14 fields) | 10 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>19 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[5]` | not captured | 4.95 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[64]` | 13.86 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 16458.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` | 0.209 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k21]` | 0.357 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1⁄2]` | 12.83 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vol]` | 106.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[α]` | 0.60 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` | 0.054 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[10]` | not captured | 6.66 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[64]` | 13.86 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc].value` | 16458.0 | 905.1 | mismatch |

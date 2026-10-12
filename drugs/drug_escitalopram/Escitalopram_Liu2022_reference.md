@@ -5,7 +5,7 @@
 
 # escitalopram — `Escitalopram_Liu2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545), gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The model for escitalopram in Chinese psychiatric patients (one-compartment, extravascular dosing with apparent CL/F 14.7 L/h and V/F 581.9 L) relies on a first-order depot input whose ka was invented rather than taken from the paper, and Tlag was likewise left at a placeholder. Bioavailability was assumed to be 1 (F=1, Fm=1) with no molar correction, so all parameters are apparent. A second reader also disagrees on the central estimates, reading CL/F as 16.3 L/h and V/F as 815 L versus 14.7 L/h and 581.9 L, and reports covariate effects (age 0.0077, and effects of 0.847 and 0.479) that this record lacks entirely. Extracted — escitalopram: CL/F 14.7 L/h, V/F 582 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f].value`: this record has 14.7, the second reading 16.3; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has escitalopram, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -82,17 +82,23 @@ Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacol
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.545 (6/11 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 1.48 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ age]` | 0.0077 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ age]` | not captured | 0.0077 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | escitalopram | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | escitalopram | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl/f].value` | 14.7 | 16.3 | mismatch |
 | `gpt-oss:120b` | `parameters[theta_q47_im]` | not captured | 0.847 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q49_pm]` | not captured | 0.479 | only_one_extracted |

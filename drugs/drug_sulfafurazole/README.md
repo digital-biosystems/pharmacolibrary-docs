@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Oie_1977_free_fraction](drugs/drug_sulfafurazole/pd_Oie_1977_free_fraction.md) | nonprotein-bound fraction of bilirubin ← sulfisoxazole · stimulation effect | — | Oie S et al., Interindividual differences in the effe…, Clinical pharmacology and t… (1977) | [10.1002/cpt1977215627](https://doi.org/10.1002/cpt1977215627) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Oie_1977_free_fraction](drugs/drug_sulfafurazole/pd_Oie_1977_free_fraction.md) | nonprotein-bound fraction of bilirubin ← sulfisoxazole · stimulation effect | — | Oie S et al., Interindividual differences in the effe…, Clinical pharmacology and t… (1977) | [10.1002/cpt1977215627](https://doi.org/10.1002/cpt1977215627) |
 
 ## ADME sites
 

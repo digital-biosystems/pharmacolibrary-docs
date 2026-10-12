@@ -4,7 +4,7 @@
 
 # desipramine — `Desipramine_Gueorguieva2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667), gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — desipramine: CL 16 l h -1, V1 22 l, Q 13 l h -1, V2 13 l, IOV 7.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl].value`: this record has 16, the second reading 73; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has desipramine, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -72,17 +72,21 @@ Gueorguieva I et al., Desipramine, substrate for CYP2D6 activ…, British journa
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.667 (6/9 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[theta_q57_intermediate_metabolizer]` | not captured | 0.25 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | desipramine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | desipramine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl].value` | 16 | 73 | mismatch |
 | `gpt-oss:120b` | `parameters[plasma within-subject variability]` | 7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[q].value` | 13 | 58 | mismatch |

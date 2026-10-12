@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_Burtin1994_mean_estimate_se_index_data_set`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record reports midazolam parameters CL 0.132 L/hr/kg, V1 0.499 L/kg, V2 0.607 L, Q 1.11 L/hr, kabs 0.14 1/h and tlag 0.08 h, but no value for F. The model builder substituted a default for F, so the simulated profile would rely on a placeholder not supported by the paper. This unreported default is the sole reason the record needs review; the other checks did not flag further problems. Extracted — midazolam: CL 0.132 L/hr/kg, V1 0.499 L/kg, V2 0.607 L, Q 1.11 L/hr, kabs 0.14 1/h, tlag 0.08 h.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a: this record has 1.77, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -77,14 +77,24 @@ Burtin P et al., Population pharmacokinetics of midazola…, Clinical pharmacolo
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.667 (8/12 fields) | 4 |
 | `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a]` | 1.77 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alag1]` | 1.23 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[if c &lt; 200 ng/ml]` | 840 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[if c ≥ 200 ng/ml]` | not captured | 0.112 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -144,7 +154,7 @@ _Every reader agrees on every compared field of this record._
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set_modelica.zip" download>Midazolam_Burtin1994_mean_estimate_se_index_data_set_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set_fmi.zip" download>Midazolam_Burtin1994_mean_estimate_se_index_data_set_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set_matlab.zip" download>Midazolam_Burtin1994_mean_estimate_se_index_data_set_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set_matlab_simbio.zip" download>Midazolam_Burtin1994_mean_estimate_se_index_data_set_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set_matlab_simbio.zip" download>Midazolam_Burtin1994_mean_estimate_se_index_data_set_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set_sbml.zip" download>Midazolam_Burtin1994_mean_estimate_se_index_data_set_sbml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set_cellml.zip" download>Midazolam_Burtin1994_mean_estimate_se_index_data_set_cellml.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 </tbody></table>

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Meglumine antimoniate concentrations (µg/mL) inhibit Hep G2 human liver cell viability, described by a sigmoid Emax (inhibitory) model with an LC50 of 226 ± 29 µg/mL; the paper does not state a mechanism beyond this concentration-dependent cytotoxicity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Robledo_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

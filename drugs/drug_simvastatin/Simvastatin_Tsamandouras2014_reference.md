@@ -5,7 +5,7 @@
 
 # simvastatin — `Simvastatin_Tsamandouras2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.464). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,6 +20,8 @@
 **The simvastatin record was rejected because the clearance parameter CL/F carries the unit 'h' instead of a flow unit (L/h), a dimension mismatch on a structural parameter.**
 
 The parameter CL/F is labelled 'θ₃; CLSVA/VSA (h)' with unit h, while its meaning is total oral clearance adjusted for bioavailability, which should be in volume per time like the reported Q/F of 384.08 L/h. The value 0.0958 with unit h could not be converted to SI units, so the clearance entered model building without a usable numeric value. The remaining simvastatin parameters (tlag 0.230 h, kabs 2.24 1/h, V/F 2735.72 L) are dimensionally consistent. Extracted — simvastatin: tlag 0.23 h, kabs 2.24, Q/F 384 L/h, CL/F 0.0958 h, V/F 2.74e+03 L, k14 -0.591.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has simvastatin, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -135,6 +137,41 @@ Tsamandouras N et al., Identification of the effect of multipl…, Clinical phar
 - unparsed cell Tsamandouras_2014_table_p4_1:row46:col3 = '(0.051, 0.167)'
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.464 (13/28 fields) | 15 |
+
+<details><summary>15 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[theta_cl_ethnicity]` | not captured | 0.701 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q314_ethnicity]` | 0.701 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_weight_power]` | not captured | 0.892 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_weight_power].rse_percent` | 0.887 | 1 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q319_weight_power].value` | 0.892 | 1 | mismatch |
+| `gpt-oss-120b` | `parameters[θ10; rs35599367 (tc) on f]` | not captured | 0.537 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ13; rs4149056 (tc) on vsa]` | not captured | 0.462 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ14; rs776746 (aa) on clsva/vsa]` | -0.591 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ18; rs4149056 (tc) on clsa]` | not captured | -0.434 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ3; clsva/vsa]` | 0.0958 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ3; clsva/vsa]` | not captured | 0.0958 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ4; clsv/f]` | not captured | 1038.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ5; clsva/vsa]` | not captured | 0.293 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | simvastatin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | simvastatin | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

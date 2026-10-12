@@ -28,8 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Matharoo_2025_SC_thickness](drugs/drug_adapalene/pd_Matharoo_2025_SC_thickness.md) | stratum corneum thickness ← adapalene · direct Emax (saturable) effect | — | Matharoo NS et al., A Mechanistic Physiologically Based Pha…, Pharmaceutics (2025) | [10.3390/pharmaceutics17091108](https://doi.org/10.3390/pharmaceutics17091108) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Matharoo_2025_infundibular_area](drugs/drug_adapalene/pd_Matharoo_2025_infundibular_area.md) | infundibular area ← adapalene · direct sigmoid Emax (Hill) effect | — | Matharoo NS et al., A Mechanistic Physiologically Based Pha…, Pharmaceutics (2025) | [10.3390/pharmaceutics17091108](https://doi.org/10.3390/pharmaceutics17091108) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Matharoo_2025_SC_thickness](drugs/drug_adapalene/pd_Matharoo_2025_SC_thickness.md) | stratum corneum thickness ← adapalene · direct Emax (saturable) effect | — | Matharoo NS et al., A Mechanistic Physiologically Based Pha…, Pharmaceutics (2025) | [10.3390/pharmaceutics17091108](https://doi.org/10.3390/pharmaceutics17091108) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Matharoo_2025_infundibular_area](drugs/drug_adapalene/pd_Matharoo_2025_infundibular_area.md) | infundibular area ← adapalene · direct sigmoid Emax (Hill) effect | — | Matharoo NS et al., A Mechanistic Physiologically Based Pha…, Pharmaceutics (2025) | [10.3390/pharmaceutics17091108](https://doi.org/10.3390/pharmaceutics17091108) |
 
 ## ADME sites
 

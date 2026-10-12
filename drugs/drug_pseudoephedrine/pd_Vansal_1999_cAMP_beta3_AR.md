@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Pseudoephedrine (microM) stimulates cyclic AMP accumulation via the human beta3-adrenoceptor, reported as % of isoproterenol response, described with an Emax model; the paper excerpts provide no mechanism detail and no potency or rate values (Imax, EC50, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vansal_1999`
 - **model family:** `emax`
 - **driver:** `not_resolved`

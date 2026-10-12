@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dantrolene inhibits the halothane-induced increment of the permeability of the membrane via a sigmoid Emax mechanism, as the paper describes this concentration-response relationship. The model specifies a Hill coefficient of inhibition between 2.3 and 3.9, but the paper does not provide values for potency (IC50/EC50) or maximum inhibition (Imax/Emax) in the available text.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ohnishi_1987`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

@@ -4,7 +4,7 @@
 
 # lumiracoxib — `Lumiracoxib_VsquezBahena20102_experiment_i_and_ii`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -18,9 +18,13 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has lumiracoxib → cox-2 (interconversion), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+**The lumiracoxib dissociation constant parameter carries time units instead of concentration units, causing a dimensional mismatch.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The equilibrium dissociation constant is reported as 0.89 h⁻¹, which is dimensionally incompatible with an affinity measure. The transit rate constant is listed with a 13-second unit, a value that could not be converted to the standard international system. Additionally, the second reader disagreed on the presence of the lumiracoxib-to-target binding link and the specific values assigned to the dissociation and binding rate parameters. Extracted — lumiracoxib: KD 0.89 h -1, ktr 13 s, V 39 L, kabs 92 h -1, Frel 18.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lumiracoxib, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Vásquez-Bahena DA et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2010)
@@ -81,22 +85,24 @@ Vásquez-Bahena DA et al., Pharmacokinetic-pharmacodynamic modelli…, British j
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.455 (5/11 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.5 (8/16 fields) | 8 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['lumiracoxib', 'cox-2', 'interconversion']] | [] | mismatch |
-| `gpt-oss:120b` | `parameters[b]` | not captured | 0.33 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kd]` | not captured | 62 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kd_cox-2]` | 0.89 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ks_cox-2 (cox-2•h -1 ) a]` | 0.21 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[lt0].parameter_id` | Q86 | Q83 | mismatch |
+| `gpt-oss-120b` | `parameters[a]` | not captured | 1.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[b].parameter_id` | Q900 | Q47 | mismatch |
+| `gpt-oss-120b` | `parameters[ka]` | 92 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kd]` | not captured | 33 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kd_cox-2].parameter_id` | Q331 | Q330 | mismatch |
+| `gpt-oss-120b` | `parameters[lt0].parameter_id` | Q306 | Q83 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | lumiracoxib | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | lumiracoxib | unknown | mismatch |
 
 </details>
 

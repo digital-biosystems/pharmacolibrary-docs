@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Naratriptan directly stimulates coronary artery contraction, measured as a percentage of the response to 100 mmol/L K+, via an additive Emax model. The paper reports an EC50 of 171 nmol/L and an Emax of 10.1% K+
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `MaassenVanDenBrink_1998`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

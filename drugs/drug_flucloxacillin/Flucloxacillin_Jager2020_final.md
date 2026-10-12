@@ -4,7 +4,7 @@
 
 # flucloxacillin — `Flucloxacillin_Jager2020_final`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +16,13 @@
 
 ### Reviewer guidance
 
-Independently confirmed by `gpt-oss:120b`.
+**Flucloxacillin's maximum binding capacity Bmax (0.469 mmol/L) has a dimension mismatch against a structural parameter.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+The maximum binding capacity Bmax was recorded with a unit of mmol/L, which could not be converted to standard units. Consequently, the parameter reached the model builder without a valid SI value, causing a dimension mismatch with the structural parameter. Extracted — flucloxacillin: Bmax 0.469 mmol/L, KD 0.0441 mmol/L, CL 55.4 L/h, V1 52.7 L, V2 56.8 L, Q 67.2 L/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flucloxacillin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Jager NGL et al., Optimization of flucloxacillin dosing r…, The Journal of antimicrobia… (2020)
@@ -69,14 +73,21 @@ Jager NGL et al., Optimization of flucloxacillin dosing r…, The Journal of ant
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (10/10 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.8 (8/10 fields) | 2 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `screen.dose_compound` | flucloxacillin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | flucloxacillin | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

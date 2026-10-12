@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Deltamethrin (decamethrin) concentrations (mg/L) inhibit resazurin reduction (cytotoxicity, %) in Saccharomyces cerevisiae, with a reported EC50 of 139.4 mg/L; the paper excerpts do not state the mechanism or model form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sheikhi_2025`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

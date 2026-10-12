@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;selumetinib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Selumetinib_Patel2018_reference&quot;,&quot;label&quot;:&quot;Patel_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_selumetinib/Selumetinib_Patel2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Selumetinib_Tong2019_reference&quot;,&quot;label&quot;:&quot;Tong_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_selumetinib/Selumetinib_Tong2019_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Selumetinib_Patel2018_reference&quot;,&quot;label&quot;:&quot;Patel_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_selumetinib/Selumetinib_Patel2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Selumetinib_Tong2019_reference&quot;,&quot;label&quot;:&quot;Tong_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_selumetinib/Selumetinib_Tong2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # selumetinib
 
@@ -28,16 +28,16 @@ Selumetinib is a MEK inhibitor anticancer drug used to treat neurofibromatosis 1
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:54 | 5:29 | 2/2/0 | 0/0/0 | 0/0/0 | 105,185/25,310 | openai / gpt-6-luna | 4 | 1/3 | 3/1 | 0 |
+| 2026-10-07 06:54 | 5:29 | 0/4/0 | 0/0/0 | 0/0/0 | 105,185/25,310 | openai / gpt-6-luna | 4 | 1/3 | 3/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Patel_2018_reference](drugs/drug_selumetinib/Selumetinib_Patel2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Patel P et al., Population pharmacokinetics of the MEK…, British journal of clinical… (2018) | [10.1111/bcp.13404](https://doi.org/10.1111/bcp.13404) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Tong_2019_reference](drugs/drug_selumetinib/Selumetinib_Tong2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Tong X et al., Population Pharmacokinetic and Exposure…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1295](https://doi.org/10.1002/jcph.1295) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Köllő_2026_reference](drugs/drug_selumetinib/Selumetinib_Kll2026_reference.md) | — | 1-compartment (no model) | 0 | Köllő Z et al., A Nonparametric Population Pharmacokine…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70156](https://doi.org/10.1002/psp4.70156) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Patel_2017_reference](drugs/drug_selumetinib/Selumetinib_Patel2017_reference.md) | — | parent + metabolite (no model) | 12 | Patel YT et al., Population Pharmacokinetics of Selumeti…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12175](https://doi.org/10.1002/psp4.12175) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Köllő_2026_reference](drugs/drug_selumetinib/Selumetinib_Kll2026_reference.md) | — | 1-compartment (no model) | 0 | Köllő Z et al., A Nonparametric Population Pharmacokine…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70156](https://doi.org/10.1002/psp4.70156) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.138). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Patel_2017_reference](drugs/drug_selumetinib/Selumetinib_Patel2017_reference.md) | — | parent + metabolite (no model) | 12 | Patel YT et al., Population Pharmacokinetics of Selumeti…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12175](https://doi.org/10.1002/psp4.12175) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub><br><sub>route_to: `engineer`</sub> | [Patel_2018_reference](drugs/drug_selumetinib/Selumetinib_Patel2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Patel P et al., Population pharmacokinetics of the MEK…, British journal of clinical… (2018) | [10.1111/bcp.13404](https://doi.org/10.1111/bcp.13404) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub><br><sub>route_to: `engineer`</sub> | [Tong_2019_reference](drugs/drug_selumetinib/Selumetinib_Tong2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Tong X et al., Population Pharmacokinetic and Exposure…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1295](https://doi.org/10.1002/jcph.1295) |
 
 ## ADME sites
 
@@ -71,7 +71,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 2  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

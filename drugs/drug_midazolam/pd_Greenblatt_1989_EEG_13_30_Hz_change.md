@@ -18,6 +18,10 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Midazolam plasma concentrations (ng/ml) were related to the increase over predrug baseline in percentage of total EEG amplitude in the 13–30 Hz range by a direct sigmoid Emax model (equation 1), with Emax 21.4%, EC50 35.2 ng/ml, and exponent A 2.19 from mean data (individual subjects, n=10: Emax 22.4±2.4%, EC50 40.0±2.8 ng/ml, A 2.50±0.42); the paper does not describe an effect-compartment or indirect mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Greenblatt_1989`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

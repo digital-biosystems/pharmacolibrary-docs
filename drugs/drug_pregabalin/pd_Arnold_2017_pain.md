@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> No full text is available to describe the specific mechanism by which pregabalin dose affects the 11-point numeric rating scale for pain. Consequently, key potency and rate parameters (such as Imax, IC50, or kout) are not provided in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Arnold_2017`
 - **model family:** `emax`
 - **driver:** `dose_only`

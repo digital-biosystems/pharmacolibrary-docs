@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;ofatumumab&quot;,&quot;href&quot;:&quot;drugs/drug_ofatumumab/&quot;},{&quot;label&quot;:&quot;Yu_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ofatumumab_Struemper2014_reference&quot;,&quot;label&quot;:&quot;Struemper_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ofatumumab/Ofatumumab_Struemper2014_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ofatumumab_Struemper2014_reference&quot;,&quot;label&quot;:&quot;Struemper_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ofatumumab/Ofatumumab_Struemper2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ofatumumab — `Ofatumumab_Yu2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.783). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.913), gpt-oss:120b (not confirmed, agreement 0.783). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
+**The elimination rate constant's unit, Vc,lwt70, is not a standard pharmacokinetic unit, causing a dimension mismatch that rejected the record.**
+
+The parameter labeled as the elimination rate constant has a value of 1.2 with the unit Vc,lwt70, which is not a recognized rate unit. This non-standard unit prevented conversion to SI, leading to a dimension mismatch on a structural parameter. Additionally, the second reader identified missing parameters for additive concentration and blood volume that were not present in the record. Extracted — ofatumumab: kabs 0.157 day−1, Fab 0.685, V1 2.62 L, kel 1.2 Vc,lwt70, CL 0.34 L/day, Q 0.358 L/day, V2 2.8 L, KD 0.167 nmol/L, … (+2).
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ofatumumab, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Yu H et al., Population Pharmacokinetic-B Cell Model…, CNS drugs (2022)
@@ -159,17 +163,20 @@ Yu H et al., Population Pharmacokinetic-B Cell Model…, CNS drugs (2022)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.913 (21/23 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.783 (18/23 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[ofatumumab conc. additive]` | not captured | 0.0316 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vb]` | not captured | 3.7 | only_one_extracted |
 | `gpt-oss:120b` | `model.links` | [] | [['ofatumumab', 'b cells', 'none']] | mismatch |
 | `gpt-oss:120b` | `parameters[ofatumumab conc. additive]` | not captured | 0.0316 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vb]` | not captured | 3.7 | only_one_extracted |

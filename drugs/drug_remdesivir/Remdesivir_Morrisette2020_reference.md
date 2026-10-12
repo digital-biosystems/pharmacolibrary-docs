@@ -5,7 +5,7 @@
 
 # remdesivir — `Remdesivir_Morrisette2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385), gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q322: this record has 100, the second reading 4.7; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q32: this record has none, the second reading 7.5; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -58,17 +58,26 @@ Morrisette T et al., The Pharmacokinetic and Pharmacodynamic…, Infectious dise
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.385 (5/13 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.714 (5/7 fields) | 2 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q322]` | 7.5 | 4.7 | mismatch |
+| `gpt-oss-120b` | `values[Q32]` | not captured | 7.5 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q360]` | 5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q364]` | not captured | 30 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q36]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q37]` | 2 | 1 | mismatch |
+| `gpt-oss-120b` | `values[Q57]` | 30 | 43.3 | mismatch |
+| `gpt-oss-120b` | `values[Q99]` | not captured | 29.0 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q322]` | 100 | 4.7 | mismatch |
 | `gpt-oss:120b` | `values[Q57]` | 32 | 43.3 | mismatch |
 
@@ -127,7 +136,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference/Remdesivir_Morrisette2020_reference_modelica.zip" download>Remdesivir_Morrisette2020_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference/Remdesivir_Morrisette2020_reference_fmi.zip" download>Remdesivir_Morrisette2020_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference/Remdesivir_Morrisette2020_reference_matlab.zip" download>Remdesivir_Morrisette2020_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference/Remdesivir_Morrisette2020_reference_matlab_simbio.zip" download>Remdesivir_Morrisette2020_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference/Remdesivir_Morrisette2020_reference_matlab_simbio.zip" download>Remdesivir_Morrisette2020_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference/Remdesivir_Morrisette2020_reference_sbml.zip" download>Remdesivir_Morrisette2020_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference/Remdesivir_Morrisette2020_reference_cellml.zip" download>Remdesivir_Morrisette2020_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>

@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methacholine concentrations act on airway smooth muscle contractile force via a sigmoid Emax stimulation model; the paper excerpts provide no mechanism details and no potency or rate values (no EC50, Emax, or gamma reported).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ijpma_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

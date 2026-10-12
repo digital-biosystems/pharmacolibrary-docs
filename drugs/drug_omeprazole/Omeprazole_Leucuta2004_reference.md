@@ -5,7 +5,7 @@
 
 # omeprazole — `Omeprazole_Leucuta2004_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.545), gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -72,17 +72,23 @@ Leucuta A et al., A pharmacokinetic interaction study bet…, Drug metabolism an
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.545 (6/11 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc0-10]` | 1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 16.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 0.95 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time for the drt formulation]` | 2.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | 0.653 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc0-10]` | 1 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cmax]` | 730.8 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cmax]` | not captured | 730.8 | only_one_extracted |

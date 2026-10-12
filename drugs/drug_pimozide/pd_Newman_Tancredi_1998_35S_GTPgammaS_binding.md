@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the mechanism or any parameter values; it only indicates that pimozide inhibits 5-HT-stimulated [35S]GTPgammaS binding.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Newman-Tancredi_1998`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
