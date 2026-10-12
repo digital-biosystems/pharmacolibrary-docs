@@ -9,6 +9,10 @@
 - **molar mass:** 284.2481 g/mol (C12H17N2O4P) — DrugBank
 - **groups:** investigational
 
+## About
+
+**Description.** Psilocybin has been investigated for the treatment of Anxiety and Stage IV Melanoma. In November, 2019, it was granted Breakthrough Therapy status by the FDA.
+
 ## Molecules and molar masses
 
 > The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.

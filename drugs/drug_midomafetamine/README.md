@@ -9,6 +9,12 @@
 - **molar mass:** 193.2423 g/mol (C11H15NO2) — DrugBank
 - **groups:** illicit, investigational
 
+## About
+
+**Description.** An N-substituted amphetamine analog. It is a widely abused drug classified as a hallucinogen and causes marked, long-lasting changes in brain serotonergic systems. It is commonly referred to as MDMA or ecstasy. It is a widely abused drug classified as a hallucinogen and causes marked, long-lasting changes in brain serotonergic systems.
+
+**Indication.** Clinical trials are now testing the therapeutic potential of MDMA for post-traumatic stress disorder (PTSD) and anxiety associated with terminal cancer. MDMA is one of the four most widely used illicit drugs in the U.S.
+
 ## Molecules and molar masses
 
 > The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.

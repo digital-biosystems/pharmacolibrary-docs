@@ -9,6 +9,10 @@
 - **molar mass:** 389.26 g/mol (C19H28BN3O5) — DrugBank
 - **groups:** investigational
 
+## About
+
+**Description.** Taniborbactam is under investigation in clinical trial NCT03840148 (Safety and Efficacy Study of Cefepime/vnrx-5133 in Patients With Complicated Urinary Tract Infections).
+
 ## Molecules and molar masses
 
 > The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.

@@ -7,6 +7,12 @@
 - **DrugBank:** [DB31662](https://go.drugbank.com/drugs/DB31662) · **PubChem:** not captured
 - **groups:** investigational
 
+## About
+
+<p><b>Description (Wikipedia).</b> Endoxifen, also known as 4-hydroxy-N-desmethyltamoxifen, is a nonsteroidal selective estrogen receptor modulator (SERM) and a protein kinase C (PKC) inhibitor of the triphenylethylene group. It is under development for the treatment of estrogen receptor-positive breast cancer and for the treatment of mania in bipolar disorder. It is taken by mouth.</p>
+
+<p><small>Source: <a href="https://en.wikipedia.org/wiki/Endoxifen?oldid=1379451828">Wikipedia</a> · <a href="https://www.wikidata.org/wiki/Q27149598">Wikidata</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></small></p>
+
 ## Molecules and molar masses
 
 > The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.

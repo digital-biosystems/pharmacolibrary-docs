@@ -6218,7 +6218,44 @@
         - sodium phosphate 32p <sub>(0/0/0)</sub>
         - tositumomab <sub>(0/0/0)</sub>
         - tositumomab iodine 131i tositumomab <sub>(0/0/0)</sub>
-- **Drug groups of interest**
+- **non-ATC**
+  - [Arketamine <sub>(1/4/0)</sub>](drugs/drug_arketamine/)
+  - [Artefenomel <sub>(2/1/0)</sub>](drugs/drug_artefenomel/)
+  - [Bufuralol <sub>(0/0/0)</sub>](drugs/drug_bufuralol/)
+  - [Cagrilintide <sub>(0/0/0)</sub>](drugs/drug_cagrilintide/)
+  - [Contezolid <sub>(1/0/0)</sub>](drugs/drug_contezolid/)
+  - [Dimethyltryptamine <sub>(0/0/0)</sub>](drugs/drug_dimethyltryptamine/)
+  - [Durlobactam <sub>(0/1/0)</sub>](drugs/drug_durlobactam/)
+  - [Efpeglenatide <sub>(0/0/0)</sub>](drugs/drug_efpeglenatide/)
+  - [Endoxifen <sub>(0/0/0)</sub>](drugs/drug_endoxifen/)
+  - [Islatravir <sub>(0/0/0)</sub>](drugs/drug_islatravir/)
+  - [Mazdutide <sub>(0/0/0)</sub>](drugs/drug_mazdutide/)
+  - [methylene blue <sub>(1/1/0)</sub>](drugs/drug_methylene_blue/)
+  - [Midomafetamine <sub>(2/1/0)</sub>](drugs/drug_midomafetamine/)
+  - Orforglipron <sub>(0/1/0)</sub>
+  - [Psilocybin <sub>(1/2/0)</sub>](drugs/drug_psilocybin/)
+  - Retatrutide <sub>(0/1/0)</sub>
+  - [Sutezolid <sub>(0/1/0)</sub>](drugs/drug_sutezolid/)
+  - [Taniborbactam <sub>(2/2/0)</sub>](drugs/drug_taniborbactam/)
+  - Taspoglutide <sub>(0/0/0)</sub>
+  - [Temsavir <sub>(0/0/0)</sub>](drugs/drug_temsavir/)
+  - [Zidebactam <sub>(0/1/0)</sub>](drugs/drug_zidebactam/)
+- **toxins**
+  - [arsenic <sub>(0/0/2)</sub>](drugs/toxin_arsenic/)
+  - [cadmium <sub>(0/0/0)</sub>](drugs/toxin_cadmium/)
+  - [chromium <sub>(0/0/0)</sub>](drugs/toxin_chromium/)
+  - [nickel <sub>(0/0/0)</sub>](drugs/toxin_nickel/)
+  - [lead <sub>(0/0/1)</sub>](drugs/toxin_lead/)
+  - [112_trichloroethane <sub>(0/0/0)</sub>](drugs/toxin_112_trichloroethane/)
+  - [11_dichloroethene <sub>(0/0/0)</sub>](drugs/toxin_11_dichloroethene/)
+  - [1267_tetrachlorodibenzo_p_dioxin <sub>(0/0/0)</sub>](drugs/toxin_1267_tetrachlorodibenzo_p_dioxin/)
+  - [224_trimethylpentane <sub>(0/0/0)</sub>](drugs/toxin_224_trimethylpentane/)
+  - [2378_tetrachlorodibenzo_p_dioxin <sub>(0/0/0)</sub>](drugs/toxin_2378_tetrachlorodibenzo_p_dioxin/)
+  - [24_dinitrotoluene <sub>(0/1/0)</sub>](drugs/toxin_24_dinitrotoluene/)
+  - [44_methylenedianiline <sub>(0/0/0)</sub>](drugs/toxin_44_methylenedianiline/)
+  - [acetonitrile <sub>(0/0/0)</sub>](drugs/toxin_acetonitrile/)
+  - [americium <sub>(0/0/0)</sub>](drugs/toxin_americium/)
+- **Special groups**
   - **ddd**
     - [allopurinol <sub>(4/9/14)</sub>](drugs/drug_allopurinol/)
     - [amoxicillin <sub>(15/0/0)</sub>](drugs/drug_amoxicillin/)
@@ -6318,20 +6355,5 @@
     - tetrachloroethylene <sub>(0/0/0)</sub>
     - toluene <sub>(0/0/0)</sub>
     - trichloroethylene <sub>(0/0/0)</sub>
-- **toxins**
-  - [arsenic <sub>(0/0/2)</sub>](drugs/toxin_arsenic/)
-  - [cadmium <sub>(0/0/0)</sub>](drugs/toxin_cadmium/)
-  - [chromium <sub>(0/0/0)</sub>](drugs/toxin_chromium/)
-  - [nickel <sub>(0/0/0)</sub>](drugs/toxin_nickel/)
-  - [lead <sub>(0/0/1)</sub>](drugs/toxin_lead/)
-  - [112_trichloroethane <sub>(0/0/0)</sub>](drugs/toxin_112_trichloroethane/)
-  - [11_dichloroethene <sub>(0/0/0)</sub>](drugs/toxin_11_dichloroethene/)
-  - [1267_tetrachlorodibenzo_p_dioxin <sub>(0/0/0)</sub>](drugs/toxin_1267_tetrachlorodibenzo_p_dioxin/)
-  - [224_trimethylpentane <sub>(0/0/0)</sub>](drugs/toxin_224_trimethylpentane/)
-  - [2378_tetrachlorodibenzo_p_dioxin <sub>(0/0/0)</sub>](drugs/toxin_2378_tetrachlorodibenzo_p_dioxin/)
-  - [24_dinitrotoluene <sub>(0/1/0)</sub>](drugs/toxin_24_dinitrotoluene/)
-  - [44_methylenedianiline <sub>(0/0/0)</sub>](drugs/toxin_44_methylenedianiline/)
-  - [acetonitrile <sub>(0/0/0)</sub>](drugs/toxin_acetonitrile/)
-  - [americium <sub>(0/0/0)</sub>](drugs/toxin_americium/)
 
 <!-- AUTOGEN:drugs END -->

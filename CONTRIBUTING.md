@@ -40,6 +40,7 @@ installation (`npm install --prefix /tmp/opencode/site-check playwright` followe
 NODE_PATH=/tmp/opencode/site-check/node_modules node tests/browser-smoke.cjs
 NODE_PATH=/tmp/opencode/site-check/node_modules node tests/sites-style.cjs
 NODE_PATH=/tmp/opencode/site-check/node_modules node tests/sites-view.cjs
+NODE_PATH=/tmp/opencode/site-check/node_modules node tests/sidebar.cjs
 ```
 
 It checks lazy loading, search, tabs, record navigation, two independent simulator

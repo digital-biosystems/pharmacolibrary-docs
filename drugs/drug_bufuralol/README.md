@@ -8,6 +8,10 @@
 - **molar mass:** 261.3593 g/mol (C16H23NO2) — DrugBank
 - **groups:** experimental
 
+## About
+
+**Description.** Bufuralol is a new, non-selective -adrenoceptor blocking agent.
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

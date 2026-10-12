@@ -9,6 +9,12 @@
 - **molar mass:** 188.2688 g/mol (C12H16N2) — DrugBank
 - **groups:** illicit, investigational
 
+## About
+
+**Description.** An N-methylated indoleamine derivative, a serotonergic hallucinogen found in several plants, especially Prestonia amazonica (Apocynaceae) and in mammalian brain, blood, and urine. It apparently acts as an agonist at some types of serotonin receptors and an antagonist at others.
+
+**Indication.** Some people use this compound as a psychedelic inducing agent.
+
 ## Molecules and molar masses
 
 > The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.

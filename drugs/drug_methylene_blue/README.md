@@ -9,6 +9,16 @@
 - **molar mass:** 319.85 g/mol (C16H18ClN3S) — DrugBank
 - **groups:** approved, investigational
 
+## About
+
+**Description.** Methylene blue is an oxidation-reduction agent. The intravenous form of methylene blue is approved by the FDA for the treatment of pediatric and adult patients with acquired methemoglobinemia. Historically, it has been widely used in Africa to treat malaria, but now it disappeared when chloroquine (CQ) and other drugs entered the market. Its use as an urinary tract antiseptic has also been investigated.
+
+Methylthioninium chloride (INN, or methylene blue, proposed trade name Rember) is an investigational drug being developed by the University of Aberdeen and TauRx Therapeutics that has been shown in early clinical trials to be an inhibitor of Tau protein aggregation. The drug is of potential interest for the treatment of patients with Alzheimer's disease.
+
+**Indication.** Indicated for the treatment of pediatric and adult patients with acquired methemoglobinemia.
+
+Other clinical applications of methylene blue include improvement of hypotension associated with various clinical states, an antiseptic in urinary tract infections, treatment of hypoxia and hyperdynamic circulation in cirrhosis of liver and severe hepatopulmonary syndrome, and treatment of ifofosamide induced neurotoxicity.
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

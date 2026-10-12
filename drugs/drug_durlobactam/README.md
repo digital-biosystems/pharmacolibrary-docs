@@ -9,6 +9,12 @@
 - **molar mass:** 277.25 g/mol (C8H11N3O6S) — DrugBank
 - **groups:** approved, investigational
 
+## About
+
+**Description.** Durlobactam is a diazabicyclooctane non-beta-lactam, beta-lactamase inhibitor. It is typically given in combination with [sulbactam] to protect it from degradation by certain serine-beta-lactamases.[L47336] The combination product of durlobactam and sulbactam was first approved by the FDA in May 2023.[A263306] It is used to treat hospital-acquired bacterial pneumonia and ventilator-associated bacterial pneumonia (HABP/VABP), caused by susceptible isolates of _Acinetobacter baumannii-calcoaceticus_ complex.[L47336]
+
+**Indication.** In combination with [sulbactam], durlobactam is indicated in adults for the treatment of hospital-acquired bacterial pneumonia and ventilator-associated bacterial pneumonia (HABP/VABP), caused by susceptible isolates of _Acinetobacter baumannii-calcoaceticus_ complex.[L47336]
+
 ## Molecules and molar masses
 
 > The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.

@@ -9,6 +9,10 @@
 - **molar mass:** 469.622 g/mol (C28H39NO5) — DrugBank
 - **groups:** investigational
 
+## About
+
+**Description.** Artefenomel has been investigated for the treatment of Malaria.
+
 ## Molecules and molar masses
 
 > The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.

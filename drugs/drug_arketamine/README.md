@@ -9,6 +9,10 @@
 - **molar mass:** 237.73 g/mol (C13H16ClNO) — DrugBank
 - **groups:** investigational
 
+## About
+
+**Description.** Arketamine is under investigation in clinical trial NCT05414422 (A Randomized, Placebo-controlled, Double-blind Study to Assess Safety and Efficacy of PCN-101 in TRD).
+
 ## Molecules and molar masses
 
 > The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.

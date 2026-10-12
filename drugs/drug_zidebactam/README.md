@@ -8,6 +8,10 @@
 - **molar mass:** 391.4 g/mol (C13H21N5O7S) — DrugBank
 - **groups:** investigational
 
+## About
+
+**Description.** Zidebactam is under investigation in clinical trial NCT02674347 (MAD Study to Evaluate the Safety, Tolerability and Pharmacokinetics of Intravenous Zidebactam in Healthy Adults).
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

@@ -8,6 +8,10 @@
 - **molar mass:** 353.41 g/mol (C16H20FN3O3S) — DrugBank
 - **groups:** investigational
 
+## About
+
+**Description.** Sutezolid has been used in trials studying the treatment of Tuberculosis.
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

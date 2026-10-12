@@ -8,6 +8,10 @@
 - **molar mass:** 293.258 g/mol (C12H12FN5O3) — DrugBank
 - **groups:** investigational
 
+## About
+
+**Description.** Islatravir is under investigation in clinical trial NCT04233216 (Doravirine/islatravir (DOR/ISL) in Heavily Treatment-experienced (HTE) Participants for Human Immunodeficiency Virus Type 1 (HIV-1) Infection (MK-8591A-019)).
+
 ## Molecules and molar masses
 
 > The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.

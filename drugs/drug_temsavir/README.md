@@ -8,6 +8,12 @@
 - **molar mass:** 473.493 g/mol (C24H23N7O4) — DrugBank
 - **groups:** investigational
 
+## About
+
+<p><b>Description (Wikidata).</b> chemical compound</p>
+
+<p><small>Source: <a href="https://www.wikidata.org/wiki/Q27259369">Wikidata</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a></small></p>
+
 ## Molecules and molar masses
 
 > The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
