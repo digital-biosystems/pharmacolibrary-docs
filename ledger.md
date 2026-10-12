@@ -3,8 +3,8 @@
 
 ### Extraction ledger <sub>KB artifacts as of 2026-10-12 11:15</sub>
 
-<div class="tiles"><div class="tile"><i>read ATC drugs / read non-ATC drugs / read toxins</i><b>4,683 / 24 / 25</b><em>1,758 / 15 / 5 with at least one popPK, PD or PGx record</em></div><div class="tile"><i>papers for these drugs</i><b>134,782</b><em>23,232 judged relevant to PK/PD/PGx (17%)</em></div><div class="tile"><i>papers with full text</i><b>37,316</b><em>97,466 had an abstract only</em></div><div class="tile"><i>where the full text came from</i><b>10,148 · 27,044</b><em>PDF parsed (GROBID) · publisher XML (JATS)</em></div><div class="tile"><i>LLM tokens</i><b>653.5M read</b><em>51.06M written back</em></div><div class="tile"><i>drugs by domain</i><b>948 · 1690 · 150</b><em>with popPK · PD · PGx records</em></div><div class="tile"><i>records by species (top 4)</i><b>3,903 · 1,693 · 623 · 296</b><em>human · in vitro · rat · mouse</em></div><div class="tile"><i>if all wanted PDFs were read (estimate)</i><b>12,151 · ~9,327 · 42%</b><em>wanted PDFs · new records expected · relevant full texts giving ≥1 popPK/PD/PGx record</em></div></div>
-<h3 class="csechead">Corpus</h3><div class="cstats"><div class="cbox"><h4>popPK</h4><div class="cnum"><b>4,012</b><span>extracted</span></div><div class="cnum"><b class="ok">1,666</b><span>simulatable · 41.5%</span></div><table><tr><td>topology</td><td>1C 3012 · 2C 703 · parent_metabolite 196</td></tr><tr><td>parameterisation</td><td>mechanistic 2860 · apparent 1146</td></tr><tr><td>covariate equations</td><td>536 (13.4%)</td></tr><tr><td>simulatable means</td><td>carries a clearance and a volume</td></tr></table></div><div class="cbox"><h4>PD</h4><div class="cnum"><b>4,855</b><span>extracted</span></div><div class="cnum"><b class="ok">788</b><span>simulatable · 16.2%</span></div><table><tr><td>family</td><td>sigmoid_emax 1605 · emax 1103 · unknown 1005</td></tr><tr><td>driver</td><td>cited_pk 2128 · conc_no_pk 1172</td></tr><tr><td>runnable shapes</td><td>Emax 505 · turnover 283 · effect-cmt 241</td></tr><tr><td>simulatable means</td><td>potency + Emax, or a turnover rate</td></tr></table></div><div class="cbox"><h4>PGx</h4><div class="cnum"><b>137</b><span>extracted</span></div><div class="cnum"><b class="ok">29</b><span>simulatable · 21.2%</span></div><table><tr><td>mechanism</td><td>safety_allele 108 · transport 14</td></tr><tr><td>genes covered</td><td>22</td></tr><tr><td>simulatable means</td><td>shifts a named PK parameter</td></tr></table></div><div class="cbox"><h4>by species</h4><table class="csp"><tr><td></td><td class="n"><i>popPK</i></td><td class="n"><i>PD</i></td><td class="n"><i>PGx</i></td></tr><tr><td>human</td><td class="n">1,958</td><td class="n">1,654</td><td class="n">291</td></tr><tr><td>in vitro</td><td class="n">10</td><td class="n">1,682</td><td class="n">1</td></tr><tr><td>rat</td><td class="n">75</td><td class="n">548</td><td class="n">0</td></tr><tr><td>mouse</td><td class="n">27</td><td class="n">269</td><td class="n">0</td></tr><tr><td>human + animal</td><td class="n">29</td><td class="n">146</td><td class="n">0</td></tr><tr><td>other animal</td><td class="n">3</td><td class="n">118</td><td class="n">0</td></tr><tr><td>pig</td><td class="n">12</td><td class="n">90</td><td class="n">0</td></tr><tr><td>dog</td><td class="n">33</td><td class="n">50</td><td class="n">0</td></tr><tr><td>13 others</td><td class="n">108</td><td class="n">284</td><td class="n">4</td></tr></table></div></div>
+<div class="tiles"><div class="tile"><i>Processed: ATC / non-ATC / toxins</i><b>4,683 / 24 / 25</b><em>1,758 / 15 / 5 with ≥1 popPK/PD/PGx record</em></div><div class="tile"><i>Literature</i><b>134,782</b><em>23,232 PK/PD/PGx-relevant papers (17%)</em></div><div class="tile"><i>Full-text availability</i><b>37,316</b><em>97,466 abstract-only papers</em></div><div class="tile"><i>Full-text sources</i><b>10,148 · 27,044</b><em>GROBID-parsed PDFs · publisher JATS XML</em></div><div class="tile"><i>LLM tokens</i><b>653.5M input</b><em>51.06M output · cross-checks included</em></div><div class="tile"><i>Domain coverage</i><b>948 · 1690 · 150</b><em>Drugs with popPK · PD · PGx records</em></div><div class="tile"><i>Species distribution (top 4)</i><b>3,903 · 1,693 · 623 · 296</b><em>human · in vitro · rat · mouse</em></div><div class="tile"><i>Projected full-text yield</i><b>12,151 · ~9,327 · 42%</b><em>Requested PDFs · expected additional records · observed record-yield rate</em></div></div>
+<h3 class="csechead">Corpus</h3><div class="cstats"><div class="cbox"><h4>popPK</h4><div class="cnum"><b>4,012</b><span>extracted</span></div><div class="cnum"><b class="ok">1,666</b><span>simulatable · 41.5%</span></div><table><tr><td>topology</td><td>1C 3012 · 2C 703 · parent_metabolite 196</td></tr><tr><td>parameterisation</td><td>mechanistic 2860 · apparent 1146</td></tr><tr><td>covariate equations</td><td>536 (13.4%)</td></tr><tr><td>simulation criterion</td><td>Clearance and volume available</td></tr></table></div><div class="cbox"><h4>PD</h4><div class="cnum"><b>4,855</b><span>extracted</span></div><div class="cnum"><b class="ok">788</b><span>simulatable · 16.2%</span></div><table><tr><td>family</td><td>sigmoid_emax 1605 · emax 1103 · unknown 1005</td></tr><tr><td>driver</td><td>cited_pk 2128 · conc_no_pk 1172</td></tr><tr><td>supported structures</td><td>Emax 505 · turnover 283 · effect-cmt 241</td></tr><tr><td>simulation criterion</td><td>potency + Emax, or a turnover rate</td></tr></table></div><div class="cbox"><h4>PGx</h4><div class="cnum"><b>137</b><span>extracted</span></div><div class="cnum"><b class="ok">29</b><span>simulatable · 21.2%</span></div><table><tr><td>mechanism</td><td>safety_allele 108 · transport 14</td></tr><tr><td>genes covered</td><td>22</td></tr><tr><td>simulation criterion</td><td>Named PK parameter modified</td></tr></table></div><div class="cbox"><h4>by species</h4><table class="csp"><tr><td></td><td class="n"><i>popPK</i></td><td class="n"><i>PD</i></td><td class="n"><i>PGx</i></td></tr><tr><td>human</td><td class="n">1,958</td><td class="n">1,654</td><td class="n">291</td></tr><tr><td>in vitro</td><td class="n">10</td><td class="n">1,682</td><td class="n">1</td></tr><tr><td>rat</td><td class="n">75</td><td class="n">548</td><td class="n">0</td></tr><tr><td>mouse</td><td class="n">27</td><td class="n">269</td><td class="n">0</td></tr><tr><td>human + animal</td><td class="n">29</td><td class="n">146</td><td class="n">0</td></tr><tr><td>other animal</td><td class="n">3</td><td class="n">118</td><td class="n">0</td></tr><tr><td>pig</td><td class="n">12</td><td class="n">90</td><td class="n">0</td></tr><tr><td>dog</td><td class="n">33</td><td class="n">50</td><td class="n">0</td></tr><tr><td>13 others</td><td class="n">108</td><td class="n">284</td><td class="n">4</td></tr></table></div></div>
 
 #### ddd <sub>the ground-truth panel — the only drugs with curated truth; overlaps the others · 7 drugs</sub>
 
@@ -454,30 +454,24 @@
 
 
 <details>
-<summary>How to read these columns</summary>
+<summary>Ledger definitions</summary>
 
-- **time** — `elapsed_s` of that drug's most recent agent run. Amber means it spans more than a
-  day: the file times from `started_at` to its last write, so an interrupted-and-resumed run
-  records the gap, not the work.
-- **papers / rel** — papers known to the KB against those any domain's relevance pass kept.
-- **full text** — GROBID (TEI parsed from the PDF) · JATS (the publisher's OA XML) · PDF text
-  (pdfplumber, no TEI) · abstract only (no full text was ever obtained).
-- **access** — inferred from the download *route*, not a licence: Europe PMC, Unpaywall,
-  OpenAlex, CORE and Semantic Scholar count as open; publisher-direct and the fallback mirror
-  do not; the rest never yielded a PDF.
-- **suppl.** — papers with supplementary material, split by whether its text carries NONMEM
-  control-stream markers (`$PROBLEM`, `$THETA`, `$OMEGA`).
-- **review sec. / built / gap-fill** — the secondary reference pool, whole models assembled from
-  it (popPK only), and values injected into a primary record that lacked them. PGx gap-fill reads
-  — because its records carry no parameter list.
-- **popPK / PD / PGx** — each domain's validate cache as extracted / rejected / other.
-- **vs baseline** — a benchmark tag against its ACCEPTED score, not its last run.
-- **if all wanted PDFs were read** — the full-text queue (`_wanted_pdfs.yaml`, relevant papers
-  with no full text) · the records reading them all would add: per domain and relevance band,
-  the records per relevant full-text paper measured on the papers that WERE read, times the
-  wanted papers, minus what those already gave from their abstracts · the share of relevant
-  full texts read so far that gave at least one record. An estimate: it assumes the papers we
-  could not read behave like those we could.
+- **Time:** recorded elapsed time for the latest agent run. Amber marks durations >24 h,
+  which may include interruption intervals rather than active processing time.
+- **Papers / rel:** indexed papers / papers retained by at least one domain's relevance assessment.
+- **Full text:** GROBID-derived TEI · publisher JATS XML · PDF-extracted text · abstract only.
+- **Access:** retrieval-route classification, not licence status. Open-source routes are
+  Europe PMC, Unpaywall, OpenAlex, CORE, and Semantic Scholar; other routes are classified separately.
+- **Supplement:** supplementary material with or without NONMEM control-stream markers.
+- **Review / models / gap-fill:** secondary-reference papers, derived models, and substituted
+  parameter values. PGx gap-fill is not applicable to records without parameter lists.
+- **popPK / PD / PGx:** extracted / rejected / other validation outcomes.
+- **Tokens in/out:** recorded input/output tokens across all models and stages, including
+  cross-check readers and adjudication calls in the reported run. These are run totals, not lifetime usage.
+- **Baseline comparison:** change relative to the accepted benchmark score.
+- **Projected full-text yield:** requested PDFs, estimated additional records, and observed
+  record-yield rate. Estimates use domain- and relevance-specific yields, subtract records
+  already obtained from abstracts, and assume comparable yields for unavailable papers.
 
 </details>
 

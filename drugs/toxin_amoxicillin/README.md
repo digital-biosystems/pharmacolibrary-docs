@@ -85,9 +85,9 @@ Amoxicillin is used in combination with [vonoprazan] and [clarithromycin] as co-
 - **records:** 37  ·  extracted 21  ·  needs_review 2  ·  rejected 2  ·  stale 25
 - **scholar-agent fallback query used:** not captured
 
-## Full text wanted
+## Full-text requests
 
-_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|

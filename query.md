@@ -1,13 +1,13 @@
 <!-- AUTOGEN:none — this page is hand-written scaffolding, copied to the site by _seed_scaffold -->
 
-# Ask the data
+# Query
 
 <div id="pkq" class="pkq-chat">
   <div id="pkq-status" class="pkq-status">Loading the knowledge database…</div>
   <div id="pkq-ui" hidden>
     <div id="pkq-log" class="pkq-log" aria-live="polite"></div>
     <div class="pkq-bar">
-      <select id="pkq-mode" class="pkq-mode" aria-label="How questions are read"><option value="">keywords (no LLM)</option></select>
+      <select id="pkq-mode" class="pkq-mode" aria-label="Query interpretation"><option value="">Keyword search (no LLM)</option></select>
       <label id="pkq-thinking-control" class="pkq-thinking-control" hidden><input id="pkq-thinking" type="checkbox"> Thinking</label>
       <input id="pkq-ask" type="text" enterkeyhint="send" placeholder="Ask about a drug, a parameter, a gene…" autocomplete="off" aria-label="Your question">
       <button id="pkq-askbtn" class="pkq-send" type="button" aria-label="Ask">Ask</button>
@@ -16,34 +16,35 @@
   </div>
 </div>
 
-## Local knowledge database content
+## Databases
 
-Two SQLite files, queried in the browser with sql.js; no server. Literature data, not medical advice.
+Two SQLite databases are queried locally using sql.js. Results summarise literature evidence,
+not medical advice.
 
 **Query database** (~8 MB, loaded with the page):
 
-| table | rows | what it holds |
+| Table | Rows | Content |
 |---|---|---|
-| `drug` | 869 | generic name, ATC codes, drug or toxin |
-| `paper` | 3,990 | title, year, DOI, PMID per source paper |
-| `record` | 8,087 | one per extracted model: domain, population, status, `model_id` |
-| `parameter` | 28,196 | value, `value_si` + `unit_si`, units, origin paper, `link_method` |
-| `pd_record` | 3,697 | model family, effect form, the response (`biomarker`), `driver_kind` — how a PD model attaches to PK |
-| `pgx_record` | 2,239 | gene, mechanism, `applies_to`, the Q-code it modifies |
-| `qcode` | 158 | the PK ontology, with 849 synonyms |
-| `drug_alias` | 11,559 | brand names and synonyms → the drug |
-| `search_doc` | 11,757 | every name the sidebar search knows, including drugs not extracted yet |
+| `drug` | 869 | Drug/toxin names and ATC codes |
+| `paper` | 3,990 | Source citations: title, year, DOI, PMID |
+| `record` | 8,087 | Model records: domain, population, status, `model_id` |
+| `parameter` | 28,196 | Source and SI-normalised estimates, units, provenance, `link_method` |
+| `pd_record` | 3,697 | Model family, effect form, biomarker, PK-driver relationship |
+| `pgx_record` | 2,239 | Gene, mechanism, applicability, target Q-code |
+| `qcode` | 158 | PK parameter ontology; 849 synonyms |
+| `drug_alias` | 11,559 | Brand and synonym mappings |
+| `search_doc` | 11,757 | Search index, including drugs without extracted records |
 
-`value_si` is in SI base units, named by `unit_si` (`m3/s` for a clearance, `m3`, `1/s`, `s`) —
-not `unit_canonical`, the display unit (`L/h`); quote `value` with `unit_verbatim`, compare across
-papers with `value_si`. `link_method`: `exact` was read from that paper, `review_gapfill` was
-borrowed from a review. Every answer's SQL can be opened, edited and re-run.
+`value_si` uses SI units specified by `unit_si` (e.g. `m3/s` for clearance); `unit_canonical`
+is the display unit (e.g. `L/h`). Cite source estimates using `value` and `unit_verbatim`;
+use `value_si` for cross-study comparison. `review_gapfill` identifies secondary-review
+substitutions. SQL statements can be inspected, edited, and rerun.
 Download: **[pharmacolibrary.sqlite](data/latest.json)**.
 
-**Passage database** (`knowledge-*.sqlite`, 26 MB, loaded only when a model is selected): table
-`passage`, 19,690 rows for 867 drugs, FTS4 index `passage_fts` (porter).
+**Passage database** (`knowledge-*.sqlite`, 26 MB; loaded when a language model is selected):
+19,690 passages covering 867 drugs; FTS4 index `passage_fts` with Porter stemming.
 
-| kind | rows | source | licence |
+| Type | Rows | Source | Licence |
 |---|---|---|---|
 | `drugbank` | 6,745 | DrugBank: description, indication, mechanism, PD, absorption, metabolism, half-life, Vd, clearance, protein binding | CC BY-NC 4.0 |
 | `guideline` | 1,996 | ClinPGx guideline annotations (CPIC, DPWG, …) | CC BY-SA 4.0 |
@@ -52,13 +53,10 @@ Download: **[pharmacolibrary.sqlite](data/latest.json)**.
 
 Download: **[knowledge.sqlite](data/knowledge-latest.json)**.
 
-**Simulation**: a question with a drug and a regimen ("tolvaptan 120 mg daily after 1 week",
-"500 mg twice daily for 3 days", "single dose of 1 g", "(model Lanke_2019)") runs the drug's PK
-models (up to 5, from `record.model_id`) with each paper's fitted parameters on the record's
-WebAssembly template (`assets/js/pk-sim.js`, horizon ≤ 28 days); the answer gives the value at the
-end, the peak, the trough over the last interval and the range across the models.
+**Simulation:** specify a drug and regimen, e.g. “tolvaptan 120 mg daily for 1 week”.
+Up to five PK models run with source-fitted parameters using WebAssembly (horizon ≤28 days).
+Results include final concentration, peak, last-interval trough, and the cross-model range.
 
-**Language model** (optional): WebLLM, Qwen3.5 0.8B / 4B / 9B on WebGPU, weights cached in
-IndexedDB. Per question: up to 6 passages (~3,200 characters, BM25 within the named drugs) go into
-the prompt, are cited as [n] and listed under the answer. A sentence with a number found in neither
-the rows nor the passages is dropped. Thinking: off by default.
+**Language models:** optional WebLLM/Qwen3.5 models run on WebGPU; weights are cached in
+IndexedDB. Responses cite up to six retrieved passages (~3,200 characters). Sentences with
+numeric claims absent from the result rows and passages are excluded. Reasoning is disabled by default.

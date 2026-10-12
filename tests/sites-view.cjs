@@ -19,7 +19,7 @@ const route = base + '/#/sites?drugs=midazolam,ketoconazole&pgx=CYP2C19:PM';
       assert.equal(await panels.count(), 7);
       assert.equal(await visible.count(), 1);
       assert.equal(await toggle.innerText(), 'Show all sections');
-      await page.getByRole('tab', {name: 'Who affects whom', exact: true}).click();
+      await page.getByRole('tab', {name: 'Interaction matrix', exact: true}).click();
       assert.equal(await visible.getAttribute('data-pkspanel'), 'ddi');
       await page.locator('#pks-text').uncheck();
       const state = await page.evaluate(() => ({
@@ -37,7 +37,7 @@ const route = base + '/#/sites?drugs=midazolam,ketoconazole&pgx=CYP2C19:PM';
       const stacked = await panels.evaluateAll(elements => elements.every((el, i) =>
         !i || el.getBoundingClientRect().top >= elements[i - 1].getBoundingClientRect().bottom));
       assert.ok(stacked, 'expanded sections must stack vertically');
-      await page.getByRole('link', {name: 'Help', exact: true}).click();
+      await page.getByRole('link', {name: 'Methods', exact: true}).click();
       assert.equal(await visible.count(), 7);
       assert.equal(await page.evaluate(() => location.hash), state.hash, 'jump links must not change the Docsify route');
       assert.equal(await page.evaluate(() => document.activeElement.id), 'pks-heading-help');
@@ -48,7 +48,7 @@ const route = base + '/#/sites?drugs=midazolam,ketoconazole&pgx=CYP2C19:PM';
       await toggle.click();
       assert.equal(await visible.count(), 1);
       assert.equal(await visible.getAttribute('data-pkspanel'), 'help');
-      assert.equal(await page.getByRole('tab', {name: 'Help', exact: true}).getAttribute('aria-selected'), 'true');
+      assert.equal(await page.getByRole('tab', {name: 'Methods', exact: true}).getAttribute('aria-selected'), 'true');
       assert.equal(await page.locator('#pks-text').isChecked(), false);
       assert.deepEqual(await page.evaluate(() => ({
         hash: location.hash,

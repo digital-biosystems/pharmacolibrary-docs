@@ -50,6 +50,21 @@ reference rows with a previously captured shadow-root HTML snapshot.
 The focused Sites checks cover evidence styling and the tabbed/expanded layouts,
 including jump navigation, control preservation and session preferences on desktop and mobile.
 
+## Shared documentation text
+
+Edit `README-template.md`, `query.md`, and `sites.md` here; shared generated legends,
+captions, and explanatory text live in `pharmacolibrary-dev/pk_knowledge_scripts/docs/`.
+Use a text-only refresh to update existing pages without rerunning extraction or exports:
+
+```bash
+# From pharmacolibrary-dev; omit --write to preview:
+python -m pk_knowledge_scripts.docs.refresh_text --docs-dir ../pharmacolibrary-docs --write
+```
+
+The refresh preserves source-derived About text, scientific tables, code blocks,
+simulation inputs, and model files. Token totals include cross-check calls recorded in
+the reported extraction run; they are not lifetime usage totals.
+
 ## Component upgrades
 
 In `dbs-components-dev`:

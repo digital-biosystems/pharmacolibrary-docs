@@ -1,51 +1,43 @@
 # Pharmacolibrary
 v26.09 (built {{built_at}})
 
-**pharmacokinetic (PK), pharmacodynamic (PD) and pharmacogenomic (PGx)** knowledge base extracted from the published literature
+Literature-derived **pharmacokinetic (PK), pharmacodynamic (PD), and pharmacogenomic (PGx)** knowledge base.
 
-## What you will find here
+## Contents
 
-- **A page per drug.** Identity (ATC codes, synonyms, brands, DrugBank/PharmGKB ids, EU market
-  status), then the records extracted for it.
-- **Population-PK records** — clearance, volumes, intercompartmental clearance, absorption,
-  their units and canonical SI values, the covariate model, and the variability terms, each row
-  carrying the label as printed in the paper and how it was matched to the parameter ontology.
-- **PD records** — the exposure–response model: family (sigmoid Emax, indirect turnover …),
-  the driver it is fitted against, the biomarker, and the parameters.
-- **PGx records** — the gene, the phenotype, the parameter it shifts, and by how much.
-- **Downloadable models.** Where the parameters supported one, the record page's *Models* tab
-  offers the same model as Modelica, MATLAB (plain and SimBiology), SBML and CellML — each
-  archive holding the model source, a script that simulates it, and a README.
-  **Simulation**
-- **Toxins.** (in construction) - the same pipeline applied to toxicokinetics and toxicodynamics, listed separately
-  in the sidebar because a toxin has no ATC code and the question asked of it is exposure
-  rather than therapy.
+- **Drug profiles:** identifiers, ATC classification, synonyms, brands, EU regulatory status,
+  and extracted records.
+- **Population PK:** disposition and absorption parameters, source units, SI-normalised values,
+  covariate relationships, and interindividual variability.
+- **PD:** exposure–response models, biomarkers, drivers, and parameter estimates.
+- **PGx:** genotype or phenotype effects on PK/PD parameters and adverse-reaction risk.
+- **Models:** Modelica, MATLAB, SimBiology, SBML, CellML, and FMI downloads where available;
+  each archive includes source code, a simulation script, and documentation.
+- **Simulation:** browser-based simulations for supported models.
+- **Toxicology:** toxicokinetic and toxicodynamic records, listed separately from drugs.
+  Coverage is under development.
 
-## Where the numbers come from
+## Data provenance
 
-Each drug's literature is retrieved from PubMed, full text is fetched where it is openly
-available, and every paper passes through a fixed sequence of stages — *relevance → screen →
-locate → transcribe → interpret → validate*. Values are read from the paper's own tables rather
-than summarised, then checked for internal consistency (does the reported clearance agree with
-volume and half-life?) and plausibility before a record is accepted.
+Literature is retrieved from PubMed and available full-text sources. Extraction follows
+*relevance assessment → screening → localisation → transcription → interpretation → validation*.
+Parameter estimates retain source labels and units and undergo consistency and plausibility checks.
 
-Nothing here is hand-typed, and nothing is invented: a value that could not be traced to a
-table, or that failed its checks, is marked. The status badge on every record says which it is.
+Status badges indicate curation, validation, and review outcomes. Source references,
+inferred values, and secondary-source substitutions are identified in each record.
 
-| badge | meaning |
+| Status | Definition |
 |---|---|
-| **curated** | a human authored or confirmed these values |
-| **extracted** | the pipeline accepted the record and its checks passed |
-| **needs review** | extracted, but a check failed or a value looks implausible |
-| **rejected** | the record was not accepted; values are suppressed |
-| **stale** | the reviewer's verdict predates the latest re-run of the paper |
+| **curated** | Human-authored or verified reference record |
+| **extracted** | Accepted extraction with applicable validation checks passed |
+| **needs review** | Incomplete, inconsistent, or unresolved extraction |
+| **rejected** | Unaccepted record; displayed values remain unverified |
+| **stale** | Review predates the current extraction |
 
-Each record page has three tabs: **Information** (the parameters and their provenance),
-**Models** (the downloadable bundles), and **Simulation** (an in-browser run).
+Record tabs: **Information** (parameters and provenance), **Models** (downloads), and
+**Simulation** (browser-based execution).
 
-## Please read this before using a value
+## Limitations
 
-These records are a **machine extraction of published parameters**, useful as a starting point
-and as a map of what the literature reports. They are not clinically validated, not a
-substitute for the primary paper, and not medical advice. Every page links its source: check
-there before relying on a number.
+These machine-extracted records are research resources, not clinically validated models
+or medical advice. Verify estimates and model assumptions against the cited primary sources.
