@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Luaces-Rodríguez A et al., PET study of ocular and blood pharmacok…, European journal of pharmac… (2020)
   ·  DOI: [10.1016/j.ejpb.2020.06.024](https://doi.org/10.1016/j.ejpb.2020.06.024)
 
-## Model component
-<dbs-pgx drug="aflibercept" model-id="Aflibercept_LuacesRodrguez2020_89_zr_bevacizumab_89_zr_aflib" status="rejected" stale="false" population="rats" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aflibercept" model-id="Aflibercept_LuacesRodrguez2020_89_zr_bevacizumab_89_zr_aflib" status="rejected" stale="false" population="rats" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

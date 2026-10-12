@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Weatherley B et al., Maraviroc modelling strategy: use of ea…, British journal of clinical… (2009)
   ·  DOI: [10.1111/j.1365-2125.2009.03455.x](https://doi.org/10.1111/j.1365-2125.2009.03455.x)
 
-## Model component
-<dbs-pgx drug="maraviroc" model-id="Maraviroc_Weatherley2009_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="maraviroc" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="maraviroc" model-id="Maraviroc_Weatherley2009_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="maraviroc" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

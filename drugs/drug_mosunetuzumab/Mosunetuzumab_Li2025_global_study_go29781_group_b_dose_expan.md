@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Li J et al., Ethnic Sensitivity Assessment of Mosune…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70211](https://doi.org/10.1111/cts.70211)
 
-## Model component
-<dbs-pgx drug="mosunetuzumab" model-id="Mosunetuzumab_Li2025_global_study_go29781_group_b_dose_expan" status="needs_review" stale="false" population="Chinese patients with relapsed or refractory follicular lymphoma" measured-compound="mosunetuzumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mosunetuzumab" model-id="Mosunetuzumab_Li2025_global_study_go29781_group_b_dose_expan" status="needs_review" stale="false" population="Chinese patients with relapsed or refractory follicular lymphoma" measured-compound="mosunetuzumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

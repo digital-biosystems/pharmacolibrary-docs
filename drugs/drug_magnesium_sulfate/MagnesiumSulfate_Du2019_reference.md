@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Du L et al., Population Pharmacokinetic Modeling to…, Journal of clinical pharmac… (2019)
   ·  DOI: [10.1002/jcph.1328](https://doi.org/10.1002/jcph.1328)
 
-## Model component
-<dbs-pgx drug="magnesium sulfate" model-id="MagnesiumSulfate_Du2019_reference" status="model_quarantined" stale="false" population="pregnant women with preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_Du2019_reference" status="model_quarantined" stale="false" population="pregnant women with preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted, plus 3 covariate effects.
@@ -147,12 +146,12 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference/MagnesiumSulfate_Du2019_reference_matlab.zip" download>MagnesiumSulfate_Du2019_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference/MagnesiumSulfate_Du2019_reference_matlab_simbio.zip" download>MagnesiumSulfate_Du2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference/MagnesiumSulfate_Du2019_reference_sbml.zip" download>MagnesiumSulfate_Du2019_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference/MagnesiumSulfate_Du2019_reference_cellml.zip" download>MagnesiumSulfate_Du2019_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

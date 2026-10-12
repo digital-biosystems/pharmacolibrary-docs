@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Ruan Y et al., Pharmacokinetics of insulin lispro in t…, Computer methods and progra… (2014)
   ·  DOI: [10.1016/j.cmpb.2014.07.004](https://doi.org/10.1016/j.cmpb.2014.07.004)
 
-## Model component
-<dbs-pgx drug="insulin lispro" model-id="InsulinLispro_Ruan2014_reference" status="rejected" stale="true" population="type 2 diabetes" measured-compound="insulin_lispro" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="insulin lispro" model-id="InsulinLispro_Ruan2014_reference" status="rejected" stale="true" population="type 2 diabetes" measured-compound="insulin_lispro" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss-120b`.
 Karlsson MO et al., Population pharmacokinetics of rectal t…, Therapeutic drug monitoring (1991)
   ·  DOI: [10.1097/00007691-199105000-00002](https://doi.org/10.1097/00007691-199105000-00002)
 
-## Model component
-<dbs-pgx drug="aminophylline" model-id="Aminophylline_Karlsson1991_reference" status="rejected" stale="false" population="neonates with apnoea of prematurity" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Karlsson1991_reference" status="rejected" stale="false" population="neonates with apnoea of prematurity" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Pitsiu M et al., Retrospective population pharmacokineti…, British journal of clinical… (2004)
   ·  DOI: [10.1046/j.1365-2125.2003.02017.x](https://doi.org/10.1046/j.1365-2125.2003.02017.x)
 
-## Model component
-<dbs-pgx drug="cetirizine" model-id="Cetirizine_Pitsiu2004_reference" status="rejected" stale="false" population="children aged 6 months to 12 years" measured-compound="cetirizine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cetirizine" model-id="Cetirizine_Pitsiu2004_reference" status="rejected" stale="false" population="children aged 6 months to 12 years" measured-compound="cetirizine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

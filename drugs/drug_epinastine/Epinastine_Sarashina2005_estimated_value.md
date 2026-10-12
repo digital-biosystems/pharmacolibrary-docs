@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Sarashina A et al., Population pharmacokinetics of epinasti…, British journal of clinical… (2005)
   ·  DOI: [10.1111/j.1365-2125.2005.2250](https://doi.org/10.1111/j.1365-2125.2005.2250)
 
-## Model component
-<dbs-pgx drug="epinastine" model-id="Epinastine_Sarashina2005_estimated_value" status="rejected" stale="false" population="healthy adults and paediatric atopic dermatitis patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="epinastine" model-id="Epinastine_Sarashina2005_estimated_value" status="rejected" stale="false" population="healthy adults and paediatric atopic dermatitis patients" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

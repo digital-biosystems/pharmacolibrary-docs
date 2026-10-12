@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Baldwin JR et al., Dose-independent pharmacokinetics of th…, Biopharmaceutics & drug dis… (1996)
   ·  DOI: [10.1002/(SICI)1099-081X(199608)17:6<541::AID-BDD975>3.0.CO;2-5](https://doi.org/10.1002/(SICI)1099-081X(199608)17:6<541::AID-BDD975>3.0.CO;2-5)
 
-## Model component
-<dbs-pgx drug="dexrazoxane" model-id="Dexrazoxane_Baldwin1996_reference" status="rejected" stale="false" population="male beagle dogs" measured-compound="dexrazoxane" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dexrazoxane" model-id="Dexrazoxane_Baldwin1996_reference" status="rejected" stale="false" population="male beagle dogs" measured-compound="dexrazoxane" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

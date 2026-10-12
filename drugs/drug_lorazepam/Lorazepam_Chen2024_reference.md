@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Chen X et al., The effect of zopiclone co-administrati…, Frontiers in pharmacology (2024)
   ·  DOI: [10.3389/fphar.2024.1470865](https://doi.org/10.3389/fphar.2024.1470865)
 
-## Model component
-<dbs-pgx drug="lorazepam" model-id="Lorazepam_Chen2024_reference" status="curated_candidate" stale="false" population="" measured-compound="lorazepam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Chen2024_reference" status="curated_candidate" stale="false" population="" measured-compound="lorazepam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

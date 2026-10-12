@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Stillemans G et al., Atorvastatin population pharmacokinetic…, Clinical and translational… (2022)
   ·  DOI: [10.1111/cts.13185](https://doi.org/10.1111/cts.13185)
 
-## Model component
-<dbs-pgx drug="atorvastatin" model-id="Atorvastatin_Stillemans2022_reference" status="needs_review" stale="true" population="ambulatory patients at risk of cardiovascular disease" measured-compound="atorvastatin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atorvastatin" model-id="Atorvastatin_Stillemans2022_reference" status="needs_review" stale="true" population="ambulatory patients at risk of cardiovascular disease" measured-compound="atorvastatin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

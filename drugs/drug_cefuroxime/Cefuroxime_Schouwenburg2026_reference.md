@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Schouwenburg S et al., Low Target Attainment of Intravenous Ce…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-025-01577-2](https://doi.org/10.1007/s40262-025-01577-2)
 
-## Model component
-<dbs-pgx drug="cefuroxime" model-id="Cefuroxime_Schouwenburg2026_reference" status="model_quarantined" stale="false" population="critically ill term neonates and children" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Schouwenburg2026_reference" status="model_quarantined" stale="false" population="critically ill term neonates and children" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 0 extracted.

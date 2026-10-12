@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Zhang C et al., Drug-drug interaction of paroxetine on…, Frontiers in psychiatry (2025)
   ·  DOI: [10.3389/fpsyt.2025.1538996](https://doi.org/10.3389/fpsyt.2025.1538996)
 
-## Model component
-<dbs-pgx drug="buspirone" model-id="Buspirone_Zhang2025v2_reference" status="curated_candidate" stale="false" population="" measured-compound="buspirone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="buspirone" model-id="Buspirone_Zhang2025v2_reference" status="curated_candidate" stale="false" population="" measured-compound="buspirone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

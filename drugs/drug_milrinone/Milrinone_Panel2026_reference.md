@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Panel N et al., Docking of virtual libraries identifies…, Nature communications (2026)
   ·  DOI: [10.1038/s41467-026-74990-1](https://doi.org/10.1038/s41467-026-74990-1)
 
-## Model component
-<dbs-pgx drug="milrinone" model-id="Milrinone_Panel2026_reference" status="curated_candidate" stale="false" population="" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="milrinone" model-id="Milrinone_Panel2026_reference" status="curated_candidate" stale="false" population="" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

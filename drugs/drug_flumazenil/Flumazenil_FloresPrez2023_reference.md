@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Flores-Pérez C et al., Pharmacokinetic-Pharmacodynamic Modelin…, Pharmaceutics (2023)
   ·  DOI: [10.3390/pharmaceutics15112565](https://doi.org/10.3390/pharmaceutics15112565)
 
-## Model component
-<dbs-pgx drug="flumazenil" model-id="Flumazenil_FloresPrez2023_reference" status="rejected" stale="false" population="" measured-compound="flumazenil" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flumazenil" model-id="Flumazenil_FloresPrez2023_reference" status="rejected" stale="false" population="" measured-compound="flumazenil" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

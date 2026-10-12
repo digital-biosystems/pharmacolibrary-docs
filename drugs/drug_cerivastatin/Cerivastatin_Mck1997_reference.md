@@ -23,8 +23,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Citation
 Mück W et al., Absolute and relative bioavailability o…, International journal of cl… (1997)
 
-## Model component
-<dbs-pgx drug="cerivastatin" model-id="Cerivastatin_Mck1997_reference" status="needs_review" stale="false" population="healthy young male volunteers" measured-compound="cerivastatin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cerivastatin" model-id="Cerivastatin_Mck1997_reference" status="needs_review" stale="false" population="healthy young male volunteers" measured-compound="cerivastatin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

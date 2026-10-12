@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Sundell J et al., Population Pharmacokinetics and Pharmac…, Antimicrobial agents and ch… (2020)
   ·  DOI: [10.1128/AAC.01583-19](https://doi.org/10.1128/AAC.01583-19)
 
-## Model component
-<dbs-pgx drug="ethambutol" model-id="Ethambutol_Sundell2020_reference" status="curated_candidate" stale="false" population="adult patients coinfected with tuberculosis and HIV" measured-compound="ethambutol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ethambutol" model-id="Ethambutol_Sundell2020_reference" status="curated_candidate" stale="false" population="adult patients coinfected with tuberculosis and HIV" measured-compound="ethambutol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

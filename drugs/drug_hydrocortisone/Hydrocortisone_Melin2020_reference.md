@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavai
 Melin J et al., Pharmacokinetic/Pharmacodynamic Evaluat…, The Journal of clinical end… (2020)
   ·  DOI: [10.1210/clinem/dgaa071](https://doi.org/10.1210/clinem/dgaa071)
 
-## Model component
-<dbs-pgx drug="hydrocortisone" model-id="Hydrocortisone_Melin2020_reference" status="rejected" stale="false" population="pediatric patients with congenital adrenal hyperplasia" measured-compound="cortisol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydrocortisone" model-id="Hydrocortisone_Melin2020_reference" status="rejected" stale="false" population="pediatric patients with congenital adrenal hyperplasia" measured-compound="cortisol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

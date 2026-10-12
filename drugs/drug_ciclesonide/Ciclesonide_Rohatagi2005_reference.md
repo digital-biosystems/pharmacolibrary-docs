@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Rohatagi S et al., Model-based covariate pharmacokinetic a…, American journal of therape… (2005)
   ·  DOI: [10.1097/01.mjt.0000155110.69831.75](https://doi.org/10.1097/01.mjt.0000155110.69831.75)
 
-## Model component
-<dbs-pgx drug="ciclesonide" model-id="Ciclesonide_Rohatagi2005_reference" status="model_quarantined" stale="false" population="adults and children with asthma (phase I and III studies)" measured-compound="des-CIC" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciclesonide" model-id="Ciclesonide_Rohatagi2005_reference" status="model_quarantined" stale="false" population="adults and children with asthma (phase I and III studies)" measured-compound="des-CIC" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

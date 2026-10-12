@@ -27,8 +27,7 @@ A reported unit could not be converted (equation variable), so that value has no
 Muangkasem A et al., Dosage Regimen Optimization of Ertapene…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70274](https://doi.org/10.1111/cts.70274)
 
-## Model component
-<dbs-pgx drug="ertapenem" model-id="Ertapenem_Muangkasem2025_reference" status="curated_candidate" stale="false" population="critically ill patients" measured-compound="ertapenem" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Muangkasem2025_reference" status="curated_candidate" stale="false" population="critically ill patients" measured-compound="ertapenem" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

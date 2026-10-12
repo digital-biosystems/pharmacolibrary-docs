@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Kakuda TN et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (2010)
   ·  DOI: [10.1038/clpt.2010.181](https://doi.org/10.1038/clpt.2010.181)
 
-## Model component
-<dbs-pgx drug="etravirine" model-id="Etravirine_Kakuda2010_reference" status="rejected" stale="false" population="treatment-experienced HIV-1-infected patients" measured-compound="etravirine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etravirine" model-id="Etravirine_Kakuda2010_reference" status="rejected" stale="false" population="treatment-experienced HIV-1-infected patients" measured-compound="etravirine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

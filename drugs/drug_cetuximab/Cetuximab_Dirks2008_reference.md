@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Dirks NL et al., Population pharmacokinetics of cetuxima…, Journal of clinical pharmac… (2008)
   ·  DOI: [10.1177/0091270007313393](https://doi.org/10.1177/0091270007313393)
 
-## Model component
-<dbs-pgx drug="cetuximab" model-id="Cetuximab_Dirks2008_reference" status="rejected" stale="false" population="patients with recurrent and/or metastatic squamous cell carcinoma of the head and neck" measured-compound="cetuximab" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Dirks2008_reference" status="rejected" stale="false" population="patients with recurrent and/or metastatic squamous cell carcinoma of the head and neck" measured-compound="cetuximab" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

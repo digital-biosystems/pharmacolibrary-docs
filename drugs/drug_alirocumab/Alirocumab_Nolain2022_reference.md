@@ -24,8 +24,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Nolain P et al., Combined Semi-mechanistic Target-Mediat…, European journal of drug me… (2022)
   ·  DOI: [10.1007/s13318-022-00787-4](https://doi.org/10.1007/s13318-022-00787-4)
 
-## Model component
-<dbs-pgx drug="alirocumab" model-id="Alirocumab_Nolain2022_reference" status="needs_review" stale="false" population="adults with cardiovascular risk" measured-compound="alirocumab" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alirocumab" model-id="Alirocumab_Nolain2022_reference" status="needs_review" stale="false" population="adults with cardiovascular risk" measured-compound="alirocumab" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 6 extracted.

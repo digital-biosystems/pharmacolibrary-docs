@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 ## Citation
 Aso R et al., Population pharmacokinetics, protein bi…, International journal of cl… (2001)
 
-## Model component
-<dbs-pgx drug="disopyramide" model-id="Disopyramide_Aso2001_s_dp" status="needs_review" stale="false" population="adults with arrhythmia" measured-compound="disopyramide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="disopyramide" model-id="Disopyramide_Aso2001_s_dp" status="needs_review" stale="false" population="adults with arrhythmia" measured-compound="disopyramide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

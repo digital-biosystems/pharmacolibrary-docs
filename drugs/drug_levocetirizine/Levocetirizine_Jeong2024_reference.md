@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Jeong SH et al., Is Gender an Important Factor in the Pr…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16010146](https://doi.org/10.3390/pharmaceutics16010146)
 
-## Model component
-<dbs-pgx drug="levocetirizine" model-id="Levocetirizine_Jeong2024_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="levocetirizine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levocetirizine" model-id="Levocetirizine_Jeong2024_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="levocetirizine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Modr Z et al., [Pharmacokinetics and dosage of mezloci…, Infection 10 Suppl (1982)
   ·  DOI: [10.1007/BF01640669](https://doi.org/10.1007/BF01640669)
 
-## Model component
-<dbs-pgx drug="mezlocillin" model-id="Mezlocillin_Modr1982_reference" status="curated_candidate" stale="false" population="healthy adults" measured-compound="mezlocillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mezlocillin" model-id="Mezlocillin_Modr1982_reference" status="curated_candidate" stale="false" population="healthy adults" measured-compound="mezlocillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

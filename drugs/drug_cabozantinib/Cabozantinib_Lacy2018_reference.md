@@ -27,8 +27,7 @@ Independently confirmed by `qwen3.8-27b`.
 Lacy S et al., A population pharmacokinetic model of c…, Cancer chemotherapy and pha… (2018)
   ·  DOI: [10.1007/s00280-018-3581-0](https://doi.org/10.1007/s00280-018-3581-0)
 
-## Model component
-<dbs-pgx drug="cabozantinib" model-id="Cabozantinib_Lacy2018_reference" status="curated_candidate" stale="false" population="healthy volunteers and patients with various cancer types" measured-compound="cabozantinib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cabozantinib" model-id="Cabozantinib_Lacy2018_reference" status="curated_candidate" stale="false" population="healthy volunteers and patients with various cancer types" measured-compound="cabozantinib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

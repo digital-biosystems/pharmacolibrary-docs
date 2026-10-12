@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Simons FE, Population pharmacokinetics of levoceti…, Pediatric allergy and immun… (2005)
   ·  DOI: [10.1111/j.1399-3038.2005.00240.x](https://doi.org/10.1111/j.1399-3038.2005.00240.x)
 
-## Model component
-<dbs-pgx drug="levocetirizine" model-id="Levocetirizine_Simons2005_reference" status="rejected" stale="false" population="very young children" measured-compound="levocetirizine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levocetirizine" model-id="Levocetirizine_Simons2005_reference" status="rejected" stale="false" population="very young children" measured-compound="levocetirizine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Völler S et al., Pharmacokinetics of recombinant asparag…, Cancer chemotherapy and pha… (2018)
   ·  DOI: [10.1007/s00280-017-3492-5](https://doi.org/10.1007/s00280-017-3492-5)
 
-## Model component
-<dbs-pgx drug="asparaginase" model-id="Asparaginase_Vller2018_reference" status="rejected" stale="false" population="children with acute lymphoblastic leukemia" measured-compound="recombinant asparaginase" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Vller2018_reference" status="rejected" stale="false" population="children with acute lymphoblastic leukemia" measured-compound="recombinant asparaginase" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

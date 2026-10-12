@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Fayed MS et al., Population Pharmacokinetic Model of N-A…, Clinical pharmacology in dr… (2023)
   ·  DOI: [10.1002/cpdd.1338](https://doi.org/10.1002/cpdd.1338)
 
-## Model component
-<dbs-pgx drug="acetylcysteine" model-id="Acetylcysteine_Fayed2023_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="N-acetylcysteine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acetylcysteine" model-id="Acetylcysteine_Fayed2023_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="N-acetylcysteine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

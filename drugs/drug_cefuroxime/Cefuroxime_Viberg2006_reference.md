@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Viberg A et al., A population pharmacokinetic model for…, British journal of clinical… (2006)
   ·  DOI: [10.1111/j.1365-2125.2006.02652.x](https://doi.org/10.1111/j.1365-2125.2006.02652.x)
 
-## Model component
-<dbs-pgx drug="cefuroxime" model-id="Cefuroxime_Viberg2006_reference" status="needs_review" stale="false" population="adult patients with renal impairment" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Viberg2006_reference" status="needs_review" stale="false" population="adult patients with renal impairment" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

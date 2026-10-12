@@ -29,8 +29,7 @@ Independently confirmed by `qwen3.8-27b`.
 de Jongh FE et al., Population pharmacokinetics of cisplati…, Cancer chemotherapy and pha… (2004)
   ·  DOI: [10.1007/s00280-004-0790-5](https://doi.org/10.1007/s00280-004-0790-5)
 
-## Model component
-<dbs-pgx drug="cisplatin" model-id="Cisplatin_de2004_reference" status="rejected" stale="false" population="adult cancer patients" measured-compound="cisplatin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_de2004_reference" status="rejected" stale="false" population="adult cancer patients" measured-compound="cisplatin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

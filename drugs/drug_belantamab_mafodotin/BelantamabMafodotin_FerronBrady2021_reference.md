@@ -28,8 +28,7 @@ Independently confirmed by `qwen3.8-27b`.
 Ferron-Brady G et al., Exposure-Response Analyses for Therapeu…, Clinical pharmacology and t… (2021)
   ·  DOI: [10.1002/cpt.2409](https://doi.org/10.1002/cpt.2409)
 
-## Model component
-<dbs-pgx drug="belantamab mafodotin" model-id="BelantamabMafodotin_FerronBrady2021_reference" status="not_modelled" stale="false" population="patients with relapsed/refractory multiple myeloma" measured-compound="belantamab_mafodotin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="belantamab mafodotin" model-id="BelantamabMafodotin_FerronBrady2021_reference" status="not_modelled" stale="false" population="patients with relapsed/refractory multiple myeloma" measured-compound="belantamab_mafodotin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Werumeus Buning J et al., Pharmacokinetics of oral hydrocortisone…, Metabolism: clinical and ex… (2017)
   ·  DOI: [10.1016/j.metabol.2017.02.005](https://doi.org/10.1016/j.metabol.2017.02.005)
 
-## Model component
-<dbs-pgx drug="hydrocortisone" model-id="Hydrocortisone_Werumeus2017_reference" status="rejected" stale="true" population="adults with secondary adrenal insufficiency" measured-compound="cortisol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydrocortisone" model-id="Hydrocortisone_Werumeus2017_reference" status="rejected" stale="true" population="adults with secondary adrenal insufficiency" measured-compound="cortisol" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

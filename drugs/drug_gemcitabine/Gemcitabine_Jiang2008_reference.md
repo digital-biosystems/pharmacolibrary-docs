@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Jiang X et al., Population pharmacokinetics of gemcitab…, British journal of clinical… (2008)
   ·  DOI: [10.1111/j.1365-2125.2007.03040.x](https://doi.org/10.1111/j.1365-2125.2007.03040.x)
 
-## Model component
-<dbs-pgx drug="gemcitabine" model-id="Gemcitabine_Jiang2008_reference" status="rejected" stale="false" population="patients with cancer" measured-compound="gemcitabine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gemcitabine" model-id="Gemcitabine_Jiang2008_reference" status="rejected" stale="false" population="patients with cancer" measured-compound="gemcitabine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

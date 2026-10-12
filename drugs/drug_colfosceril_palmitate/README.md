@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Berry_1994_alveolar_arterial_oxygen_gradient](drugs/drug_colfosceril_palmitate/pd_Berry_1994_alveolar_arterial_oxygen_gradient.md) | alveolar-arterial oxygen gradient biomarker turnover ← colfosceril_palmitate | — | Berry DD et al., Comparison of the effect of three doses…, The Journal of pediatrics (1994) | [10.1016/s0022-3476(94)70323-x](https://doi.org/10.1016/s0022-3476(94)70323-x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Zhang_2025_NP_RNA](drugs/drug_pixantrone/pd_Zhang_2025_NP_RNA.md) | SARS-CoV-2 nucleocapsid-RNA interactions ← pixantrone · inhibition effect | — | Zhang DW et al., Mechanism-informed identification of FD…, BMC chemistry (2025) | [10.1186/s13065-025-01689-7](https://doi.org/10.1186/s13065-025-01689-7) |
 
 ## ADME sites
 

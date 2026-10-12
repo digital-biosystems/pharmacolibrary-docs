@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Wang C et al., Long-Acting HIV-1 Fusion Inhibitory Pep…, Viruses (2019)
   ·  DOI: [10.3390/v11090811](https://doi.org/10.3390/v11090811)
 
-## Model component
-<dbs-pgx drug="enfuvirtide" model-id="Enfuvirtide_Wang2019_reference" status="needs_review" stale="false" population="" measured-compound="enfuvirtide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enfuvirtide" model-id="Enfuvirtide_Wang2019_reference" status="needs_review" stale="false" population="" measured-compound="enfuvirtide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

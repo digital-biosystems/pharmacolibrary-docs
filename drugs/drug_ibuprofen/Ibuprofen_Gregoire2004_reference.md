@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Gregoire N et al., Population pharmacokinetics of ibuprofe…, Journal of clinical pharmac… (2004)
   ·  DOI: [10.1177/0091270004268320](https://doi.org/10.1177/0091270004268320)
 
-## Model component
-<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Gregoire2004_reference" status="needs_review" stale="true" population="very premature neonates" measured-compound="R-ibuprofen, S-ibuprofen" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Gregoire2004_reference" status="needs_review" stale="true" population="very premature neonates" measured-compound="R-ibuprofen, S-ibuprofen" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.

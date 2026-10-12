@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Zhang C et al., Pharmacokinetic, Pharmacokinetic/Pharma…, Advances in therapy (2025)
   ·  DOI: [10.1007/s12325-025-03147-1](https://doi.org/10.1007/s12325-025-03147-1)
 
-## Model component
-<dbs-pgx drug="cefiderocol" model-id="Cefiderocol_Zhang2025_reference" status="curated_candidate" stale="false" population="" measured-compound="cefiderocol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefiderocol" model-id="Cefiderocol_Zhang2025_reference" status="curated_candidate" stale="false" population="" measured-compound="cefiderocol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

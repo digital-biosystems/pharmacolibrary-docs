@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Nguyen L et al., Population pharmacokinetics of total an…, Cancer chemotherapy and pha… (1998)
   ·  DOI: [10.1007/s002800050718](https://doi.org/10.1007/s002800050718)
 
-## Model component
-<dbs-pgx drug="etoposide" model-id="Etoposide_Nguyen1998_reference" status="rejected" stale="false" population="cancer patients" measured-compound="etoposide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etoposide" model-id="Etoposide_Nguyen1998_reference" status="rejected" stale="false" population="cancer patients" measured-compound="etoposide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

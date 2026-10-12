@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 Fukaya Y et al., Development of a population pharmacokin…, Frontiers in oncology (2023)
   ·  DOI: [10.3389/fonc.2023.1003633](https://doi.org/10.3389/fonc.2023.1003633)
 
-## Model component
-<dbs-pgx drug="glucarpidase" model-id="Glucarpidase_Fukaya2023_original_estimate" status="rejected" stale="false" population="healthy volunteers and patients with delayed MTX excretion after high-dose methotrexate" measured-compound="methotrexate" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glucarpidase" model-id="Glucarpidase_Fukaya2023_original_estimate" status="rejected" stale="false" population="healthy volunteers and patients with delayed MTX excretion after high-dose methotrexate" measured-compound="methotrexate" parameterization="mechanistic" topology="manual_model_class"></div>
 
 **Model structure:** nonlinear / manual; no model was built for this record.  
 **Parameters:** 4 extracted, plus 3 covariate effects.

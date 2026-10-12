@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Citation
 Jermain DM et al., Population pharmacokinetics of lithium, Clinical pharmacy (1991)
 
-## Model component
-<dbs-pgx drug="lithium" model-id="Lithium_Jermain1991_reference" status="needs_review" stale="false" population="psychiatric inpatients receiving lithium" measured-compound="lithium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Jermain1991_reference" status="needs_review" stale="false" population="psychiatric inpatients receiving lithium" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

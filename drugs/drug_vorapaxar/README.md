@@ -1,0 +1,145 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;vorapaxar&quot;}]"></div>
+
+# vorapaxar
+
+- **generic name:** vorapaxar
+- **ATC codes:** `B01AC26`
+- **DrugBank:** [DB09030](https://go.drugbank.com/drugs/DB09030) · **PubChem:** [CID 10077130](https://pubchem.ncbi.nlm.nih.gov/compound/10077130)
+- **molar mass:** 492.5817 g/mol (C29H33FN2O4) — DrugBank
+- **groups:** approved
+
+## About
+
+Vorapaxar is a platelet aggregation inhibitor used to reduce the risk of cardiovascular events in patients who have had a myocardial infarction. It is an approved medicine, though its marketing authorisation in the European Union has been withdrawn, so its use is now limited to other regions.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7941753](https://www.wikidata.org/wiki/Q7941753) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 17:11 | 2:31 | 0/0/0 | 1/0/0 | 0/0/0 | 107,059/1,667 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/8 | 6/0 | 0 |
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Zhou_2025_FOXO1](drugs/drug_vorapaxar/pd_Zhou_2025_FOXO1.md) | FOXO1 biomarker turnover ← vorapaxar | — | Zhou Q et al., Vorapaxar enhanced mitochondria-associa…, Cell reports. Medicine (2025) | [10.1016/j.xcrm.2025.102371](https://doi.org/10.1016/j.xcrm.2025.102371) |
+
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=vorapaxar) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` unknown | DrugBank actor |
+| absorption | kidney | `ABCB1` unknown | DrugBank actor |
+| absorption | liver | `ABCB1` unknown | DrugBank actor |
+| absorption | placenta | `ABCB1` unknown | DrugBank actor |
+| absorption | small intestine | `ABCB1` unknown | DrugBank actor |
+| absorption | testis | `ABCB1` unknown | DrugBank actor |
+| metabolism | heart | `CYP2J2` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP2J2` substrate, `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+
+<sub>Actors without a tissue in the table: F2R (target).</sub>
+
+<details class="legend">
+<summary>Badge legend — what each badge means</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 48 matched, 45 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full text wanted
+
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Komatsu_2023.pdf` | Komatsu H et al., Identification of SARS-CoV-2 main prote…, Journal of biomolecular str… (2023) | pd | 4 | [10.1080/07391102.2021.2024260](https://doi.org/10.1080/07391102.2021.2024260) | [34984963](https://www.ncbi.nlm.nih.gov/pubmed/34984963) | metadata signals extractable PD data (EC50) |
+| `Kosoglou_2013.pdf` | Kosoglou T et al., The effect of multiple doses of ketocon…, Journal of clinical pharmac… (2013) | pgx | 7 | [10.1002/jcph.20](https://doi.org/10.1002/jcph.20) | [23426761](https://www.ncbi.nlm.nih.gov/pubmed/23426761) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+
+<sub>queue written 2026-10-05T17:09:41.618201+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Alexopoulos_2018 | irrelevant | 0 | 0 | The paper is a clinical review of combination antiplatelet therapy and does not report any pharmacokinetic parameters for vorapaxar. |
+| PD | Alexopoulos_2018 | not_relevant | 1 | 0 | The text is a qualitative review of combination antiplatelet therapy and mentions vorapaxar only in the context of bleeding risk and general efficacy, without providing any numeric PD parameters, concentration-effect curves, or dose-response data. |
+| popPK | Alexopoulos_2018_2 | irrelevant | 0 | 0 | The paper is a review of platelet reactivity and anti-platelet therapy strategies, mentioning vorapaxar only as a clinical agent without reporting any pharmacokinetic parameters. |
+| PD | Alexopoulos_2018_2 | not_relevant | 1 | 0 | The text is a qualitative introduction/review discussing the role of vorapaxar in PCI without reporting any specific numeric PD parameters, concentration-effect curves, or dose-response data. |
+| popPK | Chaudhary_2021 | irrelevant | 1 | 0 | The paper is a review article summarizing literature on vorapaxar, and the provided evidence contains no original quantitative pharmacokinetic parameter values. |
+| PD | Chaudhary_2021 | not_relevant | 2 | 0 | The text is a review summary that mentions pharmacodynamics and clinical efficacy but does not provide specific numeric PD parameters (e.g., Emax, EC50) or detailed concentration-effect data for vorapaxar. |
+| popPK | Cheng_2015 | irrelevant | 1 | 0 | The paper is a narrative review of clinical efficacy and safety without original quantitative pharmacokinetic parameter values. |
+| PD | Cheng_2015 | not_relevant | 1 | 0 | The text is a narrative review summarizing clinical trial outcomes and safety profiles, but it does not report specific numeric pharmacodynamic parameters (e.g., Emax, EC50) or detailed exposure-response data for vorapaxar. |
+| PGx | Chew_2012 | not_relevant | 0 | 0 | The paper is a general review of antiplatelet therapy and does not report specific pharmacogenomic effects on vorapaxar PK/PD parameters. |
+| PGx | Coccheri_2012 | not_relevant | 0 | 0 | The paper is a general review of antiplatelet therapy that mentions vorapaxar only in the context of overcoming resistance, without reporting any specific pharmacogenomic effects on its PK or PD parameters. |
+| popPK | DAmico_2026 | irrelevant | 0 | 0 | The study is a pharmacovigilance analysis of drug-drug interactions for bleeding risk in nursing home residents and does not report any pharmacokinetic parameters for vorapaxar. |
+| PD | DAmico_2026 | not_relevant | 0 | 0 | The paper is a pharmacoepidemiological study using claims data to screen for drug-drug interaction signals (rate ratios) and does not contain any pharmacokinetic or pharmacodynamic modeling, concentration-effect data, or numeric PD parameters for vorapaxar. |
+| PGx | Dash_2015 | not_relevant | 0 | 0 | The paper is a general review of antiplatelet therapy that mentions vorapaxar's clinical trial outcomes (TRACER) but does not report any pharmacogenomic effects on its PK or PD parameters. |
+| popPK | Fan_2020 | irrelevant | 1 | 0 | The paper is a medicinal chemistry study on vorapaxar analogues that mentions PK profiles qualitatively but does not report quantitative PK parameters for vorapaxar itself. |
+| PD | Fan_2020 | not_relevant | 3 | 2 | The paper reports IC50 values for vorapaxar and analogues in an in vitro assay, which is a potency metric, but does not provide an exposure-response or dose-response curve, Emax, or PK/PD model parameters for the drug in vivo or as a dynamic relationship. |
+| popPK | Franchi_2019 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of vorapaxar's effect on platelet aggregation and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Franchi_2020 | irrelevant | 0 | 0 | The study reports pharmacodynamic effects (platelet aggregation) rather than pharmacokinetic parameters (CL, V, ka, etc.) for vorapaxar. |
+| popPK | Ghosal_2011 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of CYP450 enzymes involved in vorapaxar metabolism and does not report quantitative pharmacokinetic disposition parameters (e.g., CL, V, ka). |
+| PD | Ghosal_2011 | not_relevant | 0 | 0 | The paper focuses on in vitro metabolic identification of CYP enzymes and does not report any pharmacodynamic or exposure-response data for vorapaxar. |
+| PGx | Ghosal_2011 | not_relevant | 0 | 0 | The paper identifies the CYP enzymes responsible for vorapaxar metabolism but does not report any pharmacogenomic effects (gene variant/genotype) on PK or PD parameters. |
+| popPK | Hrubša_2026 | irrelevant | 0 | 0 | The study is an ex vivo platelet function assay using vorapaxar as a pharmacological inducer, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Jeon_2026 | irrelevant | 0 | 0 | The study focuses on the mechanism of action of gestodene as a PAR1 modulator, using vorapaxar only as a pharmacological inhibitor for validation, and contains no pharmacokinetic data for vorapaxar. |
+| PD | Jeon_2026 | not_relevant | 0 | 0 | The paper focuses on the pharmacology of gestodene as a PAR1 PAM; vorapaxar is used only as a qualitative pharmacological inhibitor to confirm mechanism, with no exposure-response or dose-response analysis or numeric PD parameters reported for vorapaxar. |
+| popPK | Knight_2016 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study describing the synthesis and in-vitro biological potency (IC50) of vorapaxar analogues, containing no pharmacokinetic disposition parameters. |
+| PD | Knight_2016 | not_relevant | 2 | 2 | The paper reports in vitro IC50 values for analogues, which are potency metrics, but does not provide a pharmacodynamic exposure-response model, dose-effect curve, or PK/PD analysis for vorapaxar. |
+| popPK | Komatsu_2023 | irrelevant | 0 | 0 | The paper reports in vitro binding affinity (Kd) and antiviral activity (EC50) of vorapaxar against SARS-CoV-2, not pharmacokinetic disposition parameters. |
+| popPK | Kosoglou_2012 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of warfarin (the subject drug) to assess drug-drug interactions, and does not report quantitative disposition parameters for vorapaxar. |
+| PD | Kosoglou_2012 | not_relevant | 0 | 0 | The study assesses the effect of vorapaxar on warfarin PK/PD (drug interaction) rather than characterizing the exposure-response relationship of vorapaxar itself, and no numeric PD parameters for vorapaxar are reported. |
+| PGx | Kosoglou_2012 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction study (vorapaxar and warfarin) in healthy subjects, not a pharmacogenomic study involving gene variants. |
+| popPK | Kosoglou_2012_2 | irrelevant | 2 | 0 | The document is a clinical study protocol for SCH 530348 (vorapaxar) that outlines the study design and statistical methods but does not report any actual quantitative pharmacokinetic parameter values. |
+| PD | Kosoglou_2012_2 | not_relevant | 0 | 0 | The text describes a Phase 1 PK study in renal impairment focusing on plasma concentration parameters (AUC, Cmax) and does not report any pharmacodynamic endpoints, exposure-response relationships, or numeric PD parameters. |
+| popPK | Kosoglou_2012_3 | irrelevant | 2 | 0 | The abstract describes a PK/PD comparison study but contains no quantitative disposition parameters (CL, V, ka, etc.) for vorapaxar. |
+| PD | Kosoglou_2012_3 | not_relevant | 3 | 1 | The abstract describes qualitative PD outcomes (complete inhibition) and dose comparisons but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve. |
+| popPK | Kosoglou_2012_4 | irrelevant | 2 | 0 | The provided evidence is an abstract that reports only pharmacodynamic outcomes (platelet inhibition) and lacks any quantitative pharmacokinetic parameter values (e.g., CL, V, t1/2). |
+| PGx | Kosoglou_2013 | not_relevant | 0 | 0 | The study evaluates drug-drug interactions (ketoconazole/rifampin) rather than pharmacogenomic effects of gene variants on vorapaxar PK/PD. |
+| popPK | Kosoglou_2013_2 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of digoxin as the subject drug, with vorapaxar serving only as a co-administered agent, and no quantitative PK parameters for vorapaxar are reported. |
+| PD | Kosoglou_2013_2 | not_relevant | 0 | 0 | The study assesses the effect of vorapaxar on digoxin pharmacokinetics and digoxin pharmacodynamics (ECG), but does not report a pharmacodynamic or exposure-response relationship for vorapaxar itself. |
+| popPK | Lee_2013 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on novel PAR1 antagonists, using vorapaxar only as a comparator in functional assays, and reports no pharmacokinetic parameters. |
+| PD | Lee_2013 | not_relevant | 3 | 2 | The paper reports in vitro IC50 values for novel compounds and qualitatively compares their platelet aggregation activity to vorapaxar, but it does not provide numeric PD parameters or an exposure-response curve for vorapaxar itself. |
+| popPK | Moschonas_2015 | irrelevant | 1 | 0 | The paper is a review article that briefly describes properties but does not provide original quantitative PK parameter values for vorapaxar in the evidence. |
+| PD | Moschonas_2015 | not_relevant | 2 | 1 | The text is a review article that qualitatively describes pharmacodynamic properties but does not provide specific numeric PD parameters or extractable concentration-effect curves for vorapaxar. |
+| popPK | Moschonas_2017 | irrelevant | 0 | 0 | The paper is a mechanistic study on PAR-4 peptide analogues and does not report any pharmacokinetic parameters for vorapaxar. |
+| PD | Moschonas_2017 | not_relevant | 0 | 0 | The paper focuses on the molecular mechanism of PAR-4 activation by peptide analogues and does not report any pharmacodynamic or exposure-response data for vorapaxar. |
+| popPK | Nilsen_2023 | irrelevant | 0 | 0 | The paper is a pharmacodynamic biomarker study assessing endothelial markers (e.g., ICAM-1, VCAM-1) and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for vorapaxar. |
+| PD | Nilsen_2023 | not_relevant | 2 | 0 | The paper reports group-level differences in biomarker levels between vorapaxar and placebo groups but does not provide individual concentration data or fit a PK/PD model, so no numeric PD parameters (Emax, EC50, etc.) are extractable. |
+| PGx | Nwadiugwu_2025 | not_relevant | 0 | 0 | The paper focuses on drug repurposing for Alzheimer's disease using molecular docking and dynamics simulations; it does not report pharmacogenomic effects on the PK or PD of vorapaxar. |
+| popPK | Packard_2012 | irrelevant | 0 | 0 | The paper is a narrative review of antiplatelet therapies and does not report any quantitative pharmacokinetic parameters for vorapaxar. |
+| PD | Packard_2012 | not_relevant | 1 | 0 | The text is a qualitative review of emerging antiplatelet therapies and does not report any specific numeric pharmacodynamic parameters or exposure-response data for vorapaxar. |
+| popPK | Paclíková_2025 | irrelevant | 0 | 0 | The study is an ex vivo platelet aggregation assay assessing antiplatelet efficacy, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Rafeedheen_2015 | irrelevant | 0 | 0 | The paper is a review of novel antiplatelet agents and does not report any quantitative pharmacokinetic parameters for vorapaxar. |
+| PD | Rafeedheen_2015 | not_relevant | 1 | 0 | The text is a general review of antiplatelet agents that mentions vorapaxar's approval and mechanism but provides no specific pharmacodynamic data, exposure-response analysis, or numeric PD parameters. |
+| popPK | Ranjan_2023 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vorapaxar's anti-leishmanial activity, not a pharmacokinetic study. |
+| popPK | Storey_2014 | irrelevant | 0 | 0 | The paper reports pharmacodynamic effects (platelet aggregation, biomarkers) rather than pharmacokinetic disposition parameters. |
+| PGx | Tricoci_2018 | not_relevant | 2 | 5 | The paper reports clinical outcomes (bleeding/ischemic events) rather than direct pharmacokinetic or pharmacodynamic parameters (e.g., AUC, platelet aggregation levels) for vorapaxar. |
+| popPK | Wichaiyo_2026 | irrelevant | 1 | 0 | The paper is a review that mentions vorapaxar only qualitatively (noting its long half-life) without providing any quantitative PK parameter values. |
+| PD | Wichaiyo_2026 | not_relevant | 1 | 0 | The text is a general review that qualitatively describes vorapaxar's mechanism and pharmacokinetic properties (slow dissociation, long half-life) but does not provide any numeric PD parameters or exposure-response data. |
+| PGx | Wichaiyo_2026 | not_relevant | 0 | 0 | The paper is a general review of antiplatelet drugs and mentions vorapaxar's PK properties (half-life) but does not report any pharmacogenomic effects (gene variants) on vorapaxar. |
+| popPK | Zhou_2025 | irrelevant | 0 | 0 | The paper is a mechanistic study on vorapaxar's pro-ferroptotic effects in cancer cells and mice, containing no pharmacokinetic parameters (CL, V, ka, etc.). |
+| popPK | unknown_2015 | irrelevant | 0 | 0 | no_text gate: only 106 chars of text extracted (&lt; 400) |
+| PD | unknown_2015 | not_relevant | 0 | 0 | The provided text is only a header for a conference abstract collection and contains no specific data, results, or PD parameters for vorapaxar. |
+| popPK | unknown_2018 | irrelevant | 0 | 0 | no_text gate: only 101 chars of text extracted (&lt; 400) |
+| PD | unknown_2018 | not_relevant | 0 | 0 | The provided text is only a header for conference abstracts and contains no specific data, analysis, or mention of vorapaxar pharmacodynamics. |
+
+---
+<sub>Generated by `docs.py` (scholarv2)</sub>

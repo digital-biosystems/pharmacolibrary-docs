@@ -32,8 +32,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the link
 Mühler MR et al., Maternofetal pharmacokinetics of a gado…, Radiology (2011)
   ·  DOI: [10.1148/radiol.10100652](https://doi.org/10.1148/radiol.10100652)
 
-## Model component
-<dbs-pgx drug="gadoteric acid" model-id="GadotericAcid_Mhler2011_reference" status="rejected" stale="false" population="pregnant Balb/C mice at 16 days of gestation" measured-compound="gadolinium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gadoteric acid" model-id="GadotericAcid_Mhler2011_reference" status="rejected" stale="false" population="pregnant Balb/C mice at 16 days of gestation" measured-compound="gadolinium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

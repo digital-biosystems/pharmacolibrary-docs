@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Gupta SK et al., Desloratadine dose selection in childre…, British journal of clinical… (2007)
   ·  DOI: [10.1111/j.1365-2125.2007.02859.x](https://doi.org/10.1111/j.1365-2125.2007.02859.x)
 
-## Model component
-<dbs-pgx drug="desloratadine" model-id="Desloratadine_Gupta2007_reference" status="needs_review" stale="false" population="children aged 6 months to 2 years" measured-compound="desloratadine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="desloratadine" model-id="Desloratadine_Gupta2007_reference" status="needs_review" stale="false" population="children aged 6 months to 2 years" measured-compound="desloratadine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

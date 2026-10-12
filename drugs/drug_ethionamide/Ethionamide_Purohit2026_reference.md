@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Purohit D et al., Impact of High-Dose Rifampicin on Linez…, Open forum infectious disea… (2026)
   ·  DOI: [10.1093/ofid/ofag154](https://doi.org/10.1093/ofid/ofag154)
 
-## Model component
-<dbs-pgx drug="ethionamide" model-id="Ethionamide_Purohit2026_reference" status="needs_review" stale="false" population="" measured-compound="ethionamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_Purohit2026_reference" status="needs_review" stale="false" population="" measured-compound="ethionamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Lobet S et al., Confounding mitigation for the exposure…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.15983](https://doi.org/10.1111/bcp.15983)
 
-## Model component
-<dbs-pgx drug="bevacizumab" model-id="Bevacizumab_Lobet2024_reference" status="rejected" stale="false" population="metastatic colorectal cancer patients" measured-compound="bevacizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Lobet2024_reference" status="rejected" stale="false" population="metastatic colorectal cancer patients" measured-compound="bevacizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

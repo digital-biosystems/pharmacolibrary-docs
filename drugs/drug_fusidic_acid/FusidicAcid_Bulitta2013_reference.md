@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Bulitta JB et al., Population pharmacokinetics of fusidic…, Antimicrobial agents and ch… (2013)
   ·  DOI: [10.1128/AAC.01354-12](https://doi.org/10.1128/AAC.01354-12)
 
-## Model component
-<dbs-pgx drug="fusidic acid" model-id="FusidicAcid_Bulitta2013_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="fusidic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fusidic acid" model-id="FusidicAcid_Bulitta2013_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="fusidic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

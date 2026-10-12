@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Lou Y et al., Population pharmacokinetics and individ…, European journal of pharmac… (2021)
   ·  DOI: [10.1016/j.ejps.2021.105818](https://doi.org/10.1016/j.ejps.2021.105818)
 
-## Model component
-<dbs-pgx drug="daptomycin" model-id="Daptomycin_Lou2021_reference" status="curated_candidate" stale="false" population="kidney transplant recipients" measured-compound="daptomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daptomycin" model-id="Daptomycin_Lou2021_reference" status="curated_candidate" stale="false" population="kidney transplant recipients" measured-compound="daptomycin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

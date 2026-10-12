@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Citation
 Henderson JM et al., First-order clearance of plasma galacto…, Gastroenterology (1982)
 
-## Model component
-<dbs-pgx drug="galactose" model-id="Galactose_Henderson1982_reference" status="rejected" stale="false" population="healthy adults and patients with liver disease (cirrhosis, acute hepatocellular damage)" measured-compound="galactose" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="galactose" model-id="Galactose_Henderson1982_reference" status="rejected" stale="false" population="healthy adults and patients with liver disease (cirrhosis, acute hepatocellular damage)" measured-compound="galactose" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

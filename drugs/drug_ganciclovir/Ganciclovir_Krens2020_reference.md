@@ -29,8 +29,7 @@ Independently confirmed by `qwen3.8-27b`.
 Krens SD et al., Population Pharmacokinetics of Ganciclo…, Therapeutic drug monitoring (2020)
   ·  DOI: [10.1097/FTD.0000000000000689](https://doi.org/10.1097/FTD.0000000000000689)
 
-## Model component
-<dbs-pgx drug="ganciclovir" model-id="Ganciclovir_Krens2020_reference" status="rejected" stale="false" population="critically ill ICU patients" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ganciclovir" model-id="Ganciclovir_Krens2020_reference" status="rejected" stale="false" population="critically ill ICU patients" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

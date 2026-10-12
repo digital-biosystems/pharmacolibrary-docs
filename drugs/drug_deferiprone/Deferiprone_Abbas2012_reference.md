@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Citation
 Abbas M et al., Quantitative determination of deferipro…, Pakistan journal of pharmac… (2012)
 
-## Model component
-<dbs-pgx drug="deferiprone" model-id="Deferiprone_Abbas2012_reference" status="rejected" stale="false" population="healthy adult volunteers" measured-compound="deferiprone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="deferiprone" model-id="Deferiprone_Abbas2012_reference" status="rejected" stale="false" population="healthy adult volunteers" measured-compound="deferiprone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

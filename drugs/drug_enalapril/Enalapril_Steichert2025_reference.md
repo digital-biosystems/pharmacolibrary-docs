@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 Steichert M et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01520-5](https://doi.org/10.1007/s40262-025-01520-5)
 
-## Model component
-<dbs-pgx drug="enalapril" model-id="Enalapril_Steichert2025_reference" status="needs_review" stale="false" population="children with heart failure" measured-compound="enalapril" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enalapril" model-id="Enalapril_Steichert2025_reference" status="needs_review" stale="false" population="children with heart failure" measured-compound="enalapril" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent–metabolite model: parent with 1 compartment(s); metabolite enalaprilat: 1 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameters:** 6 extracted, plus 4 covariate effects.

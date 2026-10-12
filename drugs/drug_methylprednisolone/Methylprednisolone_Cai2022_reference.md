@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Cai XJ et al., Prospective population pharmacokinetic…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.1031969](https://doi.org/10.3389/fphar.2022.1031969)
 
-## Model component
-<dbs-pgx drug="methylprednisolone" model-id="Methylprednisolone_Cai2022_reference" status="rejected" stale="false" population="" measured-compound="methylprednisolone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methylprednisolone" model-id="Methylprednisolone_Cai2022_reference" status="rejected" stale="false" population="" measured-compound="methylprednisolone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Ogasawara K et al., Population pharmacokinetics of fedratin…, Cancer chemotherapy and pha… (2019)
   ·  DOI: [10.1007/s00280-019-03929-9](https://doi.org/10.1007/s00280-019-03929-9)
 
-## Model component
-<dbs-pgx drug="fedratinib" model-id="Fedratinib_Ogasawara2019_reference" status="model_quarantined" stale="false" population="adults with myelofibrosis, polycythemia vera, or essential thrombocythemia" measured-compound="fedratinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fedratinib" model-id="Fedratinib_Ogasawara2019_reference" status="model_quarantined" stale="false" population="adults with myelofibrosis, polycythemia vera, or essential thrombocythemia" measured-compound="fedratinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted, plus 1 covariate effect.

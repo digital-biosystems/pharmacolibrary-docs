@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Kerbusch T et al., Population pharmacokinetics and explora…, European journal of clinica… (2001)
   ·  DOI: [10.1007/s002280100322](https://doi.org/10.1007/s002280100322)
 
-## Model component
-<dbs-pgx drug="ifosfamide" model-id="Ifosfamide_Kerbusch2001v4_reference" status="curated_candidate" stale="false" population="patients with soft tissue sarcoma" measured-compound="ifosfamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ifosfamide" model-id="Ifosfamide_Kerbusch2001v4_reference" status="curated_candidate" stale="false" population="patients with soft tissue sarcoma" measured-compound="ifosfamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

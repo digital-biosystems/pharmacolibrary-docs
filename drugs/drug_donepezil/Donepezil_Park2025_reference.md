@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Park YC et al., Pharmacokinetic Evaluation of GB-5001,…, Pharmaceutics (2025)
   ·  DOI: [10.3390/pharmaceutics17121517](https://doi.org/10.3390/pharmaceutics17121517)
 
-## Model component
-<dbs-pgx drug="donepezil" model-id="Donepezil_Park2025_reference" status="needs_review" stale="false" population="healthy male adults" measured-compound="donepezil" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Park2025_reference" status="needs_review" stale="false" population="healthy male adults" measured-compound="donepezil" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.

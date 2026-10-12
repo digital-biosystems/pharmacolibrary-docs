@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Cohen MN et al., Pharmacokinetics of single-dose intrave…, Anesthesia and analgesia (2011)
   ·  DOI: [10.1213/ANE.0b013e3182075d04](https://doi.org/10.1213/ANE.0b013e3182075d04)
 
-## Model component
-<dbs-pgx drug="ketorolac" model-id="Ketorolac_Cohen2011_reference" status="curated_candidate" stale="false" population="infants aged 2-11 months" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Cohen2011_reference" status="curated_candidate" stale="false" population="infants aged 2-11 months" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

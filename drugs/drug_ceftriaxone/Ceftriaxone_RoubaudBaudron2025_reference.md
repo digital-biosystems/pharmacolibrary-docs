@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Roubaud-Baudron C et al., Pharmacokinetics of Subcutaneous and In…, Open forum infectious disea… (2025)
   ·  DOI: [10.1093/ofid/ofaf313](https://doi.org/10.1093/ofid/ofaf313)
 
-## Model component
-<dbs-pgx drug="ceftriaxone" model-id="Ceftriaxone_RoubaudBaudron2025_reference" status="needs_review" stale="false" population="older patients (≥65 years)" measured-compound="ceftriaxone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ceftriaxone" model-id="Ceftriaxone_RoubaudBaudron2025_reference" status="needs_review" stale="false" population="older patients (≥65 years)" measured-compound="ceftriaxone" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

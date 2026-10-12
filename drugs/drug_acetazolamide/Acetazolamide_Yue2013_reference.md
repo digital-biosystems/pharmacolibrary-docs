@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Yue CS et al., Population pharmacokinetic and pharmaco…, Journal of pharmacy & pharm… (2013)
   ·  DOI: [10.18433/j3qg7z](https://doi.org/10.18433/j3qg7z)
 
-## Model component
-<dbs-pgx drug="acetazolamide" model-id="Acetazolamide_Yue2013_reference" status="rejected" stale="false" population="peritoneal dialysis patients and healthy volunteers" measured-compound="acetazolamide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acetazolamide" model-id="Acetazolamide_Yue2013_reference" status="rejected" stale="false" population="peritoneal dialysis patients and healthy volunteers" measured-compound="acetazolamide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 8 extracted, plus 1 covariate effect.

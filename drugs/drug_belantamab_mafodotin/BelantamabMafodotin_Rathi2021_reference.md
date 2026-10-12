@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Rathi C et al., Population pharmacokinetics of belantam…, CPT: pharmacometrics & syst… (2021)
   ·  DOI: [10.1002/psp4.12660](https://doi.org/10.1002/psp4.12660)
 
-## Model component
-<dbs-pgx drug="belantamab mafodotin" model-id="BelantamabMafodotin_Rathi2021_reference" status="needs_review" stale="false" population="patients with relapsed/refractory multiple myeloma" measured-compound="belantamab mafodotin (ADC)" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="belantamab mafodotin" model-id="BelantamabMafodotin_Rathi2021_reference" status="needs_review" stale="false" population="patients with relapsed/refractory multiple myeloma" measured-compound="belantamab mafodotin (ADC)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 6 extracted, plus 1 covariate effect.

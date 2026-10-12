@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Zyryanov S et al., Population PK/PD modelling of meropenem…, Frontiers in pharmacology (2023)
   ·  DOI: [10.3389/fphar.2023.1079680](https://doi.org/10.3389/fphar.2023.1079680)
 
-## Model component
-<dbs-pgx drug="meropenem" model-id="Meropenem_Zyryanov2023_reference" status="needs_review" stale="false" population="preterm newborns" measured-compound="meropenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="meropenem" model-id="Meropenem_Zyryanov2023_reference" status="needs_review" stale="false" population="preterm newborns" measured-compound="meropenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

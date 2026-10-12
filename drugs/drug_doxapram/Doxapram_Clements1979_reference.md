@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Clements JA et al., The disposition of intravenous doxapram…, European journal of clinica… (1979)
   ·  DOI: [10.1007/BF00568202](https://doi.org/10.1007/BF00568202)
 
-## Model component
-<dbs-pgx drug="doxapram" model-id="Doxapram_Clements1979_reference" status="rejected" stale="false" population="healthy individuals" measured-compound="doxapram" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxapram" model-id="Doxapram_Clements1979_reference" status="rejected" stale="false" population="healthy individuals" measured-compound="doxapram" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

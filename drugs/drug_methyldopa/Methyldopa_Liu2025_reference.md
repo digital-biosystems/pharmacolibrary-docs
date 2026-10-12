@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
 Liu X et al., Determining the Optimal Dosing of Methy…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01523-2](https://doi.org/10.1007/s40262-025-01523-2)
 
-## Model component
-<dbs-pgx drug="Methyldopa" model-id="Methyldopa_Liu2025_reference" status="rejected" stale="true" population="non-pregnant adults" measured-compound="methyldopa" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Methyldopa" model-id="Methyldopa_Liu2025_reference" status="rejected" stale="true" population="non-pregnant adults" measured-compound="methyldopa" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

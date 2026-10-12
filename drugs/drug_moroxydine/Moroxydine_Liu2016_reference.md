@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Liu W et al., Pharmacokinetics and tissue residues of…, Journal of veterinary pharm… (2016)
   ·  DOI: [10.1111/jvp.12289](https://doi.org/10.1111/jvp.12289)
 
-## Model component
-<dbs-pgx drug="moroxydine" model-id="Moroxydine_Liu2016_reference" status="rejected" stale="false" population="gibel carp (Carassius gibelio)" measured-compound="moroxydine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="moroxydine" model-id="Moroxydine_Liu2016_reference" status="rejected" stale="false" population="gibel carp (Carassius gibelio)" measured-compound="moroxydine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

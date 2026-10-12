@@ -29,8 +29,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 Bulitta JB et al., Population pharmacokinetic rationale fo…, Antimicrobial agents and ch… (2024)
   ·  DOI: [10.1128/aac.01400-23](https://doi.org/10.1128/aac.01400-23)
 
-## Model component
-<dbs-pgx drug="Contezolid" model-id="Contezolid_Bulitta2024_reference" status="needs_review" stale="false" population="healthy volunteers and ABSSSI patients" measured-compound="contezolid" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Contezolid" model-id="Contezolid_Bulitta2024_reference" status="needs_review" stale="false" population="healthy volunteers and ABSSSI patients" measured-compound="contezolid" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -27,8 +27,7 @@ The paper is an exposure/outcome study that reports no distribution volume or el
 Weiss M, Is the One-Compartment Model with First…, Pharmaceutical research (2023)
   ·  DOI: [10.1007/s11095-023-03582-1](https://doi.org/10.1007/s11095-023-03582-1)
 
-## Model component
-<dbs-pgx drug="Arketamine" model-id="Arketamine_Weiss2023_ketamine" status="rejected" stale="false" population="healthy volunteers" measured-compound="ketamine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Arketamine" model-id="Arketamine_Weiss2023_ketamine" status="rejected" stale="false" population="healthy volunteers" measured-compound="ketamine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 1 extracted.

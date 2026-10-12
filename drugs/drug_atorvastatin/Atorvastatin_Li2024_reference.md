@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Li Y et al., Population Pharmacokinetics of Atorvast…, Journal of clinical pharmac… (2024)
   ·  DOI: [10.1002/jcph.2376](https://doi.org/10.1002/jcph.2376)
 
-## Model component
-<dbs-pgx drug="atorvastatin" model-id="Atorvastatin_Li2024_reference" status="extracted" stale="true" population="patients with hyperlipidemia" measured-compound="atorvastatin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atorvastatin" model-id="Atorvastatin_Li2024_reference" status="extracted" stale="true" population="patients with hyperlipidemia" measured-compound="atorvastatin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

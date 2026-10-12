@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Robert J, Clinical pharmacokinetics of epirubicin, Clinical pharmacokinetics (1994)
   ·  DOI: [10.2165/00003088-199426060-00002](https://doi.org/10.2165/00003088-199426060-00002)
 
-## Model component
-<dbs-pgx drug="epirubicin" model-id="Epirubicin_Robert1994_reference" status="curated_candidate" stale="false" population="unknown" measured-compound="epirubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="epirubicin" model-id="Epirubicin_Robert1994_reference" status="curated_candidate" stale="false" population="unknown" measured-compound="epirubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

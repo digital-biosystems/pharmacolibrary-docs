@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Mathes A et al., Plasma Disappearance Rate of Indocyanin…, Diagnostics (Basel, Switzer… (2019)
   ·  DOI: [10.3390/diagnostics9030108](https://doi.org/10.3390/diagnostics9030108)
 
-## Model component
-<dbs-pgx drug="indocyanine green" model-id="IndocyanineGreen_Mathes2019_moderate_endotoxemia" status="rejected" stale="false" population="anesthetized Sprague-Dawley rats with hemorrhagic shock or endotoxemia" measured-compound="indocyanine green" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Mathes2019_moderate_endotoxemia" status="rejected" stale="false" population="anesthetized Sprague-Dawley rats with hemorrhagic shock or endotoxemia" measured-compound="indocyanine green" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Watson JA et al., Pharmacokinetic-Pharmacodynamic Assessm…, Antimicrobial agents and ch… (2019)
   ·  DOI: [10.1128/AAC.02515-18](https://doi.org/10.1128/AAC.02515-18)
 
-## Model component
-<dbs-pgx drug="fexinidazole" model-id="Fexinidazole_Watson2019_reference" status="needs_review" stale="false" population="healthy volunteers and patients with g-HAT or chronic Chagas disease" measured-compound="fexinidazole sulfone (M2)" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fexinidazole" model-id="Fexinidazole_Watson2019_reference" status="needs_review" stale="false" population="healthy volunteers and patients with g-HAT or chronic Chagas disease" measured-compound="fexinidazole sulfone (M2)" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Yu R et al., Meta-Analysis and Mechanism-Based Model…, Journal of veterinary pharm… (2025)
   ·  DOI: [10.1111/jvp.13504](https://doi.org/10.1111/jvp.13504)
 
-## Model component
-<dbs-pgx drug="methylprednisolone" model-id="Methylprednisolone_Yu2025_reference" status="rejected" stale="false" population="horses" measured-compound="methylprednisolone" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methylprednisolone" model-id="Methylprednisolone_Yu2025_reference" status="rejected" stale="false" population="horses" measured-compound="methylprednisolone" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 5 extracted.

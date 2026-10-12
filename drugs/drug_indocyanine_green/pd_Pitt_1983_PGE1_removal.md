@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IndocyanineGreen_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indocyanine_green/IndocyanineGreen_Han2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Pulmonary removal of [3H]prostaglandin E1 — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rabbit</span>
+# inhibition of histamine-stimulated [3H]-inositol phosphate accumulation — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -20,12 +20,12 @@
 
 **Model:** No model was generated from this record.
 
-> Indocyanine green concentrations (microM) inhibit pulmonary removal of [3H]prostaglandin E1 in an Emax-type inhibitory model, with reported IC50 values of 16 and 80 microM; the paper excerpts do not state the mechanism beyond inhibition or the Emax/Imax values.
+> Salbutamol (1–10 000 nM), applied 20 min before histamine (0.1 mM) stimulation, concentration-dependently inhibited histamine-stimulated [3H]-inositol phosphate accumulation in bovine tracheal smooth muscle slices, described by a sigmoid Emax (proportional inhibition) model with IC50 13.8 nM [7.0–27.4]. The paper does not state Imax, kin, kout, ke0 or gamma for this model.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
-- **paper:** `Pitt_1983`
-- **model family:** `emax`
+- **paper:** `Ellis_1995`
+- **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** inhibition/unknown
@@ -50,14 +50,16 @@ first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.6 (3/5 fields) | 2 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q322].value` | 80 | 16 | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | proportional | additive | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q322].value` | 13.8 [7.0-27.4] | 13.8 | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q323]` | not captured | 71.5 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q324]` | not captured | 1820 | only_one_extracted |
 
 </details>
 

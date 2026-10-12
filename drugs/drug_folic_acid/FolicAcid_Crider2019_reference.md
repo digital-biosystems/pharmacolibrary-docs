@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Crider KS et al., Systematic Review and Bayesian Meta-ana…, Nutrients (2019)
   ·  DOI: [10.3390/nu11010071](https://doi.org/10.3390/nu11010071)
 
-## Model component
-<dbs-pgx drug="folic acid" model-id="FolicAcid_Crider2019_reference" status="rejected" stale="false" population="mixed populations from 108 studies (including healthy, reproductive age, clinical groups)" measured-compound="folate" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="folic acid" model-id="FolicAcid_Crider2019_reference" status="rejected" stale="false" population="mixed populations from 108 studies (including healthy, reproductive age, clinical groups)" measured-compound="folate" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

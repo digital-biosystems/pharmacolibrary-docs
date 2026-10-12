@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Jansson R et al., Enantioselective and nonlinear intestin…, Antimicrobial agents and ch… (2008)
   ·  DOI: [10.1128/AAC.00050-08](https://doi.org/10.1128/AAC.00050-08)
 
-## Model component
-<dbs-pgx drug="eflornithine" model-id="Eflornithine_Jansson2008_value_for_d_eflornithine" status="curated_candidate" stale="false" population="male Sprague-Dawley rats" measured-compound="eflornithine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eflornithine" model-id="Eflornithine_Jansson2008_value_for_d_eflornithine" status="curated_candidate" stale="false" population="male Sprague-Dawley rats" measured-compound="eflornithine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 8 extracted.

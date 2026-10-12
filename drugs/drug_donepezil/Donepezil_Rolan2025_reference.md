@@ -27,8 +27,7 @@ Independently confirmed by `gpt-oss-120b`.
 Rolan P et al., Clinical Pharmacology and Approach to D…, Clinical pharmacology in dr… (2025)
   ·  DOI: [10.1002/cpdd.1496](https://doi.org/10.1002/cpdd.1496)
 
-## Model component
-<dbs-pgx drug="donepezil" model-id="Donepezil_Rolan2025_reference" status="curated_candidate" stale="false" population="" measured-compound="donepezil" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Rolan2025_reference" status="curated_candidate" stale="false" population="" measured-compound="donepezil" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

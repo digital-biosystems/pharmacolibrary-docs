@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Adamiszak A et al., Do Critically Ill Patients Undergoing C…, Antibiotics (Basel, Switzer… (2025)
   ·  DOI: [10.3390/antibiotics14040347](https://doi.org/10.3390/antibiotics14040347)
 
-## Model component
-<dbs-pgx drug="ceftaroline fosamil" model-id="CeftarolineFosamil_Adamiszak2025_reference" status="curated_candidate" stale="false" population="critically ill adult patients" measured-compound="ceftaroline" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ceftaroline fosamil" model-id="CeftarolineFosamil_Adamiszak2025_reference" status="curated_candidate" stale="false" population="critically ill adult patients" measured-compound="ceftaroline" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 6 extracted.

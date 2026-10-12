@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Trocóniz IF et al., Pharmacokinetic-Pharmacodynamic Modelli…, Clinical pharmacokinetics (2000)
   ·  DOI: [10.2165/00003088-200038060-00004](https://doi.org/10.2165/00003088-200038060-00004)
 
-## Model component
-<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Trocniz2000_reference" status="extracted" stale="true" population="mixed" measured-compound="ibuprofen" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Trocniz2000_reference" status="extracted" stale="true" population="mixed" measured-compound="ibuprofen" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.

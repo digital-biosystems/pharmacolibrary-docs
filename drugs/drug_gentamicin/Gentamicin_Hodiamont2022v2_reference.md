@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Hodiamont CJ et al., Clinical Pharmacokinetics of Gentamicin…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-022-01143-0](https://doi.org/10.1007/s40262-022-01143-0)
 
-## Model component
-<dbs-pgx drug="gentamicin" model-id="Gentamicin_Hodiamont2022v2_reference" status="rejected" stale="true" population="various patient populations" measured-compound="gentamicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gentamicin" model-id="Gentamicin_Hodiamont2022v2_reference" status="rejected" stale="true" population="various patient populations" measured-compound="gentamicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Citation
 Rui JZ et al., [Population pharmacokinetics/pharmacody…, Yao xue xue bao = Acta phar… (1996)
 
-## Model component
-<dbs-pgx drug="magnesium sulfate" model-id="MagnesiumSulfate_Rui1996_reference" status="rejected" stale="false" population="pregnancy induced hypertensive gravidas" measured-compound="magnesium sulfate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_Rui1996_reference" status="rejected" stale="false" population="pregnancy induced hypertensive gravidas" measured-compound="magnesium sulfate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

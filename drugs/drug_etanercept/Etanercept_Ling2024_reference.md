@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Ling SF et al., Population Pharmacokinetic Analysis and…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16060702](https://doi.org/10.3390/pharmaceutics16060702)
 
-## Model component
-<dbs-pgx drug="etanercept" model-id="Etanercept_Ling2024_reference" status="needs_review" stale="false" population="patients with rheumatoid arthritis" measured-compound="etanercept biosimilar" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etanercept" model-id="Etanercept_Ling2024_reference" status="needs_review" stale="false" population="patients with rheumatoid arthritis" measured-compound="etanercept biosimilar" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

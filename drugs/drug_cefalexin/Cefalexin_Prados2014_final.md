@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Prados AP et al., A population pharmacokinetic approach t…, Veterinary medicine interna… (2014)
   ·  DOI: [10.1155/2014/789353](https://doi.org/10.1155/2014/789353)
 
-## Model component
-<dbs-pgx drug="cefalexin" model-id="Cefalexin_Prados2014_final" status="curated_candidate" stale="false" population="adult and aged dogs" measured-compound="cephalexin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefalexin" model-id="Cefalexin_Prados2014_final" status="curated_candidate" stale="false" population="adult and aged dogs" measured-compound="cephalexin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

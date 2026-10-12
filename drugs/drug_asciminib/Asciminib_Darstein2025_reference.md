@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Darstein C et al., Population pharmacokinetic modeling of…, Cancer chemotherapy and pha… (2025)
   ·  DOI: [10.1007/s00280-025-04755-y](https://doi.org/10.1007/s00280-025-04755-y)
 
-## Model component
-<dbs-pgx drug="asciminib" model-id="Asciminib_Darstein2025_reference" status="needs_review" stale="false" population="patients with CML and Ph+ acute lymphoblastic leukemia" measured-compound="asciminib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="asciminib" model-id="Asciminib_Darstein2025_reference" status="needs_review" stale="false" population="patients with CML and Ph+ acute lymphoblastic leukemia" measured-compound="asciminib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

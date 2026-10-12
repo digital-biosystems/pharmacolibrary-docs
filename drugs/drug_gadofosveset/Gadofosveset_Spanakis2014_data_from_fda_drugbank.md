@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Spanakis M et al., In silico evaluation of gadofosveset ph…, In silico pharmacology (2014)
   ·  DOI: [10.1186/s40203-014-0002-x](https://doi.org/10.1186/s40203-014-0002-x)
 
-## Model component
-<dbs-pgx drug="gadofosveset" model-id="Gadofosveset_Spanakis2014_data_from_fda_drugbank" status="needs_review" stale="false" population="simulated virtual populations: healthy volunteers, renal and liver impairment, obese, and oncology" measured-compound="gadofosveset" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gadofosveset" model-id="Gadofosveset_Spanakis2014_data_from_fda_drugbank" status="needs_review" stale="false" population="simulated virtual populations: healthy volunteers, renal and liver impairment, obese, and oncology" measured-compound="gadofosveset" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Yukawa E et al., Population pharmacokinetic investigatio…, Journal of clinical pharmac… (2005)
   ·  DOI: [10.1111/j.1365-2710.2005.00668.x](https://doi.org/10.1111/j.1365-2710.2005.00668.x)
 
-## Model component
-<dbs-pgx drug="disopyramide" model-id="Disopyramide_Yukawa2005_reference" status="rejected" stale="true" population="Japanese patients" measured-compound="disopyramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="disopyramide" model-id="Disopyramide_Yukawa2005_reference" status="rejected" stale="true" population="Japanese patients" measured-compound="disopyramide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -26,8 +26,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Hijazi Y et al., Pharmacokinetic and Pharmacodynamic Rel…, Current clinical pharmacolo… (2018)
   ·  DOI: [10.2174/1574884713666180518102514](https://doi.org/10.2174/1574884713666180518102514)
 
-## Model component
-<dbs-pgx drug="blinatumomab" model-id="Blinatumomab_Hijazi2018_reference" status="not_modelled" stale="false" population="adults with relapsed/refractory non-Hodgkin lymphoma" measured-compound="blinatumomab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="blinatumomab" model-id="Blinatumomab_Hijazi2018_reference" status="not_modelled" stale="false" population="adults with relapsed/refractory non-Hodgkin lymphoma" measured-compound="blinatumomab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

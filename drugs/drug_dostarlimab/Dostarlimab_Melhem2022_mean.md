@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Melhem M et al., Population pharmacokinetics and exposur…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15339](https://doi.org/10.1111/bcp.15339)
 
-## Model component
-<dbs-pgx drug="dostarlimab" model-id="Dostarlimab_Melhem2022_mean" status="curated_candidate" stale="false" population="patients with advanced solid tumours" measured-compound="dostarlimab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dostarlimab" model-id="Dostarlimab_Melhem2022_mean" status="curated_candidate" stale="false" population="patients with advanced solid tumours" measured-compound="dostarlimab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

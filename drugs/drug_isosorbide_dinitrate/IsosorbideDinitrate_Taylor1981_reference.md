@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Taylor T et al., Isosorbide 5-mononitrate pharmacokineti…, Biopharmaceutics & drug dis… (1981)
   ·  DOI: [10.1002/bdd.2510020306](https://doi.org/10.1002/bdd.2510020306)
 
-## Model component
-<dbs-pgx drug="isosorbide dinitrate" model-id="IsosorbideDinitrate_Taylor1981_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="isosorbide 5-mononitrate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isosorbide dinitrate" model-id="IsosorbideDinitrate_Taylor1981_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="isosorbide 5-mononitrate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

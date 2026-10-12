@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;nelfinavir&quot;,&quot;href&quot;:&quot;drugs/drug_nelfinavir/&quot;},{&quot;label&quot;:&quot;Xie_2020 \u00b7 PD SARS-CoV-2-Nluc luciferase signal (relative, normalized to DMSO control) in A549-hACE2 cells&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# SARS-CoV-2-Nluc luciferase signal (relative, normalized to DMSO control) in A549-hACE2 cells — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
+# intracellular cAMP (elevation by salbutamol) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -19,11 +19,11 @@
 
 **Model:** No model was generated from this record.
 
-> Nelfinavir concentrations (µM) inhibit the SARS-CoV-2-Nluc luciferase signal in A549-hACE2 cells, described by a sigmoid Emax inhibitory model with EC50 = 0.77 ± 0.32 µM; the paper does not state a specific mechanism beyond nelfinavir acting as a potent and selective inhibitor of SARS-CoV-2 infection.
+> Salbutamol concentrations (nM) drive intracellular cAMP elevation via a sigmoid Emax stimulation model, with an EC50 of 82 nM; the paper excerpts provide no further mechanism or additional parameters.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
-- **paper:** `Xie_2020`
+- **paper:** `Wettey_2006`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
@@ -49,13 +49,14 @@ first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.8 (4/5 fields) | 1 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.6 (3/5 fields) | 2 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `parameters[Q321].value` | 0.77 ± 0.32 | 0.77 | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | sigmoid_emax | emax | mismatch |
 
 </details>
 

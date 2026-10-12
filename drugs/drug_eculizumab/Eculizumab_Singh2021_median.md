@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Singh P et al., Eculizumab Pharmacokinetics and Pharmac…, Frontiers in neurology (2021)
   ·  DOI: [10.3389/fneur.2021.696387](https://doi.org/10.3389/fneur.2021.696387)
 
-## Model component
-<dbs-pgx drug="eculizumab" model-id="Eculizumab_Singh2021_median" status="needs_review" stale="false" population="adults with neuromyelitis optica spectrum disorder" measured-compound="eculizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Singh2021_median" status="needs_review" stale="false" population="adults with neuromyelitis optica spectrum disorder" measured-compound="eculizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 8 extracted.

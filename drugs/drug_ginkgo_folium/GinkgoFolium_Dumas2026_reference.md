@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Dumas T et al., Pharmacokinetic Model Based Sensitivity…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70275](https://doi.org/10.1002/psp4.70275)
 
-## Model component
-<dbs-pgx drug="Ginkgo folium" model-id="GinkgoFolium_Dumas2026_reference" status="curated_candidate" stale="false" population="" measured-compound="ginkgo_folium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Ginkgo folium" model-id="GinkgoFolium_Dumas2026_reference" status="curated_candidate" stale="false" population="" measured-compound="ginkgo_folium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

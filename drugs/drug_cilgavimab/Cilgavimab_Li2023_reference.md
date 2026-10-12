@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Li S et al., Safety, tolerability, pharmacokinetics,…, Frontiers in pharmacology (2023)
   ·  DOI: [10.3389/fphar.2023.1117293](https://doi.org/10.3389/fphar.2023.1117293)
 
-## Model component
-<dbs-pgx drug="Cilgavimab" model-id="Cilgavimab_Li2023_reference" status="curated_candidate" stale="false" population="" measured-compound="cilgavimab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Cilgavimab" model-id="Cilgavimab_Li2023_reference" status="curated_candidate" stale="false" population="" measured-compound="cilgavimab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

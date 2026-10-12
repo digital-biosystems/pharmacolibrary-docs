@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Almela-Ferrer MDR et al., Molecular epidemiology and pharmacokine…, European journal of clinica… (2026)
   ·  DOI: [10.1007/s10096-026-05591-5](https://doi.org/10.1007/s10096-026-05591-5)
 
-## Model component
-<dbs-pgx drug="cefixime" model-id="Cefixime_AlmelaFerrer2026_reference" status="curated_candidate" stale="false" population="" measured-compound="cefixime" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefixime" model-id="Cefixime_AlmelaFerrer2026_reference" status="curated_candidate" stale="false" population="" measured-compound="cefixime" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

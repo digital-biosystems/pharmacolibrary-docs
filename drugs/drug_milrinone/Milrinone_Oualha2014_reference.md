@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Oualha M et al., Pharmacokinetics, hemodynamic and metab…, Critical care (London, Engl… (2014)
   ·  DOI: [10.1186/cc13707](https://doi.org/10.1186/cc13707)
 
-## Model component
-<dbs-pgx drug="milrinone" model-id="Milrinone_Oualha2014_reference" status="curated_candidate" stale="false" population="" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="milrinone" model-id="Milrinone_Oualha2014_reference" status="curated_candidate" stale="false" population="" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

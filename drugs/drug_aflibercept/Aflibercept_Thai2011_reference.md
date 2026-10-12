@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Thai HT et al., A mechanism-based model for the populat…, British journal of clinical… (2011)
   ·  DOI: [10.1111/j.1365-2125.2011.04015.x](https://doi.org/10.1111/j.1365-2125.2011.04015.x)
 
-## Model component
-<dbs-pgx drug="aflibercept" model-id="Aflibercept_Thai2011_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aflibercept" model-id="Aflibercept_Thai2011_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

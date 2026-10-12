@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Francis J et al., A Semimechanistic Pharmacokinetic Model…, Clinical pharmacology and t… (2021)
   ·  DOI: [10.1002/cpt.2324](https://doi.org/10.1002/cpt.2324)
 
-## Model component
-<dbs-pgx drug="medroxyprogesterone" model-id="Medroxyprogesterone_Francis2021_reference" status="needs_review" stale="false" population="women with HIV and/or tuberculosis" measured-compound="medroxyprogesterone acetate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="medroxyprogesterone" model-id="Medroxyprogesterone_Francis2021_reference" status="needs_review" stale="false" population="women with HIV and/or tuberculosis" measured-compound="medroxyprogesterone acetate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted, plus 3 covariate effects.

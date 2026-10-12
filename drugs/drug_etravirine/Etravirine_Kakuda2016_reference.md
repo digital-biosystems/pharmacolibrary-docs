@@ -29,8 +29,7 @@ Independently confirmed by `qwen3.8-27b`.
 Kakuda TN et al., Pharmacokinetics and Pharmacokinetic/Ph…, Journal of clinical pharmac… (2016)
   ·  DOI: [10.1002/jcph.746](https://doi.org/10.1002/jcph.746)
 
-## Model component
-<dbs-pgx drug="etravirine" model-id="Etravirine_Kakuda2016_reference" status="rejected" stale="false" population="treatment-experienced HIV-1-infected children and adolescents" measured-compound="etravirine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etravirine" model-id="Etravirine_Kakuda2016_reference" status="rejected" stale="false" population="treatment-experienced HIV-1-infected children and adolescents" measured-compound="etravirine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 da Costa TX et al., Population Pharmacokinetics of Magnesiu…, Drugs in R&D (2020)
   ·  DOI: [10.1007/s40268-020-00315-2](https://doi.org/10.1007/s40268-020-00315-2)
 
-## Model component
-<dbs-pgx drug="magnesium sulfate" model-id="MagnesiumSulfate_da2020_reference" status="rejected" stale="true" population="pregnant women with preeclampsia" measured-compound="magnesium_sulfate" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_da2020_reference" status="rejected" stale="true" population="pregnant women with preeclampsia" measured-compound="magnesium_sulfate" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

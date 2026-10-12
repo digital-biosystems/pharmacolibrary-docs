@@ -26,8 +26,7 @@ The intrinsic clearance of 15.6 L/day and total clearance of 2.33 L/day are flag
 Diack C et al., Ocular Pharmacokinetics of Faricimab Fo…, Translational vision scienc… (2024)
   ·  DOI: [10.1167/tvst.13.11.14](https://doi.org/10.1167/tvst.13.11.14)
 
-## Model component
-<dbs-pgx drug="faricimab" model-id="Faricimab_Diack2024v2_reference" status="rejected" stale="false" population="adults with nAMD or DME" measured-compound="faricimab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="faricimab" model-id="Faricimab_Diack2024v2_reference" status="rejected" stale="false" population="adults with nAMD or DME" measured-compound="faricimab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted, plus 2 covariate effects.

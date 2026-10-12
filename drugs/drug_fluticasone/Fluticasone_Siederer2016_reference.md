@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Siederer S et al., Population Pharmacokinetics of Inhaled…, European journal of drug me… (2016)
   ·  DOI: [10.1007/s13318-015-0303-4](https://doi.org/10.1007/s13318-015-0303-4)
 
-## Model component
-<dbs-pgx drug="fluticasone" model-id="Fluticasone_Siederer2016_reference" status="needs_review" stale="false" population="subjects with chronic obstructive pulmonary disease" measured-compound="fluticasone furoate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluticasone" model-id="Fluticasone_Siederer2016_reference" status="needs_review" stale="false" population="subjects with chronic obstructive pulmonary disease" measured-compound="fluticasone furoate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

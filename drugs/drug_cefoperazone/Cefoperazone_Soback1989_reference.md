@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Citation
 Soback S et al., Pharmacokinetics of single doses of cef…, Research in veterinary scie… (1989)
 
-## Model component
-<dbs-pgx drug="cefoperazone" model-id="Cefoperazone_Soback1989_reference" status="curated_candidate" stale="false" population="unweaned calves" measured-compound="cefoperazone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefoperazone" model-id="Cefoperazone_Soback1989_reference" status="curated_candidate" stale="false" population="unweaned calves" measured-compound="cefoperazone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 6 extracted.

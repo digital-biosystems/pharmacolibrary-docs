@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the link
 Scala M et al., A Pharmacokinetics, Efficacy, and Safet…, Investigative radiology (2018)
   ·  DOI: [10.1097/RLI.0000000000000412](https://doi.org/10.1097/RLI.0000000000000412)
 
-## Model component
-<dbs-pgx drug="gadoteric acid" model-id="GadotericAcid_Scala2018_reference" status="rejected" stale="false" population="pediatric subjects younger than 2 years with normal estimated glomerular filtration rate" measured-compound="gadoteric acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gadoteric acid" model-id="GadotericAcid_Scala2018_reference" status="rejected" stale="false" population="pediatric subjects younger than 2 years with normal estimated glomerular filtration rate" measured-compound="gadoteric acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

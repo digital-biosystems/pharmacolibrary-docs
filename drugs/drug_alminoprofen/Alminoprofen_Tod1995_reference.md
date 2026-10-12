@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Tod M et al., A population pharmacokinetic study of a…, Biopharmaceutics & drug dis… (1995)
   ·  DOI: [10.1002/bdd.2510160803](https://doi.org/10.1002/bdd.2510160803)
 
-## Model component
-<dbs-pgx drug="alminoprofen" model-id="Alminoprofen_Tod1995_reference" status="needs_review" stale="false" population="patients with knee effusion" measured-compound="alminoprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alminoprofen" model-id="Alminoprofen_Tod1995_reference" status="needs_review" stale="false" population="patients with knee effusion" measured-compound="alminoprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

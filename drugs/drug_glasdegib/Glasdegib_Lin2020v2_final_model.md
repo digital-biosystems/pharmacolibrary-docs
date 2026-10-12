@@ -29,8 +29,7 @@ The base model was simulated, not the covariate effects the record defines.
 Lin S et al., Population Pharmacokinetics of Glasdegi…, Journal of clinical pharmac… (2020)
   ·  DOI: [10.1002/jcph.1556](https://doi.org/10.1002/jcph.1556)
 
-## Model component
-<dbs-pgx drug="glasdegib" model-id="Glasdegib_Lin2020v2_final_model" status="accepted_with_caveats" stale="false" population="patients with advanced hematologic malignancies and solid tumors" measured-compound="glasdegib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glasdegib" model-id="Glasdegib_Lin2020v2_final_model" status="accepted_with_caveats" stale="false" population="patients with advanced hematologic malignancies and solid tumors" measured-compound="glasdegib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

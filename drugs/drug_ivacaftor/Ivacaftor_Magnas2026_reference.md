@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Magnas P et al., Pregnancy-related effect on elexacaftor…, British journal of clinical… (2026)
   ·  DOI: [10.1002/bcp.70620](https://doi.org/10.1002/bcp.70620)
 
-## Model component
-<dbs-pgx drug="ivacaftor" model-id="Ivacaftor_Magnas2026_reference" status="rejected" stale="false" population="women with cystic fibrosis" measured-compound="ivacaftor" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ivacaftor" model-id="Ivacaftor_Magnas2026_reference" status="rejected" stale="false" population="women with cystic fibrosis" measured-compound="ivacaftor" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Nguyen JH et al., Population pharmacokinetics modeling an…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12855](https://doi.org/10.1002/psp4.12855)
 
-## Model component
-<dbs-pgx drug="cemiplimab" model-id="Cemiplimab_Nguyen2022_mean_cv" status="rejected" stale="false" population="patients with solid tumors, including recurrent or metastatic cervical cancer" measured-compound="cemiplimab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cemiplimab" model-id="Cemiplimab_Nguyen2022_mean_cv" status="rejected" stale="false" population="patients with solid tumors, including recurrent or metastatic cervical cancer" measured-compound="cemiplimab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

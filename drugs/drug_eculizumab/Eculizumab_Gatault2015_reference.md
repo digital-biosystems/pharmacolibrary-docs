@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Gatault P et al., Therapeutic drug monitoring of eculizum…, mAbs (2015)
   ·  DOI: [10.1080/19420862.2015.1086049](https://doi.org/10.1080/19420862.2015.1086049)
 
-## Model component
-<dbs-pgx drug="eculizumab" model-id="Eculizumab_Gatault2015_reference" status="needs_review" stale="false" population="adults with aHUS or PNH" measured-compound="eculizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Gatault2015_reference" status="needs_review" stale="false" population="adults with aHUS or PNH" measured-compound="eculizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

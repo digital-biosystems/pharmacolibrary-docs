@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Schenkel F et al., Intraocular penetration of penciclovir…, The Journal of antimicrobia… (2013)
   ·  DOI: [10.1093/jac/dkt064](https://doi.org/10.1093/jac/dkt064)
 
-## Model component
-<dbs-pgx drug="famciclovir" model-id="Famciclovir_Schenkel2013_reference" status="rejected" stale="false" population="patients undergoing cataract surgery" measured-compound="penciclovir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="famciclovir" model-id="Famciclovir_Schenkel2013_reference" status="rejected" stale="false" population="patients undergoing cataract surgery" measured-compound="penciclovir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

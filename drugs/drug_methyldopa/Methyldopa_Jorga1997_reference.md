@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 Jorga KM et al., Optimizing levodopa pharmacokinetics wi…, Clinical pharmacology and t… (1997)
   ·  DOI: [10.1016/S0009-9236(97)90033-3](https://doi.org/10.1016/S0009-9236(97)90033-3)
 
-## Model component
-<dbs-pgx drug="Methyldopa" model-id="Methyldopa_Jorga1997_reference" status="rejected" stale="false" population="healthy elderly volunteers" measured-compound="tolcapone" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Methyldopa" model-id="Methyldopa_Jorga1997_reference" status="rejected" stale="false" population="healthy elderly volunteers" measured-compound="tolcapone" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted.

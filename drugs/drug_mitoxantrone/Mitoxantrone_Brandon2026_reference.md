@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 Brandon AM et al., Population pharmacokinetics and dose-re…, British journal of clinical… (2026)
   ·  DOI: [10.1002/bcp.70436](https://doi.org/10.1002/bcp.70436)
 
-## Model component
-<dbs-pgx drug="mitoxantrone" model-id="Mitoxantrone_Brandon2026_reference" status="accepted_with_caveats" stale="false" population="children with acute myeloid leukaemia" measured-compound="mitoxantrone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Brandon2026_reference" status="accepted_with_caveats" stale="false" population="children with acute myeloid leukaemia" measured-compound="mitoxantrone" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted, plus 2 covariate effects.

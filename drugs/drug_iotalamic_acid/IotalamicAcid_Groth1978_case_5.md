@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Groth T et al., The usefulness of 125I-sodium lothalama…, Upsala journal of medical s… (1978)
   ·  DOI: [10.3109/03009737809179113](https://doi.org/10.3109/03009737809179113)
 
-## Model component
-<dbs-pgx drug="iotalamic acid" model-id="IotalamicAcid_Groth1978_case_5" status="rejected" stale="false" population="adults with varying renal function" measured-compound="sodium iothalamate" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="iotalamic acid" model-id="IotalamicAcid_Groth1978_case_5" status="rejected" stale="false" population="adults with varying renal function" measured-compound="sodium iothalamate" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

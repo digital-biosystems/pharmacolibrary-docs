@@ -27,8 +27,7 @@ Independently confirmed by `gpt-oss-120b`.
 Baiardi G et al., Multidose Dalbavancin Population Pharma…, Antibiotics (Basel, Switzer… (2025)
   ·  DOI: [10.3390/antibiotics14020190](https://doi.org/10.3390/antibiotics14020190)
 
-## Model component
-<dbs-pgx drug="dalbavancin" model-id="Dalbavancin_Baiardi2025_reference" status="curated_candidate" stale="false" population="adult patients with renal function CLcr &gt; 30 mL/min" measured-compound="dalbavancin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dalbavancin" model-id="Dalbavancin_Baiardi2025_reference" status="curated_candidate" stale="false" population="adult patients with renal function CLcr &gt; 30 mL/min" measured-compound="dalbavancin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

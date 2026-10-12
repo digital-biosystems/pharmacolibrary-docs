@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Garbin M et al., Pharmacokinetics of Bupivacaine Followi…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14081548](https://doi.org/10.3390/pharmaceutics14081548)
 
-## Model component
-<dbs-pgx drug="acepromazine" model-id="Acepromazine_Garbin2022_reference" status="needs_review" stale="false" population="" measured-compound="acepromazine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acepromazine" model-id="Acepromazine_Garbin2022_reference" status="needs_review" stale="false" population="" measured-compound="acepromazine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

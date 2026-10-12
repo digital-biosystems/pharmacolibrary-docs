@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kuruvilla D et al., Population pharmacokinetics, efficacy,…, British journal of clinical… (2020)
   ·  DOI: [10.1111/bcp.14250](https://doi.org/10.1111/bcp.14250)
 
-## Model component
-<dbs-pgx drug="moxetumomab pasudotox" model-id="MoxetumomabPasudotox_Kuruvilla2020_reference" status="rejected" stale="false" population="adults with relapsed or refractory hairy cell leukaemia" measured-compound="moxetumomab_pasudotox" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="moxetumomab pasudotox" model-id="MoxetumomabPasudotox_Kuruvilla2020_reference" status="rejected" stale="false" population="adults with relapsed or refractory hairy cell leukaemia" measured-compound="moxetumomab_pasudotox" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

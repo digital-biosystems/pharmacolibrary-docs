@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;aminophylline&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/&quot;},{&quot;label&quot;:&quot;Hansen_1994 \u00b7 PD vasorelaxation of precontracted rat mesenteric resistance vessels&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aminophylline_Amponsah2017_reference&quot;,&quot;label&quot;:&quot;Amponsah_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Amponsah2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Jameson1990_reference&quot;,&quot;label&quot;:&quot;Jameson_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Jameson1990_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Frymoyer2020_reference&quot;,&quot;label&quot;:&quot;Frymoyer_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Frymoyer2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Goetz1989_reference&quot;,&quot;label&quot;:&quot;Goetz_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Goetz1989_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Shi2013_reference&quot;,&quot;label&quot;:&quot;Shi_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Shi2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Cisternino_2003 \u00b7 PD efflux rate J efflux&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Toso1995_reference&quot;,&quot;label&quot;:&quot;Toso_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Toso1995_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_reference&quot;,&quot;label&quot;:&quot;Zhou_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# vasorelaxation of precontracted rat mesenteric resistance vessels — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+# efflux rate J efflux — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -20,12 +20,12 @@
 
 **Model:** No model was generated from this record.
 
-> Aminophylline (concentrations in microM) stimulates vasorelaxation of precontracted rat mesenteric resistance vessels, described by an Emax model with EC50 = 200 ± 20 microM; the paper excerpts do not state the mechanism or additional parameters.
+> Vinblastine concentration inhibits its own P-gp-mediated efflux across the rat blood–brain barrier; the concentration-dependent efflux follows a Hill relationship with IC₅₀ ≈71 M, Hill coefficient ≈2, and maximal efflux velocity Jmax ≈9 pmol s⁻¹ g⁻¹ of brain.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
 
-- **paper:** `Hansen_1994`
-- **model family:** `emax`
+- **paper:** `Cisternino_2003`
+- **model family:** `unknown`
 - **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** stimulation/unknown
@@ -45,19 +45,23 @@ Hansen PR, In vitro studies on responses to pentox…, European journal of pharm
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `openai:gpt-6-luna` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.6 (3/5 fields) | 2 |
+| `einfracz:qwen3.8-27b` | secondary_empty | 0.0 (0/6 fields) | 6 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
-| `einfracz:gpt-oss-120b` | `model_family` | emax | sigmoid_emax | mismatch |
+| `einfracz:qwen3.8-27b` | `driver_compound` | vinblastine | not captured | mismatch |
+| `einfracz:qwen3.8-27b` | `effect_direction` | unknown | not captured | mismatch |
+| `einfracz:qwen3.8-27b` | `effect_form` | unknown | not captured | mismatch |
+| `einfracz:qwen3.8-27b` | `model_family` | unknown | not captured | mismatch |
+| `einfracz:qwen3.8-27b` | `parameters[Q100]` | 598 | not captured | only_one_extracted |
+| `einfracz:qwen3.8-27b` | `parameters[Q320]` | 8.8 ± 0.7 | not captured | only_one_extracted |
 
 </details>
 

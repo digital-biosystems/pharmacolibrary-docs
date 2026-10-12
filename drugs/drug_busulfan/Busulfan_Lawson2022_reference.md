@@ -28,8 +28,7 @@ Independently confirmed by `gpt-oss-120b`.
 Lawson R et al., Population pharmacokinetic model for on…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12809](https://doi.org/10.1002/psp4.12809)
 
-## Model component
-<dbs-pgx drug="busulfan" model-id="Busulfan_Lawson2022_reference" status="rejected" stale="false" population="pediatric stem cell transplantation recipients" measured-compound="busulfan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="busulfan" model-id="Busulfan_Lawson2022_reference" status="rejected" stale="false" population="pediatric stem cell transplantation recipients" measured-compound="busulfan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

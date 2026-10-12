@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Benn K et al., Bradycardia and Hypothermia Complicatin…, The American journal of cas… (2017)
   ·  DOI: [10.12659/ajcr.905400](https://doi.org/10.12659/ajcr.905400)
 
-## Model component
-<dbs-pgx drug="azithromycin" model-id="Azithromycin_Benn2017_reference" status="needs_review" stale="false" population="paediatric oncology patient" measured-compound="azithromycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Benn2017_reference" status="needs_review" stale="false" population="paediatric oncology patient" measured-compound="azithromycin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 9 extracted.

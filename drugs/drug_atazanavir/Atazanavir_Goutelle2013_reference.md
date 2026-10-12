@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Goutelle S et al., Pharmacokinetic-pharmacodynamic modelin…, Antimicrobial agents and ch… (2013)
   ·  DOI: [10.1128/AAC.01822-12](https://doi.org/10.1128/AAC.01822-12)
 
-## Model component
-<dbs-pgx drug="atazanavir" model-id="Atazanavir_Goutelle2013_reference" status="needs_review" stale="false" population="HIV-infected adults on unboosted atazanavir" measured-compound="atazanavir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atazanavir" model-id="Atazanavir_Goutelle2013_reference" status="needs_review" stale="false" population="HIV-infected adults on unboosted atazanavir" measured-compound="atazanavir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

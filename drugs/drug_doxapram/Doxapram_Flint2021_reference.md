@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 Flint RB et al., The bioavailability and maturing cleara…, Pediatric research (2021)
   ·  DOI: [10.1038/s41390-020-1037-9](https://doi.org/10.1038/s41390-020-1037-9)
 
-## Model component
-<dbs-pgx drug="doxapram" model-id="Doxapram_Flint2021_reference" status="needs_review" stale="false" population="preterm infants" measured-compound="doxapram" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxapram" model-id="Doxapram_Flint2021_reference" status="needs_review" stale="false" population="preterm infants" measured-compound="doxapram" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted.

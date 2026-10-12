@@ -30,8 +30,7 @@ Independently confirmed by `qwen3.8-27b`.
 Munkholm P et al., Antibiotic activity in serum following…, European journal of drug me… (1994)
   ·  DOI: [10.1007/BF03188860](https://doi.org/10.1007/BF03188860)
 
-## Model component
-<dbs-pgx drug="fusidic acid" model-id="FusidicAcid_Munkholm1994_reference" status="needs_review" stale="false" population="healthy female volunteers" measured-compound="fusidic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fusidic acid" model-id="FusidicAcid_Munkholm1994_reference" status="needs_review" stale="false" population="healthy female volunteers" measured-compound="fusidic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Thémans P et al., Population Pharmacokinetics of Hydroxyc…, European journal of drug me… (2020)
   ·  DOI: [10.1007/s13318-020-00648-y](https://doi.org/10.1007/s13318-020-00648-y)
 
-## Model component
-<dbs-pgx drug="hydroxychloroquine" model-id="Hydroxychloroquine_Thmans2020_estimate" status="accepted_with_caveats" stale="false" population="COVID-19 patients" measured-compound="hydroxychloroquine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydroxychloroquine" model-id="Hydroxychloroquine_Thmans2020_estimate" status="accepted_with_caveats" stale="false" population="COVID-19 patients" measured-compound="hydroxychloroquine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted, plus 1 covariate effect.

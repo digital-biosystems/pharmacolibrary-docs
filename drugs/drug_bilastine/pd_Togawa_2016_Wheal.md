@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bilastine_Togawa2016_caucasianb_5&quot;,&quot;label&quot;:&quot;Togawa_2016_caucasianb_5&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bilastine/Bilastine_Togawa2016_caucasianb_5.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bilastine_Togawa2016_japanesea&quot;,&quot;label&quot;:&quot;Togawa_2016_japanesea&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bilastine/Bilastine_Togawa2016_japanesea.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# wheal — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
+# gastrin — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -45,22 +45,14 @@ Togawa M et al., Pharmacokinetics, Pharmacodynamics and…, Clinical drug invest
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
+| `einfracz:gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
 
-<details><summary>3 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `parameters[Q322].value` | 1.03 | unit | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q327]` | 0.84 | not captured | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q328].value` | 1.72 | unit | mismatch |
-
-</details>
+_Every reader agrees on every compared field of this PD record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>

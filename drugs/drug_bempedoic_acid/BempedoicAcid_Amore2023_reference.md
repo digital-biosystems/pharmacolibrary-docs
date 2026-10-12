@@ -26,8 +26,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Amore BM et al., Physiologically Based Pharmacokinetic M…, Pharmaceutics (2023)
   ·  DOI: [10.3390/pharmaceutics15051476](https://doi.org/10.3390/pharmaceutics15051476)
 
-## Model component
-<dbs-pgx drug="bempedoic acid" model-id="BempedoicAcid_Amore2023_reference" status="extracted" stale="false" population="healthy adults" measured-compound="bempedoic_acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bempedoic acid" model-id="BempedoicAcid_Amore2023_reference" status="extracted" stale="false" population="healthy adults" measured-compound="bempedoic_acid" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

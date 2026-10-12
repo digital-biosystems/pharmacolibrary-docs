@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Randell RL et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2026)
   ·  DOI: [10.1002/jcph.70186](https://doi.org/10.1002/jcph.70186)
 
-## Model component
-<dbs-pgx drug="furosemide" model-id="Furosemide_Randell2026_reference" status="needs_review" stale="false" population="preterm infants" measured-compound="furosemide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_Randell2026_reference" status="needs_review" stale="false" population="preterm infants" measured-compound="furosemide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

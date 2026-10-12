@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Warren RB et al., Population Pharmacokinetic-Pharmacodyna…, Dermatology and therapy (2025)
   ·  DOI: [10.1007/s13555-025-01371-9](https://doi.org/10.1007/s13555-025-01371-9)
 
-## Model component
-<dbs-pgx drug="apremilast" model-id="Apremilast_Warren2025_reference" status="curated_candidate" stale="false" population="atopic dermatitis patients" measured-compound="apremilast" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="apremilast" model-id="Apremilast_Warren2025_reference" status="curated_candidate" stale="false" population="atopic dermatitis patients" measured-compound="apremilast" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

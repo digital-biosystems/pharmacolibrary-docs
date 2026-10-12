@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 Hahn G et al., Pharmacokinetics and safety of gadobutr…, Investigative radiology (2009)
   ·  DOI: [10.1097/RLI.0b013e3181bfe2d2](https://doi.org/10.1097/RLI.0b013e3181bfe2d2)
 
-## Model component
-<dbs-pgx drug="gadobutrol" model-id="Gadobutrol_Hahn2009_reference" status="rejected" stale="false" population="pediatric patients aged 2 to 17 years undergoing contrast-enhanced MRI or MR angiography" measured-compound="gadolinium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gadobutrol" model-id="Gadobutrol_Hahn2009_reference" status="rejected" stale="false" population="pediatric patients aged 2 to 17 years undergoing contrast-enhanced MRI or MR angiography" measured-compound="gadolinium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

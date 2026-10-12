@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Crombag MBS et al., Exposure to Docetaxel in the Elderly Pa…, Pharmaceutical research (2019)
   ·  DOI: [10.1007/s11095-019-2706-4](https://doi.org/10.1007/s11095-019-2706-4)
 
-## Model component
-<dbs-pgx drug="docetaxel" model-id="Docetaxel_Crombag2019_reference" status="rejected" stale="false" population="cancer patients" measured-compound="docetaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="docetaxel" model-id="Docetaxel_Crombag2019_reference" status="rejected" stale="false" population="cancer patients" measured-compound="docetaxel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

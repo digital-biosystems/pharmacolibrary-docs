@@ -32,8 +32,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Masters JC et al., Model-informed drug development support…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12771](https://doi.org/10.1002/psp4.12771)
 
-## Model component
-<dbs-pgx drug="avelumab" model-id="Avelumab_Masters2022_reference" status="not_modelled" stale="false" population="patients with advanced renal cell carcinoma receiving avelumab plus axitinib" measured-compound="avelumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_Masters2022_reference" status="not_modelled" stale="false" population="patients with advanced renal cell carcinoma receiving avelumab plus axitinib" measured-compound="avelumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 3 covariate effects.

@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Hirt D et al., Pregnancy-related effects on nelfinavir…, Antimicrobial agents and ch… (2006)
   ·  DOI: [10.1128/AAC.01596-05](https://doi.org/10.1128/AAC.01596-05)
 
-## Model component
-<dbs-pgx drug="nelfinavir" model-id="Nelfinavir_Hirt2006_reference" status="rejected" stale="false" population="pregnant and nonpregnant women with HIV infection" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Hirt2006_reference" status="rejected" stale="false" population="pregnant and nonpregnant women with HIV infection" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 6 extracted.

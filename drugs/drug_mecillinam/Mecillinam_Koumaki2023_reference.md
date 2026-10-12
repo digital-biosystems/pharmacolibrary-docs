@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Koumaki V et al., Pharmacokinetic/Pharmacodynamic Determi…, Microbiology spectrum (2023)
   ·  DOI: [10.1128/spectrum.03441-22](https://doi.org/10.1128/spectrum.03441-22)
 
-## Model component
-<dbs-pgx drug="mecillinam" model-id="Mecillinam_Koumaki2023_reference" status="curated_candidate" stale="false" population="healthy volunteers" measured-compound="mecillinam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mecillinam" model-id="Mecillinam_Koumaki2023_reference" status="curated_candidate" stale="false" population="healthy volunteers" measured-compound="mecillinam" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

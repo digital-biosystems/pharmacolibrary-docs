@@ -28,8 +28,7 @@ Independently confirmed by `gpt-oss-120b`.
 ## Citation
 Watanabe Y et al., [Penetration of cefbuperazone, a new ce…, The Japanese journal of ant… (1984)
 
-## Model component
-<dbs-pgx drug="cefbuperazone" model-id="Cefbuperazone_Watanabe1984_reference" status="curated_candidate" stale="false" population="patients undergoing postoperative drainage" measured-compound="cefbuperazone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefbuperazone" model-id="Cefbuperazone_Watanabe1984_reference" status="curated_candidate" stale="false" population="patients undergoing postoperative drainage" measured-compound="cefbuperazone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

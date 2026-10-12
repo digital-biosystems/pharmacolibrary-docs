@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Cherruault Y et al., A three-compartment open model with fir…, International journal of bi… (1986)
   ·  DOI: [10.1016/0020-7101(86)90023-1](https://doi.org/10.1016/0020-7101(86)90023-1)
 
-## Model component
-<dbs-pgx drug="guanfacine" model-id="Guanfacine_Cherruault1986_reference" status="rejected" stale="false" population="unknown" measured-compound="guanfacine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="guanfacine" model-id="Guanfacine_Cherruault1986_reference" status="rejected" stale="false" population="unknown" measured-compound="guanfacine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

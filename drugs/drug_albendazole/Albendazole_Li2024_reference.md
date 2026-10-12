@@ -29,8 +29,7 @@ The paper (Li_2024, donkeys) reports only albendazole sulphoxide (ABZSO) paramet
 Li Z et al., Pharmacokinetics and tissue residues of…, Veterinary medicine and sci… (2024)
   ·  DOI: [10.1002/vms3.1393](https://doi.org/10.1002/vms3.1393)
 
-## Model component
-<dbs-pgx drug="albendazole" model-id="Albendazole_Li2024_reference" status="model_quarantined" stale="false" population="donkeys" measured-compound="albendazole sulphoxide" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="albendazole" model-id="Albendazole_Li2024_reference" status="model_quarantined" stale="false" population="donkeys" measured-compound="albendazole sulphoxide" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 8 extracted.

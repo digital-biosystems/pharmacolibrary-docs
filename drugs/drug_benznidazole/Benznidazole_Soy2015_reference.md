@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Soy D et al., Population pharmacokinetics of benznida…, Antimicrobial agents and ch… (2015)
   ·  DOI: [10.1128/AAC.05018-14](https://doi.org/10.1128/AAC.05018-14)
 
-## Model component
-<dbs-pgx drug="benznidazole" model-id="Benznidazole_Soy2015_reference" status="curated_candidate" stale="false" population="adults with chronic Chagas disease" measured-compound="benznidazole" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="benznidazole" model-id="Benznidazole_Soy2015_reference" status="curated_candidate" stale="false" population="adults with chronic Chagas disease" measured-compound="benznidazole" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

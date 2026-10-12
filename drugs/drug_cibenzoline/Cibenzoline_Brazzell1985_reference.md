@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Brazzell RK et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (1985)
   ·  DOI: [10.1002/j.1552-4604.1985.tb02869.x](https://doi.org/10.1002/j.1552-4604.1985.tb02869.x)
 
-## Model component
-<dbs-pgx drug="cibenzoline" model-id="Cibenzoline_Brazzell1985_reference" status="rejected" stale="false" population="healthy elderly males" measured-compound="cibenzoline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cibenzoline" model-id="Cibenzoline_Brazzell1985_reference" status="rejected" stale="false" population="healthy elderly males" measured-compound="cibenzoline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

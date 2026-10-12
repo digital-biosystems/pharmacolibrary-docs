@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Slayter KL et al., Oral contraceptive effects on methylpre…, Clinical pharmacology and t… (1996)
   ·  DOI: [10.1016/S0009-9236(96)80009-9](https://doi.org/10.1016/S0009-9236(96)80009-9)
 
-## Model component
-<dbs-pgx drug="methylprednisolone" model-id="Methylprednisolone_Slayter1996_reference" status="needs_review" stale="false" population="women" measured-compound="methylprednisolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methylprednisolone" model-id="Methylprednisolone_Slayter1996_reference" status="needs_review" stale="false" population="women" measured-compound="methylprednisolone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

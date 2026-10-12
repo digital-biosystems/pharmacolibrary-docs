@@ -28,8 +28,7 @@ Independently confirmed by `gpt-oss-120b`.
 Nagaoka K et al., Comparative Pharmacokinetic Analysis of…, International journal of mo… (2025)
   ·  DOI: [10.3390/ijms26020556](https://doi.org/10.3390/ijms26020556)
 
-## Model component
-<dbs-pgx drug="brolucizumab" model-id="Brolucizumab_Nagaoka2025_aflibercept" status="rejected" stale="false" population="patients treated with brolucizumab" measured-compound="brolucizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brolucizumab" model-id="Brolucizumab_Nagaoka2025_aflibercept" status="rejected" stale="false" population="patients treated with brolucizumab" measured-compound="brolucizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

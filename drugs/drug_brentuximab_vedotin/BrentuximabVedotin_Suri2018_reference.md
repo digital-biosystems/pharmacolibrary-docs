@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 Suri A et al., Population PK and Exposure-Response Rel…, Clinical pharmacology and t… (2018)
   ·  DOI: [10.1002/cpt.1037](https://doi.org/10.1002/cpt.1037)
 
-## Model component
-<dbs-pgx drug="brentuximab vedotin" model-id="BrentuximabVedotin_Suri2018_reference" status="rejected" stale="false" population="patients with CD30-positive malignancies" measured-compound="brentuximab vedotin (ADC) and MMAE" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brentuximab vedotin" model-id="BrentuximabVedotin_Suri2018_reference" status="rejected" stale="false" population="patients with CD30-positive malignancies" measured-compound="brentuximab vedotin (ADC) and MMAE" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.

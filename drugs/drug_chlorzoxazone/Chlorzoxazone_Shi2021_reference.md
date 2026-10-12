@@ -29,8 +29,7 @@ The record specifies apparent clearance of 1.23 L/h/kg and apparent volume of 1.
 Shi Y et al., Effects of Avitinib on CYP450 Enzyme Ac…, Drug design, development an… (2021)
   ·  DOI: [10.2147/DDDT.S323186](https://doi.org/10.2147/DDDT.S323186)
 
-## Model component
-<dbs-pgx drug="chlorzoxazone" model-id="Chlorzoxazone_Shi2021_reference" status="needs_review" stale="false" population="" measured-compound="chlorzoxazone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="chlorzoxazone" model-id="Chlorzoxazone_Shi2021_reference" status="needs_review" stale="false" population="" measured-compound="chlorzoxazone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Al-Kofahi M et al., An integrated PK-PD model for cortisol…, British journal of clinical… (2021)
   ·  DOI: [10.1111/bcp.14470](https://doi.org/10.1111/bcp.14470)
 
-## Model component
-<dbs-pgx drug="hydrocortisone" model-id="Hydrocortisone_AlKofahi2021_reference" status="rejected" stale="false" population="children with congenital adrenal hyperplasia" measured-compound="cortisol" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydrocortisone" model-id="Hydrocortisone_AlKofahi2021_reference" status="rejected" stale="false" population="children with congenital adrenal hyperplasia" measured-compound="cortisol" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

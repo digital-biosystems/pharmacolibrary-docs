@@ -29,8 +29,7 @@ The renal clearance parameter is reported in liters per hour per kilogram, a uni
 Narang PK et al., Pharmacokinetics of bretylium in man af…, Journal of pharmacokinetics… (1980)
   ·  DOI: [10.1007/BF01059384](https://doi.org/10.1007/BF01059384)
 
-## Model component
-<dbs-pgx drug="bretylium tosilate" model-id="BretyliumTosilate_Narang1980_p_k" status="rejected" stale="false" population="normal male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Narang1980_p_k" status="rejected" stale="false" population="normal male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 13 extracted.

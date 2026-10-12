@@ -27,8 +27,7 @@ Independently confirmed by `gpt-oss:120b`.
 O'Hanlon CJ et al., Time-Varying Clearance in Milrinone Pha…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01372-5](https://doi.org/10.1007/s40262-024-01372-5)
 
-## Model component
-<dbs-pgx drug="milrinone" model-id="Milrinone_OHanlon2024_reference" status="curated_candidate" stale="false" population="paediatric patients (premature neonates to adolescents) after cardiac surgery" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="milrinone" model-id="Milrinone_OHanlon2024_reference" status="curated_candidate" stale="false" population="paediatric patients (premature neonates to adolescents) after cardiac surgery" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

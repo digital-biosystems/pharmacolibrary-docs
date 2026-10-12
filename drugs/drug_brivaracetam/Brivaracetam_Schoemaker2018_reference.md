@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Schoemaker R et al., Extrapolation of a Brivaracetam Exposur…, Clinical pharmacokinetics (2018)
   ·  DOI: [10.1007/s40262-017-0597-2](https://doi.org/10.1007/s40262-017-0597-2)
 
-## Model component
-<dbs-pgx drug="brivaracetam" model-id="Brivaracetam_Schoemaker2018_reference" status="curated_candidate" stale="false" population="" measured-compound="brivaracetam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brivaracetam" model-id="Brivaracetam_Schoemaker2018_reference" status="curated_candidate" stale="false" population="" measured-compound="brivaracetam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

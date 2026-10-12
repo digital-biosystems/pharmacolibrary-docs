@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisplatin_Imbs2016_reference&quot;,&quot;label&quot;:&quot;Imbs_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Imbs2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_MoritaOgawa2020_reference&quot;,&quot;label&quot;:&quot;Morita-Ogawa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# leukocytes — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+# hemoglobin — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -49,21 +49,19 @@ Xie F et al., PKPD Modeling and Dosing Considerations…, The AAPS journal (2020
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `openai:gpt-6-luna` — the numbers on this page are its, whatever the readers say
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:qwen3.8-27b` | not confirmed | 0.444 (4/9 fields) | 5 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:qwen3.8-27b` | `model_family` | indirect_response_i | linear | mismatch |
-| `einfracz:qwen3.8-27b` | `parameters[Q100]` | 0.0535 | not captured | only_one_extracted |
-| `einfracz:qwen3.8-27b` | `parameters[Q324].value` | 1.40 | 5.47 | mismatch |
-| `einfracz:qwen3.8-27b` | `parameters[Q325]` | not captured | 0.151 | only_one_extracted |
-| `einfracz:qwen3.8-27b` | `parameters[Q900]` | 0.151 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q100]` | not captured | 2.75E-4 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q338]` | 462 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q900]` | 2.75E–4 | not captured | only_one_extracted |
 
 </details>
 

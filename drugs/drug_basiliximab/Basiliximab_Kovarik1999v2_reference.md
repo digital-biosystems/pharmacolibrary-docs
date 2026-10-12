@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Kovarik JM et al., Screening for basiliximab exposure-resp…, Clinical transplantation (1999)
   ·  DOI: [10.1034/j.1399-0012.1999.t01-2-130105.x](https://doi.org/10.1034/j.1399-0012.1999.t01-2-130105.x)
 
-## Model component
-<dbs-pgx drug="basiliximab" model-id="Basiliximab_Kovarik1999v2_reference" status="curated_candidate" stale="false" population="renal transplant patients" measured-compound="basiliximab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="basiliximab" model-id="Basiliximab_Kovarik1999v2_reference" status="curated_candidate" stale="false" population="renal transplant patients" measured-compound="basiliximab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

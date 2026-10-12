@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Smith DA et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacokinetics (2011)
   ·  DOI: [10.2165/11584340-000000000-00000](https://doi.org/10.2165/11584340-000000000-00000)
 
-## Model component
-<dbs-pgx drug="mepolizumab" model-id="Mepolizumab_Smith2011_reference" status="rejected" stale="false" population="patients with asthma, HES, eosinophilic oesophagitis, atopic dermatitis and healthy subjects" measured-compound="mepolizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mepolizumab" model-id="Mepolizumab_Smith2011_reference" status="rejected" stale="false" population="patients with asthma, HES, eosinophilic oesophagitis, atopic dermatitis and healthy subjects" measured-compound="mepolizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

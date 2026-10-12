@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Sherwin CM et al., Amikacin population pharmacokinetics am…, Burns : journal of the Inte… (2014)
   ·  DOI: [10.1016/j.burns.2013.06.015](https://doi.org/10.1016/j.burns.2013.06.015)
 
-## Model component
-<dbs-pgx drug="amikacin" model-id="Amikacin_Sherwin2014_reference" status="needs_review" stale="true" population="hospitalized children with severe burns" measured-compound="amikacin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amikacin" model-id="Amikacin_Sherwin2014_reference" status="needs_review" stale="true" population="hospitalized children with severe burns" measured-compound="amikacin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

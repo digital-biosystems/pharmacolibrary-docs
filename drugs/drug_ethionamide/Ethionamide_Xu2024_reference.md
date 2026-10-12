@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Xu AY et al., Pyrazinamide Safety, Efficacy, and Dosi…, American journal of respira… (2024)
   ·  DOI: [10.1164/rccm.202401-0165oc](https://doi.org/10.1164/rccm.202401-0165oc)
 
-## Model component
-<dbs-pgx drug="ethionamide" model-id="Ethionamide_Xu2024_reference" status="needs_review" stale="false" population="" measured-compound="ethionamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_Xu2024_reference" status="needs_review" stale="false" population="" measured-compound="ethionamide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

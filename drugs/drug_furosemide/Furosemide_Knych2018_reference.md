@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Knych HK et al., Pharmacokinetics of furosemide administ…, Journal of veterinary pharm… (2018)
   ·  DOI: [10.1111/jvp.12458](https://doi.org/10.1111/jvp.12458)
 
-## Model component
-<dbs-pgx drug="furosemide" model-id="Furosemide_Knych2018_reference" status="needs_review" stale="false" population="adult Thoroughbred horses" measured-compound="furosemide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_Knych2018_reference" status="needs_review" stale="false" population="adult Thoroughbred horses" measured-compound="furosemide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

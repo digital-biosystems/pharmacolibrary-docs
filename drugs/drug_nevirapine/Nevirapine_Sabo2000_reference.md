@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Sabo JP et al., Pharmacokinetics of nevirapine and lami…, AAPS pharmSci (2000)
   ·  DOI: [10.1208/ps020101](https://doi.org/10.1208/ps020101)
 
-## Model component
-<dbs-pgx drug="nevirapine" model-id="Nevirapine_Sabo2000_reference" status="needs_review" stale="false" population="HIV-1 infected adults with CD4+ &lt; 200 cells/mm3 on nucleoside therapy" measured-compound="nevirapine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nevirapine" model-id="Nevirapine_Sabo2000_reference" status="needs_review" stale="false" population="HIV-1 infected adults with CD4+ &lt; 200 cells/mm3 on nucleoside therapy" measured-compound="nevirapine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

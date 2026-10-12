@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Ayyoub A et al., Population Pharmacokinetics of Pyronari…, Antimicrobial agents and ch… (2015)
   ·  DOI: [10.1128/AAC.02004-15](https://doi.org/10.1128/AAC.02004-15)
 
-## Model component
-<dbs-pgx drug="artesunate" model-id="Artesunate_Ayyoub2015_reference" status="curated_candidate" stale="false" population="" measured-compound="artesunate" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="artesunate" model-id="Artesunate_Ayyoub2015_reference" status="curated_candidate" stale="false" population="" measured-compound="artesunate" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

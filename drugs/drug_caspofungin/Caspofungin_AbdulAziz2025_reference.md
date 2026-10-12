@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Abdul-Aziz MH et al., Population pharmacokinetics of caspofun…, Antimicrobial agents and ch… (2025)
   ·  DOI: [10.1128/aac.01435-24](https://doi.org/10.1128/aac.01435-24)
 
-## Model component
-<dbs-pgx drug="caspofungin" model-id="Caspofungin_AbdulAziz2025_reference" status="curated_candidate" stale="false" population="critically ill patients receiving ECMO" measured-compound="caspofungin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="caspofungin" model-id="Caspofungin_AbdulAziz2025_reference" status="curated_candidate" stale="false" population="critically ill patients receiving ECMO" measured-compound="caspofungin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

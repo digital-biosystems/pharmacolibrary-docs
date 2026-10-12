@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 Crommentuyn KM et al., Population pharmacokinetics and pharmac…, The Pediatric infectious di… (2006)
   ·  DOI: [10.1097/01.inf.0000215242.70300.95](https://doi.org/10.1097/01.inf.0000215242.70300.95)
 
-## Model component
-<dbs-pgx drug="nelfinavir" model-id="Nelfinavir_Crommentuyn2006_reference" status="rejected" stale="false" population="HIV-1-infected children" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Crommentuyn2006_reference" status="rejected" stale="false" population="HIV-1-infected children" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

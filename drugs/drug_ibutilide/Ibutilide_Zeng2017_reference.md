@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Zeng Z et al., Population Pharmacokinetic/Pharmacodyna…, Clinical therapeutics (2017)
   ·  DOI: [10.1016/j.clinthera.2017.05.349](https://doi.org/10.1016/j.clinthera.2017.05.349)
 
-## Model component
-<dbs-pgx drug="ibutilide" model-id="Ibutilide_Zeng2017_reference" status="rejected" stale="false" population="Chinese healthy volunteers and patients with atrial fibrillation and/or atrial flutter" measured-compound="ibutilide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ibutilide" model-id="Ibutilide_Zeng2017_reference" status="rejected" stale="false" population="Chinese healthy volunteers and patients with atrial fibrillation and/or atrial flutter" measured-compound="ibutilide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

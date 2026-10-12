@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Kauv J et al., Population pharmacokinetics of mycophen…, European journal of pharmac… (2025)
   ·  DOI: [10.1016/j.ejps.2025.107290](https://doi.org/10.1016/j.ejps.2025.107290)
 
-## Model component
-<dbs-pgx drug="ciclosporin" model-id="Ciclosporin_Kauv2025_reference" status="curated_candidate" stale="false" population="" measured-compound="ciclosporin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciclosporin" model-id="Ciclosporin_Kauv2025_reference" status="curated_candidate" stale="false" population="" measured-compound="ciclosporin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

@@ -30,8 +30,7 @@ Independently confirmed by `qwen3.8-27b`.
 Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology research & per… (2025)
   ·  DOI: [10.1002/prp2.70023](https://doi.org/10.1002/prp2.70023)
 
-## Model component
-<dbs-pgx drug="fostemsavir" model-id="Fostemsavir_Parasrampuria2025_reference" status="rejected" stale="false" population="HIV-1-infected and healthy participants from Phase 1–3 studies" measured-compound="temsavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fostemsavir" model-id="Fostemsavir_Parasrampuria2025_reference" status="rejected" stale="false" population="HIV-1-infected and healthy participants from Phase 1–3 studies" measured-compound="temsavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

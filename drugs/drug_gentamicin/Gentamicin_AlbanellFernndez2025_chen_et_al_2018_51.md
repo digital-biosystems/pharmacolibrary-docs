@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 Albanell-Fernández M et al., A Review of Vancomycin, Gentamicin, and…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-024-01459-z](https://doi.org/10.1007/s40262-024-01459-z)
 
-## Model component
-<dbs-pgx drug="gentamicin" model-id="Gentamicin_AlbanellFernndez2025_chen_et_al_2018_51" status="model_quarantined" stale="false" population="neonates and infants with no previous pathologies" measured-compound="gentamicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gentamicin" model-id="Gentamicin_AlbanellFernndez2025_chen_et_al_2018_51" status="model_quarantined" stale="false" population="neonates and infants with no previous pathologies" measured-compound="gentamicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 0 extracted.

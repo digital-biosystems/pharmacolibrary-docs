@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Admiraal R et al., Population Pharmacokinetics of Alemtuzu…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-019-00782-0](https://doi.org/10.1007/s40262-019-00782-0)
 
-## Model component
-<dbs-pgx drug="alemtuzumab" model-id="Alemtuzumab_Admiraal2019_reference" status="rejected" stale="false" population="pediatric hematopoietic cell transplantation patients" measured-compound="alemtuzumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alemtuzumab" model-id="Alemtuzumab_Admiraal2019_reference" status="rejected" stale="false" population="pediatric hematopoietic cell transplantation patients" measured-compound="alemtuzumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

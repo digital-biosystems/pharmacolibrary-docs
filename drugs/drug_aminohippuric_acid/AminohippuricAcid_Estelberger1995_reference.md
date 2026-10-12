@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Estelberger W et al., System identification of the low-dose k…, European journal of clinica… (1995)
   ·  DOI: [10.1515/cclm.1995.33.11.847](https://doi.org/10.1515/cclm.1995.33.11.847)
 
-## Model component
-<dbs-pgx drug="aminohippuric acid" model-id="AminohippuricAcid_Estelberger1995_reference" status="rejected" stale="false" population="renal patients and healthy controls" measured-compound="p-aminohippuric acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aminohippuric acid" model-id="AminohippuricAcid_Estelberger1995_reference" status="rejected" stale="false" population="renal patients and healthy controls" measured-compound="p-aminohippuric acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

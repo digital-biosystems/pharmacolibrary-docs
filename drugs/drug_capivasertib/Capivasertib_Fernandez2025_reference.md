@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Fernandez Teruel C et al., Population Pharmacokinetics and Exposur…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70286](https://doi.org/10.1111/cts.70286)
 
-## Model component
-<dbs-pgx drug="capivasertib" model-id="Capivasertib_Fernandez2025_reference" status="needs_review" stale="false" population="patients with cancer from six Phase I–III trials" measured-compound="capivasertib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="capivasertib" model-id="Capivasertib_Fernandez2025_reference" status="needs_review" stale="false" population="patients with cancer from six Phase I–III trials" measured-compound="capivasertib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 10 extracted, plus 1 covariate effect.

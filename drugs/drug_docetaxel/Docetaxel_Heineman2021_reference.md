@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Heineman T et al., Safety and pharmacokinetics of docetaxe…, Clinical and translational… (2021)
   ·  DOI: [10.1111/cts.13041](https://doi.org/10.1111/cts.13041)
 
-## Model component
-<dbs-pgx drug="docetaxel" model-id="Docetaxel_Heineman2021_reference" status="rejected" stale="false" population="adults with non-small cell lung cancer" measured-compound="docetaxel" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="docetaxel" model-id="Docetaxel_Heineman2021_reference" status="rejected" stale="false" population="adults with non-small cell lung cancer" measured-compound="docetaxel" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 12 extracted.

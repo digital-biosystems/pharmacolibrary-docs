@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Olsén L et al., Fexofenadine in horses: pharmacokinetic…, Journal of veterinary pharm… (2006)
   ·  DOI: [10.1111/j.1365-2885.2006.00724.x](https://doi.org/10.1111/j.1365-2885.2006.00724.x)
 
-## Model component
-<dbs-pgx drug="fexofenadine" model-id="Fexofenadine_Olsn2006_reference" status="rejected" stale="false" population="horses" measured-compound="fexofenadine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fexofenadine" model-id="Fexofenadine_Olsn2006_reference" status="rejected" stale="false" population="horses" measured-compound="fexofenadine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

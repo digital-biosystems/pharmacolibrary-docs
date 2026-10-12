@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss-120b`.
 Moss AA et al., Gastrointestinal radiology. Pharmacokin…, Investigative radiology (1980)
   ·  DOI: [10.1097/00004424-198011001-00028](https://doi.org/10.1097/00004424-198011001-00028)
 
-## Model component
-<dbs-pgx drug="iodoxamic acid" model-id="IodoxamicAcid_Moss1980_reference" status="rejected" stale="false" population="rhesus monkeys" measured-compound="iodoxamic acid" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="iodoxamic acid" model-id="IodoxamicAcid_Moss1980_reference" status="rejected" stale="false" population="rhesus monkeys" measured-compound="iodoxamic acid" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

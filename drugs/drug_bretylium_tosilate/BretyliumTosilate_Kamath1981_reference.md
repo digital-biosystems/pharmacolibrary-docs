@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Kamath BL et al., Pharmacokinetics of [14C]bretylium tosy…, Journal of pharmaceutical s… (1981)
   ·  DOI: [10.1002/jps.2600700623](https://doi.org/10.1002/jps.2600700623)
 
-## Model component
-<dbs-pgx drug="bretylium tosilate" model-id="BretyliumTosilate_Kamath1981_reference" status="extracted" stale="true" population="rats" measured-compound="bretylium" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Kamath1981_reference" status="extracted" stale="true" population="rats" measured-compound="bretylium" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

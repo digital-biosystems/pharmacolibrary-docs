@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 Netterberg I et al., A PK/PD Analysis of Circulating Biomark…, Clinical pharmacology and t… (2019)
   ·  DOI: [10.1002/cpt.1198](https://doi.org/10.1002/cpt.1198)
 
-## Model component
-<dbs-pgx drug="atezolizumab" model-id="Atezolizumab_Netterberg2019_reference" status="rejected" stale="false" population="patients with relapsed/refractory non-small cell lung cancer" measured-compound="atezolizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atezolizumab" model-id="Atezolizumab_Netterberg2019_reference" status="rejected" stale="false" population="patients with relapsed/refractory non-small cell lung cancer" measured-compound="atezolizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

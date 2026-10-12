@@ -27,8 +27,7 @@ Independently confirmed by `qwen3.8-27b`.
 Shang J et al., Population pharmacokinetic models of an…, Frontiers in immunology (2022)
   ·  DOI: [10.3389/fimmu.2022.871372](https://doi.org/10.3389/fimmu.2022.871372)
 
-## Model component
-<dbs-pgx drug="ipilimumab" model-id="Ipilimumab_Shang2022_reference" status="curated_candidate" stale="false" population="" measured-compound="ipilimumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ipilimumab" model-id="Ipilimumab_Shang2022_reference" status="curated_candidate" stale="false" population="" measured-compound="ipilimumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

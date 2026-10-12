@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Park S et al., Pharmacokinetic evaluation of radiolabe…, Clinical and translational… (2022)
   ·  DOI: [10.1111/cts.13412](https://doi.org/10.1111/cts.13412)
 
-## Model component
-<dbs-pgx drug="aflibercept" model-id="Aflibercept_Park2022_mouse" status="rejected" stale="false" population="mice, rats, and rabbits" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aflibercept" model-id="Aflibercept_Park2022_mouse" status="rejected" stale="false" population="mice, rats, and rabbits" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

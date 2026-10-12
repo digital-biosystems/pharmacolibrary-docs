@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the link
 van der Walt JS et al., Interplay between pharmacokinetics and…, Journal of pharmacokinetics… (2025)
   ·  DOI: [10.1007/s10928-025-09971-w](https://doi.org/10.1007/s10928-025-09971-w)
 
-## Model component
-<dbs-pgx drug="avelumab" model-id="Avelumab_van2025_reference" status="needs_review" stale="false" population="patients with several tumor types" measured-compound="avelumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_van2025_reference" status="needs_review" stale="false" population="patients with several tumor types" measured-compound="avelumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted, plus 6 covariate effects.

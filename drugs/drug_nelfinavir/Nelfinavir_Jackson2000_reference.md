@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Jackson KA et al., A population pharmacokinetic analysis o…, Antimicrobial agents and ch… (2000)
   ·  DOI: [10.1128/AAC.44.7.1832-1837.2000](https://doi.org/10.1128/AAC.44.7.1832-1837.2000)
 
-## Model component
-<dbs-pgx drug="nelfinavir" model-id="Nelfinavir_Jackson2000_reference" status="needs_review" stale="false" population="HIV-infected patients" measured-compound="nelfinavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Jackson2000_reference" status="needs_review" stale="false" population="HIV-infected patients" measured-compound="nelfinavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

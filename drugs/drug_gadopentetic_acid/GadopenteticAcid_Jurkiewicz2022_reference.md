@@ -26,8 +26,7 @@ The record reports a central volume of distribution of 0.12 L/kg and a periphera
 Jurkiewicz E et al., Pharmacokinetics, Safety, and Efficacy…, Investigative radiology (2022)
   ·  DOI: [10.1097/rli.0000000000000865](https://doi.org/10.1097/rli.0000000000000865)
 
-## Model component
-<dbs-pgx drug="gadopentetic acid" model-id="GadopenteticAcid_Jurkiewicz2022_reference" status="rejected" stale="false" population="" measured-compound="gadopentetic_acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gadopentetic acid" model-id="GadopenteticAcid_Jurkiewicz2022_reference" status="rejected" stale="false" population="" measured-compound="gadopentetic_acid" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Mehta K et al., Pharmacodynamic Exposure-Response Analy…, Journal of clinical pharmac… (2025)
   ·  DOI: [10.1002/jcph.6140](https://doi.org/10.1002/jcph.6140)
 
-## Model component
-<dbs-pgx drug="burosumab" model-id="Burosumab_Mehta2025_reference" status="needs_review" stale="false" population="adults with X-linked hypophosphatemia (XLH)" measured-compound="burosumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="burosumab" model-id="Burosumab_Mehta2025_reference" status="needs_review" stale="false" population="adults with X-linked hypophosphatemia (XLH)" measured-compound="burosumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

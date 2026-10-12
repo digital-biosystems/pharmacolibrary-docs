@@ -28,8 +28,7 @@ Independently confirmed by `qwen3.8-27b`.
 Turner DC et al., Population pharmacokinetics of bevacizu…, Clinical cancer research :… (2014)
   ·  DOI: [10.1158/1078-0432.CCR-13-2364](https://doi.org/10.1158/1078-0432.CCR-13-2364)
 
-## Model component
-<dbs-pgx drug="bevacizumab" model-id="Bevacizumab_Turner2014_reference" status="needs_review" stale="false" population="children with osteosarcoma" measured-compound="bevacizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Turner2014_reference" status="needs_review" stale="false" population="children with osteosarcoma" measured-compound="bevacizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

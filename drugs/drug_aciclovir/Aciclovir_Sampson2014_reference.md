@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Sampson MR et al., Population pharmacokinetics of intraven…, The Pediatric infectious di… (2014)
   ·  DOI: [10.1097/01.inf.0000435509.75114.3d](https://doi.org/10.1097/01.inf.0000435509.75114.3d)
 
-## Model component
-<dbs-pgx drug="aciclovir" model-id="Aciclovir_Sampson2014_reference" status="rejected" stale="false" population="preterm and term infants" measured-compound="acyclovir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aciclovir" model-id="Aciclovir_Sampson2014_reference" status="rejected" stale="false" population="preterm and term infants" measured-compound="acyclovir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

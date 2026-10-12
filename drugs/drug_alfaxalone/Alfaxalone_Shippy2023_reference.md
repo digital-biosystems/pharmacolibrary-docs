@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss-120b`.
 Shippy S et al., Pharmacokinetics and pharmacodynamics o…, Veterinary anaesthesia and… (2023)
   ·  DOI: [10.1016/j.vaa.2023.02.010](https://doi.org/10.1016/j.vaa.2023.02.010)
 
-## Model component
-<dbs-pgx drug="alfaxalone" model-id="Alfaxalone_Shippy2023_reference" status="curated_candidate" stale="false" population="healthy bearded dragons" measured-compound="alfaxalone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alfaxalone" model-id="Alfaxalone_Shippy2023_reference" status="curated_candidate" stale="false" population="healthy bearded dragons" measured-compound="alfaxalone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

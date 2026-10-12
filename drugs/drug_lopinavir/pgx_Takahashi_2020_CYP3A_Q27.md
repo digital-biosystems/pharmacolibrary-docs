@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lopinavir_Upton2025_reference&quot;,&quot;label&quot;:&quot;Upton_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Upton2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lopinavir_Wang2014_reference&quot;,&quot;label&quot;:&quot;Wang_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Wang2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lopinavir_Calderin2026_reference&quot;,&quot;label&quot;:&quot;Calderin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Calderin2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lopinavir_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# CYP3A — PGx  <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+# OPRM1 — PGx  <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -31,14 +31,23 @@ Takahashi T et al., Pharmacogenomics of COVID-19 therapies, NPJ genomic medicine
   ·  DOI: [10.1038/s41525-020-00143-y](https://doi.org/10.1038/s41525-020-00143-y)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss-120b` | secondary_empty | 0.25 (1/4 fields) | 3 |
+| `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
 
-_Every reader agrees on every compared field of this PGx record._
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `applies_to` | pd | not captured | mismatch |
+| `gpt-oss-120b` | `mechanism` | target | not captured | mismatch |
+| `gpt-oss-120b` | `target_parameter_id` | Q321 | not captured | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

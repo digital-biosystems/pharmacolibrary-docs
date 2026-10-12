@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 Eide PK et al., Mechanisms behind changes of neurodegen…, Brain communications (2023)
   ·  DOI: [10.1093/braincomms/fcad343](https://doi.org/10.1093/braincomms/fcad343)
 
-## Model component
-<dbs-pgx drug="gadobutrol" model-id="Gadobutrol_Eide2023_sleep_deprivation_group" status="rejected" stale="false" population="sleep and sleep-deprivation groups" measured-compound="gadobutrol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gadobutrol" model-id="Gadobutrol_Eide2023_sleep_deprivation_group" status="rejected" stale="false" population="sleep and sleep-deprivation groups" measured-compound="gadobutrol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

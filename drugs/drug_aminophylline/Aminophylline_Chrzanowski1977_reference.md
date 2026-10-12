@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Chrzanowski FA et al., Kinetics of intravenous theophylline, Clinical pharmacology and t… (1977)
   ·  DOI: [10.1002/cpt1977222188](https://doi.org/10.1002/cpt1977222188)
 
-## Model component
-<dbs-pgx drug="aminophylline" model-id="Aminophylline_Chrzanowski1977_reference" status="rejected" stale="false" population="healthy adult male volunteers" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Chrzanowski1977_reference" status="rejected" stale="false" population="healthy adult male volunteers" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

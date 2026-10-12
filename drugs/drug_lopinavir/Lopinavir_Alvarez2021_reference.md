@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Alvarez JC et al., Population pharmacokinetics of lopinavi…, European journal of clinica… (2021)
   ·  DOI: [10.1007/s00228-020-03020-w](https://doi.org/10.1007/s00228-020-03020-w)
 
-## Model component
-<dbs-pgx drug="Lopinavir" model-id="Lopinavir_Alvarez2021_reference" status="needs_review" stale="false" population="hospitalized Covid-19 patients" measured-compound="lopinavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Lopinavir" model-id="Lopinavir_Alvarez2021_reference" status="needs_review" stale="false" population="hospitalized Covid-19 patients" measured-compound="lopinavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

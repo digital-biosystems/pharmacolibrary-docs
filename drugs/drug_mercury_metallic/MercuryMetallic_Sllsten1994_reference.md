@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Sällsten G et al., Clearance half life of mercury in urine…, Occupational and environmen… (1994)
   ·  DOI: [10.1136/oem.51.5.337](https://doi.org/10.1136/oem.51.5.337)
 
-## Model component
-<dbs-pgx drug="mercury, metallic" model-id="MercuryMetallic_Sllsten1994_reference" status="rejected" stale="true" population="former chloro-alkali workers" measured-compound="mercury" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mercury, metallic" model-id="MercuryMetallic_Sllsten1994_reference" status="rejected" stale="true" population="former chloro-alkali workers" measured-compound="mercury" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

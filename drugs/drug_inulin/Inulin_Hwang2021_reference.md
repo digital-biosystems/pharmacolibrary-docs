@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Hwang SK et al., Novel in vivo and ex vivo hybrid in viv…, Journal of pharmacological… (2021)
   ·  DOI: [10.1016/j.vascn.2021.107084](https://doi.org/10.1016/j.vascn.2021.107084)
 
-## Model component
-<dbs-pgx drug="Inulin" model-id="Inulin_Hwang2021_reference" status="needs_review" stale="false" population="conscious male C57BL/6 mice, vehicle- or cyclosporine A-treated" measured-compound="GFR-Vivo 680 (fluorescently labelled inulin)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Inulin" model-id="Inulin_Hwang2021_reference" status="needs_review" stale="false" population="conscious male C57BL/6 mice, vehicle- or cyclosporine A-treated" measured-compound="GFR-Vivo 680 (fluorescently labelled inulin)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

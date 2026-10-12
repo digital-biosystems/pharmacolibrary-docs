@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Meijer DK et al., Pharmacokinetics of biliary excretion i…, European journal of clinica… (1988)
   ·  DOI: [10.1007/BF00558268](https://doi.org/10.1007/BF00558268)
 
-## Model component
-<dbs-pgx drug="indocyanine green" model-id="IndocyanineGreen_Meijer1988_reference" status="rejected" stale="false" population="patients undergoing bile collection" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Meijer1988_reference" status="rejected" stale="false" population="patients undergoing bile collection" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

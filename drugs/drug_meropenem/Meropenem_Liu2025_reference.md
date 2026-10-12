@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Liu Y et al., PopPK and PBPK Models Guide Meropenem D…, Pharmaceutics (2025)
   ·  DOI: [10.3390/pharmaceutics17121544](https://doi.org/10.3390/pharmaceutics17121544)
 
-## Model component
-<dbs-pgx drug="meropenem" model-id="Meropenem_Liu2025_reference" status="curated_candidate" stale="false" population="" measured-compound="meropenem" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="meropenem" model-id="Meropenem_Liu2025_reference" status="curated_candidate" stale="false" population="" measured-compound="meropenem" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

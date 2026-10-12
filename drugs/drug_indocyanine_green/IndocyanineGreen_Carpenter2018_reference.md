@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Carpenter GW et al., Closed-Loop Intravenous Drug Administra…, IEEE journal of translation… (2018)
   ·  DOI: [10.1109/JTEHM.2018.2879090](https://doi.org/10.1109/JTEHM.2018.2879090)
 
-## Model component
-<dbs-pgx drug="indocyanine green" model-id="IndocyanineGreen_Carpenter2018_reference" status="rejected" stale="false" population="" measured-compound="indocyanine_green" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Carpenter2018_reference" status="rejected" stale="false" population="" measured-compound="indocyanine_green" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

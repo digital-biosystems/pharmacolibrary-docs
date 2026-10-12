@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on the val
 ## Citation
 DeGraves FJ et al., Pharmacokinetics of ibuprofen in lactat…, American journal of veterin… (1993)
 
-## Model component
-<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_DeGraves1993_reference" status="needs_review" stale="true" population="lactating dairy goats" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_DeGraves1993_reference" status="needs_review" stale="true" population="lactating dairy goats" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

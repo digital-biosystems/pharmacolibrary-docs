@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Bourguignon L et al., [Not Available], Therapie (2009)
   ·  DOI: [10.2515/therapie/2009009](https://doi.org/10.2515/therapie/2009009)
 
-## Model component
-<dbs-pgx drug="amikacin" model-id="Amikacin_Bourguignon2009_reference" status="needs_review" stale="false" population="adults" measured-compound="amikacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amikacin" model-id="Amikacin_Bourguignon2009_reference" status="needs_review" stale="false" population="adults" measured-compound="amikacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Janssen A et al., Towards better dose individualisation:…, British journal of cancer (2017)
   ·  DOI: [10.1038/bjc.2017.91](https://doi.org/10.1038/bjc.2017.91)
 
-## Model component
-<dbs-pgx drug="cabazitaxel" model-id="Cabazitaxel_Janssen2017_reference" status="needs_review" stale="false" population="men with metastatic castration-resistant prostate cancer" measured-compound="cabazitaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cabazitaxel" model-id="Cabazitaxel_Janssen2017_reference" status="needs_review" stale="false" population="men with metastatic castration-resistant prostate cancer" measured-compound="cabazitaxel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

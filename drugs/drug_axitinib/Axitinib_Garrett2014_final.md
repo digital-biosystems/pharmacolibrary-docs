@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on bioavail
 Garrett M et al., Population pharmacokinetic analysis of…, British journal of clinical… (2014)
   ·  DOI: [10.1111/bcp.12206](https://doi.org/10.1111/bcp.12206)
 
-## Model component
-<dbs-pgx drug="axitinib" model-id="Axitinib_Garrett2014_final" status="accepted_with_caveats" stale="false" population="healthy volunteers" measured-compound="axitinib" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="axitinib" model-id="Axitinib_Garrett2014_final" status="accepted_with_caveats" stale="false" population="healthy volunteers" measured-compound="axitinib" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted, plus 2 covariate effects.

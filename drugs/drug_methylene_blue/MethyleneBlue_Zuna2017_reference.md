@@ -29,8 +29,7 @@ The record lists a total clearance of 12.8 ml/min and a volume of distribution o
 Zuna I et al., ADAM, a hands-on patient simulator for…, British journal of clinical… (2017)
   ·  DOI: [10.1111/bcp.13357](https://doi.org/10.1111/bcp.13357)
 
-## Model component
-<dbs-pgx drug="methylene blue" model-id="MethyleneBlue_Zuna2017_reference" status="rejected" stale="false" population="" measured-compound="methylene_blue" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methylene blue" model-id="MethyleneBlue_Zuna2017_reference" status="rejected" stale="false" population="" measured-compound="methylene_blue" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

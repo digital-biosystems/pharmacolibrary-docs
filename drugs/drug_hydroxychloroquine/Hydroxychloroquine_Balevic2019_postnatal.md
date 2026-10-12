@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Balevic SJ et al., Pharmacokinetics of Hydroxychloroquine…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-018-0712-z](https://doi.org/10.1007/s40262-018-0712-z)
 
-## Model component
-<dbs-pgx drug="hydroxychloroquine" model-id="Hydroxychloroquine_Balevic2019_postnatal" status="curated_candidate" stale="false" population="pregnant women with rheumatic disease" measured-compound="hydroxychloroquine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydroxychloroquine" model-id="Hydroxychloroquine_Balevic2019_postnatal" status="curated_candidate" stale="false" population="pregnant women with rheumatic disease" measured-compound="hydroxychloroquine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

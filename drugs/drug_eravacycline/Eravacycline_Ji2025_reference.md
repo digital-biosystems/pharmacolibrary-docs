@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Ji X-w et al., Population pharmacokinetics and pulmona…, Antimicrobial agents and ch… (2025)
   ·  DOI: [10.1128/aac.01065-24](https://doi.org/10.1128/aac.01065-24)
 
-## Model component
-<dbs-pgx drug="eravacycline" model-id="Eravacycline_Ji2025_reference" status="curated_candidate" stale="false" population="healthy adults" measured-compound="eravacycline" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eravacycline" model-id="Eravacycline_Ji2025_reference" status="curated_candidate" stale="false" population="healthy adults" measured-compound="eravacycline" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted.

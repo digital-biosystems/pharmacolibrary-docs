@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Kumar S et al., Plasma pharmacokinetics and milk levels…, Veterinary research communi… (2010)
   ·  DOI: [10.1007/s11259-010-9421-2](https://doi.org/10.1007/s11259-010-9421-2)
 
-## Model component
-<dbs-pgx drug="ceftriaxone" model-id="Ceftriaxone_Kumar2010_reference" status="needs_review" stale="false" population="healthy and endometritic cows" measured-compound="ceftriaxone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ceftriaxone" model-id="Ceftriaxone_Kumar2010_reference" status="needs_review" stale="false" population="healthy and endometritic cows" measured-compound="ceftriaxone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

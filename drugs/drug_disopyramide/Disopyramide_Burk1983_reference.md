@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
 Burk M et al., Disopyramide kinetics in renal impairme…, Clinical pharmacology and t… (1983)
   ·  DOI: [10.1038/clpt.1983.176](https://doi.org/10.1038/clpt.1983.176)
 
-## Model component
-<dbs-pgx drug="disopyramide" model-id="Disopyramide_Burk1983_reference" status="rejected" stale="true" population="patients with normal to severely impaired renal function" measured-compound="disopyramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="disopyramide" model-id="Disopyramide_Burk1983_reference" status="rejected" stale="true" population="patients with normal to severely impaired renal function" measured-compound="disopyramide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Mulla H et al., Population pharmacokinetics of theophyl…, British journal of clinical… (2003)
   ·  DOI: [10.1046/j.1365-2125.2003.01735.x](https://doi.org/10.1046/j.1365-2125.2003.01735.x)
 
-## Model component
-<dbs-pgx drug="aminophylline" model-id="Aminophylline_Mulla2003_reference" status="rejected" stale="false" population="neonates and children on ECMO" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Mulla2003_reference" status="rejected" stale="false" population="neonates and children on ECMO" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on paramete
 Hibma JE et al., Evaluation of the absolute oral bioavai…, Cancer chemotherapy and pha… (2022)
   ·  DOI: [10.1007/s00280-021-04368-1](https://doi.org/10.1007/s00280-021-04368-1)
 
-## Model component
-<dbs-pgx drug="lorlatinib" model-id="Lorlatinib_Hibma2022_reference" status="needs_review" stale="false" population="healthy participants" measured-compound="lorlatinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorlatinib" model-id="Lorlatinib_Hibma2022_reference" status="needs_review" stale="false" population="healthy participants" measured-compound="lorlatinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

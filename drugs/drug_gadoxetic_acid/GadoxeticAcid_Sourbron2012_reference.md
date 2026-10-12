@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Sourbron S et al., Combined quantification of liver perfus…, Radiology (2012)
   ·  DOI: [10.1148/radiol.12110337](https://doi.org/10.1148/radiol.12110337)
 
-## Model component
-<dbs-pgx drug="gadoxetic acid" model-id="GadoxeticAcid_Sourbron2012_reference" status="rejected" stale="false" population="patients with hepatic metastases from neuroendocrine tumors" measured-compound="gadoxetic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gadoxetic acid" model-id="GadoxeticAcid_Sourbron2012_reference" status="rejected" stale="false" population="patients with hepatic metastases from neuroendocrine tumors" measured-compound="gadoxetic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

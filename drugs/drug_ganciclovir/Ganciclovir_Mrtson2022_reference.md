@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Märtson AG et al., Therapeutic Drug Monitoring of Ganciclo…, Therapeutic drug monitoring (2022)
   ·  DOI: [10.1097/FTD.0000000000000925](https://doi.org/10.1097/FTD.0000000000000925)
 
-## Model component
-<dbs-pgx drug="ganciclovir" model-id="Ganciclovir_Mrtson2022_reference" status="needs_review" stale="false" population="unknown" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ganciclovir" model-id="Ganciclovir_Mrtson2022_reference" status="needs_review" stale="false" population="unknown" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

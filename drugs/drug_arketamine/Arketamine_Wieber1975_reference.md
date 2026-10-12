@@ -26,8 +26,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 ## Citation
 Wieber J et al., Pharmacokinetics of ketamine in man, Der Anaesthesist (1975)
 
-## Model component
-<dbs-pgx drug="Arketamine" model-id="Arketamine_Wieber1975_reference" status="rejected" stale="false" population="adults" measured-compound="ketamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Arketamine" model-id="Arketamine_Wieber1975_reference" status="rejected" stale="false" population="adults" measured-compound="ketamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

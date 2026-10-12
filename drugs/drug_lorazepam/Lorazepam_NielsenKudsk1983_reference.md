@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Nielsen-Kudsk F et al., Pharmacokinetics and bioavailability of…, Acta pharmacologica et toxi… (1983)
   ·  DOI: [10.1111/j.1600-0773.1983.tb03413.x](https://doi.org/10.1111/j.1600-0773.1983.tb03413.x)
 
-## Model component
-<dbs-pgx drug="lorazepam" model-id="Lorazepam_NielsenKudsk1983_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="lorazepam" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_NielsenKudsk1983_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="lorazepam" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.

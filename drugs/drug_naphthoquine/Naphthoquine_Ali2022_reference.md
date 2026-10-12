@@ -26,8 +26,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 Ali AM et al., Population Pharmacokinetics of Antimala…, Antimicrobial agents and ch… (2022)
   ·  DOI: [10.1128/aac.01696-21](https://doi.org/10.1128/aac.01696-21)
 
-## Model component
-<dbs-pgx drug="Naphthoquine" model-id="Naphthoquine_Ali2022_reference" status="needs_review" stale="false" population="children and adults with uncomplicated malaria in Tanzania" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Naphthoquine" model-id="Naphthoquine_Ali2022_reference" status="needs_review" stale="false" population="children and adults with uncomplicated malaria in Tanzania" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

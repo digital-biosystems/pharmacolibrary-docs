@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Jones RD et al., Pharmacokinetics of flumazenil and mida…, British journal of anaesthe… (1993)
   ·  DOI: [10.1093/bja/70.3.286](https://doi.org/10.1093/bja/70.3.286)
 
-## Model component
-<dbs-pgx drug="flumazenil" model-id="Flumazenil_Jones1993_reference" status="needs_review" stale="false" population="healthy Chinese children undergoing circumcision" measured-compound="flumazenil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flumazenil" model-id="Flumazenil_Jones1993_reference" status="needs_review" stale="false" population="healthy Chinese children undergoing circumcision" measured-compound="flumazenil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

@@ -18,15 +18,15 @@
 
 **Model:** No model was generated from this record.
 
-> The record identifies carboplatin as associated with white blood cell (WBC) counts, but does not resolve a concentration or dose driver. The excerpts do not provide the mechanism or any potency or rate values.
+> The record describes an effect-compartment model where paracetamol inhibits the pain equivalent current response. No mechanistic details or numerical parameters are provided in the available paper excerpts.
 >
-> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
-- **paper:** `Chisaki_2016`
-- **model family:** `unknown`
-- **driver:** `not_resolved`
-- **tier:** population
-- **effect:** unknown/unknown
+- **paper:** `Shinoda_2022`
+- **model family:** `effect_compartment`
+- **driver:** `cited_pk`
+- **tier:** descriptive
+- **effect:** inhibition/additive
 
 ## Citation
 Chisaki Y et al., Population Pharmacodynamic Model for Ba…, Pharmacology (2016)

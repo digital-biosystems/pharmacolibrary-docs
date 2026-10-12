@@ -27,8 +27,7 @@ Independently confirmed by `gpt-oss-120b`.
 Wang K et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01286-8](https://doi.org/10.1007/s40262-023-01286-8)
 
-## Model component
-<dbs-pgx drug="glucose" model-id="Glucose_Wang2023_reference" status="curated_candidate" stale="false" population="" measured-compound="glucose" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glucose" model-id="Glucose_Wang2023_reference" status="curated_candidate" stale="false" population="" measured-compound="glucose" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

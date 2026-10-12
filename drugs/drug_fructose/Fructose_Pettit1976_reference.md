@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Pettit GW et al., Oral fructose tolerance, gastric emptyi…, Archives internationales de… (1976)
   ·  DOI: [10.3109/13813457609078567](https://doi.org/10.3109/13813457609078567)
 
-## Model component
-<dbs-pgx drug="fructose" model-id="Fructose_Pettit1976_reference" status="rejected" stale="false" population="conscious rhesus monkeys" measured-compound="fructose" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fructose" model-id="Fructose_Pettit1976_reference" status="rejected" stale="false" population="conscious rhesus monkeys" measured-compound="fructose" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

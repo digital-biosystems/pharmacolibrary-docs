@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Al-Shaer MH et al., Ethionamide Population Pharmacokinetic…, Antimicrobial agents and ch… (2020)
   ·  DOI: [10.1128/AAC.00713-20](https://doi.org/10.1128/AAC.00713-20)
 
-## Model component
-<dbs-pgx drug="ethionamide" model-id="Ethionamide_AlShaer2020_reference" status="curated_candidate" stale="false" population="healthy volunteers and patients with MDR-TB" measured-compound="ethionamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_AlShaer2020_reference" status="curated_candidate" stale="false" population="healthy volunteers and patients with MDR-TB" measured-compound="ethionamide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

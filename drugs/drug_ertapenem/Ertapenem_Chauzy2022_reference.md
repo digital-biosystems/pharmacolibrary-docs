@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Chauzy A et al., PKPD Modeling of the Inoculum Effect of…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.842921](https://doi.org/10.3389/fphar.2022.842921)
 
-## Model component
-<dbs-pgx drug="ertapenem" model-id="Ertapenem_Chauzy2022_reference" status="curated_candidate" stale="false" population="" measured-compound="ertapenem" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Chauzy2022_reference" status="curated_candidate" stale="false" population="" measured-compound="ertapenem" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

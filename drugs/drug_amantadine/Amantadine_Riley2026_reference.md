@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Riley HL et al., Assessment of pharmacokinetic parameter…, BMC veterinary research (2026)
   ·  DOI: [10.1186/s12917-026-05672-9](https://doi.org/10.1186/s12917-026-05672-9)
 
-## Model component
-<dbs-pgx drug="amantadine" model-id="Amantadine_Riley2026_reference" status="needs_review" stale="false" population="healthy adult horses" measured-compound="amantadine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_Riley2026_reference" status="needs_review" stale="false" population="healthy adult horses" measured-compound="amantadine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 8 extracted.

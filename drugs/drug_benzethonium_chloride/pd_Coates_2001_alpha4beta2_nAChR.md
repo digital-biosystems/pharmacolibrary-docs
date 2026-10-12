@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D08A&quot;,&quot;href&quot;:&quot;atc/D08A.md&quot;},{&quot;label&quot;:&quot;benzethonium chloride&quot;,&quot;href&quot;:&quot;drugs/drug_benzethonium_chloride/&quot;},{&quot;label&quot;:&quot;Coates_2001 \u00b7 PD ACh-evoked current inhibition, human alpha4beta2 nAChR&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# ACh-evoked current inhibition, human alpha4beta2 nAChR — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
+# CXCL8 production by keratinocytes (inhibition by salbutamol) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -19,11 +19,11 @@
 
 **Model:** No model was generated from this record.
 
-> Benzethonium chloride concentration-dependently inhibits ACh-evoked currents through human alpha4beta2 nACh receptors, described by a sigmoid Emax model with an IC50 of 49 nM; the paper excerpts do not state Emax, Hill coefficient, or the mechanism beyond inhibition.
+> Salbutamol concentrations (nM) inhibit CXCL8 production by keratinocytes, described by a sigmoid Emax model with an IC50 of 1.1 nM; the paper excerpts do not state the mechanism beyond this inhibitory effect, nor Imax, gamma, or kinetic parameters.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
-- **paper:** `Coates_2001`
+- **paper:** `Wettey_2006`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
@@ -49,13 +49,14 @@ first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.8 (4/5 fields) | 1 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.6 (3/5 fields) | 2 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `einfracz:gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | sigmoid_emax | emax | mismatch |
 
 </details>
 

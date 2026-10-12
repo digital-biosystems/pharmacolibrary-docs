@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 Ruiz-Garcia A et al., Pharmacokinetic Models to Characterize…, Pharmaceutics (2020)
   ·  DOI: [10.3390/pharmaceutics12040330](https://doi.org/10.3390/pharmaceutics12040330)
 
-## Model component
-<dbs-pgx drug="dacomitinib" model-id="Dacomitinib_RuizGarcia2020_parameter_estimate" status="curated_candidate" stale="false" population="healthy volunteers" measured-compound="dacomitinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dacomitinib" model-id="Dacomitinib_RuizGarcia2020_parameter_estimate" status="curated_candidate" stale="false" population="healthy volunteers" measured-compound="dacomitinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.

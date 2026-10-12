@@ -32,8 +32,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Thakre N et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-026-01637-1](https://doi.org/10.1007/s40262-026-01637-1)
 
-## Model component
-<dbs-pgx drug="Glecaprevir" model-id="Glecaprevir_Thakre2026_reference" status="model_quarantined" stale="false" population="pediatric patients with chronic HCV infection, ages 3 to &lt; 18 years" measured-compound="glecaprevir and pibrentasvir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Glecaprevir" model-id="Glecaprevir_Thakre2026_reference" status="model_quarantined" stale="false" population="pediatric patients with chronic HCV infection, ages 3 to &lt; 18 years" measured-compound="glecaprevir and pibrentasvir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted, plus 3 covariate effects.

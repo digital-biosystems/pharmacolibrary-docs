@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Truhn D et al., A New Model for MR Evaluation of Liver…, European radiology (2019)
   ·  DOI: [10.1007/s00330-018-5500-5](https://doi.org/10.1007/s00330-018-5500-5)
 
-## Model component
-<dbs-pgx drug="gadoxetic acid" model-id="GadoxeticAcid_Truhn2019_reference" status="rejected" stale="false" population="patients undergoing dynamic liver MRI" measured-compound="gadoxetic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gadoxetic acid" model-id="GadoxeticAcid_Truhn2019_reference" status="rejected" stale="false" population="patients undergoing dynamic liver MRI" measured-compound="gadoxetic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

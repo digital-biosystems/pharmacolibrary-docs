@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Gastine S et al., Simultaneous pharmacokinetic/pharmacody…, The Journal of antimicrobia… (2022)
   ·  DOI: [10.1093/jac/dkab413](https://doi.org/10.1093/jac/dkab413)
 
-## Model component
-<dbs-pgx drug="ampicillin" model-id="Ampicillin_Gastine2022_reference" status="needs_review" stale="false" population="neonates" measured-compound="ampicillin and gentamicin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Gastine2022_reference" status="needs_review" stale="false" population="neonates" measured-compound="ampicillin and gentamicin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted, plus 1 covariate effect.

@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Li Y et al., PopPK modeling supports BW band dosing…, NPJ genomic medicine (2025)
   ·  DOI: [10.1038/s41525-025-00519-y](https://doi.org/10.1038/s41525-025-00519-y)
 
-## Model component
-<dbs-pgx drug="brivaracetam" model-id="Brivaracetam_Li2025_reference" status="needs_review" stale="false" population="" measured-compound="brivaracetam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brivaracetam" model-id="Brivaracetam_Li2025_reference" status="needs_review" stale="false" population="" measured-compound="brivaracetam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V04C&quot;,&quot;href&quot;:&quot;atc/V04C.md&quot;},{&quot;label&quot;:&quot;methacholine&quot;,&quot;href&quot;:&quot;drugs/drug_methacholine/&quot;},{&quot;label&quot;:&quot;Tabrizchi_1999 \u00b7 PD methacholine-stimulated cyclic GMP accumulation&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# methacholine-stimulated cyclic GMP accumulation — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+# rat atrial rate — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -19,13 +19,13 @@
 
 **Model:** No model was generated from this record.
 
-> The paper relates methacholine dose to methacholine-stimulated cyclic GMP accumulation, but the available excerpts do not state the PD model, mechanism, or any potency or rate parameters.
+> Salbutamol concentrations stimulate rat atrial rate via an Emax model, as recorded; the paper excerpts provide no mechanism details and no parameter values (Imax, EC50, gamma) are available.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
-- **paper:** `Tabrizchi_1999`
-- **model family:** `unknown`
-- **driver:** `dose_only`
+- **paper:** `Wilson_1984`
+- **model family:** `emax`
+- **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** stimulation/unknown
 
@@ -48,10 +48,10 @@ first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whate
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `driver_compound` | methacholine | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `driver_compound` | salbutamol | not captured | mismatch |
 | `einfracz:gpt-oss-120b` | `effect_direction` | stimulation | not captured | mismatch |
 | `einfracz:gpt-oss-120b` | `effect_form` | unknown | not captured | mismatch |
-| `einfracz:gpt-oss-120b` | `model_family` | unknown | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | emax | not captured | mismatch |
 
 </details>
 

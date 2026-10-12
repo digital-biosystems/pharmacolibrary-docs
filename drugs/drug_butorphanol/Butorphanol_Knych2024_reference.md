@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Knych HK et al., Population pharmacokinetics of butorpha…, Journal of veterinary pharm… (2024)
   ·  DOI: [10.1111/jvp.13450](https://doi.org/10.1111/jvp.13450)
 
-## Model component
-<dbs-pgx drug="butorphanol" model-id="Butorphanol_Knych2024_reference" status="rejected" stale="false" population="exercised thoroughbred horses" measured-compound="butorphanol" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="butorphanol" model-id="Butorphanol_Knych2024_reference" status="rejected" stale="false" population="exercised thoroughbred horses" measured-compound="butorphanol" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

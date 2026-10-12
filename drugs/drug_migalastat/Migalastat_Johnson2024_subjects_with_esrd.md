@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Johnson FK et al., Pharmacokinetic evaluation of single-do…, PloS one (2024)
   ·  DOI: [10.1371/journal.pone.0314030](https://doi.org/10.1371/journal.pone.0314030)
 
-## Model component
-<dbs-pgx drug="migalastat" model-id="Migalastat_Johnson2024_subjects_with_esrd" status="rejected" stale="false" population="adults with ESRD on dialysis and healthy controls" measured-compound="migalastat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="migalastat" model-id="Migalastat_Johnson2024_subjects_with_esrd" status="rejected" stale="false" population="adults with ESRD on dialysis and healthy controls" measured-compound="migalastat" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

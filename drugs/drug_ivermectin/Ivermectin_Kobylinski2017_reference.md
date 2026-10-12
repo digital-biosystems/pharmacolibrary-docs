@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Kobylinski KC et al., Ivermectin susceptibility and sporontoc…, Malaria journal (2017)
   ·  DOI: [10.1186/s12936-017-1923-8](https://doi.org/10.1186/s12936-017-1923-8)
 
-## Model component
-<dbs-pgx drug="ivermectin" model-id="Ivermectin_Kobylinski2017_reference" status="curated_candidate" stale="false" population="healthy Thai volunteers" measured-compound="ivermectin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ivermectin" model-id="Ivermectin_Kobylinski2017_reference" status="curated_candidate" stale="false" population="healthy Thai volunteers" measured-compound="ivermectin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.

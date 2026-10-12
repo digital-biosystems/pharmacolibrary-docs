@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (2020)
   ·  DOI: [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931)
 
-## Model component
-<dbs-pgx drug="dabrafenib" model-id="Dabrafenib_Balakirouchenane2020_final_tra_model" status="model_quarantined" stale="false" population="adults with metastatic BRAF-mutated solid tumors" measured-compound="dabrafenib, hydroxy-dabrafenib, and trametinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dabrafenib" model-id="Dabrafenib_Balakirouchenane2020_final_tra_model" status="model_quarantined" stale="false" population="adults with metastatic BRAF-mutated solid tumors" measured-compound="dabrafenib, hydroxy-dabrafenib, and trametinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

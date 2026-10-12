@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Li S et al., Population Pharmacokinetics of Melphala…, Journal of clinical pharmac… (2022)
   ·  DOI: [10.1002/jcph.2030](https://doi.org/10.1002/jcph.2030)
 
-## Model component
-<dbs-pgx drug="melphalan" model-id="Melphalan_Li2022_reference" status="curated_candidate" stale="false" population="pediatric patients undergoing hematopoietic cell transplantation" measured-compound="melphalan" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="melphalan" model-id="Melphalan_Li2022_reference" status="curated_candidate" stale="false" population="pediatric patients undergoing hematopoietic cell transplantation" measured-compound="melphalan" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

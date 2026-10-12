@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on paramete
 Hefnawy MM et al., A Rapid and Sensitive Liquid Chromatogr…, Molecules (Basel, Switzerla… (2022)
   ·  DOI: [10.3390/molecules28010079](https://doi.org/10.3390/molecules28010079)
 
-## Model component
-<dbs-pgx drug="acalabrutinib" model-id="Acalabrutinib_Hefnawy2022_reference" status="needs_review" stale="false" population="" measured-compound="acalabrutinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acalabrutinib" model-id="Acalabrutinib_Hefnawy2022_reference" status="needs_review" stale="false" population="" measured-compound="acalabrutinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Lin SK et al., Pharmacokinetics of iodoxamic acid in r…, Journal of pharmaceutical s… (1978)
   ·  DOI: [10.1002/jps.2600670715](https://doi.org/10.1002/jps.2600670715)
 
-## Model component
-<dbs-pgx drug="iodoxamic acid" model-id="IodoxamicAcid_Lin1978_reference" status="rejected" stale="false" population="rhesus monkeys" measured-compound="iodoxamic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="iodoxamic acid" model-id="IodoxamicAcid_Lin1978_reference" status="rejected" stale="false" population="rhesus monkeys" measured-compound="iodoxamic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

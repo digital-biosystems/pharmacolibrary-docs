@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Chua L et al., Mirikizumab Pharmacokinetics in Patient…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01281-z](https://doi.org/10.1007/s40262-023-01281-z)
 
-## Model component
-<dbs-pgx drug="mirikizumab" model-id="Mirikizumab_Chua2023_reference" status="needs_review" stale="false" population="patients with moderately to severely active ulcerative colitis" measured-compound="mirikizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mirikizumab" model-id="Mirikizumab_Chua2023_reference" status="needs_review" stale="false" population="patients with moderately to severely active ulcerative colitis" measured-compound="mirikizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

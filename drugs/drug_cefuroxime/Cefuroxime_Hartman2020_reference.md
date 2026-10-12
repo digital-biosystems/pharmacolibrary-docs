@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Hartman SJF et al., Pharmacokinetics and Target Attainment…, Clinical pharmacokinetics (2020)
   ·  DOI: [10.1007/s40262-019-00813-w](https://doi.org/10.1007/s40262-019-00813-w)
 
-## Model component
-<dbs-pgx drug="cefuroxime" model-id="Cefuroxime_Hartman2020_reference" status="curated_candidate" stale="false" population="critically ill children" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Hartman2020_reference" status="curated_candidate" stale="false" population="critically ill children" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Rouster-Stevens KA et al., Pharmacokinetic study of oral prednisol…, Arthritis and rheumatism (2008)
   ·  DOI: [10.1002/art.23341](https://doi.org/10.1002/art.23341)
 
-## Model component
-<dbs-pgx drug="methylprednisolone" model-id="Methylprednisolone_RousterStevens2008_reference" status="needs_review" stale="false" population="patients with juvenile dermatomyositis" measured-compound="prednisolone, methylprednisolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methylprednisolone" model-id="Methylprednisolone_RousterStevens2008_reference" status="needs_review" stale="false" population="patients with juvenile dermatomyositis" measured-compound="prednisolone, methylprednisolone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

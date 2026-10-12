@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 Blumer J et al., Single-dose pharmacokinetics of famcicl…, Antimicrobial agents and ch… (2010)
   ·  DOI: [10.1128/AAC.01508-09](https://doi.org/10.1128/AAC.01508-09)
 
-## Model component
-<dbs-pgx drug="famciclovir" model-id="Famciclovir_Blumer2010_no_of_parameters_estimated" status="needs_review" stale="false" population="infants and children aged 1 month to 12 years" measured-compound="penciclovir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="famciclovir" model-id="Famciclovir_Blumer2010_no_of_parameters_estimated" status="needs_review" stale="false" population="infants and children aged 1 month to 12 years" measured-compound="penciclovir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

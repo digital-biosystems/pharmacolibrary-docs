@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 Vaddady PK et al., Pharmacokinetics of a combination of Δ9…, Biopharmaceutics & drug dis… (2011)
   ·  DOI: [10.1002/bdd.740](https://doi.org/10.1002/bdd.740)
 
-## Model component
-<dbs-pgx drug="celecoxib" model-id="Celecoxib_Vaddady2011_shock_0_56" status="curated_candidate" stale="false" population="pigs in hemorrhagic shock and normotensive pigs" measured-compound="THC and celecoxib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Vaddady2011_shock_0_56" status="curated_candidate" stale="false" population="pigs in hemorrhagic shock and normotensive pigs" measured-compound="THC and celecoxib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

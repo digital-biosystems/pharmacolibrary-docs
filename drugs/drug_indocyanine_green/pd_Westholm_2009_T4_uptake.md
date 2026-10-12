@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IndocyanineGreen_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indocyanine_green/IndocyanineGreen_Han2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Oatp1c1-mediated T4 uptake — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.95).">rat</span>
+# rat white adipocyte lipolysis — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -20,12 +20,12 @@
 
 **Model:** No model was generated from this record.
 
-> The paper models indocyanine green (concentrations in microM) inhibiting Oatp1c1-mediated T4 uptake using a sigmoid Emax model, but no full text is available, so the mechanism, potency parameters (IC50, Imax, gamma) and effect form are not stated.
+> The paper does not provide excerpts describing the mechanism; the record indicates salbutamol concentrations stimulate rat white adipocyte lipolysis via an Emax-type model, with no potency or rate parameters stated.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
-- **paper:** `Westholm_2009`
-- **model family:** `sigmoid_emax`
+- **paper:** `Wilson_1984`
+- **model family:** `emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** inhibition/unknown
@@ -38,19 +38,21 @@ Westholm DE et al., Competitive inhibition of organic anion…, Endocrinology (2
 _No resolved parameters._
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
+| `einfracz:gpt-oss-120b` | secondary_empty | 0.0 (0/4 fields) | 4 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
-| `einfracz:gpt-oss-120b` | `model_family` | sigmoid_emax | emax | mismatch |
+| `einfracz:gpt-oss-120b` | `driver_compound` | salbutamol | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_direction` | stimulation | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | unknown | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | emax | not captured | mismatch |
 
 </details>
 

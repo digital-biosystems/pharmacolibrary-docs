@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Chan PL et al., The use of the SAEM algorithm in MONOLI…, Journal of pharmacokinetics… (2011)
   ·  DOI: [10.1007/s10928-010-9175-z](https://doi.org/10.1007/s10928-010-9175-z)
 
-## Model component
-<dbs-pgx drug="maraviroc" model-id="Maraviroc_Chan2011_pk_alone_pk_estimation_step_of_the_two_st" status="needs_review" stale="false" population="asymptomatic HIV-1 infected subjects" measured-compound="maraviroc" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="maraviroc" model-id="Maraviroc_Chan2011_pk_alone_pk_estimation_step_of_the_two_st" status="needs_review" stale="false" population="asymptomatic HIV-1 infected subjects" measured-compound="maraviroc" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted, plus 2 covariate effects.

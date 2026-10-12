@@ -1,4 +1,5 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V08C&quot;,&quot;href&quot;:&quot;atc/V08C.md&quot;},{&quot;label&quot;:&quot;gadofosveset&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07X&quot;,&quot;href&quot;:&quot;atc/N07X.md&quot;},{&quot;label&quot;:&quot;valbenazine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Valbenazine_Nguyen2025_reference&quot;,&quot;label&quot;:&quot;Nguyen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_valbenazine/Valbenazine_Nguyen2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # gadofosveset
 
@@ -26,14 +27,13 @@ Gadofosveset is a paramagnetic contrast agent used for magnetic resonance angiog
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:53 | 3:38 | 0/0/2 | 0/0/0 | 0/0/0 | 53,045/21,780 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 05:04 | 0:54 | 0/1/0 | 0/0/0 | 0/0/0 | 54,669/3,526 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Spanakis_2014_data_from_fda_drugbank](drugs/drug_gadofosveset/Gadofosveset_Spanakis2014_data_from_fda_drugbank.md) | — | 1-compartment (no model) | 4 | Spanakis M et al., In silico evaluation of gadofosveset ph…, In silico pharmacology (2014) | [10.1186/s40203-014-0002-x](https://doi.org/10.1186/s40203-014-0002-x) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Spanakis_2014_predicted_from_simcyp](drugs/drug_gadofosveset/Gadofosveset_Spanakis2014_predicted_from_simcyp.md) | — | 1-compartment (no model) | 4 | Spanakis M et al., In silico evaluation of gadofosveset ph…, In silico pharmacology (2014) | [10.1186/s40203-014-0002-x](https://doi.org/10.1186/s40203-014-0002-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.657). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Nguyen_2025_reference](drugs/drug_valbenazine/Valbenazine_Nguyen2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 10 (+2 cov.) | Nguyen HQ et al., Population Pharmacokinetic and Exposure…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70092](https://doi.org/10.1002/jcph.70092) |
 
 ## ADME sites
 
@@ -55,7 +55,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

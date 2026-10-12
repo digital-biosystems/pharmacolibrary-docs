@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 van der Laan LE et al., Pharmacokinetics and Drug-Drug Interact…, Frontiers in pharmacology (2021)
   ·  DOI: [10.3389/fphar.2021.722204](https://doi.org/10.3389/fphar.2021.722204)
 
-## Model component
-<dbs-pgx drug="ethionamide" model-id="Ethionamide_van2021_reference" status="needs_review" stale="false" population="" measured-compound="ethionamide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_van2021_reference" status="needs_review" stale="false" population="" measured-compound="ethionamide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

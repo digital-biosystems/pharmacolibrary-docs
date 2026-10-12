@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Healy P et al., Use of lorazepam for analgosedation dur…, Frontiers in medicine (2025)
   ·  DOI: [10.3389/fmed.2025.1600671](https://doi.org/10.3389/fmed.2025.1600671)
 
-## Model component
-<dbs-pgx drug="lorazepam" model-id="Lorazepam_Healy2025_median" status="needs_review" stale="false" population="mechanically ventilated pediatric ICU patients" measured-compound="lorazepam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Healy2025_median" status="needs_review" stale="false" population="mechanically ventilated pediatric ICU patients" measured-compound="lorazepam" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted.

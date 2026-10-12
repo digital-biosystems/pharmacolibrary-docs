@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Zhang S et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01540-1](https://doi.org/10.1007/s40262-025-01540-1)
 
-## Model component
-<dbs-pgx drug="nedosiran" model-id="Nedosiran_Zhang2025_reference" status="needs_review" stale="true" population="patients with primary hyperoxaluria (PH1, PH2, HV)" measured-compound="nedosiran" parameterization="apparent" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nedosiran" model-id="Nedosiran_Zhang2025_reference" status="needs_review" stale="true" population="patients with primary hyperoxaluria (PH1, PH2, HV)" measured-compound="nedosiran" parameterization="apparent" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 10 extracted.

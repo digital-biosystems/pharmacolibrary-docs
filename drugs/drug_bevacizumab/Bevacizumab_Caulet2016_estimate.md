@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Caulet M et al., Bevacizumab Pharmacokinetics Influence…, Clinical pharmacokinetics (2016)
   ·  DOI: [10.1007/s40262-016-0406-3](https://doi.org/10.1007/s40262-016-0406-3)
 
-## Model component
-<dbs-pgx drug="bevacizumab" model-id="Bevacizumab_Caulet2016_estimate" status="not_modelled" stale="false" population="patients with metastatic colorectal cancer" measured-compound="bevacizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Caulet2016_estimate" status="not_modelled" stale="false" population="patients with metastatic colorectal cancer" measured-compound="bevacizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted, plus 1 covariate effect.

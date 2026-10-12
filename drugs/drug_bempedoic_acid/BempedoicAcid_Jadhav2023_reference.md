@@ -24,8 +24,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Jadhav SB et al., Population pharmacokinetic and pharmaco…, Journal of pharmacokinetics… (2023)
   ·  DOI: [10.1007/s10928-023-09864-w](https://doi.org/10.1007/s10928-023-09864-w)
 
-## Model component
-<dbs-pgx drug="bempedoic acid" model-id="BempedoicAcid_Jadhav2023_reference" status="extracted" stale="false" population="healthy subjects and patients with dyslipidemia" measured-compound="bempedoic acid" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bempedoic acid" model-id="BempedoicAcid_Jadhav2023_reference" status="extracted" stale="false" population="healthy subjects and patients with dyslipidemia" measured-compound="bempedoic acid" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted, plus 2 covariate effects.

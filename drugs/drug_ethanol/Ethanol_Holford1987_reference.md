@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Holford NH, Clinical pharmacokinetics of ethanol, Clinical pharmacokinetics (1987)
   ·  DOI: [10.2165/00003088-198713050-00001](https://doi.org/10.2165/00003088-198713050-00001)
 
-## Model component
-<dbs-pgx drug="ethanol" model-id="Ethanol_Holford1987_reference" status="rejected" stale="false" population="adults" measured-compound="ethanol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ethanol" model-id="Ethanol_Holford1987_reference" status="rejected" stale="false" population="adults" measured-compound="ethanol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

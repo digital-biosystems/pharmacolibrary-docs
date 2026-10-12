@@ -26,8 +26,7 @@ Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
 Świerczek A et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14051090](https://doi.org/10.3390/pharmaceutics14051090)
 
-## Model component
-<dbs-pgx drug="clofibrate" model-id="Clofibrate_wierczek2022_reference" status="extracted" stale="false" population="" measured-compound="clofibrate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clofibrate" model-id="Clofibrate_wierczek2022_reference" status="extracted" stale="false" population="" measured-compound="clofibrate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

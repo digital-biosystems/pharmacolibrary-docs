@@ -31,8 +31,7 @@ Independently confirmed by `qwen3.8-27b`.
 Krishna R et al., The utility of mixed-effects covariate…, Biopharmaceutics & drug dis… (2004)
   ·  DOI: [10.1002/bdd.425](https://doi.org/10.1002/bdd.425)
 
-## Model component
-<dbs-pgx drug="fexofenadine" model-id="Fexofenadine_Krishna2004_reference" status="rejected" stale="false" population="adults and children with allergic rhinitis" measured-compound="fexofenadine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fexofenadine" model-id="Fexofenadine_Krishna2004_reference" status="rejected" stale="false" population="adults and children with allergic rhinitis" measured-compound="fexofenadine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

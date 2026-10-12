@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Laporte S et al., Population pharmacokinetic of nadropari…, European journal of pharmac… (1999)
   ·  DOI: [10.1016/s0928-0987(98)00064-5](https://doi.org/10.1016/s0928-0987(98)00064-5)
 
-## Model component
-<dbs-pgx drug="nadroparin" model-id="Nadroparin_Laporte1999_reference" status="rejected" stale="true" population="children hospitalised for open heart surgery" measured-compound="nadroparin calcium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nadroparin" model-id="Nadroparin_Laporte1999_reference" status="rejected" stale="true" population="children hospitalised for open heart surgery" measured-compound="nadroparin calcium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

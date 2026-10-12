@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Ciccolini J et al., Population pharmacokinetics of etoposid…, Therapeutic drug monitoring (2002)
   ·  DOI: [10.1097/00007691-200212000-00005](https://doi.org/10.1097/00007691-200212000-00005)
 
-## Model component
-<dbs-pgx drug="etoposide" model-id="Etoposide_Ciccolini2002_reference" status="rejected" stale="false" population="oncology patients" measured-compound="etoposide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etoposide" model-id="Etoposide_Ciccolini2002_reference" status="rejected" stale="false" population="oncology patients" measured-compound="etoposide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

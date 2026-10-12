@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Chiang CH et al., Ocular pharmacokinetic models of clonid…, Journal of pharmacokinetics… (1986)
   ·  DOI: [10.1007/BF01065260](https://doi.org/10.1007/BF01065260)
 
-## Model component
-<dbs-pgx drug="clonidine" model-id="Clonidine_Chiang1986_reference" status="rejected" stale="true" population="New Zealand white rabbits" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Chiang1986_reference" status="rejected" stale="true" population="New Zealand white rabbits" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

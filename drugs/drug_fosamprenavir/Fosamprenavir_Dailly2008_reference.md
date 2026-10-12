@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 Dailly E et al., Impact of nevirapine or efavirenz co-ad…, Fundamental & clinical phar… (2008)
   ·  DOI: [10.1111/j.1472-8206.2007.00556.x](https://doi.org/10.1111/j.1472-8206.2007.00556.x)
 
-## Model component
-<dbs-pgx drug="fosamprenavir" model-id="Fosamprenavir_Dailly2008_reference" status="needs_review" stale="false" population="HIV-infected patients treated with fosamprenavir/ritonavir, with or without nevirapine or efavirenz" measured-compound="amprenavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fosamprenavir" model-id="Fosamprenavir_Dailly2008_reference" status="needs_review" stale="false" population="HIV-infected patients treated with fosamprenavir/ritonavir, with or without nevirapine or efavirenz" measured-compound="amprenavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

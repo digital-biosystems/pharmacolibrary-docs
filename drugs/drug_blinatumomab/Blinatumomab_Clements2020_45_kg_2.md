@@ -28,8 +28,7 @@ Independently confirmed by `qwen3.8-27b`.
 Clements JD et al., Population Pharmacokinetics of Blinatum…, Clinical pharmacokinetics (2020)
   ·  DOI: [10.1007/s40262-019-00823-8](https://doi.org/10.1007/s40262-019-00823-8)
 
-## Model component
-<dbs-pgx drug="blinatumomab" model-id="Blinatumomab_Clements2020_45_kg_2" status="rejected" stale="false" population="pediatric and adult patients with hematological malignancies" measured-compound="blinatumomab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="blinatumomab" model-id="Blinatumomab_Clements2020_45_kg_2" status="rejected" stale="false" population="pediatric and adult patients with hematological malignancies" measured-compound="blinatumomab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

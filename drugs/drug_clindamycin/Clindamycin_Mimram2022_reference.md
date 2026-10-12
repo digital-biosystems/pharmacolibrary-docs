@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Mimram L et al., Population Pharmacokinetics of Orally A…, Antibiotics (Basel, Switzer… (2022)
   ·  DOI: [10.3390/antibiotics11111462](https://doi.org/10.3390/antibiotics11111462)
 
-## Model component
-<dbs-pgx drug="clindamycin" model-id="Clindamycin_Mimram2022_reference" status="curated_candidate" stale="false" population="adults with prosthetic joint infections" measured-compound="clindamycin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clindamycin" model-id="Clindamycin_Mimram2022_reference" status="curated_candidate" stale="false" population="adults with prosthetic joint infections" measured-compound="clindamycin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

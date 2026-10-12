@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Evans WE et al., Pharmacokinetics of Teniposide (VM26) a…, Cancer chemotherapy and pha… (1982)
   ·  DOI: [10.1007/BF00254537](https://doi.org/10.1007/BF00254537)
 
-## Model component
-<dbs-pgx drug="etoposide" model-id="Etoposide_Evans1982_reference" status="rejected" stale="false" population="children with acute leukemia" measured-compound="etoposide" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etoposide" model-id="Etoposide_Evans1982_reference" status="rejected" stale="false" population="children with acute leukemia" measured-compound="etoposide" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 1 extracted.

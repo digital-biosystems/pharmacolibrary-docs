@@ -27,8 +27,7 @@ Independently confirmed by `gpt-oss-120b`.
 Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021)
   ·  DOI: [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068)
 
-## Model component
-<dbs-pgx drug="apremilast" model-id="Apremilast_Okubo2021_typical_values_rse_for_model_parameters" status="curated_candidate" stale="false" population="subjects with moderate to severe psoriasis" measured-compound="apremilast" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="apremilast" model-id="Apremilast_Okubo2021_typical_values_rse_for_model_parameters" status="curated_candidate" stale="false" population="subjects with moderate to severe psoriasis" measured-compound="apremilast" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

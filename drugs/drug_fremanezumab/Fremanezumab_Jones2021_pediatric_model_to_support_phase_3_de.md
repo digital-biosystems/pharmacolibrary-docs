@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Jones A et al., Scaling Approaches for Pediatric Dose S…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13060785](https://doi.org/10.3390/pharmaceutics13060785)
 
-## Model component
-<dbs-pgx drug="fremanezumab" model-id="Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de" status="needs_review" stale="false" population="pediatric patients with migraine" measured-compound="fremanezumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fremanezumab" model-id="Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de" status="needs_review" stale="false" population="pediatric patients with migraine" measured-compound="fremanezumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted, plus 2 covariate effects.

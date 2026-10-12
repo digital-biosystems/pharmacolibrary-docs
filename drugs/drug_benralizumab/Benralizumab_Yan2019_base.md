@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Yan L et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-019-00738-4](https://doi.org/10.1007/s40262-019-00738-4)
 
-## Model component
-<dbs-pgx drug="benralizumab" model-id="Benralizumab_Yan2019_base" status="needs_review" stale="false" population="adult and adolescent patients with asthma" measured-compound="benralizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="benralizumab" model-id="Benralizumab_Yan2019_base" status="needs_review" stale="false" population="adult and adolescent patients with asthma" measured-compound="benralizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

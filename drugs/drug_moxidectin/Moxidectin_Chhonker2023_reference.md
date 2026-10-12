@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Chhonker YS et al., Pharmacokinetics of Moxidectin combined…, PLoS neglected tropical dis… (2023)
   ·  DOI: [10.1371/journal.pntd.0011567](https://doi.org/10.1371/journal.pntd.0011567)
 
-## Model component
-<dbs-pgx drug="moxidectin" model-id="Moxidectin_Chhonker2023_reference" status="needs_review" stale="false" population="adults with bancroftian filariasis" measured-compound="moxidectin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="moxidectin" model-id="Moxidectin_Chhonker2023_reference" status="needs_review" stale="false" population="adults with bancroftian filariasis" measured-compound="moxidectin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

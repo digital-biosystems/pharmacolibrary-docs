@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Citation
 Winkelmann BR et al., Acute and chronic effects of low dose a…, The European journal of med… (1992)
 
-## Model component
-<dbs-pgx drug="almitrine" model-id="Almitrine_Winkelmann1992_reference" status="rejected" stale="false" population="stable hypoxaemic patients with chronic bronchitis and emphysema" measured-compound="almitrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="almitrine" model-id="Almitrine_Winkelmann1992_reference" status="rejected" stale="false" population="stable hypoxaemic patients with chronic bronchitis and emphysema" measured-compound="almitrine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

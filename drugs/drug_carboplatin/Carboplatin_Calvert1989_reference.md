@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Calvert AH et al., Carboplatin dosage: prospective evaluat…, Journal of clinical oncolog… (1989)
   ·  DOI: [10.1200/JCO.1989.7.11.1748](https://doi.org/10.1200/JCO.1989.7.11.1748)
 
-## Model component
-<dbs-pgx drug="carboplatin" model-id="Carboplatin_Calvert1989_reference" status="rejected" stale="false" population="adults receiving carboplatin chemotherapy" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carboplatin" model-id="Carboplatin_Calvert1989_reference" status="rejected" stale="false" population="adults receiving carboplatin chemotherapy" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

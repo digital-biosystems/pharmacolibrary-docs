@@ -25,8 +25,7 @@
 Beers R et al., Remifentanil update: clinical science a…, CNS drugs (2004)
   ·  DOI: [10.2165/00023210-200418150-00004](https://doi.org/10.2165/00023210-200418150-00004)
 
-## Model component
-<dbs-pgx drug="alfentanil" model-id="Alfentanil_Beers2004_reference" status="curated_candidate" stale="false" population="" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Beers2004_reference" status="curated_candidate" stale="false" population="" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

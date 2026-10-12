@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Vugmeyster Y et al., Avelumab Dose Selection for Clinical St…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-022-01111-8](https://doi.org/10.1007/s40262-022-01111-8)
 
-## Model component
-<dbs-pgx drug="avelumab" model-id="Avelumab_Vugmeyster2022_reference" status="not_modelled" stale="false" population="pediatric patients with refractory/relapsed solid tumors" measured-compound="avelumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_Vugmeyster2022_reference" status="not_modelled" stale="false" population="pediatric patients with refractory/relapsed solid tumors" measured-compound="avelumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 1 covariate effect.

@@ -27,8 +27,7 @@ The record reports only mean apparent clearance (9.1 L/h) and apparent volume of
 Min JS et al., A Comprehensive Review on the Pharmacok…, Drug design, development an… (2025)
   ·  DOI: [10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957)
 
-## Model component
-<dbs-pgx drug="lithium" model-id="Lithium_Min2025_reference" status="needs_review" stale="false" population="" measured-compound="lithium" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Min2025_reference" status="needs_review" stale="false" population="" measured-compound="lithium" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

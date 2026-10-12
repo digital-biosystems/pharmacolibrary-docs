@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 el-Yazigi A et al., Pharmacokinetics of platinum in cancer…, Pharmaceutical research (1989)
   ·  DOI: [10.1023/a:1015920524065](https://doi.org/10.1023/a:1015920524065)
 
-## Model component
-<dbs-pgx drug="carboplatin" model-id="Carboplatin_elYazigi1989_reference" status="needs_review" stale="false" population="cancer patients treated with carboplatin and high-dose methotrexate" measured-compound="platinum (total and ultrafilterable)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carboplatin" model-id="Carboplatin_elYazigi1989_reference" status="needs_review" stale="false" population="cancer patients treated with carboplatin and high-dose methotrexate" measured-compound="platinum (total and ultrafilterable)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

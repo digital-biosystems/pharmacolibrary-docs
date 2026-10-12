@@ -27,8 +27,7 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 Kim C et al., Application of a dual mechanistic appro…, CPT: pharmacometrics & syst… (2021)
   ·  DOI: [10.1002/psp4.12671](https://doi.org/10.1002/psp4.12671)
 
-## Model component
-<dbs-pgx drug="bilastine" model-id="Bilastine_Kim2021_reference" status="needs_review" stale="false" population="elderly subjects" measured-compound="bilastine" parameterization="apparent" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bilastine" model-id="Bilastine_Kim2021_reference" status="needs_review" stale="false" population="elderly subjects" measured-compound="bilastine" parameterization="apparent" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 Yoshitsugu H et al., Pooled model-based approach to compare…, Diagnostic microbiology and… (2011)
   ·  DOI: [10.1016/j.diagmicrobio.2010.12.009](https://doi.org/10.1016/j.diagmicrobio.2010.12.009)
 
-## Model component
-<dbs-pgx drug="entecavir" model-id="Entecavir_Yoshitsugu2011_reference" status="needs_review" stale="false" population="Japanese patients with chronic hepatitis B" measured-compound="entecavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="entecavir" model-id="Entecavir_Yoshitsugu2011_reference" status="needs_review" stale="false" population="Japanese patients with chronic hepatitis B" measured-compound="entecavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

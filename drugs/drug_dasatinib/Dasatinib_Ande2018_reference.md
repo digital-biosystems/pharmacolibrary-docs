@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on paramete
 Ande A et al., Utility of a Novel Three-Dimensional an…, Frontiers in pharmacology (2018)
   ·  DOI: [10.3389/fphar.2018.00403](https://doi.org/10.3389/fphar.2018.00403)
 
-## Model component
-<dbs-pgx drug="dasatinib" model-id="Dasatinib_Ande2018_reference" status="curated_candidate" stale="false" population="" measured-compound="dasatinib" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dasatinib" model-id="Dasatinib_Ande2018_reference" status="curated_candidate" stale="false" population="" measured-compound="dasatinib" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

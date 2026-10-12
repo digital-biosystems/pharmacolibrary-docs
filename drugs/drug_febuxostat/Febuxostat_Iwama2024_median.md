@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Iwama R et al., An integrated population pharmacokineti…, Pharmacology research & per… (2024)
   ·  DOI: [10.1002/prp2.70032](https://doi.org/10.1002/prp2.70032)
 
-## Model component
-<dbs-pgx drug="febuxostat" model-id="Febuxostat_Iwama2024_median" status="model_quarantined" stale="false" population="pediatric patients with hyperuricemia and adult subjects" measured-compound="febuxostat" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="febuxostat" model-id="Febuxostat_Iwama2024_median" status="model_quarantined" stale="false" population="pediatric patients with hyperuricemia and adult subjects" measured-compound="febuxostat" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

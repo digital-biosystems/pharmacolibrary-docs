@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Morse JD et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2025)
   ·  DOI: [10.1177/02698811251330747](https://doi.org/10.1177/02698811251330747)
 
-## Model component
-<dbs-pgx drug="lithium" model-id="Lithium_Morse2025_reference" status="curated_candidate" stale="false" population="" measured-compound="lithium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Morse2025_reference" status="curated_candidate" stale="false" population="" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

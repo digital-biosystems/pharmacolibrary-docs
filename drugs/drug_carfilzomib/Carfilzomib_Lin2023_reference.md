@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Lin LH et al., Population Pharmacokinetics and Pharmac…, Targeted oncology (2023)
   ·  DOI: [10.1007/s11523-023-00992-4](https://doi.org/10.1007/s11523-023-00992-4)
 
-## Model component
-<dbs-pgx drug="carfilzomib" model-id="Carfilzomib_Lin2023_reference" status="needs_review" stale="false" population="adults with relapsed/refractory diffuse large B-cell lymphoma" measured-compound="carfilzomib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carfilzomib" model-id="Carfilzomib_Lin2023_reference" status="needs_review" stale="false" population="adults with relapsed/refractory diffuse large B-cell lymphoma" measured-compound="carfilzomib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

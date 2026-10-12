@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Cazaubon Y et al., Population Pharmacokinetics Modelling a…, Pharmaceutics (2019)
   ·  DOI: [10.3390/pharmaceutics11110566](https://doi.org/10.3390/pharmaceutics11110566)
 
-## Model component
-<dbs-pgx drug="mitotane" model-id="Mitotane_Cazaubon2019_reference" status="curated_candidate" stale="false" population="adults with adrenocortical carcinoma" measured-compound="mitotane" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitotane" model-id="Mitotane_Cazaubon2019_reference" status="curated_candidate" stale="false" population="adults with adrenocortical carcinoma" measured-compound="mitotane" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

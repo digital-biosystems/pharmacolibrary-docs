@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Pariser DM et al., Limited Systemic Exposure with Topical…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-020-00975-y](https://doi.org/10.1007/s40262-020-00975-y)
 
-## Model component
-<dbs-pgx drug="glycopyrronium" model-id="Glycopyrronium_Pariser2021_topical_glycopyrronium_tosylatepe" status="rejected" stale="false" population="adults with primary axillary hyperhidrosis" measured-compound="glycopyrronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glycopyrronium" model-id="Glycopyrronium_Pariser2021_topical_glycopyrronium_tosylatepe" status="rejected" stale="false" population="adults with primary axillary hyperhidrosis" measured-compound="glycopyrronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

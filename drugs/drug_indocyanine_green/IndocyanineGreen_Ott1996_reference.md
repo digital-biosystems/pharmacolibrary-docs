@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Ott P et al., The kinetics of continuously infused in…, Journal of pharmacokinetics… (1996)
   ·  DOI: [10.1007/BF02353509](https://doi.org/10.1007/BF02353509)
 
-## Model component
-<dbs-pgx drug="indocyanine green" model-id="IndocyanineGreen_Ott1996_reference" status="rejected" stale="false" population="pigs" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Ott1996_reference" status="rejected" stale="false" population="pigs" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

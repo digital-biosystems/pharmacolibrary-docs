@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Itohara K et al., Pharmacokinetic and Pharmacodynamic Ass…, Therapeutic drug monitoring (2025)
   ·  DOI: [10.1097/FTD.0000000000001257](https://doi.org/10.1097/FTD.0000000000001257)
 
-## Model component
-<dbs-pgx drug="ganciclovir" model-id="Ganciclovir_Itohara2025_reference" status="rejected" stale="false" population="Japanese infants with symptomatic congenital cytomegalovirus infection" measured-compound="ganciclovir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ganciclovir" model-id="Ganciclovir_Itohara2025_reference" status="rejected" stale="false" population="Japanese infants with symptomatic congenital cytomegalovirus infection" measured-compound="ganciclovir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

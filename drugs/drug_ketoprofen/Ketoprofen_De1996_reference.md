@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 ## Citation
 De Graves FJ et al., Ketoprofen concentrations in plasma and…, American journal of veterin… (1996)
 
-## Model component
-<dbs-pgx drug="ketoprofen" model-id="Ketoprofen_De1996_reference" status="needs_review" stale="false" population="lactating dairy cows" measured-compound="ketoprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketoprofen" model-id="Ketoprofen_De1996_reference" status="needs_review" stale="false" population="lactating dairy cows" measured-compound="ketoprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

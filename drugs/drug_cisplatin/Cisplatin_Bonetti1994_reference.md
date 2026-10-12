@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Bonetti A et al., Cisplatin pharmacokinetics in elderly p…, Therapeutic drug monitoring (1994)
   ·  DOI: [10.1097/00007691-199410000-00006](https://doi.org/10.1097/00007691-199410000-00006)
 
-## Model component
-<dbs-pgx drug="cisplatin" model-id="Cisplatin_Bonetti1994_reference" status="rejected" stale="false" population="elderly patients with various solid tumors" measured-compound="total and ultrafilterable platinum" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_Bonetti1994_reference" status="rejected" stale="false" population="elderly patients with various solid tumors" measured-compound="total and ultrafilterable platinum" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

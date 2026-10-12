@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Mehta R et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2018)
   ·  DOI: [10.1002/jcph.1253](https://doi.org/10.1002/jcph.1253)
 
-## Model component
-<dbs-pgx drug="fluticasone furoate" model-id="FluticasoneFuroate_Mehta2018_historical_model_parameter_esti" status="model_quarantined" stale="false" population="patients with symptomatic COPD" measured-compound="fluticasone furoate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluticasone furoate" model-id="FluticasoneFuroate_Mehta2018_historical_model_parameter_esti" status="model_quarantined" stale="false" population="patients with symptomatic COPD" measured-compound="fluticasone furoate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

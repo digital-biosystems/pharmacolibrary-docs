@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Eto T et al., Pharmacokinetics and safety of gadopicl…, Japanese journal of radiolo… (2025)
   ·  DOI: [10.1007/s11604-025-01842-1](https://doi.org/10.1007/s11604-025-01842-1)
 
-## Model component
-<dbs-pgx drug="gadopiclenol" model-id="Gadopiclenol_Eto2025_0_05_mmol_kg" status="curated_candidate" stale="false" population="Japanese and non-Japanese subjects, including adults and pediatric patients" measured-compound="gadopiclenol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gadopiclenol" model-id="Gadopiclenol_Eto2025_0_05_mmol_kg" status="curated_candidate" stale="false" population="Japanese and non-Japanese subjects, including adults and pediatric patients" measured-compound="gadopiclenol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 8 extracted.
@@ -160,15 +159,14 @@ first reading `gpt-6-luna` — the numbers on this page are its, whatever the re
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_05_mmol_kg/Gadopiclenol_Eto2025_0_05_mmol_kg_modelica.zip" download>Gadopiclenol_Eto2025_0_05_mmol_kg_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_05_mmol_kg/Gadopiclenol_Eto2025_0_05_mmol_kg_fmi.zip" download>Gadopiclenol_Eto2025_0_05_mmol_kg_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_05_mmol_kg/Gadopiclenol_Eto2025_0_05_mmol_kg_matlab.zip" download>Gadopiclenol_Eto2025_0_05_mmol_kg_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_05_mmol_kg/Gadopiclenol_Eto2025_0_05_mmol_kg_matlab_simbio.zip" download>Gadopiclenol_Eto2025_0_05_mmol_kg_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_05_mmol_kg/Gadopiclenol_Eto2025_0_05_mmol_kg_sbml.zip" download>Gadopiclenol_Eto2025_0_05_mmol_kg_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_05_mmol_kg/Gadopiclenol_Eto2025_0_05_mmol_kg_cellml.zip" download>Gadopiclenol_Eto2025_0_05_mmol_kg_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
 </div><figure class="pk-models-diagram"><img src="drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_05_mmol_kg/Gadopiclenol_Eto2025_0_05_mmol_kg.svg" alt="Gadopiclenol_Eto2025_0_05_mmol_kg diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

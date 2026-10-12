@@ -26,8 +26,7 @@ A reported unit could not be converted (equation variable), so that value has no
 Grisic AM et al., Semimechanistic Clearance Models of Onc…, CPT: pharmacometrics & syst… (2020)
   ·  DOI: [10.1002/psp4.12558](https://doi.org/10.1002/psp4.12558)
 
-## Model component
-<dbs-pgx drug="cetuximab" model-id="Cetuximab_Grisic2020_tvarcl" status="not_modelled" stale="false" population="adults with metastatic colorectal cancer" measured-compound="cetuximab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Grisic2020_tvarcl" status="not_modelled" stale="false" population="adults with metastatic colorectal cancer" measured-compound="cetuximab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

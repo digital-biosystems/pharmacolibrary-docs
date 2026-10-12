@@ -24,8 +24,7 @@
 Yang DZ et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-025-01608-y](https://doi.org/10.1007/s40262-025-01608-y)
 
-## Model component
-<dbs-pgx drug="cetuximab" model-id="Cetuximab_Yang2026_reference" status="not_modelled" stale="false" population="" measured-compound="cetuximab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Yang2026_reference" status="not_modelled" stale="false" population="" measured-compound="cetuximab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -1,0 +1,144 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;treprostinil&quot;}]"></div>
+
+# treprostinil
+
+- **generic name:** treprostinil
+- **ATC codes:** `B01AC21`
+- **DrugBank:** [DB00374](https://go.drugbank.com/drugs/DB00374) · **PubChem:** [CID 6918140](https://pubchem.ncbi.nlm.nih.gov/compound/6918140)
+- **molar mass:** 390.5131 g/mol (C23H34O5) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Treprostinil is a prostaglandin medicine used to treat pulmonary hypertension and chronic pulmonary heart disease. It is an approved drug and one product is authorised in the European Union for pulmonary hypertension.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q3495231](https://www.wikidata.org/wiki/Q3495231) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 16:56 | 2:19 | 0/0/0 | 1/0/0 | 1/0/4 | 55,364/4,720 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/12 | 6/0 | 0 |
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Chapman_2018_PAP](drugs/drug_treprostinil/pd_Chapman_2018_PAP.md) | pulmonary arterial pressure ← treprostinil · direct Emax (saturable) effect | — | Chapman RW et al., Inhaled hexadecyl-treprostinil provides…, Pulmonary pharmacology & th… (2018) | [10.1016/j.pupt.2018.02.002](https://doi.org/10.1016/j.pupt.2018.02.002) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Chapman_2018_RVPP](drugs/drug_treprostinil/pd_Chapman_2018_RVPP.md) | right ventricular pulse pressure ← treprostinil · direct Emax (saturable) effect | — | Chapman RW et al., Inhaled hexadecyl-treprostinil provides…, Pulmonary pharmacology & th… (2018) | [10.1016/j.pupt.2018.02.002](https://doi.org/10.1016/j.pupt.2018.02.002) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.">safety allele</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span> | **CYP2C9** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Coons_2023](drugs/drug_treprostinil/pgx_Coons_2023_CYP2C9_safety.md) | Coons JC et al., Pharmacogenomics in the Management of P…, Pharmacogenomics and person… (2023) | [10.2147/PGPM.S361222](https://doi.org/10.2147/PGPM.S361222) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial 0/2</span> | **CAMK2D** | `Q321` · EC50 | target | [Coons_2023](drugs/drug_treprostinil/pgx_Coons_2023_CAMK2D_Q321.md) | Coons JC et al., Pharmacogenomics in the Management of P…, Pharmacogenomics and person… (2023) | [10.2147/PGPM.S361222](https://doi.org/10.2147/PGPM.S361222) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: partial 1/2</span> | **CYP2C8** | `Q27` · CL/F | metabolism | [Coons_2023](drugs/drug_treprostinil/pgx_Coons_2023_CYP2C8_Q27.md) | Coons JC et al., Pharmacogenomics in the Management of P…, Pharmacogenomics and person… (2023) | [10.2147/PGPM.S361222](https://doi.org/10.2147/PGPM.S361222) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial 0/2</span> | **GNG2** | `Q321` · EC50 | target | [Coons_2023](drugs/drug_treprostinil/pgx_Coons_2023_GNG2_Q321.md) | Coons JC et al., Pharmacogenomics in the Management of P…, Pharmacogenomics and person… (2023) | [10.2147/PGPM.S361222](https://doi.org/10.2147/PGPM.S361222) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial 0/2</span> | **PFAS** | `Q321` · EC50 | target | [Coons_2023](drugs/drug_treprostinil/pgx_Coons_2023_PFAS_Q321.md) | Coons JC et al., Pharmacogenomics in the Management of P…, Pharmacogenomics and person… (2023) | [10.2147/PGPM.S361222](https://doi.org/10.2147/PGPM.S361222) |
+
+<details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>What the PGx columns mean</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=treprostinil) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | lung | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| metabolism | liver | `CYP2C8` metabolism/substrate, `CYP2C9` safety_allele/substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+
+<sub>Actors without a tissue in the table: CAMK2D (target), GNG2 (target), P2RY12 (weak inhibitor), PFAS (target), PPARD (target), PTGDR (target), PTGER2 (target), PTGIR (target).</sub>
+
+<details class="legend">
+<summary>Badge legend — what each badge means</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 42 matched, 41 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full text wanted
+
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Gotzkowsky_2010.pdf` | Gotzkowsky SK et al., Lack of a pharmacokinetic interaction b…, Journal of clinical pharmac… (2010) | pgx | 7 | [10.1177/0091270009351173](https://doi.org/10.1177/0091270009351173) | [20133511](https://www.ncbi.nlm.nih.gov/pubmed/20133511) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
+
+<sub>queue written 2026-10-05T16:54:34.201378+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Almazroo_2022 | not_relevant | 0 | 0 | The study investigates the effect of treprostinil on hepatic transporter expression in an animal model of ischemia-reperfusion injury, not the effect of genetic variants on treprostinil pharmacokinetics or pharmacodynamics. |
+| popPK | Axelsen_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of selexipag and its metabolite, not treprostinil. |
+| PD | Axelsen_2021 | not_relevant | 0 | 0 | The paper reports a pharmacokinetic drug-drug interaction study for selexipag (not treprostinil) and contains no pharmacodynamic or exposure-response modeling. |
+| popPK | Briand_2019 | irrelevant | 0 | 0 | The paper is an in-silico and in-vitro enzyme inhibition study (CES1) and does not report pharmacokinetic disposition parameters (CL, V, etc.) for treprostinil. |
+| PD | Briand_2019 | not_relevant | 0 | 0 | The paper reports an in vitro enzyme inhibition IC50 for treprostinil against CES1, which is a pharmacological potency metric, not a pharmacodynamic (exposure-response or dose-response) relationship for the drug's therapeutic effect. |
+| popPK | Bubb_2014 | irrelevant | 0 | 0 | The study is a mechanistic/pharmacodynamic investigation of PDE2 inhibition in pulmonary hypertension where treprostinil is used only as a co-administered agent to test synergy, with no pharmacokinetic parameters reported. |
+| PD | Bubb_2014 | not_relevant | 1 | 0 | The paper describes qualitative pharmacodynamic interactions (augmentation of relaxation) between a PDE2 inhibitor and treprostinil but does not provide numeric PD parameters or concentration-effect curves for treprostinil. |
+| popPK | Chapman_2018 | irrelevant | 2 | 0 | The study is a pharmacodynamic assessment of pulmonary vasodilation in rats and dogs, reporting EC50 values for plasma treprostinil concentrations rather than quantitative pharmacokinetic disposition parameters (CL, V, t1/2). |
+| popPK | Chapman_2021 | irrelevant | 2 | 0 | The study is a pharmacodynamic assessment of tachyphylaxis in rats and reports only qualitative concentration ranges rather than quantitative PK parameters like clearance or volume. |
+| popPK | Coons_2018 | irrelevant | 2 | 1 | This is a clinical review that cites general PK properties (half-life, bioavailability) but does not report original quantitative disposition parameters (CL, V, Q, ka) or population-PK model estimates for treprostinil. |
+| PD | Coons_2018 | not_relevant | 2 | 0 | The paper is a clinical review that qualitatively mentions the existence of a dose-response relationship but does not provide specific numeric PD parameters or data curves. |
+| popPK | Galiè_2003 | irrelevant | 0 | 0 | The paper is a clinical review of prostanoids for PAH that discusses therapeutic outcomes and general pharmacokinetic properties (e.g., half-life) qualitatively but does not report quantitative PK parameters for treprostinil. |
+| PD | Galiè_2003 | not_relevant | 1 | 0 | The text is a qualitative review of prostanoids in PAH and contains no numeric PD parameters, concentration-effect curves, or dose-response data for treprostinil. |
+| popPK | Gatfield_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of selexipag and its metabolite, with treprostinil serving only as a comparator in in vitro assays without reporting PK parameters. |
+| PD | Gatfield_2017 | not_relevant | 0 | 0 | The paper focuses on the pharmacology of selexipag's metabolite (ACT-333679) and only mentions treprostinil as a comparator for full agonism in cAMP assays without providing specific numeric PD parameters or exposure-response data for treprostinil. |
+| PGx | Gotzkowsky_2010 | not_relevant | 0 | 0 | The study evaluates a drug-drug interaction between treprostinil and bosentan, not a pharmacogenomic effect based on gene variants. |
+| PGx | Gotzkowsky_2013 | not_relevant | 0 | 0 | The study evaluates a drug-drug interaction between treprostinil and sildenafil, not a pharmacogenomic effect based on genetic variants. |
+| popPK | Honorato_2017 | irrelevant | 1 | 0 | The paper is a pharmacology review of selexipag that mentions treprostinil only as a comparator without providing original quantitative PK parameter values. |
+| PD | Honorato_2017 | not_relevant | 1 | 0 | The text is a qualitative pharmacology review of selexipag and other prostacyclin pathway drugs, containing no numeric PD parameters or exposure-response data for treprostinil. |
+| popPK | Isoherranen_2025 | irrelevant | 0 | 0 | This is a general review of PBPK modeling methodology and does not report specific quantitative pharmacokinetic parameters for treprostinil. |
+| PD | Isoherranen_2025 | not_relevant | 0 | 0 | The paper is a review of PBPK modeling methodology and does not report specific pharmacodynamic or exposure-response data for treprostinil. |
+| popPK | Lawrence_2018 | irrelevant | 0 | 0 | The study is a clinical efficacy and safety evaluation of treprostinil in infants with CDH, reporting no pharmacokinetic parameters. |
+| popPK | LeVarge_2012 | irrelevant | 2 | 0 | The paper is a review article that discusses pharmacokinetics qualitatively but does not provide original quantitative disposition parameters or numeric values for treprostinil. |
+| PD | LeVarge_2012 | not_relevant | 2 | 0 | The text is a review summary that qualitatively describes the pharmacodynamics and clinical efficacy of inhaled treprostinil but does not provide specific numeric PD parameters, concentration-effect curves, or detailed PK/PD modeling results. |
+| popPK | Lindegaard_2020 | irrelevant | 1 | 0 | The paper is a MiniReview discussing clinical benefits and general properties without reporting original quantitative pharmacokinetic parameter values. |
+| PD | Lindegaard_2020 | not_relevant | 2 | 0 | The text is a mini-review summarizing clinical outcomes and general pharmacological properties without providing specific numeric PD parameters or exposure-response data. |
+| popPK | Liu_2021 | irrelevant | 0 | 0 | The paper is a narrative review of inhaled pulmonary vasodilators that discusses treprostinil's clinical efficacy and safety but does not report any quantitative pharmacokinetic parameters (e.g., clearance, volume, half-life). |
+| PD | Liu_2021 | not_relevant | 1 | 0 | The paper is a narrative review that qualitatively discusses inhaled pulmonary vasodilators, including treprostinil, but does not report any specific numeric pharmacodynamic parameters, exposure-response curves, or dose-response data for treprostinil. |
+| popPK | Mubarak_2010 | irrelevant | 1 | 0 | The paper is a review article discussing the physiology and clinical studies of prostaglandin analogs, and the provided evidence contains no original quantitative pharmacokinetic parameter values for treprostinil. |
+| PD | Mubarak_2010 | not_relevant | 2 | 0 | The text is a review article summarizing clinical studies and general pharmacological distinctions without providing specific numeric PD parameters or exposure-response data for treprostinil. |
+| popPK | Oriaku_2020 | irrelevant | 0 | 0 | The paper is a clinical case report describing hemodynamic improvements and drug transition, containing no pharmacokinetic parameters or quantitative disposition data for treprostinil. |
+| PD | Oriaku_2020 | not_relevant | 1 | 0 | The paper is a single case report describing clinical improvement after switching drugs but explicitly states that pharmacodynamic data comparing the agents are lacking and provides no concentration-effect or dose-response analysis. |
+| popPK | Paci_2026 | irrelevant | 0 | 0 | The paper describes a drug delivery device and does not report pharmacokinetic parameters for treprostinil. |
+| PD | Paci_2026 | not_relevant | 0 | 0 | The paper describes a drug delivery device mechanism and release rates, but does not report any pharmacodynamic or exposure-response relationship for treprostinil. |
+| popPK | Ramani_2020 | irrelevant | 0 | 0 | The paper is a dose-response analysis of clinical outcomes (hospitalization, 6MWD) and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Tella_2020 | irrelevant | 0 | 0 | The study is a clinical retrospective cohort analyzing hemodynamic response and dose-effect relationships, not a pharmacokinetic study reporting quantitative disposition parameters like clearance or volume. |
+| popPK | Thomeas-McEwing_2022 | irrelevant | 0 | 0 | The study is a pharmacogenomic GWAS analyzing dose-response heterogeneity and does not report quantitative pharmacokinetic parameters (CL, V, etc.) for treprostinil. |
+| PD | Thomeas-McEwing_2022 | not_relevant | 1 | 0 | The paper is a pharmacogenomic study (GWAS) identifying genetic predictors of treprostinil dose, but it does not report a concentration-effect or dose-response curve with numeric PD parameters (e.g., Emax, EC50). |
+| popPK | Wade_2003 | irrelevant | 1 | 0 | The study reports pharmacokinetic parameters for warfarin (the subject drug) to assess interaction with treprostinil, not for treprostinil itself. |
+| PD | Wade_2003 | not_relevant | 2 | 2 | The study reports summary statistics (AUEC, Emax) for warfarin's effect (INR) to assess drug-drug interaction, but does not model or report a concentration-effect relationship or PD parameters for treprostinil itself. |
+| popPK | Walkey_2011 | irrelevant | 1 | 0 | The study is a clinical case series focusing on hemodynamic responses and pharmacodynamics, not a pharmacokinetic study reporting quantitative disposition parameters like clearance or volume. |
+| PD | Walkey_2011 | not_relevant | 2 | 1 | The paper reports a qualitative comparison of hemodynamic changes (PAP) upon drug discontinuation and transition, but does not provide a concentration-effect or dose-response model with numeric PD parameters (e.g., Emax, EC50) for treprostinil. |
+| popPK | Whittle_2012 | irrelevant | 0 | 0 | The study reports in vitro receptor binding affinities and functional potency (Ki, EC50) rather than pharmacokinetic disposition parameters (CL, V, t1/2). |
+| PGx | Wu_2022 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving CYP enzymes but does not report pharmacogenomic effects of specific gene variants on treprostinil PK/PD. |
+| popPK | Zhang_2024 | irrelevant | 0 | 0 | The study is a pharmacovigilance analysis of PDE5 inhibitors and does not involve treprostinil or report any pharmacokinetic parameters. |
+| PD | Zhang_2024 | not_relevant | 0 | 0 | The paper is a pharmacovigilance study analyzing adverse event reports (hearing impairment) for PDE5 inhibitors in the FAERS database and does not contain any PK/PD modeling, exposure-response analysis, or numeric PD parameters for treprostinil. |
+| popPK | unknown_2015 | irrelevant | 0 | 0 | no_text gate: only 106 chars of text extracted (&lt; 400) |
+| PD | unknown_2015 | not_relevant | 0 | 0 | The provided text is only a header for a conference abstract collection and contains no specific data, models, or parameters for treprostinil. |
+
+---
+<sub>Generated by `docs.py` (scholarv2)</sub>

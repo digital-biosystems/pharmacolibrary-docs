@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carboplatin_Brandon2026_reference&quot;,&quot;label&quot;:&quot;Brandon_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Brandon2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Schneider2025_reference&quot;,&quot;label&quot;:&quot;Schneider_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Schneider2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_VarelaGonzlezAller2025_reference&quot;,&quot;label&quot;:&quot;Varela-Gonz\u00e1lez-Aller_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_VarelaGonzlezAller2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Centanni2024_reference&quot;,&quot;label&quot;:&quot;Centanni_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Centanni2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_1_14&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_1_14&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_1_14.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_2_15&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_2_15&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_2_15.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_3_16&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_3_16&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_3_16.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# TYMS — PGx  <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span>
+# ADD1 — PGx  <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -29,20 +29,24 @@
 Takizawa M et al., In vitro sensitivity to platinum-derive…, Oncology reports (2006)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | secondary_empty | 0.25 (1/4 fields) | 3 |
+| `gpt-oss-120b` | secondary_empty | 0.25 (1/4 fields) | 3 |
+| `gpt-oss:120b` | secondary_empty | 0.25 (1/4 fields) | 3 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `applies_to` | pd | not captured | mismatch |
-| `qwen3.8-27b` | `mechanism` | target | not captured | mismatch |
-| `qwen3.8-27b` | `target_parameter_id` | Q100 | not captured | mismatch |
+| `gpt-oss-120b` | `applies_to` | pd | not captured | mismatch |
+| `gpt-oss-120b` | `mechanism` | target | not captured | mismatch |
+| `gpt-oss-120b` | `target_parameter_id` | Q100 | not captured | mismatch |
+| `gpt-oss:120b` | `applies_to` | pd | not captured | mismatch |
+| `gpt-oss:120b` | `mechanism` | target | not captured | mismatch |
+| `gpt-oss:120b` | `target_parameter_id` | Q100 | not captured | mismatch |
 
 </details>
 

@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Huang C et al., Association of Busulfan Exposure with E…, Drug design, development an… (2026)
   ·  DOI: [10.2147/dddt.s593835](https://doi.org/10.2147/dddt.s593835)
 
-## Model component
-<dbs-pgx drug="cyclophosphamide" model-id="Cyclophosphamide_Huang2026_reference" status="curated_candidate" stale="false" population="" measured-compound="cyclophosphamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cyclophosphamide" model-id="Cyclophosphamide_Huang2026_reference" status="curated_candidate" stale="false" population="" measured-compound="cyclophosphamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 Nagai N et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (1998)
   ·  DOI: [10.1177/009127009803801107](https://doi.org/10.1177/009127009803801107)
 
-## Model component
-<dbs-pgx drug="cisplatin" model-id="Cisplatin_Nagai1998_reference" status="rejected" stale="false" population="patients with cancer" measured-compound="cisplatin (unchanged CDDP)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_Nagai1998_reference" status="rejected" stale="false" population="patients with cancer" measured-compound="cisplatin (unchanged CDDP)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 Tan Z et al., Population Pharmacokinetics of Cabozant…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01379-y](https://doi.org/10.1007/s40262-024-01379-y)
 
-## Model component
-<dbs-pgx drug="cabozantinib" model-id="Cabozantinib_Tan2024_estimates_in_the_registration_file" status="accepted_with_caveats" stale="false" population="metastatic renal cell carcinoma patients" measured-compound="cabozantinib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cabozantinib" model-id="Cabozantinib_Tan2024_estimates_in_the_registration_file" status="accepted_with_caveats" stale="false" population="metastatic renal cell carcinoma patients" measured-compound="cabozantinib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted, plus 1 covariate effect.

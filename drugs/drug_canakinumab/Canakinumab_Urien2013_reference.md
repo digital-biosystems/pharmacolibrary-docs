@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Urien S et al., Anakinra pharmacokinetics in children a…, BMC pharmacology & toxicolo… (2013)
   ·  DOI: [10.1186/2050-6511-14-40](https://doi.org/10.1186/2050-6511-14-40)
 
-## Model component
-<dbs-pgx drug="canakinumab" model-id="Canakinumab_Urien2013_reference" status="curated_candidate" stale="false" population="" measured-compound="canakinumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="canakinumab" model-id="Canakinumab_Urien2013_reference" status="curated_candidate" stale="false" population="" measured-compound="canakinumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss-120b`.
 ## Citation
 Tsuru T et al., Endothelial wound-healing of monkey cor…, Japanese journal of ophthal… (1984)
 
-## Model component
-<dbs-pgx drug="fluorescein" model-id="Fluorescein_Tsuru1984_reference" status="rejected" stale="false" population="monkey corneas" measured-compound="fluorescein" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorescein" model-id="Fluorescein_Tsuru1984_reference" status="rejected" stale="false" population="monkey corneas" measured-compound="fluorescein" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

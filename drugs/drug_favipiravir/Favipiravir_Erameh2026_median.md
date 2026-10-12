@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Erameh C et al., Favipiravir for Lassa fever: an open-la…, Nature medicine (2026)
   ·  DOI: [10.1038/s41591-026-04402-w](https://doi.org/10.1038/s41591-026-04402-w)
 
-## Model component
-<dbs-pgx drug="favipiravir" model-id="Favipiravir_Erameh2026_median" status="rejected" stale="false" population="hospitalized adults with mild-to-moderate RT-PCR-confirmed Lassa fever" measured-compound="favipiravir" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="favipiravir" model-id="Favipiravir_Erameh2026_median" status="rejected" stale="false" population="hospitalized adults with mild-to-moderate RT-PCR-confirmed Lassa fever" measured-compound="favipiravir" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

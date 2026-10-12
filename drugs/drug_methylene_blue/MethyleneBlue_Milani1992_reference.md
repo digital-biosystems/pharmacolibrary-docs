@@ -27,8 +27,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Milani A et al., Ascites dynamics in cirrhosis. Proposal…, Journal of hepatology (1992)
   ·  DOI: [10.1016/s0168-8278(05)80672-5](https://doi.org/10.1016/s0168-8278(05)80672-5)
 
-## Model component
-<dbs-pgx drug="methylene blue" model-id="MethyleneBlue_Milani1992_reference" status="rejected" stale="false" population="patients with cirrhosis and ascites" measured-compound="methylene blue" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methylene blue" model-id="MethyleneBlue_Milani1992_reference" status="rejected" stale="false" population="patients with cirrhosis and ascites" measured-compound="methylene blue" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 Usuda K et al., Serum and urinary boron levels in rats…, Archives of toxicology (1998)
   ·  DOI: [10.1007/s002040050530](https://doi.org/10.1007/s002040050530)
 
-## Model component
-<dbs-pgx drug="boric acid" model-id="BoricAcid_Usuda1998_reference" status="needs_review" stale="false" population="rats" measured-compound="boron (boric acid)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="boric acid" model-id="BoricAcid_Usuda1998_reference" status="needs_review" stale="false" population="rats" measured-compound="boron (boric acid)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

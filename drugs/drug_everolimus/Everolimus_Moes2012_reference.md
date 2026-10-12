@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Moes DJ et al., Population pharmacokinetics and pharmac…, Clinical pharmacokinetics (2012)
   ·  DOI: [10.2165/11599710-000000000-00000](https://doi.org/10.2165/11599710-000000000-00000)
 
-## Model component
-<dbs-pgx drug="everolimus" model-id="Everolimus_Moes2012_reference" status="curated_candidate" stale="false" population="renal transplant patients" measured-compound="everolimus" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="everolimus" model-id="Everolimus_Moes2012_reference" status="curated_candidate" stale="false" population="renal transplant patients" measured-compound="everolimus" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

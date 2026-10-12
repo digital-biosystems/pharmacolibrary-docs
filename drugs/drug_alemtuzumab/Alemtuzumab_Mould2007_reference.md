@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Mould DR et al., Population pharmacokinetics-pharmacodyn…, British journal of clinical… (2007)
   ·  DOI: [10.1111/j.1365-2125.2007.02914.x](https://doi.org/10.1111/j.1365-2125.2007.02914.x)
 
-## Model component
-<dbs-pgx drug="alemtuzumab" model-id="Alemtuzumab_Mould2007_reference" status="rejected" stale="false" population="patients with B-cell chronic lymphocytic leukaemia" measured-compound="alemtuzumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alemtuzumab" model-id="Alemtuzumab_Mould2007_reference" status="rejected" stale="false" population="patients with B-cell chronic lymphocytic leukaemia" measured-compound="alemtuzumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -26,8 +26,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Shang J et al., Population pharmacokinetic models of an…, Frontiers in immunology (2022)
   ·  DOI: [10.3389/fimmu.2022.871372](https://doi.org/10.3389/fimmu.2022.871372)
 
-## Model component
-<dbs-pgx drug="camrelizumab" model-id="Camrelizumab_Shang2022_reference" status="not_modelled" stale="false" population="patients with multiple tumor types" measured-compound="camrelizumab" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="camrelizumab" model-id="Camrelizumab_Shang2022_reference" status="not_modelled" stale="false" population="patients with multiple tumor types" measured-compound="camrelizumab" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

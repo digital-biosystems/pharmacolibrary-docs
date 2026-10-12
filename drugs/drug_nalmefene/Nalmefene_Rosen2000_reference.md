@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Rosen DA et al., Nalmefene to prevent epidural narcotic…, Pharmacotherapy (2000)
   ·  DOI: [10.1592/phco.20.9.745.35207](https://doi.org/10.1592/phco.20.9.745.35207)
 
-## Model component
-<dbs-pgx drug="nalmefene" model-id="Nalmefene_Rosen2000_reference" status="curated_candidate" stale="false" population="children aged 2-12 years undergoing cardiothoracic surgery" measured-compound="nalmefene" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nalmefene" model-id="Nalmefene_Rosen2000_reference" status="curated_candidate" stale="false" population="children aged 2-12 years undergoing cardiothoracic surgery" measured-compound="nalmefene" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

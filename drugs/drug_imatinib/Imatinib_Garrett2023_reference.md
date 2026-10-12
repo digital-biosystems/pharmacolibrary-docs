@@ -29,8 +29,7 @@ Independently confirmed by `qwen3.8-27b`.
 Garrett M et al., Population modeling of bosutinib exposu…, Cancer medicine (2023)
   ·  DOI: [10.1002/cam4.6439](https://doi.org/10.1002/cam4.6439)
 
-## Model component
-<dbs-pgx drug="imatinib" model-id="Imatinib_Garrett2023_reference" status="needs_review" stale="false" population="" measured-compound="imatinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="imatinib" model-id="Imatinib_Garrett2023_reference" status="needs_review" stale="false" population="" measured-compound="imatinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

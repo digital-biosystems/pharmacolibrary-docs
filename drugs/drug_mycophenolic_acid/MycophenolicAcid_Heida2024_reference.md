@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Heida A et al., Model-informed dose optimization of myc…, European journal of clinica… (2024)
   ·  DOI: [10.1007/s00228-024-03743-0](https://doi.org/10.1007/s00228-024-03743-0)
 
-## Model component
-<dbs-pgx drug="mycophenolic acid" model-id="MycophenolicAcid_Heida2024_reference" status="model_quarantined" stale="false" population="pediatric kidney transplant patients" measured-compound="mycophenolic acid" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mycophenolic acid" model-id="MycophenolicAcid_Heida2024_reference" status="model_quarantined" stale="false" population="pediatric kidney transplant patients" measured-compound="mycophenolic acid" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 3 extracted, plus 1 covariate effect.

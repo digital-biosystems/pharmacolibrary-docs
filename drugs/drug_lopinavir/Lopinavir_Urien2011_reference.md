@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Urien S et al., Lopinavir/ritonavir population pharmaco…, British journal of clinical… (2011)
   ·  DOI: [10.1111/j.1365-2125.2011.03926.x](https://doi.org/10.1111/j.1365-2125.2011.03926.x)
 
-## Model component
-<dbs-pgx drug="Lopinavir" model-id="Lopinavir_Urien2011_reference" status="rejected" stale="false" population="neonates and infants" measured-compound="lopinavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Lopinavir" model-id="Lopinavir_Urien2011_reference" status="rejected" stale="false" population="neonates and infants" measured-compound="lopinavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

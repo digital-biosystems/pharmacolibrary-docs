@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Tanzawa A et al., Fluconazole Population Pharmacokinetics…, Microbiology spectrum (2022)
   ·  DOI: [10.1128/spectrum.01952-21](https://doi.org/10.1128/spectrum.01952-21)
 
-## Model component
-<dbs-pgx drug="fluconazole" model-id="Fluconazole_Tanzawa2022_base" status="model_quarantined" stale="false" population="extremely low-birth-weight infants" measured-compound="fluconazole" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluconazole" model-id="Fluconazole_Tanzawa2022_base" status="model_quarantined" stale="false" population="extremely low-birth-weight infants" measured-compound="fluconazole" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

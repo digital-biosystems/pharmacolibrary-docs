@@ -32,8 +32,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Griffioen JA et al., Penciclovir pharmacokinetics after oral…, American journal of veterin… (2024)
   ·  DOI: [10.2460/ajvr.24.02.0039](https://doi.org/10.2460/ajvr.24.02.0039)
 
-## Model component
-<dbs-pgx drug="famciclovir" model-id="Famciclovir_Griffioen2024_reference" status="rejected" stale="false" population="African elephants" measured-compound="penciclovir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="famciclovir" model-id="Famciclovir_Griffioen2024_reference" status="rejected" stale="false" population="African elephants" measured-compound="penciclovir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

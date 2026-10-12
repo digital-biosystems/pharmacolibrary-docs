@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Reeves S et al., A population approach to characterise a…, Psychopharmacology (2016)
   ·  DOI: [10.1007/s00213-016-4379-6](https://doi.org/10.1007/s00213-016-4379-6)
 
-## Model component
-<dbs-pgx drug="amisulpride" model-id="Amisulpride_Reeves2016_group_1" status="needs_review" stale="false" population="older people (healthy elderly and Alzheimer&#39;s disease patients)" measured-compound="amisulpride" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amisulpride" model-id="Amisulpride_Reeves2016_group_1" status="needs_review" stale="false" population="older people (healthy elderly and Alzheimer&#39;s disease patients)" measured-compound="amisulpride" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

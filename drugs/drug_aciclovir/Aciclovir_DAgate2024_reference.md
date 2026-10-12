@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 D'Agate S et al., Population pharmacokinetics and dose ra…, Pharmacology research & per… (2024)
   ·  DOI: [10.1002/prp2.1193](https://doi.org/10.1002/prp2.1193)
 
-## Model component
-<dbs-pgx drug="aciclovir" model-id="Aciclovir_DAgate2024_reference" status="needs_review" stale="false" population="term and pre-term neonates with herpes" measured-compound="aciclovir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aciclovir" model-id="Aciclovir_DAgate2024_reference" status="needs_review" stale="false" population="term and pre-term neonates with herpes" measured-compound="aciclovir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted, plus 2 covariate effects.

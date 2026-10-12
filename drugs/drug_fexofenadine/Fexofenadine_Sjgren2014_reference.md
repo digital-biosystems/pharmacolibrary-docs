@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Sjögren E et al., Effects of verapamil on the pharmacokin…, European journal of pharmac… (2014)
   ·  DOI: [10.1016/j.ejps.2013.09.014](https://doi.org/10.1016/j.ejps.2013.09.014)
 
-## Model component
-<dbs-pgx drug="fexofenadine" model-id="Fexofenadine_Sjgren2014_reference" status="rejected" stale="false" population="pigs" measured-compound="fexofenadine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fexofenadine" model-id="Fexofenadine_Sjgren2014_reference" status="rejected" stale="false" population="pigs" measured-compound="fexofenadine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

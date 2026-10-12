@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13050754](https://doi.org/10.3390/pharmaceutics13050754)
 
-## Model component
-<dbs-pgx drug="cefaclor" model-id="Cefaclor_Jeong2021_estimates" status="needs_review" stale="false" population="healthy adults" measured-compound="cefaclor" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefaclor" model-id="Cefaclor_Jeong2021_estimates" status="needs_review" stale="false" population="healthy adults" measured-compound="cefaclor" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.

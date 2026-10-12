@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Grisic AM et al., Model-Based Characterization of the Bid…, Clinical cancer research :… (2022)
   ·  DOI: [10.1158/1078-0432.CCR-21-2662](https://doi.org/10.1158/1078-0432.CCR-21-2662)
 
-## Model component
-<dbs-pgx drug="avelumab" model-id="Avelumab_Grisic2022_reference" status="rejected" stale="false" population="patients with metastatic Merkel cell carcinoma" measured-compound="avelumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_Grisic2022_reference" status="rejected" stale="false" population="patients with metastatic Merkel cell carcinoma" measured-compound="avelumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 3 covariate effects.

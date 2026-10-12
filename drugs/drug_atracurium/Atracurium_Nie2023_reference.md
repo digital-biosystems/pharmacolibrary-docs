@@ -27,8 +27,7 @@ Independently confirmed by `gpt-oss-120b`.
 Nie X et al., Population pharmacokinetics of nalbuphi…, Frontiers in pharmacology (2023)
   ·  DOI: [10.3389/fphar.2023.1130287](https://doi.org/10.3389/fphar.2023.1130287)
 
-## Model component
-<dbs-pgx drug="atracurium" model-id="Atracurium_Nie2023_reference" status="curated_candidate" stale="false" population="" measured-compound="atracurium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atracurium" model-id="Atracurium_Nie2023_reference" status="curated_candidate" stale="false" population="" measured-compound="atracurium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

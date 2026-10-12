@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Methaneethorn J et al., Influential predictors of azithromycin…, Annals of medicine (2025)
   ·  DOI: [10.1080/07853890.2025.2496792](https://doi.org/10.1080/07853890.2025.2496792)
 
-## Model component
-<dbs-pgx drug="azithromycin" model-id="Azithromycin_Methaneethorn2025_reference" status="model_quarantined" stale="false" population="mixed (adults, children, preterm newborns, pregnant women)" measured-compound="azithromycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Methaneethorn2025_reference" status="model_quarantined" stale="false" population="mixed (adults, children, preterm newborns, pregnant women)" measured-compound="azithromycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 0 extracted.

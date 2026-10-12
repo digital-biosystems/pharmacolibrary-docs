@@ -27,8 +27,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Leven C et al., Immune Checkpoint Inhibitors in Melanom…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-019-00789-7](https://doi.org/10.1007/s40262-019-00789-7)
 
-## Model component
-<dbs-pgx drug="ipilimumab" model-id="Ipilimumab_Leven2019_reference" status="curated_candidate" stale="false" population="" measured-compound="ipilimumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ipilimumab" model-id="Ipilimumab_Leven2019_reference" status="curated_candidate" stale="false" population="" measured-compound="ipilimumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

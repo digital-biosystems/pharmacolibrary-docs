@@ -27,8 +27,7 @@ The extraction assigns an absorption rate constant of -1.5 to propiverine rather
 Weiss M, Is the One-Compartment Model with First…, Pharmaceutical research (2023)
   ·  DOI: [10.1007/s11095-023-03582-1](https://doi.org/10.1007/s11095-023-03582-1)
 
-## Model component
-<dbs-pgx drug="Arketamine" model-id="Arketamine_Weiss2023_propiverine" status="rejected" stale="false" population="healthy volunteers" measured-compound="ketamine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Arketamine" model-id="Arketamine_Weiss2023_propiverine" status="rejected" stale="false" population="healthy volunteers" measured-compound="ketamine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 1 extracted.

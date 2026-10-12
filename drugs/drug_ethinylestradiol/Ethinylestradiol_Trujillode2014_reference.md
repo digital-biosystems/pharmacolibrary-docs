@@ -26,8 +26,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 ## Citation
 Trujillo-de Santiago G et al., Mathematical modeling of the release of…, Iranian journal of pharmace… (2014)
 
-## Model component
-<dbs-pgx drug="ethinylestradiol" model-id="Ethinylestradiol_Trujillode2014_reference" status="curated_candidate" stale="false" population="" measured-compound="ethinylestradiol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ethinylestradiol" model-id="Ethinylestradiol_Trujillode2014_reference" status="curated_candidate" stale="false" population="" measured-compound="ethinylestradiol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

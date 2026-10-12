@@ -25,8 +25,7 @@
 Liu Z et al., Real-World Pharmacokinetic and Exposure…, Drug design, development an… (2026)
   ·  DOI: [10.2147/dddt.s563629](https://doi.org/10.2147/dddt.s563629)
 
-## Model component
-<dbs-pgx drug="aclarubicin" model-id="Aclarubicin_Liu2026_reference" status="curated_candidate" stale="false" population="" measured-compound="aclarubicin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aclarubicin" model-id="Aclarubicin_Liu2026_reference" status="curated_candidate" stale="false" population="" measured-compound="aclarubicin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

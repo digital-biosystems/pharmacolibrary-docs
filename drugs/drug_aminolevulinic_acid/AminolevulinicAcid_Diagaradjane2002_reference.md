@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 Diagaradjane P et al., In vivo pharmacokinetics of 8-aminolevu…, Photochemistry and photobio… (2002)
   ·  DOI: [10.1562/0031-8655(2002)076<0081:ivpoaa>2.0.co;2](https://doi.org/10.1562/0031-8655(2002)076<0081:ivpoaa>2.0.co;2)
 
-## Model component
-<dbs-pgx drug="aminolevulinic acid" model-id="AminolevulinicAcid_Diagaradjane2002_reference" status="rejected" stale="false" population="Swiss mice with 7,12-dimethylbenz(a)nthracene-induced skin carcinogenesis" measured-compound="protoporphyrin IX" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aminolevulinic acid" model-id="AminolevulinicAcid_Diagaradjane2002_reference" status="rejected" stale="false" population="Swiss mice with 7,12-dimethylbenz(a)nthracene-induced skin carcinogenesis" measured-compound="protoporphyrin IX" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

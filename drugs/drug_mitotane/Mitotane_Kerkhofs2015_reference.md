@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Kerkhofs TM et al., Development of a pharmacokinetic model…, Therapeutic drug monitoring (2015)
   ·  DOI: [10.1097/FTD.0000000000000102](https://doi.org/10.1097/FTD.0000000000000102)
 
-## Model component
-<dbs-pgx drug="mitotane" model-id="Mitotane_Kerkhofs2015_reference" status="curated_candidate" stale="false" population="patients with adrenocortical carcinoma" measured-compound="mitotane" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitotane" model-id="Mitotane_Kerkhofs2015_reference" status="curated_candidate" stale="false" population="patients with adrenocortical carcinoma" measured-compound="mitotane" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Jaruratanasirikul S et al., Pharmacokinetics and Monte Carlo Dosing…, European journal of drug me… (2020)
   ·  DOI: [10.1007/s13318-020-00643-3](https://doi.org/10.1007/s13318-020-00643-3)
 
-## Model component
-<dbs-pgx drug="isosorbide dinitrate" model-id="IsosorbideDinitrate_Jaruratanasirikul2020_reference" status="curated_candidate" stale="false" population="" measured-compound="isosorbide_dinitrate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isosorbide dinitrate" model-id="IsosorbideDinitrate_Jaruratanasirikul2020_reference" status="curated_candidate" stale="false" population="" measured-compound="isosorbide_dinitrate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

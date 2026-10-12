@@ -29,8 +29,7 @@ The parameter Q, representing drug distribution between kinetic compartments, is
 Stojanova J et al., Continuous Subcutaneous Ketamine Infusi…, Pharmacotherapy (2026)
   ·  DOI: [10.1002/phar.70150](https://doi.org/10.1002/phar.70150)
 
-## Model component
-<dbs-pgx drug="Arketamine" model-id="Arketamine_Stojanova2026_reference" status="rejected" stale="false" population="heart transplant recipient" measured-compound="tacrolimus" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Arketamine" model-id="Arketamine_Stojanova2026_reference" status="rejected" stale="false" population="heart transplant recipient" measured-compound="tacrolimus" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

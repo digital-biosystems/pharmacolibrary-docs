@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Rantanen M et al., Population Pharmacokinetics of Methylpr… (2026)
   ·  DOI: [10.21203/rs.3.rs-9321411/v1](https://doi.org/10.21203/rs.3.rs-9321411/v1)
 
-## Model component
-<dbs-pgx drug="methylprednisolone" model-id="Methylprednisolone_Rantanen2026v2_reference" status="rejected" stale="false" population="neonates and paediatric patients undergoing cardiac surgery" measured-compound="methylprednisolone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methylprednisolone" model-id="Methylprednisolone_Rantanen2026v2_reference" status="rejected" stale="false" population="neonates and paediatric patients undergoing cardiac surgery" measured-compound="methylprednisolone" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

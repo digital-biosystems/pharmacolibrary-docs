@@ -29,8 +29,7 @@ The record carries formoterol parameters CL 18.4 L·hr−1, V1 216.0 L, V2 106.0
 Back HM et al., Exposure-Response and Clinical Outcome…, Pharmaceutics (2020)
   ·  DOI: [10.3390/pharmaceutics12040336](https://doi.org/10.3390/pharmaceutics12040336)
 
-## Model component
-<dbs-pgx drug="formoterol" model-id="Formoterol_Back2020_reference" status="needs_review" stale="false" population="adults with moderate asthma" measured-compound="formoterol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="formoterol" model-id="Formoterol_Back2020_reference" status="needs_review" stale="false" population="adults with moderate asthma" measured-compound="formoterol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

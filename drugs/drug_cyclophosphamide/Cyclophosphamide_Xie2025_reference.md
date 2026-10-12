@@ -25,8 +25,7 @@
 Xie H et al., Association of NR1I2 Polymorphism with…, Drug design, development an… (2025)
   ·  DOI: [10.2147/dddt.s495647](https://doi.org/10.2147/dddt.s495647)
 
-## Model component
-<dbs-pgx drug="cyclophosphamide" model-id="Cyclophosphamide_Xie2025_reference" status="curated_candidate" stale="false" population="" measured-compound="cyclophosphamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cyclophosphamide" model-id="Cyclophosphamide_Xie2025_reference" status="curated_candidate" stale="false" population="" measured-compound="cyclophosphamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

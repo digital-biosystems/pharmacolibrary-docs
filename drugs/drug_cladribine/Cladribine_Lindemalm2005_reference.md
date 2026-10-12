@@ -27,8 +27,7 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 Lindemalm S et al., Application of population pharmacokinet…, BMC pharmacology (2005)
   ·  DOI: [10.1186/1471-2210-5-4](https://doi.org/10.1186/1471-2210-5-4)
 
-## Model component
-<dbs-pgx drug="cladribine" model-id="Cladribine_Lindemalm2005_reference" status="needs_review" stale="false" population="patients with B- and T-cell lymphoid malignancies" measured-compound="cladribine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Lindemalm2005_reference" status="needs_review" stale="false" population="patients with B- and T-cell lymphoid malignancies" measured-compound="cladribine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 8 extracted.

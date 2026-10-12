@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 McKiernan BC et al., Pharmacokinetic studies of theophylline…, Journal of veterinary pharm… (1983)
   ·  DOI: [10.1111/j.1365-2885.1983.tb00385.x](https://doi.org/10.1111/j.1365-2885.1983.tb00385.x)
 
-## Model component
-<dbs-pgx drug="aminophylline" model-id="Aminophylline_McKiernan1983_reference" status="rejected" stale="false" population="adult cats" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_McKiernan1983_reference" status="rejected" stale="false" population="adult cats" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

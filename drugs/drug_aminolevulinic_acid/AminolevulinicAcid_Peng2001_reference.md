@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Citation
 Peng Q et al., Antitumor effect of 5-aminolevulinic ac…, Cancer research (2001)
 
-## Model component
-<dbs-pgx drug="aminolevulinic acid" model-id="AminolevulinicAcid_Peng2001_reference" status="rejected" stale="false" population="nude mice bearing human colonic carcinomas" measured-compound="aminolevulinic_acid" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aminolevulinic acid" model-id="AminolevulinicAcid_Peng2001_reference" status="rejected" stale="false" population="nude mice bearing human colonic carcinomas" measured-compound="aminolevulinic_acid" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

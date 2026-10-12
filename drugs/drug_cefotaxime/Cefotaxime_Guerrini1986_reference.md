@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss-120b`.
 Guerrini VH et al., Pharmacokinetics of cefotaxime in the d…, The Veterinary record (1986)
   ·  DOI: [10.1136/vr.119.4.81](https://doi.org/10.1136/vr.119.4.81)
 
-## Model component
-<dbs-pgx drug="cefotaxime" model-id="Cefotaxime_Guerrini1986_reference" status="curated_candidate" stale="false" population="dogs" measured-compound="cefotaxime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefotaxime" model-id="Cefotaxime_Guerrini1986_reference" status="curated_candidate" stale="false" population="dogs" measured-compound="cefotaxime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

@@ -27,8 +27,7 @@ The parameter labeled V1/F (central volume) carries the value 462 L, but the lab
 Huestis MA et al., MDMA pharmacokinetics: A population and…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13282](https://doi.org/10.1002/psp4.13282)
 
-## Model component
-<dbs-pgx drug="Midomafetamine" model-id="Midomafetamine_Huestis2025_reference" status="rejected" stale="false" population="healthy adults" measured-compound="MDMA" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Midomafetamine" model-id="Midomafetamine_Huestis2025_reference" status="rejected" stale="false" population="healthy adults" measured-compound="MDMA" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 7 extracted, plus 4 covariate effects.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 Doki K et al., CYP2D6 genotype affects age-related dec…, Pharmacogenetics and genomi… (2012)
   ·  DOI: [10.1097/FPC.0b013e3283588fe5](https://doi.org/10.1097/FPC.0b013e3283588fe5)
 
-## Model component
-<dbs-pgx drug="flecainide" model-id="Flecainide_Doki2012_reference" status="needs_review" stale="true" population="adults with supraventricular tachyarrhythmias" measured-compound="flecainide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flecainide" model-id="Flecainide_Doki2012_reference" status="needs_review" stale="true" population="adults with supraventricular tachyarrhythmias" measured-compound="flecainide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

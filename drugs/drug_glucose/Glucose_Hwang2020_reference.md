@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Hwang I et al., Pharmacokinetic/Pharmacodynamic Interac…, Drug design, development an… (2020)
   ·  DOI: [10.2147/DDDT.S275336](https://doi.org/10.2147/DDDT.S275336)
 
-## Model component
-<dbs-pgx drug="glucose" model-id="Glucose_Hwang2020_reference" status="needs_review" stale="false" population="" measured-compound="glucose" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glucose" model-id="Glucose_Hwang2020_reference" status="needs_review" stale="false" population="" measured-compound="glucose" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

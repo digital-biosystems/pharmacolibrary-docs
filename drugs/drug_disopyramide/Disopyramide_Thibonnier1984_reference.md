@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Thibonnier M et al., Pharmacokinetic-pharmacodynamic analysi…, Journal of pharmacokinetics… (1984)
   ·  DOI: [10.1007/BF01059552](https://doi.org/10.1007/BF01059552)
 
-## Model component
-<dbs-pgx drug="disopyramide" model-id="Disopyramide_Thibonnier1984_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="disopyramide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="disopyramide" model-id="Disopyramide_Thibonnier1984_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="disopyramide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

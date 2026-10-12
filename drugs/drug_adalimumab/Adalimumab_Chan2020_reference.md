@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Chan P et al., Population Pharmacokinetics, Efficacy E…, Pharmaceutical research (2020)
   ·  DOI: [10.1007/s11095-019-2752-y](https://doi.org/10.1007/s11095-019-2752-y)
 
-## Model component
-<dbs-pgx drug="adalimumab" model-id="Adalimumab_Chan2020_reference" status="needs_review" stale="false" population="" measured-compound="adalimumab" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="adalimumab" model-id="Adalimumab_Chan2020_reference" status="needs_review" stale="false" population="" measured-compound="adalimumab" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 4 extracted.

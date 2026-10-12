@@ -28,8 +28,7 @@ Independently confirmed by `qwen3.8-27b`.
 van Lier D et al., Safety, tolerability, and pharmacokinet…, mAbs (2026)
   ·  DOI: [10.1080/19420862.2026.2671468](https://doi.org/10.1080/19420862.2026.2671468)
 
-## Model component
-<dbs-pgx drug="cetuximab" model-id="Cetuximab_van2026v2_reference" status="needs_review" stale="false" population="" measured-compound="cetuximab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_van2026v2_reference" status="needs_review" stale="false" population="" measured-compound="cetuximab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Csajka C et al., Population pharmacokinetics of indinavi…, Antimicrobial agents and ch… (2004)
   ·  DOI: [10.1128/AAC.48.9.3226-3232.2004](https://doi.org/10.1128/AAC.48.9.3226-3232.2004)
 
-## Model component
-<dbs-pgx drug="indinavir" model-id="Indinavir_Csajka2004_reference" status="curated_candidate" stale="false" population="patients infected with human immunodeficiency virus" measured-compound="indinavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indinavir" model-id="Indinavir_Csajka2004_reference" status="curated_candidate" stale="false" population="patients infected with human immunodeficiency virus" measured-compound="indinavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

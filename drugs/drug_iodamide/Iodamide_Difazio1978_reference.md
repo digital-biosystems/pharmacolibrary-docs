@@ -28,8 +28,7 @@ Independently confirmed by `gpt-oss-120b`.
 Difazio LT et al., Pharmacokinetics of iodamide in normal…, Journal of clinical pharmac… (1978)
   ·  DOI: [10.1002/j.1552-4604.1978.tb01558.x](https://doi.org/10.1002/j.1552-4604.1978.tb01558.x)
 
-## Model component
-<dbs-pgx drug="iodamide" model-id="Iodamide_Difazio1978_reference" status="rejected" stale="false" population="normal subjects and patients with renal impairment" measured-compound="iodamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="iodamide" model-id="Iodamide_Difazio1978_reference" status="rejected" stale="false" population="normal subjects and patients with renal impairment" measured-compound="iodamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

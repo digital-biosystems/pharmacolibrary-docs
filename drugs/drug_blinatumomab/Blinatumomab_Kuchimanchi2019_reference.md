@@ -26,8 +26,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on paramete
 Kuchimanchi M et al., Exposure-response analysis of blinatumo…, British journal of clinical… (2019)
   ·  DOI: [10.1111/bcp.13864](https://doi.org/10.1111/bcp.13864)
 
-## Model component
-<dbs-pgx drug="blinatumomab" model-id="Blinatumomab_Kuchimanchi2019_reference" status="not_modelled" stale="false" population="adults with relapsed/refractory acute lymphoblastic leukaemia" measured-compound="blinatumomab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="blinatumomab" model-id="Blinatumomab_Kuchimanchi2019_reference" status="not_modelled" stale="false" population="adults with relapsed/refractory acute lymphoblastic leukaemia" measured-compound="blinatumomab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

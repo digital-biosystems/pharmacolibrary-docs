@@ -28,8 +28,7 @@ The record describes a two-compartment model for Z-endoxifen, but the peripheral
 Koubek EJ et al., Population Pharmacokinetics of Z-Endoxi…, Journal of clinical pharmac… (2022)
   ·  DOI: [10.1002/jcph.2053](https://doi.org/10.1002/jcph.2053)
 
-## Model component
-<dbs-pgx drug="Endoxifen" model-id="Endoxifen_Koubek2022_reference" status="rejected" stale="false" population="patients with advanced solid tumors" measured-compound="Z-endoxifen" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Endoxifen" model-id="Endoxifen_Koubek2022_reference" status="rejected" stale="false" population="patients with advanced solid tumors" measured-compound="Z-endoxifen" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

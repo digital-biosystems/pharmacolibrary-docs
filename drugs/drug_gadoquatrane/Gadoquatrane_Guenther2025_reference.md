@@ -30,8 +30,7 @@ AUC has no unit. Without a unit the value cannot be converted, so the model cann
 Guenther C et al., Pharmacokinetics, Excretion, and Organ…, Investigative radiology (2025)
   ·  DOI: [10.1097/RLI.0000000000001211](https://doi.org/10.1097/RLI.0000000000001211)
 
-## Model component
-<dbs-pgx drug="gadoquatrane" model-id="Gadoquatrane_Guenther2025_reference" status="needs_review" stale="false" population="female cynomolgus monkeys" measured-compound="gadoquatrane" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gadoquatrane" model-id="Gadoquatrane_Guenther2025_reference" status="needs_review" stale="false" population="female cynomolgus monkeys" measured-compound="gadoquatrane" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 Béguin J et al., Population pharmacokinetics modelling f…, BMC veterinary research (2024)
   ·  DOI: [10.1186/s12917-024-04404-1](https://doi.org/10.1186/s12917-024-04404-1)
 
-## Model component
-<dbs-pgx drug="carboplatin" model-id="Carboplatin_Bguin2024_reference" status="rejected" stale="false" population="client-owned dogs" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carboplatin" model-id="Carboplatin_Bguin2024_reference" status="rejected" stale="false" population="client-owned dogs" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 2 covariate effects.

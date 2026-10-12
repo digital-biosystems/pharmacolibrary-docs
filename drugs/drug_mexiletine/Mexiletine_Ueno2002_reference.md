@@ -28,8 +28,7 @@ Independently confirmed by `gpt-oss:120b`.
 Ueno K et al., Evaluation of mexiletine clearance in a…, The Annals of pharmacothera… (2002)
   ·  DOI: [10.1345/aph.10188](https://doi.org/10.1345/aph.10188)
 
-## Model component
-<dbs-pgx drug="mexiletine" model-id="Mexiletine_Ueno2002_reference" status="rejected" stale="false" population="Japanese adults" measured-compound="mexiletine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mexiletine" model-id="Mexiletine_Ueno2002_reference" status="rejected" stale="false" population="Japanese adults" measured-compound="mexiletine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

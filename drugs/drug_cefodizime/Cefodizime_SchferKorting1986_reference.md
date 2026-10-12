@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Schäfer-Korting M et al., Cefodizime penetration into skin suctio…, European journal of clinica… (1986)
   ·  DOI: [10.1007/BF00541531](https://doi.org/10.1007/BF00541531)
 
-## Model component
-<dbs-pgx drug="cefodizime" model-id="Cefodizime_SchferKorting1986_reference" status="curated_candidate" stale="false" population="healthy male subjects" measured-compound="cefodizime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefodizime" model-id="Cefodizime_SchferKorting1986_reference" status="curated_candidate" stale="false" population="healthy male subjects" measured-compound="cefodizime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

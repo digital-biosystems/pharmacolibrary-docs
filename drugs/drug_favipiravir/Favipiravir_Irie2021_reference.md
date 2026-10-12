@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Irie K et al., Population pharmacokinetics of favipira…, CPT: pharmacometrics & syst… (2021)
   ·  DOI: [10.1002/psp4.12685](https://doi.org/10.1002/psp4.12685)
 
-## Model component
-<dbs-pgx drug="favipiravir" model-id="Favipiravir_Irie2021_reference" status="rejected" stale="false" population="patients with COVID-19" measured-compound="favipiravir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="favipiravir" model-id="Favipiravir_Irie2021_reference" status="rejected" stale="false" population="patients with COVID-19" measured-compound="favipiravir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

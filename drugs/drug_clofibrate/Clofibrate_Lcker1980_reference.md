@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 ## Citation
 Lücker PW et al., [Metabolism and pharmacokinetics of eto…, Arzneimittel-Forschung (1980)
 
-## Model component
-<dbs-pgx drug="clofibrate" model-id="Clofibrate_Lcker1980_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="clofibric acid" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clofibrate" model-id="Clofibrate_Lcker1980_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="clofibric acid" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

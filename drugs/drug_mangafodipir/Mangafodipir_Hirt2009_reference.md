@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Hirt D et al., Pharmacokinetic-pharmacodynamic modelin…, Therapeutic drug monitoring (2009)
   ·  DOI: [10.1097/FTD.0b013e3181affd6d](https://doi.org/10.1097/FTD.0b013e3181affd6d)
 
-## Model component
-<dbs-pgx drug="mangafodipir" model-id="Mangafodipir_Hirt2009_reference" status="rejected" stale="false" population="patients with acute alcoholic hepatitis" measured-compound="manganese" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mangafodipir" model-id="Mangafodipir_Hirt2009_reference" status="rejected" stale="false" population="patients with acute alcoholic hepatitis" measured-compound="manganese" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

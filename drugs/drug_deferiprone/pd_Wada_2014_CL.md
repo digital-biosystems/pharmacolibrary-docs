@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;deferiprone&quot;,&quot;href&quot;:&quot;drugs/drug_deferiprone/&quot;},{&quot;label&quot;:&quot;Wada_2014 \u00b7 PD luminescence (Fe2+-chelating effect, inhibition of Fenton&#x27;s reaction-luminol chemiluminescence)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# luminescence (Fe2+-chelating effect, inhibition of Fenton's reaction-luminol chemiluminescence) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
+# rat uterus tension — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -19,12 +19,12 @@
 
 **Model:** No model was generated from this record.
 
-> Deferiprone concentrations (μM) inhibit luminol chemiluminescence (Fe2+-chelating effect via inhibition of Fenton's reaction), described by a sigmoid Emax model; the excerpts provide no parameter values (Imax, IC50, gamma) or further mechanism detail.
+> The paper does not provide the mechanism details: no full text is available, so it cannot be confirmed how salbutamol concentrations act on rat uterus tension beyond an Emax-type inhibitory model, and no potency (IC50/EC50, Emax, gamma) or rate values are stated in the available excerpts.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
-- **paper:** `Wada_2014`
-- **model family:** `sigmoid_emax`
+- **paper:** `Wilson_1984`
+- **model family:** `emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** inhibition/unknown
@@ -37,18 +37,21 @@ Wada M et al., In vitro screening of Fe2+-chelating ef…, Luminescence : the jo
 _No resolved parameters._
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.75 (3/4 fields) | 1 |
+| `einfracz:gpt-oss-120b` | secondary_empty | 0.0 (0/4 fields) | 4 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
+| `einfracz:gpt-oss-120b` | `driver_compound` | salbutamol | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_direction` | inhibition | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_form` | unknown | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | emax | not captured | mismatch |
 
 </details>
 

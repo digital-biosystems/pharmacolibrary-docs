@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Shen Y et al., Unrepaired Tetralogy of Fallot-related…, Anesthesia and analgesia (2016)
   ·  DOI: [10.1213/ANE.0000000000001477](https://doi.org/10.1213/ANE.0000000000001477)
 
-## Model component
-<dbs-pgx drug="etomidate" model-id="Etomidate_Shen2016_reference" status="curated_candidate" stale="false" population="pediatric patients with tetralogy of Fallot and normal cardiac anatomy" measured-compound="etomidate" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_Shen2016_reference" status="curated_candidate" stale="false" population="pediatric patients with tetralogy of Fallot and normal cardiac anatomy" measured-compound="etomidate" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 6 extracted.

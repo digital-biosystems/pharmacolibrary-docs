@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Weir S et al., Population pharmacokinetics and pharmac…, Current medical research an… (2013)
   ·  DOI: [10.1185/03007995.2012.749222](https://doi.org/10.1185/03007995.2012.749222)
 
-## Model component
-<dbs-pgx drug="fampridine" model-id="Fampridine_Weir2013_reference" status="curated_candidate" stale="false" population="healthy volunteers and patients with multiple sclerosis" measured-compound="dalfampridine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fampridine" model-id="Fampridine_Weir2013_reference" status="curated_candidate" stale="false" population="healthy volunteers and patients with multiple sclerosis" measured-compound="dalfampridine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

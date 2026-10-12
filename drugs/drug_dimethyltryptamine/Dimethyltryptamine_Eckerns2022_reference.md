@@ -27,8 +27,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Eckernäs E et al., Population pharmacokinetic/pharmacodyna…, Clinical and translational… (2022)
   ·  DOI: [10.1111/cts.13410](https://doi.org/10.1111/cts.13410)
 
-## Model component
-<dbs-pgx drug="Dimethyltryptamine" model-id="Dimethyltryptamine_Eckerns2022_reference" status="rejected" stale="false" population="healthy adults" measured-compound="dimethyltryptamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Dimethyltryptamine" model-id="Dimethyltryptamine_Eckerns2022_reference" status="rejected" stale="false" population="healthy adults" measured-compound="dimethyltryptamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

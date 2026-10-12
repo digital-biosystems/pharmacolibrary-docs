@@ -27,8 +27,7 @@ Independently confirmed by `gpt-oss-120b`.
 Panoilia E et al., A pharmacokinetic binding model for bev…, Cancer chemotherapy and pha… (2015)
   ·  DOI: [10.1007/s00280-015-2701-3](https://doi.org/10.1007/s00280-015-2701-3)
 
-## Model component
-<dbs-pgx drug="capecitabine" model-id="Capecitabine_Panoilia2015_reference" status="curated_candidate" stale="false" population="" measured-compound="capecitabine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Panoilia2015_reference" status="curated_candidate" stale="false" population="" measured-compound="capecitabine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

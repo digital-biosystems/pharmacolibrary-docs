@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Nie X et al., Population pharmacokinetics of nalbuphi…, Frontiers in pharmacology (2023)
   ·  DOI: [10.3389/fphar.2023.1130287](https://doi.org/10.3389/fphar.2023.1130287)
 
-## Model component
-<dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Nie2023_final_model" status="needs_review" stale="false" population="adults undergoing general anesthesia surgery" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nalbuphine" model-id="Nalbuphine_Nie2023_final_model" status="needs_review" stale="false" population="adults undergoing general anesthesia surgery" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

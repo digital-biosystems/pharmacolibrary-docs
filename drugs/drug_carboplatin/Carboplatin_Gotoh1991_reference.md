@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the link
 ## Citation
 Gotoh T et al., [Evaluation of carboplatin administrati…, Gan to kagaku ryoho. Cancer… (1991)
 
-## Model component
-<dbs-pgx drug="carboplatin" model-id="Carboplatin_Gotoh1991_reference" status="rejected" stale="false" population="primary lung cancer patients with malignant effusion" measured-compound="free platinum" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carboplatin" model-id="Carboplatin_Gotoh1991_reference" status="rejected" stale="false" population="primary lung cancer patients with malignant effusion" measured-compound="free platinum" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

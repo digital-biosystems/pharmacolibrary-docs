@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 Newell DR et al., Carboplatin pharmacokinetics in childre…, Journal of clinical oncolog… (1993)
   ·  DOI: [10.1200/JCO.1993.11.12.2314](https://doi.org/10.1200/JCO.1993.11.12.2314)
 
-## Model component
-<dbs-pgx drug="carboplatin" model-id="Carboplatin_Newell1993_reference" status="rejected" stale="false" population="children with cancer" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carboplatin" model-id="Carboplatin_Newell1993_reference" status="rejected" stale="false" population="children with cancer" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

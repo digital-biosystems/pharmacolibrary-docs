@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Gisleskog PO et al., Population Pharmacokinetic and Exposure…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.70061](https://doi.org/10.1002/psp4.70061)
 
-## Model component
-<dbs-pgx drug="ibrutinib" model-id="Ibrutinib_Gisleskog2025_final_updated_population_pk_model" status="needs_review" stale="false" population="patients with previously untreated mantle cell lymphoma" measured-compound="ibrutinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ibrutinib" model-id="Ibrutinib_Gisleskog2025_final_updated_population_pk_model" status="needs_review" stale="false" population="patients with previously untreated mantle cell lymphoma" measured-compound="ibrutinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 8 extracted, plus 1 covariate effect.

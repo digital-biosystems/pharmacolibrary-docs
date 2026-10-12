@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Rančić A et al., Population pharmacokinetics of meropene…, Open medicine (Warsaw, Pola… (2024)
   ·  DOI: [10.1515/med-2024-1004](https://doi.org/10.1515/med-2024-1004)
 
-## Model component
-<dbs-pgx drug="meropenem" model-id="Meropenem_Rani2024_reference" status="model_quarantined" stale="false" population="critically ill patients" measured-compound="meropenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="meropenem" model-id="Meropenem_Rani2024_reference" status="model_quarantined" stale="false" population="critically ill patients" measured-compound="meropenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 1 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Cohen JL et al., Pharmacokinetics of cyclophosphamide in…, British journal of pharmaco… (1971)
   ·  DOI: [10.1111/j.1476-5381.1971.tb07199.x](https://doi.org/10.1111/j.1476-5381.1971.tb07199.x)
 
-## Model component
-<dbs-pgx drug="cyclophosphamide" model-id="Cyclophosphamide_Cohen1971_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="cyclophosphamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cyclophosphamide" model-id="Cyclophosphamide_Cohen1971_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="cyclophosphamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

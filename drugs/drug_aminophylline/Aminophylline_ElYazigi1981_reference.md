@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 El-Yazigi A et al., Theophylline absorption and disposition…, Journal of pharmaceutical s… (1981)
   ·  DOI: [10.1002/jps.2600700429](https://doi.org/10.1002/jps.2600700429)
 
-## Model component
-<dbs-pgx drug="aminophylline" model-id="Aminophylline_ElYazigi1981_reference" status="rejected" stale="false" population="rabbits" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_ElYazigi1981_reference" status="rejected" stale="false" population="rabbits" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

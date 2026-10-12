@@ -27,8 +27,7 @@ The model structure requires five parameters, including an absorption lag time o
 Mertens MJ et al., Mixed-effects modeling of the influence…, Anesthesiology (2004)
   ·  DOI: [10.1097/00000542-200404000-00008](https://doi.org/10.1097/00000542-200404000-00008)
 
-## Model component
-<dbs-pgx drug="alfentanil" model-id="Alfentanil_Mertens2004_reference" status="needs_review" stale="false" population="" measured-compound="alfentanil" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Mertens2004_reference" status="needs_review" stale="false" population="" measured-compound="alfentanil" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted.

@@ -32,7 +32,13 @@ Loratadine is a non-sedating antihistamine used to treat allergies such as seaso
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Salem_2010_reference](drugs/drug_loratadine/Loratadine_Salem2010_reference.md) | — | 1-compartment (no model) | 4 | Salem II et al., A retrospective, open-label analysis of…, Clinical therapeutics (2010) | [10.1016/j.clinthera.2010.02.001](https://doi.org/10.1016/j.clinthera.2010.02.001) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.9). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Lauven_1990_reference](drugs/drug_prilocaine/Prilocaine_Lauven1990_reference.md) | — | 1-compartment (no model) | 5 | Lauven PM et al., [The blood level and a pharmacokinetic…, Regional-Anaesthesie (1990) | — |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Tiger_1995_veratrine_stimulated_phosphoinositide_breakdown](drugs/drug_prilocaine/pd_Tiger_1995_veratrine_stimulated_phosphoinositide_breakdown.md) | veratrine-stimulated phosphoinositide breakdown ← prilocaine · direct Emax (saturable) effect | — | Tiger G et al., Veratrine-stimulated phosphoinositide b…, Anesthesia and analgesia (1995) | [10.1097/00000539-199509000-00009](https://doi.org/10.1097/00000539-199509000-00009) |
 
 ## ADME sites
 

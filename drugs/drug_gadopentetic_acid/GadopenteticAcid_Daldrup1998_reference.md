@@ -32,8 +32,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Daldrup HE et al., Quantification of the extraction fracti…, Magnetic resonance in medic… (1998)
   ·  DOI: [10.1002/mrm.1910400406](https://doi.org/10.1002/mrm.1910400406)
 
-## Model component
-<dbs-pgx drug="gadopentetic acid" model-id="GadopenteticAcid_Daldrup1998_reference" status="rejected" stale="false" population="rats with R3230 adenocarcinoma tumors" measured-compound="gadopentetate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gadopentetic acid" model-id="GadopenteticAcid_Daldrup1998_reference" status="rejected" stale="false" population="rats with R3230 adenocarcinoma tumors" measured-compound="gadopentetate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

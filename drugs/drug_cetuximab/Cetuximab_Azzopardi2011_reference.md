@@ -28,8 +28,7 @@ Independently confirmed by `qwen3.8-27b`.
 Azzopardi N et al., Cetuximab pharmacokinetics influences p…, Clinical cancer research :… (2011)
   ·  DOI: [10.1158/1078-0432.CCR-11-1081](https://doi.org/10.1158/1078-0432.CCR-11-1081)
 
-## Model component
-<dbs-pgx drug="cetuximab" model-id="Cetuximab_Azzopardi2011_reference" status="not_modelled" stale="false" population="metastatic colorectal cancer patients cotreated with irinotecan and 5-fluorouracil" measured-compound="cetuximab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Azzopardi2011_reference" status="not_modelled" stale="false" population="metastatic colorectal cancer patients cotreated with irinotecan and 5-fluorouracil" measured-compound="cetuximab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

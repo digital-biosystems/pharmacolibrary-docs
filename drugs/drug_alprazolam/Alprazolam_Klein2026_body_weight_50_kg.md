@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Klein P et al., Pharmacokinetics and tolerability of si…, Epilepsia (2026)
   ·  DOI: [10.1111/epi.18643](https://doi.org/10.1111/epi.18643)
 
-## Model component
-<dbs-pgx drug="alprazolam" model-id="Alprazolam_Klein2026_body_weight_50_kg" status="needs_review" stale="false" population="adults and adolescents with epilepsy" measured-compound="alprazolam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alprazolam" model-id="Alprazolam_Klein2026_body_weight_50_kg" status="needs_review" stale="false" population="adults and adolescents with epilepsy" measured-compound="alprazolam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

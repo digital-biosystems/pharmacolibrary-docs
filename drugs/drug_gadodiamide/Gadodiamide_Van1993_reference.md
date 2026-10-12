@@ -27,8 +27,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Citation
 Van Wagoner M et al., Gadodiamide injection. First human expe…, Investigative radiology 28… (1993)
 
-## Model component
-<dbs-pgx drug="gadodiamide" model-id="Gadodiamide_Van1993_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="gadodiamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gadodiamide" model-id="Gadodiamide_Van1993_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="gadodiamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

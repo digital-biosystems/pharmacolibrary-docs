@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Simon N et al., Full-Profile Pharmacokinetic Study of H…, Frontiers in psychiatry (2018)
   ·  DOI: [10.3389/fpsyt.2018.00385](https://doi.org/10.3389/fpsyt.2018.00385)
 
-## Model component
-<dbs-pgx drug="baclofen" model-id="Baclofen_Simon2018_reference" status="curated_candidate" stale="false" population="adults with alcohol use disorder" measured-compound="baclofen" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="baclofen" model-id="Baclofen_Simon2018_reference" status="curated_candidate" stale="false" population="adults with alcohol use disorder" measured-compound="baclofen" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

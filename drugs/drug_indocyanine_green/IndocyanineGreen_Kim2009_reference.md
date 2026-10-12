@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Kim GY et al., Estimation of indocyanine green elimina…, Journal of hepato-biliary-p… (2009)
   ·  DOI: [10.1007/s00534-009-0097-3](https://doi.org/10.1007/s00534-009-0097-3)
 
-## Model component
-<dbs-pgx drug="indocyanine green" model-id="IndocyanineGreen_Kim2009_reference" status="rejected" stale="false" population="patients undergoing ICG clearance testing" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Kim2009_reference" status="rejected" stale="false" population="patients undergoing ICG clearance testing" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

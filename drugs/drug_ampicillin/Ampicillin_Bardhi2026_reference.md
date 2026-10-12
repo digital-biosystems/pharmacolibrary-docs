@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Bardhi A et al., A population pharmacokinetic study of a…, Journal of veterinary inter… (2026)
   ·  DOI: [10.1093/jvimsj/aalag021](https://doi.org/10.1093/jvimsj/aalag021)
 
-## Model component
-<dbs-pgx drug="ampicillin" model-id="Ampicillin_Bardhi2026_reference" status="curated_candidate" stale="false" population="" measured-compound="ampicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Bardhi2026_reference" status="curated_candidate" stale="false" population="" measured-compound="ampicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

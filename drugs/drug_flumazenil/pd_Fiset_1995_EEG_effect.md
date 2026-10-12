@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flumazenil_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flumazenil_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# midazolam electroencephalographic effect (reversal of sedation) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+# cyclic AMP accumulation — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -18,7 +18,7 @@
 
 **Model:** No model was generated from this record.
 
-> Flumazenil plasma concentrations (ng/ml) act on the midazolam EEG effect via an effect-compartment (Emax) model, inhibiting/reversing sedation. Potency (EC50 of effect-site concentration) was 13.7 ± 5.8 ng/ml for light sedation and 20.6 ± 6.8 ng/ml for deep sedation, with equilibration half-lives (t½ ke0) of 5.0 ± 2.5 and 3.9 ± 1.5 minutes, respectively; Emax and gamma are not stated in the available excerpts.
+> Salbutamol (concentrations in nM) stimulates cyclic AMP accumulation (pmol mg-1 protein) in bovine tracheal smooth muscle via β2-adrenoceptor agonism, described by a sigmoid Emax model with EC50 = 169 [99-290] nM; the paper does not state Imax, kin, kout, ke0 or gamma values for this model.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
@@ -51,14 +51,17 @@ first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.667 (4/6 fields) | 2 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q326]` | 3.9 +/- 1.5 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `effect_form` | proportional | additive | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q320]` | not captured | 15.2 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q321].value` | 169 [99-290] | 169 | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q324]` | not captured | 3.6 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q325]` | not captured | 1 | only_one_extracted |
 
 </details>
 

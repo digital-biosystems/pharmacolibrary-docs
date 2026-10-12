@@ -1,0 +1,261 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05B&quot;,&quot;href&quot;:&quot;atc/A05B.md&quot;},{&quot;label&quot;:&quot;silymarin&quot;}]"></div>
+
+# silymarin
+
+- **generic name:** silymarin
+- **ATC codes:** `A05BA03`
+- **DrugBank:** not captured · **PubChem:** not captured
+- **groups:** not captured
+
+## About
+
+Silymarin, an extract from milk thistle, is used as a liver therapy for various liver conditions. It is available as an over-the-counter herbal supplement and is used in many countries, though its effectiveness is debated.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q60970556](https://www.wikidata.org/wiki/Q60970556) and the WHO ATC classification; not checked by a person.</small>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 16:08 | 8:36 | 0/0/0 | 1/1/0 | 0/0/0 | 324,448/7,890 | ollama / qwen3.8:27b-mtp-q8_0 | 28 | 7/60 | 27/1 | 0 |
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Srinivasan_2024_MTT](drugs/drug_silymarin/pd_Srinivasan_2024_MTT.md) | cell viability ← silymarin · direct Emax (saturable) effect | — | Srinivasan S et al., Exploring the anti-cancer and antimetas…, Toxicology reports (2024) | [10.1016/j.toxrep.2024.101746](https://doi.org/10.1016/j.toxrep.2024.101746) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zhang_2004_mitoxantrone_accumulation](drugs/drug_silymarin/pd_Zhang_2004_mitoxantrone_accumulation.md) | mitoxantrone accumulation ← silymarin · direct sigmoid Emax (Hill) effect | — | Zhang S et al., Combined effects of multiple flavonoids…, Pharmaceutical research (2004) | [10.1023/b:pham.0000033015.84146.4c](https://doi.org/10.1023/b:pham.0000033015.84146.4c) |
+
+<details class="legend">
+<summary>Badge legend — what each badge means</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 321 matched, 148 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full text wanted
+
+_19 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Ashraf_2015.pdf` | Ashraf M et al., RATIONALIZED AND COMPLEMENTARY FINDINGS…, Acta poloniae pharmaceutica (2015) | popPK | 9 | not captured | [26642669](https://pubmed.ncbi.nlm.nih.gov/26642669) | The study reports pharmacokinetic parameters for silymarin in humans, but the specific numeric values are not present in the provided evidence text. |
+| `Christodoulou_2015.pdf` | Christodoulou E et al., Serum and tissue pharmacokinetics of si…, International journal of ph… (2015) | popPK | 9 | [10.1016/j.ijpharm.2015.07.060](https://doi.org/10.1016/j.ijpharm.2015.07.060) | [26222744](https://pubmed.ncbi.nlm.nih.gov/26222744) | The study reports quantitative PK parameters (2-compartment model, bioavailability) for silibinin (silymarin's main component) in mice, but the specific numeric values are not present in the provided evidence text. |
+| `Hamrouni_2023.pdf` | Hamrouni H et al., Phenolic Profiling, Antioxidant, and An…, Chemistry & biodiversity (2023) | pd | 4 | [10.1002/cbdv.202300265](https://doi.org/10.1002/cbdv.202300265) | [37369625](https://www.ncbi.nlm.nih.gov/pubmed/37369625) | metadata signals extractable PD data (EC50) |
+| `Kazmi_2018.pdf` | Kazmi STB et al., Quercus dilatata Lindl. ex Royle amelio…, Biomedicine & pharmacothera… (2018) | pd | 4 | [10.1016/j.biopha.2018.03.097](https://doi.org/10.1016/j.biopha.2018.03.097) | [29604592](https://www.ncbi.nlm.nih.gov/pubmed/29604592) | metadata signals extractable PD data (IC50) |
+| `Ko_2011.pdf` | Ko HJ et al., Hepatoprotection of Gentiana scabra ext…, Journal of environmental pa… (2011) | pd | 4 | [10.1615/jenvironpatholtoxicoloncol.v30.i3.10](https://doi.org/10.1615/jenvironpatholtoxicoloncol.v30.i3.10) | [22126611](https://www.ncbi.nlm.nih.gov/pubmed/22126611) | metadata signals extractable PD data (IC50) |
+| `Sharma_2019.pdf` | Sharma R et al., Berberis aristata Ameliorates Testicula…, Journal of dietary suppleme… (2019) | pd | 4 | [10.1080/19390211.2018.1470127](https://doi.org/10.1080/19390211.2018.1470127) | [29953299](https://www.ncbi.nlm.nih.gov/pubmed/29953299) | metadata signals extractable PD data (IC50) |
+| `da_2020.pdf` | da Silva TF et al., Antiviral effect of silymarin against Z…, Acta tropica (2020) | pd | 4 | [10.1016/j.actatropica.2020.105613](https://doi.org/10.1016/j.actatropica.2020.105613) | [32621935](https://www.ncbi.nlm.nih.gov/pubmed/32621935) | metadata signals extractable PD data (EC50) |
+| `Han_2009.pdf` | Han Y et al., Effect of silymarin on the pharmacokine…, European journal of clinica… (2009) | pgx | 8 | [10.1007/s00228-009-0624-9](https://doi.org/10.1007/s00228-009-0624-9) | [19221727](https://www.ncbi.nlm.nih.gov/pubmed/19221727) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
+| `Li_2022.pdf` | Li W et al., Inhibition of UGT1A1*1 and UGT1A1*6 cat…, Chemico-biological interact… (2022) | pgx | 8 | [10.1016/j.cbi.2022.110248](https://doi.org/10.1016/j.cbi.2022.110248) | [36343684](https://www.ncbi.nlm.nih.gov/pubmed/36343684) | metadata signals extractable PGX data (UGT1A1, PK/PD-context) |
+| `Tan_2015.pdf` | Tan ZR et al., The influence of ABCB1 polymorphism C34…, Journal of clinical pharmac… (2015) | pgx | 8 | [10.1111/jcpt.12336](https://doi.org/10.1111/jcpt.12336) | [26595166](https://www.ncbi.nlm.nih.gov/pubmed/26595166) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
+| `Beckmann-Knopp_2000.pdf` | Beckmann-Knopp S et al., Inhibitory effects of silibinin on cyto…, Pharmacology & toxicology (2000) | pgx | 7 | [10.1111/j.0901-9928.2000.860602.x](https://doi.org/10.1111/j.0901-9928.2000.860602.x) | [10895987](https://www.ncbi.nlm.nih.gov/pubmed/10895987) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Fuhr_2007.pdf` | Fuhr U et al., The effect of silymarin on oral nifedip…, Planta medica (2007) | pgx | 7 | [10.1055/s-2007-990256](https://doi.org/10.1055/s-2007-990256) | [17968815](https://www.ncbi.nlm.nih.gov/pubmed/17968815) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Gufford_2015.pdf` | Gufford BT et al., Milk Thistle Constituents Inhibit Ralox…, Drug metabolism and disposi… (2015) | pgx | 7 | [10.1124/dmd.115.065086](https://doi.org/10.1124/dmd.115.065086) | [26070840](https://www.ncbi.nlm.nih.gov/pubmed/26070840) | metadata signals extractable PGX data (UGT1A1, PK/PD-context) |
+| `Hermann_2012.pdf` | Hermann R et al., Clinical evidence of herbal drugs as pe…, Planta medica (2012) | pgx | 7 | [10.1055/s-0032-1315117](https://doi.org/10.1055/s-0032-1315117) | [22855269](https://www.ncbi.nlm.nih.gov/pubmed/22855269) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
+| `Pingili_2019.pdf` | Pingili R et al., Quercetin reduced the formation of N-ac…, Phytotherapy research : PTR (2019) | pgx | 7 | [10.1002/ptr.6365](https://doi.org/10.1002/ptr.6365) | [31155811](https://www.ncbi.nlm.nih.gov/pubmed/31155811) | metadata signals extractable PGX data (CYP2E1, PK/PD-context) |
+| `Rajnarayana_2004.pdf` | Rajnarayana K et al., Study on the influence of silymarin pre…, Arzneimittel-Forschung (2004) | pgx | 7 | [10.1055/s-0031-1296944](https://doi.org/10.1055/s-0031-1296944) | [15038460](https://www.ncbi.nlm.nih.gov/pubmed/15038460) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Raucy_2003.pdf` | Raucy JL, Regulation of CYP3A4 expression in huma…, Drug metabolism and disposi… (2003) | pgx | 7 | [10.1124/dmd.31.5.533](https://doi.org/10.1124/dmd.31.5.533) | [12695340](https://www.ncbi.nlm.nih.gov/pubmed/12695340) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Venkataramanan_2000.pdf` | Venkataramanan R et al., Milk thistle, a herbal supplement, decr…, Drug metabolism and disposi… (2000) | pgx | 7 | not captured | [11038151](https://www.ncbi.nlm.nih.gov/pubmed/11038151) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Yamsani_2014.pdf` | Yamsani SK et al., Effect of silymarin pretreatment on the…, Drug metabolism and drug in… (2014) | pgx | 7 | [10.1515/dmdi-2014-0013](https://doi.org/10.1515/dmdi-2014-0013) | [25029082](https://www.ncbi.nlm.nih.gov/pubmed/25029082) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
+
+<sub>queue written 2026-10-04T16:02:42.418927+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Adnan_2023 | irrelevant | 0 | 0 | The paper is a review on nanocarriers for skin cancer and does not report pharmacokinetic parameters for silymarin. |
+| PD | Adnan_2023 | not_relevant | 0 | 0 | The paper is a review of nanocarriers for skin cancer and does not report any pharmacodynamic or exposure-response data for silymarin. |
+| PGx | Ahmad_2013 | not_relevant | 0 | 0 | The study investigates the protective effects of silymarin against hepatotoxicity in rats but does not report any pharmacogenomic effects (gene variants) on silymarin's PK or PD parameters. |
+| popPK | Amaliah_2025 | irrelevant | 0 | 0 | The paper is a review of ternary solid dispersions and does not report specific quantitative pharmacokinetic parameters for silymarin. |
+| PD | Amaliah_2025 | not_relevant | 0 | 0 | The paper is a review of ternary solid dispersions and does not report specific pharmacodynamic or exposure-response data for silymarin. |
+| PGx | Amawi_2017 | not_relevant | 0 | 0 | The paper investigates the mechanism of action and toxicity of a silybin derivative in cancer cells and zebrafish, but does not report any pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Anthony_2013 | irrelevant | 0 | 0 | The study is an in-vitro assessment of antioxidant and free radical scavenging activities, containing no pharmacokinetic parameters. |
+| popPK | Ashraf_2015 | relevant | 9 | 0 | The study reports pharmacokinetic parameters for silymarin in humans, but the specific numeric values are not present in the provided evidence text. |
+| popPK | Balkrishna_2024 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of a herbal formulation where silymarin is used only as a positive control, and no pharmacokinetic parameters are reported. |
+| popPK | Bechtold_2024 | irrelevant | 1 | 0 | Silymarin is used as a co-administered inhibitor to study the pharmacokinetics of other drugs (pitavastatin, pravastatin), and no quantitative disposition parameters for silymarin itself are reported. |
+| PD | Bechtold_2024 | not_relevant | 1 | 0 | The paper reports pharmacokinetic interaction data (AUC/Cmax changes) and mentions that silymarin concentrations were below reported IC50 values, but it does not provide a concentration-effect curve or numeric PD parameters for silymarin itself. |
+| PGx | Bechtold_2024 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetic interactions of silymarin as an inhibitor on other substrates (statins), not how a gene variant affects the PK/PD of silymarin itself. |
+| PGx | Bechtold_2024_2 | not_relevant | 0 | 0 | The paper investigates the effect of a disease state (NAFLD) and a drug-drug interaction (silymarin) on the PK of pitavastatin, not the effect of a gene variant on the PK/PD of silymarin. |
+| PGx | Beckmann-Knopp_2000 | not_relevant | 0 | 0 | The paper investigates the in vitro inhibitory effects of silibinin on CYP enzymes but does not report any pharmacogenomic effects (gene variants) on the PK or PD of silymarin. |
+| popPK | Biedermann_2016 | irrelevant | 0 | 0 | The paper focuses on the physicochemical properties and antioxidant activity of silychristin and its derivatives, not on the pharmacokinetics of silymarin. |
+| popPK | Bouazza_2015 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of lopinavir/ritonavir and antiretrovirals, not silymarin. |
+| PD | Bouazza_2015 | not_relevant | 0 | 0 | The paper focuses on population pharmacokinetics and dose ratio optimization for lopinavir/ritonavir fixed-dose combinations, with no mention of silymarin or any pharmacodynamic modeling. |
+| PGx | Brantley_2010 | not_relevant | 0 | 0 | The paper investigates the inhibition of CYP2C9 by silymarin components, which is a drug-herb interaction, not a pharmacogenomic effect (gene variant) on silymarin's PK/PD. |
+| PGx | Brantley_2013 | not_relevant | 0 | 0 | The paper investigates the inhibitory effects of silymarin constituents on CYP3A4 activity (drug-drug interaction) but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Chandler_2010 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of anti-inflammatory effects and does not report any pharmacokinetic parameters for silymarin. |
+| PGx | Chen_2019 | not_relevant | 0 | 0 | The paper characterizes metabolic pathways and reactive metabolites of silymarin isomers but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Chen_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of quetiapine, not silymarin. |
+| PD | Chen_2024 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics (PK) of quetiapine and drug-drug interactions, providing no pharmacodynamic (PD) or exposure-response analysis for silymarin or any other drug. |
+| popPK | Chen_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of quetiapine, not silymarin. |
+| PD | Chen_2025 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics (PK) of quetiapine and drug-drug interactions, providing no pharmacodynamic (PD) or exposure-response analysis for silymarin or any other drug. |
+| PGx | Cheung_2010 | not_relevant | 2 | 0 | The text is an abstract of a review that mentions drug metabolising gene polymorphisms as a topic to be discussed, but it does not report specific pharmacogenomic effects on PK/PD parameters. |
+| popPK | Cho_2001 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assay where silymarin is used only as a positive control, with no pharmacokinetic parameters reported. |
+| popPK | Christodoulou_2015 | relevant | 9 | 0 | The study reports quantitative PK parameters (2-compartment model, bioavailability) for silibinin (silymarin's main component) in mice, but the specific numeric values are not present in the provided evidence text. |
+| PD | Christodoulou_2015 | not_relevant | 0 | 0 | The paper focuses exclusively on pharmacokinetics (PK) and PBPK modeling of silibinin, reporting no pharmacodynamic (PD) or exposure-response data. |
+| popPK | Corlatti_2026 | irrelevant | 0 | 0 | The paper is a review of the Helianthus genus (sunflowers) and does not study silymarin or report any pharmacokinetic parameters. |
+| PD | Corlatti_2026 | not_relevant | 0 | 0 | The paper is a review of phytochemicals in the Helianthus genus and does not report any pharmacodynamic or exposure-response data for silymarin. |
+| popPK | Crocenzi_2001 | irrelevant | 1 | 0 | The study focuses on the mechanism of silymarin's effect on cholestasis (bile flow, transporter expression) rather than reporting quantitative pharmacokinetic parameters (CL, V, t1/2) for silymarin itself. |
+| PGx | Crocenzi_2001 | not_relevant | 0 | 0 | The study investigates the pharmacological effects of silymarin on cholestasis in rats but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| PGx | Csupor_2016 | not_relevant | 0 | 0 | The paper is a review of chemical analysis methods for silymarin and does not report any pharmacogenomic effects on PK or PD parameters. |
+| PGx | DAndrea_2005 | not_relevant | 0 | 0 | The study investigates the in vitro inhibitory effects of silymarin on UGT enzymes but does not report any pharmacogenomic effects (gene variants) on silymarin's PK or PD parameters. |
+| popPK | Dardano_2026 | irrelevant | 0 | 0 | The paper is a review on antioxidants, microbiota, and epilepsy, with no pharmacokinetic data or specific focus on silymarin. |
+| PD | Dardano_2026 | not_relevant | 0 | 0 | The paper is a narrative review on the gut-brain axis and epilepsy, mentioning silymarin only as a general phyto-therapy without providing any specific pharmacokinetic or pharmacodynamic data, dose-response curves, or numeric parameters. |
+| popPK | Darvishi-Khezri_2017 | irrelevant | 0 | 0 | The study evaluates antioxidant and oxidative status markers (MDA, CO, TAC, GSH) rather than pharmacokinetic parameters. |
+| popPK | Demirci_2013 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of silymarin's effect on vascular function in rat aortic rings, reporting no pharmacokinetic parameters. |
+| popPK | Deng_2026 | irrelevant | 0 | 0 | The study is an in vitro mechanistic and disease modeling study using a bioartificial liver module, where silymarin is used as a hepatoprotective agent to assess viability, not as a subject for pharmacokinetic parameter estimation. |
+| popPK | Divya_2016 | irrelevant | 0 | 0 | The study is a toxicology/efficacy trial where silymarin is used only as a standard comparator, and no pharmacokinetic parameters are reported. |
+| PD | Divya_2016 | not_relevant | 0 | 0 | The paper investigates a plant extract (Apodytes dimidiata) and only mentions silymarin as a standard comparator without providing any pharmacokinetic data, exposure-response analysis, or numeric PD parameters for silymarin. |
+| PGx | Dobiasová_2020 | not_relevant | 0 | 0 | The paper investigates the biological activities of silybin derivatives (antioxidant, anti-inflammatory, MDR modulation) but does not report any pharmacogenomic effects (gene variant/genotype) on the PK or PD parameters of silymarin. |
+| PGx | Dutta_2026 | not_relevant | 0 | 0 | The paper is an in silico study on antiviral potential and does not report pharmacogenomic effects on PK/PD parameters. |
+| popPK | Elkun_2025 | irrelevant | 0 | 0 | The paper describes the synthesis and characterization of carbon quantum dots using silymarin as a precursor, not the pharmacokinetics of silymarin itself. |
+| PD | Elkun_2025 | not_relevant | 0 | 0 | The paper reports the synthesis and characterization of silymarin-based carbon quantum dots (SM-CQDs) and their anticancer activity (IC50), but does not report a pharmacodynamic or exposure-response relationship for the drug silymarin itself. |
+| PGx | Faisal_2021 | not_relevant | 0 | 0 | The paper investigates protein binding and CYP inhibition of silymarin components but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Fan_2018 | irrelevant | 0 | 0 | The paper is a phytochemical study on Phyllodium pulchellum where silymarin is used only as an in-vitro positive control, with no pharmacokinetic parameters reported. |
+| PD | Fan_2018 | not_relevant | 2 | 1 | The paper reports single-point in vitro activity data (cell viability at 10 μM) for silymarin as a positive control, but does not provide a dose-response curve, IC50, or any formal pharmacodynamic model parameters for silymarin. |
+| popPK | Fatima_2025 | irrelevant | 0 | 0 | The paper is a general review of nutraceuticals and does not report specific pharmacokinetic parameters for silymarin. |
+| PD | Fatima_2025 | not_relevant | 0 | 0 | The paper is a narrative review of nutraceuticals and does not report specific pharmacodynamic or exposure-response data for silymarin. |
+| popPK | Ferreira_2021 | irrelevant | 1 | 0 | The study investigates silymarin as a P-gp inhibitor affecting the pharmacokinetics of other drugs (carbamazepine, oxcarbazepine, phenytoin), not the pharmacokinetic parameters of silymarin itself. |
+| PGx | Fuhr_2007 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (silymarin affecting nifedipine PK) in a general population, not a pharmacogenomic effect based on gene variants. |
+| popPK | Ghani_2024 | irrelevant | 0 | 0 | The study is an in-vitro investigation of silymarin encapsulated in nanoparticles for glioblastoma treatment, reporting cytotoxicity and release data but no pharmacokinetic parameters. |
+| popPK | Ginwala_2019 | irrelevant | 0 | 0 | The paper is a review on the anti-inflammatory activity of apigenin and other flavonoids, with no pharmacokinetic data for silymarin. |
+| PD | Ginwala_2019 | not_relevant | 0 | 0 | The paper is a review focused on apigenin and general flavonoids in chronic inflammation; it does not report any pharmacodynamic or exposure-response data for silymarin. |
+| popPK | Golubović_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of sirolimus, not silymarin. |
+| PD | Golubović_2019 | not_relevant | 0 | 0 | The paper describes a population pharmacokinetic (PK) model for sirolimus, focusing on clearance variability based on age and liver function, but does not report any pharmacodynamic (PD) or exposure-response relationship. |
+| PGx | Gufford_2015 | not_relevant | 0 | 0 | The paper investigates a drug-herb interaction (milk thistle inhibiting raloxifene metabolism) and does not report any pharmacogenomic effects (gene variants) on silymarin's PK or PD parameters. |
+| popPK | Hamrouni_2023 | irrelevant | 0 | 0 | no_text gate: only 103 chars of text extracted (&lt; 400) |
+| PD | Hamrouni_2023 | not_relevant | 0 | 0 | The paper focuses on phenolic profiling and in vitro antioxidant/antibacterial activities of medicinal plants, with no mention of silymarin or pharmacodynamic modeling. |
+| PGx | Han_2009_2 | not_relevant | 0 | 0 | The study investigates the effect of silymarin on the pharmacokinetics of talinolol, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of silymarin. |
+| PGx | Hermann_2012 | not_relevant | 0 | 0 | The paper reviews herb-drug interactions (silymarin as a perpetrator affecting other drugs) and does not report pharmacogenomic effects (gene variants) on silymarin's own PK/PD parameters. |
+| popPK | Holasová_2022 | irrelevant | 0 | 0 | The study is an in-vitro microbiological investigation of silymarin's effect on bacterial resistance and virulence, containing no pharmacokinetic data. |
+| popPK | Imam_2024 | irrelevant | 0 | 0 | The study is an in-vitro formulation and characterization paper (vesicle size, release, docking) with no in-vivo pharmacokinetic parameters (CL, V, t1/2) for silymarin. |
+| popPK | Iqbal_2022 | irrelevant | 0 | 0 | The study evaluates the nephroprotective effects of a plant extract using silymarin only as a standard comparator, and does not report any pharmacokinetic parameters for silymarin. |
+| PD | Iqbal_2022 | not_relevant | 0 | 0 | The paper focuses on the nephroprotective effects of Bambusa arundinacea extract, using silymarin only as a positive control without reporting any pharmacokinetic data or quantitative exposure-response parameters for silymarin. |
+| PGx | Isıyel_2026 | not_relevant | 0 | 0 | The paper identifies therapeutic targets for silymarin in hepatocellular carcinoma using bioinformatics and molecular docking, but does not report any pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Jančová_2011 | not_relevant | 0 | 0 | The study investigates in vitro enzyme kinetics and regioselectivity of UGTs on silybin but does not report pharmacogenomic effects (genotype-phenotype associations) on PK or PD parameters in humans. |
+| popPK | Javeed_2022 | irrelevant | 0 | 0 | The paper is a phytochemical and antioxidant analysis of plant extracts, not a pharmacokinetic study, and contains no disposition parameters for silymarin. |
+| PD | Javeed_2022 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant assays (DPPH/FRAP) and phytochemical composition, not in vivo pharmacodynamic or exposure-response relationships for silymarin. |
+| popPK | Jiabin_2026 | irrelevant | 0 | 0 | The study is a toxicological assessment of silymarin-encapsulated nanocomposites in chickens, reporting oxidative stress markers and histopathology, but it does not report any quantitative pharmacokinetic parameters (CL, V, ka, t1/2) for silymarin. |
+| popPK | Jiao_2009 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for sirolimus, not silymarin, which is only mentioned as a co-medication affecting sirolimus clearance. |
+| popPK | Jung_2004 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of antioxidant and hepatoprotective activities, not a pharmacokinetic study, and silymarin is used only as a positive control. |
+| popPK | Kanhar_2019 | irrelevant | 0 | 0 | The study evaluates the hepatoprotective efficacy of Homalium zeylanicum using silymarin only as a comparator, with no pharmacokinetic parameters reported. |
+| PD | Kanhar_2019 | not_relevant | 0 | 0 | The paper compares the efficacy of a plant extract to silymarin but does not report any pharmacokinetic data, exposure-response analysis, or numeric PD parameters (e.g., EC50, Emax) for silymarin itself. |
+| PGx | Kaur_2015 | not_relevant | 0 | 0 | The study investigates the effect of silymarin on BCRP transporter function in an in vitro model, not the effect of a gene variant on silymarin's pharmacokinetics or pharmacodynamics. |
+| popPK | Kazmi_2018 | irrelevant | 0 | 0 | The study evaluates the hepatoprotective effects of Quercus dilatata extracts, using silymarin only as a positive control without reporting any pharmacokinetic parameters for it. |
+| PD | Kazmi_2018 | not_relevant | 1 | 0 | The paper uses silymarin only as a fixed-dose positive control in a comparative study of plant extracts and does not report any exposure-response or dose-response analysis or numeric PD parameters for silymarin. |
+| popPK | Kim_2004 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of mercury toxicity in murine macrophages where silymarin is used only as a pretreatment antioxidant, with no pharmacokinetic parameters reported. |
+| PD | Kim_2004 | not_relevant | 0 | 0 | The paper focuses on the mechanism of mercury toxicity; silymarin is only mentioned qualitatively as an antioxidant pretreatment that decreased p38 activation, with no dose-response or concentration-effect data provided for silymarin. |
+| popPK | Ko_2011 | irrelevant | 0 | 0 | The study focuses on the hepatoprotective effects of Gentiana scabra extract, using silymarin only as a comparator agent without reporting any pharmacokinetic parameters for silymarin. |
+| PD | Ko_2011 | not_relevant | 0 | 0 | The paper studies Gentiana scabra extract and only mentions silymarin as a positive control for comparison of efficacy, without providing any exposure-response or dose-response data for silymarin. |
+| popPK | Koch_1985 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of lipid peroxidation inhibition and does not report any pharmacokinetic parameters for silymarin. |
+| popPK | Kokanova-Nedialkova_2015 | irrelevant | 0 | 0 | The paper is an in-vitro study on flavonoid glycosides where silymarin is used only as a positive control, with no pharmacokinetic parameters reported. |
+| PD | Kokanova-Nedialkova_2015 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant and hepatoprotective activities of isolated flavonoids, using silymarin only as a qualitative positive control without providing any exposure-response or dose-response data for silymarin itself. |
+| PGx | Lani_2015 | not_relevant | 0 | 0 | The paper investigates the antiviral activity of silymarin against chikungunya virus in vitro and does not report any pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Lee_2012 | irrelevant | 0 | 0 | Silymarin is used only as a positive control in a hepatoprotection study, with no pharmacokinetic parameters reported. |
+| PD | Lee_2012 | not_relevant | 2 | 1 | Silymarin is used only as a single-dose positive control (100 μg/ml in vitro, 50 mg/kg in vivo) without a dose-response curve or derived PD parameters. |
+| popPK | Li_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of simvastatin and its metabolite in the presence of silymarin, not the pharmacokinetic parameters of silymarin itself. |
+| PGx | Li_2022 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (silybin inhibiting UGT1A1) affecting SN-38 metabolism, not a pharmacogenomic effect of a gene variant on silymarin's PK/PD. |
+| popPK | Loutfy_2022 | irrelevant | 0 | 0 | The study is an in silico and in vitro investigation of antiviral activity and nanoparticle characterization, containing no pharmacokinetic parameters for silymarin. |
+| popPK | Majnooni_2020 | irrelevant | 0 | 0 | The paper is a review of phytochemicals for lung injury and does not report any quantitative pharmacokinetic parameters for silymarin. |
+| PD | Majnooni_2020 | not_relevant | 0 | 0 | The paper is a narrative review of phytochemical mechanisms and does not report any specific pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for silymarin. |
+| popPK | Malekinejad_2014 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for atorvastatin, with silymarin acting as a co-administered agent to modify those parameters, rather than reporting PK for silymarin itself. |
+| popPK | Mansouri_2026 | irrelevant | 0 | 0 | The paper is a review of botanical adjuvants in oncology and does not report quantitative pharmacokinetic parameters for silymarin. |
+| PD | Mansouri_2026 | not_relevant | 0 | 0 | The paper is a narrative review of botanical adjuvants in oncology and does not report specific pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for silymarin. |
+| popPK | Mbougnia_2026 | irrelevant | 0 | 0 | The paper is a systematic review of African medicinal plants for breast cancer and does not report pharmacokinetic parameters for silymarin. |
+| PD | Mbougnia_2026 | not_relevant | 0 | 0 | The paper is a systematic review of African medicinal plants for TNBC and does not report any pharmacodynamic or exposure-response data for silymarin. |
+| popPK | Mili_2025 | irrelevant | 0 | 0 | The study focuses on a sesamol derivative (SMD) for liver protection, with silymarin mentioned only as a comparator in histopathology, and no pharmacokinetic parameters for silymarin are reported. |
+| PD | Mili_2025 | not_relevant | 2 | 1 | The paper reports qualitative dose-response comparisons (low vs high dose) and in vitro IC50 values for a new compound (SMD), but does not provide a quantitative exposure-response or dose-response model with numeric PD parameters (Emax, EC50, slope) for silymarin. |
+| popPK | Mina_2020 | irrelevant | 0 | 0 | The study focuses on the anti-plasmodial mechanism of action (heme interaction) and does not report any pharmacokinetic parameters for silymarin. |
+| popPK | Naheed_2026 | irrelevant | 0 | 0 | The study focuses on the antioxidant activity of a plant extract, using silymarin only as a comparator for enzymatic activity, and contains no pharmacokinetic parameters. |
+| PD | Naheed_2026 | not_relevant | 0 | 0 | The paper focuses on the antioxidant activity of Ziziphus oxyphylla extract; silymarin is only used as a positive control in a single-dose comparison without any exposure-response modeling or derivable PD parameters for silymarin. |
+| popPK | Nasir_2022 | irrelevant | 0 | 0 | The study investigates the anti-inflammatory effects of Datura stramonium extract, using silymarin only as a positive control without reporting any pharmacokinetic parameters for it. |
+| PD | Nasir_2022 | not_relevant | 0 | 0 | The paper studies Datura stramonium extract, not silymarin, and only uses silymarin as a qualitative comparator without providing any PD parameters for it. |
+| popPK | Njayou_2016 | irrelevant | 0 | 0 | The study is an in-vitro hepatoprotection assay using silymarin as a positive control, not a pharmacokinetic study, and reports no disposition parameters. |
+| PD | Njayou_2016 | not_relevant | 3 | 2 | The paper reports a single EC50 value for silymarin (13.71 ± 3.87 μg/ml) as a reference standard in a cell-based assay, but does not provide a full dose-response curve, Emax, or other parameters sufficient to define a PD relationship. |
+| popPK | Obrador_2026 | irrelevant | 0 | 0 | The paper is a review of radiomitigators for radiation injury and does not contain pharmacokinetic data for silymarin. |
+| PD | Obrador_2026 | not_relevant | 0 | 0 | The text is a general review of radiomitigators and does not contain specific pharmacodynamic data, exposure-response analysis, or numeric PD parameters for silymarin. |
+| popPK | Omage_2022 | irrelevant | 0 | 0 | The study is a toxicology/pharmacology experiment comparing plant extracts to silymarin as a standard drug, reporting no pharmacokinetic parameters for silymarin. |
+| PD | Omage_2022 | not_relevant | 1 | 0 | The study is a comparative efficacy trial using a single fixed dose of silymarin (6 mg/kg) without measuring drug concentrations or fitting a dose-response curve, thus providing no extractable PD parameters. |
+| PGx | Pingili_2019 | not_relevant | 0 | 0 | The study investigates the effect of quercetin on paracetamol metabolism and does not report any pharmacogenomic effects (gene variants) on silymarin PK/PD parameters. |
+| PGx | Pingili_2019_2 | not_relevant | 0 | 0 | The study investigates the effect of chrysin on paracetamol metabolism and does not report pharmacogenomic effects on silymarin. |
+| popPK | Pourová_2019 | irrelevant | 0 | 0 | The study is an ex vivo pharmacological investigation of vasorelaxant and antiplatelet effects, not a pharmacokinetic study, and reports no disposition parameters (CL, V, ka, etc.). |
+| popPK | Prakash_2026 | irrelevant | 0 | 0 | The paper is a review of phytochemicals (curcumin, berberine, etc.) for Type 2 Diabetes and does not mention silymarin or report any pharmacokinetic parameters. |
+| PD | Prakash_2026 | not_relevant | 0 | 0 | The paper is a review of phytochemicals and nanotechnology in T2DM and does not report specific pharmacodynamic or exposure-response data for silymarin. |
+| popPK | Raclariu-Manolică_2023 | irrelevant | 0 | 0 | The study is a quality control and authentication analysis of commercial products, not a pharmacokinetic study, and reports no disposition parameters. |
+| PD | Raclariu-Manolică_2023 | not_relevant | 0 | 0 | The paper focuses on the authentication and quality control of milk thistle products using metabolomics and DNA metabarcoding, reporting no pharmacodynamic or exposure-response data. |
+| popPK | Rafehi_2026 | irrelevant | 0 | 0 | The paper focuses on transporter pharmacology and hit identification for ABC/SLC transporters, with no mention of silymarin or its pharmacokinetic parameters. |
+| PD | Rafehi_2026 | not_relevant | 0 | 0 | The paper does not mention silymarin and focuses on transporter inhibition (IC50) of other compounds, not silymarin PD. |
+| popPK | Rahimi_2024 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of antiproliferative and antitelomerase effects, reporting no pharmacokinetic parameters. |
+| PGx | Rajnarayana_2004 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (silymarin affecting metronidazole PK) and does not report any pharmacogenomic effects (gene variants) on silymarin's PK or PD parameters. |
+| popPK | Rani_2026 | irrelevant | 0 | 0 | The paper is a review of quercetin in burn healing and does not contain pharmacokinetic data for silymarin. |
+| PD | Rani_2026 | not_relevant | 0 | 0 | The paper is a review of quercetin (not silymarin) and contains no numeric PD parameters or exposure-response analysis. |
+| popPK | Ranjbar_2020 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on cancer cells (Ramos cell line) investigating apoptosis and gene expression, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Rao_2007 | irrelevant | 1 | 0 | The study investigates the pharmacokinetics of ranitidine (the subject drug) to assess drug-drug interactions with silymarin, rather than reporting PK parameters for silymarin itself. |
+| PGx | Raucy_2003 | not_relevant | 0 | 0 | The paper investigates the induction of CYP3A4 expression by silymarin in hepatocytes but does not report any pharmacogenomic effects (gene variants) on the PK or PD parameters of silymarin. |
+| popPK | Saeed_2012 | irrelevant | 0 | 0 | The study is a pharmacological assessment of antioxidant activity in rats where silymarin is used only as a positive control, with no pharmacokinetic parameters reported. |
+| PD | Saeed_2012 | not_relevant | 0 | 0 | The paper studies Torilis leptophylla extracts and uses silymarin only as a positive control in a single-dose in vivo experiment without reporting exposure-response or dose-response PD parameters for silymarin. |
+| PGx | Samieadel_2026 | not_relevant | 0 | 0 | The paper studies plant genotypes of Silybum marianum and environmental effects on silymarin production, not human pharmacogenomics or PK/PD parameters. |
+| PGx | Schuppan_2003 | not_relevant | 0 | 0 | The paper is a review of hepatitis C and liver fibrosis that mentions silymarin only as a potential adjunctive antifibrotic agent, without reporting any pharmacogenomic effects on its PK or PD parameters. |
+| popPK | Segneanu_2026 | irrelevant | 0 | 0 | The paper is a review of plant-derived nanocarriers and does not report specific quantitative pharmacokinetic parameters for silymarin. |
+| PD | Segneanu_2026 | not_relevant | 0 | 0 | The paper is a review of plant-derived nanocarriers and does not report specific pharmacodynamic or exposure-response data for silymarin. |
+| popPK | Sethiya_2015 | irrelevant | 0 | 0 | Silymarin is used only as a reference drug/comparator in a hepatoprotection study of phyllanthin, with no PK parameters reported for silymarin. |
+| PD | Sethiya_2015 | not_relevant | 0 | 0 | The paper focuses on phyllanthin and piperine; silymarin is used only as a reference drug without any reported exposure-response or dose-response analysis or numeric PD parameters. |
+| popPK | Sharma_2019 | irrelevant | 0 | 0 | Silymarin is used only as a standard comparator in a toxicology study, and no pharmacokinetic parameters are reported. |
+| PD | Sharma_2019 | not_relevant | 0 | 0 | The paper studies Berberis aristata extract and uses silymarin only as a standard comparator without reporting any exposure-response or dose-response analysis or numeric PD parameters for silymarin. |
+| popPK | Shiri_2019 | irrelevant | 0 | 0 | The study is an in-vitro investigation of drug delivery and cellular toxicity, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Shukla_2019 | irrelevant | 0 | 0 | The study is a hepatoprotection/toxicology study where silymarin is used only as a positive control, and no pharmacokinetic parameters are reported. |
+| PD | Shukla_2019 | not_relevant | 0 | 0 | The paper investigates the hepatoprotective effects of Lichen rangiferinus extract, using silymarin only as a positive control without reporting any pharmacokinetic data or exposure-response relationship for silymarin. |
+| popPK | Singh_2017 | irrelevant | 0 | 0 | The study evaluates the hepatoprotective and antioxidant potential of Anogeissus pendula extracts, using silymarin only as a positive control without reporting any pharmacokinetic parameters for it. |
+| PD | Singh_2017 | not_relevant | 2 | 1 | The paper reports in vitro IC50 values for plant extracts and qualitative dose-dependent hepatoprotection, but does not provide a quantitative exposure-response or dose-response model (e.g., Emax, EC50) for silymarin. |
+| popPK | Singh_2022 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of plant extracts for hepatoprotective activity, using silymarin only as a positive control, and reports no pharmacokinetic parameters. |
+| PD | Singh_2022 | not_relevant | 0 | 0 | The paper investigates plant extracts (e.g., Curculigo orchioides) and does not study silymarin or report any pharmacodynamic parameters for it. |
+| popPK | Srinivasan_2024 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on anti-cancer effects (MMP inhibition, apoptosis) and contains no pharmacokinetic parameters. |
+| PGx | Su_2023 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (silymarin affecting pexidartinib PK) in rats, not the effect of a gene variant on silymarin's PK/PD. |
+| popPK | Sureja_2022 | irrelevant | 0 | 0 | The study is an in-silico computational investigation of lignan derivatives as SARS-CoV-2 inhibitors and does not report pharmacokinetic parameters for silymarin. |
+| PD | Sureja_2022 | not_relevant | 0 | 0 | The paper is an in-silico computational study on lignan derivatives for SARS-CoV-2 and does not report any pharmacodynamic or exposure-response data for silymarin. |
+| PGx | Sy-Cordero_2013 | not_relevant | 0 | 0 | The paper reports on the synthesis and bioactivity of semi-synthetic analogues of silybin B, not on the effect of human gene variants on the PK or PD of silymarin. |
+| popPK | Talath_2026 | irrelevant | 0 | 0 | The paper is a review of natural supplements in breast cancer therapy and does not report quantitative pharmacokinetic parameters for silymarin. |
+| PD | Talath_2026 | not_relevant | 0 | 0 | The paper is a general review of natural supplements in breast cancer and does not contain any specific pharmacodynamic or exposure-response data for silymarin. |
+| popPK | Taliwe_2026 | irrelevant | 0 | 0 | The paper is a mechanistic review of Asteraceae botanicals and does not report quantitative pharmacokinetic parameters for silymarin. |
+| PD | Taliwe_2026 | not_relevant | 0 | 0 | The paper is a general review of Asteraceae botanicals and does not report specific pharmacodynamic or exposure-response data for silymarin. |
+| PGx | Tian_2019 | not_relevant | 0 | 0 | The study investigates the anti-inflammatory effects of silymarin in bovine cells and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Upadhyay_2008 | not_relevant | 0 | 0 | The study investigates the effect of resveratrol on pyrogallol-induced toxicity in mice and does not report any pharmacogenomic effects (gene variants) on the PK or PD of silymarin. |
+| popPK | Vats_2025 | irrelevant | 0 | 0 | The paper is a review of the plant Tecomella undulata and does not study silymarin or report any pharmacokinetic parameters. |
+| PD | Vats_2025 | not_relevant | 0 | 0 | The paper is a review of Tecomella undulata and does not contain any pharmacodynamic or exposure-response data for silymarin. |
+| PGx | Venkataramanan_2000 | not_relevant | 0 | 0 | The paper reports the effect of silymarin on drug-metabolizing enzymes (CYP3A4/UGT) in vitro, not the effect of a gene variant on silymarin's PK/PD. |
+| PGx | Viktorová_2019 | not_relevant | 0 | 0 | The paper investigates the biochemical and cellular activities of silychristin derivatives (antioxidant, anti-inflammatory, P-gp inhibition) but does not report any pharmacogenomic effects (gene variant/genotype) on the PK or PD of silymarin. |
+| popPK | Vogel_1975 | irrelevant | 0 | 0 | no_text gate: only 197 chars of text extracted (&lt; 400) |
+| PD | Vogel_1975 | not_relevant | 1 | 0 | The provided text is only the title of a review or general pharmacology paper and does not contain the full text, data, or numeric PD parameters required to extract an exposure-response relationship. |
+| PGx | Vrba_2020 | not_relevant | 0 | 0 | The paper identifies UGT enzymes involved in silymarin metabolism but does not report pharmacogenomic effects of specific gene variants on PK or PD parameters. |
+| PGx | Wang_2018 | not_relevant | 0 | 0 | The study investigates the hepatoprotective mechanism of a polysaccharide in mice and does not report any pharmacogenomic effects on the PK or PD of silymarin. |
+| popPK | Wang_2025 | irrelevant | 0 | 0 | The paper is a narrative review of silibinin's mechanisms in NSCLC and does not report original quantitative pharmacokinetic parameters. |
+| PD | Wang_2025 | not_relevant | 2 | 1 | The paper is a narrative review summarizing mechanisms and qualitative outcomes of silibinin combinations, lacking any specific PK/PD modeling or extractable numeric exposure-response parameters. |
+| PGx | Xie_2017 | not_relevant | 5 | 8 | The study reports that UGT1A1*28 genotype does not significantly alter silymarin PK parameters (AUC), finding only a shift in conjugate profile (sulfate vs glucuronide) rather than a quantitative change in exposure. |
+| popPK | Xu_2024 | irrelevant | 0 | 0 | This is a critical review of flavonoid drugs and clinical candidates that does not report original quantitative pharmacokinetic parameters for silymarin. |
+| PD | Xu_2024 | not_relevant | 0 | 0 | The paper is a cheminformatics and clinical development review of flavonoids that does not report any pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for silymarin. |
+| popPK | Xu_2025 | irrelevant | 0 | 0 | This is a narrative review of flavonoids in digestive diseases and does not report quantitative pharmacokinetic parameters for silymarin. |
+| PD | Xu_2025 | not_relevant | 1 | 0 | The paper is a narrative review of flavonoids in digestive diseases and does not report specific pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for silymarin. |
+| popPK | Yalaza_2025 | irrelevant | 0 | 0 | The study is an in-silico molecular docking and dynamics simulation of silymarin as a HER2 inhibitor, not a pharmacokinetic study reporting disposition parameters. |
+| PD | Yalaza_2025 | not_relevant | 0 | 0 | The paper is an in silico study (molecular docking and dynamics) reporting binding affinities and free energies, not a pharmacodynamic exposure-response or dose-response analysis with numeric PD parameters like Emax or EC50. |
+| PGx | Yamaura_2011 | not_relevant | 0 | 0 | The study investigates the effect of goldenseal on acetaminophen pharmacokinetics and toxicity, with no analysis of gene variants or genotypes. |
+| PGx | Yamsani_2014 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (silymarin affecting domperidone PK) and does not report any pharmacogenomic effects (gene variants) on silymarin's PK or PD parameters. |
+| popPK | Zarei_2024 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of redox regulation in cancer cells and does not report any pharmacokinetic parameters for silymarin. |
+| popPK | Zhang_2004 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of BCRP inhibition by flavonoids, not a pharmacokinetic study of silymarin disposition. |
+| popPK | Zheng_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for quetiapine, not silymarin. |
+| PD | Zheng_2024 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics (PPK) of quetiapine and dose optimization, containing no pharmacodynamic (PD) or exposure-response modeling for silymarin or any other drug. |
+| popPK | da_2020 | irrelevant | 0 | 0 | no_text gate: only 57 chars of text extracted (&lt; 400) |
+| PGx | Šuk_2019 | not_relevant | 0 | 0 | The study investigates the pharmacological effects of silymarin flavonoids on bilirubin metabolism in mice and cell lines, but does not report any pharmacogenomic effects (gene variant/genotype) on the PK or PD of silymarin. |
+
+---
+<sub>Generated by `docs.py` (scholarv2)</sub>

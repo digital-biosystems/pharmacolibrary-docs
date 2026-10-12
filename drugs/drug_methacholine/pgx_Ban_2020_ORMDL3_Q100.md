@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V04C&quot;,&quot;href&quot;:&quot;atc/V04C.md&quot;},{&quot;label&quot;:&quot;methacholine&quot;,&quot;href&quot;:&quot;drugs/drug_methacholine/&quot;},{&quot;label&quot;:&quot;Ban_2020 \u00b7 PGx ORMDL3&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# ORMDL3 — PGx  <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+# CYP2D6 — PGx  <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -29,12 +29,13 @@ Ban GY et al., Increased expression of serine palmitoy…, PloS one (2020)
   ·  DOI: [10.1371/journal.pone.0240334](https://doi.org/10.1371/journal.pone.0240334)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
 
 _Every reader agrees on every compared field of this PGx record._
 

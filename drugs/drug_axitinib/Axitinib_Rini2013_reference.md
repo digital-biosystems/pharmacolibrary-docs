@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Rini BI et al., Axitinib in metastatic renal cell carci…, Journal of clinical pharmac… (2013)
   ·  DOI: [10.1002/jcph.73](https://doi.org/10.1002/jcph.73)
 
-## Model component
-<dbs-pgx drug="axitinib" model-id="Axitinib_Rini2013_reference" status="needs_review" stale="false" population="healthy volunteers, patients with metastatic RCC, and patients with other solid tumors" measured-compound="axitinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="axitinib" model-id="Axitinib_Rini2013_reference" status="needs_review" stale="false" population="healthy volunteers, patients with metastatic RCC, and patients with other solid tumors" measured-compound="axitinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

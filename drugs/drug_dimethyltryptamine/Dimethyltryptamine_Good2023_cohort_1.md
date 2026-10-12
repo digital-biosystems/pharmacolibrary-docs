@@ -27,8 +27,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 Good M et al., Pharmacokinetics of N,N-dimethyltryptam…, European journal of drug me… (2023)
   ·  DOI: [10.1007/s13318-023-00822-y](https://doi.org/10.1007/s13318-023-00822-y)
 
-## Model component
-<dbs-pgx drug="Dimethyltryptamine" model-id="Dimethyltryptamine_Good2023_cohort_1" status="needs_review" stale="false" population="healthy adults" measured-compound="dimethyltryptamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Dimethyltryptamine" model-id="Dimethyltryptamine_Good2023_cohort_1" status="needs_review" stale="false" population="healthy adults" measured-compound="dimethyltryptamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

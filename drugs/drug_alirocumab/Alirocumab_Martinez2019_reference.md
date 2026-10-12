@@ -24,8 +24,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Martinez JM et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-018-0669-y](https://doi.org/10.1007/s40262-018-0669-y)
 
-## Model component
-<dbs-pgx drug="alirocumab" model-id="Alirocumab_Martinez2019_reference" status="needs_review" stale="false" population="healthy volunteers or hypercholesterolemic subjects" measured-compound="alirocumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alirocumab" model-id="Alirocumab_Martinez2019_reference" status="needs_review" stale="false" population="healthy volunteers or hypercholesterolemic subjects" measured-compound="alirocumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 10 extracted, plus 2 covariate effects.

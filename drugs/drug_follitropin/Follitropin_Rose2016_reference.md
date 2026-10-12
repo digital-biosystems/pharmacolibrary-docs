@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Rose TH et al., Characterisation of Population Pharmaco…, Drugs in R&D (2016)
   ·  DOI: [10.1007/s40268-016-0126-z](https://doi.org/10.1007/s40268-016-0126-z)
 
-## Model component
-<dbs-pgx drug="Follitropin" model-id="Follitropin_Rose2016_reference" status="curated_candidate" stale="false" population="gonadotropin downregulated healthy women" measured-compound="FSH" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Follitropin" model-id="Follitropin_Rose2016_reference" status="curated_candidate" stale="false" population="gonadotropin downregulated healthy women" measured-compound="FSH" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

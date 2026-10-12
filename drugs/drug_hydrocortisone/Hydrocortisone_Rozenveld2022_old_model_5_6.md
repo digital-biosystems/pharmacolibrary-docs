@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Rozenveld E et al., Pharmacokinetic Modeling of Hydrocortis…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14061161](https://doi.org/10.3390/pharmaceutics14061161)
 
-## Model component
-<dbs-pgx drug="hydrocortisone" model-id="Hydrocortisone_Rozenveld2022_old_model_5_6" status="needs_review" stale="false" population="patients with secondary adrenal insufficiency (SAI)" measured-compound="hydrocortisone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydrocortisone" model-id="Hydrocortisone_Rozenveld2022_old_model_5_6" status="needs_review" stale="false" population="patients with secondary adrenal insufficiency (SAI)" measured-compound="hydrocortisone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

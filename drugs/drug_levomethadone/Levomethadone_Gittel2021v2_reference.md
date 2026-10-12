@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss-120b`.
 Gittel C et al., Pharmacokinetics and pharmacodynamics o…, Veterinary anaesthesia and… (2021)
   ·  DOI: [10.1016/j.vaa.2020.04.018](https://doi.org/10.1016/j.vaa.2020.04.018)
 
-## Model component
-<dbs-pgx drug="levomethadone" model-id="Levomethadone_Gittel2021v2_reference" status="curated_candidate" stale="false" population="isoflurane-anaesthetized healthy adult ponies" measured-compound="l-methadone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levomethadone" model-id="Levomethadone_Gittel2021v2_reference" status="curated_candidate" stale="false" population="isoflurane-anaesthetized healthy adult ponies" measured-compound="l-methadone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

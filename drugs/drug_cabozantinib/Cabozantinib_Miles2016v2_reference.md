@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Miles D et al., Population Pharmacokinetic Model of Cab…, Clinical pharmacokinetics (2016)
   ·  DOI: [10.1007/s40262-015-0295-x](https://doi.org/10.1007/s40262-015-0295-x)
 
-## Model component
-<dbs-pgx drug="cabozantinib" model-id="Cabozantinib_Miles2016v2_reference" status="curated_candidate" stale="false" population="patients with medullary thyroid carcinoma" measured-compound="cabozantinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cabozantinib" model-id="Cabozantinib_Miles2016v2_reference" status="curated_candidate" stale="false" population="patients with medullary thyroid carcinoma" measured-compound="cabozantinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

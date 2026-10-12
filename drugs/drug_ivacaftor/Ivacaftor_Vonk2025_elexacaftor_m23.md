@@ -29,8 +29,7 @@ The parameter labeled 'apparent clearance' has a value of 1.76 L/h, but its mean
 Vonk SEM et al., Real-world pharmacokinetics of elexacaf…, Journal of cystic fibrosis… (2025)
   ·  DOI: [10.1016/j.jcf.2025.03.008](https://doi.org/10.1016/j.jcf.2025.03.008)
 
-## Model component
-<dbs-pgx drug="ivacaftor" model-id="Ivacaftor_Vonk2025_elexacaftor_m23" status="rejected" stale="false" population="children with cystic fibrosis" measured-compound="ivacaftor" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ivacaftor" model-id="Ivacaftor_Vonk2025_elexacaftor_m23" status="rejected" stale="false" population="children with cystic fibrosis" measured-compound="ivacaftor" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

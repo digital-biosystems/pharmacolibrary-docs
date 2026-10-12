@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Hussein Z et al., Retrospective population pharmacokineti…, British journal of clinical… (2005)
   ·  DOI: [10.1111/j.1365-2125.2005.02242.x](https://doi.org/10.1111/j.1365-2125.2005.02242.x)
 
-## Model component
-<dbs-pgx drug="cetirizine" model-id="Cetirizine_Hussein2005_reference" status="rejected" stale="false" population="atopic children" measured-compound="levocetirizine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cetirizine" model-id="Cetirizine_Hussein2005_reference" status="rejected" stale="false" population="atopic children" measured-compound="levocetirizine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

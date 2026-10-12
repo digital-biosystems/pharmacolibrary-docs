@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Nyang'wa BT et al., Population pharmacokinetics and target…, Scientific reports (2026)
   ·  DOI: [10.1038/s41598-026-46217-2](https://doi.org/10.1038/s41598-026-46217-2)
 
-## Model component
-<dbs-pgx drug="moxifloxacin" model-id="Moxifloxacin_Nyangwa2026_reference" status="curated_candidate" stale="false" population="" measured-compound="moxifloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="moxifloxacin" model-id="Moxifloxacin_Nyangwa2026_reference" status="curated_candidate" stale="false" population="" measured-compound="moxifloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

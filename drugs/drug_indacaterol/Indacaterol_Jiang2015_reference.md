@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Jiang J et al., Single- and multiple-dose pharmacokinet…, European journal of drug me… (2015)
   ·  DOI: [10.1007/s13318-014-0197-6](https://doi.org/10.1007/s13318-014-0197-6)
 
-## Model component
-<dbs-pgx drug="indacaterol" model-id="Indacaterol_Jiang2015_reference" status="needs_review" stale="false" population="healthy Chinese volunteers" measured-compound="indacaterol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indacaterol" model-id="Indacaterol_Jiang2015_reference" status="needs_review" stale="false" population="healthy Chinese volunteers" measured-compound="indacaterol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

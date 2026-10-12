@@ -26,8 +26,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on paramete
 Cognetti DM et al., Safety and Efficacy Findings From a Pha…, Head & neck (2026)
   ·  DOI: [10.1002/hed.70014](https://doi.org/10.1002/hed.70014)
 
-## Model component
-<dbs-pgx drug="cetuximab" model-id="Cetuximab_Cognetti2026_reference" status="not_modelled" stale="false" population="" measured-compound="cetuximab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Cognetti2026_reference" status="not_modelled" stale="false" population="" measured-compound="cetuximab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

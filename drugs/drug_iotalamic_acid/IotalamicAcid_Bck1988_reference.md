@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Bäck SE et al., Contrast media as markers for glomerula…, Scandinavian journal of cli… (1988)
   ·  DOI: [10.3109/00365518809167491](https://doi.org/10.3109/00365518809167491)
 
-## Model component
-<dbs-pgx drug="iotalamic acid" model-id="IotalamicAcid_Bck1988_reference" status="needs_review" stale="false" population="healthy female volunteers" measured-compound="iothalamic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="iotalamic acid" model-id="IotalamicAcid_Bck1988_reference" status="needs_review" stale="false" population="healthy female volunteers" measured-compound="iothalamic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

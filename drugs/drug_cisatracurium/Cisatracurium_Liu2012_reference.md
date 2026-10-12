@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Liu X et al., The pharmacokinetics and pharmacodynami…, British journal of clinical… (2012)
   ·  DOI: [10.1111/j.1365-2125.2011.04149.x](https://doi.org/10.1111/j.1365-2125.2011.04149.x)
 
-## Model component
-<dbs-pgx drug="cisatracurium" model-id="Cisatracurium_Liu2012_reference" status="curated_candidate" stale="false" population="critically ill patients with severe sepsis" measured-compound="cisatracurium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Liu2012_reference" status="curated_candidate" stale="false" population="critically ill patients with severe sepsis" measured-compound="cisatracurium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

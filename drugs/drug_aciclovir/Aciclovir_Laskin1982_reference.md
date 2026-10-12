@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Laskin OL et al., Effects of probenecid on the pharmacoki…, Antimicrobial agents and ch… (1982)
   ·  DOI: [10.1128/AAC.21.5.804](https://doi.org/10.1128/AAC.21.5.804)
 
-## Model component
-<dbs-pgx drug="aciclovir" model-id="Aciclovir_Laskin1982_reference" status="rejected" stale="false" population="adults with normal renal function" measured-compound="acyclovir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aciclovir" model-id="Aciclovir_Laskin1982_reference" status="rejected" stale="false" population="adults with normal renal function" measured-compound="acyclovir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -68,6 +67,7 @@ Laskin OL et al., Effects of probenecid on the pharmacoki…, Antimicrobial agen
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Petkova_2022's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Laskin_1982_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model

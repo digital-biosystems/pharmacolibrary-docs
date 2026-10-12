@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 ## Citation
 Ehret GB et al., Influence of CYP2D6 activity on pre-emp…, Pain physician (2013)
 
-## Model component
-<dbs-pgx drug="dextromethorphan" model-id="Dextromethorphan_Ehret2013_mean_population_estimate" status="model_quarantined" stale="false" population="adults with acute post-operative pain (knee ligament surgery) plus healthy volunteers" measured-compound="dextromethorphan" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dextromethorphan" model-id="Dextromethorphan_Ehret2013_mean_population_estimate" status="model_quarantined" stale="false" population="adults with acute post-operative pain (knee ligament surgery) plus healthy volunteers" measured-compound="dextromethorphan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

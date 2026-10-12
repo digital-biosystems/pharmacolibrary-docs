@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 Chou M et al., Population pharmacokinetic-pharmacogene…, Antimicrobial agents and ch… (2010)
   ·  DOI: [10.1128/AAC.00512-10](https://doi.org/10.1128/AAC.00512-10)
 
-## Model component
-<dbs-pgx drug="nevirapine" model-id="Nevirapine_Chou2010_reference" status="rejected" stale="false" population="HIV-infected Cambodian adults" measured-compound="nevirapine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nevirapine" model-id="Nevirapine_Chou2010_reference" status="rejected" stale="false" population="HIV-infected Cambodian adults" measured-compound="nevirapine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 Pertinez H et al., Pharmacokinetic modelling to estimate i…, The Journal of antimicrobia… (2021)
   ·  DOI: [10.1093/jac/dkab135](https://doi.org/10.1093/jac/dkab135)
 
-## Model component
-<dbs-pgx drug="favipiravir" model-id="Favipiravir_Pertinez2021_reference" status="rejected" stale="false" population="Chinese patients" measured-compound="favipiravir ribofuranosyl-5′-triphosphate (FAVI-RTP)" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="favipiravir" model-id="Favipiravir_Pertinez2021_reference" status="rejected" stale="false" population="Chinese patients" measured-compound="favipiravir ribofuranosyl-5′-triphosphate (FAVI-RTP)" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.

@@ -28,8 +28,7 @@ Independently confirmed by `qwen3.8-27b`.
 McFadyen ML et al., Ketotifen pharmacokinetics in children…, European journal of clinica… (1997)
   ·  DOI: [10.1007/s002280050305](https://doi.org/10.1007/s002280050305)
 
-## Model component
-<dbs-pgx drug="ketotifen" model-id="Ketotifen_McFadyen1997_reference" status="rejected" stale="false" population="children with atopic perennial asthma" measured-compound="ketotifen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketotifen" model-id="Ketotifen_McFadyen1997_reference" status="rejected" stale="false" population="children with atopic perennial asthma" measured-compound="ketotifen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

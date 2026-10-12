@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Albanell-Fernández M, Echinocandins Pharmacokinetics: A Compr…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-024-01461-5](https://doi.org/10.1007/s40262-024-01461-5)
 
-## Model component
-<dbs-pgx drug="micafungin" model-id="Micafungin_AlbanellFernndez2025_niu_2020_32" status="model_quarantined" stale="false" population="mixed (special populations including pediatric, critical care, obese)" measured-compound="micafungin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="micafungin" model-id="Micafungin_AlbanellFernndez2025_niu_2020_32" status="model_quarantined" stale="false" population="mixed (special populations including pediatric, critical care, obese)" measured-compound="micafungin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 0 extracted.

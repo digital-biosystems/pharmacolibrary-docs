@@ -29,8 +29,7 @@ Independently confirmed by `qwen3.8-27b`.
 Launay MC et al., Population pharmacokinetics of mitoxant…, Journal of pharmaceutical s… (1989)
   ·  DOI: [10.1002/jps.2600781020](https://doi.org/10.1002/jps.2600781020)
 
-## Model component
-<dbs-pgx drug="mitoxantrone" model-id="Mitoxantrone_Launay1989_reference" status="curated_candidate" stale="false" population="patients with breast cancer or acute nonlymphocytic leukemia" measured-compound="mitoxantrone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Launay1989_reference" status="curated_candidate" stale="false" population="patients with breast cancer or acute nonlymphocytic leukemia" measured-compound="mitoxantrone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

@@ -30,8 +30,7 @@ Independently confirmed by `qwen3.8-27b`.
 Karlsson M et al., Mathematical models for biomarker calcu…, PloS one (2023)
   ·  DOI: [10.1371/journal.pone.0279168](https://doi.org/10.1371/journal.pone.0279168)
 
-## Model component
-<dbs-pgx drug="gadoxetic acid" model-id="GadoxeticAcid_Karlsson2023_reference" status="rejected" stale="false" population="rats treated with different doses of chemokine antagonist (CKA)" measured-compound="gadoxetic_acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gadoxetic acid" model-id="GadoxeticAcid_Karlsson2023_reference" status="rejected" stale="false" population="rats treated with different doses of chemokine antagonist (CKA)" measured-compound="gadoxetic_acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -29,8 +29,7 @@ For ibuprofen in children undergoing adenotonsillectomy, the one-compartment mod
 Hannam JA et al., Acetaminophen, ibuprofen, and tramadol…, Paediatric anaesthesia (2018)
   ·  DOI: [10.1111/pan.13464](https://doi.org/10.1111/pan.13464)
 
-## Model component
-<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Hannam2018_reference" status="needs_review" stale="true" population="children undergoing adenotonsillectomy" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Hannam2018_reference" status="needs_review" stale="true" population="children undergoing adenotonsillectomy" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

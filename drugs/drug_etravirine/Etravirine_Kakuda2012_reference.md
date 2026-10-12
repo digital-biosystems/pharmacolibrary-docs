@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Kakuda T et al., Pharmacokinetics and Pharmacodynamics o…, AIDS research and treatment (2012)
   ·  DOI: [10.1155/2012/186987](https://doi.org/10.1155/2012/186987)
 
-## Model component
-<dbs-pgx drug="etravirine" model-id="Etravirine_Kakuda2012_reference" status="rejected" stale="false" population="treatment-experienced adults with HIV-1 infection" measured-compound="darunavir and etravirine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etravirine" model-id="Etravirine_Kakuda2012_reference" status="rejected" stale="false" population="treatment-experienced adults with HIV-1 infection" measured-compound="darunavir and etravirine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

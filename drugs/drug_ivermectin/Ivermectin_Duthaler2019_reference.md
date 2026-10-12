@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Duthaler U et al., Population pharmacokinetics of oral ive…, British journal of clinical… (2019)
   ·  DOI: [10.1111/bcp.13840](https://doi.org/10.1111/bcp.13840)
 
-## Model component
-<dbs-pgx drug="ivermectin" model-id="Ivermectin_Duthaler2019_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="ivermectin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ivermectin" model-id="Ivermectin_Duthaler2019_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="ivermectin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 van Rij CM et al., Population plasma pharmacokinetics of 1…, British journal of clinical… (2005)
   ·  DOI: [10.1111/j.1365-2125.2005.02487.x](https://doi.org/10.1111/j.1365-2125.2005.02487.x)
 
-## Model component
-<dbs-pgx drug="flumazenil" model-id="Flumazenil_van2005_reference" status="needs_review" stale="false" population="patients with depression or epilepsy" measured-compound="11C-flumazenil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flumazenil" model-id="Flumazenil_van2005_reference" status="needs_review" stale="false" population="patients with depression or epilepsy" measured-compound="11C-flumazenil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

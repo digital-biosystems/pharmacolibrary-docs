@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Lin SK et al., Iodipamide kinetics: capacity-limited b…, Journal of pharmaceutical s… (1977)
   ·  DOI: [10.1002/jps.2600661204](https://doi.org/10.1002/jps.2600661204)
 
-## Model component
-<dbs-pgx drug="adipiodone" model-id="Adipiodone_Lin1977_reference" status="rejected" stale="false" population="dogs with bile fistulas" measured-compound="iodipamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="adipiodone" model-id="Adipiodone_Lin1977_reference" status="rejected" stale="false" population="dogs with bile fistulas" measured-compound="iodipamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

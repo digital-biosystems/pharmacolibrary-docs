@@ -27,8 +27,7 @@ Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
 Barakat A et al., Clinical Pharmacokinetics of Radiopharm…, European journal of drug me… (2023)
   ·  DOI: [10.1007/s13318-023-00829-5](https://doi.org/10.1007/s13318-023-00829-5)
 
-## Model component
-<dbs-pgx drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Barakat2023_base_structural_model" status="curated_candidate" stale="false" population="patients with gastroenteropancreatic neuroendocrine tumors" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Barakat2023_base_structural_model" status="curated_candidate" stale="false" population="patients with gastroenteropancreatic neuroendocrine tumors" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

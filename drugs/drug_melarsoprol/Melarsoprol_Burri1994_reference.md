@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Burri C et al., Pharmacokinetics of melarsoprol in unin…, Acta tropica (1994)
   ·  DOI: [10.1016/0001-706x(94)90120-1](https://doi.org/10.1016/0001-706x(94)90120-1)
 
-## Model component
-<dbs-pgx drug="melarsoprol" model-id="Melarsoprol_Burri1994_reference" status="curated_candidate" stale="false" population="healthy vervet monkeys" measured-compound="melarsoprol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="melarsoprol" model-id="Melarsoprol_Burri1994_reference" status="curated_candidate" stale="false" population="healthy vervet monkeys" measured-compound="melarsoprol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

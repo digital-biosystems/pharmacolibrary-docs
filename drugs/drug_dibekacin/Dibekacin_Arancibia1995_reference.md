@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Citation
 Arancibia A et al., Disposition kinetics of dibekacin in pa…, International journal of cl… (1995)
 
-## Model component
-<dbs-pgx drug="dibekacin" model-id="Dibekacin_Arancibia1995_reference" status="curated_candidate" stale="false" population="healthy volunteers and patients with renal failure" measured-compound="dibekacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dibekacin" model-id="Dibekacin_Arancibia1995_reference" status="curated_candidate" stale="false" population="healthy volunteers and patients with renal failure" measured-compound="dibekacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

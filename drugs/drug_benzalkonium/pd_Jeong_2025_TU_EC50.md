@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D08A&quot;,&quot;href&quot;:&quot;atc/D08A.md&quot;},{&quot;label&quot;:&quot;benzalkonium&quot;,&quot;href&quot;:&quot;drugs/drug_benzalkonium/&quot;},{&quot;label&quot;:&quot;Jeong_2025 \u00b7 PD cytotoxicity (cell viability)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cytotoxicity (cell viability) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
+# DPP-4 inhibition — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Benzalkonium chloride concentration was related to cytotoxicity (cell viability), with an EC50 of 3.97 µg/mL; the paper excerpts do not state the mechanism or model form.
+> Sitagliptin plasma concentrations (ng/mL) directly inhibit DPP-4 enzyme activity (%), described by a sigmoid Emax model with an Emax of 91.68% and an EC50 of 6.73 ng/mL. The paper does not specify whether the model includes an effect compartment or specific rate parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Jeong_2025`
 - **model family:** `unknown`
@@ -44,22 +44,19 @@ Jeong HJ et al., Integrative assessment of mixture toxic…, Toxicology (2025)
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `einfracz:qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | secondary_empty | 0.0 (0/5 fields) | 5 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.667 (4/6 fields) | 2 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `driver_compound` | benzalkonium chloride (BKC) | not captured | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_direction` | unknown | not captured | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_form` | unknown | not captured | mismatch |
-| `einfracz:gpt-oss-120b` | `model_family` | unknown | not captured | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q321]` | 3.97 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q321].value` | 6.73 | unit | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q323].value` | 91.68 | value | mismatch |
 
 </details>
 

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Huledal G et al., Pharmacokinetics and Metabolism of Melf…, Journal of clinical pharmac… (2024)
   ·  DOI: [10.1002/jcph.2355](https://doi.org/10.1002/jcph.2355)
 
-## Model component
-<dbs-pgx drug="melphalan flufenamide" model-id="MelphalanFlufenamide_Huledal2024_reference" status="rejected" stale="false" population="adults with relapsed refractory multiple myeloma" measured-compound="melphalan" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="melphalan flufenamide" model-id="MelphalanFlufenamide_Huledal2024_reference" status="rejected" stale="false" population="adults with relapsed refractory multiple myeloma" measured-compound="melphalan" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.

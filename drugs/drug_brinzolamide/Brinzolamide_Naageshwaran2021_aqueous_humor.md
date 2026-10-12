@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Naageshwaran V et al., Comprehensive Ocular and Systemic Pharm…, Journal of pharmaceutical s… (2021)
   ·  DOI: [10.1016/j.xphs.2020.09.051](https://doi.org/10.1016/j.xphs.2020.09.051)
 
-## Model component
-<dbs-pgx drug="brinzolamide" model-id="Brinzolamide_Naageshwaran2021_aqueous_humor" status="rejected" stale="false" population="New Zealand White rabbits" measured-compound="brinzolamide" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brinzolamide" model-id="Brinzolamide_Naageshwaran2021_aqueous_humor" status="rejected" stale="false" population="New Zealand White rabbits" measured-compound="brinzolamide" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

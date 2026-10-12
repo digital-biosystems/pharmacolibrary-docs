@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Alacam B et al., Analysis of ICG Pharmacokinetics in Can…, Conference proceedings : ..… (2005)
   ·  DOI: [10.1109/IEMBS.2005.1616342](https://doi.org/10.1109/IEMBS.2005.1616342)
 
-## Model component
-<dbs-pgx drug="indocyanine green" model-id="IndocyanineGreen_Alacam2005_rat_4" status="rejected" stale="false" population="Fischer rats with adenocarcinoma tumors" measured-compound="indocyanine green" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Alacam2005_rat_4" status="rejected" stale="false" population="Fischer rats with adenocarcinoma tumors" measured-compound="indocyanine green" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 López Aspiroz E et al., Population pharmacokinetics of lopinavi…, Therapeutic drug monitoring (2011)
   ·  DOI: [10.1097/FTD.0b013e31822d578b](https://doi.org/10.1097/FTD.0b013e31822d578b)
 
-## Model component
-<dbs-pgx drug="Lopinavir" model-id="Lopinavir_Lpez2011_reference" status="rejected" stale="false" population="HIV-infected adults" measured-compound="lopinavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Lopinavir" model-id="Lopinavir_Lpez2011_reference" status="rejected" stale="false" population="HIV-infected adults" measured-compound="lopinavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

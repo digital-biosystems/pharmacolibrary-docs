@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Yu W et al., Population Pharmacokinetics of Lithium…, Pharmacopsychiatry (2016)
   ·  DOI: [10.1055/s-0042-103329](https://doi.org/10.1055/s-0042-103329)
 
-## Model component
-<dbs-pgx drug="lithium" model-id="Lithium_Yu2016_reference" status="needs_review" stale="false" population="healthy young male Chinese volunteers" measured-compound="lithium" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Yu2016_reference" status="needs_review" stale="false" population="healthy young male Chinese volunteers" measured-compound="lithium" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Valade E et al., Population pharmacokinetics of emtricit…, Antimicrobial agents and ch… (2014)
   ·  DOI: [10.1128/AAC.02058-13](https://doi.org/10.1128/AAC.02058-13)
 
-## Model component
-<dbs-pgx drug="emtricitabine" model-id="Emtricitabine_Valade2014_reference" status="curated_candidate" stale="false" population="HIV-1-infected adult patients" measured-compound="emtricitabine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="emtricitabine" model-id="Emtricitabine_Valade2014_reference" status="curated_candidate" stale="false" population="HIV-1-infected adult patients" measured-compound="emtricitabine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

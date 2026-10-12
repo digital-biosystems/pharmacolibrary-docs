@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Paalzow LK et al., Pharmacokinetics of clonidine in the ra…, Journal of pharmacokinetics… (1979)
   ·  DOI: [10.1007/BF01062390](https://doi.org/10.1007/BF01062390)
 
-## Model component
-<dbs-pgx drug="clonidine" model-id="Clonidine_Paalzow1979_reference" status="rejected" stale="true" population="rats and cats" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Paalzow1979_reference" status="rejected" stale="true" population="rats and cats" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

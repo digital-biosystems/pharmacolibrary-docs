@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Gomez DS et al., Imipenem in burn patients: pharmacokine…, The Journal of antibiotics (2015)
   ·  DOI: [10.1038/ja.2014.121](https://doi.org/10.1038/ja.2014.121)
 
-## Model component
-<dbs-pgx drug="Imipenem" model-id="Imipenem_Gomez2015_reference" status="curated_candidate" stale="false" population="" measured-compound="imipenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Imipenem" model-id="Imipenem_Gomez2015_reference" status="curated_candidate" stale="false" population="" measured-compound="imipenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

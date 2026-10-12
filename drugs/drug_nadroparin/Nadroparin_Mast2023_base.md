@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Mast L et al., The effect of renal impairment and obes…, European journal of clinica… (2023)
   ·  DOI: [10.1007/s00228-023-03558-5](https://doi.org/10.1007/s00228-023-03558-5)
 
-## Model component
-<dbs-pgx drug="nadroparin" model-id="Nadroparin_Mast2023_base" status="rejected" stale="false" population="patients with renal impairment, obese patients, and controls" measured-compound="anti-Xa activity" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nadroparin" model-id="Nadroparin_Mast2023_base" status="rejected" stale="false" population="patients with renal impairment, obese patients, and controls" measured-compound="anti-Xa activity" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

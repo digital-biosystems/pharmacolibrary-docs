@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Hackstein N et al., Lopromide one-sample clearance as a mea…, Clinical physiology and fun… (2002)
   ·  DOI: [10.1046/j.1365-2281.2002.00394.x](https://doi.org/10.1046/j.1365-2281.2002.00394.x)
 
-## Model component
-<dbs-pgx drug="iopromide" model-id="Iopromide_Hackstein2002_reference" status="rejected" stale="false" population="adult patients undergoing CT" measured-compound="iopromide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="iopromide" model-id="Iopromide_Hackstein2002_reference" status="rejected" stale="false" population="adult patients undergoing CT" measured-compound="iopromide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

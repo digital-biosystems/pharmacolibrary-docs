@@ -29,8 +29,7 @@ The base model was simulated, not the covariate effects the record defines.
 Puszkiel A et al., Identification of non-adherence to adju…, European journal of pharmac… (2024)
   ·  DOI: [10.1016/j.ejps.2024.106809](https://doi.org/10.1016/j.ejps.2024.106809)
 
-## Model component
-<dbs-pgx drug="letrozole" model-id="Letrozole_Puszkiel2024_reference" status="accepted_with_caveats" stale="false" population="adults with hormone receptor-positive breast cancer" measured-compound="letrozole" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="letrozole" model-id="Letrozole_Puszkiel2024_reference" status="accepted_with_caveats" stale="false" population="adults with hormone receptor-positive breast cancer" measured-compound="letrozole" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 3 covariate effects.

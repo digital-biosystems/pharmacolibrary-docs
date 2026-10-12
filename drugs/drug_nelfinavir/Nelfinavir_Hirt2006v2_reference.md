@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Hirt D et al., Age-related effects on nelfinavir and M…, Antimicrobial agents and ch… (2006)
   ·  DOI: [10.1128/AAC.50.3.910-916.2006](https://doi.org/10.1128/AAC.50.3.910-916.2006)
 
-## Model component
-<dbs-pgx drug="nelfinavir" model-id="Nelfinavir_Hirt2006v2_reference" status="model_quarantined" stale="false" population="children treated with nelfinavir" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Hirt2006v2_reference" status="model_quarantined" stale="false" population="children treated with nelfinavir" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavai
 Möllmann H et al., Pharmacokinetic and pharmacodynamic eva…, European journal of clinica… (1998)
   ·  DOI: [10.1007/s002280050407](https://doi.org/10.1007/s002280050407)
 
-## Model component
-<dbs-pgx drug="fluticasone" model-id="Fluticasone_Mllmann1998_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="fluticasone propionate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluticasone" model-id="Fluticasone_Mllmann1998_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="fluticasone propionate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -27,8 +27,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 Adoke Y et al., A randomized, double-blind, phase 2b st…, Malaria journal (2021)
   ·  DOI: [10.1186/s12936-021-03749-4](https://doi.org/10.1186/s12936-021-03749-4)
 
-## Model component
-<dbs-pgx drug="Artefenomel" model-id="Artefenomel_Adoke2021_reference" status="needs_review" stale="false" population="adults and children with uncomplicated P. falciparum malaria" measured-compound="artefenomel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Artefenomel" model-id="Artefenomel_Adoke2021_reference" status="needs_review" stale="false" population="adults and children with uncomplicated P. falciparum malaria" measured-compound="artefenomel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted, plus 1 covariate effect.

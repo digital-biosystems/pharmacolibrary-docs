@@ -26,8 +26,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Dilli Batcha JS et al., Factors Influencing Pharmacokinetics of…, Biology (2022)
   ·  DOI: [10.3390/biology12010051](https://doi.org/10.3390/biology12010051)
 
-## Model component
-<dbs-pgx drug="Endoxifen" model-id="Endoxifen_Dilli2022_reference" status="rejected" stale="false" population="adult breast cancer patients" measured-compound="tamoxifen" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Endoxifen" model-id="Endoxifen_Dilli2022_reference" status="rejected" stale="false" population="adult breast cancer patients" measured-compound="tamoxifen" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

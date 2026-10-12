@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Nagaoka K et al., Comparative Pharmacokinetic Analysis of…, International journal of mo… (2025)
   ·  DOI: [10.3390/ijms26020556](https://doi.org/10.3390/ijms26020556)
 
-## Model component
-<dbs-pgx drug="aflibercept" model-id="Aflibercept_Nagaoka2025_reference" status="rejected" stale="false" population="patients treated with aflibercept" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aflibercept" model-id="Aflibercept_Nagaoka2025_reference" status="rejected" stale="false" population="patients treated with aflibercept" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

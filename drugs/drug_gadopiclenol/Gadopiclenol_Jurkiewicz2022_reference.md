@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Jurkiewicz E et al., Pharmacokinetics, Safety, and Efficacy…, Investigative radiology (2022)
   ·  DOI: [10.1097/RLI.0000000000000865](https://doi.org/10.1097/RLI.0000000000000865)
 
-## Model component
-<dbs-pgx drug="gadopiclenol" model-id="Gadopiclenol_Jurkiewicz2022_reference" status="rejected" stale="false" population="pediatric patients aged 2 to 17 years in the CNS cohort" measured-compound="gadopiclenol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gadopiclenol" model-id="Gadopiclenol_Jurkiewicz2022_reference" status="rejected" stale="false" population="pediatric patients aged 2 to 17 years in the CNS cohort" measured-compound="gadopiclenol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

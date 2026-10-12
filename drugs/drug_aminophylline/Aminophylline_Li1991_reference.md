@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Li JH et al., The effects of atropine on pharmacokine…, Drug metabolism and drug in… (1991)
   ·  DOI: [10.1515/dmdi.1991.9.2.115](https://doi.org/10.1515/dmdi.1991.9.2.115)
 
-## Model component
-<dbs-pgx drug="aminophylline" model-id="Aminophylline_Li1991_reference" status="needs_review" stale="false" population="rabbits" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Li1991_reference" status="needs_review" stale="false" population="rabbits" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

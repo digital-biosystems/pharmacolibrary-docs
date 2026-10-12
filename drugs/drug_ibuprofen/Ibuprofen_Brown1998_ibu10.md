@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 Brown RD et al., Integrated pharmacokinetic-pharmacodyna…, Journal of pharmacokinetics… (1998)
   ·  DOI: [10.1023/a:1023225217108](https://doi.org/10.1023/a:1023225217108)
 
-## Model component
-<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Brown1998_ibu10" status="rejected" stale="true" population="febrile children" measured-compound="ibuprofen" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Brown1998_ibu10" status="rejected" stale="true" population="febrile children" measured-compound="ibuprofen" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 7 extracted.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Chandasana H et al., Population pharmacokinetic modeling of…, Antimicrobial agents and ch… (2024)
   ·  DOI: [10.1128/aac.01504-23](https://doi.org/10.1128/aac.01504-23)
 
-## Model component
-<dbs-pgx drug="lamivudine" model-id="Lamivudine_Chandasana2024v2_reference" status="needs_review" stale="false" population="virologically suppressed adults living with HIV-1" measured-compound="lamivudine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lamivudine" model-id="Lamivudine_Chandasana2024v2_reference" status="needs_review" stale="false" population="virologically suppressed adults living with HIV-1" measured-compound="lamivudine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted, plus 6 covariate effects.

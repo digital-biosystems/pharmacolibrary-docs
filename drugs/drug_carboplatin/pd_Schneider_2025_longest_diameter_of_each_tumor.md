@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> The modeled response was each tumor’s longest diameter (mm); carboplatin is recorded as producing a proportional stimulatory effect, but the paper excerpt does not specify the mechanism or how carboplatin concentration or dose drives the response. The record lists α = 0.00304 day−1, β = 0.0398 day−1, and kk = 28 day−1, but the excerpt does not define these parameters or report potency values.
+> A modified Emax model with a delayed effect compartment (ADVAN6) describes the inhibitory effect of paracetamol effect compartment concentrations on the Leuven Neonatal Pain Score. The model was fitted with a baseline pain score (E0) of 4.15 pain units, an EC50 of 2.07 mg/L, and an effect compartment half-life (T1/2 keo) of 1.58 h.
 >
-> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Schneider_2025`
 - **model family:** `disease_progression`

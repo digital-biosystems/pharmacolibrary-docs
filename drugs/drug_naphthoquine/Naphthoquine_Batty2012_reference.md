@@ -26,8 +26,7 @@ Without a unit the value cannot be converted, so the model cannot use it. Only t
 Batty KT et al., Artemisinin-naphthoquine combination th…, Antimicrobial agents and ch… (2012)
   ·  DOI: [10.1128/AAC.06250-11](https://doi.org/10.1128/AAC.06250-11)
 
-## Model component
-<dbs-pgx drug="Naphthoquine" model-id="Naphthoquine_Batty2012_reference" status="needs_review" stale="false" population="Papua New Guinea children with uncomplicated malaria" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Naphthoquine" model-id="Naphthoquine_Batty2012_reference" status="needs_review" stale="false" population="Papua New Guinea children with uncomplicated malaria" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

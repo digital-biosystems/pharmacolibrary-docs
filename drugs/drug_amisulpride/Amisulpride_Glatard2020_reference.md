@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Glatard A et al., Amisulpride: Real-World Evidence of Dos…, Clinical pharmacokinetics (2020)
   ·  DOI: [10.1007/s40262-019-00821-w](https://doi.org/10.1007/s40262-019-00821-w)
 
-## Model component
-<dbs-pgx drug="amisulpride" model-id="Amisulpride_Glatard2020_reference" status="model_quarantined" stale="false" population="adult and elderly psychiatric patients" measured-compound="amisulpride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amisulpride" model-id="Amisulpride_Glatard2020_reference" status="model_quarantined" stale="false" population="adult and elderly psychiatric patients" measured-compound="amisulpride" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

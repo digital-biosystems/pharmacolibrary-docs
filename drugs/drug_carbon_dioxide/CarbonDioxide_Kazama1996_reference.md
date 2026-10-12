@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Kazama T et al., Carbon dioxide output in laparoscopic c…, British journal of anaesthe… (1996)
   ·  DOI: [10.1093/bja/76.4.530](https://doi.org/10.1093/bja/76.4.530)
 
-## Model component
-<dbs-pgx drug="carbon dioxide" model-id="CarbonDioxide_Kazama1996_reference" status="rejected" stale="false" population="adults undergoing elective laparoscopic cholecystectomy" measured-compound="carbon dioxide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carbon dioxide" model-id="CarbonDioxide_Kazama1996_reference" status="rejected" stale="false" population="adults undergoing elective laparoscopic cholecystectomy" measured-compound="carbon dioxide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

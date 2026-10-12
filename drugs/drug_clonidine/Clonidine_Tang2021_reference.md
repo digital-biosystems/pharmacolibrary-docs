@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Tang F et al., Clinical pharmacology and dosing regime…, Clinical and translational… (2021)
   ·  DOI: [10.1111/cts.12994](https://doi.org/10.1111/cts.12994)
 
-## Model component
-<dbs-pgx drug="clonidine" model-id="Clonidine_Tang2021_reference" status="extracted" stale="true" population="neonates/infants with neonatal opioid withdrawal syndrome" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Tang2021_reference" status="extracted" stale="true" population="neonates/infants with neonatal opioid withdrawal syndrome" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Citation
 Kestell P et al., Disposition of amsacrine and its analog…, Cancer research (1990)
 
-## Model component
-<dbs-pgx drug="amsacrine" model-id="Amsacrine_Kestell1990_reference" status="rejected" stale="false" population="male B6D2F1 mice" measured-compound="amsacrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amsacrine" model-id="Amsacrine_Kestell1990_reference" status="rejected" stale="false" population="male B6D2F1 mice" measured-compound="amsacrine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Garrett ER et al., Bretylium pharmacokinetics and bioavail…, Biopharmaceutics & drug dis… (1982)
   ·  DOI: [10.1002/bdd.2510030206](https://doi.org/10.1002/bdd.2510030206)
 
-## Model component
-<dbs-pgx drug="bretylium tosilate" model-id="BretyliumTosilate_Garrett1982_reference" status="needs_review" stale="true" population="healthy male volunteers" measured-compound="bretylium tosylate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Garrett1982_reference" status="needs_review" stale="true" population="healthy male volunteers" measured-compound="bretylium tosylate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

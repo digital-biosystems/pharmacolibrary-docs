@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss-120b`.
 Pei Q et al., Influences of CYP2D6, Acta pharmacologica Sinica (2016)
   ·  DOI: [10.1038/aps.2016.96](https://doi.org/10.1038/aps.2016.96)
 
-## Model component
-<dbs-pgx drug="iloperidone" model-id="Iloperidone_Pei2016_estimate" status="model_quarantined" stale="false" population="Chinese schizophrenia patients" measured-compound="iloperidone" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="iloperidone" model-id="Iloperidone_Pei2016_estimate" status="model_quarantined" stale="false" population="Chinese schizophrenia patients" measured-compound="iloperidone" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 9 extracted, plus 3 covariate effects.

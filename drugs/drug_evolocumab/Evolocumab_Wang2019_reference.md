@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wang C et al., Lack of ethnic differences in the pharm…, British journal of clinical… (2019)
   ·  DOI: [10.1111/bcp.13767](https://doi.org/10.1111/bcp.13767)
 
-## Model component
-<dbs-pgx drug="evolocumab" model-id="Evolocumab_Wang2019_reference" status="needs_review" stale="false" population="Caucasian and Asian populations" measured-compound="evolocumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="evolocumab" model-id="Evolocumab_Wang2019_reference" status="needs_review" stale="false" population="Caucasian and Asian populations" measured-compound="evolocumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Frade VP et al., Population pharmacokinetic modeling of…, Revista do Instituto de Med… (2022)
   ·  DOI: [10.1590/S1678-9946202264004](https://doi.org/10.1590/S1678-9946202264004)
 
-## Model component
-<dbs-pgx drug="benznidazole" model-id="Benznidazole_Frade2022_reference" status="needs_review" stale="false" population="Brazilian patients with chronic Chagas disease" measured-compound="benznidazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="benznidazole" model-id="Benznidazole_Frade2022_reference" status="needs_review" stale="false" population="Brazilian patients with chronic Chagas disease" measured-compound="benznidazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

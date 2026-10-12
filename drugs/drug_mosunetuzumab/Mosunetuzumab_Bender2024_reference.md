@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Bender B et al., Population pharmacokinetics and CD20 bi…, Clinical and translational… (2024)
   ·  DOI: [10.1111/cts.13825](https://doi.org/10.1111/cts.13825)
 
-## Model component
-<dbs-pgx drug="mosunetuzumab" model-id="Mosunetuzumab_Bender2024_reference" status="rejected" stale="false" population="adults with relapsed/refractory B-cell non-Hodgkin lymphoma" measured-compound="mosunetuzumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mosunetuzumab" model-id="Mosunetuzumab_Bender2024_reference" status="rejected" stale="false" population="adults with relapsed/refractory B-cell non-Hodgkin lymphoma" measured-compound="mosunetuzumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

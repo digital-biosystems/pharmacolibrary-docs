@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Phelps DL et al., Safety and pharmacokinetics of multiple…, Pediatric research (2016)
   ·  DOI: [10.1038/pr.2016.97](https://doi.org/10.1038/pr.2016.97)
 
-## Model component
-<dbs-pgx drug="inositol" model-id="Inositol_Phelps2016_reference" status="curated_candidate" stale="false" population="preterm infants" measured-compound="inositol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="inositol" model-id="Inositol_Phelps2016_reference" status="curated_candidate" stale="false" population="preterm infants" measured-compound="inositol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

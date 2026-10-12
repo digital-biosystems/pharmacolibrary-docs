@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Naber KG et al., [Enoxacin concentration in seminal flui…, Infection 17 Suppl (1989)
   ·  DOI: [10.1007/BF01643634](https://doi.org/10.1007/BF01643634)
 
-## Model component
-<dbs-pgx drug="iotalamic acid" model-id="IotalamicAcid_Naber1989_reference" status="needs_review" stale="false" population="" measured-compound="iotalamic_acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="iotalamic acid" model-id="IotalamicAcid_Naber1989_reference" status="needs_review" stale="false" population="" measured-compound="iotalamic_acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Deshpande D et al., Antibacterial and Sterilizing Effect of…, Antimicrobial agents and ch… (2018)
   ·  DOI: [10.1128/AAC.02232-17](https://doi.org/10.1128/AAC.02232-17)
 
-## Model component
-<dbs-pgx drug="isoniazid" model-id="Isoniazid_Deshpande2018_reference" status="curated_candidate" stale="false" population="" measured-compound="isoniazid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isoniazid" model-id="Isoniazid_Deshpande2018_reference" status="curated_candidate" stale="false" population="" measured-compound="isoniazid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

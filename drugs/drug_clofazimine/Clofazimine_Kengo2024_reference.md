@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Kengo A et al., Assessing potential drug-drug interacti…, Antimicrobial agents and ch… (2024)
   ·  DOI: [10.1128/aac.01583-23](https://doi.org/10.1128/aac.01583-23)
 
-## Model component
-<dbs-pgx drug="clofazimine" model-id="Clofazimine_Kengo2024_reference" status="curated_candidate" stale="false" population="" measured-compound="clofazimine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clofazimine" model-id="Clofazimine_Kengo2024_reference" status="curated_candidate" stale="false" population="" measured-compound="clofazimine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

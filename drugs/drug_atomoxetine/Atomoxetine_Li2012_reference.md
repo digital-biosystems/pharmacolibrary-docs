@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Li CS et al., Mechanism-based pharmacokinetic/pharmac…, The AAPS journal (2012)
   ·  DOI: [10.1208/s12248-012-9343-8](https://doi.org/10.1208/s12248-012-9343-8)
 
-## Model component
-<dbs-pgx drug="atomoxetine" model-id="Atomoxetine_Li2012_reference" status="curated_candidate" stale="false" population="" measured-compound="atomoxetine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atomoxetine" model-id="Atomoxetine_Li2012_reference" status="curated_candidate" stale="false" population="" measured-compound="atomoxetine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

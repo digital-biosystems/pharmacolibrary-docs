@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Sukhram SD et al., Ketamine in Diabetes Care: Metabolic In…, Pharmaceutics (2026)
   ·  DOI: [10.3390/pharmaceutics18010081](https://doi.org/10.3390/pharmaceutics18010081)
 
-## Model component
-<dbs-pgx drug="ketamine" model-id="Ketamine_Sukhram2026_reference" status="curated_candidate" stale="false" population="" measured-compound="ketamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketamine" model-id="Ketamine_Sukhram2026_reference" status="curated_candidate" stale="false" population="" measured-compound="ketamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

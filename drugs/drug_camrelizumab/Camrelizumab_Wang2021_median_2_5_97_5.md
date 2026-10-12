@@ -26,8 +26,7 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 Wang CY et al., Population pharmacokinetics of the anti…, Acta pharmacologica Sinica (2021)
   ·  DOI: [10.1038/s41401-020-00550-y](https://doi.org/10.1038/s41401-020-00550-y)
 
-## Model component
-<dbs-pgx drug="camrelizumab" model-id="Camrelizumab_Wang2021_median_2_5_97_5" status="rejected" stale="false" population="patients with melanoma, advanced solid tumors, or relapsed/refractory classical Hodgkin lymphoma" measured-compound="camrelizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="camrelizumab" model-id="Camrelizumab_Wang2021_median_2_5_97_5" status="rejected" stale="false" population="patients with melanoma, advanced solid tumors, or relapsed/refractory classical Hodgkin lymphoma" measured-compound="camrelizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

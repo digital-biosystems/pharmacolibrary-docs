@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amikacin_Alhadab2018_reference&quot;,&quot;label&quot;:&quot;Alhadab_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Alhadab2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_Alqahtani2018_base&quot;,&quot;label&quot;:&quot;Alqahtani_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Alqahtani2018_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_Alqahtani2018_final&quot;,&quot;label&quot;:&quot;Alqahtani_2018_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Alqahtani2018_final.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_Illamola2018_reference&quot;,&quot;label&quot;:&quot;Illamola_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Illamola2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_MedellnGaribay2022_reference&quot;,&quot;label&quot;:&quot;Medell\u00edn-Garibay_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_MedellnGaribay2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# SLC28A3 — PGx  <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+# CYP2A6 — PGx  <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -31,12 +31,13 @@ Biswas M et al., Pharmacogenomics of antibiotic-induced…, Frontiers in pharmac
   ·  DOI: [10.3389/fphar.2025.1651909](https://doi.org/10.3389/fphar.2025.1651909)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
 
 _Every reader agrees on every compared field of this PGx record._
 

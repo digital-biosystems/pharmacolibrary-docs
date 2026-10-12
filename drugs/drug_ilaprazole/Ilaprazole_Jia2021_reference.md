@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Jia R et al., Accelerating Development of Benziamidaz…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13030392](https://doi.org/10.3390/pharmaceutics13030392)
 
-## Model component
-<dbs-pgx drug="ilaprazole" model-id="Ilaprazole_Jia2021_reference" status="rejected" stale="false" population="healthy Chinese adults" measured-compound="ilaprazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ilaprazole" model-id="Ilaprazole_Jia2021_reference" status="rejected" stale="false" population="healthy Chinese adults" measured-compound="ilaprazole" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

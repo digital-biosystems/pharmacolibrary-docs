@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Fisher DM et al., Pharmacokinetics and pharmacodynamics o…, Anesthesiology (1990)
   ·  DOI: [10.1097/00000542-199007000-00006](https://doi.org/10.1097/00000542-199007000-00006)
 
-## Model component
-<dbs-pgx drug="atracurium" model-id="Atracurium_Fisher1990_reference" status="curated_candidate" stale="false" population="infants, children, and adults" measured-compound="atracurium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atracurium" model-id="Atracurium_Fisher1990_reference" status="curated_candidate" stale="false" population="infants, children, and adults" measured-compound="atracurium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

@@ -31,8 +31,7 @@ Independently confirmed by `qwen3.8-27b`.
 Sudarsono LM et al., A novel hollow-fiber infection model (H…, Antimicrobial agents and ch… (2026)
   ·  DOI: [10.1128/aac.00381-26](https://doi.org/10.1128/aac.00381-26)
 
-## Model component
-<dbs-pgx drug="ganciclovir" model-id="Ganciclovir_Sudarsono2026_reference" status="rejected" stale="false" population="in vitro hollow-fiber CMV infection model using MRC-5 cells" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ganciclovir" model-id="Ganciclovir_Sudarsono2026_reference" status="rejected" stale="false" population="in vitro hollow-fiber CMV infection model using MRC-5 cells" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

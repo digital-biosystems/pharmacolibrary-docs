@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavai
 Sun K et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.70054](https://doi.org/10.1002/psp4.70054)
 
-## Model component
-<dbs-pgx drug="maribavir" model-id="Maribavir_Sun2025_healthy_volunteers" status="needs_review" stale="false" population="transplant recipients with CMV infection and healthy volunteers" measured-compound="maribavir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="maribavir" model-id="Maribavir_Sun2025_healthy_volunteers" status="needs_review" stale="false" population="transplant recipients with CMV infection and healthy volunteers" measured-compound="maribavir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

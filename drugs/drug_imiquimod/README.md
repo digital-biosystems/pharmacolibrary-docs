@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Arends_2015_IL_1ra](drugs/drug_imiquimod/pd_Arends_2015_IL_1ra.md) | urinary interleukin 1 receptor agonist ← imiquimod · stimulation effect | — | Arends TJ et al., Pharmacokinetic, Pharmacodynamic, and A…, Clinical genitourinary canc… (2015) | [10.1016/j.clgc.2014.12.010](https://doi.org/10.1016/j.clgc.2014.12.010) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Sugiyama_2005_VUIc](drugs/drug_propiverine/pd_Sugiyama_2005_VUIc.md) | Volume at first involuntary contraction ← propiverine · direct sigmoid Emax (Hill) effect | — | Sugiyama T et al., [Pharmacological evaluation of efficacy…, Nihon Hinyokika Gakkai zass… (2005) | [10.5980/jpnjurol1989.96.670](https://doi.org/10.5980/jpnjurol1989.96.670) |
 
 ## ADME sites
 

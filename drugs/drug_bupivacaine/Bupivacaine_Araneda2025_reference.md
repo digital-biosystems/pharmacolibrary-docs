@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Araneda A et al., Pharmacokinetic modelling and simulatio…, British journal of anaesthe… (2025)
   ·  DOI: [10.1016/j.bja.2025.05.047](https://doi.org/10.1016/j.bja.2025.05.047)
 
-## Model component
-<dbs-pgx drug="bupivacaine" model-id="Bupivacaine_Araneda2025_reference" status="curated_candidate" stale="false" population="patients with thoracic/abdominal surgery" measured-compound="levobupivacaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bupivacaine" model-id="Bupivacaine_Araneda2025_reference" status="curated_candidate" stale="false" population="patients with thoracic/abdominal surgery" measured-compound="levobupivacaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

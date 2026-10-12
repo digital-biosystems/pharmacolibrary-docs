@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 Rohatagi S et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2003)
   ·  DOI: [10.1177/0091270002250998](https://doi.org/10.1177/0091270002250998)
 
-## Model component
-<dbs-pgx drug="ciclesonide" model-id="Ciclesonide_Rohatagi2003_reference" status="model_quarantined" stale="false" population="healthy subjects and asthmatic patients" measured-compound="ciclesonide-active principle (CIC-AP)" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciclesonide" model-id="Ciclesonide_Rohatagi2003_reference" status="model_quarantined" stale="false" population="healthy subjects and asthmatic patients" measured-compound="ciclesonide-active principle (CIC-AP)" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

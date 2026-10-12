@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 Wu R et al., Population Pharmacokinetic Model of Lac…, Therapeutic drug monitoring (2026)
   ·  DOI: [10.1097/FTD.0000000000001385](https://doi.org/10.1097/FTD.0000000000001385)
 
-## Model component
-<dbs-pgx drug="lacosamide" model-id="Lacosamide_Wu2026_reference" status="curated_candidate" stale="false" population="Chinese children and adults with epilepsy" measured-compound="lacosamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lacosamide" model-id="Lacosamide_Wu2026_reference" status="curated_candidate" stale="false" population="Chinese children and adults with epilepsy" measured-compound="lacosamide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

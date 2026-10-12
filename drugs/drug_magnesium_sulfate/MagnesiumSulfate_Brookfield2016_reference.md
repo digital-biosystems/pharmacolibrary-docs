@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Brookfield KF et al., Pharmacokinetics and placental transfer…, American journal of obstetr… (2016)
   ·  DOI: [10.1016/j.ajog.2015.12.060](https://doi.org/10.1016/j.ajog.2015.12.060)
 
-## Model component
-<dbs-pgx drug="magnesium sulfate" model-id="MagnesiumSulfate_Brookfield2016_reference" status="needs_review" stale="false" population="pregnant women" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_Brookfield2016_reference" status="needs_review" stale="false" population="pregnant women" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

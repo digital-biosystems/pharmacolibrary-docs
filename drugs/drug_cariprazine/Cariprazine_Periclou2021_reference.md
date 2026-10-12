@@ -26,8 +26,7 @@ The record contains values for kabs (0.352 h−1), CL/F (21.5 l/h) and Q/F (0.43
 Periclou A et al., Population Pharmacokinetics of Caripraz…, European journal of drug me… (2021)
   ·  DOI: [10.1007/s13318-020-00650-4](https://doi.org/10.1007/s13318-020-00650-4)
 
-## Model component
-<dbs-pgx drug="cariprazine" model-id="Cariprazine_Periclou2021_reference" status="not_simulated" stale="false" population="adults with schizophrenia or bipolar mania" measured-compound="cariprazine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cariprazine" model-id="Cariprazine_Periclou2021_reference" status="not_simulated" stale="false" population="adults with schizophrenia or bipolar mania" measured-compound="cariprazine" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 6 extracted.

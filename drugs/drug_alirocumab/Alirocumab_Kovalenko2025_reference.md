@@ -24,8 +24,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kovalenko P et al., Target-Mediated Modeling of Alirocumab…, Clinical pharmacology in dr… (2025)
   ·  DOI: [10.1002/cpdd.1523](https://doi.org/10.1002/cpdd.1523)
 
-## Model component
-<dbs-pgx drug="alirocumab" model-id="Alirocumab_Kovalenko2025_reference" status="rejected" stale="false" population="adolescents and children ≥8 to &lt;12 years of age with heterozygous familial hypercholesterolemia" measured-compound="alirocumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alirocumab" model-id="Alirocumab_Kovalenko2025_reference" status="rejected" stale="false" population="adolescents and children ≥8 to &lt;12 years of age with heterozygous familial hypercholesterolemia" measured-compound="alirocumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

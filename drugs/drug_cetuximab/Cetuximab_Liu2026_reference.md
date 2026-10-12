@@ -28,8 +28,7 @@ Independently confirmed by `qwen3.8-27b`.
 Liu T et al., Advances in Therapeutic Drug Monitoring…, Clinical interventions in a… (2026)
   ·  DOI: [10.2147/cia.s587530](https://doi.org/10.2147/cia.s587530)
 
-## Model component
-<dbs-pgx drug="cetuximab" model-id="Cetuximab_Liu2026_reference" status="needs_review" stale="false" population="" measured-compound="cetuximab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Liu2026_reference" status="needs_review" stale="false" population="" measured-compound="cetuximab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

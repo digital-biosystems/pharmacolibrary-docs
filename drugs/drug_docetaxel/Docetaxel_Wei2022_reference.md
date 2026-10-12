@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Wei J et al., Docetaxel population pharmacokinetic mo…, Annals of translational med… (2022)
   ·  DOI: [10.21037/atm-22-2619](https://doi.org/10.21037/atm-22-2619)
 
-## Model component
-<dbs-pgx drug="docetaxel" model-id="Docetaxel_Wei2022_reference" status="rejected" stale="false" population="Chinese cancer patients" measured-compound="docetaxel" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="docetaxel" model-id="Docetaxel_Wei2022_reference" status="rejected" stale="false" population="Chinese cancer patients" measured-compound="docetaxel" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

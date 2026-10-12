@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Brown M et al., Pharmacokinetics of intravenous N-acety…, European journal of clinica… (2004)
   ·  DOI: [10.1007/s00228-004-0862-9](https://doi.org/10.1007/s00228-004-0862-9)
 
-## Model component
-<dbs-pgx drug="acetylcysteine" model-id="Acetylcysteine_Brown2004_reference" status="rejected" stale="false" population="healthy men" measured-compound="N-acetylcysteine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acetylcysteine" model-id="Acetylcysteine_Brown2004_reference" status="rejected" stale="false" population="healthy men" measured-compound="N-acetylcysteine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

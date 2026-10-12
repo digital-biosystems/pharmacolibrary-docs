@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Shao G et al., Population pharmacokinetics and model-b…, Frontiers in pharmacology (2023)
   ·  DOI: [10.3389/fphar.2023.1022090](https://doi.org/10.3389/fphar.2023.1022090)
 
-## Model component
-<dbs-pgx drug="bedaquiline" model-id="Bedaquiline_Shao2023_reference" status="curated_candidate" stale="false" population="" measured-compound="bedaquiline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bedaquiline" model-id="Bedaquiline_Shao2023_reference" status="curated_candidate" stale="false" population="" measured-compound="bedaquiline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

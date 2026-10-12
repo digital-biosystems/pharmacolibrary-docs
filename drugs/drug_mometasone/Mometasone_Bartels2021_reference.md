@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of drug me… (2021)
   ·  DOI: [10.1007/s13318-021-00689-x](https://doi.org/10.1007/s13318-021-00689-x)
 
-## Model component
-<dbs-pgx drug="mometasone" model-id="Mometasone_Bartels2021_reference" status="rejected" stale="false" population="patients with asthma" measured-compound="mometasone furoate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mometasone" model-id="Mometasone_Bartels2021_reference" status="rejected" stale="false" population="patients with asthma" measured-compound="mometasone furoate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 4 covariate effects.

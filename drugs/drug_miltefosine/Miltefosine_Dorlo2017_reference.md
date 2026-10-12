@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss-120b`.
 Dorlo TPC et al., Visceral leishmaniasis relapse hazard i…, The Journal of antimicrobia… (2017)
   ·  DOI: [10.1093/jac/dkx283](https://doi.org/10.1093/jac/dkx283)
 
-## Model component
-<dbs-pgx drug="miltefosine" model-id="Miltefosine_Dorlo2017_reference" status="accepted_with_caveats" stale="false" population="Eastern African patients with visceral leishmaniasis" measured-compound="miltefosine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="miltefosine" model-id="Miltefosine_Dorlo2017_reference" status="accepted_with_caveats" stale="false" population="Eastern African patients with visceral leishmaniasis" measured-compound="miltefosine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.

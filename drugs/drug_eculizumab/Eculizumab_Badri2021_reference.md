@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Badri P et al., Pharmacokinetic and Pharmacodynamic Pro…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-020-00940-9](https://doi.org/10.1007/s40262-020-00940-9)
 
-## Model component
-<dbs-pgx drug="eculizumab" model-id="Eculizumab_Badri2021_reference" status="needs_review" stale="false" population="" measured-compound="eculizumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Badri2021_reference" status="needs_review" stale="false" population="" measured-compound="eculizumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

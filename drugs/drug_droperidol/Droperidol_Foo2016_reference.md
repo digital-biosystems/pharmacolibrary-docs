@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Foo LK et al., Population pharmacokinetics of intramus…, British journal of clinical… (2016)
   ·  DOI: [10.1111/bcp.13093](https://doi.org/10.1111/bcp.13093)
 
-## Model component
-<dbs-pgx drug="droperidol" model-id="Droperidol_Foo2016_reference" status="needs_review" stale="false" population="acutely agitated patients" measured-compound="droperidol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="droperidol" model-id="Droperidol_Foo2016_reference" status="needs_review" stale="false" population="acutely agitated patients" measured-compound="droperidol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

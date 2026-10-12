@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Gibiansky L et al., Mechanistic Population Pharmacokinetic…, Clinical pharmacology and t… (2020)
   ·  DOI: [10.1002/cpt.1791](https://doi.org/10.1002/cpt.1791)
 
-## Model component
-<dbs-pgx drug="aminohippuric acid" model-id="AminohippuricAcid_Gibiansky2020_reference" status="needs_review" stale="false" population="" measured-compound="aminohippuric_acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aminohippuric acid" model-id="AminohippuricAcid_Gibiansky2020_reference" status="needs_review" stale="false" population="" measured-compound="aminohippuric_acid" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

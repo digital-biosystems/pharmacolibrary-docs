@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Quan C et al., Safety of teriflunomide in Chinese adul…, Chinese medical journal (2025)
   ·  DOI: [10.1097/cm9.0000000000002990](https://doi.org/10.1097/cm9.0000000000002990)
 
-## Model component
-<dbs-pgx drug="natalizumab" model-id="Natalizumab_Quan2025_reference" status="curated_candidate" stale="false" population="" measured-compound="natalizumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="natalizumab" model-id="Natalizumab_Quan2025_reference" status="curated_candidate" stale="false" population="" measured-compound="natalizumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

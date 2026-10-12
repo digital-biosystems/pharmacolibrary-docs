@@ -29,8 +29,7 @@ The record lists no value for the bioavailability parameter (F), meaning it fell
 Kovalenko P et al., Base and Covariate Population Pharmacok…, Clinical pharmacology in dr… (2020)
   ·  DOI: [10.1002/cpdd.780](https://doi.org/10.1002/cpdd.780)
 
-## Model component
-<dbs-pgx drug="dupilumab" model-id="Dupilumab_Kovalenko2020_population_estimates" status="needs_review" stale="false" population="healthy volunteers and patients with moderate‐to‐severe atopic dermatitis" measured-compound="dupilumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dupilumab" model-id="Dupilumab_Kovalenko2020_population_estimates" status="needs_review" stale="false" population="healthy volunteers and patients with moderate‐to‐severe atopic dermatitis" measured-compound="dupilumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted, plus 8 covariate effects.

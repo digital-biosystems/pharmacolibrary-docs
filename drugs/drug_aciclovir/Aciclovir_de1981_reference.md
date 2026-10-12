@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 de Miranda P et al., Disposition of intravenous radioactive…, Clinical pharmacology and t… (1981)
   ·  DOI: [10.1038/clpt.1981.218](https://doi.org/10.1038/clpt.1981.218)
 
-## Model component
-<dbs-pgx drug="aciclovir" model-id="Aciclovir_de1981_reference" status="rejected" stale="false" population="subjects with advanced malignancy" measured-compound="aciclovir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aciclovir" model-id="Aciclovir_de1981_reference" status="rejected" stale="false" population="subjects with advanced malignancy" measured-compound="aciclovir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

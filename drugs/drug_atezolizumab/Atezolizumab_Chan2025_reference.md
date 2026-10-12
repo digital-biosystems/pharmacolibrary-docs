@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 Chan P et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13310](https://doi.org/10.1002/psp4.13310)
 
-## Model component
-<dbs-pgx drug="atezolizumab" model-id="Atezolizumab_Chan2025_reference" status="rejected" stale="false" population="patients with locally advanced or metastatic non-small cell lung cancer" measured-compound="atezolizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atezolizumab" model-id="Atezolizumab_Chan2025_reference" status="rejected" stale="false" population="patients with locally advanced or metastatic non-small cell lung cancer" measured-compound="atezolizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 6 covariate effects.

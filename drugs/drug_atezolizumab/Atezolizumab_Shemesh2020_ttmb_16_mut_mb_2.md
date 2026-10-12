@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Shemesh CS et al., Pan-cancer population pharmacokinetics…, Pharmacology research & per… (2020)
   ·  DOI: [10.1002/prp2.685](https://doi.org/10.1002/prp2.685)
 
-## Model component
-<dbs-pgx drug="atezolizumab" model-id="Atezolizumab_Shemesh2020_ttmb_16_mut_mb_2" status="rejected" stale="false" population="pan-tumor patients treated with atezolizumab across seven clinical trials" measured-compound="atezolizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atezolizumab" model-id="Atezolizumab_Shemesh2020_ttmb_16_mut_mb_2" status="rejected" stale="false" population="pan-tumor patients treated with atezolizumab across seven clinical trials" measured-compound="atezolizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

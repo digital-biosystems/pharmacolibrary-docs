@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Tao G et al., Population pharmacokinetics of modafini…, Therapeutic drug monitoring (2010)
   ·  DOI: [10.1097/FTD.0b013e3181cf27d3](https://doi.org/10.1097/FTD.0b013e3181cf27d3)
 
-## Model component
-<dbs-pgx drug="modafinil" model-id="Modafinil_Tao2010_reference" status="curated_candidate" stale="false" population="healthy Chinese volunteers of five ethnicities" measured-compound="modafinil" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="modafinil" model-id="Modafinil_Tao2010_reference" status="curated_candidate" stale="false" population="healthy Chinese volunteers of five ethnicities" measured-compound="modafinil" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

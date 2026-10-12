@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Kim S et al., Effect of renal function on the pharmac…, Drug design, development an… (2014)
   ·  DOI: [10.2147/DDDT.S68784](https://doi.org/10.2147/DDDT.S68784)
 
-## Model component
-<dbs-pgx drug="fimasartan" model-id="Fimasartan_Kim2014v2_estimate" status="needs_review" stale="false" population="patients with renal impairment and healthy volunteers" measured-compound="fimasartan" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fimasartan" model-id="Fimasartan_Kim2014v2_estimate" status="needs_review" stale="false" population="patients with renal impairment and healthy volunteers" measured-compound="fimasartan" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

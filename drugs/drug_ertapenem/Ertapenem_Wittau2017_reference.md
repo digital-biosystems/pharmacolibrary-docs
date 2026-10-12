@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Wittau M et al., Population Pharmacokinetics and Target…, Antimicrobial agents and ch… (2017)
   ·  DOI: [10.1128/AAC.00952-16](https://doi.org/10.1128/AAC.00952-16)
 
-## Model component
-<dbs-pgx drug="ertapenem" model-id="Ertapenem_Wittau2017_reference" status="curated_candidate" stale="false" population="morbidly obese patients after laparoscopic visceral surgery" measured-compound="ertapenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Wittau2017_reference" status="curated_candidate" stale="false" population="morbidly obese patients after laparoscopic visceral surgery" measured-compound="ertapenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

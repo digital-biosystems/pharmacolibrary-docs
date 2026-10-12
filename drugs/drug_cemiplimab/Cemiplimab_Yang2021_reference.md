@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Yang F et al., Population pharmacokinetic characterist…, Journal of pharmacokinetics… (2021)
   ·  DOI: [10.1007/s10928-021-09739-y](https://doi.org/10.1007/s10928-021-09739-y)
 
-## Model component
-<dbs-pgx drug="cemiplimab" model-id="Cemiplimab_Yang2021_reference" status="needs_review" stale="false" population="patients with advanced malignancies, including advanced cutaneous squamous cell carcinoma" measured-compound="cemiplimab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cemiplimab" model-id="Cemiplimab_Yang2021_reference" status="needs_review" stale="false" population="patients with advanced malignancies, including advanced cutaneous squamous cell carcinoma" measured-compound="cemiplimab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

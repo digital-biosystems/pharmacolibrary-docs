@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Luu KT et al., A Mechanistic and Translational Pharmac…, The Journal of pharmacology… (2020)
   ·  DOI: [10.1124/jpet.119.263178](https://doi.org/10.1124/jpet.119.263178)
 
-## Model component
-<dbs-pgx drug="abicipar pegol" model-id="AbiciparPegol_Luu2020_estimate_human" status="needs_review" stale="false" population="patients with diabetic macular edema and neovascular age-related macular degeneration" measured-compound="abicipar_pegol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="abicipar pegol" model-id="AbiciparPegol_Luu2020_estimate_human" status="needs_review" stale="false" population="patients with diabetic macular edema and neovascular age-related macular degeneration" measured-compound="abicipar_pegol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

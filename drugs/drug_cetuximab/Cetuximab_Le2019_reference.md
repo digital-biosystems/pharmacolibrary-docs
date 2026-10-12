@@ -28,8 +28,7 @@ Independently confirmed by `qwen3.8-27b`.
 Le Louedec F et al., Cetuximab pharmacokinetic/pharmacodynam…, British journal of clinical… (2019)
   ·  DOI: [10.1111/bcp.13907](https://doi.org/10.1111/bcp.13907)
 
-## Model component
-<dbs-pgx drug="cetuximab" model-id="Cetuximab_Le2019_reference" status="rejected" stale="false" population="patients with advanced head and neck squamous cell carcinoma" measured-compound="cetuximab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Le2019_reference" status="rejected" stale="false" population="patients with advanced head and neck squamous cell carcinoma" measured-compound="cetuximab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

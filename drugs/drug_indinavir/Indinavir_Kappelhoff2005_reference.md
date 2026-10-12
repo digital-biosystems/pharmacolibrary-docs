@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Kappelhoff BS et al., Population pharmacokinetics of indinavi…, British journal of clinical… (2005)
   ·  DOI: [10.1111/j.1365-2125.2005.02436.x](https://doi.org/10.1111/j.1365-2125.2005.02436.x)
 
-## Model component
-<dbs-pgx drug="indinavir" model-id="Indinavir_Kappelhoff2005_reference" status="needs_review" stale="false" population="" measured-compound="indinavir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indinavir" model-id="Indinavir_Kappelhoff2005_reference" status="needs_review" stale="false" population="" measured-compound="indinavir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

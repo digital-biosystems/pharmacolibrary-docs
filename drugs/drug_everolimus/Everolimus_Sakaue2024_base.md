@@ -27,8 +27,7 @@ Independently confirmed by `qwen3.8-27b`.
 Sakaue T et al., Population pharmacokinetics of everolim…, Drug metabolism and pharmac… (2024)
   ·  DOI: [10.1016/j.dmpk.2024.101009](https://doi.org/10.1016/j.dmpk.2024.101009)
 
-## Model component
-<dbs-pgx drug="everolimus" model-id="Everolimus_Sakaue2024_base" status="curated_candidate" stale="false" population="renal transplant recipients receiving long-term multiple immunosuppressive therapy" measured-compound="everolimus" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="everolimus" model-id="Everolimus_Sakaue2024_base" status="curated_candidate" stale="false" population="renal transplant recipients receiving long-term multiple immunosuppressive therapy" measured-compound="everolimus" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

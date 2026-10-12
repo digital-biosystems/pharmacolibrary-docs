@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 Yagi N et al., Pharmacokinetics of ketotifen fumarate…, Biological & pharmaceutical… (2002)
   ·  DOI: [10.1248/bpb.25.1614](https://doi.org/10.1248/bpb.25.1614)
 
-## Model component
-<dbs-pgx drug="ketotifen" model-id="Ketotifen_Yagi2002_reference" status="needs_review" stale="false" population="rabbits" measured-compound="ketotifen fumarate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketotifen" model-id="Ketotifen_Yagi2002_reference" status="needs_review" stale="false" population="rabbits" measured-compound="ketotifen fumarate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

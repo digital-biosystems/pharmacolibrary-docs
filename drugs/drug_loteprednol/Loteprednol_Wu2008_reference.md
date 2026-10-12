@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Wu WM et al., Pharmacokinetics of the sequential meta…, The Journal of pharmacy and… (2008)
   ·  DOI: [10.1211/jpp.60.3.0003](https://doi.org/10.1211/jpp.60.3.0003)
 
-## Model component
-<dbs-pgx drug="loteprednol" model-id="Loteprednol_Wu2008_reference" status="rejected" stale="false" population="rats" measured-compound="Delta1-cortienic acid etabonate / Delta1-cortienic acid" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="loteprednol" model-id="Loteprednol_Wu2008_reference" status="rejected" stale="false" population="rats" measured-compound="Delta1-cortienic acid etabonate / Delta1-cortienic acid" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

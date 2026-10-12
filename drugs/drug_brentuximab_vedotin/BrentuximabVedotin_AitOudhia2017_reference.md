@@ -32,8 +32,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Ait-Oudhia S et al., A Mechanism-Based PK/PD Model for Hemat…, The AAPS journal (2017)
   ·  DOI: [10.1208/s12248-017-0113-5](https://doi.org/10.1208/s12248-017-0113-5)
 
-## Model component
-<dbs-pgx drug="brentuximab vedotin" model-id="BrentuximabVedotin_AitOudhia2017_reference" status="rejected" stale="false" population="murine xenograft models and literature data" measured-compound="brentuximab vedotin (SGN-35) and its payload MMAE" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brentuximab vedotin" model-id="BrentuximabVedotin_AitOudhia2017_reference" status="rejected" stale="false" population="murine xenograft models and literature data" measured-compound="brentuximab vedotin (SGN-35) and its payload MMAE" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

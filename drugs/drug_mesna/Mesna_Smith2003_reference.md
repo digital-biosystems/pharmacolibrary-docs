@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Smith PF et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2003)
   ·  DOI: [10.1177/0091270003260332](https://doi.org/10.1177/0091270003260332)
 
-## Model component
-<dbs-pgx drug="mesna" model-id="Mesna_Smith2003_reference" status="needs_review" stale="false" population="patients (Phase I study)" measured-compound="mesna" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mesna" model-id="Mesna_Smith2003_reference" status="needs_review" stale="false" population="patients (Phase I study)" measured-compound="mesna" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

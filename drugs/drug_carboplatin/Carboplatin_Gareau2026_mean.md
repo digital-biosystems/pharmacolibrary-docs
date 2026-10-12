@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Gareau A et al., Serum Symmetric Dimethylarginine as a P…, Veterinary and comparative… (2026)
   ·  DOI: [10.1111/vco.70034](https://doi.org/10.1111/vco.70034)
 
-## Model component
-<dbs-pgx drug="carboplatin" model-id="Carboplatin_Gareau2026_mean" status="needs_review" stale="false" population="dogs with confirmed neoplasia" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carboplatin" model-id="Carboplatin_Gareau2026_mean" status="needs_review" stale="false" population="dogs with confirmed neoplasia" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

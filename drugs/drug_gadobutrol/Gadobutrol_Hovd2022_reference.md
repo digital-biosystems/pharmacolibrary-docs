@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Hovd MH et al., Population pharmacokinetic modeling of…, Fluids and barriers of the… (2022)
   ·  DOI: [10.1186/s12987-022-00352-w](https://doi.org/10.1186/s12987-022-00352-w)
 
-## Model component
-<dbs-pgx drug="gadobutrol" model-id="Gadobutrol_Hovd2022_reference" status="rejected" stale="false" population="patients under work-up for possible CSF disorders" measured-compound="gadobutrol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gadobutrol" model-id="Gadobutrol_Hovd2022_reference" status="rejected" stale="false" population="patients under work-up for possible CSF disorders" measured-compound="gadobutrol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

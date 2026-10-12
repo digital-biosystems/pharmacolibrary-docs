@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Principe L et al., Microbiological, Clinical, and PK/PD Fe…, Pharmaceuticals (Basel, Swi… (2022)
   ·  DOI: [10.3390/ph15040463](https://doi.org/10.3390/ph15040463)
 
-## Model component
-<dbs-pgx drug="cefepime" model-id="Cefepime_Principe2022_reference" status="curated_candidate" stale="false" population="unknown" measured-compound="cefepime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefepime" model-id="Cefepime_Principe2022_reference" status="curated_candidate" stale="false" population="unknown" measured-compound="cefepime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

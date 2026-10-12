@@ -28,8 +28,7 @@ Independently confirmed by `qwen3.8-27b`.
 Wang C et al., Phase 1 study of anti-epidermal growth…, mAbs (2011)
   ·  DOI: [10.4161/mabs.3.1.14021](https://doi.org/10.4161/mabs.3.1.14021)
 
-## Model component
-<dbs-pgx drug="cetuximab" model-id="Cetuximab_Wang2011_reference" status="rejected" stale="false" population="Chinese patients with advanced chemotherapy-resistant epithelial malignancies" measured-compound="CMAB009" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Wang2011_reference" status="rejected" stale="false" population="Chinese patients with advanced chemotherapy-resistant epithelial malignancies" measured-compound="CMAB009" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

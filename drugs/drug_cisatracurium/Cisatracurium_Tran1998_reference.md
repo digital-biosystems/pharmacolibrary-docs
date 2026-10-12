@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Tran TV et al., Pharmacokinetics and pharmacodynamics o…, Anesthesia and analgesia (1998)
   ·  DOI: [10.1097/00000539-199811000-00034](https://doi.org/10.1097/00000539-199811000-00034)
 
-## Model component
-<dbs-pgx drug="cisatracurium" model-id="Cisatracurium_Tran1998_reference" status="curated_candidate" stale="false" population="patients under propofol anesthesia" measured-compound="cisatracurium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Tran1998_reference" status="curated_candidate" stale="false" population="patients under propofol anesthesia" measured-compound="cisatracurium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

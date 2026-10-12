@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on paramete
 Kemal CC et al., Population Pharmacokinetic Modeling and…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70257](https://doi.org/10.1002/psp4.70257)
 
-## Model component
-<dbs-pgx drug="acalabrutinib" model-id="Acalabrutinib_Kemal2026_reference" status="needs_review" stale="false" population="" measured-compound="acalabrutinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acalabrutinib" model-id="Acalabrutinib_Kemal2026_reference" status="needs_review" stale="false" population="" measured-compound="acalabrutinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

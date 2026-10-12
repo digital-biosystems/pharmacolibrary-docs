@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Kyhl LE et al., Population pharmacokinetics of nalmefen…, British journal of clinical… (2016)
   ·  DOI: [10.1111/bcp.12805](https://doi.org/10.1111/bcp.12805)
 
-## Model component
-<dbs-pgx drug="nalmefene" model-id="Nalmefene_Kyhl2016_reference" status="curated_candidate" stale="false" population="healthy subjects" measured-compound="nalmefene" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nalmefene" model-id="Nalmefene_Kyhl2016_reference" status="curated_candidate" stale="false" population="healthy subjects" measured-compound="nalmefene" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

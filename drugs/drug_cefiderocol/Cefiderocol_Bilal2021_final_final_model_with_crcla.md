@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Bilal M et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-021-01063-5](https://doi.org/10.1007/s40262-021-01063-5)
 
-## Model component
-<dbs-pgx drug="cefiderocol" model-id="Cefiderocol_Bilal2021_final_final_model_with_crcla" status="needs_review" stale="false" population="mixed" measured-compound="cefiderocol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefiderocol" model-id="Cefiderocol_Bilal2021_final_final_model_with_crcla" status="needs_review" stale="false" population="mixed" measured-compound="cefiderocol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 6 extracted.

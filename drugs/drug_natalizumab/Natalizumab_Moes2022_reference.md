@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Moes DJAR et al., Towards Fixed Dosing of Tocilizumab in…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01074-2](https://doi.org/10.1007/s40262-021-01074-2)
 
-## Model component
-<dbs-pgx drug="natalizumab" model-id="Natalizumab_Moes2022_reference" status="curated_candidate" stale="false" population="" measured-compound="natalizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="natalizumab" model-id="Natalizumab_Moes2022_reference" status="curated_candidate" stale="false" population="" measured-compound="natalizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

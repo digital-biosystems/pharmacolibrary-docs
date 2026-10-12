@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Shemesh CS et al., Population pharmacokinetics, exposure-s…, Journal for immunotherapy o… (2019)
   ·  DOI: [10.1186/s40425-019-0791-x](https://doi.org/10.1186/s40425-019-0791-x)
 
-## Model component
-<dbs-pgx drug="atezolizumab" model-id="Atezolizumab_Shemesh2019_adult_model" status="not_modelled" stale="false" population="pediatric and young adult patients with cancer" measured-compound="atezolizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atezolizumab" model-id="Atezolizumab_Shemesh2019_adult_model" status="not_modelled" stale="false" population="pediatric and young adult patients with cancer" measured-compound="atezolizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 7 covariate effects.

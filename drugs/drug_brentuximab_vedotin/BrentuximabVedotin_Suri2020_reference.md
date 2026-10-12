@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 Suri A et al., Population Pharmacokinetics of Brentuxi…, Journal of clinical pharmac… (2020)
   ·  DOI: [10.1002/jcph.1682](https://doi.org/10.1002/jcph.1682)
 
-## Model component
-<dbs-pgx drug="brentuximab vedotin" model-id="BrentuximabVedotin_Suri2020_reference" status="needs_review" stale="false" population="adult and pediatric patients with relapsed/refractory hematologic malignancies" measured-compound="brentuximab vedotin ADC" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brentuximab vedotin" model-id="BrentuximabVedotin_Suri2020_reference" status="needs_review" stale="false" population="adult and pediatric patients with relapsed/refractory hematologic malignancies" measured-compound="brentuximab vedotin ADC" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

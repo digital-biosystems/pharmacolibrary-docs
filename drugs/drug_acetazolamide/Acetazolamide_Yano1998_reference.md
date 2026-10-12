@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Yano I et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1998)
   ·  DOI: [10.1007/s002280050422](https://doi.org/10.1007/s002280050422)
 
-## Model component
-<dbs-pgx drug="acetazolamide" model-id="Acetazolamide_Yano1998_reference" status="rejected" stale="false" population="patients with transient intraocular pressure elevation" measured-compound="acetazolamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acetazolamide" model-id="Acetazolamide_Yano1998_reference" status="rejected" stale="false" population="patients with transient intraocular pressure elevation" measured-compound="acetazolamide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -65,9 +64,7 @@ Yano I et al., Pharmacokinetics and pharmacodynamics o…, European journal of c
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=acetazolamide
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- population split: 's. b.' subgroup of Narang_1980 (paper reports 5 populations: b. b., j. j., mean, p. k., s. b.)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Yano_1998_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
@@ -81,7 +78,7 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 |---|---|---|---|
 | `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|

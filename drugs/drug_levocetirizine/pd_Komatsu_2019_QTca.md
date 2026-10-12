@@ -44,7 +44,7 @@ first reading `einfracz:qwen3.8-27b` — the numbers on this page are its, whate
 |---|---|---|---|
 | `einfracz:gpt-oss-120b` | not confirmed | 0.75 (3/4 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|

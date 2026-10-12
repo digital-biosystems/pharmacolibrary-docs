@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Ter Heine R et al., Intracellular and plasma steady-state p…, British journal of clinical… (2010)
   ·  DOI: [10.1111/j.1365-2125.2010.03634.x](https://doi.org/10.1111/j.1365-2125.2010.03634.x)
 
-## Model component
-<dbs-pgx drug="etravirine" model-id="Etravirine_Ter2010_reference" status="rejected" stale="false" population="heavily pre-treated HIV-infected patients" measured-compound="raltegravir, etravirine, darunavir and ritonavir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etravirine" model-id="Etravirine_Ter2010_reference" status="rejected" stale="false" population="heavily pre-treated HIV-infected patients" measured-compound="raltegravir, etravirine, darunavir and ritonavir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

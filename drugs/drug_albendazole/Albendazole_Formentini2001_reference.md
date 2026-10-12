@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Formentini EA et al., Pharmacokinetics of ricobendazole in ca…, Journal of veterinary pharm… (2001)
   ·  DOI: [10.1046/j.1365-2885.2001.00328.x](https://doi.org/10.1046/j.1365-2885.2001.00328.x)
 
-## Model component
-<dbs-pgx drug="albendazole" model-id="Albendazole_Formentini2001_reference" status="curated_candidate" stale="false" population="" measured-compound="albendazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="albendazole" model-id="Albendazole_Formentini2001_reference" status="curated_candidate" stale="false" population="" measured-compound="albendazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

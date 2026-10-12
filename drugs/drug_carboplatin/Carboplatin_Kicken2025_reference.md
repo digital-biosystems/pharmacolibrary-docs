@@ -27,8 +27,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 Kicken MP et al., Pharmacokinetic Study of Carboplatin Us…, Therapeutic drug monitoring (2025)
   ·  DOI: [10.1097/ftd.0000000000001328](https://doi.org/10.1097/ftd.0000000000001328)
 
-## Model component
-<dbs-pgx drug="carboplatin" model-id="Carboplatin_Kicken2025_reference" status="needs_review" stale="false" population="adults with lung, ovarian, or endometrial cancer receiving carboplatin" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carboplatin" model-id="Carboplatin_Kicken2025_reference" status="needs_review" stale="false" population="adults with lung, ovarian, or endometrial cancer receiving carboplatin" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

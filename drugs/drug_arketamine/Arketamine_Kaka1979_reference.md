@@ -28,8 +28,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 ## Citation
 Kaka JS et al., Pharmacokinetics of ketamine in the hor…, American journal of veterin… (1979)
 
-## Model component
-<dbs-pgx drug="Arketamine" model-id="Arketamine_Kaka1979_reference" status="needs_review" stale="false" population="xylazine HCl-treated horses" measured-compound="ketamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Arketamine" model-id="Arketamine_Kaka1979_reference" status="needs_review" stale="false" population="xylazine HCl-treated horses" measured-compound="ketamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Xiang H et al., Covariate effects and population pharma…, Cancer chemotherapy and pha… (2021)
   ·  DOI: [10.1007/s00280-021-04333-y](https://doi.org/10.1007/s00280-021-04333-y)
 
-## Model component
-<dbs-pgx drug="bemarituzumab" model-id="Bemarituzumab_Xiang2021_reference" status="needs_review" stale="false" population="patients from phase 1 to phase 2 trials" measured-compound="bemarituzumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bemarituzumab" model-id="Bemarituzumab_Xiang2021_reference" status="needs_review" stale="false" population="patients from phase 1 to phase 2 trials" measured-compound="bemarituzumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

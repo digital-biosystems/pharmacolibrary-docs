@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Li A et al., Population pharmacokinetics of Amisulpr…, Frontiers in pharmacology (2023)
   ·  DOI: [10.3389/fphar.2023.1215065](https://doi.org/10.3389/fphar.2023.1215065)
 
-## Model component
-<dbs-pgx drug="amisulpride" model-id="Amisulpride_Li2023_reference" status="needs_review" stale="false" population="Chinese patients with schizophrenia" measured-compound="amisulpride" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amisulpride" model-id="Amisulpride_Li2023_reference" status="needs_review" stale="false" population="Chinese patients with schizophrenia" measured-compound="amisulpride" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

@@ -27,8 +27,7 @@ Independently confirmed by `gpt-oss-120b`.
 Nonoshita K et al., Population pharmacokinetic analysis of…, Scientific reports (2020)
   ·  DOI: [10.1038/s41598-020-79076-6](https://doi.org/10.1038/s41598-020-79076-6)
 
-## Model component
-<dbs-pgx drug="doripenem" model-id="Doripenem_Nonoshita2020_base_model" status="curated_candidate" stale="false" population="Japanese ICU patients" measured-compound="doripenem" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doripenem" model-id="Doripenem_Nonoshita2020_base_model" status="curated_candidate" stale="false" population="Japanese ICU patients" measured-compound="doripenem" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted.

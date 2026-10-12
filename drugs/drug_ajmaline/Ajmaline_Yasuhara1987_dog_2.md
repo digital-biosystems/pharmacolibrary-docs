@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
 Yasuhara M et al., Kinetics of ajmaline disposition and ph…, Journal of pharmacokinetics… (1987)
   ·  DOI: [10.1007/BF01062938](https://doi.org/10.1007/BF01062938)
 
-## Model component
-<dbs-pgx drug="ajmaline" model-id="Ajmaline_Yasuhara1987_dog_2" status="rejected" stale="false" population="healthy beagle dogs" measured-compound="ajmaline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ajmaline" model-id="Ajmaline_Yasuhara1987_dog_2" status="rejected" stale="false" population="healthy beagle dogs" measured-compound="ajmaline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

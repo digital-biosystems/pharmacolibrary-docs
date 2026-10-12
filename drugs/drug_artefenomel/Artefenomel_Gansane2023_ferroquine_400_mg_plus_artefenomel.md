@@ -27,8 +27,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Gansane A et al., Randomized, open-label, phase 2a study…, Malaria journal (2023)
   ·  DOI: [10.1186/s12936-022-04420-2](https://doi.org/10.1186/s12936-022-04420-2)
 
-## Model component
-<dbs-pgx drug="Artefenomel" model-id="Artefenomel_Gansane2023_ferroquine_400_mg_plus_artefenomel" status="rejected" stale="false" population="African patients with uncomplicated Plasmodium falciparum malaria" measured-compound="artefenomel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Artefenomel" model-id="Artefenomel_Gansane2023_ferroquine_400_mg_plus_artefenomel" status="rejected" stale="false" population="African patients with uncomplicated Plasmodium falciparum malaria" measured-compound="artefenomel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

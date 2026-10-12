@@ -26,8 +26,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Tunblad K et al., The use of clinical irrelevance criteri…, Journal of pharmacokinetics… (2008)
   ·  DOI: [10.1007/s10928-008-9099-z](https://doi.org/10.1007/s10928-008-9099-z)
 
-## Model component
-<dbs-pgx drug="dofetilide" model-id="Dofetilide_Tunblad2008_final" status="not_reviewed" stale="false" population="patients with arrhythmia" measured-compound="dofetilide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dofetilide" model-id="Dofetilide_Tunblad2008_final" status="not_reviewed" stale="false" population="patients with arrhythmia" measured-compound="dofetilide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted, plus 2 covariate effects.

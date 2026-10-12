@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Chatelut E et al., Prediction of carboplatin clearance fro…, Journal of the National Can… (1995)
   ·  DOI: [10.1093/jnci/87.8.573](https://doi.org/10.1093/jnci/87.8.573)
 
-## Model component
-<dbs-pgx drug="carboplatin" model-id="Carboplatin_Chatelut1995_reference" status="rejected" stale="false" population="adults with various tumor types" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carboplatin" model-id="Carboplatin_Chatelut1995_reference" status="rejected" stale="false" population="adults with various tumor types" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Shaik N et al., Evaluation of the impact of renal impai…, Cancer chemotherapy and pha… (2021)
   ·  DOI: [10.1007/s00280-020-04207-9](https://doi.org/10.1007/s00280-020-04207-9)
 
-## Model component
-<dbs-pgx drug="glasdegib" model-id="Glasdegib_Shaik2021_reference" status="needs_review" stale="false" population="unknown" measured-compound="glasdegib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glasdegib" model-id="Glasdegib_Shaik2021_reference" status="needs_review" stale="false" population="unknown" measured-compound="glasdegib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

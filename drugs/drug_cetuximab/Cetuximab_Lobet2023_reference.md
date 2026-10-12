@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Lobet S et al., Relationship Between Cetuximab Target-M…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01270-2](https://doi.org/10.1007/s40262-023-01270-2)
 
-## Model component
-<dbs-pgx drug="cetuximab" model-id="Cetuximab_Lobet2023_reference" status="needs_review" stale="false" population="patients with metastatic colorectal cancer" measured-compound="cetuximab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Lobet2023_reference" status="needs_review" stale="false" population="patients with metastatic colorectal cancer" measured-compound="cetuximab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

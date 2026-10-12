@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Ding J et al., Population pharmacokinetics of amodiaqu…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13211](https://doi.org/10.1002/psp4.13211)
 
-## Model component
-<dbs-pgx drug="amodiaquine" model-id="Amodiaquine_Ding2024_nonmem_estimates_rse_a" status="not_simulated" stale="false" population="pregnant women with uncomplicated Plasmodium falciparum malaria" measured-compound="desethylamodiaquine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amodiaquine" model-id="Amodiaquine_Ding2024_nonmem_estimates_rse_a" status="not_simulated" stale="false" population="pregnant women with uncomplicated Plasmodium falciparum malaria" measured-compound="desethylamodiaquine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 10 extracted, plus 1 covariate effect.

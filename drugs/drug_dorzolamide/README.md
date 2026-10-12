@@ -24,6 +24,13 @@ Dorzolamide is a carbonic anhydrase inhibitor eye drop used to treat glaucoma, e
 
 _not available_
 
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Halim_2017_dengue_NS_3_helicase](drugs/drug_edoxudine/pd_Halim_2017_dengue_NS_3_helicase.md) | dengue NS-3 helicase · model not identified | — | Halim SA et al., Targeting Dengue Virus NS-3 Helicase by…, Frontiers in chemistry (2017) | [10.3389/fchem.2017.00088](https://doi.org/10.3389/fchem.2017.00088) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.00).">in vitro</span> | [Katona_2004_IC50](drugs/drug_edoxudine/pd_Katona_2004_IC50.md) | 5-FU IC50 ← edoxudine · inhibition effect | — | Katona C et al., [Potentiation of 5-fluorouracil efficac…, Magyar onkologia (2004) | — |
+
 ## ADME sites
 
 Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=dorzolamide) page (add drugs there; the set becomes a link).

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Syvänen S et al., Alteration in P-glycoprotein functional…, The AAPS journal (2012)
   ·  DOI: [10.1208/s12248-011-9318-1](https://doi.org/10.1208/s12248-011-9318-1)
 
-## Model component
-<dbs-pgx drug="boric acid" model-id="BoricAcid_Syvnen2012_reference" status="rejected" stale="false" population="" measured-compound="boric_acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="boric acid" model-id="BoricAcid_Syvnen2012_reference" status="rejected" stale="false" population="" measured-compound="boric_acid" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

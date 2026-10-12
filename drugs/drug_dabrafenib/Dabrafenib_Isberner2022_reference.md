@@ -32,8 +32,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Isberner N et al., Monitoring of Dabrafenib and Trametinib…, Cancers (2022)
   ·  DOI: [10.3390/cancers14194566](https://doi.org/10.3390/cancers14194566)
 
-## Model component
-<dbs-pgx drug="dabrafenib" model-id="Dabrafenib_Isberner2022_reference" status="model_quarantined" stale="false" population="patients with BRAFV600-mutant melanoma" measured-compound="dabrafenib, hydroxy-dabrafenib, and trametinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dabrafenib" model-id="Dabrafenib_Isberner2022_reference" status="model_quarantined" stale="false" population="patients with BRAFV600-mutant melanoma" measured-compound="dabrafenib, hydroxy-dabrafenib, and trametinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 3 covariate effects.

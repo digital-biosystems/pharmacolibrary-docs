@@ -27,8 +27,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Nguyen L et al., Updated Population Pharmacokinetic Mode…, Journal of clinical pharmac… (2019)
   ·  DOI: [10.1002/jcph.1467](https://doi.org/10.1002/jcph.1467)
 
-## Model component
-<dbs-pgx drug="cabozantinib" model-id="Cabozantinib_Nguyen2019_reference" status="curated_candidate" stale="false" population="healthy volunteers and patients with various cancer types, including hepatocellular carcinoma" measured-compound="cabozantinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cabozantinib" model-id="Cabozantinib_Nguyen2019_reference" status="curated_candidate" stale="false" population="healthy volunteers and patients with various cancer types, including hepatocellular carcinoma" measured-compound="cabozantinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

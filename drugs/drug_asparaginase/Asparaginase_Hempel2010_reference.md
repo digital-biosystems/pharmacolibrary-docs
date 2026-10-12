@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Hempel G et al., A population pharmacokinetic model for…, British journal of haematol… (2010)
   ·  DOI: [10.1111/j.1365-2141.2009.07923.x](https://doi.org/10.1111/j.1365-2141.2009.07923.x)
 
-## Model component
-<dbs-pgx drug="asparaginase" model-id="Asparaginase_Hempel2010_reference" status="rejected" stale="false" population="children with acute lymphoblastic leukaemia" measured-compound="pegylated-asparaginase" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Hempel2010_reference" status="rejected" stale="false" population="children with acute lymphoblastic leukaemia" measured-compound="pegylated-asparaginase" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

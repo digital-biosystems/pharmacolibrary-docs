@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Dziubina A et al., Searching for Mechanisms of Analgesic A…, Methods and protocols (2026)
   ·  DOI: [10.3390/mps9020041](https://doi.org/10.3390/mps9020041)
 
-## Model component
-<dbs-pgx drug="ketoprofen" model-id="Ketoprofen_Dziubina2026_reference" status="needs_review" stale="false" population="" measured-compound="ketoprofen" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketoprofen" model-id="Ketoprofen_Dziubina2026_reference" status="needs_review" stale="false" population="" measured-compound="ketoprofen" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

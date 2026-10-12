@@ -28,8 +28,7 @@ Independently confirmed by `gpt-oss-120b`.
 ## Citation
 Urien S et al., A pharmacokinetic-pharmacodynamic model…, International journal of cl… (1999)
 
-## Model component
-<dbs-pgx drug="cetirizine" model-id="Cetirizine_Urien1999_reference" status="rejected" stale="false" population="patients" measured-compound="cetirizine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cetirizine" model-id="Cetirizine_Urien1999_reference" status="rejected" stale="false" population="patients" measured-compound="cetirizine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -69,7 +68,7 @@ _No resolved parameters._
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|

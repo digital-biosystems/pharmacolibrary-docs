@@ -26,8 +26,7 @@ Independently confirmed by `qwen3.8-27b`.
 Xiang H et al., Population pharmacokinetic analysis of…, Cancer chemotherapy and pha… (2020)
   ·  DOI: [10.1007/s00280-020-04139-4](https://doi.org/10.1007/s00280-020-04139-4)
 
-## Model component
-<dbs-pgx drug="bemarituzumab" model-id="Bemarituzumab_Xiang2020_reference" status="not_modelled" stale="false" population="phase 1 patients with solid tumors, including gastric and gastroesophageal junction adenocarcinoma" measured-compound="bemarituzumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bemarituzumab" model-id="Bemarituzumab_Xiang2020_reference" status="not_modelled" stale="false" population="phase 1 patients with solid tumors, including gastric and gastroesophageal junction adenocarcinoma" measured-compound="bemarituzumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 Pointreau Y et al., Cetuximab Pharmacokinetics Influences O…, Therapeutic drug monitoring (2016)
   ·  DOI: [10.1097/FTD.0000000000000321](https://doi.org/10.1097/FTD.0000000000000321)
 
-## Model component
-<dbs-pgx drug="cetuximab" model-id="Cetuximab_Pointreau2016_reference" status="not_modelled" stale="false" population="patients with head and neck squamous cell carcinoma" measured-compound="cetuximab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Pointreau2016_reference" status="not_modelled" stale="false" population="patients with head and neck squamous cell carcinoma" measured-compound="cetuximab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

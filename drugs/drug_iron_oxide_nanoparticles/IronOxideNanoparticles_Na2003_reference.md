@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Na JB et al., Pharmacokinetic modeling of phagocytic…, Yonsei medical journal (2003)
   ·  DOI: [10.3349/ymj.2003.44.3.429](https://doi.org/10.3349/ymj.2003.44.3.429)
 
-## Model component
-<dbs-pgx drug="iron oxide, nanoparticles" model-id="IronOxideNanoparticles_Na2003_reference" status="rejected" stale="false" population="New Zealand White rabbits and Beagle dogs" measured-compound="AMI-25 (superparamagnetic iron oxide nanoparticles)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="iron oxide, nanoparticles" model-id="IronOxideNanoparticles_Na2003_reference" status="rejected" stale="false" population="New Zealand White rabbits and Beagle dogs" measured-compound="AMI-25 (superparamagnetic iron oxide nanoparticles)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

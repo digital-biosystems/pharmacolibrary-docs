@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Sanders M et al., Evaluation of the drug interaction betw…, Journal of cystic fibrosis… (2026)
   ·  DOI: [10.1016/j.jcf.2025.09.002](https://doi.org/10.1016/j.jcf.2025.09.002)
 
-## Model component
-<dbs-pgx drug="ivacaftor" model-id="Ivacaftor_Sanders2026v2_reference" status="rejected" stale="false" population="healthy adults" measured-compound="ivacaftor" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ivacaftor" model-id="Ivacaftor_Sanders2026v2_reference" status="rejected" stale="false" population="healthy adults" measured-compound="ivacaftor" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

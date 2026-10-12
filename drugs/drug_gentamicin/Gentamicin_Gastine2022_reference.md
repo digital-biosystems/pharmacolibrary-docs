@@ -23,14 +23,13 @@ A model needs both clearance and volume; without the clearance it could only be 
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has ampicillin and gentamicin, the second reading gentamicin; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by gpt-6-luna</sub>
 
 ## Citation
 Gastine S et al., Simultaneous pharmacokinetic/pharmacody…, The Journal of antimicrobia… (2022)
   ·  DOI: [10.1093/jac/dkab413](https://doi.org/10.1093/jac/dkab413)
 
-## Model component
-<dbs-pgx drug="gentamicin" model-id="Gentamicin_Gastine2022_reference" status="needs_review" stale="false" population="neonates with suspected or proven sepsis" measured-compound="ampicillin and gentamicin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gentamicin" model-id="Gentamicin_Gastine2022_reference" status="needs_review" stale="false" population="neonates with suspected or proven sepsis" measured-compound="ampicillin and gentamicin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted, plus 1 covariate effect.

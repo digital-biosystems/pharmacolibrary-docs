@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Gwilt PR et al., Pharmacokinetics of methyprylon followi…, Journal of pharmaceutical s… (1985)
   ·  DOI: [10.1002/jps.2600740920](https://doi.org/10.1002/jps.2600740920)
 
-## Model component
-<dbs-pgx drug="methyprylon" model-id="Methyprylon_Gwilt1985_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="methyprylon" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methyprylon" model-id="Methyprylon_Gwilt1985_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="methyprylon" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

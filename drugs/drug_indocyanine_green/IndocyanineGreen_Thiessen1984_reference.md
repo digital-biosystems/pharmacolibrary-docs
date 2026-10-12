@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Thiessen JJ et al., Indocyanine green pharmacokinetics in t…, Canadian journal of physiol… (1984)
   ·  DOI: [10.1139/y84-180](https://doi.org/10.1139/y84-180)
 
-## Model component
-<dbs-pgx drug="indocyanine green" model-id="IndocyanineGreen_Thiessen1984_reference" status="rejected" stale="false" population="New Zealand white male rabbits" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Thiessen1984_reference" status="rejected" stale="false" population="New Zealand white male rabbits" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

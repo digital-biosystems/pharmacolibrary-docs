@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Dvořáčková E et al., Population Pharmacokinetics and Dose Op…, Medical principles and prac… (2026)
   ·  DOI: [10.1159/000548942](https://doi.org/10.1159/000548942)
 
-## Model component
-<dbs-pgx drug="ganciclovir" model-id="Ganciclovir_Dvokov2026_reference" status="rejected" stale="false" population="lung transplant recipients" measured-compound="ganciclovir" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ganciclovir" model-id="Ganciclovir_Dvokov2026_reference" status="rejected" stale="false" population="lung transplant recipients" measured-compound="ganciclovir" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted, plus 1 covariate effect.

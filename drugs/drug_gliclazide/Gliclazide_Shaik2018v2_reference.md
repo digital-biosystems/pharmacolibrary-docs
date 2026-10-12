@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
 Shaik M et al., Population pharmacokinetics of gliclazi…, Biopharmaceutics & drug dis… (2018)
   ·  DOI: [10.1002/bdd.2132](https://doi.org/10.1002/bdd.2132)
 
-## Model component
-<dbs-pgx drug="gliclazide" model-id="Gliclazide_Shaik2018v2_reference" status="rejected" stale="true" population="normal and diabetic rabbits" measured-compound="gliclazide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gliclazide" model-id="Gliclazide_Shaik2018v2_reference" status="rejected" stale="true" population="normal and diabetic rabbits" measured-compound="gliclazide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Henthorn TK et al., Minimal compartmental model of circulat…, The American journal of phy… (1992)
   ·  DOI: [10.1152/ajpheart.1992.262.3.H903](https://doi.org/10.1152/ajpheart.1992.262.3.H903)
 
-## Model component
-<dbs-pgx drug="indocyanine green" model-id="IndocyanineGreen_Henthorn1992_reference" status="rejected" stale="false" population="anesthetized dogs" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Henthorn1992_reference" status="rejected" stale="false" population="anesthetized dogs" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

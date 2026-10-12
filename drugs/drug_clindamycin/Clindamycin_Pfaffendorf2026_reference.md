@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Pfaffendorf C et al., Population pharmacokinetics of fosmidom…, Malaria journal (2026)
   ·  DOI: [10.1186/s12936-026-05872-6](https://doi.org/10.1186/s12936-026-05872-6)
 
-## Model component
-<dbs-pgx drug="clindamycin" model-id="Clindamycin_Pfaffendorf2026_reference" status="model_quarantined" stale="false" population="children and adults with uncomplicated P. falciparum malaria" measured-compound="clindamycin, fosmidomycin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clindamycin" model-id="Clindamycin_Pfaffendorf2026_reference" status="model_quarantined" stale="false" population="children and adults with uncomplicated P. falciparum malaria" measured-compound="clindamycin, fosmidomycin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

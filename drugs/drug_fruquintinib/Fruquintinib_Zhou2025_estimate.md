@@ -34,8 +34,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 Zhou X et al., Population Pharmacokinetics of Fruquint…, Journal of clinical pharmac… (2025)
   ·  DOI: [10.1002/jcph.70001](https://doi.org/10.1002/jcph.70001)
 
-## Model component
-<dbs-pgx drug="fruquintinib" model-id="Fruquintinib_Zhou2025_estimate" status="needs_review" stale="false" population="patients with refractory metastatic colorectal cancer and healthy volunteers" measured-compound="fruquintinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fruquintinib" model-id="Fruquintinib_Zhou2025_estimate" status="needs_review" stale="false" population="patients with refractory metastatic colorectal cancer and healthy volunteers" measured-compound="fruquintinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent–metabolite model: parent with 1 compartment(s); metabolite M11: 1 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameters:** 6 extracted, plus 4 covariate effects.

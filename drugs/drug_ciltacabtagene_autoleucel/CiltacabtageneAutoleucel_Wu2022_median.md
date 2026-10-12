@@ -28,8 +28,7 @@ No volume or clearance — not a compartmental population PK model. The paper re
 Wu LS et al., Population-based cellular kinetic chara…, Clinical and translational… (2022)
   ·  DOI: [10.1111/cts.13421](https://doi.org/10.1111/cts.13421)
 
-## Model component
-<dbs-pgx drug="ciltacabtagene autoleucel" model-id="CiltacabtageneAutoleucel_Wu2022_median" status="rejected" stale="false" population="adults with relapsed or refractory multiple myeloma" measured-compound="ciltacabtagene autoleucel CAR transgene" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciltacabtagene autoleucel" model-id="CiltacabtageneAutoleucel_Wu2022_median" status="rejected" stale="false" population="adults with relapsed or refractory multiple myeloma" measured-compound="ciltacabtagene autoleucel CAR transgene" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

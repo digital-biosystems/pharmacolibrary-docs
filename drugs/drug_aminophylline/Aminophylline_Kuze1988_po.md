@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss-120b`.
 Kuze T et al., [Theophylline: pharmacokinetics, metabo…, Nihon yakurigaku zasshi. Fo… (1988)
   ·  DOI: [10.1254/fpj.91.325](https://doi.org/10.1254/fpj.91.325)
 
-## Model component
-<dbs-pgx drug="aminophylline" model-id="Aminophylline_Kuze1988_po" status="rejected" stale="false" population="anesthetized beagle-mix dogs" measured-compound="theophylline" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Kuze1988_po" status="rejected" stale="false" population="anesthetized beagle-mix dogs" measured-compound="theophylline" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 14 extracted.

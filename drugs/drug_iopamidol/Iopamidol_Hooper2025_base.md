@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Hooper L et al., Pharmacokinetic Characterization of Iop…, Journal of clinical pharmac… (2025)
   ·  DOI: [10.1002/jcph.70046](https://doi.org/10.1002/jcph.70046)
 
-## Model component
-<dbs-pgx drug="iopamidol" model-id="Iopamidol_Hooper2025_base" status="needs_review" stale="false" population="healthy adults with varying kidney function" measured-compound="iopamidol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="iopamidol" model-id="Iopamidol_Hooper2025_base" status="needs_review" stale="false" population="healthy adults with varying kidney function" measured-compound="iopamidol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

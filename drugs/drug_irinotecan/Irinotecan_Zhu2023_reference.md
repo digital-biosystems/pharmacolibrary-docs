@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 Zhu J et al., Translational Pharmacokinetic/Pharmacod…, Pharmaceutics (2023)
   ·  DOI: [10.3390/pharmaceutics15092274](https://doi.org/10.3390/pharmaceutics15092274)
 
-## Model component
-<dbs-pgx drug="irinotecan" model-id="Irinotecan_Zhu2023_reference" status="rejected" stale="false" population="adults with colorectal cancer" measured-compound="SN-38" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="irinotecan" model-id="Irinotecan_Zhu2023_reference" status="rejected" stale="false" population="adults with colorectal cancer" measured-compound="SN-38" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

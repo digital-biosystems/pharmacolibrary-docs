@@ -28,8 +28,7 @@ Independently confirmed by `gpt-oss-120b`.
 Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pharmaceutics (2025)
   ·  DOI: [10.3390/pharmaceutics17121592](https://doi.org/10.3390/pharmaceutics17121592)
 
-## Model component
-<dbs-pgx drug="fludarabine" model-id="Fludarabine_VarelaGonzlezAller2025_reference" status="rejected" stale="false" population="patients receiving CAR T-cell therapy" measured-compound="fludarabine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fludarabine" model-id="Fludarabine_VarelaGonzlezAller2025_reference" status="rejected" stale="false" population="patients receiving CAR T-cell therapy" measured-compound="fludarabine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

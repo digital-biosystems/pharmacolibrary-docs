@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Kompella R et al., Pharmacokinetic-pharmacodynamic model t…, European journal of ophthal… (2022)
   ·  DOI: [10.1177/11206721221135910](https://doi.org/10.1177/11206721221135910)
 
-## Model component
-<dbs-pgx drug="bimatoprost" model-id="Bimatoprost_Kompella2022_reference" status="rejected" stale="false" population="adults with glaucoma" measured-compound="bimatoprost" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bimatoprost" model-id="Bimatoprost_Kompella2022_reference" status="rejected" stale="false" population="adults with glaucoma" measured-compound="bimatoprost" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Herd DW et al., Modeling the norketamine metabolite in…, Paediatric anaesthesia (2007)
   ·  DOI: [10.1111/j.1460-9592.2007.02257.x](https://doi.org/10.1111/j.1460-9592.2007.02257.x)
 
-## Model component
-<dbs-pgx drug="ketamine" model-id="Ketamine_Herd2007_reference" status="rejected" stale="false" population="children and adults" measured-compound="norketamine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketamine" model-id="Ketamine_Herd2007_reference" status="rejected" stale="false" population="children and adults" measured-compound="norketamine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 8 extracted.

@@ -30,8 +30,7 @@ Independently confirmed by `qwen3.8-27b`.
 Kang W et al., Myocardial pharmacokinetics of ebastine…, British journal of pharmaco… (2011)
   ·  DOI: [10.1111/j.1476-5381.2011.01338.x](https://doi.org/10.1111/j.1476-5381.2011.01338.x)
 
-## Model component
-<dbs-pgx drug="ebastine" model-id="Ebastine_Kang2011_reference" status="rejected" stale="false" population="rat isolated perfused hearts" measured-compound="ebastine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ebastine" model-id="Ebastine_Kang2011_reference" status="rejected" stale="false" population="rat isolated perfused hearts" measured-compound="ebastine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

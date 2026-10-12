@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Mesnil F et al., Pharmacokinetic analysis of mizolastine…, Journal of pharmacokinetics… (1997)
   ·  DOI: [10.1023/a:1025775912051](https://doi.org/10.1023/a:1025775912051)
 
-## Model component
-<dbs-pgx drug="mizolastine" model-id="Mizolastine_Mesnil1997_reference" status="rejected" stale="false" population="healthy young volunteers" measured-compound="mizolastine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mizolastine" model-id="Mizolastine_Mesnil1997_reference" status="rejected" stale="false" population="healthy young volunteers" measured-compound="mizolastine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

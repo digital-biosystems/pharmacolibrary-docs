@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Steingoetter A et al., Assessing antiangiogenic therapy respon…, PloS one (2011)
   ·  DOI: [10.1371/journal.pone.0026366](https://doi.org/10.1371/journal.pone.0026366)
 
-## Model component
-<dbs-pgx drug="gadopentetic acid" model-id="GadopenteticAcid_Steingoetter2011_reference" status="rejected" stale="false" population="male buffalo rats with implanted hepatocellular carcinoma" measured-compound="Gd-DTPA (gadopentetic acid)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gadopentetic acid" model-id="GadopenteticAcid_Steingoetter2011_reference" status="rejected" stale="false" population="male buffalo rats with implanted hepatocellular carcinoma" measured-compound="Gd-DTPA (gadopentetic acid)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

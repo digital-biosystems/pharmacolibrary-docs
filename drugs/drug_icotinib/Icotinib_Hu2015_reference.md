@@ -29,8 +29,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Hu P et al., Development of population pharmacokinet…, European journal of clinica… (2015)
   ·  DOI: [10.1007/s00228-015-1864-5](https://doi.org/10.1007/s00228-015-1864-5)
 
-## Model component
-<dbs-pgx drug="icotinib" model-id="Icotinib_Hu2015_reference" status="curated_candidate" stale="false" population="healthy Chinese volunteers" measured-compound="icotinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="icotinib" model-id="Icotinib_Hu2015_reference" status="curated_candidate" stale="false" population="healthy Chinese volunteers" measured-compound="icotinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

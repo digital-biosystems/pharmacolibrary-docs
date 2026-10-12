@@ -27,8 +27,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 Wu H et al., Evaluation of the clinical efficacy, sa…, Antimicrobial agents and ch… (2026)
   ·  DOI: [10.1128/aac.01033-25](https://doi.org/10.1128/aac.01033-25)
 
-## Model component
-<dbs-pgx drug="Contezolid" model-id="Contezolid_Wu2026_reference" status="needs_review" stale="false" population="adult patients with pneumonia" measured-compound="contezolid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Contezolid" model-id="Contezolid_Wu2026_reference" status="needs_review" stale="false" population="adult patients with pneumonia" measured-compound="contezolid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

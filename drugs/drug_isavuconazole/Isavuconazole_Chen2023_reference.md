@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Chen N et al., Population Pharmacokinetics of Isavucon…, Infection and drug resistan… (2023)
   ·  DOI: [10.2147/IDR.S434622](https://doi.org/10.2147/IDR.S434622)
 
-## Model component
-<dbs-pgx drug="isavuconazole" model-id="Isavuconazole_Chen2023_reference" status="model_quarantined" stale="false" population="adults (healthy volunteers and patients with invasive fungal infections)" measured-compound="isavuconazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isavuconazole" model-id="Isavuconazole_Chen2023_reference" status="model_quarantined" stale="false" population="adults (healthy volunteers and patients with invasive fungal infections)" measured-compound="isavuconazole" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 3 extracted.

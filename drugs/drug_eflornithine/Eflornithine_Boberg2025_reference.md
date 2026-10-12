@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Boberg M et al., Pharmacokinetics of Racemic Eflornithin…, The AAPS journal (2025)
   ·  DOI: [10.1208/s12248-025-01123-9](https://doi.org/10.1208/s12248-025-01123-9)
 
-## Model component
-<dbs-pgx drug="eflornithine" model-id="Eflornithine_Boberg2025_reference" status="curated_candidate" stale="false" population="adults with human African trypanosomiasis" measured-compound="eflornithine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eflornithine" model-id="Eflornithine_Boberg2025_reference" status="curated_candidate" stale="false" population="adults with human African trypanosomiasis" measured-compound="eflornithine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Vourc'h M et al., Pharmacokinetics and toxicity of high-d…, Progress in neuro-psychopha… (2019)
   ·  DOI: [10.1016/j.pnpbp.2019.02.016](https://doi.org/10.1016/j.pnpbp.2019.02.016)
 
-## Model component
-<dbs-pgx drug="baclofen" model-id="Baclofen_Vourch2019_reference" status="curated_candidate" stale="false" population="ICU patients with unhealthy alcohol use" measured-compound="baclofen" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="baclofen" model-id="Baclofen_Vourch2019_reference" status="curated_candidate" stale="false" population="ICU patients with unhealthy alcohol use" measured-compound="baclofen" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

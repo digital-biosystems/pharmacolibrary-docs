@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Ogawa Y et al., Population pharmacokinetics of doxapram…, European journal of pediatr… (2015)
   ·  DOI: [10.1007/s00431-014-2416-1](https://doi.org/10.1007/s00431-014-2416-1)
 
-## Model component
-<dbs-pgx drug="doxapram" model-id="Doxapram_Ogawa2015_reference" status="needs_review" stale="false" population="low-birth-weight Japanese infants with apnea" measured-compound="doxapram" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxapram" model-id="Doxapram_Ogawa2015_reference" status="needs_review" stale="false" population="low-birth-weight Japanese infants with apnea" measured-compound="doxapram" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

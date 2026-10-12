@@ -29,8 +29,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 Anderson KL et al., Pharmacokinetics of chloramphenicol in…, Journal of veterinary pharm… (1983)
   ·  DOI: [10.1111/j.1365-2885.1983.tb00005.x](https://doi.org/10.1111/j.1365-2885.1983.tb00005.x)
 
-## Model component
-<dbs-pgx drug="chloramphenicol" model-id="Chloramphenicol_Anderson1983_from_mean_data" status="needs_review" stale="false" population="six non-lactating Holstein cows" measured-compound="chloramphenicol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="chloramphenicol" model-id="Chloramphenicol_Anderson1983_from_mean_data" status="needs_review" stale="false" population="six non-lactating Holstein cows" measured-compound="chloramphenicol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

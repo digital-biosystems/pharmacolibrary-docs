@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Radhakrishnan SV et al., A Phase 1 Study of Intravenous Busulfan…, Cell transplantation (2019)
   ·  DOI: [10.1177/0963689719880541](https://doi.org/10.1177/0963689719880541)
 
-## Model component
-<dbs-pgx drug="bendamustine" model-id="Bendamustine_Radhakrishnan2019_reference" status="curated_candidate" stale="false" population="" measured-compound="bendamustine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bendamustine" model-id="Bendamustine_Radhakrishnan2019_reference" status="curated_candidate" stale="false" population="" measured-compound="bendamustine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

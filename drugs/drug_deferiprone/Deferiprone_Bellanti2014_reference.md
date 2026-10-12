@@ -12,6 +12,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+> **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
+
 **Model:** No model was generated from this record.
 
 ### Reviewer guidance
@@ -28,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Bellanti F et al., Population pharmacokinetics of deferipr…, British journal of clinical… (2014)
   ·  DOI: [10.1111/bcp.12473](https://doi.org/10.1111/bcp.12473)
 
-## Model component
-<dbs-pgx drug="deferiprone" model-id="Deferiprone_Bellanti2014_reference" status="rejected" stale="false" population="healthy adults" measured-compound="deferiprone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="deferiprone" model-id="Deferiprone_Bellanti2014_reference" status="rejected" stale="false" population="healthy adults" measured-compound="deferiprone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

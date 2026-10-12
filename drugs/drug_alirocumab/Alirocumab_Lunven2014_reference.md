@@ -24,8 +24,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Lunven C et al., A randomized study of the relative phar…, Cardiovascular therapeutics (2014)
   ·  DOI: [10.1111/1755-5922.12093](https://doi.org/10.1111/1755-5922.12093)
 
-## Model component
-<dbs-pgx drug="alirocumab" model-id="Alirocumab_Lunven2014_reference" status="extracted" stale="false" population="healthy adults" measured-compound="alirocumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alirocumab" model-id="Alirocumab_Lunven2014_reference" status="extracted" stale="false" population="healthy adults" measured-compound="alirocumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

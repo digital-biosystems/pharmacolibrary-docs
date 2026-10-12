@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Delbaldo C et al., Pharmacokinetic profile of cetuximab (E…, European journal of cancer… (2005)
   ·  DOI: [10.1016/j.ejca.2005.04.029](https://doi.org/10.1016/j.ejca.2005.04.029)
 
-## Model component
-<dbs-pgx drug="cetuximab" model-id="Cetuximab_Delbaldo2005_reference" status="rejected" stale="false" population="patients with advanced EGFR-positive adenocarcinoma" measured-compound="cetuximab and irinotecan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Delbaldo2005_reference" status="rejected" stale="false" population="patients with advanced EGFR-positive adenocarcinoma" measured-compound="cetuximab and irinotecan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

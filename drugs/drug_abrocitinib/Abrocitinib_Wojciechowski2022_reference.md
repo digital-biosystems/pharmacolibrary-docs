@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Wojciechowski J et al., Population Pharmacokinetics of Abrociti…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01104-z](https://doi.org/10.1007/s40262-021-01104-z)
 
-## Model component
-<dbs-pgx drug="abrocitinib" model-id="Abrocitinib_Wojciechowski2022_reference" status="needs_review" stale="false" population="healthy individuals and patients with psoriasis or atopic dermatitis" measured-compound="abrocitinib" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="abrocitinib" model-id="Abrocitinib_Wojciechowski2022_reference" status="needs_review" stale="false" population="healthy individuals and patients with psoriasis or atopic dermatitis" measured-compound="abrocitinib" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted, plus 5 covariate effects.

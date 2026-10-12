@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Marchiori J et al., Pharmacokinetics of Intramuscular and I…, Journal of veterinary pharm… (2026)
   ·  DOI: [10.1111/jvp.70061](https://doi.org/10.1111/jvp.70061)
 
-## Model component
-<dbs-pgx drug="glycopyrronium" model-id="Glycopyrronium_Marchiori2026_reference" status="needs_review" stale="false" population="juvenile New Zealand White rabbits" measured-compound="glycopyrronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glycopyrronium" model-id="Glycopyrronium_Marchiori2026_reference" status="needs_review" stale="false" population="juvenile New Zealand White rabbits" measured-compound="glycopyrronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -27,8 +27,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 Wang X et al., Differential effects of dosing regimen…, Clinical pharmacology : adv… (2013)
   ·  DOI: [10.2147/CPAA.S42796](https://doi.org/10.2147/CPAA.S42796)
 
-## Model component
-<dbs-pgx drug="dasatinib" model-id="Dasatinib_Wang2013_reference" status="curated_candidate" stale="false" population="patients with chronic myeloid leukemia in chronic phase across seven clinical studies" measured-compound="dasatinib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dasatinib" model-id="Dasatinib_Wang2013_reference" status="curated_candidate" stale="false" population="patients with chronic myeloid leukemia in chronic phase across seven clinical studies" measured-compound="dasatinib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

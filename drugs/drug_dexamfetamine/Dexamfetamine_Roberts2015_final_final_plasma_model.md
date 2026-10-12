@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Roberts JK et al., A Population Pharmacokinetic Analysis o…, Clinical drug investigation (2015)
   ·  DOI: [10.1007/s40261-015-0323-5](https://doi.org/10.1007/s40261-015-0323-5)
 
-## Model component
-<dbs-pgx drug="dexamfetamine" model-id="Dexamfetamine_Roberts2015_final_final_plasma_model" status="needs_review" stale="false" population="healthy adults" measured-compound="dextroamphetamine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dexamfetamine" model-id="Dexamfetamine_Roberts2015_final_final_plasma_model" status="needs_review" stale="false" population="healthy adults" measured-compound="dextroamphetamine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

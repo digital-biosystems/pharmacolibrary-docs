@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Paccaly AJ et al., Fixed Dose of Cemiplimab in Patients wi…, Advances in therapy (2021)
   ·  DOI: [10.1007/s12325-021-01638-5](https://doi.org/10.1007/s12325-021-01638-5)
 
-## Model component
-<dbs-pgx drug="cemiplimab" model-id="Cemiplimab_Paccaly2021_after_first_dose" status="needs_review" stale="false" population="patients with advanced malignancies, including advanced CSCC" measured-compound="cemiplimab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cemiplimab" model-id="Cemiplimab_Paccaly2021_after_first_dose" status="needs_review" stale="false" population="patients with advanced malignancies, including advanced CSCC" measured-compound="cemiplimab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

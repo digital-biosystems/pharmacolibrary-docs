@@ -1,0 +1,89 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01A&quot;,&quot;href&quot;:&quot;atc/C01A.md&quot;},{&quot;label&quot;:&quot;proscillaridin&quot;}]"></div>
+
+# proscillaridin
+
+- **generic name:** proscillaridin
+- **ATC codes:** `C01AB01`
+- **DrugBank:** [DB13307](https://go.drugbank.com/drugs/DB13307) · **PubChem:** [CID 5284613](https://pubchem.ncbi.nlm.nih.gov/compound/5284613)
+- **molar mass:** 530.658 g/mol (C30H42O8) — DrugBank
+- **groups:** experimental
+
+## About
+
+Proscillaridin is a cardiac glycoside from squill that has been used as a cardiotonic agent, mainly for heart conditions such as heart failure. It is currently considered experimental and does not appear to be an approved medicine in major markets such as the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7250550](https://www.wikidata.org/wiki/Q7250550) and the WHO ATC classification; not checked by a person.</small>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 03:18 | 2:47 | 0/0/0 | 1/0/0 | 0/0/0 | 126,473/1,532 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 1/7 | 5/6 | 0 |
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Okuyama-Dobashi_2015_HBV_RNA](drugs/drug_proscillaridin/pd_Okuyama_Dobashi_2015_HBV_RNA.md) | HBV infection ← Proscillaridin A · direct Emax (saturable) effect | — | Okuyama-Dobashi K et al., Hepatitis B virus efficiently infects n…, Scientific reports (2015) | [10.1038/srep17047](https://doi.org/10.1038/srep17047) |
+
+<details class="legend">
+<summary>Badge legend — what each badge means</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 24 matched, 24 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full text wanted
+
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Balzan_2000.pdf` | Balzan S et al., Selective inhibition of human erythrocy…, Life sciences (2000) | pd | 4 | [10.1016/s0024-3205(00)00779-7](https://doi.org/10.1016/s0024-3205(00)00779-7) | [11072868](https://www.ncbi.nlm.nih.gov/pubmed/11072868) | metadata signals extractable PD data (IC50) |
+| `Gozalpour_2014.pdf` | Gozalpour E et al., Convallatoxin: a new P-glycoprotein sub…, European journal of pharmac… (2014) | pgx | 7 | [10.1016/j.ejphar.2014.09.031](https://doi.org/10.1016/j.ejphar.2014.09.031) | [25264938](https://www.ncbi.nlm.nih.gov/pubmed/25264938) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
+
+<sub>queue written 2026-10-06T03:16:03.921463+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Al-Abdallat_2023 | irrelevant | 0 | 0 | The paper is an in-vitro cytotoxicity and mechanistic study of a plant extract where proscillaridin is identified as a component, but it does not report any pharmacokinetic parameters. |
+| popPK | Balzan_2000 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
+| popPK | Brunetti_2024 | irrelevant | 0 | 0 | The paper is a mathematical modeling study of leukemia stem cells using proscillaridin as a candidate drug, but it does not report original quantitative pharmacokinetic disposition parameters (CL, V, etc.) for proscillaridin. |
+| popPK | Carucci_2023 | irrelevant | 0 | 0 | The paper is a malaria drug screening study where proscillaridin is listed only as a compound in a library (Table S1) with in-vitro IC50 values, not as the subject of a pharmacokinetic study. |
+| PD | Carucci_2023 | not_relevant | 0 | 0 | The paper does not mention proscillaridin; it focuses on TD-6450 and NITD609 for malaria transmission blocking. |
+| popPK | Evans_2026 | irrelevant | 0 | 0 | The paper is a critical review of clinical trials for repurposing cardiac glycosides and does not report quantitative pharmacokinetic parameters for proscillaridin. |
+| PD | Evans_2026 | not_relevant | 0 | 0 | The paper is a critical analysis of clinical trial registration and publication status for NKA inhibitors, containing no pharmacokinetic or pharmacodynamic modeling or numeric exposure-response parameters. |
+| popPK | Felth_2009 | irrelevant | 0 | 0 | The paper is an in-vitro cytotoxicity study of cardiac glycosides in cancer cells and does not report any pharmacokinetic parameters for proscillaridin. |
+| popPK | Gonzalez_2021 | irrelevant | 0 | 0 | The paper describes in vitro QSAAR models for CYP enzymes and does not report pharmacokinetic parameters for proscillaridin. |
+| PD | Gonzalez_2021 | not_relevant | 0 | 0 | The paper focuses on QSAR models for CYP450 metabolism and inhibition, not pharmacodynamic exposure-response relationships for proscillaridin. |
+| PGx | Gozalpour_2013 | not_relevant | 0 | 0 | The paper investigates the binding affinity of proscillaridin A to P-glycoprotein mutants in vitro, but does not report pharmacokinetic or pharmacodynamic parameters in humans or clinical populations. |
+| PGx | Gozalpour_2014 | not_relevant | 0 | 0 | The paper studies convallatoxin (not proscillaridin) and focuses on transporter substrate identification and amino acid mutations, not human pharmacogenomic variants affecting PK/PD. |
+| popPK | Gozalpour_2014_2 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of transporter interactions (IC50 values) and does not report in-vivo pharmacokinetic disposition parameters (CL, V, t1/2) for proscillaridin. |
+| PD | Gozalpour_2014_2 | not_relevant | 3 | 3 | The paper reports in vitro transporter inhibition IC50 values (e.g., 22 μM for NTCP), which are pharmacological potency metrics rather than pharmacodynamic exposure-response or dose-response relationships for a therapeutic effect. |
+| PGx | Gozalpour_2016 | not_relevant | 0 | 0 | The paper identifies proscillaridin A as a P-gp substrate in cellular assays but does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| popPK | Hou_2022 | irrelevant | 0 | 0 | The paper is an in-vitro and in-vivo mechanistic study on pancreatic cancer cell lines and xenografts, reporting cytotoxicity (IC50) and tumor growth inhibition, but contains no pharmacokinetic parameters (CL, V, ka, etc.) for proscillaridin. |
+| popPK | Johansson_2001 | irrelevant | 0 | 0 | The study reports cytotoxicity (IC50) values for proscillaridin A in tumor cells, not pharmacokinetic disposition parameters. |
+| popPK | Lüllmann_1983 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of cardiac glycoside effects on isolated papillary muscles, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Martin_2025 | irrelevant | 0 | 0 | The paper describes the discovery of an inhibitor for Synaptojanin1 and does not involve proscillaridin or any pharmacokinetic parameters. |
+| PD | Martin_2025 | not_relevant | 0 | 0 | The paper reports in vitro enzyme kinetics (Ki) for a Synaptojanin1 inhibitor, not a pharmacodynamic exposure-response or dose-response relationship for proscillaridin. |
+| popPK | Okuyama-Dobashi_2015 | irrelevant | 0 | 0 | The paper is an in-vitro virology study using proscillaridin A as an anti-HBV agent, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Patten_2022 | irrelevant | 0 | 0 | The paper is a high-throughput screen for SARS-CoV-2 inhibitors and does not report pharmacokinetic parameters for proscillaridin. |
+| popPK | Scheiner-Bobis_2001 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of sanguinarine's effect on sodium pumps in yeast, where proscillaridin A is used only as a comparator inhibitor, and no pharmacokinetic parameters are reported. |
+| popPK | Watanabe_2023 | irrelevant | 0 | 0 | The paper is an in-vitro/in-vivo pharmacological screening study where proscillaridin A is only a comparator agent excluded due to toxicity, with no pharmacokinetic parameters reported. |
+| PD | Watanabe_2023 | not_relevant | 2 | 1 | The paper identifies proscillaridin A as a hit in a screening assay but does not report specific numeric PD parameters (e.g., IC50, Emax) or a dose-response curve for it; the detailed PD analysis (IC50 ~1 μM) is exclusively for vorinostat. |
+| popPK | Winnicka_2007 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic/cytotoxicity investigation of proscillaridin A in cancer cells, not a pharmacokinetic study reporting disposition parameters. |
+
+---
+<sub>Generated by `docs.py` (scholarv2)</sub>

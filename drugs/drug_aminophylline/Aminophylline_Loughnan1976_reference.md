@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Loughnan PM et al., Pharmacokinetic analysis of the disposi…, The Journal of pediatrics (1976)
   ·  DOI: [10.1016/s0022-3476(76)81136-5](https://doi.org/10.1016/s0022-3476(76)81136-5)
 
-## Model component
-<dbs-pgx drug="aminophylline" model-id="Aminophylline_Loughnan1976_reference" status="rejected" stale="false" population="asthmatic children 1-4 years" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Loughnan1976_reference" status="rejected" stale="false" population="asthmatic children 1-4 years" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

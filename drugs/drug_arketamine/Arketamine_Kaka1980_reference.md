@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Kaka JS et al., Pharmacokinetics of ketamine and two me…, Journal of pharmacokinetics… (1980)
   ·  DOI: [10.1007/BF01065193](https://doi.org/10.1007/BF01065193)
 
-## Model component
-<dbs-pgx drug="Arketamine" model-id="Arketamine_Kaka1980_reference" status="rejected" stale="false" population="dogs" measured-compound="ketamine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Arketamine" model-id="Arketamine_Kaka1980_reference" status="rejected" stale="false" population="dogs" measured-compound="ketamine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

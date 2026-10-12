@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Lanoiselée J et al., Optimising protamine dosing for heparin…, British journal of anaesthe… (2026)
   ·  DOI: [10.1016/j.bja.2025.11.057](https://doi.org/10.1016/j.bja.2025.11.057)
 
-## Model component
-<dbs-pgx drug="heparin" model-id="Heparin_Lanoisele2026_reference" status="needs_review" stale="true" population="adult cardiac surgery patients" measured-compound="heparin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="heparin" model-id="Heparin_Lanoisele2026_reference" status="needs_review" stale="true" population="adult cardiac surgery patients" measured-compound="heparin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Wang D et al., Population pharmacokinetics of tacrolim…, Experimental and therapeuti… (2019)
   ·  DOI: [10.3892/etm.2019.8129](https://doi.org/10.3892/etm.2019.8129)
 
-## Model component
-<dbs-pgx drug="cefixime" model-id="Cefixime_Wang2019_reference" status="curated_candidate" stale="false" population="" measured-compound="cefixime" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefixime" model-id="Cefixime_Wang2019_reference" status="curated_candidate" stale="false" population="" measured-compound="cefixime" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

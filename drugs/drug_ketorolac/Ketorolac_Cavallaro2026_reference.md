@@ -25,8 +25,7 @@
 Cavallaro G et al., Pharmacological therapy of neonatal ana…, Frontiers in pediatrics (2026)
   ·  DOI: [10.3389/fped.2026.1757704](https://doi.org/10.3389/fped.2026.1757704)
 
-## Model component
-<dbs-pgx drug="ketorolac" model-id="Ketorolac_Cavallaro2026_reference" status="curated_candidate" stale="false" population="" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Cavallaro2026_reference" status="curated_candidate" stale="false" population="" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

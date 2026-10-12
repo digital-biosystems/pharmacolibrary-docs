@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Maribavir plasma Cavg was linked via logistic regression (Emax-type form with baseline ln-odds α, EC50, Emax) to the binary probability of taste disturbance (dysgeusia) in SOLSTICE, showing a statistically significant negative relationship (p &lt; 0.05); transplant type and enrollment region were also significant risk factors. The paper does not report the fitted EC50, Emax, or any rate constants for this relationship, and no mechanism for the negative exposure–taste disturbance association is given.
+> The paper describes a direct inhibition of the N1 amplitude (evoked by low-intensity electrical stimulation) by tapentadol concentration (µM), using a dose–response curve fitted by least squares regression, but does not provide specific numerical values for the mechanism or potency parameters (e.g., IC50, Emax, kout) for tapentadol in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Song_2024`
 - **model family:** `log_linear`

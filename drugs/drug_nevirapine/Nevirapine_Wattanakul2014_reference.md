@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Wattanakul T et al., Population pharmacokinetics of nevirapi…, Antiviral therapy (2014)
   ·  DOI: [10.3851/IMP2741](https://doi.org/10.3851/IMP2741)
 
-## Model component
-<dbs-pgx drug="nevirapine" model-id="Nevirapine_Wattanakul2014_reference" status="needs_review" stale="false" population="Thai HIV-infected patients" measured-compound="nevirapine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nevirapine" model-id="Nevirapine_Wattanakul2014_reference" status="needs_review" stale="false" population="Thai HIV-infected patients" measured-compound="nevirapine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 De Cassai A et al., Pharmacokinetics of lidocaine after bil…, Regional anesthesia and pai… (2021)
   ·  DOI: [10.1136/rapm-2020-101718](https://doi.org/10.1136/rapm-2020-101718)
 
-## Model component
-<dbs-pgx drug="lidocaine" model-id="Lidocaine_De2021_reference" status="rejected" stale="true" population="adults undergoing lumbar spine surgery" measured-compound="lidocaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_De2021_reference" status="rejected" stale="true" population="adults undergoing lumbar spine surgery" measured-compound="lidocaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

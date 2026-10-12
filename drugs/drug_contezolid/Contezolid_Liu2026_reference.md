@@ -27,8 +27,7 @@ The check had no reference to compare the clearance against, so the value is unv
 Liu T et al., Advances in Therapeutic Drug Monitoring…, Clinical interventions in a… (2026)
   ·  DOI: [10.2147/CIA.S587530](https://doi.org/10.2147/CIA.S587530)
 
-## Model component
-<dbs-pgx drug="Contezolid" model-id="Contezolid_Liu2026_reference" status="needs_review" stale="false" population="" measured-compound="contezolid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Contezolid" model-id="Contezolid_Liu2026_reference" status="needs_review" stale="false" population="" measured-compound="contezolid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

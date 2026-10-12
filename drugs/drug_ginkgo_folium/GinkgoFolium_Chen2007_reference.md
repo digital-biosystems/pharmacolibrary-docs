@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Chen WD et al., Pharmacokinetics of the ginkgo B follow…, Biological & pharmaceutical… (2007)
   ·  DOI: [10.1248/bpb.30.1](https://doi.org/10.1248/bpb.30.1)
 
-## Model component
-<dbs-pgx drug="Ginkgo folium" model-id="GinkgoFolium_Chen2007_reference" status="curated_candidate" stale="false" population="rats" measured-compound="ginkgo_folium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Ginkgo folium" model-id="GinkgoFolium_Chen2007_reference" status="curated_candidate" stale="false" population="rats" measured-compound="ginkgo_folium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

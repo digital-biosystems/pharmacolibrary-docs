@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Severino N et al., Population pharmacokinetics of amikacin…, British journal of clinical… (2023)
   ·  DOI: [10.1111/bcp.15697](https://doi.org/10.1111/bcp.15697)
 
-## Model component
-<dbs-pgx drug="amikacin" model-id="Amikacin_Severino2023_reference" status="needs_review" stale="true" population="newborns with suspected neonatal sepsis" measured-compound="amikacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amikacin" model-id="Amikacin_Severino2023_reference" status="needs_review" stale="true" population="newborns with suspected neonatal sepsis" measured-compound="amikacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted, plus 1 covariate effect.

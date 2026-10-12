@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Larsson P et al., Oral bioavailability of clonidine in ch…, Paediatric anaesthesia (2011)
   ·  DOI: [10.1111/j.1460-9592.2010.03397.x](https://doi.org/10.1111/j.1460-9592.2010.03397.x)
 
-## Model component
-<dbs-pgx drug="clonidine" model-id="Clonidine_Larsson2011_reference" status="needs_review" stale="true" population="children undergoing adenotonsillectomy" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Larsson2011_reference" status="needs_review" stale="true" population="children undergoing adenotonsillectomy" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

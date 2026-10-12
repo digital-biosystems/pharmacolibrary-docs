@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavai
 Chan PL et al., A population pharmacokinetic meta-analy…, British journal of clinical… (2008)
   ·  DOI: [10.1111/j.1365-2125.2008.03139.x](https://doi.org/10.1111/j.1365-2125.2008.03139.x)
 
-## Model component
-<dbs-pgx drug="maraviroc" model-id="Maraviroc_Chan2008_reference" status="rejected" stale="false" population="healthy volunteers and asymptomatic HIV-infected subjects" measured-compound="maraviroc" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="maraviroc" model-id="Maraviroc_Chan2008_reference" status="rejected" stale="false" population="healthy volunteers and asymptomatic HIV-infected subjects" measured-compound="maraviroc" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

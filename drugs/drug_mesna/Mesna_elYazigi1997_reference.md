@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 el-Yazigi A et al., Pharmacokinetics of mesna and dimesna a…, Journal of clinical pharmac… (1997)
   ·  DOI: [10.1002/j.1552-4604.1997.tb04344.x](https://doi.org/10.1002/j.1552-4604.1997.tb04344.x)
 
-## Model component
-<dbs-pgx drug="mesna" model-id="Mesna_elYazigi1997_reference" status="rejected" stale="false" population="patients undergoing bone marrow transplantation" measured-compound="mesna" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mesna" model-id="Mesna_elYazigi1997_reference" status="rejected" stale="false" population="patients undergoing bone marrow transplantation" measured-compound="mesna" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 11 extracted.

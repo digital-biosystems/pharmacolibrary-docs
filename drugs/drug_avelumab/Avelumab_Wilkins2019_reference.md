@@ -30,8 +30,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Wilkins JJ et al., Time-Varying Clearance and Impact of Di…, CPT: pharmacometrics & syst… (2019)
   ·  DOI: [10.1002/psp4.12406](https://doi.org/10.1002/psp4.12406)
 
-## Model component
-<dbs-pgx drug="avelumab" model-id="Avelumab_Wilkins2019_reference" status="not_modelled" stale="false" population="patients with 14 tumor types across three clinical studies" measured-compound="avelumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_Wilkins2019_reference" status="not_modelled" stale="false" population="patients with 14 tumor types across three clinical studies" measured-compound="avelumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 12 covariate effects.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Haller M et al., Single-injection inulin clearance for r…, Journal of feline medicine… (2003)
   ·  DOI: [10.1016/S1098-612X(03)00005-6](https://doi.org/10.1016/S1098-612X(03)00005-6)
 
-## Model component
-<dbs-pgx drug="Inulin" model-id="Inulin_Haller2003_reference" status="needs_review" stale="false" population="cats (healthy young adults and older/renal-risk cats)" measured-compound="inulin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Inulin" model-id="Inulin_Haller2003_reference" status="needs_review" stale="false" population="cats (healthy young adults and older/renal-risk cats)" measured-compound="inulin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Moore ES et al., The population pharmacokinetics of theo…, Journal of pharmacokinetics… (1989)
   ·  DOI: [10.1007/BF01059087](https://doi.org/10.1007/BF01059087)
 
-## Model component
-<dbs-pgx drug="aminophylline" model-id="Aminophylline_Moore1989_reference" status="needs_review" stale="false" population="neonates and young infants with neonatal apnea" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Moore1989_reference" status="needs_review" stale="false" population="neonates and young infants with neonatal apnea" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Langeskov EK et al., Population pharmacokinetic of paracetam…, Pharmacology research & per… (2022)
   ·  DOI: [10.1002/prp2.962](https://doi.org/10.1002/prp2.962)
 
-## Model component
-<dbs-pgx drug="atorvastatin" model-id="Atorvastatin_Langeskov2022_reference" status="rejected" stale="true" population="healthy adults" measured-compound="atorvastatin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atorvastatin" model-id="Atorvastatin_Langeskov2022_reference" status="rejected" stale="true" population="healthy adults" measured-compound="atorvastatin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

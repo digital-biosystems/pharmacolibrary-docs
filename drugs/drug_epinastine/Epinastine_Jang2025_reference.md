@@ -28,8 +28,7 @@ Independently confirmed by `qwen3.8-27b`.
 Jang JH et al., Population modeling of pharmacokinetic…, Naunyn-Schmiedeberg's archi… (2025)
   ·  DOI: [10.1007/s00210-025-04299-1](https://doi.org/10.1007/s00210-025-04299-1)
 
-## Model component
-<dbs-pgx drug="epinastine" model-id="Epinastine_Jang2025_reference" status="rejected" stale="false" population="healthy Korean males" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="epinastine" model-id="Epinastine_Jang2025_reference" status="rejected" stale="false" population="healthy Korean males" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

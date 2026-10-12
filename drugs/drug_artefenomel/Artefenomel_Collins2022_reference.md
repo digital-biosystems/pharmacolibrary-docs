@@ -27,8 +27,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 Collins KA et al., Antimalarial Activity of Artefenomel Ag…, The Journal of infectious d… (2022)
   ·  DOI: [10.1093/infdis/jiaa287](https://doi.org/10.1093/infdis/jiaa287)
 
-## Model component
-<dbs-pgx drug="Artefenomel" model-id="Artefenomel_Collins2022_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="artefenomel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Artefenomel" model-id="Artefenomel_Collins2022_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="artefenomel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

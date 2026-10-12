@@ -16,7 +16,7 @@
 
 **As extracted:** Ibuprofen (concentrations from this paper's PK model) drives Antipyresis (in °C): direct sigmoid Emax (Hill) effect.
 
-**Model:** No model was generated from this record.
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
 > The model describes ibuprofen-induced antipyresis (change in temperature) via a sigmoid Emax effect mediated by a link model with an effect compartment, characterized by ke0 values of 0.70 and 0.57 hr-1, gamma values of 3.97 and 4.27, and EC50 values of 11.33 and 12.83 ug/ml.
 >
@@ -29,8 +29,8 @@
 - **effect:** inhibition/proportional
 
 ## Citation
-Brown RD et al., Integrated pharmacokinetic-pharmacodyna…, Journal of pharmacokinetics… (1998)
-  ·  DOI: [10.1023/a:1023225217108](https://doi.org/10.1023/a:1023225217108)
+Hong Y et al., Population pharmacodynamic modelling of…, Clinical pharmacokinetics (2008)
+  ·  DOI: [10.2165/00003088-200847020-00006](https://doi.org/10.2165/00003088-200847020-00006)
 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |

@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Teder K et al., The Pharmacokinetic Profile and Bioavai…, Medicina (Kaunas, Lithuania) (2021)
   ·  DOI: [10.3390/medicina57111218](https://doi.org/10.3390/medicina57111218)
 
-## Model component
-<dbs-pgx drug="acetylcysteine" model-id="Acetylcysteine_Teder2021_reference" status="rejected" stale="false" population="intensive care unit patients" measured-compound="N-acetylcysteine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acetylcysteine" model-id="Acetylcysteine_Teder2021_reference" status="rejected" stale="false" population="intensive care unit patients" measured-compound="N-acetylcysteine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

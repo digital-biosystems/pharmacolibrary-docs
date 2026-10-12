@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Wang B et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2017)
   ·  DOI: [10.1002/psp4.12160](https://doi.org/10.1002/psp4.12160)
 
-## Model component
-<dbs-pgx drug="benralizumab" model-id="Benralizumab_Wang2017_reference" status="rejected" stale="false" population="healthy volunteers and patients with asthma" measured-compound="benralizumab" parameterization="apparent_wrt_Fm" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="benralizumab" model-id="Benralizumab_Wang2017_reference" status="rejected" stale="false" population="healthy volunteers and patients with asthma" measured-compound="benralizumab" parameterization="apparent_wrt_Fm" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

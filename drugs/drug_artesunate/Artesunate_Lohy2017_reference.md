@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Lohy Das J et al., Population Pharmacokinetic and Pharmaco…, The AAPS journal (2017)
   ·  DOI: [10.1208/s12248-017-0141-1](https://doi.org/10.1208/s12248-017-0141-1)
 
-## Model component
-<dbs-pgx drug="artesunate" model-id="Artesunate_Lohy2017_reference" status="rejected" stale="false" population="adults with uncomplicated P. falciparum malaria (Cambodia and Thailand)" measured-compound="dihydroartemisinin" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="artesunate" model-id="Artesunate_Lohy2017_reference" status="rejected" stale="false" population="adults with uncomplicated P. falciparum malaria (Cambodia and Thailand)" measured-compound="dihydroartemisinin" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

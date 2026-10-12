@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Zhang C et al., Drug-drug interaction and initial dosag…, Frontiers in psychiatry (2024)
   ·  DOI: [10.3389/fpsyt.2024.1377268](https://doi.org/10.3389/fpsyt.2024.1377268)
 
-## Model component
-<dbs-pgx drug="buspirone" model-id="Buspirone_Zhang2024v2_reference" status="curated_candidate" stale="false" population="" measured-compound="buspirone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="buspirone" model-id="Buspirone_Zhang2024v2_reference" status="curated_candidate" stale="false" population="" measured-compound="buspirone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

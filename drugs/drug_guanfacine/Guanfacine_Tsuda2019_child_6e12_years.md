@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 Tsuda Y et al., Population pharmacokinetic and exposure…, Drug metabolism and pharmac… (2019)
   ·  DOI: [10.1016/j.dmpk.2019.07.001](https://doi.org/10.1016/j.dmpk.2019.07.001)
 
-## Model component
-<dbs-pgx drug="guanfacine" model-id="Guanfacine_Tsuda2019_child_6e12_years" status="rejected" stale="false" population="pediatric ADHD patients" measured-compound="guanfacine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="guanfacine" model-id="Guanfacine_Tsuda2019_child_6e12_years" status="rejected" stale="false" population="pediatric ADHD patients" measured-compound="guanfacine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

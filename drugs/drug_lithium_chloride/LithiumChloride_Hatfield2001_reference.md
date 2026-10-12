@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Hatfield CL et al., Pharmacokinetics and toxic effects of l…, American journal of veterin… (2001)
   ·  DOI: [10.2460/ajvr.2001.62.1387](https://doi.org/10.2460/ajvr.2001.62.1387)
 
-## Model component
-<dbs-pgx drug="lithium chloride" model-id="LithiumChloride_Hatfield2001_reference" status="rejected" stale="false" population="healthy Standardbred horses" measured-compound="lithium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lithium chloride" model-id="LithiumChloride_Hatfield2001_reference" status="rejected" stale="false" population="healthy Standardbred horses" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

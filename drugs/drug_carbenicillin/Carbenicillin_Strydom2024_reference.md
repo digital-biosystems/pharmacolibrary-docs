@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Strydom N et al., Dose optimization of TBI-223 for enhanc…, Nature communications (2024)
   ·  DOI: [10.1038/s41467-024-50781-4](https://doi.org/10.1038/s41467-024-50781-4)
 
-## Model component
-<dbs-pgx drug="carbenicillin" model-id="Carbenicillin_Strydom2024_reference" status="curated_candidate" stale="false" population="" measured-compound="carbenicillin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carbenicillin" model-id="Carbenicillin_Strydom2024_reference" status="curated_candidate" stale="false" population="" measured-compound="carbenicillin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

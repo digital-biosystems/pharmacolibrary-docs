@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Kirchner G, Transport of iodine and cesium via the…, Health physics (1994)
   ·  DOI: [10.1097/00004032-199406000-00005](https://doi.org/10.1097/00004032-199406000-00005)
 
-## Model component
-<dbs-pgx drug="iodine" model-id="Iodine_Kirchner1994_reference" status="rejected" stale="false" population="cows" measured-compound="iodine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="iodine" model-id="Iodine_Kirchner1994_reference" status="rejected" stale="false" population="cows" measured-compound="iodine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

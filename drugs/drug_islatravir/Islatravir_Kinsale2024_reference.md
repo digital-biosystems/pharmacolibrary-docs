@@ -28,8 +28,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 Kinsale TS et al., Pharmacokinetic Modeling to Guide Precl…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16020201](https://doi.org/10.3390/pharmaceutics16020201)
 
-## Model component
-<dbs-pgx drug="Islatravir" model-id="Islatravir_Kinsale2024_reference" status="needs_review" stale="false" population="adult Wistar rats" measured-compound="islatravir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Islatravir" model-id="Islatravir_Kinsale2024_reference" status="needs_review" stale="false" population="adult Wistar rats" measured-compound="islatravir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D08A&quot;,&quot;href&quot;:&quot;atc/D08A.md&quot;},{&quot;label&quot;:&quot;benzalkonium&quot;,&quot;href&quot;:&quot;drugs/drug_benzalkonium/&quot;},{&quot;label&quot;:&quot;Rodr\u00edguez-L\u00f3pez_2022 \u00b7 PD biofilm reduction of L. monocytogenes L34 after BAC treatment&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;vortioxetine&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/&quot;},{&quot;label&quot;:&quot;Wilson_2015 \u00b7 PD Total REM sleep&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# biofilm reduction of L. monocytogenes L34 after BAC treatment — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">other organism</span>
+# Total REM sleep — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -15,19 +15,19 @@
 
 ## What this record describes
 
-**As extracted:** Benzalkonium chloride (BAC) drives biofilm reduction of L. monocytogenes L34 after BAC treatment (in log CFU cm-2) (inhibition; the model form was not identified).
+**As extracted:** Vortioxetine (concentrations from the PK model of Areberg_2014_2) drives Total REM sleep (in min): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> Benzalkonium chloride (BAC, µg ml-1) reduces viable L. monocytogenes L34 biofilm cells (log CFU cm-2) via a dose-response fitted to a modified Gompertz equation; the paper does not state a mechanistic PD model. Reported parameters include maximum logarithmic reduction (K') of 2.14, 4.92, 1.88, and 2.57 log CFU cm-2 with LD50 values of 37.85, 193.84, 44.34, and 47.35 µg ml-1.
+> Vortioxetine plasma concentration (Cav,sleep) was linked to a direct inhibition of total REM sleep (TREM) using an additive Emax model. The model estimated an Emax of -149 min, an EC50 of 36 ng/mL, and a baseline E0 of -9.0 min.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
-- **paper:** `Rodríguez-López_2022`
-- **model family:** `unknown`
-- **driver:** `not_resolved`
-- **tier:** descriptive
-- **effect:** inhibition/unknown
+- **paper:** `Wilson_2015`
+- **model family:** `emax`
+- **driver:** `cited_pk`
+- **tier:** population
+- **effect:** inhibition/additive
 
 ## Citation
 Rodríguez-López P et al., Architectural Features and Resistance t…, Frontiers in microbiology (2022)
@@ -36,14 +36,9 @@ Rodríguez-López P et al., Architectural Features and Resistance t…, Frontier
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | maximum logarithmic reduction (K') | `Q323` · not captured | 2.14 | log CFU cm-2 | not captured | direction (not captured) | Rodríguez-López_2022:pdv3 |
-| PD (effect) | lethal dose 50 (LD50) | `Q322` · not captured | 37.85 | µg ml-1 | not captured | llm (not captured) | Rodríguez-López_2022:pdv3 |
-| PD (effect) | maximum logarithmic reduction (K') | `Q323` · not captured | 4.92 | log CFU cm-2 | not captured | direction (not captured) | Rodríguez-López_2022:pdv3 |
-| PD (effect) | lethal dose 50 (LD50) | `Q322` · not captured | 193.84 | µg ml-1 | not captured | llm (not captured) | Rodríguez-López_2022:pdv3 |
-| PD (effect) | maximum logarithmic reduction (K') | `Q323` · not captured | 1.88 | log CFU cm-2 | not captured | direction (not captured) | Rodríguez-López_2022:pdv3 |
-| PD (effect) | lethal dose 50 (LD50) | `Q322` · not captured | 44.34 | µg ml-1 | not captured | llm (not captured) | Rodríguez-López_2022:pdv3 |
-| PD (effect) | maximum logarithmic reduction (K') | `Q323` · not captured | 2.57 | log CFU cm-2 | not captured | direction (not captured) | Rodríguez-López_2022:pdv3 |
-| PD (effect) | lethal dose 50 (LD50) | `Q322` · not captured | 47.35 | µg ml-1 | not captured | llm (not captured) | Rodríguez-López_2022:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | -149 | min | not captured | direction (not captured) | Wilson_2015:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 36 | ng/mL | not captured | llm (not captured) | Wilson_2015:pdv3 |
+| PD (effect) | E 0 | `Q324` · not captured | -9.0 | min | not captured | llm (not captured) | Wilson_2015:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,20 +47,19 @@ Rodríguez-López P et al., Architectural Features and Resistance t…, Frontier
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+first reading `einfracz:qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
 <details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `driver_compound` | benzalkonium chloride (BAC) | benzalkonium chloride | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q322]` | 47.35 | not captured | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q323].value` | 2.57 | 2.14 | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q321].value` | 36 | 36 (65) | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q323].value` | -149 | -149 (38) | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q324].value` | -9.0 | -9.0 (51) | mismatch |
 
 </details>
 

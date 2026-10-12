@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Lin T et al., Population pharmacokinetics of intramus…, Clinical and translational… (2023)
   ·  DOI: [10.1111/cts.13499](https://doi.org/10.1111/cts.13499)
 
-## Model component
-<dbs-pgx drug="asparaginase" model-id="Asparaginase_Lin2023_reference" status="rejected" stale="false" population="patients with acute lymphoblastic leukemia/lymphoblastic lymphoma" measured-compound="serum asparaginase activity" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Lin2023_reference" status="rejected" stale="false" population="patients with acute lymphoblastic leukemia/lymphoblastic lymphoma" measured-compound="serum asparaginase activity" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 1 covariate effect.

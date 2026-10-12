@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Long A et al., Population Pharmacokinetics of Necitumu…, Clinical pharmacokinetics (2017)
   ·  DOI: [10.1007/s40262-016-0452-x](https://doi.org/10.1007/s40262-016-0452-x)
 
-## Model component
-<dbs-pgx drug="necitumumab" model-id="Necitumumab_Long2017_reference" status="rejected" stale="false" population="cancer patients" measured-compound="necitumumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="necitumumab" model-id="Necitumumab_Long2017_reference" status="rejected" stale="false" population="cancer patients" measured-compound="necitumumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

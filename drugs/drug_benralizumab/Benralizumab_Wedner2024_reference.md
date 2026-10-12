@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Wedner HJ et al., Benralizumab in children with severe eo…, Pediatric allergy and immun… (2024)
   ·  DOI: [10.1111/pai.14092](https://doi.org/10.1111/pai.14092)
 
-## Model component
-<dbs-pgx drug="benralizumab" model-id="Benralizumab_Wedner2024_reference" status="needs_review" stale="false" population="children with severe eosinophilic asthma" measured-compound="benralizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="benralizumab" model-id="Benralizumab_Wedner2024_reference" status="needs_review" stale="false" population="children with severe eosinophilic asthma" measured-compound="benralizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

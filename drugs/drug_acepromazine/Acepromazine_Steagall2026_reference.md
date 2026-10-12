@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Steagall PV et al., Pharmacokinetics of bupivacaine after b…, Journal of feline medicine… (2026)
   ·  DOI: [10.1177/1098612X251407158](https://doi.org/10.1177/1098612X251407158)
 
-## Model component
-<dbs-pgx drug="acepromazine" model-id="Acepromazine_Steagall2026_reference" status="needs_review" stale="false" population="" measured-compound="acepromazine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acepromazine" model-id="Acepromazine_Steagall2026_reference" status="needs_review" stale="false" population="" measured-compound="acepromazine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

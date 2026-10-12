@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Wang Y et al., Pharmacokinetics and Safety of Doripene…, Antibiotics (Basel, Switzer… (2022)
   ·  DOI: [10.3390/antibiotics11070958](https://doi.org/10.3390/antibiotics11070958)
 
-## Model component
-<dbs-pgx drug="doripenem" model-id="Doripenem_Wang2022_reference" status="needs_review" stale="false" population="" measured-compound="doripenem" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doripenem" model-id="Doripenem_Wang2022_reference" status="needs_review" stale="false" population="" measured-compound="doripenem" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 4 extracted.

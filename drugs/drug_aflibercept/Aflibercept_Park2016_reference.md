@@ -25,17 +25,16 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of in rabbits, the vitreous half-life of aflibercept is 94.1 hours: this record has 94.1, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Park SJ et al., Intraocular Pharmacokinetics of Intravi…, Investigative ophthalmology… (2016)
   ·  DOI: [10.1167/iovs.16-19204](https://doi.org/10.1167/iovs.16-19204)
 
-## Model component
-<dbs-pgx drug="aflibercept" model-id="Aflibercept_Park2016_reference" status="rejected" stale="false" population="New Zealand White rabbits" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aflibercept" model-id="Aflibercept_Park2016_reference" status="rejected" stale="false" population="New Zealand White rabbits" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></div>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 13 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -100,6 +99,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Park_2016:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q63 | pass | volume within physiological range | 95.9 L | not captured | not captured | ['Narang_1980_table_2:row9:col4'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 514 L | not captured | not captured | ['Narang_1980_table_2:row10:col4'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 405 L | not captured | not captured | ['Narang_1980_table_2:row11:col4'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Yu H et al., A Population Pharmacokinetic Model of O…, Journal of clinical pharmac… (2020)
   ·  DOI: [10.1002/jcph.1532](https://doi.org/10.1002/jcph.1532)
 
-## Model component
-<dbs-pgx drug="docetaxel" model-id="Docetaxel_Yu2020_reference" status="needs_review" stale="false" population="patients receiving IV docetaxel and oral docetaxel formulations" measured-compound="docetaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="docetaxel" model-id="Docetaxel_Yu2020_reference" status="needs_review" stale="false" population="patients receiving IV docetaxel and oral docetaxel formulations" measured-compound="docetaxel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

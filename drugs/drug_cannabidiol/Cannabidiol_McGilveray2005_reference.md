@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 McGilveray IJ, Pharmacokinetics of cannabinoids, Pain research & management… (2005)
   ·  DOI: [10.1155/2005/242516](https://doi.org/10.1155/2005/242516)
 
-## Model component
-<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_McGilveray2005_reference" status="curated_candidate" stale="false" population="" measured-compound="cannabidiol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cannabidiol" model-id="Cannabidiol_McGilveray2005_reference" status="curated_candidate" stale="false" population="" measured-compound="cannabidiol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

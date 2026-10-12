@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Koenig C et al., Cefiderocol pharmacokinetics in critica…, International journal of an… (2025)
   ·  DOI: [10.1016/j.ijantimicag.2025.107465](https://doi.org/10.1016/j.ijantimicag.2025.107465)
 
-## Model component
-<dbs-pgx drug="cefiderocol" model-id="Cefiderocol_Koenig2025_reference" status="needs_review" stale="false" population="critically-ill patients receiving ECMO" measured-compound="cefiderocol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefiderocol" model-id="Cefiderocol_Koenig2025_reference" status="needs_review" stale="false" population="critically-ill patients receiving ECMO" measured-compound="cefiderocol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

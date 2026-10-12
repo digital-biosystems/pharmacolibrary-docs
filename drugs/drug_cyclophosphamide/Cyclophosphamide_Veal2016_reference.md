@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Veal GJ et al., Cyclophosphamide pharmacokinetics and p…, European journal of cancer… (2016)
   ·  DOI: [10.1016/j.ejca.2015.12.007](https://doi.org/10.1016/j.ejca.2015.12.007)
 
-## Model component
-<dbs-pgx drug="cyclophosphamide" model-id="Cyclophosphamide_Veal2016_reference" status="needs_review" stale="false" population="children with B-cell non-Hodgkin&#39;s lymphoma" measured-compound="cyclophosphamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cyclophosphamide" model-id="Cyclophosphamide_Veal2016_reference" status="needs_review" stale="false" population="children with B-cell non-Hodgkin&#39;s lymphoma" measured-compound="cyclophosphamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
