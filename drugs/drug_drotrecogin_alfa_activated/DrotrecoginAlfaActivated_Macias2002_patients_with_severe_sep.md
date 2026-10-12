@@ -28,8 +28,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Macias WL et al., Pharmacokinetic-pharmacodynamic analysi…, Clinical pharmacology and t… (2002)
   ·  DOI: [10.1067/mcp.2002.128148](https://doi.org/10.1067/mcp.2002.128148)
 
-## Model component
-<dbs-pgx drug="drotrecogin alfa (activated)" model-id="DrotrecoginAlfaActivated_Macias2002_patients_with_severe_sep" status="" stale="true" population="patients with severe sepsis" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="drotrecogin alfa (activated)" model-id="DrotrecoginAlfaActivated_Macias2002_patients_with_severe_sep" status="" stale="true" population="patients with severe sepsis" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -51,7 +50,7 @@ _No comparable checks._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_drotrecogin_alfa_activated/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Macias_2002` / `Macias_2002::patients with severe sepsis`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_drotrecogin_alfa_activated/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Macias_2002` / `Macias_2002::patients with severe sepsis`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -72,7 +71,7 @@ _No comparable checks._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

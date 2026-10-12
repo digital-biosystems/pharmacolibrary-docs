@@ -20,7 +20,7 @@
 
 > The record describes an Emax model where cisatracurium dose (mg/kg) drives the inhibition of the adductor pollicis twitch evoked at 0.1 Hz, with a reported ED95 of 0.053 mg/kg. The paper does not provide full text excerpts, so the specific mechanism (e.g., production vs. elimination) and rate constants are not described.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Lepage_1996`
 - **model family:** `emax`
@@ -61,7 +61,7 @@ Lepage JY et al., Pharmacodynamic dose-response and safet…, Anesthesia and ana
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

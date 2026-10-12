@@ -32,30 +32,15 @@ Drospirenone is a progestogen used in hormonal contraceptives, typically combine
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.12). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Reif_2013_reference](drugs/drug_drospirenone/Drospirenone_Reif2013_reference.md) | held back | 1-compartment, oral | 10 | Reif S et al., Characterisation of the pharmacokinetic…, The journal of family plann… (2013) | [10.1136/jfprhc-2012-100397](https://doi.org/10.1136/jfprhc-2012-100397) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.12). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Reif_2013_reference](drugs/drug_drospirenone/Drospirenone_Reif2013_reference.md) | held back | 1-compartment, oral | 10 | Reif S et al., Characterisation of the pharmacokinetic…, The journal of family plann… (2013) | [10.1136/jfprhc-2012-100397](https://doi.org/10.1136/jfprhc-2012-100397) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Cagnacci_2026_Androgenic](drugs/drug_drospirenone/pd_Cagnacci_2026_Androgenic.md) | androgenic effects ← drospirenone · inhibition effect | — | Cagnacci A et al., Natural estrogens: the new reference in…, Expert opinion on pharmacot… (2026) | [10.1080/14656566.2026.2725109](https://doi.org/10.1080/14656566.2026.2725109) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Farris_2017_coagulation_cascade_factors](drugs/drug_drospirenone/pd_Farris_2017_coagulation_cascade_factors.md) | coagulation cascade factors ← drospirenone · model not identified | — | Farris M et al., Pharmacodynamics of combined estrogen-p…, Expert review of clinical p… (2017) | [10.1080/17512433.2017.1356718](https://doi.org/10.1080/17512433.2017.1356718) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Farris_2017_thromboembolic_events](drugs/drug_drospirenone/pd_Farris_2017_thromboembolic_events.md) | thromboembolic events ← drospirenone · model not identified | — | Farris M et al., Pharmacodynamics of combined estrogen-p…, Expert review of clinical p… (2017) | [10.1080/17512433.2017.1356718](https://doi.org/10.1080/17512433.2017.1356718) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=drospirenone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| — | prostate gland | `AR` target | DrugBank actor |
-
-<sub>Actors without a tissue in the table: NR3C1 (binder), NR3C2 (target), PGR (target), PON1 (substrate), PTGS2 (inducer), PTGS2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Cagnacci_2026_Androgenic](drugs/drug_drospirenone/pd_Cagnacci_2026_Androgenic.md) | androgenic effects ← drospirenone · inhibition effect | — | Cagnacci A et al., Natural estrogens: the new reference in…, Expert opinion on pharmacot… (2026) | [10.1080/14656566.2026.2725109](https://doi.org/10.1080/14656566.2026.2725109) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Farris_2017_coagulation_cascade_factors](drugs/drug_drospirenone/pd_Farris_2017_coagulation_cascade_factors.md) | coagulation cascade factors ← drospirenone · model not identified | — | Farris M et al., Pharmacodynamics of combined estrogen-p…, Expert review of clinical p… (2017) | [10.1080/17512433.2017.1356718](https://doi.org/10.1080/17512433.2017.1356718) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Farris_2017_thromboembolic_events](drugs/drug_drospirenone/pd_Farris_2017_thromboembolic_events.md) | thromboembolic events ← drospirenone · model not identified | — | Farris M et al., Pharmacodynamics of combined estrogen-p…, Expert review of clinical p… (2017) | [10.1080/17512433.2017.1356718](https://doi.org/10.1080/17512433.2017.1356718) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

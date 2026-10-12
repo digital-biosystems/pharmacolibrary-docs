@@ -22,7 +22,7 @@
 
 > Unbound paliperidone plasma concentration (nM) stimulates prolactin (PRL) via an Emax-type model with proportional effect; the paper reports EC50 = 35.1 nM and KI = 113 nM, but the excerpts do not state the mechanism beyond this or any rate parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Taneja_2016`
 - **model family:** `emax`
@@ -64,7 +64,7 @@ Taneja A et al., A comparison of two semi-mechanistic mo…, European journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

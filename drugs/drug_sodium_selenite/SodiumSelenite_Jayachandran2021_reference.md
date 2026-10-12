@@ -4,7 +4,7 @@
 
 # sodium selenite — `SodiumSelenite_Jayachandran2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7), gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7), gpt-oss:120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -12,7 +12,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** Model withheld: a core parameter is unspecified.
 
 ### Reviewer guidance
 
@@ -123,9 +123,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_sodium_selenite/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jayachandran_2021` / `Jayachandran_2021::reference`)
-- model: `../../../knowledgebase/drugs/drug_sodium_selenite/models/modelica/_needs_review/SodiumSelenite_Jayachandran2021_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_sodium_selenite/models/modelica/_needs_review/SodiumSelenite_Jayachandran2021_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sodium_selenite/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jayachandran_2021` / `Jayachandran_2021::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sodium_selenite/models/modelica/_needs_review/SodiumSelenite_Jayachandran2021_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sodium_selenite/models/modelica/_needs_review/SodiumSelenite_Jayachandran2021_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference/SodiumSelenite_Jayachandran2021_reference_matlab.zip" download>SodiumSelenite_Jayachandran2021_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference/SodiumSelenite_Jayachandran2021_reference_matlab_simbio.zip" download>SodiumSelenite_Jayachandran2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference/SodiumSelenite_Jayachandran2021_reference_matlab_simbio.zip" download>SodiumSelenite_Jayachandran2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference/SodiumSelenite_Jayachandran2021_reference_sbml.zip" download>SodiumSelenite_Jayachandran2021_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sodium_selenite/SodiumSelenite_Jayachandran2021_reference/SodiumSelenite_Jayachandran2021_reference_cellml.zip" download>SodiumSelenite_Jayachandran2021_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
@@ -146,7 +146,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

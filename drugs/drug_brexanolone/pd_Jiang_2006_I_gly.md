@@ -21,7 +21,7 @@
 
 > The record reports a sigmoid Emax inhibition of glycine-induced current amplitude (I_gly) by pregnanolone, with an IC50 of 1.0 microM; the paper excerpts are unavailable, so the mechanism beyond inhibitory sigmoid Emax, and any Emax, gamma, or rate values, are not stated.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Jiang_2006`
 - **model family:** `sigmoid_emax`
@@ -48,11 +48,11 @@ Jiang P et al., Mechanisms of modulation of pregnanolon…, Neuroscience (2006)
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

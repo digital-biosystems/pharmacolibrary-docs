@@ -32,19 +32,7 @@ Sodium oxybate is used to treat narcolepsy, including cataplexy, and has also be
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.684). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Chen_2020_reference](drugs/drug_sodium_oxybate/SodiumOxybate_Chen2020_reference.md) | — | 2-compartment (no model) | 7 (+3 cov.) | Chen C et al., Population and Noncompartmental Pharmac…, Clinical and translational… (2020) | [10.1111/cts.12780](https://doi.org/10.1111/cts.12780) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sodium_oxybate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | lung | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADHFE1 (substrate), ALDH5A1 (substrate), GABBR1 (target), NNT (substrate), SLC52A2 (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.684). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Chen_2020_reference](drugs/drug_sodium_oxybate/SodiumOxybate_Chen2020_reference.md) | — | 2-compartment (no model) | 7 (+3 cov.) | Chen C et al., Population and Noncompartmental Pharmac…, Clinical and translational… (2020) | [10.1111/cts.12780](https://doi.org/10.1111/cts.12780) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

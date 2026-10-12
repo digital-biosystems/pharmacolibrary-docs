@@ -22,7 +22,7 @@
 
 > The record cites a pharmacokinetic study (Dziubina_2026) linking nimesulide concentrations to the continuous response of interleukin 10 (IL-10) via a stimulation mechanism, but the specific model family, functional form, and potency or rate parameters (such as Imax, IC50, or ke0) are not provided in the available excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `López-Villodres_2012`
 - **model family:** `unknown`
@@ -56,7 +56,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

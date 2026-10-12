@@ -24,16 +24,7 @@ Etofenamate is a non-steroidal anti-inflammatory drug used topically for joint a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Beckermann_1990_reference](drugs/drug_etofenamate/Etofenamate_Beckermann1990_reference.md) | — | 1-compartment (no model) | 0 | Beckermann B et al., [Plasma level studies in volunteers aft…, Arzneimittel-Forschung (1990) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=etofenamate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: PTGS1 (inhibitor), SERPINA7 (substrate).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.25). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Beckermann_1990_reference](drugs/drug_etofenamate/Etofenamate_Beckermann1990_reference.md) | — | 1-compartment (no model) | 0 | Beckermann B et al., [Plasma level studies in volunteers aft…, Arzneimittel-Forschung (1990) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

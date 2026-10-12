@@ -33,39 +33,16 @@ Cobimetinib is a MEK inhibitor anticancer drug used to treat melanoma, including
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Duong_2026_model_h_h](drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_h_h.md) | ▶ model + simulator | 1-compartment, oral | 3 | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Duong_2026_model_pk_h](drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pk_h.md) | ▶ model + simulator | 1-compartment, oral | 3 | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Duong_2026_model_pkpd_h](drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pkpd_h.md) | ▶ model + simulator | 1-compartment, oral | 3 | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Han_2015_reference](drugs/drug_cobimetinib/Cobimetinib_Han2015_reference.md) | — | 1-compartment (no model) | 0 | Han K et al., Population pharmacokinetics and dosing…, Cancer chemotherapy and pha… (2015) | [10.1007/s00280-015-2862-0](https://doi.org/10.1007/s00280-015-2862-0) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Duong_2026_model_h_h](drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_h_h.md) | ▶ model + simulator | 1-compartment, oral | 3 | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Duong_2026_model_pk_h](drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pk_h.md) | ▶ model + simulator | 1-compartment, oral | 3 | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Duong_2026_model_pkpd_h](drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pkpd_h.md) | ▶ model + simulator | 1-compartment, oral | 3 | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Han_2015_reference](drugs/drug_cobimetinib/Cobimetinib_Han2015_reference.md) | — | 1-compartment (no model) | 0 | Han K et al., Population pharmacokinetics and dosing…, Cancer chemotherapy and pha… (2015) | [10.1007/s00280-015-2862-0](https://doi.org/10.1007/s00280-015-2862-0) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> | [Duong_2026_resp](drugs/drug_cobimetinib/pd_Duong_2026_resp.md) | instantaneous death rate ← cobimetinib · direct sigmoid Emax (Hill) effect | — | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cobimetinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` weak inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate, `ABCG2` weak inhibitor | DrugBank actor |
-| absorption | mammary gland | `ABCG2` weak inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate, `ABCG2` weak inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` substrate, `ABCG2` weak inhibitor | DrugBank actor |
-| distribution | blood | `ORM1` binder | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` unknown, `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` unknown, `SLCO1B1` weak inhibitor, `SLCO1B3` inhibitor, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` unknown, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: MAP2K1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> | [Duong_2026_resp](drugs/drug_cobimetinib/pd_Duong_2026_resp.md) | instantaneous death rate ← cobimetinib · direct sigmoid Emax (Hill) effect | — | Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

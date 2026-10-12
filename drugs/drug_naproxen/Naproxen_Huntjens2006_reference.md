@@ -5,7 +5,7 @@
 
 # naproxen — `Naproxen_Huntjens2006_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 0.80).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.727). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 0.80).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Huntjens DR et al., Correlation between in vitro and in viv…, British journal of pharmaco… (2006)
   ·  DOI: [10.1038/sj.bjp.0706737](https://doi.org/10.1038/sj.bjp.0706737)
 
-## Model component
-<dbs-pgx drug="naproxen" model-id="Naproxen_Huntjens2006_reference" status="rejected" stale="false" population="" measured-compound="naproxen" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="naproxen" model-id="Naproxen_Huntjens2006_reference" status="rejected" stale="false" population="" measured-compound="naproxen" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -109,18 +108,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_naproxen/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Huntjens_2006` / `Huntjens_2006::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_naproxen/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Huntjens_2006` / `Huntjens_2006::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

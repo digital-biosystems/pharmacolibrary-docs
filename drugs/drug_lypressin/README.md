@@ -28,20 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Ukena_1995_spontaneous_contractions_of_isolated_gut_preparations](drugs/drug_lypressin/pd_Ukena_1995_spontaneous_contractions_of_isolated_gut_preparat.md) | spontaneous contractions of isolated gut preparations ← 8-L-lysinevasopressin · model not identified | — | Ukena K et al., Effects of annetocin, an oxytocin-relat…, The Journal of experimental… (1995) | [10.1002/jez.1402720303](https://doi.org/10.1002/jez.1402720303) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Zoeller_1983_Wolffian_duct_contraction](drugs/drug_lypressin/pd_Zoeller_1983_Wolffian_duct_contraction.md) | Wolffian duct contraction ← lypressin · stimulation effect | — | Zoeller RT et al., Contractions of amphibian Wolffian duct…, The Journal of experimental… (1983) | [10.1002/jez.1402260108](https://doi.org/10.1002/jez.1402260108) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lypressin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | `ABCC2` unknown | DrugBank actor |
-| excretion | liver | `ABCC2` unknown | DrugBank actor |
-| excretion | small intestine | `ABCC2` unknown | DrugBank actor |
-
-<sub>Actors without a tissue in the table: AVPR1A (unknown), AVPR1B (unknown), AVPR2 (unknown).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Ukena_1995_spontaneous_contractions_of_isolated_gut_preparations](drugs/drug_lypressin/pd_Ukena_1995_spontaneous_contractions_of_isolated_gut_preparat.md) | spontaneous contractions of isolated gut preparations ← 8-L-lysinevasopressin · model not identified | — | Ukena K et al., Effects of annetocin, an oxytocin-relat…, The Journal of experimental… (1995) | [10.1002/jez.1402720303](https://doi.org/10.1002/jez.1402720303) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Zoeller_1983_Wolffian_duct_contraction](drugs/drug_lypressin/pd_Zoeller_1983_Wolffian_duct_contraction.md) | Wolffian duct contraction ← lypressin · stimulation effect | — | Zoeller RT et al., Contractions of amphibian Wolffian duct…, The Journal of experimental… (1983) | [10.1002/jez.1402260108](https://doi.org/10.1002/jez.1402260108) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

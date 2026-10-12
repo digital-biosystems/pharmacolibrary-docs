@@ -19,7 +19,7 @@
 
 > Plasma esketamine concentrations (mg/l) inhibit the response (P05: time to loss of response to a 5-s transcutaneous tetanus) via an Emax model with an EC50 of 0.64 mg/l and a slope of 5.4. The mechanism is described as an inhibitory Emax effect, and no effect compartment or rate parameters are provided in the available record or excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Coulter_2014_2`
 - **model family:** `emax`
@@ -61,7 +61,7 @@ Coulter FL et al., Ketofol simulations for dosing in pedia…, Paediatric anaest
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

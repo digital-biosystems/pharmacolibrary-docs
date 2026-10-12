@@ -21,7 +21,7 @@
 
 > In rats given chronic i.p. desipramine or its metabolite desmethyldesipramine, cortical beta adrenergic receptor density (% downregulation) decreased dose-dependently; an Emax model was fitted with Emax 29% and EC50 467 ng/g for desmethyldesipramine brain/cortex concentration, and ED50 values of 5.10 mg/kg (desipramine) and 7.71 mg/kg (desmethyldesipramine); the paper does not state a mechanistic production/elimination (kin/kout) model.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Argenti_1994`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Argenti D et al., The pharmacodynamics of desipramine and…, The Journal of pha
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

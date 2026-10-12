@@ -24,7 +24,7 @@ Cefetamet is a third-generation cephalosporin antibiotic developed for treating 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Li_2014_reference](drugs/drug_cefetamet/Cefetamet_Li2014_reference.md) | — | 1-compartment (no model) | 0 | Li CZ et al., [Phase I clinical trial on the safety o…, Sichuan da xue xue bao. Yi… (2014) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Li_2014_reference](drugs/drug_cefetamet/Cefetamet_Li2014_reference.md) | — | 1-compartment (no model) | 0 | Li CZ et al., [Phase I clinical trial on the safety o…, Sichuan da xue xue bao. Yi… (2014) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

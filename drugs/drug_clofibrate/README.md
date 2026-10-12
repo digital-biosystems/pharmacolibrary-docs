@@ -34,21 +34,8 @@ Clofibrate is a fibrate lipid-lowering drug that was used to treat high blood li
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Świerczek_2022_reference](drugs/drug_clofibrate/Clofibrate_wierczek2022_reference.md) | — | 1-compartment (no model) | 3 | Świerczek A et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Pharmaceutics (2022) | [10.3390/pharmaceutics14051090](https://doi.org/10.3390/pharmaceutics14051090) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Lücker_1980_reference](drugs/drug_clofibrate/Clofibrate_Lcker1980_reference.md) | — | general linear (no model) | 0 | Lücker PW et al., [Metabolism and pharmacokinetics of eto…, Arzneimittel-Forschung (1980) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=clofibrate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP2E1` inducer, `CYP3A4` inducer/substrate | DrugBank actor |
-| metabolism | lung | `CYP1A1` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` inducer, `CYP3A4` inducer/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CYP4A11 (inducer), CYP4A11 (substrate), GSTA2 (inhibitor), LPL (activator), PPARA (target), SERPINA7 (inducer).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Świerczek_2022_reference](drugs/drug_clofibrate/Clofibrate_wierczek2022_reference.md) | — | 1-compartment (no model) | 3 | Świerczek A et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Pharmaceutics (2022) | [10.3390/pharmaceutics14051090](https://doi.org/10.3390/pharmaceutics14051090) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Lücker_1980_reference](drugs/drug_clofibrate/Clofibrate_Lcker1980_reference.md) | — | general linear (no model) | 0 | Lücker PW et al., [Metabolism and pharmacokinetics of eto…, Arzneimittel-Forschung (1980) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

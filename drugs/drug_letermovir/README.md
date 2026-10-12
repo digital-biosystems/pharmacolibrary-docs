@@ -32,35 +32,14 @@ Letermovir is an antiviral medicine used against cytomegalovirus infections. It 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.759). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Prohn_2021_reference](drugs/drug_letermovir/Letermovir_Prohn2021_reference.md) | — | 3-compartment (no model) | 11 (+2 cov.) | Prohn M et al., Population pharmacokinetics of letermov…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12593](https://doi.org/10.1002/psp4.12593) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Royston_2025_reference](drugs/drug_letermovir/Letermovir_Royston2025_reference.md) | — | 1-compartment (no model) | 0 | Royston L et al., Population pharmacokinetic analysis of…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00697-25](https://doi.org/10.1128/aac.00697-25) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.759). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Prohn_2021_reference](drugs/drug_letermovir/Letermovir_Prohn2021_reference.md) | — | 3-compartment (no model) | 11 (+2 cov.) | Prohn M et al., Population pharmacokinetics of letermov…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12593](https://doi.org/10.1002/psp4.12593) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Royston_2025_reference](drugs/drug_letermovir/Letermovir_Royston2025_reference.md) | — | 1-compartment (no model) | 0 | Royston L et al., Population pharmacokinetic analysis of…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00697-25](https://doi.org/10.1128/aac.00697-25) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Giménez_2023_CMV_IE1](drugs/drug_letermovir/pd_Gim_nez_2023_CMV_IE1.md) | CMV replication (inhibition of CMV IE1 expression) ← letermovir · inhibition effect | — | Giménez E et al., In vitro assessment of the combined eff…, Revista espanola de quimiot… (2023) | [10.37201/req/016.2023](https://doi.org/10.37201/req/016.2023) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=letermovir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP2B6` inducer, `CYP2C19` inducer, `CYP2C8` inhibitor, `CYP2C9` inducer, `CYP2D6` substrate, `CYP3A4` inhibitor/substrate, `SLCO1B1` inhibitor/substrate, `SLCO1B3` inhibitor/substrate, `UGT1A1` substrate, `UGT1A3` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `UGT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `ABCC2` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB11` inhibitor, `ABCC2` inhibitor | DrugBank actor |
-| excretion | small intestine | `ABCC2` inhibitor | DrugBank actor |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Giménez_2023_CMV_IE1](drugs/drug_letermovir/pd_Gim_nez_2023_CMV_IE1.md) | CMV replication (inhibition of CMV IE1 expression) ← letermovir · inhibition effect | — | Giménez E et al., In vitro assessment of the combined eff…, Revista espanola de quimiot… (2023) | [10.37201/req/016.2023](https://doi.org/10.37201/req/016.2023) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -5,7 +5,7 @@
 
 # clozapine — `Clozapine_Reeves2024_c_clozapine_mg_l`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -27,8 +27,7 @@ The paper reports V/F = 0.02 and CL/F = 0.02 for clozapine, both with unit mg L�
 Reeves S et al., A population pharmacokinetic model to g…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.15691](https://doi.org/10.1111/bcp.15691)
 
-## Model component
-<dbs-pgx drug="clozapine" model-id="Clozapine_Reeves2024_c_clozapine_mg_l" status="rejected" stale="false" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Reeves2024_c_clozapine_mg_l" status="rejected" stale="false" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -113,18 +112,18 @@ f_norclozapine, σ₀_ᵢₙₜₑᵣcₑₚₖ clozapine (mg l⁻¹))
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_clozapine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Reeves_2024` / `Reeves_2024::c_clozapine_mg_l`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clozapine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Reeves_2024` / `Reeves_2024::c_clozapine_mg_l`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

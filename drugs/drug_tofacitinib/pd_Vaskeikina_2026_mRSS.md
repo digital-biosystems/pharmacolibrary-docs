@@ -20,7 +20,7 @@
 
 > The paper employs an Emax time-course model to describe the effect of the tofacitinib dose on the change from baseline in the modified Rodnan skin score (mRSS), using a shared ET50 parameter to define the time to half-maximal response. Specific potency or rate constants (e.g., IC50, ke0) for tofacitinib are not provided in the excerpt, and the record notes the effect is modeled as dose-driven inhibition with a maximum reduction parameter of -14.35.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Vaskeikina_2026`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Vaskeikina M et al., Systematic Review and Model-Based Meta-…, Pharmaceutics (
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

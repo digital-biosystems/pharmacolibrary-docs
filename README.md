@@ -1,6 +1,6 @@
 <!-- AUTOGEN:intro START — spliced from docs/README-template.md; edit THAT file, not this region -->
 # Pharmacolibrary
-v26.09 (built 12/10/2026 16:43:11 UTC)
+v26.09 (built 12/10/2026 21:42:01 UTC)
 
 Literature-derived **pharmacokinetic (PK), pharmacodynamic (PD), and pharmacogenomic (PGx)** knowledge base.
 

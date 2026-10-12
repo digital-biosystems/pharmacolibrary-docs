@@ -24,7 +24,7 @@ Fluoroethyl-L-tyrosine labelled with radioactive fluorine is a diagnostic radiop
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kratochwil_2014_reference](drugs/drug_fluoroethyl_l_tyrosine_18f/FluoroethylLTyrosine18f_Kratochwil2014_reference.md) | — | 1-compartment (no model) | 0 | Kratochwil C et al., Intra-individual comparison of ¹⁸F-FET…, Neuro-oncology (2014) | [10.1093/neuonc/not199](https://doi.org/10.1093/neuonc/not199) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kratochwil_2014_reference](drugs/drug_fluoroethyl_l_tyrosine_18f/FluoroethylLTyrosine18f_Kratochwil2014_reference.md) | — | 1-compartment (no model) | 0 | Kratochwil C et al., Intra-individual comparison of ¹⁸F-FET…, Neuro-oncology (2014) | [10.1093/neuonc/not199](https://doi.org/10.1093/neuonc/not199) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

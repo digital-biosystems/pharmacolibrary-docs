@@ -19,7 +19,7 @@
 
 > Isoflurane inhibits the spectral edge frequency at the 95th percentile (SEF95) via a sigmoidal Emax model with a rate of equilibration (Ke0) of 0.29+/-0.04 min^-1. The estimated half-maximal effective concentration (EC50) is 0.66+/-0.08 vol% and the slope is 0.86+/-0.06.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Rehberg_1999`
 - **model family:** `sigmoid_emax`
@@ -48,11 +48,11 @@ Rehberg B et al., Comparative pharmacodynamic modeling of…, Anesthesiology (19
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

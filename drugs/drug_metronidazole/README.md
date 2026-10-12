@@ -32,28 +32,7 @@ Metronidazole is an antibacterial and antiprotozoal drug used to treat infection
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Suyagh_2011_reference](drugs/drug_metronidazole/Metronidazole_Suyagh2011_reference.md) | — | 1-compartment (no model) | 0 | Suyagh M et al., Metronidazole population pharmacokineti…, Pediatrics (2011) | [10.1542/peds.2010-0807](https://doi.org/10.1542/peds.2010-0807) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=metronidazole).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2A6` substrate, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP3A4` inhibitor, `CYP3A5` substrate, `CYP3A7` substrate, `UGT1A1` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor, `CYP3A5` substrate, `UGT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: Anaerobic bacterial DNA (inhibitor), Protozoal DNA (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Suyagh_2011_reference](drugs/drug_metronidazole/Metronidazole_Suyagh2011_reference.md) | — | 1-compartment (no model) | 0 | Suyagh M et al., Metronidazole population pharmacokineti…, Pediatrics (2011) | [10.1542/peds.2010-0807](https://doi.org/10.1542/peds.2010-0807) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

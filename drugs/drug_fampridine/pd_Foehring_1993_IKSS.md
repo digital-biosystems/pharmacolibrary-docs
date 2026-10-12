@@ -22,7 +22,7 @@
 
 > The paper relates 4-aminopyridine (fampridine) concentrations (mM) to inhibition of the very slowly inactivating current (IKSS), but no full text is available, so the mechanism (e.g., direct Emax, effect compartment) and potency/rate parameters (IC50, Imax, kin, kout, ke0, gamma) are not stated.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Foehring_1993`
 - **model family:** `unknown`
@@ -56,7 +56,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -27,16 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Esposito_2003_GH](drugs/drug_sermorelin/pd_Esposito_2003_GH.md) | GH secretion ← Sermorelin · stimulation effect | — | Esposito P et al., PEGylation of growth hormone-releasing…, Advanced drug delivery revi… (2003) | [10.1016/s0169-409x(03)00109-1](https://doi.org/10.1016/s0169-409x(03)00109-1) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sermorelin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: GHRHR (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Esposito_2003_GH](drugs/drug_sermorelin/pd_Esposito_2003_GH.md) | GH secretion ← Sermorelin · stimulation effect | — | Esposito P et al., PEGylation of growth hormone-releasing…, Advanced drug delivery revi… (2003) | [10.1016/s0169-409x(03)00109-1](https://doi.org/10.1016/s0169-409x(03)00109-1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -28,19 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 0.50).">human + animal</span> | [Haines_2025_HR](drugs/drug_nitisinone/pd_Haines_2025_HR.md) | Hazard ratio ← nitisinone · direct sigmoid Emax (Hill) effect | — | Haines LR et al., Anopheles mosquito survival and pharmac…, Science translational medic… (2025) | [10.1126/scitranslmed.adr4827](https://doi.org/10.1126/scitranslmed.adr4827) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nitisinone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: HPD (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 0.50).">human + animal</span> | [Haines_2025_HR](drugs/drug_nitisinone/pd_Haines_2025_HR.md) | Hazard ratio ← nitisinone · direct sigmoid Emax (Hill) effect | — | Haines LR et al., Anopheles mosquito survival and pharmac…, Science translational medic… (2025) | [10.1126/scitranslmed.adr4827](https://doi.org/10.1126/scitranslmed.adr4827) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

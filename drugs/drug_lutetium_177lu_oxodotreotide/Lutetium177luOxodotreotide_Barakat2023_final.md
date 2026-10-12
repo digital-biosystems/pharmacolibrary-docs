@@ -5,7 +5,7 @@
 
 # lutetium (177Lu) oxodotreotide — `Lutetium177luOxodotreotide_Barakat2023_final`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,9 +13,9 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
 Barakat A et al., Clinical Pharmacokinetics of Radiopharm…, European journal of drug me… (2023)
   ·  DOI: [10.1007/s13318-023-00829-5](https://doi.org/10.1007/s13318-023-00829-5)
 
-## Model component
-<dbs-pgx drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Barakat2023_final" status="extracted" stale="true" population="patients with gastroenteropancreatic neuroendocrine tumors" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Barakat2023_final" status="extracted" stale="true" population="patients with gastroenteropancreatic neuroendocrine tumors" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted, plus 1 covariate effect.
@@ -159,10 +158,10 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Barakat_2023` / `Barakat_2023::final`)
-- model: `../../../knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/models/modelica/Lutetium177luOxodotreotide_Barakat2023_final.mo`
-- deviation: `../../../knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/models/modelica/Lutetium177luOxodotreotide_Barakat2023_final.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/models/modelica/Lutetium177luOxodotreotide_Barakat2023_final.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Barakat_2023` / `Barakat_2023::final`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/models/modelica/Lutetium177luOxodotreotide_Barakat2023_final.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/models/modelica/Lutetium177luOxodotreotide_Barakat2023_final.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lutetium_177lu_oxodotreotide/models/modelica/Lutetium177luOxodotreotide_Barakat2023_final.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -180,7 +179,7 @@ _All readers agree on the compared fields of this record._
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_final/Lutetium177luOxodotreotide_Barakat2023_final.svg" alt="Lutetium177luOxodotreotide_Barakat2023_final diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_final/Lutetium177luOxodotreotide_Barakat2023_final.svg" alt="Lutetium177luOxodotreotide_Barakat2023_final diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

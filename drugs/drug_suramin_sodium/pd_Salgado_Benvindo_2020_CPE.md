@@ -22,7 +22,7 @@
 
 > In Vero E6 cells, suramin concentrations (µM) protect against SARS-CoV-2-induced cytopathic effect (cell viability, %) in a dose-dependent manner, acting by inhibiting early steps of viral replication; the paper reports an EC50 of 20 ± 2.7 µM but does not state an Emax, Imax, or any kinetic parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Salgado-Benvindo_2020`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Salgado-Benvindo C et al., Suramin Inhibits SARS-CoV-2 Infection i…, Antimicro
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

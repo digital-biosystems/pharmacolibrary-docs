@@ -22,7 +22,7 @@
 
 > Venlafaxine inhibits [3H]5-HT uptake via SERT in HEK293-SERT cells (and comparably in differentiated HT22 cells), a direct concentration-dependent inhibition of 5-HT reuptake; the paper reports an IC50 of 30.65 nM in HEK293-SERT cells (27.21 nM in differentiated HT22 cells) but does not state a full Emax/kin/kout model or other potency parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Lim_2022`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Lim J et al., Differentiated HT22 cells as a novel mo…, Frontiers in pharmacol
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

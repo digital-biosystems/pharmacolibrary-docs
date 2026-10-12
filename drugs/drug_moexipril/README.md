@@ -28,19 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Cawello_2002_ACE_inhibition](drugs/drug_moexipril/pd_Cawello_2002_ACE_inhibition.md) | ACE inhibition ← moexiprilat · direct sigmoid Emax (Hill) effect | — | Cawello W et al., Moexipril shows a long duration of acti…, International journal of cl… (2002) | [10.5414/cpp40009](https://doi.org/10.5414/cpp40009) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=moexipril).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` substrate | DrugBank actor |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC15A2` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ACE (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Cawello_2002_ACE_inhibition](drugs/drug_moexipril/pd_Cawello_2002_ACE_inhibition.md) | ACE inhibition ← moexiprilat · direct sigmoid Emax (Hill) effect | — | Cawello W et al., Moexipril shows a long duration of acti…, International journal of cl… (2002) | [10.5414/cpp40009](https://doi.org/10.5414/cpp40009) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

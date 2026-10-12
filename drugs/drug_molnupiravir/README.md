@@ -36,23 +36,15 @@ Molnupiravir is an antiviral drug that was developed for the treatment of COVID-
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.367). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Bihorel_2023_reference](drugs/drug_molnupiravir/Molnupiravir_Bihorel2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 8 (+5 cov.) | Bihorel S et al., Population pharmacokinetics of molnupir…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13031](https://doi.org/10.1002/psp4.13031) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span> | [Gouda_2022_reference](drugs/drug_molnupiravir/Molnupiravir_Gouda2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Gouda AS et al., A validated LC-MS/MS method for determi…, Journal of chromatography.… (2022) | [10.1016/j.jchromb.2022.123363](https://doi.org/10.1016/j.jchromb.2022.123363) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> | [Lv_2025_reference](drugs/drug_molnupiravir/Molnupiravir_Lv2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Lv D et al., Population Pharmacokinetic Modeling Ana…, Drug design, development an… (2025) | [10.2147/DDDT.S517282](https://doi.org/10.2147/DDDT.S517282) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.367). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Bihorel_2023_reference](drugs/drug_molnupiravir/Molnupiravir_Bihorel2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 8 (+5 cov.) | Bihorel S et al., Population pharmacokinetics of molnupir…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13031](https://doi.org/10.1002/psp4.13031) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span> | [Gouda_2022_reference](drugs/drug_molnupiravir/Molnupiravir_Gouda2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Gouda AS et al., A validated LC-MS/MS method for determi…, Journal of chromatography.… (2022) | [10.1016/j.jchromb.2022.123363](https://doi.org/10.1016/j.jchromb.2022.123363) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span> | [Lv_2025_reference](drugs/drug_molnupiravir/Molnupiravir_Lv2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Lv D et al., Population Pharmacokinetic Modeling Ana…, Drug design, development an… (2025) | [10.2147/DDDT.S517282](https://doi.org/10.2147/DDDT.S517282) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Chawla_2023_hospitalization](drugs/drug_molnupiravir/pd_Chawla_2023_hospitalization.md) | hospitalization (COVID-19 clinical outcome) ← β-D-N4-hydroxycytidine (NHC) · direct Emax (saturable) effect | — | Chawla A et al., Factors Influencing COVID-19 Risk: Insi…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2895](https://doi.org/10.1002/cpt.2895) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=molnupiravir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> | [Chawla_2023_hospitalization](drugs/drug_molnupiravir/pd_Chawla_2023_hospitalization.md) | hospitalization (COVID-19 clinical outcome) ← β-D-N4-hydroxycytidine (NHC) · direct Emax (saturable) effect | — | Chawla A et al., Factors Influencing COVID-19 Risk: Insi…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2895](https://doi.org/10.1002/cpt.2895) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

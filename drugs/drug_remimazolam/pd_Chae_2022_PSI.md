@@ -20,7 +20,7 @@
 
 > Remimazolam dose (mg kg-1) acts on the Patient State Index (PSI) decline via a sigmoid Emax (inhibitory) dose-response model; the paper reports ED50 = 0.12 mg kg-1, ED95 = 0.68 mg kg-1, and a Hill coefficient of 1.7, but the excerpts do not state the mechanism beyond this dose-effect relation.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Chae_2022`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Chae D et al., Pharmacodynamic analysis of intravenous…, British journal of an
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

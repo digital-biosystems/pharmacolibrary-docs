@@ -22,7 +22,7 @@
 
 > The record cites Baggot_1984 for thiopental concentrations (driver unit: microM) inhibiting action potential activity via an Emax model with an EC50 of 16.6 microM. The mechanism is not described in the available paper excerpts, and no rate parameters (kin, kout, ke0, gamma) or Imax values are provided in the record or excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Grasshoff_2008`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Grasshoff C et al., Depression of spinal network activity b…, Neuropharmacolog
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

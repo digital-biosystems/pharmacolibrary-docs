@@ -24,17 +24,8 @@ Emapalumab is a monoclonal antibody used to treat hemophagocytic lymphohistiocyt
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> | [Brossard_2025_reference](drugs/drug_emapalumab/Emapalumab_Brossard2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Brossard P, Emapalumab in Patients With Macrophage…, Clinical and translational… (2025) | [10.1111/cts.70163](https://doi.org/10.1111/cts.70163) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q79 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Brossard_2024_reference](drugs/drug_emapalumab/Emapalumab_Brossard2024_reference.md) | — | 2-compartment (no model) | 5 | Brossard P et al., Population Pharmacokinetics of the Anti…, Rheumatology and therapy (2024) | [10.1007/s40744-024-00669-y](https://doi.org/10.1007/s40744-024-00669-y) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=emapalumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: IFNG (neutralizer).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> | [Brossard_2025_reference](drugs/drug_emapalumab/Emapalumab_Brossard2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Brossard P, Emapalumab in Patients With Macrophage…, Clinical and translational… (2025) | [10.1111/cts.70163](https://doi.org/10.1111/cts.70163) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q79 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Brossard_2024_reference](drugs/drug_emapalumab/Emapalumab_Brossard2024_reference.md) | — | 2-compartment (no model) | 5 | Brossard P et al., Population Pharmacokinetics of the Anti…, Rheumatology and therapy (2024) | [10.1007/s40744-024-00669-y](https://doi.org/10.1007/s40744-024-00669-y) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

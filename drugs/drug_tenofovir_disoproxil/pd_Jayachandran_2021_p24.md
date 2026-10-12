@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;tenofovir disoproxil&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_disoproxil/&quot;},{&quot;label&quot;:&quot;Jayachandran_2021 \u00b7 PD cumulative p24 antigen expression (ex vivo HIV-1 infection of rectal explants)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cumulative p24 antigen expression (ex vivo HIV-1 infection of rectal explants) — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+# cumulative p24 antigen expression (ex vivo HIV-1 infection of rectal explants) — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,11 +15,11 @@
 
 **As extracted:** Tenofovir-diphosphate (TFVdp) in rectal mononuclear cells (MMCs) drives cumulative p24 antigen expression (ex vivo HIV-1 infection of rectal explants) (in pg/mL): direct linear effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > In ex vivo HIV-1–infected rectal explants, intracellular tenofovir-diphosphate (TFVdp) in rectal mononuclear cells suppresses cumulative p24 antigen expression (pg/mL) via a viral dynamics model in which the drug effect E reduces the HIV-1 viral growth rate (dV/dt = kg·V·(1−E) − kd·V), with p24 produced from virus through a delayed expression compartment (dP/dt = kp·R·V − P); the effect is linear/proportional with a slope of 0.00011 (pg/mL)/(fmol/million cells), a cell death rate kdeath of 0.0193/hour, and a virus-to-p24 ratio of 0.0404 pg/virions (kg and kp fixed to 0.045/hour and 0.0059/hour from literature).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Jayachandran_2021`
 - **model family:** `linear`
@@ -124,7 +124,7 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

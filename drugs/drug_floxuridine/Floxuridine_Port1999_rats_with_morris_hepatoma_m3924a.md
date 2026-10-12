@@ -30,8 +30,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Port R et al., Local disposition kinetics of floxuridi…, Cancer chemotherapy and pha… (1999)
   ·  DOI: [10.1007/s002800050946](https://doi.org/10.1007/s002800050946)
 
-## Model component
-<dbs-pgx drug="floxuridine" model-id="Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a" status="" stale="true" population="rats with Morris hepatoma M3924A" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="floxuridine" model-id="Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a" status="" stale="true" population="rats with Morris hepatoma M3924A" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -53,7 +52,7 @@ _No comparable checks._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_floxuridine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Port_1999` / `Port_1999::rats with Morris hepatoma M3924A`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_floxuridine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Port_1999` / `Port_1999::rats with Morris hepatoma M3924A`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -74,7 +73,7 @@ _No comparable checks._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

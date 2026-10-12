@@ -20,7 +20,7 @@
 
 > For lymphocyte count (nadir), fexinidazole sulfone (M2) exposure (AUlogC) was modeled with a sigmoid Emax function, but the paper found no clear evidence of an exposure-response relationship (overlapping coefficients 11–75%), so no mechanism or reliable potency estimate is supported; the record's EC50 range of 74–1,304 AUlogC reflects this poorly identified fit.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Watson_2019`
 - **model family:** `sigmoid_emax`
@@ -47,11 +47,11 @@ Watson JA et al., Pharmacokinetic-Pharmacodynamic Assessm…, Antimicrobial agen
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

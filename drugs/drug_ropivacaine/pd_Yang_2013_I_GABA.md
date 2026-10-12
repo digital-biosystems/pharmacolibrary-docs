@@ -22,7 +22,7 @@
 
 > No information is available in the provided excerpts to describe the mechanism or key rate parameters; the record indicates ropivacaine acts on GABA-activated currents with an EC50 of 23.46 micromol/L, but the paper does not specify whether this represents direct binding, an Emax effect, or an effect compartment mechanism.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Yang_2013`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Yang Y et al., [Effects of ropivacaine on GABA-activat…, Zhongguo ying yong sh
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

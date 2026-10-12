@@ -28,19 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Demirbas_1998_DXP_HBr](drugs/drug_guaifenesin/pd_Demirbas_1998_DXP_HBr.md) | dextromethorphan bioavailability biomarker turnover ← guaifenesin | — | Demirbas S et al., Bioavailability of dextromethorphan (as…, Biopharmaceutics & drug dis… (1998) | [10.1002/(sici)1099-081x(1998110)19:8&lt;541::aid-bdd138&gt;3.0.co;2-8](https://doi.org/10.1002/(sici)1099-081x(1998110)19:8&lt;541::aid-bdd138&gt;3.0.co;2-8) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=guaifenesin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: GRIN1 (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> | [Demirbas_1998_DXP_HBr](drugs/drug_guaifenesin/pd_Demirbas_1998_DXP_HBr.md) | dextromethorphan bioavailability biomarker turnover ← guaifenesin | — | Demirbas S et al., Bioavailability of dextromethorphan (as…, Biopharmaceutics & drug dis… (1998) | [10.1002/(sici)1099-081x(1998110)19:8&lt;541::aid-bdd138&gt;3.0.co;2-8](https://doi.org/10.1002/(sici)1099-081x(1998110)19:8&lt;541::aid-bdd138&gt;3.0.co;2-8) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

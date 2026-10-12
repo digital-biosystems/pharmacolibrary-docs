@@ -33,36 +33,13 @@ Enasidenib is an anticancer medicine, an IDH inhibitor, used to treat acute myel
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T1_cmax</sub><br><sub>route_to: `engineer`</sub> | [Li_2019_reference](drugs/drug_enasidenib/Enasidenib_Li2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Li Y et al., Modeling and simulation of the endogeno…, Clinical pharmacology : adv… (2019) | [10.2147/CPAA.S192687](https://doi.org/10.2147/CPAA.S192687) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T1_cmax</sub><br><sub>route_to: `engineer`</sub> | [Li_2019_reference](drugs/drug_enasidenib/Enasidenib_Li2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Li Y et al., Modeling and simulation of the endogeno…, Clinical pharmacology : adv… (2019) | [10.2147/CPAA.S192687](https://doi.org/10.2147/CPAA.S192687) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> | [Li_2019_4_hydroxycholesterol_cholesterol_ratio](drugs/drug_enasidenib/pd_Li_2019_4_hydroxycholesterol_cholesterol_ratio.md) | 4β-hydroxycholesterol/cholesterol ratio ← enasidenib · indirect response — drug stimulates the production of 4β-hydroxycholesterol/cholesterol ratio | model (no simulator) | Li Y et al., Modeling and simulation of the endogeno…, Clinical pharmacology : adv… (2019) | [10.2147/CPAA.S192687](https://doi.org/10.2147/CPAA.S192687) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=enasidenib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2B6` inducer/inhibitor/substrate, `CYP2C19` inhibitor/substrate, `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor/substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inducer/inhibitor/substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor, `UGT1A1` inhibitor/substrate, `UGT1A3` substrate, `UGT1A4` substrate, `UGT1A9` substrate, `UGT2B15` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `UGT1A1` inhibitor/substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A2` inhibitor, `SLC22A6` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: IDH1 (inhibitor), IDH2 (inhibitor), IDH3A (inhibitor), IDH3B (inhibitor), IDH3G (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> | [Li_2019_4_hydroxycholesterol_cholesterol_ratio](drugs/drug_enasidenib/pd_Li_2019_4_hydroxycholesterol_cholesterol_ratio.md) | 4β-hydroxycholesterol/cholesterol ratio ← enasidenib · indirect response — drug stimulates the production of 4β-hydroxycholesterol/cholesterol ratio | model (no simulator) | Li Y et al., Modeling and simulation of the endogeno…, Clinical pharmacology : adv… (2019) | [10.2147/CPAA.S192687](https://doi.org/10.2147/CPAA.S192687) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

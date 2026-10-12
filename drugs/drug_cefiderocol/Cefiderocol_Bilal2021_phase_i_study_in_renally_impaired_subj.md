@@ -5,7 +5,7 @@
 
 # cefiderocol — `Cefiderocol_Bilal2021_phase_i_study_in_renally_impaired_subj`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -27,8 +27,7 @@ The parameter labeled "fe" is defined in the record's metadata as the fraction o
 Bilal M et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-021-01063-5](https://doi.org/10.1007/s40262-021-01063-5)
 
-## Model component
-<dbs-pgx drug="cefiderocol" model-id="Cefiderocol_Bilal2021_phase_i_study_in_renally_impaired_subj" status="rejected" stale="false" population="mixed" measured-compound="cefiderocol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefiderocol" model-id="Cefiderocol_Bilal2021_phase_i_study_in_renally_impaired_subj" status="rejected" stale="false" population="mixed" measured-compound="cefiderocol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 10 extracted.
@@ -104,18 +103,18 @@ Bilal M et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_cefiderocol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bilal_2021` / `Bilal_2021::phase_i_study_in_renally_impaired_subjects`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cefiderocol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bilal_2021` / `Bilal_2021::phase_i_study_in_renally_impaired_subjects`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

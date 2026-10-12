@@ -4,7 +4,7 @@
 
 # gadopentetic acid — `GadopenteticAcid_Scala2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 The record reports total clearance as 2.51 L/h and central-compartment volume as 0.161 L. The finding describes a clearance/volume magnitude outside the physiological window and attributes it to a likely unit or scale extraction error, but does not specify which value triggered it. Extracted — gadopentetic acid: CL 2.51 L/h, V1 0.161 L, Q 0.335 L/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q352: this record has none, the second reading 0.2; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q21: this record has none, the second reading 0.62; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by gpt-6-luna</sub>
 
@@ -62,13 +62,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.833 (10/12 fields) | 2 |
+| `qwen3.8-27b` | partly confirmed | 0.75 (9/12 fields) | 3 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `values[Q352]` | not captured | 0.2 | only_one_extracted |
+| `qwen3.8-27b` | `values[Q21]` | not captured | 0.62 | only_one_extracted |
+| `qwen3.8-27b` | `values[Q354]` | 0.06 | not captured | only_one_extracted |
 | `qwen3.8-27b` | `values[Q61]` | 0.2 | not captured | only_one_extracted |
 
 </details>
@@ -101,18 +102,18 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_gadopentetic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Scala_2018` / `Scala_2018::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gadopentetic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Scala_2018` / `Scala_2018::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

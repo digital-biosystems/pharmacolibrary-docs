@@ -22,7 +22,7 @@
 
 > Indacaterol concentration stimulates the human beta2 adrenoceptor response (measured as % of maximal isoprenaline effect), described by a direct Emax model with Emax 73 ± 1 % of the maximal effect of isoprenaline and pEC50 8.06 ± 0.02; the excerpts do not state a mechanism beyond this direct concentration–effect relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Battram_2006`
 - **model family:** `emax`
@@ -64,7 +64,7 @@ Battram C et al., In vitro and in vivo pharmacological ch…, The Journal of pha
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

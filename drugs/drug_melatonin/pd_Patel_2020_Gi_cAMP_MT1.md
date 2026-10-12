@@ -22,7 +22,7 @@
 
 > Melatonin concentration (nM) drives inhibition of Gi/o-mediated cAMP production at the MT1 receptor, described by a sigmoid Emax model with EC50 = 0.004 nM and Emax = 100 ± 5.6%; the excerpts do not state the mechanism beyond Gi/o-mediated inhibition of cAMP production.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Patel_2020`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Patel N et al., Structure-based discovery of potent and…, eLife 9 (2020)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

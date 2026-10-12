@@ -22,7 +22,7 @@
 
 > Lorazepam brain concentrations (ng/g) drive cortical benzodiazepine receptor occupancy via a sigmoid Emax inhibitory model, with IC50 133 ng/g and Hill slope 1.71; the paper excerpts do not state the mechanism beyond this direct concentration–occupancy relationship (Kd 372 pmol/g is also reported).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Miller_1987`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Miller LG et al., Benzodiazepine receptor occupancy in vi…, The Journal of pha
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -18,11 +18,11 @@
 
 **As extracted:** Buprenorphine (concentrations from the PK model of Castro-Cuellar_2023) drives Step count (in step hour À1): indirect response — drug inhibits the loss of Step count.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Plasma buprenorphine concentrations inhibit step count via an indirect response model with proportional inhibition of the response production term (Kin), characterized by an IC50 of 0.90 ng mL⁻¹, an Imax of 1, a Kin of 2670 steps h⁻², a baseline R0 of 56.3 steps h⁻¹, and a Hill coefficient n of 1.3.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Love_2015`
 - **model family:** `indirect_response_ii`
@@ -94,7 +94,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -21,7 +21,7 @@
 
 > The paper does not provide the full text or specific kinetic parameters, so the mechanism and potency values are not available. Mivacurium concentrations (in µg/mL) were linked to a categorical response of neuromuscular block, with the effect direction identified as inhibition.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Yang_1996`
 - **model family:** `categorical`
@@ -55,7 +55,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -4,7 +4,7 @@
 
 # dextromethorphan — `Dextromethorphan_Ehret2013_mean_population_estimate`
 
-> ## <span class="pk-badge pk-badge--orange" title="molar_mass_missing:dextrorphan: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="molar_mass_missing:dextrorphan: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.909). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -12,7 +12,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** Model withheld: a core parameter is unspecified.
 
 > **Caveat** (`molar_mass_missing:dextrorphan`): a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule
 
@@ -145,9 +145,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_dextromethorphan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ehret_2013` / `Ehret_2013::mean_population_estimate`)
-- model: `../../../knowledgebase/drugs/drug_dextromethorphan/models/modelica/_needs_review/Dextromethorphan_Ehret2013_mean_population_estimate.mo`
-- deviation: `../../../knowledgebase/drugs/drug_dextromethorphan/models/modelica/_needs_review/Dextromethorphan_Ehret2013_mean_population_estimate.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_dextromethorphan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ehret_2013` / `Ehret_2013::mean_population_estimate`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_dextromethorphan/models/modelica/_needs_review/Dextromethorphan_Ehret2013_mean_population_estimate.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_dextromethorphan/models/modelica/_needs_review/Dextromethorphan_Ehret2013_mean_population_estimate.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -168,7 +168,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

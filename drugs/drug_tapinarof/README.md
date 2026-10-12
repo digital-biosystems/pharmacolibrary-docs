@@ -28,21 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Zang_2016_PASI](drugs/drug_tapinarof/pd_Zang_2016_PASI.md) | PASI change rate ← benvitimod · direct Emax (saturable) effect | — | Zang YN et al., Use of a dose-response model to guide f…, International journal of cl… (2016) | [10.5414/CP202486](https://doi.org/10.5414/CP202486) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Zhao_2025_AHR](drugs/drug_tapinarof/pd_Zhao_2025_AHR.md) | AHR agonist activity ← Tapinarof · stimulation effect | — | Zhao Y et al., Design, Optimization, and Biological Ev…, Journal of medicinal chemis… (2025) | [10.1021/acs.jmedchem.5c01060](https://doi.org/10.1021/acs.jmedchem.5c01060) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tapinarof).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: AHR (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> | [Zang_2016_PASI](drugs/drug_tapinarof/pd_Zang_2016_PASI.md) | PASI change rate ← benvitimod · direct Emax (saturable) effect | — | Zang YN et al., Use of a dose-response model to guide f…, International journal of cl… (2016) | [10.5414/CP202486](https://doi.org/10.5414/CP202486) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Zhao_2025_AHR](drugs/drug_tapinarof/pd_Zhao_2025_AHR.md) | AHR agonist activity ← Tapinarof · stimulation effect | — | Zhao Y et al., Design, Optimization, and Biological Ev…, Journal of medicinal chemis… (2025) | [10.1021/acs.jmedchem.5c01060](https://doi.org/10.1021/acs.jmedchem.5c01060) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

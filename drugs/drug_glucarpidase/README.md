@@ -32,29 +32,9 @@ Glucarpidase is a detoxifying agent used to treat toxicity caused by antineoplas
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Loprete_2016_reference](drugs/drug_safinamide/Safinamide_Loprete2016_reference.md) | — | 1-compartment (no model) | 4 | Loprete L et al., Population pharmacokinetic and pharmaco…, Pharmacology research & per… (2016) | [10.1002/prp2.251](https://doi.org/10.1002/prp2.251) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=safinamide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCG2` inhibitor | DrugBank actor |
-| absorption | liver | `ABCG2` inhibitor | DrugBank actor |
-| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCG2` inhibitor | DrugBank actor |
-| absorption | testis | `ABCG2` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor, `MAOA` inhibitor, `MAOB` target | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor, `CYP2C19` inhibitor, `CYP2D6` inhibitor, `CYP3A4` substrate, `CYP3A5` inhibitor, `MAOA` inhibitor | DrugBank actor |
-| metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
-| metabolism | platelet | `MAOB` target | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` inhibitor, `CYP3A4` substrate, `CYP3A5` inhibitor, `MAOA` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: SLCO3A1 (substrate).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Fukaya_2023_phase_1](drugs/drug_glucarpidase/Glucarpidase_Fukaya2023_phase_1.md) | — | nonlinear / manual (no model) | 2 | Fukaya Y et al., Development of a population pharmacokin…, Frontiers in oncology (2023) | [10.3389/fonc.2023.1003633](https://doi.org/10.3389/fonc.2023.1003633) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Fukaya_2023_phase_2](drugs/drug_glucarpidase/Glucarpidase_Fukaya2023_phase_2.md) | — | nonlinear / manual (no model) | 2 | Fukaya Y et al., Development of a population pharmacokin…, Frontiers in oncology (2023) | [10.3389/fonc.2023.1003633](https://doi.org/10.3389/fonc.2023.1003633) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Fukaya_2023_original_estimate](drugs/drug_glucarpidase/Glucarpidase_Fukaya2023_original_estimate.md) | — | nonlinear / manual (no model) | 4 (+3 cov.) | Fukaya Y et al., Development of a population pharmacokin…, Frontiers in oncology (2023) | [10.3389/fonc.2023.1003633](https://doi.org/10.3389/fonc.2023.1003633) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

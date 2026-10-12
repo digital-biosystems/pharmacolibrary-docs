@@ -20,7 +20,7 @@
 
 > The model posits that psilocin concentrations drive 5-HT2A receptor occupancy via an Emax mechanism of stimulation. The specific mechanism is not detailed in the provided excerpts, and no potency or rate parameters (such as EC50 or Emax) are stated.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Thaoboonruang_2026`
 - **model family:** `emax`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -33,9 +33,9 @@ Pyridostigmine is a medication used to treat myasthenia gravis. It is an acetylc
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.842). The first reading is what the record holds.">cross-check: partial</span> | [Hosseini_2018_reference](drugs/drug_pyridostigmine/Pyridostigmine_Hosseini2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hosseini I et al., gPKPDSim: a SimBiology&lt;sup&gt;®&lt;/sup&gt;-base…, Journal of pharmacokinetics… (2018) | [10.1007/s10928-017-9562-9](https://doi.org/10.1007/s10928-017-9562-9) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span> | [Seng_2009_reference](drugs/drug_pyridostigmine/Pyridostigmine_Seng2009_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Seng KY et al., Retrospective population pharmacokineti…, The Journal of pharmacy and… (2009) | [10.1211/jpp/61.09.0008](https://doi.org/10.1211/jpp/61.09.0008) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: unreported model parameter default(s): k21</sub><br><sub>route_to: `scholar`</sub> | [Thakkar_2017_reference](drugs/drug_pyridostigmine/Pyridostigmine_Thakkar2017_reference.md) | ▶ model + simulator | 2-compartment, oral | 4 | Thakkar N et al., Population Pharmacokinetics/Pharmacodyn…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12218](https://doi.org/10.1002/psp4.12218) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.842). Primary extraction retained.">cross-check: partial</span> | [Hosseini_2018_reference](drugs/drug_pyridostigmine/Pyridostigmine_Hosseini2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hosseini I et al., gPKPDSim: a SimBiology&lt;sup&gt;®&lt;/sup&gt;-base…, Journal of pharmacokinetics… (2018) | [10.1007/s10928-017-9562-9](https://doi.org/10.1007/s10928-017-9562-9) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span> | [Seng_2009_reference](drugs/drug_pyridostigmine/Pyridostigmine_Seng2009_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Seng KY et al., Retrospective population pharmacokineti…, The Journal of pharmacy and… (2009) | [10.1211/jpp/61.09.0008](https://doi.org/10.1211/jpp/61.09.0008) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: unreported model parameter default(s): k21</sub><br><sub>route_to: `scholar`</sub> | [Thakkar_2017_reference](drugs/drug_pyridostigmine/Pyridostigmine_Thakkar2017_reference.md) | ▶ model + simulator | 2-compartment, oral | 4 | Thakkar N et al., Population Pharmacokinetics/Pharmacodyn…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12218](https://doi.org/10.1002/psp4.12218) |
 
 ## Pharmacodynamics (PD)
 
@@ -59,7 +59,7 @@ Pyridostigmine is a medication used to treat myasthenia gravis. It is an acetylc
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">in vitro</span> | **PON2** | `Q321` · EC50 | metabolism | [Parween_2021](drugs/drug_pyridostigmine/pgx_Parween_2021_PON2_Q321.md) | Parween F et al., Association between human paraoxonase 2…, PloS one (2021) | [10.1371/journal.pone.0258879](https://doi.org/10.1371/journal.pone.0258879) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">in vitro</span> | **PON2** | `Q321` · EC50 | metabolism | [Parween_2021](drugs/drug_pyridostigmine/pgx_Parween_2021_PON2_Q321.md) | Parween F et al., Association between human paraoxonase 2…, PloS one (2021) | [10.1371/journal.pone.0258879](https://doi.org/10.1371/journal.pone.0258879) |
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -67,24 +67,6 @@ Pyridostigmine is a medication used to treat myasthenia gravis. It is an acetylc
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pyridostigmine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | blood | `BCHE` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `BCHE` inhibitor/substrate, `CYP3A4` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| — | blood | `ACHE` inhibitor/substrate | DrugBank actor |
-| — | neuromuscular junction | `ACHE` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: F10 (inhibitor), PON2 (metabolism).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

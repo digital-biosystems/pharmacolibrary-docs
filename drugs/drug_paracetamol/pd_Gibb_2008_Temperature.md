@@ -20,7 +20,7 @@
 
 > Paracetamol concentrations (mg/l) are linked to the reduction in temperature via an effect compartment model, with a target effect compartment concentration of 5 mg/l cited for fever. The model is characterized by an EC50 of 4.63 mg/l and an equilibration half-time (T1/2 ke0) of 71 min.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Gibb_2008`
 - **model family:** `effect_compartment`
@@ -62,7 +62,7 @@ Gibb IA et al., Paracetamol (acetaminophen) pharmacodyn…, Archives of disease 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

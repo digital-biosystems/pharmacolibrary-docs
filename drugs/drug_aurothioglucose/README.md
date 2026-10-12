@@ -28,26 +28,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bashtanova_2025_BrdU_incorporation](drugs/drug_aurothioglucose/pd_Bashtanova_2025_BrdU_incorporation.md) | DNA replication biomarker turnover ← aurothioglucose | — | Bashtanova U et al., The zinc finger domains of PARP-1 are s…, FEBS letters (2025) | [10.1002/1873-3468.70224](https://doi.org/10.1002/1873-3468.70224) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bashtanova_2025_PARP_1_activity](drugs/drug_aurothioglucose/pd_Bashtanova_2025_PARP_1_activity.md) | PARP-1 DNA-dependent activity biomarker turnover ← aurothioglucose | — | Bashtanova U et al., The zinc finger domains of PARP-1 are s…, FEBS letters (2025) | [10.1002/1873-3468.70224](https://doi.org/10.1002/1873-3468.70224) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bashtanova_2025_viability](drugs/drug_aurothioglucose/pd_Bashtanova_2025_viability.md) | cell viability biomarker turnover ← aurothioglucose | — | Bashtanova U et al., The zinc finger domains of PARP-1 are s…, FEBS letters (2025) | [10.1002/1873-3468.70224](https://doi.org/10.1002/1873-3468.70224) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=aurothioglucose).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADCY1 (unknown), ADCY2 (unknown), ADCY5 (unknown).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bashtanova_2025_BrdU_incorporation](drugs/drug_aurothioglucose/pd_Bashtanova_2025_BrdU_incorporation.md) | DNA replication biomarker turnover ← aurothioglucose | — | Bashtanova U et al., The zinc finger domains of PARP-1 are s…, FEBS letters (2025) | [10.1002/1873-3468.70224](https://doi.org/10.1002/1873-3468.70224) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bashtanova_2025_PARP_1_activity](drugs/drug_aurothioglucose/pd_Bashtanova_2025_PARP_1_activity.md) | PARP-1 DNA-dependent activity biomarker turnover ← aurothioglucose | — | Bashtanova U et al., The zinc finger domains of PARP-1 are s…, FEBS letters (2025) | [10.1002/1873-3468.70224](https://doi.org/10.1002/1873-3468.70224) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bashtanova_2025_viability](drugs/drug_aurothioglucose/pd_Bashtanova_2025_viability.md) | cell viability biomarker turnover ← aurothioglucose | — | Bashtanova U et al., The zinc finger domains of PARP-1 are s…, FEBS letters (2025) | [10.1002/1873-3468.70224](https://doi.org/10.1002/1873-3468.70224) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

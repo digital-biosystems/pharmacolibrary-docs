@@ -32,24 +32,7 @@ Cilnidipine is a dihydropyridine calcium channel blocker with mainly vascular ef
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.636), gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Suryawanshi_2026_reference](drugs/drug_cilnidipine/Cilnidipine_Suryawanshi2026_reference.md) | — | 1-compartment (no model) | 5 | Suryawanshi A et al., Preclinical evaluation of cilnidipine n…, Annales pharmaceutiques fra… (2026) | [10.1016/j.pharma.2026.05.010](https://doi.org/10.1016/j.pharma.2026.05.010) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cilnidipine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CACNA1B (target), CACNA1C (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.636), gpt-oss:120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Suryawanshi_2026_reference](drugs/drug_cilnidipine/Cilnidipine_Suryawanshi2026_reference.md) | — | 1-compartment (no model) | 5 | Suryawanshi A et al., Preclinical evaluation of cilnidipine n…, Annales pharmaceutiques fra… (2026) | [10.1016/j.pharma.2026.05.010](https://doi.org/10.1016/j.pharma.2026.05.010) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

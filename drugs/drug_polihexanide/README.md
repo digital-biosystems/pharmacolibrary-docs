@@ -27,16 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Frieling_2006_vascular_basic_tension_relaxation_in_aortal_rings_pre_contracted_with_phenylephrine](drugs/drug_polihexanide/pd_Frieling_2006_vascular_basic_tension_relaxation_in_aortal_ri.md) | vascular basic tension / relaxation in aortal rings pre-contracted with phenylephrine ← polihexanide · direct Emax (saturable) effect | — | Frieling H et al., Intraperitoneal instillation of polihex…, International journal of co… (2006) | [10.1007/s00384-005-0012-6](https://doi.org/10.1007/s00384-005-0012-6) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=polihexanide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: Aerobic bacterial DNA (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Frieling_2006_vascular_basic_tension_relaxation_in_aortal_rings_pre_contracted_with_phenylephrine](drugs/drug_polihexanide/pd_Frieling_2006_vascular_basic_tension_relaxation_in_aortal_ri.md) | vascular basic tension / relaxation in aortal rings pre-contracted with phenylephrine ← polihexanide · direct Emax (saturable) effect | — | Frieling H et al., Intraperitoneal instillation of polihex…, International journal of co… (2006) | [10.1007/s00384-005-0012-6](https://doi.org/10.1007/s00384-005-0012-6) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

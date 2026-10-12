@@ -22,7 +22,7 @@
 
 > Buspirone stimulates [(35)S]GTPgammaS binding in rat hippocampal membranes (expressed as % of 5-HT maximum) via a direct Emax model; the paper gives Emax = 41% (relative to 5-HT = 100) but no full text is available, so no mechanism beyond stimulation, potency (EC50) or rate values are stated.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Newman-Tancredi_2003`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Newman-Tancredi A et al., Comparison of hippocampal G protein act…, Naunyn-Sch
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

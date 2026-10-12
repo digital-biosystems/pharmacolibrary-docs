@@ -22,7 +22,7 @@
 
 > Fluoxetine dose-dependently decreased urinary K+ (mmol/L) in acute in vivo experiments; the paper does not state a mechanism. An Emax-type dose model gave an ED50 of 4.2 mg/kg (2.8; 5.5) and a maximal effect of 62% reduction.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Vieira-Coelho_2023`
 - **model family:** `emax`
@@ -64,7 +64,7 @@ Vieira-Coelho MA et al., Inhibition of kidney potassium channels…, Fundamental
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

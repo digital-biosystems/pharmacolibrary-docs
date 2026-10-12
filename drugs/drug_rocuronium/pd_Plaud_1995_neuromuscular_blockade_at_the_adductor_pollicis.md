@@ -20,7 +20,7 @@
 
 > Rocuronium plasma concentrations drive neuromuscular blockade at the adductor pollicis through an effect compartment model characterized by a transport half-life of 4.4 minutes and an effect compartment concentration producing 50% of the maximum effect of 823 micrograms.L-1.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Plaud_1995`
 - **model family:** `effect_compartment`
@@ -62,7 +62,7 @@ Plaud B et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacolog
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

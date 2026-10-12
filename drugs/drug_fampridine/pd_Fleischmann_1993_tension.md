@@ -22,7 +22,7 @@
 
 > Fampridine (4-aminopyridine, in mM) stimulates baseline tension in isolated trachealis strips (expressed as % of methacholine response) via a direct Emax model; the paper reports an EC50 of 1.8 mM but no full text is available, so no mechanism beyond this concentration–response relationship is stated.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Fleischmann_1993`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Fleischmann BK et al., Control of resting membrane potential b…, The Journal o
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

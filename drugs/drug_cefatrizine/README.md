@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Stillerman_1986_Treatment_failure_rate](drugs/drug_cefatrizine/pd_Stillerman_1986_Treatment_failure_rate.md) | Treatment failure rate ← cefatrizine · categorical (graded) response model | — | Stillerman M, Comparison of oral cephalosporins with…, Pediatric infectious disease (1986) | [10.1097/00006454-198611000-00010](https://doi.org/10.1097/00006454-198611000-00010) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Stillerman_1986_Treatment_failure_rate](drugs/drug_cefatrizine/pd_Stillerman_1986_Treatment_failure_rate.md) | Treatment failure rate ← cefatrizine · categorical (graded) response model | — | Stillerman M, Comparison of oral cephalosporins with…, Pediatric infectious disease (1986) | [10.1097/00006454-198611000-00010](https://doi.org/10.1097/00006454-198611000-00010) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

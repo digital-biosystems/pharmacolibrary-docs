@@ -21,7 +21,7 @@
 
 > Maprotiline inhibited GTPγS-activated I K.ACh (pA) in guinea-pig atrial myocytes in a concentration-dependent manner, fitted to a sigmoid Emax inhibition model with IC50 = 5.93 ± 1.18 µM; the paper does not state Emax, gamma, or rate parameters. Its IC50 ratio (5.93/1.81 = 3.28, higher than unity) suggests it preferentially acts on the muscarinic M2 receptor rather than downstream G protein/channel.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Okada_2013`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Okada M et al., Inhibitory effects of psychotropic drug…, The Journal of veter
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

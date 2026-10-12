@@ -4,7 +4,7 @@
 
 # anifrolumab — `Anifrolumab_Almquist2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.692). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Almquist J et al., Nonlinear Population Pharmacokinetics o…, Journal of clinical pharmac… (2022)
   ·  DOI: [10.1002/jcph.2055](https://doi.org/10.1002/jcph.2055)
 
-## Model component
-<dbs-pgx drug="anifrolumab" model-id="Anifrolumab_Almquist2022_reference" status="needs_review" stale="false" population="healthy volunteers and patients with systemic lupus erythematosus" measured-compound="anifrolumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="anifrolumab" model-id="Anifrolumab_Almquist2022_reference" status="needs_review" stale="false" population="healthy volunteers and patients with systemic lupus erythematosus" measured-compound="anifrolumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.
@@ -150,7 +149,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_anifrolumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Almquist_2022` / `Almquist_2022::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_anifrolumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Almquist_2022` / `Almquist_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -171,7 +170,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

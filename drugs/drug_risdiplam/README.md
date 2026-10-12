@@ -33,31 +33,7 @@ Risdiplam is a medicine used to treat spinal muscular atrophy. It is authorised 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Cleary_2023_reference](drugs/drug_risdiplam/Risdiplam_Cleary2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 (+2 cov.) | Cleary Y et al., Estimation of FMO3 Ontogeny by Mechanis…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01241-7](https://doi.org/10.1007/s40262-023-01241-7) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=risdiplam).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | heart | `CYP2J2` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` inhibitor/substrate, `CYP3A7` substrate, `FMO3` substrate | DrugBank actor |
-| metabolism | lung | `CYP1A1` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` substrate, `CYP2J2` substrate, `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
-| excretion | liver | `SLC47A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: FMO1 (substrate).</sub>
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Cleary_2023_reference](drugs/drug_risdiplam/Risdiplam_Cleary2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 (+2 cov.) | Cleary Y et al., Estimation of FMO3 Ontogeny by Mechanis…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01241-7](https://doi.org/10.1007/s40262-023-01241-7) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

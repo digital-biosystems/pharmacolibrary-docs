@@ -21,7 +21,7 @@
 
 > Prochlorperazine concentrations (μM) inhibit cell viability of normal human melanocytes (WST-1 assay, % of cell viability) in a concentration-dependent manner, with an EC50 of 18.49 μM; the paper does not state a specific mechanism (e.g., Emax/turnover parameters) for this effect beyond concentration-dependent loss of viability.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Otręba_2017`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Otręba M et al., Prochlorperazine interaction with melan…, Die Pharmazie (201
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

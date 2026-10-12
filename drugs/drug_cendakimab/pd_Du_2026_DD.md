@@ -19,7 +19,7 @@
 
 > Cendakimab concentration drives a latent variable in an indirect response model that inhibits the occurrence of Dysphagia Days (DD) through a proportional effect mechanism. The paper specifies an EC50 of 76.5 μg/mL and a placebo half-life of ~28 weeks, while the record lists a log-transformed EC50 of 4.337 μg/mL and a drug onset half-life of 1.408 weeks.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Du_2026`
 - **model family:** `indirect_response_i`
@@ -65,7 +65,7 @@ Du S et al., Latent Variable Indirect Response Model…, CPT: pharmacometrics & 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

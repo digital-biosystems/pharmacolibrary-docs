@@ -24,17 +24,6 @@ Calcium citrate is a calcium supplement used to prevent or treat calcium deficie
 
 _not available_
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=calcium_citrate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CACNA1A (substrate), CACNA1C (substrate), CACNA1E (substrate), CACNA1G (substrate), CADPS (target), CADPS2 (target), CALB1 (substrate), CALB2 (target), CALM1 (target), CALM2 (target), CALM3 (target), CALR (target), CALR3 (target), CANX (target), CAPS (target), CASQ1 (target), CASQ2 (target), CASR (target), CATSPER1 (substrate), CHP1 (target), CIB1 (target), CIB2 (target), FBN2 (target), FBN3 (target), GCA (target), NCS1 (target), NRXN1 (target), NUCB1 (target), NUCB2 (target), PDCD6 (target), PEF1 (target), PKD1L3 (substrate), PKD2L1 (substrate), RGN (target), RYR1 (substrate), RYR2 (substrate), RYR3 (substrate), S100A13 (target), S100A16 (target), S100A6 (target), S100B (target), S100G (substrate), SLC8A1 (substrate), SPARC (target), SRI (target), TPT1 (target), TRPV5 (substrate), TRPV6 (substrate).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>

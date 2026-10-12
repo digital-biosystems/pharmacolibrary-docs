@@ -33,17 +33,8 @@ Cromoglicic acid is an antiallergic drug used to treat conditions such as asthma
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Fuller_1983_reference](drugs/drug_cromoglicic_acid/CromoglicicAcid_Fuller1983_reference.md) | — | 1-compartment (no model) | 2 | Fuller RW et al., The pharmacokinetic assessment of sodiu…, The Journal of pharmacy and… (1983) | [10.1111/j.2042-7158.1983.tb02936.x](https://doi.org/10.1111/j.2042-7158.1983.tb02936.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Neale_1986_reference](drugs/drug_cromoglicic_acid/CromoglicicAcid_Neale1986_reference.md) | — | 1-compartment (no model) | 2 | Neale MG et al., The pharmacokinetics of sodium cromogly…, British journal of clinical… (1986) | [10.1111/j.1365-2125.1986.tb02905.x](https://doi.org/10.1111/j.1365-2125.1986.tb02905.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cromoglicic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: HSP90AA1 (inhibitor), S100P (target).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Fuller_1983_reference](drugs/drug_cromoglicic_acid/CromoglicicAcid_Fuller1983_reference.md) | — | 1-compartment (no model) | 2 | Fuller RW et al., The pharmacokinetic assessment of sodiu…, The Journal of pharmacy and… (1983) | [10.1111/j.2042-7158.1983.tb02936.x](https://doi.org/10.1111/j.2042-7158.1983.tb02936.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Neale_1986_reference](drugs/drug_cromoglicic_acid/CromoglicicAcid_Neale1986_reference.md) | — | 1-compartment (no model) | 2 | Neale MG et al., The pharmacokinetics of sodium cromogly…, British journal of clinical… (1986) | [10.1111/j.1365-2125.1986.tb02905.x](https://doi.org/10.1111/j.1365-2125.1986.tb02905.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -27,18 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Cho_2009_copper_excretion](drugs/drug_trientine/pd_Cho_2009_copper_excretion.md) | copper excretion ← trientine · direct linear effect | — | Cho HY et al., Pharmacokinetic and pharmacodynamic mod…, Journal of clinical pharmac… (2009) | [10.1177/0091270009337939](https://doi.org/10.1177/0091270009337939) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=trientine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CA14 (inhibitor), SAT1 (substrate).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Cho_2009_copper_excretion](drugs/drug_trientine/pd_Cho_2009_copper_excretion.md) | copper excretion ← trientine · direct linear effect | — | Cho HY et al., Pharmacokinetic and pharmacodynamic mod…, Journal of clinical pharmac… (2009) | [10.1177/0091270009337939](https://doi.org/10.1177/0091270009337939) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

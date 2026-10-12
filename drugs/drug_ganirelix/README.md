@@ -28,20 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sperduti_2019_Ca2](drugs/drug_ganirelix/pd_Sperduti_2019_Ca2.md) | intracellular Ca2+ ← Ganirelix · direct Emax (saturable) effect | — | Sperduti S et al., GnRH Antagonists Produce Differential M…, International journal of mo… (2019) | [10.3390/ijms20225548](https://doi.org/10.3390/ijms20225548) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sperduti_2019_cAMP](drugs/drug_ganirelix/pd_Sperduti_2019_cAMP.md) | cAMP ← Ganirelix · direct Emax (saturable) effect | — | Sperduti S et al., GnRH Antagonists Produce Differential M…, International journal of mo… (2019) | [10.3390/ijms20225548](https://doi.org/10.3390/ijms20225548) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ganirelix).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: GNRHR (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sperduti_2019_Ca2](drugs/drug_ganirelix/pd_Sperduti_2019_Ca2.md) | intracellular Ca2+ ← Ganirelix · direct Emax (saturable) effect | — | Sperduti S et al., GnRH Antagonists Produce Differential M…, International journal of mo… (2019) | [10.3390/ijms20225548](https://doi.org/10.3390/ijms20225548) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sperduti_2019_cAMP](drugs/drug_ganirelix/pd_Sperduti_2019_cAMP.md) | cAMP ← Ganirelix · direct Emax (saturable) effect | — | Sperduti S et al., GnRH Antagonists Produce Differential M…, International journal of mo… (2019) | [10.3390/ijms20225548](https://doi.org/10.3390/ijms20225548) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

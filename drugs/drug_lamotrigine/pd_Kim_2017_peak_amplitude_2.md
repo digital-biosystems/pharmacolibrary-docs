@@ -22,7 +22,7 @@
 
 > Lamotrigine directly inhibits the peak amplitude of 5-HT3 receptor currents (evoked by 1 mM dopamine) in NCB-20 cells by blocking channel opening, with no indication of an effect compartment. The study reports an IC50 of 18.2 µM and a Hill coefficient of 1.3 for this inhibition.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kim_2017`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Kim KJ et al., Lamotrigine, an antiepileptic drug, inh…, The Korean journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

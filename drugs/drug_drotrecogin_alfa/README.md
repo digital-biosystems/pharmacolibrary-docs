@@ -23,22 +23,13 @@ Drotrecogin alfa, a form of activated protein C, was used to treat severe sepsis
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>route_to: `human_review`</sub> | [Macias_2002_reference](drugs/drug_drotrecogin_alfa/DrotrecoginAlfa_Macias2002_reference.md) | — | 1-compartment (no model) | 3 | Macias WL et al., Pharmacokinetic-pharmacodynamic analysi…, Clinical pharmacology and t… (2002) | [10.1067/mcp.2002.128148](https://doi.org/10.1067/mcp.2002.128148) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>route_to: `human_review`</sub> | [Macias_2002_reference](drugs/drug_drotrecogin_alfa/DrotrecoginAlfa_Macias2002_reference.md) | — | 1-compartment (no model) | 3 | Macias WL et al., Pharmacokinetic-pharmacodynamic analysi…, Clinical pharmacology and t… (2002) | [10.1067/mcp.2002.128148](https://doi.org/10.1067/mcp.2002.128148) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Dömötör_2003_Ca2_i](drugs/drug_drotrecogin_alfa/pd_D_m_t_r_2003_Ca2_i.md) | intracellular calcium concentration ← APC · direct sigmoid Emax (Hill) effect | — | Dömötör E et al., Activated protein C alters cytosolic ca…, Blood (2003) | [10.1182/blood-2002-12-3680](https://doi.org/10.1182/blood-2002-12-3680) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=drotrecogin_alfa).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: F2 (unknown), F5 (inhibitor), F8 (inhibitor), PF4 (unknown), PROCR (unknown), PROS1 (unknown), SERPINA5 (unknown), SERPINB6 (unknown), SERPINE1 (unknown), THBD (unknown).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Dömötör_2003_Ca2_i](drugs/drug_drotrecogin_alfa/pd_D_m_t_r_2003_Ca2_i.md) | intracellular calcium concentration ← APC · direct sigmoid Emax (Hill) effect | — | Dömötör E et al., Activated protein C alters cytosolic ca…, Blood (2003) | [10.1182/blood-2002-12-3680](https://doi.org/10.1182/blood-2002-12-3680) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

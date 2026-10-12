@@ -20,7 +20,7 @@
 
 > The record specifies a proportional inhibition model where allopurinol concentrations (driver: umol/L) affect allopurinol transport (response: pmol/microL intracellular volume/sec) with a reported Km of 268 umol/L. The mechanism, as stated in the record, is proportional inhibition, though the paper excerpts are not available to verify specific rate constants or maximum effect parameters.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Razavi_1993`
 - **model family:** `unknown`
@@ -61,7 +61,7 @@ Razavi M et al., Allopurinol transport in human erythroc…, Biochemical pharmac
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -27,21 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Orihuela_1999_JCa_ms](drugs/drug_aluminium_chloride/pd_Orihuela_1999_JCa_ms.md) | JCa(ms) ← aluminum · inhibition effect | — | Orihuela D et al., Aluminum effects upon calbindin D9k-lin…, Toxicology letters (1999) | [10.1016/s0378-4274(98)00367-1](https://doi.org/10.1016/s0378-4274(98)00367-1) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=aluminium_chloride).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: GLUD1 (inactivator).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Orihuela_1999_JCa_ms](drugs/drug_aluminium_chloride/pd_Orihuela_1999_JCa_ms.md) | JCa(ms) ← aluminum · inhibition effect | — | Orihuela D et al., Aluminum effects upon calbindin D9k-lin…, Toxicology letters (1999) | [10.1016/s0378-4274(98)00367-1](https://doi.org/10.1016/s0378-4274(98)00367-1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

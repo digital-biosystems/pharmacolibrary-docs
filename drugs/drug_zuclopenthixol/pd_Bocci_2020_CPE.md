@@ -21,7 +21,7 @@
 
 > Zuclopenthixol (ZPX) concentrations (μM) inhibit SARS-CoV-2-mediated cytopathic effect in Vero E6 cells, measured as percent protection of cell viability (Cell Titer Glo), fitted by nonlinear regression to a sigmoid Emax dose-response; the paper does not state a mechanistic PD model beyond direct concentration-effect inhibition. EC50 was 1.35 μM (UNM, MOI 0.05, ~100% protection at 10 μM) and 15 μM (UTHSC, MOI 0.1, ~80% protection at 8.33 μM); no Imax, kin, kout, ke0, or gamma values are given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Bocci_2020`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Bocci G et al., Virtual and, ACS pharmacology & translat… (2020)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

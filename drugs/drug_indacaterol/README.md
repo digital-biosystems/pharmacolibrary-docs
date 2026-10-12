@@ -33,8 +33,8 @@ Indacaterol is an inhaled long-acting beta-2 agonist used to treat chronic obstr
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.917). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Jiang_2015_reference](drugs/drug_indacaterol/Indacaterol_Jiang2015_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Jiang J et al., Single- and multiple-dose pharmacokinet…, European journal of drug me… (2015) | [10.1007/s13318-014-0197-6](https://doi.org/10.1007/s13318-014-0197-6) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Bartels_2021_reference](drugs/drug_indacaterol/Indacaterol_Bartels2021_reference.md) | — | 1-compartment (no model) | 2 (+2 cov.) | Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of drug me… (2021) | [10.1007/s13318-021-00689-x](https://doi.org/10.1007/s13318-021-00689-x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.917). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Jiang_2015_reference](drugs/drug_indacaterol/Indacaterol_Jiang2015_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Jiang J et al., Single- and multiple-dose pharmacokinet…, European journal of drug me… (2015) | [10.1007/s13318-014-0197-6](https://doi.org/10.1007/s13318-014-0197-6) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Bartels_2021_reference](drugs/drug_indacaterol/Indacaterol_Bartels2021_reference.md) | — | 1-compartment (no model) | 2 (+2 cov.) | Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of drug me… (2021) | [10.1007/s13318-021-00689-x](https://doi.org/10.1007/s13318-021-00689-x) |
 
 ## Pharmacodynamics (PD)
 
@@ -54,25 +54,6 @@ Indacaterol is an inhaled long-acting beta-2 agonist used to treat chronic obstr
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Renard_2011_FEV1](drugs/drug_indacaterol/pd_Renard_2011_FEV1.md) | trough FEV1 (improvement vs placebo, steady state) ← indacaterol · direct Emax (saturable) effect | model (no simulator) | Renard D et al., Characterization of the bronchodilatory…, Respiratory research (2011) | [10.1186/1465-9921-12-54](https://doi.org/10.1186/1465-9921-12-54) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Renard_2011_FEV1_2](drugs/drug_indacaterol/pd_Renard_2011_FEV1_2.md) | trough FEV1 (patient-level, improvement over placebo) ← indacaterol · direct Emax (saturable) effect | model (no simulator) | Renard D et al., Characterization of the bronchodilatory…, Respiratory research (2011) | [10.1186/1465-9921-12-54](https://doi.org/10.1186/1465-9921-12-54) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Gong_2022_trough_FEV1](drugs/drug_indacaterol/pd_Gong_2022_trough_FEV1.md) | change from baseline in trough FEV1 ← indacaterol/glycopyrronium · direct Emax (saturable) effect | — | Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances in res… (2022) | [10.1177/17534666211066068](https://doi.org/10.1177/17534666211066068) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=indacaterol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate, `UGT1A1` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `UGT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADRB2 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

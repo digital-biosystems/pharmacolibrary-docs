@@ -31,7 +31,7 @@ Technetium-99m mertiatide is a diagnostic radiopharmaceutical used for imaging o
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Peters_1994_reference](drugs/drug_technetium_99mtc_mertiatide/Technetium99mtcMertiatide_Peters1994_reference.md) | — | 1-compartment (no model) | 2 | Peters AM et al., Measurement of the extravascular concen…, Nuclear medicine communicat… (1994) | [10.1097/00006231-199402000-00002](https://doi.org/10.1097/00006231-199402000-00002) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Peters_1994_reference](drugs/drug_technetium_99mtc_mertiatide/Technetium99mtcMertiatide_Peters1994_reference.md) | — | 1-compartment (no model) | 2 | Peters AM et al., Measurement of the extravascular concen…, Nuclear medicine communicat… (1994) | [10.1097/00006231-199402000-00002](https://doi.org/10.1097/00006231-199402000-00002) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

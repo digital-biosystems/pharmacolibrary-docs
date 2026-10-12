@@ -31,7 +31,7 @@ Xenon-127 is a radioactive isotope of xenon used as a diagnostic radiopharmaceut
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Susskind_1978_reference](drugs/drug_xenon_127xe_gas/Xenon127xeGas_Susskind1978_reference.md) | — | 1-compartment (no model) | 1 | Susskind H et al., Studies of whole-body retention and cle…, Progress in nuclear medicine (1978) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Susskind_1978_reference](drugs/drug_xenon_127xe_gas/Xenon127xeGas_Susskind1978_reference.md) | — | 1-compartment (no model) | 1 | Susskind H et al., Studies of whole-body retention and cle…, Progress in nuclear medicine (1978) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

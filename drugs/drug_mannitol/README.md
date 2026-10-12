@@ -33,18 +33,8 @@ Mannitol is an osmotic diuretic used for conditions such as anuria, oliguria, ce
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span> | [Wei_2022_reference](drugs/drug_mannitol/Mannitol_Wei2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wei S et al., Population pharmacokinetic model of van…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.1005791](https://doi.org/10.3389/fphar.2022.1005791) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Noorani_2022_reference](drugs/drug_mannitol/Mannitol_Noorani2022_reference.md) | — | 1-compartment (no model) | 2 | Noorani B et al., A Semi-Physiological Three-Compartment…, Pharmaceutical research (2022) | [10.1007/s11095-022-03175-4](https://doi.org/10.1007/s11095-022-03175-4) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mannitol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span> | [Wei_2022_reference](drugs/drug_mannitol/Mannitol_Wei2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wei S et al., Population pharmacokinetic model of van…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.1005791](https://doi.org/10.3389/fphar.2022.1005791) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Noorani_2022_reference](drugs/drug_mannitol/Mannitol_Noorani2022_reference.md) | — | 1-compartment (no model) | 2 | Noorani B et al., A Semi-Physiological Three-Compartment…, Pharmaceutical research (2022) | [10.1007/s11095-022-03175-4](https://doi.org/10.1007/s11095-022-03175-4) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

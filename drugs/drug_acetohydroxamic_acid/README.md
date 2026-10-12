@@ -28,18 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Follmer_2004_aggregation_of_blood_platelets](drugs/drug_acetohydroxamic_acid/pd_Follmer_2004_aggregation_of_blood_platelets.md) | aggregation of blood platelets ← acetohydroxamic_acid · stimulation effect | — | Follmer C et al., Jackbean, soybean and Bacillus pasteuri…, European journal of biochem… (2004) | [10.1111/j.1432-1033.2004.04046.x](https://doi.org/10.1111/j.1432-1033.2004.04046.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=acetohydroxamic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: MMP12 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Follmer_2004_aggregation_of_blood_platelets](drugs/drug_acetohydroxamic_acid/pd_Follmer_2004_aggregation_of_blood_platelets.md) | aggregation of blood platelets ← acetohydroxamic_acid · stimulation effect | — | Follmer C et al., Jackbean, soybean and Bacillus pasteuri…, European journal of biochem… (2004) | [10.1111/j.1432-1033.2004.04046.x](https://doi.org/10.1111/j.1432-1033.2004.04046.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

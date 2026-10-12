@@ -21,7 +21,7 @@
 
 > Nomifensine concentrations (five-point gradient 0.13–84 μM, 48 h exposure) were tested against MCF7 breast cancer cell viability, with inhibition reported as an IC50; the paper does not state the numeric IC50 value for nomifensine, only that it is lower than those of raloxifene and tamoxifen, and no PD mechanism or model parameters (e.g., Emax, kin, kout) are provided.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Tong_2020`
 - **model family:** `unknown`
@@ -55,7 +55,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

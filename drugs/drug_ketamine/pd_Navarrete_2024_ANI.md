@@ -20,7 +20,7 @@
 
 > Ketamine plasma concentrations were linked to the Analgesia Nociception Index (ANI) via an effect compartment model using a ke0 of 0.238 min⁻¹. The paper does not provide the specific mechanism of action (e.g., direct Emax, inhibition of production/elimination) or potency parameters (e.g., IC50, Imax) as the full text was not available.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Navarrete_2024`
 - **model family:** `effect_compartment`
@@ -61,7 +61,7 @@ Navarrete V et al., Characterization of the Temporal Profil… (2024)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

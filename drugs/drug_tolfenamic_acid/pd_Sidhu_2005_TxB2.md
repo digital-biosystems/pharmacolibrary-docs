@@ -18,11 +18,11 @@
 
 **As extracted:** Tolfenamic acid (concentrations from the PK model of Corum_2026) drives thromboxane B2: direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Tolfenamic acid inhibits thromboxane B2 via a sigmoidal Emax model with a maximum inhibition of 78.1%, an IC50 of 0.256 microg/mL, and a Hill coefficient (N) of 1.96. The effect is linked to plasma concentrations through an effect compartment characterized by a t1/2 of ke0 of 0.695 h.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sidhu_2005`
 - **model family:** `sigmoid_emax`
@@ -102,7 +102,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

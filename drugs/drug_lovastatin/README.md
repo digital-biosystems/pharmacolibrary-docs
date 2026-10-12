@@ -24,38 +24,13 @@ Lovastatin is a statin used to lower cholesterol in conditions such as hyperlipi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q64, Q77, Q86, Q67 — no SI value to…</sub><br><sub>route_to: `human_review`</sub> | [Huff_1992_reference](drugs/drug_lovastatin/Lovastatin_Huff1992_reference.md) | — | general linear (no model) | 4 | Huff MW et al., Dietary fish oil plus lovastatin decrea…, Arteriosclerosis and thromb… (1992) | [10.1161/01.atv.12.8.902](https://doi.org/10.1161/01.atv.12.8.902) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q64, Q77, Q86, Q67 — no SI value to…</sub><br><sub>route_to: `human_review`</sub> | [Huff_1992_reference](drugs/drug_lovastatin/Lovastatin_Huff1992_reference.md) | — | general linear (no model) | 4 | Huff MW et al., Dietary fish oil plus lovastatin decrea…, Arteriosclerosis and thromb… (1992) | [10.1161/01.atv.12.8.902](https://doi.org/10.1161/01.atv.12.8.902) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Isaev_2026_7_nACh_receptor_function](drugs/drug_lovastatin/pd_Isaev_2026_7_nACh_receptor_function.md) | α7-nACh receptor function ← lovastatin · direct Emax (saturable) effect | — | Isaev D et al., Lovastatin Potentiates the Function of…, Pharmaceuticals (Basel, Swi… (2026) | [10.3390/ph19060849](https://doi.org/10.3390/ph19060849) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lovastatin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | blood-brain barrier | `ABCB1` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor, `SLCO2B1` unknown | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor, `SLCO1A2` inhibitor, `SLCO2B1` unknown | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` substrate | DrugBank actor |
-| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C19` substrate, `CYP2C8` substrate, `CYP3A4` substrate, `SLCO1B1` inhibitor/substrate, `SLCO1B3` unknown, `UGT1A1` substrate, `UGT1A3` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `UGT1A1` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `ABCC2` substrate | DrugBank actor |
-| excretion | liver | `ABCB11` substrate, `ABCC2` substrate | DrugBank actor |
-| excretion | small intestine | `ABCC2` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: HDAC2 (inhibitor), HMGCR (inhibitor), ITGAL (inhibitor), PON3 (substrate).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Isaev_2026_7_nACh_receptor_function](drugs/drug_lovastatin/pd_Isaev_2026_7_nACh_receptor_function.md) | α7-nACh receptor function ← lovastatin · direct Emax (saturable) effect | — | Isaev D et al., Lovastatin Potentiates the Function of…, Pharmaceuticals (Basel, Swi… (2026) | [10.3390/ph19060849](https://doi.org/10.3390/ph19060849) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

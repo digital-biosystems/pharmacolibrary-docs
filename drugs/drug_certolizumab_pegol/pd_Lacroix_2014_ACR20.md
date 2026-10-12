@@ -20,7 +20,7 @@
 
 > Certolizumab pegol concentration in plasma (driver: certolizumab_pegol) directly drives the probability of achieving a binary ACR20 response using a continuous-time Markov exposure–response model, although the specific functional form for the direct Emax effect is not detailed in the provided excerpts. The paper notes that maximum clinical effect is achieved at a maintenance dose of 200 mg every other week, with ACR20 response rates ranging from 53.7% to 67.3% at week 12 for doses between 50 mg Q2W and 400 mg Q2W.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Lacroix_2014`
 - **model family:** `categorical`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -16,11 +16,11 @@
 
 **As extracted:** Ciclosporin (concentrations from the PK model of Kauv_2025) drives EASI scores: direct linear effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The paper does not explicitly describe the pharmacodynamic mechanism or effect direction in the provided text. The associated record models a linear, additive relationship where ciclosporin concentrations are associated with a change in EASI scores, parameterized by a beta coefficient of -0.586.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Wan_2025`
 - **model family:** `linear`
@@ -94,7 +94,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

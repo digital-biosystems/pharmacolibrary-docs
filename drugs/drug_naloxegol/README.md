@@ -33,33 +33,16 @@ Naloxegol is an opioid antagonist used to treat constipation caused by opioid me
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Al-Huniti_2016_reference](drugs/drug_naloxegol/Naloxegol_AlHuniti2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Al-Huniti N et al., Population pharmacokinetics of naloxego…, British journal of clinical… (2016) | [10.1111/bcp.12756](https://doi.org/10.1111/bcp.12756) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Al-Huniti_2016_reference](drugs/drug_naloxegol/Naloxegol_AlHuniti2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Al-Huniti N et al., Population pharmacokinetics of naloxego…, British journal of clinical… (2016) | [10.1111/bcp.12756](https://doi.org/10.1111/bcp.12756) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Al-Huniti_2016_2_DED](drugs/drug_naloxegol/pd_Al_Huniti_2016_2_DED.md) | diary entry discontinuation ← naloxegol · time-to-event model | — | Al-Huniti N et al., Population Exposure-Response Modeling o…, CPT: pharmacometrics & syst… (2016) | [10.1002/psp4.12099](https://doi.org/10.1002/psp4.12099) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> | [Al-Huniti_2016_2_SBM](drugs/drug_naloxegol/pd_Al_Huniti_2016_2_SBM.md) | number of spontaneous bowel movements (SBMs) ← naloxegol · categorical (graded) response model | — | Al-Huniti N et al., Population Exposure-Response Modeling o…, CPT: pharmacometrics & syst… (2016) | [10.1002/psp4.12099](https://doi.org/10.1002/psp4.12099) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Al-Huniti_2017_SBM_response](drugs/drug_naloxegol/pd_Al_Huniti_2017_SBM_response.md) | weekly probability of response ← naloxegol · categorical (graded) response model | — | Al-Huniti N et al., Population Exposure-Response Modeling S…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12229](https://doi.org/10.1002/psp4.12229) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Al-Huniti_2017_dropout](drugs/drug_naloxegol/pd_Al_Huniti_2017_dropout.md) | time to discontinuation ← naloxegol · time-to-event model | — | Al-Huniti N et al., Population Exposure-Response Modeling S…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12229](https://doi.org/10.1002/psp4.12229) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=naloxegol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP2C19` inhibitor, `CYP2D6` inhibitor, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: OPRM1 (target).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Al-Huniti_2016_2_DED](drugs/drug_naloxegol/pd_Al_Huniti_2016_2_DED.md) | diary entry discontinuation ← naloxegol · time-to-event model | — | Al-Huniti N et al., Population Exposure-Response Modeling o…, CPT: pharmacometrics & syst… (2016) | [10.1002/psp4.12099](https://doi.org/10.1002/psp4.12099) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> | [Al-Huniti_2016_2_SBM](drugs/drug_naloxegol/pd_Al_Huniti_2016_2_SBM.md) | number of spontaneous bowel movements (SBMs) ← naloxegol · categorical (graded) response model | — | Al-Huniti N et al., Population Exposure-Response Modeling o…, CPT: pharmacometrics & syst… (2016) | [10.1002/psp4.12099](https://doi.org/10.1002/psp4.12099) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Al-Huniti_2017_SBM_response](drugs/drug_naloxegol/pd_Al_Huniti_2017_SBM_response.md) | weekly probability of response ← naloxegol · categorical (graded) response model | — | Al-Huniti N et al., Population Exposure-Response Modeling S…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12229](https://doi.org/10.1002/psp4.12229) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Al-Huniti_2017_dropout](drugs/drug_naloxegol/pd_Al_Huniti_2017_dropout.md) | time to discontinuation ← naloxegol · time-to-event model | — | Al-Huniti N et al., Population Exposure-Response Modeling S…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12229](https://doi.org/10.1002/psp4.12229) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

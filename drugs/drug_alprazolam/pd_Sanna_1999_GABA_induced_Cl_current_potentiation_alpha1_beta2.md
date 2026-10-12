@@ -18,11 +18,11 @@
 
 **As extracted:** Alprazolam (concentrations from the PK model of DeVane_1993) drives GABA-induced Cl- current potentiation (alpha1 beta2 gamma2S GABAA receptors) (in % increase): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Alprazolam concentrations (nmol/l) stimulate the GABA-induced Cl- current through alpha1 beta2 gamma2S GABAA receptors, described by an Emax model with EC50 56 nmol/l and maximum potentiation 98%. The paper excerpts do not state the mechanism beyond this direct concentration-effect relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Sanna_1999`
 - **model family:** `emax`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

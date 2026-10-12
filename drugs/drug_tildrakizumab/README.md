@@ -24,8 +24,8 @@ Tildrakizumab, a monoclonal antibody that blocks an interleukin signal, is used 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span> | [Rodríguez-Fernández_2022_reference](drugs/drug_tildrakizumab/Tildrakizumab_RodrguezFernndez2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Rodríguez-Fernández K et al., Impact of Pharmacokinetic and Pharmacod…, Pharmaceutics (2022) | [10.3390/pharmaceutics14030654](https://doi.org/10.3390/pharmaceutics14030654) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Jauslin_2019_reference](drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Jauslin P et al., Population-Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00743-7](https://doi.org/10.1007/s40262-019-00743-7) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span> | [Rodríguez-Fernández_2022_reference](drugs/drug_tildrakizumab/Tildrakizumab_RodrguezFernndez2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Rodríguez-Fernández K et al., Impact of Pharmacokinetic and Pharmacod…, Pharmaceutics (2022) | [10.3390/pharmaceutics14030654](https://doi.org/10.3390/pharmaceutics14030654) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Jauslin_2019_reference](drugs/drug_tildrakizumab/Tildrakizumab_Jauslin2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Jauslin P et al., Population-Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00743-7](https://doi.org/10.1007/s40262-019-00743-7) |
 
 ## Pharmacodynamics (PD)
 
@@ -33,15 +33,6 @@ Tildrakizumab, a monoclonal antibody that blocks an interleukin signal, is used 
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Kerbusch_2020_PASI](drugs/drug_tildrakizumab/pd_Kerbusch_2020_PASI.md) | PASI ← tildrakizumab · direct Emax (saturable) effect | — | Kerbusch T et al., Exposure-response characterisation of t…, British journal of clinical… (2020) | [10.1111/bcp.14280](https://doi.org/10.1111/bcp.14280) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Kerbusch_2020_PASI_2](drugs/drug_tildrakizumab/pd_Kerbusch_2020_PASI_2.md) | PASI change ← tildrakizumab · inhibition effect | — | Kerbusch T et al., Exposure-response characterisation of t…, British journal of clinical… (2020) | [10.1111/bcp.14280](https://doi.org/10.1111/bcp.14280) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tildrakizumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CYP4A11 (inducer), IL12B (target), IL23A (modulator), IL37 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

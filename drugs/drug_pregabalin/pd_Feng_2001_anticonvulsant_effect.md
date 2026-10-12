@@ -22,7 +22,7 @@
 
 > The model describes a sigmoid Emax effect of pregabalin plasma concentrations on the anticonvulsant response with an EC50 of 95.3 ng/mL and an effect compartment rate constant (ke0) of 0.0092 min-1. The specific mechanism of action (e.g., production vs. elimination inhibition) is not described in the available excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Feng_2001`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Feng MR et al., Brain microdialysis and PK/PD correlati…, European journal of 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

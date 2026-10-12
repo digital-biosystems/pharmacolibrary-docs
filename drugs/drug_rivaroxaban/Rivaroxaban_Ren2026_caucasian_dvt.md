@@ -5,7 +5,7 @@
 
 # rivaroxaban — `Rivaroxaban_Ren2026_caucasian_dvt`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -24,8 +24,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 <sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
-Zhang GY et al., Initial Dosage Optimization of Tacrolim…, Drug design, development an… (2026)
-  ·  DOI: [10.2147/dddt.s620915](https://doi.org/10.2147/dddt.s620915)
+Ren J et al., Population pharmacokinetic and pharmaco…, Research and practice in th… (2026)
+  ·  DOI: [10.1016/j.rpth.2026.106618](https://doi.org/10.1016/j.rpth.2026.106618)
 
 <div class="pk-model-meta" hidden drug="rivaroxaban" model-id="Rivaroxaban_Ren2026_caucasian_dvt" status="curated_candidate" stale="false" population="patients with pulmonary embolism" measured-compound="rivaroxaban" parameterization="apparent" topology="1C"></div>
 
@@ -82,7 +82,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|
 | `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -125,7 +125,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=methylprednisolone) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=rivaroxaban) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
@@ -137,10 +137,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_rivaroxaban/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ren_2026` / `Ren_2026::caucasian_dvt`)
-- model: `../../../knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_caucasian_dvt.mo`
-- deviation: `../../../knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_caucasian_dvt.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_caucasian_dvt.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rivaroxaban/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ren_2026` / `Ren_2026::caucasian_dvt`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_caucasian_dvt.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_caucasian_dvt.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_caucasian_dvt.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -149,15 +149,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_dvt/Rivaroxaban_Ren2026_caucasian_dvt_modelica.zip" download>Rivaroxaban_Ren2026_caucasian_dvt_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_dvt/Rivaroxaban_Ren2026_caucasian_dvt_fmi.zip" download>Rivaroxaban_Ren2026_caucasian_dvt_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_dvt/Rivaroxaban_Ren2026_caucasian_dvt_matlab.zip" download>Rivaroxaban_Ren2026_caucasian_dvt_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_dvt/Rivaroxaban_Ren2026_caucasian_dvt_matlab_simbio.zip" download>Rivaroxaban_Ren2026_caucasian_dvt_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_dvt/Rivaroxaban_Ren2026_caucasian_dvt_sbml.zip" download>Rivaroxaban_Ren2026_caucasian_dvt_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_dvt/Rivaroxaban_Ren2026_caucasian_dvt_cellml.zip" download>Rivaroxaban_Ren2026_caucasian_dvt_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_dvt/Rivaroxaban_Ren2026_caucasian_dvt.svg" alt="Rivaroxaban_Ren2026_caucasian_dvt diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_dvt/Rivaroxaban_Ren2026_caucasian_dvt.svg" alt="Rivaroxaban_Ren2026_caucasian_dvt diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -22,7 +22,7 @@
 
 > The record indicates a direct Emax inhibition of BSA-MG by nimesulide with an IC50 of 330.56 μM. As no full text was provided to the pipeline, the specific mechanism (e.g., inhibition of production versus elimination) is not described in the available excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Rasheed_2018`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Rasheed S et al., Drug repurposing: In-vitro anti-glycati…, PloS one (2018)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

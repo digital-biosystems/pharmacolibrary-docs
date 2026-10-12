@@ -22,7 +22,7 @@
 
 > Paliperidone (μM) inhibits voltage-dependent K+ (Kv) channel current (% inhibition) with a sigmoid Emax relationship; the paper reports an IC50 of 16.58 ± 3.03 μM and a Hill coefficient of 0.60 ± 0.04, but the excerpts do not state the mechanism beyond this direct concentration–effect inhibition.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Mun_2023`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Mun SY et al., Inhibition of voltage-dependent K, Journal of applied toxicolo…
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

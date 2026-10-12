@@ -18,11 +18,11 @@
 
 **As extracted:** Lamotrigine (concentrations from the PK model of Chan_2001) drives anticonvulsant profile against maximal electroshock seizure stimulation: direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Lamotrigine is modeled with a direct sigmoid Emax effect (gamma = 8.64) on the anticonvulsant profile against maximal electroshock seizure stimulation, assuming a 3.75 h⁻¹ effect compartment, with an EC50 of 3.44 mg/L and 100% Emax; the paper does not state whether this represents inhibition or stimulation of the underlying physiological process.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Castel-Branco_2005`
 - **model family:** `sigmoid_emax`
@@ -101,7 +101,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

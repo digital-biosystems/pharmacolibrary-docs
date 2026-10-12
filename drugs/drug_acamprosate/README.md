@@ -28,21 +28,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Naassila_1998_14C_spermidine_binding](drugs/drug_acamprosate/pd_Naassila_1998_14C_spermidine_binding.md) | Displacement of [14C]spermidine binding by acamprosate ← acamprosate · direct sigmoid Emax (Hill) effect | — | Naassila M et al., Mechanism of action of acamprosate. Par…, Alcoholism, clinical and ex… (1998) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Naassila_1998_3H_acamprosate_binding](drugs/drug_acamprosate/pd_Naassila_1998_3H_acamprosate_binding.md) | [3H]acamprosate specific binding to rat brain membranes ← acamprosate · model not identified | — | Naassila M et al., Mechanism of action of acamprosate. Par…, Alcoholism, clinical and ex… (1998) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Naassila_1998_3H_dizocilpine_binding](drugs/drug_acamprosate/pd_Naassila_1998_3H_dizocilpine_binding.md) | [3H]dizocilpine binding modulation by acamprosate ← acamprosate · model not identified | — | Naassila M et al., Mechanism of action of acamprosate. Par…, Alcoholism, clinical and ex… (1998) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=acamprosate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A6` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: GABBR1 (inhibitor), GRIN1 (target), GRM5 (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Naassila_1998_14C_spermidine_binding](drugs/drug_acamprosate/pd_Naassila_1998_14C_spermidine_binding.md) | Displacement of [14C]spermidine binding by acamprosate ← acamprosate · direct sigmoid Emax (Hill) effect | — | Naassila M et al., Mechanism of action of acamprosate. Par…, Alcoholism, clinical and ex… (1998) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Naassila_1998_3H_acamprosate_binding](drugs/drug_acamprosate/pd_Naassila_1998_3H_acamprosate_binding.md) | [3H]acamprosate specific binding to rat brain membranes ← acamprosate · model not identified | — | Naassila M et al., Mechanism of action of acamprosate. Par…, Alcoholism, clinical and ex… (1998) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Naassila_1998_3H_dizocilpine_binding](drugs/drug_acamprosate/pd_Naassila_1998_3H_dizocilpine_binding.md) | [3H]dizocilpine binding modulation by acamprosate ← acamprosate · model not identified | — | Naassila M et al., Mechanism of action of acamprosate. Par…, Alcoholism, clinical and ex… (1998) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

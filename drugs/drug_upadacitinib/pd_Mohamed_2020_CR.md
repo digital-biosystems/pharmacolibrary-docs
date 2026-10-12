@@ -19,7 +19,7 @@
 
 > Upadacitinib plasma concentrations were linked to the achievement of clinical response (a categorical endpoint) using a continuous-time Markov model framework with an Emax relationship, rather than a standard Emax effect model on the response variable itself. The paper notes that EC50 values for this clinical endpoint are not directly interpretable and are defined by the transition rates between response states within the Markov model.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mohamed_2020`
 - **model family:** `categorical`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

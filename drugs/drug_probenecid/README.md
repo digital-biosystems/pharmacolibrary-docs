@@ -25,9 +25,9 @@ Probenecid is a uricosuric drug used to treat gout, and has also been used in go
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> | [Ahmad_2021_reference](drugs/drug_probenecid/Probenecid_Ahmad2021_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ahmad A et al., Population pharmacokinetic modeling and…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12610](https://doi.org/10.1002/psp4.12610) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Stocker_2012_reference](drugs/drug_probenecid/Probenecid_Stocker2012_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Stocker SL et al., The pharmacokinetics of oxypurinol in p…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04207.x](https://doi.org/10.1111/j.1365-2125.2012.04207.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Cook_2025_reference](drugs/drug_probenecid/Probenecid_Cook2025_reference.md) | — | 1-compartment (no model) | 0 | Cook M et al., Evaluation of the Safety and Pharmacoki…, Journal of veterinary inter… (2025) | [10.1111/jvim.70221](https://doi.org/10.1111/jvim.70221) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> | [Ahmad_2021_reference](drugs/drug_probenecid/Probenecid_Ahmad2021_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ahmad A et al., Population pharmacokinetic modeling and…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12610](https://doi.org/10.1002/psp4.12610) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Stocker_2012_reference](drugs/drug_probenecid/Probenecid_Stocker2012_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Stocker SL et al., The pharmacokinetics of oxypurinol in p…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04207.x](https://doi.org/10.1111/j.1365-2125.2012.04207.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Cook_2025_reference](drugs/drug_probenecid/Probenecid_Cook2025_reference.md) | — | 1-compartment (no model) | 0 | Cook M et al., Evaluation of the Safety and Pharmacoki…, Journal of veterinary inter… (2025) | [10.1111/jvim.70221](https://doi.org/10.1111/jvim.70221) |
 
 ## Pharmacodynamics (PD)
 
@@ -37,28 +37,6 @@ Probenecid is a uricosuric drug used to treat gout, and has also been used in go
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Hedaya_1989_AUCCSF](drugs/drug_probenecid/pd_Hedaya_1989_AUCCSF.md) | distribution into cerebrospinal fluid ← probenecid · stimulation effect | — | Hedaya MA et al., Effect of probenecid on the renal and n…, Journal of pharmaceutical s… (1989) | [10.1002/jps.2600780903](https://doi.org/10.1002/jps.2600780903) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Hedaya_1989_CLR_AZT](drugs/drug_probenecid/pd_Hedaya_1989_CLR_AZT.md) | renal clearance of zidovudine ← probenecid · inhibition effect | — | Hedaya MA et al., Effect of probenecid on the renal and n…, Journal of pharmaceutical s… (1989) | [10.1002/jps.2600780903](https://doi.org/10.1002/jps.2600780903) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Verhagen_1994_tubular_excretion_of_cefuroxime](drugs/drug_probenecid/pd_Verhagen_1994_tubular_excretion_of_cefuroxime.md) | tubular excretion of cefuroxime ← probenecid · direct Emax (saturable) effect | — | Verhagen CA et al., The renal clearance of cefuroxime and c…, British journal of clinical… (1994) | [10.1111/j.1365-2125.1994.tb04260.x](https://doi.org/10.1111/j.1365-2125.1994.tb04260.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=probenecid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `SLCO1A2` inhibitor | DrugBank actor |
-| absorption | kidney | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | small intestine | `SLC22A5` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| distribution | blood-brain barrier | `ABCC1` inhibitor | DrugBank actor |
-| distribution | lung | `ABCC1` inhibitor | DrugBank actor |
-| metabolism | kidney | `SLC22A7` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2C8` inducer, `CYP2C9` inhibitor, `CYP3A4` inducer, `SLC10A1` inhibitor, `SLC22A1` inhibitor, `SLC22A7` inhibitor, `UGT1A1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer, `UGT1A1` inhibitor | DrugBank actor |
-| excretion | kidney | `ABCC2` inhibitor/substrate, `ABCC4` inhibitor, `SLC22A2` inhibitor, `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor | DrugBank actor |
-| excretion | liver | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor, `ABCC4` inhibitor | DrugBank actor |
-| excretion | small intestine | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ABCC11 (inhibitor), ABCC5 (inhibitor), ABCC6 (inhibitor), PANX1 (target), SLC16A1 (inhibitor), SLC16A7 (inhibitor), SLC22A10 (inhibitor), SLC22A11 (inhibitor), SLC22A12 (inhibitor), SLC2A9 (inhibitor), SLCO1C1 (inhibitor), TAS2R16 (inhibitory allosteric modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

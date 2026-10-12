@@ -21,7 +21,7 @@
 
 > Pimavanserin plasma concentrations (ng/ml) drive cortical 5-HT2A receptor occupancy measured by [11C]CIMBI-36 binding displacement, described by a sigmoid Emax model with EC50 = 0.6 ng/ml; the paper excerpts do not state the mechanism beyond this direct concentration–occupancy relation, nor Imax, gamma, or rate parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Ridler_2025`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Ridler K et al., Imaging the 5-HT, Journal of cerebral blood f… (2025)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

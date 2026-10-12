@@ -32,29 +32,9 @@ Eliglustat is a medicine used to treat Gaucher's disease. It is authorised in th
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial 1/2</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Li_2020_84_mg_bid_a](drugs/drug_eliglustat/Eliglustat_Li2020_84_mg_bid_a.md) | — | 1-compartment (no model) | 1 | JingLi jing.li3@sanofi.com et al., Impact of hepatic and renal impairment… (2020) | [10.1016/j.ymgme.2019.11.002](https://doi.org/10.1016/j.ymgme.2019.11.002) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial 1/2</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Li_2020_84_mg_qd_a](drugs/drug_eliglustat/Eliglustat_Li2020_84_mg_qd_a.md) | — | 1-compartment (no model) | 1 | JingLi jing.li3@sanofi.com et al., Impact of hepatic and renal impairment… (2020) | [10.1016/j.ymgme.2019.11.002](https://doi.org/10.1016/j.ymgme.2019.11.002) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333), gpt-oss:120b (primary re-run, agreement 0.333). The first reading is what the record holds.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wolthuis_2025_reference](drugs/drug_eliglustat/Eliglustat_Wolthuis2025_reference.md) | — | 1-compartment (no model) | 0 | Wolthuis DFGJ et al., Model-informed repurposing of eliglusta…, Pediatric nephrology (Berli… (2025) | [10.1007/s00467-025-06688-3](https://doi.org/10.1007/s00467-025-06688-3) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=eliglustat).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: UGCG (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial 1/2</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Li_2020_84_mg_bid_a](drugs/drug_eliglustat/Eliglustat_Li2020_84_mg_bid_a.md) | — | 1-compartment (no model) | 1 | JingLi jing.li3@sanofi.com et al., Impact of hepatic and renal impairment… (2020) | [10.1016/j.ymgme.2019.11.002](https://doi.org/10.1016/j.ymgme.2019.11.002) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial 1/2</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Li_2020_84_mg_qd_a](drugs/drug_eliglustat/Eliglustat_Li2020_84_mg_qd_a.md) | — | 1-compartment (no model) | 1 | JingLi jing.li3@sanofi.com et al., Impact of hepatic and renal impairment… (2020) | [10.1016/j.ymgme.2019.11.002](https://doi.org/10.1016/j.ymgme.2019.11.002) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333), gpt-oss:120b (primary re-run, agreement 0.333). Primary extraction retained.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wolthuis_2025_reference](drugs/drug_eliglustat/Eliglustat_Wolthuis2025_reference.md) | — | 1-compartment (no model) | 0 | Wolthuis DFGJ et al., Model-informed repurposing of eliglusta…, Pediatric nephrology (Berli… (2025) | [10.1007/s00467-025-06688-3](https://doi.org/10.1007/s00467-025-06688-3) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

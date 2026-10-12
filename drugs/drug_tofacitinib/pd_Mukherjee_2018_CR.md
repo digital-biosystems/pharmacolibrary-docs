@@ -16,11 +16,11 @@
 
 **As extracted:** Tofacitinib (the dose) drives Clinical remission: direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The paper describes a logistic Emax model where the probability of clinical remission is a function of tofacitinib dose or steady-state mean concentration (Cav,ss), with an E50 of 1.06 (mg or ng ml–1) and an Emax of 2.35, in which baseline CRP and baseline total Mayo score serve as covariates with coefficients of –0.104 and –5.97, respectively. The paper does not explicitly state a mechanism of drug action such as production inhibition or elimination effects, but rather characterizes the direct relationship between exposure and the binary endpoint probability.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mukherjee_2018`
 - **model family:** `emax`
@@ -102,7 +102,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

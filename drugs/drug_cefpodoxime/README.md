@@ -32,16 +32,7 @@ Cefpodoxime is a third-generation cephalosporin antibiotic used to treat infecti
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Linnehan_2024_reference](drugs/drug_cefpodoxime/Cefpodoxime_Linnehan2024_reference.md) | — | 1-compartment (no model) | 3 | Linnehan BK et al., POPULATION PHARMACOKINETICS OF CEFPODOX…, Journal of zoo and wildlife… (2024) | [10.1638/2023-0139](https://doi.org/10.1638/2023-0139) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cefpodoxime).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Linnehan_2024_reference](drugs/drug_cefpodoxime/Cefpodoxime_Linnehan2024_reference.md) | — | 1-compartment (no model) | 3 | Linnehan BK et al., POPULATION PHARMACOKINETICS OF CEFPODOX…, Journal of zoo and wildlife… (2024) | [10.1638/2023-0139](https://doi.org/10.1638/2023-0139) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

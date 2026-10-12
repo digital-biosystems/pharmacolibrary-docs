@@ -28,24 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [López-Serrano_2022_IKACh](drugs/drug_acetylcholine/pd_L_pez_Serrano_2022_IKACh.md) | IKACh ← ACh · direct sigmoid Emax (Hill) effect | — | López-Serrano AL et al., Differential voltage-dependent modulati…, PloS one (2022) | [10.1371/journal.pone.0261960](https://doi.org/10.1371/journal.pone.0261960) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Mace_2022_ACh](drugs/drug_acetylcholine/pd_Mace_2022_ACh.md) | vasodilation ← acetylcholine · direct sigmoid Emax (Hill) effect | — | Mace EH et al., SOLUBLE GUANYLYL CYCLASE ACTIVATION RES…, Shock (Augusta, Ga.) (2022) | [10.1097/SHK.0000000000001982](https://doi.org/10.1097/SHK.0000000000001982) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=acetylcholine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | kidney | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | small intestine | `SLC22A5` inhibitor | DrugBank actor |
-| metabolism | blood | `BCHE` substrate | DrugBank actor |
-| metabolism | liver | `BCHE` substrate, `SLC22A1` substrate | DrugBank actor |
-| — | blood | `ACHE` substrate | DrugBank actor |
-| — | neuromuscular junction | `ACHE` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CHRM1 (unknown), CHRM2 (unknown), CHRM3 (unknown), CHRM4 (unknown), CHRNA7 (unknown).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [López-Serrano_2022_IKACh](drugs/drug_acetylcholine/pd_L_pez_Serrano_2022_IKACh.md) | IKACh ← ACh · direct sigmoid Emax (Hill) effect | — | López-Serrano AL et al., Differential voltage-dependent modulati…, PloS one (2022) | [10.1371/journal.pone.0261960](https://doi.org/10.1371/journal.pone.0261960) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Mace_2022_ACh](drugs/drug_acetylcholine/pd_Mace_2022_ACh.md) | vasodilation ← acetylcholine · direct sigmoid Emax (Hill) effect | — | Mace EH et al., SOLUBLE GUANYLYL CYCLASE ACTIVATION RES…, Shock (Augusta, Ga.) (2022) | [10.1097/SHK.0000000000001982](https://doi.org/10.1097/SHK.0000000000001982) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

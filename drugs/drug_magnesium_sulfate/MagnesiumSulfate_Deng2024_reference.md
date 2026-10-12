@@ -5,7 +5,7 @@
 
 # magnesium sulfate — `MagnesiumSulfate_Deng2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429), gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429), gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 The model was built, but magnesium sulfate's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — magnesium sulfate: V 25.1 L, CL 2.98 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has magnesium_sulfate, the second reading magnesium sulfate; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -90,8 +90,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss-120b` | `parameters[dcldbmi]` | -0.54 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | magnesium_sulfate | magnesium sulfate | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | magnesium_sulfate | magnesium sulfate | mismatch |
+| `gpt-oss-120b` | `parameters[tvcl].value` | 2.98 | 1.29 | mismatch |
+| `gpt-oss-120b` | `parameters[tvv].value` | 25.07 | 23.31 | mismatch |
 | `gpt-oss:120b` | `parameters[tvcl].value` | 2.98 | 1.21 | mismatch |
 | `gpt-oss:120b` | `parameters[tvv].value` | 25.07 | 23.21 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | magnesium_sulfate | magnesium sulfate | mismatch |
@@ -138,20 +138,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_magnesium_sulfate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Deng_2024` / `Deng_2024::reference`)
-- model: `../../../knowledgebase/drugs/drug_magnesium_sulfate/models/modelica/_needs_review/MagnesiumSulfate_Deng2024_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_magnesium_sulfate/models/modelica/_needs_review/MagnesiumSulfate_Deng2024_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_magnesium_sulfate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Deng_2024` / `Deng_2024::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_magnesium_sulfate/models/modelica/_needs_review/MagnesiumSulfate_Deng2024_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_magnesium_sulfate/models/modelica/_needs_review/MagnesiumSulfate_Deng2024_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

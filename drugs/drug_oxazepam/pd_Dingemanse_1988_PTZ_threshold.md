@@ -18,11 +18,11 @@
 
 **As extracted:** Oxazepam (concentrations from this paper's PK model) drives elevation of the serum or brain threshold concentration of PTZ (anticonvulsant response) (in mg/L PTZ): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Oxazepam plasma concentrations (mg/L) stimulate the elevation of the PTZ threshold (mg/L PTZ) via a sigmoid Emax model, with EC50 0.5 mg/L and Emax 120 mg/L PTZ; a brain-site EC50 of 1.1 mg/kg is also reported. The paper excerpts do not state the mechanism beyond this direct Emax effect, nor the Hill slope.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Dingemanse_1988`
 - **model family:** `sigmoid_emax`
@@ -100,7 +100,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

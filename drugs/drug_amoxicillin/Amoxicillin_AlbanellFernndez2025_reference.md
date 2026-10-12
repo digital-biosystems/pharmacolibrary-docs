@@ -5,7 +5,7 @@
 
 # amoxicillin — `Amoxicillin_AlbanellFernndez2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
 Albanell-Fernández M et al., A Review of Vancomycin, Gentamicin, and…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-024-01459-z](https://doi.org/10.1007/s40262-024-01459-z)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_AlbanellFernndez2025_reference" status="extracted" stale="true" population="neonates and infants with no previous pathologies" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_AlbanellFernndez2025_reference" status="extracted" stale="true" population="neonates and infants with no previous pathologies" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.
@@ -122,10 +121,10 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_amoxicillin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Albanell-Fernández_2025` / `Albanell-Fernández_2025::reference`)
-- model: `../../../knowledgebase/drugs/drug_amoxicillin/models/modelica/Amoxicillin_AlbanellFernndez2025_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_amoxicillin/models/modelica/Amoxicillin_AlbanellFernndez2025_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_amoxicillin/models/modelica/Amoxicillin_AlbanellFernndez2025_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amoxicillin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Albanell-Fernández_2025` / `Albanell-Fernández_2025::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amoxicillin/models/modelica/Amoxicillin_AlbanellFernndez2025_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amoxicillin/models/modelica/Amoxicillin_AlbanellFernndez2025_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amoxicillin/models/modelica/Amoxicillin_AlbanellFernndez2025_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -143,7 +142,7 @@ _All readers agree on the compared fields of this record._
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_amoxicillin/Amoxicillin_AlbanellFernndez2025_reference/Amoxicillin_AlbanellFernndez2025_reference.svg" alt="Amoxicillin_AlbanellFernndez2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_amoxicillin/Amoxicillin_AlbanellFernndez2025_reference/Amoxicillin_AlbanellFernndez2025_reference.svg" alt="Amoxicillin_AlbanellFernndez2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

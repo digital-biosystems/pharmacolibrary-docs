@@ -20,7 +20,7 @@
 
 > Golimumab serum concentrations (driver: pk_record, unit: mg/L) were linked to transitions in the Mayo endoscopic subscore (MES) states via an exposure-response Markov model. The record lists specific threshold concentrations of 0.5 mg/L (C 98,50 3→2) and 4.1 mg/L (C 98,50 2→1,0), while the paper identifies serum trough thresholds of 7.4 mg/L (w6) and 3.2 mg/L (w14) that predicted endoscopic remission, though it does not explicitly state the mathematical effect form (e.g. Emax or direct stimulation).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Dreesen_2020`
 - **model family:** `categorical`
@@ -62,7 +62,7 @@ Dreesen E et al., A Population Pharmacokinetic and Exposu…, Inflammatory bowel
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

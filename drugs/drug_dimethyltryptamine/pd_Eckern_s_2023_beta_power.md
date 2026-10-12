@@ -16,11 +16,11 @@
 
 **As extracted:** DMT drives beta power: direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > DMT plasma concentrations act on beta power via a direct sigmoidal Imax inhibitory effect mediated by an effect compartment to account for the distribution delay. The estimated parameters were R0 = 0.064, Imax = 0.70, IC50,e = 137 nM, Ke0 = 1.2 min−1, and γ = 5.2.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Eckernäs_2023`
 - **model family:** `sigmoid_emax`
@@ -92,11 +92,11 @@ Advisory:
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

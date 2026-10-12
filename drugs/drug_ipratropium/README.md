@@ -32,7 +32,7 @@ Ipratropium is an inhaled anticholinergic used for obstructive airway diseases s
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Lee_2016_reference](drugs/drug_ipratropium/Ipratropium_Lee2016_reference.md) | — | 1-compartment (no model) | 3 | Lee YH et al., Efficiency of a New Mesh-Type Nebulizer…, Basic & clinical pharmacolo… (2016) | [10.1111/bcpt.12499](https://doi.org/10.1111/bcpt.12499) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Lee_2016_reference](drugs/drug_ipratropium/Ipratropium_Lee2016_reference.md) | — | 1-compartment (no model) | 3 | Lee YH et al., Efficiency of a New Mesh-Type Nebulizer…, Basic & clinical pharmacolo… (2016) | [10.1111/bcpt.12499](https://doi.org/10.1111/bcpt.12499) |
 
 ## Pharmacodynamics (PD)
 
@@ -42,23 +42,6 @@ Ipratropium is an inhaled anticholinergic used for obstructive airway diseases s
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Herbert_2019_airway_area](drugs/drug_ipratropium/pd_Herbert_2019_airway_area.md) | ACh-induced airway contraction (airway area increase after anticholinergic application) ← ipratropium · direct Emax (saturable) effect | — | Herbert J et al., COPD and asthma therapeutics for suppor…, Clinical toxicology (Philad… (2019) | [10.1080/15563650.2018.1540785](https://doi.org/10.1080/15563650.2018.1540785) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span> | [Leemans_2012_relaxation_of_acetylcholine_contracted_feline_bronchial_smooth_muscle](drugs/drug_ipratropium/pd_Leemans_2012_relaxation_of_acetylcholine_contracted_feline_b.md) | relaxation of acetylcholine-contracted feline bronchial smooth muscle ← ipratropium bromide · direct Emax (saturable) effect | — | Leemans J et al., A comparison of in vitro relaxant respo…, Veterinary journal (London,… (2012) | [10.1016/j.tvjl.2011.10.026](https://doi.org/10.1016/j.tvjl.2011.10.026) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Venkatasamy_2016_Emax_papaverine](drugs/drug_ipratropium/pd_Venkatasamy_2016_Emax_papaverine.md) | Relaxation of tracheal smooth muscle bronchomotor tone ← ipratropium bromide · direct Emax (saturable) effect | — | Venkatasamy R et al., Novel relaxant effects of RPL554 on gui…, British journal of pharmaco… (2016) | [10.1111/bph.13512](https://doi.org/10.1111/bph.13512) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ipratropium).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | kidney | `SLC22A4` substrate, `SLC22A5` substrate | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` substrate | DrugBank actor |
-| absorption | small intestine | `SLC22A4` substrate, `SLC22A5` substrate | DrugBank actor |
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -5,7 +5,7 @@
 
 # roxadustat — `Roxadustat_Czock2022_liver_cirrhosis_cp_b`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818), gpt-oss:120b (partly confirmed, agreement 0.9). The first reading is what the record holds.">cross-check: partial 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636), gpt-oss:120b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 The terminal half-life check failed across multiple reported values (3.46, 0.74, 1.1, 8.1, 8.5, 15.9, 17.5, 18.2 h versus the model's 11.8 h, with ratios from 0.6482 to 15.9425), and Cmax failed with the model at 0.00135 versus the paper's 0.01 (ratio 0.135). The model builder substituted library defaults for the missing absorption rate constant ka and lag time Tlag, assumed F=1 and Fm=1 without molar correction, and used first-order depot input with apparent (/F) parameterization; this invented absorption was judged not acceptable. Additionally, the fraction unbound (fu) was reported with the unit 'h', which is not a valid unit for a fraction and could not be expressed in SI terms, so that parameter reached the review without a usable value. Extracted — roxadustat: AUC 637 h·ng/mL per mg, Cmax 70 ng/mL per mg, CL/F 2.29 L/h, t1/2z 15.7 h, fu 1.1 h, V/F 39 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose: this record has none, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has roxadustat, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -151,20 +151,22 @@ Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.818 (9/11 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 | `gpt-oss:120b` | partly confirmed | 0.9 (9/10 fields) | 1 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[dose]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ur]` | not captured | 2.4 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vd/f]` | 39.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | roxadustat | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | roxadustat | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[ur]` | not captured | 2.4 | only_one_extracted |
 
 </details>
@@ -229,10 +231,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_roxadustat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Czock_2022` / `Czock_2022::liver_cirrhosis_cp_b`)
-- model: `../../../knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Czock2022_liver_cirrhosis_cp_b.mo`
-- deviation: `../../../knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Czock2022_liver_cirrhosis_cp_b.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Czock2022_liver_cirrhosis_cp_b.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_roxadustat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Czock_2022` / `Czock_2022::liver_cirrhosis_cp_b`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Czock2022_liver_cirrhosis_cp_b.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Czock2022_liver_cirrhosis_cp_b.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Czock2022_liver_cirrhosis_cp_b.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -253,7 +255,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

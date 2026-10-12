@@ -21,7 +21,7 @@
 
 > The record describes cocaine inhibiting glycine-induced Cl- current via a sigmoidal Emax model with an IC50 of 0.78 mM. Since no paper excerpts are available, the specific mechanism (e.g., competitive vs. non-competitive) and other rate parameters are not stated in the provided source material.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ren_1999`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Ren J et al., Cocaine decreases the glycine-induced C…, European journal of ph
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

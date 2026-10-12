@@ -22,7 +22,7 @@
 
 > Flunitrazepam concentration (nM) stimulates potentiation of GABA-evoked current in alpha1 beta1 gamma2L receptors via a direct Emax (proportional stimulation) model, with Emax 77% and EC50 29 ± 11 nM; no mechanism beyond this direct effect is stated.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Wafford_1993`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Wafford KA et al., Differences in affinity and efficacy of…, Molecular pharmac
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

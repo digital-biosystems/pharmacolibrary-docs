@@ -22,7 +22,7 @@
 
 > Ketoprofen inhibits serum thromboxane (TxB2) concentrations using a proportional Emax model, with an estimated EC50 of 0.118 µg/mL. The provided excerpts do not specify whether the drug acts on the production or elimination of the response, nor do they provide Imax or rate parameters.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Landoni_1995`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Landoni MF et al., Pharmacokinetics and pharmacodynamics o…, Journal of veteri
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

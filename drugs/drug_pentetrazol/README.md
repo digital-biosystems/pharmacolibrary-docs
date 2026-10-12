@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Klorig_2019_I50](drugs/drug_pentetrazol/pd_Klorig_2019_I50.md) | I50 ← pentylenetetrazol · stimulation effect | — | Klorig DC et al., Optogenetically-Induced Population Disc…, eNeuro (2019) | [10.1523/eneuro.0229-18.2019](https://doi.org/10.1523/eneuro.0229-18.2019) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Klorig_2019_I50](drugs/drug_pentetrazol/pd_Klorig_2019_I50.md) | I50 ← pentylenetetrazol · stimulation effect | — | Klorig DC et al., Optogenetically-Induced Population Disc…, eNeuro (2019) | [10.1523/eneuro.0229-18.2019](https://doi.org/10.1523/eneuro.0229-18.2019) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

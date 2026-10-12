@@ -27,17 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.99).">rat</span> | [Tompkins_1989_fractional_urinary_clearance_of_insulin](drugs/drug_cilastatin/pd_Tompkins_1989_fractional_urinary_clearance_of_insulin.md) | fractional urinary clearance of insulin ← cilastatin · inhibition effect | — | Tompkins GC et al., Cilastatin-insulin interaction in the r…, Drug metabolism and disposi… (1989) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cilastatin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | `SLC22A6` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: DPEP1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.99).">rat</span> | [Tompkins_1989_fractional_urinary_clearance_of_insulin](drugs/drug_cilastatin/pd_Tompkins_1989_fractional_urinary_clearance_of_insulin.md) | fractional urinary clearance of insulin ← cilastatin · inhibition effect | — | Tompkins GC et al., Cilastatin-insulin interaction in the r…, Drug metabolism and disposi… (1989) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

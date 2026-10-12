@@ -33,38 +33,15 @@ Glasdegib is a hedgehog pathway inhibitor used to treat acute myeloid leukemia. 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.526). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Lin_2020_2_estimate](drugs/drug_glasdegib/Glasdegib_Lin2020v2_estimate.md) | ▶ model + simulator | 2-compartment, oral | 5 (+2 cov.) | Lin S et al., Population Pharmacokinetics of Glasdegi…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1556](https://doi.org/10.1002/jcph.1556) |
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Lin_2020_2_final_model](drugs/drug_glasdegib/Glasdegib_Lin2020v2_final_model.md) | ▶ model + simulator | 2-compartment, oral | 5 | Lin S et al., Population Pharmacokinetics of Glasdegi…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1556](https://doi.org/10.1002/jcph.1556) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Shaik_2021_reference](drugs/drug_glasdegib/Glasdegib_Shaik2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Shaik N et al., Evaluation of the impact of renal impai…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04207-9](https://doi.org/10.1007/s00280-020-04207-9) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.526). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Lin_2020_2_estimate](drugs/drug_glasdegib/Glasdegib_Lin2020v2_estimate.md) | ▶ model + simulator | 2-compartment, oral | 5 (+2 cov.) | Lin S et al., Population Pharmacokinetics of Glasdegi…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1556](https://doi.org/10.1002/jcph.1556) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Lin_2020_2_final_model](drugs/drug_glasdegib/Glasdegib_Lin2020v2_final_model.md) | ▶ model + simulator | 2-compartment, oral | 5 | Lin S et al., Population Pharmacokinetics of Glasdegi…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1556](https://doi.org/10.1002/jcph.1556) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Shaik_2021_reference](drugs/drug_glasdegib/Glasdegib_Shaik2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Shaik N et al., Evaluation of the impact of renal impai…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04207-9](https://doi.org/10.1007/s00280-020-04207-9) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Fostvedt_2021_QTcF](drugs/drug_glasdegib/pd_Fostvedt_2021_QTcF.md) | corrected QT interval ← glasdegib · direct linear effect | — | Fostvedt LK et al., Exposure-response modeling of the effec…, Expert review of clinical p… (2021) | [10.1080/17512433.2021.1925538](https://doi.org/10.1080/17512433.2021.1925538) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=glasdegib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C8` substrate, `CYP3A4` substrate, `UGT1A9` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
-| excretion | liver | `SLC47A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: MTOR (inhibitor), SMO (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Fostvedt_2021_QTcF](drugs/drug_glasdegib/pd_Fostvedt_2021_QTcF.md) | corrected QT interval ← glasdegib · direct linear effect | — | Fostvedt LK et al., Exposure-response modeling of the effec…, Expert review of clinical p… (2021) | [10.1080/17512433.2021.1925538](https://doi.org/10.1080/17512433.2021.1925538) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

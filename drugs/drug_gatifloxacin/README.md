@@ -28,17 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">in vitro</span> | [Tasso_2011_bactericidal_activity](drugs/drug_gatifloxacin/pd_Tasso_2011_bactericidal_activity.md) | bactericidal activity ← gatifloxacin · direct Emax (saturable) effect | — | Tasso L et al., Pharmacokinetic/pharmacodynamic modelli…, International journal of an… (2011) | [10.1016/j.ijantimicag.2011.05.015](https://doi.org/10.1016/j.ijantimicag.2011.05.015) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=gatifloxacin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ALB` other/unknown | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">in vitro</span> | [Tasso_2011_bactericidal_activity](drugs/drug_gatifloxacin/pd_Tasso_2011_bactericidal_activity.md) | bactericidal activity ← gatifloxacin · direct Emax (saturable) effect | — | Tasso L et al., Pharmacokinetic/pharmacodynamic modelli…, International journal of an… (2011) | [10.1016/j.ijantimicag.2011.05.015](https://doi.org/10.1016/j.ijantimicag.2011.05.015) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

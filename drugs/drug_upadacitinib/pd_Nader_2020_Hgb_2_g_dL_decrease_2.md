@@ -19,7 +19,7 @@
 
 > The paper does not state a PD mechanism for the specific response of a &gt;2 g/dL decrease in hemoglobin; the provided excerpts describe an Emax model only for ACR efficacy endpoints, where upadacitinib plasma concentration (ng/mL) directly drives the response with covariate effects on EC50. No specific numerical values for EC50, Emax, or other PD parameters are provided in the excerpts for this hemoglobin response.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Nader_2020`
 - **model family:** `linear`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

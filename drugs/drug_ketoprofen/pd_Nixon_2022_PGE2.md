@@ -18,11 +18,11 @@
 
 **As extracted:** S-(+)-ketoprofen (measured concentrations) drives interstitial fluid prostaglandin E2 (in % difference): indirect response — drug inhibits the production of interstitial fluid prostaglandin E2.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The paper describes an indirect response model where S-(+)-ketoprofen concentration in the interstitial fluid inhibits the production (Kin) of PGE2, characterized by an ISF IC50 of 1.2 μg/ml, Imax of 97.33%, gamma of 2.07, Kin of 207.20 %/h, and Kout of 2.34 1/h.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Nixon_2022`
 - **model family:** `indirect_response_i`
@@ -99,7 +99,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

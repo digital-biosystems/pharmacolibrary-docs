@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Nakamura_2004_efficacy_rate](drugs/drug_cefcapene/pd_Nakamura_2004_efficacy_rate.md) | efficacy rate ← cefcapene · inhibition effect | — | Nakamura T et al., [Antibacterial activity of oral cephems…, The Japanese journal of ant… (2004) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Nakamura_2004_efficacy_rate](drugs/drug_cefcapene/pd_Nakamura_2004_efficacy_rate.md) | efficacy rate ← cefcapene · inhibition effect | — | Nakamura T et al., [Antibacterial activity of oral cephems…, The Japanese journal of ant… (2004) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

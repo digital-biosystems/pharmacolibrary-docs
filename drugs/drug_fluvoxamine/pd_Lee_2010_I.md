@@ -22,7 +22,7 @@
 
 > Fluvoxamine concentration-dependently inhibits Kv1.5 current (measured at the end of a 250-ms pulse to +50 mV), fitted to a Hill/sigmoid Emax equation with IC50 = 2.0±0.13 µM and Hill coefficient 0.7±0.03; the paper indicates an open-channel (open-state) blocking mechanism with steady-state inhibition reached within 2 min, but does not report Imax, kin/kout, or ke0 values.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Lee_2010`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Lee HM et al., Inhibitory action of fluvoxamine on Kv1…, Biological & pharmace
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -21,7 +21,7 @@
 
 > Lonazolac derivative 22 inhibits the categorical response mPGES-1 with an IC50 of 0.16 μM. The specific mechanism of action (e.g., inhibition of production vs. elimination) is not described in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Elkady_2012`
 - **model family:** `unknown`
@@ -48,11 +48,11 @@ Elkady M et al., Modified acidic nonsteroidal anti-infla…, Journal of medicina
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

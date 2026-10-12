@@ -4,7 +4,7 @@
 
 # gadopentetic acid — `GadopenteticAcid_Jurkiewicz2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,6 +19,8 @@
 **Gadopentetic acid’s peripheral volume of distribution, V2, is 0.06 L/kg in a model with an unreachable or orphan compartment, so the record was rejected.**
 
 The record reports a central volume of distribution of 0.12 L/kg and a peripheral volume of distribution of 0.06 L/kg for gadopentetic acid, with structure 2C. The finding means a compartment has no path from the dose; it does not identify which compartment is unreachable. Extracted — gadopentetic acid: CL 0.12 L/h/kg, V1 0.12 L/kg, V2 0.06 L/kg.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of CL: this record has 0.12, the second reading 0.1; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by gpt-6-luna</sub>
 
@@ -55,14 +57,25 @@ Jurkiewicz E et al., Pharmacokinetics, Safety, and Efficacy…, Investigative ra
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | secondary_empty | 0.0 | none |
+| `qwen3.8-27b` | not confirmed | 0.143 (1/7 fields) | 6 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>6 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `model.topology_template` | 2C | 1C | mismatch |
+| `qwen3.8-27b` | `values[Q22]` | 0.12 | 0.1 | mismatch |
+| `qwen3.8-27b` | `values[Q57]` | 1.29 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `values[Q61]` | not captured | 0.06 | only_one_extracted |
+| `qwen3.8-27b` | `values[Q63]` | 0.12 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `values[Q64]` | 0.06 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -93,18 +106,18 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_gadopentetic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jurkiewicz_2022` / `Jurkiewicz_2022::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gadopentetic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jurkiewicz_2022` / `Jurkiewicz_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

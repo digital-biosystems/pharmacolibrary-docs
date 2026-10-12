@@ -19,7 +19,7 @@
 
 > Ritlecitinib plasma concentrations (ng/mL) stimulate the ordinal eyelash assessment (ELA) score via an Indirect Response III model characterized by a maximum effect (Emax) of 7.75, a half-maximum effective concentration (EC50) of 10.2 ng/mL, and a half-life of drug onset (kin,drug) of 27.3 weeks. The model incorporates baseline parameters B1 (7.31), B2 (1.12), and B3 (1.18) to describe the categorical transition between ELA score levels.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Wang_2025`
 - **model family:** `indirect_response_iii`
@@ -68,7 +68,7 @@ Wang Y et al., Population exposure-response analysis o…, CPT: pharmacometrics 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

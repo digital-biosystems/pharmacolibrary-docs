@@ -28,18 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">other animal</span> | [Driouich_2022_viral_RNA_yield](drugs/drug_nitazoxanide/pd_Driouich_2022_viral_RNA_yield.md) | viral RNA yield ← nitazoxanide · inhibition effect | — | Driouich JS et al., Pre-clinical evaluation of antiviral ac…, EBioMedicine (2022) | [10.1016/j.ebiom.2022.104148](https://doi.org/10.1016/j.ebiom.2022.104148) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hickson_2018_VACV](drugs/drug_nitazoxanide/pd_Hickson_2018_VACV.md) | VACV production ← nitazoxanide · inhibition effect | — | Hickson SE et al., Inhibition of vaccinia virus replicatio…, Virology (2018) | [10.1016/j.virol.2018.03.023](https://doi.org/10.1016/j.virol.2018.03.023) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nitazoxanide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">other animal</span> | [Driouich_2022_viral_RNA_yield](drugs/drug_nitazoxanide/pd_Driouich_2022_viral_RNA_yield.md) | viral RNA yield ← nitazoxanide · inhibition effect | — | Driouich JS et al., Pre-clinical evaluation of antiviral ac…, EBioMedicine (2022) | [10.1016/j.ebiom.2022.104148](https://doi.org/10.1016/j.ebiom.2022.104148) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hickson_2018_VACV](drugs/drug_nitazoxanide/pd_Hickson_2018_VACV.md) | VACV production ← nitazoxanide · inhibition effect | — | Hickson SE et al., Inhibition of vaccinia virus replicatio…, Virology (2018) | [10.1016/j.virol.2018.03.023](https://doi.org/10.1016/j.virol.2018.03.023) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -33,25 +33,14 @@ Spiramycin is a macrolide antibiotic used to treat bacterial infections and has 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span> | [Elazab_2021_iv](drugs/drug_spiramycin/Spiramycin_Elazab2021_iv.md) | ▶ model + simulator | 1-compartment, IV | 7 | Elazab ST et al., Pharmacokinetic/Pharmacodynamic Modelin…, Pathogens (Basel, Switzerla… (2021) | [10.3390/pathogens10101238](https://doi.org/10.3390/pathogens10101238) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span> | [Elazab_2021_oral](drugs/drug_spiramycin/Spiramycin_Elazab2021_oral.md) | ▶ model + simulator | 1-compartment, IV | 9 | Elazab ST et al., Pharmacokinetic/Pharmacodynamic Modelin…, Pathogens (Basel, Switzerla… (2021) | [10.3390/pathogens10101238](https://doi.org/10.3390/pathogens10101238) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span> | [Elazab_2021_iv](drugs/drug_spiramycin/Spiramycin_Elazab2021_iv.md) | ▶ model + simulator | 1-compartment, IV | 7 | Elazab ST et al., Pharmacokinetic/Pharmacodynamic Modelin…, Pathogens (Basel, Switzerla… (2021) | [10.3390/pathogens10101238](https://doi.org/10.3390/pathogens10101238) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span> | [Elazab_2021_oral](drugs/drug_spiramycin/Spiramycin_Elazab2021_oral.md) | ▶ model + simulator | 1-compartment, IV | 9 | Elazab ST et al., Pharmacokinetic/Pharmacodynamic Modelin…, Pathogens (Basel, Switzerla… (2021) | [10.3390/pathogens10101238](https://doi.org/10.3390/pathogens10101238) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Halling-Sørensen_2000_Algal_growth](drugs/drug_spiramycin/pd_Halling_S_rensen_2000_Algal_growth.md) | Algal growth ← spiramycin · inhibition effect | — | Halling-Sørensen B, Algal toxicity of antibacterial agents…, Chemosphere (2000) | [10.1016/s0045-6535(99)00445-2](https://doi.org/10.1016/s0045-6535(99)00445-2) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=spiramycin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Halling-Sørensen_2000_Algal_growth](drugs/drug_spiramycin/pd_Halling_S_rensen_2000_Algal_growth.md) | Algal growth ← spiramycin · inhibition effect | — | Halling-Sørensen B, Algal toxicity of antibacterial agents…, Chemosphere (2000) | [10.1016/s0045-6535(99)00445-2](https://doi.org/10.1016/s0045-6535(99)00445-2) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -20,7 +20,7 @@
 
 > Remimazolam dose (mg kg-1) drives time to loss of consciousness (LOC) via a dose-response (Hill) model with ED50 0.11 mg kg-1, ED95 0.19 mg kg-1, and Hill coefficient 5.3; the paper excerpts do not state a mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Chae_2022`
 - **model family:** `tte`
@@ -63,7 +63,7 @@ Chae D et al., Pharmacodynamic analysis of intravenous…, British journal of an
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

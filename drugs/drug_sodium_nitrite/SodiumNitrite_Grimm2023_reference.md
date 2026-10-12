@@ -5,7 +5,7 @@
 
 # sodium nitrite — `SodiumNitrite_Grimm2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,7 +15,7 @@
 
 > **Species: monkey.** This record comes from an animal study (monkey), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -113,10 +113,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_sodium_nitrite/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Grimm_2023` / `Grimm_2023::reference`)
-- model: `../../../knowledgebase/drugs/drug_sodium_nitrite/models/modelica/SodiumNitrite_Grimm2023_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_sodium_nitrite/models/modelica/SodiumNitrite_Grimm2023_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_sodium_nitrite/models/modelica/SodiumNitrite_Grimm2023_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sodium_nitrite/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Grimm_2023` / `Grimm_2023::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sodium_nitrite/models/modelica/SodiumNitrite_Grimm2023_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sodium_nitrite/models/modelica/SodiumNitrite_Grimm2023_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sodium_nitrite/models/modelica/SodiumNitrite_Grimm2023_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -125,15 +125,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference/SodiumNitrite_Grimm2023_reference_modelica.zip" download>SodiumNitrite_Grimm2023_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference/SodiumNitrite_Grimm2023_reference_fmi.zip" download>SodiumNitrite_Grimm2023_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference/SodiumNitrite_Grimm2023_reference_matlab.zip" download>SodiumNitrite_Grimm2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference/SodiumNitrite_Grimm2023_reference_matlab_simbio.zip" download>SodiumNitrite_Grimm2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference/SodiumNitrite_Grimm2023_reference_sbml.zip" download>SodiumNitrite_Grimm2023_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference/SodiumNitrite_Grimm2023_reference_cellml.zip" download>SodiumNitrite_Grimm2023_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference/SodiumNitrite_Grimm2023_reference.svg" alt="SodiumNitrite_Grimm2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_sodium_nitrite/SodiumNitrite_Grimm2023_reference/SodiumNitrite_Grimm2023_reference.svg" alt="SodiumNitrite_Grimm2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -33,8 +33,8 @@ Zopiclone is a hypnotic and sedative medicine used to treat sleep disorders such
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span> | [Han_2025_reference](drugs/drug_zopiclone/Zopiclone_Han2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Han HH et al., Population pharmacokinetics modelling t…, Frontiers in psychiatry (2025) | [10.3389/fpsyt.2025.1664678](https://doi.org/10.3389/fpsyt.2025.1664678) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Luurila_1996_reference](drugs/drug_zopiclone/Zopiclone_Luurila1996_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span> | [Han_2025_reference](drugs/drug_zopiclone/Zopiclone_Han2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Han HH et al., Population pharmacokinetics modelling t…, Frontiers in psychiatry (2025) | [10.3389/fpsyt.2025.1664678](https://doi.org/10.3389/fpsyt.2025.1664678) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Luurila_1996_reference](drugs/drug_zopiclone/Zopiclone_Luurila1996_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -46,18 +46,6 @@ Zopiclone is a hypnotic and sedative medicine used to treat sleep disorders such
 | <span class="pk-badge pk-badge--green">extracted</span> | [Luurila_1996_SPV_2](drugs/drug_zopiclone/pd_Luurila_1996_SPV_2.md) | saccadic peak velocity ← zopiclone · delayed effect through an effect compartment | — | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Munakata_1996_GABA_response_potentiation_by_zopiclone](drugs/drug_zopiclone/pd_Munakata_1996_GABA_response_potentiation_by_zopiclone.md) | GABA response potentiation by zopiclone ← zopiclone · direct Emax (saturable) effect | — | Munakata M et al., Heterogeneous distribution of benzodiaz…, British journal of pharmaco… (1996) | [10.1111/j.1476-5381.1996.tb15473.x](https://doi.org/10.1111/j.1476-5381.1996.tb15473.x) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Lloyd_1990_35S_TBPS_binding](drugs/drug_zopiclone/pd_Lloyd_1990_35S_TBPS_binding.md) | 35S-TBPS binding to rat cerebral cortex membranes ← zopiclone · direct Emax (saturable) effect | model (no simulator) | Lloyd GK et al., The activity of zolpidem and other hypn…, The Journal of pharmacology… (1990) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=zopiclone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP2C8` substrate, `CYP2C9` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: GABRA1 (potentiator), GABRA2 (potentiator), GABRA3 (potentiator), GABRA5 (potentiator), PTGS1 (substrate), TSPO (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

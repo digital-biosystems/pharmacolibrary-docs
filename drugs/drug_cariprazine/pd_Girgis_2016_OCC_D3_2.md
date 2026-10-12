@@ -19,7 +19,7 @@
 
 > Cariprazine dose was fitted to D3 receptor occupancy (%) with a direct Emax model (Emax fixed to 100%), giving ED50 values of 1.52 mg and 0.30 mg; the paper does not state a mechanism beyond this direct dose–occupancy Emax relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Girgis_2016`
 - **model family:** `emax`
@@ -61,7 +61,7 @@ Girgis RR et al., Preferential binding to dopamine D3 ove…, Psychopharmacology
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

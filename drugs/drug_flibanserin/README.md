@@ -28,29 +28,10 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Trocóniz_2012_VAS](drugs/drug_flibanserin/pd_Troc_niz_2012_VAS.md) | VAS "drowsiness" ← flibanserin · direct sigmoid Emax (Hill) effect | — | Trocóniz IF et al., Population pharmacokinetic/pharmacodyna…, Pharmaceutical research (2012) | [10.1007/s11095-011-0648-6](https://doi.org/10.1007/s11095-011-0648-6) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Simon_2020_Dizziness](drugs/drug_flibanserin/pd_Simon_2020_Dizziness.md) | Dizziness ← none · categorical (graded) response model | — | Simon JA et al., Effects of Alcohol Administered With Fl…, The journal of sexual medic… (2020) | [10.1016/j.jsxm.2019.10.004](https://doi.org/10.1016/j.jsxm.2019.10.004) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Simon_2020_Hypotension](drugs/drug_flibanserin/pd_Simon_2020_Hypotension.md) | Hypotension ← none · categorical (graded) response model | — | Simon JA et al., Effects of Alcohol Administered With Fl…, The journal of sexual medic… (2020) | [10.1016/j.jsxm.2019.10.004](https://doi.org/10.1016/j.jsxm.2019.10.004) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Simon_2020_Syncope](drugs/drug_flibanserin/pd_Simon_2020_Syncope.md) | Syncope ← none · categorical (graded) response model | — | Simon JA et al., Effects of Alcohol Administered With Fl…, The journal of sexual medic… (2020) | [10.1016/j.jsxm.2019.10.004](https://doi.org/10.1016/j.jsxm.2019.10.004) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=flibanserin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: DRD4 (target), HTR1A (target), HTR2A (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Trocóniz_2012_VAS](drugs/drug_flibanserin/pd_Troc_niz_2012_VAS.md) | VAS "drowsiness" ← flibanserin · direct sigmoid Emax (Hill) effect | — | Trocóniz IF et al., Population pharmacokinetic/pharmacodyna…, Pharmaceutical research (2012) | [10.1007/s11095-011-0648-6](https://doi.org/10.1007/s11095-011-0648-6) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Simon_2020_Dizziness](drugs/drug_flibanserin/pd_Simon_2020_Dizziness.md) | Dizziness ← none · categorical (graded) response model | — | Simon JA et al., Effects of Alcohol Administered With Fl…, The journal of sexual medic… (2020) | [10.1016/j.jsxm.2019.10.004](https://doi.org/10.1016/j.jsxm.2019.10.004) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Simon_2020_Hypotension](drugs/drug_flibanserin/pd_Simon_2020_Hypotension.md) | Hypotension ← none · categorical (graded) response model | — | Simon JA et al., Effects of Alcohol Administered With Fl…, The journal of sexual medic… (2020) | [10.1016/j.jsxm.2019.10.004](https://doi.org/10.1016/j.jsxm.2019.10.004) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Simon_2020_Syncope](drugs/drug_flibanserin/pd_Simon_2020_Syncope.md) | Syncope ← none · categorical (graded) response model | — | Simon JA et al., Effects of Alcohol Administered With Fl…, The journal of sexual medic… (2020) | [10.1016/j.jsxm.2019.10.004](https://doi.org/10.1016/j.jsxm.2019.10.004) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -22,7 +22,7 @@
 
 > Thalidomide stimulates a binary apoptosis response with an EC50 of 8.9 microM. The paper does not describe the underlying mechanism.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Knobloch_2007`
 - **model family:** `unknown`
@@ -63,7 +63,7 @@ Knobloch J et al., Thalidomide induces limb deformities by…, FASEB journal : o
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

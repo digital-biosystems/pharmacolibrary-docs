@@ -18,11 +18,11 @@
 
 **As extracted:** Cumulative (S)-ketoprofen plasma level drives cumulative antinociceptive effect (in %h): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Cumulative antinociceptive effect (AUCe) was modeled as a function of cumulative (S)-ketoprofen plasma level (AUCp) using a sigmoidal Emax equation based on receptor theory. The fit yielded a maximum effect (Emax) of 252.21 %h, a half-maximum effective concentration (EC50) of 5.49 μg·h/mL, and a response factor (gamma) of 1.64.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Medina-López_2018`
 - **model family:** `sigmoid_emax`
@@ -102,7 +102,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -5,7 +5,7 @@
 
 # lutetium (177Lu) vipivotide tetraxetan — `Lutetium177luVipivotideTetraxetan_Siebinga2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.88), gpt-oss:120b (not confirmed, agreement 0.87). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.87). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -21,7 +21,7 @@
 
 The declared topology is a two-compartment model, but the parameter set includes transfers to a second and third peripheral compartment (k13/k31 and k14/k41) and a volume V3 of 30.4 L, leaving compartments with no place in the stated structure — the orphan-compartment finding. The second reader also disagreed on several parameters: they read a Bmax of 40.4 for compartment 2, a k15 of 0.000248 h−1 with tumor-volume effect 0.705, and no compartment-2/3 volumes, whereas this record lists V2 24.6 L and V3 30.4 L. Disagreements on dose compound and primary analyte were only naming variants of the same molecule. Extracted — lutetium 177lu vipivotide tetraxetan: kel 0.288 h−1, k12 0.0238 h−1, k21 0.0307 h−1, k13 0.00867 h−1, k31 0.0141 h−1, k14 0.0238 h−1, k41 0.0283 h−1, V1 10.3 L, … (+2).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bmax compartment 2: this record has none, the second reading 40.4; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has lutetium_177lu_vipivotide_tetraxetan, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Siebinga H et al., Population pharmacokinetic dosimetry mo…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.12914](https://doi.org/10.1002/psp4.12914)
 
-## Model component
-<dbs-pgx drug="lutetium (177Lu) vipivotide tetraxetan" model-id="Lutetium177luVipivotideTetraxetan_Siebinga2023_reference" status="extracted" stale="true" population="patients with low volume metastatic prostate cancer" measured-compound="lutetium_177lu_vipivotide_tetraxetan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lutetium (177Lu) vipivotide tetraxetan" model-id="Lutetium177luVipivotideTetraxetan_Siebinga2023_reference" status="extracted" stale="true" population="patients with low volume metastatic prostate cancer" measured-compound="lutetium_177lu_vipivotide_tetraxetan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 9 extracted.
@@ -90,21 +89,17 @@ Siebinga H et al., Population pharmacokinetic dosimetry mo…, CPT: pharmacometr
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.88 (22/25 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.87 (20/23 fields) | 3 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[bmax compartment 2]` | not captured | 40.4 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tumor volume on k 15]` | not captured | 0.705 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v1].parameter_id` | Q61 | Q63 | mismatch |
 | `gpt-oss:120b` | `parameters[bmax compartment 2]` | not captured | 40.4 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | lutetium_177lu_vipivotide_tetraxetan | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | lutetium_177lu_vipivotide_tetraxetan | unknown | mismatch |
@@ -143,7 +138,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_lutetium_177lu_vipivotide_tetraxetan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Siebinga_2023` / `Siebinga_2023::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lutetium_177lu_vipivotide_tetraxetan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Siebinga_2023` / `Siebinga_2023::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -161,7 +156,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference.svg" alt="Lutetium177luVipivotideTetraxetan_Siebinga2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference.svg" alt="Lutetium177luVipivotideTetraxetan_Siebinga2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -28,16 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Nahata_1992_MIC](drugs/drug_loracarbef/pd_Nahata_1992_MIC.md) | Minimum Inhibitory Concentration ← loracarbef · model not identified | — | Nahata MC et al., Pharmacokinetics of loracarbef in pedia…, European journal of drug me… (1992) | [10.1007/BF03190146](https://doi.org/10.1007/BF03190146) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=loracarbef).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` inhibitor | DrugBank actor |
-| excretion | kidney | `SLC15A2` inhibitor | DrugBank actor |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Nahata_1992_MIC](drugs/drug_loracarbef/pd_Nahata_1992_MIC.md) | Minimum Inhibitory Concentration ← loracarbef · model not identified | — | Nahata MC et al., Pharmacokinetics of loracarbef in pedia…, European journal of drug me… (1992) | [10.1007/BF03190146](https://doi.org/10.1007/BF03190146) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -28,16 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Pauwels_1996_cell_growth](drugs/drug_metergoline/pd_Pauwels_1996_cell_growth.md) | cell growth ← metergoline · direct sigmoid Emax (Hill) effect | — | Pauwels PJ et al., Promotion of cell growth by stimulation…, Naunyn-Schmiedeberg's archi… (1996) | [10.1007/BF00178713](https://doi.org/10.1007/BF00178713) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=metergoline).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: HTR1B (target), HTR1D (target), HTR1E (target), HTR1F (target), HTR2A (target), HTR2B (target), HTR2C (target), HTR5A (target), SCN2A (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Pauwels_1996_cell_growth](drugs/drug_metergoline/pd_Pauwels_1996_cell_growth.md) | cell growth ← metergoline · direct sigmoid Emax (Hill) effect | — | Pauwels PJ et al., Promotion of cell growth by stimulation…, Naunyn-Schmiedeberg's archi… (1996) | [10.1007/BF00178713](https://doi.org/10.1007/BF00178713) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

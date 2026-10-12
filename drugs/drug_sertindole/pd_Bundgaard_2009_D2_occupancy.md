@@ -21,7 +21,7 @@
 
 > Sertindole (via its active metabolite dehydrosertindole, concentrations in ng/ml) acts on striatal dopamine D2 receptor occupancy in an Emax-type model; the paper excerpts do not state the mechanism beyond this. Reported potency values are Kd = 165 ng/ml, effect-compartment Kd for sertindole (competitive model) = 133 ng/ml, and sertindole Kd (conventional modelling) = 102 ng/ml; no Emax, kin, kout, ke0 or gamma values are given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Bundgaard_2009`
 - **model family:** `emax`
@@ -64,7 +64,7 @@ Bundgaard C et al., Pharmacokinetics of sertindole and its…, Biopharmaceutics 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -19,7 +19,7 @@
 
 > Naratriptan plasma concentrations (nM) stimulate the forward transition rate from pain state 1 to state 2 via an Emax mechanism, where the drug increases the transition rate from the placebo baseline (r(0) of 0.12 h⁻¹) with an estimated Emax of 1.7 and an EC50 of 9.6 nM. The model explicitly defines the drug effect as a time-varying covariate that increases forward transition rates, while backward transition rates representing the migraine generator are unaffected by treatment.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Maas_2006`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Maas HJ et al., A model-based approach to treatment com…, British journal of c
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > Suramin acts as an antagonist at the human P2U receptor in 1321N1 cells, inhibiting UTP-stimulated phospholipase C; Schild analysis gave a slope of 1.57 ± 0.19 and an apparent pA2 of 4.32 ± 0.13. The paper excerpts do not state a mechanism beyond competitive antagonism implied by the Schild plot.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Charlton_1996`
 - **model family:** `linear`
@@ -64,7 +64,7 @@ Charlton SJ et al., PPADS and suramin as antagonists at clo…, British journal 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

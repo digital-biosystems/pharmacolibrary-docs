@@ -19,7 +19,7 @@
 
 > Ritlecitinib concentrations (ng/mL) stimulate eyebrow assessment (EBA) scores via an indirect response mechanism where the drug stimulates the production rate (kin) of the response, with kin,drug assumed equal to kout,drug. Key parameters include an EC50 of 10.6 ng/mL (recorded; note paper excerpt lists 40.1 ng/mL for EBA), an Emax of 11.0, and a drug onset half-life (kin,drug) of 34.1 weeks.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Wang_2025`
 - **model family:** `indirect_response_iii`
@@ -67,7 +67,7 @@ Wang Y et al., Population exposure-response analysis o…, CPT: pharmacometrics 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

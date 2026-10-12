@@ -22,7 +22,7 @@
 
 > The record specifies a linear model for the effect of ketoprofen dose on MCF7 cell viability, but the provided paper excerpts do not contain data or mechanistic details for ketoprofen. Consequently, no specific mechanism, potency values, or rate constants for this drug-response pair are described in the excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Bertin_2023`
 - **model family:** `linear`
@@ -56,7 +56,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

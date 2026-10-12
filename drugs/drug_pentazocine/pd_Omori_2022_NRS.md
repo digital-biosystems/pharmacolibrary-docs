@@ -16,11 +16,11 @@
 
 **As extracted:** Pentazocine (concentrations from this paper's PK model) drives Pain severity: indirect response — drug inhibits the loss of Pain severity.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Pentazocine plasma concentrations (ng/mL) inhibit the decrease (elimination) of pain severity (NRS) through an indirect response mechanism that also incorporates a time-dependent effect component, as described in the model equations. Key parameters include an EC50 of 144 ng/mL, kout of 2.82 /h, Emax of 1, a time-dependent PT50 of 17.1 h, and a gamma time value of 0.373.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Omori_2022`
 - **model family:** `indirect_response_ii`
@@ -102,7 +102,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

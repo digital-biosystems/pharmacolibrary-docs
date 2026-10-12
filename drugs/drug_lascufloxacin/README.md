@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Hosoi_2026_Change_in_viable_bacterial_counts](drugs/drug_lascufloxacin/pd_Hosoi_2026_Change_in_viable_bacterial_counts.md) | Change in viable bacterial counts ← Lascufloxacin · direct sigmoid Emax (Hill) effect | — | Hosoi A et al., Three fluoroquinolones with different e…, Antimicrobial agents and ch… (2026) | [10.1128/aac.00375-26](https://doi.org/10.1128/aac.00375-26) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Hosoi_2026_Change_in_viable_bacterial_counts](drugs/drug_lascufloxacin/pd_Hosoi_2026_Change_in_viable_bacterial_counts.md) | Change in viable bacterial counts ← Lascufloxacin · direct sigmoid Emax (Hill) effect | — | Hosoi A et al., Three fluoroquinolones with different e…, Antimicrobial agents and ch… (2026) | [10.1128/aac.00375-26](https://doi.org/10.1128/aac.00375-26) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

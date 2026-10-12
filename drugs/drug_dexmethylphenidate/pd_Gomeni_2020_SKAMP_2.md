@@ -19,7 +19,7 @@
 
 > Dexmethylphenidate (DR/ER-MPH) plasma MPH concentrations act on the SKAMP combined score in children with ADHD via an indirect response model: the placebo trajectory is described by dR/dt = kin(1+AA·e^(−t·P1)) − kout·R (kin = Bas·kout), and the drug effect is described as a change from placebo in SKAMP score (recorded as indirect response type III with stimulation, proportional effect form). The paper does not report numeric values for EC50, Emax, kin, or kout, except that EC50 was approximately 2-fold higher in males than females (P = 0.00…), with the optimized mean DR/ER-MPH dose of 66.2 (SD 19.56) mg.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Gomeni_2020`
 - **model family:** `indirect_response_iii`
@@ -39,11 +39,11 @@ _No resolved parameters._
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

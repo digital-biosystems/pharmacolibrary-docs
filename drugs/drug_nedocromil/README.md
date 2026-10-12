@@ -33,18 +33,7 @@ Nedocromil is an anti-allergic, anti-inflammatory drug used for allergic conditi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Neale_1987_reference](drugs/drug_nedocromil/Nedocromil_Neale1987_reference.md) | — | 1-compartment (no model) | 2 | Neale MG et al., The pharmacokinetics of nedocromil sodi…, British journal of clinical… (1987) | [10.1111/j.1365-2125.1987.tb03203.x](https://doi.org/10.1111/j.1365-2125.1987.tb03203.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nedocromil).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CYSLTR1 (target), CYSLTR2 (target), FPR1 (target), PTGDR (unknown).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Neale_1987_reference](drugs/drug_nedocromil/Nedocromil_Neale1987_reference.md) | — | 1-compartment (no model) | 2 | Neale MG et al., The pharmacokinetics of nedocromil sodi…, British journal of clinical… (1987) | [10.1111/j.1365-2125.1987.tb03203.x](https://doi.org/10.1111/j.1365-2125.1987.tb03203.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

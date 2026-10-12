@@ -5,7 +5,7 @@
 
 # ciprofloxacin — `Ciprofloxacin_Hffken1985_100_mg_i_v`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,8 +29,7 @@ Without a unit the value cannot be converted, so the model cannot use it. The ch
 Höffken G et al., Pharmacokinetics of ciprofloxacin after…, Antimicrobial agents and ch… (1985)
   ·  DOI: [10.1128/AAC.27.3.375](https://doi.org/10.1128/AAC.27.3.375)
 
-## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Hffken1985_100_mg_i_v" status="needs_review" stale="true" population="healthy fasting volunteers" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Hffken1985_100_mg_i_v" status="needs_review" stale="true" population="healthy fasting volunteers" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.
@@ -112,7 +111,7 @@ Höffken G et al., Pharmacokinetics of ciprofloxacin after…, Antimicrobial age
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_ciprofloxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Höffken_1985` / `Höffken_1985::100_mg_i_v`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciprofloxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Höffken_1985` / `Höffken_1985::100_mg_i_v`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -133,7 +132,7 @@ Höffken G et al., Pharmacokinetics of ciprofloxacin after…, Antimicrobial age
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

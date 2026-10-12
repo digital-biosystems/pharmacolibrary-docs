@@ -22,7 +22,7 @@
 
 > Ambroxol concentrations (microM) inhibit resting TTX-resistant Na+ currents in rat sensory neurons, described by a sigmoid Emax model with IC50 34.3 microM; the paper excerpts do not state Emax, gamma, or the mechanism beyond current inhibition.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Weiser_2006`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Weiser T, Comparison of the effects of four Na+ c…, Neuroscience letters (2006
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

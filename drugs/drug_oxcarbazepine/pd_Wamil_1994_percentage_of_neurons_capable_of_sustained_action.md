@@ -22,7 +22,7 @@
 
 > The paper does not explicitly state the mechanism (e.g., production or elimination inhibition) or rate constants, but the record indicates a sigmoidal Emax inhibition model where oxcarbazepine concentration reduces the percentage of neurons capable of sustained action potential firing with an EC50 of 5 x 10^-8 M.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Wamil_1994`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Wamil AW et al., Effects of oxcarbazepine and 10-hydroxy…, European journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

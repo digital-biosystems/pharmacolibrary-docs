@@ -20,7 +20,7 @@
 
 > S-ketamine concentration acts directly on cardiac output via a linear model with an effect compartment, causing stimulation described by the equation Y = 0.25 * (C/C25)^gamma. The S-ketamine concentration causing a 25% increase in cardiac output (C25) is 1.68 nmol ml−1, with a baseline of 6.8 L min−1, a gamma value of 1, and an effect-site equilibration half-life (t1/2ke0) of 2.28 min.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kamp_2021`
 - **model family:** `linear`
@@ -50,11 +50,11 @@ Kamp J et al., Stereoselective ketamine effect on card…, British journal of an
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

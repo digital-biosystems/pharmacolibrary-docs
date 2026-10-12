@@ -19,7 +19,7 @@
 
 > The paper uses Cox regression to examine the association between endoxifen concentrations (categorized by thresholds of 3.3, 5.2, 5.9, and 10.3 ng/ml or as a continuous variable) and relapse-free survival, but it does not specify the pharmacodynamic mechanism (e.g., Emax or inhibitory/inductive effects). No potency or rate parameters (such as Imax, IC50, or ke0) are reported, as the analysis found no statistically significant concentration-effect relationship.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sanchez-Spitman_2020`
 - **model family:** `tte`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

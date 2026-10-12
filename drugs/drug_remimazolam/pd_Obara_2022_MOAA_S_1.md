@@ -20,7 +20,7 @@
 
 > The paper does not provide excerpts describing the PD model, so the mechanism linking remimazolam concentrations (µg/mL) to the probability of MOAA/S score ≤ 1, and any potency or rate parameters, cannot be stated from the available material.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Obara_2022`
 - **model family:** `unknown`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -16,11 +16,11 @@
 
 **As extracted:** Olanzapine (the dose) drives dopamine D2-receptor occupancy (in %): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Olanzapine daily dose (mg/day) was related to dopamine D2-receptor occupancy (%) by a direct Emax model with proportional stimulation; Emax was 85.6%, with ED50 of 5.15 mg/day in men and 2.38 mg/day in women. The excerpts do not state a mechanism beyond this direct dose-effect relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Eugene_2017`
 - **model family:** `emax`
@@ -98,7 +98,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

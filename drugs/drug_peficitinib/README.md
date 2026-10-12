@@ -32,8 +32,8 @@ Peficitinib is a JAK inhibitor developed for the treatment of rheumatoid arthrit
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q49 — no SI value to build from</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Toyoshima_2021_estimate](drugs/drug_peficitinib/Peficitinib_Toyoshima2021_estimate.md) | — | 2-compartment (no model) | 6 | Toyoshima J et al., Population pharmacokinetic analysis of…, British journal of clinical… (2021) | [10.1111/bcp.14605](https://doi.org/10.1111/bcp.14605) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q49 — no SI value to build from</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Toyoshima_2021_median](drugs/drug_peficitinib/Peficitinib_Toyoshima2021_median.md) | — | 2-compartment (no model) | 6 | Toyoshima J et al., Population pharmacokinetic analysis of…, British journal of clinical… (2021) | [10.1111/bcp.14605](https://doi.org/10.1111/bcp.14605) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q49 — no SI value to build from</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Toyoshima_2021_estimate](drugs/drug_peficitinib/Peficitinib_Toyoshima2021_estimate.md) | — | 2-compartment (no model) | 6 | Toyoshima J et al., Population pharmacokinetic analysis of…, British journal of clinical… (2021) | [10.1111/bcp.14605](https://doi.org/10.1111/bcp.14605) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q49 — no SI value to build from</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Toyoshima_2021_median](drugs/drug_peficitinib/Peficitinib_Toyoshima2021_median.md) | — | 2-compartment (no model) | 6 | Toyoshima J et al., Population pharmacokinetic analysis of…, British journal of clinical… (2021) | [10.1111/bcp.14605](https://doi.org/10.1111/bcp.14605) |
 
 ## Pharmacodynamics (PD)
 
@@ -41,15 +41,6 @@ Peficitinib is a JAK inhibitor developed for the treatment of rheumatoid arthrit
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Toyoshima_2021_2_ACR20](drugs/drug_peficitinib/pd_Toyoshima_2021_2_ACR20.md) | ACR20 response rate ← peficitinib · categorical (graded) response model | — | Toyoshima J et al., Exposure-response modeling of peficitin…, Pharmacology research & per… (2021) | [10.1002/prp2.744](https://doi.org/10.1002/prp2.744) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Toyoshima_2021_2_DAS28_CRP](drugs/drug_peficitinib/pd_Toyoshima_2021_2_DAS28_CRP.md) | DAS28-CRP ← peficitinib · indirect response — drug inhibits the production of DAS28-CRP | — | Toyoshima J et al., Exposure-response modeling of peficitin…, Pharmacology research & per… (2021) | [10.1002/prp2.744](https://doi.org/10.1002/prp2.744) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=peficitinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: JAK1 (inhibitor), JAK3 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

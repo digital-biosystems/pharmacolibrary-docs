@@ -21,7 +21,7 @@
 
 > Brexanolone (acting as allopregnanolone, concentrations in μM) inhibits whole-cell Ba2+ current through recombinant L-type voltage-gated calcium channels (Ca(v)1.2 and Ca(v)1.3) in HEK293T cells, with a reported IC50 of ~10 μM; the paper excerpts do not state the model form or mechanism beyond this inhibition.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Earl_2011`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Earl DE et al., Inhibition of recombinant L-type voltag…, The Journal of pharm
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

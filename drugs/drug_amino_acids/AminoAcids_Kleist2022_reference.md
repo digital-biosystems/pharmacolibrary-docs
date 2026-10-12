@@ -5,7 +5,7 @@
 
 # amino acids — `AminoAcids_Kleist2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.474), gpt-oss:120b (not confirmed, agreement 0.562). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.474), gpt-oss:120b (not confirmed, agreement 0.562). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Kleist CJ et al., Population kinetics of homoarginine and…, Amino acids (2022)
   ·  DOI: [10.1007/s00726-022-03169-x](https://doi.org/10.1007/s00726-022-03169-x)
 
-## Model component
-<dbs-pgx drug="amino acids" model-id="AminoAcids_Kleist2022_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="homoarginine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amino acids" model-id="AminoAcids_Kleist2022_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="homoarginine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted, plus 2 covariate effects.
@@ -170,7 +169,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_amino_acids/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kleist_2022` / `Kleist_2022::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amino_acids/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kleist_2022` / `Kleist_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -191,7 +190,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

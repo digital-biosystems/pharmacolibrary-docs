@@ -21,7 +21,7 @@
 
 > Trifluoperazine-associated ivermectin concentrations (M) drive inhibition of larval migration of ivermectin-resistant Haemonchus placei via a sigmoid Emax model; the paper reports EC50 = 1.159 × 10⁻⁷ M, but the excerpts do not state the mechanism, Emax, or slope.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Heckler_2014`
 - **model family:** `sigmoid_emax`
@@ -48,11 +48,11 @@ Heckler RP et al., P-gp modulating drugs greatly potentiat…, Veterinary parasi
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

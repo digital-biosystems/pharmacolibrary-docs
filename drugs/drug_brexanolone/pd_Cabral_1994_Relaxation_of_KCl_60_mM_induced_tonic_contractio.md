@@ -21,7 +21,7 @@
 
 > Brexanolone (allopregnanolone) concentration-dependently inhibits KCl (60 mM)-induced tonic contraction of rat uterus, with an IC50 of 21.2 ± 3.1 × 10⁻⁶ M; the paper excerpts do not state the mechanism beyond this inhibitory concentration-response relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Cabral_1994`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Cabral R et al., Progesterone and pregnanolone derivativ…, General pharmacolog
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

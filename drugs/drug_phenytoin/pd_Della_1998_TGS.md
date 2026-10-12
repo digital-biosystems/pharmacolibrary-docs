@@ -21,7 +21,7 @@
 
 > The paper describes the increase in the threshold for generalized seizure activity (ΔTGS) as an effect of phenytoin concentrations in an effect compartment model, with a delay constant (ke0) of 0.107±0.021 min⁻¹ and a baseline effect (E0) of 465.3±25.3 mA, but it does not explicitly state the specific Emax or Hill parameters (Imax, EC50, gamma) for the effect-response relationship in the provided text.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Della_1998`
 - **model family:** `effect_compartment`
@@ -65,7 +65,7 @@ Della Paschoa OE et al., Modelling of the pharmacodynamic intera…, British jou
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

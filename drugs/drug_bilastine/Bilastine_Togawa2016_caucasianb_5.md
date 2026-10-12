@@ -5,7 +5,7 @@
 
 # bilastine — `Bilastine_Togawa2016_caucasianb_5`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -21,7 +21,7 @@
 
 The record lacks explicit estimates for bioavailability (F) and lag time (Tlag), forcing the use of placeholder values. These unreported parameters affect the simulated concentration profile but are not supported by the paper's data. Consequently, the model was held back because these critical inputs were not explicitly justified or extracted. Extracted — bilastine: CL 18.1 L/h, V1 59.2 L, Q 1.59 L/h, V2 30.2 L, kabs 1.5 h−1.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bilastine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -74,14 +74,31 @@ Togawa M et al., Pharmacokinetics, Pharmacodynamics and…, Clinical drug invest
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>12 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl]` | 18.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 18.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 1.5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 1.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | 1.59 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | not captured | 1.59 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 59.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | not captured | 59.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | 30.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | not captured | 30.2 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | bilastine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | bilastine | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -127,10 +144,10 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_bilastine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Togawa_2016` / `Togawa_2016::caucasianb_5`)
-- model: `../../../knowledgebase/drugs/drug_bilastine/models/modelica/Bilastine_Togawa2016_caucasianb_5.mo`
-- deviation: `../../../knowledgebase/drugs/drug_bilastine/models/modelica/Bilastine_Togawa2016_caucasianb_5.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_bilastine/models/modelica/Bilastine_Togawa2016_caucasianb_5.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bilastine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Togawa_2016` / `Togawa_2016::caucasianb_5`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bilastine/models/modelica/Bilastine_Togawa2016_caucasianb_5.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bilastine/models/modelica/Bilastine_Togawa2016_caucasianb_5.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bilastine/models/modelica/Bilastine_Togawa2016_caucasianb_5.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -139,15 +156,16 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bilastine/Bilastine_Togawa2016_caucasianb_5/Bilastine_Togawa2016_caucasianb_5_modelica.zip" download>Bilastine_Togawa2016_caucasianb_5_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bilastine/Bilastine_Togawa2016_caucasianb_5/Bilastine_Togawa2016_caucasianb_5_fmi.zip" download>Bilastine_Togawa2016_caucasianb_5_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bilastine/Bilastine_Togawa2016_caucasianb_5/Bilastine_Togawa2016_caucasianb_5_matlab.zip" download>Bilastine_Togawa2016_caucasianb_5_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bilastine/Bilastine_Togawa2016_caucasianb_5/Bilastine_Togawa2016_caucasianb_5_matlab_simbio.zip" download>Bilastine_Togawa2016_caucasianb_5_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_bilastine/Bilastine_Togawa2016_caucasianb_5/Bilastine_Togawa2016_caucasianb_5_sbml.zip" download>Bilastine_Togawa2016_caucasianb_5_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_bilastine/Bilastine_Togawa2016_caucasianb_5/Bilastine_Togawa2016_caucasianb_5_cellml.zip" download>Bilastine_Togawa2016_caucasianb_5_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_bilastine/Bilastine_Togawa2016_caucasianb_5/Bilastine_Togawa2016_caucasianb_5.svg" alt="Bilastine_Togawa2016_caucasianb_5 diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_bilastine/Bilastine_Togawa2016_caucasianb_5/Bilastine_Togawa2016_caucasianb_5.svg" alt="Bilastine_Togawa2016_caucasianb_5 diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

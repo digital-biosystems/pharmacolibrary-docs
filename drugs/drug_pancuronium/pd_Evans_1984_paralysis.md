@@ -20,7 +20,7 @@
 
 > The model assumes a sigmoid Emax relationship where plasma pancuronium concentrations directly inhibit the percent paralysis response. The estimated potencies (ECpss50) are 0.21 +/- 0.08 and 0.18 +/- 0.05 micrograms/ml, but the paper text is unavailable to confirm the specific mechanistic basis or directionality beyond the cited parameters.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Evans_1984`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Evans MA et al., Pharmacokinetic and pharmacodynamic mod…, European journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -16,11 +16,11 @@
 
 **As extracted:** Febuxostat (concentrations from the PK model of Chen_2024) drives production rate of uric acid (in mg/h): indirect response — drug inhibits the production of production rate of uric acid.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Febuxostat plasma concentrations (ng/mL) inhibit the production rate of uric acid (kP, mg/h) via a saturable indirect response mechanism described by the equation kP = kP,0 × (1 - (Rmax × [P]PIN)/([P]PIN + [P]50,PIN)). The maximum fractional decrease in production rate (Rmax) is 1, and the plasma concentration for half-maximal effect ([P]50,PIN) is 87 ng/mL for non-hyperuricemic subjects and 120 ng/mL for hyperuricemic subjects.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Aksenov_2018`
 - **model family:** `indirect_response_i`
@@ -98,7 +98,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

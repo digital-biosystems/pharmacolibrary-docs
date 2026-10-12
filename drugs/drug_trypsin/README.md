@@ -1,0 +1,359 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;trypsin&quot;}]"></div>
+
+# trypsin
+
+- **generic name:** trypsin
+- **ATC codes:** `B06AA07`, `D03BA01`
+- **DrugBank:** [DB11237](https://go.drugbank.com/drugs/DB11237) · **PubChem:** not captured
+- **groups:** approved, investigational, vet_approved
+
+## About
+
+Trypsin is a digestive enzyme used to help clean wounds and ulcers, and in other hematological treatments. It is an approved medicine, also approved for veterinary use, with some investigational applications.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q127450](https://www.wikidata.org/wiki/Q127450) and the WHO ATC classification; not checked by a person.</small>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 01:44 | 17:25 | 0/0/0 | 0/0/0 | 0/0/0 | 700,087/14,493 | ollama / qwen3.8:27b-mtp-q8_0 | 50 | 23/56 | 48/2 | 0 |
+
+## popPK records
+
+_not available_
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 1927 matched, 250 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_36 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Calapoglu_2023.pdf` | Calapoglu F et al., Investigation of interaction between de…, Journal of biomolecular str… (2023) | pd | 5 | [10.1080/07391102.2022.2029565](https://doi.org/10.1080/07391102.2022.2029565) | [35098895](https://www.ncbi.nlm.nih.gov/pubmed/35098895) | metadata signals extractable PD data (IC50) |
+| `Esimbekova_2017.pdf` | Esimbekova EN et al., Inhibition effect of food preservatives…, Food chemistry (2017) | pd | 5 | [10.1016/j.foodchem.2017.05.059](https://doi.org/10.1016/j.foodchem.2017.05.059) | [28554639](https://www.ncbi.nlm.nih.gov/pubmed/28554639) | metadata signals extractable PD data (EC50) |
+| `Ming_2026.pdf` | Ming C et al., Development of a SMEDDS for oral delive…, Journal of pharmaceutical s… (2026) | pd | 5 | [10.1016/j.xphs.2026.104356](https://doi.org/10.1016/j.xphs.2026.104356) | [42250802](https://www.ncbi.nlm.nih.gov/pubmed/42250802) | metadata signals extractable PD data (PK/PD) |
+| `Ryan_2011.pdf` | Ryan SM et al., PK/PD modelling of comb-shaped PEGylate…, Journal of controlled relea… (2011) | pd | 5 | [10.1016/j.jconrel.2010.10.004](https://doi.org/10.1016/j.jconrel.2010.10.004) | [20946924](https://www.ncbi.nlm.nih.gov/pubmed/20946924) | metadata signals extractable PD data (PK/PD) |
+| `Sahin_2021.pdf` | Sahin S et al., Investigation of binding interaction be…, Spectrochimica acta. Part A… (2021) | pd | 5 | [10.1016/j.saa.2021.119817](https://doi.org/10.1016/j.saa.2021.119817) | [33901946](https://www.ncbi.nlm.nih.gov/pubmed/33901946) | metadata signals extractable PD data (IC50) |
+| `Wang_1995.pdf` | Wang DW et al., Voltage dependent inhibition of ATP sen…, Cardiovascular research (1995) | pd | 5 | not captured | [7796446](https://www.ncbi.nlm.nih.gov/pubmed/7796446) | metadata signals extractable PD data (IC50) |
+| `Allshire_1984.pdf` | Allshire AP et al., Uptake, retention, and efflux of Ca2+ b…, Archives of biochemistry an… (1984) | pd | 4 | [10.1016/0003-9861(84)90076-6](https://doi.org/10.1016/0003-9861(84)90076-6) | [6421235](https://www.ncbi.nlm.nih.gov/pubmed/6421235) | metadata signals extractable PD data (sigmoid) |
+| `Begum_1993.pdf` | Begum N et al., Protein phosphatase-1 and -2a activitie…, Endocrinology (1993) | pd | 4 | [10.1210/endo.133.5.8404657](https://doi.org/10.1210/endo.133.5.8404657) | [8404657](https://www.ncbi.nlm.nih.gov/pubmed/8404657) | metadata signals extractable PD data (EC50) |
+| `Cai_2014.pdf` | Cai MY et al., Pilot-scale production of soybean oligo…, Journal of food science and… (2014) | pd | 4 | [10.1007/s13197-012-0701-4](https://doi.org/10.1007/s13197-012-0701-4) | [25190841](https://www.ncbi.nlm.nih.gov/pubmed/25190841) | metadata signals extractable PD data (IC50) |
+| `Cordeiro_2024.pdf` | Cordeiro IH et al., Protease inhibitors characterisation by…, Natural product research (2024) | pd | 4 | [10.1080/14786419.2023.2246278](https://doi.org/10.1080/14786419.2023.2246278) | [37615635](https://www.ncbi.nlm.nih.gov/pubmed/37615635) | metadata signals extractable PD data (IC50) |
+| `Dražić_2020.pdf` | Dražić T et al., Peptide-β-lactam Inhibitors of Dengue a…, Journal of medicinal chemis… (2020) | pd | 4 | [10.1021/acs.jmedchem.9b00759](https://doi.org/10.1021/acs.jmedchem.9b00759) | [31804823](https://www.ncbi.nlm.nih.gov/pubmed/31804823) | metadata signals extractable PD data (IC50) |
+| `Herbert_1992.pdf` | Herbert JM et al., Biochemical and pharmacological activit…, The Journal of pharmacology… (1992) | pd | 4 | not captured | [1738126](https://www.ncbi.nlm.nih.gov/pubmed/1738126) | metadata signals extractable PD data (IC50) |
+| `Jin_2020.pdf` | Jin R et al., Identification of novel DPP-IV inhibito…, Food research international… (2020) | pd | 4 | [10.1016/j.foodres.2020.109161](https://doi.org/10.1016/j.foodres.2020.109161) | [32466942](https://www.ncbi.nlm.nih.gov/pubmed/32466942) | metadata signals extractable PD data (IC50) |
+| `Kawabata_1991.pdf` | Kawabata K et al., ONO-5046, a novel inhibitor of human ne…, Biochemical and biophysical… (1991) | pd | 4 | [10.1016/0006-291x(91)91862-7](https://doi.org/10.1016/0006-291x(91)91862-7) | [2049103](https://www.ncbi.nlm.nih.gov/pubmed/2049103) | metadata signals extractable PD data (IC50) |
+| `Lawler_1983.pdf` | Lawler J et al., Cooperative binding of calcium to throm…, The Journal of biological c… (1983) | pd | 4 | not captured | [6630182](https://www.ncbi.nlm.nih.gov/pubmed/6630182) | metadata signals extractable PD data (sigmoid) |
+| `Li_2023.pdf` | Li Z et al., Purification identification and functio…, Food chemistry (2023) | pd | 4 | [10.1016/j.foodchem.2022.134127](https://doi.org/10.1016/j.foodchem.2022.134127) | [36096005](https://www.ncbi.nlm.nih.gov/pubmed/36096005) | metadata signals extractable PD data (IC50) |
+| `Mary_1984.pdf` | Mary A et al., [In vitro aggregation of rat platelets…, Comptes rendus des seances… (1984) | pd | 4 | not captured | [6085483](https://www.ncbi.nlm.nih.gov/pubmed/6085483) | metadata signals extractable PD data (Emax) |
+| `Müller_1998.pdf` | Müller G et al., Convergence and divergence of the signa…, Molecular medicine (Cambrid… (1998) | pd | 4 | not captured | [9642681](https://www.ncbi.nlm.nih.gov/pubmed/9642681) | metadata signals extractable PD data (EC50) |
+| `Okomo_2023.pdf` | Okomo Aloo S et al., Impacts of germination and lactic acid…, Food chemistry (2023) | pd | 4 | [10.1016/j.foodchem.2023.136722](https://doi.org/10.1016/j.foodchem.2023.136722) | [37429240](https://www.ncbi.nlm.nih.gov/pubmed/37429240) | metadata signals extractable PD data (IC50) |
+| `Petit_1989.pdf` | Petit A et al., Angiotensin II stimulates both inositol…, The Journal of clinical end… (1989) | pd | 4 | [10.1210/jcem-69-2-280](https://doi.org/10.1210/jcem-69-2-280) | [2546960](https://www.ncbi.nlm.nih.gov/pubmed/2546960) | metadata signals extractable PD data (EC50) |
+| `Pribilla_1988.pdf` | Pribilla I et al., Heat-resistant inhibitors of protein ki…, European journal of biochem… (1988) | pd | 4 | [10.1111/j.1432-1033.1988.tb14420.x](https://doi.org/10.1111/j.1432-1033.1988.tb14420.x) | [3058479](https://www.ncbi.nlm.nih.gov/pubmed/3058479) | metadata signals extractable PD data (EC50) |
+| `Ribeiro_1991.pdf` | Ribeiro P et al., Serotonin stimulates protein phosphoryl…, Comparative biochemistry an… (1991) | pd | 4 | [10.1016/0742-8413(91)90027-q](https://doi.org/10.1016/0742-8413(91)90027-q) | [1687544](https://www.ncbi.nlm.nih.gov/pubmed/1687544) | metadata signals extractable PD data (EC50) |
+| `Shamsi_2018.pdf` | Shamsi TN et al., Trypsin Inhibitors from Cajanus cajan a…, Journal of dietary suppleme… (2018) | pd | 4 | [10.1080/19390211.2017.1407383](https://doi.org/10.1080/19390211.2017.1407383) | [29345972](https://www.ncbi.nlm.nih.gov/pubmed/29345972) | metadata signals extractable PD data (IC50) |
+| `Sirisha_2018.pdf` | Sirisha GVD et al., Molecular docking and in vitro studies…, International journal of bi… (2018) | pd | 4 | [10.1016/j.ijbiomac.2018.03.139](https://doi.org/10.1016/j.ijbiomac.2018.03.139) | [29578020](https://www.ncbi.nlm.nih.gov/pubmed/29578020) | metadata signals extractable PD data (IC50) |
+| `Souness_1985.pdf` | Souness JE et al., Adipocyte cyclic nucleotide phosphodies…, Journal of cyclic nucleotid… (1985) | pd | 4 | not captured | [2993388](https://www.ncbi.nlm.nih.gov/pubmed/2993388) | metadata signals extractable PD data (EC50) |
+| `Srinivasan_1994.pdf` | Srinivasan M et al., Regulation of protein phosphatase 1 and…, The Journal of biological c… (1994) | pd | 4 | not captured | [8175660](https://www.ncbi.nlm.nih.gov/pubmed/8175660) | metadata signals extractable PD data (EC50) |
+| `Tamura_1990.pdf` | Tamura M et al., Effect of divalent cations on NADH-depe…, Archives of biochemistry an… (1990) | pd | 4 | [10.1016/0003-9861(90)90335-v](https://doi.org/10.1016/0003-9861(90)90335-v) | [2369123](https://www.ncbi.nlm.nih.gov/pubmed/2369123) | metadata signals extractable PD data (EC50) |
+| `Wang_2021.pdf` | Wang K et al., Novel antioxidant and ACE inhibitory pe…, Food research international… (2021) | pd | 4 | [10.1016/j.foodres.2020.109908](https://doi.org/10.1016/j.foodres.2020.109908) | [33509476](https://www.ncbi.nlm.nih.gov/pubmed/33509476) | metadata signals extractable PD data (EC50) |
+| `White_2022.pdf` | White AM et al., Late-Stage Functionalization with Cyste…, Journal of medicinal chemis… (2022) | pd | 4 | [10.1021/acs.jmedchem.2c00793](https://doi.org/10.1021/acs.jmedchem.2c00793) | [36167503](https://www.ncbi.nlm.nih.gov/pubmed/36167503) | metadata signals extractable PD data (EC50) |
+| `Zhang_2016.pdf` | Zhang L et al., Label-free, turn-on fluorescent sensor…, Talanta (2016) | pd | 4 | [10.1016/j.talanta.2016.09.011](https://doi.org/10.1016/j.talanta.2016.09.011) | [27769443](https://www.ncbi.nlm.nih.gov/pubmed/27769443) | metadata signals extractable PD data (IC50) |
+| `Zhao_2024.pdf` | Zhao J et al., Screening and identification of peptidy…, Talanta (2024) | pd | 4 | [10.1016/j.talanta.2024.126611](https://doi.org/10.1016/j.talanta.2024.126611) | [39067202](https://www.ncbi.nlm.nih.gov/pubmed/39067202) | metadata signals extractable PD data (IC50) |
+| `Zhou_2021.pdf` | Zhou T et al., Novel Broccoli-Derived Peptides Hydroly…, Journal of agricultural and… (2021) | pd | 4 | [10.1021/acs.jafc.1c02985](https://doi.org/10.1021/acs.jafc.1c02985) | [34494818](https://www.ncbi.nlm.nih.gov/pubmed/34494818) | metadata signals extractable PD data (IC50) |
+| `Ahire_2021.pdf` | Ahire DS et al., Ultrasensitive Quantification of Drug-m…, Journal of pharmaceutical s… (2021) | pgx | 7 | [10.1016/j.xphs.2021.03.020](https://doi.org/10.1016/j.xphs.2021.03.020) | [33785352](https://www.ncbi.nlm.nih.gov/pubmed/33785352) | metadata signals extractable PGX data (DPYD, PK/PD-context) |
+| `Becker_2016.pdf` | Becker JP et al., Bortezomib and ixazomib protect firefly…, Analytical biochemistry (2016) | pgx | 7 | [10.1016/j.ab.2016.06.015](https://doi.org/10.1016/j.ab.2016.06.015) | [27325500](https://www.ncbi.nlm.nih.gov/pubmed/27325500) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Komura_2002.pdf` | Komura H et al., Species difference in nisoldipine oxida…, Drug metabolism and pharmac… (2002) | pgx | 7 | [10.2133/dmpk.17.427](https://doi.org/10.2133/dmpk.17.427) | [15618694](https://www.ncbi.nlm.nih.gov/pubmed/15618694) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Tian_2022.pdf` | Tian Q et al., Investigating the Metabolic Mechanisms…, Current drug metabolism (2022) | pgx | 7 | [10.2174/1389200223666220520115014](https://doi.org/10.2174/1389200223666220520115014) | [35619304](https://www.ncbi.nlm.nih.gov/pubmed/35619304) | metadata signals extractable PGX data (TPMT, PK/PD-context) |
+
+<sub>queue written 2026-10-06T01:34:07.492877+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Aghdassi_2015 | not_relevant | 0 | 0 | The paper discusses genetic susceptibility to chronic pancreatitis and associations with serum lipase levels, but does not report pharmacokinetic or pharmacodynamic parameters of trypsin as a drug. |
+| PGx | Ahire_2021 | not_relevant | 0 | 0 | The paper describes a method for quantifying drug-metabolizing enzymes and does not report pharmacogenomic effects on the PK/PD of trypsin. |
+| PGx | Ahn_2005 | not_relevant | 0 | 0 | The paper investigates the stability of CYP1A2 in reconstituted membranes using trypsin as a reagent, not the pharmacokinetics or pharmacodynamics of trypsin itself. |
+| PGx | Akoto_2025 | not_relevant | 0 | 0 | The paper investigates the role of the PPIP5K2 gene in corneal energy metabolism and keratoconus pathogenesis, not the pharmacokinetics or pharmacodynamics of trypsin. |
+| popPK | Allshire_1984 | irrelevant | 0 | 0 | no_text gate: only 88 chars of text extracted (&lt; 400) |
+| PD | Allshire_1984 | not_relevant | 0 | 0 | The paper investigates mitochondrial calcium handling in skeletal muscle and does not report any pharmacodynamic or exposure-response data for trypsin. |
+| popPK | Barry_2010 | irrelevant | 0 | 0 | The study focuses on the pharmacology of PAR2 agonists and antagonists, using trypsin only as a tool compound to activate the receptor, not as a subject for pharmacokinetic analysis. |
+| PD | Barry_2010 | not_relevant | 3 | 2 | The paper reports IC50 for an antagonist (GB83) against trypsin-mediated activation, but does not provide a concentration-effect curve or numeric PD parameters (like Emax or slope) for trypsin itself. |
+| popPK | Bashir_1996 | irrelevant | 0 | 0 | The paper studies cartilage degradation using Gd-DTPA2- contrast, and trypsin is only mentioned as an agent to induce degradation, not as the subject of pharmacokinetic analysis. |
+| popPK | Batra_2026 | irrelevant | 0 | 0 | The paper describes an in-vitro study of PD-L1 siRNA for cancer immunotherapy and does not involve trypsin or pharmacokinetic parameters. |
+| PD | Batra_2026 | not_relevant | 0 | 0 | The paper studies PD-L1 siRNA efficacy in cancer cells and does not report any pharmacodynamic or exposure-response relationship for trypsin. |
+| PGx | Becker_2016 | not_relevant | 0 | 0 | The paper discusses proteasome inhibitors affecting firefly luciferase stability against trypsin, not the pharmacokinetics or pharmacodynamics of trypsin itself. |
+| popPK | Begum_1993 | irrelevant | 0 | 0 | no_text gate: only 141 chars of text extracted (&lt; 400) |
+| PD | Begum_1993 | not_relevant | 0 | 0 | The paper investigates the regulation of protein phosphatase activities by insulin and IGF-I, not the pharmacodynamics of trypsin. |
+| popPK | Ben_1983 | irrelevant | 0 | 0 | The paper describes the use of trypsin as a proteolytic enzyme to solubilize guanylate cyclase in vitro, not a pharmacokinetic study of trypsin as a drug. |
+| PD | Ben_1983 | not_relevant | 0 | 0 | The paper describes the biochemical effect of guanine nucleotides on trypsin-mediated solubilization of guanylate cyclase, not a pharmacodynamic exposure-response relationship for trypsin as a drug. |
+| popPK | Benod_2008 | irrelevant | 0 | 0 | The paper focuses on hPXR agonists and mentions trypsin only as a protease in a mechanistic context, not as a subject drug for PK analysis. |
+| PD | Benod_2008 | not_relevant | 0 | 0 | The paper reports EC50 values for hPXR agonists, not for trypsin; trypsin is only mentioned as a protease used in an assay to demonstrate protein protection. |
+| PGx | Benod_2008 | not_relevant | 0 | 0 | The paper describes hPXR agonists and their protective effect against trypsin digestion, but does not report a pharmacogenomic effect on the PK/PD of trypsin itself. |
+| popPK | Bernier-Valentin_1982 | irrelevant | 0 | 0 | The study investigates the binding of tubulin to mitochondria, using trypsin only as a reagent for membrane treatment, and does not report pharmacokinetic parameters for trypsin. |
+| PD | Bernier-Valentin_1982 | not_relevant | 0 | 0 | The paper studies the binding of tubulin to mitochondria; trypsin is only mentioned as a reagent used to demonstrate the protein nature of the binding site, not as a drug with a reported exposure-response or dose-response relationship. |
+| PGx | Boerma_2015 | not_relevant | 0 | 0 | The paper describes a method for preparing drug-protein adducts and uses trypsin only as a proteolytic enzyme for protein digestion, not as the drug of interest for pharmacogenomic analysis. |
+| popPK | Bognanni_2025 | irrelevant | 0 | 0 | The paper studies a suxibuzone-cyclodextrin conjugate's effect on proteasome activity (specifically trypsin-like activity of the proteasome), not the pharmacokinetics of the drug trypsin. |
+| popPK | Bolwell_1986 | irrelevant | 0 | 0 | The paper is a mechanistic immunology study where trypsin is used as a reagent to digest membranes, not as the subject drug for pharmacokinetic analysis. |
+| PGx | Bowden_1985 | not_relevant | 0 | 0 | The paper investigates the lipolytic effects of human growth hormone preparations and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of trypsin. |
+| popPK | Brachet_1981 | irrelevant | 0 | 0 | The study investigates the permeability of albumin in rat mesentery, using trypsin only as a tissue treatment/comparator, not as the subject drug for PK analysis. |
+| PGx | Brennan_1984 | not_relevant | 0 | 0 | The paper describes a protein processing mechanism involving proalbumin and trypsin in the context of an alpha-1-antitrypsin variant, but does not report a pharmacogenomic effect on the PK or PD of trypsin as a drug. |
+| PGx | Bustad_2020 | not_relevant | 0 | 0 | The paper investigates pharmacological chaperones for Acute Intermittent Porphyria and does not report pharmacogenomic effects on the PK/PD of trypsin. |
+| PGx | CHANG_1962 | not_relevant | 0 | 0 | The paper describes the propagation and enzymatic digestion of a virus in cell culture, not the pharmacokinetics or pharmacodynamics of trypsin as a drug. |
+| PD | Cai_2014 | not_relevant | 0 | 0 | The paper focuses on soybean oligopeptides and does not report any pharmacodynamic or exposure-response data for trypsin. |
+| PGx | Chen_1999 | not_relevant | 0 | 0 | The paper studies the antifungal mechanism of a corn protein (trypsin inhibitor) on fungal enzymes, not the pharmacogenomics of trypsin as a drug. |
+| PGx | Chen_2007 | not_relevant | 0 | 0 | The paper studies limbal stem cells and ABCG2 expression in corneal tissue, using trypsin only as a reagent for cell dissociation, and does not report pharmacogenomic effects on trypsin PK/PD. |
+| popPK | Chen_2026 | irrelevant | 0 | 0 | The paper studies MYST acetyltransferase inhibitors (PF-9363, etc.) and does not involve the drug trypsin or its pharmacokinetics. |
+| popPK | Chevalier_2025 | irrelevant | 0 | 0 | The paper focuses on Boolean network modeling of cellular differentiation and reprogramming using transcriptome data, with no mention of trypsin or pharmacokinetic parameters. |
+| PD | Chevalier_2025 | not_relevant | 0 | 0 | The paper focuses on Boolean network modeling of gene regulatory networks for cellular differentiation and does not contain any pharmacodynamic or exposure-response analysis for trypsin. |
+| popPK | Chow_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of SAR445088, a monoclonal antibody, not trypsin. |
+| PD | Chow_2023 | not_relevant | 0 | 0 | not captured |
+| PGx | Cieślak_2016 | not_relevant | 0 | 0 | The paper describes a method for quantifying CYP3A4 protein levels in liver samples and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of trypsin. |
+| popPK | Cuevas_2026 | irrelevant | 0 | 0 | The paper studies the pharmacological effects of delphinidin-3-glucoside on glioblastoma cells and does not involve trypsin or its pharmacokinetics. |
+| PD | Cuevas_2026 | not_relevant | 0 | 0 | The paper studies delphinidin-3-glucoside, not trypsin, and does not report any pharmacodynamic or exposure-response relationship for trypsin. |
+| popPK | Dawson_1983 | irrelevant | 0 | 0 | The study investigates oxygen binding to haemocyanin fragments in a snail, using trypsin only as a proteolytic enzyme for digestion, not as the subject drug for pharmacokinetic analysis. |
+| PD | Dawson_1983 | not_relevant | 0 | 0 | The paper studies the oxygen-binding properties of haemocyanin fragments generated by trypsin digestion; it does not report a pharmacodynamic or exposure-response relationship for trypsin itself. |
+| popPK | Day_2011 | irrelevant | 0 | 0 | The paper is a comparative study of digestive enzyme activity in fish, not a pharmacokinetic study of trypsin as a drug. |
+| PGx | De_2014 | not_relevant | 0 | 0 | The paper studies transcriptomic responses in Daphnia to environmental stressors, not the pharmacokinetics or pharmacodynamics of trypsin as a drug. |
+| PD | Dhanak_2000 | not_relevant | 0 | 0 | The paper reports IC50 &gt; 100 microM for trypsin only as a negative control to demonstrate selectivity for hCMV protease, not as a PD or exposure-response analysis for trypsin. |
+| popPK | Dong_2025 | irrelevant | 0 | 0 | The study evaluates the antiviral activity of GS-441524 against PEDV in vitro, where trypsin is used only as a reagent to facilitate viral entry, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Dražić_2020 | irrelevant | 0 | 0 | no_text gate: only 110 chars of text extracted (&lt; 400) |
+| PD | Dražić_2020 | not_relevant | 0 | 0 | The paper focuses on the structural binding modes of peptide inhibitors for viral proteases and does not report pharmacodynamic or exposure-response data for trypsin. |
+| PGx | Dubos_1946 | not_relevant | 0 | 0 | The paper describes the isolation and purification of Shiga toxin from Shigella dysenteriae and does not involve trypsin or pharmacogenomics. |
+| popPK | Durek_2018 | irrelevant | 0 | 0 | The paper describes the development of melanocortin receptor agonists using a trypsin inhibitor peptide scaffold, not the pharmacokinetics of the drug trypsin. |
+| PD | Durek_2018 | not_relevant | 0 | 0 | The paper reports in vitro binding and functional assay data (Ki, EC50) for melanocortin receptor agonists, not pharmacodynamic exposure-response or dose-response relationships for the drug trypsin. |
+| popPK | Durek_2021 | irrelevant | 0 | 0 | The paper describes the design of melanocortin receptor agonists based on a peptide scaffold derived from sunflower trypsin inhibitor, not the pharmacokinetics of the drug trypsin. |
+| popPK | EFSA_2026 | irrelevant | 0 | 0 | The paper is a microbiological safety assessment of microorganisms for food/feed and contains no pharmacokinetic data for trypsin. |
+| PD | EFSA_2026 | not_relevant | 0 | 0 | The paper is a regulatory safety assessment of microorganisms (QPS list) and contains no pharmacodynamic or exposure-response data for trypsin. |
+| popPK | Enyedi_1987 | irrelevant | 0 | 0 | The study investigates the enzymatic kinetics of the red cell calcium pump using trypsin as a proteolytic reagent, not the pharmacokinetics of trypsin as a drug. |
+| PD | Enyedi_1987 | not_relevant | 0 | 0 | The paper describes the enzymatic kinetics of the Ca2+ pump (Vmax, Km) under various conditions, including trypsinization, but does not report a pharmacodynamic exposure-response or dose-response relationship for trypsin as a drug. |
+| popPK | Esimbekova_2017 | irrelevant | 0 | 0 | no_text gate: only 58 chars of text extracted (&lt; 400) |
+| PD | Esimbekova_2017 | not_relevant | 0 | 0 | The paper discusses the inhibition of endoproteinases by food preservatives, not the pharmacodynamics of trypsin as a drug in a biological system. |
+| PD | FAARVANG_1963 | not_relevant | 0 | 0 | The paper investigates the dose-response relationship between cortisone acetate and trypsin inhibitor excretion, not the pharmacodynamics of trypsin itself. |
+| PGx | Farhan_2023 | not_relevant | 0 | 0 | The paper investigates the effect of extracellular matrix components on hepatocyte differentiation and does not report pharmacogenomic effects on trypsin pharmacokinetics or pharmacodynamics. |
+| PGx | Flint_2010 | not_relevant | 0 | 0 | The paper uses trypsin as a proteolytic enzyme for sample digestion in mass spectrometry, not as a drug subject to pharmacogenomic analysis. |
+| PGx | Fung_2005 | not_relevant | 0 | 0 | The paper discusses post-translational modifications of host response proteins (including ITIH4) for cancer classification, not the pharmacokinetics or pharmacodynamics of the drug trypsin. |
+| PGx | Galewski_2023 | not_relevant | 0 | 0 | The paper investigates plant genetics and viral infection in sugar beets, not human pharmacogenomics or drug pharmacokinetics. |
+| PGx | Gao_2016 | not_relevant | 0 | 0 | The paper focuses on the structural modeling of hFMO3 and its drug binding mechanisms, not on the pharmacokinetics or pharmacodynamics of trypsin. |
+| popPK | Garcia_2025 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for garadacimab, not trypsin. |
+| PGx | Geib_2021 | not_relevant | 0 | 0 | The paper describes an analytical method for measuring acetaminophen binding to proteins and uses trypsin only as a proteolytic enzyme for sample digestion, not as a drug subject to pharmacogenomic analysis. |
+| PGx | Gerbal-Chaloin_2006 | not_relevant | 0 | 0 | The paper investigates the molecular mechanism of omeprazole-sulphide's effect on the aryl hydrocarbon receptor, using trypsin only as a biochemical tool for protein digestion, not as the drug of interest. |
+| PGx | Ghosh_2006 | not_relevant | 0 | 0 | The paper studies the structural mechanism of P-glycoprotein modulation and uses trypsin as a proteolytic tool, not as the drug of interest for pharmacogenomic analysis. |
+| popPK | Gibadullin_2026 | irrelevant | 0 | 0 | The paper studies the pharmacology of glucagon and PTH analogues, not the pharmacokinetics of trypsin. |
+| popPK | Glusa_1997 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular relaxation mechanisms and receptor activation, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Gniot-Szulzycka_1992 | irrelevant | 0 | 0 | The study is an in-vitro enzymology paper on sterol sulphate sulphohydrolase where trypsin is used only as a proteolytic reagent, not as the subject drug for PK analysis. |
+| PD | Gniot-Szulzycka_1992 | not_relevant | 0 | 0 | The paper reports enzyme kinetics (Km, Hill coefficient) for sterol sulphate sulphohydrolase and notes trypsin sensitivity of a subunit, but does not report a pharmacodynamic exposure-response or dose-response relationship for trypsin as a drug. |
+| popPK | Goicolea_2022 | irrelevant | 0 | 0 | The paper describes a polymer-based recognition element for lactoferrin, using trypsin only as a negative control for cross-reactivity, and contains no pharmacokinetic data. |
+| PD | Goicolea_2022 | not_relevant | 0 | 0 | The paper describes a synthetic polymer recognition element for lactoferrin; trypsin is only mentioned as a negative control for cross-reactivity, and no pharmacodynamic or exposure-response relationship for trypsin is reported. |
+| popPK | Green_1986 | irrelevant | 0 | 0 | The study investigates the mechanism of vanadate's effect on glucose transport using trypsin as a tool to degrade insulin receptors, rather than measuring the pharmacokinetic parameters of trypsin itself. |
+| popPK | Greenberg_2003 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cell signaling pathways (RhoA activation) in LNCaP cells, not a pharmacokinetic study of trypsin disposition. |
+| PGx | Grosskopf_2003 | not_relevant | 0 | 0 | The paper describes a neonatal screening protocol for cystic fibrosis using immunoreactive trypsin (IRT) as a biomarker, not the pharmacokinetics or pharmacodynamics of trypsin as a drug. |
+| popPK | Gu_2026 | irrelevant | 0 | 0 | The paper investigates the mechanism of LOXL4-driven matrix stiffening and T cell exhaustion in lung cancer, with no mention of trypsin or its pharmacokinetics. |
+| PD | Gu_2026 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of acetyldigoxin (a LOXL4 inhibitor) in lung cancer and does not report any pharmacodynamic or exposure-response data for trypsin. |
+| popPK | Guerciolini_1997 | irrelevant | 0 | 0 | The paper discusses orlistat's mechanism of action and notes it has little activity against trypsin, but does not report any pharmacokinetic parameters for trypsin. |
+| popPK | Guo_1995 | irrelevant | 0 | 0 | The study investigates glucocorticoid receptor binding in rat brain, and trypsin is only mentioned as an enzyme that hydrolyzes the receptor, not as the subject of pharmacokinetic analysis. |
+| PD | Guo_1995 | not_relevant | 0 | 0 | The paper reports ligand binding kinetics (Kd, Bmax) for a glucocorticoid receptor, not a pharmacodynamic exposure-response or dose-response relationship for trypsin. |
+| PD | Harris_1994 | not_relevant | 1 | 0 | The text is a qualitative review of somatostatin/octreotide pharmacology that mentions trypsin inhibition only in passing without providing any numeric concentration-effect data, dose-response curves, or PD parameters. |
+| popPK | Hoetzel_2026 | irrelevant | 0 | 0 | The paper describes the mechanism of a doxycycline riboswitch aptamer and contains no pharmacokinetic data for trypsin. |
+| popPK | Hu_2020 | irrelevant | 0 | 0 | The study focuses on the antioxidant properties of peptides from monkfish muscle hydrolyzed by trypsin, not the pharmacokinetics of trypsin itself. |
+| PD | Hu_2020 | not_relevant | 0 | 0 | The paper reports antioxidant activity and cytoprotective effects of peptides, not a pharmacodynamic exposure-response relationship for the drug trypsin. |
+| PGx | Hussain_2005 | not_relevant | 0 | 0 | The paper describes the differentiation of liver stem cells into hepatocytes and mentions alpha-1 antitrypsin as a marker, but does not report pharmacogenomic effects on the PK or PD of trypsin. |
+| popPK | Ilyaskin_2026 | irrelevant | 0 | 0 | The paper investigates the structural and functional roles of GRIP domains in ENaC channels, not the pharmacokinetics of trypsin. |
+| PD | Ilyaskin_2026 | not_relevant | 0 | 0 | The paper focuses on the structural and functional roles of GRIP domains in ENaC subunits using electrophysiology and simulations, and does not report a pharmacodynamic exposure-response or dose-response relationship for trypsin with numeric PD parameters. |
+| PGx | Imaeda_2008 | not_relevant | 0 | 0 | The paper reports the discovery of Factor Xa inhibitors and their pharmacological properties, but does not investigate the impact of gene variants on the pharmacokinetics or pharmacodynamics of trypsin. |
+| PGx | Irar_2010 | not_relevant | 0 | 0 | The paper analyzes wheat embryo proteomes for drought tolerance and uses trypsin only as a reagent for mass spectrometry, not as a drug subject to pharmacogenomic analysis. |
+| popPK | Irie_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of nivolumab, using trypsin only as a reagent for protein digestion in the analytical method. |
+| PGx | Iseki_2017 | not_relevant | 0 | 0 | The paper describes stem cell therapy for liver fibrosis and mentions anti-trypsin as a differentiation marker, but does not report pharmacogenomic effects on the PK/PD of trypsin. |
+| popPK | Jagasia_2025 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of the antisense oligonucleotide rugonersen, not the drug trypsin (which is only mentioned as a reagent for cell dissociation). |
+| popPK | Jakobs_1988 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of trypsin's effect on platelet adenylate cyclase activity, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Jiang_2022 | not_relevant | 0 | 0 | The paper describes a method for quantifying CYP enzymes in rat liver microsomes and does not report pharmacogenomic effects on the PK/PD of trypsin. |
+| popPK | Jiang_2022_2 | irrelevant | 0 | 0 | The study investigates Montelukast as a flavivirus protease inhibitor and only mentions trypsin as a negative control for off-target effects, providing no pharmacokinetic data for trypsin. |
+| PD | Jiang_2022_2 | not_relevant | 0 | 0 | The paper reports IC50 values for Montelukast against flavivirus proteases and mentions a negative control assay for trypsin, but does not report a pharmacodynamic or exposure-response relationship for trypsin itself. |
+| PGx | Juhász_2005 | not_relevant | 0 | 0 | The paper describes the structural stability of prolyl oligopeptidase domains and uses trypsin only as a proteolytic reagent for verification, not as a drug subject to pharmacogenomic analysis. |
+| popPK | Kang_2017 | irrelevant | 0 | 0 | The study is an ex vivo imaging analysis of cartilage using gadolinium contrast agents, where trypsin is used only as a reagent to degrade cartilage, not as the subject drug for pharmacokinetic evaluation. |
+| PD | Kawabata_1991 | not_relevant | 0 | 0 | The paper explicitly states that ONO-5046 did not inhibit trypsin, and no PD parameters for trypsin are reported. |
+| popPK | Keller_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of BI 836880 (a VEGF/Ang-2 inhibitor), and trypsin is only mentioned as a reagent used for protein digestion in the assay methodology. |
+| popPK | Kim_2025 | irrelevant | 0 | 0 | The study uses trypsin as an enzymatic catalyst for chemical synthesis, not as a subject drug for pharmacokinetic analysis. |
+| PD | Kim_2025 | not_relevant | 0 | 0 | The paper describes the enzymatic synthesis of a chitosan derivative using trypsin as a catalyst, not the pharmacodynamic or exposure-response relationship of trypsin as a drug. |
+| popPK | Klee_2014 | irrelevant | 0 | 0 | The study uses trypsin as a reagent for in-vitro digestion of PSA for mass spectrometry analysis, not as a subject drug for pharmacokinetic evaluation. |
+| PGx | Kobielak_2014 | not_relevant | 0 | 0 | The paper describes protein engineering of FGF1 to resist trypsin degradation, not the effect of a human gene variant on the pharmacokinetics or pharmacodynamics of trypsin. |
+| PGx | Komura_2002 | not_relevant | 0 | 0 | The paper investigates species differences in nisoldipine metabolism and uses a trypsin inhibitor to stabilize microsomes, but it does not report a pharmacogenomic effect of a gene variant on trypsin's PK or PD parameters. |
+| popPK | Konig_2025 | irrelevant | 0 | 0 | The study focuses on the delivery of MAPT-ASOs across a blood-brain barrier model and does not involve trypsin or its pharmacokinetics. |
+| PD | Konig_2025 | not_relevant | 0 | 0 | The paper focuses on the delivery of MAPT-ASO via liposomes across a BBB model and does not report any pharmacodynamic or exposure-response relationship for trypsin. |
+| popPK | Kubincová_2026 | irrelevant | 0 | 0 | The paper is a computational study on protein-ligand docking protocols and does not report any pharmacokinetic parameters for trypsin. |
+| PD | Kubincová_2026 | not_relevant | 0 | 0 | The paper focuses on computational docking benchmarks for protein-ligand binding modes and contains no pharmacodynamic, exposure-response, or dose-response data for trypsin or any other drug. |
+| popPK | Kumar_2026 | irrelevant | 0 | 0 | The paper focuses on the proteomics of tau protein in neurodegenerative diseases and does not study the pharmacokinetics of the drug trypsin. |
+| PD | Kumar_2026 | not_relevant | 0 | 0 | The paper is a proteomics study characterizing tau protein modifications in brain tissue and does not report any pharmacodynamic or exposure-response data for trypsin. |
+| PGx | Laffoon_2022 | not_relevant | 0 | 0 | The paper investigates plasma protein biomarkers for Alzheimer's disease and does not report pharmacokinetic or pharmacodynamic parameters of trypsin. |
+| popPK | Lagache_2026 | irrelevant | 0 | 0 | The paper focuses on spatial proteomics and therapy guidance in breast cancer and does not report pharmacokinetic parameters for trypsin. |
+| PD | Lagache_2026 | not_relevant | 0 | 0 | The paper reports dose-response curves and IC50 values for various chemotherapy and targeted therapy agents (e.g., paclitaxel, cerulenin, sunitinib) in breast cancer tumoroids, but it does not report any pharmacodynamic data for trypsin. |
+| popPK | Lai_1989 | irrelevant | 0 | 0 | The paper is a structural and mechanistic study of the ryanodine receptor in rabbit skeletal muscle, and trypsin is only used as a reagent for digestion, not as the subject drug for pharmacokinetic analysis. |
+| PD | Lai_1989 | not_relevant | 0 | 0 | The paper describes the structural and biochemical properties of the ryanodine receptor, not a pharmacodynamic exposure-response relationship for trypsin. |
+| popPK | Lancé_2013 | irrelevant | 0 | 0 | The study investigates pre-analytical variables in platelet function analysis and mentions "Corn Trypsin Inhibitor" only as an anticoagulant, not trypsin as a pharmacokinetic subject. |
+| popPK | Lang_2025 | irrelevant | 0 | 0 | The paper focuses on dengue virus protease inhibitors and only mentions trypsin as an off-target enzyme that was not inhibited, providing no pharmacokinetic data for trypsin. |
+| PD | Lang_2025 | not_relevant | 0 | 0 | The paper reports that the compounds have no inhibition of trypsin (an off-target), but does not provide any numeric PD parameters, dose-response curves, or exposure-response analysis for trypsin. |
+| popPK | Larionova_1996 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of Bowman-Birk soybean protease inhibitor (BBI), not trypsin, which is only mentioned as a target enzyme for inhibition. |
+| popPK | Lawler_1983 | irrelevant | 0 | 0 | no_text gate: only 145 chars of text extracted (&lt; 400) |
+| PD | Lawler_1983 | not_relevant | 0 | 0 | The paper investigates the biophysical effect of calcium on thrombospondin structure and its susceptibility to tryptic digestion, not the pharmacodynamic response of a biological system to trypsin administration. |
+| PD | Lee_1995 | not_relevant | 0 | 0 | The paper describes the purification and biochemical characterization of a snake venom enzyme (Factor X activator), not a pharmacodynamic or exposure-response analysis of the drug trypsin. |
+| PGx | Lee_2020 | not_relevant | 0 | 0 | The paper focuses on the development of relaxin-3 analogs and does not report pharmacogenomic effects on trypsin PK/PD parameters. |
+| PD | Li_2023 | not_relevant | 0 | 0 | The paper reports the IC50 of a specific peptide (DIGGL) against ACE, not a pharmacodynamic or exposure-response relationship for the drug trypsin. |
+| popPK | Lin_1983 | irrelevant | 0 | 0 | The study measures dissociation constants (Kd) for substance P in guinea pig ileum, using trypsin only as a tool for receptor inactivation, not as the subject of pharmacokinetic analysis. |
+| PGx | Lin_2011 | not_relevant | 0 | 0 | The paper investigates the mechanism of CYP2B6 inactivation by a chemical probe, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of trypsin. |
+| PGx | Lin_2012 | not_relevant | 0 | 0 | The paper investigates the mechanism of CYP3A4 inactivation by bergamottin and uses trypsin as a proteolytic enzyme for protein digestion, not as a drug subject to pharmacogenomic analysis. |
+| popPK | Lin_2026 | irrelevant | 0 | 0 | The paper focuses on the molecular landscape of lung cancer cell responses to epigenetic inhibitors (HDACi) and does not involve trypsin or pharmacokinetic parameters. |
+| PD | Lin_2026 | not_relevant | 0 | 0 | The paper focuses on HDAC inhibitors (epigenetic drugs) and does not mention trypsin or report any pharmacodynamic parameters for it. |
+| PGx | Ling_2019 | not_relevant | 0 | 0 | The paper investigates the effect of MMP gene polymorphisms on the clinical efficacy of ulinastatin (a trypsin inhibitor), not the pharmacokinetics or pharmacodynamics of trypsin itself. |
+| PGx | Liu_2018 | not_relevant | 0 | 0 | The paper reports protein engineering of trypsin for industrial thermostability, not a pharmacogenomic effect on the PK/PD of trypsin as a drug. |
+| popPK | Liu_2019 | irrelevant | 0 | 0 | The paper studies the antioxidant properties of trypsin-hydrolyzed peptides from algae, not the pharmacokinetics of the drug trypsin. |
+| popPK | Lowe_2026 | irrelevant | 0 | 0 | The paper focuses on the loading of cell penetrating peptides into extracellular vesicles for pulmonary fibrosis and does not involve the drug trypsin or its pharmacokinetics. |
+| PD | Lowe_2026 | not_relevant | 0 | 0 | The paper investigates the loading of cell-penetrating peptides into extracellular vesicles and their efficacy in an in vitro fibrosis model, but it does not report a pharmacodynamic (exposure-response) relationship for trypsin; trypsin is only mentioned as a reagent for surface protein removal. |
+| popPK | Lu_1993 | irrelevant | 0 | 0 | The study investigates the mechanism of calcium pump regulation in cardiac microsomes using trypsin as a proteolytic tool, not as a subject drug for pharmacokinetic analysis. |
+| PD | Lu_1993 | not_relevant | 0 | 0 | The paper investigates the biochemical mechanism of phospholamban and ATP on calcium pump activity using trypsin as a tool enzyme, not as a drug with a pharmacodynamic exposure-response relationship. |
+| popPK | Lusch_2013 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of alpha-1-antitrypsin (A1AT), not trypsin; trypsin is only used as a substrate in an in-vitro inhibitory assay. |
+| PGx | Maki_2006 | not_relevant | 0 | 0 | The paper investigates the biochemical properties of P-glycoprotein modulation by flupentixol and does not report any pharmacogenomic effects on the PK or PD of trypsin. |
+| popPK | Mary_1984 | irrelevant | 0 | 0 | no_text gate: only 94 chars of text extracted (&lt; 400) |
+| PGx | Meyer-Blazejewska_2010 | not_relevant | 0 | 0 | The paper focuses on limbal stem cell culture techniques and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of trypsin. |
+| popPK | Ming_2026 | irrelevant | 0 | 0 | no_text gate: only 139 chars of text extracted (&lt; 400) |
+| PD | Ming_2026 | not_relevant | 0 | 0 | The paper focuses on difelikefalin acetate, not trypsin, and does not report PD parameters for trypsin. |
+| popPK | Misenheimer_1995 | irrelevant | 0 | 0 | The study investigates calcium binding to thrombospondin 1 and uses trypsin only as a proteolytic enzyme for structural analysis, not as a pharmacokinetic subject. |
+| PD | Misenheimer_1995 | not_relevant | 0 | 0 | The paper reports calcium binding kinetics to thrombospondin 1 and qualitative protease sensitivity, but does not report a pharmacodynamic exposure-response or dose-response relationship for trypsin as a drug. |
+| popPK | Mizuta_1976 | irrelevant | 0 | 0 | The study is an in-vitro enzymology paper investigating the activation of aspartase by trypsin, not a pharmacokinetic study of trypsin disposition. |
+| PD | Mizuta_1976 | not_relevant | 0 | 0 | The paper describes the enzymatic activation of aspartase by trypsin (a proteolytic modification) rather than a pharmacodynamic exposure-response relationship for trypsin as a drug. |
+| popPK | Montani_2026 | irrelevant | 0 | 0 | The paper describes the synthesis and in-vitro biological activity of benzothiazole derivatives for skin diseases and contains no pharmacokinetic data for trypsin. |
+| PD | Montani_2026 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for novel benzothiazole derivatives, not pharmacodynamic or exposure-response data for trypsin. |
+| PGx | Mori_2022 | not_relevant | 0 | 0 | The paper discusses trypsin as a proteolytic enzyme for sample preparation in proteomics, not as a drug subject to pharmacogenomic analysis. |
+| popPK | Müller_1998 | irrelevant | 0 | 0 | no_text gate: only 91 chars of text extracted (&lt; 400) |
+| PD | Müller_1998 | not_relevant | 0 | 0 | The paper discusses signaling pathways for insulin and phosphoinositolglycans and does not report any pharmacodynamic or exposure-response data for trypsin. |
+| popPK | Notides_1981 | irrelevant | 0 | 0 | The study investigates the binding kinetics of the estrogen receptor in calf uteri, using trypsin only as a proteolytic reagent to disrupt dimer formation, not as the subject drug for pharmacokinetic analysis. |
+| PD | Notides_1981 | not_relevant | 0 | 0 | The paper investigates the binding kinetics and cooperativity of the estrogen receptor with estradiol, not the pharmacodynamics of trypsin. |
+| PD | Okomo_2023 | not_relevant | 0 | 0 | The paper focuses on the nutritional and functional properties of hempseed, not on the pharmacodynamics or exposure-response relationship of trypsin. |
+| popPK | Padhi_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of levodopa (L-DOPA) produced by engineered bacteria, not trypsin. |
+| PD | Padhi_2025 | not_relevant | 4 | 2 | The paper describes a bioengineered bacterium for L-DOPA delivery and mentions PK/PD studies in canines, but the provided text is an abstract that lacks specific numeric PD parameters (e.g., EC50, Emax) or detailed concentration-effect curves for trypsin (which is not the subject; L-DOPA is). |
+| PGx | Paiva_2010 | not_relevant | 0 | 0 | The paper uses trypsin as a reagent for protein digestion in mass spectrometry, not as a drug subject to pharmacogenomic analysis. |
+| popPK | Pang_2022 | irrelevant | 0 | 0 | The paper is a structural biology study on MshC inhibition in Mycobacterium tuberculosis and does not report pharmacokinetic parameters for trypsin. |
+| popPK | Pelleschi_1997 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of a yeast mitochondrial channel's sensitivity to trypsin, not a pharmacokinetic study of trypsin disposition. |
+| popPK | Petit_1989 | irrelevant | 0 | 0 | no_text gate: only 128 chars of text extracted (&lt; 400) |
+| PD | Petit_1989 | not_relevant | 0 | 0 | The paper investigates the effects of Angiotensin II on trophoblastic cells and does not mention trypsin or report any pharmacodynamic parameters for it. |
+| popPK | Pierce_2018 | irrelevant | 0 | 0 | The study investigates proteasome inhibitors in cell lines and "trypsin" refers to the trypsin-like activity of the proteasome, not the pharmacokinetics of the drug trypsin. |
+| PD | Pojić_2014 | not_relevant | 0 | 0 | The paper analyzes the chemical composition of hemp seed meal fractions and mentions trypsin inhibitors as antinutrients, but does not report any pharmacodynamic or exposure-response relationship for the drug trypsin. |
+| popPK | Pozo_2026 | irrelevant | 0 | 0 | The paper focuses on glycine's role in hepatocyte maturation and CYP3A4 activity, with no mention of trypsin pharmacokinetics. |
+| PD | Pozo_2026 | not_relevant | 0 | 0 | The paper investigates the metabolic effects of glycine on hepatocyte maturation and does not report any pharmacodynamic or exposure-response relationship for trypsin. |
+| PGx | Prasad_2014 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on transporter protein expression and predicted PK for rosuvastatin/repaglinide, not trypsin. |
+| popPK | Preza_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and efficacy of niclosamide ethanolamine (NEN) for treating echinococcosis, not trypsin. |
+| popPK | Pribilla_1988 | irrelevant | 0 | 0 | no_text gate: only 63 chars of text extracted (&lt; 400) |
+| PD | Pribilla_1988 | not_relevant | 0 | 0 | The paper focuses on protein kinase C inhibitors from bovine brain and does not report any pharmacodynamic or exposure-response data for trypsin. |
+| popPK | Proks_1994 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of K+ATP channels in mouse pancreatic beta-cells, where trypsin is used as a tool to restore channel activity, not as a subject drug for pharmacokinetic analysis. |
+| PD | Proks_1994 | not_relevant | 0 | 0 | The paper investigates the effects of intracellular pH on ion channels; trypsin is mentioned only as a tool to restore channel activity after pH-induced inactivation, not as a drug with a characterized dose-response or exposure-response relationship. |
+| popPK | Pugh_1993 | irrelevant | 0 | 0 | The paper is a study on phototransduction kinetics in photoreceptors, and trypsin is only mentioned as a reagent for enzyme activation, not as the subject of pharmacokinetic analysis. |
+| PD | Pugh_1993 | not_relevant | 0 | 0 | The paper discusses phototransduction kinetics and PDE activity, mentioning trypsin only in the context of biochemical activation methods, not as a drug with a pharmacodynamic exposure-response relationship. |
+| PGx | Pászti-Gere_2022 | not_relevant | 0 | 0 | The paper investigates the in vitro pharmacokinetic properties (CYP inhibition, albumin binding) of TMPRSS2 inhibitors, not the pharmacogenomics of trypsin itself. |
+| popPK | Qiu_2019 | irrelevant | 0 | 0 | The paper is a food science study on gelatin hydrolysates where trypsin is used only as a hydrolyzing enzyme, not as a subject drug for pharmacokinetic analysis. |
+| PD | Qiu_2019 | not_relevant | 0 | 0 | The paper reports antioxidant activity (EC50) of isolated peptides, not a pharmacodynamic or exposure-response relationship for the drug trypsin. |
+| popPK | Quah_2019 | irrelevant | 0 | 0 | The study focuses on the purification and cytotoxicity of peptides from a soft coral, using trypsin only as a hydrolytic enzyme for sample preparation, not as the subject drug for pharmacokinetic analysis. |
+| PD | Quah_2019 | not_relevant | 0 | 0 | The provided text describes peptide content in SPE fractions and statistical comparisons, containing no information regarding trypsin pharmacodynamics, exposure-response, or dose-response relationships. |
+| popPK | Ribeiro_1991 | irrelevant | 0 | 0 | no_text gate: only 80 chars of text extracted (&lt; 400) |
+| PD | Ribeiro_1991 | not_relevant | 0 | 0 | The paper investigates the effect of serotonin on protein phosphorylation in a cestode and does not report any pharmacodynamic or exposure-response relationship for trypsin. |
+| popPK | Rodina_2025 | irrelevant | 0 | 0 | The paper describes a chemoproteomic method for mapping protein-protein interactions and does not contain any pharmacokinetic data for trypsin. |
+| PD | Rodina_2025 | not_relevant | 0 | 0 | The paper describes a chemoproteomic method for mapping protein-protein interactions and does not report any pharmacodynamic or exposure-response data for trypsin. |
+| popPK | Ryan_2011 | irrelevant | 0 | 0 | no_text gate: only 100 chars of text extracted (&lt; 400) |
+| PD | Ryan_2011 | not_relevant | 0 | 0 | The paper focuses on salmon calcitonin conjugates, not trypsin, and does not report any pharmacodynamic data for trypsin. |
+| PGx | Selver_2011 | not_relevant | 0 | 0 | The paper investigates ABCG2-dependent dye exclusion in limbal explants and uses trypsin only as a reagent for cell dissociation, not as a drug subject to pharmacogenomic analysis. |
+| PGx | Sessler_2024 | not_relevant | 0 | 0 | The paper investigates the role of the ITIH5 gene in adipose tissue development and does not report pharmacokinetic or pharmacodynamic parameters for trypsin. |
+| PGx | Shahaboddin_2017 | not_relevant | 0 | 0 | The paper studies protein engineering of Chondroitinase ABC I, not the pharmacogenomics of trypsin. |
+| popPK | Sharif_2023 | irrelevant | 0 | 0 | The study is an in-vitro investigation of the anti-inflammatory and anticoagulant properties of Amla extract, where trypsin is used only as a target enzyme for inhibition assays, not as a subject drug for pharmacokinetic analysis. |
+| PD | Sharif_2023 | not_relevant | 3 | 3 | The paper reports an in vitro IC50 for trypsin inhibition by a crude plant extract, which is a single-point potency metric rather than a pharmacodynamic exposure-response or dose-response model with derivable parameters like Emax or slope. |
+| popPK | Simeon_2021 | irrelevant | 0 | 0 | The study focuses on the protease stability of DARPins (therapeutic proteins) in the presence of trypsin, not the pharmacokinetics of trypsin itself. |
+| PD | Simeon_2021 | not_relevant | 1 | 1 | The paper reports a qualitative change in EC50 (83-fold increase) due to protease degradation, but does not provide a dose-response curve or numeric PD parameters for trypsin itself. |
+| popPK | Singh_2025 | irrelevant | 0 | 0 | The study focuses on the exposure-response analysis of donidalorsen for hereditary angioedema and does not report pharmacokinetic parameters for trypsin. |
+| popPK | Solaini_1984 | irrelevant | 0 | 0 | The study investigates the binding of spermine to mitochondrial ATPase in vitro, using trypsin only as a reagent to modify the enzyme, not as a subject drug for pharmacokinetic analysis. |
+| PD | Solaini_1984 | not_relevant | 0 | 0 | The paper studies spermine binding and ATPase activity; trypsin is only used as a proteolytic reagent to treat particles, not as a drug with a reported exposure-response or dose-response relationship. |
+| PGx | Sonderfeld_1985 | not_relevant | 0 | 0 | The paper investigates the metabolism of ganglioside GM2 in fibroblasts from patients with GM2 gangliosidosis, not the pharmacokinetics or pharmacodynamics of trypsin. |
+| popPK | Song_2026 | irrelevant | 0 | 0 | The paper studies chemogenetic manipulation of songbird brains (zebra finches and Bengalese finches) and does not involve the drug trypsin or its pharmacokinetics. |
+| popPK | Souness_1985 | irrelevant | 0 | 0 | The study investigates the effect of vanadate on phosphodiesterase activity in rat adipocytes, using trypsin only as a reagent for membrane treatment, not as the subject drug for PK analysis. |
+| PD | Souness_1985 | not_relevant | 0 | 0 | The paper reports an EC50 for vanadate, not trypsin; trypsin is only mentioned as a tool for limited proteolysis without any dose-response or PD parameter analysis. |
+| PGx | Sridar_2012 | not_relevant | 0 | 0 | The paper investigates the mechanism-based inactivation of CYP2B6 by selegiline and its effect on bupropion metabolism, not the pharmacogenomics of trypsin. |
+| popPK | Srinivasan_1994 | irrelevant | 0 | 0 | no_text gate: only 122 chars of text extracted (&lt; 400) |
+| PD | Srinivasan_1994 | not_relevant | 0 | 0 | The paper investigates the regulation of protein phosphatase activities by insulin, not the pharmacodynamics of trypsin. |
+| PGx | Stacey_2024 | not_relevant | 0 | 0 | The paper discusses the pharmacokinetics of lithium (absorption) and mentions trypsin only as the physiological substrate of the enzyme encoded by the gene, not as the drug of interest. |
+| popPK | Stern_1988 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of beta-adrenergic receptor regulation where trypsin is used only as a proteolytic reagent to test the stability of a biological factor, not as the subject drug for pharmacokinetic analysis. |
+| PD | Stern_1988 | not_relevant | 0 | 0 | The paper reports an EC50 for Interleukin-1 (IL-1), not trypsin; trypsin is only mentioned qualitatively as an inhibitor of the biological activity. |
+| popPK | Sudarsono_2026 | irrelevant | 0 | 0 | The study focuses on ganciclovir pharmacokinetics in an in vitro model, not trypsin. |
+| PD | Sudarsono_2026 | not_relevant | 0 | 0 | The paper describes a validation study for a hollow-fiber infection model using ganciclovir, not trypsin, and does not report any PD parameters for trypsin. |
+| popPK | Sudarsono_2026_2 | irrelevant | 0 | 0 | The study focuses on ganciclovir pharmacokinetics in an in vitro model, not trypsin. |
+| PD | Sudarsono_2026_2 | not_relevant | 0 | 0 | The paper describes a validation study for a hollow fiber infection model using ganciclovir; trypsin is only mentioned as a reagent for cell passaging and has no pharmacodynamic relationship reported. |
+| popPK | Suen_2012 | irrelevant | 0 | 0 | The study focuses on PAR2 receptor pharmacology using trypsin as a tool/agonist, not on the pharmacokinetics of trypsin itself. |
+| PD | Suen_2012 | not_relevant | 0 | 0 | The paper reports pharmacological activity of novel PAR2 modulators (GB88/GB110) and characterizes their interaction with trypsin, but it does not report a pharmacokinetic or exposure-response relationship for trypsin itself. |
+| popPK | Swaih_2025 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for the EGFR tyrosine kinase inhibitor AZ14289671 (and comparators), not for the drug trypsin. |
+| popPK | Tamura_1990 | irrelevant | 0 | 0 | no_text gate: only 110 chars of text extracted (&lt; 400) |
+| PD | Tamura_1990 | not_relevant | 0 | 0 | The paper investigates the effect of divalent cations on cytochrome b5 reduction and does not mention trypsin or report any pharmacodynamic or exposure-response relationships for it. |
+| popPK | Tangavel_2026 | irrelevant | 0 | 0 | The paper is a proteomic study where trypsin is used as a reagent for protein digestion, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Tao_2018 | irrelevant | 0 | 0 | The study is an in-vitro food science/antioxidant study where trypsin is used as a hydrolytic enzyme, not as the subject drug for pharmacokinetic analysis. |
+| PD | Tao_2018 | not_relevant | 0 | 0 | The paper reports antioxidant activity of peptides produced by trypsin hydrolysis, not a pharmacodynamic or exposure-response relationship for the drug trypsin itself. |
+| popPK | Teng_2025 | irrelevant | 0 | 0 | The paper focuses on nanomedicine delivery of a PAR2 antagonist (AZ3451) for analgesia and does not report pharmacokinetic parameters for trypsin. |
+| PD | Teng_2025 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of a PAR2 antagonist (AZ3451) delivered via nanoparticles, not trypsin; no exposure-response or dose-response data for trypsin is reported. |
+| PGx | Tian_2022 | not_relevant | 0 | 0 | The paper investigates the metabolic mechanisms of butaselen and uses trypsin only as a tool for protein hydrolysis to identify binding sites, rather than studying the pharmacokinetics or pharmacodynamics of trypsin itself. |
+| PGx | Ucal_2017 | not_relevant | 0 | 0 | The paper is a proteomic study of thyroid carcinoma variants and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of trypsin. |
+| popPK | Vishnoi_2026 | irrelevant | 0 | 0 | The paper describes the computational design of peptide therapeutics for diabetes and obesity and does not involve the drug trypsin or its pharmacokinetics. |
+| PD | Vishnoi_2026 | not_relevant | 0 | 0 | The paper is a computational study on peptide design and binding enthalpies; it does not report pharmacodynamic or exposure-response data for trypsin. |
+| PGx | Wan_2022 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of thrombin generation and the protein C pathway, not the pharmacokinetics or pharmacodynamics of the drug trypsin. |
+| PD | Wang_1995 | not_relevant | 0 | 0 | The paper reports pharmacodynamic parameters (IC50, Hill coefficient) for flecainide, not trypsin; trypsin is used only as a reagent to modify the channel. |
+| PGx | Wang_2016 | not_relevant | 0 | 0 | The paper compares biophysical properties of PEGylated endostatin variants and mentions trypsin digestion as a stability assay, but does not report pharmacogenomic effects on trypsin's PK/PD parameters. |
+| popPK | Wang_2021 | irrelevant | 0 | 0 | no_text gate: only 175 chars of text extracted (&lt; 400) |
+| PD | Wang_2021 | not_relevant | 0 | 0 | The paper focuses on the identification and stability of peptides from Arthrospira platensis, not on the pharmacodynamics of trypsin. |
+| popPK | Weiss_2025 | irrelevant | 0 | 0 | The paper describes an in vitro aerosol exposure system (NAVETTA) and does not involve trypsin or pharmacokinetic parameters. |
+| PD | Weiss_2025 | not_relevant | 0 | 0 | The paper describes an in vitro aerosol exposure system (NAVETTA) and reports qualitative cellular stress responses (viability, IL-8) to TiO2 nanoparticles, but it does not report a pharmacodynamic model or numeric PD parameters (e.g., Emax, EC50) for trypsin or any other drug. |
+| popPK | Wen_2026 | irrelevant | 0 | 0 | The paper describes a physiologically based liver distribution model for various drugs binding to FABP1, but does not report pharmacokinetic parameters for trypsin. |
+| PD | Wen_2026 | not_relevant | 0 | 0 | The paper focuses on physiologically based pharmacokinetic (PBPK) modeling of drug distribution (Kp) and binding to FABP1, containing no pharmacodynamic or exposure-response analysis. |
+| popPK | West_2015 | irrelevant | 0 | 0 | The paper is a proteomics study where trypsin is used as a reagent for protein digestion, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Wettey_2006 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of salbutamol's effect on trypsin-mediated CXCL8 production, not a pharmacokinetic study of trypsin. |
+| popPK | White_2022 | irrelevant | 0 | 0 | no_text gate: only 114 chars of text extracted (&lt; 400) |
+| PD | White_2022 | not_relevant | 0 | 0 | The paper focuses on the chemical synthesis and functional characterization of melanocortin receptor-1 agonists, not on the pharmacokinetics or pharmacodynamics of trypsin. |
+| PGx | Wickramasekara_2018 | not_relevant | 0 | 0 | The paper investigates the effect of nicotine on glutathione and Itih3 mRNA levels in Cd44 knockout mice, not the pharmacokinetics or pharmacodynamics of trypsin. |
+| popPK | Winn_1993 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of argatroban on thrombin-induced vasomotor effects in canine arteries, using trypsin only as a non-specific positive control for EDRF-NO release, with no pharmacokinetic parameters reported. |
+| PD | Winn_1993 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of argatroban (a thrombin inhibitor), not trypsin; trypsin is used only as a control agent to demonstrate the selectivity of argatroban. |
+| popPK | Wołodkiewicz_2025 | irrelevant | 0 | 0 | The paper investigates the molecular mechanism of polyfluoroalkyl phosphonates in glioblastoma cells and does not report pharmacokinetic parameters for trypsin. |
+| popPK | Wu_2004 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of insulin-liposomes, using trypsin only as an enzyme to test the stability of the formulation, not as the subject drug. |
+| PGx | Xia_2011 | not_relevant | 0 | 0 | The paper describes the structural basis of CYPOR deficiency and uses trypsin as a reagent for protein digestion assays, not as a drug subject to pharmacogenomic analysis. |
+| PGx | Xie_2020 | not_relevant | 0 | 0 | The paper discusses resistance to trypsin degradation as a property of the nanocarrier formulation, not a pharmacogenomic effect of trypsin variants on drug PK/PD. |
+| popPK | Xing_2026 | irrelevant | 0 | 0 | The paper describes a deep-learning platform for drug discovery and does not report pharmacokinetic parameters for trypsin. |
+| PD | Xing_2026 | not_relevant | 0 | 0 | The paper describes a deep-learning platform for drug discovery and does not report any pharmacodynamic or exposure-response data for trypsin. |
+| popPK | Yadav_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of anti-CD79b/CD3 bispecific antibodies in monkeys and mice, not the drug trypsin (which is only mentioned as a reagent for protein digestion in the LC-MS/MS method). |
+| popPK | Yang_2019 | irrelevant | 0 | 0 | The study is an in-vitro food science investigation of gelatin hydrolysis where trypsin is used as a digestive enzyme, not as the subject drug for pharmacokinetic analysis. |
+| PD | Yang_2019 | not_relevant | 0 | 0 | The paper reports antioxidant activity (EC50) of peptides derived from gelatin hydrolysates, not a pharmacodynamic or exposure-response relationship for the drug trypsin. |
+| popPK | Yuh_2026 | irrelevant | 0 | 0 | The paper describes a tumor microenvironment model for ameloblastoma and does not involve trypsin pharmacokinetics. |
+| PD | Yuh_2026 | not_relevant | 0 | 0 | The paper describes a tumor microenvironment model for ameloblastoma and does not involve the drug trypsin or any pharmacodynamic exposure-response analysis. |
+| PGx | Yusuf_2013 | not_relevant | 0 | 0 | The paper discusses the pluripotency of embryonic fibroblasts and uses trypsin only as a reagent for cell digestion, not as a drug subject to pharmacogenomic analysis. |
+| PGx | Zeng_2025 | not_relevant | 0 | 0 | The paper investigates the effect of a GDH mutation on its susceptibility to trypsin hydrolysis, not the pharmacokinetics or pharmacodynamics of trypsin as a drug. |
+| popPK | Zhang_1992 | irrelevant | 0 | 0 | The paper describes the biochemical characterization of a protein activator of H+-ATPases, not the pharmacokinetics of trypsin. |
+| PD | Zhang_1992 | not_relevant | 0 | 0 | The paper describes the biochemical characterization of a protein activator of H+-ATPase, not the pharmacodynamics of the drug trypsin; trypsin is only mentioned as a reagent used to test the stability of the activator. |
+| popPK | Zhang_1995 | irrelevant | 0 | 0 | The paper describes the purification and in-vitro enzymatic characterization of a factor X activator from snake venom, not the pharmacokinetics of trypsin. |
+| PD | Zhang_1995 | not_relevant | 0 | 0 | The paper describes the purification and characterization of a venom enzyme (factor X activator) and its biochemical properties, but does not report a pharmacodynamic exposure-response or dose-response relationship for trypsin or any other drug. |
+| popPK | Zhang_2019 | irrelevant | 0 | 0 | no_text gate: only 129 chars of text extracted (&lt; 400) |
+| PD | Zhang_2019 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant activity (EC50) of peptides, not a pharmacodynamic exposure-response relationship for the drug trypsin. |
+| PGx | Zhang_2020 | not_relevant | 0 | 0 | The paper describes protein engineering of a phytase enzyme and its stability against trypsin, not the pharmacogenomics of trypsin itself. |
+| popPK | Zhang_2021 | irrelevant | 0 | 0 | The paper is a food science study on antioxidant peptides from krill, where trypsin is used only as a hydrolysis enzyme, not as the subject drug for pharmacokinetic analysis. |
+| PD | Zhang_2021 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant activity (EC50) of peptides, not a pharmacodynamic exposure-response relationship for the drug trypsin. |
+| PGx | Zhang_2025 | not_relevant | 0 | 0 | The paper focuses on gene editing for maple syrup urine disease and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of trypsin. |
+| popPK | Zhang_2026 | irrelevant | 0 | 0 | The paper investigates EGFR inhibitor resistance mechanisms in lung cancer cell lines and does not involve trypsin or pharmacokinetic parameters. |
+| PD | Zhang_2026 | not_relevant | 0 | 0 | The paper investigates EGFR-TKI resistance mechanisms in NSCLC cell lines and does not contain any data, analysis, or mention of trypsin. |
+| PD | Zhou_2021 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for peptides derived from trypsin hydrolysates, not a pharmacodynamic exposure-response or dose-response relationship for the drug trypsin itself. |
+| popPK | Zhu_2026 | irrelevant | 0 | 0 | The study investigates the mechanism of action of a herbal formula for pulmonary fibrosis and does not report pharmacokinetic parameters for trypsin. |
+| PD | Zhu_2026 | not_relevant | 2 | 1 | The study is a mechanistic pharmacology paper (network pharmacology, proteomics, in vitro validation) that explicitly states it did not establish a full dose-response relationship and lacks numeric PD parameters (Emax, EC50) or exposure-response modeling. |
+
+---
+<sub>Generated by `docs.py` (scholarv2)</sub>

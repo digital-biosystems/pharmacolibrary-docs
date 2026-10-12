@@ -21,7 +21,7 @@
 
 > Lurasidone concentration inhibits Kv channel current with a sigmoid Emax (proportional inhibition) model; the paper excerpts give IC50 = 1.88 ± 0.21 μM and Hill coefficient 0.98 ± 0.09, but no Emax or mechanism beyond direct concentration–effect inhibition is stated.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Zhuang_2023`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Zhuang W et al., Lurasidone blocks the voltage-gated pot…, European journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

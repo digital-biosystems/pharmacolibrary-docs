@@ -5,7 +5,7 @@
 
 # potassium salicylate — `PotassiumSalicylate_Kotschwar2009_period_2`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,7 +15,7 @@
 
 > **Species: cattle.** This record comes from an animal study (cattle), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -143,10 +143,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_potassium_salicylate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kotschwar_2009` / `Kotschwar_2009::period_2`)
-- model: `../../../knowledgebase/drugs/drug_potassium_salicylate/models/modelica/PotassiumSalicylate_Kotschwar2009_period_2.mo`
-- deviation: `../../../knowledgebase/drugs/drug_potassium_salicylate/models/modelica/PotassiumSalicylate_Kotschwar2009_period_2.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_potassium_salicylate/models/modelica/PotassiumSalicylate_Kotschwar2009_period_2.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_potassium_salicylate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kotschwar_2009` / `Kotschwar_2009::period_2`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_potassium_salicylate/models/modelica/PotassiumSalicylate_Kotschwar2009_period_2.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_potassium_salicylate/models/modelica/PotassiumSalicylate_Kotschwar2009_period_2.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_potassium_salicylate/models/modelica/PotassiumSalicylate_Kotschwar2009_period_2.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -158,13 +158,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_2/PotassiumSalicylate_Kotschwar2009_period_2_modelica.zip" download>PotassiumSalicylate_Kotschwar2009_period_2_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_2/PotassiumSalicylate_Kotschwar2009_period_2_fmi.zip" download>PotassiumSalicylate_Kotschwar2009_period_2_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_2/PotassiumSalicylate_Kotschwar2009_period_2_matlab.zip" download>PotassiumSalicylate_Kotschwar2009_period_2_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_2/PotassiumSalicylate_Kotschwar2009_period_2_matlab_simbio.zip" download>PotassiumSalicylate_Kotschwar2009_period_2_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_2/PotassiumSalicylate_Kotschwar2009_period_2_matlab_simbio.zip" download>PotassiumSalicylate_Kotschwar2009_period_2_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_2/PotassiumSalicylate_Kotschwar2009_period_2_sbml.zip" download>PotassiumSalicylate_Kotschwar2009_period_2_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_2/PotassiumSalicylate_Kotschwar2009_period_2_cellml.zip" download>PotassiumSalicylate_Kotschwar2009_period_2_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_2/PotassiumSalicylate_Kotschwar2009_period_2.svg" alt="PotassiumSalicylate_Kotschwar2009_period_2 diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_2/PotassiumSalicylate_Kotschwar2009_period_2.svg" alt="PotassiumSalicylate_Kotschwar2009_period_2 diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -21,7 +21,7 @@
 
 > Clomipramine inhibits acetylcholine-elicited currents through alpha2beta4 nAChR with IC50 values of 1.3 and 1.5 microM (sigmoid Emax inhibition); EC50 values of 39.9 and 65.7 microM are also reported. The paper excerpts do not state the mechanism beyond this inhibitory concentration–response relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `López-Valdés_2002`
 - **model family:** `sigmoid_emax`
@@ -65,7 +65,7 @@ López-Valdés HE et al., Effects of clomipramine on neuronal nic…, European j
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

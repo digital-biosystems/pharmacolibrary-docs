@@ -20,7 +20,7 @@
 
 > The record reports an Emax model where S-etodolac inhibits pain score, with an IC80 value of 78.1%. The paper excerpts do not provide a full text, so no additional mechanistic details or rate constants are available.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `de_2017`
 - **model family:** `emax`
@@ -47,11 +47,11 @@ de Miranda Silva C et al., Development of an Enantioselective and…, The AAPS j
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -28,23 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Duijkers_2015_ovulation](drugs/drug_estetrol/pd_Duijkers_2015_ovulation.md) | ovulation ← estetrol · inhibition effect | — | Duijkers IJ et al., Inhibition of ovulation by administrati…, The European journal of con… (2015) | [10.3109/13625187.2015.1074675](https://doi.org/10.3109/13625187.2015.1074675) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=estetrol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ESR1 (modulator), ESR1 (regulator), ESR1 (target), ESR2 (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Duijkers_2015_ovulation](drugs/drug_estetrol/pd_Duijkers_2015_ovulation.md) | ovulation ← estetrol · inhibition effect | — | Duijkers IJ et al., Inhibition of ovulation by administrati…, The European journal of con… (2015) | [10.3109/13625187.2015.1074675](https://doi.org/10.3109/13625187.2015.1074675) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

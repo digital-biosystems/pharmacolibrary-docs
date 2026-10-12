@@ -16,11 +16,11 @@
 
 **As extracted:** Infliximab dose number (the dose) drives erythrocyte sedimentation rate (in mm/h): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The infliximab dose drives a direct Emax inhibition effect on erythrocyte sedimentation rate (ESR), with the paper stating an Emax of −0.978 (−62.4%) and a D50 of 1.1, though the specific units for the D50 are not provided in the excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Samuels_2025`
 - **model family:** `emax`
@@ -100,7 +100,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -28,18 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Tanaka_1983_PPR_latency](drugs/drug_brotizolam/pd_Tanaka_1983_PPR_latency.md) | maximum prolongation of photopalpebral reflex (PPR) latency ← brotizolam · direct linear effect | — | Tanaka M et al., Effect of brotizolam on the averaged ph…, British journal of clinical… (1983) | [10.1111/j.1365-2125.1983.tb02307.x](https://doi.org/10.1111/j.1365-2125.1983.tb02307.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=brotizolam).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: GABRA1 (positive allosteric modulator), GABRA1 (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Tanaka_1983_PPR_latency](drugs/drug_brotizolam/pd_Tanaka_1983_PPR_latency.md) | maximum prolongation of photopalpebral reflex (PPR) latency ← brotizolam · direct linear effect | — | Tanaka M et al., Effect of brotizolam on the averaged ph…, British journal of clinical… (1983) | [10.1111/j.1365-2125.1983.tb02307.x](https://doi.org/10.1111/j.1365-2125.1983.tb02307.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -20,7 +20,7 @@
 
 > Orphenadrine acts on open channel blocking kinetics via a mechanism not specified in the available record or excerpts, with a Kon of 0.013 +/- 0.002 x 10^6 M^-1s^-1 and a Koff of 0.230 +/- 0.004 s^-1. The apparent Kd-value is 17.2 microM.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kornhuber_1995`
 - **model family:** `tmdd`
@@ -63,7 +63,7 @@ Kornhuber J et al., Orphenadrine is an uncompetitive N-meth…, Journal of neura
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

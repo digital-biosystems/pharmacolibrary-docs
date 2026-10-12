@@ -19,7 +19,7 @@
 
 > Upadacitinib minimum plasma concentration drives the categorical response of clinical remission 2.8/1.0 via a continuous-time Markov model where exposure influences transition rates between states. The paper does not state specific potency values for this endpoint, noting that EC50 values for clinical endpoints are not directly interpretable, although endoscopic EC50 values ranged from 26 to 40 ng/mL.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mohamed_2020`
 - **model family:** `categorical`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

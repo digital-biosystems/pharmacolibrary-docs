@@ -80,7 +80,7 @@ Kaka JS et al., Pharmacokinetics of ketamine in the hor…, American journal of 
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs_non_atc/drug_arketamine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kaka_1979` / `Kaka_1979::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs_non_atc/drug_arketamine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kaka_1979` / `Kaka_1979::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -101,7 +101,7 @@ Kaka JS et al., Pharmacokinetics of ketamine in the hor…, American journal of 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

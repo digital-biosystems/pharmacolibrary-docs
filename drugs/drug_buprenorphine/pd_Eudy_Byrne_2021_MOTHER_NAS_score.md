@@ -16,11 +16,11 @@
 
 **As extracted:** Buprenorphine (concentrations from the PK model of Castro-Cuellar_2023) drives MOTHER neonatal abstinence syndrome (NAS) scores: indirect response — drug inhibits the loss of MOTHER neonatal abstinence syndrome (NAS) scores.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Buprenorphine concentrations (C2) inhibit the production of MOTHER NAS scores via a proportional indirect response model featuring rate constants Kin and Kout, with a maximal inhibitory effect (EMax) and a half-maximal effective concentration (EC50) of 0.942 ng/ml. The model assumes buprenorphine acts by reducing the rate of symptom severity change rather than eliminating it.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Eudy-Byrne_2021`
 - **model family:** `indirect_response_ii`
@@ -96,7 +96,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

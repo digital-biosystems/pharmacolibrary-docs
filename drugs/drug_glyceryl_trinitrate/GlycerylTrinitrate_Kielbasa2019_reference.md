@@ -5,7 +5,7 @@
 
 # glyceryl trinitrate — `GlycerylTrinitrate_Kielbasa2019_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Kielbasa W et al., A new era for migraine: Pharmacokinetic…, Cephalalgia : an internatio… (2019)
   ·  DOI: [10.1177/0333102419840780](https://doi.org/10.1177/0333102419840780)
 
-## Model component
-<dbs-pgx drug="glyceryl trinitrate" model-id="GlycerylTrinitrate_Kielbasa2019_reference" status="extracted" stale="true" population="" measured-compound="glyceryl_trinitrate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glyceryl trinitrate" model-id="GlycerylTrinitrate_Kielbasa2019_reference" status="extracted" stale="true" population="" measured-compound="glyceryl_trinitrate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -118,10 +117,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_glyceryl_trinitrate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kielbasa_2019` / `Kielbasa_2019::reference`)
-- model: `../../../knowledgebase/drugs/drug_glyceryl_trinitrate/models/modelica/GlycerylTrinitrate_Kielbasa2019_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_glyceryl_trinitrate/models/modelica/GlycerylTrinitrate_Kielbasa2019_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_glyceryl_trinitrate/models/modelica/GlycerylTrinitrate_Kielbasa2019_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glyceryl_trinitrate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kielbasa_2019` / `Kielbasa_2019::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glyceryl_trinitrate/models/modelica/GlycerylTrinitrate_Kielbasa2019_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glyceryl_trinitrate/models/modelica/GlycerylTrinitrate_Kielbasa2019_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glyceryl_trinitrate/models/modelica/GlycerylTrinitrate_Kielbasa2019_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -139,7 +138,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference/GlycerylTrinitrate_Kielbasa2019_reference.svg" alt="GlycerylTrinitrate_Kielbasa2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference/GlycerylTrinitrate_Kielbasa2019_reference.svg" alt="GlycerylTrinitrate_Kielbasa2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

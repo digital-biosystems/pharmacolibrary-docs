@@ -28,26 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Tan_2026_cell_viability](drugs/drug_ceritinib/pd_Tan_2026_cell_viability.md) | cell viability ← ceritinib and ibuprofen · inhibition effect | — | Tan S et al., Ceritinib-ibuprofen synergistic hepatot…, Toxicology (2026) | [10.1016/j.tox.2025.154321](https://doi.org/10.1016/j.tox.2025.154321) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ceritinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C9` inhibitor, `CYP3A4` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ALK (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Tan_2026_cell_viability](drugs/drug_ceritinib/pd_Tan_2026_cell_viability.md) | cell viability ← ceritinib and ibuprofen · inhibition effect | — | Tan S et al., Ceritinib-ibuprofen synergistic hepatot…, Toxicology (2026) | [10.1016/j.tox.2025.154321](https://doi.org/10.1016/j.tox.2025.154321) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

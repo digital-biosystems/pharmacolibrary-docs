@@ -21,7 +21,7 @@
 
 > Imipramine (nmol/L concentrations) stimulates [3H]5-HT efflux from HEK 293-rSERT cells, measured as % of radioactivity released during the first 8 min of drug exposure, with a concentration-dependent Emax-type response; the paper reports an EC50 of 1,420 ± 58 nmol/L but does not state an Emax value or a mechanistic model beyond carrier-mediated reverse transport of 5-HT via rSERT.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Sitte_2000`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Sitte HH et al., Characterization of carrier-mediated ef…, Journal of neuroche
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

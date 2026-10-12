@@ -32,7 +32,7 @@ Asenapine is an atypical antipsychotic given for schizophrenia and for manic epi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Dogterom_2018_reference](drugs/drug_asenapine/Asenapine_Dogterom2018_reference.md) | held back | 1-compartment, oral | 5 | Dogterom P et al., Asenapine pharmacokinetics and tolerabi…, Drug design, development an… (2018) | [10.2147/DDDT.S171475](https://doi.org/10.2147/DDDT.S171475) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Dogterom_2018_reference](drugs/drug_asenapine/Asenapine_Dogterom2018_reference.md) | held back | 1-compartment, oral | 5 | Dogterom P et al., Asenapine pharmacokinetics and tolerabi…, Drug design, development an… (2018) | [10.2147/DDDT.S171475](https://doi.org/10.2147/DDDT.S171475) |
 
 ## Pharmacodynamics (PD)
 
@@ -44,21 +44,6 @@ Asenapine is an atypical antipsychotic given for schizophrenia and for manic epi
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Knauer_2008_5_HT2A_receptor_occupancy_inhibition_of_in_vivo_3_H_M100907_binding](drugs/drug_asenapine/pd_Knauer_2008_5_HT2A_receptor_occupancy_inhibition_of_in_vivo_.md) | 5-HT2A receptor occupancy (inhibition of in vivo [(3)H]M100907 binding) ← asenapine · direct sigmoid Emax (Hill) effect | — | Knauer CS et al., Validation of a rat in vivo [(3)H]M1009…, European journal of pharmac… (2008) | [10.1016/j.ejphar.2008.06.063](https://doi.org/10.1016/j.ejphar.2008.06.063) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Seo_2022_Kv_current](drugs/drug_asenapine/pd_Seo_2022_Kv_current.md) | Kv current inhibition ← asenapine · direct sigmoid Emax (Hill) effect | — | Seo MS et al., Asenapine, an atypical antipsychotic, b…, European journal of pharmac… (2022) | [10.1016/j.ejphar.2022.175318](https://doi.org/10.1016/j.ejphar.2022.175318) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Friberg_2009_time_course_of_dropouts](drugs/drug_asenapine/pd_Friberg_2009_time_course_of_dropouts.md) | time course of dropouts ← asenapine · time-to-event model | — | Friberg LE et al., Modeling and simulation of the time cou…, Clinical pharmacology and t… (2009) | [10.1038/clpt.2009.44](https://doi.org/10.1038/clpt.2009.44) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=asenapine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate, `UGT1A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), ADRA2A (target), ADRA2B (target), ADRA2C (target), ADRB1 (target), ADRB2 (target), DRD1 (target), DRD2 (target), DRD3 (target), DRD4 (target), HRH1 (target), HRH2 (target), HTR1A (target), HTR1B (target), HTR2A (target), HTR2B (target), HTR2C (target), HTR5A (target), HTR6 (target), HTR7 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

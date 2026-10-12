@@ -4,7 +4,7 @@
 
 # dibutylphthalate — `Dibutylphthalate_Chang2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -28,8 +28,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 Chang LW et al., Pharmacokinetics of dibutyl phthalate (…, International journal of mo… (2013)
   ·  DOI: [10.3390/ijms14010836](https://doi.org/10.3390/ijms14010836)
 
-## Model component
-<dbs-pgx drug="dibutylphthalate" model-id="Dibutylphthalate_Chang2013_reference" status="needs_review" stale="false" population="adult male rats" measured-compound="dibutyl phthalate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dibutylphthalate" model-id="Dibutylphthalate_Chang2013_reference" status="needs_review" stale="false" population="adult male rats" measured-compound="dibutyl phthalate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.
@@ -115,7 +114,7 @@ Chang LW et al., Pharmacokinetics of dibutyl phthalate (…, International journ
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_dibutylphthalate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chang_2013` / `Chang_2013::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_dibutylphthalate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chang_2013` / `Chang_2013::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -136,7 +135,7 @@ Chang LW et al., Pharmacokinetics of dibutyl phthalate (…, International journ
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

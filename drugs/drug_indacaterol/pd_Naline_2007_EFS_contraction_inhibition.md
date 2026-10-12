@@ -20,7 +20,7 @@
 
 > Indacaterol inhibits EFS-induced cholinergic neural contraction, described by an Emax-type model with a reported -logIC50 of 6.96+/-0.13; no full text is available, so the mechanism and other parameters (e.g. Emax, rate constants) are not stated.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Naline_2007`
 - **model family:** `emax`
@@ -61,7 +61,7 @@ Naline E et al., Effect of indacaterol, a novel long-act…, The European respir
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

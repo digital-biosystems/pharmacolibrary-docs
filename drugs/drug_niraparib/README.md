@@ -33,38 +33,17 @@ Niraparib is a PARP inhibitor anticancer medicine used to treat ovarian, fallopi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.552). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Gaffney_2026_reference](drugs/drug_niraparib/Niraparib_Gaffney2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 7 (+6 cov.) | Gaffney A et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70210](https://doi.org/10.1002/jcph.70210) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: partial</span> | [Quesada_2025_reference](drugs/drug_niraparib/Niraparib_Quesada2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Quesada S et al., Exposure-response relationship of nirap…, ESMO open (2025) | [10.1016/j.esmoop.2025.105054](https://doi.org/10.1016/j.esmoop.2025.105054) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Chryssafidis_2022_reference](drugs/drug_niraparib/Niraparib_Chryssafidis2022_reference.md) | — | 1-compartment (no model) | 0 | Chryssafidis P et al., Re-writing Oral Pharmacokinetics Using…, Pharmaceutical research (2022) | [10.1007/s11095-022-03230-0](https://doi.org/10.1007/s11095-022-03230-0) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Monk_2024_reference](drugs/drug_niraparib/Niraparib_Monk2024_reference.md) | — | 1-compartment (no model) | 0 | Monk BJ et al., Niraparib Population Pharmacokinetics a…, Clinical therapeutics (2024) | [10.1016/j.clinthera.2024.06.001](https://doi.org/10.1016/j.clinthera.2024.06.001) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.552). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Gaffney_2026_reference](drugs/drug_niraparib/Niraparib_Gaffney2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 7 (+6 cov.) | Gaffney A et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70210](https://doi.org/10.1002/jcph.70210) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span> | [Quesada_2025_reference](drugs/drug_niraparib/Niraparib_Quesada2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Quesada S et al., Exposure-response relationship of nirap…, ESMO open (2025) | [10.1016/j.esmoop.2025.105054](https://doi.org/10.1016/j.esmoop.2025.105054) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Chryssafidis_2022_reference](drugs/drug_niraparib/Niraparib_Chryssafidis2022_reference.md) | — | 1-compartment (no model) | 0 | Chryssafidis P et al., Re-writing Oral Pharmacokinetics Using…, Pharmaceutical research (2022) | [10.1007/s11095-022-03230-0](https://doi.org/10.1007/s11095-022-03230-0) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Monk_2024_reference](drugs/drug_niraparib/Niraparib_Monk2024_reference.md) | — | 1-compartment (no model) | 0 | Monk BJ et al., Niraparib Population Pharmacokinetics a…, Clinical therapeutics (2024) | [10.1016/j.clinthera.2024.06.001](https://doi.org/10.1016/j.clinthera.2024.06.001) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> | [Monk_2024_PFS](drugs/drug_niraparib/pd_Monk_2024_PFS.md) | progression-free survival ← niraparib · time-to-event model | — | Monk BJ et al., Niraparib Population Pharmacokinetics a…, Clinical therapeutics (2024) | [10.1016/j.clinthera.2024.06.001](https://doi.org/10.1016/j.clinthera.2024.06.001) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> | [Monk_2024_grade_3_thrombocytopenia](drugs/drug_niraparib/pd_Monk_2024_grade_3_thrombocytopenia.md) | grade ≥ 3 thrombocytopenia ← niraparib · categorical (graded) response model | — | Monk BJ et al., Niraparib Population Pharmacokinetics a…, Clinical therapeutics (2024) | [10.1016/j.clinthera.2024.06.001](https://doi.org/10.1016/j.clinthera.2024.06.001) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=niraparib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | liver | `CYP1A2` inducer | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC47A1` inhibitor/substrate, `SLC47A2` inhibitor/substrate | DrugBank actor |
-| excretion | liver | `SLC47A1` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CES1A1a (substrate), PARP1 (inhibitor), PARP2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> | [Monk_2024_PFS](drugs/drug_niraparib/pd_Monk_2024_PFS.md) | progression-free survival ← niraparib · time-to-event model | — | Monk BJ et al., Niraparib Population Pharmacokinetics a…, Clinical therapeutics (2024) | [10.1016/j.clinthera.2024.06.001](https://doi.org/10.1016/j.clinthera.2024.06.001) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> | [Monk_2024_grade_3_thrombocytopenia](drugs/drug_niraparib/pd_Monk_2024_grade_3_thrombocytopenia.md) | grade ≥ 3 thrombocytopenia ← niraparib · categorical (graded) response model | — | Monk BJ et al., Niraparib Population Pharmacokinetics a…, Clinical therapeutics (2024) | [10.1016/j.clinthera.2024.06.001](https://doi.org/10.1016/j.clinthera.2024.06.001) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

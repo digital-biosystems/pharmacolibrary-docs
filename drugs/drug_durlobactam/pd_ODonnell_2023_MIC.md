@@ -22,7 +22,7 @@
 
 > The provided record cites durlobactam concentrations in mg/L as the driver for MIC response in mg/L, but the model effect form is listed as unknown. No full text is available to specify the mechanism (such as direct Emax or inhibition) or any potency and rate parameters.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `ODonnell_2023`
 - **model family:** `linear`
@@ -56,7 +56,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -20,7 +20,7 @@
 
 > Lorazepam plasma concentrations (ng/ml) act on body sway with eyes open via an effect-compartment (link) model with an inhibitory effect; the paper excerpts provide no further mechanism and no parameter values (Imax, IC50, ke0, gamma) are available.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Gupta_1990`
 - **model family:** `effect_compartment`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

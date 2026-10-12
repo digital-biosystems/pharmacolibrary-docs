@@ -22,7 +22,7 @@
 
 > Buspirone stimulates 5-HT-mediated [35S]GTPgammaS binding in an Emax model, with Emax = 22 ± 4 %; the excerpts give no EC50, mechanism, or rate parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Dupuis_1999`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Dupuis DS et al., Modulation of 5-HT1A receptor signallin…, Neuropharmacology 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

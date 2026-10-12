@@ -21,7 +21,7 @@
 
 > Agomelatine concentration (mM) suppresses SCN neuron firing rate (%) via a direct inhibitory Emax model; the paper reports an IC50 of 0.14 mM, but no excerpts are available to confirm the mechanism or other parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Yang_2016`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Yang J et al., Agomelatine affects rat suprachiasmatic…, Life sciences (2016)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

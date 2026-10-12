@@ -32,8 +32,8 @@ Olodaterol is an inhaled long-acting beta-2 agonist used as a bronchodilator for
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Borghardt_2016_reference](drugs/drug_olodaterol/Olodaterol_Borghardt2016_reference.md) | — | 1-compartment (no model) | 3 | Borghardt JM et al., Investigating pulmonary and systemic ph…, British journal of clinical… (2016) | [10.1111/bcp.12780](https://doi.org/10.1111/bcp.12780) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Borghardt_2016_2_reference](drugs/drug_olodaterol/Olodaterol_Borghardt2016v2_reference.md) | — | 1-compartment (no model) | 3 | Borghardt JM et al., Model-based evaluation of pulmonary pha…, British journal of clinical… (2016) | [10.1111/bcp.12999](https://doi.org/10.1111/bcp.12999) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Borghardt_2016_reference](drugs/drug_olodaterol/Olodaterol_Borghardt2016_reference.md) | — | 1-compartment (no model) | 3 | Borghardt JM et al., Investigating pulmonary and systemic ph…, British journal of clinical… (2016) | [10.1111/bcp.12780](https://doi.org/10.1111/bcp.12780) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Borghardt_2016_2_reference](drugs/drug_olodaterol/Olodaterol_Borghardt2016v2_reference.md) | — | 1-compartment (no model) | 3 | Borghardt JM et al., Model-based evaluation of pulmonary pha…, British journal of clinical… (2016) | [10.1111/bcp.12999](https://doi.org/10.1111/bcp.12999) |
 
 ## Pharmacodynamics (PD)
 
@@ -43,19 +43,6 @@ Olodaterol is an inhaled long-acting beta-2 agonist used as a bronchodilator for
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Bouyssou_2010_hbeta_2_AR](drugs/drug_olodaterol/pd_Bouyssou_2010_hbeta_2_AR.md) | beta2-adrenoceptor agonist response (cAMP accumulation) ← olodaterol · direct sigmoid Emax (Hill) effect | — | Bouyssou T et al., Pharmacological characterization of olo…, The Journal of pharmacology… (2010) | [10.1124/jpet.110.167007](https://doi.org/10.1124/jpet.110.167007) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Calzetta_2017_inhibition_of_bronchial_contractility_tiotropium_plus_olodaterol_5_5_combination](drugs/drug_olodaterol/pd_Calzetta_2017_inhibition_of_bronchial_contractility_tiotropi.md) | inhibition of bronchial contractility (tiotropium plus olodaterol 5:5 combination) ← tiotropium plus olodaterol (5:5) · direct sigmoid Emax (Hill) effect | — | Calzetta L et al., Pharmacological characterization of the…, COPD (2017) | [10.1080/15412555.2017.1344627](https://doi.org/10.1080/15412555.2017.1344627) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Gong_2022_trough_FEV1](drugs/drug_olodaterol/pd_Gong_2022_trough_FEV1.md) | change from baseline in trough FEV1 ← olodaterol/tiotropium (fixed-dose combination) · direct Emax (saturable) effect | — | Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances in res… (2022) | [10.1177/17534666211066068](https://doi.org/10.1177/17534666211066068) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=olodaterol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | lung | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP2C8` substrate, `CYP2C9` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADRB2 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

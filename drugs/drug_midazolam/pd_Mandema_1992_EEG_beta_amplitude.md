@@ -20,7 +20,7 @@
 
 > Midazolam plasma concentrations (ng/ml) drive increases in EEG beta (11.5–30 Hz) amplitude (µV), reflecting benzodiazepine agonism at the central GABA-benzodiazepine receptor complex; plasma-effect hysteresis was handled with an effect compartment model and the steady-state concentration-effect relation was described by a sigmoid Emax model with EC50 = 77 ± 15 ng/ml (no Emax, gamma, or ke0 values given in the excerpts).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Mandema_1992`
 - **model family:** `sigmoid_emax`
@@ -61,7 +61,7 @@ Mandema JW et al., Pharmacokinetic-pharmacodynamic modelin…, Clinical pharmaco
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

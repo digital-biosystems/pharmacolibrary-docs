@@ -21,7 +21,7 @@
 
 > The model describes the % depression of initial twitch tension caused by plasma concentrations of mivacurium using a sigmoidal Emax effect compartment model. The key parameters are a Cess50 of 0.65 µg/mL and an effect-compartment transfer rate (Keo) of 0.32 min⁻¹.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Trocóniz_1997`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Trocóniz IF et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of phar
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

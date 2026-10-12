@@ -20,7 +20,7 @@
 
 > Canakinumab binds circulating Total IL-1β to form a complex that is cleared more slowly than free cytokine, thereby elevating total IL-1β concentrations as a surrogate marker of binding activity. The model estimates an equilibrium dissociation constant (KD) of 1.07 ± 0.173 nmol/L and a clearance (CL) of 14.2 ± 2.55 L/d, though the paper notes a SPR-derived KD of 60 pmol/L.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Chakraborty_2012`
 - **model family:** `tmdd`
@@ -63,7 +63,7 @@ Chakraborty A et al., Pharmacokinetic and pharmacodynamic pro…, Clinical pharm
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -32,23 +32,7 @@ Nabumetone is a non-steroidal anti-inflammatory drug used to treat pain and infl
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.143). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Brier_1995_reference](drugs/drug_nabumetone/Nabumetone_Brier1995_reference.md) | — | 1-compartment (no model) | 0 | Brier ME et al., Population pharmacokinetics of the acti…, Clinical pharmacology and t… (1995) | [10.1016/0009-9236(95)90224-4](https://doi.org/10.1016/0009-9236(95)90224-4) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nabumetone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP2C9` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: AKR1C1 (substrate), AKR1C2 (substrate), AKR1C4 (substrate), HSD11B1 (substrate), MPO (inhibitor), PTGS1 (inhibitor), PTGS2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.143). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Brier_1995_reference](drugs/drug_nabumetone/Nabumetone_Brier1995_reference.md) | — | 1-compartment (no model) | 0 | Brier ME et al., Population pharmacokinetics of the acti…, Clinical pharmacology and t… (1995) | [10.1016/0009-9236(95)90224-4](https://doi.org/10.1016/0009-9236(95)90224-4) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

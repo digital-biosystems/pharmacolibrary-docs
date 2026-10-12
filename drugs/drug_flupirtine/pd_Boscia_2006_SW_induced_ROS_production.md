@@ -21,7 +21,7 @@
 
 > Flupirtine is cited as a driver with an IC50 of 1 μM for the inhibition of SW-induced ROS production, although the specific pharmacodynamic mechanism is not described in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Boscia_2006`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Boscia F et al., Retigabine and flupirtine exert neuropr…, Neuropharmacology (
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

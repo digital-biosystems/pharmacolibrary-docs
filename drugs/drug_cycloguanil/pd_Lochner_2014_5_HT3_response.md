@@ -22,7 +22,7 @@
 
 > Cycloguanil inhibits the 5-HT3 receptor response (inhibition of 5-HT-evoked current), with an IC50 of 1.48 μM, Kb of 2.97 μM, and Ki of 4.89 μM; the paper excerpts do not state the mechanism or model form.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Lochner_2014`
 - **model family:** `unknown`
@@ -65,7 +65,7 @@ Lochner M et al., The antimalarial drug proguanil is an a…, The Journal of pha
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

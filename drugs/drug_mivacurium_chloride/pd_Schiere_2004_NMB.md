@@ -19,7 +19,7 @@
 
 > Mivacurium chlorides induces neuromuscular block via an Emax model with a proportional effect form. The model estimates an EC50 of 98 microg L(-1) and a gamma (Hill slope) of 3.7.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Schiere_2004`
 - **model family:** `emax`
@@ -61,7 +61,7 @@ Schiere S et al., An interstitial compartment is necessar…, European journal o
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

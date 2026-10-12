@@ -16,11 +16,11 @@
 
 **As extracted:** Pregabalin (the dose) drives monthly seizure frequency: direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Pregabalin dose inhibits monthly seizure frequency via an Emax model, with a maximal seizure reduction of 80% and an ED50 of 186 mg. The specific mechanism of action (e.g., production vs. elimination) is not described in the available excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Miller_2003`
 - **model family:** `emax`
@@ -98,7 +98,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

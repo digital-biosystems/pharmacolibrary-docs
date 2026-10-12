@@ -31,24 +31,7 @@ Tisotumab vedotin is an antibody-drug conjugate used to treat cervical cancer. I
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.933). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q66 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Gibiansky_2022_reference](drugs/drug_tisotumab_vedotin/TisotumabVedotin_Gibiansky2022_reference.md) | — | parent + metabolite (no model) | 14 | Gibiansky L et al., Population pharmacokinetic analysis for…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12850](https://doi.org/10.1002/psp4.12850) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tisotumab_vedotin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: F3 (binder), F3 (transporter).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.933). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q66 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Gibiansky_2022_reference](drugs/drug_tisotumab_vedotin/TisotumabVedotin_Gibiansky2022_reference.md) | — | parent + metabolite (no model) | 14 | Gibiansky L et al., Population pharmacokinetic analysis for…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12850](https://doi.org/10.1002/psp4.12850) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

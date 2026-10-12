@@ -5,7 +5,7 @@
 
 # capecitabine — `Capecitabine_Schmulenson2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.944), gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.944), gpt-oss:120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Schmulenson E et al., Population pharmacokinetic analyses of…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15461](https://doi.org/10.1111/bcp.15461)
 
-## Model component
-<dbs-pgx drug="capecitabine" model-id="Capecitabine_Schmulenson2022_reference" status="extracted" stale="true" population="locally advanced rectal cancer" measured-compound="capecitabine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Schmulenson2022_reference" status="extracted" stale="true" population="locally advanced rectal cancer" measured-compound="capecitabine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.
@@ -164,9 +163,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_capecitabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Schmulenson_2022` / `Schmulenson_2022::reference`)
-- model: `../../../knowledgebase/drugs/drug_capecitabine/models/modelica/_needs_review/Capecitabine_Schmulenson2022_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_capecitabine/models/modelica/_needs_review/Capecitabine_Schmulenson2022_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_capecitabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Schmulenson_2022` / `Schmulenson_2022::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_capecitabine/models/modelica/_needs_review/Capecitabine_Schmulenson2022_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_capecitabine/models/modelica/_needs_review/Capecitabine_Schmulenson2022_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -184,7 +183,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference/Capecitabine_Schmulenson2022_reference.svg" alt="Capecitabine_Schmulenson2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference/Capecitabine_Schmulenson2022_reference.svg" alt="Capecitabine_Schmulenson2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

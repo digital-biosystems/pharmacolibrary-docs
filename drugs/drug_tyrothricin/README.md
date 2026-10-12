@@ -27,16 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Maeda_2011_proliferation_of_concanavalin_A_stimulated_PBMCs](drugs/drug_tyrothricin/pd_Maeda_2011_proliferation_of_concanavalin_A_stimulated_PBMCs.md) | proliferation of concanavalin A-stimulated PBMCs ← tyrothricin · inhibition effect | — | Maeda M et al., Suppressive effects of peptide antibiot…, Arzneimittel-Forschung (2011) | [10.1055/s-0031-1300595](https://doi.org/10.1055/s-0031-1300595) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tyrothricin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| — | blood | `ACHE` inhibitor | DrugBank actor |
-| — | neuromuscular junction | `ACHE` inhibitor | DrugBank actor |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Maeda_2011_proliferation_of_concanavalin_A_stimulated_PBMCs](drugs/drug_tyrothricin/pd_Maeda_2011_proliferation_of_concanavalin_A_stimulated_PBMCs.md) | proliferation of concanavalin A-stimulated PBMCs ← tyrothricin · inhibition effect | — | Maeda M et al., Suppressive effects of peptide antibiot…, Arzneimittel-Forschung (2011) | [10.1055/s-0031-1300595](https://doi.org/10.1055/s-0031-1300595) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

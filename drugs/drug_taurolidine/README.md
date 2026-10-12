@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Lv_2023_Inhibition_rate](drugs/drug_taurolidine/pd_Lv_2023_Inhibition_rate.md) | Inhibition rate of TRD against influenza virus H5N1 ← Taurolidine · direct sigmoid Emax (Hill) effect | — | Lv C et al., Taurolidine improved protection against…, Virologica Sinica (2023) | [10.1016/j.virs.2022.11.010](https://doi.org/10.1016/j.virs.2022.11.010) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Lv_2023_Inhibition_rate](drugs/drug_taurolidine/pd_Lv_2023_Inhibition_rate.md) | Inhibition rate of TRD against influenza virus H5N1 ← Taurolidine · direct sigmoid Emax (Hill) effect | — | Lv C et al., Taurolidine improved protection against…, Virologica Sinica (2023) | [10.1016/j.virs.2022.11.010](https://doi.org/10.1016/j.virs.2022.11.010) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

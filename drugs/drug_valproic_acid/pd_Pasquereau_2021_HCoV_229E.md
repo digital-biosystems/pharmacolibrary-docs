@@ -22,7 +22,7 @@
 
 > The paper states that valproic acid was highly cytotoxic and did not warrant further testing, and does not provide a mechanism or PD model for valproic acid, whereas it reports an EC50 of 4.6 µM for resveratrol in inhibiting HCoV-229E replication.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pasquereau_2021`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Pasquereau S et al., Resveratrol Inhibits HCoV-229E and SARS…, Viruses (2021)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > Niclosamide concentrations (μM) inhibit the cytopathic effect of FIPV in Fcwf-4 cells, with a reported EC50 of 0.29 ± 0.02 μM; the paper does not state a pharmacodynamic mechanism (e.g., production/elimination inhibition or effect-compartment) for this effect.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Yang_2020`
 - **model family:** `unknown`
@@ -63,7 +63,7 @@ Yang CW et al., Repurposing old drugs as antiviral agen…, Biomedical journal (
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

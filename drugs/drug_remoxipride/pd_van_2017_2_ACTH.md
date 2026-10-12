@@ -21,7 +21,7 @@
 
 > Remoxipride concentrations in brain ECF (cited PK) stimulate the release of ACTH into plasma (pg/ml), described by a pool model with an Emax effect on ACTH release (E max,rem,ACTH fixed to 10, EC50 2.61 μM, at least 40-fold higher than the PRL EC50 of 0.064 μM), with baseline Bsl ACTH 24.6 pg/ml, k synth,ACTH 603 pg/ml/h, k rel,ACTH 3.13 h−1 and k degr,ACTH 24.5 h−1; the paper suggests this stimulatory ACTH response is an off-target, possibly adrenergic receptor–mediated effect.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `van_2017_2`
 - **model family:** `tolerance`
@@ -67,7 +67,7 @@ van den Brink WJ et al., Revealing the Neuroendocrine Response A…, The AAPS jo
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

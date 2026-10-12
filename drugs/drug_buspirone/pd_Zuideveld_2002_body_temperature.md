@@ -18,11 +18,11 @@
 
 **As extracted:** Buspirone (concentrations from this paper's PK model) drives body temperature: indirect response — drug inhibits the production of body temperature.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Buspirone plasma concentrations (ng/ml) inhibit body temperature via an indirect response model (inhibition of the response's production, proportional form), with C50 = 17.6 ng/ml and intrinsic activity (Imax) = 0.465; the paper excerpts do not provide further mechanism detail.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Zuideveld_2002`
 - **model family:** `indirect_response_i`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

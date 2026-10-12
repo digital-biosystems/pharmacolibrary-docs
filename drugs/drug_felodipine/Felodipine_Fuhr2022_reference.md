@@ -4,7 +4,7 @@
 
 # felodipine — `Felodipine_Fuhr2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.438), gpt-oss:120b (partly confirmed, agreement 0.533). The first reading is what the record holds.">cross-check: partial 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.438), gpt-oss:120b (partly confirmed, agreement 0.533). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Fuhr LM et al., A Physiologically Based Pharmacokinetic…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14071474](https://doi.org/10.3390/pharmaceutics14071474)
 
-## Model component
-<dbs-pgx drug="felodipine" model-id="Felodipine_Fuhr2022_reference" status="needs_review" stale="false" population="healthy and hypertensive adults" measured-compound="felodipine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="felodipine" model-id="Felodipine_Fuhr2022_reference" status="needs_review" stale="false" population="healthy and hypertensive adults" measured-compound="felodipine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted, plus 3 covariate effects.
@@ -159,7 +158,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_felodipine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Fuhr_2022` / `Fuhr_2022::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_felodipine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Fuhr_2022` / `Fuhr_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -180,7 +179,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

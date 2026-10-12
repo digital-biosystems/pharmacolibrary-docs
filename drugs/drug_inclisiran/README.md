@@ -27,19 +27,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Gosselin_2023_LDL_C](drugs/drug_inclisiran/pd_Gosselin_2023_LDL_C.md) | low-density lipoprotein cholesterol ← inclisiran · indirect response — drug inhibits the production of low-density lipoprotein cholesterol | — | Gosselin NH et al., Translational Population-Pharmacodynami…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2774](https://doi.org/10.1002/cpt.2774) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Gosselin_2023_PCSK9](drugs/drug_inclisiran/pd_Gosselin_2023_PCSK9.md) | proprotein convertase subtilisin/kexin type 9 ← inclisiran · indirect response — drug inhibits the production of proprotein convertase subtilisin/kexin type 9 | — | Gosselin NH et al., Translational Population-Pharmacodynami…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2774](https://doi.org/10.1002/cpt.2774) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=inclisiran).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: PCSK9 (antisense oligonucleotide).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> | [Gosselin_2023_LDL_C](drugs/drug_inclisiran/pd_Gosselin_2023_LDL_C.md) | low-density lipoprotein cholesterol ← inclisiran · indirect response — drug inhibits the production of low-density lipoprotein cholesterol | — | Gosselin NH et al., Translational Population-Pharmacodynami…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2774](https://doi.org/10.1002/cpt.2774) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Gosselin_2023_PCSK9](drugs/drug_inclisiran/pd_Gosselin_2023_PCSK9.md) | proprotein convertase subtilisin/kexin type 9 ← inclisiran · indirect response — drug inhibits the production of proprotein convertase subtilisin/kexin type 9 | — | Gosselin NH et al., Translational Population-Pharmacodynami…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2774](https://doi.org/10.1002/cpt.2774) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

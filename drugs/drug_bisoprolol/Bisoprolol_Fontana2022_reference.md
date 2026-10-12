@@ -5,7 +5,7 @@
 
 # bisoprolol — `Bisoprolol_Fontana2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Fontana V et al., Chromosomal Region 11p14.1 is Associate…, Pharmacogenomics and person… (2022)
   ·  DOI: [10.2147/PGPM.S352719](https://doi.org/10.2147/PGPM.S352719)
 
-## Model component
-<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Fontana2022_reference" status="model_quarantined" stale="false" population="patients with non-ST elevation acute coronary syndrome on bisoprolol" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Fontana2022_reference" status="model_quarantined" stale="false" population="patients with non-ST elevation acute coronary syndrome on bisoprolol" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -140,9 +139,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_bisoprolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Fontana_2022` / `Fontana_2022::reference`)
-- model: `../../../knowledgebase/drugs/drug_bisoprolol/models/modelica/_needs_review/Bisoprolol_Fontana2022_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_bisoprolol/models/modelica/_needs_review/Bisoprolol_Fontana2022_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bisoprolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Fontana_2022` / `Fontana_2022::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bisoprolol/models/modelica/_needs_review/Bisoprolol_Fontana2022_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bisoprolol/models/modelica/_needs_review/Bisoprolol_Fontana2022_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -163,7 +162,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

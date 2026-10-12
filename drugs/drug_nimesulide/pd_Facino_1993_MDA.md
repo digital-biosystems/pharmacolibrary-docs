@@ -22,7 +22,7 @@
 
 > The record indicates that nimesulide concentration (mmol/L) inhibits MDA formation via an Emax model with an IC50 of 0.8 mmol/L. As no full text is available, the paper does not provide further mechanism details or additional parameters such as Imax.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Facino_1993`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Facino RM et al., Antioxidant activity of nimesulide and…, Drugs 46 Suppl (199
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

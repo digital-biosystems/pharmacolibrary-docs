@@ -21,7 +21,7 @@
 
 > Cocaine concentrations drive a direct, sigmoidal stimulation of the change in dopamine concentration in the nucleus accumbens (measured as % of baseline). The model estimates a maximum effect (Emax) of 1550 % of baseline at a half-maximal effective concentration (EC50) of 2000 ng/mL, though the paper does not specify additional mechanistic details or rate parameters.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pan_1999`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Pan WJ et al., Cocaine and alcohol interactions in the…, Journal of pharmaceut
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

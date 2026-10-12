@@ -33,16 +33,7 @@ Indoramin is an alpha-1 adrenergic blocker that was used to treat high blood pre
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed 1/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Norbury_1983_reference](drugs/drug_indoramin/Indoramin_Norbury1983_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Norbury HM et al., Pharmacokinetics of intravenous indoram…, European journal of clinica… (1983) | [10.1007/BF00543798](https://doi.org/10.1007/BF00543798) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=indoramin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1D (inhibitor), ADRA2B (inhibitor), ADRA2C (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed 1/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Norbury_1983_reference](drugs/drug_indoramin/Indoramin_Norbury1983_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Norbury HM et al., Pharmacokinetics of intravenous indoram…, European journal of clinica… (1983) | [10.1007/BF00543798](https://doi.org/10.1007/BF00543798) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

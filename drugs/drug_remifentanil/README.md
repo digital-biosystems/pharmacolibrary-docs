@@ -32,9 +32,9 @@ Remifentanil is a potent opioid painkiller used as part of general anaesthesia t
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Maharaj_2025_reference](drugs/drug_remifentanil/Remifentanil_Maharaj2025_reference.md) | — | 1-compartment (no model) | 2 | Maharaj AR et al., Opioid use in treated and untreated obs…, British journal of anaesthe… (2025) | [10.1016/j.bja.2024.10.042](https://doi.org/10.1016/j.bja.2024.10.042) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.917). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Cascone_2013_reference](drugs/drug_remifentanil/Remifentanil_Cascone2013_reference.md) | — | 2-compartment (no model) | 3 | Cascone S et al., Pharmacokinetics of Remifentanil: a thr…, Translational medicine @ Un… (2013) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Iwata_2025_reference](drugs/drug_remifentanil/Remifentanil_Iwata2025_reference.md) | — | 1-compartment (no model) | 0 | Iwata H et al., Machine Learning Prediction and Validat…, Molecular pharmaceutics (2025) | [10.1021/acs.molpharmaceut.4c01431](https://doi.org/10.1021/acs.molpharmaceut.4c01431) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Maharaj_2025_reference](drugs/drug_remifentanil/Remifentanil_Maharaj2025_reference.md) | — | 1-compartment (no model) | 2 | Maharaj AR et al., Opioid use in treated and untreated obs…, British journal of anaesthe… (2025) | [10.1016/j.bja.2024.10.042](https://doi.org/10.1016/j.bja.2024.10.042) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.917). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Cascone_2013_reference](drugs/drug_remifentanil/Remifentanil_Cascone2013_reference.md) | — | 2-compartment (no model) | 3 | Cascone S et al., Pharmacokinetics of Remifentanil: a thr…, Translational medicine @ Un… (2013) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Iwata_2025_reference](drugs/drug_remifentanil/Remifentanil_Iwata2025_reference.md) | — | 1-compartment (no model) | 0 | Iwata H et al., Machine Learning Prediction and Validat…, Molecular pharmaceutics (2025) | [10.1021/acs.molpharmaceut.4c01431](https://doi.org/10.1021/acs.molpharmaceut.4c01431) |
 
 ## Pharmacodynamics (PD)
 
@@ -42,17 +42,6 @@ Remifentanil is a potent opioid painkiller used as part of general anaesthesia t
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Eleveld_2017_SEF](drugs/drug_remifentanil/pd_Eleveld_2017_SEF.md) | spectral-edge frequency ← remifentanil · delayed effect through an effect compartment | — | Eleveld DJ et al., An Allometric Model of Remifentanil Pha…, Anesthesiology (2017) | [10.1097/ALN.0000000000001634](https://doi.org/10.1097/ALN.0000000000001634) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Vide_2020_PPI](drugs/drug_remifentanil/pd_Vide_2020_PPI.md) | Pupillary Pain Index ← remifentanil · direct sigmoid Emax (Hill) effect | — | Vide S et al., Pharmacodynamic modelling of the effect…, Journal of clinical monitor… (2020) | [10.1007/s10877-019-00323-x](https://doi.org/10.1007/s10877-019-00323-x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=remifentanil).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: OPRD1 (target), OPRK1 (target), OPRM1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

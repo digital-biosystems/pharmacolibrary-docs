@@ -32,8 +32,8 @@ Suxamethonium (succinylcholine) is a depolarizing neuromuscular blocking agent u
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Roy_2002_reference](drugs/drug_suxamethonium/Suxamethonium_Roy2002_reference.md) | — | 1-compartment (no model) | 1 | Roy JJ et al., Concentration-effect relation of succin…, Anesthesiology (2002) | [10.1097/00000542-200211000-00009](https://doi.org/10.1097/00000542-200211000-00009) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Torda_1997_2_reference](drugs/drug_suxamethonium/Suxamethonium_Torda1997v2_reference.md) | — | 1-compartment (no model) | 0 | Torda TA et al., Pharmacokinetics and pharmacodynamics o…, Anaesthesia and intensive c… (1997) | [10.1177/0310057X9702500312](https://doi.org/10.1177/0310057X9702500312) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Roy_2002_reference](drugs/drug_suxamethonium/Suxamethonium_Roy2002_reference.md) | — | 1-compartment (no model) | 1 | Roy JJ et al., Concentration-effect relation of succin…, Anesthesiology (2002) | [10.1097/00000542-200211000-00009](https://doi.org/10.1097/00000542-200211000-00009) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.8). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Torda_1997_2_reference](drugs/drug_suxamethonium/Suxamethonium_Torda1997v2_reference.md) | — | 1-compartment (no model) | 0 | Torda TA et al., Pharmacokinetics and pharmacodynamics o…, Anaesthesia and intensive c… (1997) | [10.1177/0310057X9702500312](https://doi.org/10.1177/0310057X9702500312) |
 
 ## Pharmacodynamics (PD)
 
@@ -41,18 +41,6 @@ Suxamethonium (succinylcholine) is a depolarizing neuromuscular blocking agent u
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Roy_2002_twitch](drugs/drug_suxamethonium/pd_Roy_2002_twitch.md) | force of contraction of the adductor pollicis ← succinylcholine · delayed effect through an effect compartment | — | Roy JJ et al., Concentration-effect relation of succin…, Anesthesiology (2002) | [10.1097/00000542-200211000-00009](https://doi.org/10.1097/00000542-200211000-00009) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Torda_1997_2_response_to_supramaximal_stimulation_of_the_ulnar_nerve](drugs/drug_suxamethonium/pd_Torda_1997_2_response_to_supramaximal_stimulation_of_the_uln.md) | response to supramaximal stimulation of the ulnar nerve ← suxamethonium · delayed effect through an effect compartment | — | Torda TA et al., Pharmacokinetics and pharmacodynamics o…, Anaesthesia and intensive c… (1997) | [10.1177/0310057X9702500312](https://doi.org/10.1177/0310057X9702500312) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=suxamethonium).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | blood | `BCHE` substrate | DrugBank actor |
-| metabolism | liver | `BCHE` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CHRM2 (target), CHRM3 (target), CHRNA10 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

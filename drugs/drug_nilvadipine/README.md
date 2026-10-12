@@ -28,19 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">dog</span> | [Wu_1988_DBP](drugs/drug_nilvadipine/pd_Wu_1988_DBP.md) | diastolic blood pressure ← nilvadipine · direct log-linear effect | — | Wu WH et al., Relationship between the pharmacokineti…, Drug metabolism and disposi… (1988) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">dog</span> | [Wu_1988_SBP](drugs/drug_nilvadipine/pd_Wu_1988_SBP.md) | systolic blood pressure ← nilvadipine · direct log-linear effect | — | Wu WH et al., Relationship between the pharmacokineti…, Drug metabolism and disposi… (1988) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nilvadipine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP2A6` inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2E1` substrate, `CYP3A4` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CACNA1C (blocker), CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1G (inhibitor), CACNA1H (inhibitor), CACNA1I (inhibitor), CACNA1S (inhibitor), CACNA2D1 (inhibitor), CACNA2D3 (inhibitor), CACNB2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">dog</span> | [Wu_1988_DBP](drugs/drug_nilvadipine/pd_Wu_1988_DBP.md) | diastolic blood pressure ← nilvadipine · direct log-linear effect | — | Wu WH et al., Relationship between the pharmacokineti…, Drug metabolism and disposi… (1988) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">dog</span> | [Wu_1988_SBP](drugs/drug_nilvadipine/pd_Wu_1988_SBP.md) | systolic blood pressure ← nilvadipine · direct log-linear effect | — | Wu WH et al., Relationship between the pharmacokineti…, Drug metabolism and disposi… (1988) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

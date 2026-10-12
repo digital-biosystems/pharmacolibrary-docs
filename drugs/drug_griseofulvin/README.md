@@ -24,19 +24,7 @@ Griseofulvin is an antifungal medication used to treat fungal skin infections su
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Schäfer-Korting_1987_reference](drugs/drug_griseofulvin/Griseofulvin_SchferKorting1987_reference.md) | — | 1-compartment (no model) | 0 | Schäfer-Korting M, Pharmacokinetics of griseofulvin in blo…, Drug metabolism and disposi… (1987) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=griseofulvin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP1A2` inducer, `CYP3A4` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer | DrugBank actor |
-
-<sub>Actors without a tissue in the table: KRT12 (other/unknown).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Schäfer-Korting_1987_reference](drugs/drug_griseofulvin/Griseofulvin_SchferKorting1987_reference.md) | — | 1-compartment (no model) | 0 | Schäfer-Korting M, Pharmacokinetics of griseofulvin in blo…, Drug metabolism and disposi… (1987) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

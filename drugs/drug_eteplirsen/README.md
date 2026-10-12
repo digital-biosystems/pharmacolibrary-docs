@@ -23,17 +23,7 @@ Eteplirsen is a drug used to treat Duchenne muscular dystrophy. It is approved i
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Patel_2025_reference](drugs/drug_eteplirsen/Eteplirsen_Patel2025_reference.md) | — | 1-compartment (no model) | 1 | Patel Y et al., A Population Pharmacokinetic Model to I…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70001](https://doi.org/10.1002/psp4.70001) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=eteplirsen).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: DMD-001 gene (exon 51 target site) (binding).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Patel_2025_reference](drugs/drug_eteplirsen/Eteplirsen_Patel2025_reference.md) | — | 1-compartment (no model) | 1 | Patel Y et al., A Population Pharmacokinetic Model to I…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70001](https://doi.org/10.1002/psp4.70001) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

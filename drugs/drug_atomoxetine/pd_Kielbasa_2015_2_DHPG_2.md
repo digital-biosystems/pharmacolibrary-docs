@@ -16,11 +16,11 @@
 
 **As extracted:** Atomoxetine (concentrations from the PK model of Cheng_2024) drives CSF DHPG (in pg/mL): indirect response — drug inhibits the production of CSF DHPG.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Atomoxetine plasma concentration inhibits the production (Kin) of CSF DHPG via NET inhibition in an inhibitory indirect response model, with baseline CSF DHPG 2180 pg/mL, kout 0.166 h⁻¹, Imax 0.529, and plasma IC50 53.3 ng/mL (209 nM total; unbound IC50U 2.72 nM).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kielbasa_2015_2`
 - **model family:** `indirect_response_i`
@@ -102,7 +102,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

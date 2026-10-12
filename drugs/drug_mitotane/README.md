@@ -33,33 +33,11 @@ Mitotane is an antineoplastic drug used to treat adrenal cortex cancer and Cushi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Cazaubon_2019_reference](drugs/drug_mitotane/Mitotane_Cazaubon2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Cazaubon Y et al., Population Pharmacokinetics Modelling a…, Pharmaceutics (2019) | [10.3390/pharmaceutics11110566](https://doi.org/10.3390/pharmaceutics11110566) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Kerkhofs_2015_reference](drugs/drug_mitotane/Mitotane_Kerkhofs2015_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Kerkhofs TM et al., Development of a pharmacokinetic model…, Therapeutic drug monitoring (2015) | [10.1097/FTD.0000000000000102](https://doi.org/10.1097/FTD.0000000000000102) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Arshad_2018_reference](drugs/drug_mitotane/Mitotane_Arshad2018_reference.md) | — | 1-compartment (no model) | 1 | Arshad U et al., Enzyme autoinduction by mitotane suppor…, European journal of endocri… (2018) | [10.1530/EJE-18-0342](https://doi.org/10.1530/EJE-18-0342) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yin_2021_basic_model](drugs/drug_mitotane/Mitotane_Yin2021_basic_model.md) | — | 2-compartment (no model) | 5 | Yin A et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00913-y](https://doi.org/10.1007/s40262-020-00913-y) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.733). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yin_2021_final](drugs/drug_mitotane/Mitotane_Yin2021_final.md) | — | 3-compartment (no model) | 7 (+2 cov.) | Yin A et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00913-y](https://doi.org/10.1007/s40262-020-00913-y) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mitotane).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inducer | DrugBank actor |
-| metabolism | liver | `CYP3A4` inducer, `CYP3A5` inducer, `CYP3A7` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer, `CYP3A5` inducer | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| — | adrenal gland | `CYP11B1` inducer | DrugBank actor |
-| — | prostate gland | `AR` target | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ESR1 (binder), FDX1 (unknown), PGR (target), SERPINA6 (upregulator), SERPINA7 (upregulator), SHBG (upregulator).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Cazaubon_2019_reference](drugs/drug_mitotane/Mitotane_Cazaubon2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Cazaubon Y et al., Population Pharmacokinetics Modelling a…, Pharmaceutics (2019) | [10.3390/pharmaceutics11110566](https://doi.org/10.3390/pharmaceutics11110566) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Kerkhofs_2015_reference](drugs/drug_mitotane/Mitotane_Kerkhofs2015_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Kerkhofs TM et al., Development of a pharmacokinetic model…, Therapeutic drug monitoring (2015) | [10.1097/FTD.0000000000000102](https://doi.org/10.1097/FTD.0000000000000102) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Arshad_2018_reference](drugs/drug_mitotane/Mitotane_Arshad2018_reference.md) | — | 1-compartment (no model) | 1 | Arshad U et al., Enzyme autoinduction by mitotane suppor…, European journal of endocri… (2018) | [10.1530/EJE-18-0342](https://doi.org/10.1530/EJE-18-0342) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yin_2021_basic_model](drugs/drug_mitotane/Mitotane_Yin2021_basic_model.md) | — | 2-compartment (no model) | 5 | Yin A et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00913-y](https://doi.org/10.1007/s40262-020-00913-y) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.733). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yin_2021_final](drugs/drug_mitotane/Mitotane_Yin2021_final.md) | — | 3-compartment (no model) | 7 (+2 cov.) | Yin A et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00913-y](https://doi.org/10.1007/s40262-020-00913-y) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

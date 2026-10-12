@@ -33,28 +33,15 @@ Tolmetin is a non-steroidal anti-inflammatory drug used to treat osteoarthritis,
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Selley_1975_reference](drugs/drug_tolmetin/Tolmetin_Selley1975_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Selley ML et al., Pharmacokinetic studies of tolmetin in…, Clinical pharmacology and t… (1975) | [10.1002/cpt1975175599](https://doi.org/10.1002/cpt1975175599) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Migdalof_1976_reference](drugs/drug_tolmetin/Tolmetin_Migdalof1976_reference.md) | — | 1-compartment (no model) | 1 | Migdalof BH et al., The time course of tolmetin and its met…, Drug metabolism and disposi… (1976) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sabater_1992_reference](drugs/drug_tolmetin/Tolmetin_Sabater1992_reference.md) | — | 1-compartment (no model) | 2 | Sabater J et al., Pharmacokinetic study of tolmetin in th…, Arzneimittel-Forschung (1992) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Selley_1975_reference](drugs/drug_tolmetin/Tolmetin_Selley1975_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Selley ML et al., Pharmacokinetic studies of tolmetin in…, Clinical pharmacology and t… (1975) | [10.1002/cpt1975175599](https://doi.org/10.1002/cpt1975175599) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Migdalof_1976_reference](drugs/drug_tolmetin/Tolmetin_Migdalof1976_reference.md) | — | 1-compartment (no model) | 1 | Migdalof BH et al., The time course of tolmetin and its met…, Drug metabolism and disposi… (1976) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sabater_1992_reference](drugs/drug_tolmetin/Tolmetin_Sabater1992_reference.md) | — | 1-compartment (no model) | 2 | Sabater J et al., Pharmacokinetic study of tolmetin in th…, Arzneimittel-Forschung (1992) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Flores-Murrieta_1998_antinociceptive_effect](drugs/drug_tolmetin/pd_Flores_Murrieta_1998_antinociceptive_effect.md) | antinociceptive effect ← tolmetin · indirect response — drug inhibits the production of antinociceptive effect | model (no simulator) | Flores-Murrieta FJ et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmacokinetics… (1998) | [10.1023/a:1023273100270](https://doi.org/10.1023/a:1023273100270) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tolmetin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: MPO (inhibitor), PTGS1 (inhibitor), PTGS2 (inhibitor), TDO2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

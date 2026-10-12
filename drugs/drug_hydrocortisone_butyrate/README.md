@@ -28,31 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Tapfumaneyi_2022_skin_blanching](drugs/drug_hydrocortisone_butyrate/pd_Tapfumaneyi_2022_skin_blanching.md) | skin blanching ← hydrocortisone butyrate · direct Emax (saturable) effect | — | Tapfumaneyi P et al., Fitting Pharmacodynamic Data to the Ema…, Molecular pharmaceutics (2022) | [10.1021/acs.molpharmaceut.2c00254](https://doi.org/10.1021/acs.molpharmaceut.2c00254) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=hydrocortisone_butyrate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` unknown, `ABCG2` unknown, `SLCO1A2` unknown | DrugBank actor |
-| absorption | kidney | `ABCB1` unknown | DrugBank actor |
-| absorption | liver | `ABCB1` unknown, `ABCG2` unknown | DrugBank actor |
-| absorption | mammary gland | `ABCG2` unknown | DrugBank actor |
-| absorption | placenta | `ABCB1` unknown | DrugBank actor |
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | small intestine | `ABCB1` unknown, `ABCG2` unknown, `SLCO1A2` unknown | DrugBank actor |
-| absorption | testis | `ABCB1` unknown, `ABCG2` unknown | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C8` inducer, `CYP3A4` inducer/substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A8` unknown | DrugBank actor |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| — | adrenal gland | `CYP11B1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ANXA1 (target), CYP11B2 (substrate), HSD11B2 (inhibitor), HSD3B1 (inhibitor), NR3C1 (target), SERPINA6 (unknown), SHBG (unknown).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Tapfumaneyi_2022_skin_blanching](drugs/drug_hydrocortisone_butyrate/pd_Tapfumaneyi_2022_skin_blanching.md) | skin blanching ← hydrocortisone butyrate · direct Emax (saturable) effect | — | Tapfumaneyi P et al., Fitting Pharmacodynamic Data to the Ema…, Molecular pharmaceutics (2022) | [10.1021/acs.molpharmaceut.2c00254](https://doi.org/10.1021/acs.molpharmaceut.2c00254) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

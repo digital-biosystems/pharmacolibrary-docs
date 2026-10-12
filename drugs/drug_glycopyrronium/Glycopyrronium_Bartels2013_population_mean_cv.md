@@ -5,7 +5,7 @@
 
 # glycopyrronium — `Glycopyrronium_Bartels2013_population_mean_cv`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.739), gpt-oss:120b (not confirmed, agreement 0.826). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.864), gpt-oss:120b (not confirmed, agreement 0.826). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -21,7 +21,7 @@
 
 For glycopyrronium in healthy volunteers, the record's clearance, volume of distribution, absorption rate constant, absorption lag time, central→peripheral rate constant and peripheral→central rate constant had no value extracted from the source, so a library placeholder stood in for each and the model was held back rather than published with invented numbers. The absorption check also failed: the absorption rate constant was defaulted because it was not reported in the source, judged 'invented absorption: not acceptable'. A second reader further disagreed on several absorption half-life entries, reading the fast lung absorption half-life as a different parameter and leaving the intermediate lung absorption half-life (0.45) and the fraction of dose with slow absorption (6.48) unconfirmed against this record. Extracted — glycopyrronium: CL 44.9, V1 11.3, Q 8.23, V2 71.5, Fab 1.11, kabs 0.009, Vss 102, t1/2z 0.45.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 0: this record has none, the second reading 5; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[fast lung absorption half-life].parameter_id`: this record has Q59, the second reading Q95; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013)
   ·  DOI: [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118)
 
-## Model component
-<dbs-pgx drug="glycopyrronium" model-id="Glycopyrronium_Bartels2013_population_mean_cv" status="extracted" stale="true" population="healthy volunteers" measured-compound="glycopyrronium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glycopyrronium" model-id="Glycopyrronium_Bartels2013_population_mean_cv" status="extracted" stale="true" population="healthy volunteers" measured-compound="glycopyrronium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 8 extracted.
@@ -100,19 +99,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.739 (17/23 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.864 (19/22 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.826 (19/23 fields) | 4 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[0]` | not captured | 5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[fast lung absorption half-life].parameter_id` | Q59 | Q95 | mismatch |
 | `gpt-oss-120b` | `parameters[intermediate lung absorption half-life]` | 0.45 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[slow lung absorption half-life]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[systemic clearance].value` | 44.9 | 42.5 | mismatch |
-| `gpt-oss-120b` | `parameters[volume of distribution at steady state].value` | 102 | 82.7 | mismatch |
 | `gpt-oss:120b` | `parameters[0]` | not captured | 5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fast lung absorption half-life].parameter_id` | Q59 | Q95 | mismatch |
 | `gpt-oss:120b` | `parameters[gi tract absorption half-life]` | not captured | not captured | only_one_extracted |
@@ -167,9 +163,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_glycopyrronium/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bartels_2013` / `Bartels_2013::population_mean_cv`)
-- model: `../../../knowledgebase/drugs/drug_glycopyrronium/models/modelica/_needs_review/Glycopyrronium_Bartels2013_population_mean_cv.mo`
-- deviation: `../../../knowledgebase/drugs/drug_glycopyrronium/models/modelica/_needs_review/Glycopyrronium_Bartels2013_population_mean_cv.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glycopyrronium/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bartels_2013` / `Bartels_2013::population_mean_cv`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glycopyrronium/models/modelica/_needs_review/Glycopyrronium_Bartels2013_population_mean_cv.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glycopyrronium/models/modelica/_needs_review/Glycopyrronium_Bartels2013_population_mean_cv.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -187,7 +183,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv/Glycopyrronium_Bartels2013_population_mean_cv.svg" alt="Glycopyrronium_Bartels2013_population_mean_cv diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv/Glycopyrronium_Bartels2013_population_mean_cv.svg" alt="Glycopyrronium_Bartels2013_population_mean_cv diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -35,26 +35,8 @@ Dosulepin is a tricyclic antidepressant used to treat depression. It is an appro
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.176). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Maguire_1981_reference](drugs/drug_dosulepin/Dosulepin_Maguire1981_reference.md) | — | general linear (no model) | 7 | Maguire KP et al., Metabolism and pharmacokinetics of doth…, British journal of clinical… (1981) | [10.1111/j.1365-2125.1981.tb01235.x](https://doi.org/10.1111/j.1365-2125.1981.tb01235.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yu_1986_reference](drugs/drug_dosulepin/Dosulepin_Yu1986_reference.md) | — | general linear (no model) | 2 | Yu DK et al., Pharmacokinetics of dothiepin in humans…, Journal of pharmaceutical s… (1986) | [10.1002/jps.2600750612](https://doi.org/10.1002/jps.2600750612) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dosulepin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2C19` inhibitor/substrate, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| — | brain | `SLC6A4` inhibitor | DrugBank actor |
-| — | platelet | `SLC6A4` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), ADRA2A (target), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target), HRH1 (target), HTR1A (target), HTR2A (target), SLC6A2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.176). Primary extraction retained.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Maguire_1981_reference](drugs/drug_dosulepin/Dosulepin_Maguire1981_reference.md) | — | general linear (no model) | 7 | Maguire KP et al., Metabolism and pharmacokinetics of doth…, British journal of clinical… (1981) | [10.1111/j.1365-2125.1981.tb01235.x](https://doi.org/10.1111/j.1365-2125.1981.tb01235.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yu_1986_reference](drugs/drug_dosulepin/Dosulepin_Yu1986_reference.md) | — | general linear (no model) | 2 | Yu DK et al., Pharmacokinetics of dothiepin in humans…, Journal of pharmaceutical s… (1986) | [10.1002/jps.2600750612](https://doi.org/10.1002/jps.2600750612) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

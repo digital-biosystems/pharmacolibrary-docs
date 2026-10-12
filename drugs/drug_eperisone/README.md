@@ -33,17 +33,8 @@ Eperisone is a centrally acting muscle relaxant that has been used to treat musc
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: partial</span> | [Kang_2021_reference](drugs/drug_eperisone/Eperisone_Kang2021_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kang WH et al., Population Pharmacokinetic Method to Pr…, Pharmaceuticals (Basel, Swi… (2021) | [10.3390/ph14020114](https://doi.org/10.3390/ph14020114) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): k12, k21</sub><br><sub>route_to: `scholar`</sub> | [Baek_2021_reference](drugs/drug_eperisone/Eperisone_Baek2021_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Baek IH et al., Pharmacokinetics of eperisone following…, Biopharmaceutics & drug dis… (2021) | [10.1002/bdd.2264](https://doi.org/10.1002/bdd.2264) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=eperisone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span> | [Kang_2021_reference](drugs/drug_eperisone/Eperisone_Kang2021_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kang WH et al., Population Pharmacokinetic Method to Pr…, Pharmaceuticals (Basel, Swi… (2021) | [10.3390/ph14020114](https://doi.org/10.3390/ph14020114) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): k12, k21</sub><br><sub>route_to: `scholar`</sub> | [Baek_2021_reference](drugs/drug_eperisone/Eperisone_Baek2021_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Baek IH et al., Pharmacokinetics of eperisone following…, Biopharmaceutics & drug dis… (2021) | [10.1002/bdd.2264](https://doi.org/10.1002/bdd.2264) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

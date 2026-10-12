@@ -22,7 +22,7 @@
 
 > Ziprasidone concentration (nmol/L) stimulates [35S]GTPgammaS binding in rat hippocampal membranes, described by an Emax model with EC50 480 nmol/L and %Emax 30–50% increase over basal binding; the paper excerpts do not state a mechanism beyond this direct stimulatory effect.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Odagaki_2007`
 - **model family:** `emax`
@@ -64,7 +64,7 @@ Odagaki Y et al., 5-HT1A receptor agonist properties of a…, Clinical and exper
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -28,24 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Yun_2015_hERG](drugs/drug_sibutramine/pd_Yun_2015_hERG.md) | hERG channel current ← sibutramine · direct sigmoid Emax (Hill) effect | — | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sibutramine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| — | brain | `SLC6A4` inhibitor | DrugBank actor |
-| — | platelet | `SLC6A4` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: SLC6A2 (inhibitor), SLC6A3 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Yun_2015_hERG](drugs/drug_sibutramine/pd_Yun_2015_hERG.md) | hERG channel current ← sibutramine · direct sigmoid Emax (Hill) effect | — | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

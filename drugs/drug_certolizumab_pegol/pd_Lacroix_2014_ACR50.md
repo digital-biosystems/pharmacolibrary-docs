@@ -20,7 +20,7 @@
 
 > Certolizumab pegol exposure (simulated PK concentration) drives the transition probabilities between categorical ACR response states (ACR-NR, ACR20-50, ACR50-70, ACR70) using a continuous Markov model with rate parameters, but the paper does not specify the exact mechanism (e.g., production vs. elimination) or key potency values (e.g., IC50, EC50) for the drug-concentration link. Simulations indicate that ACR50 response rates range from 22.4% to 35.0% at week 12 for doses of 50 mg to 400 mg Q2W, with efficacy plateauing such that 400 mg Q2W is not markedly better than 200 mg Q2W.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Lacroix_2014`
 - **model family:** `categorical`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

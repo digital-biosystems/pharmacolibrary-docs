@@ -20,7 +20,7 @@
 
 > In the CGI-S model, total active moiety (risperidone + 9-OH-risperidone) concentrations (ng/ml) enter a logistic regression for the probability of the consolidated CGI-S score (4 categories) being ≥ m, as an additive drug effect fd = CSLP × AM on the logit (with a time effect TSLP × TIME); the paper does not describe a mechanistic production/elimination or Emax structure. Estimated parameters: α4 = 8.5, α5 = -6.5, α6 = -6.4, TSLP = -0.6, CSLP = -0.04 (no IC50/EC50/Emax or rate constants given).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Ivaturi_2017`
 - **model family:** `categorical`
@@ -65,7 +65,7 @@ Ivaturi V et al., Exposure-response analysis after subcut…, British journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

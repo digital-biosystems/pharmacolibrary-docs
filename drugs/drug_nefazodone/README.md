@@ -35,29 +35,6 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.50).">human + animal</span> | [Kostrubsky_2006_taurocholate_efflux](drugs/drug_nefazodone/pd_Kostrubsky_2006_taurocholate_efflux.md) | Taurocholate efflux in human sandwich hepatocytes ← nefazodone · direct Emax (saturable) effect | — | Kostrubsky SE et al., Inhibition of hepatobiliary transport a…, Toxicological sciences : an… (2006) | [10.1093/toxsci/kfj095](https://doi.org/10.1093/toxsci/kfj095) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Störmer_2001_Rh123_B_to_A_transport](drugs/drug_nefazodone/pd_St_rmer_2001_Rh123_B_to_A_transport.md) | Rhodamine123 basolateral to apical transport across Caco-2 cell monolayers (inhibition by nefazodone) ← nefazodone · inhibition effect | — | Störmer E et al., P-glycoprotein interactions of nefazodo…, Journal of clinical pharmac… (2001) | [10.1177/00912700122010609](https://doi.org/10.1177/00912700122010609) |
 
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nefazodone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inducer/inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inducer/inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inducer/inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inducer/inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inducer/inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inducer/inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `SLCO1B3` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | `ABCB11` substrate | DrugBank actor |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| — | brain | `SLC6A4` inhibitor | DrugBank actor |
-| — | platelet | `SLC6A4` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (other/unknown), ADRA2A (target), CYP2B (inhibitor), HTR1A (target), HTR2A (target), HTR2C (target), KCNH2 (target), SLC6A2 (inhibitor), SLC6A3 (inhibitor).</sub>
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>

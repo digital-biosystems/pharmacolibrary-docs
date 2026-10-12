@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Li_1991_cell_viability](drugs/drug_hypochlorite/pd_Li_1991_cell_viability.md) | cell viability ← sodium hypochlorite · inhibition effect | — | Li LN et al., Skin toxicity determined in vitro by th…, Proceedings of the National… (1991) | [10.1073/pnas.88.5.1908](https://doi.org/10.1073/pnas.88.5.1908) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Li_1991_cell_viability](drugs/drug_hypochlorite/pd_Li_1991_cell_viability.md) | cell viability ← sodium hypochlorite · inhibition effect | — | Li LN et al., Skin toxicity determined in vitro by th…, Proceedings of the National… (1991) | [10.1073/pnas.88.5.1908](https://doi.org/10.1073/pnas.88.5.1908) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

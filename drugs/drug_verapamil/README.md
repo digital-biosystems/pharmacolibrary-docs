@@ -32,20 +32,20 @@ Verapamil is a calcium channel blocker used to treat cardiovascular conditions s
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.211), gpt-oss:120b (not confirmed, agreement 0.105). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Koike_1979_reference](drugs/drug_verapamil/Verapamil_Koike1979_reference.md) | — | 1-compartment (no model) | 7 | Koike Y et al., Pharmacokinetics of verapamil in man, Research communications in… (1979) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.211), gpt-oss:120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Koike_1979_reference](drugs/drug_verapamil/Verapamil_Koike1979_reference.md) | — | 1-compartment (no model) | 7 | Koike Y et al., Pharmacokinetics of verapamil in man, Research communications in… (1979) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Bergenholm_2016_PR](drugs/drug_verapamil/pd_Bergenholm_2016_PR.md) | PR interval ← verapamil · direct Emax (saturable) effect | — | Bergenholm L et al., PKPD modelling of PR and QRS intervals…, Journal of pharmacological… (2016) | [10.1016/j.vascn.2016.01.002](https://doi.org/10.1016/j.vascn.2016.01.002) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Bergenholm_2016_PR](drugs/drug_verapamil/pd_Bergenholm_2016_PR.md) | PR interval ← verapamil · direct Emax (saturable) effect | — | Bergenholm L et al., PKPD modelling of PR and QRS intervals…, Journal of pharmacological… (2016) | [10.1016/j.vascn.2016.01.002](https://doi.org/10.1016/j.vascn.2016.01.002) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: partial 1/2</span> | **CYP2D6** | `Q23` · CLb | metabolism | [Saedder_2019](drugs/drug_verapamil/pgx_Saedder_2019_CYP2D6_Q23.md) | Saedder EA et al., Heart insufficiency after combination o…, Clinical case reports (2019) | [10.1002/ccr3.2393](https://doi.org/10.1002/ccr3.2393) |
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **ABCB1** | `Q900` · equation variable | transport | [van_2012_2](drugs/drug_verapamil/pgx_van_2012_2_ABCB1_Q900.md) | van Assema DM et al., Blood-brain barrier P-glycoprotein func…, EJNMMI research (2012) | [10.1186/2191-219X-2-57](https://doi.org/10.1186/2191-219X-2-57) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span> | **CYP2D6** | `Q23` · CLb | metabolism | [Saedder_2019](drugs/drug_verapamil/pgx_Saedder_2019_CYP2D6_Q23.md) | Saedder EA et al., Heart insufficiency after combination o…, Clinical case reports (2019) | [10.1002/ccr3.2393](https://doi.org/10.1002/ccr3.2393) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span> | **ABCB1** | `Q900` · equation variable | transport | [van_2012_2](drugs/drug_verapamil/pgx_van_2012_2_ABCB1_Q900.md) | van Assema DM et al., Blood-brain barrier P-glycoprotein func…, EJNMMI research (2012) | [10.1186/2191-219X-2-57](https://doi.org/10.1186/2191-219X-2-57) |
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -53,35 +53,6 @@ Verapamil is a calcium channel blocker used to treat cardiovascular conditions s
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=verapamil).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` blocker/inhibitor/substrate/transport, `SLCO1A2` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` blocker/inhibitor/substrate/transport, `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` blocker/inhibitor/substrate/transport | DrugBank actor |
-| absorption | placenta | `ABCB1` blocker/inhibitor/substrate/transport | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` blocker/inhibitor/substrate/transport, `SLC22A4` inhibitor, `SLC22A5` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` blocker/inhibitor/substrate/transport | DrugBank actor |
-| distribution | blood | `ALB` substrate, `ORM1` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCC1` inhibitor | DrugBank actor |
-| distribution | lung | `ABCC1` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/metabolism | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP2B6` activator/substrate, `CYP2C19` substrate, `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor/substrate, `CYP2D6` inhibitor/metabolism, `CYP2E1` substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `SLC22A1` inhibitor, `SLCO1B1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `ABCC4` inhibitor, `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
-| excretion | liver | `ABCC3` inhibitor, `ABCC4` inhibitor, `SLC47A1` inhibitor | DrugBank actor |
-| excretion | small intestine | `ABCC3` inhibitor | DrugBank actor |
-| — | brain | `SLC6A4` unknown | DrugBank actor |
-| — | platelet | `SLC6A4` unknown | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ABCC10 (inhibitor), ADRA1A (target), ADRA1B (target), ADRA1D (target), CACNA1A (inhibitor), CACNA1B (inhibitor), CACNA1C (inhibitor), CACNA1G (inhibitor), CACNA1H (inhibitor), CACNG1 (inhibitor), CYP2C18 (substrate), KCNH2 (inhibitor), KCNJ11 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

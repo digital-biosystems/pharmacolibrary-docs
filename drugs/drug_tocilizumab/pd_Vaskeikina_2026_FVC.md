@@ -19,7 +19,7 @@
 
 > Tocilizumab exerts an additive stimulatory effect on forced vital capacity (FVC) using an Emax model structure, though the paper excerpts do not explicitly describe the biological mechanism of this action. The estimated effect of tocilizumab on FVC improvement is 4.49%.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Vaskeikina_2026`
 - **model family:** `emax`
@@ -60,7 +60,7 @@ Vaskeikina M et al., Systematic Review and Model-Based Meta-…, Pharmaceutics (
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -33,9 +33,9 @@ It is an approved medicine, also approved for veterinary use, though it carries 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> | [de_2017_reference](drugs/drug_etodolac/Etodolac_de2017_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | de Miranda Silva C et al., Development of an Enantioselective and…, The AAPS journal (2017) | [10.1208/s12248-017-0138-9](https://doi.org/10.1208/s12248-017-0138-9) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Baek_2019_reference](drugs/drug_etodolac/Etodolac_Baek2019_reference.md) | — | 1-compartment (no model) | 5 | Baek IH, Pharmacokinetic modeling and simulation…, Xenobiotica; the fate of fo… (2019) | [10.1080/00498254.2018.1524185](https://doi.org/10.1080/00498254.2018.1524185) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.286). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Boni_1999_reference](drugs/drug_etodolac/Etodolac_Boni1999_reference.md) | — | 1-compartment (no model) | 0 | Boni J et al., Pharmacokinetic and pharmacodynamic act…, Journal of clinical pharmac… (1999) | [10.1177/00912709922008254](https://doi.org/10.1177/00912709922008254) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> | [de_2017_reference](drugs/drug_etodolac/Etodolac_de2017_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | de Miranda Silva C et al., Development of an Enantioselective and…, The AAPS journal (2017) | [10.1208/s12248-017-0138-9](https://doi.org/10.1208/s12248-017-0138-9) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Baek_2019_reference](drugs/drug_etodolac/Etodolac_Baek2019_reference.md) | — | 1-compartment (no model) | 5 | Baek IH, Pharmacokinetic modeling and simulation…, Xenobiotica; the fate of fo… (2019) | [10.1080/00498254.2018.1524185](https://doi.org/10.1080/00498254.2018.1524185) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.286). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Boni_1999_reference](drugs/drug_etodolac/Etodolac_Boni1999_reference.md) | — | 1-compartment (no model) | 0 | Boni J et al., Pharmacokinetic and pharmacodynamic act…, Journal of clinical pharmac… (1999) | [10.1177/00912709922008254](https://doi.org/10.1177/00912709922008254) |
 
 ## Pharmacodynamics (PD)
 
@@ -43,24 +43,6 @@ It is an approved medicine, also approved for veterinary use, though it carries 
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Boni_1999_pain_intensity_difference_scores](drugs/drug_etodolac/pd_Boni_1999_pain_intensity_difference_scores.md) | pain intensity difference scores ← etodolac · indirect response — drug inhibits the production of pain intensity difference scores | model (no simulator) | Boni J et al., Pharmacokinetic and pharmacodynamic act…, Journal of clinical pharmac… (1999) | [10.1177/00912709922008254](https://doi.org/10.1177/00912709922008254) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [de_2017_pain_score](drugs/drug_etodolac/pd_de_2017_pain_score.md) | pain score ← S-etodolac · direct Emax (saturable) effect | — | de Miranda Silva C et al., Development of an Enantioselective and…, The AAPS journal (2017) | [10.1208/s12248-017-0138-9](https://doi.org/10.1208/s12248-017-0138-9) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=etodolac).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C9` substrate, `UGT1A3` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | mammary gland | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor), RXRA (other), UGT1A10 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

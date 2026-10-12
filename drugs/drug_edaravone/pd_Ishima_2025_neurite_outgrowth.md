@@ -21,7 +21,7 @@
 
 > Edaravone concentration-dependently potentiates NGF-induced neurite outgrowth in PC12 cells (expressed as % of NGF-alone control) via a sigmoid Emax stimulation model, acting through Nrf2 activation (effects attenuated by Nrf2 siRNA). Reported EC50 is 22.5 nM with Emax of ~4-fold increase over control; no kinetic parameters (kin, kout, ke0) are given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Ishima_2025`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Ishima T et al., A Highly Potent Apomorphine Derivative…, Antioxidants (Basel,
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

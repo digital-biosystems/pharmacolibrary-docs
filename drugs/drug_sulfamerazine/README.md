@@ -32,16 +32,7 @@ Sulfamerazine is a long-acting sulfonamide antibiotic used to treat bacterial in
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Hayashi_1979_reference](drugs/drug_sulfamerazine/Sulfamerazine_Hayashi1979_reference.md) | — | 1-compartment (no model) | 2 | Hayashi M et al., Disposition of sulfonamides in food-pro…, American journal of veterin… (1979) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sulfamerazine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ALB` unknown | DrugBank actor |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Hayashi_1979_reference](drugs/drug_sulfamerazine/Sulfamerazine_Hayashi1979_reference.md) | — | 1-compartment (no model) | 2 | Hayashi M et al., Disposition of sulfonamides in food-pro…, American journal of veterin… (1979) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -33,20 +33,8 @@ Ceftizoxime is a third-generation cephalosporin antibiotic used to treat bacteri
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Karna_1993_reference](drugs/drug_ceftizoxime/Ceftizoxime_Karna1993_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Karna P et al., Population pharmacokinetics of ceftizox…, Developmental pharmacology… (1993) | [10.1159/000457554](https://doi.org/10.1159/000457554) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Murakawa_1980_reference](drugs/drug_ceftizoxime/Ceftizoxime_Murakawa1980_reference.md) | — | 1-compartment (no model) | 1 | Murakawa T et al., Pharmacokinetics of ceftizoxime in anim…, Antimicrobial agents and ch… (1980) | [10.1128/AAC.17.2.157](https://doi.org/10.1128/AAC.17.2.157) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ceftizoxime).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` substrate | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: Peptidoglycan transpeptidase (binder).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Karna_1993_reference](drugs/drug_ceftizoxime/Ceftizoxime_Karna1993_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Karna P et al., Population pharmacokinetics of ceftizox…, Developmental pharmacology… (1993) | [10.1159/000457554](https://doi.org/10.1159/000457554) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Murakawa_1980_reference](drugs/drug_ceftizoxime/Ceftizoxime_Murakawa1980_reference.md) | — | 1-compartment (no model) | 1 | Murakawa T et al., Pharmacokinetics of ceftizoxime in anim…, Antimicrobial agents and ch… (1980) | [10.1128/AAC.17.2.157](https://doi.org/10.1128/AAC.17.2.157) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

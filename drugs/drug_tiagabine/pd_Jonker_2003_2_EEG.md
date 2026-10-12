@@ -18,11 +18,11 @@
 
 **As extracted:** Tiagabine (concentrations from the PK model of Cleton_1999_2) drives EEG response in the 11.5- to 30-Hz frequency band (in microV): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Tiagabine concentration (ng/ml) stimulates the EEG response in the 11.5- to 30-Hz frequency band (microV) via a sigmoidal Emax model. The paper reports an Emax of 327 microV, an EC50 of 392 ng/ml, and a Hill coefficient (nH) of 3.1, but does not specify whether the drug acts on production, elimination, or directly on the response.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Jonker_2003_2`
 - **model family:** `sigmoid_emax`
@@ -100,7 +100,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

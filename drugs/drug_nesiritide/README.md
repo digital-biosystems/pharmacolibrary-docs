@@ -27,18 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Yeung_1991_cGMP](drugs/drug_nesiritide/pd_Yeung_1991_cGMP.md) | cyclic GMP ← brain natriuretic peptide · direct Emax (saturable) effect | — | Yeung VT et al., Binding of brain and atrial natriuretic…, Journal of neurochemistry (1991) | [10.1111/j.1471-4159.1991.tb02068.x](https://doi.org/10.1111/j.1471-4159.1991.tb02068.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nesiritide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: NPR1 (binder), NPR2 (unknown), NPR3 (unknown).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Yeung_1991_cGMP](drugs/drug_nesiritide/pd_Yeung_1991_cGMP.md) | cyclic GMP ← brain natriuretic peptide · direct Emax (saturable) effect | — | Yeung VT et al., Binding of brain and atrial natriuretic…, Journal of neurochemistry (1991) | [10.1111/j.1471-4159.1991.tb02068.x](https://doi.org/10.1111/j.1471-4159.1991.tb02068.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

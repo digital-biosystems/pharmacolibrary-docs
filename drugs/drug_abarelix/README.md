@@ -28,18 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Wong_2003_T](drugs/drug_abarelix/pd_Wong_2003_T.md) | testosterone ← abarelix · direct sigmoid Emax (Hill) effect | — | Wong SL et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (2003) | [10.1016/s0009-9236(02)17637-5](https://doi.org/10.1016/s0009-9236(02)17637-5) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=abarelix).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: GNRHR (target).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Wong_2003_T](drugs/drug_abarelix/pd_Wong_2003_T.md) | testosterone ← abarelix · direct sigmoid Emax (Hill) effect | — | Wong SL et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (2003) | [10.1016/s0009-9236(02)17637-5](https://doi.org/10.1016/s0009-9236(02)17637-5) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

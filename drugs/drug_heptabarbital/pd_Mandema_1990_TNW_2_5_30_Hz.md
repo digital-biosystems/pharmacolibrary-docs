@@ -21,7 +21,7 @@
 
 > Heptabarbital plasma concentration (mg/L) inhibits the total number of EEG waves per second (2.5–30 Hz, waves/sec) via a sigmoid Emax model; EC50 78 mg/L, Emax 11.4 waves/sec, Hill coefficient 5.0. The excerpts do not state the mechanism beyond the fitted inhibitory sigmoid Emax relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Mandema_1990`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Mandema JW et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharma
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

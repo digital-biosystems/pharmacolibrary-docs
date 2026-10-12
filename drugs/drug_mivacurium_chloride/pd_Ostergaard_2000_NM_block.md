@@ -19,7 +19,7 @@
 
 > The paper does not provide the full text or specific mechanism details, so the exact mode of action (e.g., inhibition of elimination vs. direct effect) and effect-compartment rate constants (ke0) are not stated. No potency values (IC50, EC50) or Emax parameters are provided in the available record or excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ostergaard_2000`
 - **model family:** `effect_compartment`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

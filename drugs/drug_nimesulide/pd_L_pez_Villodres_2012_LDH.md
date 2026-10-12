@@ -22,7 +22,7 @@
 
 > The record identifies nimesulide as the driver for the inhibition of lactate dehydrogenase (LDH) efflux via an Emax model, with a stated IC50 of 10^-6 M. The paper does not provide the full text or specific mechanism details (e.g., effect on production vs. elimination) or rate constants.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `López-Villodres_2012`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ López-Villodres JA et al., Cytoprotective effect of nonsteroidal a…, European
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

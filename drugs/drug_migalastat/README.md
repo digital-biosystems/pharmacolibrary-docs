@@ -32,14 +32,14 @@ Migalastat is used to treat Fabry disease. It is authorised in the European Unio
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Johnson_2024_subjects_with_esrd](drugs/drug_migalastat/Migalastat_Johnson2024_subjects_with_esrd.md) | — | 1-compartment (no model) | 1 | Johnson FK et al., Pharmacokinetic evaluation of single-do…, PloS one (2024) | [10.1371/journal.pone.0314030](https://doi.org/10.1371/journal.pone.0314030) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Johnson_2024_subjects_with_esrd_2](drugs/drug_migalastat/Migalastat_Johnson2024_subjects_with_esrd_2.md) | — | 1-compartment (no model) | 1 | Johnson FK et al., Pharmacokinetic evaluation of single-do…, PloS one (2024) | [10.1371/journal.pone.0314030](https://doi.org/10.1371/journal.pone.0314030) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Johnson_2024_subjects_with_esrd](drugs/drug_migalastat/Migalastat_Johnson2024_subjects_with_esrd.md) | — | 1-compartment (no model) | 1 | Johnson FK et al., Pharmacokinetic evaluation of single-do…, PloS one (2024) | [10.1371/journal.pone.0314030](https://doi.org/10.1371/journal.pone.0314030) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Johnson_2024_subjects_with_esrd_2](drugs/drug_migalastat/Migalastat_Johnson2024_subjects_with_esrd_2.md) | — | 1-compartment (no model) | 1 | Johnson FK et al., Pharmacokinetic evaluation of single-do…, PloS one (2024) | [10.1371/journal.pone.0314030](https://doi.org/10.1371/journal.pone.0314030) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span> | **GLA** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Germain_2012](drugs/drug_migalastat/pgx_Germain_2012_GLA_Q100.md) | Germain DP et al., Safety and pharmacodynamic effects of a…, Orphanet journal of rare di… (2012) | [10.1186/1750-1172-7-91](https://doi.org/10.1186/1750-1172-7-91) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span> | **GLA** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Germain_2012](drugs/drug_migalastat/pgx_Germain_2012_GLA_Q100.md) | Germain DP et al., Safety and pharmacodynamic effects of a…, Orphanet journal of rare di… (2012) | [10.1186/1750-1172-7-91](https://doi.org/10.1186/1750-1172-7-91) |
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -47,20 +47,6 @@ Migalastat is used to treat Fabry disease. It is authorised in the European Unio
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=migalastat).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `UGT1A1` substrate | DrugBank actor |
-| metabolism | small intestine | `UGT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: GLA (stabilization), GLA (target), SLC5A1 (inhibitor), SLC5A1 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

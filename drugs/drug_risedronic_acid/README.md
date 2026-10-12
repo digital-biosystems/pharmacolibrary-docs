@@ -28,20 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">human + animal</span> | [Salek_2017_bone_uptake](drugs/drug_risedronic_acid/pd_Salek_2017_bone_uptake.md) | bone uptake ← 177 Lu-risedronate · model not identified | — | Salek N et al., Production, quality control, and determ…, Journal of labelled compoun… (2017) | [10.1002/jlcr.3466](https://doi.org/10.1002/jlcr.3466) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Giljević_2008_BR](drugs/drug_risedronic_acid/pd_Giljevi_2008_BR.md) | bone resorption rate biomarker turnover ← risedronate | — | Giljević Z, [Differences among bisfosfonates--speci…, Reumatizam (2008) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=risedronic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: FDPS (inhibitor), Hydroxylapatite (target), PTGS2 (inducer).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">human + animal</span> | [Salek_2017_bone_uptake](drugs/drug_risedronic_acid/pd_Salek_2017_bone_uptake.md) | bone uptake ← 177 Lu-risedronate · model not identified | — | Salek N et al., Production, quality control, and determ…, Journal of labelled compoun… (2017) | [10.1002/jlcr.3466](https://doi.org/10.1002/jlcr.3466) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Giljević_2008_BR](drugs/drug_risedronic_acid/pd_Giljevi_2008_BR.md) | bone resorption rate biomarker turnover ← risedronate | — | Giljević Z, [Differences among bisfosfonates--speci…, Reumatizam (2008) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

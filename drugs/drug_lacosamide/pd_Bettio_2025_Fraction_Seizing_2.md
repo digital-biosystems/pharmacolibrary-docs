@@ -22,7 +22,7 @@
 
 > Lacosamide brain concentration inhibits the fraction of animals showing hindlimb extension (fraction seizing) with an EC50 of 14.8 µM in mice. The paper attributes lacosamide's anticonvulsant effect to enhancing the inactivation of voltage-gated sodium channels and interaction with CRMP2, but does not specify the pharmacodynamic model structure or rate constants for the relationship between concentration and the binary response.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Bettio_2025`
 - **model family:** `categorical`
@@ -63,7 +63,7 @@ Bettio L et al., The Pharmacokinetic and Pharmacodynamic…, International journ
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -28,20 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> | [Mercuri_2026_QTcF](drugs/drug_givinostat/pd_Mercuri_2026_QTcF.md) | placebo-corrected, change-from-baseline QTcF ← givinostat · direct Emax (saturable) effect | — | Mercuri E et al., Thorough QT Study on the Effect of Ther…, Clinical pharmacology in dr… (2026) | [10.1002/cpdd.70047](https://doi.org/10.1002/cpdd.70047) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=givinostat).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP1A2` inducer, `CYP2B6` inducer, `CYP3A4` inducer/inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: HDAC1 (inhibitor), JAK2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> | [Mercuri_2026_QTcF](drugs/drug_givinostat/pd_Mercuri_2026_QTcF.md) | placebo-corrected, change-from-baseline QTcF ← givinostat · direct Emax (saturable) effect | — | Mercuri E et al., Thorough QT Study on the Effect of Ther…, Clinical pharmacology in dr… (2026) | [10.1002/cpdd.70047](https://doi.org/10.1002/cpdd.70047) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

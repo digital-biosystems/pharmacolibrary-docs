@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Collins_1996_TXB2](drugs/drug_picotamide/pd_Collins_1996_TXB2.md) | thromboxane B2 release ← picotamide · direct Emax (saturable) effect | — | Collins CE et al., Picotamide inhibition of excess in vitr…, Alimentary pharmacology & t… (1996) | [10.1111/j.0953-0673.1996.00315.x](https://doi.org/10.1111/j.0953-0673.1996.00315.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> | [Collins_1996_TXB2](drugs/drug_picotamide/pd_Collins_1996_TXB2.md) | thromboxane B2 release ← picotamide · direct Emax (saturable) effect | — | Collins CE et al., Picotamide inhibition of excess in vitr…, Alimentary pharmacology & t… (1996) | [10.1111/j.0953-0673.1996.00315.x](https://doi.org/10.1111/j.0953-0673.1996.00315.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

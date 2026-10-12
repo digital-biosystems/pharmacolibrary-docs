@@ -21,7 +21,7 @@
 
 > Clenbuterol concentrations (ng/mL) inhibit the icELISA signal via a sigmoid Emax (proportional inhibition) model; the paper reports an IC50 of 4.22 ± 0.01 ng/mL, with no mechanism beyond assay inhibition and no other PD parameters stated.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Lu_2020`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Lu Q et al., Construction, expression and functional…, Food and chemical toxic
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

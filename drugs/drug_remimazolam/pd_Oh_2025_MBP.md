@@ -16,11 +16,11 @@
 
 **As extracted:** Remimazolam (the dose) drives fractional mean blood pressure (in %): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Cumulative remimazolam dose (mg) was related to fractional mean blood pressure (% of baseline) in elderly patients by a modified logistic (sigmoid) dose–response model describing a dose-dependent MBP reduction; the paper does not state a mechanistic PD link (no kin/kout, IC50, EC50, Emax, or ke0 values). Key parameters: asymptote intercept 41.23 (weight covariate −20.03), inflection point 18.60 mg cumulative dose (weight covariate 14.55), and steepness 5.92.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Oh_2025`
 - **model family:** `sigmoid_emax`
@@ -103,7 +103,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

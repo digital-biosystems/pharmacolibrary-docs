@@ -28,23 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.20).">human + animal</span> | [Vera-Yunca_2025_bacterial_killing_rate_constant_2](drugs/drug_linezolid/pd_Vera_Yunca_2025_bacterial_killing_rate_constant_2.md) | bacterial killing rate constant ← linezolid · direct sigmoid Emax (Hill) effect | — | Vera-Yunca D et al., Model-based translation of the PKPD-rel…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf140](https://doi.org/10.1093/jac/dkaf140) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.20).">human + animal</span> | [Vera-Yunca_2025_bacterial_killing_rate_constant](drugs/drug_linezolid/pd_Vera_Yunca_2025_bacterial_killing_rate_constant.md) | bacterial killing rate constant ← linezolid · direct sigmoid Emax (Hill) effect | — | Vera-Yunca D et al., Model-based translation of the PKPD-rel…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf140](https://doi.org/10.1093/jac/dkaf140) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=linezolid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | brain | `MAOA` inhibitor, `MAOB` inhibitor | DrugBank actor |
-| metabolism | liver | `MAOA` inhibitor | DrugBank actor |
-| metabolism | platelet | `MAOB` inhibitor | DrugBank actor |
-| metabolism | small intestine | `MAOA` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A6` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.20).">human + animal</span> | [Vera-Yunca_2025_bacterial_killing_rate_constant_2](drugs/drug_linezolid/pd_Vera_Yunca_2025_bacterial_killing_rate_constant_2.md) | bacterial killing rate constant ← linezolid · direct sigmoid Emax (Hill) effect | — | Vera-Yunca D et al., Model-based translation of the PKPD-rel…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf140](https://doi.org/10.1093/jac/dkaf140) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.20).">human + animal</span> | [Vera-Yunca_2025_bacterial_killing_rate_constant](drugs/drug_linezolid/pd_Vera_Yunca_2025_bacterial_killing_rate_constant.md) | bacterial killing rate constant ← linezolid · direct sigmoid Emax (Hill) effect | — | Vera-Yunca D et al., Model-based translation of the PKPD-rel…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf140](https://doi.org/10.1093/jac/dkaf140) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

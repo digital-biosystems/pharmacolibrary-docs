@@ -32,20 +32,8 @@ Bendazac is a non-steroidal anti-inflammatory drug that was used topically for j
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Chen_1997_reference](drugs/drug_bendazac/Bendazac_Chen1997_reference.md) | — | 1-compartment (no model) | 0 | Chen XX et al., Pharmacokinetics of bendazac lysine in…, Zhongguo yao li xue bao = A… (1997) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Valeri_1985_reference](drugs/drug_bendazac/Bendazac_Valeri1985_reference.md) | — | 1-compartment (no model) | 1 | Valeri P et al., Investigations on the ocular pharmacoki…, Experimental and molecular… (1985) | [10.1016/0014-4800(85)90065-6](https://doi.org/10.1016/0014-4800(85)90065-6) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bendazac).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: Free radicals (blocker), PTGS1 (unknown), PTGS2 (unknown).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Chen_1997_reference](drugs/drug_bendazac/Bendazac_Chen1997_reference.md) | — | 1-compartment (no model) | 0 | Chen XX et al., Pharmacokinetics of bendazac lysine in…, Zhongguo yao li xue bao = A… (1997) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Valeri_1985_reference](drugs/drug_bendazac/Bendazac_Valeri1985_reference.md) | — | 1-compartment (no model) | 1 | Valeri P et al., Investigations on the ocular pharmacoki…, Experimental and molecular… (1985) | [10.1016/0014-4800(85)90065-6](https://doi.org/10.1016/0014-4800(85)90065-6) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

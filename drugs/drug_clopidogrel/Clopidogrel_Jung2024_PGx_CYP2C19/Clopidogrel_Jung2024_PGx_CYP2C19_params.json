@@ -1,0 +1,127 @@
+{
+ "base_model_id": "Clopidogrel_Jung2024",
+ "dose_source": "curated model",
+ "model_id": "Clopidogrel_Jung2024_PGx_CYP2C19",
+ "note": "PGx scenarios on curated PK reference Clopidogrel_Jung2024; the reference baseline is unchanged.",
+ "observable_labels": {
+  "C_M1": "clopidogrel H4 (active metabolite)",
+  "C_M2": "clopidogrel carboxylic acid (inactive metabolite)",
+  "C_central": "clopidogrel (parent)"
+ },
+ "observables": [
+  "C_central",
+  "C_M1",
+  "C_M2"
+ ],
+ "parameters": {
+  "CL1": 0.00010285833333333333,
+  "CLm1": 2.0625e-05,
+  "CLm2": 2.0133333333333333e-06,
+  "F": 1.0,
+  "Tlag": 705.6,
+  "Vd1": 1.46392,
+  "Vd1m1": 0.05145,
+  "Vd1m2": 0.01734,
+  "Vd2": 1.46392,
+  "Vd2m2": 0.05189,
+  "Vd3": 2.82398,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0003,
+  "ka": 0.0054555555555555555,
+  "q12": 0.00023491666666666667,
+  "q1_m11": 0.00030857499999999995,
+  "q1_m21": 0.002160033333333333,
+  "q21": 0.00023491666666666667,
+  "q23": 0.00016331388888888887,
+  "q32": 0.00016331388888888887,
+  "qm21_m22": 1.2433333333333332e-06,
+  "qm22_m21": 1.2433333333333332e-06
+ },
+ "pgx": {
+  "baseline_model": "Clopidogrel_Jung2024",
+  "baseline_status": "curated",
+  "effects": {
+   "Intermediate": [
+    {
+     "compound": "clopidogrel H4",
+     "parameter": "fm1",
+     "reference": 0.125,
+     "scale": "logit",
+     "theta": -0.45,
+     "value": 0.08348510021221434
+    },
+    {
+     "compound": "clopidogrel carboxylic acid",
+     "parameter": "fm2",
+     "reference": 0.96,
+     "scale": "logit",
+     "theta": -1.428,
+     "value": 0.8519595914197555
+    }
+   ],
+   "Poor": [
+    {
+     "compound": "clopidogrel H4",
+     "parameter": "fm1",
+     "reference": 0.125,
+     "scale": "logit",
+     "theta": -0.996,
+     "value": 0.0501202562145836
+    },
+    {
+     "compound": "clopidogrel carboxylic acid",
+     "parameter": "fm2",
+     "reference": 0.96,
+     "scale": "logit",
+     "theta": -2.432,
+     "value": 0.6783182412767059
+    }
+   ]
+  },
+  "gene": "CYP2C19",
+  "labels": {
+   "Intermediate": "Intermediate metabolizer",
+   "Normal": "Normal metabolizer (reference)",
+   "Poor": "Poor metabolizer"
+  },
+  "note": "Normal reproduces the curated PK reference with identical parameters and regimen; other phenotypes apply source-derived effect ratios.",
+  "order": [
+   "Poor",
+   "Intermediate",
+   "Normal"
+  ],
+  "phenotypes": {
+   "Intermediate": {
+    "CL1": 0.00038067974236454156,
+    "q1_m11": 0.00018289737020495215,
+    "q1_m21": 0.0020078889671295095
+   },
+   "Normal": {},
+   "Poor": {
+    "CL1": 0.0008271912390904377,
+    "q1_m11": 8.742311366212612e-05,
+    "q1_m21": 0.0016568503726517737
+   }
+  },
+  "record": "Jung_2024",
+  "reference": "Normal",
+  "sources": [
+   "Jung_2024 covariate theta_fm_im_power",
+   "Jung_2024 covariate theta_fm_pm_power"
+  ]
+ },
+ "reference_peak_times": {
+  "C_M1": 2373.6,
+  "C_M2": 2702.4,
+  "C_central": 2544.0
+ },
+ "reference_peaks": {
+  "C_M1": 0.000414426531821197,
+  "C_M2": 0.010301566069885738,
+  "C_central": 1.2303660201983493e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_3M_3C",
+ "template_fmu": "PK_3M_3C.fmu"
+}

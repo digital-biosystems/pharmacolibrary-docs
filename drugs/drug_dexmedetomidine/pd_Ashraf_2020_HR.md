@@ -20,7 +20,7 @@
 
 > Dexmedetomidine acts on heart rate (beats/min) via a semi-mechanistic model in which dexmedetomidine inhibits NE release (ke0,HRNE 6.15 h−1) and, through an effect-compartment sigmoid Emax structure, has two opposing components: an NE-mediated stimulatory effect (EC50,NE 3.12 nM, γNE 2.85) and a CNS-mediated inhibitory effect (ke0,NR 0.438 h−1, γNR 12.4, kOUT,NR 0.428 h−1), with baseline HR E0 62.0 beats/min and EMIN,HR 24.28 beats/min.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Ashraf_2020`
 - **model family:** `sigmoid_emax`
@@ -68,7 +68,7 @@ Ashraf MW et al., Population Modelling of Dexmedetomidine…, Clinical pharmacok
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

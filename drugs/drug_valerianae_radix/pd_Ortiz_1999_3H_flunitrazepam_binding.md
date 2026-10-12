@@ -21,7 +21,7 @@
 
 > Valeriana officinalis extract concentrations (mg/ml) stimulate [3H]flunitrazepam binding in an Emax model; the paper reports an EC50 of 4.13 x 10(-10) mg/ml, but the excerpts provide no further mechanism or additional parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Ortiz_1999`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Ortiz JG et al., Effects of Valeriana officinalis extrac…, Neurochemical resea
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

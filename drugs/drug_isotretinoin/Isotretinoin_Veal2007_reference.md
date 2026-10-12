@@ -4,7 +4,7 @@
 
 # isotretinoin — `Isotretinoin_Veal2007_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -26,8 +26,7 @@ Without a unit the value cannot be converted, so the model cannot use it. A repo
 Veal GJ et al., Pharmacokinetics and metabolism of 13-c…, British journal of cancer (2007)
   ·  DOI: [10.1038/sj.bjc.6603554](https://doi.org/10.1038/sj.bjc.6603554)
 
-## Model component
-<dbs-pgx drug="isotretinoin" model-id="Isotretinoin_Veal2007_reference" status="needs_review" stale="false" population="children with high-risk neuroblastoma" measured-compound="isotretinoin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isotretinoin" model-id="Isotretinoin_Veal2007_reference" status="needs_review" stale="false" population="children with high-risk neuroblastoma" measured-compound="isotretinoin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -93,7 +92,7 @@ Veal GJ et al., Pharmacokinetics and metabolism of 13-c…, British journal of c
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_isotretinoin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Veal_2007` / `Veal_2007::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_isotretinoin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Veal_2007` / `Veal_2007::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -114,7 +113,7 @@ Veal GJ et al., Pharmacokinetics and metabolism of 13-c…, British journal of c
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

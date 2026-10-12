@@ -16,11 +16,11 @@
 
 **As extracted:** Guselkumab (concentrations from this paper's PK model) drives American College of Rheumatology [ACR] 20%, 50%, and 70% improvement criteria: direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The paper describes guselkumab concentration driving ACR20/ACR50/ACR70 response via an ordinal logistic regression with an Emax component, but it does not specify a mechanistic model for the indirect relationship. The record lists parameters Emax (1.26) and EC50 (0.150 µg/ml), although the paper does not provide these specific numeric values in the excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Chen_2022`
 - **model family:** `emax`
@@ -97,7 +97,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

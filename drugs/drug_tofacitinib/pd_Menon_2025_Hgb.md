@@ -20,7 +20,7 @@
 
 > An indirect response model (model family 'indirect_response_iv') described the effect of tofacitinib plasma concentrations (Cavg) on hemoglobin (Hgb), with the record indicating a stimulation direction and effect form unknown. The model included baseline Hgb (R0) of 13.8 g/dL, a turnover rate (kout) of 0.014 day−1, and a half-maximal effect concentration (C') of 1670 ng/mL.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Menon_2025`
 - **model family:** `indirect_response_iv`
@@ -63,7 +63,7 @@ Menon S et al., Exposure-Response Analysis of Tofacitin…, Journal of clinical 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

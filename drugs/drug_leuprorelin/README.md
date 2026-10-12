@@ -27,18 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Snelder_2019_T](drugs/drug_leuprorelin/pd_Snelder_2019_T.md) | testosterone ← leuprorelin · inhibition effect | — | Snelder N et al., Population pharmacokinetic-pharmacodyna…, British journal of clinical… (2019) | [10.1111/bcp.13891](https://doi.org/10.1111/bcp.13891) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=leuprorelin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: GNRH1 (activator), GNRHR (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Snelder_2019_T](drugs/drug_leuprorelin/pd_Snelder_2019_T.md) | testosterone ← leuprorelin · inhibition effect | — | Snelder N et al., Population pharmacokinetic-pharmacodyna…, British journal of clinical… (2019) | [10.1111/bcp.13891](https://doi.org/10.1111/bcp.13891) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -32,24 +32,7 @@ Norgestrel is a progestogen used in hormonal contraceptives, typically combined 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Uniyal_1976_reference](drugs/drug_norgestrel/Norgestrel_Uniyal1976_reference.md) | — | 1-compartment (no model) | 2 | Uniyal JP et al., Disappearance of (14,15-3H)d,1-norgestr…, Acta endocrinologica (1976) | [10.1530/acta.0.0820851](https://doi.org/10.1530/acta.0.0820851) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=norgestrel).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| — | adipose tissue | `CYP19A1` inhibitor | DrugBank actor |
-| — | liver | `SRD5A1` inhibitor | DrugBank actor |
-| — | ovary | `CYP19A1` inhibitor | DrugBank actor |
-| — | prostate gland | `AR` target, `SRD5A1` inhibitor | DrugBank actor |
-| — | skin | `SRD5A1` inhibitor | DrugBank actor |
-| — | testis | `CYP19A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: PGR (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Uniyal_1976_reference](drugs/drug_norgestrel/Norgestrel_Uniyal1976_reference.md) | — | 1-compartment (no model) | 2 | Uniyal JP et al., Disappearance of (14,15-3H)d,1-norgestr…, Acta endocrinologica (1976) | [10.1530/acta.0.0820851](https://doi.org/10.1530/acta.0.0820851) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

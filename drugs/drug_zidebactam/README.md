@@ -12,6 +12,8 @@
 
 **Description.** Zidebactam is under investigation in clinical trial NCT02674347 (MAD Study to Evaluate the Safety, Tolerability and Pharmacokinetics of Intravenous Zidebactam in Healthy Adults).
 
+<p><small>Source: <a href="https://go.drugbank.com/drugs/DB13090">DrugBank DB13090</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

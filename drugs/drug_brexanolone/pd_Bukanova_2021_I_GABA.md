@@ -21,7 +21,7 @@
 
 > Allopregnanolone (ALLO) concentration-dependently potentiates the peak GABA-induced chloride current (I_GABA, co-applied with 2 µM GABA) in rat cerebellar Purkinje cells via a direct positive allosteric modulation of GABAA receptors (no effect-compartment or turnover model), described by a sigmoid Emax fit with Emax 646 ± 37% of control, EC50 0.29 ± 0.06 µM, and Hill coefficient 1.5 ± 0.3.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Bukanova_2021`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Bukanova J et al., Epipregnanolone as a Positive Modulator…, Biomolecules (202
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

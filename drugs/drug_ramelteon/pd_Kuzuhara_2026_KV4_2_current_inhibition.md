@@ -21,7 +21,7 @@
 
 > Ramelteon concentration (μM) inhibits the KV4.2 potassium current, described by a sigmoid Emax (inhibitory) model; the paper reports an IC50 of 177 μM, but no full text is available so the mechanism beyond concentration-dependent inhibition and other parameters (Emax, Hill coefficient) are not stated.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kuzuhara_2026`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Kuzuhara H et al., Luzindole and ramelteon share a melaton…, Journal of pharma
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

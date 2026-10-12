@@ -19,7 +19,7 @@
 
 > The dose of eletriptan acts on the binary response of pain relief via an Emax model with an additive effect form, where the paper explicitly defines Emax as the maximal difference between placebo and active treatment and ED50 as the dose for 50% of maximal effect. The estimated parameters are Emax of 3.23, ED50 of 15.5 mg, and k_em of 0.66 h-1.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mandema_2005`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Mandema JW et al., Therapeutic benefit of eletriptan compa…, Cephalalgia : an 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

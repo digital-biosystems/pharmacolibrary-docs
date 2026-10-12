@@ -22,7 +22,7 @@
 
 > Clozapine non-competitively inhibits the glycine-induced chloride current (I(Gly)); glycine alone yields a half-maximal effect concentration of 25.6 microM with Hill coefficient 1.5, and in the presence of clozapine the half-maximal effect concentration is 28.9 microM with Hill coefficient 1.2. The excerpts do not state an Imax/IC50 for clozapine or further mechanism details.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Liu_2009`
 - **model family:** `sigmoid_emax`
@@ -52,11 +52,11 @@ Liu Y et al., Clozapine inhibits strychnine-sensitive…, Brain research (2009)
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

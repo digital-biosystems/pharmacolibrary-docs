@@ -28,18 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Solntseva_2023_IGly_des](drugs/drug_cortisone/pd_Solntseva_2023_IGly_des.md) | τdes ← Cortisone · direct sigmoid Emax (Hill) effect | — | Solntseva EI et al., Corticosteroids as Selective and Effect…, ACS chemical neuroscience (2023) | [10.1021/acschemneuro.3c00287](https://doi.org/10.1021/acschemneuro.3c00287) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Solntseva_2023_IGly_peak](drugs/drug_cortisone/pd_Solntseva_2023_IGly_peak.md) | Ipeak ← Cortisone · direct sigmoid Emax (Hill) effect | — | Solntseva EI et al., Corticosteroids as Selective and Effect…, ACS chemical neuroscience (2023) | [10.1021/acschemneuro.3c00287](https://doi.org/10.1021/acschemneuro.3c00287) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cortisone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | kidney | `CYP3A5` inducer | DrugBank actor |
-| metabolism | liver | `CYP3A4` inducer, `CYP3A5` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer, `CYP3A5` inducer | DrugBank actor |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Solntseva_2023_IGly_des](drugs/drug_cortisone/pd_Solntseva_2023_IGly_des.md) | τdes ← Cortisone · direct sigmoid Emax (Hill) effect | — | Solntseva EI et al., Corticosteroids as Selective and Effect…, ACS chemical neuroscience (2023) | [10.1021/acschemneuro.3c00287](https://doi.org/10.1021/acschemneuro.3c00287) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Solntseva_2023_IGly_peak](drugs/drug_cortisone/pd_Solntseva_2023_IGly_peak.md) | Ipeak ← Cortisone · direct sigmoid Emax (Hill) effect | — | Solntseva EI et al., Corticosteroids as Selective and Effect…, ACS chemical neuroscience (2023) | [10.1021/acschemneuro.3c00287](https://doi.org/10.1021/acschemneuro.3c00287) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

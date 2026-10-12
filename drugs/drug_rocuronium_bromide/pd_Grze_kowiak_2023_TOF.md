@@ -20,7 +20,7 @@
 
 > Free rocuronium concentration in a biophase compartment (with rate constant ke0) directly inhibits the TOF ratio via a sigmoidal Emax model, where the response is reduced from a baseline (E0) of 100 by a maximum effect (Emax) of 100. The paper does not provide numerical values for the EC50,R, Hill coefficient (GAM), or ke0.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Grześkowiak_2023`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Grześkowiak M et al., Population Pharmacokinetic-Pharmacodyna…, European jour
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

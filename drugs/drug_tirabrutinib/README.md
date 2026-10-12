@@ -32,25 +32,16 @@ Tirabrutinib is an investigational Bruton's tyrosine kinase inhibitor, a type of
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Meng_2022_reference](drugs/drug_tirabrutinib/Tirabrutinib_Meng2022_reference.md) | — | 1-compartment (no model) | 0 | Meng A et al., Semi-Mechanistic PK/PD Modeling and Sim…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2439](https://doi.org/10.1002/cpt.2439) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Meng_2022_reference](drugs/drug_tirabrutinib/Tirabrutinib_Meng2022_reference.md) | — | 1-compartment (no model) | 0 | Meng A et al., Semi-Mechanistic PK/PD Modeling and Sim…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2439](https://doi.org/10.1002/cpt.2439) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Meng_2022_TJC68](drugs/drug_tirabrutinib/pd_Meng_2022_TJC68.md) | TJC68 ← tirabrutinib · direct linear effect | — | Meng A et al., Semi-Mechanistic PK/PD Modeling and Sim…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2439](https://doi.org/10.1002/cpt.2439) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Meng_2022_fBTK](drugs/drug_tirabrutinib/pd_Meng_2022_fBTK.md) | free BTK ← tirabrutinib · indirect response — drug stimulates the loss of free BTK | — | Meng A et al., Semi-Mechanistic PK/PD Modeling and Sim…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2439](https://doi.org/10.1002/cpt.2439) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Meng_2022_hsCRP](drugs/drug_tirabrutinib/pd_Meng_2022_hsCRP.md) | hsCRP ← tirabrutinib · direct linear effect | — | Meng A et al., Semi-Mechanistic PK/PD Modeling and Sim…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2439](https://doi.org/10.1002/cpt.2439) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Meng_2022_tBTK](drugs/drug_tirabrutinib/pd_Meng_2022_tBTK.md) | total BTK ← tirabrutinib · indirect response — drug stimulates the production of total BTK | — | Meng A et al., Semi-Mechanistic PK/PD Modeling and Sim…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2439](https://doi.org/10.1002/cpt.2439) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tirabrutinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: BTK (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Meng_2022_TJC68](drugs/drug_tirabrutinib/pd_Meng_2022_TJC68.md) | TJC68 ← tirabrutinib · direct linear effect | — | Meng A et al., Semi-Mechanistic PK/PD Modeling and Sim…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2439](https://doi.org/10.1002/cpt.2439) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [Meng_2022_fBTK](drugs/drug_tirabrutinib/pd_Meng_2022_fBTK.md) | free BTK ← tirabrutinib · indirect response — drug stimulates the loss of free BTK | — | Meng A et al., Semi-Mechanistic PK/PD Modeling and Sim…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2439](https://doi.org/10.1002/cpt.2439) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Meng_2022_hsCRP](drugs/drug_tirabrutinib/pd_Meng_2022_hsCRP.md) | hsCRP ← tirabrutinib · direct linear effect | — | Meng A et al., Semi-Mechanistic PK/PD Modeling and Sim…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2439](https://doi.org/10.1002/cpt.2439) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Meng_2022_tBTK](drugs/drug_tirabrutinib/pd_Meng_2022_tBTK.md) | total BTK ← tirabrutinib · indirect response — drug stimulates the production of total BTK | — | Meng A et al., Semi-Mechanistic PK/PD Modeling and Sim…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2439](https://doi.org/10.1002/cpt.2439) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

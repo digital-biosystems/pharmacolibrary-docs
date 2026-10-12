@@ -20,7 +20,7 @@
 
 > Levobupivacaine dose (in mg) produces an inhibitory Emax effect on the duration of motor block (time to recovery, in min). The model reports an Emax of 268 min and a D50 of 3.9 mg, with no specific rate constants or mechanism details provided in the available record or excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Lemoine_2016`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Lemoine A et al., Modelling of the optimal bupivacaine do…, European journal o
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

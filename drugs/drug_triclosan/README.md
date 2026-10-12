@@ -33,29 +33,15 @@ Triclosan is an antimicrobial agent used as an antiseptic and disinfectant, for 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Siddiqui_1979_reference](drugs/drug_triclosan/Triclosan_Siddiqui1979_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Siddiqui WH et al., Pharmacokinetics of triclosan in rat af…, Journal of environmental pa… (1979) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Siddiqui_1979_reference](drugs/drug_triclosan/Triclosan_Siddiqui1979_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Siddiqui WH et al., Pharmacokinetics of triclosan in rat af…, Journal of environmental pa… (1979) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Alvarado-López_2026_EC50](drugs/drug_triclosan/pd_Alvarado_L_pez_2026_EC50.md) | Malformations ← triclosan · inhibition effect | — | Alvarado-López AN et al., Triclosan toxicity during Danio rerio o…, Ecotoxicology (London, Engl… (2026) | [10.1007/s10646-026-03072-1](https://doi.org/10.1007/s10646-026-03072-1) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Alvarado-López_2026_LC50](drugs/drug_triclosan/pd_Alvarado_L_pez_2026_LC50.md) | Lethality ← triclosan · inhibition effect | — | Alvarado-López AN et al., Triclosan toxicity during Danio rerio o…, Ecotoxicology (London, Engl… (2026) | [10.1007/s10646-026-03072-1](https://doi.org/10.1007/s10646-026-03072-1) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Kasi_2025_MTT](drugs/drug_triclosan/pd_Kasi_2025_MTT.md) | cell viability ← Triclosan · inhibition effect | — | Kasi SR et al., In vitro cytotoxicity (irritant potency…, PloS one (2025) | [10.1371/journal.pone.0318565](https://doi.org/10.1371/journal.pone.0318565) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=triclosan).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| — | prostate gland | `AR` unknown | DrugBank actor |
-
-<sub>Actors without a tissue in the table: NOS3 (stimulator), NR1I2 (unknown), NR1I3 (inverse agonist), PPARG (unknown), TPO (weak inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Alvarado-López_2026_EC50](drugs/drug_triclosan/pd_Alvarado_L_pez_2026_EC50.md) | Malformations ← triclosan · inhibition effect | — | Alvarado-López AN et al., Triclosan toxicity during Danio rerio o…, Ecotoxicology (London, Engl… (2026) | [10.1007/s10646-026-03072-1](https://doi.org/10.1007/s10646-026-03072-1) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Alvarado-López_2026_LC50](drugs/drug_triclosan/pd_Alvarado_L_pez_2026_LC50.md) | Lethality ← triclosan · inhibition effect | — | Alvarado-López AN et al., Triclosan toxicity during Danio rerio o…, Ecotoxicology (London, Engl… (2026) | [10.1007/s10646-026-03072-1](https://doi.org/10.1007/s10646-026-03072-1) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Kasi_2025_MTT](drugs/drug_triclosan/pd_Kasi_2025_MTT.md) | cell viability ← Triclosan · inhibition effect | — | Kasi SR et al., In vitro cytotoxicity (irritant potency…, PloS one (2025) | [10.1371/journal.pone.0318565](https://doi.org/10.1371/journal.pone.0318565) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

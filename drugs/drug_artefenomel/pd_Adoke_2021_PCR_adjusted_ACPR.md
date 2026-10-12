@@ -20,7 +20,7 @@
 
 > The paper describes a logistic regression model where artefenomel Cday7 concentrations (in ng/mL) are associated with a binary PCR-adjusted ACPR at Day 28 response, with an odds ratio of 1.2 per 1 ng/mL increase in artefenomel concentration. The paper does not explicitly describe the pharmacodynamic mechanism (e.g., effect compartment or kinetic parameters).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Adoke_2021`
 - **model family:** `categorical`
@@ -61,7 +61,7 @@ Adoke Y et al., A randomized, double-blind, phase 2b st…, Malaria journal (202
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

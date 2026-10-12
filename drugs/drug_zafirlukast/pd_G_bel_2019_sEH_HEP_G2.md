@@ -21,7 +21,7 @@
 
 > Zafirlukast acts on soluble epoxide hydrolase (sEH) activity in HEP-G2 cell preparations, inhibiting the conversion of 14,15-EET to 14,15-DHET through a sigmoidal concentration-response model with variable slope. The paper reports an IC50 of 1.97 ± 0.08 μM for zafirlukast, and the mechanism is described as direct enzyme inhibition via incubation with the substrate, without specifying a distinct kinetic parameter such as Ki or Imax.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Göbel_2019`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Göbel T et al., Zafirlukast Is a Dual Modulator of Huma…, Frontiers in pharma
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -28,18 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.333), einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span> | [Xiao_2021_incidence_of_hypotension](drugs/drug_metaraminol/pd_Xiao_2021_incidence_of_hypotension.md) | incidence of hypotension ← metaraminol · categorical (graded) response model | — | Xiao F et al., A Randomized Double-Blinded Dose-depend…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.608198](https://doi.org/10.3389/fphar.2021.608198) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=metaraminol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), DRD2 (target).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.333), einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span> | [Xiao_2021_incidence_of_hypotension](drugs/drug_metaraminol/pd_Xiao_2021_incidence_of_hypotension.md) | incidence of hypotension ← metaraminol · categorical (graded) response model | — | Xiao F et al., A Randomized Double-Blinded Dose-depend…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.608198](https://doi.org/10.3389/fphar.2021.608198) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

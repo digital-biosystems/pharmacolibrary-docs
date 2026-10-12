@@ -4,7 +4,7 @@
 
 # vonoprazan — `Vonoprazan_Scarpignato2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.821). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — vonoprazan: Frel 0.389, tlag 0.225 h, kabs 2.51 1/h, E 15.6, CL 119 L/h, V2 1.04e+03 L, Q 50.4 L/h, V3 324 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of creatinine_effect_exp: this record has 27.6, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vonoprazan, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -115,17 +115,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.821 (23/28 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.714 (20/28 fields) | 8 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[creatinine_effect_exp]` | 27.6 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[frel].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[patient effect, %]` | 15.6 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_cl_creatinine]` | not captured | 27.6 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_frel_food]` | not captured | 10.3 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q44_food]` | 10.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | vonoprazan | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | vonoprazan | unknown | mismatch |
 
 </details>
 
@@ -161,7 +164,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_vonoprazan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Scarpignato_2022` / `Scarpignato_2022::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_vonoprazan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Scarpignato_2022` / `Scarpignato_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -182,7 +185,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > The paper does not state the mechanism; R-O-desmethylvenlafaxine (desvenlafaxine metabolite) inhibits a toxicity dose-response in S. scenedesmus, with EC50 3.36 mg·L−1 (11.87 mg·L−1 with β-CD).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Wang_2020`
 - **model family:** `unknown`
@@ -50,11 +50,11 @@ Wang W et al., β-cyclodextrin improve the tolerant of…, Journal of hazardous 
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

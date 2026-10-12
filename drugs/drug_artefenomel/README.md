@@ -13,6 +13,8 @@
 
 **Description.** Artefenomel has been investigated for the treatment of Malaria.
 
+<p><small>Source: <a href="https://go.drugbank.com/drugs/DB11809">DrugBank DB11809</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
+
 ## Molecular properties
 
 > Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).

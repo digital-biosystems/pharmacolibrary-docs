@@ -27,15 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Cao_2025_ferritin](drugs/drug_saccharated_iron_oxide/pd_Cao_2025_ferritin.md) | serum ferritin ← iron · indirect response — drug stimulates the production of serum ferritin | — | Cao K et al., Computational Prediction of Tissue Iron…, International journal of na… (2025) | [10.2147/ijn.s534063](https://doi.org/10.2147/ijn.s534063) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=saccharated_iron_oxide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Cao_2025_ferritin](drugs/drug_saccharated_iron_oxide/pd_Cao_2025_ferritin.md) | serum ferritin ← iron · indirect response — drug stimulates the production of serum ferritin | — | Cao K et al., Computational Prediction of Tissue Iron…, International journal of na… (2025) | [10.2147/ijn.s534063](https://doi.org/10.2147/ijn.s534063) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

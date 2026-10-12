@@ -28,21 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Houzé_2010_ChE_activity_2](drugs/drug_pralidoxime/pd_Houz_2010_ChE_activity_2.md) | blood cholinesterase activity (in vivo) ← pralidoxime · indirect response — drug stimulates the production of blood cholinesterase activity (in vivo) | — | Houzé P et al., Pharmacokinetics and toxicodynamics of…, Toxicological sciences : an… (2010) | [10.1093/toxsci/kfq152](https://doi.org/10.1093/toxsci/kfq152) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Houzé_2010_ChE_activity](drugs/drug_pralidoxime/pd_Houz_2010_ChE_activity.md) | whole-blood cholinesterase activity (diethylparaoxon-inactivated, in vitro reactivation) ← pralidoxime · indirect response — drug stimulates the production of whole-blood cholinesterase activity (diethylparaoxon-inactivated, in vitro reactivation) | — | Houzé P et al., Pharmacokinetics and toxicodynamics of…, Toxicological sciences : an… (2010) | [10.1093/toxsci/kfq152](https://doi.org/10.1093/toxsci/kfq152) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pralidoxime).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | blood | `BCHE` activator | DrugBank actor |
-| metabolism | liver | `BCHE` activator | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| — | blood | `ACHE` activator | DrugBank actor |
-| — | neuromuscular junction | `ACHE` activator | DrugBank actor |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Houzé_2010_ChE_activity_2](drugs/drug_pralidoxime/pd_Houz_2010_ChE_activity_2.md) | blood cholinesterase activity (in vivo) ← pralidoxime · indirect response — drug stimulates the production of blood cholinesterase activity (in vivo) | — | Houzé P et al., Pharmacokinetics and toxicodynamics of…, Toxicological sciences : an… (2010) | [10.1093/toxsci/kfq152](https://doi.org/10.1093/toxsci/kfq152) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Houzé_2010_ChE_activity](drugs/drug_pralidoxime/pd_Houz_2010_ChE_activity.md) | whole-blood cholinesterase activity (diethylparaoxon-inactivated, in vitro reactivation) ← pralidoxime · indirect response — drug stimulates the production of whole-blood cholinesterase activity (diethylparaoxon-inactivated, in vitro reactivation) | — | Houzé P et al., Pharmacokinetics and toxicodynamics of…, Toxicological sciences : an… (2010) | [10.1093/toxsci/kfq152](https://doi.org/10.1093/toxsci/kfq152) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

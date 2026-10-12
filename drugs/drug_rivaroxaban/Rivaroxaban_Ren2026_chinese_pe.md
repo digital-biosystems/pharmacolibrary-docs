@@ -5,7 +5,7 @@
 
 # rivaroxaban — `Rivaroxaban_Ren2026_chinese_pe`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,13 +13,13 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rivaroxaban, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rivaroxaban, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -83,12 +83,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[baselines]` | not captured | 11.3 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[central v/f]` | 53.0 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[central v/f]` | not captured | 53.0 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl/f]` | 6.13 | not captured | only_one_extracted |
@@ -140,10 +141,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_rivaroxaban/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ren_2026` / `Ren_2026::chinese_pe`)
-- model: `../../../knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_chinese_pe.mo`
-- deviation: `../../../knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_chinese_pe.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_chinese_pe.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rivaroxaban/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ren_2026` / `Ren_2026::chinese_pe`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_chinese_pe.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_chinese_pe.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Ren2026_chinese_pe.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -152,15 +153,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_pe/Rivaroxaban_Ren2026_chinese_pe_modelica.zip" download>Rivaroxaban_Ren2026_chinese_pe_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_pe/Rivaroxaban_Ren2026_chinese_pe_fmi.zip" download>Rivaroxaban_Ren2026_chinese_pe_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_pe/Rivaroxaban_Ren2026_chinese_pe_matlab.zip" download>Rivaroxaban_Ren2026_chinese_pe_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_pe/Rivaroxaban_Ren2026_chinese_pe_matlab_simbio.zip" download>Rivaroxaban_Ren2026_chinese_pe_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_pe/Rivaroxaban_Ren2026_chinese_pe_sbml.zip" download>Rivaroxaban_Ren2026_chinese_pe_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_pe/Rivaroxaban_Ren2026_chinese_pe_cellml.zip" download>Rivaroxaban_Ren2026_chinese_pe_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_pe/Rivaroxaban_Ren2026_chinese_pe.svg" alt="Rivaroxaban_Ren2026_chinese_pe diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_pe/Rivaroxaban_Ren2026_chinese_pe.svg" alt="Rivaroxaban_Ren2026_chinese_pe diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

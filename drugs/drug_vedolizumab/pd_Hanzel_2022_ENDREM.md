@@ -19,7 +19,7 @@
 
 > A first-order discrete-time Markov model links vedolizumab pharmacokinetic exposure metrics to the probability of binary endoscopic remission (Simple Endoscopic Score for CD &lt; 4). The model includes concentration-dependent effects with EC50 values of 20.0 mg/L, 1.78 mg/L, and 0.47 mg/L, alongside time-dependent effects characterized by ET50 of 515 days.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Hanzel_2022`
 - **model family:** `categorical`
@@ -67,7 +67,7 @@ Hanzel J et al., Pharmacokinetic-Pharmacodynamic Model o…, Inflammatory bowel 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

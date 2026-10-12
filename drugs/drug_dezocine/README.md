@@ -32,25 +32,14 @@ Dezocine is an opioid painkiller used to treat pain. It is an approved opioid an
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Sisenwine_1982_reference](drugs/drug_dezocine/Dezocine_Sisenwine1982_reference.md) | — | 1-compartment (no model) | 2 | Sisenwine SF et al., Pharmacokinetics of parenteral dezocine…, Drug metabolism and disposi… (1982) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wilson_1995_reference](drugs/drug_dezocine/Dezocine_Wilson1995_reference.md) | — | 1-compartment (no model) | 0 | Wilson JM et al., Single- and multiple-dose pharmacokinet…, Journal of clinical pharmac… (1995) | [10.1002/j.1552-4604.1995.tb04080.x](https://doi.org/10.1002/j.1552-4604.1995.tb04080.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Sisenwine_1982_reference](drugs/drug_dezocine/Dezocine_Sisenwine1982_reference.md) | — | 1-compartment (no model) | 2 | Sisenwine SF et al., Pharmacokinetics of parenteral dezocine…, Drug metabolism and disposi… (1982) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.5). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wilson_1995_reference](drugs/drug_dezocine/Dezocine_Wilson1995_reference.md) | — | 1-compartment (no model) | 0 | Wilson JM et al., Single- and multiple-dose pharmacokinet…, Journal of clinical pharmac… (1995) | [10.1002/j.1552-4604.1995.tb04080.x](https://doi.org/10.1002/j.1552-4604.1995.tb04080.x) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Gharagozlou_2002_cAMP](drugs/drug_dezocine/pd_Gharagozlou_2002_cAMP.md) | cAMP production ← dezocine · inhibition effect | — | Gharagozlou P et al., Activation profiles of opioid ligands i…, BMC neuroscience (2002) | [10.1186/1471-2202-3-19](https://doi.org/10.1186/1471-2202-3-19) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dezocine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: OPRK1 (target), OPRM1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

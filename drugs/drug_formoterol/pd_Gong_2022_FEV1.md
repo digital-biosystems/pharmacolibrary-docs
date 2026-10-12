@@ -20,7 +20,7 @@
 
 > Formoterol/aclidinium and formoterol/glycopyrronium FDCs act on change from baseline in trough FEV1 (L) via an Emax model with a first-order loss-of-efficacy rate (τ): Emax 0.119 L (formoterol/aclidinium) and 0.150 L (formoterol/glycopyrronium), with τ 0.0115 week⁻¹ and 0.0108 week⁻¹, respectively; no concentration-driven PK link, IC50/EC50, or mechanistic production/elimination description is given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Gong_2022`
 - **model family:** `emax`
@@ -51,11 +51,11 @@ Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances 
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

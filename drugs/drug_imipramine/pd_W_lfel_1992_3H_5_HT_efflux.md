@@ -21,7 +21,7 @@
 
 > Imipramine concentrations drive a stimulatory Emax model of drug-induced 3H-5-HT efflux from platelets (expressed as % of the 3H-5-HT content of cells), with a reported Emax of 6.6%; the excerpts provide no mechanism, potency (EC50/IC50), or rate parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Wölfel_1992`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Wölfel R et al., Evidence for various tryptamines and re…, Naunyn-Schmiedeber
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -27,18 +27,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.00).">in vitro</span> | [Cooper_2003_CD3_induced_T_cell_proliferation](drugs/drug_alefacept/pd_Cooper_2003_CD3_induced_T_cell_proliferation.md) | CD3-induced T cell proliferation ← alefacept · inhibition effect | — | Cooper JC et al., Alefacept selectively promotes NK cell-…, European journal of immunol… (2003) | [10.1002/eji.200323586](https://doi.org/10.1002/eji.200323586) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Jois_2006_n_a](drugs/drug_alefacept/pd_Jois_2006_n_a.md) | n/a ← alefacept · inhibition effect | — | Jois SD et al., Targeting T-cell adhesion molecules for…, Current pharmaceutical desi… (2006) | [10.2174/138161206777947696](https://doi.org/10.2174/138161206777947696) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=alefacept).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CD2 (antibody), CD2 (inhibitor), CD2 (regulator), CD58 (modulator), FCGR3A (unknown), FCGR3B (unknown).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.00).">in vitro</span> | [Cooper_2003_CD3_induced_T_cell_proliferation](drugs/drug_alefacept/pd_Cooper_2003_CD3_induced_T_cell_proliferation.md) | CD3-induced T cell proliferation ← alefacept · inhibition effect | — | Cooper JC et al., Alefacept selectively promotes NK cell-…, European journal of immunol… (2003) | [10.1002/eji.200323586](https://doi.org/10.1002/eji.200323586) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Jois_2006_n_a](drugs/drug_alefacept/pd_Jois_2006_n_a.md) | n/a ← alefacept · inhibition effect | — | Jois SD et al., Targeting T-cell adhesion molecules for…, Current pharmaceutical desi… (2006) | [10.2174/138161206777947696](https://doi.org/10.2174/138161206777947696) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

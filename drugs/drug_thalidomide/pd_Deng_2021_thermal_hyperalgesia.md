@@ -22,7 +22,7 @@
 
 > The model describes the dose-dependent inhibition of thermal hyperalgesia by thalidomide using an Emax framework. The estimated ED50 is 23.5 mg/kg and the maximum inhibitory effect (Emax) is 84% MPE, although the paper excerpt does not provide details on the specific mechanism (e.g., production vs. elimination) or rate constants.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Deng_2021`
 - **model family:** `emax`
@@ -64,7 +64,7 @@ Deng MY et al., Thalidomide alleviates neuropathic pain…, Biochemical pharmaco
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

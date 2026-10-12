@@ -5,7 +5,7 @@
 
 # glibenclamide — `Glibenclamide_Rambiritch2016v2_final`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** Model withheld: a core parameter is unspecified.
 
 ### Reviewer guidance
 
@@ -27,8 +27,7 @@ The record provides peripheral volumes and clearances but omits the central volu
 Rambiritch V et al., Population pharmacokinetic modeling of…, Clinical pharmacology : adv… (2016)
   ·  DOI: [10.2147/CPAA.S102676](https://doi.org/10.2147/CPAA.S102676)
 
-## Model component
-<dbs-pgx drug="glibenclamide" model-id="Glibenclamide_Rambiritch2016v2_final" status="model_quarantined" stale="false" population="poorly controlled South African type 2 diabetic subjects" measured-compound="glibenclamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glibenclamide" model-id="Glibenclamide_Rambiritch2016v2_final" status="model_quarantined" stale="false" population="poorly controlled South African type 2 diabetic subjects" measured-compound="glibenclamide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.
@@ -113,9 +112,9 @@ Rambiritch V et al., Population pharmacokinetic modeling of…, Clinical pharmac
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_glibenclamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rambiritch_2016_2` / `Rambiritch_2016_2::final`)
-- model: `../../../knowledgebase/drugs/drug_glibenclamide/models/modelica/_needs_review/Glibenclamide_Rambiritch2016v2_final.mo`
-- deviation: `../../../knowledgebase/drugs/drug_glibenclamide/models/modelica/_needs_review/Glibenclamide_Rambiritch2016v2_final.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glibenclamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rambiritch_2016_2` / `Rambiritch_2016_2::final`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glibenclamide/models/modelica/_needs_review/Glibenclamide_Rambiritch2016v2_final.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glibenclamide/models/modelica/_needs_review/Glibenclamide_Rambiritch2016v2_final.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -136,7 +135,7 @@ Rambiritch V et al., Population pharmacokinetic modeling of…, Clinical pharmac
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > Ziprasidone (microM) stimulates [(35)S]GTPgammaS binding via 5-HT1A receptors in rat hippocampal membranes, described by an Emax model with Emax 21% relative to 5-HT = 100%; the paper excerpts give no further mechanism, potency (EC50) or rate values.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Newman-Tancredi_2003`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Newman-Tancredi A et al., Comparison of hippocampal G protein act…, Naunyn-Sch
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

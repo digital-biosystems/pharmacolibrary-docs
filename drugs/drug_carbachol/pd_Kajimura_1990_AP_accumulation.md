@@ -21,7 +21,7 @@
 
 > Carbachol concentration (microM) drives [14C]aminopyrine accumulation (acid secretion) in gastric glands; the paper does not state the mechanism or an effect model. Reported dissociation constants are 0.28 microM at Site 1 and 7.1 microM at Site 2.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kajimura_1990`
 - **model family:** `unknown`
@@ -49,11 +49,11 @@ Kajimura M et al., Carbachol-induced potentiation and inhi…, European journal 
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

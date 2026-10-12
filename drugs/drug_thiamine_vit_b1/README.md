@@ -30,22 +30,7 @@ Thiamine (vitamin B1) is used to treat or prevent thiamine deficiency states suc
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Wang_2024_CMT](drugs/drug_thiamine_vit_b1/pd_Wang_2024_CMT.md) | Central macular thickness ← thiamine_vit_b1 · inhibition effect | — | Wang Y et al., Evaluation of the First-Dose Anti-VEGF…, Ophthalmic research (2024) | [10.1159/000534820](https://doi.org/10.1159/000534820) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=thiamine_vit_b1).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | kidney | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | small intestine | `SLC22A5` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | liver | `SLC22A1` substrate | DrugBank actor |
-| excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CYP4B1 (inducer), ENTPD5 (substrate), SLC19A2 (substrate), SLC19A3 (substrate), THTPA (substrate), TPK1 (substrate).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Wang_2024_CMT](drugs/drug_thiamine_vit_b1/pd_Wang_2024_CMT.md) | Central macular thickness ← thiamine_vit_b1 · inhibition effect | — | Wang Y et al., Evaluation of the First-Dose Anti-VEGF…, Ophthalmic research (2024) | [10.1159/000534820](https://doi.org/10.1159/000534820) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

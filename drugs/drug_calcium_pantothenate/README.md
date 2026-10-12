@@ -32,16 +32,8 @@ Calcium pantothenate, a form of pantothenic acid, is used as a vitamin preparati
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [de_2022_reference](drugs/drug_calcium_pantothenate/CalciumPantothenate_de2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | de Vries LE et al., Preclinical characterization and target…, Nature communications (2022) | [10.1038/s41467-022-29688-5](https://doi.org/10.1038/s41467-022-29688-5) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wittwer_1985_reference](drugs/drug_calcium_pantothenate/CalciumPantothenate_Wittwer1985_reference.md) | — | 1-compartment (no model) | 0 | Wittwer CT et al., Metabolism of pantethine in cystinosis, The Journal of clinical inv… (1985) | [10.1172/JCI112152](https://doi.org/10.1172/JCI112152) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=calcium_pantothenate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [de_2022_reference](drugs/drug_calcium_pantothenate/CalciumPantothenate_de2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | de Vries LE et al., Preclinical characterization and target…, Nature communications (2022) | [10.1038/s41467-022-29688-5](https://doi.org/10.1038/s41467-022-29688-5) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wittwer_1985_reference](drugs/drug_calcium_pantothenate/CalciumPantothenate_Wittwer1985_reference.md) | — | 1-compartment (no model) | 0 | Wittwer CT et al., Metabolism of pantethine in cystinosis, The Journal of clinical inv… (1985) | [10.1172/JCI112152](https://doi.org/10.1172/JCI112152) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

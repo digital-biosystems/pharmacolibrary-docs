@@ -19,7 +19,7 @@
 
 > The model describes the duration-dependent stimulation of ACR20 response rate by peficitinib exposure using a continuous-time Markov model with a sigmoidal Emax function. The key potency and rate parameters are an EX50 of 693 ng.h/mL (cited from Toyoshima_2021), a maximum effect (Emax) of 2.56, a Hill coefficient of 2.05, and a Keq of 0.120.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Toyoshima_2021_2`
 - **model family:** `categorical`
@@ -66,7 +66,7 @@ Toyoshima J et al., Exposure-response modeling of peficitin…, Pharmacology res
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

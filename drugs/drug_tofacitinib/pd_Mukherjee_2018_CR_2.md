@@ -16,11 +16,11 @@
 
 **As extracted:** Tofacitinib (the dose) drives Clinical response: direct linear effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The paper states that tofacitinib dose and steady-state exposure metrics are used in a linear logistic regression model to directly predict the log-odds of the binary clinical response, without specifying an underlying physiological mechanism. The record provides parameter estimates including a slope of 0.11, a placebo effect of 0.951, a coefficient of –0.103 for baseline CRP, and a coefficient of –1.85 for baseline total Mayo score.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mukherjee_2018`
 - **model family:** `linear`
@@ -97,7 +97,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

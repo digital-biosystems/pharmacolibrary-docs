@@ -5,7 +5,7 @@
 
 # apremilast — `Apremilast_Okubo2021_geometric_mean_cv_geometric_mean`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -27,8 +27,7 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021)
   ·  DOI: [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068)
 
-## Model component
-<dbs-pgx drug="apremilast" model-id="Apremilast_Okubo2021_geometric_mean_cv_geometric_mean" status="rejected" stale="false" population="subjects with moderate to severe psoriasis" measured-compound="apremilast" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="apremilast" model-id="Apremilast_Okubo2021_geometric_mean_cv_geometric_mean" status="rejected" stale="false" population="subjects with moderate to severe psoriasis" measured-compound="apremilast" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -89,18 +88,18 @@ Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of derma
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_apremilast/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Okubo_2021` / `Okubo_2021::geometric_mean_cv_geometric_mean`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_apremilast/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Okubo_2021` / `Okubo_2021::geometric_mean_cv_geometric_mean`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

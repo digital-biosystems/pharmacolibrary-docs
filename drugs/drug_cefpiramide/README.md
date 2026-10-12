@@ -32,16 +32,7 @@ Cefpiramide is a third-generation cephalosporin antibiotic used to treat bacteri
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Conte_1987_reference](drugs/drug_cefpiramide/Cefpiramide_Conte1987_reference.md) | — | 1-compartment (no model) | 2 | Conte JE, Pharmacokinetics of cefpiramide in volu…, Antimicrobial agents and ch… (1987) | [10.1128/AAC.31.10.1585](https://doi.org/10.1128/AAC.31.10.1585) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cefpiramide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ALB` unknown | DrugBank actor |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Conte_1987_reference](drugs/drug_cefpiramide/Cefpiramide_Conte1987_reference.md) | — | 1-compartment (no model) | 2 | Conte JE, Pharmacokinetics of cefpiramide in volu…, Antimicrobial agents and ch… (1987) | [10.1128/AAC.31.10.1585](https://doi.org/10.1128/AAC.31.10.1585) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

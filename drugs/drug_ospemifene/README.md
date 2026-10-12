@@ -32,22 +32,7 @@ Ospemifene is a selective estrogen receptor modulator used to treat dyspareunia 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kubota_2017_reference](drugs/drug_ospemifene/Ospemifene_Kubota2017_reference.md) | held back | 1-compartment, oral | 5 | Kubota R et al., Population pharmacokinetics of ospemife…, International journal of cl… (2017) | [10.5414/CP202821](https://doi.org/10.5414/CP202821) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ospemifene).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` inhibitor, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ESR1 (target).</sub>
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kubota_2017_reference](drugs/drug_ospemifene/Ospemifene_Kubota2017_reference.md) | held back | 1-compartment, oral | 5 | Kubota R et al., Population pharmacokinetics of ospemife…, International journal of cl… (2017) | [10.5414/CP202821](https://doi.org/10.5414/CP202821) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

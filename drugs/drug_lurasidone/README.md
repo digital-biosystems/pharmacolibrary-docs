@@ -32,29 +32,15 @@ Lurasidone is an antipsychotic used to treat schizophrenia and related psychotic
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Dai_2026_reference](drugs/drug_lurasidone/Lurasidone_Dai2026_reference.md) | — | 1-compartment (no model) | 2 | Dai C et al., The impact of CYP3A4 rs2242480 on oral…, Journal of affective disord… (2026) | [10.1016/j.jad.2025.120588](https://doi.org/10.1016/j.jad.2025.120588) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yang_2026_final_model](drugs/drug_lurasidone/Lurasidone_Yang2026_final_model.md) | — | 1-compartment (no model) | 3 | Yang Y et al., Impact of valproate co-medication and a…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1810528](https://doi.org/10.3389/fphar.2026.1810528) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yang_2026_pop](drugs/drug_lurasidone/Lurasidone_Yang2026_pop.md) | — | 1-compartment (no model) | 3 | Yang Y et al., Impact of valproate co-medication and a…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1810528](https://doi.org/10.3389/fphar.2026.1810528) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Dai_2026_reference](drugs/drug_lurasidone/Lurasidone_Dai2026_reference.md) | — | 1-compartment (no model) | 2 | Dai C et al., The impact of CYP3A4 rs2242480 on oral…, Journal of affective disord… (2026) | [10.1016/j.jad.2025.120588](https://doi.org/10.1016/j.jad.2025.120588) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yang_2026_final_model](drugs/drug_lurasidone/Lurasidone_Yang2026_final_model.md) | — | 1-compartment (no model) | 3 | Yang Y et al., Impact of valproate co-medication and a…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1810528](https://doi.org/10.3389/fphar.2026.1810528) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yang_2026_pop](drugs/drug_lurasidone/Lurasidone_Yang2026_pop.md) | — | 1-compartment (no model) | 3 | Yang Y et al., Impact of valproate co-medication and a…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1810528](https://doi.org/10.3389/fphar.2026.1810528) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Zhuang_2023_Kv_current](drugs/drug_lurasidone/pd_Zhuang_2023_Kv_current.md) | Kv channel current inhibition ← lurasidone · direct sigmoid Emax (Hill) effect | — | Zhuang W et al., Lurasidone blocks the voltage-gated pot…, European journal of pharmac… (2023) | [10.1016/j.ejphar.2023.176005](https://doi.org/10.1016/j.ejphar.2023.176005) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lurasidone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADRA2A (target), ADRA2C (target), DRD2 (target), HTR1A (target), HTR2A (target), HTR7 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

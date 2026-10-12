@@ -22,7 +22,7 @@
 
 > Suramin acts as a competitive antagonist at the t-P2Y-1 receptor in t-P2Y-1321N1 cells, inhibiting PLC stimulation by 2MeSATP; Schild analysis gave a slope of 1.16 ± 0.08 and a pA2 of 5.77 ± 0.11 (suramin concentrations in microM). The paper excerpts do not state further mechanism details.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Charlton_1996`
 - **model family:** `linear`
@@ -64,7 +64,7 @@ Charlton SJ et al., PPADS and suramin as antagonists at clo…, British journal 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -5,7 +5,7 @@
 
 # daunorubicin — `Daunorubicin_Fumagalli2000_daunorubicinol`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Fumagalli L et al., The pharmacokinetics of liposomal encap…, Cancer chemotherapy and pha… (2000)
   ·  DOI: [10.1007/s002800051025](https://doi.org/10.1007/s002800051025)
 
-## Model component
-<dbs-pgx drug="daunorubicin" model-id="Daunorubicin_Fumagalli2000_daunorubicinol" status="needs_review" stale="false" population="HIV-positive patients with extensive or rapidly progressing AIDS-related Kaposi&#39;s sarcoma" measured-compound="daunorubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daunorubicin" model-id="Daunorubicin_Fumagalli2000_daunorubicinol" status="needs_review" stale="false" population="HIV-positive patients with extensive or rapidly progressing AIDS-related Kaposi&#39;s sarcoma" measured-compound="daunorubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -112,7 +111,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_daunorubicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Fumagalli_2000` / `Fumagalli_2000::daunorubicinol`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_daunorubicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Fumagalli_2000` / `Fumagalli_2000::daunorubicinol`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -133,7 +132,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

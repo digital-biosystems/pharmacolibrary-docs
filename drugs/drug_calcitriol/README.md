@@ -28,13 +28,13 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [García-Quiroz_2016_CAMP](drugs/drug_calcitriol/pd_Garc_a_Quiroz_2016_CAMP.md) | CAMP gene expression ← calcitriol · direct sigmoid Emax (Hill) effect | — | García-Quiroz J et al., Calcitriol stimulates gene expression o…, Journal of biomedical scien… (2016) | [10.1186/s12929-016-0298-4](https://doi.org/10.1186/s12929-016-0298-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [García-Quiroz_2016_CAMP](drugs/drug_calcitriol/pd_Garc_a_Quiroz_2016_CAMP.md) | CAMP gene expression ← calcitriol · direct sigmoid Emax (Hill) effect | — | García-Quiroz J et al., Calcitriol stimulates gene expression o…, Journal of biomedical scien… (2016) | [10.1186/s12929-016-0298-4](https://doi.org/10.1186/s12929-016-0298-4) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **VDR** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Yaghooti_2021](drugs/drug_calcitriol/pgx_Yaghooti_2021_VDR_Q100.md) | Yaghooti H et al., The efficacy of calcitriol treatment in…, BMC pharmacology & toxicolo… (2021) | [10.1186/s40360-021-00485-y](https://doi.org/10.1186/s40360-021-00485-y) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span> | **VDR** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Yaghooti_2021](drugs/drug_calcitriol/pgx_Yaghooti_2021_VDR_Q100.md) | Yaghooti H et al., The efficacy of calcitriol treatment in…, BMC pharmacology & toxicolo… (2021) | [10.1186/s40360-021-00485-y](https://doi.org/10.1186/s40360-021-00485-y) |
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -42,21 +42,6 @@ _not available_
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=calcitriol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP3A4` inducer/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CYP24A1 (inducer), CYP24A1 (substrate), GC (binder), HOXA10 (upregulator), VDR (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

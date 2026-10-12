@@ -21,7 +21,7 @@
 
 > Vecuronium concentrations inhibit currents induced by 30 µmol/L acetylcholine via a sigmoid Emax model, with the paper describing the mechanism as direct inhibition. The IC50 for the response is 11.2 nmol/L in innervated tissue and 39.2 nmol/L in denervated tissue.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Wang_2010`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Wang H et al., Different magnitude of resistance to no…, Acta pharmacologica S
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

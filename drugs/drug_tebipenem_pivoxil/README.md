@@ -34,7 +34,7 @@ Tebipenem pivoxil is an investigational carbapenem (beta-lactam) antibacterial b
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.312). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Ganesan_2023_reference](drugs/drug_tebipenem_pivoxil/TebipenemPivoxil_Ganesan2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+2 cov.) | Ganesan H et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2023) | [10.1128/aac.01451-22](https://doi.org/10.1128/aac.01451-22) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.312). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Ganesan_2023_reference](drugs/drug_tebipenem_pivoxil/TebipenemPivoxil_Ganesan2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+2 cov.) | Ganesan H et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2023) | [10.1128/aac.01451-22](https://doi.org/10.1128/aac.01451-22) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

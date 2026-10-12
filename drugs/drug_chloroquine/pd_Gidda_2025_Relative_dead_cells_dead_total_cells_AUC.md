@@ -22,7 +22,7 @@
 
 > Chloroquine concentrations stimulate the relative dead-cell response (dead/total cell AUC) in MIA PaCa-2 cells, modelled as a direct Emax-type dose-response (stimulation) fitted with an agonist vs. response curve; the paper does not state the mechanism beyond chloroquine acting as a late-stage autophagy inhibitor, and no numeric potency values (EC50, Emax, gamma) are given in the excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Gidda_2025`
 - **model family:** `emax`
@@ -56,7 +56,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -33,21 +33,7 @@ Icotinib is an EGFR tyrosine kinase inhibitor investigated for treating non-smal
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span> | [Hu_2015_reference](drugs/drug_icotinib/Icotinib_Hu2015_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Hu P et al., Development of population pharmacokinet…, European journal of clinica… (2015) | [10.1007/s00228-015-1864-5](https://doi.org/10.1007/s00228-015-1864-5) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=icotinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | kidney | `CYP3A5` inducer/substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP3A4` substrate, `CYP3A5` inducer/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` inducer/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: EGFR (target).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span> | [Hu_2015_reference](drugs/drug_icotinib/Icotinib_Hu2015_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Hu P et al., Development of population pharmacokinet…, European journal of clinica… (2015) | [10.1007/s00228-015-1864-5](https://doi.org/10.1007/s00228-015-1864-5) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

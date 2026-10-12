@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Anzoise_2016_PRU](drugs/drug_eosin/pd_Anzoise_2016_PRU.md) | thrombocytes ← clopidogrel H4 · indirect response — drug inhibits the production of thrombocytes | — | Anzoise ML et al., Beneficial properties of Passiflora cae…, Journal of ethnopharmacology (2016) | [10.1016/j.jep.2016.09.002](https://doi.org/10.1016/j.jep.2016.09.002) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Anzoise_2016_PRU](drugs/drug_eosin/pd_Anzoise_2016_PRU.md) | thrombocytes ← clopidogrel H4 · indirect response — drug inhibits the production of thrombocytes | — | Anzoise ML et al., Beneficial properties of Passiflora cae…, Journal of ethnopharmacology (2016) | [10.1016/j.jep.2016.09.002](https://doi.org/10.1016/j.jep.2016.09.002) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -22,7 +22,7 @@
 
 > The paper links fampridine (4-aminopyridine, 4-AP) exposure to inhibition of the acetylcholine-activated cationic current (Icat), but the available excerpts do not state the mechanism, model structure, or any potency or rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Chen_1993`
 - **model family:** `unknown`
@@ -42,11 +42,11 @@ _No resolved parameters._
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

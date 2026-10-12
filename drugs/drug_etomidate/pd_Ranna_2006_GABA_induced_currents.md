@@ -18,11 +18,11 @@
 
 **As extracted:** Etomidate (concentrations from the PK model of Dodam_1990) drives GABA-induced currents (in % of control GABA response): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Etomidate directly potentiates GABA-induced currents via a sigmoidal Emax model, with an EC50 of approximately 50 μM and a maximal potentiation reaching up to 364% of the control GABA response in α3β1θ receptors, compared to 222% in α3β1γ2 receptors.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ranna_2006`
 - **model family:** `sigmoid_emax`
@@ -102,7 +102,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

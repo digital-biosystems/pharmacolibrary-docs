@@ -24,8 +24,8 @@ Burosumab, a monoclonal antibody, is used to treat bone-mineralisation disorders
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Lee_2022_reference](drugs/drug_burosumab/Burosumab_Lee2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 (+2 cov.) | Lee SK et al., Population Pharmacokinetics and Pharmac…, Journal of clinical pharmac… (2022) | [10.1002/jcph.1950](https://doi.org/10.1002/jcph.1950) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Mehta_2025_reference](drugs/drug_burosumab/Burosumab_Mehta2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Mehta K et al., Pharmacodynamic Exposure-Response Analy…, Journal of clinical pharmac… (2025) | [10.1002/jcph.6140](https://doi.org/10.1002/jcph.6140) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.769). Primary extraction retained.">cross-check: partial</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Lee_2022_reference](drugs/drug_burosumab/Burosumab_Lee2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 (+2 cov.) | Lee SK et al., Population Pharmacokinetics and Pharmac…, Journal of clinical pharmac… (2022) | [10.1002/jcph.1950](https://doi.org/10.1002/jcph.1950) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Mehta_2025_reference](drugs/drug_burosumab/Burosumab_Mehta2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Mehta K et al., Pharmacodynamic Exposure-Response Analy…, Journal of clinical pharmac… (2025) | [10.1002/jcph.6140](https://doi.org/10.1002/jcph.6140) |
 
 ## Pharmacodynamics (PD)
 
@@ -33,16 +33,6 @@ Burosumab, a monoclonal antibody, is used to treat bone-mineralisation disorders
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Mehta_2025_S1](drugs/drug_burosumab/pd_Mehta_2025_S1.md) | Serum Phosphate Concentration ← burosumab · direct Emax (saturable) effect | model (no simulator) | Mehta K et al., Pharmacodynamic Exposure-Response Analy…, Journal of clinical pharmac… (2025) | [10.1002/jcph.6140](https://doi.org/10.1002/jcph.6140) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Hruska_2024_FSP](drugs/drug_burosumab/pd_Hruska_2024_FSP.md) | fasting serum phosphate biomarker turnover ← burosumab | — | Hruska MW et al., Model-Informed Approach to Recommend Bu…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3468](https://doi.org/10.1002/cpt.3468) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=burosumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: FGF23 (modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

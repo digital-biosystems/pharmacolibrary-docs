@@ -33,19 +33,8 @@ Noscapine is an opium alkaloid used as a cough suppressant (antitussive). It is 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Chen_2024_final_model](drugs/drug_noscapine/Noscapine_Chen2024_final_model.md) | ▶ model + simulator | 1-compartment, oral | 8 (+1 cov.) | Chen Z et al., A Semi-Mechanistic Population Pharmacok…, Drugs in R&D (2024) | [10.1007/s40268-024-00466-6](https://doi.org/10.1007/s40268-024-00466-6) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Chen_2024_sir_with_m_m_ratio_of_5000_1000](drugs/drug_noscapine/Noscapine_Chen2024_sir_with_m_m_ratio_of_5000_1000.md) | ▶ model + simulator | 1-compartment, oral | 8 (+1 cov.) | Chen Z et al., A Semi-Mechanistic Population Pharmacok…, Drugs in R&D (2024) | [10.1007/s40268-024-00466-6](https://doi.org/10.1007/s40268-024-00466-6) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=noscapine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP2C9` inhibitor, `CYP3A4` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: SIGMAR1 (unknown).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Chen_2024_final_model](drugs/drug_noscapine/Noscapine_Chen2024_final_model.md) | ▶ model + simulator | 1-compartment, oral | 8 (+1 cov.) | Chen Z et al., A Semi-Mechanistic Population Pharmacok…, Drugs in R&D (2024) | [10.1007/s40268-024-00466-6](https://doi.org/10.1007/s40268-024-00466-6) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Chen_2024_sir_with_m_m_ratio_of_5000_1000](drugs/drug_noscapine/Noscapine_Chen2024_sir_with_m_m_ratio_of_5000_1000.md) | ▶ model + simulator | 1-compartment, oral | 8 (+1 cov.) | Chen Z et al., A Semi-Mechanistic Population Pharmacok…, Drugs in R&D (2024) | [10.1007/s40268-024-00466-6](https://doi.org/10.1007/s40268-024-00466-6) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

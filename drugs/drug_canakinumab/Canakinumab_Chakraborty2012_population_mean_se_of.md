@@ -5,7 +5,7 @@
 
 # canakinumab — `Canakinumab_Chakraborty2012_population_mean_se_of`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.087). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.087). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Chakraborty A et al., Pharmacokinetic and pharmacodynamic pro…, Clinical pharmacokinetics (2012)
   ·  DOI: [10.2165/11599820-000000000-00000](https://doi.org/10.2165/11599820-000000000-00000)
 
-## Model component
-<dbs-pgx drug="canakinumab" model-id="Canakinumab_Chakraborty2012_population_mean_se_of" status="needs_review" stale="false" population="CAPS patients" measured-compound="canakinumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="canakinumab" model-id="Canakinumab_Chakraborty2012_population_mean_se_of" status="needs_review" stale="false" population="CAPS patients" measured-compound="canakinumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 5 covariate effects.
@@ -171,7 +170,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_canakinumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chakraborty_2012` / `Chakraborty_2012::population_mean_se_of`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_canakinumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chakraborty_2012` / `Chakraborty_2012::population_mean_se_of`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -192,7 +191,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

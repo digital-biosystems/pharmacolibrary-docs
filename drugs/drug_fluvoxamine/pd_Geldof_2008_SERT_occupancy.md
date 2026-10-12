@@ -18,11 +18,11 @@
 
 **As extracted:** Fluvoxamine (concentrations from the PK model of Chen_2024) drives fluvoxamine SERT occupancy (ex vivo, rat frontal cortex) (in %): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Ex vivo fluvoxamine SERT occupancy in rat frontal cortex was related to predicted plasma fluvoxamine concentrations (ng mL−1) by a direct Emax (inhibitory/proportional) model, with Bmax ~94.5–94.9% and EC50 values of 0.48, 0.22, and 14.8 ng mL−1 as reported; the paper does not state an effect-compartment or turnover mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Geldof_2008`
 - **model family:** `emax`
@@ -107,7 +107,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

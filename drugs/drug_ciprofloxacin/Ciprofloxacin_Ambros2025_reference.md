@@ -5,7 +5,7 @@
 
 # ciprofloxacin — `Ciprofloxacin_Ambros2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -33,8 +33,7 @@ The metabolite ciprofloxacin, formed from enrofloxacin in the central compartmen
 Ambros LA et al., Pharmacokinetic and Pharmacodynamic Mod…, Veterinary sciences (2025)
   ·  DOI: [10.3390/vetsci12060588](https://doi.org/10.3390/vetsci12060588)
 
-## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Ambros2025_reference" status="rejected" stale="true" population="pregnant goats" measured-compound="ciprofloxacin" parameterization="apparent" topology="manual_model_class"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Ambros2025_reference" status="rejected" stale="true" population="pregnant goats" measured-compound="ciprofloxacin" parameterization="apparent" topology="manual_model_class"></div>
 
 **Model structure:** nonlinear / manual; no model was built for this record.  
 **Parameters:** 14 extracted.
@@ -138,18 +137,18 @@ Ambros LA et al., Pharmacokinetic and Pharmacodynamic Mod…, Veterinary science
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_ciprofloxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ambros_2025` / `Ambros_2025::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ciprofloxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ambros_2025` / `Ambros_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

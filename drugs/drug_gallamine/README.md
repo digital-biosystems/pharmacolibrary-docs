@@ -33,7 +33,7 @@ Gallamine is a peripherally acting muscle relaxant that was used to relax muscle
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Ramzan_1980_reference](drugs/drug_gallamine/Gallamine_Ramzan1980_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Ramzan MI et al., Pharmacokinetic studies in man with gal…, European journal of clinica… (1980) | [10.1007/BF00562622](https://doi.org/10.1007/BF00562622) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Ramzan_1980_reference](drugs/drug_gallamine/Gallamine_Ramzan1980_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Ramzan MI et al., Pharmacokinetic studies in man with gal…, European journal of clinica… (1980) | [10.1007/BF00562622](https://doi.org/10.1007/BF00562622) |
 
 ## Pharmacodynamics (PD)
 

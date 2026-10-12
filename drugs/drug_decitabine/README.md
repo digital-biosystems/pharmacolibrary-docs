@@ -28,17 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Fujimoto_2010_inhibition](drugs/drug_decitabine/pd_Fujimoto_2010_inhibition.md) | cell growth inhibition ← decitabine · direct Emax (saturable) effect | — | Fujimoto J et al., Validation of a novel statistical model…, Cancer prevention research… (2010) | [10.1158/1940-6207.CAPR-10-0129](https://doi.org/10.1158/1940-6207.CAPR-10-0129) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=decitabine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CDA (substrate), CMPK1 (substrate), DCK (substrate), DNA (other/unknown), DNMT1 (inhibitor), DNMT3A (inhibitor), DNMT3B (inhibitor), HDAC1 (inhibitor), NME1 (substrate), SLC28A1 (substrate).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Fujimoto_2010_inhibition](drugs/drug_decitabine/pd_Fujimoto_2010_inhibition.md) | cell growth inhibition ← decitabine · direct Emax (saturable) effect | — | Fujimoto J et al., Validation of a novel statistical model…, Cancer prevention research… (2010) | [10.1158/1940-6207.CAPR-10-0129](https://doi.org/10.1158/1940-6207.CAPR-10-0129) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

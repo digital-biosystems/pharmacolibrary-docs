@@ -28,17 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">dog</span> | [Chow_1979_ouabain_receptor_binding](drugs/drug_chlormadinone/pd_Chow_1979_ouabain_receptor_binding.md) | ouabain receptor binding ← chlormadinone acetate · inhibition effect | — | Chow E et al., Ouabain receptor binding of hydroxyprog…, British journal of pharmaco… (1979) | [10.1111/j.1476-5381.1979.tb08686.x](https://doi.org/10.1111/j.1476-5381.1979.tb08686.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">in vitro</span> | [Rafuse_1985_Na_K_ATPase](drugs/drug_chlormadinone/pd_Rafuse_1985_Na_K_ATPase.md) | Na+,K+-ATPase ← chlormadinone acetate · inhibition effect | — | Rafuse PE et al., Effects of mammalian brain extracts and…, Brain research (1985) | [10.1016/0006-8993(85)91186-2](https://doi.org/10.1016/0006-8993(85)91186-2) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=chlormadinone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">dog</span> | [Chow_1979_ouabain_receptor_binding](drugs/drug_chlormadinone/pd_Chow_1979_ouabain_receptor_binding.md) | ouabain receptor binding ← chlormadinone acetate · inhibition effect | — | Chow E et al., Ouabain receptor binding of hydroxyprog…, British journal of pharmaco… (1979) | [10.1111/j.1476-5381.1979.tb08686.x](https://doi.org/10.1111/j.1476-5381.1979.tb08686.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">in vitro</span> | [Rafuse_1985_Na_K_ATPase](drugs/drug_chlormadinone/pd_Rafuse_1985_Na_K_ATPase.md) | Na+,K+-ATPase ← chlormadinone acetate · inhibition effect | — | Rafuse PE et al., Effects of mammalian brain extracts and…, Brain research (1985) | [10.1016/0006-8993(85)91186-2](https://doi.org/10.1016/0006-8993(85)91186-2) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

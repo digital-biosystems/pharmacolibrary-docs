@@ -33,27 +33,15 @@ Spirapril is an ACE inhibitor used as an antihypertensive drug to treat high blo
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.083), gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q331, Q86 — no SI value to build fr…</sub><br><sub>route_to: `human_review`</sub> | [Krähenbühl_1993_reference](drugs/drug_spirapril/Spirapril_Krhenbhl1993_reference.md) | — | parent + metabolite (no model) | 10 | Krähenbühl S et al., Pharmacokinetics and haemodynamic effec…, European journal of clinica… (1993) | [10.1007/BF00315391](https://doi.org/10.1007/BF00315391) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.083), gpt-oss:120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q331, Q86 — no SI value to build fr…</sub><br><sub>route_to: `human_review`</sub> | [Krähenbühl_1993_reference](drugs/drug_spirapril/Spirapril_Krhenbhl1993_reference.md) | — | parent + metabolite (no model) | 10 | Krähenbühl S et al., Pharmacokinetics and haemodynamic effec…, European journal of clinica… (1993) | [10.1007/BF00315391](https://doi.org/10.1007/BF00315391) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span> | [Bellissant_1997_BBF](drugs/drug_spirapril/pd_Bellissant_1997_BBF.md) | brachial blood flow ← spiraprilat · direct sigmoid Emax (Hill) effect | — | Bellissant E et al., Pharmacokinetic-pharmacodynamic model r…, Journal of cardiovascular p… (1997) | [10.1097/00005344-199708000-00016](https://doi.org/10.1097/00005344-199708000-00016) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Bellissant_1997_PCEA](drugs/drug_spirapril/pd_Bellissant_1997_PCEA.md) | plasma converting enzyme activity ← spiraprilat · direct sigmoid Emax (Hill) effect | — | Bellissant E et al., Pharmacokinetic-pharmacodynamic model r…, Journal of cardiovascular p… (1997) | [10.1097/00005344-199708000-00016](https://doi.org/10.1097/00005344-199708000-00016) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> | [Bellissant_1997_PCWP](drugs/drug_spirapril/pd_Bellissant_1997_PCWP.md) | pulmonary capillary wedge pressure ← spiraprilat · direct sigmoid Emax (Hill) effect | — | Bellissant E et al., Pharmacokinetic-pharmacodynamic model r…, Journal of cardiovascular p… (1997) | [10.1097/00005344-199708000-00016](https://doi.org/10.1097/00005344-199708000-00016) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=spirapril).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` substrate | DrugBank actor |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC15A2` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ACE (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span> | [Bellissant_1997_BBF](drugs/drug_spirapril/pd_Bellissant_1997_BBF.md) | brachial blood flow ← spiraprilat · direct sigmoid Emax (Hill) effect | — | Bellissant E et al., Pharmacokinetic-pharmacodynamic model r…, Journal of cardiovascular p… (1997) | [10.1097/00005344-199708000-00016](https://doi.org/10.1097/00005344-199708000-00016) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Bellissant_1997_PCEA](drugs/drug_spirapril/pd_Bellissant_1997_PCEA.md) | plasma converting enzyme activity ← spiraprilat · direct sigmoid Emax (Hill) effect | — | Bellissant E et al., Pharmacokinetic-pharmacodynamic model r…, Journal of cardiovascular p… (1997) | [10.1097/00005344-199708000-00016](https://doi.org/10.1097/00005344-199708000-00016) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> | [Bellissant_1997_PCWP](drugs/drug_spirapril/pd_Bellissant_1997_PCWP.md) | pulmonary capillary wedge pressure ← spiraprilat · direct sigmoid Emax (Hill) effect | — | Bellissant E et al., Pharmacokinetic-pharmacodynamic model r…, Journal of cardiovascular p… (1997) | [10.1097/00005344-199708000-00016](https://doi.org/10.1097/00005344-199708000-00016) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -20,7 +20,7 @@
 
 > Lumefantrine concentrations (ng/ml) reduce the hazard of PCR-corrected recrudescent infection at day 42 via a sigmoidal Emax (inhibitory) effect on a Gompertz/constant baseline hazard time-to-event model, with baseline hazard 0.00600 day−1, hazard half-life 12.8 days, IC50 92.6 ng/ml, and slope 1.87. The paper notes these parameters are apparent and imprecise, as the lumefantrine effect actually represents the combined artemether/dihydroartemisinin and lumefantrine/desbutyl-lumefantrine drug effects.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kloprogge_2018`
 - **model family:** `tte`
@@ -64,7 +64,7 @@ Kloprogge F et al., Artemether-lumefantrine dosing for mala…, PLoS medicine (2
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

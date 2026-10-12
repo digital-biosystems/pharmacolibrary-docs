@@ -4,7 +4,7 @@
 
 # sacituzumab govitecan — `SacituzumabGovitecan_Sathe2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves. · molar_mass_missing:free SN-38: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated. · molar_mass_missing:free SN-38: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -12,11 +12,11 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > **Caveats:**
 
-> - `covariates_not_exercised` — the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+> - `covariates_not_exercised` — Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 > - `molar_mass_missing:free SN-38` — a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule
 
 ### Reviewer guidance
@@ -154,9 +154,9 @@ Sathe AG et al., Sacituzumab Govitecan Population Pharma…, Clinical and transl
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_sacituzumab_govitecan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sathe_2025` / `Sathe_2025::reference`)
-- model: `../../../knowledgebase/drugs/drug_sacituzumab_govitecan/models/modelica/SacituzumabGovitecan_Sathe2025_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_sacituzumab_govitecan/models/modelica/SacituzumabGovitecan_Sathe2025_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sacituzumab_govitecan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sathe_2025` / `Sathe_2025::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sacituzumab_govitecan/models/modelica/SacituzumabGovitecan_Sathe2025_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_sacituzumab_govitecan/models/modelica/SacituzumabGovitecan_Sathe2025_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -165,19 +165,19 @@ Sathe AG et al., Sacituzumab Govitecan Population Pharma…, Clinical and transl
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference/SacituzumabGovitecan_Sathe2025_reference_modelica.zip" download>SacituzumabGovitecan_Sathe2025_reference_modelica.zip</a> <span class="pk-size">(5.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference/SacituzumabGovitecan_Sathe2025_reference_matlab.zip" download>SacituzumabGovitecan_Sathe2025_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference/SacituzumabGovitecan_Sathe2025_reference_matlab_simbio.zip" download>SacituzumabGovitecan_Sathe2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference/SacituzumabGovitecan_Sathe2025_reference_sbml.zip" download>SacituzumabGovitecan_Sathe2025_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sacituzumab_govitecan/SacituzumabGovitecan_Sathe2025_reference/SacituzumabGovitecan_Sathe2025_reference_cellml.zip" download>SacituzumabGovitecan_Sathe2025_reference_cellml.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

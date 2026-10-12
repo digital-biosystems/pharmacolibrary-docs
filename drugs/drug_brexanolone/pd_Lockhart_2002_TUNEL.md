@@ -21,7 +21,7 @@
 
 > Brexanolone (as allopregnanolone, concentrations in microM) inhibits the percentage of TUNEL-positive cells with an Emax-type model; the paper reports an EC50 of 2.7 ± 0.1 nM but the excerpts do not state the mechanism or Emax/Imax.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Lockhart_2002`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Lockhart EM et al., Allopregnanolone attenuates N-methyl-D-…, Neuroscience let
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -4,7 +4,7 @@
 
 # amodiaquine — `Amodiaquine_Ali2018_bsv_or_bova_b`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.182). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavai
 Ali AM et al., Population Pharmacokinetics of the Anti…, Antimicrobial agents and ch… (2018)
   ·  DOI: [10.1128/AAC.02193-17](https://doi.org/10.1128/AAC.02193-17)
 
-## Model component
-<dbs-pgx drug="amodiaquine" model-id="Amodiaquine_Ali2018_bsv_or_bova_b" status="needs_review" stale="false" population="pediatric and adult patients with uncomplicated malaria" measured-compound="desethylamodiaquine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amodiaquine" model-id="Amodiaquine_Ali2018_bsv_or_bova_b" status="needs_review" stale="false" population="pediatric and adult patients with uncomplicated malaria" measured-compound="desethylamodiaquine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -164,7 +163,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_amodiaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ali_2018` / `Ali_2018::bsv_or_bova_b`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amodiaquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ali_2018` / `Ali_2018::bsv_or_bova_b`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -185,7 +184,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

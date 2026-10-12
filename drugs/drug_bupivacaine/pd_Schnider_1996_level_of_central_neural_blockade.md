@@ -20,7 +20,7 @@
 
 > The model describes the additive stimulation of the continuous response 'level of central neural blockade' by bupivacaine concentrations using a cited PK model (Eljebari_2014) and an Emax framework. The paper specifies a maximal effect of 18, a rate of offset of effect ($k_{off}$) of 0.0118 min⁻¹, and a rate of onset of effect ($k_{on}$) of 0.061 min⁻¹, but does not provide the underlying mechanistic description or potency values (e.g., $E_{max}$, $IC_{50}$).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Schnider_1996`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Schnider TW et al., Population pharmacodynamic modeling and…, Anesthesiology (
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

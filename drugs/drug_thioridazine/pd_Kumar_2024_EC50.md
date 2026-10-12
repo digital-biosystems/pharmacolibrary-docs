@@ -21,7 +21,7 @@
 
 > Thioridazine concentrations (μM) inhibit intracellular L. donovani amastigotes in human macrophage cell lines, with a reported EC50 of 0.91 μM; the paper excerpts do not state the mechanism or an effect model.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kumar_2024`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Kumar V et al., In vitro antileishmanial activity of th…, Experimental parasit
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

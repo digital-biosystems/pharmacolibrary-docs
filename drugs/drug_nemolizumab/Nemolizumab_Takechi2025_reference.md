@@ -5,7 +5,7 @@
 
 # nemolizumab — `Nemolizumab_Takechi2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -27,8 +27,7 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 Takechi T et al., Quantitative Evaluation of Nemolizumab…, Dermatology and therapy (2025)
   ·  DOI: [10.1007/s13555-025-01554-4](https://doi.org/10.1007/s13555-025-01554-4)
 
-## Model component
-<dbs-pgx drug="nemolizumab" model-id="Nemolizumab_Takechi2025_reference" status="needs_review" stale="false" population="adult patients with prurigo nodularis and atopic dermatitis" measured-compound="nemolizumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nemolizumab" model-id="Nemolizumab_Takechi2025_reference" status="needs_review" stale="false" population="adult patients with prurigo nodularis and atopic dermatitis" measured-compound="nemolizumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -96,7 +95,7 @@ Takechi T et al., Quantitative Evaluation of Nemolizumab…, Dermatology and the
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_nemolizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Takechi_2025` / `Takechi_2025::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nemolizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Takechi_2025` / `Takechi_2025::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -117,7 +116,7 @@ Takechi T et al., Quantitative Evaluation of Nemolizumab…, Dermatology and the
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

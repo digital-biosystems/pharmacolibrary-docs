@@ -32,7 +32,7 @@ Pimavanserin is an antipsychotic drug used to treat psychosis associated with Pa
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Darwish_2023_reference](drugs/drug_pimavanserin/Pimavanserin_Darwish2023_reference.md) | — | 1-compartment (no model) | 2 | Darwish M et al., Population Pharmacokinetic Modeling and…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2315](https://doi.org/10.1002/jcph.2315) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Darwish_2023_reference](drugs/drug_pimavanserin/Pimavanserin_Darwish2023_reference.md) | — | 1-compartment (no model) | 2 | Darwish M et al., Population Pharmacokinetic Modeling and…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2315](https://doi.org/10.1002/jcph.2315) |
 
 ## Pharmacodynamics (PD)
 
@@ -49,22 +49,6 @@ Pimavanserin is an antipsychotic drug used to treat psychosis associated with Pa
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Ridler_2025_occupancy_5_HT2C](drugs/drug_pimavanserin/pd_Ridler_2025_occupancy_5_HT2C.md) | 5-HT2C receptor occupancy (choroid plexus, [11C]CIMBI-36 binding displacement) ← pimavanserin · direct sigmoid Emax (Hill) effect | — | Ridler K et al., Imaging the 5-HT, Journal of cerebral blood f… (2025) | [10.1177/0271678X241276312](https://doi.org/10.1177/0271678X241276312) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Ridler_2025_occupancy_5_HT2C_AC1332](drugs/drug_pimavanserin/pd_Ridler_2025_occupancy_5_HT2C_AC1332.md) | 5-HT2C receptor occupancy ([11C]AC1332 binding displacement) ← pimavanserin · direct sigmoid Emax (Hill) effect | — | Ridler K et al., Imaging the 5-HT, Journal of cerebral blood f… (2025) | [10.1177/0271678X241276312](https://doi.org/10.1177/0271678X241276312) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Darwish_2022_CGI_SCH_S](drugs/drug_pimavanserin/pd_Darwish_2022_CGI_SCH_S.md) | Clinical Global Impression of Schizophrenia–Severity (negative symptoms) score ← pimavanserin · categorical (graded) response model | — | Darwish M et al., Pimavanserin Exposure-Response Analyses…, Journal of clinical psychop… (2022) | [10.1097/JCP.0000000000001611](https://doi.org/10.1097/JCP.0000000000001611) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pimavanserin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | heart | `CYP2J2` substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP2J2` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: HTR2A (inverse agonist), HTR2C (inverse agonist), SIGMAR1 (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

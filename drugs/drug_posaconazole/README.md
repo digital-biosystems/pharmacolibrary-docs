@@ -28,28 +28,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Varghese_2022_CHIKV](drugs/drug_posaconazole/pd_Varghese_2022_CHIKV.md) | CHIKV viral titer ← posaconazole · direct sigmoid Emax (Hill) effect | — | Varghese FS et al., Posaconazole inhibits multiple steps of…, Antiviral research (2022) | [10.1016/j.antiviral.2021.105223](https://doi.org/10.1016/j.antiviral.2021.105223) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Varghese_2022_SFV_PFU](drugs/drug_posaconazole/pd_Varghese_2022_SFV_PFU.md) | SFV viral titer (plaque forming units) ← posaconazole · direct sigmoid Emax (Hill) effect | — | Varghese FS et al., Posaconazole inhibits multiple steps of…, Antiviral research (2022) | [10.1016/j.antiviral.2021.105223](https://doi.org/10.1016/j.antiviral.2021.105223) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Varghese_2022_SINV](drugs/drug_posaconazole/pd_Varghese_2022_SINV.md) | SINV viral titer ← posaconazole · direct sigmoid Emax (Hill) effect | — | Varghese FS et al., Posaconazole inhibits multiple steps of…, Antiviral research (2022) | [10.1016/j.antiviral.2021.105223](https://doi.org/10.1016/j.antiviral.2021.105223) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=posaconazole).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Varghese_2022_CHIKV](drugs/drug_posaconazole/pd_Varghese_2022_CHIKV.md) | CHIKV viral titer ← posaconazole · direct sigmoid Emax (Hill) effect | — | Varghese FS et al., Posaconazole inhibits multiple steps of…, Antiviral research (2022) | [10.1016/j.antiviral.2021.105223](https://doi.org/10.1016/j.antiviral.2021.105223) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Varghese_2022_SFV_PFU](drugs/drug_posaconazole/pd_Varghese_2022_SFV_PFU.md) | SFV viral titer (plaque forming units) ← posaconazole · direct sigmoid Emax (Hill) effect | — | Varghese FS et al., Posaconazole inhibits multiple steps of…, Antiviral research (2022) | [10.1016/j.antiviral.2021.105223](https://doi.org/10.1016/j.antiviral.2021.105223) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Varghese_2022_SINV](drugs/drug_posaconazole/pd_Varghese_2022_SINV.md) | SINV viral titer ← posaconazole · direct sigmoid Emax (Hill) effect | — | Varghese FS et al., Posaconazole inhibits multiple steps of…, Antiviral research (2022) | [10.1016/j.antiviral.2021.105223](https://doi.org/10.1016/j.antiviral.2021.105223) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -16,11 +16,11 @@
 
 **As extracted:** Voclosporin (concentrations from this paper's PK model) drives calcineurin activity (in pmol/min/mg): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Voclosporin acts on calcineurin activity via a sigmoid Emax inhibition mechanism. The model is characterized by a maximum inhibition of 0.87 pmol/min/mg and an effective concentration (EC50) of 123 ng/mL.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mayo_2014`
 - **model family:** `sigmoid_emax`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > Sertraline exposure concentration (mg L(-1)) is linked to acute toxicity in Daphnia magna (immobilization/mortality), with a reported EC50 of 1.15 mg L(-1); the paper excerpts provide no mechanism or model structure.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Minguez_2014`
 - **model family:** `unknown`
@@ -63,7 +63,7 @@ Minguez L et al., Acute toxicity of 8 antidepressants: wh…, Chemosphere (2014)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

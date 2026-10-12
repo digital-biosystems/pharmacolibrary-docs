@@ -22,7 +22,7 @@
 
 > Praziquantel (reference drug) concentrations (μM) were fitted to ex vivo viability (% viable) of adult female S. mansoni worms with a sigmoid Emax inhibitory model, giving an EC50 of 0.8 μM; the paper does not state the mechanism beyond schistosomicidal activity, and no Imax, gamma, or rate parameters are given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Brito_2022`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Brito JR et al., Neolignans isolated from Saururus cernu…, Scientific reports 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

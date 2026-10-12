@@ -21,7 +21,7 @@
 
 > The paper reports the direct in vitro effect of ketobemidone on MOR activation (β-arrestin 2 recruitment) using a sigmoidal Emax model without an explicit mechanistic description beyond direct receptor activation. Ketobemidone exhibited an EC50 of 134 nM and an Emax of 156%, with responses normalized to the maximum response of hydromorphone.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Vandeputte_2023`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Vandeputte MM et al., Detection, chemical analysis, and pharm…, Analytical and
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

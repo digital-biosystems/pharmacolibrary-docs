@@ -22,7 +22,7 @@
 
 > Indacaterol lung concentrations (nM) drive inhibition of histamine-induced bronchoconstriction in guinea pigs via a sigmoid Emax (proportional inhibition) model, with an in vivo guinea pig total lung IC50 of 66 nM; the excerpts do not state Imax, gamma, or rate parameters (kin, kout, ke0).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Hendrickx_2018`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Hendrickx R et al., Translational model to predict pulmonar…, CPT: pharmacomet
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -16,11 +16,11 @@
 
 **As extracted:** Fexinidazole (sum of M1 and M2 metabolites) (measured concentrations) drive blood Leishmania parasite load (kDNA qPCR) (in parasites/mL): direct linear effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Blood Leishmania parasite load (kDNA qPCR, parasites/mL) declines under fexinidazole exposure (sum of M1 and M2 metabolites, μg/L) via a linear, proportional inhibition of parasite load, with coefficient λfexi = 0.0011 μg⁻¹·L·h⁻¹; the excerpts do not state an Emax/IC50-type mechanism or additional rate parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Verrest_2024`
 - **model family:** `linear`
@@ -94,7 +94,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

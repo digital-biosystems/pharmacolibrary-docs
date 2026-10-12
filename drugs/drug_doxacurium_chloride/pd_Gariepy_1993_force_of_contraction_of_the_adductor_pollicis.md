@@ -19,7 +19,7 @@
 
 > The PD model links doxacurium plasma concentrations to the force of contraction of the adductor pollicis using an effect compartment model, assuming a proportional inhibitory mechanism without specified maximum effect or gamma parameters. The key estimated parameters are an effect compartment EC50 of 44.7 or 54.1 ng/ml and an equilibrium rate constant (ke0) of 0.039 or 0.051 min⁻¹.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Gariepy_1993`
 - **model family:** `effect_compartment`
@@ -63,7 +63,7 @@ Gariepy LP et al., Influence of aging on the pharmacokinet…, Clinical pharmaco
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > Zolpidem plasma concentrations (ng/ml) stimulate EEG amplitude in the 11.5-30 Hz band (microV/s) via a sigmoid Emax model with EC50 = 512 ± 116 ng/ml and Emax = 175 ± 10 microV/s; the paper excerpts do not state further mechanism details.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Tuk_2002`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Tuk B et al., Mechanism-based pharmacodynamic modelin…, Journal of pharmacokin
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

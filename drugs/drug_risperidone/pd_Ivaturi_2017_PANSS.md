@@ -16,11 +16,11 @@
 
 **As extracted:** Total active moiety (risperidone + 9-OH-risperidone) drives PANSS total score: direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Total active moiety (risperidone + 9-OH-risperidone) plasma concentrations reduce PANSS total score via a direct Emax (inhibitory, proportional) drug effect on baseline PANSS, with Emax 0.054 and EC50 4.6 ng/mL; the model also includes a placebo effect (PMAX 0.06, time to max CFB 1.7 weeks, Weibull shape 2.1), baseline PANSS 94.9, and linear drift -1.2. The paper does not describe an effect-compartment or turnover mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Ivaturi_2017`
 - **model family:** `emax`
@@ -103,7 +103,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

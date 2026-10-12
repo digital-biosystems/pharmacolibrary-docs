@@ -22,7 +22,7 @@
 
 > Nimesulide concentration (μM) is modelled to inhibit the continuous BSA-glucose response using an Emax model with an IC50 of 145.46 μM. The paper does not provide further details on the specific mechanism or other parameters.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Rasheed_2018`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Rasheed S et al., Drug repurposing: In-vitro anti-glycati…, PloS one (2018)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

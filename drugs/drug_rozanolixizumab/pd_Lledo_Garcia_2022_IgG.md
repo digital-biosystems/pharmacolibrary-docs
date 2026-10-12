@@ -21,7 +21,7 @@
 
 > Rozanolixizumab acts on IgG by inhibiting the elimination (via FcRn-mediated recycling inhibition), as described by the paper despite the record listing an incorrect 'stimulation' direction, using an indirect response model. The key parameters for the effect on IgG elimination are Emax = 4.24 (dimensionless), EC50 = 0.154 mg/L, kout = 0.0364 day−1, and IgG base = 9.88 mg/ml.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Lledo-Garcia_2022`
 - **model family:** `indirect_response_iv`
@@ -66,7 +66,7 @@ Lledo-Garcia R et al., Pharmacokinetic-pharmacodynamic modelli…, CPT: pharmaco
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -4,7 +4,7 @@
 
 # inotersen — `Inotersen_Yu2020v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -26,8 +26,7 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 Yu RZ et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeutics (2020)
   ·  DOI: [10.1089/nat.2019.0822](https://doi.org/10.1089/nat.2019.0822)
 
-## Model component
-<dbs-pgx drug="inotersen" model-id="Inotersen_Yu2020v2_reference" status="needs_review" stale="false" population="healthy volunteers and patients with hATTR-PN" measured-compound="inotersen" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="inotersen" model-id="Inotersen_Yu2020v2_reference" status="needs_review" stale="false" population="healthy volunteers and patients with hATTR-PN" measured-compound="inotersen" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -101,7 +100,7 @@ Yu RZ et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeut
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_inotersen/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yu_2020_2` / `Yu_2020_2::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_inotersen/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yu_2020_2` / `Yu_2020_2::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -122,7 +121,7 @@ Yu RZ et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeut
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

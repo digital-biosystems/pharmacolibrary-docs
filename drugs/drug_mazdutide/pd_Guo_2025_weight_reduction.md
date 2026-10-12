@@ -19,7 +19,7 @@
 
 > For mazdutide, the model-based meta-analysis used an Emax-type dose-response/time-course framework linking administered dose (3–10 mg) to weight reduction (kg) versus placebo, with simulated 52-week effects of 4–7 kg; however, no dose-response relationship was observed within the studied dose range (efficacy plateau), and the paper does not report drug concentrations, a mechanism of action on the response, or potency/rate parameters (Emax, ED50/IC50, kin, kout, ke0) for mazdutide.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Guo_2025`
 - **model family:** `emax`
@@ -39,11 +39,11 @@ _No resolved parameters._
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

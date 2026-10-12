@@ -21,7 +21,7 @@
 
 > The model describes an indirect response mechanism where morpholine concentration proportionally inhibits the production of plasma PRU. Typical parameter values are Emax (0.39 units/mL), IC50 (0.20 μg/mL), Kin (2.20 units/mL/h), and Kout (0.14 1/h).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Cabantchik_1989`
 - **model family:** `indirect_response_i`
@@ -66,7 +66,7 @@ Cabantchik ZI et al., Effects of lysosomotropic detergents on…, Biochemical ph
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

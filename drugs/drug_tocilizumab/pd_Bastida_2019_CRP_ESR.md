@@ -19,7 +19,7 @@
 
 > The paper excerpt is unavailable, so the specific mechanism is not stated, though the record indicates a proportional indirect response inhibition by tocilizumab on CRP and ESR. The only potency value recorded is an EC50 of 0.878 μg/mL for tocilizumab.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Bastida_2019`
 - **model family:** `indirect_response_i`
@@ -60,7 +60,7 @@ Bastida C et al., Exposure-response modeling of tocilizum…, British journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

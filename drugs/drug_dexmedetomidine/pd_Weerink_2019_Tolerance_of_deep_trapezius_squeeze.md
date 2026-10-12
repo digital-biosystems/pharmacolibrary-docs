@@ -20,7 +20,7 @@
 
 > Dexmedetomidine plasma concentrations (ng/ml) were linked to the binary response 'tolerance of deep trapezius squeeze' using a sigmoid Emax (inhibitory) model; the paper reports an EC50 of 24 ng/ml (16 to 35), but no full text is available to confirm the mechanism or other parameters (Imax, gamma).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Weerink_2019`
 - **model family:** `sigmoid_emax`
@@ -61,7 +61,7 @@ Weerink MAS et al., Pharmacodynamic Interaction of Remifent…, Anesthesiology (
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

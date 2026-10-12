@@ -16,11 +16,11 @@
 
 **As extracted:** Ponesimod (concentrations from this paper's PK model) drives total lymphocyte counts: indirect response — drug inhibits the production of total lymphocyte counts.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The model assumes ponesimod concentrations (ng/mL) inhibit total lymphocyte counts via a proportional Indirect Response Model I mechanism. The estimated parameters are a maximum reduction (Imax) of 88.0% and a half-maximal inhibitory concentration (IC50) of 54.9 ng/mL.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Valenzuela_2021`
 - **model family:** `indirect_response_i`
@@ -98,7 +98,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

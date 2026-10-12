@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V04C&quot;,&quot;href&quot;:&quot;atc/V04C.md&quot;},{&quot;label&quot;:&quot;methacholine&quot;,&quot;href&quot;:&quot;drugs/drug_methacholine/&quot;},{&quot;label&quot;:&quot;Ban_2020 \u00b7 PGx SPTLC2&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# CYP2D6 — PGx  <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial 0/2</span>
+# SPTLC2 — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -9,7 +9,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-- **what it is:** qualitative — the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.
+- **what it is:** qualitative — Gene–drug association without a quantitative parameter effect.
 - **source:** this paper, `Ban_2020` — [doi](https://doi.org/10.1371/journal.pone.0240334)
 - **gene:** SPTLC2
 - **mechanism:** not stated in the paper
@@ -29,24 +29,20 @@ Ban GY et al., Increased expression of serine palmitoy…, PloS one (2020)
   ·  DOI: [10.1371/journal.pone.0240334](https://doi.org/10.1371/journal.pone.0240334)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
 | `gpt-oss-120b` | secondary_empty | 0.25 (1/4 fields) | 3 |
-| `gpt-oss:120b` | secondary_empty | 0.25 (1/4 fields) | 3 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `applies_to` | pk | not captured | mismatch |
-| `gpt-oss-120b` | `mechanism` | metabolism | not captured | mismatch |
-| `gpt-oss-120b` | `target_parameter_id` | Q22 | not captured | mismatch |
-| `gpt-oss:120b` | `applies_to` | pk | not captured | mismatch |
-| `gpt-oss:120b` | `mechanism` | metabolism | not captured | mismatch |
-| `gpt-oss:120b` | `target_parameter_id` | Q22 | not captured | mismatch |
+| `gpt-oss-120b` | `applies_to` | unknown | not captured | mismatch |
+| `gpt-oss-120b` | `mechanism` | unknown | not captured | mismatch |
+| `gpt-oss-120b` | `target_parameter_id` | Q100 | not captured | mismatch |
 
 </details>
 
@@ -74,7 +70,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

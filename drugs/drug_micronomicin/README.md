@@ -32,7 +32,7 @@ Micronomicin is an antibiotic related to gentamicin, used to treat eye infection
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Yamasaku_1983_reference](drugs/drug_micronomicin/Micronomicin_Yamasaku1983_reference.md) | — | 1-compartment (no model) | 0 | Yamasaku F, [Pharmacokinetic studies of micronomici…, The Japanese journal of ant… (1983) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Yamasaku_1983_reference](drugs/drug_micronomicin/Micronomicin_Yamasaku1983_reference.md) | — | 1-compartment (no model) | 0 | Yamasaku F, [Pharmacokinetic studies of micronomici…, The Japanese journal of ant… (1983) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

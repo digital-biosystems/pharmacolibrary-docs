@@ -21,7 +21,7 @@
 
 > Clobazam plasma concentrations (mg/L) act on the anticonvulsant effect in a direct cortical stimulation model via a sigmoid Emax inhibitory model, with EC250,u = 2.8 ± 0.9 mg/L; the paper excerpts do not state the mechanism further or other PD parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Hoogerkamp_1996`
 - **model family:** `sigmoid_emax`
@@ -61,7 +61,7 @@ Hoogerkamp A et al., Pharmacokinetic/pharmacodynamic relatio…, The Journal of 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

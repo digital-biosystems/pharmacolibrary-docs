@@ -22,7 +22,7 @@
 
 > Etomidate inhibits spontaneous postsynaptic currents (sPSCs) via a mechanism described as Emax model in the record, though the specific pharmacodynamic process (e.g., direct receptor blockade or kinetic rate constants) is not detailed in the available excerpts. The model specifies an EC50 of 6.9 μM for etomidate, with no other potency or rate parameters (e.g., Imax, kin, kout, ke0) provided in the source text.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Yang_2016`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Yang H et al., Astrocytes contribute to the effects of…, Brain research (2016)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

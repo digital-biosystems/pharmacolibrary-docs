@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Dietzler_1975_3_rate_of_glycogen_synthesis](drugs/drug_fructose_16_diphosphate/pd_Dietzler_1975_3_rate_of_glycogen_synthesis.md) | rate of glycogen synthesis biomarker turnover ← fructose_16_diphosphate | — | Dietzler DN et al., Evidence for the allosteric regulation…, The Journal of biological c… (1975) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Dietzler_1975_3_rate_of_glycogen_synthesis](drugs/drug_fructose_16_diphosphate/pd_Dietzler_1975_3_rate_of_glycogen_synthesis.md) | rate of glycogen synthesis biomarker turnover ← fructose_16_diphosphate | — | Dietzler DN et al., Evidence for the allosteric regulation…, The Journal of biological c… (1975) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

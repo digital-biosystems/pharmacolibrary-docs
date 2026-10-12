@@ -34,9 +34,9 @@ Mycophenolic acid is an immunosuppressant used to prevent organ transplant rejec
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Heida_2024_reference](drugs/drug_mycophenolic_acid/MycophenolicAcid_Heida2024_reference.md) | held back | 2-compartment, oral | 3 (+1 cov.) | Heida A et al., Model-informed dose optimization of myc…, European journal of clinica… (2024) | [10.1007/s00228-024-03743-0](https://doi.org/10.1007/s00228-024-03743-0) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Kauv_2025_reference](drugs/drug_mycophenolic_acid/MycophenolicAcid_Kauv2025_reference.md) | — | 1-compartment (no model) | 3 | Kauv J et al., Population pharmacokinetics of mycophen…, European journal of pharmac… (2025) | [10.1016/j.ejps.2025.107290](https://doi.org/10.1016/j.ejps.2025.107290) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Wei_2022_reference](drugs/drug_mycophenolic_acid/MycophenolicAcid_Wei2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Wei Y et al., Population pharmacokinetics of mycophen…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.1002628](https://doi.org/10.3389/fphar.2022.1002628) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Heida_2024_reference](drugs/drug_mycophenolic_acid/MycophenolicAcid_Heida2024_reference.md) | held back | 2-compartment, oral | 3 (+1 cov.) | Heida A et al., Model-informed dose optimization of myc…, European journal of clinica… (2024) | [10.1007/s00228-024-03743-0](https://doi.org/10.1007/s00228-024-03743-0) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Kauv_2025_reference](drugs/drug_mycophenolic_acid/MycophenolicAcid_Kauv2025_reference.md) | — | 1-compartment (no model) | 3 | Kauv J et al., Population pharmacokinetics of mycophen…, European journal of pharmac… (2025) | [10.1016/j.ejps.2025.107290](https://doi.org/10.1016/j.ejps.2025.107290) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Wei_2022_reference](drugs/drug_mycophenolic_acid/MycophenolicAcid_Wei2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Wei Y et al., Population pharmacokinetics of mycophen…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.1002628](https://doi.org/10.3389/fphar.2022.1002628) |
 
 ## Pharmacodynamics (PD)
 
@@ -44,22 +44,6 @@ Mycophenolic acid is an immunosuppressant used to prevent organ transplant rejec
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Tang_2017_IMPDH](drugs/drug_mycophenolic_acid/pd_Tang_2017_IMPDH.md) | IMPDH activity ← mycophenolic acid · direct Emax (saturable) effect | — | Tang JT et al., The pharmacokinetics and pharmacodynami…, British journal of clinical… (2017) | [10.1111/bcp.13154](https://doi.org/10.1111/bcp.13154) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Hale_1998_rejection](drugs/drug_mycophenolic_acid/pd_Hale_1998_rejection.md) | likelihood of rejection ← mycophenolic acid · categorical (graded) response model | — | Hale MD et al., The pharmacokinetic-pharmacodynamic rel…, Clinical pharmacology and t… (1998) | [10.1016/S0009-9236(98)90058-3](https://doi.org/10.1016/S0009-9236(98)90058-3) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mycophenolic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C8` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `UGT1A1` substrate, `UGT1A6` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate, `UGT1A1` substrate, `UGT1A6` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: IMPDH1 (inhibitor), IMPDH2 (inhibitor), UGT1A10 (substrate), UGT1A7 (substrate), UGT1A8 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

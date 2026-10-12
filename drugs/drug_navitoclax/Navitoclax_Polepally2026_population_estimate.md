@@ -4,7 +4,7 @@
 
 # navitoclax — `Navitoclax_Polepally2026_population_estimate`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Polepally AR et al., Semi-Mechanistic PK/PD Modeling of Plat…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70260](https://doi.org/10.1002/psp4.70260)
 
-## Model component
-<dbs-pgx drug="navitoclax" model-id="Navitoclax_Polepally2026_population_estimate" status="needs_review" stale="false" population="patients with myelofibrosis" measured-compound="navitoclax" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="navitoclax" model-id="Navitoclax_Polepally2026_population_estimate" status="needs_review" stale="false" population="patients with myelofibrosis" measured-compound="navitoclax" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted, plus 2 covariate effects.
@@ -141,7 +140,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_navitoclax/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Polepally_2026` / `Polepally_2026::population_estimate`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_navitoclax/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Polepally_2026` / `Polepally_2026::population_estimate`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -162,7 +161,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

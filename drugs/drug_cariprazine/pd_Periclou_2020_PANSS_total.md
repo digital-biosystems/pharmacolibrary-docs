@@ -15,11 +15,11 @@
 
 **As extracted:** Total cariprazine (sum of cariprazine, DCAR, and DDCAR) (measured concentrations) drive Positive and Negative Syndrome Scale total score: direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Total cariprazine active moiety (cariprazine + DCAR + DDCAR, averaged concentration Cave, nM) acts on PANSS total score via a sigmoid Emax model as a proportional inhibitory effect on baseline PANSS (PANSS0 = 96.4), with Emax = 0.118 (11.8% reduction; 3.11% in study RGH-MD-03), EC50 = 55.0 nM, and Hill coefficient γ = 2.11; the placebo time course was described by a Weibull function (PLmax = 0.263, TD = 36.8 days, WPOW = 1.14).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Periclou_2020`
 - **model family:** `sigmoid_emax`
@@ -102,7 +102,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

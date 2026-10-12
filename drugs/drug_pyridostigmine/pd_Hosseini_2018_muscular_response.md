@@ -16,11 +16,11 @@
 
 **As extracted:** Pyridostigmine (concentrations from this paper's PK model) drives percent gain of muscular response (in % gain): indirect response — drug inhibits the loss of percent gain of muscular response.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Pyridostigmine plasma concentrations (μg/mL) drive the percent gain of muscular response (%) via an indirect response model in which pyridostigmine inhibits cholinesterase, thereby inhibiting the degradation (kout) of the response; the paper states kin = 2362 gain/day, kout = 40.3 day−1, and IC50 = 0.029 μg/mL, following a 5 mg IV dose.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Hosseini_2018`
 - **model family:** `indirect_response_ii`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -33,38 +33,14 @@ Ethinylestradiol is an estrogen used mainly in combined birth control pills, and
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed</span> | [Trujillo-de_2014_reference](drugs/drug_ethinylestradiol/Ethinylestradiol_Trujillode2014_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Trujillo-de Santiago G et al., Mathematical modeling of the release of…, Iranian journal of pharmace… (2014) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Reif_2013_reference](drugs/drug_ethinylestradiol/Ethinylestradiol_Reif2013_reference.md) | — | 1-compartment (no model) | 9 | Reif S et al., Characterisation of the pharmacokinetic…, The journal of family plann… (2013) | [10.1136/jfprhc-2012-100397](https://doi.org/10.1136/jfprhc-2012-100397) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span> | [Trujillo-de_2014_reference](drugs/drug_ethinylestradiol/Ethinylestradiol_Trujillode2014_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Trujillo-de Santiago G et al., Mathematical modeling of the release of…, Iranian journal of pharmace… (2014) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Reif_2013_reference](drugs/drug_ethinylestradiol/Ethinylestradiol_Reif2013_reference.md) | — | 1-compartment (no model) | 9 | Reif S et al., Characterisation of the pharmacokinetic…, The journal of family plann… (2013) | [10.1136/jfprhc-2012-100397](https://doi.org/10.1136/jfprhc-2012-100397) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Rose_2002_Vtg](drugs/drug_ethinylestradiol/pd_Rose_2002_Vtg.md) | vitellogenin (Vtg) ← 17alpha-ethinylestradiol · categorical (graded) response model | — | Rose J et al., Vitellogenin induction by 17beta-estrad…, Comparative biochemistry an… (2002) | [10.1016/s1532-0456(02)00035-2](https://doi.org/10.1016/s1532-0456(02)00035-2) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ethinylestradiol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate, `SLCO1A2` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate, `SLCO1A2` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | brain | `COMT` substrate | DrugBank actor |
-| metabolism | kidney | `COMT` substrate, `CYP3A5` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `COMT` substrate, `CYP1A2` substrate, `CYP2C19` inhibitor, `CYP2C8` inhibitor/substrate, `CYP2C9` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `SLC10A1` inhibitor, `SULT1E1` substrate, `UGT1A1` inducer/substrate, `UGT1A3` unknown, `UGT1A4` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate, `UGT1A1` inducer/substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `ABCC2` inducer/inhibitor | DrugBank actor |
-| excretion | liver | `ABCB11` inhibitor, `ABCC2` inducer/inhibitor | DrugBank actor |
-| excretion | small intestine | `ABCC2` inducer/inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ESR1 (target), NR1I2 (target), SHBG (binder), SULT1A3 (substrate).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Rose_2002_Vtg](drugs/drug_ethinylestradiol/pd_Rose_2002_Vtg.md) | vitellogenin (Vtg) ← 17alpha-ethinylestradiol · categorical (graded) response model | — | Rose J et al., Vitellogenin induction by 17beta-estrad…, Comparative biochemistry an… (2002) | [10.1016/s1532-0456(02)00035-2](https://doi.org/10.1016/s1532-0456(02)00035-2) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

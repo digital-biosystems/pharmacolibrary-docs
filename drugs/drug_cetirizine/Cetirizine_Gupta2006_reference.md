@@ -5,7 +5,7 @@
 
 # cetirizine — `Cetirizine_Gupta2006_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -23,7 +23,7 @@
 
 The record relies on abstract-only data, so summary statistics stand in for a fitted model. The reported clearance and volume values fall outside the expected physiological range for the species. This magnitude discrepancy indicates a likely unit or scale extraction error. Extracted — levocetirizine and dextrocetirizine: CL 1.2 ml/min, Vss 457 ml.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has racemic cetirizine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has racemic cetirizine, the second reading cetirizine (racemic); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -75,18 +75,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[clearance]` | not captured | 1.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance (cl) of levocetirizine]` | not captured | 1.2 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[the clearance (cl) of levocetirizine]` | 1.2 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[the volume of distribution at steady state (vss) was]` | 457 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` | not captured | 457 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | racemic cetirizine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | levocetirizine and dextrocetirizine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state (vss) of levocetirizine]` | not captured | 457 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | racemic cetirizine | cetirizine (racemic) | mismatch |
 
 </details>
 
@@ -117,18 +116,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_cetirizine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gupta_2006` / `Gupta_2006::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cetirizine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gupta_2006` / `Gupta_2006::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

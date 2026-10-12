@@ -22,7 +22,7 @@
 
 > Ziprasidone inhibits voltage-dependent K+ (Kv) channel current with a sigmoid Emax relationship (IC50 = 0.39 ± 0.06 μM, Hill coefficient 0.62 ± 0.03); the paper excerpts do not state the mechanism beyond this direct inhibitory concentration–response effect.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `An_2020`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ An JR et al., The inhibitory effect of ziprasidone on…, Biochemical and biophy
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

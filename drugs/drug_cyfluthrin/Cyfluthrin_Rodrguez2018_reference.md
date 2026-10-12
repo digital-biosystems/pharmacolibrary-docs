@@ -4,7 +4,7 @@
 
 # cyfluthrin — `Cyfluthrin_Rodrguez2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -22,16 +22,13 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cyfluthrin, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
-
 <sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Rodríguez JL et al., Bioavailability and nervous tissue dist…, Food and chemical toxicolog… (2018)
   ·  DOI: [10.1016/j.fct.2018.05.012](https://doi.org/10.1016/j.fct.2018.05.012)
 
-## Model component
-<dbs-pgx drug="cyfluthrin" model-id="Cyfluthrin_Rodrguez2018_reference" status="rejected" stale="false" population="rats" measured-compound="cyfluthrin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cyfluthrin" model-id="Cyfluthrin_Rodrguez2018_reference" status="rejected" stale="false" population="rats" measured-compound="cyfluthrin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -77,39 +74,6 @@ Rodríguez JL et al., Bioavailability and nervous tissue dist…, Food and chemi
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.188 (3/16 fields) | 13 |
-
-<details><summary>13 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[auc (0-24h) in hypothalamus]` | 19.36 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc (0-24h) in hypothalamus]` | not captured | 19.36 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc]` | 6.11 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc]` | not captured | 6.11 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` | 0.385 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` | not captured | 0.385 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[oral bioavailability]` | 71.6 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[oral bioavailability]` | not captured | 71.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[single oral]` | not captured | 20 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2β]` | 17.15 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2β]` | not captured | 17.15 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | cyfluthrin | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | cyfluthrin | unknown | mismatch |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
-</details>
-
-
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -129,18 +93,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_cyfluthrin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rodríguez_2018` / `Rodríguez_2018::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cyfluthrin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rodríguez_2018` / `Rodríguez_2018::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

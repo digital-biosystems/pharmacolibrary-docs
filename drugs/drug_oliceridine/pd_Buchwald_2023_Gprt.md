@@ -21,7 +21,7 @@
 
 > Oliceridine drives the continuous G protein activation response through a SABRE transduction mechanism that explicitly includes a signal amplification parameter (gamma), although the paper notes this model is primarily detailed for other MOPr agonists like DAMGO and morphine. The extraction identified an efficacy parameter (epsilon) of 0.382, but the provided excerpts do not state the specific gamma, EC50, or IC50 values for oliceridine.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Buchwald_2023`
 - **model family:** `transduction`
@@ -48,11 +48,11 @@ Buchwald P, Quantitative receptor model for respons…, Frontiers in pharmacolog
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

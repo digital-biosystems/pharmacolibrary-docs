@@ -25,21 +25,13 @@ Linerixibat is an investigational bile acid inhibitor being studied for cholesta
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Zamek-Gliszczynski_2021_reference](drugs/drug_linerixibat/Linerixibat_ZamekGliszczynski2021_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Zamek-Gliszczynski MJ et al., Pharmacokinetics and ADME Characterizat…, Drug metabolism and disposi… (2021) | [10.1124/dmd.121.000595](https://doi.org/10.1124/dmd.121.000595) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Zamek-Gliszczynski_2021_reference](drugs/drug_linerixibat/Linerixibat_ZamekGliszczynski2021_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Zamek-Gliszczynski MJ et al., Pharmacokinetics and ADME Characterizat…, Drug metabolism and disposi… (2021) | [10.1124/dmd.121.000595](https://doi.org/10.1124/dmd.121.000595) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span> | [Carreño_2025_C4](drugs/drug_linerixibat/pd_Carre_o_2025_C4.md) | C4 ← linerixibat · indirect response — drug stimulates the production of C4 | model (no simulator) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=linerixibat).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | ileum | `SLC10A2` modulator | DrugBank actor |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span> | [Carreño_2025_C4](drugs/drug_linerixibat/pd_Carre_o_2025_C4.md) | C4 ← linerixibat · indirect response — drug stimulates the production of C4 | model (no simulator) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

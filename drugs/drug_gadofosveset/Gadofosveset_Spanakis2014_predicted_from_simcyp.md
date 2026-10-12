@@ -4,7 +4,7 @@
 
 # gadofosveset — `Gadofosveset_Spanakis2014_predicted_from_simcyp`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — gadofosveset: fu 0.11, fe 0.94, AUC ratio 1.8, CL 0.5 L/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl: this record has none, the second reading 0; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of auc fold increase in severe renal impairment: this record has none, the second reading 2.25; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -73,13 +73,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.778 (7/9 fields) | 2 |
+| `qwen3.8-27b` | partly confirmed | 0.667 (6/9 fields) | 3 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[cl]` | not captured | 0 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[auc fold increase in severe renal impairment]` | not captured | 2.25 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[fu].value` | 0.11 | 0.12 | mismatch |
 | `qwen3.8-27b` | `parameters[oncology cl]` | 0.50 | not captured | only_one_extracted |
 
 </details>
@@ -109,7 +110,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_gadofosveset/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Spanakis_2014` / `Spanakis_2014::predicted_from_simcyp`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gadofosveset/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Spanakis_2014` / `Spanakis_2014::predicted_from_simcyp`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -130,7 +131,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

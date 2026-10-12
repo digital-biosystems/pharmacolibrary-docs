@@ -22,7 +22,7 @@
 
 > Carbamazepine inhibits MES-induced Fraction Seizing via an Emax model, with plasma EC50 values of 13.8 µM in mice and 4.55 µM in rats, and brain EC50 values of 32.5 µM in mice and 4.70 µM in rats. The paper describes the mechanism as sodium channel blockade but does not specify whether the drug acts by inhibiting the production or elimination of the response.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Bettio_2025`
 - **model family:** `emax`
@@ -66,7 +66,7 @@ Bettio L et al., The Pharmacokinetic and Pharmacodynamic…, International journ
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

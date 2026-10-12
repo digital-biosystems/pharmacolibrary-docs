@@ -5,7 +5,7 @@
 
 # colistin — `Colistin_Yu2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -27,8 +27,7 @@ The record describes colistin (colistin sulfate) in critically ill patients with
 Yu XB et al., Population Pharmacokinetics of Colistin…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.915958](https://doi.org/10.3389/fphar.2022.915958)
 
-## Model component
-<dbs-pgx drug="colistin" model-id="Colistin_Yu2022_reference" status="needs_review" stale="false" population="critically ill patients with carbapenem-resistant organism infections" measured-compound="colistin sulfate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="colistin" model-id="Colistin_Yu2022_reference" status="needs_review" stale="false" population="critically ill patients with carbapenem-resistant organism infections" measured-compound="colistin sulfate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted, plus 1 covariate effect.
@@ -98,7 +97,7 @@ Yu XB et al., Population Pharmacokinetics of Colistin…, Frontiers in pharmacol
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_colistin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yu_2022` / `Yu_2022::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_colistin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yu_2022` / `Yu_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -119,7 +118,7 @@ Yu XB et al., Population Pharmacokinetics of Colistin…, Frontiers in pharmacol
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

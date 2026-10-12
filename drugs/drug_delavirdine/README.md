@@ -33,28 +33,14 @@ It is no longer available, as it has been withdrawn from the market.
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Smith_2005_reference](drugs/drug_delavirdine/Delavirdine_Smith2005_reference.md) | — | nonlinear / manual (no model) | 5 | Smith PF et al., Population pharmacokinetics of delavird…, Clinical pharmacokinetics (2005) | [10.2165/00003088-200544010-00004](https://doi.org/10.2165/00003088-200544010-00004) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Smith_2005_reference](drugs/drug_delavirdine/Delavirdine_Smith2005_reference.md) | — | nonlinear / manual (no model) | 5 | Smith PF et al., Population pharmacokinetics of delavird…, Clinical pharmacokinetics (2005) | [10.2165/00003088-200544010-00004](https://doi.org/10.2165/00003088-200544010-00004) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Cheng_1997_ERMBT](drugs/drug_delavirdine/pd_Cheng_1997_ERMBT.md) | Erythromycin breath test (hepatic CYP3A activity) ← delavirdine · direct Emax (saturable) effect | — | Cheng CL et al., Steady-state pharmacokinetics of delavi…, Clinical pharmacology and t… (1997) | [10.1016/S0009-9236(97)90133-8](https://doi.org/10.1016/S0009-9236(97)90133-8) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Weiss_2007_BCRP_inhibition](drugs/drug_delavirdine/pd_Weiss_2007_BCRP_inhibition.md) | BCRP inhibition (pheophorbide A accumulation in MDCKII-BCRP cells) ← delavirdine · direct Emax (saturable) effect | — | Weiss J et al., Modulation of human BCRP (ABCG2) activi…, The Journal of antimicrobia… (2007) | [10.1093/jac/dkl474](https://doi.org/10.1093/jac/dkl474) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=delavirdine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor, `CYP3A7` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor | DrugBank actor |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | mammary gland | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> | [Cheng_1997_ERMBT](drugs/drug_delavirdine/pd_Cheng_1997_ERMBT.md) | Erythromycin breath test (hepatic CYP3A activity) ← delavirdine · direct Emax (saturable) effect | — | Cheng CL et al., Steady-state pharmacokinetics of delavi…, Clinical pharmacology and t… (1997) | [10.1016/S0009-9236(97)90133-8](https://doi.org/10.1016/S0009-9236(97)90133-8) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Weiss_2007_BCRP_inhibition](drugs/drug_delavirdine/pd_Weiss_2007_BCRP_inhibition.md) | BCRP inhibition (pheophorbide A accumulation in MDCKII-BCRP cells) ← delavirdine · direct Emax (saturable) effect | — | Weiss J et al., Modulation of human BCRP (ABCG2) activi…, The Journal of antimicrobia… (2007) | [10.1093/jac/dkl474](https://doi.org/10.1093/jac/dkl474) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

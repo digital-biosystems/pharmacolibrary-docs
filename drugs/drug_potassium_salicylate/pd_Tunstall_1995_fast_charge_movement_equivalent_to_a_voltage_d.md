@@ -22,7 +22,7 @@
 
 > Salicylate inhibits the fast charge movement equivalent to a voltage-dependent membrane capacitance via a sigmoid Emax model. The half-maximal dose is 3.95 mM and the Hill coefficient is 3.40.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Tunstall_1995`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Tunstall MJ et al., Action of salicylate on membrane capaci…, The Journal of p
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

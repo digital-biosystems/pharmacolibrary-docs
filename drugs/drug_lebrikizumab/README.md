@@ -24,16 +24,7 @@ Lebrikizumab is a monoclonal antibody used to treat atopic dermatitis. It is aut
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: partial</span> | [Zhu_2017_reference](drugs/drug_lebrikizumab/Lebrikizumab_Zhu2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Zhu R et al., Model-based clinical pharmacology profi…, Pulmonary pharmacology & th… (2017) | [10.1016/j.pupt.2017.08.010](https://doi.org/10.1016/j.pupt.2017.08.010) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lebrikizumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: IL13 (antibody).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818). Primary extraction retained.">cross-check: partial</span> | [Zhu_2017_reference](drugs/drug_lebrikizumab/Lebrikizumab_Zhu2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Zhu R et al., Model-based clinical pharmacology profi…, Pulmonary pharmacology & th… (2017) | [10.1016/j.pupt.2017.08.010](https://doi.org/10.1016/j.pupt.2017.08.010) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

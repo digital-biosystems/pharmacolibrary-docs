@@ -22,7 +22,7 @@
 
 > Niclosamide concentrations (μM) inhibit HCoV-OC43 nucleocapsid protein expression in HCT-8 cells, measured by indirect immunofluorescent assay after 72 h infection (MOI 0.05), with a reported EC50 of 1.36 ± 0.56 μM. The paper does not describe a pharmacodynamic mechanism (e.g., Emax model or effect compartment) for this inhibition.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Yang_2020`
 - **model family:** `unknown`
@@ -63,7 +63,7 @@ Yang CW et al., Repurposing old drugs as antiviral agen…, Biomedical journal (
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

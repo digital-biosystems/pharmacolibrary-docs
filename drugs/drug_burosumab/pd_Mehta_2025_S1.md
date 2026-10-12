@@ -16,11 +16,11 @@
 
 **As extracted:** Burosumab (concentrations from this paper's PK model) drives Serum Phosphate Concentration (in mg/dL): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Burosumab concentration acts on serum phosphate concentration via a direct response Emax model, with a baseline phosphate level of 2.14 mg/dL, an EC50 of 8270 ng/mL, and a maximal change in phosphate of 1.55 mg/dL. The paper states that the EC50 decreased with increasing baseline serum phosphate, but it does not provide a specific numerical value for the change in EC50 per unit change in baseline phosphate.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mehta_2025`
 - **model family:** `emax`
@@ -100,7 +100,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

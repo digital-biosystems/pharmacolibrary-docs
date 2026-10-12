@@ -22,7 +22,7 @@
 
 > The paper does not state a mechanism; only an EC50 of 120 microM is reported for 4-aminopyridine (fampridine) effects on 4-AP-induced synaptic potentials, with no Imax, Emax, kin, kout, or ke0 values available.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Flores-Hernández_1994`
 - **model family:** `unknown`
@@ -63,7 +63,7 @@ Flores-Hernández J et al., Patterns of excitatory and inhibitory s…, Journal 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

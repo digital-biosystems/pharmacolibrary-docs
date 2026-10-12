@@ -31,19 +31,8 @@ Desirudin is a recombinant peptide anticoagulant, a direct thrombin inhibitor, t
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: partial 1/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Nafziger_2010_moderate_renal_impairment](drugs/drug_desirudin/Desirudin_Nafziger2010_moderate_renal_impairment.md) | — | 1-compartment (no model) | 6 | Nafziger AN et al., Desirudin dosing and monitoring in mode…, Journal of clinical pharmac… (2010) | [10.1177/0091270009350626](https://doi.org/10.1177/0091270009350626) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Nafziger_2010_normal_renal_function](drugs/drug_desirudin/Desirudin_Nafziger2010_normal_renal_function.md) | — | 1-compartment (no model) | 6 | Nafziger AN et al., Desirudin dosing and monitoring in mode…, Journal of clinical pharmac… (2010) | [10.1177/0091270009350626](https://doi.org/10.1177/0091270009350626) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=desirudin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CPA1 (substrate).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Nafziger_2010_moderate_renal_impairment](drugs/drug_desirudin/Desirudin_Nafziger2010_moderate_renal_impairment.md) | — | 1-compartment (no model) | 6 | Nafziger AN et al., Desirudin dosing and monitoring in mode…, Journal of clinical pharmac… (2010) | [10.1177/0091270009350626](https://doi.org/10.1177/0091270009350626) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Nafziger_2010_normal_renal_function](drugs/drug_desirudin/Desirudin_Nafziger2010_normal_renal_function.md) | — | 1-compartment (no model) | 6 | Nafziger AN et al., Desirudin dosing and monitoring in mode…, Journal of clinical pharmac… (2010) | [10.1177/0091270009350626](https://doi.org/10.1177/0091270009350626) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

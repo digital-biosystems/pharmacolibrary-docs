@@ -22,7 +22,7 @@
 
 > The paper does not provide a full text or explicit mechanism description beyond the record. The cited model is an Emax inhibition of L-type voltage-dependent Ca2+ currents by thiopental with an IC50 of 2.8 x 10^-5 mol/l.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kimura_2007`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Kimura M et al., Effects of thiopental on Ca2+ currents…, Pharmacology (2007)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

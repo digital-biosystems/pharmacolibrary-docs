@@ -32,9 +32,9 @@ Ritlecitinib is a JAK inhibitor medicine used to treat alopecia areata, a condit
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Purohit_2023_study_1_30_mg_qd](drugs/drug_ritlecitinib/Ritlecitinib_Purohit2023_study_1_30_mg_qd.md) | — | 1-compartment (no model) | 4 | Purohit V et al., Leveraging Prior Healthy Participant Ph…, The AAPS journal (2023) | [10.1208/s12248-023-00792-8](https://doi.org/10.1208/s12248-023-00792-8) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Purohit_2023_study_2_50_mg_qd](drugs/drug_ritlecitinib/Ritlecitinib_Purohit2023_study_2_50_mg_qd.md) | — | 1-compartment (no model) | 4 | Purohit V et al., Leveraging Prior Healthy Participant Ph…, The AAPS journal (2023) | [10.1208/s12248-023-00792-8](https://doi.org/10.1208/s12248-023-00792-8) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wojciechowski_2023_reference](drugs/drug_ritlecitinib/Ritlecitinib_Wojciechowski2023_reference.md) | — | 1-compartment (no model) | 0 | Wojciechowski J et al., Evolution of Ritlecitinib Population Ph…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01318-3](https://doi.org/10.1007/s40262-023-01318-3) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Purohit_2023_study_1_30_mg_qd](drugs/drug_ritlecitinib/Ritlecitinib_Purohit2023_study_1_30_mg_qd.md) | — | 1-compartment (no model) | 4 | Purohit V et al., Leveraging Prior Healthy Participant Ph…, The AAPS journal (2023) | [10.1208/s12248-023-00792-8](https://doi.org/10.1208/s12248-023-00792-8) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Purohit_2023_study_2_50_mg_qd](drugs/drug_ritlecitinib/Ritlecitinib_Purohit2023_study_2_50_mg_qd.md) | — | 1-compartment (no model) | 4 | Purohit V et al., Leveraging Prior Healthy Participant Ph…, The AAPS journal (2023) | [10.1208/s12248-023-00792-8](https://doi.org/10.1208/s12248-023-00792-8) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wojciechowski_2023_reference](drugs/drug_ritlecitinib/Ritlecitinib_Wojciechowski2023_reference.md) | — | 1-compartment (no model) | 0 | Wojciechowski J et al., Evolution of Ritlecitinib Population Ph…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01318-3](https://doi.org/10.1007/s40262-023-01318-3) |
 
 ## Pharmacodynamics (PD)
 
@@ -48,21 +48,6 @@ Ritlecitinib is a JAK inhibitor medicine used to treat alopecia areata, a condit
 | <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Wang_2025_ELA](drugs/drug_ritlecitinib/pd_Wang_2025_ELA.md) | eyelash assessment ← ritlecitinib · indirect response — drug stimulates the production of eyelash assessment | — | Wang Y et al., Population exposure-response analysis o…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13283](https://doi.org/10.1002/psp4.13283) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Huh_2024_SALT](drugs/drug_ritlecitinib/pd_Huh_2024_SALT.md) | SALT score ← ritlecitinib · indirect response — drug stimulates the production of SALT score | — | Huh Y et al., Moving Beyond Boundaries: Utilization o…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01347-6](https://doi.org/10.1007/s40262-024-01347-6) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Huh_2025_QTcF](drugs/drug_ritlecitinib/pd_Huh_2025_QTcF.md) | change from baseline heart rate– corrected QTcF (∆QTcF) ← ritlecitinib · direct linear effect | — | Huh Y et al., Comprehensive Safety Exposure-Response…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70030](https://doi.org/10.1002/psp4.70030) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ritlecitinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP3A4` inhibitor/substrate, `GSTM1` unknown, `GSTP1` substrate | DrugBank actor |
-| metabolism | lung | `GSTP1` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: BMX (inhibitor), BTK (inhibitor), GSTA1 (substrate), GSTA3 (substrate), GSTM3 (substrate), GSTM5 (substrate), GSTT2 (substrate), GSTZ1 (substrate), ITK (inhibitor), JAK3 (inhibitor), MGST1 (substrate), MGST2 (substrate), MGST3 (substrate), TEC (inhibitor), TXK (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

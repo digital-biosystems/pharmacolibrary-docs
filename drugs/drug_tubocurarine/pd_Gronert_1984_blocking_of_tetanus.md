@@ -21,7 +21,7 @@
 
 > The sigmoidal Emax model describes how the dose of dimethyl tubocurarine inhibits blocking of tetanus, with 50% paralyzing doses of 64 mg/kg and 813 mg/kg reported for the two parameter instances. No full text is available to confirm whether the effect is mediated by a direct concentration, an effect compartment, or production/elimination kinetics.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Gronert_1984`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Gronert GA et al., Canine gastrocnemius disuse atrophy: re…, Journal of applie
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

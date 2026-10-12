@@ -28,18 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">rat</span> | [Perrier_1992_Ca_i](drugs/drug_nicergoline/pd_Perrier_1992_Ca_i.md) | intracellular calcium levels ← nicergoline · direct Emax (saturable) effect | — | Perrier ML et al., Dihydropyridine- and omega-conotoxin-re…, The Journal of pharmacology… (1992) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nicergoline).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1A (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">rat</span> | [Perrier_1992_Ca_i](drugs/drug_nicergoline/pd_Perrier_1992_Ca_i.md) | intracellular calcium levels ← nicergoline · direct Emax (saturable) effect | — | Perrier ML et al., Dihydropyridine- and omega-conotoxin-re…, The Journal of pharmacology… (1992) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

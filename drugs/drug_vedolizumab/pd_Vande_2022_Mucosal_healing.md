@@ -19,7 +19,7 @@
 
 > Vedolizumab concentration (mg/L) inhibits the binary response of mucosal healing via a categorical model with an EC50 of 4.5 mg/L and an Emax odds of 3.2. The paper does not specify the underlying mechanism (e.g., direct inhibition vs. production/elimination effects) or rate constants.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Vande_2022`
 - **model family:** `categorical`
@@ -62,7 +62,7 @@ Vande Casteele N et al., Real-world multicentre observational st…, Alimentary 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

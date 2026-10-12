@@ -19,7 +19,7 @@
 
 > The model uses an Emax structural function to describe the longitudinal trajectory of forced vital capacity (FVC, % predicted) in response to belimumab treatment, indicating a stimulatory effect with an estimated improvement of 10.38. The paper specifies that the time to 50% maximum change is 27.49 weeks, but does not report specific drug concentrations, IC50/EC50, or mechanistic rate constants (e.g., ke0, kin/kout) for belimumab.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Vaskeikina_2026`
 - **model family:** `emax`
@@ -64,7 +64,7 @@ Vaskeikina M et al., Systematic Review and Model-Based Meta-…, Pharmaceutics (
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -27,20 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.50).">in vitro</span> | [Yang_2019_spermatozoa_immobilization](drugs/drug_pyrithione/pd_Yang_2019_spermatozoa_immobilization.md) | spermatozoa immobilization biomarker turnover ← Zinc pyrithione | — | Yang M et al., Zinc pyrithione induces immobilization…, European journal of pharmac… (2019) | [10.1016/j.ejps.2019.104984](https://doi.org/10.1016/j.ejps.2019.104984) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pyrithione).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: KCNQ1 (activator).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.50).">in vitro</span> | [Yang_2019_spermatozoa_immobilization](drugs/drug_pyrithione/pd_Yang_2019_spermatozoa_immobilization.md) | spermatozoa immobilization biomarker turnover ← Zinc pyrithione | — | Yang M et al., Zinc pyrithione induces immobilization…, European journal of pharmac… (2019) | [10.1016/j.ejps.2019.104984](https://doi.org/10.1016/j.ejps.2019.104984) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

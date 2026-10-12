@@ -28,16 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.98).">in vitro</span> | [Wen_2014_Antiproliferative_activity](drugs/drug_vorinostat/pd_Wen_2014_Antiproliferative_activity.md) | Antiproliferative activity ← Vorinostat · inhibition effect | — | Wen JC et al., [Synthesis and antitumor activity of S-…, Yao xue xue bao = Acta phar… (2014) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=vorinostat).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: HDAC1 (inhibitor), HDAC2 (inhibitor), HDAC3 (inhibitor), HDAC6 (inhibitor), HDAC8 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.98).">in vitro</span> | [Wen_2014_Antiproliferative_activity](drugs/drug_vorinostat/pd_Wen_2014_Antiproliferative_activity.md) | Antiproliferative activity ← Vorinostat · inhibition effect | — | Wen JC et al., [Synthesis and antitumor activity of S-…, Yao xue xue bao = Acta phar… (2014) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

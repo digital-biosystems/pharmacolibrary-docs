@@ -16,11 +16,11 @@
 
 **As extracted:** Diazepam (concentrations from the PK model of Aurélie_2023) drives Percent 13 to 30 Hz EEG activity (percentage of total EEG amplitude in 13–30 Hz range) (in %): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Diazepam plasma concentrations (ng/ml) stimulate the percent 13–30 Hz EEG activity via a sigmoid Emax model, with EC50 269 ng/ml and Emax +19.4%; the paper excerpts do not state the mechanism beyond this direct effect or a Hill (gamma) coefficient.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Greenblatt_1989`
 - **model family:** `sigmoid_emax`
@@ -97,7 +97,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

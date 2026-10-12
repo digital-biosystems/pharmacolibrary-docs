@@ -22,7 +22,7 @@
 
 > Tianeptine concentration (nM) stimulates G-protein activation at human MOR measured by BRET, acting as a direct MOR agonist (Emax/proportional stimulation model); the paper reports an EC50 of 194±70 nM (Ki 383±183 nM), with no kinetic parameters (kin, kout, ke0) given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Gassaway_2014`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Gassaway MM et al., The atypical antidepressant and neurore…, Translational ps
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

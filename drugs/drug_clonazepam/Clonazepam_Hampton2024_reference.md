@@ -5,7 +5,7 @@
 
 # clonazepam — `Clonazepam_Hampton2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss-120b`.
 Hampton CE et al., Pharmacokinetics of oral clonazepam in…, Journal of veterinary pharm… (2024)
   ·  DOI: [10.1111/jvp.13451](https://doi.org/10.1111/jvp.13451)
 
-## Model component
-<dbs-pgx drug="clonazepam" model-id="Clonazepam_Hampton2024_reference" status="needs_review" stale="true" population="growing commercial cross pigs" measured-compound="clonazepam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clonazepam" model-id="Clonazepam_Hampton2024_reference" status="needs_review" stale="true" population="growing commercial cross pigs" measured-compound="clonazepam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -104,7 +103,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_clonazepam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hampton_2024` / `Hampton_2024::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clonazepam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hampton_2024` / `Hampton_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -125,7 +124,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

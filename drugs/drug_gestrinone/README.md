@@ -28,22 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Markiewicz_1992_alkaline_phosphatase_activity](drugs/drug_gestrinone/pd_Markiewicz_1992_alkaline_phosphatase_activity.md) | alkaline phosphatase activity ← gestrinone · direct sigmoid Emax (Hill) effect | — | Markiewicz L et al., Intrinsic estrogenicity of some progest…, The Journal of steroid bioc… (1992) | [10.1016/0960-0760(92)90224-7](https://doi.org/10.1016/0960-0760(92)90224-7) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=gestrinone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| — | prostate gland | `AR` target | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ESR1 (target), GNRHR (target), NR3C1 (target), PGR (target), SHBG (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Markiewicz_1992_alkaline_phosphatase_activity](drugs/drug_gestrinone/pd_Markiewicz_1992_alkaline_phosphatase_activity.md) | alkaline phosphatase activity ← gestrinone · direct sigmoid Emax (Hill) effect | — | Markiewicz L et al., Intrinsic estrogenicity of some progest…, The Journal of steroid bioc… (1992) | [10.1016/0960-0760(92)90224-7](https://doi.org/10.1016/0960-0760(92)90224-7) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -22,7 +22,7 @@
 
 > Thiopental concentrations (μM) inhibit Seizure-Like Event (SLE) frequency (events/min) via a nonlinear inhibitory sigmoid Emax model linked to the perfusion bath by an effect compartment linear rate model (ke0). The paper reports an equilibrium half-life (t1/2Ke0) of 111.8 min, an EC50 of 0.247 μM, and a gamma value of 8.912.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Voss_2013`
 - **model family:** `sigmoid_emax`
@@ -66,7 +66,7 @@ Voss LJ et al., Quantification of neocortical slice dif…, ISRN neuroscience (2
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > No mechanism is stated in the provided record or paper excerpts. The data reports a dose-dependent inhibition of K(V) currents by ketamine with an IC50 of 566.7 +/- 32.3 microM and a Hill coefficient of 0.75 +/- 0.03.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kim_2007`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Kim SH et al., Ketamine blocks voltage-gated K(+) chan…, Pflugers Archiv : Eur
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

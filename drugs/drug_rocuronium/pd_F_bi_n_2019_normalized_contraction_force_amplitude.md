@@ -22,7 +22,7 @@
 
 > Rocuronium concentration (in μM) directly inhibits normalized contraction force amplitude via a sigmoid Emax model, with the paper reporting EC50 values of 7.50 μM and 4.26 μM.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Fábián_2019`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Fábián ÁI et al., The effect of magnesium on the reversal…, BMC anesthesiol
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

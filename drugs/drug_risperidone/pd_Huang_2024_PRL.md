@@ -20,7 +20,7 @@
 
 > Risperidone dose stimulates prolactin (PRL, ng/mL) via an ordinary Emax model with an additive increase over baseline: E0 = 15.0 ng/mL and Emax = 34.0 ng/mL, with ET50 fixed at 0.10 (empirical value, units not stated). The paper does not state a mechanism beyond this direct Emax stimulation; covariates (course of disease, red blood cells, triglycerides, sex on E0; sex and weight on Emax) were included.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Huang_2024`
 - **model family:** `emax`
@@ -71,7 +71,7 @@ Huang Z et al., Population Pharmacodynamic Models of Ri…, Pharmaceuticals (Bas
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

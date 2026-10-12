@@ -32,22 +32,7 @@ Mepivacaine is a local anesthetic of the amide type used to prevent or relieve p
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Lauven_1990_reference](drugs/drug_mepivacaine/Mepivacaine_Lauven1990_reference.md) | — | 1-compartment (no model) | 4 | Lauven PM et al., [An infusion model for intraoperative p…, Anasthesie, Intensivtherapi… (1990) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mepivacaine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: SCN10A (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Lauven_1990_reference](drugs/drug_mepivacaine/Mepivacaine_Lauven1990_reference.md) | — | 1-compartment (no model) | 4 | Lauven PM et al., [An infusion model for intraoperative p…, Anasthesie, Intensivtherapi… (1990) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

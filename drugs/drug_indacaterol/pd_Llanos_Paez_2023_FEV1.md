@@ -20,7 +20,7 @@
 
 > In this model-based meta-analysis, indacaterol dose (µg) stimulates morning trough FEV1 (L) via an Emax dose-response (additive effect form), with ED50 5.37 µg (0.10–287.4), Effref 128.5 mL (113.6–143.3) and Emax 137.7 mL (126.0–567.6); the paper does not describe a mechanistic production/elimination or effect-compartment structure beyond this direct dose-response.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Llanos-Paez_2023`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Llanos-Paez C et al., Joint longitudinal model-based meta-ana…, Journal of pha
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

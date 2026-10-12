@@ -16,11 +16,11 @@
 
 **As extracted:** Clozapine (concentrations from the PK model of Albitar_2024) drives total PANSS score: direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Clozapine exposure (cited PK driver in mg·L(-1)·h(-1)·d(-1)) acts on total PANSS score via an Emax model with proportional inhibitory effect, with Emax 55.4% and cAUC50 296 mg·L(-1)·h(-1)·d(-1); the excerpts do not state the mechanism beyond this model.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Shang_2014`
 - **model family:** `emax`
@@ -100,7 +100,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

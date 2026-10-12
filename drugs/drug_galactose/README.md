@@ -32,22 +32,13 @@ Galactose is a sugar used as a diagnostic agent, in tests of liver functional ca
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.211). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Henderson_1982_reference](drugs/drug_galactose/Galactose_Henderson1982_reference.md) | — | 1-compartment (no model) | 6 | Henderson JM et al., First-order clearance of plasma galacto…, Gastroenterology (1982) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.211). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Henderson_1982_reference](drugs/drug_galactose/Galactose_Henderson1982_reference.md) | — | 1-compartment (no model) | 6 | Henderson JM et al., First-order clearance of plasma galacto…, Gastroenterology (1982) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Boehm_2019_sensor_reaction_rate_enzyme_kinetic_response_of_amperometric_GOx_sensor_to_galactose](drugs/drug_galactose/pd_Boehm_2019_sensor_reaction_rate_enzyme_kinetic_response_of_a.md) | sensor reaction rate (enzyme kinetic response of amperometric GOx sensor to galactose) ← galactose · direct sigmoid Emax (Hill) effect | — | Boehm R et al., In Vitro Sugar Interference Testing Wit…, Journal of diabetes science… (2019) | [10.1177/1932296818791538](https://doi.org/10.1177/1932296818791538) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=galactose).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Boehm_2019_sensor_reaction_rate_enzyme_kinetic_response_of_amperometric_GOx_sensor_to_galactose](drugs/drug_galactose/pd_Boehm_2019_sensor_reaction_rate_enzyme_kinetic_response_of_a.md) | sensor reaction rate (enzyme kinetic response of amperometric GOx sensor to galactose) ← galactose · direct sigmoid Emax (Hill) effect | — | Boehm R et al., In Vitro Sugar Interference Testing Wit…, Journal of diabetes science… (2019) | [10.1177/1932296818791538](https://doi.org/10.1177/1932296818791538) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -16,11 +16,11 @@
 
 **As extracted:** Fentanyl (concentrations from this paper's PK model) drives EEG spectral edge (in Hz): delayed effect through an effect compartment.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The paper does not provide the mechanism or specific parameter values for fentanyl; it only states that fentanyl's EEG spectral edge changes are identical to those of trefentanil and alfentanil. The paper describes an effect compartment model for trefentanil with a t½ke0 of 2.3 ± 1.8 min and an EC50 of 447 ± 202 ng/ml.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Lemmens_1994`
 - **model family:** `effect_compartment`
@@ -97,7 +97,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

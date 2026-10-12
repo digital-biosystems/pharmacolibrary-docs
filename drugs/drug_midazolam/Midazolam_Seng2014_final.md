@@ -5,7 +5,7 @@
 
 # midazolam — `Midazolam_Seng2014_final`
 
-> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.03), gpt-oss:120b (not confirmed, agreement 0.032). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.03), gpt-oss:120b (not confirmed, agreement 0.032). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,9 +13,9 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
-> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Seng KY et al., CYP3A5*3 and bilirubin predict midazola…, Journal of clinical pharmac… (2014)
   ·  DOI: [10.1002/jcph.230](https://doi.org/10.1002/jcph.230)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Seng2014_final" status="not_simulated" stale="false" population="adult cancer patients" measured-compound="midazolam" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Seng2014_final" status="not_simulated" stale="false" population="adult cancer patients" measured-compound="midazolam" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 11 extracted, plus 4 covariate effects.
@@ -247,9 +246,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_midazolam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Seng_2014` / `Seng_2014::final`)
-- model: `../../../knowledgebase/drugs/drug_midazolam/models/modelica/Midazolam_Seng2014_final.mo`
-- deviation: `../../../knowledgebase/drugs/drug_midazolam/models/modelica/Midazolam_Seng2014_final.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_midazolam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Seng_2014` / `Seng_2014::final`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_midazolam/models/modelica/Midazolam_Seng2014_final.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_midazolam/models/modelica/Midazolam_Seng2014_final.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -270,7 +269,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

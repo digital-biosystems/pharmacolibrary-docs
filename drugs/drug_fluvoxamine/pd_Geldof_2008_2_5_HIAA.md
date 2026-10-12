@@ -22,7 +22,7 @@
 
 > Fluvoxamine plasma concentrations (ng/ml, from a cited PK model, Chen_2024, sequential fitting) drive 5-HIAA concentration in rat frontal cortex microdialysate via an indirect response model with inhibition and a proportional effect form; the paper excerpts provide no mechanism detail beyond this and no potency (IC50/Imax) or rate parameter values.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Geldof_2008_2`
 - **model family:** `indirect_response_ii`
@@ -56,7 +56,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

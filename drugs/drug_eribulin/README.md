@@ -28,17 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> | [van_2013_ANC](drugs/drug_eribulin/pd_van_2013_ANC.md) | absolute neutrophil counts ← eribulin · disease-progression model | — | van Hasselt JG et al., Population pharmacokinetic-pharmacodyna…, British journal of clinical… (2013) | [10.1111/bcp.12143](https://doi.org/10.1111/bcp.12143) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=eribulin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: TUBB1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> | [van_2013_ANC](drugs/drug_eribulin/pd_van_2013_ANC.md) | absolute neutrophil counts ← eribulin · disease-progression model | — | van Hasselt JG et al., Population pharmacokinetic-pharmacodyna…, British journal of clinical… (2013) | [10.1111/bcp.12143](https://doi.org/10.1111/bcp.12143) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

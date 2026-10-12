@@ -19,7 +19,7 @@
 
 > The extraction record indicates siltuximab acts on C-reactive protein (CRP) concentrations using an indirect response model with an inhibitory effect, but the specific mechanism (e.g., inhibition of production vs. elimination) is not described in the provided paper excerpts. No potency or rate parameters (Imax, IC50, Emax, kin, kout, ke0, gamma) are present in the available record or excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Puchalski_2010`
 - **model family:** `indirect_response_i`
@@ -39,11 +39,11 @@ _No resolved parameters._
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

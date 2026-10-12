@@ -21,7 +21,7 @@
 
 > Naratriptan directly stimulates coronary artery contraction, measured as a percentage of the response to 100 mmol/L K+, via an additive Emax model. The paper reports an EC50 of 171 nmol/L and an Emax of 10.1% K+
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `MaassenVanDenBrink_1998`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circula
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > No information is provided regarding the mechanism by which midomafetamine acts on hepatotoxic effects or the nature of the driver concentration. The paper does not describe the pharmacodynamic mechanism or provide key potency values other than the cited EC50 of 0.754 mM for the driver compound MDMA.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Araújo_2015`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Araújo AM et al., Raising awareness of new psychoactive s…, Archives of toxic
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

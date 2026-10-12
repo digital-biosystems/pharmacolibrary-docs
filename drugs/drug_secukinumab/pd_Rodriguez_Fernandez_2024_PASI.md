@@ -16,11 +16,11 @@
 
 **As extracted:** Secukinumab (concentrations from the PK model of Bruin_2017) drives Psoriasis Area and Severity Index (in no units): indirect response — drug inhibits the production of Psoriasis Area and Severity Index.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Secukinumab serum concentrations inhibit the production of Psoriasis Area and Severity Index (PASI) scores via an indirect response model that limits the progression of psoriatic lesions. The model parameters are Imax = 1.19, IC50 = 9.35 mg/L, kout = 0.11 day−1, and koutTOL = 0.003 day−1.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Rodriguez-Fernandez_2024`
 - **model family:** `indirect_response_i`
@@ -103,7 +103,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

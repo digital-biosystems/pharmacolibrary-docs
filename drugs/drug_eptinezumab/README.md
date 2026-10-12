@@ -24,7 +24,7 @@ Eptinezumab is a monoclonal antibody used to prevent migraine attacks. It is an 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1), gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Baker_2020_reference](drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 7 | Baker B et al., Population pharmacokinetic and exposure…, Pharmacology research & per… (2020) | [10.1002/prp2.567](https://doi.org/10.1002/prp2.567) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1), gpt-oss:120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Baker_2020_reference](drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 7 | Baker B et al., Population pharmacokinetic and exposure…, Pharmacology research & per… (2020) | [10.1002/prp2.567](https://doi.org/10.1002/prp2.567) |
 
 ## Pharmacodynamics (PD)
 
@@ -34,15 +34,6 @@ Eptinezumab is a monoclonal antibody used to prevent migraine attacks. It is an 
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Baker_2020_50_migraine_responder_rate_weeks_1_12](drugs/drug_eptinezumab/pd_Baker_2020_50_migraine_responder_rate_weeks_1_12.md) | ≥50% migraine responder rate (weeks 1–12) ← eptinezumab · categorical (graded) response model | — | Baker B et al., Population pharmacokinetic and exposure…, Pharmacology research & per… (2020) | [10.1002/prp2.567](https://doi.org/10.1002/prp2.567) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Baker_2020_75_migraine_responder_rate_weeks_1_12](drugs/drug_eptinezumab/pd_Baker_2020_75_migraine_responder_rate_weeks_1_12.md) | ≥75% migraine responder rate (weeks 1–12) ← eptinezumab · categorical (graded) response model | — | Baker B et al., Population pharmacokinetic and exposure…, Pharmacology research & per… (2020) | [10.1002/prp2.567](https://doi.org/10.1002/prp2.567) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Baker_2020_75_migraine_responder_rate_weeks_1_4](drugs/drug_eptinezumab/pd_Baker_2020_75_migraine_responder_rate_weeks_1_4.md) | ≥75% migraine responder rate (weeks 1–4) ← eptinezumab · categorical (graded) response model | — | Baker B et al., Population pharmacokinetic and exposure…, Pharmacology research & per… (2020) | [10.1002/prp2.567](https://doi.org/10.1002/prp2.567) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=eptinezumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CALCA (antibody), CALCA (binder), CALCB (antibody), CALCB (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

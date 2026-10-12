@@ -18,11 +18,11 @@
 
 **As extracted:** Tolfenamic acid (concentrations from the PK model of Corum_2026) drives prostaglandin E2 (PGE2): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Tolfenamic acid concentrations (in microg/mL) inhibit PGE2 production via a direct sigmoidal Emax model, with no effect compartment described in the record. Key parameters are Emax 97.5%, IC50 0.265 microg/mL, and Hill coefficient N 2.29; the record lists a ke0 half-life of 24.0 h, but the paper excerpts are unavailable to confirm the underlying mechanism.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sidhu_2005`
 - **model family:** `sigmoid_emax`
@@ -102,7 +102,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

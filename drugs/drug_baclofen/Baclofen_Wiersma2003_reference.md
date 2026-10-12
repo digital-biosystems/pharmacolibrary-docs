@@ -5,7 +5,7 @@
 
 # baclofen — `Baclofen_Wiersma2003_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Wiersma HE et al., Pharmacokinetics of a single oral dose…, Therapeutic drug monitoring (2003)
   ·  DOI: [10.1097/00007691-200302000-00014](https://doi.org/10.1097/00007691-200302000-00014)
 
-## Model component
-<dbs-pgx drug="baclofen" model-id="Baclofen_Wiersma2003_reference" status="needs_review" stale="false" population="pediatric patients with gastroesophageal reflux disease" measured-compound="baclofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="baclofen" model-id="Baclofen_Wiersma2003_reference" status="needs_review" stale="false" population="pediatric patients with gastroesophageal reflux disease" measured-compound="baclofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -101,7 +100,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_baclofen/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wiersma_2003` / `Wiersma_2003::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_baclofen/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wiersma_2003` / `Wiersma_2003::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -122,7 +121,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

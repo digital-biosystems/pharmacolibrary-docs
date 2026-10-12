@@ -22,7 +22,7 @@
 
 > Fluvoxamine plasma concentrations (ng ml(-1)) were related to a categorical excitation response (score 0-3) in an inhibitory categorical model, with EC50 values of 237+/-39 ng ml(-1) for P(Y&lt;1), 174+/-28 ng ml(-1) for P(Y&lt;2), and 100+/-20 ng ml(-1) for P(Y&lt;3); the paper excerpts do not state the mechanism beyond this categorical probability model.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Geldof_2007`
 - **model family:** `categorical`
@@ -65,7 +65,7 @@ Geldof M et al., Pharmacokinetic-pharmacodynamic modelin…, European journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

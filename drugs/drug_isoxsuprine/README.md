@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Sedrish_1999_percentage_maximal_relaxation](drugs/drug_isoxsuprine/pd_Sedrish_1999_percentage_maximal_relaxation.md) | percentage maximal relaxation ← isoxsuprine · direct sigmoid Emax (Hill) effect | — | Sedrish SA et al., In vitro response of large colon arteri…, American journal of veterin… (1999) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Sedrish_1999_percentage_maximal_relaxation](drugs/drug_isoxsuprine/pd_Sedrish_1999_percentage_maximal_relaxation.md) | percentage maximal relaxation ← isoxsuprine · direct sigmoid Emax (Hill) effect | — | Sedrish SA et al., In vitro response of large colon arteri…, American journal of veterin… (1999) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

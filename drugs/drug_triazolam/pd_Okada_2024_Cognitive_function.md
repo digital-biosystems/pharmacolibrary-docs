@@ -16,11 +16,11 @@
 
 **As extracted:** Triazolam (concentrations from this paper's PK model) drives Cognitive function (in %): delayed effect through an effect compartment.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Triazolam plasma concentration (ng/mL) drives cognitive function (%) via an effect-compartment model with linear inhibition: effect-site concentration reduces cognitive function proportionally with slope −11.0 (% per ng/mL) and equilibration rate Keo = 3.42 1/hr (transfer half-life ~6.9 min). No IC50/EC50/Emax is given, as a linear (not Emax) concentration–effect relationship was used.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Okada_2024`
 - **model family:** `effect_compartment`
@@ -97,7 +97,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -28,21 +28,10 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Thakre_2025_RBC](drugs/drug_azacitidine/pd_Thakre_2025_RBC.md) | red blood cells ← venetoclax, azacitidine · disease-progression model | — | Thakre N et al., Semi-mechanistic population PK/PD model…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13284](https://doi.org/10.1002/psp4.13284) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Thakre_2025_blasts](drugs/drug_azacitidine/pd_Thakre_2025_blasts.md) | bone marrow blasts ← venetoclax, azacitidine · disease-progression model | — | Thakre N et al., Semi-mechanistic population PK/PD model…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13284](https://doi.org/10.1002/psp4.13284) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Thakre_2025_neutrophils](drugs/drug_azacitidine/pd_Thakre_2025_neutrophils.md) | neutrophils ← venetoclax, azacitidine · disease-progression model | — | Thakre N et al., Semi-mechanistic population PK/PD model…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13284](https://doi.org/10.1002/psp4.13284) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Thakre_2025_platelets](drugs/drug_azacitidine/pd_Thakre_2025_platelets.md) | platelets ← venetoclax, azacitidine · disease-progression model | — | Thakre N et al., Semi-mechanistic population PK/PD model…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13284](https://doi.org/10.1002/psp4.13284) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=azacitidine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CDA (substrate), DNA (other), DNMT1 (inhibitor), PARP1 (inhibitor), RNA (other).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> | [Thakre_2025_RBC](drugs/drug_azacitidine/pd_Thakre_2025_RBC.md) | red blood cells ← venetoclax, azacitidine · disease-progression model | — | Thakre N et al., Semi-mechanistic population PK/PD model…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13284](https://doi.org/10.1002/psp4.13284) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Thakre_2025_blasts](drugs/drug_azacitidine/pd_Thakre_2025_blasts.md) | bone marrow blasts ← venetoclax, azacitidine · disease-progression model | — | Thakre N et al., Semi-mechanistic population PK/PD model…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13284](https://doi.org/10.1002/psp4.13284) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Thakre_2025_neutrophils](drugs/drug_azacitidine/pd_Thakre_2025_neutrophils.md) | neutrophils ← venetoclax, azacitidine · disease-progression model | — | Thakre N et al., Semi-mechanistic population PK/PD model…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13284](https://doi.org/10.1002/psp4.13284) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Thakre_2025_platelets](drugs/drug_azacitidine/pd_Thakre_2025_platelets.md) | platelets ← venetoclax, azacitidine · disease-progression model | — | Thakre N et al., Semi-mechanistic population PK/PD model…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13284](https://doi.org/10.1002/psp4.13284) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

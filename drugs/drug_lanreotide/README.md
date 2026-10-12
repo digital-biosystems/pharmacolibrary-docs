@@ -33,28 +33,15 @@ Lanreotide is a synthetic somatostatin analogue used as a hormonal and antineopl
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Buil-Bruna_2016_2_reference](drugs/drug_lanreotide/Lanreotide_BuilBruna2016v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Buil-Bruna N et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2016) | [10.1007/s40262-015-0329-4](https://doi.org/10.1007/s40262-015-0329-4) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Trocóniz_2009_reference](drugs/drug_lanreotide/Lanreotide_Trocniz2009_reference.md) | — | 1-compartment (no model) | 0 | Trocóniz IF et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (2009) | [10.2165/0003088-200948010-00004](https://doi.org/10.2165/0003088-200948010-00004) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Buil-Bruna_2016_2_reference](drugs/drug_lanreotide/Lanreotide_BuilBruna2016v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Buil-Bruna N et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2016) | [10.1007/s40262-015-0329-4](https://doi.org/10.1007/s40262-015-0329-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Trocóniz_2009_reference](drugs/drug_lanreotide/Lanreotide_Trocniz2009_reference.md) | — | 1-compartment (no model) | 0 | Trocóniz IF et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (2009) | [10.2165/0003088-200948010-00004](https://doi.org/10.2165/0003088-200948010-00004) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span> | [Cendros_2005_GH](drugs/drug_lanreotide/pd_Cendros_2005_GH.md) | serum growth hormone (GH) concentrations ← lanreotide · direct Emax (saturable) effect | model (no simulator) | Cendros JM et al., Pharmacokinetics and population pharmac…, Metabolism: clinical and ex… (2005) | [10.1016/j.metabol.2005.04.014](https://doi.org/10.1016/j.metabol.2005.04.014) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Kidd_2009_5HT_secretion](drugs/drug_lanreotide/pd_Kidd_2009_5HT_secretion.md) | serotonin secretion ← lanreotide · direct sigmoid Emax (Hill) effect | — | Kidd M et al., IL1beta- and LPS-induced serotonin secr…, Neurogastroenterology and m… (2009) | [10.1111/j.1365-2982.2008.01210.x](https://doi.org/10.1111/j.1365-2982.2008.01210.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lanreotide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP3A4` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: SSTR2 (target), SSTR5 (target).</sub>
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span> | [Cendros_2005_GH](drugs/drug_lanreotide/pd_Cendros_2005_GH.md) | serum growth hormone (GH) concentrations ← lanreotide · direct Emax (saturable) effect | model (no simulator) | Cendros JM et al., Pharmacokinetics and population pharmac…, Metabolism: clinical and ex… (2005) | [10.1016/j.metabol.2005.04.014](https://doi.org/10.1016/j.metabol.2005.04.014) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Kidd_2009_5HT_secretion](drugs/drug_lanreotide/pd_Kidd_2009_5HT_secretion.md) | serotonin secretion ← lanreotide · direct sigmoid Emax (Hill) effect | — | Kidd M et al., IL1beta- and LPS-induced serotonin secr…, Neurogastroenterology and m… (2009) | [10.1111/j.1365-2982.2008.01210.x](https://doi.org/10.1111/j.1365-2982.2008.01210.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

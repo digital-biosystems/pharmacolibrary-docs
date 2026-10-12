@@ -28,25 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.00).">in vitro</span> | [Jurima-Romet_1994_terfenadine_metabolism](drugs/drug_troleandomycin/pd_Jurima_Romet_1994_terfenadine_metabolism.md) | terfenadine metabolism ← troleandomycin · inhibition effect | — | Jurima-Romet M et al., Terfenadine metabolism in human liver.…, Drug metabolism and disposi… (1994) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=troleandomycin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2C8` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor, `CYP3A7` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CYP3A43 (inducer), NR1I2 (activator).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.00).">in vitro</span> | [Jurima-Romet_1994_terfenadine_metabolism](drugs/drug_troleandomycin/pd_Jurima_Romet_1994_terfenadine_metabolism.md) | terfenadine metabolism ← troleandomycin · inhibition effect | — | Jurima-Romet M et al., Terfenadine metabolism in human liver.…, Drug metabolism and disposi… (1994) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

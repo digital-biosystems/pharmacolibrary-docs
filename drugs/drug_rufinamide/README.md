@@ -32,23 +32,7 @@ Rufinamide is an anticonvulsant used to treat epilepsy. It is an approved medici
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Arzimanoglou_2016_reference](drugs/drug_rufinamide/Rufinamide_Arzimanoglou2016_reference.md) | — | 1-compartment (no model) | 1 | Arzimanoglou A et al., Safety and pharmacokinetic profile of r…, European journal of paediat… (2016) | [10.1016/j.ejpn.2015.12.015](https://doi.org/10.1016/j.ejpn.2015.12.015) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=rufinamide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ALB` substrate | DrugBank actor |
-| metabolism | liver | `CES1` substrate, `CYP2E1` inhibitor, `CYP3A4` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: GRM5 (inhibitor), SCN9A (modulator).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Arzimanoglou_2016_reference](drugs/drug_rufinamide/Rufinamide_Arzimanoglou2016_reference.md) | — | 1-compartment (no model) | 1 | Arzimanoglou A et al., Safety and pharmacokinetic profile of r…, European journal of paediat… (2016) | [10.1016/j.ejpn.2015.12.015](https://doi.org/10.1016/j.ejpn.2015.12.015) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

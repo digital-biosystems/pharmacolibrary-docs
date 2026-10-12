@@ -16,11 +16,11 @@
 
 **As extracted:** Allopurinol and oxypurinol (measured concentrations) drive Uric acid (in mg/L): indirect response — drug inhibits the production of Uric acid.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The plasma concentrations of allopurinol and its active metabolite oxypurinol inhibit the production of uric acid by inhibiting xanthine oxidase (XO) in a saturable (Emax) manner. The model characterizes this inhibition with an IC50 of 0.36 mg/L and an Emax of 1, while describing the elimination of uric acid using a Kout5 value of 0.035 mg/L × h.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Chu_2022`
 - **model family:** `indirect_response_i`
@@ -101,7 +101,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

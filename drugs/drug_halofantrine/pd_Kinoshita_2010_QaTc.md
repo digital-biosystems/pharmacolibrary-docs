@@ -22,7 +22,7 @@
 
 > In isolated perfused guinea pig hearts, halofantrine (0.1–2.0 μM) directly prolonged the heart rate-corrected QaTc interval in a concentration-dependent manner, described by a direct Emax model (E = change in QaTc, with Emax, Emin, EC50, C); the paper does not state a mechanistic production/elimination model. The EC50 was 1.59 ± 1.26 μM, similar to quinine and higher (less potent) than quinidine (0.49 ± 0.61 μM).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kinoshita_2010`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Kinoshita A et al., Effects of anti-malarial drugs on the e…, Malaria journal 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

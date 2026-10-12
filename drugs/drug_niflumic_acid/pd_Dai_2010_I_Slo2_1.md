@@ -21,7 +21,7 @@
 
 > Niflumic acid directly stimulates the Slo2.1 outward current (I_Slo2.1) in a concentration-dependent manner, with the drug acting rapidly upon perfusion to induce a large increase in current magnitude. The concentration-response relationship is described by a Hill equation with an EC50 of 2.08 mM and a Hill coefficient (nH) of 1.9, suggesting a positively cooperative binding reaction.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Dai_2010`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Dai L et al., Activation of Slo2.1 channels by niflum…, The Journal of general
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

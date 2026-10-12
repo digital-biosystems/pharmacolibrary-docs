@@ -33,7 +33,7 @@ Hydroquinine, a quinine derivative, is classified among drugs for disorders of t
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> | [van_2000_reference](drugs/drug_hydroquinine/Hydroquinine_van2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | van Kan HJ et al., Hydroquinine pharmacokinetics after ora…, European journal of clinica… (2000) | [10.1007/s002280000128](https://doi.org/10.1007/s002280000128) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> | [van_2000_reference](drugs/drug_hydroquinine/Hydroquinine_van2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | van Kan HJ et al., Hydroquinine pharmacokinetics after ora…, European journal of clinica… (2000) | [10.1007/s002280000128](https://doi.org/10.1007/s002280000128) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

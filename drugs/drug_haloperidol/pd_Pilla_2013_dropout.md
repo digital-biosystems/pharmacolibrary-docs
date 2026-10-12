@@ -20,7 +20,7 @@
 
 > Haloperidol exposure (patient-specific average steady-state plasma concentration, Css) acts on PANSS via an Emax model (Emax 0.31, EC50 3.58 ng/mL) on top of a Weibull placebo model, and dropout (time-to-event) is described by an exponential hazard model in which the probability of dropping out is associated with the observed high PANSS score (BETA −0.0295); the dropout hazard was 0.0009 1/d on haloperidol versus 0.00139 1/d on placebo.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Pilla_2013`
 - **model family:** `tte`
@@ -63,7 +63,7 @@ Pilla Reddy V et al., Population pharmacokinetic-pharmacodyna…, Journal of cli
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

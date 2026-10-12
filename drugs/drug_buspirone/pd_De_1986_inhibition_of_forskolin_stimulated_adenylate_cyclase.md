@@ -18,11 +18,11 @@
 
 **As extracted:** Buspirone (concentrations from the PK model of Chen_2024_2) drives inhibition of forskolin-stimulated adenylate cyclase activity (in % inhibition): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Buspirone concentration (nM) produces inhibition of forskolin-stimulated adenylate cyclase activity (% inhibition) described by an Emax model, with EC50 = 146 nM and Emax (relative intrinsic activity) = 0.5; the paper excerpts do not state a production/elimination (kin/kout) mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `De_1986`
 - **model family:** `emax`
@@ -101,7 +101,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

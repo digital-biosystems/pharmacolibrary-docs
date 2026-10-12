@@ -22,7 +22,7 @@
 
 > Fluvoxamine plasma concentrations (ng/ml, from the cited Chen_2024 PK model) drive an indirect response model of 5-HT concentration in rat frontal cortex microdialysate, in which fluvoxamine inhibits the elimination of 5-HT (indirect response II, proportional inhibition). Reported potency values are EC50 = 1.1 ng/ml and IC50 = 272 % of baseline; the paper excerpts provide no additional mechanistic text.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Geldof_2008_2`
 - **model family:** `indirect_response_ii`
@@ -64,7 +64,7 @@ Geldof M et al., Mechanistic model for the acute effect…, European journal of 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

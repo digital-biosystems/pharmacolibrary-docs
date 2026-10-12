@@ -5,7 +5,7 @@
 
 # gliclazide — `Gliclazide_Frey2003_intersubject_variability`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 The source reports AUCt 60 mg.h ml-1, CL/F 15 ml min-1 and V/F 19 l for gliclazide in Type 2 diabetic patients, but no ka or lag time, so the model builder substituted library defaults for both. The failed check flagged this invented absorption as not acceptable. Additionally, the unit mg.h ml-1 for AUCt could not be converted to SI, and bioavailability was assumed to be 1 with no molar correction, making the clearance and volume apparent (/F) values with first-order depot input for extravascular dosing. Extracted — gliclazide: AUCt 60 mg.h ml -1, CL/F 15 ml min -1, V/F 19 l.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gliclazide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption rate constant: this record has 1.4, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Frey N et al., Population PKPD modelling of the long-t…, British journal of clinical… (2003)
   ·  DOI: [10.1046/j.1365-2125.2003.01751.x](https://doi.org/10.1046/j.1365-2125.2003.01751.x)
 
-## Model component
-<dbs-pgx drug="gliclazide" model-id="Gliclazide_Frey2003_intersubject_variability" status="rejected" stale="true" population="Type 2 diabetic patients" measured-compound="gliclazide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gliclazide" model-id="Gliclazide_Frey2003_intersubject_variability" status="rejected" stale="true" population="Type 2 diabetic patients" measured-compound="gliclazide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -82,25 +81,20 @@ Frey N et al., Population PKPD modelling of the long-t…, British journal of cl
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.25 (3/12 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[absorption rate constant]` | 1.4 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent clearance]` | 15 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent clearance]` | not captured | 15 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 19 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | not captured | 19 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[equilibration half-life]` | not captured | 21 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[gliclazide auc 50].parameter_id` | Q19 | Q88 | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | gliclazide | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | gliclazide | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[rate constant of equilibration k eq]` | not captured | 84 | only_one_extracted |
 
 </details>
 
@@ -144,21 +138,21 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_gliclazide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Frey_2003` / `Frey_2003::intersubject_variability`)
-- model: `../../../knowledgebase/drugs/drug_gliclazide/models/modelica/Gliclazide_Frey2003_intersubject_variability.mo`
-- deviation: `../../../knowledgebase/drugs/drug_gliclazide/models/modelica/Gliclazide_Frey2003_intersubject_variability.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_gliclazide/models/modelica/Gliclazide_Frey2003_intersubject_variability.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gliclazide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Frey_2003` / `Frey_2003::intersubject_variability`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gliclazide/models/modelica/Gliclazide_Frey2003_intersubject_variability.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gliclazide/models/modelica/Gliclazide_Frey2003_intersubject_variability.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gliclazide/models/modelica/Gliclazide_Frey2003_intersubject_variability.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

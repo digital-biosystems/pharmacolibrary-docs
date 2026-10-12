@@ -4,7 +4,7 @@
 
 # elagolix — `Elagolix_Beck2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -26,8 +26,7 @@ The record lists the absorption rate constant with a value of 2.46 and units of 
 Beck D et al., Population Pharmacokinetics of Elagolix…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01096-w](https://doi.org/10.1007/s40262-021-01096-w)
 
-## Model component
-<dbs-pgx drug="elagolix" model-id="Elagolix_Beck2022_reference" status="rejected" stale="false" population="healthy premenopausal women and premenopausal women with uterine fibroids or endometriosis" measured-compound="elagolix" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="elagolix" model-id="Elagolix_Beck2022_reference" status="rejected" stale="false" population="healthy premenopausal women and premenopausal women with uterine fibroids or endometriosis" measured-compound="elagolix" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 1 covariate effect.
@@ -107,18 +106,18 @@ Beck D et al., Population Pharmacokinetics of Elagolix…, Clinical pharmacokine
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_elagolix/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Beck_2022` / `Beck_2022::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_elagolix/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Beck_2022` / `Beck_2022::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -31,25 +31,7 @@ St John's wort (Hypericum perforatum) flowering tops are used as a herbal antide
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357), gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Biber_1998_reference](drugs/drug_hyperici_herba/HypericiHerba_Biber1998_reference.md) | — | 1-compartment (no model) | 5 | Biber A et al., Oral bioavailability of hyperforin from…, Pharmacopsychiatry 31 Suppl (1998) | [10.1055/s-2007-979344](https://doi.org/10.1055/s-2007-979344) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=hyperici_herba).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inducer | DrugBank actor |
-| absorption | kidney | `ABCB1` inducer | DrugBank actor |
-| absorption | liver | `ABCB1` inducer | DrugBank actor |
-| absorption | placenta | `ABCB1` inducer | DrugBank actor |
-| absorption | small intestine | `ABCB1` inducer | DrugBank actor |
-| absorption | testis | `ABCB1` inducer | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2C19` inducer/substrate, `CYP2D6` inhibitor, `CYP3A4` activator/inducer/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` activator/inducer/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: SLC6A2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357), gpt-oss:120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Biber_1998_reference](drugs/drug_hyperici_herba/HypericiHerba_Biber1998_reference.md) | — | 1-compartment (no model) | 5 | Biber A et al., Oral bioavailability of hyperforin from…, Pharmacopsychiatry 31 Suppl (1998) | [10.1055/s-2007-979344](https://doi.org/10.1055/s-2007-979344) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

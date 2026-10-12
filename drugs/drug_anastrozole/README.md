@@ -24,15 +24,15 @@ Anastrozole is an aromatase inhibitor used to treat breast cancer, including inv
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Yuan_2001_reference](drugs/drug_anastrozole/Anastrozole_Yuan2001_reference.md) | — | 1-compartment (no model) | 0 | Yuan J et al., Pharmacokinetics of anastrozole in Chin…, Acta pharmacologica Sinica (2001) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Yuan_2001_reference](drugs/drug_anastrozole/Anastrozole_Yuan2001_reference.md) | — | 1-compartment (no model) | 0 | Yuan J et al., Pharmacokinetics of anastrozole in Chin…, Acta pharmacologica Sinica (2001) | — |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **CSMD1** | `Q321` · EC50 | target | [Cairns_2020](drugs/drug_anastrozole/pgx_Cairns_2020_CSMD1_Q321.md) | Cairns J et al., Pharmacogenomics of aromatase inhibitor…, JCI insight (2020) | [10.1172/jci.insight.137571](https://doi.org/10.1172/jci.insight.137571) |
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **ALPPL2** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | transport | [Dudenkov_2019](drugs/drug_anastrozole/pgx_Dudenkov_2019_ALPPL2_Q100.md) | Dudenkov TM et al., Anastrozole Aromatase Inhibitor Plasma…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1359](https://doi.org/10.1002/cpt.1359) |
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **SLC38A7** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | transport | [Dudenkov_2019](drugs/drug_anastrozole/pgx_Dudenkov_2019_SLC38A7_Q100.md) | Dudenkov TM et al., Anastrozole Aromatase Inhibitor Plasma…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1359](https://doi.org/10.1002/cpt.1359) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | **CSMD1** | `Q321` · EC50 | target | [Cairns_2020](drugs/drug_anastrozole/pgx_Cairns_2020_CSMD1_Q321.md) | Cairns J et al., Pharmacogenomics of aromatase inhibitor…, JCI insight (2020) | [10.1172/jci.insight.137571](https://doi.org/10.1172/jci.insight.137571) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span> | **ALPPL2** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | transport | [Dudenkov_2019](drugs/drug_anastrozole/pgx_Dudenkov_2019_ALPPL2_Q100.md) | Dudenkov TM et al., Anastrozole Aromatase Inhibitor Plasma…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1359](https://doi.org/10.1002/cpt.1359) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span> | **SLC38A7** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | transport | [Dudenkov_2019](drugs/drug_anastrozole/pgx_Dudenkov_2019_SLC38A7_Q100.md) | Dudenkov TM et al., Anastrozole Aromatase Inhibitor Plasma…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1359](https://doi.org/10.1002/cpt.1359) |
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -40,29 +40,6 @@ Anastrozole is an aromatase inhibitor used to treat breast cancer, including inv
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=anastrozole).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor, `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate, `UGT1A3` substrate, `UGT1A4` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| — | adipose tissue | `CYP19A1` inhibitor | DrugBank actor |
-| — | ovary | `CYP19A1` inhibitor | DrugBank actor |
-| — | testis | `CYP19A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ALPPL2 (transport), CSMD1 (target), SLC38A7 (transport).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

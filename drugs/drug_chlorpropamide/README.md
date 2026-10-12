@@ -28,20 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | [Lang_2012_KATP_channel_inhibition](drugs/drug_chlorpropamide/pd_Lang_2012_KATP_channel_inhibition.md) | KATP channel inhibition ← chlorpropamide · direct sigmoid Emax (Hill) effect | — | Lang VY et al., Pharmacogenomic analysis of ATP-sensiti…, Pharmacogenetics and genomi… (2012) | [10.1097/FPC.0b013e32835001e7](https://doi.org/10.1097/FPC.0b013e32835001e7) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=chlorpropamide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` inhibitor | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP2C19` substrate, `CYP2C9` substrate | DrugBank actor |
-| excretion | kidney | `SLC15A2` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ABCC8 (inhibitor), KCNJ10 (blocker), PTGS1 (substrate).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | [Lang_2012_KATP_channel_inhibition](drugs/drug_chlorpropamide/pd_Lang_2012_KATP_channel_inhibition.md) | KATP channel inhibition ← chlorpropamide · direct sigmoid Emax (Hill) effect | — | Lang VY et al., Pharmacogenomic analysis of ATP-sensiti…, Pharmacogenetics and genomi… (2012) | [10.1097/FPC.0b013e32835001e7](https://doi.org/10.1097/FPC.0b013e32835001e7) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

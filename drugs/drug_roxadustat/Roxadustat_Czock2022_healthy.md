@@ -5,7 +5,7 @@
 
 # roxadustat — `Roxadustat_Czock2022_healthy`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.917), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: partial 1/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 Simulated as the paper dosed it, the model's terminal half-life is 15.1 h versus the paper's 11.8 h (and 13 h in another comparison), and its Cmax is 0.000964 versus the paper's 0.01, both exceeding tolerance. The absorption rate constant ka was not reported in the source, so a default was substituted, along with a default lag time; bioavailability was assumed to be 1 with no molar correction. The record was also flagged for an invented absorption description, judged not acceptable, and one reported unit could not be converted to SI, so that parameter arrived without an SI value. Extracted — roxadustat: AUC 498 h·ng/mL per mg, Cmax 85 ng/mL per mg, Ctrough 0.47 ng/mL per mg, CL/F 2.62 L/h, V/F 57 L, t1/2z 16 h, fu 0.81 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose: this record has none, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has roxadustat, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -151,19 +151,21 @@ Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.917 (11/12 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.75 (9/12 fields) | 3 |
 | `gpt-oss:120b` | confirmed | 1.0 (11/11 fields) | none |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[dose]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ur]` | not captured | 1.6 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | roxadustat | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | roxadustat | unknown | mismatch |
 
 </details>
 
@@ -227,10 +229,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_roxadustat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Czock_2022` / `Czock_2022::healthy`)
-- model: `../../../knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Czock2022_healthy.mo`
-- deviation: `../../../knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Czock2022_healthy.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Czock2022_healthy.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_roxadustat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Czock_2022` / `Czock_2022::healthy`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Czock2022_healthy.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Czock2022_healthy.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_roxadustat/models/modelica/Roxadustat_Czock2022_healthy.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -251,7 +253,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

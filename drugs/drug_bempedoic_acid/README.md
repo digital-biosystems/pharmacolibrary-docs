@@ -32,25 +32,8 @@ Bempedoic acid is a lipid-lowering medicine used to treat high cholesterol and o
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105), gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed 0/2</span> | [Amore_2023_reference](drugs/drug_bempedoic_acid/BempedoicAcid_Amore2023_reference.md) | — | 2-compartment (no model) | 3 | Amore BM et al., Physiologically Based Pharmacokinetic M…, Pharmaceutics (2023) | [10.3390/pharmaceutics15051476](https://doi.org/10.3390/pharmaceutics15051476) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.944), gpt-oss:120b (not confirmed, agreement 0.789). The first reading is what the record holds.">cross-check: disputed 0/2</span> | [Jadhav_2023_reference](drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference.md) | — | parent + metabolite (no model) | 4 (+2 cov.) | Jadhav SB et al., Population pharmacokinetic and pharmaco…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09864-w](https://doi.org/10.1007/s10928-023-09864-w) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bempedoic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `SLCO1B1` inhibitor, `SLCO1B3` inhibitor/substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | `ABCC3` inhibitor | DrugBank actor |
-| excretion | small intestine | `ABCC3` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ACLY (inhibitor), NUAK2 (activator), SLC27A2 (substrate).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105), gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed 0/2</span> | [Amore_2023_reference](drugs/drug_bempedoic_acid/BempedoicAcid_Amore2023_reference.md) | — | 2-compartment (no model) | 3 | Amore BM et al., Physiologically Based Pharmacokinetic M…, Pharmaceutics (2023) | [10.3390/pharmaceutics15051476](https://doi.org/10.3390/pharmaceutics15051476) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.944), gpt-oss:120b (not confirmed, agreement 0.789). Primary extraction retained.">cross-check: disputed 0/2</span> | [Jadhav_2023_reference](drugs/drug_bempedoic_acid/BempedoicAcid_Jadhav2023_reference.md) | — | parent + metabolite (no model) | 4 (+2 cov.) | Jadhav SB et al., Population pharmacokinetic and pharmaco…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09864-w](https://doi.org/10.1007/s10928-023-09864-w) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

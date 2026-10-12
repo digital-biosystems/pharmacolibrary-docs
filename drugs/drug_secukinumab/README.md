@@ -24,24 +24,15 @@ Secukinumab is a monoclonal antibody that blocks interleukin-17 and is used to t
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Rodríguez-Fernández_2022_reference](drugs/drug_secukinumab/Secukinumab_RodrguezFernndez2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Rodríguez-Fernández K et al., Impact of Pharmacokinetic and Pharmacod…, Pharmaceutics (2022) | [10.3390/pharmaceutics14030654](https://doi.org/10.3390/pharmaceutics14030654) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Bruin_2017_reference](drugs/drug_secukinumab/Secukinumab_Bruin2017_reference.md) | held back | 1-compartment, oral | 6 | Bruin G et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.876](https://doi.org/10.1002/jcph.876) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Dumortier_2025_reference](drugs/drug_secukinumab/Secukinumab_Dumortier2025_reference.md) | — | 1-compartment (no model) | 0 | Dumortier T et al., Model-Informed Drug Development-Based B…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3716](https://doi.org/10.1002/cpt.3716) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [Rodríguez-Fernández_2022_reference](drugs/drug_secukinumab/Secukinumab_RodrguezFernndez2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Rodríguez-Fernández K et al., Impact of Pharmacokinetic and Pharmacod…, Pharmaceutics (2022) | [10.3390/pharmaceutics14030654](https://doi.org/10.3390/pharmaceutics14030654) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Bruin_2017_reference](drugs/drug_secukinumab/Secukinumab_Bruin2017_reference.md) | held back | 1-compartment, oral | 6 | Bruin G et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.876](https://doi.org/10.1002/jcph.876) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Dumortier_2025_reference](drugs/drug_secukinumab/Secukinumab_Dumortier2025_reference.md) | — | 1-compartment (no model) | 0 | Dumortier T et al., Model-Informed Drug Development-Based B…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3716](https://doi.org/10.1002/cpt.3716) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Rodriguez-Fernandez_2024_PASI](drugs/drug_secukinumab/pd_Rodriguez_Fernandez_2024_PASI.md) | Psoriasis Area and Severity Index ← secukinumab · indirect response — drug inhibits the production of Psoriasis Area and Severity Index | model (no simulator) | Rodriguez-Fernandez K et al., Personalized Secukinumab Treatment in P…, Pharmaceutics (2024) | [10.3390/pharmaceutics16121576](https://doi.org/10.3390/pharmaceutics16121576) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=secukinumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: IL17A (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

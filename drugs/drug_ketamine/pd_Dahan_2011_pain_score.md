@@ -20,7 +20,7 @@
 
 > S(+)-ketamine inhibits the continuous pain score with a C50 of 10.5 ng/ml. The time course is characterized by an onset/offset half-life of 10.9 days, but the specific pharmacodynamic mechanism is not described in the available text.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Dahan_2011`
 - **model family:** `unknown`
@@ -48,11 +48,11 @@ Dahan A et al., Population pharmacokinetic-pharmacodyna…, European journal of 
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -24,15 +24,7 @@ Dihydralazine is a hydrazinophthalazine vasodilator that was used to treat high 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (primary re-run, agreement 0.8). The first reading is what the record holds.">cross-check: partial 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Siegmund_1987_reference](drugs/drug_dihydralazine/Dihydralazine_Siegmund1987_reference.md) | — | 1-compartment (no model) | 0 | Siegmund W et al., [Pharmacokinetics of dihydralazine foll…, Die Pharmazie (1987) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dihydralazine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP1A2` inhibitor/substrate | DrugBank actor |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (primary re-run, agreement 0.8). Primary extraction retained.">cross-check: partial 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Siegmund_1987_reference](drugs/drug_dihydralazine/Dihydralazine_Siegmund1987_reference.md) | — | 1-compartment (no model) | 0 | Siegmund W et al., [Pharmacokinetics of dihydralazine foll…, Die Pharmazie (1987) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

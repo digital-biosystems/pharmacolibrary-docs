@@ -22,7 +22,7 @@
 
 > The model describes a sigmoidal Emax inhibition of nonlinear peak capacitance (Cm pk) by salicylate, with a half-maximal concentration (IC50) of 1.6 mM and a Hill coefficient of 1.0. The paper states that salicylate reduces Cm pk in a concentration-dependent and reversible manner, but does not explicitly specify a pharmacokinetic mechanism such as an effect compartment or specific rate constants (e.g., ke0, kout).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kakehata_1996`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Kakehata S et al., Effects of salicylate and lanthanides o…, The Journal of ne
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

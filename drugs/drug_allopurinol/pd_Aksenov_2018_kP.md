@@ -16,11 +16,11 @@
 
 **As extracted:** Oxypurinol (concentrations from the PK model of Hishe_2023) drives production rate of uric acid (in mg/h): direct Emax (saturable) effect.
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > The model describes oxypurinol inhibiting the production rate of uric acid (kP, mg/h) via an Emax mechanism, with a maximum fractional inhibition (R max) of 0.84 and a plasma concentration for half-maximal inhibition ([P] 50,PIN) of 14,000 ng/mL. The paper does not specify a rate constant for the effect compartment or other time-dependent mechanism parameters in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Aksenov_2018`
 - **model family:** `emax`

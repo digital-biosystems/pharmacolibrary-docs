@@ -24,8 +24,8 @@ Etanercept is a TNF inhibitor used to treat inflammatory conditions such as rheu
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Ling_2024_reference](drugs/drug_etanercept/Etanercept_Ling2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Ling SF et al., Population Pharmacokinetic Analysis and…, Pharmaceutics (2024) | [10.3390/pharmaceutics16060702](https://doi.org/10.3390/pharmaceutics16060702) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Zhou_2004_reference](drugs/drug_etanercept/Etanercept_Zhou2004_reference.md) | — | 1-compartment (no model) | 0 | Zhou H et al., Unaltered etanercept pharmacokinetics w…, Journal of clinical pharmac… (2004) | [10.1177/0091270004268049](https://doi.org/10.1177/0091270004268049) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Ling_2024_reference](drugs/drug_etanercept/Etanercept_Ling2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Ling SF et al., Population Pharmacokinetic Analysis and…, Pharmaceutics (2024) | [10.3390/pharmaceutics16060702](https://doi.org/10.3390/pharmaceutics16060702) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Zhou_2004_reference](drugs/drug_etanercept/Etanercept_Zhou2004_reference.md) | — | 1-compartment (no model) | 0 | Zhou H et al., Unaltered etanercept pharmacokinetics w…, Journal of clinical pharmac… (2004) | [10.1177/0091270004268049](https://doi.org/10.1177/0091270004268049) |
 
 ## Pharmacodynamics (PD)
 
@@ -41,16 +41,6 @@ Etanercept is a TNF inhibitor used to treat inflammatory conditions such as rheu
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Hsu_2014_ACR](drugs/drug_etanercept/pd_Hsu_2014_ACR.md) | ACR 20/50/70 response rate ← etanercept · categorical (graded) response model | — | Hsu LF et al., Evaluation of etanercept dose reduction…, International journal of cl… (2014) | [10.5414/CP202131](https://doi.org/10.5414/CP202131) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Hutmacher_2007_PASI75](drugs/drug_etanercept/pd_Hutmacher_2007_PASI75.md) | PASI75 ← etanercept · categorical (graded) response model | — | Hutmacher MM et al., Modeling the exposure-response relation…, Journal of clinical pharmac… (2007) | [10.1177/0091270006295062](https://doi.org/10.1177/0091270006295062) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Lee_2003_ACR20](drugs/drug_etanercept/pd_Lee_2003_ACR20.md) | ACR20 ← etanercept · categorical (graded) response model | — | Lee H et al., Population pharmacokinetic and pharmaco…, Clinical pharmacology and t… (2003) | [10.1016/s0009-9236(02)17635-1](https://doi.org/10.1016/s0009-9236(02)17635-1) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=etanercept).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: C1QA (target), FCGR1A (target), FCGR2A (target), FCGR2B (target), FCGR2C (target), FCGR3A (target), FCGR3B (target), LTA (antibody), TNF (antibody), TNF (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

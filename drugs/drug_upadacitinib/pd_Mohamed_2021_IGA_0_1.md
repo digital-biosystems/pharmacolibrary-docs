@@ -19,7 +19,7 @@
 
 > The relationship between upadacitinib average plasma concentration (Cavg, ng/mL) and the probability of achieving an IGA 0/1 response was modeled using a logistic regression Emax function, with parameters estimated as an intercept of -4.03, an Emax of 5.78, and an EC50 of 12.8 ng/mL. The paper specifies that these parameters describe the drug's effect on the logit scale but does not detail the underlying biological mechanism of action on the response signal itself.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mohamed_2021`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Mohamed MF et al., Exposure-Response Analyses for Upadacit…, Journal of clinic
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

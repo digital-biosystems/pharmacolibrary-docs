@@ -22,7 +22,7 @@
 
 > Buspirone concentration (nM) inhibits VIP + forskolin-stimulated cAMP formation via an Emax (inhibitory) model; the paper reports an EC50 of 128 nM, but no full text is available so the mechanism beyond inhibition and other parameters (Imax, kin, kout) are not stated.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Dumuis_1988`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Dumuis A et al., Pharmacology of 5-hydroxytryptamine-1A…, Molecular pharmacolo
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

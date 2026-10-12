@@ -28,21 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Brockmeier_1988_reduction_in_exercise_induced_tachycardia](drugs/drug_penbutolol/pd_Brockmeier_1988_reduction_in_exercise_induced_tachycardia.md) | reduction in exercise-induced tachycardia ← penbutolol · direct Emax (saturable) effect | — | Brockmeier D et al., Penbutolol: pharmacokinetics, effect on…, European journal of clinica… (1988) | [10.1007/BF00637597](https://doi.org/10.1007/BF00637597) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Aguirre_1996_HR](drugs/drug_penbutolol/pd_Aguirre_1996_HR.md) | heart rate ← penbutolol · direct linear effect | — | Aguirre C et al., Pharmacokinetics and pharmacodynamics o…, Research communications in… (1996) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=penbutolol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ORM1` other/unknown | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADRB1 (partial agonist), ADRB1 (target), ADRB2 (partial agonist), ADRB2 (target), HTR1A (target), HTR1B (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Brockmeier_1988_reduction_in_exercise_induced_tachycardia](drugs/drug_penbutolol/pd_Brockmeier_1988_reduction_in_exercise_induced_tachycardia.md) | reduction in exercise-induced tachycardia ← penbutolol · direct Emax (saturable) effect | — | Brockmeier D et al., Penbutolol: pharmacokinetics, effect on…, European journal of clinica… (1988) | [10.1007/BF00637597](https://doi.org/10.1007/BF00637597) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Aguirre_1996_HR](drugs/drug_penbutolol/pd_Aguirre_1996_HR.md) | heart rate ← penbutolol · direct linear effect | — | Aguirre C et al., Pharmacokinetics and pharmacodynamics o…, Research communications in… (1996) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

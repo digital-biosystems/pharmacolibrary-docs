@@ -28,23 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Baker_2014_cAMP](drugs/drug_pindolol/pd_Baker_2014_cAMP.md) | 3 H-cAMP accumulation ← pindolol · stimulation effect | — | Baker JG et al., Identification of key residues in trans…, Molecular pharmacology (2014) | [10.1124/mol.114.091587](https://doi.org/10.1124/mol.114.091587) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Klug_1994_dysmorphogenesis](drugs/drug_pindolol/pd_Klug_1994_dysmorphogenesis.md) | dysmorphogenesis ← pindolol · stimulation effect | — | Klug S et al., Toxicity of beta-blockers in a rat whol…, Archives of toxicology (1994) | [10.1007/s002040050085](https://doi.org/10.1007/s002040050085) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pindolol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ORM1` binder | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` inhibitor/substrate, `SULT1A1` substrate, `UGT1A1` substrate | DrugBank actor |
-| metabolism | small intestine | `SULT1A1` substrate, `UGT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A2` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRB1 (partial agonist), ADRB2 (partial agonist), ADRB3 (target), HTR1A (target), HTR1B (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Baker_2014_cAMP](drugs/drug_pindolol/pd_Baker_2014_cAMP.md) | 3 H-cAMP accumulation ← pindolol · stimulation effect | — | Baker JG et al., Identification of key residues in trans…, Molecular pharmacology (2014) | [10.1124/mol.114.091587](https://doi.org/10.1124/mol.114.091587) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Klug_1994_dysmorphogenesis](drugs/drug_pindolol/pd_Klug_1994_dysmorphogenesis.md) | dysmorphogenesis ← pindolol · stimulation effect | — | Klug S et al., Toxicity of beta-blockers in a rat whol…, Archives of toxicology (1994) | [10.1007/s002040050085](https://doi.org/10.1007/s002040050085) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

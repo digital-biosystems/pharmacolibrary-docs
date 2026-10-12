@@ -22,7 +22,7 @@
 
 > Suramin inhibits ATP-evoked inward currents at the recombinant P2X2 receptor, with a reported IC50 of 10.4 ± 2 µM (the record also lists IC50 values of 78 ± 5 nM and 30 ± 6 nM, presumably for other conditions/receptors). The paper excerpts do not state the mechanism or effect model.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `King_1997`
 - **model family:** `unknown`
@@ -65,7 +65,7 @@ King BF et al., Effects of extracellular pH on agonism…, British journal of ph
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

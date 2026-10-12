@@ -21,7 +21,7 @@
 
 > Etidocaine inhibits carnitine-stimulated pyruvate oxidation with an IC50 of 0.30 mM. The paper does not specify the mechanistic form of the effect or other kinetic parameters.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Weinberg_2000`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Weinberg GL et al., Bupivacaine inhibits acylcarnitine exch…, Anesthesiology (
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > Fampridine (4-aminopyridine) concentrations inhibit the XKv1.10 K+ current via a sigmoid Emax model; the paper gives an IC50 of 68.5 microM, but no excerpts are available to confirm the mechanism or other parameters (Imax, gamma).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Fry_2004`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Fry M et al., Properties of Xenopus Kv1.10 channels e…, Journal of neurobiolog
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

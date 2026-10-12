@@ -21,7 +21,7 @@
 
 > Dextromethorphan and its metabolite dextrorphan (deuterated and non-deuterated) block human recombinant NR1/NR2D NMDA receptor peak current in whole-cell patch-clamp, with a sigmoid Emax concentration–response relationship; the paper reports IC50 values (deuteration causing a 16-fold IC50 increase for dextrorphan and about two-fold for dextromethorphan) but does not state the numeric IC50 values, Emax, or Hill coefficient, nor an explicit mechanism beyond direct receptor blockade.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Bespalov_2025`
 - **model family:** `sigmoid_emax`
@@ -41,11 +41,11 @@ _No resolved parameters._
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

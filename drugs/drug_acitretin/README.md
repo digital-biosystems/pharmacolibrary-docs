@@ -28,23 +28,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wu_2021_BKPyV](drugs/drug_acitretin/pd_Wu_2021_BKPyV.md) | BKPyV loads ← acitretin · inhibition effect | — | Wu Z et al., Acitretin and Retinoic Acid Derivatives…, Journal of virology (2021) | [10.1128/JVI.00127-21](https://doi.org/10.1128/JVI.00127-21) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Feld_2026_NAB](drugs/drug_acitretin/pd_Feld_2026_NAB.md) | net antiviral benefit ← acitretin · inhibition effect | — | Feld P et al., Positive net antiviral benefit of bexar…, Antiviral research (2026) | [10.1016/j.antiviral.2026.106398](https://doi.org/10.1016/j.antiviral.2026.106398) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Tippmann_2009_ADAM10_promoter_activity](drugs/drug_acitretin/pd_Tippmann_2009_ADAM10_promoter_activity.md) | ADAM10 promoter activity ← acitretin · stimulation effect | — | Tippmann F et al., Up-regulation of the alpha-secretase AD…, FASEB journal : official pu… (2009) | [10.1096/fj.08-121392](https://doi.org/10.1096/fj.08-121392) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=acitretin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: RARA (target), RARB (target), RARG (target), RBP1 (target), RXRA (target), RXRB (target), RXRG (target), Retinoic acid receptor RXR (target), STAT3 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wu_2021_BKPyV](drugs/drug_acitretin/pd_Wu_2021_BKPyV.md) | BKPyV loads ← acitretin · inhibition effect | — | Wu Z et al., Acitretin and Retinoic Acid Derivatives…, Journal of virology (2021) | [10.1128/JVI.00127-21](https://doi.org/10.1128/JVI.00127-21) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Feld_2026_NAB](drugs/drug_acitretin/pd_Feld_2026_NAB.md) | net antiviral benefit ← acitretin · inhibition effect | — | Feld P et al., Positive net antiviral benefit of bexar…, Antiviral research (2026) | [10.1016/j.antiviral.2026.106398](https://doi.org/10.1016/j.antiviral.2026.106398) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Tippmann_2009_ADAM10_promoter_activity](drugs/drug_acitretin/pd_Tippmann_2009_ADAM10_promoter_activity.md) | ADAM10 promoter activity ← acitretin · stimulation effect | — | Tippmann F et al., Up-regulation of the alpha-secretase AD…, FASEB journal : official pu… (2009) | [10.1096/fj.08-121392](https://doi.org/10.1096/fj.08-121392) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -28,28 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span> | [Back_2015_QTc](drugs/drug_astemizole/pd_Back_2015_QTc.md) | QTc interval ← astemizole · direct Emax (saturable) effect | — | Back HM et al., Development of QTc prolongation model i…, Xenobiotica; the fate of fo… (2015) | [10.3109/00498254.2014.991366](https://doi.org/10.3109/00498254.2014.991366) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=astemizole).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | heart | `CYP2J2` substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP2J2` substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | liver | `ABCB11` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: HRH1 (target), KCNH1 (unknown), KCNH2 (inhibitor), MAPT (unknown).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> | [Back_2015_QTc](drugs/drug_astemizole/pd_Back_2015_QTc.md) | QTc interval ← astemizole · direct Emax (saturable) effect | — | Back HM et al., Development of QTc prolongation model i…, Xenobiotica; the fate of fo… (2015) | [10.3109/00498254.2014.991366](https://doi.org/10.3109/00498254.2014.991366) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

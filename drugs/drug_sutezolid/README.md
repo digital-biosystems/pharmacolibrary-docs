@@ -12,6 +12,8 @@
 
 **Description.** Sutezolid has been used in trials studying the treatment of Tuberculosis.
 
+<p><small>Source: <a href="https://go.drugbank.com/drugs/DB11905">DrugBank DB11905</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

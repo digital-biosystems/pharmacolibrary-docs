@@ -32,7 +32,7 @@ Ipriflavone, an isoflavone derivative, has been studied for the treatment of bon
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Ma_1997_reference](drugs/drug_ipriflavone/Ipriflavone_Ma1997_reference.md) | — | 1-compartment (no model) | 3 | Ma XH et al., [High performance liquid chromatographi…, Yao xue xue bao = Acta phar… (1997) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Ma_1997_reference](drugs/drug_ipriflavone/Ipriflavone_Ma1997_reference.md) | — | 1-compartment (no model) | 3 | Ma XH et al., [High performance liquid chromatographi…, Yao xue xue bao = Acta phar… (1997) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

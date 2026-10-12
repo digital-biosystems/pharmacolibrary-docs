@@ -20,7 +20,7 @@
 
 > The model links plasma ketorolac concentrations (driver unit: mg/L) to the categorical pain relief response using an effect compartment structure. No mechanism is stated in the paper excerpts, but the record specifies an EC50 of 0.37 mg/L and an effect compartment turnover rate (keo) of 24 minutes.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mandema_1996`
 - **model family:** `categorical`
@@ -62,7 +62,7 @@ Mandema JW et al., Population pharmacodynamic model for ke…, Clinical pharmaco
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

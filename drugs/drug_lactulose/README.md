@@ -28,17 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> | [Oku_1998_diarrhea](drugs/drug_lactulose/pd_Oku_1998_diarrhea.md) | diarrhea ← lactulose · direct linear effect | — | Oku T et al., Transitory laxative threshold of trehal…, Journal of nutritional scie… (1998) | [10.3177/jnsv.44.787](https://doi.org/10.3177/jnsv.44.787) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lactulose).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> | [Oku_1998_diarrhea](drugs/drug_lactulose/pd_Oku_1998_diarrhea.md) | diarrhea ← lactulose · direct linear effect | — | Oku T et al., Transitory laxative threshold of trehal…, Journal of nutritional scie… (1998) | [10.3177/jnsv.44.787](https://doi.org/10.3177/jnsv.44.787) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

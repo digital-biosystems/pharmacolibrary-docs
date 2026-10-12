@@ -20,7 +20,7 @@
 
 > Remimazolam plasma concentrations (ng/mL) inhibit the Bispectral index via an inhibitory Emax model with an effect compartment (kE0 = 0.135 min-1, fixed). The population EC50 was 79.6 ng/mL with baseline BIS (E0) of 54.0; the paper does not state an Imax value.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Ueshima_2025`
 - **model family:** `emax`
@@ -65,7 +65,7 @@ Ueshima S et al., Pharmacokinetic and pharmacodynamic cha…, Scientific reports
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

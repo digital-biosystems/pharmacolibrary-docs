@@ -5,7 +5,7 @@
 
 # heparin — `Heparin_GouinThibault2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.0), gpt-oss:120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625), gpt-oss:120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — heparin: CL 891 mL.h -1, V 3.66e+03 mL, kabs 0.079 h -1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has none, the second reading 128; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 128; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Gouin-Thibault I et al., Tinzaparin, an alternative to subcutane…, Journal of thrombosis and h… (2024)
   ·  DOI: [10.1016/j.jtha.2024.07.006](https://doi.org/10.1016/j.jtha.2024.07.006)
 
-## Model component
-<dbs-pgx drug="heparin" model-id="Heparin_GouinThibault2024_reference" status="needs_review" stale="true" population="" measured-compound="heparin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="heparin" model-id="Heparin_GouinThibault2024_reference" status="needs_review" stale="true" population="" measured-compound="heparin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -66,13 +65,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | secondary_empty | 0.0 | none |
+| `gpt-oss-120b` | partly confirmed | 0.625 (5/8 fields) | 3 |
 | `gpt-oss:120b` | partly confirmed | 0.625 (5/8 fields) | 3 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q312]` | not captured | 128 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q316]` | not captured | 27 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | not captured | 98 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q312]` | not captured | 128 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q316]` | not captured | 27 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q32]` | not captured | 0.29 | only_one_extracted |
@@ -107,7 +109,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_heparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gouin-Thibault_2024` / `Gouin-Thibault_2024::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_heparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gouin-Thibault_2024` / `Gouin-Thibault_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -128,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

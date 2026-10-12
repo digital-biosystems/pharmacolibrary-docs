@@ -24,30 +24,13 @@ Oxybutynin is a bladder medication used to treat urinary incontinence, including
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Donabella_2015_reference](drugs/drug_oxybutynin/Oxybutynin_Donabella2015_reference.md) | — | 1-compartment (no model) | 0 | Donabella P et al., Development of supported liquid-phase m…, Bioanalysis (2015) | [10.4155/bio.15.7](https://doi.org/10.4155/bio.15.7) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Donabella_2015_reference](drugs/drug_oxybutynin/Oxybutynin_Donabella2015_reference.md) | — | 1-compartment (no model) | 0 | Donabella P et al., Development of supported liquid-phase m…, Bioanalysis (2015) | [10.4155/bio.15.7](https://doi.org/10.4155/bio.15.7) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Li_2019_Kv](drugs/drug_oxybutynin/pd_Li_2019_Kv.md) | Kv current ← oxybutynin · direct sigmoid Emax (Hill) effect | — | Li H et al., The anticholinergic drug oxybutynin inh…, Clinical and experimental p… (2019) | [10.1111/1440-1681.13138](https://doi.org/10.1111/1440-1681.13138) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=oxybutynin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C8` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Li_2019_Kv](drugs/drug_oxybutynin/pd_Li_2019_Kv.md) | Kv current ← oxybutynin · direct sigmoid Emax (Hill) effect | — | Li H et al., The anticholinergic drug oxybutynin inh…, Clinical and experimental p… (2019) | [10.1111/1440-1681.13138](https://doi.org/10.1111/1440-1681.13138) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

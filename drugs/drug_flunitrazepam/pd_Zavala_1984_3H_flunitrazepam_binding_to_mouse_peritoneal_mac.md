@@ -22,7 +22,7 @@
 
 > Flunitrazepam binding to mouse peritoneal macrophages (fmol per 10^6 cells) is described by saturable binding with KD 43 ± 7 nM and Bmax 391 ± 58 fmol per 10^6 cells, and an IC50 of 40 nM for inhibition of [3H]flunitrazepam binding; the paper excerpts provide no further mechanistic detail.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Zavala_1984`
 - **model family:** `unknown`
@@ -65,7 +65,7 @@ Zavala F et al., Interaction of benzodiazepines with mou…, European journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

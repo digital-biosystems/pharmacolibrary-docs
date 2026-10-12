@@ -28,28 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Okoshi_2004_myocyte_surface_area](drugs/drug_aldosterone/pd_Okoshi_2004_myocyte_surface_area.md) | myocyte surface area ← aldosterone · stimulation effect | — | Okoshi MP et al., Aldosterone directly stimulates cardiac…, Journal of cardiac failure (2004) | [10.1016/j.cardfail.2004.03.002](https://doi.org/10.1016/j.cardfail.2004.03.002) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Okoshi_2004_protein_incorporation](drugs/drug_aldosterone/pd_Okoshi_2004_protein_incorporation.md) | protein incorporation ← aldosterone · direct Emax (saturable) effect | — | Okoshi MP et al., Aldosterone directly stimulates cardiac…, Journal of cardiac failure (2004) | [10.1016/j.cardfail.2004.03.002](https://doi.org/10.1016/j.cardfail.2004.03.002) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=aldosterone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inducer/substrate, `SLCO1A2` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inducer/substrate, `SLC22A5` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inducer/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inducer/substrate | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inducer/substrate, `SLC22A5` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inducer/substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| — | adrenal gland | `CYP11B1` substrate, `CYP17A1` inducer | DrugBank actor |
-| — | testis | `CYP17A1` inducer | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CYP11B2 (substrate), NR3C1 (unknown), NR3C2 (target), SLC12A1 (blocker).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Okoshi_2004_myocyte_surface_area](drugs/drug_aldosterone/pd_Okoshi_2004_myocyte_surface_area.md) | myocyte surface area ← aldosterone · stimulation effect | — | Okoshi MP et al., Aldosterone directly stimulates cardiac…, Journal of cardiac failure (2004) | [10.1016/j.cardfail.2004.03.002](https://doi.org/10.1016/j.cardfail.2004.03.002) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Okoshi_2004_protein_incorporation](drugs/drug_aldosterone/pd_Okoshi_2004_protein_incorporation.md) | protein incorporation ← aldosterone · direct Emax (saturable) effect | — | Okoshi MP et al., Aldosterone directly stimulates cardiac…, Journal of cardiac failure (2004) | [10.1016/j.cardfail.2004.03.002](https://doi.org/10.1016/j.cardfail.2004.03.002) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -22,7 +22,7 @@
 
 > Benznidazole plasma exposure (AUC∞, µg×h/mL) was related to binary parasitological cure in chronically infected mice via a logistic regression (categorical) model with intercept −1.394 and slope (LogOdds) 0.028; the paper does not state an inhibitory production/elimination mechanism or Emax-type parameters. Predicted cure probability rises from 90% at ~1300 µg×h/mL to 95% at ~1500 µg×h/mL and 99% at ~2000 µg×h/mL; using T&gt;IC90, 3.2 and 4.3 days above target concentration give 95% and 99% cure probability, and a Cmax of ~50 µg/mL gives 99% cure probability.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Assmus_2025`
 - **model family:** `categorical`
@@ -64,7 +64,7 @@ Assmus F et al., Pharmacokinetic-pharmacodynamic modelin…, PLoS neglected trop
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

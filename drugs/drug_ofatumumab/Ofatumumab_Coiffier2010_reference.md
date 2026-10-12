@@ -5,7 +5,7 @@
 
 # ofatumumab — `Ofatumumab_Coiffier2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -68,34 +68,6 @@ Coiffier B et al., Pharmacokinetics and pharmacokinetic/ph…, British journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.111 (1/9 fields) | 8 |
-
-<details><summary>8 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['etirinotecan_pegol', 'irinotecan', 'metabolism'], ['irinotecan', 'sn38', 'metabolism'], ['sn38', 'sn38-glucuronide', 'metabolism'], ['irinotecan', 'apc', 'metabolism']] | [['etirinotecan pegol', 'irinotecan', 'metabolism'], ['irinotecan', 'sn38', 'metabolism'], ['irinotecan', 'apc', 'metabolism'], ['sn38', 'sn38-glucuronide', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `parameters[apc]` | not captured | 0.631 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl]` | 0.237 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ep]` | not captured | 0.237 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v1]` | 5.05 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v2=v2/f12]` | 1.8 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | etirinotecan_pegol | etirinotecan pegol | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | etirinotecan_pegol | etirinotecan pegol | mismatch |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
-</details>
-
-
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -116,18 +88,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_ofatumumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Coiffier_2010` / `Coiffier_2010::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ofatumumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Coiffier_2010` / `Coiffier_2010::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

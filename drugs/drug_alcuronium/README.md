@@ -32,7 +32,7 @@ Alcuronium is a peripherally acting muscle relaxant belonging to the curare alka
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Walker_1983_reference](drugs/drug_alcuronium/Alcuronium_Walker1983_reference.md) | — | 1-compartment (no model) | 1 | Walker JS et al., Alcuronium kinetics and plasma concentr…, Clinical pharmacology and t… (1983) | [10.1038/clpt.1983.69](https://doi.org/10.1038/clpt.1983.69) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Walker_1983_reference](drugs/drug_alcuronium/Alcuronium_Walker1983_reference.md) | — | 1-compartment (no model) | 1 | Walker JS et al., Alcuronium kinetics and plasma concentr…, Clinical pharmacology and t… (1983) | [10.1038/clpt.1983.69](https://doi.org/10.1038/clpt.1983.69) |
 
 ## Pharmacodynamics (PD)
 
@@ -41,15 +41,6 @@ Alcuronium is a peripherally acting muscle relaxant belonging to the curare alka
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Franken_2000_3H_NMS_binding](drugs/drug_alcuronium/pd_Franken_2000_3H_NMS_binding.md) | Equilibrium binding of [3H]NMS at M2-receptors biomarker turnover ← alcuronium | — | Franken C et al., Testing the specificity of allosteric m…, Naunyn-Schmiedeberg's archi… (2000) | [10.1007/s002109900176](https://doi.org/10.1007/s002109900176) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Franken_2000_3H_NMS_dissociation](drugs/drug_alcuronium/pd_Franken_2000_3H_NMS_dissociation.md) | [3H]NMS dissociation at M2-receptors biomarker turnover ← alcuronium | — | Franken C et al., Testing the specificity of allosteric m…, Naunyn-Schmiedeberg's archi… (2000) | [10.1007/s002109900176](https://doi.org/10.1007/s002109900176) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Walker_1983_paralysis](drugs/drug_alcuronium/pd_Walker_1983_paralysis.md) | paralysis ← alcuronium · direct Emax (saturable) effect | — | Walker JS et al., Alcuronium kinetics and plasma concentr…, Clinical pharmacology and t… (1983) | [10.1038/clpt.1983.69](https://doi.org/10.1038/clpt.1983.69) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=alcuronium).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CHRNA7 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

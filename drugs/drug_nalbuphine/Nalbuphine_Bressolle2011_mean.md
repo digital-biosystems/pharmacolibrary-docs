@@ -5,7 +5,7 @@
 
 # nalbuphine — `Nalbuphine_Bressolle2011_mean`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,8 +29,7 @@ The check had no reference to compare the clearance against, so the value is unv
 Bressolle F et al., Population pharmacokinetics of nalbuphi…, British journal of anaesthe… (2011)
   ·  DOI: [10.1093/bja/aer001](https://doi.org/10.1093/bja/aer001)
 
-## Model component
-<dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Bressolle2011_mean" status="needs_review" stale="true" population="paediatric patients" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nalbuphine" model-id="Nalbuphine_Bressolle2011_mean" status="needs_review" stale="true" population="paediatric patients" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.
@@ -132,7 +131,7 @@ Bressolle F et al., Population pharmacokinetics of nalbuphi…, British journal 
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_nalbuphine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bressolle_2011` / `Bressolle_2011::mean`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nalbuphine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bressolle_2011` / `Bressolle_2011::mean`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -153,7 +152,7 @@ Bressolle F et al., Population pharmacokinetics of nalbuphi…, British journal 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

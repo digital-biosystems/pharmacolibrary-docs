@@ -5,7 +5,7 @@
 
 # buprenorphine — `Buprenorphine_Nelson2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: partial 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Nelson GR et al., Pharmacokinetics, pharmacodynamics and…, Veterinary anaesthesia and… (2024)
   ·  DOI: [10.1016/j.vaa.2024.05.001](https://doi.org/10.1016/j.vaa.2024.05.001)
 
-## Model component
-<dbs-pgx drug="buprenorphine" model-id="Buprenorphine_Nelson2024_reference" status="needs_review" stale="true" population="horses aged 6-12 years" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="buprenorphine" model-id="Buprenorphine_Nelson2024_reference" status="needs_review" stale="true" population="horses aged 6-12 years" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -136,9 +135,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_buprenorphine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nelson_2024` / `Nelson_2024::reference`)
-- model: `../../../knowledgebase/drugs/drug_buprenorphine/models/modelica/_needs_review/Buprenorphine_Nelson2024_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_buprenorphine/models/modelica/_needs_review/Buprenorphine_Nelson2024_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_buprenorphine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nelson_2024` / `Nelson_2024::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_buprenorphine/models/modelica/_needs_review/Buprenorphine_Nelson2024_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_buprenorphine/models/modelica/_needs_review/Buprenorphine_Nelson2024_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -159,7 +158,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

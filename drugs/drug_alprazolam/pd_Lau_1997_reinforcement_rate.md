@@ -18,11 +18,11 @@
 
 **As extracted:** Alprazolam (concentrations from the PK model of DeVane_1993) drives reinforcement rate: indirect response — drug inhibits the production of reinforcement rate.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Alprazolam concentrations (microg/ml) inhibit the reinforcement rate via an indirect response model (inhibition of production, effect direction inhibition); the paper reports an IC50 of 0.02 microg/ml, but no full text is available to confirm the mechanism or other parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Lau_1997`
 - **model family:** `indirect_response_i`
@@ -97,7 +97,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

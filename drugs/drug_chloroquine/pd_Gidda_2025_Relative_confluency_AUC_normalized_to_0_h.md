@@ -22,7 +22,7 @@
 
 > Chloroquine concentrations inhibit the relative confluency (AUC normalized to 0 h) in MIA PaCa-2 cells, modeled with a sigmoid Emax (variable-slope, normalized [Inhibitor] vs. response) inhibitory function; the paper does not state the mechanism beyond chloroquine being a late-stage autophagy inhibitor, and no numeric IC50, Emax, or gamma values are given in the excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Gidda_2025`
 - **model family:** `sigmoid_emax`
@@ -56,7 +56,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

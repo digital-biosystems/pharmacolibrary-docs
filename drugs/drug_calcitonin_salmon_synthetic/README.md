@@ -32,21 +32,8 @@ Synthetic salmon calcitonin is a hormone drug used to treat osteoporosis, helpin
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Beveridge_1976_reference](drugs/drug_calcitonin_salmon_synthetic/CalcitoninSalmonSynthetic_Beveridge1976_reference.md) | — | 1-compartment (no model) | 2 | Beveridge T et al., Pharmacokinetic study with synthetic sa…, Zeitschrift fur Gastroenter… (1976) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q3 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Huwyler_1979_reference](drugs/drug_calcitonin_salmon_synthetic/CalcitoninSalmonSynthetic_Huwyler1979_reference.md) | — | 1-compartment (no model) | 2 | Huwyler R et al., Plasma kinetics and urinary excretion o…, The American journal of phy… (1979) | [10.1152/ajpendo.1979.236.1.E15](https://doi.org/10.1152/ajpendo.1979.236.1.E15) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=calcitonin_salmon_synthetic).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CALCR (target).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Beveridge_1976_reference](drugs/drug_calcitonin_salmon_synthetic/CalcitoninSalmonSynthetic_Beveridge1976_reference.md) | — | 1-compartment (no model) | 2 | Beveridge T et al., Pharmacokinetic study with synthetic sa…, Zeitschrift fur Gastroenter… (1976) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q3 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Huwyler_1979_reference](drugs/drug_calcitonin_salmon_synthetic/CalcitoninSalmonSynthetic_Huwyler1979_reference.md) | — | 1-compartment (no model) | 2 | Huwyler R et al., Plasma kinetics and urinary excretion o…, The American journal of phy… (1979) | [10.1152/ajpendo.1979.236.1.E15](https://doi.org/10.1152/ajpendo.1979.236.1.E15) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -21,7 +21,7 @@
 
 > The paper describes a sigmoid Emax model where isoflurane concentration (expressed in %) directly stimulates the outward potassium leak response with an EC50 of 0.63%. As no full text is available, the specific mechanism of action (e.g., direct binding vs. production/elimination) and other rate constants (such as ke0, kin, or kout) are not stated.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Spencer_2023`
 - **model family:** `sigmoid_emax`
@@ -48,11 +48,11 @@ Spencer KA et al., TREK-1 and TREK-2 Knockout Mice Are Not…, Anesthesiology (2
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

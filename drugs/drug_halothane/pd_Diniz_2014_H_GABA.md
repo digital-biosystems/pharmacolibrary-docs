@@ -21,7 +21,7 @@
 
 > The paper fits an Emax model of stimulation where halothane concentration (mM) drives the extracellular accumulation of [(3)H]GABA, with an estimated EC50 of 35 μM. No further parameters (e.g., Emax, Imax, rate constants) or mechanistic details (e.g., direct vs. indirect, effect compartment) are provided in the available record.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Diniz_2014`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Diniz PH et al., The effects of volatile anesthetics on…, Cellular and molecul
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

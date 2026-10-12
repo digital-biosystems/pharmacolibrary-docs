@@ -33,7 +33,7 @@ Phenoperidine is an opioid used as an analgesic component of general anesthesia.
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: partial</span> | [Fischler_1985_reference](drugs/drug_phenoperidine/Phenoperidine_Fischler1985_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Fischler M et al., Pharmacokinetics of phenoperidine in an…, British journal of anaesthe… (1985) | [10.1093/bja/57.9.872](https://doi.org/10.1093/bja/57.9.872) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span> | [Fischler_1985_reference](drugs/drug_phenoperidine/Phenoperidine_Fischler1985_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Fischler M et al., Pharmacokinetics of phenoperidine in an…, British journal of anaesthe… (1985) | [10.1093/bja/57.9.872](https://doi.org/10.1093/bja/57.9.872) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -24,15 +24,7 @@ Cefroxadine is a first-generation cephalosporin antibiotic used to treat bacteri
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Ohkawa_1981_reference](drugs/drug_cefroxadine/Cefroxadine_Ohkawa1981_reference.md) | — | 1-compartment (no model) | 0 | Ohkawa M et al., Pharmacokinetics of cefroxadine in heal…, Chemotherapy (1981) | [10.1159/000237971](https://doi.org/10.1159/000237971) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cefroxadine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Ohkawa_1981_reference](drugs/drug_cefroxadine/Cefroxadine_Ohkawa1981_reference.md) | — | 1-compartment (no model) | 0 | Ohkawa M et al., Pharmacokinetics of cefroxadine in heal…, Chemotherapy (1981) | [10.1159/000237971](https://doi.org/10.1159/000237971) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

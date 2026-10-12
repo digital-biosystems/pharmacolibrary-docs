@@ -34,30 +34,16 @@ Tolterodine is a muscarinic antagonist used to treat urinary incontinence and bl
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Sano_2023_reference](drugs/drug_tolterodine/Tolterodine_Sano2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 (+5 cov.) | Sano Y et al., Population Pharmacokinetic and Pharmaco…, European journal of drug me… (2023) | [10.1007/s13318-023-00818-8](https://doi.org/10.1007/s13318-023-00818-8) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Sano_2023_reference](drugs/drug_tolterodine/Tolterodine_Sano2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 (+5 cov.) | Sano Y et al., Population Pharmacokinetic and Pharmaco…, European journal of drug me… (2023) | [10.1007/s13318-023-00818-8](https://doi.org/10.1007/s13318-023-00818-8) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Sano_2023_MCC](drugs/drug_tolterodine/pd_Sano_2023_MCC.md) | maximum cystometric capacity ← 5-hydroxymethyl tolterodine · direct Emax (saturable) effect | model (no simulator) | Sano Y et al., Population Pharmacokinetic and Pharmaco…, European journal of drug me… (2023) | [10.1007/s13318-023-00818-8](https://doi.org/10.1007/s13318-023-00818-8) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Besson_2015_ASH](drugs/drug_tolterodine/pd_Besson_2015_ASH.md) | Area of secondary hyperalgesia biomarker turnover ← tolterodine | — | Besson M et al., GABAergic modulation in central sensiti…, Pain (2015) | [10.1097/01.j.pain.0000460331.33385.e8](https://doi.org/10.1097/01.j.pain.0000460331.33385.e8) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Besson_2015_Sedation](drugs/drug_tolterodine/pd_Besson_2015_Sedation.md) | Sedation biomarker turnover ← tolterodine | — | Besson M et al., GABAergic modulation in central sensiti…, Pain (2015) | [10.1097/01.j.pain.0000460331.33385.e8](https://doi.org/10.1097/01.j.pain.0000460331.33385.e8) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Sweeney_2010_QTc](drugs/drug_tolterodine/pd_Sweeney_2010_QTc.md) | QTc interval ← tolterodine · direct linear effect | — | Sweeney KR et al., Exposure-response modeling and clinical…, Drug discoveries & therapeu… (2010) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tolterodine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target).</sub>
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Sano_2023_MCC](drugs/drug_tolterodine/pd_Sano_2023_MCC.md) | maximum cystometric capacity ← 5-hydroxymethyl tolterodine · direct Emax (saturable) effect | model (no simulator) | Sano Y et al., Population Pharmacokinetic and Pharmaco…, European journal of drug me… (2023) | [10.1007/s13318-023-00818-8](https://doi.org/10.1007/s13318-023-00818-8) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Besson_2015_ASH](drugs/drug_tolterodine/pd_Besson_2015_ASH.md) | Area of secondary hyperalgesia biomarker turnover ← tolterodine | — | Besson M et al., GABAergic modulation in central sensiti…, Pain (2015) | [10.1097/01.j.pain.0000460331.33385.e8](https://doi.org/10.1097/01.j.pain.0000460331.33385.e8) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Besson_2015_Sedation](drugs/drug_tolterodine/pd_Besson_2015_Sedation.md) | Sedation biomarker turnover ← tolterodine | — | Besson M et al., GABAergic modulation in central sensiti…, Pain (2015) | [10.1097/01.j.pain.0000460331.33385.e8](https://doi.org/10.1097/01.j.pain.0000460331.33385.e8) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Sweeney_2010_QTc](drugs/drug_tolterodine/pd_Sweeney_2010_QTc.md) | QTc interval ← tolterodine · direct linear effect | — | Sweeney KR et al., Exposure-response modeling and clinical…, Drug discoveries & therapeu… (2010) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

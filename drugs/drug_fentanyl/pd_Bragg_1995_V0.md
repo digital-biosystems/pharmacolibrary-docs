@@ -22,7 +22,7 @@
 
 > Fentanyl plasma concentrations drive minute ventilation (VO) through an effect compartment model described as a proportional inhibition mechanism. The paper states a small maturational increase in the steady-state plasma concentration depressing ventilation by 50% (C50) and no change in the equilibration rate constant (ke0), but does not provide specific numerical values for these parameters or a maximum effect (Imax/Emax).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Bragg_1995`
 - **model family:** `effect_compartment`
@@ -64,7 +64,7 @@ Bragg P et al., Opioid pharmacodynamics in neonatal dog…, Journal of applied p
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

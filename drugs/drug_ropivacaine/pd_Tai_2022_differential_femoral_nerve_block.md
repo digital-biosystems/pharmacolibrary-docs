@@ -20,7 +20,7 @@
 
 > The paper describes the direct relationship between ropivacaine concentration and the probability of achieving a differential femoral nerve block (sensory block with preserved motor function), quantified by EC50 values of 0.124% (95% CI 0.097–0.143%) for patients aged 18-60 years and 0.088% (95% CI 0.076–0.103%) for patients older than 60 years. No specific kinetic parameters (such as ke0 or kout) or explicit Emax model structure beyond the EC50 determination via probit regression are provided in the excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Tai_2022`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Tai YL et al., Median Effective Concentration of Ropiv…, Journal of pain resea
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

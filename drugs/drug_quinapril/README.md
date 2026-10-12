@@ -28,14 +28,14 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> | [Begg_1990_ACE_inhibition](drugs/drug_quinapril/pd_Begg_1990_ACE_inhibition.md) | ACE inhibition ← quinaprilat · direct sigmoid Emax (Hill) effect | — | Begg EJ et al., The pharmacokinetics and pharmacodynami…, British journal of clinical… (1990) | [10.1111/j.1365-2125.1990.tb03767.x](https://doi.org/10.1111/j.1365-2125.1990.tb03767.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> | [Begg_1990_ACE_inhibition](drugs/drug_quinapril/pd_Begg_1990_ACE_inhibition.md) | ACE inhibition ← quinaprilat · direct sigmoid Emax (Hill) effect | — | Begg EJ et al., The pharmacokinetics and pharmacodynami…, British journal of clinical… (1990) | [10.1111/j.1365-2125.1990.tb03767.x](https://doi.org/10.1111/j.1365-2125.1990.tb03767.x) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **ACE** | `Q320` · Emax | target | [Pérez-Castrillón_2003](drugs/drug_quinapril/pgx_P_rez_Castrill_n_2003_ACE_Q320.md) | Pérez-Castrillón JL et al., Effect of quinapril, quinapril-hydrochl…, American journal of hyperte… (2003) | [10.1016/s0895-7061(03)00845-8](https://doi.org/10.1016/s0895-7061(03)00845-8) |
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial 0/2</span> | **CES1** | `Q27` · CL/F | formation | [Tarkiainen_2015](drugs/drug_quinapril/pgx_Tarkiainen_2015_CES1_Q27.md) | Tarkiainen EK et al., Effect of carboxylesterase 1 c.428G &gt; A…, British journal of clinical… (2015) | [10.1111/bcp.12667](https://doi.org/10.1111/bcp.12667) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span> | **ACE** | `Q320` · Emax | target | [Pérez-Castrillón_2003](drugs/drug_quinapril/pgx_P_rez_Castrill_n_2003_ACE_Q320.md) | Pérez-Castrillón JL et al., Effect of quinapril, quinapril-hydrochl…, American journal of hyperte… (2003) | [10.1016/s0895-7061(03)00845-8](https://doi.org/10.1016/s0895-7061(03)00845-8) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial 0/2</span> | **CES1** | `Q27` · CL/F | formation | [Tarkiainen_2015](drugs/drug_quinapril/pgx_Tarkiainen_2015_CES1_Q27.md) | Tarkiainen EK et al., Effect of carboxylesterase 1 c.428G &gt; A…, British journal of clinical… (2015) | [10.1111/bcp.12667](https://doi.org/10.1111/bcp.12667) |
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -43,19 +43,6 @@ _not available_
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=quinapril).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | liver | `CES1` formation/substrate | DrugBank actor |
-| excretion | kidney | `SLC15A2` substrate, `SLC22A8` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ACE (inhibitor), ACE (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

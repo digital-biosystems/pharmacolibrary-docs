@@ -28,18 +28,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> | [Zhang_2025_11_hydroxylase_inhibition](drugs/drug_baxdrostat/pd_Zhang_2025_11_hydroxylase_inhibition.md) | inhibition of 11β-hydroxylase ← baxdrostat · direct Emax (saturable) effect | — | Zhang M et al., Prediction of pharmacokinetic/pharmacod…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1578117](https://doi.org/10.3389/fphar.2025.1578117) |
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> | [Zhang_2025_AS_inhibition](drugs/drug_baxdrostat/pd_Zhang_2025_AS_inhibition.md) | inhibition of aldosterone synthase ← baxdrostat · direct Emax (saturable) effect | — | Zhang M et al., Prediction of pharmacokinetic/pharmacod…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1578117](https://doi.org/10.3389/fphar.2025.1578117) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Sunnåker_2025_QTcF](drugs/drug_baxdrostat/pd_Sunn_ker_2025_QTcF.md) | QTcF ← baxdrostat · direct linear effect | — | Sunnåker M et al., No Evidence of QTc Interval Prolongatio…, Pharmacology research & per… (2025) | [10.1002/prp2.70181](https://doi.org/10.1002/prp2.70181) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=baxdrostat).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CYP11B2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> | [Zhang_2025_11_hydroxylase_inhibition](drugs/drug_baxdrostat/pd_Zhang_2025_11_hydroxylase_inhibition.md) | inhibition of 11β-hydroxylase ← baxdrostat · direct Emax (saturable) effect | — | Zhang M et al., Prediction of pharmacokinetic/pharmacod…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1578117](https://doi.org/10.3389/fphar.2025.1578117) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> | [Zhang_2025_AS_inhibition](drugs/drug_baxdrostat/pd_Zhang_2025_AS_inhibition.md) | inhibition of aldosterone synthase ← baxdrostat · direct Emax (saturable) effect | — | Zhang M et al., Prediction of pharmacokinetic/pharmacod…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1578117](https://doi.org/10.3389/fphar.2025.1578117) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Sunnåker_2025_QTcF](drugs/drug_baxdrostat/pd_Sunn_ker_2025_QTcF.md) | QTcF ← baxdrostat · direct linear effect | — | Sunnåker M et al., No Evidence of QTc Interval Prolongatio…, Pharmacology research & per… (2025) | [10.1002/prp2.70181](https://doi.org/10.1002/prp2.70181) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

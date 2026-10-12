@@ -21,7 +21,7 @@
 
 > The concentration of sulfinpyrazone (in microM) acts to inhibit the continuous response of [14C]-urate uptake via a proportional sigmoidal Emax mechanism. The paper states the key potency value as an IC50 of 520 microM, but no specific Emax, gamma, or rate constants are provided in the excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Roch-Ramel_1997`
 - **model family:** `sigmoid_emax`
@@ -47,11 +47,11 @@ Roch-Ramel F et al., Effects of uricosuric and antiuricosuri…, The Journal of 
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

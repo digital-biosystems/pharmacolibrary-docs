@@ -20,7 +20,7 @@
 
 > The paper describes a proportional sigmoid Emax model where pancuronium concentrations inhibit the EMG response, characterized by an ECp50 of 0.32 +/- 0.06 micrograms/ml. No mechanism beyond direct inhibition or additional kinetic parameters are specified in the available record or excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Evans_1984`
 - **model family:** `sigmoid_emax`
@@ -61,7 +61,7 @@ Evans MA et al., Pharmacokinetic and pharmacodynamic mod…, European journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

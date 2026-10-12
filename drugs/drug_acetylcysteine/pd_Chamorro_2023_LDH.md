@@ -21,7 +21,7 @@
 
 > The paper reports the dose-dependent inhibition of OGD-R-induced LDH release by various neuroprotective compounds (including N-acetylcysteine) using sigmoidal models, but it does not specify the mechanistic pathway (e.g., production or elimination) by which the drug exerts its effect. No specific potency or rate constants (such as EC50, Imax, or kout) are provided for N-acetylcysteine in the anti-necrotic LDH assay excerpts, though EC50 values for other compounds like ChN2 (1.77 μM) and QN23 (26.78 μM) are cited.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Chamorro_2023`
 - **model family:** `sigmoid_emax`
@@ -55,7 +55,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

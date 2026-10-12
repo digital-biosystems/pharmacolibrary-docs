@@ -5,7 +5,7 @@
 
 # levetiracetam — `Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016)
   ·  DOI: [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951)
 
-## Model component
-<dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1" status="model_quarantined" stale="false" population="patients with refractory partial-onset seizures" measured-compound="concomitant antiepileptic drugs" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levetiracetam" model-id="Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1" status="model_quarantined" stale="false" population="patients with refractory partial-onset seizures" measured-compound="concomitant antiepileptic drugs" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -131,9 +130,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_levetiracetam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Majid_2016` / `Majid_2016::aed_apparent_clearance_l_h_1`)
-- model: `../../../knowledgebase/drugs/drug_levetiracetam/models/modelica/_needs_review/Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1.mo`
-- deviation: `../../../knowledgebase/drugs/drug_levetiracetam/models/modelica/_needs_review/Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_levetiracetam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Majid_2016` / `Majid_2016::aed_apparent_clearance_l_h_1`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_levetiracetam/models/modelica/_needs_review/Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_levetiracetam/models/modelica/_needs_review/Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -154,7 +153,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

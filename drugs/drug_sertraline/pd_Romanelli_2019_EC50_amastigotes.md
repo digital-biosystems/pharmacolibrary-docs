@@ -22,7 +22,7 @@
 
 > Sertraline (SERT) concentrations (μM) inhibit intracellular amastigotes of L. (L.) infantum in infected macrophages, with a reported EC50 of 4.2 μM (record: 4.2 ± 2.2 μM, sigmoid Emax, inhibition); the paper does not state the mechanism beyond this inhibitory effect.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Romanelli_2019`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Romanelli MM et al., Sertraline Delivered in Phosphatidylser…, Frontiers in ce
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

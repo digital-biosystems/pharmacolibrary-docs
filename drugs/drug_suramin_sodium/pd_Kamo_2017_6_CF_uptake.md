@@ -22,7 +22,7 @@
 
 > Suramin inhibits 6-CF uptake by OATP2A1, described by a sigmoid Emax (proportional inhibition) model with suramin concentrations in μM; the paper reports an IC50 of 0.17 μM, but no full text is available to confirm the mechanism or other parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kamo_2017`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Kamo S et al., Impact of FDA-Approved Drugs on the Pro…, Journal of pharmaceut
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

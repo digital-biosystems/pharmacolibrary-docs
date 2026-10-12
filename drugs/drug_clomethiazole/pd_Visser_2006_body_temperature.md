@@ -21,7 +21,7 @@
 
 > Clomethiazole concentrations (microM) act on body temperature in a tolerance model with a proportional stimulatory effect; the paper states a CMZ potency of 30 +/- 1 microM, a delay in onset of tolerance of 7.6 +/- 2 h, and a turnover time of the mediator of 46 +/- 3 days; the excerpts do not further describe the mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Visser_2006`
 - **model family:** `tolerance`
@@ -64,7 +64,7 @@ Visser SA et al., Modeling drug- and system-related chang…, The Journal of pha
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

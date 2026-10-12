@@ -16,11 +16,11 @@
 
 **As extracted:** Baclofen (concentrations from the PK model of Brunet_2020) drives Obsessive-Compulsive Drinking Scale: direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The record indicates a direct Emax inhibition model linking baclofen concentrations (mg/l) to the Obsessive-Compulsive Drinking Scale response, with an Emax of 72%. As no full text is available, the paper does not explicitly describe the underlying mechanism or the specific potency parameters beyond the cited Emax and BE50 values for responders (12.6 mg/l) and non-responders (4390 h mg/l).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Imbert_2015`
 - **model family:** `emax`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

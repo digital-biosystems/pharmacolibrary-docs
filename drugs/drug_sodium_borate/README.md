@@ -28,18 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Kiselova_2021_prescription_count](drugs/drug_sodium_borate/pd_Kiselova_2021_prescription_count.md) | Extemporaneous prescription prevalence ← sodium_borate · model not identified | — | Kiselova O et al., Safety Aspects of Extemporaneous Prescr…, International journal of ph… (2021) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sodium_borate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | skin | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Kiselova_2021_prescription_count](drugs/drug_sodium_borate/pd_Kiselova_2021_prescription_count.md) | Extemporaneous prescription prevalence ← sodium_borate · model not identified | — | Kiselova O et al., Safety Aspects of Extemporaneous Prescr…, International journal of ph… (2021) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -5,7 +5,7 @@
 
 # caplacizumab — `Caplacizumab_SargentiniMaier2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Sargentini-Maier ML et al., Clinical pharmacology of caplacizumab f…, Expert review of clinical p… (2019)
   ·  DOI: [10.1080/17512433.2019.1607293](https://doi.org/10.1080/17512433.2019.1607293)
 
-## Model component
-<dbs-pgx drug="caplacizumab" model-id="Caplacizumab_SargentiniMaier2019_reference" status="model_quarantined" stale="false" population="adults with acquired thrombotic thrombocytopenic purpura" measured-compound="caplacizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="caplacizumab" model-id="Caplacizumab_SargentiniMaier2019_reference" status="model_quarantined" stale="false" population="adults with acquired thrombotic thrombocytopenic purpura" measured-compound="caplacizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -117,9 +116,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_caplacizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sargentini-Maier_2019` / `Sargentini-Maier_2019::reference`)
-- model: `../../../knowledgebase/drugs/drug_caplacizumab/models/modelica/_needs_review/Caplacizumab_SargentiniMaier2019_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_caplacizumab/models/modelica/_needs_review/Caplacizumab_SargentiniMaier2019_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_caplacizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sargentini-Maier_2019` / `Sargentini-Maier_2019::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_caplacizumab/models/modelica/_needs_review/Caplacizumab_SargentiniMaier2019_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_caplacizumab/models/modelica/_needs_review/Caplacizumab_SargentiniMaier2019_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -140,7 +139,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

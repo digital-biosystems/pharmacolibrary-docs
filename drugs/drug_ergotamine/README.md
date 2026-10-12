@@ -24,7 +24,7 @@ Ergotamine is an ergot alkaloid used to treat migraine attacks. It is an approve
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286), gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Tfelt-Hansen_1985_reference](drugs/drug_ergotamine/Ergotamine_TfeltHansen1985_reference.md) | — | 1-compartment (no model) | 1 | Tfelt-Hansen P et al., Intramuscular ergotamine: plasma levels…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.7](https://doi.org/10.1038/clpt.1985.7) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286), gpt-oss:120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Tfelt-Hansen_1985_reference](drugs/drug_ergotamine/Ergotamine_TfeltHansen1985_reference.md) | — | 1-compartment (no model) | 1 | Tfelt-Hansen P et al., Intramuscular ergotamine: plasma levels…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.7](https://doi.org/10.1038/clpt.1985.7) |
 
 ## Pharmacodynamics (PD)
 
@@ -34,24 +34,6 @@ Ergotamine is an ergot alkaloid used to treat migraine attacks. It is an approve
 | <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [MaassenVanDenBrink_1998_coronary_artery_contraction](drugs/drug_ergotamine/pd_MaassenVanDenBrink_1998_coronary_artery_contraction.md) | coronary artery contraction biomarker turnover ← ergotamine | — | MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circulation (1998) | [10.1161/01.cir.98.1.25](https://doi.org/10.1161/01.cir.98.1.25) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Tfelt-Hansen_1985_toe_arm_systolic_gradients](drugs/drug_ergotamine/pd_Tfelt_Hansen_1985_toe_arm_systolic_gradients.md) | toe-arm systolic gradients ← ergotamine · delayed effect through an effect compartment | — | Tfelt-Hansen P et al., Intramuscular ergotamine: plasma levels…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.7](https://doi.org/10.1038/clpt.1985.7) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span> | [Kudupoje_2018_NE_normalized_contraction](drugs/drug_ergotamine/pd_Kudupoje_2018_NE_normalized_contraction.md) | contractile response of saphenous vein smooth muscle to ergotamine tartrate (ETA) ← ergotamine tartrate · direct sigmoid Emax (Hill) effect | — | Kudupoje MB et al., Contractile Response of Bovine Lateral…, Toxins (2018) | [10.3390/toxins10020058](https://doi.org/10.3390/toxins10020058) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ergotamine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1A (partial agonist), ADRA1B (partial agonist), ADRA1D (partial agonist), ADRA2A (partial agonist), ADRA2C (unknown), DRD1 (target), DRD2 (target), HTR1A (target), HTR1B (target), HTR1D (target), HTR1F (target), HTR2A (target), HTR2B (unknown), HTR2C (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

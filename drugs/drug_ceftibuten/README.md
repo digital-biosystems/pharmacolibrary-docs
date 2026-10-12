@@ -28,17 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Lasko_2021_log10_CFU_thigh](drugs/drug_ceftibuten/pd_Lasko_2021_log10_CFU_thigh.md) | change in log10 CFU/thigh ← ceftibuten %fT &gt; MIC · direct sigmoid Emax (Hill) effect | — | Lasko MJ et al., Pharmacodynamics of Ceftibuten: An Asse…, Antibiotics (Basel, Switzer… (2021) | [10.3390/antibiotics10020201](https://doi.org/10.3390/antibiotics10020201) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ceftibuten).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC15A2` inhibitor, `SLC22A6` substrate, `SLC22A8` inhibitor/substrate | DrugBank actor |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Lasko_2021_log10_CFU_thigh](drugs/drug_ceftibuten/pd_Lasko_2021_log10_CFU_thigh.md) | change in log10 CFU/thigh ← ceftibuten %fT &gt; MIC · direct sigmoid Emax (Hill) effect | — | Lasko MJ et al., Pharmacodynamics of Ceftibuten: An Asse…, Antibiotics (Basel, Switzer… (2021) | [10.3390/antibiotics10020201](https://doi.org/10.3390/antibiotics10020201) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

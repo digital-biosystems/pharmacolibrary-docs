@@ -19,7 +19,7 @@
 
 > Plasma methylphenidate (d-threo-methylphenidate) concentrations (ng/mL) from DR/ER-MPH act on the SKAMP composite score in children with ADHD via a sigmoid Emax inhibitory exposure-response (drug effect described as change from the placebo trajectory, which was modeled as an indirect response with kin, kout, amplitude AA, and rate P1). Potency was sex-dependent, with EC50 of 8.400 ng/mL in males and 3.720 ng/mL in females (about 2-fold higher in males), Emax 0.402, and shape parameter g 12.600.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Gomeni_2020`
 - **model family:** `sigmoid_emax`
@@ -51,11 +51,11 @@ Gomeni R et al., Model-Based Approach for Establishing t…, Journal of clinical
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

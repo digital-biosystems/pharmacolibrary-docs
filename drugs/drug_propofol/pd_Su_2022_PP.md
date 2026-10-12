@@ -20,7 +20,7 @@
 
 > The empirical Emax model describes a direct inhibitory relationship between propofol plasma concentrations and pulse pressure (PP) with a maximum effect (Emax_PP) of -8.9%. In the mechanism-based model, propofol plasma concentrations inhibit the production rate (kin) of stroke volume (SV), for which PP is a surrogate, via an Emax model.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Su_2022`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Su H et al., Mechanism-based pharmacodynamic model f…, British journal of anae
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

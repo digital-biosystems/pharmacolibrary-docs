@@ -32,9 +32,9 @@ Desflurane is an inhalational general anaesthetic used to induce and maintain an
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Hendrickx_2003_reference](drugs/drug_desflurane/Desflurane_Hendrickx2003_reference.md) | — | 1-compartment (no model) | 0 | Hendrickx JF et al., Isoflurane and desflurane uptake during…, Anesthesia and analgesia (2003) | [10.1097/00000539-200302000-00011](https://doi.org/10.1097/00000539-200302000-00011) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Hendrickx_2006_reference](drugs/drug_desflurane/Desflurane_Hendrickx2006_reference.md) | — | 1-compartment (no model) | 0 | Hendrickx JF et al., Do distribution volumes and clearances…, BMC anesthesiology (2006) | [10.1186/1471-2253-6-7](https://doi.org/10.1186/1471-2253-6-7) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Wissing_2000_reference](drugs/drug_desflurane/Desflurane_Wissing2000_reference.md) | — | 1-compartment (no model) | 2 | Wissing H et al., Pharmacokinetics of inhaled anaesthetic…, British journal of anaesthe… (2000) | [10.1093/oxfordjournals.bja.a013467](https://doi.org/10.1093/oxfordjournals.bja.a013467) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Hendrickx_2003_reference](drugs/drug_desflurane/Desflurane_Hendrickx2003_reference.md) | — | 1-compartment (no model) | 0 | Hendrickx JF et al., Isoflurane and desflurane uptake during…, Anesthesia and analgesia (2003) | [10.1097/00000539-200302000-00011](https://doi.org/10.1097/00000539-200302000-00011) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Hendrickx_2006_reference](drugs/drug_desflurane/Desflurane_Hendrickx2006_reference.md) | — | 1-compartment (no model) | 0 | Hendrickx JF et al., Do distribution volumes and clearances…, BMC anesthesiology (2006) | [10.1186/1471-2253-6-7](https://doi.org/10.1186/1471-2253-6-7) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Wissing_2000_reference](drugs/drug_desflurane/Desflurane_Wissing2000_reference.md) | — | 1-compartment (no model) | 2 | Wissing H et al., Pharmacokinetics of inhaled anaesthetic…, British journal of anaesthe… (2000) | [10.1093/oxfordjournals.bja.a013467](https://doi.org/10.1093/oxfordjournals.bja.a013467) |
 
 ## Pharmacodynamics (PD)
 
@@ -47,19 +47,6 @@ Desflurane is an inhalational general anaesthetic used to induce and maintain an
 | <span class="pk-badge pk-badge--green">extracted</span> | [Rehberg_1999_SEF95](drugs/drug_desflurane/pd_Rehberg_1999_SEF95.md) | spectral edge frequency at the 95th percentile of the power spectrum ← desflurane · direct sigmoid Emax (Hill) effect | — | Rehberg B et al., Comparative pharmacodynamic modeling of…, Anesthesiology (1999) | [10.1097/00000542-199908000-00013](https://doi.org/10.1097/00000542-199908000-00013) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Cheung_2020_BIS](drugs/drug_desflurane/pd_Cheung_2020_BIS.md) | bispectral index ← desflurane · direct sigmoid Emax (Hill) effect | — | Cheung YM et al., Monitoring Depth of Hypnosis: Mid-Laten…, Anesthesia and analgesia (2020) | [10.1213/ANE.0000000000003546](https://doi.org/10.1213/ANE.0000000000003546) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Cheung_2020_aepEX](drugs/drug_desflurane/pd_Cheung_2020_aepEX.md) | aepEXplus monitor index values ← desflurane · direct sigmoid Emax (Hill) effect | — | Cheung YM et al., Monitoring Depth of Hypnosis: Mid-Laten…, Anesthesia and analgesia (2020) | [10.1213/ANE.0000000000003546](https://doi.org/10.1213/ANE.0000000000003546) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=desflurane).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | liver | `CYP2E1` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | lung | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ATP2C1 (inhibitor), ATP5F1D (other/unknown), GABRA1 (positive allosteric modulator), GLRA1 (target), GRIA1 (target), KCNA1 (inducer), MT-ND1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

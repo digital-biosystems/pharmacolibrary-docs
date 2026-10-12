@@ -4,7 +4,7 @@
 
 # gadopentetic acid — `GadopenteticAcid_Steingoetter2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.353). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.235). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -22,7 +22,7 @@
 
 The record gives a total clearance of 0.04 ml s−1 and a distribution volume of 0.5 mL. The review found their clearance-to-volume scale physiologically implausible and attributed this to a unit or scale extraction error. Extracted — Gd-DTPA (gadopentetic acid): kel 0.013 1/s, k12 0.3 1/s, k21 0.012 1/s, kcomp 0.24 1/s, CL 0.04 ml s−1, V 0.5 mL.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has Gd-DTPA (gadopentetic acid), the second reading Gd-DTPA; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has Gd-DTPA (gadopentetic acid), the second reading Gd-DTPA; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by gpt-6-luna</sub>
 
@@ -96,19 +96,21 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.353 (6/17 fields) | 11 |
+| `qwen3.8-27b` | not confirmed | 0.235 (4/17 fields) | 13 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>13 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[cl]` | not captured | 0.04 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[cl]` | 0.04 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[k c0 = cl / vc].parameter_id` | Q47 | Q900 | mismatch |
-| `qwen3.8-27b` | `parameters[k cm1].parameter_id` | Q301 | Q306 | mismatch |
-| `qwen3.8-27b` | `parameters[k l2l1]` | not captured | 0.021 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[k c0 = cl / vc].parameter_id` | Q47 | Q86 | mismatch |
+| `qwen3.8-27b` | `parameters[k cl1]` | not captured | 2.9 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[k cm1]` | 0.3 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[k l2l3]` | not captured | 0.027 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[k m1c]` | 0.012 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[k m1m2]` | not captured | 3.6 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[k m2m3]` | 0.24 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[k t2l1]` | not captured | 0.38 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[k t2t3]` | 3.7 | not captured | only_one_extracted |
 | `qwen3.8-27b` | `parameters[v d per catheter]` | 0.5 | not captured | only_one_extracted |
 | `qwen3.8-27b` | `screen.dose_compound` | Gd-DTPA (gadopentetic acid) | Gd-DTPA | mismatch |
@@ -146,18 +148,18 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_gadopentetic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Steingoetter_2011` / `Steingoetter_2011::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gadopentetic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Steingoetter_2011` / `Steingoetter_2011::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

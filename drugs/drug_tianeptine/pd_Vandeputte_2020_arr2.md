@@ -22,7 +22,7 @@
 
 > Tianeptine concentrations (nM) were tested in a cell-based MOR β-arrestin2 recruitment assay (split nanoluciferase), with responses normalized as % AUC relative to hydromorphone and described by a sigmoid Emax model; the paper reports an EC50 &gt;3 µM and states that Emax could not be derived for tianeptine in all assays, and no mechanism beyond direct MOR activation (no effect compartment or turnover model) is given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Vandeputte_2020`
 - **model family:** `sigmoid_emax`
@@ -56,7 +56,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

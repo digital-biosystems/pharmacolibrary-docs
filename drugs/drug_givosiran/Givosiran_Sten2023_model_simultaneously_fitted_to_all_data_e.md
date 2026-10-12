@@ -5,7 +5,7 @@
 
 # givosiran — `Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.938), gpt-oss:120b (not confirmed, agreement 0.938). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.938), gpt-oss:120b (not confirmed, agreement 0.938). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,7 +15,7 @@
 
 > **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 0.50).
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 Sten S et al., Plasma Pharmacokinetics of N-Acetylgala…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01314-7](https://doi.org/10.1007/s40262-023-01314-7)
 
-## Model component
-<dbs-pgx drug="givosiran" model-id="Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e" status="needs_review" stale="false" population="adults with acute intermittent porphyria" measured-compound="givosiran" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="givosiran" model-id="Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e" status="needs_review" stale="false" population="adults with acute intermittent porphyria" measured-compound="givosiran" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.
@@ -138,10 +137,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_givosiran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sten_2023` / `Sten_2023::model_simultaneously_fitted_to_all_data_estimate_se`)
-- model: `../../../knowledgebase/drugs/drug_givosiran/models/modelica/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.mo`
-- deviation: `../../../knowledgebase/drugs/drug_givosiran/models/modelica/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_givosiran/models/modelica/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_givosiran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sten_2023` / `Sten_2023::model_simultaneously_fitted_to_all_data_estimate_se`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_givosiran/models/modelica/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_givosiran/models/modelica/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_givosiran/models/modelica/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -159,7 +158,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.svg" alt="Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.svg" alt="Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

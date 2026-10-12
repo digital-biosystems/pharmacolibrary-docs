@@ -20,7 +20,7 @@
 
 > The record describes an indirect response model (II) where ponesimod concentration proportionally inhibits the production of T helper cells, with a maximum inhibition (Imax) of 100% as cited from Valenzuela_2021. No full text was provided to confirm specific rate constants or potency values beyond the cited record.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Lott_2017_2`
 - **model family:** `indirect_response_ii`
@@ -61,7 +61,7 @@ Lott D et al., Modeling the Effect of the Selective S1…, Pharmaceutical resear
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

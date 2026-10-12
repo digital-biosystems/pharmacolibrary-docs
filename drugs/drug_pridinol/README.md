@@ -33,7 +33,7 @@ Pridinol is a centrally acting muscle relaxant used for painful muscle spasms an
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Minamijima_2026_reference](drugs/drug_pridinol/Pridinol_Minamijima2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Minamijima Y et al., Plasma and Urine Pharmacokinetics of In…, Journal of veterinary pharm… (2026) | [10.1111/jvp.70029](https://doi.org/10.1111/jvp.70029) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Minamijima_2026_reference](drugs/drug_pridinol/Pridinol_Minamijima2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Minamijima Y et al., Plasma and Urine Pharmacokinetics of In…, Journal of veterinary pharm… (2026) | [10.1111/jvp.70029](https://doi.org/10.1111/jvp.70029) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

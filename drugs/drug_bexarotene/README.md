@@ -28,19 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Jurutka_2021_RXR](drugs/drug_bexarotene/pd_Jurutka_2021_RXR.md) | positive ← bexarotene · indirect response — drug inhibits the loss of positive | — | Jurutka PW et al., Modeling, Synthesis, and Biological Eva…, International journal of mo… (2021) | [10.3390/ijms222212371](https://doi.org/10.3390/ijms222212371) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bexarotene).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP2C8` inhibitor, `CYP3A4` inducer/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: RXRA (target), RXRB (target), RXRG (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Jurutka_2021_RXR](drugs/drug_bexarotene/pd_Jurutka_2021_RXR.md) | positive ← bexarotene · indirect response — drug inhibits the loss of positive | — | Jurutka PW et al., Modeling, Synthesis, and Biological Eva…, International journal of mo… (2021) | [10.3390/ijms222212371](https://doi.org/10.3390/ijms222212371) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

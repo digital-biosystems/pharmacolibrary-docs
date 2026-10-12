@@ -32,34 +32,13 @@ Grepafloxacin is a fluoroquinolone antibiotic that was used to treat bacterial i
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Pfister_2003_reference](drugs/drug_grepafloxacin/Grepafloxacin_Pfister2003_reference.md) | — | 1-compartment (no model) | 1 | Pfister M et al., Modeling of transfer kinetics at the se…, Antimicrobial agents and ch… (2003) | [10.1128/AAC.47.1.138-143.2003](https://doi.org/10.1128/AAC.47.1.138-143.2003) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Pfister_2003_reference](drugs/drug_grepafloxacin/Grepafloxacin_Pfister2003_reference.md) | — | 1-compartment (no model) | 1 | Pfister M et al., Modeling of transfer kinetics at the se…, Antimicrobial agents and ch… (2003) | [10.1128/AAC.47.1.138-143.2003](https://doi.org/10.1128/AAC.47.1.138-143.2003) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Ernst_2002_survival_rate_at_72_hours](drugs/drug_grepafloxacin/pd_Ernst_2002_survival_rate_at_72_hours.md) | survival rate at 72 hours ← grepafloxacin · direct sigmoid Emax (Hill) effect | — | Ernst EJ et al., Evaluation of survival and pharmacodyna…, Pharmacotherapy (2002) | [10.1592/phco.22.7.463.33670](https://doi.org/10.1592/phco.22.7.463.33670) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=grepafloxacin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate, `SLC22A5` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `SLC22A5` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCC1` substrate | DrugBank actor |
-| distribution | lung | `ABCC1` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | `ABCC2` inhibitor, `SLC22A2` inhibitor, `SLC22A6` substrate | DrugBank actor |
-| excretion | liver | `ABCC2` inhibitor | DrugBank actor |
-| excretion | small intestine | `ABCC2` inhibitor | DrugBank actor |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Ernst_2002_survival_rate_at_72_hours](drugs/drug_grepafloxacin/pd_Ernst_2002_survival_rate_at_72_hours.md) | survival rate at 72 hours ← grepafloxacin · direct sigmoid Emax (Hill) effect | — | Ernst EJ et al., Evaluation of survival and pharmacodyna…, Pharmacotherapy (2002) | [10.1592/phco.22.7.463.33670](https://doi.org/10.1592/phco.22.7.463.33670) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

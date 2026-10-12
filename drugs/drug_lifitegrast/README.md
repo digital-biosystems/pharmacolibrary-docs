@@ -28,20 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Du_2022_IC50](drugs/drug_lifitegrast/pd_Du_2022_IC50.md) | Jurkat cell attachment to ICAM-1 (LFA-1/ICAM-1 antagonist activity) ← Lifitegrast · direct sigmoid Emax (Hill) effect | — | Du G et al., Design, synthesis, and LFA-1/ICAM-1 ant…, Medicinal chemistry researc… (2022) | [10.1007/s00044-022-02851-9](https://doi.org/10.1007/s00044-022-02851-9) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lifitegrast).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `SLCO1A2` substrate | DrugBank actor |
-| absorption | liver | `SLCO2B1` substrate | DrugBank actor |
-| absorption | small intestine | `SLCO1A2` substrate, `SLCO2B1` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C9` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ICAM1 (inhibitor), ITGAL (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Du_2022_IC50](drugs/drug_lifitegrast/pd_Du_2022_IC50.md) | Jurkat cell attachment to ICAM-1 (LFA-1/ICAM-1 antagonist activity) ← Lifitegrast · direct sigmoid Emax (Hill) effect | — | Du G et al., Design, synthesis, and LFA-1/ICAM-1 ant…, Medicinal chemistry researc… (2022) | [10.1007/s00044-022-02851-9](https://doi.org/10.1007/s00044-022-02851-9) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -16,11 +16,11 @@
 
 **As extracted:** Citalopram (concentrations from this paper's PK model) drives Heart-rate corrected QT interval (in ms): delayed effect through an effect compartment.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Citalopram plasma concentration (mg/l) prolongs the individually heart-rate-corrected QT interval (QTci, ms) via a linear concentration-effect model with an effect compartment (effect delay half-life t½,eq = 1.43 h, t_eq ≈ 1.4 h); the slope is 40.0 ms·l·mg⁻¹, with baseline QTci0 of 429 ms in women and 420 ms in men. Although Emax (20 ms) and EC50 (0.2 mg/l) values appear, the paper states the nonlinear Emax models were overparameterized and the linear model was chosen.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Friberg_2006`
 - **model family:** `effect_compartment`
@@ -106,7 +106,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

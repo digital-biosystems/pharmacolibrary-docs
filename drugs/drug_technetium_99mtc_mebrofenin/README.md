@@ -31,19 +31,7 @@ Technetium (99mTc) mebrofenin is a diagnostic radiopharmaceutical used for imagi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ali_2017_reference](drugs/drug_technetium_99mtc_mebrofenin/Technetium99mtcMebrofenin_Ali2017_reference.md) | — | 1-compartment (no model) | 2 | Ali I et al., Transporter-Mediated Alterations in Pat…, Clinical pharmacology and t… (2017) | [10.1002/cpt.997](https://doi.org/10.1002/cpt.997) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=technetium_99mtc_mebrofenin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `SLCO1B1` substrate, `SLCO1B3` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ali_2017_reference](drugs/drug_technetium_99mtc_mebrofenin/Technetium99mtcMebrofenin_Ali2017_reference.md) | — | 1-compartment (no model) | 2 | Ali I et al., Transporter-Mediated Alterations in Pat…, Clinical pharmacology and t… (2017) | [10.1002/cpt.997](https://doi.org/10.1002/cpt.997) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

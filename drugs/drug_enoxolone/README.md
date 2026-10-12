@@ -34,23 +34,14 @@ Enoxolone (glycyrrhetic acid) is an anti-inflammatory triterpenoid that has been
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Lu_2008_reference](drugs/drug_enoxolone/Enoxolone_Lu2008_reference.md) | — | 1-compartment (no model) | 6 | Lu Y et al., [Study on pharmacokinetics of glycyrrhe…, Zhongguo Zhong yao za zhi =… (2008) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Xu_2014_reference](drugs/drug_enoxolone/Enoxolone_Xu2014_reference.md) | — | general linear (no model) | 11 | Xu R et al., A semi-physiologically based pharmacoki…, PloS one (2014) | [10.1371/journal.pone.0114049](https://doi.org/10.1371/journal.pone.0114049) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Lu_2008_reference](drugs/drug_enoxolone/Enoxolone_Lu2008_reference.md) | — | 1-compartment (no model) | 6 | Lu Y et al., [Study on pharmacokinetics of glycyrrhe…, Zhongguo Zhong yao za zhi =… (2008) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Xu_2014_reference](drugs/drug_enoxolone/Enoxolone_Xu2014_reference.md) | — | general linear (no model) | 11 | Xu R et al., A semi-physiologically based pharmacoki…, PloS one (2014) | [10.1371/journal.pone.0114049](https://doi.org/10.1371/journal.pone.0114049) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Ploeger_2001_urinary_cortisol_cortisone_ratio](drugs/drug_enoxolone/pd_Ploeger_2001_urinary_cortisol_cortisone_ratio.md) | urinary cortisol-cortisone ratio ← glycyrrhetic acid · inhibition effect | — | Ploeger B et al., A population physiologically based phar…, Toxicology and applied phar… (2001) | [10.1006/taap.2000.9078](https://doi.org/10.1006/taap.2000.9078) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=enoxolone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: PTPN1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> | [Ploeger_2001_urinary_cortisol_cortisone_ratio](drugs/drug_enoxolone/pd_Ploeger_2001_urinary_cortisol_cortisone_ratio.md) | urinary cortisol-cortisone ratio ← glycyrrhetic acid · inhibition effect | — | Ploeger B et al., A population physiologically based phar…, Toxicology and applied phar… (2001) | [10.1006/taap.2000.9078](https://doi.org/10.1006/taap.2000.9078) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

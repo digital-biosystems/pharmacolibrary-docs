@@ -16,11 +16,11 @@
 
 **As extracted:** Alfaxalone (concentrations from this paper's PK model) drives bispectral index (BIS): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Alfaxalone plasma concentrations inhibit the Bispectral Index (BIS) via a sigmoid Emax model linked to plasma levels through an effect compartment, with parameters Emax of 0.94, C50 of 0.98 mg/L, Hill coefficient of 12.1, and t1/2keo of 8 minutes. The paper does not provide full text excerpts to confirm the specific mechanism beyond the model structure.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Goodchild_2020`
 - **model family:** `sigmoid_emax`
@@ -86,11 +86,11 @@ Blocking:
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

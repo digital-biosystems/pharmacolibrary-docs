@@ -21,7 +21,7 @@
 
 > F4N3Bzoxy-AP (11β-(p-azidotetrafluorobenzoyloxy)allopregnanolone) inhibits [3H]tenocyclidine binding to the desensitized state of Torpedo nAChR, with an IC50 of 31 μM; the paper excerpts do not state the mechanism or effect model beyond this inhibition.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Yu_2019`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Yu Z et al., A photoreactive analog of allopregnanol…, The Journal of biologic
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

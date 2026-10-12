@@ -5,7 +5,7 @@
 
 # lutetium (177Lu) vipivotide tetraxetan — `Lutetium177luVipivotideTetraxetan_Shi2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667), gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,13 +13,13 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q189: this record has none, the second reading 0.45; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q174: this record has none, the second reading 0.103; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Shi H et al., A phase II study evaluating pharmacokin…, EJNMMI research (2026)
   ·  DOI: [10.1186/s13550-026-01401-3](https://doi.org/10.1186/s13550-026-01401-3)
 
-## Model component
-<dbs-pgx drug="lutetium (177Lu) vipivotide tetraxetan" model-id="Lutetium177luVipivotideTetraxetan_Shi2026_reference" status="extracted" stale="true" population="" measured-compound="lutetium_177lu_vipivotide_tetraxetan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lutetium (177Lu) vipivotide tetraxetan" model-id="Lutetium177luVipivotideTetraxetan_Shi2026_reference" status="extracted" stale="true" population="" measured-compound="lutetium_177lu_vipivotide_tetraxetan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
@@ -56,23 +55,17 @@ Shi H et al., A phase II study evaluating pharmacokin…, EJNMMI research (2026)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.667 (10/15 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.667 (10/15 fields) | 5 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q189]` | not captured | 0.45 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q364]` | not captured | 1214 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q414]` | not captured | 3211 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q74]` | 64.4 | 64.4 | mismatch |
-| `gpt-oss-120b` | `values[Q88]` | not captured | 1.8 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q174]` | not captured | 0.103 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q189]` | not captured | 2.0 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q364]` | not captured | 2519 | only_one_extracted |
@@ -119,10 +112,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_lutetium_177lu_vipivotide_tetraxetan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shi_2026` / `Shi_2026::reference`)
-- model: `../../../knowledgebase/drugs/drug_lutetium_177lu_vipivotide_tetraxetan/models/modelica/Lutetium177luVipivotideTetraxetan_Shi2026_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_lutetium_177lu_vipivotide_tetraxetan/models/modelica/Lutetium177luVipivotideTetraxetan_Shi2026_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_lutetium_177lu_vipivotide_tetraxetan/models/modelica/Lutetium177luVipivotideTetraxetan_Shi2026_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lutetium_177lu_vipivotide_tetraxetan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shi_2026` / `Shi_2026::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lutetium_177lu_vipivotide_tetraxetan/models/modelica/Lutetium177luVipivotideTetraxetan_Shi2026_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lutetium_177lu_vipivotide_tetraxetan/models/modelica/Lutetium177luVipivotideTetraxetan_Shi2026_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lutetium_177lu_vipivotide_tetraxetan/models/modelica/Lutetium177luVipivotideTetraxetan_Shi2026_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -140,7 +133,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference/Lutetium177luVipivotideTetraxetan_Shi2026_reference.svg" alt="Lutetium177luVipivotideTetraxetan_Shi2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference/Lutetium177luVipivotideTetraxetan_Shi2026_reference.svg" alt="Lutetium177luVipivotideTetraxetan_Shi2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

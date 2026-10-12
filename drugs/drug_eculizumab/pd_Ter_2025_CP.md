@@ -16,11 +16,11 @@
 
 **As extracted:** Eculizumab (concentrations from this paper's PK model) drives classical pathway activity (in %): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The concentration of eculizumab (µg/mL) directly inhibits classical pathway activity (CP, %) using a sigmoid Emax model, with a maximum inhibition (Imax) of 0.967, an IC50 of 22 µg/mL, a Hill coefficient (γ) of 4.34, and a baseline CP activity of 112%.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ter_2025`
 - **model family:** `sigmoid_emax`
@@ -95,7 +95,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

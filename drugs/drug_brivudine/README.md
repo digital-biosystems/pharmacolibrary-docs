@@ -28,16 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Kodama_1996_EC50](drugs/drug_brivudine/pd_Kodama_1996_EC50.md) | HSV-induced cytopathogenicity in MKN-28 cells (MTT assay) ← brivudine (BVDU) · inhibition effect | — | Kodama E et al., Evaluation of antiherpetic compounds us…, Microbiology and immunology (1996) | [10.1111/j.1348-0421.1996.tb01080.x](https://doi.org/10.1111/j.1348-0421.1996.tb01080.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=brivudine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: TK1 (inhibitor), TK2 (substrate).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Kodama_1996_EC50](drugs/drug_brivudine/pd_Kodama_1996_EC50.md) | HSV-induced cytopathogenicity in MKN-28 cells (MTT assay) ← brivudine (BVDU) · inhibition effect | — | Kodama E et al., Evaluation of antiherpetic compounds us…, Microbiology and immunology (1996) | [10.1111/j.1348-0421.1996.tb01080.x](https://doi.org/10.1111/j.1348-0421.1996.tb01080.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -20,7 +20,7 @@
 
 > The paper does not specify a mechanism for the relationship, but uses logistic regression to analyze the impact of risankizumab trough concentration at week 28 on the binary minimal disease activity response at week 24. The logistic regression revealed a statistically significant treatment effect for risankizumab with a parameter value of -0.815, while risankizumab exposure itself did not have a statistically significant influence on the response.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Thakre_2022`
 - **model family:** `categorical`
@@ -61,7 +61,7 @@ Thakre N et al., Population Pharmacokinetics and Exposur…, Rheumatology and th
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

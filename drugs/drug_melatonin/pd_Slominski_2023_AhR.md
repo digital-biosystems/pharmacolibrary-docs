@@ -22,7 +22,7 @@
 
 > Melatonin concentrations (M) act as an agonist on AhR-mediated transactivation in a Human AhR Reporter Assay, modeled as a direct stimulatory Emax relationship; the paper reports an EC50 of 7 × 10−6 ± 7 × 10−6 M (n = 2), with no additional potency, rate, or effect-compartment parameters given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Slominski_2023`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Slominski AT et al., Melatonin and Its Metabolites Can Serve…, International j
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

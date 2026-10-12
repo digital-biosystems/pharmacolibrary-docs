@@ -19,7 +19,7 @@
 
 > The probability of achieving CDAI &lt; 150 is modeled as a function of upadacitinib minimum plasma concentration (Cmin) using a continuous-time Markov model to describe state transitions from no response to response. The paper does not state a specific EC50 or other potency value for the CDAI &lt; 150 endpoint, noting that the EC50 values for clinical endpoints in these Markov models represent transition rates rather than direct concentrations.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mohamed_2020`
 - **model family:** `categorical`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

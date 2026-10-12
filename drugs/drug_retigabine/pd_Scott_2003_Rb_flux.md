@@ -21,7 +21,7 @@
 
 > The paper does not provide full text details on the specific mechanism (e.g., direct effect vs. inhibition of elimination) or rate constants, but the record indicates retigabine stimulates potassium-stimulated efflux (Rb flux) via an Emax model with an EC50 of 0.5 microM.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Scott_2003`
 - **model family:** `emax`
@@ -48,11 +48,11 @@ Scott CW et al., A medium-throughput functional assay of…, Analytical biochemi
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -28,23 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Eilertsen_2006_D_dimer](drugs/drug_tibolone/pd_Eilertsen_2006_D_dimer.md) | D-dimer ← tibolone · stimulation effect | — | Eilertsen AL et al., Conventional-dose hormone therapy (HT)…, Maturitas (2006) | [10.1016/j.maturitas.2006.04.012](https://doi.org/10.1016/j.maturitas.2006.04.012) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [García-Juárez_2020_lordosis](drugs/drug_tibolone/pd_Garc_a_Ju_rez_2020_lordosis.md) | lordosis behavior ← tibolone · stimulation effect | — | García-Juárez M et al., Tibolone facilitates lordosis behavior…, Neuroscience letters (2020) | [10.1016/j.neulet.2020.135299](https://doi.org/10.1016/j.neulet.2020.135299) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tibolone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | liver | `SULT1A1` substrate | DrugBank actor |
-| metabolism | small intestine | `SULT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ESR1 (target), HSD3B1 (substrate), HSD3B2 (substrate), STS (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Eilertsen_2006_D_dimer](drugs/drug_tibolone/pd_Eilertsen_2006_D_dimer.md) | D-dimer ← tibolone · stimulation effect | — | Eilertsen AL et al., Conventional-dose hormone therapy (HT)…, Maturitas (2006) | [10.1016/j.maturitas.2006.04.012](https://doi.org/10.1016/j.maturitas.2006.04.012) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [García-Juárez_2020_lordosis](drugs/drug_tibolone/pd_Garc_a_Ju_rez_2020_lordosis.md) | lordosis behavior ← tibolone · stimulation effect | — | García-Juárez M et al., Tibolone facilitates lordosis behavior…, Neuroscience letters (2020) | [10.1016/j.neulet.2020.135299](https://doi.org/10.1016/j.neulet.2020.135299) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

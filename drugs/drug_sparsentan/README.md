@@ -33,27 +33,7 @@ Sparsentan is used to treat IgA glomerulonephritis, a kidney disease. It is appr
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Wada_2023_reference](drugs/drug_sparsentan/Sparsentan_Wada2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 8 (+3 cov.) | Wada R et al., Population pharmacokinetic analysis of…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12996](https://doi.org/10.1002/psp4.12996) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sparsentan).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2B6` inducer, `CYP2C19` inducer, `CYP2C9` inducer, `CYP3A4` inducer/inhibitor/substrate, `SLCO1B3` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A8` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: AGTR1 (target), AGTR2 (target), EDNRA (target).</sub>
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Wada_2023_reference](drugs/drug_sparsentan/Sparsentan_Wada2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 8 (+3 cov.) | Wada R et al., Population pharmacokinetic analysis of…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12996](https://doi.org/10.1002/psp4.12996) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

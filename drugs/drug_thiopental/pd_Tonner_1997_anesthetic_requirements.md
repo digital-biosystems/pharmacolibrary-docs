@@ -22,7 +22,7 @@
 
 > Thiopental acts on anesthetic requirements via a sigmoid Emax model, with an effect direction described as stimulation. The model specifies a half-maximal effective concentration of 25.5 microM, but the paper does not provide the underlying mechanism or other key rate parameters.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Tonner_1997`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Tonner PH et al., Inhibition of nitric oxide synthase dec…, Anesthesiology (19
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

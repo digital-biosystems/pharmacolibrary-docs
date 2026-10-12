@@ -33,7 +33,7 @@ Cefbuperazone is a second-generation cephalosporin antibiotic used to treat bact
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Watanabe_1984_reference](drugs/drug_cefbuperazone/Cefbuperazone_Watanabe1984_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Watanabe Y et al., [Penetration of cefbuperazone, a new ce…, The Japanese journal of ant… (1984) | — |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Watanabe_1984_reference](drugs/drug_cefbuperazone/Cefbuperazone_Watanabe1984_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Watanabe Y et al., [Penetration of cefbuperazone, a new ce…, The Japanese journal of ant… (1984) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

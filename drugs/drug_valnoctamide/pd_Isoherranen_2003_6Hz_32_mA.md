@@ -21,7 +21,7 @@
 
 > The paper (no full text available) links valnoctamide, via its stereoisomers (2S,3S)- and (2R,3S)-valnoctamide, to protection against partial seizures in the 6 Hz psychomotor seizure model (32 mA), an inhibitory (protective) effect on a binary endpoint; the paper does not state the mechanism, model family, or any potency or rate values in the available excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Isoherranen_2003`
 - **model family:** `unknown`
@@ -41,11 +41,11 @@ _No resolved parameters._
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

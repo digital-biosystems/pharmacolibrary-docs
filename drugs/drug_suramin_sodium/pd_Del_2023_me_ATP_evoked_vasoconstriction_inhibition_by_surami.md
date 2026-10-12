@@ -20,7 +20,7 @@
 
 > Suramin concentration-dependently inhibits αβme-ATP-evoked (P2X1 receptor-mediated) vasoconstriction in human arterial rings, described by a sigmoid Emax inhibition model with IC50 825 ± 45 nM; the maximal NPY response in intact rings was 25% of the 60 mM K+ response. The excerpts do not state a Hill (gamma) coefficient or kinetic parameters for this inhibition.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Del_2023`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Del Carmen Gonzalez-Montelongo M et al., Neuropeptide Y: Direct vasoconstrictor�
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -33,8 +33,8 @@ Formoterol is a long-acting inhaled beta-2 agonist used to treat asthma and chro
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Back_2020_reference](drugs/drug_formoterol/Formoterol_Back2020_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Back HM et al., Exposure-Response and Clinical Outcome…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040336](https://doi.org/10.3390/pharmaceutics12040336) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — volume from this paper; review-gap-filled from other p…</sub><br><sub>route_to: `human_review`</sub> | [van_1998_reference](drugs/drug_formoterol/Formoterol_van1998_reference.md) | — | 1-compartment (no model) | 5 | van den Berg BT et al., Pharmacokinetics and effects of formote…, European journal of clinica… (1998) | [10.1007/s002280050494](https://doi.org/10.1007/s002280050494) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Back_2020_reference](drugs/drug_formoterol/Formoterol_Back2020_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Back HM et al., Exposure-Response and Clinical Outcome…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040336](https://doi.org/10.3390/pharmaceutics12040336) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — volume from this paper; review-gap-filled from other p…</sub><br><sub>route_to: `human_review`</sub> | [van_1998_reference](drugs/drug_formoterol/Formoterol_van1998_reference.md) | — | 1-compartment (no model) | 5 | van den Berg BT et al., Pharmacokinetics and effects of formote…, European journal of clinica… (1998) | [10.1007/s002280050494](https://doi.org/10.1007/s002280050494) |
 
 ## Pharmacodynamics (PD)
 
@@ -55,29 +55,6 @@ Formoterol is a long-acting inhaled beta-2 agonist used to treat asthma and chro
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Back_2020_FEV1](drugs/drug_formoterol/pd_Back_2020_FEV1.md) | Forced expiratory volume (FEV1) ← formoterol · indirect response — drug stimulates the production of Forced expiratory volume (FEV1) | model (no simulator) | Back HM et al., Exposure-Response and Clinical Outcome…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040336](https://doi.org/10.3390/pharmaceutics12040336) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [van_1999_potassium](drugs/drug_formoterol/pd_van_1999_potassium.md) | plasma potassium concentration (hypokalemic effect) ← formoterol · direct sigmoid Emax (Hill) effect | model (no simulator) | van den Berg BT et al., Pharmacokinetic/pharmacodynamic modelli…, Pulmonary pharmacology & th… (1999) | [10.1006/pupt.1999.0199](https://doi.org/10.1006/pupt.1999.0199) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Gong_2022_FEV1](drugs/drug_formoterol/pd_Gong_2022_FEV1.md) | change from baseline in trough FEV1 ← formoterol/aclidinium and formoterol/glycopyrronium fixed-dose combinations · direct Emax (saturable) effect | — | Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances in res… (2022) | [10.1177/17534666211066068](https://doi.org/10.1177/17534666211066068) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=formoterol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | kidney | `SLC22A4` substrate, `SLC22A5` substrate | DrugBank actor |
-| absorption | lung | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | skeletal muscle | `SLC22A5` substrate | DrugBank actor |
-| absorption | small intestine | `SLC22A4` substrate, `SLC22A5` substrate | DrugBank actor |
-| distribution | blood | `ALB` substrate | DrugBank actor |
-| distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
-| distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `CYP2A6` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `SLC22A1` inhibitor/substrate, `UGT1A1` substrate, `UGT1A9` substrate, `UGT2B15` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `UGT1A1` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), ADRB3 (target), UGT1A8 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

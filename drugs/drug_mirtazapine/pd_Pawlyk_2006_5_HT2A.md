@@ -21,7 +21,7 @@
 
 > Mirtazapine concentrations (nM) act on functional antagonism at the cloned human 5-HT2A receptor, described by an Emax inhibition model with an EC50 of 0.62 nM; the paper excerpts do not state the mechanism beyond this or an Emax value.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Pawlyk_2006`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Pawlyk AC et al., Effects of the 5-HT2A antagonist mirtaz…, Brain research (20
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > Lithium (mM) stimulates carbachol-stimulated accumulation of labelled inositol bisphosphate (IP2), described by an Emax model with an EC50 of 4 mM; the paper excerpts provide no further mechanism or additional parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Batty_1985`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Batty I et al., Differential effects of lithium on musc…, Journal of neurochem
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

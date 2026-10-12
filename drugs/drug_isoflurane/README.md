@@ -24,7 +24,7 @@ Isoflurane is an inhalational general anaesthetic used to keep patients unconsci
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (reptile), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.98).">reptile</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Williams_2020_reference](drugs/drug_isoflurane/Isoflurane_Williams2020_reference.md) | — | 1-compartment (no model) | 0 | Williams CJA et al., Ectothermy and cardiac shunts profoundl…, Scientific reports (2020) | [10.1038/s41598-020-74014-y](https://doi.org/10.1038/s41598-020-74014-y) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (reptile), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.98).">reptile</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Williams_2020_reference](drugs/drug_isoflurane/Isoflurane_Williams2020_reference.md) | — | 1-compartment (no model) | 0 | Williams CJA et al., Ectothermy and cardiac shunts profoundl…, Scientific reports (2020) | [10.1038/s41598-020-74014-y](https://doi.org/10.1038/s41598-020-74014-y) |
 
 ## Pharmacodynamics (PD)
 
@@ -40,17 +40,6 @@ Isoflurane is an inhalational general anaesthetic used to keep patients unconsci
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Spencer_2023_isoflurane_induced_outward_potassium_leak](drugs/drug_isoflurane/pd_Spencer_2023_isoflurane_induced_outward_potassium_leak.md) | isoflurane-induced outward potassium leak ← isoflurane · direct sigmoid Emax (Hill) effect | — | Spencer KA et al., TREK-1 and TREK-2 Knockout Mice Are Not…, Anesthesiology (2023) | [10.1097/ALN.0000000000004577](https://doi.org/10.1097/ALN.0000000000004577) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Whyte_2004_BIS](drugs/drug_isoflurane/pd_Whyte_2004_BIS.md) | Bispectral index ← isoflurane · direct sigmoid Emax (Hill) effect | — | Whyte SD et al., Bispectral index during isoflurane anes…, Anesthesia and analgesia (2004) | [10.1213/01.ANE.0000117223.84646.36](https://doi.org/10.1213/01.ANE.0000117223.84646.36) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [el-Beheiry_1989_EPSPs](drugs/drug_isoflurane/pd_el_Beheiry_1989_EPSPs.md) | excitatory postsynaptic potentials ← isoflurane · direct Emax (saturable) effect | — | el-Beheiry H et al., Anaesthetic depression of excitatory sy…, Experimental brain research (1989) | [10.1007/BF00250570](https://doi.org/10.1007/BF00250570) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=isoflurane).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| metabolism | liver | `CYP2B6` inducer/substrate, `CYP2E1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ATP2C1 (inhibitor), ATP5F1D (unknown), CALM1 (other/unknown), CHRNA4 (target), CHRNB2 (target), GABRA1 (positive allosteric modulator), GABRA1 (target), GLRA1 (target), GRIA1 (target), KCNA1 (inducer), MT-ND1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -23,25 +23,7 @@ Technetium (99mTc) sestamibi is a radiopharmaceutical used as a diagnostic imagi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Hsu_2017_reference](drugs/drug_technetium_99mtc_sestamibi/Technetium99mtcSestamibi_Hsu2017_reference.md) | — | 1-compartment (no model) | 0 | Hsu B et al., SPECT myocardial blood flow quantitatio…, European journal of nuclear… (2017) | [10.1007/s00259-016-3491-5](https://doi.org/10.1007/s00259-016-3491-5) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=technetium_99mtc_sestamibi).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCC1` substrate | DrugBank actor |
-| distribution | lung | `ABCC1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Hsu_2017_reference](drugs/drug_technetium_99mtc_sestamibi/Technetium99mtcSestamibi_Hsu2017_reference.md) | — | 1-compartment (no model) | 0 | Hsu B et al., SPECT myocardial blood flow quantitatio…, European journal of nuclear… (2017) | [10.1007/s00259-016-3491-5](https://doi.org/10.1007/s00259-016-3491-5) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

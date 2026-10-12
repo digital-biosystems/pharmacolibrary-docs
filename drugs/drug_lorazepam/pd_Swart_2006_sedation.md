@@ -20,7 +20,7 @@
 
 > Lorazepam plasma concentrations (ng/ml) drive the probability of reaching each sedation score threshold (≥2 to ≥5) via a sigmoid Emax model; the paper excerpts do not state the mechanism beyond this direct concentration–effect relation. Reported EC50 values increase with score level: 6.1 ng/ml (score ≥2), 57 ng/ml (≥3), 184 ng/ml (≥4), and 529 ng/ml (≥5); no Imax, Emax, gamma, or rate constants are given in the excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Swart_2006`
 - **model family:** `sigmoid_emax`
@@ -65,7 +65,7 @@ Swart EL et al., Population pharmacodynamic modelling of…, European journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

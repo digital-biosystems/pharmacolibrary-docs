@@ -28,22 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [Gumbo_2020_cfu_mL](drugs/drug_cefdinir/pd_Gumbo_2020_cfu_mL.md) | Mycobacterium abscessus subspecies abscessus (Mab) viability ← cefdinir · direct sigmoid Emax (Hill) effect | — | Gumbo T et al., Repurposing drugs for treatment of Myco…, The Journal of antimicrobia… (2020) | [10.1093/jac/dkz523](https://doi.org/10.1093/jac/dkz523) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Srivastava_2021_CFU](drugs/drug_cefdinir/pd_Srivastava_2021_CFU.md) | colony forming unit (CFU) ← cefdinir · direct sigmoid Emax (Hill) effect | — | Srivastava S et al., Cefdinir and β-Lactamase Inhibitor Inde…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.677005](https://doi.org/10.3389/fphar.2021.677005) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cefdinir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | kidney | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | small intestine | `SLC15A1` inhibitor/substrate, `SLC22A5` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC15A2` inhibitor, `SLC22A6` substrate, `SLC22A8` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: MPO (inhibitor), Peptidoglycan transpeptidase (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [Gumbo_2020_cfu_mL](drugs/drug_cefdinir/pd_Gumbo_2020_cfu_mL.md) | Mycobacterium abscessus subspecies abscessus (Mab) viability ← cefdinir · direct sigmoid Emax (Hill) effect | — | Gumbo T et al., Repurposing drugs for treatment of Myco…, The Journal of antimicrobia… (2020) | [10.1093/jac/dkz523](https://doi.org/10.1093/jac/dkz523) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Srivastava_2021_CFU](drugs/drug_cefdinir/pd_Srivastava_2021_CFU.md) | colony forming unit (CFU) ← cefdinir · direct sigmoid Emax (Hill) effect | — | Srivastava S et al., Cefdinir and β-Lactamase Inhibitor Inde…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.677005](https://doi.org/10.3389/fphar.2021.677005) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -22,7 +22,7 @@
 
 > Thiopental sodium (10-1000 µM) directly inhibits the NMDA (100 µM)-gated current in a concentration-dependent manner following a non-competitive antagonism mechanism described by the Hill equation. The reported IC50 is 33.6 ± 6.1 µM, with a maximal percent inhibition of 88.3 ± 6.5%.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Liu_2006`
 - **model family:** `emax`
@@ -64,7 +64,7 @@ Liu H et al., Effect of thiopental sodium on N-methyl…, Canadian journal of an
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -19,7 +19,7 @@
 
 > The probability of nausea and/or vomiting (NAV), a treatment-emergent adverse event, was modeled as a function of time-weighted total cariprazine plasma concentration (TCave, sum of cariprazine, DCAR, and DDCAR) via a logit (categorical) model, with increasing exposure increasing the probability of the event; the paper does not state a specific mechanism beyond this exposure–probability relationship and provides no Imax, IC50/EC50, Emax, kin, kout, ke0, or gamma values for NAV.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Periclou_2020`
 - **model family:** `categorical`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

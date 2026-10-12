@@ -28,25 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Iannuzzi_2025_cell_viability](drugs/drug_inavolisib/pd_Iannuzzi_2025_cell_viability.md) | cell viability ← Inavolisib · inhibition effect | — | Iannuzzi CA et al., Caprine herpes virus-1 reduces cell via…, Frontiers in oncology (2025) | [10.3389/fonc.2025.1676296](https://doi.org/10.3389/fonc.2025.1676296) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=inavolisib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCG2` substrate | DrugBank actor |
-| absorption | liver | `ABCG2` substrate | DrugBank actor |
-| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
-| absorption | small intestine | `ABCG2` substrate | DrugBank actor |
-| absorption | testis | `ABCG2` substrate | DrugBank actor |
-| metabolism | liver | `CYP2B6` inducer, `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ABCB5 (substrate), PIK3CA (degradation), PIK3CG (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Iannuzzi_2025_cell_viability](drugs/drug_inavolisib/pd_Iannuzzi_2025_cell_viability.md) | cell viability ← Inavolisib · inhibition effect | — | Iannuzzi CA et al., Caprine herpes virus-1 reduces cell via…, Frontiers in oncology (2025) | [10.3389/fonc.2025.1676296](https://doi.org/10.3389/fonc.2025.1676296) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

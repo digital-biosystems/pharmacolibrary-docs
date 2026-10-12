@@ -21,7 +21,7 @@
 
 > The paper excerpt is not available, so the mechanism by which isoflurane affects spinal anesthesia is not described. The record indicates an Emax model with an EC50 of 0.27 mol/L, but no key rate or potency values beyond this are provided in the source.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Guo_2014`
 - **model family:** `emax`
@@ -61,7 +61,7 @@ Guo J et al., Comparison of subarachnoid anesthetic e…, International journal 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

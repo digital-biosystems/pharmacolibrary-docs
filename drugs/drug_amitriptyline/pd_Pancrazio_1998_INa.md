@@ -22,7 +22,7 @@
 
 > Amitriptyline inhibits peak Na+ current (INa) evoked from a holding potential of -80 mV, described by a sigmoid Emax (inhibition) model with KD = 20.2 microM and a Hill coefficient of 1.2; the paper excerpts do not state the mechanism beyond this concentration–response inhibition.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Pancrazio_1998`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Pancrazio JJ et al., Inhibition of neuronal Na+ channels by…, The Journal of p
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

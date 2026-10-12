@@ -20,7 +20,7 @@
 
 > Racemic ketorolac concentration drives analgesic effect via an Emax model, with the mechanism attributed to the S-enantiomer's inhibition of cyclooxygenases to reduce prostaglandin-mediated pain. The key potency parameter is an EC50-racemic of 0.37 mg/L, while other rate constants or Emax values are not provided in the paper.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Cloesmeijer_2021`
 - **model family:** `emax`
@@ -61,7 +61,7 @@ Cloesmeijer ME et al., Impact of enantiomer-specific changes i…, British journ
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

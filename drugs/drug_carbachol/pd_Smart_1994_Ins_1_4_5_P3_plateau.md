@@ -21,7 +21,7 @@
 
 > Carbachol stimulates Ins(1,4,5)P3 formation (plateau phase, pmol/mg protein) described by a sigmoid Emax model, with EC50 of 11.7 and 11.6 microM and maximum Ins(1,4,5)P3 responses of 33.2 and 47.9 pmol/mg protein; the paper excerpts do not state a mechanism beyond this direct concentration-response relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Smart_1994`
 - **model family:** `sigmoid_emax`
@@ -65,7 +65,7 @@ Smart D et al., Halothane and isoflurane enhance basal…, Biochemical pharmacol
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

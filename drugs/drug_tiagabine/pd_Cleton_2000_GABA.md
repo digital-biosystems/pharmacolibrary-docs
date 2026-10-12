@@ -22,7 +22,7 @@
 
 > The record identifies tiagabine concentrations in ng/ml as the driver for extracellular GABA concentrations in microM, classified as an effect compartment model, but the paper excerpts are unavailable to confirm the specific mechanism or key potency parameters. The record cites two baseline extracellular GABA concentrations of 0.74 microM and 1.58 microM, though no other parameter values are provided in the available data.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Cleton_2000`
 - **model family:** `effect_compartment`
@@ -64,7 +64,7 @@ Cleton A et al., Effect of amygdala kindling on the cent…, British journal of 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

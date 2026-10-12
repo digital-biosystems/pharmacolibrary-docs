@@ -16,11 +16,11 @@
 
 **As extracted:** Buprenorphine (concentrations from the PK model of Castro-Cuellar_2023) drives drug liking E max VAS score (in VAS units): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > A sigmoidal Emax (Imax) model was developed to describe how plasma concentrations of buprenorphine inhibit the drug liking Emax VAS score response to hydromorphone. The model parameters included a baseline of 45.3 VAS units, an IC50 of 0.075 ng/mL, and an Imax of 1.00.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Walsh_2024`
 - **model family:** `sigmoid_emax`
@@ -101,7 +101,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

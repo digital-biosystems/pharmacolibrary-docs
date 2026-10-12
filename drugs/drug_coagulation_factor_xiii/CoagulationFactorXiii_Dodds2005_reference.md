@@ -30,8 +30,7 @@ Only one of the three expected pharmacokinetic parameters was covered in the rec
 Dodds MG et al., Population pharmacokinetics of recombin…, The AAPS journal (2005)
   ·  DOI: [10.1208/aapsj070370](https://doi.org/10.1208/aapsj070370)
 
-## Model component
-<dbs-pgx drug="coagulation factor XIII" model-id="CoagulationFactorXiii_Dodds2005_reference" status="" stale="true" population="cynomolgus monkeys" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="coagulation factor XIII" model-id="CoagulationFactorXiii_Dodds2005_reference" status="" stale="true" population="cynomolgus monkeys" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -66,9 +65,9 @@ _None recorded._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_coagulation_factor_xiii/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dodds_2005` / `Dodds_2005::reference`)
-- model: `../../../knowledgebase/drugs/drug_coagulation_factor_xiii/models/modelica/_needs_review/CoagulationFactorXiii_Dodds2005_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_coagulation_factor_xiii/models/modelica/_needs_review/CoagulationFactorXiii_Dodds2005_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_coagulation_factor_xiii/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dodds_2005` / `Dodds_2005::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_coagulation_factor_xiii/models/modelica/_needs_review/CoagulationFactorXiii_Dodds2005_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_coagulation_factor_xiii/models/modelica/_needs_review/CoagulationFactorXiii_Dodds2005_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -89,7 +88,7 @@ _None recorded._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

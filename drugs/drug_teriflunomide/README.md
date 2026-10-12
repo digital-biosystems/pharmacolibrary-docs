@@ -33,30 +33,13 @@ Teriflunomide is an immunosuppressant used to treat relapsing-remitting multiple
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Hopkins_2015_reference](drugs/drug_teriflunomide/Teriflunomide_Hopkins2015_reference.md) | — | parent + metabolite (no model) | 0 | Hopkins AM et al., Semiphysiologically Based Pharmacokinet…, CPT: pharmacometrics & syst… (2015) | [10.1002/psp4.46](https://doi.org/10.1002/psp4.46) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Hopkins_2015_reference](drugs/drug_teriflunomide/Teriflunomide_Hopkins2015_reference.md) | — | parent + metabolite (no model) | 0 | Hopkins AM et al., Semiphysiologically Based Pharmacokinet…, CPT: pharmacometrics & syst… (2015) | [10.1002/psp4.46](https://doi.org/10.1002/psp4.46) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Lang_2023_viral_inhibition](drugs/drug_teriflunomide/pd_Lang_2023_viral_inhibition.md) | viral inhibition ← teriflunomide · inhibition effect | — | Lang P et al., Biochemistry and biophysics… (2023) | [10.1016/j.bbrep.2022.101395](https://doi.org/10.1016/j.bbrep.2022.101395) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=teriflunomide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | testis | `ABCG2` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inducer, `CYP2C8` inhibitor, `SLCO1B1` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: DHODH (inhibitor), HMGCR (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

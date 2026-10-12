@@ -22,7 +22,7 @@
 
 > The model describes guselkumab (and ustekinumab mixtures) acting as an antagonist to shift the EC50 of the IL-23 luminescence response, with the mechanism attributed to the stronger affinity of guselkumab for IL-23 relative to ustekinumab, rather than specific kinetic rate constants. The paper provides the highest tested treatment dose of 3 nM and references SPR-derived KD values for parameterization, but does not state specific numerical values for Imax, IC50, Emax, kin, kout, or ke0.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Gauntlett_2026`
 - **model family:** `tmdd`
@@ -56,7 +56,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -23,7 +23,7 @@ Fluoroethylcholine F-18 is a radioactive imaging agent used to help detect tumou
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.8), gpt-oss:120b (primary re-run, agreement 0.333). The first reading is what the record holds.">cross-check: partial 0/2</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Takesh_2013_reference](drugs/drug_fluoroethylcholine_18f/Fluoroethylcholine18f_Takesh2013_reference.md) | — | 1-compartment (no model) | 0 | Takesh M, Kinetic Modeling Application to (18)F-f…, World journal of nuclear me… (2013) | [10.4103/1450-1147.136734](https://doi.org/10.4103/1450-1147.136734) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.333). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Takesh_2013_reference](drugs/drug_fluoroethylcholine_18f/Fluoroethylcholine18f_Takesh2013_reference.md) | — | 1-compartment (no model) | 0 | Takesh M, Kinetic Modeling Application to (18)F-f…, World journal of nuclear me… (2013) | [10.4103/1450-1147.136734](https://doi.org/10.4103/1450-1147.136734) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

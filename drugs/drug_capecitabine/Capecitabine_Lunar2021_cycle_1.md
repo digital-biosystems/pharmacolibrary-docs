@@ -5,7 +5,7 @@
 
 # capecitabine — `Capecitabine_Lunar2021_cycle_1`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Lunar N et al., Population pharmacokinetic and pharmaco…, Cancer chemotherapy and pha… (2021)
   ·  DOI: [10.1007/s00280-020-04208-8](https://doi.org/10.1007/s00280-020-04208-8)
 
-## Model component
-<dbs-pgx drug="capecitabine" model-id="Capecitabine_Lunar2021_cycle_1" status="needs_review" stale="false" population="patients with metastatic breast cancer" measured-compound="capecitabine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Lunar2021_cycle_1" status="needs_review" stale="false" population="patients with metastatic breast cancer" measured-compound="capecitabine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -125,7 +124,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_capecitabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lunar_2021` / `Lunar_2021::cycle_1`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_capecitabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lunar_2021` / `Lunar_2021::cycle_1`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -146,7 +145,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

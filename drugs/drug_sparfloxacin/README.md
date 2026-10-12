@@ -28,27 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bischoff_2000_HERG](drugs/drug_sparfloxacin/pd_Bischoff_2000_HERG.md) | HERG outward currents ← sparfloxacin · direct Emax (saturable) effect | — | Bischoff U et al., Effects of fluoroquinolones on HERG cur…, European journal of pharmac… (2000) | [10.1016/s0014-2999(00)00693-2](https://doi.org/10.1016/s0014-2999(00)00693-2) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sparfloxacin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate, `SLC22A5` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate, `SLC22A5` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
-| excretion | kidney | `ABCC2` inhibitor | DrugBank actor |
-| excretion | liver | `ABCC2` inhibitor | DrugBank actor |
-| excretion | small intestine | `ABCC2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: TOP2A (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bischoff_2000_HERG](drugs/drug_sparfloxacin/pd_Bischoff_2000_HERG.md) | HERG outward currents ← sparfloxacin · direct Emax (saturable) effect | — | Bischoff U et al., Effects of fluoroquinolones on HERG cur…, European journal of pharmac… (2000) | [10.1016/s0014-2999(00)00693-2](https://doi.org/10.1016/s0014-2999(00)00693-2) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

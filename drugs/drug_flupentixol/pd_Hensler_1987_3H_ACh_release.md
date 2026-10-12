@@ -21,7 +21,7 @@
 
 > Cis-flupentixol concentrations (nM) inhibit dopamine-evoked [3H]acetylcholine release from rabbit retina, described by a sigmoid Emax model; the paper excerpts provide no mechanism details and no parameter values (Imax, IC50, gamma).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Hensler_1987`
 - **model family:** `sigmoid_emax`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

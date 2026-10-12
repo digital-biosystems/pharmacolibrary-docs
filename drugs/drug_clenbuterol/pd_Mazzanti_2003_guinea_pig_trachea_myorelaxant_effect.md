@@ -21,7 +21,7 @@
 
 > Clenbuterol concentration (nM) produces a stimulatory (myorelaxant) Emax-type effect on guinea-pig trachea, with an EC50 of 43.8 nM; the paper excerpts do not state the mechanism beyond this direct concentration-effect relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Mazzanti_2003`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Mazzanti G et al., New beta-adrenergic agonists used illic…, Toxicology (2003)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

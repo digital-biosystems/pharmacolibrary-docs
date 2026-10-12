@@ -16,11 +16,11 @@
 
 **As extracted:** Ketamine (the dose) drives pain score (in pain units (0–10)): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Ketamine inhibits the pain score via a direct sigmoid fractional Emax model, where the driving variable is the dose rate (mg/kg/h) rather than plasma concentration, with a baseline pain score (E0) of 6.4 pain units. The estimated maximum pain reduction (Emax) is 0.11 fractional pain units (11%), an ED50 of 1.5 mg/kg/h, and a Hill coefficient of 0.26, though the paper does not specify the underlying biological mechanism of ketamine's analgesic action beyond its effect on the numerical pain score.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Douglas_2025`
 - **model family:** `emax`
@@ -95,7 +95,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

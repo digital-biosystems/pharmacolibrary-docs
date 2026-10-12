@@ -19,7 +19,7 @@
 
 > Desflurane concentration (in MAC) inhibits the aepEX monitor index value using a sigmoid Emax model characterized by an EC50 of 0.59 MAC and an Emax of 100. The model assumes a direct concentration-dependent effect with no explicit effect compartment lag or turnover parameters (ke0, kin, kout) described in the provided text.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Cheung_2020`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Cheung YM et al., Monitoring Depth of Hypnosis: Mid-Laten…, Anesthesia and ana
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

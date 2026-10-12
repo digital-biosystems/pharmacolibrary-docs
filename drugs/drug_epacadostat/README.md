@@ -28,17 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> | [Shi_2017_KYN](drugs/drug_epacadostat/pd_Shi_2017_KYN.md) | kynurenine ← epacadostat · indirect response — drug stimulates the production of kynurenine | — | Shi JG et al., Population Pharmacokinetic and Pharmaco…, Journal of clinical pharmac… (2017) | [10.1002/jcph.855](https://doi.org/10.1002/jcph.855) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Shi_2017_TRP](drugs/drug_epacadostat/pd_Shi_2017_TRP.md) | tryptophan ← epacadostat · indirect response — drug inhibits the production of tryptophan | — | Shi JG et al., Population Pharmacokinetic and Pharmaco…, Journal of clinical pharmac… (2017) | [10.1002/jcph.855](https://doi.org/10.1002/jcph.855) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=epacadostat).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: IDO1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> | [Shi_2017_KYN](drugs/drug_epacadostat/pd_Shi_2017_KYN.md) | kynurenine ← epacadostat · indirect response — drug stimulates the production of kynurenine | — | Shi JG et al., Population Pharmacokinetic and Pharmaco…, Journal of clinical pharmac… (2017) | [10.1002/jcph.855](https://doi.org/10.1002/jcph.855) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Shi_2017_TRP](drugs/drug_epacadostat/pd_Shi_2017_TRP.md) | tryptophan ← epacadostat · indirect response — drug inhibits the production of tryptophan | — | Shi JG et al., Population Pharmacokinetic and Pharmaco…, Journal of clinical pharmac… (2017) | [10.1002/jcph.855](https://doi.org/10.1002/jcph.855) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -19,7 +19,7 @@
 
 > The record describes an indirect response model for lesinurad where plasma concentrations (mg/L) inhibit uric acid production in a proportional manner, but the paper does not specify the mechanism or provide key parameters (such as Imax, IC50, or kout) as full text is unavailable.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ayyar_2019`
 - **model family:** `indirect_response_i`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

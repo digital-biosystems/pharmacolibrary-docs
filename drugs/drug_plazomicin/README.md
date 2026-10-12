@@ -33,21 +33,9 @@ Plazomicin is an aminoglycoside antibacterial used to treat serious bacterial in
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span> | [Kuti_2019_2_reference](drugs/drug_plazomicin/Plazomicin_Kuti2019v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kuti JL et al., Evaluation of Plazomicin, Tigecycline,…, Infectious diseases and the… (2019) | [10.1007/s40121-019-0251-4](https://doi.org/10.1007/s40121-019-0251-4) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> | [Trang_2019_2_geometric_mean_value_cv_d](drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.md) | ▶ model + simulator | 1-compartment, IV | 9 | Trang M et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.381). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Trang_2019_2_final_model](drugs/drug_plazomicin/Plazomicin_Trang2019v2_final_model.md) | — | 1-compartment (no model) | 3 (+5 cov.) | Trang M et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=plazomicin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
-| excretion | liver | `SLC47A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: MRM2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span> | [Kuti_2019_2_reference](drugs/drug_plazomicin/Plazomicin_Kuti2019v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kuti JL et al., Evaluation of Plazomicin, Tigecycline,…, Infectious diseases and the… (2019) | [10.1007/s40121-019-0251-4](https://doi.org/10.1007/s40121-019-0251-4) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> | [Trang_2019_2_geometric_mean_value_cv_d](drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.md) | ▶ model + simulator | 1-compartment, IV | 9 | Trang M et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.381). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Trang_2019_2_final_model](drugs/drug_plazomicin/Plazomicin_Trang2019v2_final_model.md) | — | 1-compartment (no model) | 3 (+5 cov.) | Trang M et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

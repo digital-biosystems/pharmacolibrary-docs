@@ -28,31 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [An_2021_Kv](drugs/drug_tegaserod/pd_An_2021_Kv.md) | Kv current ← tegaserod · direct sigmoid Emax (Hill) effect | — | An JR et al., The effects of tegaserod, a gastrokinet…, Clinical and experimental p… (2021) | [10.1111/1440-1681.13477](https://doi.org/10.1111/1440-1681.13477) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Fang_2008_short_circuit_current](drugs/drug_tegaserod/pd_Fang_2008_short_circuit_current.md) | mucosal secretion ← tegaserod · direct Emax (saturable) effect | — | Fang X et al., Neurogastroenterology of tegaserod (HTF…, Neurogastroenterology and m… (2008) | [10.1111/j.1365-2982.2007.00983.x](https://doi.org/10.1111/j.1365-2982.2007.00983.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tegaserod).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor, `CYP2C8` inhibitor, `CYP2D6` inhibitor/substrate, `CYP2E1` inhibitor | DrugBank actor |
-| metabolism | stomach | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| — | brain | `SLC6A4` inhibitor/substrate | DrugBank actor |
-| — | platelet | `SLC6A4` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: HTR2A (target), HTR2B (target), HTR2C (target), HTR4 (partial agonist), HTR4 (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [An_2021_Kv](drugs/drug_tegaserod/pd_An_2021_Kv.md) | Kv current ← tegaserod · direct sigmoid Emax (Hill) effect | — | An JR et al., The effects of tegaserod, a gastrokinet…, Clinical and experimental p… (2021) | [10.1111/1440-1681.13477](https://doi.org/10.1111/1440-1681.13477) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Fang_2008_short_circuit_current](drugs/drug_tegaserod/pd_Fang_2008_short_circuit_current.md) | mucosal secretion ← tegaserod · direct Emax (saturable) effect | — | Fang X et al., Neurogastroenterology of tegaserod (HTF…, Neurogastroenterology and m… (2008) | [10.1111/j.1365-2982.2007.00983.x](https://doi.org/10.1111/j.1365-2982.2007.00983.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

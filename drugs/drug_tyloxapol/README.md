@@ -27,16 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Tsubokawa_1994_ciliary_activity](drugs/drug_tyloxapol/pd_Tsubokawa_1994_ciliary_activity.md) | ciliary activity ← tyloxapol · inhibition effect | — | Tsubokawa T et al., [A study on maximal permissible drug co…, Nihon Jibiinkoka Gakkai kai… (1994) | [10.3950/jibiinkoka.97.2266](https://doi.org/10.3950/jibiinkoka.97.2266) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tyloxapol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: LPL (inhibitor), NFKB1 (inhibitor), NFKB2 (inhibitor), REL (inhibitor), RELA (inhibitor), RELB (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Tsubokawa_1994_ciliary_activity](drugs/drug_tyloxapol/pd_Tsubokawa_1994_ciliary_activity.md) | ciliary activity ← tyloxapol · inhibition effect | — | Tsubokawa T et al., [A study on maximal permissible drug co…, Nihon Jibiinkoka Gakkai kai… (1994) | [10.3950/jibiinkoka.97.2266](https://doi.org/10.3950/jibiinkoka.97.2266) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

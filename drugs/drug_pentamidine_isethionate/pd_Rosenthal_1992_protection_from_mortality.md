@@ -21,7 +21,7 @@
 
 > Pentamidine isethionate dose (mg/kg) is linked to protection from mortality (binary), with an inhibitory direction and an EC50 of 11.4 mg/kg; the paper excerpts do not state the mechanism or model family.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Rosenthal_1992`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Rosenthal GJ et al., Pentamidine blocks the pathophysiologic…, Toxicology and 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

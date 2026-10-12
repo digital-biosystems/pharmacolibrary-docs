@@ -28,20 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Sipos_1999_AA](drugs/drug_trihexyphenidyl/pd_Sipos_1999_AA.md) | ambulatory activity ← trihexyphenidyl · stimulation effect | — | Sipos ML et al., Dose-response curves and time-course ef…, Psychopharmacology (1999) | [10.1007/s002130051164](https://doi.org/10.1007/s002130051164) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Sipos_1999_FMA](drugs/drug_trihexyphenidyl/pd_Sipos_1999_FMA.md) | fine motor activity ← trihexyphenidyl · stimulation effect | — | Sipos ML et al., Dose-response curves and time-course ef…, Psychopharmacology (1999) | [10.1007/s002130051164](https://doi.org/10.1007/s002130051164) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=trihexyphenidyl).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADRB3 (target), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Sipos_1999_AA](drugs/drug_trihexyphenidyl/pd_Sipos_1999_AA.md) | ambulatory activity ← trihexyphenidyl · stimulation effect | — | Sipos ML et al., Dose-response curves and time-course ef…, Psychopharmacology (1999) | [10.1007/s002130051164](https://doi.org/10.1007/s002130051164) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Sipos_1999_FMA](drugs/drug_trihexyphenidyl/pd_Sipos_1999_FMA.md) | fine motor activity ← trihexyphenidyl · stimulation effect | — | Sipos ML et al., Dose-response curves and time-course ef…, Psychopharmacology (1999) | [10.1007/s002130051164](https://doi.org/10.1007/s002130051164) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

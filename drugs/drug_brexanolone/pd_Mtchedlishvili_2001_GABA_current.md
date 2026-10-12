@@ -21,7 +21,7 @@
 
 > Allopregnanolone concentrations (nM) enhance GABA-evoked peak whole-cell current (pA) via a direct stimulatory Emax model, with reported EC50 values of 12.9 ± 2.3 nM and 92.7 ± 13.4 nM; the paper excerpts do not state the mechanism beyond this Emax stimulation.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Mtchedlishvili_2001`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Mtchedlishvili Z et al., Diminished allopregnanolone enhancement…, The Journal
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

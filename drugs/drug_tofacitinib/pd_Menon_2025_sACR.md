@@ -20,7 +20,7 @@
 
 > Steady-state average tofacitinib concentrations (Cavg, ng/mL) drive the ordered categorical ACR responder rate (sACR) through a direct maximum effect (Emax) model with no effect compartment or time delays. The model estimates an Emax of 1.76 logit and an EC50 of 17.1 ng/mL, with a baseline logit intercept (Int) of -0.852.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Menon_2025`
 - **model family:** `categorical`
@@ -63,7 +63,7 @@ Menon S et al., Exposure-Response Analysis of Tofacitin…, Journal of clinical 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -32,7 +32,7 @@ Flunoxaprofen is a non-steroidal anti-inflammatory drug of the propionic acid ty
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Segre_1987_reference](drugs/drug_flunoxaprofen/Flunoxaprofen_Segre1987_reference.md) | — | 1-compartment (no model) | 3 | Segre G et al., Flunoxaprofen pharmacokinetics in elder…, International journal of cl… (1987) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Segre_1987_reference](drugs/drug_flunoxaprofen/Flunoxaprofen_Segre1987_reference.md) | — | 1-compartment (no model) | 3 | Segre G et al., Flunoxaprofen pharmacokinetics in elder…, International journal of cl… (1987) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

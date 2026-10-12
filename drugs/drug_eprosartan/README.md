@@ -28,22 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [van_2013_SBP](drugs/drug_eprosartan/pd_van_2013_SBP.md) | systolic blood pressure ← eprosartan · direct log-linear effect | — | van Rijn-Bikker PC et al., Pharmacokinetic-pharmacodynamic modelin…, Clinical pharmacokinetics (2013) | [10.1007/s40262-013-0073-6](https://doi.org/10.1007/s40262-013-0073-6) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">rat</span> | [Shetty_2000_stimulation_induced_efflux_of_3_H_norepinephrine](drugs/drug_eprosartan/pd_Shetty_2000_stimulation_induced_efflux_of_3_H_norepinephrine.md) | stimulation-induced efflux of [(3)H]norepinephrine ← eprosartan · direct sigmoid Emax (Hill) effect | — | Shetty SS et al., Differential inhibition of the prejunct…, The Journal of pharmacology… (2000) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=eprosartan).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `ABCC2` inducer | DrugBank actor |
-| excretion | liver | `ABCC2` inducer | DrugBank actor |
-| excretion | small intestine | `ABCC2` inducer | DrugBank actor |
-
-<sub>Actors without a tissue in the table: AGTR1 (target).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> | [van_2013_SBP](drugs/drug_eprosartan/pd_van_2013_SBP.md) | systolic blood pressure ← eprosartan · direct log-linear effect | — | van Rijn-Bikker PC et al., Pharmacokinetic-pharmacodynamic modelin…, Clinical pharmacokinetics (2013) | [10.1007/s40262-013-0073-6](https://doi.org/10.1007/s40262-013-0073-6) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">rat</span> | [Shetty_2000_stimulation_induced_efflux_of_3_H_norepinephrine](drugs/drug_eprosartan/pd_Shetty_2000_stimulation_induced_efflux_of_3_H_norepinephrine.md) | stimulation-induced efflux of [(3)H]norepinephrine ← eprosartan · direct sigmoid Emax (Hill) effect | — | Shetty SS et al., Differential inhibition of the prejunct…, The Journal of pharmacology… (2000) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

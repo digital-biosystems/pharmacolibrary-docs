@@ -21,7 +21,7 @@
 
 > Remoxipride concentrations (nM) inhibit prolactin (PRL) levels via an indirect response model with proportional inhibition; the paper excerpts do not state the mechanism beyond this. Reported EC50: 94.8 nM; no Imax, kin, kout, or ke0 values are available in the excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Taneja_2016`
 - **model family:** `indirect_response_i`
@@ -62,7 +62,7 @@ Taneja A et al., A comparison of two semi-mechanistic mo…, European journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

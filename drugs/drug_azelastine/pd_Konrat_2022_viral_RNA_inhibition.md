@@ -21,7 +21,7 @@
 
 > Azelastine-HCl concentrations (µM) were fitted to percent inhibition of SARS-CoV-2 viral RNA in Vero E6 and TMPRSS2/ACE2-overexpressing Vero cells using a four-parameter sigmoid Emax model; the paper does not state a PD mechanism for the antiviral effect (possible Mpro inhibition, IC50 20–100 µM, is only proposed). EC50 values ranged 2.2–6.5 µM (e.g., 2.2 µM co-administration and 6.5 µM post-infection treatment in Vero E6; 3.7 and 4 µM preventive/therapeutic against D614G in TMPRSS2/ACE2 cells).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Konrat_2022`
 - **model family:** `sigmoid_emax`
@@ -71,7 +71,7 @@ Konrat R et al., The Anti-Histamine Azelastine, Identifi…, Frontiers in pharma
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

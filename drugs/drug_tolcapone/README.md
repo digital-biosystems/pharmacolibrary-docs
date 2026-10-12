@@ -32,28 +32,15 @@ Tolcapone is a catechol-O-methyltransferase inhibitor used as an add-on treatmen
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Jorga_2000_fluctuator_model](drugs/drug_tolcapone/Tolcapone_Jorga2000_fluctuator_model.md) | — | 3-compartment (no model) | 11 | Jorga K et al., Population pharmacokinetics of tolcapon…, British journal of clinical… (2000) | [10.1046/j.1365-2125.2000.00113.x](https://doi.org/10.1046/j.1365-2125.2000.00113.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Jorga_2000_non_fluctuator_model](drugs/drug_tolcapone/Tolcapone_Jorga2000_non_fluctuator_model.md) | — | 2-compartment (no model) | 10 | Jorga K et al., Population pharmacokinetics of tolcapon…, British journal of clinical… (2000) | [10.1046/j.1365-2125.2000.00113.x](https://doi.org/10.1046/j.1365-2125.2000.00113.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Jorga_2000_fluctuator_model](drugs/drug_tolcapone/Tolcapone_Jorga2000_fluctuator_model.md) | — | 3-compartment (no model) | 11 | Jorga K et al., Population pharmacokinetics of tolcapon…, British journal of clinical… (2000) | [10.1046/j.1365-2125.2000.00113.x](https://doi.org/10.1046/j.1365-2125.2000.00113.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.786). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Jorga_2000_non_fluctuator_model](drugs/drug_tolcapone/Tolcapone_Jorga2000_non_fluctuator_model.md) | — | 2-compartment (no model) | 10 | Jorga K et al., Population pharmacokinetics of tolcapon…, British journal of clinical… (2000) | [10.1046/j.1365-2125.2000.00113.x](https://doi.org/10.1046/j.1365-2125.2000.00113.x) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Dingemanse_1995_2_COMT_activity](drugs/drug_tolcapone/pd_Dingemanse_1995_2_COMT_activity.md) | COMT activity in erythrocytes ← tolcapone · direct Emax (saturable) effect | — | Dingemanse J et al., Integrated pharmacokinetics and pharmac…, Clinical pharmacology and t… (1995) | [10.1016/0009-9236(95)90035-7](https://doi.org/10.1016/0009-9236(95)90035-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Dingemanse_1996_COMT_activity](drugs/drug_tolcapone/pd_Dingemanse_1996_COMT_activity.md) | COMT activity in erythrocytes ← tolcapone · direct Emax (saturable) effect | — | Dingemanse J et al., Multiple-dose clinical pharmacology of…, European journal of clinica… (1996) | [10.1007/s002280050068](https://doi.org/10.1007/s002280050068) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tolcapone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `COMT` inhibitor | DrugBank actor |
-| metabolism | kidney | `COMT` inhibitor | DrugBank actor |
-| metabolism | liver | `COMT` inhibitor, `CYP2C9` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Dingemanse_1995_2_COMT_activity](drugs/drug_tolcapone/pd_Dingemanse_1995_2_COMT_activity.md) | COMT activity in erythrocytes ← tolcapone · direct Emax (saturable) effect | — | Dingemanse J et al., Integrated pharmacokinetics and pharmac…, Clinical pharmacology and t… (1995) | [10.1016/0009-9236(95)90035-7](https://doi.org/10.1016/0009-9236(95)90035-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Dingemanse_1996_COMT_activity](drugs/drug_tolcapone/pd_Dingemanse_1996_COMT_activity.md) | COMT activity in erythrocytes ← tolcapone · direct Emax (saturable) effect | — | Dingemanse J et al., Multiple-dose clinical pharmacology of…, European journal of clinica… (1996) | [10.1007/s002280050068](https://doi.org/10.1007/s002280050068) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

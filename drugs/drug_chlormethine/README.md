@@ -27,18 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Maisin_1985_proteinuria](drugs/drug_chlormethine/pd_Maisin_1985_proteinuria.md) | proteinuria biomarker turnover ← chlormethine | — | Maisin A et al., [Value of chlormethine in children with…, Archives francaises de pedi… (1985) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=chlormethine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | blood | `BCHE` inhibitor | DrugBank actor |
-| metabolism | liver | `BCHE` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: DNA (intercalation).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Maisin_1985_proteinuria](drugs/drug_chlormethine/pd_Maisin_1985_proteinuria.md) | proteinuria biomarker turnover ← chlormethine | — | Maisin A et al., [Value of chlormethine in children with…, Archives francaises de pedi… (1985) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

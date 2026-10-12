@@ -16,11 +16,11 @@
 
 **As extracted:** Moclobemide (the dose) drives Utilisation (market uptake) (in DDD/1000 population/day): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Moclobemide utilisation (DDD/1000 population/day) over time since subsidy listing was fitted with a sigmoid Emax (Hill) model applied to market uptake, with time in quarter years as the driver rather than a pharmacological mechanism; the paper does not describe a drug-response mechanism. Key parameters: Umax 1.8 DDD/1000/day, TU50 6.0 quarter years, slope n 2.0.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Birkett_1995`
 - **model family:** `sigmoid_emax`
@@ -100,7 +100,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

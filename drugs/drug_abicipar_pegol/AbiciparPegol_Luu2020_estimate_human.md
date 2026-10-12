@@ -4,7 +4,7 @@
 
 # abicipar pegol — `AbiciparPegol_Luu2020_estimate_human`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -22,7 +22,7 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (ktr, CL_CRRT, equation variable and V), so that value has no SI equivalent. Extracted — abicipar pegol: ktr 609 Human, CL_CRRT 3.55e+04 Human, V 4.05e+04 Human, kint 9.25 Human.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has abicipar_pegol, the second reading abicipar pegol; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has abicipar_pegol, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -89,19 +89,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.417 (5/12 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.333 (4/12 fields) | 8 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[k_as]` | not captured | 0.402 | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
 | `gpt-oss-120b` | `parameters[k_cr]` | 35500 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k_cs]` | 6460 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k_rv].parameter_id` | Q306 | Q48 | mismatch |
+| `gpt-oss-120b` | `parameters[k_rv].parameter_id` | Q306 | Q50 | mismatch |
 | `gpt-oss-120b` | `parameters[k_sc]` | not captured | 18.8 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | abicipar_pegol | abicipar pegol | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | abicipar_pegol | abicipar pegol | mismatch |
+| `gpt-oss-120b` | `parameters[k_va]` | not captured | 0.0256 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | abicipar_pegol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | abicipar_pegol | unknown | mismatch |
 
 </details>
 
@@ -131,7 +132,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_abicipar_pegol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Luu_2020` / `Luu_2020::estimate_human`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_abicipar_pegol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Luu_2020` / `Luu_2020::estimate_human`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -152,7 +153,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > Miltefosine's apparent intracellular concentration (CI, μM), built from extracellular concentration via a Hill-type penetration model (t50 = 100.01 h, γ = 2.09), inhibits the fraction of infected cells F(t) from a baseline of 0.65 through a sigmoidal Emax (proportional inhibition) relation with EC50 = 1.26 μM and Hill slope λ = 1.12; the paper does not describe a kin/kout turnover or effect-compartment mechanism beyond this delayed-penetration link.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Voak_2018`
 - **model family:** `sigmoid_emax`
@@ -67,7 +67,7 @@ Voak AA et al., Pharmacodynamics and cellular accumulat…, The Journal of antim
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

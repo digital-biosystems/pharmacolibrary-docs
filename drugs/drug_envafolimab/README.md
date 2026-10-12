@@ -23,24 +23,15 @@ Envafolimab is an investigational anticancer monoclonal antibody that blocks the
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2_reference failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Cui_2024_reference](drugs/drug_envafolimab/Envafolimab_Cui2024_reference.md) | — | 1-compartment (no model) | 4 (+1 cov.) | Cui C et al., Model-informed drug development of enva…, The oncologist (2024) | [10.1093/oncolo/oyae102](https://doi.org/10.1093/oncolo/oyae102) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C2_reference failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Cui_2024_reference](drugs/drug_envafolimab/Envafolimab_Cui2024_reference.md) | — | 1-compartment (no model) | 4 (+1 cov.) | Cui C et al., Model-informed drug development of enva…, The oncologist (2024) | [10.1093/oncolo/oyae102](https://doi.org/10.1093/oncolo/oyae102) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Cui_2024_AECI](drugs/drug_envafolimab/pd_Cui_2024_AECI.md) | Incidence and severity of AECI ← envafolimab · categorical (graded) response model | — | Cui C et al., Model-informed drug development of enva…, The oncologist (2024) | [10.1093/oncolo/oyae102](https://doi.org/10.1093/oncolo/oyae102) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Cui_2024_DOR](drugs/drug_envafolimab/pd_Cui_2024_DOR.md) | DOR ← envafolimab · time-to-event model | — | Cui C et al., Model-informed drug development of enva…, The oncologist (2024) | [10.1093/oncolo/oyae102](https://doi.org/10.1093/oncolo/oyae102) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Cui_2024_Optimal_overall_response](drugs/drug_envafolimab/pd_Cui_2024_Optimal_overall_response.md) | Optimal overall response ← envafolimab · categorical (graded) response model | — | Cui C et al., Model-informed drug development of enva…, The oncologist (2024) | [10.1093/oncolo/oyae102](https://doi.org/10.1093/oncolo/oyae102) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=envafolimab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CD274 (antibody), CD274 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Cui_2024_AECI](drugs/drug_envafolimab/pd_Cui_2024_AECI.md) | Incidence and severity of AECI ← envafolimab · categorical (graded) response model | — | Cui C et al., Model-informed drug development of enva…, The oncologist (2024) | [10.1093/oncolo/oyae102](https://doi.org/10.1093/oncolo/oyae102) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Cui_2024_DOR](drugs/drug_envafolimab/pd_Cui_2024_DOR.md) | DOR ← envafolimab · time-to-event model | — | Cui C et al., Model-informed drug development of enva…, The oncologist (2024) | [10.1093/oncolo/oyae102](https://doi.org/10.1093/oncolo/oyae102) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Cui_2024_Optimal_overall_response](drugs/drug_envafolimab/pd_Cui_2024_Optimal_overall_response.md) | Optimal overall response ← envafolimab · categorical (graded) response model | — | Cui C et al., Model-informed drug development of enva…, The oncologist (2024) | [10.1093/oncolo/oyae102](https://doi.org/10.1093/oncolo/oyae102) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

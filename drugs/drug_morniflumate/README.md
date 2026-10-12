@@ -33,20 +33,7 @@ Morniflumate is a non-steroidal compound classified for antiinflammatory and ant
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.562). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Jeong_2024_reference](drugs/drug_morniflumate/Morniflumate_Jeong2024_reference.md) | — | parent + metabolite (no model) | 4 | Jeong SH et al., Modeling population pharmacokinetics of…, Naunyn-Schmiedeberg's archi… (2024) | [10.1007/s00210-023-02640-0](https://doi.org/10.1007/s00210-023-02640-0) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=morniflumate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | `UGT1A9` inhibitor | DrugBank actor |
-| metabolism | liver | `UGT1A9` inhibitor | DrugBank actor |
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ALOX5 (inhibitor), ALOX5 (target), LTB4R (target), PTGS1 (modulator), PTGS2 (inhibitor), PTGS2 (modulator), TBXA2R (unknown).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.562). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Jeong_2024_reference](drugs/drug_morniflumate/Morniflumate_Jeong2024_reference.md) | — | parent + metabolite (no model) | 4 | Jeong SH et al., Modeling population pharmacokinetics of…, Naunyn-Schmiedeberg's archi… (2024) | [10.1007/s00210-023-02640-0](https://doi.org/10.1007/s00210-023-02640-0) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

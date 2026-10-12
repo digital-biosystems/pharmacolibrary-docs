@@ -5,7 +5,7 @@
 
 # givosiran — `Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188), gpt-oss:120b (not confirmed, agreement 0.188). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188), gpt-oss:120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,7 +15,7 @@
 
 > **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 0.50).
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** Model withheld: a core parameter is unspecified.
 
 ### Reviewer guidance
 
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 Sten S et al., Plasma Pharmacokinetics of N-Acetylgala…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01314-7](https://doi.org/10.1007/s40262-023-01314-7)
 
-## Model component
-<dbs-pgx drug="givosiran" model-id="Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim" status="model_quarantined" stale="false" population="adults with acute intermittent porphyria" measured-compound="givosiran" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="givosiran" model-id="Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim" status="model_quarantined" stale="false" population="adults with acute intermittent porphyria" measured-compound="givosiran" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.
@@ -157,9 +156,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_givosiran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sten_2023` / `Sten_2023::model_fitted_to_olpasiran_data_only_estimate_se`)
-- model: `../../../knowledgebase/drugs/drug_givosiran/models/modelica/_needs_review/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.mo`
-- deviation: `../../../knowledgebase/drugs/drug_givosiran/models/modelica/_needs_review/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_givosiran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sten_2023` / `Sten_2023::model_fitted_to_olpasiran_data_only_estimate_se`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_givosiran/models/modelica/_needs_review/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_givosiran/models/modelica/_needs_review/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -180,7 +179,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

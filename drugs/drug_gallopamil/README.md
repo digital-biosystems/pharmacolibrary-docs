@@ -28,25 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">dog</span> | [Matsuzaki_1993_arrhythmic_ratio](drugs/drug_gallopamil/pd_Matsuzaki_1993_arrhythmic_ratio.md) | arrhythmic ratio ← gallopamil · inhibition effect | — | Matsuzaki T et al., Effects of gallopamil, a Ca2+ channel b…, European journal of pharmac… (1993) | [10.1016/0014-2999(93)90111-t](https://doi.org/10.1016/0014-2999(93)90111-t) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">mouse</span> | [Tarabova_2007_ICa](drugs/drug_gallopamil/pd_Tarabova_2007_ICa.md) | I(Ca) ← gallopamil · direct sigmoid Emax (Hill) effect | — | Tarabova B et al., Effects of phenylalkylamines and benzot…, European journal of pharmac… (2007) | [10.1016/j.ejphar.2007.06.050](https://doi.org/10.1016/j.ejphar.2007.06.050) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=gallopamil).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ACE (inhibitor), ATP2A2 (inhibitor), MME (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">dog</span> | [Matsuzaki_1993_arrhythmic_ratio](drugs/drug_gallopamil/pd_Matsuzaki_1993_arrhythmic_ratio.md) | arrhythmic ratio ← gallopamil · inhibition effect | — | Matsuzaki T et al., Effects of gallopamil, a Ca2+ channel b…, European journal of pharmac… (1993) | [10.1016/0014-2999(93)90111-t](https://doi.org/10.1016/0014-2999(93)90111-t) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">mouse</span> | [Tarabova_2007_ICa](drugs/drug_gallopamil/pd_Tarabova_2007_ICa.md) | I(Ca) ← gallopamil · direct sigmoid Emax (Hill) effect | — | Tarabova B et al., Effects of phenylalkylamines and benzot…, European journal of pharmac… (2007) | [10.1016/j.ejphar.2007.06.050](https://doi.org/10.1016/j.ejphar.2007.06.050) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

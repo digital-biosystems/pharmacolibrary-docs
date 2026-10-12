@@ -22,7 +22,7 @@
 
 > Risperidone (and its metabolite paliperidone, competing for the same binding site) drives 5-HT2A receptor occupancy (%) in rat frontal cortex via a mechanism-based TMDD-type equilibrium binding model, with brain concentration acting on receptor binding described by Kd = 0.219 nM, kon = 2.40 1/nM/h, koff = 0.525 1/h, and Bmax = 46.5 nM.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kozielska_2012`
 - **model family:** `tmdd`
@@ -67,7 +67,7 @@ Kozielska M et al., Pharmacokinetic-pharmacodynamic modelin…, Pharmaceutical r
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

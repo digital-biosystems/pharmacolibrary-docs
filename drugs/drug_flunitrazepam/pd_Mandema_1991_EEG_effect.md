@@ -22,7 +22,7 @@
 
 > Flunitrazepam plasma concentrations (ng/ml) act as a stimulant on EEG amplitude in the 11.5–30 Hz frequency band via a sigmoid Emax model; the paper reports an EC50,U of 4.2 ± 0.7 ng/ml, but the excerpts do not state Emax, gamma, or the mechanism beyond the direct concentration–effect relation.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Mandema_1991`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Mandema JW et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal of ph
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -21,7 +21,7 @@
 
 > The paper describes pizotifen causing surmountable antagonism of the concentration-response curve for ergotamine-induced endothelium-dependent relaxation of precontracted porcine pulmonary arteries, but does not explicitly state the underlying pharmacodynamic mechanism (e.g., specific receptor binding or inhibition of production/elimination). Pizotifen was tested at concentrations of 0.1 μm and 0.03 μm, and described as the most potent inhibitory compound among those tested, but no specific potency parameters (such as IC50, pA2, or Kd) or rate constants are provided in the excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Glusa_1996`
 - **model family:** `unknown`
@@ -41,11 +41,11 @@ _No resolved parameters._
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

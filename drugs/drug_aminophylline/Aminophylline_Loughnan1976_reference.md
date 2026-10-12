@@ -5,7 +5,7 @@
 
 # aminophylline — `Aminophylline_Loughnan1976_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -93,8 +93,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[loading dose]` | not captured | 5.6 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[man plasma theophylline clearance]` | 0.1 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[mean steady-state plasma concentration of theophylline]` | 10 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean steady-state plasma concentration of theophylline]` | not captured | 10 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[plasma theophylline clearance]` | not captured | 0.1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[steady-state plasma concentration of theophylline]` | not captured | 10 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v1]` | 0.25 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v1]` | not captured | 0.25 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | theophylline | unknown | mismatch |
@@ -130,18 +130,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_aminophylline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Loughnan_1976` / `Loughnan_1976::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminophylline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Loughnan_1976` / `Loughnan_1976::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

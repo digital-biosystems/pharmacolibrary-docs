@@ -21,7 +21,7 @@
 
 > Fluphenazine inhibits hERG current in HEK293 cells at 36 °C (+20 mV) with a sigmoid Emax (proportional inhibition) concentration–response model; the paper reports an IC50 of 0.102 μM, but no full text is available to confirm the mechanism or additional parameters (e.g. Imax, gamma).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Hong_2013`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Hong HK et al., Block of hERG K+ channel and prolongati…, European journal of 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -28,19 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Pedersen_1995_ACh](drugs/drug_vitamin_a/pd_Pedersen_1995_ACh.md) | intracellular acetylcholine levels ← all-trans-retinol (vitamin A) · direct Emax (saturable) effect | — | Pedersen WA et al., All-trans- and 9-cis-retinoic acid enha…, Journal of neurochemistry (1995) | [10.1046/j.1471-4159.1995.65010050.x](https://doi.org/10.1046/j.1471-4159.1995.65010050.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=vitamin_a).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ALDH1A1 (substrate), ALDH1A2 (substrate), ALDH1A3 (substrate), APOD (target), CYP26A1 (inducer), CYP26A1 (substrate), DHRS3 (substrate), DHRS4 (substrate), LRAT (substrate), PTGDS (target), RBP1 (binder), RBP2 (binder), RBP3 (binder), RBP4 (binder), RBP5 (binder), RBP7 (binder), RDH11 (substrate), RDH12 (substrate), RDH13 (substrate), RDH14 (substrate), RDH5 (substrate), RDH8 (substrate), RETSAT (substrate), RLBP1 (binder), RXRG (binder), STRA6 (substrate).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Pedersen_1995_ACh](drugs/drug_vitamin_a/pd_Pedersen_1995_ACh.md) | intracellular acetylcholine levels ← all-trans-retinol (vitamin A) · direct Emax (saturable) effect | — | Pedersen WA et al., All-trans- and 9-cis-retinoic acid enha…, Journal of neurochemistry (1995) | [10.1046/j.1471-4159.1995.65010050.x](https://doi.org/10.1046/j.1471-4159.1995.65010050.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

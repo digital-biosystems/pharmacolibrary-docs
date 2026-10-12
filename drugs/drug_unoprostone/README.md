@@ -28,16 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sharif_2002_PI](drugs/drug_unoprostone/pd_Sharif_2002_PI.md) | phosphoinositide (PI) turnover ← unoprostone isopropyl ester · stimulation effect | — | Sharif NA et al., Agonist activity of bimatoprost, travop…, Journal of ocular pharmacol… (2002) | [10.1089/10807680260218489](https://doi.org/10.1089/10807680260218489) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Sharif_2008_2_contraction_of_isolated_non_pregnant_female_rat_uterus](drugs/drug_unoprostone/pd_Sharif_2008_2_contraction_of_isolated_non_pregnant_female_ra.md) | contraction of isolated non-pregnant female rat uterus ← unoprostone · direct Emax (saturable) effect | — | Sharif NA, Synthetic FP-prostaglandin-induced cont…, Prostaglandins, leukotriene… (2008) | [10.1016/j.plefa.2008.01.005](https://doi.org/10.1016/j.plefa.2008.01.005) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=unoprostone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sharif_2002_PI](drugs/drug_unoprostone/pd_Sharif_2002_PI.md) | phosphoinositide (PI) turnover ← unoprostone isopropyl ester · stimulation effect | — | Sharif NA et al., Agonist activity of bimatoprost, travop…, Journal of ocular pharmacol… (2002) | [10.1089/10807680260218489](https://doi.org/10.1089/10807680260218489) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Sharif_2008_2_contraction_of_isolated_non_pregnant_female_rat_uterus](drugs/drug_unoprostone/pd_Sharif_2008_2_contraction_of_isolated_non_pregnant_female_ra.md) | contraction of isolated non-pregnant female rat uterus ← unoprostone · direct Emax (saturable) effect | — | Sharif NA, Synthetic FP-prostaglandin-induced cont…, Prostaglandins, leukotriene… (2008) | [10.1016/j.plefa.2008.01.005](https://doi.org/10.1016/j.plefa.2008.01.005) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

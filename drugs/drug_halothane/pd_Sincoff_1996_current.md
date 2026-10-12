@@ -21,7 +21,7 @@
 
 > Halothane concentration stimulates the measured response 'current' via a sigmoidal Emax mechanism. The model is characterized by an EC50 of 1.0 mM and a Hill coefficient of 1.5, with no kinetic parameters or elimination terms reported.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sincoff_1996`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Sincoff R et al., Halothane acts as a partial agonist of…, FASEB journal : off
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

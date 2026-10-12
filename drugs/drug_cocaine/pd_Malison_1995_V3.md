@@ -19,7 +19,7 @@
 
 > The model describes cocaine dose-dependent inhibition of the specific to non-specific equilibrium partition coefficient (V3") using a sigmoidal Emax framework. The paper does not provide the full text to clarify the specific mechanistic details (e.g., whether the dose affects production or elimination), but quantifies the potency as an ED50 of 2.8 mg/kg with a Hill coefficient of 0.51.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Malison_1995`
 - **model family:** `sigmoid_emax`
@@ -61,7 +61,7 @@ Malison RT et al., Euphorigenic doses of cocaine reduce [1…, Psychopharmacolog
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

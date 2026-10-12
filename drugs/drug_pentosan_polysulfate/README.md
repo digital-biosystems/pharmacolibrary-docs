@@ -27,16 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Philip_2023_PPS_maculopathy](drugs/drug_pentosan_polysulfate/pd_Philip_2023_PPS_maculopathy.md) | PPS-maculopathy ← pentosan polysulfate sodium · categorical (graded) response model | — | Philip AM et al., Prevalence and Dose Dependency Analysis…, Ophthalmic epidemiology (2023) | [10.1080/09286586.2022.2031227](https://doi.org/10.1080/09286586.2022.2031227) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pentosan_polysulfate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: FGF1 (target), FGF2 (target), FGF4 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> | [Philip_2023_PPS_maculopathy](drugs/drug_pentosan_polysulfate/pd_Philip_2023_PPS_maculopathy.md) | PPS-maculopathy ← pentosan polysulfate sodium · categorical (graded) response model | — | Philip AM et al., Prevalence and Dose Dependency Analysis…, Ophthalmic epidemiology (2023) | [10.1080/09286586.2022.2031227](https://doi.org/10.1080/09286586.2022.2031227) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

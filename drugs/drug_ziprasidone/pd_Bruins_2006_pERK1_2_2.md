@@ -22,7 +22,7 @@
 
 > The paper does not provide full text or excerpts describing the PD mechanism, so no mechanism can be stated. The record reports ziprasidone (microM) acting on attenuation of dopamine-induced ERK 1/2 phosphorylation at dopamine D2S receptors (pERK1/2), with an affinity/potency value pKB of 7.7 microM; no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Bruins_2006`
 - **model family:** `unknown`
@@ -63,7 +63,7 @@ Bruins Slot LA et al., Differential profile of antipsychotics…, European journ
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

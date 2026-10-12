@@ -21,7 +21,7 @@
 
 > The record indicates that trichloroethylene inhibits the continuous growth of Synechocystis sp. PCC6803, with a reported concentration for 50% of maximal inhibition of 486 mg/L. The paper does not provide full text to clarify the specific pharmacodynamic mechanism or rate constants.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Nie_2020`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Nie Z et al., Biogenic FeS promotes dechlorination an…, Bioprocess and biosyst
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

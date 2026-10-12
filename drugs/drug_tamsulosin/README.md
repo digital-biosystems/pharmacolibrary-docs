@@ -33,24 +33,8 @@ Tamsulosin is an alpha-blocker used to treat prostate problems such as enlarged 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span> | [Tsuda_2010_reference](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Tsuda Y et al., Population pharmacokinetics of tamsulos…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03662.x](https://doi.org/10.1111/j.1365-2125.2010.03662.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Nikolic_2024_reference](drugs/drug_tamsulosin/Tamsulosin_Nikolic2024_reference.md) | — | 1-compartment (no model) | 0 | Nikolic VN et al., Population pharmacokinetics of tamsulos…, World journal of urology (2024) | [10.1007/s00345-024-05115-w](https://doi.org/10.1007/s00345-024-05115-w) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tamsulosin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ORM1` unknown | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span> | [Tsuda_2010_reference](drugs/drug_tamsulosin/Tamsulosin_Tsuda2010_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Tsuda Y et al., Population pharmacokinetics of tamsulos…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03662.x](https://doi.org/10.1111/j.1365-2125.2010.03662.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Nikolic_2024_reference](drugs/drug_tamsulosin/Tamsulosin_Nikolic2024_reference.md) | — | 1-compartment (no model) | 0 | Nikolic VN et al., Population pharmacokinetics of tamsulos…, World journal of urology (2024) | [10.1007/s00345-024-05115-w](https://doi.org/10.1007/s00345-024-05115-w) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

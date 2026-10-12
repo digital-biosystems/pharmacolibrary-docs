@@ -13,6 +13,8 @@
 
 **Description.** Taniborbactam is under investigation in clinical trial NCT03840148 (Safety and Efficacy Study of Cefepime/vnrx-5133 in Patients With Complicated Urinary Tract Infections).
 
+<p><small>Source: <a href="https://go.drugbank.com/drugs/DB16338">DrugBank DB16338</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
+
 ## Molecular properties
 
 > Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).

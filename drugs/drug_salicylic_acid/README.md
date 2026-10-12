@@ -34,30 +34,15 @@ Salicylic acid is a keratolytic and antifungal agent used topically for skin con
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span> | [Mathurkar_2018_reference](drugs/drug_salicylic_acid/SalicylicAcid_Mathurkar2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Mathurkar S et al., Pharmacokinetics of Salicylic Acid Foll…, Animals : an open access jo… (2018) | [10.3390/ani8070122](https://doi.org/10.3390/ani8070122) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.103). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q304 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Koh_2025_reference](drugs/drug_salicylic_acid/SalicylicAcid_Koh2025_reference.md) | — | parent + metabolite (no model) | 13 | Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, development an… (2025) | [10.2147/DDDT.S533428](https://doi.org/10.2147/DDDT.S533428) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4), gpt-oss:120b (primary re-run, agreement 0.333). The first reading is what the record holds.">cross-check: partial 0/2</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Shintaku_2007_reference](drugs/drug_salicylic_acid/SalicylicAcid_Shintaku2007_reference.md) | — | 1-compartment (no model) | 0 | Shintaku K et al., Kinetic analysis of the transport of sa…, Drug metabolism and disposi… (2007) | [10.1124/dmd.106.013029](https://doi.org/10.1124/dmd.106.013029) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span> | [Mathurkar_2018_reference](drugs/drug_salicylic_acid/SalicylicAcid_Mathurkar2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Mathurkar S et al., Pharmacokinetics of Salicylic Acid Foll…, Animals : an open access jo… (2018) | [10.3390/ani8070122](https://doi.org/10.3390/ani8070122) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.103). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q304 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Koh_2025_reference](drugs/drug_salicylic_acid/SalicylicAcid_Koh2025_reference.md) | — | parent + metabolite (no model) | 13 | Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, development an… (2025) | [10.2147/DDDT.S533428](https://doi.org/10.2147/DDDT.S533428) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4), gpt-oss:120b (primary re-run, agreement 0.333). Primary extraction retained.">cross-check: partial 0/2</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Shintaku_2007_reference](drugs/drug_salicylic_acid/SalicylicAcid_Shintaku2007_reference.md) | — | 1-compartment (no model) | 0 | Shintaku K et al., Kinetic analysis of the transport of sa…, Drug metabolism and disposi… (2007) | [10.1124/dmd.106.013029](https://doi.org/10.1124/dmd.106.013029) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Koh_2025_TXB2](drugs/drug_salicylic_acid/pd_Koh_2025_TXB2.md) | thromboxane B2 ← acetylsalicylic acid · indirect response — drug inhibits the production of thromboxane B2 | model (no simulator) | Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, development an… (2025) | [10.2147/DDDT.S533428](https://doi.org/10.2147/DDDT.S533428) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=salicylic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | `SLCO2B1` substrate | DrugBank actor |
-| absorption | small intestine | `SLCO2B1` substrate | DrugBank actor |
-| distribution | blood | `ALB` other/unknown | DrugBank actor |
-| metabolism | kidney | `SLC22A7` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C9` substrate, `SLC22A7` substrate | DrugBank actor |
-| excretion | kidney | `SLC22A6` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: AKR1C1 (inhibitor), CA1 (inhibitor), CA12 (inhibitor), CA2 (inhibitor), CA4 (inhibitor), CA6 (inhibitor), PTGS1 (inhibitor), PTGS2 (inhibitor), SLC16A1 (substrate), SLC22A10 (inhibitor), SLC22A11 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Koh_2025_TXB2](drugs/drug_salicylic_acid/pd_Koh_2025_TXB2.md) | thromboxane B2 ← acetylsalicylic acid · indirect response — drug inhibits the production of thromboxane B2 | model (no simulator) | Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, development an… (2025) | [10.2147/DDDT.S533428](https://doi.org/10.2147/DDDT.S533428) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

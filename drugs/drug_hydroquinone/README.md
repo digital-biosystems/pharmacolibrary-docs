@@ -28,18 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">mouse</span> | [Ciranni_1991_chromosomal_aberrations_in_dividing_spermatogonia](drugs/drug_hydroquinone/pd_Ciranni_1991_chromosomal_aberrations_in_dividing_spermatogon.md) | chromosomal aberrations in dividing spermatogonia ← hydroquinone · direct linear effect | — | Ciranni R et al., Clastogenic effects of hydroquinone: in…, Mutation research (1991) | [10.1016/0165-7992(91)90005-o](https://doi.org/10.1016/0165-7992(91)90005-o) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">mouse</span> | [Ciranni_1991_structural_chromosome_aberrations_in_primary_spermatocytes](drugs/drug_hydroquinone/pd_Ciranni_1991_structural_chromosome_aberrations_in_primary_sp.md) | structural chromosome aberrations in primary spermatocytes ← hydroquinone · stimulation effect | — | Ciranni R et al., Clastogenic effects of hydroquinone: in…, Mutation research (1991) | [10.1016/0165-7992(91)90005-o](https://doi.org/10.1016/0165-7992(91)90005-o) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=hydroquinone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` unknown | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CYSLTR1 (activator), GAA (product), ITGA2B (target), ITGB3 (target), TYR (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">mouse</span> | [Ciranni_1991_chromosomal_aberrations_in_dividing_spermatogonia](drugs/drug_hydroquinone/pd_Ciranni_1991_chromosomal_aberrations_in_dividing_spermatogon.md) | chromosomal aberrations in dividing spermatogonia ← hydroquinone · direct linear effect | — | Ciranni R et al., Clastogenic effects of hydroquinone: in…, Mutation research (1991) | [10.1016/0165-7992(91)90005-o](https://doi.org/10.1016/0165-7992(91)90005-o) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">mouse</span> | [Ciranni_1991_structural_chromosome_aberrations_in_primary_spermatocytes](drugs/drug_hydroquinone/pd_Ciranni_1991_structural_chromosome_aberrations_in_primary_sp.md) | structural chromosome aberrations in primary spermatocytes ← hydroquinone · stimulation effect | — | Ciranni R et al., Clastogenic effects of hydroquinone: in…, Mutation research (1991) | [10.1016/0165-7992(91)90005-o](https://doi.org/10.1016/0165-7992(91)90005-o) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

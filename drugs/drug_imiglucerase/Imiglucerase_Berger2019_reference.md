@@ -4,7 +4,7 @@
 
 # imiglucerase — `Imiglucerase_Berger2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857), gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has imiglucerase, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[slow phase half-life].parameter_id`: this record has Q57, the second reading Q60. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Berger J et al., Intra-monocyte Pharmacokinetics of Imig…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-018-0708-8](https://doi.org/10.1007/s40262-018-0708-8)
 
-## Model component
-<dbs-pgx drug="imiglucerase" model-id="Imiglucerase_Berger2019_reference" status="rejected" stale="true" population="patients with Gaucher disease type 1" measured-compound="imiglucerase" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="imiglucerase" model-id="Imiglucerase_Berger2019_reference" status="rejected" stale="true" population="patients with Gaucher disease type 1" measured-compound="imiglucerase" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -68,24 +67,18 @@ Berger J et al., Intra-monocyte Pharmacokinetics of Imig…, Clinical pharmacoki
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.857 (6/7 fields) | 1 |
 | `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>13 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[fast phase half-life]` | 0.36 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[fast phase half-life]` | not captured | 0.36 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[p]` | not captured | 0.04 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[slow phase half-life]` | 9.7 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[slow phase half-life]` | not captured | 9.7 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | imiglucerase | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | imiglucerase | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[slow phase half-life].parameter_id` | Q57 | Q60 | mismatch |
 | `gpt-oss:120b` | `parameters[fast phase half-life]` | 0.36 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fast phase half-life]` | not captured | 0.36 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[slow phase half-life]` | 9.7 | not captured | only_one_extracted |
@@ -118,18 +111,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_imiglucerase/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Berger_2019` / `Berger_2019::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_imiglucerase/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Berger_2019` / `Berger_2019::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

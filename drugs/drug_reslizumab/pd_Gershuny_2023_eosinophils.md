@@ -19,7 +19,7 @@
 
 > The extraction record indicates that reslizumab inhibits the elimination of eosinophils via a proportional indirect response mechanism, but the specific drug concentration driver and key potency or rate parameters are not defined in the record. Since no paper text is available, the underlying mechanism and any numerical values such as IC50 or kout cannot be verified or stated.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Gershuny_2023`
 - **model family:** `indirect_response_i`
@@ -39,11 +39,11 @@ _No resolved parameters._
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -4,7 +4,7 @@
 
 # ilaprazole — `Ilaprazole_Jia2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 The record defines a peripheral volume (3.65 L) and an irreversible elimination rate constant of 1.35 1/h from that compartment. However, the findings confirm an unreachable compartment in the two-compartment structure. This indicates a structural defect where there is no path from the dose to that elimination site. Extracted — ilaprazole: V1 8.8 L, V2 3.65 L, kout_peripheral 1.35 1/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of εcp: this record has 0.12, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ilaprazole, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -89,18 +89,32 @@ Jia R et al., Accelerating Development of Benziamidaz…, Pharmaceutics (2021)
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.833 (10/12 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.111 (2/18 fields) | 16 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>16 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clp]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clp]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mw]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mw]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 8.80 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | not captured | 8.80 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | 3.65 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp]` | not captured | 3.65 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[εcp]` | 0.12 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θwt].parameter_id` | Q346 | Q319 | mismatch |
+| `gpt-oss-120b` | `parameters[εcp]` | not captured | 0.12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θsex]` | 1.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θsex]` | not captured | 1.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θwt]` | 1.35 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θwt]` | not captured | 1.35 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | ilaprazole | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ilaprazole | unknown | mismatch |
 
 </details>
 
@@ -132,18 +146,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_ilaprazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jia_2021` / `Jia_2021::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ilaprazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jia_2021` / `Jia_2021::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

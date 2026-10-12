@@ -28,17 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bugay_2020_fractional_inhibition](drugs/drug_dequalinium/pd_Bugay_2020_fractional_inhibition.md) | fractional inhibition of M3 muscarinic receptor activation ← dequalinium chloride · direct sigmoid Emax (Hill) effect | — | Bugay V et al., Bis-Quinolinium Cyclophane Blockers of…, Frontiers in pharmacology (2020) | [10.3389/fphar.2020.552211](https://doi.org/10.3389/fphar.2020.552211) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Dawkins_2005_efferent_effects](drugs/drug_dequalinium/pd_Dawkins_2005_efferent_effects.md) | efferent effects ← dequalinium · inhibition effect | — | Dawkins R et al., Pharmacology of acetylcholine-mediated…, Journal of neurophysiology (2005) | [10.1152/jn.01283.2004](https://doi.org/10.1152/jn.01283.2004) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dequalinium).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CALM1 (target), CNGA1 (blocker), CNGA2 (blocker), KCNMA1 (inhibitor), KCNN1 (blocker), KCNN2 (blocker), KCNN3 (blocker), PRKCA (inhibitor), SNCA (modulator), XIAP (inhibitor), XIAP (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bugay_2020_fractional_inhibition](drugs/drug_dequalinium/pd_Bugay_2020_fractional_inhibition.md) | fractional inhibition of M3 muscarinic receptor activation ← dequalinium chloride · direct sigmoid Emax (Hill) effect | — | Bugay V et al., Bis-Quinolinium Cyclophane Blockers of…, Frontiers in pharmacology (2020) | [10.3389/fphar.2020.552211](https://doi.org/10.3389/fphar.2020.552211) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Dawkins_2005_efferent_effects](drugs/drug_dequalinium/pd_Dawkins_2005_efferent_effects.md) | efferent effects ← dequalinium · inhibition effect | — | Dawkins R et al., Pharmacology of acetylcholine-mediated…, Journal of neurophysiology (2005) | [10.1152/jn.01283.2004](https://doi.org/10.1152/jn.01283.2004) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

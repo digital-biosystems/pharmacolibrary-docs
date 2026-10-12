@@ -20,7 +20,7 @@
 
 > A logistic regression model related the predicted steady-state trough concentration of valproic acid to the binary response of an over 50% reduction in seizure frequency, using an intercept of 6.09 and a slope of -13.5. The paper does not state a mechanistic basis (e.g., Emax, kin/kout) for this relationship.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Nakashima_2015`
 - **model family:** `categorical`
@@ -63,7 +63,7 @@ Nakashima H et al., Determination of the Optimal Concentrat…, PloS one (2015)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

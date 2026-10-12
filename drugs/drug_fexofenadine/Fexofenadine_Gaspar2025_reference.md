@@ -5,7 +5,7 @@
 
 # fexofenadine — `Fexofenadine_Gaspar2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -21,7 +21,7 @@
 
 Although CL means total drug clearance, its reported label identifies mean estimated creatinine clearance rather than fexofenadine or a metabolite. The model also defaulted ka and Tlag and defaulted ka despite it not being reported in the source; it assumed F=1 and Fm=1 with no molar correction, and used first-order depot input. Extracted — fexofenadine: CL 77.2 mL/min, CL/F 115 L/h, V1/F 14.9 L, V2/F 146 L, Q/F 52 L/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of mean estimated creatinine clearance: this record has 77.2, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of mean estimated creatinine clearance: this record has 77.2, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by gpt-6-luna</sub>
 
@@ -96,13 +96,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.889 (8/9 fields) | 1 |
+| `qwen3.8-27b` | partly confirmed | 0.8 (8/10 fields) | 2 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `qwen3.8-27b` | `parameters[mean estimated creatinine clearance]` | 77.2 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[the mean estimated creatinine clearance, calculated using the cockcroft-gault formula, was]` | not captured | 77.2 | only_one_extracted |
 
 </details>
 
@@ -145,17 +146,17 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_fexofenadine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gaspar_2025` / `Gaspar_2025::reference`)
-- model: `../../../knowledgebase/drugs/drug_fexofenadine/models/modelica/Fexofenadine_Gaspar2025_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_fexofenadine/models/modelica/Fexofenadine_Gaspar2025_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_fexofenadine/models/modelica/Fexofenadine_Gaspar2025_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fexofenadine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gaspar_2025` / `Gaspar_2025::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fexofenadine/models/modelica/Fexofenadine_Gaspar2025_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fexofenadine/models/modelica/Fexofenadine_Gaspar2025_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fexofenadine/models/modelica/Fexofenadine_Gaspar2025_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

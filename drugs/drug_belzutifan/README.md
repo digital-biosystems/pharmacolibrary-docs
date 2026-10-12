@@ -33,28 +33,10 @@ Belzutifan is an anticancer medicine used to treat von Hippel-Lindau disease, in
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Marathe_2023_absolute_parameter_value](drugs/drug_belzutifan/Belzutifan_Marathe2023_absolute_parameter_value.md) | — | 1-compartment (no model) | 2 | Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.706). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_cmax</sub><br><sub>route_to: `scholar`</sub> | [Marathe_2023_arithmetic_mean](drugs/drug_belzutifan/Belzutifan_Marathe2023_arithmetic_mean.md) | ▶ model + simulator | 1-compartment, oral | 10 | Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.815). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_cmax</sub><br><sub>route_to: `scholar`</sub> | [Marathe_2023_geometric_mean](drugs/drug_belzutifan/Belzutifan_Marathe2023_geometric_mean.md) | ▶ model + simulator | 1-compartment, oral | 10 | Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.476). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Marathe_2023_estimate](drugs/drug_belzutifan/Belzutifan_Marathe2023_estimate.md) | — | 1-compartment (no model) | 7 (+4 cov.) | Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=belzutifan).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C19` substrate, `CYP3A4` substrate, `SLCO1B1` substrate, `SLCO1B3` substrate, `UGT2B17` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `UGT2B17` substrate | DrugBank actor |
-| excretion | kidney | `SLC47A2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: EPAS1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Marathe_2023_absolute_parameter_value](drugs/drug_belzutifan/Belzutifan_Marathe2023_absolute_parameter_value.md) | — | 1-compartment (no model) | 2 | Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.706). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T1_cmax</sub><br><sub>route_to: `scholar`</sub> | [Marathe_2023_arithmetic_mean](drugs/drug_belzutifan/Belzutifan_Marathe2023_arithmetic_mean.md) | ▶ model + simulator | 1-compartment, oral | 10 | Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.815). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T1_cmax</sub><br><sub>route_to: `scholar`</sub> | [Marathe_2023_geometric_mean](drugs/drug_belzutifan/Belzutifan_Marathe2023_geometric_mean.md) | ▶ model + simulator | 1-compartment, oral | 10 | Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.476). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Marathe_2023_estimate](drugs/drug_belzutifan/Belzutifan_Marathe2023_estimate.md) | — | 1-compartment (no model) | 7 (+4 cov.) | Marathe DD et al., Population pharmacokinetic analyses for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.13028](https://doi.org/10.1002/psp4.13028) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

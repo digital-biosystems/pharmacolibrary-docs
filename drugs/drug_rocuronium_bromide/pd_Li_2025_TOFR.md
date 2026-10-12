@@ -22,7 +22,7 @@
 
 > The study fitted an inhibitory sigmoid Emax model to the train-of-four ratio (TOFR), linking measured blood concentrations of Rocur directly to the response without an effect compartment. The baseline TOFR was 102.47 ± 10.92, with a half-maximal inhibitory concentration (IC50) of 0.25 μg/mL.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Li_2025`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Li X et al., Rapid quantification and PK-PD modeling…, Frontiers in veterinary
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

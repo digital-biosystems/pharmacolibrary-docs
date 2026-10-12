@@ -22,7 +22,7 @@
 
 > The paper does not provide the mechanism or model details; only an IC50 of 5.1 ± 0.9 mM is stated for inhibition of the delayed outward rectifier Kv current (IK) amplitude by 4-aminopyridine (fampridine).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Lu_2001`
 - **model family:** `unknown`
@@ -63,7 +63,7 @@ Lu Y et al., Modulation of voltage-dependent K+ chan…, The Journal of membrane
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

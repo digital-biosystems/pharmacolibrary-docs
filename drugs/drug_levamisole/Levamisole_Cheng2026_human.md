@@ -5,7 +5,7 @@
 
 # levamisole — `Levamisole_Cheng2026_human`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Cheng C et al., Meta-analysis of levamisole absorption…, Journal of pharmaceutical i… (2026)
   ·  DOI: [10.1007/s40005-025-00770-6](https://doi.org/10.1007/s40005-025-00770-6)
 
-## Model component
-<dbs-pgx drug="levamisole" model-id="Levamisole_Cheng2026_human" status="needs_review" stale="false" population="multiple animal species (2 bird and 6 mammalian species) with joint interspecies PK modeling" measured-compound="levamisole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levamisole" model-id="Levamisole_Cheng2026_human" status="needs_review" stale="false" population="multiple animal species (2 bird and 6 mammalian species) with joint interspecies PK modeling" measured-compound="levamisole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -127,7 +126,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_levamisole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cheng_2026` / `Cheng_2026::human`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_levamisole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cheng_2026` / `Cheng_2026::human`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -148,7 +147,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

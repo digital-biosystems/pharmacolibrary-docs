@@ -34,9 +34,9 @@ Ciclesonide is a glucocorticoid used to treat allergic rhinitis and obstructive 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Rohatagi_2003_reference](drugs/drug_ciclesonide/Ciclesonide_Rohatagi2003_reference.md) | held back | 1-compartment, oral | 2 | Rohatagi S et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2003) | [10.1177/0091270002250998](https://doi.org/10.1177/0091270002250998) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Rohatagi_2005_reference](drugs/drug_ciclesonide/Ciclesonide_Rohatagi2005_reference.md) | held back | 1-compartment, oral | 2 | Rohatagi S et al., Model-based covariate pharmacokinetic a…, American journal of therape… (2005) | [10.1097/01.mjt.0000155110.69831.75](https://doi.org/10.1097/01.mjt.0000155110.69831.75) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub><br><sub>route_to: `engineer`</sub> | [Xu_2010_reference](drugs/drug_ciclesonide/Ciclesonide_Xu2010_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Xu J et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2010) | [10.1177/0091270009354994](https://doi.org/10.1177/0091270009354994) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Rohatagi_2003_reference](drugs/drug_ciclesonide/Ciclesonide_Rohatagi2003_reference.md) | held back | 1-compartment, oral | 2 | Rohatagi S et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2003) | [10.1177/0091270002250998](https://doi.org/10.1177/0091270002250998) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Rohatagi_2005_reference](drugs/drug_ciclesonide/Ciclesonide_Rohatagi2005_reference.md) | held back | 1-compartment, oral | 2 | Rohatagi S et al., Model-based covariate pharmacokinetic a…, American journal of therape… (2005) | [10.1097/01.mjt.0000155110.69831.75](https://doi.org/10.1097/01.mjt.0000155110.69831.75) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.455). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub><br><sub>route_to: `engineer`</sub> | [Xu_2010_reference](drugs/drug_ciclesonide/Ciclesonide_Xu2010_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Xu J et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2010) | [10.1177/0091270009354994](https://doi.org/10.1177/0091270009354994) |
 
 ## Pharmacodynamics (PD)
 
@@ -54,19 +54,6 @@ Ciclesonide is a glucocorticoid used to treat allergic rhinitis and obstructive 
 | <span class="pk-badge pk-badge--green">extracted</span> | [Pu_2026_pneumonia](drugs/drug_ciclesonide/pd_Pu_2026_pneumonia.md) | pneumonia ← ciclesonide · direct Emax (saturable) effect | — | Pu X et al., Adverse events of inhaled corticosteroi…, BMJ evidence-based medicine (2026) | [10.1136/bmjebm-2024-113216](https://doi.org/10.1136/bmjebm-2024-113216) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Rohatagi_2003_cortisol](drugs/drug_ciclesonide/pd_Rohatagi_2003_cortisol.md) | endogenous cortisol ← ciclesonide--active principle (CIC-AP) · indirect response — drug inhibits the production of endogenous cortisol | model (no simulator) | Rohatagi S et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2003) | [10.1177/0091270002250998](https://doi.org/10.1177/0091270002250998) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Rohatagi_2005_cortisol](drugs/drug_ciclesonide/pd_Rohatagi_2005_cortisol.md) | circadian endogenous cortisol release ← des-CIC (C21-desisobutyryl-ciclesonide) · direct Emax (saturable) effect | — | Rohatagi S et al., Model-based covariate pharmacokinetic a…, American journal of therape… (2005) | [10.1097/01.mjt.0000155110.69831.75](https://doi.org/10.1097/01.mjt.0000155110.69831.75) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ciclesonide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CES1` substrate, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: NR3C1 (target), SERPINA6 (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

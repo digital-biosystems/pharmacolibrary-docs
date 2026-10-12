@@ -15,11 +15,11 @@
 
 **As extracted:** Total active cariprazine (cariprazine + DCAR + DDCAR) (measured concentrations) drives D2 receptor occupancy (in %): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Total active cariprazine (cariprazine + DCAR + DDCAR) plasma concentrations were related to D2 receptor occupancy (measured by [11C]-(+)-PHNO PET) via a direct Emax model, Effect (%) = Emax × C/(EC50 + C), with Emax fixed to 100% and an EC50 of 13.03 (±6.8) nM for D2 receptor-rich regions after subchronic dosing; no effect-compartment or turnover mechanism was described.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Girgis_2016`
 - **model family:** `emax`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

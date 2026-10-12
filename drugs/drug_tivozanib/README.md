@@ -1,0 +1,64 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;tivozanib&quot;}]"></div>
+
+# tivozanib
+
+- **generic name:** tivozanib
+- **ATC codes:** `L01EK03`
+- **DrugBank:** [DB11800](https://go.drugbank.com/drugs/DB11800) · **PubChem:** [CID 9911830](https://pubchem.ncbi.nlm.nih.gov/compound/9911830)
+- **molar mass:** 454.863 g/mol (C22H19ClN4O5) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Tivozanib is a VEGFR tyrosine kinase inhibitor used to treat advanced renal cell carcinoma. It is authorised in the European Union, but its use is not widespread.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q7810457](https://www.wikidata.org/wiki/Q7810457) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 08:25 | 1:51 | 0/0/0 | 0/0/0 | 0/0/0 | 12,858/1,390 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
+
+## popPK records
+
+_not available_
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 11 matched, 11 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Cotreau_2015.pdf` | Cotreau MM et al., Effects of ketoconazole or rifampin on…, Clinical pharmacology in dr… (2015) | pgx | 7 | [10.1002/cpdd.145](https://doi.org/10.1002/cpdd.145) | [27128217](https://www.ncbi.nlm.nih.gov/pubmed/27128217) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Wang_2020.pdf` | Wang J et al., Brain accumulation of tivozanib is rest…, International journal of ph… (2020) | pgx | 7 | [10.1016/j.ijpharm.2020.119277](https://doi.org/10.1016/j.ijpharm.2020.119277) | [32234426](https://www.ncbi.nlm.nih.gov/pubmed/32234426) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
+
+<sub>queue written 2026-10-07T08:25:20.232044+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Berge_2013 | not_relevant | 0 | 0 | The text discusses VHL in tumor biology but reports no gene variant, genotype, or phenotype effect on tivozanib PK or PD. |
+| PGx | Cotreau_2015 | not_relevant | 0 | 0 | The paper reports drug–drug interactions with ketoconazole and rifampin, not effects of a gene variant, genotype, or phenotype on tivozanib PK/PD. |
+| PGx | Gao_2025 | not_relevant | 0 | 0 | The paper reports predicted tivozanib–HTR1F docking affinity, not an effect of a gene variant, genotype, or phenotype on a tivozanib PK or PD parameter. |
+| PGx | Henriksen_2025 | not_relevant | 0 | 0 | This protocol studies UGT1A1 polymorphisms in relation to pazopanib, not genetic effects on tivozanib pharmacokinetics or pharmacodynamics. |
+| popPK | Proia_2015 | irrelevant | 0 | 0 | Tivozanib is only a combination-treatment agent, with no pharmacokinetic parameters reported. |
+| PGx | Yan_2026 | not_relevant | 0 | 0 | C5orf34 expression is associated with predicted tivozanib resistance, but no gene variant/genotype/phenotype effect on a tivozanib PK or PD parameter is reported. |
+| PGx | Yang_2014 | not_relevant | 0 | 0 | The study examines tivozanib’s inhibition of ABCB1/ABCG2 and effects on other drugs, not how a gene variant or phenotype changes tivozanib PK or PD. |
+
+---
+<sub>Generated by `docs.py` (scholarv2)</sub>

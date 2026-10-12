@@ -5,7 +5,7 @@
 
 # ivacaftor — `Ivacaftor_Vonk2025_ivacaftor_m1`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 The recorded apparent clearance is 1.76 L/h/70 kg and the volume of distribution is 59.0 L/70 kg, which triggers an implausibility check. A reported unit could not be converted to SI, so the parameters lacked standard values. A second reader disagreed on parameter associations, specifically noting the apparent clearance value of 1.76 was not linked to the drug. Extracted — ivacaftor: AUC 208 mg*h/L, AUC 21.2 mg*h/L, V 1.76 L/h, CL/F 1.76 L/h/70 kg, V/F 59 L/ 70 kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading elexacaftor → elexacaftor metabolite (metabolism); tezacaftor → tezacaftor metabolite (metabolism); ivacaftor → ivacaftor metabolite (metabolism); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has elexacaftor-tezacaftor-ivacaftor, the second reading elexacaftor‑tezacaftor‑ivacaftor; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -99,19 +99,21 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.417 (5/12 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['elexacaftor', 'elexacaftor metabolite', 'metabolism'], ['tezacaftor', 'tezacaftor metabolite', 'metabolism'], ['ivacaftor', 'ivacaftor metabolite', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.links` | [] | [['ivacaftor', 'ivacaftor metabolite', 'metabolism'], ['elexacaftor', 'elexacaftor metabolite', 'metabolism'], ['tezacaftor', 'tezacaftor metabolite', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss-120b` | `parameters[apparent clearance (cl elx /f) and volume of distribution (v elx /f) normalized for a body weight of 70 kg]` | 1.76 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl elx /f]` | not captured | 1.76 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 1.76 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc #].value` | 21.2 | 11.6 | mismatch |
 | `gpt-oss-120b` | `parameters[corresponding v/f values ... for eti]` | 59.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose per mean weight]` | not captured | 5.18 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose per mean weight]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[typical values of cl/f ... for eti]` | 1.76 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f]` | not captured | 59.0 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | elexacaftor-tezacaftor-ivacaftor | elexacaftor‑tezacaftor‑ivacaftor | mismatch |
 
 </details>
 
@@ -144,18 +146,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_ivacaftor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vonk_2025` / `Vonk_2025::ivacaftor_m1`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ivacaftor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vonk_2025` / `Vonk_2025::ivacaftor_m1`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

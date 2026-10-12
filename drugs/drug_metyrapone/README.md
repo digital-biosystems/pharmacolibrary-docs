@@ -28,23 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hornsby_1985_11_beta_hydroxylase](drugs/drug_metyrapone/pd_Hornsby_1985_11_beta_hydroxylase.md) | protection of 11 beta-hydroxylase activity ← metyrapone · direct Emax (saturable) effect | — | Hornsby PJ et al., Mode of action of butylated hydroxyanis…, Biochemical pharmacology (1985) | [10.1016/0006-2952(85)90768-3](https://doi.org/10.1016/0006-2952(85)90768-3) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=metyrapone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP2A6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inducer/inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/inhibitor | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | `ABCC3` inducer | DrugBank actor |
-| excretion | small intestine | `ABCC3` inducer | DrugBank actor |
-| — | adrenal gland | `CYP11B1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CYP11B2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hornsby_1985_11_beta_hydroxylase](drugs/drug_metyrapone/pd_Hornsby_1985_11_beta_hydroxylase.md) | protection of 11 beta-hydroxylase activity ← metyrapone · direct Emax (saturable) effect | — | Hornsby PJ et al., Mode of action of butylated hydroxyanis…, Biochemical pharmacology (1985) | [10.1016/0006-2952(85)90768-3](https://doi.org/10.1016/0006-2952(85)90768-3) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

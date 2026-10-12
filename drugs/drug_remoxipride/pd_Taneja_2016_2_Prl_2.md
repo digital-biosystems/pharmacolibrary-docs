@@ -21,7 +21,7 @@
 
 > Remoxipride plasma concentrations (nM) inhibit plasma prolactin (ng·ml−1) via an indirect response model with inhibition of prolactin production (indirect response III, proportional inhibition), with KI 370 nM (also reported 360 nM) and gamma 1; the excerpts provide no further mechanism detail.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Taneja_2016_2`
 - **model family:** `indirect_response_iii`
@@ -65,7 +65,7 @@ Taneja A et al., Summary data of potency and parameter i…, Data in brief (2016
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

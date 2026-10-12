@@ -16,11 +16,11 @@
 
 **As extracted:** Risankizumab (concentrations from the PK model of Khatri_2019::chinese) drives PASI90: direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The paper states that the relationship between risankizumab average plasma concentration (C_avg) and the probability of achieving PASI90 response at week 16 and week 52 is described by an Emax model, with specific EC50 and Emax parameter estimates provided in Table 2 of the source document but not explicitly listed in the text excerpts. The mechanism is described as risankizumab selectively binding the p19 subunit of IL-23 to block IL-23-mediated signaling and proinflammatory cytokine release, thereby improving psoriasis efficacy.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Khatri_2020`
 - **model family:** `emax`
@@ -97,7 +97,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

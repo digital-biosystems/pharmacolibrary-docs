@@ -28,17 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Liu_2026_latency_period_of_cold_pain_foot_retraction](drugs/drug_fumaric_acid/pd_Liu_2026_latency_period_of_cold_pain_foot_retraction.md) | latency period of cold pain foot retraction ← fumaric acid · model not identified | — | Liu S et al., Fumaric acid regulates morphine toleran…, Pakistan journal of pharmac… (2026) | [10.36721/PJPS.2026.39.8.233.1](https://doi.org/10.36721/PJPS.2026.39.8.233.1) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Liu_2026_threshold_for_mechanical_foot_retraction](drugs/drug_fumaric_acid/pd_Liu_2026_threshold_for_mechanical_foot_retraction.md) | threshold for mechanical foot retraction ← fumaric acid · model not identified | — | Liu S et al., Fumaric acid regulates morphine toleran…, Pakistan journal of pharmac… (2026) | [10.36721/PJPS.2026.39.8.233.1](https://doi.org/10.36721/PJPS.2026.39.8.233.1) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fumaric_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: FAH (unknown), IFNG (binder), ME2 (unknown).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Liu_2026_latency_period_of_cold_pain_foot_retraction](drugs/drug_fumaric_acid/pd_Liu_2026_latency_period_of_cold_pain_foot_retraction.md) | latency period of cold pain foot retraction ← fumaric acid · model not identified | — | Liu S et al., Fumaric acid regulates morphine toleran…, Pakistan journal of pharmac… (2026) | [10.36721/PJPS.2026.39.8.233.1](https://doi.org/10.36721/PJPS.2026.39.8.233.1) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Liu_2026_threshold_for_mechanical_foot_retraction](drugs/drug_fumaric_acid/pd_Liu_2026_threshold_for_mechanical_foot_retraction.md) | threshold for mechanical foot retraction ← fumaric acid · model not identified | — | Liu S et al., Fumaric acid regulates morphine toleran…, Pakistan journal of pharmac… (2026) | [10.36721/PJPS.2026.39.8.233.1](https://doi.org/10.36721/PJPS.2026.39.8.233.1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

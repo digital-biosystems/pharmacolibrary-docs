@@ -16,11 +16,11 @@
 
 **As extracted:** Ciclesonide--active principle (CIC-AP) (measured concentrations) drives endogenous cortisol (in ng/h): indirect response — drug inhibits the production of endogenous cortisol.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Ciclesonide active principle (CIC-AP) concentrations inhibit endogenous cortisol release (ng/h) via an indirect response model (inhibition of cortisol production/release), with a maximum cortisol release rate of 3140 ng/h and an EC50 of 0.88 ng/mL; the paper excerpts do not state additional mechanism details.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Rohatagi_2003`
 - **model family:** `indirect_response_i`
@@ -97,7 +97,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

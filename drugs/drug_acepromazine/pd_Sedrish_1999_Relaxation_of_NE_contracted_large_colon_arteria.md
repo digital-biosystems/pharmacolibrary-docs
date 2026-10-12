@@ -22,7 +22,7 @@
 
 > The paper does not provide the mechanism or model parameters; acepromazine concentrations (M) are linked to % maximal relaxation of NE-contracted equine large colon arterial and venous rings, but no Imax, IC50/EC50, or rate values are available from the excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Sedrish_1999`
 - **model family:** `unknown`
@@ -55,7 +55,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

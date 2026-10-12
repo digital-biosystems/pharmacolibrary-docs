@@ -32,7 +32,7 @@ Lemborexant is a hypnotic used to treat insomnia. It is an approved orexin recep
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.696). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Lalovic_2020_reference](drugs/drug_lemborexant/Lemborexant_Lalovic2020_reference.md) | — | 1-compartment (no model) | 7 (+3 cov.) | Lalovic B et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1683](https://doi.org/10.1002/jcph.1683) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.696). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Lalovic_2020_reference](drugs/drug_lemborexant/Lemborexant_Lalovic2020_reference.md) | — | 1-compartment (no model) | 7 (+3 cov.) | Lalovic B et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1683](https://doi.org/10.1002/jcph.1683) |
 
 ## Pharmacodynamics (PD)
 
@@ -48,26 +48,6 @@ Lemborexant is a hypnotic used to treat insomnia. It is an approved orexin recep
 | <span class="pk-badge pk-badge--green">extracted</span> | [Lalovic_2023_SE](drugs/drug_lemborexant/pd_Lalovic_2023_SE.md) | sleep efficiency ← lemborexant · direct linear effect | — | Lalovic B et al., Exposure-Response Analyses of Polysomno…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2192](https://doi.org/10.1002/jcph.2192) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Lalovic_2023_WASO](drugs/drug_lemborexant/pd_Lalovic_2023_WASO.md) | wake after sleep onset ← lemborexant · direct linear effect | — | Lalovic B et al., Exposure-Response Analyses of Polysomno…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2192](https://doi.org/10.1002/jcph.2192) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Lalovic_2023_subjective_sleep_efficacy_end_points_sleep_diary](drugs/drug_lemborexant/pd_Lalovic_2023_subjective_sleep_efficacy_end_points_sleep_diar.md) | subjective sleep efficacy end points (sleep diary) ← lemborexant · model not identified | — | Lalovic B et al., Exposure-Response Analyses of Polysomno…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2192](https://doi.org/10.1002/jcph.2192) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lemborexant).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2B6` inducer, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: HCRTR1 (target), HCRTR2 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

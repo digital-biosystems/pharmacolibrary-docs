@@ -16,11 +16,11 @@
 
 **As extracted:** Etodolac (concentrations from this paper's PK model) drives pain intensity difference scores: indirect response — drug inhibits the production of pain intensity difference scores.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The model posits that etodolac concentrations inhibit the turnover of pain intensity difference scores via an indirect response mechanism with a Hill coefficient of 3.34, an IC50 of 14.0 mg/L, and a baseline turnover rate (kout) of 1.62 h-1. The provided record does not specify whether the drug inhibits the production or elimination of the response, nor is full text available to clarify this mechanistic distinction.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Boni_1999`
 - **model family:** `indirect_response_i`
@@ -98,7 +98,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

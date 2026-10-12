@@ -33,27 +33,14 @@ Propylthiouracil is an antithyroid medicine used to treat hyperthyroidism, goite
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Główka_2018_reference](drugs/drug_propylthiouracil/Propylthiouracil_Gwka2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Główka FK et al., Bioavailability of propylthiouracil fro…, Die Pharmazie (2018) | [10.1691/ph.2018.8552](https://doi.org/10.1691/ph.2018.8552) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Okuno_1983_reference](drugs/drug_propylthiouracil/Propylthiouracil_Okuno1983_reference.md) | — | 1-compartment (no model) | 1 | Okuno A et al., Pharmacokinetics of propylthiouracil in…, Pediatric pharmacology (New… (1983) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Główka_2018_reference](drugs/drug_propylthiouracil/Propylthiouracil_Gwka2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Główka FK et al., Bioavailability of propylthiouracil fro…, Die Pharmazie (2018) | [10.1691/ph.2018.8552](https://doi.org/10.1691/ph.2018.8552) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Okuno_1983_reference](drugs/drug_propylthiouracil/Propylthiouracil_Okuno1983_reference.md) | — | 1-compartment (no model) | 1 | Okuno A et al., Pharmacokinetics of propylthiouracil in…, Pediatric pharmacology (New… (1983) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Soto_2018_taste_aversion](drugs/drug_propylthiouracil/pd_Soto_2018_taste_aversion.md) | taste aversion ← propylthiouracil · model not identified | — | Soto J et al., Rats can predict aversiveness of Active…, European journal of pharmac… (2018) | [10.1016/j.ejpb.2018.09.027](https://doi.org/10.1016/j.ejpb.2018.09.027) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=propylthiouracil).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | lung | `CYP1A1` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` inducer | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: DBH (inhibitor), DIO1 (inhibitor), MPO (inhibitor), TPO (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Soto_2018_taste_aversion](drugs/drug_propylthiouracil/pd_Soto_2018_taste_aversion.md) | taste aversion ← propylthiouracil · model not identified | — | Soto J et al., Rats can predict aversiveness of Active…, European journal of pharmac… (2018) | [10.1016/j.ejpb.2018.09.027](https://doi.org/10.1016/j.ejpb.2018.09.027) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

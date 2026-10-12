@@ -28,17 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ishikawa_1998_tension](drugs/drug_aceclidine/pd_Ishikawa_1998_tension.md) | tension biomarker turnover ← aceclidine | — | Ishikawa H et al., Selectivity of muscarinic agonists incl…, Journal of ocular pharmacol… (1998) | [10.1089/jop.1998.14.363](https://doi.org/10.1089/jop.1998.14.363) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Patil_2002_vascular_tone_induced_by_phenylephrine](drugs/drug_aceclidine/pd_Patil_2002_vascular_tone_induced_by_phenylephrine.md) | vascular tone induced by phenylephrine ← aceclidine · direct Emax (saturable) effect | — | Patil PN et al., Mechanism of vascular relaxation by cho…, Journal of ocular pharmacol… (2002) | [10.1089/108076802317233180](https://doi.org/10.1089/108076802317233180) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=aceclidine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CHRM1 (inhibitor), CHRM2 (inhibitor), CHRM3 (inhibitor), CHRM4 (inhibitor), CHRM5 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Ishikawa_1998_tension](drugs/drug_aceclidine/pd_Ishikawa_1998_tension.md) | tension biomarker turnover ← aceclidine | — | Ishikawa H et al., Selectivity of muscarinic agonists incl…, Journal of ocular pharmacol… (1998) | [10.1089/jop.1998.14.363](https://doi.org/10.1089/jop.1998.14.363) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Patil_2002_vascular_tone_induced_by_phenylephrine](drugs/drug_aceclidine/pd_Patil_2002_vascular_tone_induced_by_phenylephrine.md) | vascular tone induced by phenylephrine ← aceclidine · direct Emax (saturable) effect | — | Patil PN et al., Mechanism of vascular relaxation by cho…, Journal of ocular pharmacol… (2002) | [10.1089/108076802317233180](https://doi.org/10.1089/108076802317233180) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

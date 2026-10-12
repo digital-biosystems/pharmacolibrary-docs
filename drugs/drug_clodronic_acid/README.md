@@ -24,17 +24,7 @@ Clodronic acid is a bisphosphonate used to treat bone diseases, acting as a bone
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Seguí_2024_reference](drugs/drug_clodronic_acid/ClodronicAcid_Segu2024_reference.md) | — | 1-compartment (no model) | 0 | Seguí Pedrosa B et al., Detection times of clodronic acid in ho…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13453](https://doi.org/10.1111/jvp.13453) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=clodronic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: Hydroxylapatite (target), PTGS2 (inhibitor), SLC25A4 (inhibitor), SLC25A5 (inhibitor), SLC25A6 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Seguí_2024_reference](drugs/drug_clodronic_acid/ClodronicAcid_Segu2024_reference.md) | — | 1-compartment (no model) | 0 | Seguí Pedrosa B et al., Detection times of clodronic acid in ho…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13453](https://doi.org/10.1111/jvp.13453) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

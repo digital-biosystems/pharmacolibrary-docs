@@ -28,22 +28,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Nehmé_2009_GR_binding](drugs/drug_fluocinolone_acetonide/pd_Nehm_2009_GR_binding.md) | GR binding affinity ← fluocinolone acetonide · direct sigmoid Emax (Hill) effect | — | Nehmé A et al., Glucocorticoids with different chemical…, BMC medical genomics (2009) | [10.1186/1755-8794-2-58](https://doi.org/10.1186/1755-8794-2-58) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Nehmé_2009_GR_transactivation](drugs/drug_fluocinolone_acetonide/pd_Nehm_2009_GR_transactivation.md) | GR transactivation activity ← fluocinolone acetonide · direct sigmoid Emax (Hill) effect | — | Nehmé A et al., Glucocorticoids with different chemical…, BMC medical genomics (2009) | [10.1186/1755-8794-2-58](https://doi.org/10.1186/1755-8794-2-58) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> | [Zvidzayi_2021_AUEC](drugs/drug_fluocinolone_acetonide/pd_Zvidzayi_2021_AUEC.md) | skin blanching response ← fluocinolone acetonide · direct Emax (saturable) effect | — | Zvidzayi M et al., A Novel Approach to Assess the Potency…, Pharmaceutics (2021) | [10.3390/pharmaceutics13091456](https://doi.org/10.3390/pharmaceutics13091456) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fluocinolone_acetonide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP3A4` inducer/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ANXA1 (inducer), ANXA2 (inducer), ANXA3 (inducer), ANXA4 (inducer), ANXA5 (inducer), NR3C1 (target), PLA2G1B (inhibitor), SERPINA6 (binder).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Nehmé_2009_GR_binding](drugs/drug_fluocinolone_acetonide/pd_Nehm_2009_GR_binding.md) | GR binding affinity ← fluocinolone acetonide · direct sigmoid Emax (Hill) effect | — | Nehmé A et al., Glucocorticoids with different chemical…, BMC medical genomics (2009) | [10.1186/1755-8794-2-58](https://doi.org/10.1186/1755-8794-2-58) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Nehmé_2009_GR_transactivation](drugs/drug_fluocinolone_acetonide/pd_Nehm_2009_GR_transactivation.md) | GR transactivation activity ← fluocinolone acetonide · direct sigmoid Emax (Hill) effect | — | Nehmé A et al., Glucocorticoids with different chemical…, BMC medical genomics (2009) | [10.1186/1755-8794-2-58](https://doi.org/10.1186/1755-8794-2-58) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> | [Zvidzayi_2021_AUEC](drugs/drug_fluocinolone_acetonide/pd_Zvidzayi_2021_AUEC.md) | skin blanching response ← fluocinolone acetonide · direct Emax (saturable) effect | — | Zvidzayi M et al., A Novel Approach to Assess the Potency…, Pharmaceutics (2021) | [10.3390/pharmaceutics13091456](https://doi.org/10.3390/pharmaceutics13091456) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

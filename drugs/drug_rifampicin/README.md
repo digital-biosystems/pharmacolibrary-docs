@@ -27,35 +27,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Srivastava_2022_CFU](drugs/drug_rifampicin/pd_Srivastava_2022_CFU.md) | M. kansasii bacterial burden ← rifampin · direct sigmoid Emax (Hill) effect | — | Srivastava S et al., Rifampin Pharmacokinetics/Pharmacodynam…, Antimicrobial agents and ch… (2022) | [10.1128/aac.02320-21](https://doi.org/10.1128/aac.02320-21) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Muliaditan_2022_CFU_F](drugs/drug_rifampicin/pd_Muliaditan_2022_CFU_F.md) | Colony forming unit (CFU) count per lung (fast-growing population) ← rifampicin · disease-progression model | — | Muliaditan M et al., Bacterial growth dynamics and pharmacok…, British journal of pharmaco… (2022) | [10.1111/bph.15688](https://doi.org/10.1111/bph.15688) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Muliaditan_2022_CFU_S](drugs/drug_rifampicin/pd_Muliaditan_2022_CFU_S.md) | Colony forming unit (CFU) count per lung (slow-growing population) ← rifampicin · disease-progression model | — | Muliaditan M et al., Bacterial growth dynamics and pharmacok…, British journal of pharmaco… (2022) | [10.1111/bph.15688](https://doi.org/10.1111/bph.15688) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=rifampicin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inducer, `SLCO1A2` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inducer | DrugBank actor |
-| absorption | liver | `ABCB1` inducer, `SLCO2B1` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inducer | DrugBank actor |
-| absorption | small intestine | `ABCB1` inducer, `SLCO1A2` inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inducer | DrugBank actor |
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| distribution | blood-brain barrier | `ABCC1` inhibitor | DrugBank actor |
-| distribution | lung | `ABCC1` inhibitor | DrugBank actor |
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | `CYP3A5` inducer, `SLC22A7` inhibitor, `UGT1A9` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP1A2` inducer, `CYP2A6` inducer, `CYP2B6` inducer, `CYP2C19` inducer, `CYP2C8` inducer/inhibitor, `CYP2C9` inducer, `CYP2E1` inducer, `CYP3A4` inducer, `CYP3A5` inducer, `CYP3A7` inducer, `SLC22A7` inhibitor, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor/substrate, `UGT1A1` inducer, `UGT1A9` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer, `CYP3A5` inducer, `UGT1A1` inducer | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `ABCC2` inducer, `SLC22A6` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB11` inhibitor, `ABCC2` inducer, `ABCC3` inducer | DrugBank actor |
-| excretion | small intestine | `ABCC2` inducer, `ABCC3` inducer | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ABCC5 (inducer), CYP3A43 (inducer), NR1I2 (target).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Srivastava_2022_CFU](drugs/drug_rifampicin/pd_Srivastava_2022_CFU.md) | M. kansasii bacterial burden ← rifampin · direct sigmoid Emax (Hill) effect | — | Srivastava S et al., Rifampin Pharmacokinetics/Pharmacodynam…, Antimicrobial agents and ch… (2022) | [10.1128/aac.02320-21](https://doi.org/10.1128/aac.02320-21) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Muliaditan_2022_CFU_F](drugs/drug_rifampicin/pd_Muliaditan_2022_CFU_F.md) | Colony forming unit (CFU) count per lung (fast-growing population) ← rifampicin · disease-progression model | — | Muliaditan M et al., Bacterial growth dynamics and pharmacok…, British journal of pharmaco… (2022) | [10.1111/bph.15688](https://doi.org/10.1111/bph.15688) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Muliaditan_2022_CFU_S](drugs/drug_rifampicin/pd_Muliaditan_2022_CFU_S.md) | Colony forming unit (CFU) count per lung (slow-growing population) ← rifampicin · disease-progression model | — | Muliaditan M et al., Bacterial growth dynamics and pharmacok…, British journal of pharmaco… (2022) | [10.1111/bph.15688](https://doi.org/10.1111/bph.15688) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

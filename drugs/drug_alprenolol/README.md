@@ -28,18 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cleveland_2019_EGF_mediated_JB6_P_colony_formation](drugs/drug_alprenolol/pd_Cleveland_2019_EGF_mediated_JB6_P_colony_formation.md) | EGF-mediated JB6 P+ colony formation ← alprenolol · direct sigmoid Emax (Hill) effect | — | Cleveland KH et al., Carvedilol inhibits EGF-mediated JB6 P+…, PloS one (2019) | [10.1371/journal.pone.0217038](https://doi.org/10.1371/journal.pone.0217038) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=alprenolol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), ADRB3 (target), HTR1A (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cleveland_2019_EGF_mediated_JB6_P_colony_formation](drugs/drug_alprenolol/pd_Cleveland_2019_EGF_mediated_JB6_P_colony_formation.md) | EGF-mediated JB6 P+ colony formation ← alprenolol · direct sigmoid Emax (Hill) effect | — | Cleveland KH et al., Carvedilol inhibits EGF-mediated JB6 P+…, PloS one (2019) | [10.1371/journal.pone.0217038](https://doi.org/10.1371/journal.pone.0217038) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

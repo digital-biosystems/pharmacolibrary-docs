@@ -22,7 +22,7 @@
 
 > Triazolam serum (ng/mL) or brain (ng/g) concentrations stimulate the ratio of post- to pre-triazolam threshold convulsant doses of pentylenetetrazol via a direct Emax model, with Emax 9.9 ± 0.7, EC50 (serum) 10.0 ± 4.6 ng/mL, and EC50 (brain) 34.8 ± 9.0 ng/g; the paper excerpts do not state a mechanism beyond this Emax effect.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Gaudreault_1996`
 - **model family:** `emax`
@@ -65,7 +65,7 @@ Gaudreault J et al., Anticonvulsant pharmacodynamics and dis…, Journal of phar
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

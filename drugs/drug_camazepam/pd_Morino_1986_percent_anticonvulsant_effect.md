@@ -21,7 +21,7 @@
 
 > The paper models camazepam's percent anticonvulsant effect (%) with a sigmoid Emax relationship driven by camazepam and its active metabolites (temazepam, oxazepam, hydroxy CZ) acting via receptor binding, but the excerpts provide no mechanism detail and no potency or rate parameter values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are stated.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Morino_1986`
 - **model family:** `sigmoid_emax`
@@ -41,11 +41,11 @@ _No resolved parameters._
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

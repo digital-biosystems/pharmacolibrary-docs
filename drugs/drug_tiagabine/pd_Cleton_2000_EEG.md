@@ -22,7 +22,7 @@
 
 > The record specifies an effect-compartment model in which plasma tiagabine concentrations (ng ml-1) drive a stimulatory effect on the amplitude of the 11.5-30 Hz EEG frequency band, with reported EC50 values of 521 and 291 ng ml-1. The paper does not provide excerpts to confirm the specific mechanism or effect equation form.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Cleton_2000`
 - **model family:** `effect_compartment`
@@ -64,7 +64,7 @@ Cleton A et al., Effect of amygdala kindling on the cent…, British journal of 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

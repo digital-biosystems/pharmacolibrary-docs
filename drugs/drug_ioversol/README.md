@@ -28,15 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Yu_2023_CIN](drugs/drug_ioversol/pd_Yu_2023_CIN.md) | CIN occurrence ← ioversol · categorical (graded) response model | — | Yu R et al., The clinical predictive value and regul…, Biochemical and biophysical… (2023) | [10.1016/j.bbrc.2023.09.019](https://doi.org/10.1016/j.bbrc.2023.09.019) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ioversol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Yu_2023_CIN](drugs/drug_ioversol/pd_Yu_2023_CIN.md) | CIN occurrence ← ioversol · categorical (graded) response model | — | Yu R et al., The clinical predictive value and regul…, Biochemical and biophysical… (2023) | [10.1016/j.bbrc.2023.09.019](https://doi.org/10.1016/j.bbrc.2023.09.019) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

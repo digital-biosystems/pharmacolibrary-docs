@@ -33,27 +33,15 @@ Elvitegravir is an antiviral drug used to treat HIV infections, acting as an int
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span> | [Barceló_2016_reference](drugs/drug_elvitegravir/Elvitegravir_Barcel2016_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Barceló C et al., Population pharmacokinetic analysis of…, The Journal of antimicrobia… (2016) | [10.1093/jac/dkw050](https://doi.org/10.1093/jac/dkw050) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span> | [Barceló_2016_reference](drugs/drug_elvitegravir/Elvitegravir_Barcel2016_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Barceló C et al., Population pharmacokinetic analysis of…, The Journal of antimicrobia… (2016) | [10.1093/jac/dkw050](https://doi.org/10.1093/jac/dkw050) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Seki_2015_VL](drugs/drug_elvitegravir/pd_Seki_2015_VL.md) | Viral load ← elvitegravir · inhibition effect | — | Seki T et al., Effects of raltegravir or elvitegravir…, Antimicrobial agents and ch… (2015) | [10.1128/AAC.04844-14](https://doi.org/10.1128/AAC.04844-14) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">mouse</span> | [Shiroishi-Wakatsuki_2019_HIV_1_replication_infectivity](drugs/drug_elvitegravir/pd_Shiroishi_Wakatsuki_2019_HIV_1_replication_infectivity.md) | HIV-1 replication / infectivity ← elvitegravir · inhibition effect | — | Shiroishi-Wakatsuki T et al., Discovery of 4-oxoquinolines, a new che…, Antiviral research (2019) | [10.1016/j.antiviral.2018.12.012](https://doi.org/10.1016/j.antiviral.2018.12.012) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span> | [Vegas_2025_HIV_RNA](drugs/drug_elvitegravir/pd_Vegas_2025_HIV_RNA.md) | HIV-1 RNA ← elvitegravir · disease-progression model | model (no simulator) | Vegas Rodriguez A et al., Integrated Population Pharmacokinetic-p…, The AAPS journal (2025) | [10.1208/s12248-025-01136-4](https://doi.org/10.1208/s12248-025-01136-4) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=elvitegravir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP3A4` inhibitor/substrate, `UGT1A1` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `UGT1A1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Seki_2015_VL](drugs/drug_elvitegravir/pd_Seki_2015_VL.md) | Viral load ← elvitegravir · inhibition effect | — | Seki T et al., Effects of raltegravir or elvitegravir…, Antimicrobial agents and ch… (2015) | [10.1128/AAC.04844-14](https://doi.org/10.1128/AAC.04844-14) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">mouse</span> | [Shiroishi-Wakatsuki_2019_HIV_1_replication_infectivity](drugs/drug_elvitegravir/pd_Shiroishi_Wakatsuki_2019_HIV_1_replication_infectivity.md) | HIV-1 replication / infectivity ← elvitegravir · inhibition effect | — | Shiroishi-Wakatsuki T et al., Discovery of 4-oxoquinolines, a new che…, Antiviral research (2019) | [10.1016/j.antiviral.2018.12.012](https://doi.org/10.1016/j.antiviral.2018.12.012) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span> | [Vegas_2025_HIV_RNA](drugs/drug_elvitegravir/pd_Vegas_2025_HIV_RNA.md) | HIV-1 RNA ← elvitegravir · disease-progression model | model (no simulator) | Vegas Rodriguez A et al., Integrated Population Pharmacokinetic-p…, The AAPS journal (2025) | [10.1208/s12248-025-01136-4](https://doi.org/10.1208/s12248-025-01136-4) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

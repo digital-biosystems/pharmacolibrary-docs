@@ -1,0 +1,176 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02C&quot;,&quot;href&quot;:&quot;atc/C02C.md&quot;},{&quot;label&quot;:&quot;urapidil&quot;}]"></div>
+
+# urapidil
+
+- **generic name:** urapidil
+- **ATC codes:** `C02CA06`
+- **DrugBank:** [DB12661](https://go.drugbank.com/drugs/DB12661) · **PubChem:** [CID 5639](https://pubchem.ncbi.nlm.nih.gov/compound/5639)
+- **molar mass:** 387.484 g/mol (C20H29N5O3) — DrugBank
+- **groups:** investigational
+
+## About
+
+Urapidil is a sympatholytic antihypertensive drug that lowers blood pressure by blocking alpha-1 adrenergic receptors and acting as a vasodilator. It is considered investigational and is not authorised in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q418922](https://www.wikidata.org/wiki/Q418922) and the WHO ATC classification; not checked by a person.</small>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 14:16 | 3:45 | 0/0/0 | 0/0/0 | 0/0/0 | 82,170/3,741 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/4 | 0/0 | 0 |
+
+## popPK records
+
+_not available_
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 109 matched, 106 returned
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Bottorff_1988.pdf` | Bottorff MB et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (1988) | popPK | 10 | [10.1002/j.1552-4604.1988.tb05753.x](https://doi.org/10.1002/j.1552-4604.1988.tb05753.x) | [3392239](https://pubmed.ncbi.nlm.nih.gov/3392239) | The abstract explicitly reports quantitative pharmacokinetic parameters (Vz, CL, t1/2) for urapidil in human patients. |
+| `Nirogi_2011.pdf` | Nirogi R et al., Quantification of urapidil, α-1-adrenor…, Biomedical chromatography :… (2011) | popPK | 10 | [10.1002/bmc.1604](https://doi.org/10.1002/bmc.1604) | [21308707](https://pubmed.ncbi.nlm.nih.gov/21308707) | The paper reports quantitative pharmacokinetic parameters (Cmax, AUC, t1/2, Cl) for urapidil in rats, with all numeric values explicitly provided in the abstract. |
+| `Shepherd_1988.pdf` | Shepherd AM, Human pharmacology of urapidil, Drugs 35 Suppl (1988) | popPK | 9 | [10.2165/00003495-198800356-00005](https://doi.org/10.2165/00003495-198800356-00005) | [3042359](https://pubmed.ncbi.nlm.nih.gov/3042359) | The text explicitly reports quantitative pharmacokinetic parameters for urapidil in humans, including clearance (12 L/h), renal clearance (1.8 L/h), bioavailability (78%), and half-lives (35 min, 3 h). |
+| `Gielsdorf_1986.pdf` | Gielsdorf W et al., [The pharmacokinetics and bioavailabili…, Arzneimittel-Forschung (1986) | popPK | 8 | not captured | [3778565](https://pubmed.ncbi.nlm.nih.gov/3778565) | The study reports pharmacokinetic parameters for urapidil in humans, but the specific numeric values are not present in the provided evidence. |
+| `Kirsten_1986.pdf` | Kirsten R et al., Pharmacodynamics and pharmacokinetics o…, European journal of clinica… (1986) | popPK | 8 | [10.1007/BF00542413](https://doi.org/10.1007/BF00542413) | [3758142](https://pubmed.ncbi.nlm.nih.gov/3758142) | The study reports pharmacokinetics of urapidil in humans, but the evidence only provides qualitative concentration ranges (e.g., 100-200 ng/ml) and lacks specific quantitative disposition parameters like clearance or volume. |
+| `Kirsten_1989.pdf` | Kirsten R et al., Influence of food intake on the bioavai…, International journal of cl… (1989) | popPK | 8 | not captured | [2737799](https://pubmed.ncbi.nlm.nih.gov/2737799) | The study reports pharmacokinetic parameters (AUC, Cmax, t1/2) for urapidil in humans, but the specific numeric values are not present in the provided text, only qualitative descriptions and relative differences. |
+| `Kirsten_1989_2.pdf` | Kirsten R et al., Improved orthostatic dysregulation reco…, International journal of cl… (1989) | popPK | 8 | not captured | [2777422](https://pubmed.ncbi.nlm.nih.gov/2777422) | The study reports pharmacokinetic parameters (Cmax, fluctuation) for urapidil in humans, but specific clearance, volume, or half-life values are not explicitly listed in the provided text. |
+| `Sun_2015.pdf` | Sun S et al., Capillary electrophoresis with end-colu…, Journal of chromatography.… (2015) | popPK | 8 | [10.1016/j.jchromb.2015.10.011](https://doi.org/10.1016/j.jchromb.2015.10.011) | [26551206](https://pubmed.ncbi.nlm.nih.gov/26551206) | The study reports quantitative pharmacokinetic parameters (Cmax, T1/2, Tmax) for urapidil in rats, with values explicitly provided in the abstract. |
+| `Wambach_1987.pdf` | Wambach G et al., [Renal and adrenal function following a…, Arzneimittel-Forschung (1987) | popPK | 8 | not captured | [3675693](https://pubmed.ncbi.nlm.nih.gov/3675693) | The study reports quantitative plasma half-life values for urapidil in human subjects with varying renal function. |
+| `Toklucu_2025.pdf` | Toklucu I et al., α-Adrenoreceptor blocker phentolamine i…, British journal of pharmaco… (2025) | pd | 5 | [10.1111/bph.17450](https://doi.org/10.1111/bph.17450) | [39888002](https://www.ncbi.nlm.nih.gov/pubmed/39888002) | metadata signals extractable PD data (IC50) |
+| `Aoki_1988.pdf` | Aoki K et al., Antagonism of alpha 1-adrenoceptor-medi…, Journal of cardiovascular p… (1988) | pd | 4 | [10.1097/00005344-198808000-00007](https://doi.org/10.1097/00005344-198808000-00007) | [2459548](https://www.ncbi.nlm.nih.gov/pubmed/2459548) | metadata signals extractable PD data (IC50) |
+| `Borbe_1991.pdf` | Borbe HO et al., 5-HT1A-agonistic properties of naftopid…, European journal of pharmac… (1991) | pd | 4 | [10.1016/0014-2999(91)90779-p](https://doi.org/10.1016/0014-2999(91)90779-p) | [1839829](https://www.ncbi.nlm.nih.gov/pubmed/1839829) | metadata signals extractable PD data (IC50) |
+| `Bültmann_1994.pdf` | Bültmann R et al., Alpha 1-adrenoceptors and calcium sourc…, British journal of pharmaco… (1994) | pd | 4 | [10.1111/j.1476-5381.1994.tb14037.x](https://doi.org/10.1111/j.1476-5381.1994.tb14037.x) | [7912153](https://www.ncbi.nlm.nih.gov/pubmed/7912153) | metadata signals extractable PD data (concentration-effect) |
+| `George_2004.pdf` | George OK et al., Moxonidine, an antihypertensive agent,…, Journal of cardiovascular p… (2004) | pd | 4 | [10.1097/00005344-200402000-00022](https://doi.org/10.1097/00005344-200402000-00022) | [14716222](https://www.ncbi.nlm.nih.gov/pubmed/14716222) | metadata signals extractable PD data (EC50) |
+| `Gross_1989.pdf` | Gross G et al., Demonstration of alpha 1A- and alpha 1B…, European journal of pharmac… (1989) | pd | 4 | [10.1016/0014-2999(89)90032-0](https://doi.org/10.1016/0014-2999(89)90032-0) | [2572438](https://www.ncbi.nlm.nih.gov/pubmed/2572438) | metadata signals extractable PD data (IC50) |
+| `Schoeffter_1988.pdf` | Schoeffter P et al., Centrally acting hypotensive agents wit…, British journal of pharmaco… (1988) | pd | 4 | [10.1111/j.1476-5381.1988.tb11728.x](https://doi.org/10.1111/j.1476-5381.1988.tb11728.x) | [3207999](https://www.ncbi.nlm.nih.gov/pubmed/3207999) | metadata signals extractable PD data (EC50) |
+| `Schwietert_1991.pdf` | Schwietert HR et al., Differences between full and partial al…, Naunyn-Schmiedeberg's archi… (1991) | pd | 4 | [10.1007/BF00167220](https://doi.org/10.1007/BF00167220) | [1682821](https://www.ncbi.nlm.nih.gov/pubmed/1682821) | metadata signals extractable PD data (EC50) |
+| `Williams_1995.pdf` | Williams TJ et al., Characterization of alpha 1-adrenocepto…, British journal of pharmaco… (1995) | pd | 4 | [10.1111/j.1476-5381.1995.tb13259.x](https://doi.org/10.1111/j.1476-5381.1995.tb13259.x) | [7881752](https://www.ncbi.nlm.nih.gov/pubmed/7881752) | metadata signals extractable PD data (EC50) |
+
+<sub>queue written 2026-10-06T14:15:56.014166+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Bertolissi_1996 | irrelevant | 0 | 0 | The study focuses on the renal effects of nifedipine, and urapidil is only used as a rescue medication in the control group without any pharmacokinetic analysis. |
+| popPK | Blue_1995 | irrelevant | 0 | 0 | The study is a receptor pharmacology investigation using 5-methyl-urapidil as a tool compound to characterize alpha-1 adrenoceptors, not a pharmacokinetic study of urapidil. |
+| popPK | Borbe_1991 | irrelevant | 0 | 0 | The paper focuses on the pharmacodynamic properties (5-HT1A agonism) of naftopidil, with urapidil serving only as a comparator in a blood pressure study, and no pharmacokinetic parameters are reported. |
+| PD | Borbe_1991 | not_relevant | 1 | 0 | The text focuses on the pharmacology of naftopidil and only qualitatively mentions urapidil's blood pressure reduction without providing any numeric PD parameters or exposure-response data for urapidil. |
+| PD | Bottorff_1988 | not_relevant | 2 | 1 | The paper reports PK parameters and mean blood pressure changes but does not provide a concentration-effect model, Emax/EC50, or individual-level data linking drug exposure to hemodynamic response. |
+| PGx | Brüss_2005 | not_relevant | 2 | 8 | The study reports a pharmacodynamic effect (impaired signal transduction) of a 5-HT1A receptor variant on urapidil in a cell line, but does not report a pharmacokinetic parameter or a clinical pharmacodynamic endpoint in humans. |
+| popPK | Bültmann_1994 | irrelevant | 0 | 0 | no_text gate: only 99 chars of text extracted (&lt; 400) |
+| PD | Bültmann_1994 | not_relevant | 0 | 0 | The paper focuses on the mechanism of adrenergic contractions in rat vas deferens and does not report pharmacodynamic or exposure-response data for urapidil. |
+| popPK | Chen_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of remimazolam, not urapidil. |
+| PD | Chen_2025 | not_relevant | 0 | 0 | The paper reports a PK/PD model for remimazolam, not urapidil. |
+| popPK | Chi_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of propofol, not urapidil. |
+| PD | Chi_2018 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of propofol, not urapidil, and does not report any pharmacodynamic or exposure-response relationships. |
+| popPK | Chidlow_2001 | irrelevant | 0 | 0 | The study focuses on the intraocular pressure-lowering effects and mechanism of action of flesinoxan, with urapidil serving only as a comparator agent in potency rankings, and no pharmacokinetic parameters are reported. |
+| PD | Chidlow_2001 | not_relevant | 2 | 1 | The paper reports qualitative dose-related effects and in vitro IC50 values for flesinoxan and urapidil, but does not provide numeric PD parameters (Emax, EC50, slope) or an extractable concentration-effect curve for urapidil in vivo. |
+| popPK | Chrisp_1990 | irrelevant | 0 | 0 | The paper is a review of dilevalol, and urapidil is only mentioned as a comparator agent without any pharmacokinetic parameters reported. |
+| PD | Chrisp_1990 | not_relevant | 0 | 0 | The paper is a review of dilevalol and only mentions urapidil qualitatively as a comparator without providing any pharmacodynamic data, exposure-response analysis, or numeric PD parameters for urapidil. |
+| popPK | Doods_1988 | irrelevant | 0 | 0 | The study investigates the mechanism of central hypotensive effects and receptor binding, not pharmacokinetic disposition parameters. |
+| popPK | Fagura_1997 | irrelevant | 0 | 0 | The study is a pharmacological receptor classification experiment using 5-methyl urapidil as a tool compound, not a pharmacokinetic study reporting disposition parameters for urapidil. |
+| popPK | George_2004 | irrelevant | 0 | 0 | no_text gate: only 113 chars of text extracted (&lt; 400) |
+| PD | George_2004 | not_relevant | 0 | 0 | The paper focuses on moxonidine and alpha1-adrenergic pathways in rat-tail arteries, with no mention of urapidil or its pharmacodynamic parameters. |
+| popPK | Gielsdorf_1986 | relevant | 8 | 0 | The study reports pharmacokinetic parameters for urapidil in humans, but the specific numeric values are not present in the provided evidence. |
+| popPK | Gross_1987 | irrelevant | 0 | 0 | The study investigates receptor binding affinities (IC50) in vitro, not pharmacokinetic disposition parameters. |
+| PD | Gross_1987 | not_relevant | 3 | 5 | The paper reports in vitro binding affinities (IC50) for urapidil and analogues, which are pharmacological potency data, but does not report an in vivo pharmacodynamic (exposure-response or dose-response) relationship for the drug's clinical effect (e.g., blood pressure). |
+| popPK | Gross_1989 | irrelevant | 0 | 0 | The study is a radioligand binding assay investigating adrenoceptor subtypes in brain tissue, not a pharmacokinetic study, and reports no disposition parameters for urapidil. |
+| PD | Gross_1989 | not_relevant | 0 | 0 | The paper reports in vitro radioligand binding affinity (IC50) for urapidil analogs, which is a pharmacological binding study, not a pharmacodynamic exposure-response or dose-response relationship in a biological system. |
+| popPK | Gruber_1998 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of alpha-adrenergic receptors in the spiral modiolar artery, using 5-methyl urapidil as a tool compound, and does not report pharmacokinetic parameters for urapidil. |
+| popPK | Hanft_1989 | irrelevant | 0 | 0 | The paper is an in-vitro receptor binding study characterizing alpha-1 adrenoceptor subtypes, not a pharmacokinetic study reporting disposition parameters for urapidil. |
+| popPK | Hellberg_1983 | irrelevant | 0 | 0 | no_text gate: only 84 chars of text extracted (&lt; 400) |
+| popPK | Hirschl_1995 | irrelevant | 0 | 0 | The paper is a clinical guideline for treating hypertensive crises and does not report any pharmacokinetic parameters for urapidil. |
+| PD | Hirschl_1995 | not_relevant | 1 | 0 | The text is a clinical guideline discussing the qualitative pharmacodynamic properties of urapidil for hypertensive crises but does not provide any numeric PD parameters, concentration-effect curves, or dose-response data. |
+| popPK | Jamieson_1986 | irrelevant | 0 | 0 | The study assesses beta-blocking activity (pharmacodynamics) and does not report quantitative pharmacokinetic parameters like clearance or volume for urapidil. |
+| PD | Jamieson_1986 | not_relevant | 2 | 1 | The study reports a qualitative lack of beta-blocking activity (no significant shift in isoproterenol dose-response) and describes a method for analyzing curves, but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect relationship for urapidil. |
+| popPK | Kaczor_2023 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study focusing on the synthesis and pharmacological activity (affinity, selectivity, hypotensive effect) of new compounds, with urapidil serving only as a comparator, and it contains no pharmacokinetic parameters. |
+| PD | Kaczor_2023 | not_relevant | 3 | 2 | The paper reports qualitative comparisons of hypotensive activity and effective doses in rats relative to urapidil, but does not provide numeric PD parameters (e.g., ED50, Emax) or concentration-effect curves for urapidil itself. |
+| popPK | Kennedy_2006 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor subtypes in rat tail arteries where urapidil is used only as a competitive antagonist, not as the subject of pharmacokinetic analysis. |
+| popPK | Kirsten_1986 | relevant | 8 | 2 | The study reports pharmacokinetics of urapidil in humans, but the evidence only provides qualitative concentration ranges (e.g., 100-200 ng/ml) and lacks specific quantitative disposition parameters like clearance or volume. |
+| popPK | Kirsten_1987 | irrelevant | 2 | 0 | The study reports serum concentration-time data and pharmacodynamic effects but does not provide quantitative disposition parameters such as clearance, volume of distribution, or half-life. |
+| popPK | Kirsten_1988 | irrelevant | 2 | 0 | The paper is a review of clinical pharmacokinetics and does not present original quantitative parameter values in the provided evidence. |
+| PD | Kirsten_1988 | not_relevant | 1 | 0 | The text is a review abstract that qualitatively mentions PK/PD relationships but provides no numeric PD parameters, curves, or specific dose-response data. |
+| popPK | Kirsten_1989 | relevant | 8 | 2 | The study reports pharmacokinetic parameters (AUC, Cmax, t1/2) for urapidil in humans, but the specific numeric values are not present in the provided text, only qualitative descriptions and relative differences. |
+| popPK | Kirsten_1989_2 | relevant | 8 | 2 | The study reports pharmacokinetic parameters (Cmax, fluctuation) for urapidil in humans, but specific clearance, volume, or half-life values are not explicitly listed in the provided text. |
+| popPK | Kirsten_1998 | irrelevant | 0 | 0 | The paper is a general review of vasodilators that mentions urapidil only as a therapeutic option for hypertensive emergencies without reporting any quantitative pharmacokinetic parameters. |
+| popPK | Kobrin_1985 | irrelevant | 0 | 0 | The study reports hemodynamic effects (blood pressure, resistance, cardiac index) rather than pharmacokinetic disposition parameters (CL, V, t1/2). |
+| popPK | Kolassa_1989 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of blood pressure responses in anesthetized cats and does not report any pharmacokinetic parameters (e.g., clearance, volume, half-life) for urapidil. |
+| PD | Kolassa_1989 | not_relevant | 4 | 2 | The paper describes a dose-response relationship for urapidil in an animal model, but the provided text only contains qualitative descriptions of the curve shifts and does not report specific numeric PD parameters (e.g., ED50, Emax) or the underlying data points required to derive them. |
+| popPK | Korstanje_2011 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of tamsulosin, not urapidil. |
+| PD | Korstanje_2011 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of tamsulosin (tissue vs. plasma distribution) and does not report any pharmacodynamic or exposure-response relationship for urapidil. |
+| popPK | Langtry_1989 | irrelevant | 2 | 0 | The paper is a review of pharmacodynamic and pharmacokinetic properties, but the provided evidence contains no quantitative PK parameter values (CL, V, t1/2, etc.) for urapidil. |
+| PD | Langtry_1989 | not_relevant | 2 | 0 | The text is a qualitative review summarizing clinical effects and general pharmacodynamic properties without providing specific numeric PD parameters, concentration-effect curves, or dose-response data. |
+| popPK | Le_1994 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of alpha-1 adrenoceptor antagonists in rat atria and does not report any pharmacokinetic parameters for urapidil. |
+| PD | Le_1994 | not_relevant | 0 | 0 | The paper reports that urapidil (specifically 5-methyl-urapidil) showed no protective activity against veratrine contractures at 10 microM, providing no numeric PD parameters or dose-response curve for urapidil. |
+| popPK | Lewek_2020 | irrelevant | 0 | 0 | The paper is a review of pharmacological management of malignant hypertension and does not report quantitative pharmacokinetic parameters for urapidil. |
+| popPK | Li_2000 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of adrenoceptor subtypes in rabbit ear microvasculature using 5-methyl-urapidil as a selective antagonist, not a pharmacokinetic study of urapidil. |
+| popPK | Ludwig_1977 | irrelevant | 0 | 0 | no_text gate: only 89 chars of text extracted (&lt; 400) |
+| popPK | Minushkina_2012 | irrelevant | 1 | 0 | The paper is a review of urapidil's clinical use and mechanism of action without reporting original quantitative pharmacokinetic parameter values. |
+| PD | Minushkina_2012 | not_relevant | 1 | 0 | The text is a qualitative review of urapidil's mechanism and clinical features without reporting specific numeric PD parameters or exposure-response data. |
+| popPK | Minushkina_2014 | irrelevant | 1 | 0 | The paper is a clinical review of urapidil's therapeutic use in hypertensive emergencies and does not report original quantitative pharmacokinetic parameter values. |
+| PD | Minushkina_2014 | not_relevant | 1 | 0 | The text is a review summarizing the mechanism and clinical efficacy of urapidil without providing specific numeric PD parameters or exposure-response data. |
+| popPK | Penjišević_2022 | irrelevant | 0 | 0 | The study is an in silico and in vitro investigation of novel compounds, with urapidil serving only as a structural comparator, and no quantitative pharmacokinetic parameters for urapidil are reported. |
+| popPK | Petry_1995 | irrelevant | 0 | 0 | The study focuses on haemodynamic and renal function outcomes (creatinine clearance) rather than the pharmacokinetic disposition parameters (CL, V, t1/2) of urapidil itself. |
+| popPK | Prichard_1988 | irrelevant | 2 | 2 | The paper is a review of clinical pharmacology and mechanism of action, reporting only qualitative data and limited summary values (bioavailability, tmax, t1/2) without a compartmental or population PK model. |
+| PD | Prichard_1988 | not_relevant | 2 | 0 | The text is a qualitative review summarizing mechanisms and general PK properties without providing specific numeric PD parameters or extractable concentration-effect data. |
+| popPK | Prichard_1989 | irrelevant | 2 | 1 | The paper is a review of pharmacological actions and provides only qualitative or limited PK descriptors (bioavailability, tmax, half-life) without quantitative compartmental parameters (CL, V, Q) or population PK models. |
+| PD | Prichard_1989 | not_relevant | 2 | 0 | The text is a qualitative review summarizing pharmacological actions and general PK properties without providing specific numeric PD parameters or extractable concentration-effect data. |
+| popPK | Pönicke_2001 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro investigation of adrenoceptor signaling in rat cardiomyocytes using 5-methyl-urapidil as a pharmacological tool, not a pharmacokinetic study of urapidil. |
+| PD | Pönicke_2001 | not_relevant | 0 | 0 | The paper reports pharmacological characterization of noradrenaline and antagonist potencies (pKi) in isolated cardiomyocytes, not a pharmacokinetic-pharmacodynamic (PK/PD) or exposure-response relationship for the drug urapidil. |
+| popPK | Queiroz-Neto_1993 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of adrenoceptor subtypes in rat vas deferens, not a pharmacokinetic study of urapidil. |
+| PD | Queiroz-Neto_1993 | not_relevant | 0 | 0 | The paper investigates the pharmacology of norepinephrine in rat vas deferens using 5-methyl-urapidil as a tool compound, but does not report a pharmacodynamic or exposure-response relationship for urapidil itself. |
+| popPK | Ramage_1989 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of sympathetic nerve activity in cats and does not report pharmacokinetic parameters for urapidil. |
+| popPK | Sanders_1988 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of receptor interactions in cats and does not report any pharmacokinetic parameters for urapidil. |
+| popPK | Sanders_1990 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of blood pressure changes in cats and does not report any pharmacokinetic parameters (e.g., clearance, volume, half-life) for urapidil. |
+| popPK | Sanjuliani_1995 | irrelevant | 0 | 0 | The study evaluates the clinical efficacy of urapidil on blood pressure and metabolic parameters, but does not report any pharmacokinetic disposition parameters (e.g., clearance, volume, half-life). |
+| popPK | Schoeffter_1988 | irrelevant | 0 | 0 | no_text gate: only 150 chars of text extracted (&lt; 400) |
+| PD | Schoeffter_1988 | not_relevant | 0 | 0 | The paper describes an in vitro biochemical assay (adenylate cyclase inhibition) and does not report pharmacokinetic or pharmacodynamic exposure-response relationships for urapidil in vivo. |
+| popPK | Schwietert_1991 | irrelevant | 0 | 0 | no_text gate: only 170 chars of text extracted (&lt; 400) |
+| PD | Schwietert_1991 | not_relevant | 0 | 0 | The paper studies alpha-adrenoceptor agonists (e.g., phenylephrine, UK-14,304) and uses 5-methyl-urapidil only as a competitive antagonist for Schild analysis; it does not report a pharmacodynamic or exposure-response relationship for urapidil itself. |
+| popPK | Schütz_1986 | irrelevant | 0 | 0 | The study is a clinical pharmacological investigation of receptor subtypes using urapidil as a probe drug, and it does not report any pharmacokinetic parameters (e.g., clearance, volume, half-life) for urapidil. |
+| popPK | Smith_1997 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of alpha-adrenoceptor subtypes using 5-methyl-urapidil as a tool compound, not a pharmacokinetic study of urapidil. |
+| popPK | Sponer_1992 | irrelevant | 0 | 0 | The study is a pharmacodynamic/pharmacological investigation of naftopidil's receptor binding and vascular effects, using urapidil only as a comparator for affinity (Ki) and potency (pA2), with no pharmacokinetic parameters reported. |
+| popPK | Studer_1993 | irrelevant | 0 | 0 | The paper is a review of antihypertensive therapy that mentions urapidil only as a class example without providing any quantitative pharmacokinetic parameters. |
+| popPK | Széll_2000 | irrelevant | 0 | 0 | The study is a pharmacological investigation of adrenoceptor subtypes in rat bladder tissue using 5-methyl urapidil as a tool compound, not a pharmacokinetic study of urapidil. |
+| popPK | Taniguchi_1985 | irrelevant | 2 | 0 | The study reports only qualitative pharmacokinetic observations (time to peak, relative concentration at 8 hours) without quantitative disposition parameters like clearance, volume, or half-life. |
+| popPK | Testa_1993 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding and functional assay characterizing alpha-1 adrenoceptor subtypes, not a pharmacokinetic study of urapidil. |
+| PD | Testa_1993 | not_relevant | 1 | 0 | The paper characterizes receptor subtypes using binding assays and qualitative functional correlations, but does not report numeric PD parameters (e.g., EC50, Emax) or an exposure-response model for urapidil. |
+| popPK | Toklucu_2025 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
+| PD | Toklucu_2025 | not_relevant | 0 | 0 | The paper focuses on the mechanism of phentolamine (sodium channel inhibition) and does not report pharmacodynamic or exposure-response data for urapidil. |
+| popPK | Tomlinson_1991 | irrelevant | 1 | 0 | The study is a pharmacodynamic assessment of adrenoceptor blocking activity and does not report quantitative pharmacokinetic parameters (CL, V, t1/2) for urapidil. |
+| popPK | Van_1995 | irrelevant | 0 | 0 | The paper is a review discussing the pharmacological background of hypertension treatment in the elderly and does not report original quantitative pharmacokinetic parameters for urapidil. |
+| popPK | Verscheijden_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of morphine, not urapidil. |
+| PD | Verscheijden_2021 | not_relevant | 0 | 0 | The paper reports a PBPK/PD model for morphine, not urapidil. |
+| popPK | Williams_1995 | irrelevant | 0 | 0 | no_text gate: only 149 chars of text extracted (&lt; 400) |
+| PD | Williams_1995 | not_relevant | 0 | 0 | The paper characterizes alpha-1 adrenoceptors in rat mesentery using noradrenaline and nerve stimulation, and does not mention urapidil or report any PD parameters for it. |
+| popPK | Xia_2026 | irrelevant | 0 | 0 | The paper is a review of magnesium sulfate pharmacology and does not contain any data or parameters for urapidil. |
+| PD | Xia_2026 | not_relevant | 2 | 1 | The paper is a narrative review of magnesium sulfate (not urapidil) and provides only qualitative/schematic PK-PD descriptions without extractable numeric PD parameters. |
+| popPK | Yanai-Inamura_2012 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of salivary secretion and intraurethral pressure in rats, not a pharmacokinetic study reporting disposition parameters for urapidil. |
+| popPK | Zech_1986 | irrelevant | 2 | 0 | The paper describes an analytical method for quantifying urapidil and mentions its application in PK studies, but it does not report any quantitative pharmacokinetic parameters (CL, V, t1/2, etc.) in the provided text. |
+| popPK | Zitta_1990 | irrelevant | 0 | 0 | no_text gate: only 69 chars of text extracted (&lt; 400) |
+| popPK | unknown_2023 | irrelevant | 0 | 0 | no_text gate: only 16 chars of text extracted (&lt; 400) |
+| PD | unknown_2023 | not_relevant | 0 | 0 | The provided text is a placeholder for a large PDF file and contains no scientific content, data, or parameters regarding urapidil or any pharmacodynamic relationship. |
+| popPK | van_1985 | irrelevant | 0 | 0 | The paper describes pharmacodynamic effects (blood pressure, receptor binding) and does not report any quantitative pharmacokinetic parameters for urapidil. |
+| PD | van_1985 | not_relevant | 2 | 1 | The paper describes qualitative pharmacological effects and receptor selectivity but does not provide numeric PD parameters (e.g., EC50, Emax) or quantitative concentration-effect curves for urapidil. |
+| popPK | van_1988 | irrelevant | 0 | 0 | The paper is a pharmacological review discussing the mechanism of action of alpha-adrenoceptor antagonists and contains no pharmacokinetic data or quantitative disposition parameters for urapidil. |
+| PD | van_1988 | not_relevant | 1 | 0 | The text is a qualitative review of the pharmacological mechanisms of urapidil and other alpha-adrenoceptor antagonists, containing no numeric PD parameters, concentration-effect data, or PK/PD modeling. |
+
+---
+<sub>Generated by `docs.py` (scholarv2)</sub>

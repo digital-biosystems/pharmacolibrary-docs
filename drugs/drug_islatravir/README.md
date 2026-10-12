@@ -12,6 +12,8 @@
 
 **Description.** Islatravir is under investigation in clinical trial NCT04233216 (Doravirine/islatravir (DOR/ISL) in Heavily Treatment-experienced (HTE) Participants for Human Immunodeficiency Virus Type 1 (HIV-1) Infection (MK-8591A-019)).
 
+<p><small>Source: <a href="https://go.drugbank.com/drugs/DB15653">DrugBank DB15653</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
+
 ## Molecular properties
 
 > Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).

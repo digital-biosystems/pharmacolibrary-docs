@@ -19,7 +19,7 @@
 
 > The paper describes a direct Emax effect where the average plasma concentration (Cavg) of upadacitinib increases the logit probability of achieving the binary EASI-75 response, without specifying a physiological mechanism of action. The model parameters are an intercept of -2.43, an Emax of 5.35 on the logit scale, and an EC50 of 18.6 ng/mL.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mohamed_2021`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Mohamed MF et al., Exposure-Response Analyses for Upadacit…, Journal of clinic
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

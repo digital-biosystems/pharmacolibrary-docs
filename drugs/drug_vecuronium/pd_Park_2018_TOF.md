@@ -19,7 +19,7 @@
 
 > The model describes the inhibitory effect of vecuronium plasma concentration on the twitch response of the adductor pollicis muscle (TOF) via an effect compartment. The estimated effect-site equilibration rate constant (ke0) is 0.077/min, with the paper noting that no other pharmacodynamic parameters such as EC50 or Imax were derived.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Park_2018`
 - **model family:** `effect_compartment`
@@ -60,7 +60,7 @@ Park SY et al., Estimation of the effect-site equilibra…, Korean journal of an
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

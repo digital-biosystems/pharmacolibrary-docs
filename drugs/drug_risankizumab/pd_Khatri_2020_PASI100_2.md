@@ -16,11 +16,11 @@
 
 **As extracted:** Risankizumab (concentrations from the PK model of Khatri_2019::chinese) drives PASI100: direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The model uses a direct Emax relationship where risankizumab plasma C avg concentrations stimulate the binary PASI100 response, with an estimated Emax of 0.933 and an EC50 of 2.88 μg/mL. Race was identified as a covariate for the EC50 of the week 16 PASI100 response, but the paper does not specify the mechanistic pathway (e.g., production or elimination) of the drug's effect on the psoriasis lesion response.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Khatri_2020`
 - **model family:** `emax`
@@ -97,7 +97,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

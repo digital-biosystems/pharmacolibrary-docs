@@ -5,7 +5,7 @@
 
 # montelukast — `Montelukast_Li2019_slco2b1_c_935_gg`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 The molecular weight parameter is listed as 3 kg, a unit that cannot be converted to standard SI units, preventing the model from calculating mass-to-mole conversions. A second reader disagreed with the 0.87 L/h clearance value, reporting it as null while identifying a distinct 24.2 value. The reviewer also questioned the 14.0 central volume of distribution and 45.4 peripheral volume of distribution values. Extracted — montelukast: MW 3 kg, CL 0.87 L/h, kabs 0.357 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has montelukast, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading 24.2; it also differs on 6 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -72,14 +72,14 @@ Li Q et al., Developmental Pharmacogenetics of SLCO2…, Drug design, developmen
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+| `gpt-oss-120b` | partly confirmed | 0.364 (4/11 fields) | 7 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -90,8 +90,6 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[q1]` | not captured | 0.256 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vc]` | not captured | 14.0 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vp]` | not captured | 45.4 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | montelukast | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | montelukast | unknown | mismatch |
 
 </details>
 
@@ -121,18 +119,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_montelukast/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2019` / `Li_2019::slco2b1_c_935_gg`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_montelukast/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2019` / `Li_2019::slco2b1_c_935_gg`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

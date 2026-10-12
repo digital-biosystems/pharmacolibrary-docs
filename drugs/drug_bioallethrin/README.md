@@ -28,21 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [García_2017_growth_inhibition](drugs/drug_bioallethrin/pd_Garc_a_2017_growth_inhibition.md) | Growth inhibition of Pseudokirchneriella subcapitata ← bioallethrin (R/S-bioallethrin and esbiol) · direct sigmoid Emax (Hill) effect | — | García MÁ et al., A capillary micellar electrokinetic chr…, Journal of chromatography. A (2017) | [10.1016/j.chroma.2017.06.056](https://doi.org/10.1016/j.chroma.2017.06.056) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Cao_2011_Ca_2_i](drugs/drug_bioallethrin/pd_Cao_2011_Ca_2_i.md) | intracellular calcium concentration ← S-bioallethrin · direct Emax (saturable) effect | — | Cao Z et al., Mechanisms of pyrethroid insecticide-in…, The Journal of pharmacology… (2011) | [10.1124/jpet.110.171850](https://doi.org/10.1124/jpet.110.171850) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bioallethrin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CACNA1A (blocker), CACNA1C (blocker), CACNA1G (blocker), CACNG1 (target), SCN1A (modulator).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [García_2017_growth_inhibition](drugs/drug_bioallethrin/pd_Garc_a_2017_growth_inhibition.md) | Growth inhibition of Pseudokirchneriella subcapitata ← bioallethrin (R/S-bioallethrin and esbiol) · direct sigmoid Emax (Hill) effect | — | García MÁ et al., A capillary micellar electrokinetic chr…, Journal of chromatography. A (2017) | [10.1016/j.chroma.2017.06.056](https://doi.org/10.1016/j.chroma.2017.06.056) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Cao_2011_Ca_2_i](drugs/drug_bioallethrin/pd_Cao_2011_Ca_2_i.md) | intracellular calcium concentration ← S-bioallethrin · direct Emax (saturable) effect | — | Cao Z et al., Mechanisms of pyrethroid insecticide-in…, The Journal of pharmacology… (2011) | [10.1124/jpet.110.171850](https://doi.org/10.1124/jpet.110.171850) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

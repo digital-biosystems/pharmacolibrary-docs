@@ -18,11 +18,11 @@
 
 **As extracted:** S-(+)-ketoprofen (measured concentrations) drives plasma cortisol (in % difference): indirect response — drug inhibits the production of plasma cortisol.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > S-(+)-ketoprofen plasma concentrations act on plasma cortisol via a sigmoidal indirect response model that inhibits the basal production rate (Kin) through a hypothetical effect compartment. Key parameters include a Ke0 of 15.35 1/h, Kin of 65.46 %/h, Kout of 0.72 1/h, Imax of 73.00%, IC50 of 2.56 μg/ml, and a gamma of 1.90.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Nixon_2022`
 - **model family:** `indirect_response_i`
@@ -100,7 +100,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

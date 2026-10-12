@@ -33,29 +33,15 @@ Bictegravir is an antiviral medicine used to treat HIV infections. It is an appr
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Ekobena_2025_reference](drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Khoei_2026_reference](drugs/drug_bictegravir/Bictegravir_Khoei2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Khoei A et al., Dolutegravir population pharmacokinetic…, HIV medicine (2026) | [10.1111/hiv.70278](https://doi.org/10.1111/hiv.70278) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sun_2026_reference](drugs/drug_bictegravir/Bictegravir_Sun2026_reference.md) | — | 1-compartment (no model) | 4 | Sun S et al., Population Pharmacokinetics of Bictegra…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70134](https://doi.org/10.1002/jcph.70134) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Ekobena_2025_reference](drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Khoei_2026_reference](drugs/drug_bictegravir/Bictegravir_Khoei2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Khoei A et al., Dolutegravir population pharmacokinetic…, HIV medicine (2026) | [10.1111/hiv.70278](https://doi.org/10.1111/hiv.70278) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sun_2026_reference](drugs/drug_bictegravir/Bictegravir_Sun2026_reference.md) | — | 1-compartment (no model) | 4 | Sun S et al., Population Pharmacokinetics of Bictegra…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70134](https://doi.org/10.1002/jcph.70134) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span> | [Vegas_2025_HIV_RNA](drugs/drug_bictegravir/pd_Vegas_2025_HIV_RNA.md) | HIV-RNA (viral load, via inhibition of viral infectivity in the viral dynamics model) ← bictegravir · direct sigmoid Emax (Hill) effect | model (no simulator) | Vegas Rodriguez A et al., Integrated Population Pharmacokinetic-p…, The AAPS journal (2025) | [10.1208/s12248-025-01136-4](https://doi.org/10.1208/s12248-025-01136-4) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bictegravir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP3A4` substrate, `UGT1A1` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `UGT1A1` substrate | DrugBank actor |
-| excretion | kidney | `SLC47A1` inhibitor | DrugBank actor |
-| excretion | liver | `SLC47A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: POU2F2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span> | [Vegas_2025_HIV_RNA](drugs/drug_bictegravir/pd_Vegas_2025_HIV_RNA.md) | HIV-RNA (viral load, via inhibition of viral infectivity in the viral dynamics model) ← bictegravir · direct sigmoid Emax (Hill) effect | model (no simulator) | Vegas Rodriguez A et al., Integrated Population Pharmacokinetic-p…, The AAPS journal (2025) | [10.1208/s12248-025-01136-4](https://doi.org/10.1208/s12248-025-01136-4) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

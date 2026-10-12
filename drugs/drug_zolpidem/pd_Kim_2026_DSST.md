@@ -16,11 +16,11 @@
 
 **As extracted:** Zolpidem (concentrations from this paper's PK model) drives digit symbol substitution test (in score): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Plasma zolpidem concentration (μg/L) directly inhibits the DSST score via a sigmoid Emax direct-response model: DSST = Elearn × (1 − Cp^HILL/(IC50^HILL + Cp^HILL)), with IC50 = 205 μg/L, Hill coefficient 2.54, baseline BASE = 68.2 score, and a hyperbolic learning effect (MAXlearn = 14.4 score, LRPAR = 4.3 h to half-maximal learning).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kim_2026`
 - **model family:** `sigmoid_emax`
@@ -97,7 +97,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

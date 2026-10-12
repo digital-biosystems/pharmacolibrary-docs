@@ -21,7 +21,7 @@
 
 > Edaravone (5–40 μM) applied to Müller cells cultured in 20 mM glucose for 72 h stimulated cell viability (measured by CCK-8, %) in an Emax-type concentration–response relationship, attributed mechanistically to ROS scavenging; the paper reports an EC50 of 34.38 μM but does not state Emax, gamma, or a turnover/kin-kout mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Yin_2021`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Yin J et al., Edaravone prevents high glucose-induced…, Pharmaceutical biology
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

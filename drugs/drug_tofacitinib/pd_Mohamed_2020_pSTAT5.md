@@ -16,11 +16,11 @@
 
 **As extracted:** Tofacitinib (concentrations from this paper's PK model) drives IL-7–induced pSTAT5 (in AU): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Tofacitinib plasma concentrations directly and reversibly inhibit IL-7–induced pSTAT5 in a concentration-dependent manner, modeled with a sigmoid Emax function featuring an EC50 of 79 nM, a maximum effect (Emax) of -23 AU, and a Hill slope of 1.3.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mohamed_2020`
 - **model family:** `sigmoid_emax`
@@ -101,7 +101,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

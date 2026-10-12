@@ -28,24 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Yin_2017_NHE3_799C](drugs/drug_tenapanor/pd_Yin_2017_NHE3_799C.md) | NHE3-799C activity ← tenapanor · direct sigmoid Emax (Hill) effect | — | Yin J et al., A common NHE3 single-nucleotide polymor…, American journal of physiol… (2017) | [10.1152/ajpgi.00044.2017](https://doi.org/10.1152/ajpgi.00044.2017) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Yin_2017_NHE3_799R](drugs/drug_tenapanor/pd_Yin_2017_NHE3_799R.md) | NHE3-799R activity ← tenapanor · direct sigmoid Emax (Hill) effect | — | Yin J et al., A common NHE3 single-nucleotide polymor…, American journal of physiol… (2017) | [10.1152/ajpgi.00044.2017](https://doi.org/10.1152/ajpgi.00044.2017) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tenapanor).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | `SLCO2B1` inhibitor | DrugBank actor |
-| absorption | small intestine | `SLCO2B1` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: SLC9A3 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Yin_2017_NHE3_799C](drugs/drug_tenapanor/pd_Yin_2017_NHE3_799C.md) | NHE3-799C activity ← tenapanor · direct sigmoid Emax (Hill) effect | — | Yin J et al., A common NHE3 single-nucleotide polymor…, American journal of physiol… (2017) | [10.1152/ajpgi.00044.2017](https://doi.org/10.1152/ajpgi.00044.2017) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Yin_2017_NHE3_799R](drugs/drug_tenapanor/pd_Yin_2017_NHE3_799R.md) | NHE3-799R activity ← tenapanor · direct sigmoid Emax (Hill) effect | — | Yin J et al., A common NHE3 single-nucleotide polymor…, American journal of physiol… (2017) | [10.1152/ajpgi.00044.2017](https://doi.org/10.1152/ajpgi.00044.2017) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

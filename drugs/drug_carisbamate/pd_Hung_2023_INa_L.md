@@ -21,7 +21,7 @@
 
 > Carisbamate concentration directly inhibits the late (sustained) voltage-gated Na+ current (INa(L)) via a sigmoid Emax mechanism. The IC50 for this inhibition is 11.4 μM.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Hung_2023`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Hung TY et al., Concerted suppressive effects of carisb…, Frontiers in cellula
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

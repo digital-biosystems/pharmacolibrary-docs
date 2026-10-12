@@ -22,7 +22,7 @@
 
 > Etomidate concentration (ng/g) is described as inhibiting contextual fear conditioning via an Emax model, with an EC50 of 208 +/- 9 ng/g. As no full text is available, the specific mechanism of action (e.g., production vs. elimination inhibition) and effect compartment details are not provided.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Benkwitz_2007`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Benkwitz C et al., Determination of the EC50 amnesic conce…, Anesthesiology (2
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -34,21 +34,7 @@ Diroximel fumarate is an immunosuppressant drug used to treat relapsing-remittin
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Kuchimanchi_2022_reference](drugs/drug_diroximel_fumarate/DiroximelFumarate_Kuchimanchi2022_reference.md) | — | general linear (no model) | 5 | Kuchimanchi M et al., Development of a Population Pharmacokin…, Neurology and therapy (2022) | [10.1007/s40120-021-00316-6](https://doi.org/10.1007/s40120-021-00316-6) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=diroximel_fumarate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | lung | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CHRNA10 (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Kuchimanchi_2022_reference](drugs/drug_diroximel_fumarate/DiroximelFumarate_Kuchimanchi2022_reference.md) | — | general linear (no model) | 5 | Kuchimanchi M et al., Development of a Population Pharmacokin…, Neurology and therapy (2022) | [10.1007/s40120-021-00316-6](https://doi.org/10.1007/s40120-021-00316-6) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

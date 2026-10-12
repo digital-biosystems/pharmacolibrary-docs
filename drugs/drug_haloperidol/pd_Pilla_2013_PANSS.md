@@ -16,11 +16,11 @@
 
 **As extracted:** Haloperidol (concentrations from this paper's PK model) drives PANSS total score: direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Haloperidol steady-state plasma concentration (Css, ng/mL) acts on PANSS total score via a sigmoid/Emax inhibitory drug effect (proportional to baseline) on top of a Weibull placebo model, with a delay in drug effect described by rate constant KT = 0.116 1/d (not an effect compartment). Key values: Emax = 0.31 (31% maximum relative decrease), EC50 = 3.58 ng/mL, Pmax = 0.081, baseline PANSS = 91.6; no Hill slope (gamma) is reported.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Pilla_2013`
 - **model family:** `sigmoid_emax`
@@ -104,7 +104,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -32,33 +32,15 @@ Afatinib is a protein kinase inhibitor used to treat non-small-cell lung cancer.
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Freiwald_2014_reference](drugs/drug_afatinib/Afatinib_Freiwald2014_reference.md) | — | 1-compartment (no model) | 1 | Freiwald M et al., Population pharmacokinetics of afatinib…, Cancer chemotherapy and pha… (2014) | [10.1007/s00280-014-2403-2](https://doi.org/10.1007/s00280-014-2403-2) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Nakao_2019_reference](drugs/drug_afatinib/Afatinib_Nakao2019_reference.md) | held back | 1-compartment, oral | 3 | Nakao K et al., Population pharmacokinetics of afatinib…, Scientific reports (2019) | [10.1038/s41598-019-54804-9](https://doi.org/10.1038/s41598-019-54804-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Freiwald_2014_reference](drugs/drug_afatinib/Afatinib_Freiwald2014_reference.md) | — | 1-compartment (no model) | 1 | Freiwald M et al., Population pharmacokinetics of afatinib…, Cancer chemotherapy and pha… (2014) | [10.1007/s00280-014-2403-2](https://doi.org/10.1007/s00280-014-2403-2) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.909). Primary extraction retained.">cross-check: partial</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: model_quarantined: Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Nakao_2019_reference](drugs/drug_afatinib/Afatinib_Nakao2019_reference.md) | held back | 1-compartment, oral | 3 | Nakao K et al., Population pharmacokinetics of afatinib…, Scientific reports (2019) | [10.1038/s41598-019-54804-9](https://doi.org/10.1038/s41598-019-54804-9) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yokota_2023_dose_reduction_or_withdrawal](drugs/drug_afatinib/pd_Yokota_2023_dose_reduction_or_withdrawal.md) | dose reduction or withdrawal ← afatinib · categorical (graded) response model | — | Yokota H et al., Effects of polymorphisms in pregnane X…, Cancer chemotherapy and pha… (2023) | [10.1007/s00280-023-04569-w](https://doi.org/10.1007/s00280-023-04569-w) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Zhang_2017_pEGFR](drugs/drug_afatinib/pd_Zhang_2017_pEGFR.md) | expression of pEGFR (Tyr1068) ← afatinib · direct Emax (saturable) effect | model (no simulator) | Zhang SR et al., Efficacy of afatinib, an irreversible E…, Acta pharmacologica Sinica (2017) | [10.1038/aps.2016.107](https://doi.org/10.1038/aps.2016.107) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=afatinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: EGFR (inhibitor), ERBB2 (inhibitor), ERBB4 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Yokota_2023_dose_reduction_or_withdrawal](drugs/drug_afatinib/pd_Yokota_2023_dose_reduction_or_withdrawal.md) | dose reduction or withdrawal ← afatinib · categorical (graded) response model | — | Yokota H et al., Effects of polymorphisms in pregnane X…, Cancer chemotherapy and pha… (2023) | [10.1007/s00280-023-04569-w](https://doi.org/10.1007/s00280-023-04569-w) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Zhang_2017_pEGFR](drugs/drug_afatinib/pd_Zhang_2017_pEGFR.md) | expression of pEGFR (Tyr1068) ← afatinib · direct Emax (saturable) effect | model (no simulator) | Zhang SR et al., Efficacy of afatinib, an irreversible E…, Acta pharmacologica Sinica (2017) | [10.1038/aps.2016.107](https://doi.org/10.1038/aps.2016.107) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -1,0 +1,68 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;procarbazine&quot;}]"></div>
+
+# procarbazine
+
+- **generic name:** procarbazine
+- **ATC codes:** `L01XB01`
+- **DrugBank:** [DB01168](https://go.drugbank.com/drugs/DB01168) · **PubChem:** [CID 4915](https://pubchem.ncbi.nlm.nih.gov/compound/4915)
+- **molar mass:** 221.2988 g/mol (C12H19N3O) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Procarbazine is an anticancer drug used to treat cancers such as Hodgkin's lymphoma, non-Hodgkin lymphoma, brain cancer, melanoma, and multiple myeloma. It is an approved medicine and is included on the WHO list of essential medicines, so it remains in clinical use worldwide.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q418656](https://www.wikidata.org/wiki/Q418656) and the WHO ATC classification; not checked by a person.</small>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 21:34 | 0:56 | 0/0/0 | 0/0/0 | 0/0/0 | 8,844/705 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
+
+## popPK records
+
+_not available_
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>Human-authored reference record or exemplar.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>Accepted extraction; applicable closed-form checks passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>Generated-model predictions agree with reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>Replication accepted with unresolved advisory checks.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>Incomplete, inconsistent, or implausible extraction; values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>Model withheld because a core parameter uses a library default.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>Unaccepted record; displayed values remain unverified.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>Model generation pending or unavailable; not a validation verdict.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Review predates the current extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 16 matched, 16 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Wilde_2007.pdf` | Wilde S et al., Population pharmacokinetics of the BEAC…, Clinical pharmacokinetics (2007) | popPK | 8 | [10.2165/00003088-200746040-00005](https://doi.org/10.2165/00003088-200746040-00005) | [17375983](https://pubmed.ncbi.nlm.nih.gov/17375983) | The study performs population pharmacokinetic modeling for procarbazine as part of the BEACOPP regimen in humans, but the specific quantitative parameter values are not provided in the extracted evidence text. |
+| `Ezzat_2012.pdf` | Ezzat HM et al., Incidence, predictors and significance…, Leukemia & lymphoma (2012) | pgx | 7 | [10.3109/10428194.2012.697560](https://doi.org/10.3109/10428194.2012.697560) | [22642935](https://www.ncbi.nlm.nih.gov/pubmed/22642935) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Villikka_1999.pdf` | Villikka K et al., Cytochrome P450-inducing antiepileptics…, Clinical pharmacology and t… (1999) | pgx | 7 | [10.1053/cp.1999.v66.103403001](https://doi.org/10.1053/cp.1999.v66.103403001) | [10613614](https://www.ncbi.nlm.nih.gov/pubmed/10613614) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+
+<sub>queue written 2026-10-06T21:34:25.838957+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Delitheos_1995 | irrelevant | 0 | 0 | The study is an in-vitro investigation of antineoplastic agents on yeast (Saccharomyces cerevisiae) and reports no pharmacokinetic parameters for procarbazine. |
+| PGx | Ewesuedo_2000 | not_relevant | 0 | 0 | The paper studies O6-benzylguanine (BG) in rats and investigates a drug-drug interaction (ketoconazole), not the pharmacogenetics of procarbazine. |
+| PGx | Ezzat_2012 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions between vinblastine and protease inhibitors, and does not report pharmacogenomic effects on procarbazine. |
+| PGx | Nakamura_2009 | not_relevant | 2 | 0 | The text discusses genetic markers (1p/19q LOH) for predicting general chemotherapy sensitivity and survival in gliomas, but does not report specific changes in pharmacokinetic or pharmacodynamic parameters of procarbazine. |
+| PGx | Pretsch_1993 | not_relevant | 0 | 0 | Procarbazine was used only as a mutagen to create a mouse model of LDH deficiency; the paper does not study procarbazine's own pharmacokinetics or pharmacodynamics. |
+| PGx | Shiba_1982 | not_relevant | 0 | 0 | The paper describes analytical methods for procarbazine and metabolites and presents pharmacokinetic data in rats and a single patient, but it does not report any association between genetic variants/genotypes and these PK or PD parameters. |
+| PGx | Villikka_1999 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of vincristine, not procarbazine, and focuses on drug-drug interactions rather than pharmacogenomics. |
+| PGx | Wahlang_2015 | not_relevant | 2 | 0 | The text is an introduction to a review chapter discussing the role of CYPs and genetic polymorphisms in drug metabolism but does not report specific data or fitted effect sizes for procarbazine PK/PD parameters. |
+| popPK | Wilde_2007 | relevant | 8 | 0 | The study performs population pharmacokinetic modeling for procarbazine as part of the BEACOPP regimen in humans, but the specific quantitative parameter values are not provided in the extracted evidence text. |
+| PGx | Wilde_2007 | not_relevant | 0 | 0 | The study reports population pharmacokinetics and covariates like CYP3A4 phenotyping effects, but does not report specific gene variant/genotype data or fitted pharmacogenomic parameters for procarbazine. |
+
+---
+<sub>Generated by `docs.py` (scholarv2)</sub>

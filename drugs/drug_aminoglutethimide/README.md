@@ -32,24 +32,7 @@ Aminoglutethimide is an aromatase inhibitor that was used as hormonal therapy fo
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Thompson_1981_reference](drugs/drug_aminoglutethimide/Aminoglutethimide_Thompson1981_reference.md) | — | 1-compartment (no model) | 1 | Thompson TA et al., Aminoglutethimide bioavailability, phar…, Journal of pharmaceutical s… (1981) | [10.1002/jps.2600700919](https://doi.org/10.1002/jps.2600700919) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=aminoglutethimide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP2C19` inducer, `CYP3A4` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| — | adipose tissue | `CYP19A1` inhibitor | DrugBank actor |
-| — | ovary | `CYP19A1` inhibitor | DrugBank actor |
-| — | testis | `CYP19A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CYP11A1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Thompson_1981_reference](drugs/drug_aminoglutethimide/Aminoglutethimide_Thompson1981_reference.md) | — | 1-compartment (no model) | 1 | Thompson TA et al., Aminoglutethimide bioavailability, phar…, Journal of pharmaceutical s… (1981) | [10.1002/jps.2600700919](https://doi.org/10.1002/jps.2600700919) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

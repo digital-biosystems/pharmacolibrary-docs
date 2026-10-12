@@ -22,7 +22,7 @@
 
 > The paper does not provide full text excerpts to clarify the specific mechanism of action, but the extracted model assumes an Emax inhibition of mechanical allodynia driven by thalidomide dose. The model estimates an ED50 of 44.9 mg/kg and a maximum effect (Emax) of 74% MPE.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Deng_2021`
 - **model family:** `emax`
@@ -64,7 +64,7 @@ Deng MY et al., Thalidomide alleviates neuropathic pain…, Biochemical pharmaco
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

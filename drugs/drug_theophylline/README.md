@@ -33,32 +33,14 @@ Theophylline is a bronchodilator used to treat breathing problems such as asthma
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Frymoyer_2020_reference](drugs/drug_theophylline/Theophylline_Frymoyer2020_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 (+1 cov.) | Frymoyer A et al., Theophylline dosing and pharmacokinetic…, Pediatric research (2020) | [10.1038/s41390-020-01140-8](https://doi.org/10.1038/s41390-020-01140-8) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kim_2013_reference](drugs/drug_theophylline/Theophylline_Kim2013_reference.md) | — | 1-compartment (no model) | 0 | Kim SE et al., Population pharmacokinetics of theophyl…, Therapeutic drug monitoring (2013) | [10.1097/FTD.0b013e3182866695](https://doi.org/10.1097/FTD.0b013e3182866695) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Frymoyer_2020_reference](drugs/drug_theophylline/Theophylline_Frymoyer2020_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 (+1 cov.) | Frymoyer A et al., Theophylline dosing and pharmacokinetic…, Pediatric research (2020) | [10.1038/s41390-020-01140-8](https://doi.org/10.1038/s41390-020-01140-8) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kim_2013_reference](drugs/drug_theophylline/Theophylline_Kim2013_reference.md) | — | 1-compartment (no model) | 0 | Kim SE et al., Population pharmacokinetics of theophyl…, Therapeutic drug monitoring (2013) | [10.1097/FTD.0b013e3182866695](https://doi.org/10.1097/FTD.0b013e3182866695) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sugimoto_2001_GABA_induced_currents](drugs/drug_theophylline/pd_Sugimoto_2001_GABA_induced_currents.md) | GABA-induced currents biomarker turnover ← theophylline | — | Sugimoto T et al., Inhibitory effect of theophylline on re…, Neuroreport (2001) | [10.1097/00001756-200103050-00013](https://doi.org/10.1097/00001756-200103050-00013) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=theophylline).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | kidney | `SLC22A7` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP2D6` substrate, `CYP2E1` substrate, `CYP3A4` substrate, `SLC22A7` inhibitor | DrugBank actor |
-| metabolism | lung | `CYP1A1` inhibitor/substrate, `CYP1B1` substrate | DrugBank actor |
-| metabolism | skin | `CYP1B1` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADA (inducer), ADA (inhibitor), ADORA1 (target), ADORA2A (target), ADORA2B (target), CPNE1 (binder), HDAC2 (activator), NT5E (inhibitor), PARP1 (inhibitor), PDE3A (inhibitor), PDE4A (inhibitor), PDE4B (inhibitor), PDE5A (inhibitor), RIC3 (modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

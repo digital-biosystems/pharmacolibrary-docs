@@ -16,11 +16,11 @@
 
 **As extracted:** Lorazepam (concentrations from this paper's PK model) drives continuous tracking (TRKN): delayed effect through an effect compartment.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Lorazepam plasma concentrations (ng/ml) inhibit continuous tracking performance (TRKN) via an effect-compartment (sigmoid Emax) model, with Emax 418, EC50 35.8 ng/ml, equilibration half-time 0.43 h, and power (Hill) parameter 6.29.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Gupta_1990`
 - **model family:** `effect_compartment`
@@ -101,7 +101,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

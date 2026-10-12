@@ -22,7 +22,7 @@
 
 > The record links tofacitinib plasma concentrations to the inhibition of paw size growth via an indirect response model, identifying an interaction factor of 0.76. The paper excerpts do not provide the full text, so specific potency or rate parameters (such as IC50, ke0, or kout) are not stated.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Yu_2019`
 - **model family:** `indirect_response_i`
@@ -63,7 +63,7 @@ Yu R et al., Modeling Combined Anti-Inflammatory Eff…, The AAPS journal (2019)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

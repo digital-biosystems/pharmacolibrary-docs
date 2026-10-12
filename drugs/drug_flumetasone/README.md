@@ -27,18 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Knych_2019_cortisol](drugs/drug_flumetasone/pd_Knych_2019_cortisol.md) | cortisol ← flumetasone · indirect response — drug inhibits the production of cortisol | — | Knych HK et al., Pharmacokinetics of intravenous flumeta…, Equine veterinary journal (2019) | [10.1111/evj.13002](https://doi.org/10.1111/evj.13002) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=flumetasone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ESRRA (modulator), ESRRB (modulator), ESRRG (modulator), NR3C1 (target), SERPINA6 (binder).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Knych_2019_cortisol](drugs/drug_flumetasone/pd_Knych_2019_cortisol.md) | cortisol ← flumetasone · indirect response — drug inhibits the production of cortisol | — | Knych HK et al., Pharmacokinetics of intravenous flumeta…, Equine veterinary journal (2019) | [10.1111/evj.13002](https://doi.org/10.1111/evj.13002) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -24,16 +24,8 @@ Sulfobromophthalein is a diagnostic agent used to test liver functional capacity
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Das_1990_reference](drugs/drug_sulfobromophthalein/Sulfobromophthalein_Das1990_reference.md) | — | 1-compartment (no model) | 0 | Das JB et al., Hepatic organic anion transport kinetic…, Proceedings of the Society… (1990) | [10.3181/00379727-195-43147](https://doi.org/10.3181/00379727-195-43147) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Glasinovic_1976_reference](drugs/drug_sulfobromophthalein/Sulfobromophthalein_Glasinovic1976_reference.md) | — | 1-compartment (no model) | 0 | Glasinovic JC et al., The hepatic handling of 131I-labeled su…, Biomedicine / [publiee pour… (1976) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sulfobromophthalein).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `SLC10A1` inhibitor | DrugBank actor |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Das_1990_reference](drugs/drug_sulfobromophthalein/Sulfobromophthalein_Das1990_reference.md) | — | 1-compartment (no model) | 0 | Das JB et al., Hepatic organic anion transport kinetic…, Proceedings of the Society… (1990) | [10.3181/00379727-195-43147](https://doi.org/10.3181/00379727-195-43147) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Glasinovic_1976_reference](drugs/drug_sulfobromophthalein/Sulfobromophthalein_Glasinovic1976_reference.md) | — | 1-compartment (no model) | 0 | Glasinovic JC et al., The hepatic handling of 131I-labeled su…, Biomedicine / [publiee pour… (1976) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

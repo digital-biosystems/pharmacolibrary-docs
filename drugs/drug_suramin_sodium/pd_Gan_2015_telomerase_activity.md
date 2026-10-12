@@ -22,7 +22,7 @@
 
 > Suramin (sodium) inhibits telomerase activity in a concentration-dependent manner, with an IC50 of 1–3 μM; the paper excerpts provide no further mechanistic detail (no Emax/kin/kout or other model parameters are stated).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Gan_2015`
 - **model family:** `unknown`
@@ -63,7 +63,7 @@ Gan Y et al., Pharmacodynamics of telomerase inhibiti…, The AAPS journal (2015
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

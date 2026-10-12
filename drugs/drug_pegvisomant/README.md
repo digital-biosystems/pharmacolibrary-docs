@@ -27,19 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Muto_2011_IGF_I](drugs/drug_pegvisomant/pd_Muto_2011_IGF_I.md) | IGF-I ← pegvisomant · direct sigmoid Emax (Hill) effect | — | Muto C et al., Population pharmacokinetic and pharmaco…, Journal of clinical pharmac… (2011) | [10.1177/0091270010386954](https://doi.org/10.1177/0091270010386954) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pegvisomant).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | blood | `BCHE` inhibitor | DrugBank actor |
-| metabolism | liver | `BCHE` inhibitor, `CYP3A4` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CYP27A1 (inducer), CYP4A11 (inhibitor), GHR (target), GLUL (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Muto_2011_IGF_I](drugs/drug_pegvisomant/pd_Muto_2011_IGF_I.md) | IGF-I ← pegvisomant · direct sigmoid Emax (Hill) effect | — | Muto C et al., Population pharmacokinetic and pharmaco…, Journal of clinical pharmac… (2011) | [10.1177/0091270010386954](https://doi.org/10.1177/0091270010386954) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

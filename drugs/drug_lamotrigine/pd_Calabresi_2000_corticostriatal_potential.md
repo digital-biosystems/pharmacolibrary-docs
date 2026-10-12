@@ -22,7 +22,7 @@
 
 > The model describes the concentration-dependent inhibition of the corticostriatal potential by lamotrigine using a sigmoid Emax mechanism with an EC50 of 26.7 micromol/L. Since no full text is available, specific details on effect kinetics or maximum effect magnitude are not stated.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Calabresi_2000`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Calabresi P et al., Is pharmacological neuroprotection depe…, Stroke (2000)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

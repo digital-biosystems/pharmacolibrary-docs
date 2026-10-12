@@ -33,22 +33,9 @@ Delamanid is used to treat multidrug-resistant tuberculosis. It is authorised in
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q95 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Wang_2020_reference](drugs/drug_delamanid/Delamanid_Wang2020_reference.md) | — | 2-compartment (no model) | 10 (+3 cov.) | Wang X et al., Population Pharmacokinetic Analysis of…, Antimicrobial agents and ch… (2020) | [10.1128/AAC.01202-20](https://doi.org/10.1128/AAC.01202-20) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sasaki_2022_reference](drugs/drug_delamanid/Delamanid_Sasaki2022_reference.md) | — | parent + metabolite (no model) | 0 | Sasaki T et al., Population Pharmacokinetic and Concentr…, Antimicrobial agents and ch… (2022) | [10.1128/AAC.01608-21](https://doi.org/10.1128/AAC.01608-21) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tanneau_2022_reference](drugs/drug_delamanid/Delamanid_Tanneau2022_reference.md) | — | 1-compartment (no model) | 0 | Tanneau L et al., Population Pharmacokinetics of Delamani…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01133-2](https://doi.org/10.1007/s40262-022-01133-2) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=delamanid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` substrate, `ORM1` substrate | DrugBank actor |
-| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q95 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Wang_2020_reference](drugs/drug_delamanid/Delamanid_Wang2020_reference.md) | — | 2-compartment (no model) | 10 (+3 cov.) | Wang X et al., Population Pharmacokinetic Analysis of…, Antimicrobial agents and ch… (2020) | [10.1128/AAC.01202-20](https://doi.org/10.1128/AAC.01202-20) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sasaki_2022_reference](drugs/drug_delamanid/Delamanid_Sasaki2022_reference.md) | — | parent + metabolite (no model) | 0 | Sasaki T et al., Population Pharmacokinetic and Concentr…, Antimicrobial agents and ch… (2022) | [10.1128/AAC.01608-21](https://doi.org/10.1128/AAC.01608-21) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tanneau_2022_reference](drugs/drug_delamanid/Delamanid_Tanneau2022_reference.md) | — | 1-compartment (no model) | 0 | Tanneau L et al., Population Pharmacokinetics of Delamani…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01133-2](https://doi.org/10.1007/s40262-022-01133-2) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -32,18 +32,7 @@ Lactic acid is used to treat skin conditions such as dermatitis and facial derma
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Druml_1991_reference](drugs/drug_lactic_acid/LacticAcid_Druml1991_reference.md) | — | 1-compartment (no model) | 3 | Druml W et al., Lactic acid kinetics in respiratory alk…, Critical care medicine (1991) | [10.1097/00003246-199109000-00005](https://doi.org/10.1097/00003246-199109000-00005) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lactic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | `SLCO2B1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `SLCO2B1` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: SLC16A1 (inhibitor), SLC16A1 (substrate), SLC16A10 (inhibitor), SLC16A10 (substrate), SLC16A3 (substrate), SLC16A7 (inhibitor), SLC16A7 (substrate), SLCO2A1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Druml_1991_reference](drugs/drug_lactic_acid/LacticAcid_Druml1991_reference.md) | — | 1-compartment (no model) | 3 | Druml W et al., Lactic acid kinetics in respiratory alk…, Critical care medicine (1991) | [10.1097/00003246-199109000-00005](https://doi.org/10.1097/00003246-199109000-00005) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

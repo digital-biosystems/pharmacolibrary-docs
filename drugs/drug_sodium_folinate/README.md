@@ -28,20 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Klinov_1987_muscle_glycogen_phosphorylase_b_enzymatic_reaction_rate](drugs/drug_sodium_folinate/pd_Klinov_1987_muscle_glycogen_phosphorylase_b_enzymatic_reacti.md) | muscle glycogen phosphorylase b enzymatic reaction rate ← folinic acid · direct sigmoid Emax (Hill) effect | — | Klinov SV et al., [Interaction of muscle glycogen phospho…, Bioorganicheskaia khimiia (1987) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sodium_folinate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A8` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: DHFR (modulator), SLC46A1 (modulator).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Klinov_1987_muscle_glycogen_phosphorylase_b_enzymatic_reaction_rate](drugs/drug_sodium_folinate/pd_Klinov_1987_muscle_glycogen_phosphorylase_b_enzymatic_reacti.md) | muscle glycogen phosphorylase b enzymatic reaction rate ← folinic acid · direct sigmoid Emax (Hill) effect | — | Klinov SV et al., [Interaction of muscle glycogen phospho…, Bioorganicheskaia khimiia (1987) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

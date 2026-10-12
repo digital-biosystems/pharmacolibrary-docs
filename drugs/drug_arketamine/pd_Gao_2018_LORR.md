@@ -22,7 +22,7 @@
 
 > Ketamine produces loss-of-righting reflex (LORR) in a dose-dependent manner with an EC50 of 9.82 mg/kg in P35 mice. The paper attributes the developmental increase in sensitivity to changes in HCN channel expression and the resulting inhibition of HCN currents, rather than a simple pharmacodynamic effect compartment or production/elimination mechanism.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Gao_2018`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Gao J et al., HCN channels contribute to the sensitiv…, Oncotarget (2018)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

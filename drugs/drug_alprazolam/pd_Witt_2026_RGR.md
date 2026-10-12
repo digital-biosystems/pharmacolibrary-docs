@@ -18,11 +18,11 @@
 
 **As extracted:** Alprazolam (concentrations from the PK model of DeVane_1993) drives relative growth rate (in % of control): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Alprazolam concentrations (ng L−1) inhibit the relative growth rate (RGR, % of control) of L. minor over 7 days, described by a four-parameter logistic (sigmoid Emax) concentration–response model with EC50 = 465,351 ng L−1, Hill slope −0.4585, and maximum inhibition of 100%; the paper does not state a mechanistic PD pathway beyond this direct concentration–response inhibition.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Witt_2026`
 - **model family:** `sigmoid_emax`
@@ -91,11 +91,11 @@ Advisory:
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

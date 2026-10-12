@@ -33,36 +33,14 @@ It is authorised in the European Union for HIV and is used both alone and in com
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Aouri_2017_reference](drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Aouri M et al., Population Pharmacokinetics and Pharmac…, Antimicrobial agents and ch… (2017) | [10.1128/AAC.00899-16](https://doi.org/10.1128/AAC.00899-16) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Thoueille_2024_reference](drugs/drug_rilpivirine/Rilpivirine_Thoueille2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 7 | Thoueille P et al., Population pharmacokinetics of rilpivir…, Frontiers in pharmacology (2024) | [10.3389/fphar.2024.1437400](https://doi.org/10.3389/fphar.2024.1437400) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Aouri_2017_reference](drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Aouri M et al., Population Pharmacokinetics and Pharmac…, Antimicrobial agents and ch… (2017) | [10.1128/AAC.00899-16](https://doi.org/10.1128/AAC.00899-16) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Thoueille_2024_reference](drugs/drug_rilpivirine/Rilpivirine_Thoueille2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 7 | Thoueille P et al., Population pharmacokinetics of rilpivir…, Frontiers in pharmacology (2024) | [10.3389/fphar.2024.1437400](https://doi.org/10.3389/fphar.2024.1437400) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Néant_2019_VL](drugs/drug_rilpivirine/pd_N_ant_2019_VL.md) | HIV-1 viral load ← rilpivirine · direct Emax (saturable) effect | — | Néant N et al., Concentration-response model of rilpivi…, The Journal of antimicrobia… (2019) | [10.1093/jac/dkz141](https://doi.org/10.1093/jac/dkz141) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=rilpivirine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2B6` inhibitor, `CYP2C19` inhibitor/substrate, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: NR1I2 (target), SCN10A (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> | [Néant_2019_VL](drugs/drug_rilpivirine/pd_N_ant_2019_VL.md) | HIV-1 viral load ← rilpivirine · direct Emax (saturable) effect | — | Néant N et al., Concentration-response model of rilpivi…, The Journal of antimicrobia… (2019) | [10.1093/jac/dkz141](https://doi.org/10.1093/jac/dkz141) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -5,7 +5,7 @@
 
 # belzutifan — `Belzutifan_Marathe2023_geometric_mean`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.815). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.815). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -189,10 +189,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_belzutifan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Marathe_2023` / `Marathe_2023::geometric_mean`)
-- model: `../../../knowledgebase/drugs/drug_belzutifan/models/modelica/Belzutifan_Marathe2023_geometric_mean.mo`
-- deviation: `../../../knowledgebase/drugs/drug_belzutifan/models/modelica/Belzutifan_Marathe2023_geometric_mean.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_belzutifan/models/modelica/Belzutifan_Marathe2023_geometric_mean.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_belzutifan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Marathe_2023` / `Marathe_2023::geometric_mean`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_belzutifan/models/modelica/Belzutifan_Marathe2023_geometric_mean.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_belzutifan/models/modelica/Belzutifan_Marathe2023_geometric_mean.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_belzutifan/models/modelica/Belzutifan_Marathe2023_geometric_mean.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -201,15 +201,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_belzutifan/Belzutifan_Marathe2023_geometric_mean/Belzutifan_Marathe2023_geometric_mean_modelica.zip" download>Belzutifan_Marathe2023_geometric_mean_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_belzutifan/Belzutifan_Marathe2023_geometric_mean/Belzutifan_Marathe2023_geometric_mean_fmi.zip" download>Belzutifan_Marathe2023_geometric_mean_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_belzutifan/Belzutifan_Marathe2023_geometric_mean/Belzutifan_Marathe2023_geometric_mean_matlab.zip" download>Belzutifan_Marathe2023_geometric_mean_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_belzutifan/Belzutifan_Marathe2023_geometric_mean/Belzutifan_Marathe2023_geometric_mean_matlab_simbio.zip" download>Belzutifan_Marathe2023_geometric_mean_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_belzutifan/Belzutifan_Marathe2023_geometric_mean/Belzutifan_Marathe2023_geometric_mean_sbml.zip" download>Belzutifan_Marathe2023_geometric_mean_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_belzutifan/Belzutifan_Marathe2023_geometric_mean/Belzutifan_Marathe2023_geometric_mean_cellml.zip" download>Belzutifan_Marathe2023_geometric_mean_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_belzutifan/Belzutifan_Marathe2023_geometric_mean/Belzutifan_Marathe2023_geometric_mean.svg" alt="Belzutifan_Marathe2023_geometric_mean diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_belzutifan/Belzutifan_Marathe2023_geometric_mean/Belzutifan_Marathe2023_geometric_mean.svg" alt="Belzutifan_Marathe2023_geometric_mean diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

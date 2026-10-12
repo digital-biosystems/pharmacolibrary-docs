@@ -23,19 +23,8 @@ Brolucizumab is an antineovascularisation eye medicine (a monoclonal antibody) u
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Nagaoka_2025_aflibercept](drugs/drug_brolucizumab/Brolucizumab_Nagaoka2025_aflibercept.md) | — | 1-compartment (no model) | 0 | Nagaoka K et al., Comparative Pharmacokinetic Analysis of…, International journal of mo… (2025) | [10.3390/ijms26020556](https://doi.org/10.3390/ijms26020556) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Nagaoka_2025_brolucizumab](drugs/drug_brolucizumab/Brolucizumab_Nagaoka2025_brolucizumab.md) | — | 1-compartment (no model) | 0 | Nagaoka K et al., Comparative Pharmacokinetic Analysis of…, International journal of mo… (2025) | [10.3390/ijms26020556](https://doi.org/10.3390/ijms26020556) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=brolucizumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: VEGFA (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Nagaoka_2025_aflibercept](drugs/drug_brolucizumab/Brolucizumab_Nagaoka2025_aflibercept.md) | — | 1-compartment (no model) | 0 | Nagaoka K et al., Comparative Pharmacokinetic Analysis of…, International journal of mo… (2025) | [10.3390/ijms26020556](https://doi.org/10.3390/ijms26020556) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Nagaoka_2025_brolucizumab](drugs/drug_brolucizumab/Brolucizumab_Nagaoka2025_brolucizumab.md) | — | 1-compartment (no model) | 0 | Nagaoka K et al., Comparative Pharmacokinetic Analysis of…, International journal of mo… (2025) | [10.3390/ijms26020556](https://doi.org/10.3390/ijms26020556) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

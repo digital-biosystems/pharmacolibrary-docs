@@ -5,7 +5,7 @@
 
 # brodalumab — `Brodalumab_Timmermann2019_value_rse`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss-120b`.
 Timmermann S et al., Population pharmacokinetics of brodalum…, Basic & clinical pharmacolo… (2019)
   ·  DOI: [10.1111/bcpt.13202](https://doi.org/10.1111/bcpt.13202)
 
-## Model component
-<dbs-pgx drug="brodalumab" model-id="Brodalumab_Timmermann2019_value_rse" status="rejected" stale="false" population="patients with moderate to severe plaque psoriasis" measured-compound="brodalumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brodalumab" model-id="Brodalumab_Timmermann2019_value_rse" status="rejected" stale="false" population="patients with moderate to severe plaque psoriasis" measured-compound="brodalumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 8 extracted, plus 3 covariate effects.
@@ -120,18 +119,18 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_brodalumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Timmermann_2019` / `Timmermann_2019::value_rse`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_brodalumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Timmermann_2019` / `Timmermann_2019::value_rse`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

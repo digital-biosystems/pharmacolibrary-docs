@@ -33,18 +33,7 @@ Progabide is an anticonvulsant drug developed for the treatment of epilepsy, wit
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Johno_1982_reference](drugs/drug_progabide/Progabide_Johno1982_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Johno I et al., Pharmacokinetic profile of progabide, a…, Journal of pharmaceutical s… (1982) | [10.1002/jps.2600710609](https://doi.org/10.1002/jps.2600710609) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=progabide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: GABBR1 (target), GABBR2 (target), GABRA1 (target).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Johno_1982_reference](drugs/drug_progabide/Progabide_Johno1982_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Johno I et al., Pharmacokinetic profile of progabide, a…, Journal of pharmaceutical s… (1982) | [10.1002/jps.2600710609](https://doi.org/10.1002/jps.2600710609) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

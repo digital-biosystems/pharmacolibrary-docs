@@ -4,7 +4,7 @@
 
 # cypermethrin — `Cypermethrin_Ct2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,8 +20,6 @@
 
 The paper (Côté_2014, healthy adult volunteers, measured compound trans-DCCA) is an exposure/outcome study: no distribution volume and no clearance or elimination rate are reported, so the model cannot be parameterized as a compartmental population PK model. The metabolites cis-DCCA, trans-DCCA and 3-PBA are formed from cypermethrin (and permethrin) in the central compartment but have no compartments of their own (n_cmt 0), leaving them unlinked from the dose, and the metabolism link parameters are of unknown kind. The only extracted parameter is kabs = 0.033 h−1 for trans-DCCA. Extracted — trans-DCCA: kabs 0.033 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has trans-DCCA, the second reading cypermethrin; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
-
 <sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `cypermethrin`, measured `trans-DCCA`.
@@ -30,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 Côté J et al., A novel toxicokinetic modeling of cyper…, PloS one (2014)
   ·  DOI: [10.1371/journal.pone.0088517](https://doi.org/10.1371/journal.pone.0088517)
 
-## Model component
-<dbs-pgx drug="cypermethrin" model-id="Cypermethrin_Ct2014_reference" status="rejected" stale="false" population="healthy adult volunteers" measured-compound="trans-DCCA" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cypermethrin" model-id="Cypermethrin_Ct2014_reference" status="rejected" stale="false" population="healthy adult volunteers" measured-compound="trans-DCCA" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -68,29 +65,6 @@ Côté J et al., A novel toxicokinetic modeling of cyper…, PloS one (2014)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.4 (2/5 fields) | 3 |
-
-<details><summary>3 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['cypermethrin', 'cis-dcca', 'metabolism'], ['cypermethrin', 'trans-dcca', 'metabolism'], ['cypermethrin', '3-pba', 'metabolism'], ['permethrin', 'cis-dcca', 'metabolism'], ['permethrin', 'trans-dcca', 'metabolism'], ['permethrin', '3-pba', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[absorption rate constant]` | 0.033 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.primary_analyte` | trans-DCCA | cypermethrin | mismatch |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
-</details>
-
-
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -106,18 +80,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_cypermethrin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Côté_2014` / `Côté_2014::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cypermethrin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Côté_2014` / `Côté_2014::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

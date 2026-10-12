@@ -31,7 +31,7 @@ Pentamidine is an antiprotozoal medicine used against leishmaniasis and trypanos
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Conte_1991_reference](drugs/drug_pentamidine/Pentamidine_Conte1991_reference.md) | — | 1-compartment (no model) | 5 | Conte JE, Pharmacokinetics of intravenous pentami…, The Journal of infectious d… (1991) | [10.1093/infdis/163.1.169](https://doi.org/10.1093/infdis/163.1.169) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Conte_1991_reference](drugs/drug_pentamidine/Pentamidine_Conte1991_reference.md) | — | 1-compartment (no model) | 5 | Conte JE, Pharmacokinetics of intravenous pentami…, The Journal of infectious d… (1991) | [10.1093/infdis/163.1.169](https://doi.org/10.1093/infdis/163.1.169) |
 
 ## Pharmacodynamics (PD)
 
@@ -51,21 +51,6 @@ Pentamidine is an antiprotozoal medicine used against leishmaniasis and trypanos
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Reynolds_1993_3H_dizocilpine_binding](drugs/drug_pentamidine/pd_Reynolds_1993_3H_dizocilpine_binding.md) | [3H]dizocilpine binding to rat brain membranes ← pentamidine · direct sigmoid Emax (Hill) effect | — | Reynolds IJ et al., Studies on the effects of several penta…, European journal of pharmac… (1993) | [10.1016/0922-4106(93)90023-3](https://doi.org/10.1016/0922-4106(93)90023-3) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Reynolds_1993_Ca2](drugs/drug_pentamidine/pd_Reynolds_1993_Ca2.md) | NMDA- and glycine-induced intracellular Ca2+ changes ← pentamidine · direct sigmoid Emax (Hill) effect | — | Reynolds IJ et al., Studies on the effects of several penta…, European journal of pharmac… (1993) | [10.1016/0922-4106(93)90023-3](https://doi.org/10.1016/0922-4106(93)90023-3) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Thao_2014_T_brucei_growth_inhibition](drugs/drug_pentamidine/pd_Thao_2014_T_brucei_growth_inhibition.md) | T. brucei growth inhibition ← pentamidine · direct sigmoid Emax (Hill) effect | — | Thao NP et al., Secondary metabolites from Vietnamese m…, Molecules (Basel, Switzerla… (2014) | [10.3390/molecules19067869](https://doi.org/10.3390/molecules19067869) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pentamidine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C19` substrate, `CYP2D6` substrate, `CYP3A5` substrate | DrugBank actor |
-| metabolism | lung | `CYP1A1` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` substrate, `CYP3A5` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CYP4A11 (substrate), DNA (intercalation), TPSAB1 (inhibitor), TRDMT1 (other).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

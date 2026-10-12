@@ -16,11 +16,11 @@
 
 **As extracted:** Guselkumab (concentrations from the PK model of Chen_2022) drives modified Rodnan skin score: direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > A longitudinal meta-model using a time-dependent Emax structure describes guselkumab’s effect on the modified Rodnan skin score (mRSS) as an inhibition of disease progression, characterized by a maximal effect parameter (βGuselkumabmRSS) of -23.55 and a shared time to 50% maximum response (ET50) of 27.49 weeks. The paper does not explicitly describe the underlying pharmacological mechanism of action on the response variable beyond this statistical Emax time-course framework.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Vaskeikina_2026`
 - **model family:** `emax`
@@ -102,7 +102,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

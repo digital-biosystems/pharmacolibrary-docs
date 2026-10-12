@@ -27,21 +27,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yoshino_2020_CIN](drugs/drug_trifluridine/pd_Yoshino_2020_CIN.md) | chemotherapy-induced neutropenia (CIN) biomarker turnover ← trifluridine | — | Yoshino T et al., Neutropenia and survival outcomes in me…, Annals of oncology : offici… (2020) | [10.1016/j.annonc.2019.10.005](https://doi.org/10.1016/j.annonc.2019.10.005) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Nahata_1987_herpes_keratitis_clinical_efficacy](drugs/drug_trifluridine/pd_Nahata_1987_herpes_keratitis_clinical_efficacy.md) | herpes keratitis (clinical efficacy) ← trifluridine · inhibition effect | — | Nahata MC, Clinical use of antiviral drugs, Drug intelligence & clinica… (1987) | [10.1177/106002808702100501](https://doi.org/10.1177/106002808702100501) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=trifluridine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ALB` binder, `SLC29A1` substrate | DrugBank actor |
-| distribution | liver | `SLC29A1` substrate | DrugBank actor |
-| excretion | kidney | `SLC22A6` inhibitor/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: DNA (other/unknown), SLC28A1 (substrate), SLC29A2 (substrate), TK1 (substrate), TYMP (substrate), TYMS (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Yoshino_2020_CIN](drugs/drug_trifluridine/pd_Yoshino_2020_CIN.md) | chemotherapy-induced neutropenia (CIN) biomarker turnover ← trifluridine | — | Yoshino T et al., Neutropenia and survival outcomes in me…, Annals of oncology : offici… (2020) | [10.1016/j.annonc.2019.10.005](https://doi.org/10.1016/j.annonc.2019.10.005) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Nahata_1987_herpes_keratitis_clinical_efficacy](drugs/drug_trifluridine/pd_Nahata_1987_herpes_keratitis_clinical_efficacy.md) | herpes keratitis (clinical efficacy) ← trifluridine · inhibition effect | — | Nahata MC, Clinical use of antiviral drugs, Drug intelligence & clinica… (1987) | [10.1177/106002808702100501](https://doi.org/10.1177/106002808702100501) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

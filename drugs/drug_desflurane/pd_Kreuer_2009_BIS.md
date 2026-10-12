@@ -19,7 +19,7 @@
 
 > The model describes the inhibition of the continuous Bispectral index (BIS) response by desflurane using a sigmoid Emax framework. The only parameter specified is the effect site rate constant (ke0) of 0.54 min⁻¹, with the mechanism of inhibition or other potency values (e.g., IC50, Imax) not detailed in the provided record or excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kreuer_2009`
 - **model family:** `sigmoid_emax`
@@ -60,7 +60,7 @@ Kreuer S et al., Comparative pharmacodynamic modeling of…, Journal of clinical
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

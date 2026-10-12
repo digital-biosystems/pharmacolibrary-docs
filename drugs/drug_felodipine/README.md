@@ -33,38 +33,17 @@ Felodipine is a calcium channel blocker used to treat high blood pressure and an
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.438), gpt-oss:120b (partly confirmed, agreement 0.533). The first reading is what the record holds.">cross-check: partial 0/2</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Fuhr_2022_reference](drugs/drug_felodipine/Felodipine_Fuhr2022_reference.md) | — | parent + metabolite (no model) | 4 (+3 cov.) | Fuhr LM et al., A Physiologically Based Pharmacokinetic…, Pharmaceutics (2022) | [10.3390/pharmaceutics14071474](https://doi.org/10.3390/pharmaceutics14071474) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.9), gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Yang_1998_reference](drugs/drug_felodipine/Felodipine_Yang1998_reference.md) | — | 1-compartment (no model) | 6 | Yang L et al., [Determination of felodipine concentrat…, Yao xue xue bao = Acta phar… (1998) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.438), gpt-oss:120b (partly confirmed, agreement 0.533). Primary extraction retained.">cross-check: partial 0/2</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Fuhr_2022_reference](drugs/drug_felodipine/Felodipine_Fuhr2022_reference.md) | — | parent + metabolite (no model) | 4 (+3 cov.) | Fuhr LM et al., A Physiologically Based Pharmacokinetic…, Pharmaceutics (2022) | [10.3390/pharmaceutics14071474](https://doi.org/10.3390/pharmaceutics14071474) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.9), gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Yang_1998_reference](drugs/drug_felodipine/Felodipine_Yang1998_reference.md) | — | 1-compartment (no model) | 6 | Yang L et al., [Determination of felodipine concentrat…, Yao xue xue bao = Acta phar… (1998) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Blychert_1992_2_BP](drugs/drug_felodipine/pd_Blychert_1992_2_BP.md) | blood pressure ← felodipine · direct Emax (saturable) effect | — | Blychert E, Felodipine pharmacokinetics and plasma…, Blood pressure. Supplement (1992) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span> | [Fuhr_2022_DBP](drugs/drug_felodipine/pd_Fuhr_2022_DBP.md) | diastolic blood pressure ← felodipine · direct sigmoid Emax (Hill) effect | — | Fuhr LM et al., A Physiologically Based Pharmacokinetic…, Pharmaceutics (2022) | [10.3390/pharmaceutics14071474](https://doi.org/10.3390/pharmaceutics14071474) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span> | [Fuhr_2022_HR](drugs/drug_felodipine/pd_Fuhr_2022_HR.md) | heart rate ← felodipine · direct sigmoid Emax (Hill) effect | — | Fuhr LM et al., A Physiologically Based Pharmacokinetic…, Pharmaceutics (2022) | [10.3390/pharmaceutics14071474](https://doi.org/10.3390/pharmaceutics14071474) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [van_2001_forearm_blood_flow](drugs/drug_felodipine/pd_van_2001_forearm_blood_flow.md) | forearm blood flow ← felodipine · direct Emax (saturable) effect | — | van der Lee R et al., Comparison of the time courses and pote…, Blood pressure (2001) | [10.1080/08037050152669738](https://doi.org/10.1080/08037050152669738) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=felodipine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | `ABCB11` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1H (inhibitor), CACNA1S (inhibitor), CACNA2D1 (inhibitor), CACNA2D2 (inhibitor), CACNB2 (inhibitor), CALM1 (other), NR3C2 (target), PDE1A (inhibitor), PDE1B (inhibitor), TNNC1 (other), TNNC2 (other).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> | [Blychert_1992_2_BP](drugs/drug_felodipine/pd_Blychert_1992_2_BP.md) | blood pressure ← felodipine · direct Emax (saturable) effect | — | Blychert E, Felodipine pharmacokinetics and plasma…, Blood pressure. Supplement (1992) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span> | [Fuhr_2022_DBP](drugs/drug_felodipine/pd_Fuhr_2022_DBP.md) | diastolic blood pressure ← felodipine · direct sigmoid Emax (Hill) effect | — | Fuhr LM et al., A Physiologically Based Pharmacokinetic…, Pharmaceutics (2022) | [10.3390/pharmaceutics14071474](https://doi.org/10.3390/pharmaceutics14071474) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span> | [Fuhr_2022_HR](drugs/drug_felodipine/pd_Fuhr_2022_HR.md) | heart rate ← felodipine · direct sigmoid Emax (Hill) effect | — | Fuhr LM et al., A Physiologically Based Pharmacokinetic…, Pharmaceutics (2022) | [10.3390/pharmaceutics14071474](https://doi.org/10.3390/pharmaceutics14071474) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [van_2001_forearm_blood_flow](drugs/drug_felodipine/pd_van_2001_forearm_blood_flow.md) | forearm blood flow ← felodipine · direct Emax (saturable) effect | — | van der Lee R et al., Comparison of the time courses and pote…, Blood pressure (2001) | [10.1080/08037050152669738](https://doi.org/10.1080/08037050152669738) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -20,7 +20,7 @@
 
 > Olanzapine dose acts on the PANSS score via an indirect response model with inhibitory drug effect (proportional, 13%) versus a placebo effect of 40%; the paper excerpts do not state potency or rate parameters (IC50, kin, kout) or the precise mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Ortega_2010`
 - **model family:** `indirect_response_i`
@@ -62,7 +62,7 @@ Ortega I et al., Modeling the effectiveness of paliperid…, Journal of clinical
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

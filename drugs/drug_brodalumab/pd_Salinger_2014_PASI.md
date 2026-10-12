@@ -16,11 +16,11 @@
 
 **As extracted:** Brodalumab (concentrations from the PK model of Rodríguez-Fernández_2022) drives Psoriasis Area and Severity Index (in PASI units): indirect response — drug inhibits the production of Psoriasis Area and Severity Index.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Brodalumab concentration (in µg/mL) inhibits the proportional production rate of the Psoriasis Area and Severity Index (PASI) via an indirect response model with an IC50 of 2.86 µg/mL and a basal formation rate of 0.862 PASI units/day.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Salinger_2014`
 - **model family:** `indirect_response_i`
@@ -97,7 +97,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

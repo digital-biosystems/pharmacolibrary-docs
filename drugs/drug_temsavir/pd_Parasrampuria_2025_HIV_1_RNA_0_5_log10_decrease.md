@@ -19,7 +19,7 @@
 
 > Temsvair exposure (Ctau, ng/mL) drives the change in plasma HIV-1 RNA from Day 1 to Day 8 via an Emax model, with baseline plasma HIV-1 RNA and CD4+ count acting as covariates on Emax. The model parameters are E0 = -1.07 log10 c/mL, EC50 = 88 ng/mL, and Emax = -2.92 log10 c/mL, with no kinetic rate parameters (e.g., kin, kout, ke0) provided.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Parasrampuria_2025`
 - **model family:** `categorical`
@@ -62,7 +62,7 @@ Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

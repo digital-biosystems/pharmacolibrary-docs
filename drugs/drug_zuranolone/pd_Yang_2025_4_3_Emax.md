@@ -21,7 +21,7 @@
 
 > Zuranolone concentrations (nmol/L) potentiate GABA-evoked currents at α4β3δ GABAA receptors (1 μmol/L GABA, EC20) in CHO cells, described by a direct Emax model with EC50 = 93 ± 10 nmol/L and Emax = 1368 ± 125% (current relative to 1 μmol/L GABA alone); the paper does not state a kinetic mechanism beyond positive allosteric modulation.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Yang_2025`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Yang Y et al., Synthesis and Evaluation of a Novel Zur…, Molecules (Basel, Swi
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

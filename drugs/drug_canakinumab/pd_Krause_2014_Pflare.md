@@ -16,11 +16,11 @@
 
 **As extracted:** Canakinumab (concentrations from the PK model of Ait-Oudhia_2012) drives probability of a flare in inflammatory symptoms: direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The model assumes canakinumab plasma concentrations inhibit the probability of an inflammatory flare via a direct proportional sigmoidal Emax relationship. Key parameters extracted from the record include an Emax of 50 (Maximum effect), a base effect E0 of 25 (Base effect), a Hill coefficient of 4.22, and a mean inhibition constant KIEFmean of 1.13 µg/mL, although the provided excerpts describe the PD equation using an EC50 term without specifying its numerical value.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Krause_2014`
 - **model family:** `sigmoid_emax`
@@ -95,7 +95,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -32,28 +32,13 @@ Oxaprozin is a non-steroidal anti-inflammatory drug used to treat osteoarthritis
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Janssen_1980_reference](drugs/drug_oxaprozin/Oxaprozin_Janssen1980_reference.md) | — | 1-compartment (no model) | 0 | Janssen FW et al., Metabolism and kinetics of oxaprozin in…, Clinical pharmacology and t… (1980) | [10.1038/clpt.1980.47](https://doi.org/10.1038/clpt.1980.47) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Janssen_1980_reference](drugs/drug_oxaprozin/Oxaprozin_Janssen1980_reference.md) | — | 1-compartment (no model) | 0 | Janssen FW et al., Metabolism and kinetics of oxaprozin in…, Clinical pharmacology and t… (1980) | [10.1038/clpt.1980.47](https://doi.org/10.1038/clpt.1980.47) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Chiang_1984_C_unbound](drugs/drug_oxaprozin/pd_Chiang_1984_C_unbound.md) | unbound drug concentration in plasma ← oxaprozin · direct linear effect | — | Chiang ST et al., Oxaprozin dose proportionality, Journal of clinical pharmac… (1984) | [10.1002/j.1552-4604.1984.tb02761.x](https://doi.org/10.1002/j.1552-4604.1984.tb02761.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=oxaprozin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | mammary gland | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

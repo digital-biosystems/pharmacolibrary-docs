@@ -22,7 +22,7 @@
 
 > Lumefantrine (benflumetol) concentrations in nmol/l blood-medium-mixture inhibit schizont maturation in vitro, with reported EC50 values of 8.87, 9.71 and 12.44 nmol/l blood-medium-mixture; the paper excerpts do not state the mechanism or model form.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Wernsdorfer_1998`
 - **model family:** `unknown`
@@ -51,11 +51,11 @@ Wernsdorfer WH et al., Activity of benflumetol and its enantio…, Acta tropica 
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

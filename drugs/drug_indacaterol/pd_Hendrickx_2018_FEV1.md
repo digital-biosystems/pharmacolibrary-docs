@@ -22,7 +22,7 @@
 
 > Indacaterol's placebo-corrected change in trough FEV1 (mL) in COPD patients was linked by a direct Emax-type relationship to predicted total lung concentrations at trough (nM) from a human compartmental PK model, with potency normalization by dividing lung concentrations by the in vivo guinea pig total lung IC50; the paper does not report indacaterol-specific Emax, IC50, ER50, or rate parameters, and the stated ER50 range (45–80% of guinea pig IC50) applies to muscarinic antagonists and MABAs, not explicitly to beta-2 agonists.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Hendrickx_2018`
 - **model family:** `emax`
@@ -56,7 +56,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -20,7 +20,7 @@
 
 > The paper does not provide a full text to describe the mechanism, but the record specifies a sigmoid Emax inhibition model where plasma rocuronium concentrations (mg/l) act on the first twitch of the TOF response. Key parameters include a Ce50 of 1.24 mg/l, a Hill coefficient of 3.97, and a plasma effect-site equilibration half-time of 3.25 min.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Vega_2016`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Vega EA et al., Rocuronium pharmacokinetics and pharmac…, Acta anaesthesiologi
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

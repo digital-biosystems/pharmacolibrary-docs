@@ -32,28 +32,14 @@ Degarelix is a hormone antagonist used to treat prostate cancer. It is approved 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Agersø_2003_reference](drugs/drug_degarelix/Degarelix_Agers2003_reference.md) | — | 1-compartment (no model) | 1 | Agersø H et al., The dosing solution influence on the ph…, European journal of pharmac… (2003) | [10.1016/j.ejps.2003.08.001](https://doi.org/10.1016/j.ejps.2003.08.001) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Agersø_2003_reference](drugs/drug_degarelix/Degarelix_Agers2003_reference.md) | — | 1-compartment (no model) | 1 | Agersø H et al., The dosing solution influence on the ph…, European journal of pharmac… (2003) | [10.1016/j.ejps.2003.08.001](https://doi.org/10.1016/j.ejps.2003.08.001) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Jadhav_2006_LH](drugs/drug_degarelix/pd_Jadhav_2006_LH.md) | luteinizing hormone ← degarelix · disease-progression model | — | Jadhav PR et al., Semi-mechanistic pharmacodynamic modeli…, Journal of pharmacokinetics… (2006) | [10.1007/s10928-006-9025-1](https://doi.org/10.1007/s10928-006-9025-1) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Tornøe_2007_LH](drugs/drug_degarelix/pd_Torn_e_2007_LH.md) | luteinizing hormone ← degarelix · inhibition effect | — | Tornøe CW et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2006.02820.x](https://doi.org/10.1111/j.1365-2125.2006.02820.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=degarelix).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: GNRHR (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Jadhav_2006_LH](drugs/drug_degarelix/pd_Jadhav_2006_LH.md) | luteinizing hormone ← degarelix · disease-progression model | — | Jadhav PR et al., Semi-mechanistic pharmacodynamic modeli…, Journal of pharmacokinetics… (2006) | [10.1007/s10928-006-9025-1](https://doi.org/10.1007/s10928-006-9025-1) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [Tornøe_2007_LH](drugs/drug_degarelix/pd_Torn_e_2007_LH.md) | luteinizing hormone ← degarelix · inhibition effect | — | Tornøe CW et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2006.02820.x](https://doi.org/10.1111/j.1365-2125.2006.02820.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

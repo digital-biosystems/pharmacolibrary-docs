@@ -28,17 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sharif_1996_3H_IPs_Ca2_i](drugs/drug_levocabastine/pd_Sharif_1996_3H_IPs_Ca2_i.md) | Histamine-induced inositol phosphates generation / intracellular calcium mobilization (antagonized by levocabastine) ← levocabastine · direct Emax (saturable) effect | — | Sharif NA et al., Human conjunctival epithelial cells exp…, Experimental eye research (1996) | [10.1006/exer.1996.0105](https://doi.org/10.1006/exer.1996.0105) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=levocabastine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: HRH1 (target), NTSR2 (partial antagonist).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sharif_1996_3H_IPs_Ca2_i](drugs/drug_levocabastine/pd_Sharif_1996_3H_IPs_Ca2_i.md) | Histamine-induced inositol phosphates generation / intracellular calcium mobilization (antagonized by levocabastine) ← levocabastine · direct Emax (saturable) effect | — | Sharif NA et al., Human conjunctival epithelial cells exp…, Experimental eye research (1996) | [10.1006/exer.1996.0105](https://doi.org/10.1006/exer.1996.0105) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

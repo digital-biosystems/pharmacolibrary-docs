@@ -41,6 +41,8 @@ NODE_PATH=/tmp/opencode/site-check/node_modules node tests/browser-smoke.cjs
 NODE_PATH=/tmp/opencode/site-check/node_modules node tests/sites-style.cjs
 NODE_PATH=/tmp/opencode/site-check/node_modules node tests/sites-view.cjs
 NODE_PATH=/tmp/opencode/site-check/node_modules node tests/sidebar.cjs
+NODE_PATH=/tmp/opencode/site-check/node_modules node tests/pgx-curated-baseline.cjs
+NODE_PATH=/tmp/opencode/site-check/node_modules node tests/ddd-diagrams.cjs
 ```
 
 It checks lazy loading, search, tabs, record navigation, two independent simulator
@@ -49,6 +51,8 @@ to test another HTTP origin. The optional `BASELINE_JSON` input compares simulat
 reference rows with a previously captured shadow-root HTML snapshot.
 The focused Sites checks cover evidence styling and the tabbed/expanded layouts,
 including jump navigation, control preservation and session preferences on desktop and mobile.
+The PGx baseline check requires exact Normal/curated PK trajectory equality and verifies
+phenotype switching in the browser.
 
 ## Shared documentation text
 
@@ -64,6 +68,18 @@ python -m pk_knowledge_scripts.docs.refresh_text --docs-dir ../pharmacolibrary-d
 The refresh preserves source-derived About text, scientific tables, code blocks,
 simulation inputs, and model files. Token totals include cross-check calls recorded in
 the reported extraction run; they are not lifetime usage totals.
+
+Missing model diagrams can be refreshed for `ddd` from existing published parameter files,
+even when the external KB is disconnected:
+
+```bash
+# From pharmacolibrary-dev; omit --write to preview:
+python -m pk_knowledge_scripts.docs.diagrams --source ddd --docs-dir ../pharmacolibrary-docs --write
+```
+
+This updates only `ddd` SVG files and Models-tab figures, not source records or databases.
+Template graphics and component bindings are shipped with the pipeline; the external KB's
+generated template cache is optional for rendering.
 
 ## Component upgrades
 

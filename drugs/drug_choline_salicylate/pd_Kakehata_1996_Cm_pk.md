@@ -21,7 +21,7 @@
 
 > The model describes salicylate as a direct inhibitor of nonlinear peak capacitance ($C_{m\ pk}$) using a sigmoid Emax mechanism. The extracted potency is a KD of 1.6 mM with a Hill coefficient ($n$) of 1.0, although the paper does not explicitly state the fitting mechanism or provide these specific parameter values in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kakehata_1996`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Kakehata S et al., Effects of salicylate and lanthanides o…, The Journal of ne
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > Clozapine concentrations (nM) inhibit the 5-HT-induced inward current charge through human and mouse 5-HT3A receptors and human/mouse chimeras, fitted with a four-parameter logistic (sigmoid Emax) antagonism model I = Imax·(antagonist)^Hill/((antagonist)^Hill + IC50^Hill); reported IC50 values for charge ranged from 1.52 to 83.32 nM across receptor types (Hill coefficient 1.21), and the competitive binding affinity Kb was derived from IC50 via the Cheng-Prusoff equation. The paper does not describe a kinetic turnover (kin/kout) or effect-compartment mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Rammes_2009`
 - **model family:** `sigmoid_emax`
@@ -71,7 +71,7 @@ Rammes G et al., Identification of a domain which affect…, PloS one (2009)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

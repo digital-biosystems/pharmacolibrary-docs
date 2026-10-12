@@ -33,16 +33,7 @@ Imeglimin is a blood glucose lowering drug investigated for diabetes. It is clas
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.947). The first reading is what the record holds.">cross-check: partial</span> | [Tomita_2022_reference](drugs/drug_imeglimin/Imeglimin_Tomita2022_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 | Tomita Y et al., Imeglimin population pharmacokinetics a…, Clinical and translational… (2022) | [10.1111/cts.13221](https://doi.org/10.1111/cts.13221) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=imeglimin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: PRKAA1 (modulator), PRKAB1 (modulator), PRKAG1 (modulator).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.947). Primary extraction retained.">cross-check: partial</span> | [Tomita_2022_reference](drugs/drug_imeglimin/Imeglimin_Tomita2022_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 | Tomita Y et al., Imeglimin population pharmacokinetics a…, Clinical and translational… (2022) | [10.1111/cts.13221](https://doi.org/10.1111/cts.13221) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

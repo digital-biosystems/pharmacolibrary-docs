@@ -22,7 +22,7 @@
 
 > Niclosamide inhibits the respiratory control ratio (State 3/State 4 respiration, RCR) with an Emax-type model; the paper states the EC50 is 40–60 times lower than that of TFM, but no absolute potency units, mechanism detail, or rate parameters are given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Borowiec_2022`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Borowiec BG et al., Niclosamide Is a Much More Potent Toxic…, Environmental sc
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

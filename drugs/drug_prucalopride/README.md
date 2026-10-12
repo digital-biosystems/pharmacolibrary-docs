@@ -32,35 +32,15 @@ Prucalopride is a laxative used to treat chronic constipation. It is an authoris
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [van_2016_estimate](drugs/drug_prucalopride/Prucalopride_van2016_estimate.md) | — | 1-compartment (no model) | 7 | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [van_2016_pru_usa_12](drugs/drug_prucalopride/Prucalopride_van2016_pru_usa_12.md) | — | 1-compartment (no model) | 3 | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [van_2016_spd555_303](drugs/drug_prucalopride/Prucalopride_van2016_spd555_303.md) | — | 1-compartment (no model) | 5 | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [van_2016_estimate](drugs/drug_prucalopride/Prucalopride_van2016_estimate.md) | — | 1-compartment (no model) | 7 | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.286). Primary extraction retained.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [van_2016_pru_usa_12](drugs/drug_prucalopride/Prucalopride_van2016_pru_usa_12.md) | — | 1-compartment (no model) | 3 | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.25). Primary extraction retained.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [van_2016_spd555_303](drugs/drug_prucalopride/Prucalopride_van2016_spd555_303.md) | — | 1-compartment (no model) | 5 | van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016) | [10.1002/prp2.236](https://doi.org/10.1002/prp2.236) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [Broad_2013_EFS_evoked_AUC](drugs/drug_prucalopride/pd_Broad_2013_EFS_evoked_AUC.md) | cholinergically mediated contractions ← prucalopride · direct Emax (saturable) effect | — | Broad J et al., Cholinergic interactions between donepe…, British journal of pharmaco… (2013) | [10.1111/bph.12397](https://doi.org/10.1111/bph.12397) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=prucalopride).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: HTR4 (target).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [Broad_2013_EFS_evoked_AUC](drugs/drug_prucalopride/pd_Broad_2013_EFS_evoked_AUC.md) | cholinergically mediated contractions ← prucalopride · direct Emax (saturable) effect | — | Broad J et al., Cholinergic interactions between donepe…, British journal of pharmaco… (2013) | [10.1111/bph.12397](https://doi.org/10.1111/bph.12397) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -5,7 +5,7 @@
 
 # bretylium tosilate — `BretyliumTosilate_Rapeport1985_narang_et_al`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,7 +15,7 @@
 
 > **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -151,17 +151,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_bretylium_tosilate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rapeport_1985` / `Rapeport_1985::narang_et_al`)
-- model: `../../../knowledgebase/drugs/drug_bretylium_tosilate/models/modelica/BretyliumTosilate_Rapeport1985_narang_et_al.mo`
-- deviation: `../../../knowledgebase/drugs/drug_bretylium_tosilate/models/modelica/BretyliumTosilate_Rapeport1985_narang_et_al.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_bretylium_tosilate/models/modelica/BretyliumTosilate_Rapeport1985_narang_et_al.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bretylium_tosilate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rapeport_1985` / `Rapeport_1985::narang_et_al`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bretylium_tosilate/models/modelica/BretyliumTosilate_Rapeport1985_narang_et_al.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bretylium_tosilate/models/modelica/BretyliumTosilate_Rapeport1985_narang_et_al.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bretylium_tosilate/models/modelica/BretyliumTosilate_Rapeport1985_narang_et_al.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

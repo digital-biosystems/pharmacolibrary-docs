@@ -19,7 +19,7 @@
 
 > A linear PK/PD model describes the additive effect of ritlecitinib plasma concentrations (ng/mL) on the change from baseline heart rate–corrected QTcF (∆QTcF) in ms, with an estimated slope of 0.000213 ms/ng/mL. The paper does not describe a specific physiological mechanism (such as inhibition of elimination) for this concentration-response relationship, but rather specifies a linear association using a pre-specified statistical model.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Huh_2025`
 - **model family:** `linear`
@@ -60,7 +60,7 @@ Huh Y et al., Comprehensive Safety Exposure-Response…, CPT: pharmacometrics & 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

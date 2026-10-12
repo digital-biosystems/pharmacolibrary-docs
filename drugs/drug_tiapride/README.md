@@ -32,9 +32,9 @@ Tiapride is a benzamide antipsychotic used for psychiatric and neurological cond
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>route_to: `human_review`</sub> | [Norman_1987_reference](drugs/drug_tiapride/Tiapride_Norman1987_reference.md) | — | 1-compartment (no model) | 4 | Norman T et al., Single oral dose pharmacokinetics of ti…, European journal of clinica… (1987) | [10.1007/BF02455992](https://doi.org/10.1007/BF02455992) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Huang_2026_reference](drugs/drug_tiapride/Tiapride_Huang2026_reference.md) | — | 1-compartment (no model) | 6 | Huang W et al., Population Pharmacokinetics of Tiapride…, Drug design, development an… (2026) | [10.2147/DDDT.S587387](https://doi.org/10.2147/DDDT.S587387) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Rey_1982_reference](drugs/drug_tiapride/Tiapride_Rey1982_reference.md) | — | 1-compartment (no model) | 2 | Rey E et al., Pharmacokinetics of tiapride and absolu…, International journal of cl… (1982) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>route_to: `human_review`</sub> | [Norman_1987_reference](drugs/drug_tiapride/Tiapride_Norman1987_reference.md) | — | 1-compartment (no model) | 4 | Norman T et al., Single oral dose pharmacokinetics of ti…, European journal of clinica… (1987) | [10.1007/BF02455992](https://doi.org/10.1007/BF02455992) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Huang_2026_reference](drugs/drug_tiapride/Tiapride_Huang2026_reference.md) | — | 1-compartment (no model) | 6 | Huang W et al., Population Pharmacokinetics of Tiapride…, Drug design, development an… (2026) | [10.2147/DDDT.S587387](https://doi.org/10.2147/DDDT.S587387) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Rey_1982_reference](drugs/drug_tiapride/Tiapride_Rey1982_reference.md) | — | 1-compartment (no model) | 2 | Rey E et al., Pharmacokinetics of tiapride and absolu…, International journal of cl… (1982) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -46,18 +46,6 @@ Tiapride is a benzamide antipsychotic used for psychiatric and neurological cond
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Arima_1986_D_4_binding](drugs/drug_tiapride/pd_Arima_1986_D_4_binding.md) | [3H]N-propylapomorphine binding to D-4 dopamine receptors (bovine caudate nucleus) ← tiapride · direct sigmoid Emax (Hill) effect | — | Arima T et al., Comparison of effects of tiapride and s…, Japanese journal of pharmac… (1986) | [10.1254/jjp.41.419](https://doi.org/10.1254/jjp.41.419) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Lorke_2011_AChE](drugs/drug_tiapride/pd_Lorke_2011_AChE.md) | RBC AChE activity inhibition ← tiapride · inhibition effect | — | Lorke DE et al., Pretreatment for acute exposure to diis…, Journal of applied toxicolo… (2011) | [10.1002/jat.1589](https://doi.org/10.1002/jat.1589) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Petroianu_2005_2_IC50](drugs/drug_tiapride/pd_Petroianu_2005_2_IC50.md) | DDVP IC50 for cholinesterase inhibition (RBC AChE and plasma BChE) ← tiapride · direct linear effect | — | Petroianu GA et al., Weak inhibitors protect cholinesterases…, International journal of to… (2005) | [10.1080/10915810590921360](https://doi.org/10.1080/10915810590921360) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tiapride).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | brain | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), ADRA2A (target), DRD2 (blocker), DRD3 (blocker), HTR1A (target), SCN10A (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

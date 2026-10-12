@@ -21,7 +21,7 @@
 
 > The available data indicates that niflumic acid inhibits polymorphic ventricular arrhythmias, with a reported IC50 of 73.1 microM. However, the specific pharmacodynamic mechanism (e.g., effect on production, elimination, or direct Emax) is not described in the provided record or excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Zhou_2005`
 - **model family:** `unknown`
@@ -48,11 +48,11 @@ Zhou SS et al., Effect of Cl- channel blockers on aconi…, Experimental physiol
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

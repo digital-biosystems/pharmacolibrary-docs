@@ -22,7 +22,7 @@
 
 > The record indicates that ketamine dose inhibits the response rate with a 100-fold Emax parameter, but the paper does not provide full text to confirm the specific mechanism or link this parameter to standard potency units.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sannerud_1986`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Sannerud CA et al., Modification of morphine tolerance by b…, The Journal of p
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

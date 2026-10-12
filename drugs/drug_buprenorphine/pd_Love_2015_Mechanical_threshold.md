@@ -18,11 +18,11 @@
 
 **As extracted:** Buprenorphine (concentrations from the PK model of Castro-Cuellar_2023) drives Mechanical threshold (in Newton): indirect response — drug inhibits the production of Mechanical threshold.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Buprenorphine plasma concentrations inhibit the production (kin) of the mechanical threshold response using an indirect response model with a Hill coefficient of 30.8, characterized by an IC50 of 6.84 ng mL⁻¹ and an Imax of 0.53. The model specifies a first-order dissipation rate (kout) of 17.4 Newton hour⁻¹ (labeled as Kin in the record) and a baseline response (R0) of 3.98 Newton.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Love_2015`
 - **model family:** `indirect_response_i`
@@ -84,11 +84,11 @@ Blocking:
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

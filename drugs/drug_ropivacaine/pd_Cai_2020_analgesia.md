@@ -20,7 +20,7 @@
 
 > The record specifies a categorical model where the binary response of pain relief is driven by ropivacaine concentration via a proportional inhibition mechanism, characterized by a minimal lower anti-analgesic concentration (MLAC) of 0.09687%. The full text excerpts are unavailable, so the paper does not provide additional mechanism details or parameters.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Cai_2020`
 - **model family:** `categorical`
@@ -61,7 +61,7 @@ Cai S et al., Investigation of the Minimum Local Anal…, Clinical therapeutics 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

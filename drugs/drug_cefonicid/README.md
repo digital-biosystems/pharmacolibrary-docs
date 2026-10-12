@@ -24,21 +24,13 @@ Cefonicid is a second-generation cephalosporin antibiotic used to treat bacteria
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Phelps_1986_reference](drugs/drug_cefonicid/Cefonicid_Phelps1986_reference.md) | — | 1-compartment (no model) | 0 | Phelps RT et al., Multiple-dose pharmacokinetics of cefon…, Antimicrobial agents and ch… (1986) | [10.1128/AAC.29.5.913](https://doi.org/10.1128/AAC.29.5.913) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.667). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Phelps_1986_reference](drugs/drug_cefonicid/Cefonicid_Phelps1986_reference.md) | — | 1-compartment (no model) | 0 | Phelps RT et al., Multiple-dose pharmacokinetics of cefon…, Antimicrobial agents and ch… (1986) | [10.1128/AAC.29.5.913](https://doi.org/10.1128/AAC.29.5.913) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.00).">in vitro</span> | [Benson_1993_PB](drugs/drug_cefonicid/pd_Benson_1993_PB.md) | protein binding ← cefonicid · model not identified | — | Benson JM et al., In vitro protein binding of cefonicid a…, Antimicrobial agents and ch… (1993) | [10.1128/AAC.37.6.1343](https://doi.org/10.1128/AAC.37.6.1343) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cefonicid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` other/unknown | DrugBank actor |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.00).">in vitro</span> | [Benson_1993_PB](drugs/drug_cefonicid/pd_Benson_1993_PB.md) | protein binding ← cefonicid · model not identified | — | Benson JM et al., In vitro protein binding of cefonicid a…, Antimicrobial agents and ch… (1993) | [10.1128/AAC.37.6.1343](https://doi.org/10.1128/AAC.37.6.1343) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

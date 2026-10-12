@@ -16,11 +16,11 @@
 
 **As extracted:** Infliximab dose number (the dose) drives neutrophil CD64 (in ratio): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Infliximab dose reduces the neutrophil CD64 (nCD64) ratio via an Emax model, characterized by a D50 of 1.1 and a maximum change (Emax) of -0.362 from baseline. The paper describes this as an improvement in inflammatory biomarkers during early induction but does not specify a mechanistic link (e.g., kin/kout) between drug concentrations and the response.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Samuels_2025`
 - **model family:** `emax`
@@ -100,7 +100,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

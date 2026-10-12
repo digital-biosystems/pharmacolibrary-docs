@@ -5,7 +5,7 @@
 
 # clopidogrel — `Clopidogrel_Grafeneder2024_hv`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556), gpt-oss:120b (not confirmed, agreement 0.105), gpt-5.6-luna (not confirmed, agreement 0.077). The first reading is what the record holds.">cross-check: disputed 0/3</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556), gpt-oss:120b (not confirmed, agreement 0.105), gpt-5.6-luna (not confirmed, agreement 0.077). Primary extraction retained.">cross-check: disputed 0/3</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** Model withheld: a core parameter is unspecified.
 
 ### Reviewer guidance
 
@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney international reports (2024)
   ·  DOI: [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Grafeneder2024_hv" status="extracted" stale="true" population="hemodialysis patients and healthy volunteers" measured-compound="clopidogrel active metabolite" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Grafeneder2024_hv" status="extracted" stale="true" population="hemodialysis patients and healthy volunteers" measured-compound="clopidogrel active metabolite" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 12 extracted.
@@ -262,10 +261,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_clopidogrel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Grafeneder_2024` / `Grafeneder_2024::hv`)
-- model: `../../../knowledgebase/drugs/drug_clopidogrel/models/modelica/_needs_review/Clopidogrel_Grafeneder2024_hv.mo`
-- deviation: `../../../knowledgebase/drugs/drug_clopidogrel/models/modelica/_needs_review/Clopidogrel_Grafeneder2024_hv.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_clopidogrel/models/modelica/Clopidogrel_Grafeneder2024_hv.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clopidogrel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Grafeneder_2024` / `Grafeneder_2024::hv`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clopidogrel/models/modelica/_needs_review/Clopidogrel_Grafeneder2024_hv.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clopidogrel/models/modelica/_needs_review/Clopidogrel_Grafeneder2024_hv.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clopidogrel/models/modelica/Clopidogrel_Grafeneder2024_hv.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -286,7 +285,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

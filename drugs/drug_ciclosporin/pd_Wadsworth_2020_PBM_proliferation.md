@@ -20,7 +20,7 @@
 
 > The paper cites a study where cyclosporine concentrations (ng/mL) inhibit in vitro peripheral blood monocyte proliferation using a sigmoid Emax model, although the specific parameter estimates (Emax, EC50) are not provided in the excerpts. The study utilizes a hyperbolic Emax model with a zero intercept, but no numerical potency or rate values are stated.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Wadsworth_2020`
 - **model family:** `emax`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

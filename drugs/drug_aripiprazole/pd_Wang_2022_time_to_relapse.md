@@ -19,7 +19,7 @@
 
 > In the time-to-relapse model, model-predicted aripiprazole Cmin (ng/mL) acts on time to exacerbation of psychotic symptoms/impending relapse via an exponential hazard function, with higher Cmin reducing relapse hazard; a concentration-threshold relationship was suggested, with Cmin ≥ 95 ng/mL proximate to the event giving a hazard coefficient of 1.484 (intercept 6.256) and a hazard ratio of expected survival time (Cmin ≥95 vs &lt;95 ng/mL) of 4.41. The paper does not state Imax/IC50/EC50/Emax/kin/kout/ke0 values.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Wang_2022`
 - **model family:** `tte`
@@ -62,7 +62,7 @@ Wang X et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

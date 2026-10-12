@@ -24,16 +24,7 @@ Megestrol is a synthetic progestogen used as a hormonal contraceptive and to tre
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.375). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Guk_2017_reference](drugs/drug_megestrol/Megestrol_Guk2017_reference.md) | — | 1-compartment (no model) | 0 | Guk J et al., Quantitative Assessment of Food Effect…, Basic & clinical pharmacolo… (2017) | [10.1111/bcpt.12677](https://doi.org/10.1111/bcpt.12677) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=megestrol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: PGR (binder).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.375). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Guk_2017_reference](drugs/drug_megestrol/Megestrol_Guk2017_reference.md) | — | 1-compartment (no model) | 0 | Guk J et al., Quantitative Assessment of Food Effect…, Basic & clinical pharmacolo… (2017) | [10.1111/bcpt.12677](https://doi.org/10.1111/bcpt.12677) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

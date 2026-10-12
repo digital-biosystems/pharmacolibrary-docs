@@ -33,28 +33,13 @@ Amifampridine is a potassium channel blocker used to treat Lambert-Eaton myasthe
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Thakkar_2017_reference](drugs/drug_amifampridine/Amifampridine_Thakkar2017_reference.md) | model (no simulator) | 1-compartment, oral | 7 (+1 cov.) | Thakkar N et al., Population Pharmacokinetics/Pharmacodyn…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12218](https://doi.org/10.1002/psp4.12218) |
+| <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Thakkar_2017_reference](drugs/drug_amifampridine/Amifampridine_Thakkar2017_reference.md) | model (no simulator) | 1-compartment, oral | 7 (+1 cov.) | Thakkar N et al., Population Pharmacokinetics/Pharmacodyn…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12218](https://doi.org/10.1002/psp4.12218) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Thakkar_2017_3TUG](drugs/drug_amifampridine/pd_Thakkar_2017_3TUG.md) | Triple Timed Up & Go ← 3,4-DAP · direct Emax (saturable) effect | model (no simulator) | Thakkar N et al., Population Pharmacokinetics/Pharmacodyn…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12218](https://doi.org/10.1002/psp4.12218) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=amifampridine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | blood | `NAT1` substrate | DrugBank actor |
-| metabolism | liver | `NAT1` substrate, `NAT2` substrate | DrugBank actor |
-| metabolism | small intestine | `NAT2` substrate | DrugBank actor |
-| excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: KCNA1 (blocker).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

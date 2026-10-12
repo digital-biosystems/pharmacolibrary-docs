@@ -16,11 +16,11 @@
 
 **As extracted:** Cyclosporine (the dose) drives renal graft function response, quantified as estimated glomerular filtration rate (eGFR) (in mL·min-1·1.73 m-2): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Ciclosporin acts on renal graft function (eGFR) via an additive Emax model, increasing eGFR from a baseline of 12.9 mL·min-1·1.73 m-2 to a maximum effect of 50.7 mL·min-1·1.73 m-2. The dose required to achieve 50% of the maximum effect is 1740 ng·h·mL-1, with an associated nephrotoxicity slope of 0.00033.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Albitar_2022`
 - **model family:** `emax`
@@ -101,7 +101,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

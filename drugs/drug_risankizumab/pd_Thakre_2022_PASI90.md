@@ -20,7 +20,7 @@
 
 > The paper uses logistic regression to evaluate the binary response of PASI 90 at week 24 against risankizumab exposure (AUC) and treatment status, concluding that there is a statistically significant treatment effect but no statistically significant exposure-response relationship. The record lists a single parameter for the 'Placebo' condition with a value of -2.069, but the paper does not provide specific mechanism details such as IC50, EC50, or rate constants (ke0, kout) for the exposure-response model.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Thakre_2022`
 - **model family:** `categorical`
@@ -61,7 +61,7 @@ Thakre N et al., Population Pharmacokinetics and Exposur…, Rheumatology and th
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

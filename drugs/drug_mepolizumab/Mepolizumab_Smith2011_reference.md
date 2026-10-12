@@ -4,7 +4,7 @@
 
 # mepolizumab — `Mepolizumab_Smith2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mepolizumab, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 81, the second reading -75; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -66,24 +66,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+| `gpt-oss-120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>12 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.bioavailability.theta` | 81 | -75 | mismatch |
-| `gpt-oss-120b` | `parameters[absolute bioavailability of mepolizumab]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absolute bioavailability]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[initial phase half-life]` | not captured | 2 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[mean initial and terminal phase half-life values]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[plasma clearance]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[plasma clearance]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[terminal phase half-life]` | not captured | 20 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | mepolizumab | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | mepolizumab | unknown | mismatch |
 
 </details>
 
@@ -111,18 +103,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_mepolizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Smith_2011` / `Smith_2011::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mepolizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Smith_2011` / `Smith_2011::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

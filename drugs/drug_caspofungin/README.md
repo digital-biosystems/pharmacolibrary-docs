@@ -33,33 +33,16 @@ Caspofungin is an antifungal used to treat candidiasis and aspergillosis. It is 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Abdul-Aziz_2025_reference](drugs/drug_caspofungin/Caspofungin_AbdulAziz2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Abdul-Aziz MH et al., Population pharmacokinetics of caspofun…, Antimicrobial agents and ch… (2025) | [10.1128/aac.01435-24](https://doi.org/10.1128/aac.01435-24) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial</span> | [Borsuk-De_2020_reference](drugs/drug_caspofungin/Caspofungin_BorsukDe2020_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Borsuk-De Moor A et al., Nonstationary Pharmacokinetics of Caspo…, Antimicrobial agents and ch… (2020) | [10.1128/AAC.00345-20](https://doi.org/10.1128/AAC.00345-20) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Albanell-Fernández_2025_reference](drugs/drug_caspofungin/Caspofungin_AlbanellFernndez2025_reference.md) | — | 2-compartment (no model) | 3 | Albanell-Fernández M, Echinocandins Pharmacokinetics: A Compr…, Clinical pharmacokinetics (2025) | [10.1007/s40262-024-01461-5](https://doi.org/10.1007/s40262-024-01461-5) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wu_2022_reference](drugs/drug_caspofungin/Caspofungin_Wu2022_reference.md) | — | 1-compartment (no model) | 0 | Wu Z et al., Population Pharmacokinetics of Caspofun…, Antimicrobial agents and ch… (2022) | [10.1128/aac.02249-21](https://doi.org/10.1128/aac.02249-21) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Abdul-Aziz_2025_reference](drugs/drug_caspofungin/Caspofungin_AbdulAziz2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Abdul-Aziz MH et al., Population pharmacokinetics of caspofun…, Antimicrobial agents and ch… (2025) | [10.1128/aac.01435-24](https://doi.org/10.1128/aac.01435-24) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909). Primary extraction retained.">cross-check: partial</span> | [Borsuk-De_2020_reference](drugs/drug_caspofungin/Caspofungin_BorsukDe2020_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Borsuk-De Moor A et al., Nonstationary Pharmacokinetics of Caspo…, Antimicrobial agents and ch… (2020) | [10.1128/AAC.00345-20](https://doi.org/10.1128/AAC.00345-20) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Albanell-Fernández_2025_reference](drugs/drug_caspofungin/Caspofungin_AlbanellFernndez2025_reference.md) | — | 2-compartment (no model) | 3 | Albanell-Fernández M, Echinocandins Pharmacokinetics: A Compr…, Clinical pharmacokinetics (2025) | [10.1007/s40262-024-01461-5](https://doi.org/10.1007/s40262-024-01461-5) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wu_2022_reference](drugs/drug_caspofungin/Caspofungin_Wu2022_reference.md) | — | 1-compartment (no model) | 0 | Wu Z et al., Population Pharmacokinetics of Caspofun…, Antimicrobial agents and ch… (2022) | [10.1128/aac.02249-21](https://doi.org/10.1128/aac.02249-21) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Caballero_2023_N](drugs/drug_caspofungin/pd_Caballero_2023_N.md) | Number of viable Candida cells ← caspofungin · direct sigmoid Emax (Hill) effect | model (no simulator) | Caballero U et al., PK/PD modeling and simulation of the in…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12949](https://doi.org/10.1002/psp4.12949) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=caspofungin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP3A4` inhibitor, `SLC22A1` unknown, `SLCO1B1` inhibitor, `SLCO1B3` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Caballero_2023_N](drugs/drug_caspofungin/pd_Caballero_2023_N.md) | Number of viable Candida cells ← caspofungin · direct sigmoid Emax (Hill) effect | model (no simulator) | Caballero U et al., PK/PD modeling and simulation of the in…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12949](https://doi.org/10.1002/psp4.12949) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

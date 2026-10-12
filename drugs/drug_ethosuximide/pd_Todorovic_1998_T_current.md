@@ -18,11 +18,11 @@
 
 **As extracted:** Ethosuximide (concentrations from the PK model of Diezi_2023::final_model) drives low-voltage-activated (LVA) Ca2+ current: direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The model describes the proportional inhibition of low-voltage-activated (LVA) Ca2+ current by ethosuximide using a sigmoid Emax mechanism, with an EC50 of 23.7 mM and a Hill coefficient of 1.4. The maximum block is specified as 100%, but the paper does not provide the underlying kinetic mechanism or rate constants.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Todorovic_1998`
 - **model family:** `sigmoid_emax`
@@ -103,7 +103,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

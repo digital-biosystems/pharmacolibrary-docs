@@ -22,7 +22,7 @@
 
 > Tiagabine plasma concentrations (ng ml-1) stimulate the amplitude of the EEG beta band (microV) via a direct sigmoid Emax mechanism, characterized by an E0 of 155 +/- 6 microV, a maximum increase (Emax) of 100 +/- 5 microV, an EC50 of 287 +/- 7 ng ml-1, and a Hill factor of 1.8 +/- 0.2. The model incorporates a bidirectional delay with a keo of 0.030 +/- 0.002 min-1, although the paper does not explicitly describe the underlying physiological mechanism for this effect.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Cleton_1999`
 - **model family:** `sigmoid_emax`
@@ -67,7 +67,7 @@ Cleton A et al., Application of a combined "effect compa…, Journal of pharmaco
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

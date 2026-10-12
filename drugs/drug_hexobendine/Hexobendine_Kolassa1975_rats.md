@@ -29,8 +29,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 ## Citation
 Kolassa N et al., [Studies on the pharmacokinetics of hex…, Arzneimittel-Forschung (1975)
 
-## Model component
-<dbs-pgx drug="hexobendine" model-id="Hexobendine_Kolassa1975_rats" status="" stale="true" population="rats" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hexobendine" model-id="Hexobendine_Kolassa1975_rats" status="" stale="true" population="rats" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -52,7 +51,7 @@ _No comparable checks._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_hexobendine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kolassa_1975` / `Kolassa_1975::rats`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_hexobendine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kolassa_1975` / `Kolassa_1975::rats`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -73,7 +72,7 @@ _No comparable checks._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

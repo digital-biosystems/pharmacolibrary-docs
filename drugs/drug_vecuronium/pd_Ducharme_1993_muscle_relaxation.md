@@ -19,7 +19,7 @@
 
 > The paper does not provide the full text or specific model details, so the mechanism and key potency or rate values are not stated. The record indicates an effect compartment model linking vecuronium concentrations to muscle relaxation, but no quantitative parameters are available.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ducharme_1993`
 - **model family:** `effect_compartment`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

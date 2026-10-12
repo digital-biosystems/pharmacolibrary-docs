@@ -33,17 +33,7 @@ It is an approved medicine, though it is not widely used today and has largely b
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Nilsen_1985_2_reference](drugs/drug_tiaprofenic_acid/TiaprofenicAcid_Nilsen1985v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Nilsen OG et al., Steady state pharmacokinetics of tiapro…, Arzneimittel-Forschung (1985) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tiaprofenic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Nilsen_1985_2_reference](drugs/drug_tiaprofenic_acid/TiaprofenicAcid_Nilsen1985v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Nilsen OG et al., Steady state pharmacokinetics of tiapro…, Arzneimittel-Forschung (1985) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

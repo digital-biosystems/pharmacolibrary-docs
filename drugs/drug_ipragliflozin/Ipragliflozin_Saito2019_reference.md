@@ -4,7 +4,7 @@
 
 # ipragliflozin — `Ipragliflozin_Saito2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167), gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333), gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ipragliflozin: CL/F 9.47 L/h, AUCt 5.42e+03 ng·h/mL.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ipragliflozin, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ipragliflozin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of clinical… (2019)
   ·  DOI: [10.1111/bcp.13972](https://doi.org/10.1111/bcp.13972)
 
-## Model component
-<dbs-pgx drug="ipragliflozin" model-id="Ipragliflozin_Saito2019_reference" status="needs_review" stale="true" population="healthy subjects and patients with type 2 diabetes mellitus" measured-compound="ipragliflozin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ipragliflozin" model-id="Ipragliflozin_Saito2019_reference" status="needs_review" stale="true" population="healthy subjects and patients with type 2 diabetes mellitus" measured-compound="ipragliflozin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -68,14 +67,14 @@ Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | partly confirmed | 0.333 (4/12 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>18 field discrepancies</summary>
+<details><summary>16 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -87,8 +86,6 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[theta_cl_gfr]` | not captured | 0.233 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vc]` | not captured | 39.4 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vp]` | not captured | 68.1 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | ipragliflozin | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | ipragliflozin | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[auc24h]` | not captured | 5417 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fold increase in auc24h]` | not captured | 1.17 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[medians (95% prediction intervals) of auc24h]` | 5417 | not captured | only_one_extracted |
@@ -126,7 +123,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_ipragliflozin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Saito_2019` / `Saito_2019::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ipragliflozin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Saito_2019` / `Saito_2019::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -147,7 +144,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

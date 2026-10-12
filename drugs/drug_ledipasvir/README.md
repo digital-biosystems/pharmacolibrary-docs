@@ -28,25 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ruiz_2021_luciferase_activity](drugs/drug_ledipasvir/pd_Ruiz_2021_luciferase_activity.md) | HCV genotype 2a susceptibility to sofosbuvir ← sofosbuvir · direct sigmoid Emax (Hill) effect | — | Ruiz I et al., Real-world efficacy and safety of direc…, European journal of gastroe… (2021) | [10.1097/MEG.0000000000002003](https://doi.org/10.1097/MEG.0000000000002003) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ledipasvir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate/transporter, `ABCG2` transporter | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate/transporter | DrugBank actor |
-| absorption | liver | `ABCB1` substrate/transporter, `ABCG2` transporter | DrugBank actor |
-| absorption | mammary gland | `ABCG2` transporter | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate/transporter | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate/transporter, `ABCG2` transporter | DrugBank actor |
-| absorption | testis | `ABCB1` substrate/transporter, `ABCG2` transporter | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: Genome polyprotein (modulator).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Ruiz_2021_luciferase_activity](drugs/drug_ledipasvir/pd_Ruiz_2021_luciferase_activity.md) | HCV genotype 2a susceptibility to sofosbuvir ← sofosbuvir · direct sigmoid Emax (Hill) effect | — | Ruiz I et al., Real-world efficacy and safety of direc…, European journal of gastroe… (2021) | [10.1097/MEG.0000000000002003](https://doi.org/10.1097/MEG.0000000000002003) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

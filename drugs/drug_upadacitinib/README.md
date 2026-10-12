@@ -32,8 +32,8 @@ Upadacitinib, a Janus kinase inhibitor, is used to treat inflammatory conditions
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q31 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Klünder_2018_reference](drugs/drug_upadacitinib/Upadacitinib_Klnder2018_reference.md) | — | 2-compartment (no model) | 7 (+2 cov.) | Klünder B et al., Population Pharmacokinetics of Upadacit…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0605-6](https://doi.org/10.1007/s40262-017-0605-6) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q31, Q1 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Klünder_2019_reference](drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference.md) | — | 2-compartment (no model) | 10 (+3 cov.) | Klünder B et al., Population Pharmacokinetics of Upadacit…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00739-3](https://doi.org/10.1007/s40262-019-00739-3) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q31 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Klünder_2018_reference](drugs/drug_upadacitinib/Upadacitinib_Klnder2018_reference.md) | — | 2-compartment (no model) | 7 (+2 cov.) | Klünder B et al., Population Pharmacokinetics of Upadacit…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0605-6](https://doi.org/10.1007/s40262-017-0605-6) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q31, Q1 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Klünder_2019_reference](drugs/drug_upadacitinib/Upadacitinib_Klnder2019_reference.md) | — | 2-compartment (no model) | 10 (+3 cov.) | Klünder B et al., Population Pharmacokinetics of Upadacit…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00739-3](https://doi.org/10.1007/s40262-019-00739-3) |
 
 ## Pharmacodynamics (PD)
 
@@ -54,27 +54,6 @@ Upadacitinib, a Janus kinase inhibitor, is used to treat inflammatory conditions
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Mohamed_2021_IGA_0_1](drugs/drug_upadacitinib/pd_Mohamed_2021_IGA_0_1.md) | IGA 0/1 ← upadacitinib · direct Emax (saturable) effect | — | Mohamed MF et al., Exposure-Response Analyses for Upadacit…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1782](https://doi.org/10.1002/jcph.1782) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Nader_2020_ACR20_50_70](drugs/drug_upadacitinib/pd_Nader_2020_ACR20_50_70.md) | ACR20/50/70 response ← upadacitinib · categorical (graded) response model | — | Nader A et al., Exposure-Response Analyses of Upadaciti…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1671](https://doi.org/10.1002/cpt.1671) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Nader_2020_LDA_CR](drugs/drug_upadacitinib/pd_Nader_2020_LDA_CR.md) | low disease activity (LDA; defined as DAS28-CRP ≤ 3.2)/clinical remission (CR; defined as DAS28-CRP &lt; 2.6) responses ← upadacitinib · categorical (graded) response model | — | Nader A et al., Exposure-Response Analyses of Upadaciti…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1671](https://doi.org/10.1002/cpt.1671) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=upadacitinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate, `SLCO1B1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: JAK1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -22,7 +22,7 @@
 
 > Olanzapine brain concentrations (nM) drive dopamine D2 receptor occupancy in rat striatum via a mechanism-based receptor binding model (TMDD-like) in which drug association to and dissociation from D2 receptors determines occupancy, with binding assumed not to affect free brain concentration in the final model. Key parameters: Kd = 14.7 nM, kon = 0.178 nM−1 h−1, koff = 2.62 h−1, and Bmax = 48 nM (Bmax shown by sensitivity analysis not to influence output).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Johnson_2011`
 - **model family:** `tmdd`
@@ -67,7 +67,7 @@ Johnson M et al., Mechanism-based pharmacokinetic-pharmac…, Pharmaceutical res
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -20,7 +20,7 @@
 
 > The paper does not provide a specific mathematical PD model mechanism, IC50, Emax, or rate constants for the relationship between mirikizumab concentrations and clinical response by PRO, instead describing exposure-efficacy relationships based on average drug concentrations (Cavg) during the induction period. Only PK parameters such as half-life (9.8 days in SERENITY and 9.3 days in VIVID-1) and bioavailability (33.4% to 38.8%) are reported with specific values.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Chua_2025`
 - **model family:** `unknown`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

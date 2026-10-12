@@ -16,11 +16,11 @@
 
 **As extracted:** Miltefosine (concentrations from the PK model of Dorlo_2008) drives blood parasite load (Leishmania kDNA qPCR) (in parasites/mL): direct linear effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Miltefosine plasma concentrations (μg/L, from the cited PK model) drive inhibition of blood parasite load (Leishmania kDNA qPCR, parasites/mL) via a linear, proportional effect on parasite clearance, with λMF = 0.0010 μg⁻¹·L·h⁻¹, baseline parasite load EBASE = 5324 parasites/mL, and parasite growth rate kGR = 0.0037 h⁻¹; the paper does not state an Emax/IC50-type mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Verrest_2024`
 - **model family:** `linear`
@@ -88,7 +88,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

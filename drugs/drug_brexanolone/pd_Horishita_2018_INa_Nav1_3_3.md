@@ -21,7 +21,7 @@
 
 > The paper does not state the mechanism beyond an inhibitory concentration–response relationship: allopregnanolone sulfate (APAS) concentrations (μmol/L) inhibit the sodium current (INa) of Nav1.3 containing the β3 subunit, with a sigmoid Emax model yielding an IC50 of 26 μmol/L; no Emax, Hill coefficient, or rate parameters are given in the available excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Horishita_2018`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Horishita T et al., The neurosteroid allopregnanolone sulfa…, Journal of pharm
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

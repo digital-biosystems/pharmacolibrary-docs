@@ -4,7 +4,7 @@
 
 # palbociclib — `Palbociclib_Marouille2021_final_final_population_pk_model_wi`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -12,7 +12,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** Model withheld: a core parameter is unspecified.
 
 ### Reviewer guidance
 
@@ -135,9 +135,9 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_palbociclib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Marouille_2021` / `Marouille_2021::final_final_population_pk_model_with_covariates`)
-- model: `../../../knowledgebase/drugs/drug_palbociclib/models/modelica/_needs_review/Palbociclib_Marouille2021_final_final_population_pk_model_wi.mo`
-- deviation: `../../../knowledgebase/drugs/drug_palbociclib/models/modelica/_needs_review/Palbociclib_Marouille2021_final_final_population_pk_model_wi.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_palbociclib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Marouille_2021` / `Marouille_2021::final_final_population_pk_model_with_covariates`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_palbociclib/models/modelica/_needs_review/Palbociclib_Marouille2021_final_final_population_pk_model_wi.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_palbociclib/models/modelica/_needs_review/Palbociclib_Marouille2021_final_final_population_pk_model_wi.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -149,7 +149,7 @@ _All readers agree on the compared fields of this record._
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi/Palbociclib_Marouille2021_final_final_population_pk_model_wi_matlab.zip" download>Palbociclib_Marouille2021_final_final_population_pk_model_wi_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi/Palbociclib_Marouille2021_final_final_population_pk_model_wi_matlab_simbio.zip" download>Palbociclib_Marouille2021_final_final_population_pk_model_wi_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi/Palbociclib_Marouille2021_final_final_population_pk_model_wi_matlab_simbio.zip" download>Palbociclib_Marouille2021_final_final_population_pk_model_wi_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi/Palbociclib_Marouille2021_final_final_population_pk_model_wi_sbml.zip" download>Palbociclib_Marouille2021_final_final_population_pk_model_wi_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_palbociclib/Palbociclib_Marouille2021_final_final_population_pk_model_wi/Palbociclib_Marouille2021_final_final_population_pk_model_wi_cellml.zip" download>Palbociclib_Marouille2021_final_final_population_pk_model_wi_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
@@ -158,7 +158,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

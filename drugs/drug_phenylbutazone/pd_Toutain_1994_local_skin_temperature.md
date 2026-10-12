@@ -21,7 +21,7 @@
 
 > The record indicates phenylbutazone acts on local skin temperature via an Emax model with a stimulating direction, driven by concentrations in micrograms/ml. However, the paper does not provide a mechanism or specific potency and rate values as no full text is available.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Toutain_1994`
 - **model family:** `emax`
@@ -55,7 +55,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

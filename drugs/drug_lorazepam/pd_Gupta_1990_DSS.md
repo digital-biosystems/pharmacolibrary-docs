@@ -20,7 +20,7 @@
 
 > Lorazepam plasma concentrations (ng/ml) inhibit the digit symbol substitution (DSS) score via an effect-compartment model, i.e. the effect is driven by concentrations in a hypothetical effect site equilibrating with plasma; the paper does not state the effect form or any potency (IC50/EC50/Emax) or equilibration rate (ke0) values in the available excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Gupta_1990`
 - **model family:** `effect_compartment`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -4,7 +4,7 @@
 
 # atenolol — `Atenolol_Baek2008_carvedilol_25_mg`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.182), gpt-oss:120b (partly confirmed, agreement 0.19). The first reading is what the record holds.">cross-check: partial 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.182), gpt-oss:120b (partly confirmed, agreement 0.19). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Baek IH et al., Pharmacokinetic/pharmacodynamic modelin…, Archives of pharmacal resea… (2008)
   ·  DOI: [10.1007/s12272-001-1231-4](https://doi.org/10.1007/s12272-001-1231-4)
 
-## Model component
-<dbs-pgx drug="atenolol" model-id="Atenolol_Baek2008_carvedilol_25_mg" status="needs_review" stale="true" population="healthy adults" measured-compound="atenolol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_Baek2008_carvedilol_25_mg" status="needs_review" stale="true" population="healthy adults" measured-compound="atenolol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.
@@ -181,9 +180,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_atenolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Baek_2008` / `Baek_2008::carvedilol_25_mg`)
-- model: `../../../knowledgebase/drugs/drug_atenolol/models/modelica/_needs_review/Atenolol_Baek2008_carvedilol_25_mg.mo`
-- deviation: `../../../knowledgebase/drugs/drug_atenolol/models/modelica/_needs_review/Atenolol_Baek2008_carvedilol_25_mg.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atenolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Baek_2008` / `Baek_2008::carvedilol_25_mg`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atenolol/models/modelica/_needs_review/Atenolol_Baek2008_carvedilol_25_mg.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atenolol/models/modelica/_needs_review/Atenolol_Baek2008_carvedilol_25_mg.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -204,7 +203,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

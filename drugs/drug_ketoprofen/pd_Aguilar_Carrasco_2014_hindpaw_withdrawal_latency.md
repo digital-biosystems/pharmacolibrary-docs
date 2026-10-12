@@ -22,7 +22,7 @@
 
 > The paper excerpt does not describe the pharmacodynamic mechanism linking ketoprofen concentrations to hindpaw withdrawal latency, so the specific mechanism (e.g., direct effect vs. effect compartment) is not provided. No potency or rate parameters such as IC50 or ke0 are reported in the available text.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Aguilar-Carrasco_2014`
 - **model family:** `emax`
@@ -65,7 +65,7 @@ Aguilar-Carrasco JC et al., Relationship between blood levels and t…, Drug dev
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

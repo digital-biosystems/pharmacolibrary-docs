@@ -21,7 +21,7 @@
 
 > Phenytoin concentrations (in microg/mL) are modeled to stimulate electroencephalogram (EEG) readings using a sigmoid Emax relationship with an EC50 of 12.5 microg/mL. The paper excerpts do not specify the underlying mechanism (e.g., production vs. inhibition) or rate constants.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Della_1998_2`
 - **model family:** `sigmoid_emax`
@@ -61,7 +61,7 @@ Della Paschoa OE et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -16,11 +16,11 @@
 
 **As extracted:** Guselkumab (the dose) drives Investigator’s Global Assessment [IGA] of psoriasis: direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Guselkumab serum exposure (AUC0–24w or Cave,ss) directly modulates the probability of achieving Investigator’s Global Assessment (IGA) 0/1 or 0 status via a standard ordinal logistic regression model with a maximum drug effect (Emax) component. The paper states that the model was successfully developed but does not provide specific numerical values for Emax or EC50 parameters for the IGA endpoint.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Chen_2022`
 - **model family:** `emax`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

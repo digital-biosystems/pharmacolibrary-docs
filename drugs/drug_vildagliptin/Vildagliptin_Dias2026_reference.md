@@ -5,7 +5,7 @@
 
 # vildagliptin — `Vildagliptin_Dias2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,7 +15,7 @@
 
 > **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -23,7 +23,7 @@
 
 The model builder substituted library defaults for ka and Tlag because these absorption parameters are not reported in the source paper for vildagliptin. Additionally, the record relies on apparent parameterization (F=1) with an invented first-order depot input rather than explicit bioavailability estimates. Consequently, the simulated absorption profile is based on assumed conventions rather than data supported by the study. Extracted — vildagliptin: CL 2.72 L/h/kg, V1 1.11 L/kg, Q 0.338 L/h/kg, V2 1.85 L/kg, V3 2.55 L/kg, Vnorm 0.856 L/kg, Q/F 56.6 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -113,19 +113,21 @@ Dias BB et al., Preclinical Modeling and Simulation to…, CPT: pharmacometrics 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.833 (15/18 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.75 (15/20 fields) | 5 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss-120b` | `parameters[qin,liver]` | 56.65 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v4]` | not captured | 77.90 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qin,muscle]` | not captured | 47.36 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qout,liver]` | not captured | 446.44 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 4].parameter_id` | Q352 | Q61 | mismatch |
 
 </details>
 
@@ -174,10 +176,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_vildagliptin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dias_2026` / `Dias_2026::reference`)
-- model: `../../../knowledgebase/drugs/drug_vildagliptin/models/modelica/Vildagliptin_Dias2026_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_vildagliptin/models/modelica/Vildagliptin_Dias2026_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_vildagliptin/models/modelica/Vildagliptin_Dias2026_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_vildagliptin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dias_2026` / `Dias_2026::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_vildagliptin/models/modelica/Vildagliptin_Dias2026_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_vildagliptin/models/modelica/Vildagliptin_Dias2026_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_vildagliptin/models/modelica/Vildagliptin_Dias2026_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -189,13 +191,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_vildagliptin/Vildagliptin_Dias2026_reference/Vildagliptin_Dias2026_reference_modelica.zip" download>Vildagliptin_Dias2026_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_vildagliptin/Vildagliptin_Dias2026_reference/Vildagliptin_Dias2026_reference_fmi.zip" download>Vildagliptin_Dias2026_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_vildagliptin/Vildagliptin_Dias2026_reference/Vildagliptin_Dias2026_reference_matlab.zip" download>Vildagliptin_Dias2026_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_vildagliptin/Vildagliptin_Dias2026_reference/Vildagliptin_Dias2026_reference_matlab_simbio.zip" download>Vildagliptin_Dias2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_vildagliptin/Vildagliptin_Dias2026_reference/Vildagliptin_Dias2026_reference_matlab_simbio.zip" download>Vildagliptin_Dias2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_vildagliptin/Vildagliptin_Dias2026_reference/Vildagliptin_Dias2026_reference_sbml.zip" download>Vildagliptin_Dias2026_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_vildagliptin/Vildagliptin_Dias2026_reference/Vildagliptin_Dias2026_reference_cellml.zip" download>Vildagliptin_Dias2026_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_vildagliptin/Vildagliptin_Dias2026_reference/Vildagliptin_Dias2026_reference.svg" alt="Vildagliptin_Dias2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_vildagliptin/Vildagliptin_Dias2026_reference/Vildagliptin_Dias2026_reference.svg" alt="Vildagliptin_Dias2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

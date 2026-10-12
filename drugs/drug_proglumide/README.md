@@ -28,16 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Blackmore_1992_AR4_2J_cell_growth](drugs/drug_proglumide/pd_Blackmore_1992_AR4_2J_cell_growth.md) | AR4-2J cell growth ← proglumide · direct Emax (saturable) effect | — | Blackmore M et al., Autocrine stimulation of growth of AR4-…, British journal of cancer (1992) | [10.1038/bjc.1992.212](https://doi.org/10.1038/bjc.1992.212) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=proglumide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CCKAR (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Blackmore_1992_AR4_2J_cell_growth](drugs/drug_proglumide/pd_Blackmore_1992_AR4_2J_cell_growth.md) | AR4-2J cell growth ← proglumide · direct Emax (saturable) effect | — | Blackmore M et al., Autocrine stimulation of growth of AR4-…, British journal of cancer (1992) | [10.1038/bjc.1992.212](https://doi.org/10.1038/bjc.1992.212) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

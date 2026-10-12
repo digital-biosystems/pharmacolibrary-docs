@@ -38,19 +38,19 @@ Temocapril is an ACE inhibitor developed for treating high blood pressure. It is
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.059). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Luo_2024_reference](drugs/drug_temocapril/Temocapril_Luo2024_reference.md) | — | general linear (no model) | 2 | Luo X et al., Simultaneously Predicting the Pharmacok…, Pharmaceutics (2024) | [10.3390/pharmaceutics16020234](https://doi.org/10.3390/pharmaceutics16020234) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.059). Primary extraction retained.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Luo_2024_reference](drugs/drug_temocapril/Temocapril_Luo2024_reference.md) | — | general linear (no model) | 2 | Luo X et al., Simultaneously Predicting the Pharmacok…, Pharmaceutics (2024) | [10.3390/pharmaceutics16020234](https://doi.org/10.3390/pharmaceutics16020234) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yamamoto_2012_MMP_2](drugs/drug_temocapril/pd_Yamamoto_2012_MMP_2.md) | MMP-2 activity ← temocaprilat · inhibition effect | — | Yamamoto D et al., Matrix metalloproteinase-2 inhibition b…, Clinical and experimental p… (2012) | [10.1111/j.1440-1681.2012.12003.x](https://doi.org/10.1111/j.1440-1681.2012.12003.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Yamamoto_2012_MMP_2](drugs/drug_temocapril/pd_Yamamoto_2012_MMP_2.md) | MMP-2 activity ← temocaprilat · inhibition effect | — | Yamamoto D et al., Matrix metalloproteinase-2 inhibition b…, Clinical and experimental p… (2012) | [10.1111/j.1440-1681.2012.12003.x](https://doi.org/10.1111/j.1440-1681.2012.12003.x) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span> | **SLCO1B1** | `Q88` · AUC | transport | [Maeda_2006](drugs/drug_temocapril/pgx_Maeda_2006_SLCO1B1_Q88.md) | Maeda K et al., Effects of organic anion transporting p…, Clinical pharmacology and t… (2006) | [10.1016/j.clpt.2006.01.011](https://doi.org/10.1016/j.clpt.2006.01.011) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span> | **SLCO1B1** | `Q88` · AUC | transport | [Maeda_2006](drugs/drug_temocapril/pgx_Maeda_2006_SLCO1B1_Q88.md) | Maeda K et al., Effects of organic anion transporting p…, Clinical pharmacology and t… (2006) | [10.1016/j.clpt.2006.01.011](https://doi.org/10.1016/j.clpt.2006.01.011) |
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -58,20 +58,6 @@ Temocapril is an ACE inhibitor developed for treating high blood pressure. It is
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=temocapril).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `SLCO1A2` unknown | DrugBank actor |
-| absorption | small intestine | `SLC15A1` unknown, `SLCO1A2` unknown | DrugBank actor |
-| metabolism | liver | `SLCO1B1` transport | paper PGx gene |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ACE (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

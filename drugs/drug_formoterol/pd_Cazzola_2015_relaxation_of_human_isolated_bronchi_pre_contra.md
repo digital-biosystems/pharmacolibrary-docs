@@ -20,7 +20,7 @@
 
 > Formoterol concentration (nM) stimulates relaxation of human isolated bronchi pre-contracted with ACh, described by an Emax model with EC50 = 2.71 ± 0.21 nM; the paper excerpts do not state the mechanism beyond this direct concentration–effect relation.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Cazzola_2015`
 - **model family:** `emax`
@@ -61,7 +61,7 @@ Cazzola M et al., Searching for the synergistic effect be…, Respiratory medici
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -19,7 +19,7 @@
 
 > Eletriptan dose (mg) acts directly on the binary response of becoming pain-free (%) via a dose-dependent Emax model that captures the difference from placebo. The model parameters are an Emax of 3.09 (dimensionless in the text description, though context implies a probability difference) and an ED50 of 20.9 mg.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mandema_2005`
 - **model family:** `emax`
@@ -61,7 +61,7 @@ Mandema JW et al., Therapeutic benefit of eletriptan compa…, Cephalalgia : an 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -20,7 +20,7 @@
 
 > The paper uses a saturable inhibitory Emax model to describe the relationship between eptinezumab exposure (specifically AUC0-12wk, with units of h·μg mL−1) and the reduction in monthly migraine days, noting that exposures from 100-mg and 300-mg doses exceeded EC90 estimates. The provided record, however, describes a separate additive model for the binary '≥75% migraine responder rate (weeks 1–12)' driven by exposure in h·μg mL−1 with a Slope of 0.35367, for which the paper does not specify the mechanism or potency values.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Baker_2020`
 - **model family:** `categorical`
@@ -61,7 +61,7 @@ Baker B et al., Population pharmacokinetic and exposure…, Pharmacology researc
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -4,7 +4,7 @@
 
 # momelotinib — `Momelotinib_Rich2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.676). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.676). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Rich B et al., Population Pharmacokinetics and Exposur…, Clinical pharmacology and t… (2026)
   ·  DOI: [10.1002/cpt.70076](https://doi.org/10.1002/cpt.70076)
 
-## Model component
-<dbs-pgx drug="momelotinib" model-id="Momelotinib_Rich2026_reference" status="needs_review" stale="false" population="patients with myelofibrosis and healthy or special-population participants" measured-compound="momelotinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="momelotinib" model-id="Momelotinib_Rich2026_reference" status="needs_review" stale="false" population="patients with myelofibrosis and healthy or special-population participants" measured-compound="momelotinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 10 extracted, plus 9 covariate effects.
@@ -244,7 +243,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_momelotinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rich_2026` / `Rich_2026::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_momelotinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rich_2026` / `Rich_2026::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -265,7 +264,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

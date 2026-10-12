@@ -27,18 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Costa_1993_3H_DHE_specific_binding](drugs/drug_dihydroergocryptine/pd_Costa_1993_3H_DHE_specific_binding.md) | Tritiated-dihydroergocryptine (3H-DHE) specific binding to adrenergic receptors on isolated smooth muscle cells ← dihydroergocryptine (3H-DHE) · model not identified | — | Costa P et al., Adrenergic receptors on smooth muscle c…, The Journal of urology (1993) | [10.1016/s0022-5347(17)35633-1](https://doi.org/10.1016/s0022-5347(17)35633-1) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dihydroergocryptine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: HTR2B (target), HTR7 (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Costa_1993_3H_DHE_specific_binding](drugs/drug_dihydroergocryptine/pd_Costa_1993_3H_DHE_specific_binding.md) | Tritiated-dihydroergocryptine (3H-DHE) specific binding to adrenergic receptors on isolated smooth muscle cells ← dihydroergocryptine (3H-DHE) · model not identified | — | Costa P et al., Adrenergic receptors on smooth muscle c…, The Journal of urology (1993) | [10.1016/s0022-5347(17)35633-1](https://doi.org/10.1016/s0022-5347(17)35633-1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

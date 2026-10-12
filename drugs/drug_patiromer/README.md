@@ -27,17 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Nguyen_2022_Potassium_reduction](drugs/drug_patiromer/pd_Nguyen_2022_Potassium_reduction.md) | Potassium reduction ← patiromer · direct linear effect | — | Nguyen PT et al., Comparison of Patiromer to Sodium Polys…, Hospital pharmacy (2022) | [10.1177/00185787211037552](https://doi.org/10.1177/00185787211037552) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=patiromer).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: Potassium (binder).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> | [Nguyen_2022_Potassium_reduction](drugs/drug_patiromer/pd_Nguyen_2022_Potassium_reduction.md) | Potassium reduction ← patiromer · direct linear effect | — | Nguyen PT et al., Comparison of Patiromer to Sodium Polys…, Hospital pharmacy (2022) | [10.1177/00185787211037552](https://doi.org/10.1177/00185787211037552) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -5,7 +5,7 @@
 
 # amlodipine — `Amlodipine_Vlachou2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,8 +29,7 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 Vlachou M et al., An In Vitro-In Vivo Simulation Approach…, Materials (Basel, Switzerla… (2021)
   ·  DOI: [10.3390/ma14030555](https://doi.org/10.3390/ma14030555)
 
-## Model component
-<dbs-pgx drug="amlodipine" model-id="Amlodipine_Vlachou2021_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="amlodipine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amlodipine" model-id="Amlodipine_Vlachou2021_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="amlodipine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -126,7 +125,7 @@ Vlachou M et al., An In Vitro-In Vivo Simulation Approach…, Materials (Basel, 
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_amlodipine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vlachou_2021` / `Vlachou_2021::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amlodipine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vlachou_2021` / `Vlachou_2021::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -147,7 +146,7 @@ Vlachou M et al., An In Vitro-In Vivo Simulation Approach…, Materials (Basel, 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

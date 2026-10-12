@@ -22,7 +22,7 @@
 
 > Tofacitinib (0.5–5 μM) inhibits viral replication of SARS-CoV-2 and seasonal coronaviruses in a dose-dependent manner, with an EC50 of 0.62 μM and a selective index of 48. The paper attributes this antiviral activity to the inhibition of STAT3 phosphorylation, although a specific pharmacodynamic model structure (e.g., Emax parameters other than EC50) or kinetic rates (kin, kout, ke0) is not provided.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Wang_2023`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Wang Y et al., Immunosuppressants exert differential e…, United European gastr
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

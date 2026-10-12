@@ -21,7 +21,7 @@
 
 > Thioridazine (0.0001–10 μM, 24-h incubation) causes a concentration-dependent loss of HEMn-DP melanocyte viability measured by WST-1 assay (% of control), with an EC50 of 2.24 μM; the paper does not state a specific PD mechanism (e.g., Emax/turnover model) for this effect.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Otręba_2015`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Otręba M et al., Effect of thioridazine on antioxidant s…, Naunyn-Schmiedeber
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

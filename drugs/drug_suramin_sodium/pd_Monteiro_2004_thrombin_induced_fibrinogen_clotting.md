@@ -20,7 +20,7 @@
 
 > Suramin (concentrations in microM, from cited PK data) inhibits thrombin-induced fibrinogen clotting, with an IC50 of 20 microM; the paper excerpts provide no further mechanism or model details.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Monteiro_2004`
 - **model family:** `unknown`
@@ -61,7 +61,7 @@ Monteiro RQ et al., Suramin interaction with human alpha-th…, The internationa
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

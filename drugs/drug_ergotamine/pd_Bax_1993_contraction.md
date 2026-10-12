@@ -19,7 +19,7 @@
 
 > The paper does not explicitly describe the underlying mechanism of action, but the extracted model classifies ergotamine as a stimulator of isolated human coronary artery contraction. The recorded parameters for this model are a pD2 of 8.4 and an Emax of 19.4 mN.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Bax_1993`
 - **model family:** `emax`
@@ -61,7 +61,7 @@ Bax WA et al., 5-HT receptors mediating contractions o…, European journal of p
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

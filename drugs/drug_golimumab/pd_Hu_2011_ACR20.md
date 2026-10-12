@@ -20,7 +20,7 @@
 
 > Golimumab acts on the American College of Rheumatology index of improvement (ACR20) via an indirect response model with an inhibitory effect on the response turnover. The provided record indicates a proportional inhibition mechanism, but the paper excerpts do not state the specific mechanism, and no potency or rate parameters (such as IC50, Emax, kin, or kout) are given.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Hu_2011`
 - **model family:** `indirect_response_i`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

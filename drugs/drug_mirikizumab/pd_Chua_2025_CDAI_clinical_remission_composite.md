@@ -16,11 +16,11 @@
 
 **As extracted:** Mirikizumab (concentrations from this paper's PK model) drives clinical remission by CDAI: direct linear effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The model uses a linear additive logistic relationship where mirikizumab plasma concentrations (µg/mL) positively influence the probability of achieving clinical remission by CDAI, characterized by a slope of 0.0996 per µg/mL and a baseline logit intercept of -1.30. The paper does not specify a distinct pharmacodynamic mechanism (e.g., Emax or indirect response) beyond this linear exposure-response association.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Chua_2025`
 - **model family:** `linear`
@@ -97,7 +97,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

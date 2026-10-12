@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Siebinga2023_reference&quot;,&quot;label&quot;:&quot;Siebinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# PSA — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
+# PSA — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,11 +16,11 @@
 
 **As extracted:** [177Lu]Lu-PSMA-I&T drives PSA (in µg/L): delayed effect through an effect compartment.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The model describes the effect of [177Lu]Lu-PSMA-I&T on PSA using an effect compartment where the drug acts as a linear elimination term (Edrug) from the PSA compartment, with a direct effect parameter (KD, direct) of 0.000335 L·day−1·GBq−1 and a PSA growth rate (kG) of 0.000408 h−1. A delayed linear effect was also included, characterized by an effect compartment rate constant (ke0) of 0.00128 h−1 and a delayed effect parameter of 0.0000328 L·day−1·MBq−1.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
 
 - **paper:** `Siebinga_2024`
 - **model family:** `effect_compartment`
@@ -82,25 +82,22 @@ Blocking:
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.0 (0/9 fields) | 9 |
+| `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `driver_compound` | [177Lu]Lu-PSMA-I&T | [177Lu]Lu-PSMA-I&T tumor concentration | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_direction` | inhibition | stimulation | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_form` | additive | proportional | mismatch |
-| `einfracz:gpt-oss-120b` | `model_family` | effect_compartment | linear | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q324].value` | 140 | 57.5 | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q326]` | 0.00128 | not captured | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q327]` | not captured | 0.000408 | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q335].value` | 0.0000328 | 0.00335 | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q340]` | 0.000408 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `effect_form` | proportional | additive | mismatch |
+| `gpt-oss:120b` | `model_family` | indirect_response_i | effect_compartment | mismatch |
+| `gpt-oss:120b` | `parameters[Q100]` | 15.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q324]` | not captured | 15.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q335]` | 0.000286 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q47]` | not captured | 0.000286 | only_one_extracted |
 
 </details>
 
@@ -114,11 +111,11 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

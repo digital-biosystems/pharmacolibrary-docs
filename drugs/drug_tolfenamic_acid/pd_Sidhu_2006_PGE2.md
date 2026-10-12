@@ -18,11 +18,11 @@
 
 **As extracted:** Tolfenamic_acid (concentrations from the PK model of Corum_2024) drives exudate PGE2: direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Tolfenamic acid concentrations inhibit the production of exudate PGE2 via a sigmoid Emax model with an effect compartment (t1/2 Ke0 = 16.52 h), characterized by an Emax of 89.7%, an IC50 of 0.073 microg ml(-1), and a Hill coefficient (N) of 1.180. The specific mechanistic basis for the inhibition is not described in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sidhu_2006`
 - **model family:** `sigmoid_emax`
@@ -102,7 +102,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

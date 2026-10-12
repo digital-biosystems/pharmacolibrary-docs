@@ -32,30 +32,8 @@ Galantamine is an acetylcholinesterase inhibitor used to treat Alzheimer's disea
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mihailova_1986_reference](drugs/drug_galantamine/Galantamine_Mihailova1986_reference.md) | — | 1-compartment (no model) | 0 | Mihailova D et al., Pharmacokinetics of galanthamine hydrob…, Pharmacology (1986) | [10.1159/000138184](https://doi.org/10.1159/000138184) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Piotrovsky_2003_reference](drugs/drug_galantamine/Galantamine_Piotrovsky2003_reference.md) | — | 1-compartment (no model) | 2 | Piotrovsky V et al., Galantamine population pharmacokinetics…, Journal of clinical pharmac… (2003) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=galantamine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | blood | `BCHE` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `BCHE` inhibitor, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| — | blood | `ACHE` inhibitor | DrugBank actor |
-| — | neuromuscular junction | `ACHE` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CHRNA7 (allosteric modulator), Muscle nicotinic acetylcholine receptor (allosteric modulator).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mihailova_1986_reference](drugs/drug_galantamine/Galantamine_Mihailova1986_reference.md) | — | 1-compartment (no model) | 0 | Mihailova D et al., Pharmacokinetics of galanthamine hydrob…, Pharmacology (1986) | [10.1159/000138184](https://doi.org/10.1159/000138184) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Piotrovsky_2003_reference](drugs/drug_galantamine/Galantamine_Piotrovsky2003_reference.md) | — | 1-compartment (no model) | 2 | Piotrovsky V et al., Galantamine population pharmacokinetics…, Journal of clinical pharmac… (2003) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

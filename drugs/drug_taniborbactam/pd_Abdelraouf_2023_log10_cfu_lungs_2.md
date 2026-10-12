@@ -22,7 +22,7 @@
 
 > A sigmoidal inhibitory Emax model describes the concentration-dependent effect of taniborbactam, driven by fAUC0–24/MIC, on the change in log10 cfu/lungs at 24 hours relative to 0 hours for P. aeruginosa isolates. The paper reports an average Imax of 5.07 ± 0.62 log10 cfu/lungs and identifies fAUC0–24/MIC values of 0.03, 0.93, and 18.22 as associated with stasis, 1 log kill, and 2 log kill, respectively, for the composite of four isolates.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Abdelraouf_2023`
 - **model family:** `sigmoid_emax`
@@ -56,7 +56,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

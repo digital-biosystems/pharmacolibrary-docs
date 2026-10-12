@@ -20,7 +20,7 @@
 
 > The model describes cisatracurium concentration (ng/mL) inhibiting twitch height via an effect compartment mechanism with an equilibration rate constant ($k_{e0}$) of 0.115 min⁻¹ and a concentration for 50% block ($IC_{50}$) of 129 ng/mL. No specific $E_{max}$ or production rate parameters are provided in the available data.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Imbeault_2006`
 - **model family:** `effect_compartment`
@@ -62,7 +62,7 @@ Imbeault K et al., Pharmacokinetics and pharmacodynamics o…, Anesthesia and an
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

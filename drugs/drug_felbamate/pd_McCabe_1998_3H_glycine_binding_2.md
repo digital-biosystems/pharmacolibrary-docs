@@ -21,7 +21,7 @@
 
 > Felbamate stimulates [3H]glycine binding in a sigmoid Emax model with an EC50 of 142 microM and a maximum effect (Emax) of 157% of control (nH = 1.6). The paper excerpts do not specify whether felbamate acts directly on the binding site or via an upstream mechanism (e.g., altering production or elimination of the response).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `McCabe_1998`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ McCabe RT et al., Felbamate increases [3H]glycine binding…, The Journal of pha
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

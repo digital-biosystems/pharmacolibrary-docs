@@ -28,17 +28,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Comets_1998_INR](drugs/drug_fluindione/pd_Comets_1998_INR.md) | International Normalized Ratio ← fluindione · indirect response — drug inhibits the loss of International Normalized Ratio | — | Comets E et al., Modeling INR data to predict maintenanc…, Therapeutic drug monitoring (1998) | [10.1097/00007691-199812000-00009](https://doi.org/10.1097/00007691-199812000-00009) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Comets_2012_2_INR](drugs/drug_fluindione/pd_Comets_2012_2_INR.md) | international normalized ratio ← fluindione · indirect response — drug inhibits the production of international normalized ratio | — | Comets E et al., Pharmacokinetic and pharmacodynamic var…, Clinical pharmacology and t… (2012) | [10.1038/clpt.2011.309](https://doi.org/10.1038/clpt.2011.309) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Verstuyft_2012_2_INR](drugs/drug_fluindione/pd_Verstuyft_2012_2_INR.md) | international normalized ratio ← fluindione · indirect response — drug inhibits the loss of international normalized ratio | — | Verstuyft C et al., A pharmacokinetic-pharmacodynamic model…, Clinical pharmacokinetics (2012) | [10.2165/11595560-000000000-00000](https://doi.org/10.2165/11595560-000000000-00000) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fluindione).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP2C9` substrate | DrugBank actor |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Comets_1998_INR](drugs/drug_fluindione/pd_Comets_1998_INR.md) | International Normalized Ratio ← fluindione · indirect response — drug inhibits the loss of International Normalized Ratio | — | Comets E et al., Modeling INR data to predict maintenanc…, Therapeutic drug monitoring (1998) | [10.1097/00007691-199812000-00009](https://doi.org/10.1097/00007691-199812000-00009) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Comets_2012_2_INR](drugs/drug_fluindione/pd_Comets_2012_2_INR.md) | international normalized ratio ← fluindione · indirect response — drug inhibits the production of international normalized ratio | — | Comets E et al., Pharmacokinetic and pharmacodynamic var…, Clinical pharmacology and t… (2012) | [10.1038/clpt.2011.309](https://doi.org/10.1038/clpt.2011.309) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Verstuyft_2012_2_INR](drugs/drug_fluindione/pd_Verstuyft_2012_2_INR.md) | international normalized ratio ← fluindione · indirect response — drug inhibits the loss of international normalized ratio | — | Verstuyft C et al., A pharmacokinetic-pharmacodynamic model…, Clinical pharmacokinetics (2012) | [10.2165/11595560-000000000-00000](https://doi.org/10.2165/11595560-000000000-00000) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

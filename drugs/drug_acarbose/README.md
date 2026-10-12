@@ -28,21 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Safamansouri_2014_amylase_inhibition](drugs/drug_acarbose/pd_Safamansouri_2014_amylase_inhibition.md) | α-amylase inhibitory activity ← Acarbose · direct sigmoid Emax (Hill) effect | — | Safamansouri H et al., α-Amylase inhibitory activity of some t…, Journal of diabetes and met… (2014) | [10.1186/s40200-014-0114-1](https://doi.org/10.1186/s40200-014-0114-1) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=acarbose).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: AMY2A (inhibitor), GAA (inhibitor), MGAM (inhibitor), SI (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Safamansouri_2014_amylase_inhibition](drugs/drug_acarbose/pd_Safamansouri_2014_amylase_inhibition.md) | α-amylase inhibitory activity ← Acarbose · direct sigmoid Emax (Hill) effect | — | Safamansouri H et al., α-Amylase inhibitory activity of some t…, Journal of diabetes and met… (2014) | [10.1186/s40200-014-0114-1](https://doi.org/10.1186/s40200-014-0114-1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

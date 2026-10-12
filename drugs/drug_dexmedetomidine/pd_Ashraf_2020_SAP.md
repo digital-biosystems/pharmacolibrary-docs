@@ -20,7 +20,7 @@
 
 > Dexmedetomidine plasma concentrations (ng/mL) drive systolic arterial blood pressure (SAP, mmHg) via a semi-mechanistic binomial model combining a dose-dependent hypertensive (α2-adrenoceptor-mediated) effect and a hypotensive effect mediated by reduced norepinephrine in the release compartment, each described by a sigmoid EMAX model with a biophase (effect compartment). For the hypertensive component, ke0,HTN = 22.1 h−1, EC50,DEX = 2.37 ng/mL, γHTN = 1.52, EMAX fixed at 1, with baseline E0,SAP = 136 mmHg; for the hypotensive (NE-mediated) component, EC50,NE = 4.56 nM, γHPN = 6.01, and EMIN,SAP = 49.6 mmHg.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Ashraf_2020`
 - **model family:** `sigmoid_emax`
@@ -55,11 +55,11 @@ Ashraf MW et al., Population Modelling of Dexmedetomidine…, Clinical pharmacok
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

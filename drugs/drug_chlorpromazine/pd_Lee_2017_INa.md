@@ -21,7 +21,7 @@
 
 > Chlorpromazine inhibits the hNav1.7 peak sodium current (INa) with a sigmoid Emax (proportional inhibition) concentration–effect relationship; the paper reports an IC50 of 25.9±0.6 μM and a Hill coefficient of 2.3±0.1, but the excerpts do not state a mechanism beyond this direct inhibitory Emax effect.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Lee_2017`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Lee SJ et al., Mechanism of inhibition by chlorpromazi…, Neuroscience letters 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

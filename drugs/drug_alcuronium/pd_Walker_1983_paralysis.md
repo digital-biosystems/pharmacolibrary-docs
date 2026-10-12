@@ -19,7 +19,7 @@
 
 > The paper describes a continuous paralysis response modeled as a proportional inhibition driven by alcuronium concentrations, with an effect compartment rate constant for equilibration of 0.24 min⁻¹. No mechanism beyond this equilibration rate or other potency values (e.g., Imax, IC50) are provided in the available record or excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Walker_1983`
 - **model family:** `emax`
@@ -60,7 +60,7 @@ Walker JS et al., Alcuronium kinetics and plasma concentr…, Clinical pharmacol
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -4,7 +4,7 @@
 
 # marstacimab — `Marstacimab_Nayak2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Nayak S et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-026-01695-5](https://doi.org/10.1007/s40262-026-01695-5)
 
-## Model component
-<dbs-pgx drug="marstacimab" model-id="Marstacimab_Nayak2026_reference" status="needs_review" stale="true" population="adolescent and adult participants with hemophilia and healthy volunteers" measured-compound="marstacimab" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="marstacimab" model-id="Marstacimab_Nayak2026_reference" status="needs_review" stale="true" population="adolescent and adult participants with hemophilia and healthy volunteers" measured-compound="marstacimab" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.
@@ -157,10 +156,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_marstacimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nayak_2026` / `Nayak_2026::reference`)
-- model: `../../../knowledgebase/drugs/drug_marstacimab/models/modelica/Marstacimab_Nayak2026_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_marstacimab/models/modelica/Marstacimab_Nayak2026_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_marstacimab/models/modelica/Marstacimab_Nayak2026_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_marstacimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nayak_2026` / `Nayak_2026::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_marstacimab/models/modelica/Marstacimab_Nayak2026_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_marstacimab/models/modelica/Marstacimab_Nayak2026_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_marstacimab/models/modelica/Marstacimab_Nayak2026_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -181,7 +180,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

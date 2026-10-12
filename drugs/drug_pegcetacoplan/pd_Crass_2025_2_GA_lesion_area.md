@@ -20,7 +20,7 @@
 
 > Log-transformed vitreous pegcetacoplan concentration inhibits the growth of GA lesion area (baseline 7.73 mm², rate 2.02 mm²/year) through a proportional effect mechanism, resulting in a 2.6% treatment effect. The paper quantifies the treatment effect as 20.4% and 17.2% reductions in lesion area change for monthly and every-other-month 15 mg doses, respectively, but does not provide specific PD potency parameters (e.g., IC50, EC50, ke0).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Crass_2025_2`
 - **model family:** `disease_progression`
@@ -63,7 +63,7 @@ Crass RL et al., Pharmacokinetic/pharmacodynamic analysi…, CPT: pharmacometric
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

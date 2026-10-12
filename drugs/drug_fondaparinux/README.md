@@ -33,23 +33,13 @@ Fondaparinux is an antithrombotic drug used to treat and prevent blood clots, in
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222), gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Michaličková_2022_reference](drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Michaličková D et al., Population pharmacokinetics-pharmacodyn…, European journal of clinica… (2022) | [10.1007/s00228-021-03201-1](https://doi.org/10.1007/s00228-021-03201-1) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222), gpt-oss:120b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Michaličková_2022_reference](drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Michaličková D et al., Population pharmacokinetics-pharmacodyn…, European journal of clinica… (2022) | [10.1007/s00228-021-03201-1](https://doi.org/10.1007/s00228-021-03201-1) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Chang_2016_coagulation_activity](drugs/drug_fondaparinux/pd_Chang_2016_coagulation_activity.md) | coagulation activity ← fondaparinux · direct sigmoid Emax (Hill) effect | — | Chang JB et al., A novel, rapid method to compare the th…, Scientific reports (2016) | [10.1038/srep29387](https://doi.org/10.1038/srep29387) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fondaparinux).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: F10 (inhibitor), SERPINC1 (potentiator).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Chang_2016_coagulation_activity](drugs/drug_fondaparinux/pd_Chang_2016_coagulation_activity.md) | coagulation activity ← fondaparinux · direct sigmoid Emax (Hill) effect | — | Chang JB et al., A novel, rapid method to compare the th…, Scientific reports (2016) | [10.1038/srep29387](https://doi.org/10.1038/srep29387) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

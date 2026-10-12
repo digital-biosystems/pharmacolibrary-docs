@@ -21,7 +21,7 @@
 
 > Edaravone dose (mg/kg) was related to percent inhibition of ischemic damage via an Emax (inhibitory) model, with Emax 55.7% and ED50 7.17 mg/kg; the paper excerpts do not state the mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Wu_2014`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Wu HY et al., The synergetic effect of edaravone and…, European journal of pha
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

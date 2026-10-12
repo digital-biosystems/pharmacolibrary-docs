@@ -20,7 +20,7 @@
 
 > Indacaterol concentrations (μM) were tested against CYP1B1 inhibitory activity measured in an EROD assay; the paper reports an IC50 of 59.52 μM, but the excerpts do not state the mechanism or model form.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Wang_2020`
 - **model family:** `unknown`
@@ -61,7 +61,7 @@ Wang Y et al., Carvedilol serves as a novel CYP1B1 inh…, European journal of m
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -33,29 +33,8 @@ Ambrisentan is an antihypertensive drug used to treat pulmonary arterial hyperte
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Hill_2020_reference](drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hill KD et al., A Randomized, Controlled Pharmacokineti…, Pediatric critical care med… (2020) | [10.1097/PCC.0000000000002410](https://doi.org/10.1097/PCC.0000000000002410) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.882), gpt-oss:120b (not confirmed, agreement 0.882). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Okour_2023_reference](drugs/drug_ambrisentan/Ambrisentan_Okour2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+1 cov.) | Okour M et al., Pediatric Population Pharmacokinetic Mo…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2199](https://doi.org/10.1002/jcph.2199) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ambrisentan).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C19` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `SLCO1B1` substrate, `SLCO1B3` substrate, `UGT1A3` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: EDNRA (target), EDNRB (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), gpt-oss:120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Hill_2020_reference](drugs/drug_ambrisentan/Ambrisentan_Hill2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hill KD et al., A Randomized, Controlled Pharmacokineti…, Pediatric critical care med… (2020) | [10.1097/PCC.0000000000002410](https://doi.org/10.1097/PCC.0000000000002410) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.882), gpt-oss:120b (not confirmed, agreement 0.882). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Okour_2023_reference](drugs/drug_ambrisentan/Ambrisentan_Okour2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+1 cov.) | Okour M et al., Pediatric Population Pharmacokinetic Mo…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2199](https://doi.org/10.1002/jcph.2199) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

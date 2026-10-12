@@ -20,7 +20,7 @@
 
 > Risperidone (or the sum of risperidone and 9-hydroxyrisperidone) concentrations were modelled as stimulating the difference in absolute EEG power in the delta frequency band (F3 lead) versus placebo, using a linear model with an additive effect form. The record does not resolve the driver concentrations or specify a mechanism beyond this direct stimulation, and no paper excerpts are available to confirm the mechanism or provide potency or rate values.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Lee_1999`
 - **model family:** `linear`
@@ -40,11 +40,11 @@ _No resolved parameters._
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

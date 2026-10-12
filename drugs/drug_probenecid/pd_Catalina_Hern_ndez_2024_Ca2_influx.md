@@ -22,7 +22,7 @@
 
 > Probenecid directly activates rat TRPV2 channels to stimulate Ca2+ influx, measured as a Fura-2 fluorescence ratio, in a manner inhibited by tranilast and ruthenium red. The paper reports an EC50 of 25 µM for probenecid against rat TRPV2, increasing to ~200 µM in the presence of these inhibitors, without describing a specific kinetic rate constant or effect compartment.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Catalina-Hernández_2024`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Catalina-Hernández È et al., Experimental and computational biophysi…, Compu
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

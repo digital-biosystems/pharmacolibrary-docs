@@ -24,31 +24,14 @@ Roxithromycin is a macrolide antibiotic used to treat bacterial infections. It i
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Del_1990_reference](drugs/drug_roxithromycin/Roxithromycin_Del1990_reference.md) | — | 1-compartment (no model) | 0 | Del Tacca M et al., Roxithromycin penetration into gingiva…, Chemotherapy (1990) | [10.1159/000238785](https://doi.org/10.1159/000238785) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Del_1990_reference](drugs/drug_roxithromycin/Roxithromycin_Del1990_reference.md) | — | 1-compartment (no model) | 0 | Del Tacca M et al., Roxithromycin penetration into gingiva…, Chemotherapy (1990) | [10.1159/000238785](https://doi.org/10.1159/000238785) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Lim_2006_TNF_alpha](drugs/drug_roxithromycin/pd_Lim_2006_TNF_alpha.md) | tumour necrosis factor-alpha ← roxithromycin · indirect response — drug inhibits the production of tumour necrosis factor-alpha | — | Lim JH et al., Pharmacokinetic/pharmacodynamic modelli…, Journal of veterinary medic… (2006) | [10.1111/j.1439-0442.2006.00852.x](https://doi.org/10.1111/j.1439-0442.2006.00852.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Lim_2006_IL_6](drugs/drug_roxithromycin/pd_Lim_2006_IL_6.md) | interleukin-6 ← roxithromycin · indirect response — drug inhibits the production of interleukin-6 | — | Lim JH et al., Pharmacokinetic/pharmacodynamic modelli…, Journal of veterinary medic… (2006) | [10.1111/j.1439-0442.2006.00852.x](https://doi.org/10.1111/j.1439-0442.2006.00852.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=roxithromycin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` unknown | DrugBank actor |
-| absorption | kidney | `ABCB1` unknown | DrugBank actor |
-| absorption | liver | `ABCB1` unknown | DrugBank actor |
-| absorption | placenta | `ABCB1` unknown | DrugBank actor |
-| absorption | small intestine | `ABCB1` unknown | DrugBank actor |
-| absorption | testis | `ABCB1` unknown | DrugBank actor |
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP2B6` inhibitor, `CYP3A4` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Lim_2006_TNF_alpha](drugs/drug_roxithromycin/pd_Lim_2006_TNF_alpha.md) | tumour necrosis factor-alpha ← roxithromycin · indirect response — drug inhibits the production of tumour necrosis factor-alpha | — | Lim JH et al., Pharmacokinetic/pharmacodynamic modelli…, Journal of veterinary medic… (2006) | [10.1111/j.1439-0442.2006.00852.x](https://doi.org/10.1111/j.1439-0442.2006.00852.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Lim_2006_IL_6](drugs/drug_roxithromycin/pd_Lim_2006_IL_6.md) | interleukin-6 ← roxithromycin · indirect response — drug inhibits the production of interleukin-6 | — | Lim JH et al., Pharmacokinetic/pharmacodynamic modelli…, Journal of veterinary medic… (2006) | [10.1111/j.1439-0442.2006.00852.x](https://doi.org/10.1111/j.1439-0442.2006.00852.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

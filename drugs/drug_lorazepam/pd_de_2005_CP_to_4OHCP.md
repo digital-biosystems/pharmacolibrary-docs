@@ -22,7 +22,7 @@
 
 > The paper does not provide excerpts describing the mechanism, but the record indicates lorazepam concentrations (microM) inhibit cyclophosphamide bioactivation to 4-hydroxycyclophosphamide, with an IC50 of 15 microM; no Imax, kin, kout, ke0, or gamma values are available.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `de_2005`
 - **model family:** `unknown`
@@ -63,7 +63,7 @@ de Jonge ME et al., Effects of co-medicated drugs on cyclop…, Anti-cancer drug
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

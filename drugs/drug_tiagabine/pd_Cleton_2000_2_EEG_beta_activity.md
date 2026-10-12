@@ -18,11 +18,11 @@
 
 **As extracted:** Tiagabine (concentrations from the PK model of Cleton_1999_2) drives increase in beta activity (11.5-30 Hz) of the EEG (in microV): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Tiagabine plasma concentrations (ng/ml) stimulate EEG beta activity (µV) via a sigmoid Emax model linked by an effect compartment with a ke0 of 0.060 min⁻¹. The model characterizes the response with an Emax of 82 µV, an EC50 of 486 ng/ml, and a Hill factor of 2.0.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Cleton_2000_2`
 - **model family:** `sigmoid_emax`
@@ -101,7 +101,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

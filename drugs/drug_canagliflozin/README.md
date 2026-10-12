@@ -33,22 +33,22 @@ Canagliflozin is an anti-diabetic medicine used to treat type 2 diabetes mellitu
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.941). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Yao_2023_reference](drugs/drug_canagliflozin/Canagliflozin_Yao2023_reference.md) | ▶ model + simulator | 2-compartment, IV | 6 | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Elenjickal_2025_reference](drugs/drug_canagliflozin/Canagliflozin_Elenjickal2025_reference.md) | — | 1-compartment (no model) | 3 | Elenjickal EJ et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01571-8](https://doi.org/10.1007/s40262-025-01571-8) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.941). Primary extraction retained.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Yao_2023_reference](drugs/drug_canagliflozin/Canagliflozin_Yao2023_reference.md) | ▶ model + simulator | 2-compartment, IV | 6 | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Elenjickal_2025_reference](drugs/drug_canagliflozin/Canagliflozin_Elenjickal2025_reference.md) | — | 1-compartment (no model) | 3 | Elenjickal EJ et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01571-8](https://doi.org/10.1007/s40262-025-01571-8) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> | [Devineni_2015_2_RTG](drugs/drug_canagliflozin/pd_Devineni_2015_2_RTG.md) | renal threshold for glucose ← canagliflozin · direct sigmoid Emax (Hill) effect | — | Devineni D et al., Single- and multiple-dose pharmacokinet…, International journal of cl… (2015) | [10.5414/CP202218](https://doi.org/10.5414/CP202218) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [de_2017_HbA1c](drugs/drug_canagliflozin/pd_de_2017_HbA1c.md) | glycosylated haemoglobin ← canagliflozin · direct Emax (saturable) effect | — | de Winter W et al., Dynamic population pharmacokinetic-phar…, British journal of clinical… (2017) | [10.1111/bcp.13180](https://doi.org/10.1111/bcp.13180) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> | [Yao_2023_UGEc](drugs/drug_canagliflozin/pd_Yao_2023_UGEc.md) | change of urine glucose excretion (UGE) from baseline normalized by FPG ← canagliflozin · direct Emax (saturable) effect | ▶ model + simulator | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> | [Devineni_2015_2_RTG](drugs/drug_canagliflozin/pd_Devineni_2015_2_RTG.md) | renal threshold for glucose ← canagliflozin · direct sigmoid Emax (Hill) effect | — | Devineni D et al., Single- and multiple-dose pharmacokinet…, International journal of cl… (2015) | [10.5414/CP202218](https://doi.org/10.5414/CP202218) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [de_2017_HbA1c](drugs/drug_canagliflozin/pd_de_2017_HbA1c.md) | glycosylated haemoglobin ← canagliflozin · direct Emax (saturable) effect | — | de Winter W et al., Dynamic population pharmacokinetic-phar…, British journal of clinical… (2017) | [10.1111/bcp.13180](https://doi.org/10.1111/bcp.13180) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span> | [Yao_2023_UGEc](drugs/drug_canagliflozin/pd_Yao_2023_UGEc.md) | change of urine glucose excretion (UGE) from baseline normalized by FPG ← canagliflozin · direct Emax (saturable) effect | ▶ model + simulator | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **UGT1A9** | `Q22` · CL | metabolism | [Golovina_2023](drugs/drug_canagliflozin/pgx_Golovina_2023_UGT1A9_Q22.md) | Golovina EL et al., [Clinical effectiveness and pharmacokin…, Terapevticheskii arkhiv (2023) | [10.26442/00403660.2023.08.202326](https://doi.org/10.26442/00403660.2023.08.202326) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span> | **UGT1A9** | `Q22` · CL | metabolism | [Golovina_2023](drugs/drug_canagliflozin/pgx_Golovina_2023_UGT1A9_Q22.md) | Golovina EL et al., [Clinical effectiveness and pharmacokin…, Terapevticheskii arkhiv (2023) | [10.26442/00403660.2023.08.202326](https://doi.org/10.26442/00403660.2023.08.202326) |
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -56,31 +56,6 @@ Canagliflozin is an anti-diabetic medicine used to treat type 2 diabetes mellitu
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=canagliflozin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` unknown | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` unknown | DrugBank actor |
-| absorption | mammary gland | `ABCG2` unknown | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` unknown | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` unknown | DrugBank actor |
-| distribution | blood | `ORM1` substrate | DrugBank actor |
-| metabolism | kidney | `UGT1A9` metabolism/substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate, `UGT1A9` metabolism/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `ABCC2` substrate | DrugBank actor |
-| excretion | liver | `ABCC2` substrate | DrugBank actor |
-| excretion | small intestine | `ABCC2` substrate | DrugBank actor |
-| — | kidney | `SLC5A2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: UGT2B4 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -32,25 +32,13 @@ Interferon alfa-2b is an immunostimulant interferon used to treat several cancer
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: disputed</span> | [García-García_2016_reference](drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | García-García I et al., Pharmacokinetic and pharmacodynamic cha…, BMC pharmacology & toxicolo… (2016) | [10.1186/s40360-016-0103-8](https://doi.org/10.1186/s40360-016-0103-8) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.692). Primary extraction retained.">cross-check: disputed</span> | [García-García_2016_reference](drugs/drug_interferon_alfa_2b/InterferonAlfa2b_GarcaGarca2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | García-García I et al., Pharmacokinetic and pharmacodynamic cha…, BMC pharmacology & toxicolo… (2016) | [10.1186/s40360-016-0103-8](https://doi.org/10.1186/s40360-016-0103-8) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Talal_2006_HCV_RNA](drugs/drug_interferon_alfa_2b/pd_Talal_2006_HCV_RNA.md) | HCV RNA ← PEG-IFN alpha-2b · indirect response — drug inhibits the production of HCV RNA | model (no simulator) | Talal AH et al., Pharmacodynamics of PEG-IFN alpha diffe…, Hepatology (Baltimore, Md.) (2006) | [10.1002/hep.21136](https://doi.org/10.1002/hep.21136) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=interferon_alfa_2b).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: IFNA2 (modulator), IFNAR1 (binder), IFNAR2 (binder).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Talal_2006_HCV_RNA](drugs/drug_interferon_alfa_2b/pd_Talal_2006_HCV_RNA.md) | HCV RNA ← PEG-IFN alpha-2b · indirect response — drug inhibits the production of HCV RNA | model (no simulator) | Talal AH et al., Pharmacodynamics of PEG-IFN alpha diffe…, Hepatology (Baltimore, Md.) (2006) | [10.1002/hep.21136](https://doi.org/10.1002/hep.21136) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

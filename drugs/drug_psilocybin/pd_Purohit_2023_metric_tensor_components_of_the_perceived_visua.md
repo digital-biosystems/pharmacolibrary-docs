@@ -20,7 +20,7 @@
 
 > Psilocybin concentrations in the brain directly modulate the metric tensor components of perceived visual space via a stimulation effect described by a Hill equation. The model reports a Hill coefficient of 14.8 and a half-effective drug concentration of 1.39 pmol/cm³.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Purohit_2023`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Purohit P et al., Empirically validated theoretical analy…, Frontiers in compu
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

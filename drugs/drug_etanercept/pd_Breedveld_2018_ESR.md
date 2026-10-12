@@ -16,11 +16,11 @@
 
 **As extracted:** Etanercept (concentrations from the PK model of Zhou_2004) drives erythrocyte sedimentation rate (in mm/h): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > A sigmoidal Emax model described the inhibition of erythrocyte sedimentation rate (ESR) by steady-state etanercept concentrations, assuming a direct concentration-dependent effect without a mechanism-based production or elimination rate. The model estimated an Emax of 46% and an EC50 of 465 ng/mL with a sigmoidicity factor of 0.48.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Breedveld_2018`
 - **model family:** `sigmoid_emax`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -15,6 +15,8 @@
 
 **Indication.** Clinical trials are now testing the therapeutic potential of MDMA for post-traumatic stress disorder (PTSD) and anxiety associated with terminal cancer. MDMA is one of the four most widely used illicit drugs in the U.S.
 
+<p><small>Source: <a href="https://go.drugbank.com/drugs/DB01454">DrugBank DB01454</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
+
 ## Molecular properties
 
 > Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
@@ -49,20 +51,6 @@
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [Acosta_2025_molecular_validity](drugs/drug_midomafetamine/pd_Acosta_2025_molecular_validity.md) | molecular validity · model not identified | — | Acosta Murillo R et al., Benchmarking Molecular Mutation Operato…, International journal of mo… (2025) | [10.3390/ijms262311685](https://doi.org/10.3390/ijms262311685) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [Acosta_2025_pIC50](drugs/drug_midomafetamine/pd_Acosta_2025_pIC50.md) | pIC50 · model not identified | — | Acosta Murillo R et al., Benchmarking Molecular Mutation Operato…, International journal of mo… (2025) | [10.3390/ijms262311685](https://doi.org/10.3390/ijms262311685) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [Acosta_2025_structural_conservation](drugs/drug_midomafetamine/pd_Acosta_2025_structural_conservation.md) | structural conservation · model not identified | — | Acosta Murillo R et al., Benchmarking Molecular Mutation Operato…, International journal of mo… (2025) | [10.3390/ijms262311685](https://doi.org/10.3390/ijms262311685) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=midomafetamine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| — | brain | `SLC6A4` negative modulator/unknown | DrugBank actor |
-| — | platelet | `SLC6A4` negative modulator/unknown | DrugBank actor |
-
-<sub>Actors without a tissue in the table: HTR2A (target), HTR2B (target), HTR2C (target), SLC18A2 (inhibitor), SLC6A2 (negative modulator), SLC6A2 (unknown), SLC6A3 (negative modulator), SLC6A3 (unknown).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

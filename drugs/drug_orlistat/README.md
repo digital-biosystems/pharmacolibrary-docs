@@ -28,22 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Tongluan_2017_virus_titer](drugs/drug_orlistat/pd_Tongluan_2017_virus_titer.md) | virus titer ← orlistat · inhibition effect | — | Tongluan N et al., Involvement of fatty acid synthase in d…, Virology journal (2017) | [10.1186/s12985-017-0685-9](https://doi.org/10.1186/s12985-017-0685-9) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Zhi_1994_fecal_fat_excretion_percentage_relative_to_ingested_fat](drugs/drug_orlistat/pd_Zhi_1994_fecal_fat_excretion_percentage_relative_to_ingested.md) | fecal fat excretion percentage (relative to ingested fat) ← orlistat · direct Emax (saturable) effect | — | Zhi J et al., Retrospective population-based analysis…, Clinical pharmacology and t… (1994) | [10.1038/clpt.1994.104](https://doi.org/10.1038/clpt.1994.104) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=orlistat).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | liver | `CYP3A4` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CNR1 (inhibitor), FASN (inhibitor), LIPF (inhibitor), PLA2G4A (inhibitor), PNLIP (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Tongluan_2017_virus_titer](drugs/drug_orlistat/pd_Tongluan_2017_virus_titer.md) | virus titer ← orlistat · inhibition effect | — | Tongluan N et al., Involvement of fatty acid synthase in d…, Virology journal (2017) | [10.1186/s12985-017-0685-9](https://doi.org/10.1186/s12985-017-0685-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Zhi_1994_fecal_fat_excretion_percentage_relative_to_ingested_fat](drugs/drug_orlistat/pd_Zhi_1994_fecal_fat_excretion_percentage_relative_to_ingested.md) | fecal fat excretion percentage (relative to ingested fat) ← orlistat · direct Emax (saturable) effect | — | Zhi J et al., Retrospective population-based analysis…, Clinical pharmacology and t… (1994) | [10.1038/clpt.1994.104](https://doi.org/10.1038/clpt.1994.104) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

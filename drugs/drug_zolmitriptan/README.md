@@ -34,7 +34,7 @@ Zolmitriptan is a serotonin 5-HT1 receptor agonist used to treat migraine attack
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Zhou_2017_reference](drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Zhou W et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.935](https://doi.org/10.1002/jcph.935) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1), gpt-oss:120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Zhou_2017_reference](drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Zhou W et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.935](https://doi.org/10.1002/jcph.935) |
 
 ## Pharmacodynamics (PD)
 
@@ -42,26 +42,6 @@ Zolmitriptan is a serotonin 5-HT1 receptor agonist used to treat migraine attack
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wurch_2000_inositol_phosphate_formation](drugs/drug_zolmitriptan/pd_Wurch_2000_inositol_phosphate_formation.md) | inositol phosphate formation ← zolmitriptan · direct Emax (saturable) effect | — | Wurch T et al., Coupling of canine serotonin 5-HT(1B) a…, Journal of neurochemistry (2000) | [10.1046/j.1471-4159.2000.0751180.x](https://doi.org/10.1046/j.1471-4159.2000.0751180.x) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [MaassenVanDenBrink_1998_contraction](drugs/drug_zolmitriptan/pd_MaassenVanDenBrink_1998_contraction.md) | Coronary artery contraction ← zolmitriptan · direct Emax (saturable) effect | model (no simulator) | MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circulation (1998) | [10.1161/01.cir.98.1.25](https://doi.org/10.1161/01.cir.98.1.25) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=zolmitriptan).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` unknown | DrugBank actor |
-| absorption | kidney | `ABCB1` unknown | DrugBank actor |
-| absorption | liver | `ABCB1` unknown | DrugBank actor |
-| absorption | placenta | `ABCB1` unknown | DrugBank actor |
-| absorption | small intestine | `ABCB1` unknown | DrugBank actor |
-| absorption | testis | `ABCB1` unknown | DrugBank actor |
-| metabolism | brain | `MAOA` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `MAOA` substrate | DrugBank actor |
-| metabolism | small intestine | `MAOA` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: HTR1A (target), HTR1B (target), HTR1D (target), HTR1E (target), HTR1F (target), HTR2A (target), HTR2B (target), HTR7 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

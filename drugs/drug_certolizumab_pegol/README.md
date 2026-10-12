@@ -24,9 +24,9 @@ Certolizumab pegol is a TNF-alpha inhibitor used to treat inflammatory condition
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). The first reading is what the record holds.">cross-check: disputed</span> | [Menshykau_2024_reference](drugs/drug_certolizumab_pegol/CertolizumabPegol_Menshykau2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Menshykau D et al., Population PK modeling of certolizumab…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13220](https://doi.org/10.1002/psp4.13220) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.48). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Wade_2015_reference](drugs/drug_certolizumab_pegol/CertolizumabPegol_Wade2015_reference.md) | — | 1-compartment (no model) | 5 (+5 cov.) | Wade JR et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2015) | [10.1002/jcph.491](https://doi.org/10.1002/jcph.491) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.125). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Vande_2017_reference](drugs/drug_certolizumab_pegol/CertolizumabPegol_Vande2017_reference.md) | — | 1-compartment (no model) | 0 | Vande Casteele N et al., Accounting for Pharmacokinetic Variabil…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0535-3](https://doi.org/10.1007/s40262-017-0535-3) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). Primary extraction retained.">cross-check: disputed</span> | [Menshykau_2024_reference](drugs/drug_certolizumab_pegol/CertolizumabPegol_Menshykau2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Menshykau D et al., Population PK modeling of certolizumab…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13220](https://doi.org/10.1002/psp4.13220) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.48). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Wade_2015_reference](drugs/drug_certolizumab_pegol/CertolizumabPegol_Wade2015_reference.md) | — | 1-compartment (no model) | 5 (+5 cov.) | Wade JR et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2015) | [10.1002/jcph.491](https://doi.org/10.1002/jcph.491) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.125). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Vande_2017_reference](drugs/drug_certolizumab_pegol/CertolizumabPegol_Vande2017_reference.md) | — | 1-compartment (no model) | 0 | Vande Casteele N et al., Accounting for Pharmacokinetic Variabil…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0535-3](https://doi.org/10.1007/s40262-017-0535-3) |
 
 ## Pharmacodynamics (PD)
 
@@ -36,16 +36,6 @@ Certolizumab pegol is a TNF-alpha inhibitor used to treat inflammatory condition
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Lacroix_2014_ACR20](drugs/drug_certolizumab_pegol/pd_Lacroix_2014_ACR20.md) | ACR20 ← certolizumab_pegol · categorical (graded) response model | — | Lacroix BD et al., Simultaneous Exposure-Response Modeling…, CPT: pharmacometrics & syst… (2014) | [10.1038/psp.2014.41](https://doi.org/10.1038/psp.2014.41) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Lacroix_2014_ACR50](drugs/drug_certolizumab_pegol/pd_Lacroix_2014_ACR50.md) | ACR50 ← certolizumab_pegol · categorical (graded) response model | — | Lacroix BD et al., Simultaneous Exposure-Response Modeling…, CPT: pharmacometrics & syst… (2014) | [10.1038/psp.2014.41](https://doi.org/10.1038/psp.2014.41) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Lacroix_2014_ACR70](drugs/drug_certolizumab_pegol/pd_Lacroix_2014_ACR70.md) | ACR70 ← certolizumab_pegol · categorical (graded) response model | — | Lacroix BD et al., Simultaneous Exposure-Response Modeling…, CPT: pharmacometrics & syst… (2014) | [10.1038/psp.2014.41](https://doi.org/10.1038/psp.2014.41) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=certolizumab_pegol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: AKR1A1 (substrate), TNF (neutralizer).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -22,7 +22,7 @@
 
 > A sigmoidal inhibitory Emax model relates the free AUC0-24/MIC of taniborbactam to the change in log10 CFU/lungs at 24 hours, describing the inhibition of bacterial growth. The composite Enterobacterales data yield a maximum effect (Imax) of 5.59 log10 CFU/lungs, while specific fAUC0-24/MIC values for stasis, 1 log, and 2 log kill are not explicitly provided for this group.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Abdelraouf_2023`
 - **model family:** `sigmoid_emax`
@@ -56,7 +56,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

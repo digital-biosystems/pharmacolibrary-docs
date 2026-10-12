@@ -21,7 +21,7 @@
 
 > In the HFS-MAC, thioridazine concentrations (mg/liter) inhibit intracellular MAC bacterial burden (log10 CFU/ml) via an inhibitory sigmoid Emax model driven by Cmax/MIC; on day 7 the Emax was 5.20 ± 0.74 log10 CFU/ml (r2 = 0.96), and on day 14 Emax was 7.19 ± 0.30 log10 CFU/ml with EC50 (Cmax/MIC) of 0.53 ± 0.022 and Hill slope H of 2.75 ± 0.33. The mechanism of kill is inhibition of the mycobacterial electron transport chain; no kin/kout/ke0 values for the PD model are given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Deshpande_2016`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Deshpande D et al., Thioridazine as Chemotherapy for Mycoba…, Antimicrobial ag
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -19,7 +19,7 @@
 
 > The paper does not describe a pharmacodynamic mechanism linking lemborexant concentrations (ng/mL) to the binary treatment-emergent adverse event 'flu/influenza'; no potency (IC50/EC50/Emax) or rate parameters (kin, kout, ke0, gamma) are reported for this response, and the exposure-response analysis reports no clinically important exposure-related effect relative to placebo.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Lalovic_2020`
 - **model family:** `linear`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

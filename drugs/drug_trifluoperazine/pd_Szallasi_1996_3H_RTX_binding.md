@@ -21,7 +21,7 @@
 
 > Trifluoperazine inhibits specific [3H]resiniferatoxin binding to porcine dorsal horn membranes (fmol/mg protein) with a sigmoid Emax-type concentration–response relationship; the paper reports a Ki of 5 microM and a cooperativity index of 1.8, but the excerpts do not state the mechanism or Emax.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Szallasi_1996`
 - **model family:** `sigmoid_emax`
@@ -49,11 +49,11 @@ Szallasi A et al., Binding of neuroleptic drugs (trifluope…, European journal 
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

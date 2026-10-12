@@ -13,6 +13,8 @@
 
 **Description.** MRX-I has been used in trials studying the treatment of Bacterial Infections.
 
+<p><small>Source: <a href="https://go.drugbank.com/drugs/DB12796">DrugBank DB12796</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
+
 ## Molecular properties
 
 > Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).

@@ -19,7 +19,7 @@
 
 > In adolescents with schizophrenia, aripiprazole average steady-state concentration (C avg,ss, mg/L) reduces PANSS total score change from baseline via a proportional inhibitory Emax model on top of a Weibull placebo (disease) model, with maximum drug effect 6%, maximum placebo response 27%, and EC50 0.06 mg/L; the paper does not describe a mechanism beyond this empirical exposure-response relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Wang_2024_2`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Wang X et al., Exposure-Response Modeling in Adults an…, Journal of clinical p
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

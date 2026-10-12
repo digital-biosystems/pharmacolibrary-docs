@@ -28,17 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Lavrinenko_2022_HbO2](drugs/drug_oxygen/pd_Lavrinenko_2022_HbO2.md) | degree of saturation of hemoglobin by oxygen (oxyhemoglobin dissociation curve) ← oxygen · direct sigmoid Emax (Hill) effect | — | Lavrinenko IA et al., A New Model of Hemoglobin Oxygenation, Entropy (Basel, Switzerland) (2022) | [10.3390/e24091214](https://doi.org/10.3390/e24091214) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=oxygen).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | lung | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: HBA1 (binder), HBB (binder), MT-CO1 (activator), MT-CO1 (target), NOX1 (activator), NOX1 (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Lavrinenko_2022_HbO2](drugs/drug_oxygen/pd_Lavrinenko_2022_HbO2.md) | degree of saturation of hemoglobin by oxygen (oxyhemoglobin dissociation curve) ← oxygen · direct sigmoid Emax (Hill) effect | — | Lavrinenko IA et al., A New Model of Hemoglobin Oxygenation, Entropy (Basel, Switzerland) (2022) | [10.3390/e24091214](https://doi.org/10.3390/e24091214) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

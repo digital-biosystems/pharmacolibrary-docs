@@ -22,7 +22,7 @@
 
 > Lamotrigine concentration (1-300 µM) directly inhibits the rise slope of 5-HT3 receptor currents induced by 3 µM 5-HT by blocking channel opening during the receptor activation phase. The study reports a concentration-dependent inhibition with an IC50 of 21.7 ± 4.9 µM and a Hill coefficient of 1.4 ± 0.2.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kim_2017`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Kim KJ et al., Lamotrigine, an antiepileptic drug, inh…, The Korean journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -28,20 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Trösken_2004_CYP19_inhibition](drugs/drug_bifonazole/pd_Tr_sken_2004_CYP19_inhibition.md) | inhibition of recombinant human CYP19 (aromatase) ← bifonazole · direct sigmoid Emax (Hill) effect | — | Trösken ER et al., Comparative assessment of the inhibitio…, Endocrine research (2004) | [10.1081/erc-200035093](https://doi.org/10.1081/erc-200035093) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bifonazole).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP2B6` unknown, `CYP2E1` inhibitor, `CYP3A4` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| — | adipose tissue | `CYP19A1` inhibitor | DrugBank actor |
-| — | ovary | `CYP19A1` inhibitor | DrugBank actor |
-| — | testis | `CYP19A1` inhibitor | DrugBank actor |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Trösken_2004_CYP19_inhibition](drugs/drug_bifonazole/pd_Tr_sken_2004_CYP19_inhibition.md) | inhibition of recombinant human CYP19 (aromatase) ← bifonazole · direct sigmoid Emax (Hill) effect | — | Trösken ER et al., Comparative assessment of the inhibitio…, Endocrine research (2004) | [10.1081/erc-200035093](https://doi.org/10.1081/erc-200035093) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

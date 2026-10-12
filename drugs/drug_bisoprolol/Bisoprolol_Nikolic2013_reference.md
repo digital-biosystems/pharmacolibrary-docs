@@ -5,7 +5,7 @@
 
 # bisoprolol — `Bisoprolol_Nikolic2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: partial 1/2</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ValentinaNNikolic valentina@medfak.ni.ac.rs et al., PHARMACOKINETICS AND DISPOSITION Popula… (2013)
   ·  DOI: [10.1007/s00228-012-1427-y](https://doi.org/10.1007/s00228-012-1427-y)
 
-## Model component
-<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Nikolic2013_reference" status="model_quarantined" stale="false" population="patients with chronic heart failure" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Nikolic2013_reference" status="model_quarantined" stale="false" population="patients with chronic heart failure" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -120,9 +119,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_bisoprolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nikolic_2013` / `Nikolic_2013::reference`)
-- model: `../../../knowledgebase/drugs/drug_bisoprolol/models/modelica/_needs_review/Bisoprolol_Nikolic2013_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_bisoprolol/models/modelica/_needs_review/Bisoprolol_Nikolic2013_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bisoprolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nikolic_2013` / `Nikolic_2013::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bisoprolol/models/modelica/_needs_review/Bisoprolol_Nikolic2013_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bisoprolol/models/modelica/_needs_review/Bisoprolol_Nikolic2013_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -143,7 +142,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

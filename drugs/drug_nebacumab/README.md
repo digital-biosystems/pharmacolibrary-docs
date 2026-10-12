@@ -24,7 +24,7 @@ Nebacumab is an antibacterial monoclonal antibody, an immune globulin-type medic
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span> | [Romano_1993_reference](drugs/drug_nebacumab/Nebacumab_Romano1993_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Romano MJ et al., Single-dose pharmacokinetics and safety…, The Journal of pediatrics (1993) | [10.1016/s0022-3476(09)90031-2](https://doi.org/10.1016/s0022-3476(09)90031-2) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span> | [Romano_1993_reference](drugs/drug_nebacumab/Nebacumab_Romano1993_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Romano MJ et al., Single-dose pharmacokinetics and safety…, The Journal of pediatrics (1993) | [10.1016/s0022-3476(09)90031-2](https://doi.org/10.1016/s0022-3476(09)90031-2) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

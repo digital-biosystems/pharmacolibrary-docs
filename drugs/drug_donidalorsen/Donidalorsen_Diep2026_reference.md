@@ -4,7 +4,7 @@
 
 # donidalorsen — `Donidalorsen_Diep2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -14,7 +14,7 @@
 
 **Model:** No model was generated from this record.
 
-> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
@@ -30,8 +30,7 @@ Although the paper reports apparent parameters for donidalorsen (CL/F 12.8 L/h, 
 Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70206](https://doi.org/10.1002/psp4.70206)
 
-## Model component
-<dbs-pgx drug="donidalorsen" model-id="Donidalorsen_Diep2026_reference" status="needs_review" stale="true" population="healthy volunteers and patients with hereditary angioedema" measured-compound="donidalorsen" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="donidalorsen" model-id="Donidalorsen_Diep2026_reference" status="needs_review" stale="true" population="healthy volunteers and patients with hereditary angioedema" measured-compound="donidalorsen" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted, plus 4 covariate effects.
@@ -134,9 +133,9 @@ Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_donidalorsen/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Diep_2026` / `Diep_2026::reference`)
-- model: `../../../knowledgebase/drugs/drug_donidalorsen/models/modelica/_needs_review/Donidalorsen_Diep2026_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_donidalorsen/models/modelica/_needs_review/Donidalorsen_Diep2026_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_donidalorsen/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Diep_2026` / `Diep_2026::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_donidalorsen/models/modelica/_needs_review/Donidalorsen_Diep2026_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_donidalorsen/models/modelica/_needs_review/Donidalorsen_Diep2026_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -157,7 +156,7 @@ Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

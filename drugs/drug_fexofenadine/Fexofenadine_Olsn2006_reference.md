@@ -5,7 +5,7 @@
 
 # fexofenadine — `Fexofenadine_Olsn2006_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.9). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.818). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -23,7 +23,7 @@
 
 The finding does not identify which structural parameter or reported value had the dimension mismatch, so its specific cause is inconclusive. The record was built from the abstract alone, and reported summary statistics stood in for a fitted model. Extracted — fexofenadine: t1/2z 2.4 h, V/F 0.8 L/kg, CL 0.8 L/h/kg, Fab 2.6 %, AUC 27 %.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of area under the plasma concentration-time curve decreased: this record has 27, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of area under the plasma concentration-time curve: this record has none, the second reading 27; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by gpt-6-luna</sub>
 
@@ -75,13 +75,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.9 (9/10 fields) | 1 |
+| `qwen3.8-27b` | partly confirmed | 0.818 (9/11 fields) | 2 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `qwen3.8-27b` | `parameters[area under the plasma concentration-time curve decreased]` | 27 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[area under the plasma concentration-time curve]` | not captured | 27 | only_one_extracted |
 
 </details>
 
@@ -114,18 +115,18 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_fexofenadine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Olsén_2006` / `Olsén_2006::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fexofenadine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Olsén_2006` / `Olsén_2006::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

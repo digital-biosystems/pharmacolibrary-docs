@@ -5,7 +5,7 @@
 
 # dibekacin — `Dibekacin_Arancibia1987_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -28,8 +28,7 @@ Independently confirmed by `gpt-oss-120b`.
 ## Citation
 Arancibia A et al., Disposition kinetics of dibekacin in no…, International journal of cl… (1987)
 
-## Model component
-<dbs-pgx drug="dibekacin" model-id="Dibekacin_Arancibia1987_reference" status="needs_review" stale="false" population="healthy volunteers and patients with renal failure" measured-compound="dibekacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dibekacin" model-id="Dibekacin_Arancibia1987_reference" status="needs_review" stale="false" population="healthy volunteers and patients with renal failure" measured-compound="dibekacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -101,7 +100,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_dibekacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Arancibia_1987` / `Arancibia_1987::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_dibekacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Arancibia_1987` / `Arancibia_1987::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -122,7 +121,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

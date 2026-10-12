@@ -28,20 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | [Nicolau_2004_Bactericidal_activity](drugs/drug_telithromycin/pd_Nicolau_2004_Bactericidal_activity.md) | Bactericidal activity · inhibition effect | — | Nicolau DP, Clinical use of antimicrobial pharmacod…, Expert opinion on pharmacot… (2004) | [10.1517/14656566.5.2.229](https://doi.org/10.1517/14656566.5.2.229) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=telithromycin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP3A4` inhibitor/substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span> | [Nicolau_2004_Bactericidal_activity](drugs/drug_telithromycin/pd_Nicolau_2004_Bactericidal_activity.md) | Bactericidal activity · inhibition effect | — | Nicolau DP, Clinical use of antimicrobial pharmacod…, Expert opinion on pharmacot… (2004) | [10.1517/14656566.5.2.229](https://doi.org/10.1517/14656566.5.2.229) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

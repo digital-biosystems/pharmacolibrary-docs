@@ -5,7 +5,7 @@
 
 # metformin — `Metformin_Ailabouni2026_final_model_estimate`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778), gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778), gpt-oss:120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,9 +13,9 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Ailabouni AS et al., Interindividual variability in metformi…, Pediatric research (2026)
   ·  DOI: [10.1038/s41390-026-04938-0](https://doi.org/10.1038/s41390-026-04938-0)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Ailabouni2026_final_model_estimate" status="extracted" stale="true" population="pediatric patients" measured-compound="metformin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Ailabouni2026_final_model_estimate" status="extracted" stale="true" population="pediatric patients" measured-compound="metformin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 1 covariate effect.
@@ -166,10 +165,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_metformin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ailabouni_2026` / `Ailabouni_2026::final_model_estimate`)
-- model: `../../../knowledgebase/drugs/drug_metformin/models/modelica/Metformin_Ailabouni2026_final_model_estimate.mo`
-- deviation: `../../../knowledgebase/drugs/drug_metformin/models/modelica/Metformin_Ailabouni2026_final_model_estimate.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_metformin/models/modelica/Metformin_Ailabouni2026_final_model_estimate.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_metformin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ailabouni_2026` / `Ailabouni_2026::final_model_estimate`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_metformin/models/modelica/Metformin_Ailabouni2026_final_model_estimate.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_metformin/models/modelica/Metformin_Ailabouni2026_final_model_estimate.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_metformin/models/modelica/Metformin_Ailabouni2026_final_model_estimate.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -187,7 +186,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_metformin/Metformin_Ailabouni2026_final_model_estimate/Metformin_Ailabouni2026_final_model_estimate.svg" alt="Metformin_Ailabouni2026_final_model_estimate diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_metformin/Metformin_Ailabouni2026_final_model_estimate/Metformin_Ailabouni2026_final_model_estimate.svg" alt="Metformin_Ailabouni2026_final_model_estimate diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

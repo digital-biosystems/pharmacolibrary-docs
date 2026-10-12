@@ -24,7 +24,7 @@ Clomethiazole is a sedative and hypnotic medication, also described as an antico
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Zingmark_2003_reference](drugs/drug_clomethiazole/Clomethiazole_Zingmark2003_reference.md) | — | 1-compartment (no model) | 0 | Zingmark PH et al., Population pharmacokinetics of clomethi…, British journal of clinical… (2003) | [10.1046/j.0306-5251.2003.01850.x](https://doi.org/10.1046/j.0306-5251.2003.01850.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Zingmark_2003_reference](drugs/drug_clomethiazole/Clomethiazole_Zingmark2003_reference.md) | — | 1-compartment (no model) | 0 | Zingmark PH et al., Population pharmacokinetics of clomethi…, British journal of clinical… (2003) | [10.1046/j.0306-5251.2003.01850.x](https://doi.org/10.1046/j.0306-5251.2003.01850.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -34,17 +34,6 @@ Clomethiazole is a sedative and hypnotic medication, also described as an antico
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Nelson_2002_Direct_activation_of_GABA_A_current_in_alpha1_beta2_gamma2_receptors](drugs/drug_clomethiazole/pd_Nelson_2002_Direct_activation_of_GABA_A_current_in_alpha1_be.md) | Direct activation of GABA(A) current in alpha1/beta2/gamma2 receptors ← clomethiazole · direct Emax (saturable) effect | — | Nelson RM et al., Electrophysiological actions of gamma-a…, European journal of pharmac… (2002) | [10.1016/s0014-2999(02)02233-1](https://doi.org/10.1016/s0014-2999(02)02233-1) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Nelson_2002_Potentiation_of_GABA_activated_current](drugs/drug_clomethiazole/pd_Nelson_2002_Potentiation_of_GABA_activated_current.md) | Potentiation of GABA-activated current ← clomethiazole · direct Emax (saturable) effect | — | Nelson RM et al., Electrophysiological actions of gamma-a…, European journal of pharmac… (2002) | [10.1016/s0014-2999(02)02233-1](https://doi.org/10.1016/s0014-2999(02)02233-1) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Visser_2006_body_temperature](drugs/drug_clomethiazole/pd_Visser_2006_body_temperature.md) | body temperature ← clomethiazole · stimulation effect | — | Visser SA et al., Modeling drug- and system-related chang…, The Journal of pharmacology… (2006) | [10.1124/jpet.105.095224](https://doi.org/10.1124/jpet.105.095224) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=clomethiazole).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP2A6` substrate, `CYP2B6` substrate, `CYP2C19` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: GABRA1 (unknown), GABRG3 (modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

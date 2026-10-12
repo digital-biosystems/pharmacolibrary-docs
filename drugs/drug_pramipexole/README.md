@@ -28,23 +28,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> | [Zhang_2019_CGI_I](drugs/drug_pramipexole/pd_Zhang_2019_CGI_I.md) | Clinical Global Impression Improvement (CGI-I) scale response rate ← pramipexole · direct Emax (saturable) effect | — | Zhang N et al., Quantitative Comparison of the Efficaci…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1426](https://doi.org/10.1002/jcph.1426) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Zhang_2019_IRLS](drugs/drug_pramipexole/pd_Zhang_2019_IRLS.md) | Change in International Restless Leg Syndrome Study Group (IRLS) rating scale score ← pramipexole · direct Emax (saturable) effect | — | Zhang N et al., Quantitative Comparison of the Efficaci…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1426](https://doi.org/10.1002/jcph.1426) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Presgraves_2004_protection_against_MPP_induced_neurotoxicity_cell_viability](drugs/drug_pramipexole/pd_Presgraves_2004_protection_against_MPP_induced_neurotoxicity.md) | protection against MPP(+)-induced neurotoxicity (cell viability) ← pramipexole · stimulation effect | — | Presgraves SP et al., Involvement of dopamine D(2)/D(3) recep…, Experimental neurology (2004) | [10.1016/j.expneurol.2004.06.021](https://doi.org/10.1016/j.expneurol.2004.06.021) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pramipexole).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | liver | `SLC22A3` unknown | DrugBank actor |
-| distribution | placenta | `SLC22A3` unknown | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A3` unknown | DrugBank actor |
-| metabolism | liver | `SLC22A1` substrate | DrugBank actor |
-| excretion | kidney | `SLC22A2` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA2A (target), DRD2 (target), DRD3 (target), DRD4 (target), HTR1A (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> | [Zhang_2019_CGI_I](drugs/drug_pramipexole/pd_Zhang_2019_CGI_I.md) | Clinical Global Impression Improvement (CGI-I) scale response rate ← pramipexole · direct Emax (saturable) effect | — | Zhang N et al., Quantitative Comparison of the Efficaci…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1426](https://doi.org/10.1002/jcph.1426) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> | [Zhang_2019_IRLS](drugs/drug_pramipexole/pd_Zhang_2019_IRLS.md) | Change in International Restless Leg Syndrome Study Group (IRLS) rating scale score ← pramipexole · direct Emax (saturable) effect | — | Zhang N et al., Quantitative Comparison of the Efficaci…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1426](https://doi.org/10.1002/jcph.1426) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Presgraves_2004_protection_against_MPP_induced_neurotoxicity_cell_viability](drugs/drug_pramipexole/pd_Presgraves_2004_protection_against_MPP_induced_neurotoxicity.md) | protection against MPP(+)-induced neurotoxicity (cell viability) ← pramipexole · stimulation effect | — | Presgraves SP et al., Involvement of dopamine D(2)/D(3) recep…, Experimental neurology (2004) | [10.1016/j.expneurol.2004.06.021](https://doi.org/10.1016/j.expneurol.2004.06.021) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

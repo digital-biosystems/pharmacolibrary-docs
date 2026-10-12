@@ -20,7 +20,7 @@
 
 > The paper models ciclesonide dose acting on the binary response of asthma exacerbations using an Emax-type model; the excerpts provide no further detail on the mechanism, effect direction, or any potency or rate parameter values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma are not stated).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Pu_2026`
 - **model family:** `emax`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

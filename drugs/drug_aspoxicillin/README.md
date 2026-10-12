@@ -24,7 +24,7 @@ Aspoxicillin is an extended-spectrum penicillin antibiotic developed to treat ba
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.364). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Takase_1985_reference](drugs/drug_aspoxicillin/Aspoxicillin_Takase1985_reference.md) | — | 1-compartment (no model) | 0 | Takase Z et al., [Fundamental studies on aspoxicillin in…, The Japanese journal of ant… (1985) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.364). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Takase_1985_reference](drugs/drug_aspoxicillin/Aspoxicillin_Takase1985_reference.md) | — | 1-compartment (no model) | 0 | Takase Z et al., [Fundamental studies on aspoxicillin in…, The Japanese journal of ant… (1985) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -21,7 +21,7 @@
 
 > Pentamidine reduces hERG current after overnight exposure (hERG trafficking block), with an IC50 of 5 to 8 microM; the paper excerpts do not state the model form or mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kuryshev_2005`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Kuryshev YA et al., Pentamidine-induced long QT syndrome an…, The Journal of p
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

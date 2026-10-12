@@ -28,14 +28,14 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wyska_2010_TNF_alpha](drugs/drug_pentoxifylline/pd_Wyska_2010_TNF_alpha.md) | TNF-alpha ← pentoxifylline · indirect response — drug inhibits the production of TNF-alpha | — | Wyska E, Pharmacokinetic-pharmacodynamic modelin…, Pharmacology (2010) | [10.1159/000288734](https://doi.org/10.1159/000288734) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | [Peterson_1994_fibroproliferation](drugs/drug_pentoxifylline/pd_Peterson_1994_fibroproliferation.md) | fibroproliferation ← pentoxifylline · direct Emax (saturable) effect | — | Peterson TC et al., In vitro effect of platelet-derived gro…, Immunopharmacology (1994) | [10.1016/0162-3109(94)90061-2](https://doi.org/10.1016/0162-3109(94)90061-2) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wyska_2010_TNF_alpha](drugs/drug_pentoxifylline/pd_Wyska_2010_TNF_alpha.md) | TNF-alpha ← pentoxifylline · indirect response — drug inhibits the production of TNF-alpha | — | Wyska E, Pharmacokinetic-pharmacodynamic modelin…, Pharmacology (2010) | [10.1159/000288734](https://doi.org/10.1159/000288734) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | [Peterson_1994_fibroproliferation](drugs/drug_pentoxifylline/pd_Peterson_1994_fibroproliferation.md) | fibroproliferation ← pentoxifylline · direct Emax (saturable) effect | — | Peterson TC et al., In vitro effect of platelet-derived gro…, Immunopharmacology (1994) | [10.1016/0162-3109(94)90061-2](https://doi.org/10.1016/0162-3109(94)90061-2) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial 0/2</span> | **CYP1A2** | `Q17` · AUC∞ | metabolism | [Guo_2026](drugs/drug_pentoxifylline/pgx_Guo_2026_CYP1A2_Q17.md) | Guo L et al., Effects of CYP1A2 genetic polymorphisms…, BMC pharmacology & toxicolo… (2026) | [10.1186/s40360-026-01106-2](https://doi.org/10.1186/s40360-026-01106-2) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25), gpt-oss:120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial 0/2</span> | **CYP1A2** | `Q17` · AUC∞ | metabolism | [Guo_2026](drugs/drug_pentoxifylline/pgx_Guo_2026_CYP1A2_Q17.md) | Guo L et al., Effects of CYP1A2 genetic polymorphisms…, BMC pharmacology & toxicolo… (2026) | [10.1186/s40360-026-01106-2](https://doi.org/10.1186/s40360-026-01106-2) |
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -43,21 +43,6 @@ _not available_
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pentoxifylline).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP1A2` metabolism/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADORA1 (target), ADORA2A (target), NT5E (inhibitor), Phosphodiesterase enzymes (inhibitor), TNF (other/unknown).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

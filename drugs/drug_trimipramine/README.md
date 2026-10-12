@@ -43,20 +43,20 @@ _not available_
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.">guideline estimate</span> | **CYP2C19** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2C19_PA166105001_0.md) | guideline | — |
-| <span class="pk-badge pk-badge--neutral" title="the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.">guideline estimate</span> | **CYP2C19** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2C19_PA166105001_1.md) | guideline | — |
-| <span class="pk-badge pk-badge--neutral" title="the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.">guideline estimate</span> | **CYP2C19** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2C19_PA166105001_2.md) | guideline | — |
-| <span class="pk-badge pk-badge--neutral" title="the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.">guideline estimate</span> | **CYP2C19** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2C19_PA166105001_3.md) | guideline | — |
-| <span class="pk-badge pk-badge--neutral" title="the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.">guideline estimate</span> | **CYP2C19** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2C19_PA166105001_4.md) | guideline | — |
-| <span class="pk-badge pk-badge--neutral" title="the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.">guideline estimate</span> | **CYP2C19** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2C19_PA166105001_5.md) | guideline | — |
-| <span class="pk-badge pk-badge--neutral" title="the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.">guideline estimate</span> | **CYP2C19** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2C19_PA166105001_6.md) | guideline | — |
-| <span class="pk-badge pk-badge--neutral" title="the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.">guideline estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2D6_PA166105001_0.md) | guideline | — |
-| <span class="pk-badge pk-badge--neutral" title="the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.">guideline estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2D6_PA166105001_1.md) | guideline | — |
-| <span class="pk-badge pk-badge--neutral" title="the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.">guideline estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2D6_PA166105001_2.md) | guideline | — |
-| <span class="pk-badge pk-badge--neutral" title="the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.">guideline estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2D6_PA166105001_3.md) | guideline | — |
-| <span class="pk-badge pk-badge--neutral" title="the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.">guideline estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2D6_PA166105001_4.md) | guideline | — |
-| <span class="pk-badge pk-badge--neutral" title="the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.">guideline estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2D6_PA166105001_5.md) | guideline | — |
-| <span class="pk-badge pk-badge--neutral" title="the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.">guideline estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2D6_PA166105001_6.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral" title="CPIC/DPWG-derived estimate, not a primary-paper estimate.">guideline estimate</span> | **CYP2C19** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2C19_PA166105001_0.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral" title="CPIC/DPWG-derived estimate, not a primary-paper estimate.">guideline estimate</span> | **CYP2C19** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2C19_PA166105001_1.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral" title="CPIC/DPWG-derived estimate, not a primary-paper estimate.">guideline estimate</span> | **CYP2C19** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2C19_PA166105001_2.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral" title="CPIC/DPWG-derived estimate, not a primary-paper estimate.">guideline estimate</span> | **CYP2C19** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2C19_PA166105001_3.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral" title="CPIC/DPWG-derived estimate, not a primary-paper estimate.">guideline estimate</span> | **CYP2C19** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2C19_PA166105001_4.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral" title="CPIC/DPWG-derived estimate, not a primary-paper estimate.">guideline estimate</span> | **CYP2C19** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2C19_PA166105001_5.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral" title="CPIC/DPWG-derived estimate, not a primary-paper estimate.">guideline estimate</span> | **CYP2C19** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2C19_PA166105001_6.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral" title="CPIC/DPWG-derived estimate, not a primary-paper estimate.">guideline estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2D6_PA166105001_0.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral" title="CPIC/DPWG-derived estimate, not a primary-paper estimate.">guideline estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2D6_PA166105001_1.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral" title="CPIC/DPWG-derived estimate, not a primary-paper estimate.">guideline estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2D6_PA166105001_2.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral" title="CPIC/DPWG-derived estimate, not a primary-paper estimate.">guideline estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2D6_PA166105001_3.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral" title="CPIC/DPWG-derived estimate, not a primary-paper estimate.">guideline estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2D6_PA166105001_4.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral" title="CPIC/DPWG-derived estimate, not a primary-paper estimate.">guideline estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2D6_PA166105001_5.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral" title="CPIC/DPWG-derived estimate, not a primary-paper estimate.">guideline estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_trimipramine/pgx_guideline_CYP2D6_PA166105001_6.md) | guideline | — |
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -64,25 +64,6 @@ _not available_
 <summary>PGx field definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=trimipramine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` metabolism/substrate | DrugBank actor |
-| metabolism | liver | `CYP2C19` metabolism/substrate, `CYP2C9` substrate, `CYP2D6` metabolism/substrate | DrugBank actor |
-| — | brain | `SLC6A4` inhibitor | DrugBank actor |
-| — | platelet | `SLC6A4` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA2A (target), ADRA2B (other/unknown), ADRB1 (binder), CHRM1 (binder), DRD1 (binder), DRD2 (other/unknown), HRH1 (target), HTR1A (target), HTR1D (binder), HTR2A (target), HTR2C (target), HTR3A (binder), SLC6A2 (inhibitor), SLC6A3 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -22,7 +22,7 @@
 
 > Clozapine concentration-dependently inhibits the 5-HT-induced peak inward current through 5-HT3A receptors, acting as a competitive antagonist fitted with a sigmoid Emax (four-parameter logistic) inhibition model; the record reports an IC50 of 4.81±0.18 nM with a Hill coefficient of −1.35, while the paper states IC50 values for clozapine across human, murine and chimeric 5-HT3A receptors ranged from 1.5–83.3 nM (Kb 0.3–13.4 nM via Cheng-Prusoff), with murine receptors inhibited more potently than human.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Rammes_2009`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Rammes G et al., Identification of a domain which affect…, PloS one (2009)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

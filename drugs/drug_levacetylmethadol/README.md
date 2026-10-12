@@ -34,25 +34,13 @@ Levacetylmethadol is a synthetic opioid that was used to treat opioid dependence
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Finkle_1982_reference](drugs/drug_levacetylmethadol/Levacetylmethadol_Finkle1982_reference.md) | — | general linear (no model) | 3 | Finkle BS et al., Plasma and urine disposition of 1-alpha…, Journal of analytical toxic… (1982) | [10.1093/jat/6.2.100](https://doi.org/10.1093/jat/6.2.100) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Finkle_1982_reference](drugs/drug_levacetylmethadol/Levacetylmethadol_Finkle1982_reference.md) | — | general linear (no model) | 3 | Finkle BS et al., Plasma and urine disposition of 1-alpha…, Journal of analytical toxic… (1982) | [10.1093/jat/6.2.100](https://doi.org/10.1093/jat/6.2.100) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Xiao_2001_86Rb_efflux](drugs/drug_levacetylmethadol/pd_Xiao_2001_86Rb_efflux.md) | nicotine-stimulated 86Rb+ efflux ← (-)-alpha-acetylmethadol hydrochloride (LAAM) · direct sigmoid Emax (Hill) effect | — | Xiao Y et al., Blockade of rat alpha3beta4 nicotinic r…, The Journal of pharmacology… (2001) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=levacetylmethadol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP3A4` substrate, `CYP3A7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CHRNA3 (target), CHRNB4 (other/unknown), OPRM1 (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Xiao_2001_86Rb_efflux](drugs/drug_levacetylmethadol/pd_Xiao_2001_86Rb_efflux.md) | nicotine-stimulated 86Rb+ efflux ← (-)-alpha-acetylmethadol hydrochloride (LAAM) · direct sigmoid Emax (Hill) effect | — | Xiao Y et al., Blockade of rat alpha3beta4 nicotinic r…, The Journal of pharmacology… (2001) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

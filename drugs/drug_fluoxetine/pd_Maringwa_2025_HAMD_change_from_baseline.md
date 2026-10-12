@@ -20,7 +20,7 @@
 
 > In the model-based meta-analysis, fluoxetine doses (20, 40, 60 mg/day) act on the change from baseline in HAMD score via a constant additive drug effect relative to placebo (constant shift −4.41), with the drug effect scaled by mean baseline HAMD score (multiplicative factor 0.0986) and a typical placebo response of −8.0; no concentration–response, Emax, or potency parameters (IC50/EC50/kin/kout/ke0) are given for fluoxetine, and no mechanistic PD pathway beyond this additive dose effect is described.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Maringwa_2025`
 - **model family:** `linear`
@@ -65,7 +65,7 @@ Maringwa J et al., Partial Residual Plots as an Integrated…, Clinical pharmaco
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -27,18 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Fenyvesi_2003_ECT](drugs/drug_lepirudin/pd_Fenyvesi_2003_ECT.md) | ecarin clotting time ← lepirudin · direct linear effect | — | Fenyvesi T et al., Effects of lepirudin, argatroban and me…, Thrombosis research (2003) | [10.1016/j.thromres.2003.08.013](https://doi.org/10.1016/j.thromres.2003.08.013) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lepirudin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: F2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Fenyvesi_2003_ECT](drugs/drug_lepirudin/pd_Fenyvesi_2003_ECT.md) | ecarin clotting time ← lepirudin · direct linear effect | — | Fenyvesi T et al., Effects of lepirudin, argatroban and me…, Thrombosis research (2003) | [10.1016/j.thromres.2003.08.013](https://doi.org/10.1016/j.thromres.2003.08.013) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -11,13 +11,15 @@
 
 ## About
 
-**Description.** Methylene blue is an oxidation-reduction agent. The intravenous form of methylene blue is approved by the FDA for the treatment of pediatric and adult patients with acquired methemoglobinemia. Historically, it has been widely used in Africa to treat malaria, but now it disappeared when chloroquine (CQ) and other drugs entered the market. Its use as an urinary tract antiseptic has also been investigated.
+**Description.** Methylene blue is an oxidation-reduction agent. The intravenous form of methylene blue is approved by the FDA for the treatment of pediatric and adult patients with acquired methemoglobinemia. Historically, it has been widely used in Africa to treat malaria, but now it disappeared when chloroquine (CQ) and other drugs entered the market. Its use as an urinary tract antiseptic has also been investigated. 
 
 Methylthioninium chloride (INN, or methylene blue, proposed trade name Rember) is an investigational drug being developed by the University of Aberdeen and TauRx Therapeutics that has been shown in early clinical trials to be an inhibitor of Tau protein aggregation. The drug is of potential interest for the treatment of patients with Alzheimer's disease.
 
-**Indication.** Indicated for the treatment of pediatric and adult patients with acquired methemoglobinemia.
+**Indication.** Indicated for the treatment of pediatric and adult patients with acquired methemoglobinemia. 
 
 Other clinical applications of methylene blue include improvement of hypotension associated with various clinical states, an antiseptic in urinary tract infections, treatment of hypoxia and hyperdynamic circulation in cirrhosis of liver and severe hepatopulmonary syndrome, and treatment of ifofosamide induced neurotoxicity.
+
+<p><small>Source: <a href="https://go.drugbank.com/drugs/DB09241">DrugBank DB09241</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
 
 ## Extraction summary
 
@@ -38,29 +40,6 @@ Other clinical applications of methylene blue include improvement of hypotension
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [Digby_2021_photocytotoxicity](drugs/drug_methylene_blue/pd_Digby_2021_photocytotoxicity.md) | photocytotoxicity biomarker turnover ← methylene_blue | — | Digby EM et al., Highly Potent Photoinactivation of Bact…, ACS infectious diseases (2021) | [10.1021/acsinfecdis.1c00313](https://doi.org/10.1021/acsinfecdis.1c00313) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=methylene_blue).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate, `MAOA` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inhibitor, `UGT1A9` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP1A2` inducer/inhibitor/substrate, `CYP2B6` inhibitor, `CYP2C19` inhibitor/substrate, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor, `CYP3A5` inhibitor, `MAOA` inhibitor, `UGT1A4` inhibitor, `UGT1A9` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor, `CYP3A5` inhibitor, `MAOA` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A2` inhibitor, `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
-| excretion | liver | `SLC47A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: BLVRB (substrate), GUCY1A2 (inhibitor), NOS1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

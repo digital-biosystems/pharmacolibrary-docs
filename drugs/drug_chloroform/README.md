@@ -24,7 +24,7 @@ Chloroform is a halogenated hydrocarbon that was once used as a general inhalati
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Jayaweera_2017_reference](drugs/drug_chloroform/Chloroform_Jayaweera2017_reference.md) | — | 1-compartment (no model) | 0 | Jayaweera D et al., Chloroform ingestion causing severe gas…, Clinical toxicology (Philad… (2017) | [10.1080/15563650.2016.1249795](https://doi.org/10.1080/15563650.2016.1249795) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Jayaweera_2017_reference](drugs/drug_chloroform/Chloroform_Jayaweera2017_reference.md) | — | 1-compartment (no model) | 0 | Jayaweera D et al., Chloroform ingestion causing severe gas…, Clinical toxicology (Philad… (2017) | [10.1080/15563650.2016.1249795](https://doi.org/10.1080/15563650.2016.1249795) |
 
 ## Pharmacodynamics (PD)
 

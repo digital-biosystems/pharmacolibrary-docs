@@ -20,7 +20,7 @@
 
 > The paper describes a dose-finding (probit) analysis determining the EC50 of sufentanil plasma concentrations required to inhibit the binary hemodynamic response (HR and MAP) to tracheal intubation, rather than specifying a mechanistic model like direct Emax or indirect response dynamics. The calculated EC50 for sufentanil was 0.43 ng/mL in the saline group and 0.25 ng/mL in the dexmedetomidine group, indicating that the adjunctive agent lowered the concentration required to suppress the stress response.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Zeng_2025`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Zeng Q et al., Effect of Intravenous Dexmedetomidine P…, Drug design, developm
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

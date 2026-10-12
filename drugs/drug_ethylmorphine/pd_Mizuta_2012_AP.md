@@ -21,7 +21,7 @@
 
 > The record describes a sigmoidal Emax inhibition model where ethylmorphine concentration directly drives the action potential (AP) of the Aα/β neuron with an IC50 of 0.70 mM. The specific mechanism of inhibition and other rate parameters are not provided in the record or available excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mizuta_2012`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Mizuta K et al., Inhibition by morphine and its analogs…, Journal of neuroscie
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

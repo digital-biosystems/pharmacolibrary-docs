@@ -4,7 +4,7 @@
 
 # hydrocortisone — `Hydrocortisone_Werumeus2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1), gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 Simulated as the paper dosed it, the model's terminal half-life is 1.3321202731100217 h, while the paper's values (0.89, 0.91, 1.82, 2.0 h) give ratios of 0.6661–1.4968, outside tolerance. The absorption rate constant ka (and Tlag) were not reported in the source and were defaulted, affecting the simulated profile without support from this paper. The model builder also assumed F=1, Fm=1 and no molar correction, giving an apparent (/F) parameterization with first-order depot input. A second reader disagrees on the primary analyte (cortisol vs hydrocortisone), the parameterization (apparent vs mechanistic), and the clearance parameter identity. Extracted — hydrocortisone: CLm/F 338 L/h, V 486 L, t1/2z 1 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has hydrocortisone, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has cortisol, the second reading hydrocortisone; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -74,26 +74,25 @@ Werumeus Buning J et al., Pharmacokinetics of oral hydrocortisone…, Metabolism
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.1 (1/10 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.625 (5/8 fields) | 3 |
 
-<details><summary>12 field discrepancies</summary>
+<details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.links` | [['hydrocortisone', 'plasma free cortisol', 'metabolism'], ['plasma total cortisol', 'plasma free cortisol', 'interconversion'], ['plasma free cortisol', 'salivary cortisol', 'interconversion']] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[cl]` | not captured | 195.00 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 337.58 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl]` | 337.58 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t 1/2]` | not captured | 1.58 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2]` | not captured | 1.00 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t 1/2]` | 1.00 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v d]` | not captured | 445.02 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v d]` | not captured | 486.25 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v d]` | 486.25 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | hydrocortisone | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | cortisol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | cortisol | hydrocortisone | mismatch |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[cl].parameter_id` | Q351 | Q22 | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | cortisol | hydrocortisone | mismatch |
@@ -154,21 +153,21 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_hydrocortisone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Werumeus_2017` / `Werumeus_2017::reference`)
-- model: `../../../knowledgebase/drugs/drug_hydrocortisone/models/modelica/Hydrocortisone_Werumeus2017_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_hydrocortisone/models/modelica/Hydrocortisone_Werumeus2017_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_hydrocortisone/models/modelica/Hydrocortisone_Werumeus2017_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_hydrocortisone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Werumeus_2017` / `Werumeus_2017::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_hydrocortisone/models/modelica/Hydrocortisone_Werumeus2017_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_hydrocortisone/models/modelica/Hydrocortisone_Werumeus2017_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_hydrocortisone/models/modelica/Hydrocortisone_Werumeus2017_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -5,7 +5,7 @@
 
 # rezafungin acetate — `RezafunginAcetate_Zhao2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.30).">human + animal</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.30).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,7 +15,7 @@
 
 > **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.30).
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -109,10 +109,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_rezafungin_acetate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhao_2020` / `Zhao_2020::reference`)
-- model: `../../../knowledgebase/drugs/drug_rezafungin_acetate/models/modelica/RezafunginAcetate_Zhao2020_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_rezafungin_acetate/models/modelica/RezafunginAcetate_Zhao2020_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_rezafungin_acetate/models/modelica/RezafunginAcetate_Zhao2020_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rezafungin_acetate/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhao_2020` / `Zhao_2020::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rezafungin_acetate/models/modelica/RezafunginAcetate_Zhao2020_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rezafungin_acetate/models/modelica/RezafunginAcetate_Zhao2020_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rezafungin_acetate/models/modelica/RezafunginAcetate_Zhao2020_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -124,13 +124,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rezafungin_acetate/RezafunginAcetate_Zhao2020_reference/RezafunginAcetate_Zhao2020_reference_modelica.zip" download>RezafunginAcetate_Zhao2020_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rezafungin_acetate/RezafunginAcetate_Zhao2020_reference/RezafunginAcetate_Zhao2020_reference_fmi.zip" download>RezafunginAcetate_Zhao2020_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rezafungin_acetate/RezafunginAcetate_Zhao2020_reference/RezafunginAcetate_Zhao2020_reference_matlab.zip" download>RezafunginAcetate_Zhao2020_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rezafungin_acetate/RezafunginAcetate_Zhao2020_reference/RezafunginAcetate_Zhao2020_reference_matlab_simbio.zip" download>RezafunginAcetate_Zhao2020_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rezafungin_acetate/RezafunginAcetate_Zhao2020_reference/RezafunginAcetate_Zhao2020_reference_matlab_simbio.zip" download>RezafunginAcetate_Zhao2020_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rezafungin_acetate/RezafunginAcetate_Zhao2020_reference/RezafunginAcetate_Zhao2020_reference_sbml.zip" download>RezafunginAcetate_Zhao2020_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_rezafungin_acetate/RezafunginAcetate_Zhao2020_reference/RezafunginAcetate_Zhao2020_reference_cellml.zip" download>RezafunginAcetate_Zhao2020_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_rezafungin_acetate/RezafunginAcetate_Zhao2020_reference/RezafunginAcetate_Zhao2020_reference.svg" alt="RezafunginAcetate_Zhao2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_rezafungin_acetate/RezafunginAcetate_Zhao2020_reference/RezafunginAcetate_Zhao2020_reference.svg" alt="RezafunginAcetate_Zhao2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

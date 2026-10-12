@@ -21,7 +21,7 @@
 
 > Methohexital inhibits 5-HT-induced currents through a sigmoidal Emax mechanism, with a reported IC50 of 95 µM and a Hill coefficient of -1.0. The paper does not specify the kinetic or mechanistic details beyond this concentration-response relationship.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Barann_2000`
 - **model family:** `sigmoid_emax`
@@ -49,11 +49,11 @@ Barann M et al., Recombinant human 5-HT3A receptors in o…, Naunyn-Schmiedeberg
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

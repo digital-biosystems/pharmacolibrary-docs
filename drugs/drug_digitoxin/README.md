@@ -32,32 +32,14 @@ Digitoxin is a cardiac glycoside used to treat atrial fibrillation, supraventric
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Flasch_1979_reference](drugs/drug_digitoxin/Digitoxin_Flasch1979_reference.md) | — | parent + metabolite (no model) | 1 | Flasch H et al., Pharmacokinetics of dihydrodigitoxin in…, Naunyn-Schmiedeberg's archi… (1979) | [10.1007/BF00500279](https://doi.org/10.1007/BF00500279) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Pfleger_1975_reference](drugs/drug_digitoxin/Digitoxin_Pfleger1975_reference.md) | — | 1-compartment (no model) | 0 | Pfleger K et al., [Pharmacokinetics and action of digitox…, Archives internationales de… (1975) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Flasch_1979_reference](drugs/drug_digitoxin/Digitoxin_Flasch1979_reference.md) | — | parent + metabolite (no model) | 1 | Flasch H et al., Pharmacokinetics of dihydrodigitoxin in…, Naunyn-Schmiedeberg's archi… (1979) | [10.1007/BF00500279](https://doi.org/10.1007/BF00500279) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Pfleger_1975_reference](drugs/drug_digitoxin/Digitoxin_Pfleger1975_reference.md) | — | 1-compartment (no model) | 0 | Pfleger K et al., [Pharmacokinetics and action of digitox…, Archives internationales de… (1975) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Urtizberea_1991_RBC_K](drugs/drug_digitoxin/pd_Urtizberea_1991_RBC_K.md) | red blood cell K+ ← digitoxin · direct sigmoid Emax (Hill) effect | — | Urtizberea M et al., Relationship between red blood cell pot…, Pharmacology & toxicology (1991) | [10.1111/j.1600-0773.1991.tb01231.x](https://doi.org/10.1111/j.1600-0773.1991.tb01231.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=digitoxin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate, `SLCO1A2` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate, `SLCO1A2` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ATP1A1 (inhibitor), ATP1A2 (inhibitor), ATP1A3 (inhibitor), ATP1B1 (inhibitor), ATP1B2 (inhibitor), ATP1B3 (inhibitor), CYP11A1 (inhibitor), SLCO4C1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Urtizberea_1991_RBC_K](drugs/drug_digitoxin/pd_Urtizberea_1991_RBC_K.md) | red blood cell K+ ← digitoxin · direct sigmoid Emax (Hill) effect | — | Urtizberea M et al., Relationship between red blood cell pot…, Pharmacology & toxicology (1991) | [10.1111/j.1600-0773.1991.tb01231.x](https://doi.org/10.1111/j.1600-0773.1991.tb01231.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

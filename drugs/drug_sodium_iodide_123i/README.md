@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Tonacchera_2004_125_I_uptake](drugs/drug_sodium_iodide_123i/pd_Tonacchera_2004_125_I_uptake.md) | (125)I(-) uptake ← iodide (I(-)) · direct sigmoid Emax (Hill) effect | — | Tonacchera M et al., Relative potencies and additivity of pe…, Thyroid : official journal… (2004) | [10.1089/thy.2004.14.1012](https://doi.org/10.1089/thy.2004.14.1012) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Tonacchera_2004_125_I_uptake](drugs/drug_sodium_iodide_123i/pd_Tonacchera_2004_125_I_uptake.md) | (125)I(-) uptake ← iodide (I(-)) · direct sigmoid Emax (Hill) effect | — | Tonacchera M et al., Relative potencies and additivity of pe…, Thyroid : official journal… (2004) | [10.1089/thy.2004.14.1012](https://doi.org/10.1089/thy.2004.14.1012) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

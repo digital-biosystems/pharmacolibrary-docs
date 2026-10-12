@@ -22,7 +22,7 @@
 
 > Tianeptine concentrations (nM) inhibit forskolin-stimulated cAMP accumulation at the human μ-opioid receptor, acting as a MOR agonist that couples to Gi/o; the effect is described as a proportional Emax (inhibitory) model with an EC50 of 151±45 nM as cited from Grasela_1993 PK data. The excerpts themselves report tianeptine's cAMP inhibition potency only at mouse MOR (EC50 1.03±0.10 μM) and do not state the 151±45 nM value or a formal PD mechanism beyond agonism at MOR.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Gassaway_2014`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Gassaway MM et al., The atypical antidepressant and neurore…, Translational ps
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

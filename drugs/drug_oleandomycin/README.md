@@ -28,16 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Kanfer_1998_oleandomycin_concentration](drugs/drug_oleandomycin/pd_Kanfer_1998_oleandomycin_concentration.md) | oleandomycin concentration ← oleandomycin · model not identified | — | Kanfer I et al., Analysis of macrolide antibiotics, Journal of chromatography. A (1998) | [10.1016/s0021-9673(98)00276-3](https://doi.org/10.1016/s0021-9673(98)00276-3) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=oleandomycin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP3A4` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Kanfer_1998_oleandomycin_concentration](drugs/drug_oleandomycin/pd_Kanfer_1998_oleandomycin_concentration.md) | oleandomycin concentration ← oleandomycin · model not identified | — | Kanfer I et al., Analysis of macrolide antibiotics, Journal of chromatography. A (1998) | [10.1016/s0021-9673(98)00276-3](https://doi.org/10.1016/s0021-9673(98)00276-3) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

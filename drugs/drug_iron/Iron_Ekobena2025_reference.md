@@ -5,7 +5,7 @@
 
 # Iron — `Iron_Ekobena2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154), gpt-oss:120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -21,7 +21,7 @@
 
 The record for iron (one-compartment, oral) reports CL/F 0.504 L/h, V 11.6 L, tlag 0.235 h and kabs 2.6 h−1, but the model builder substituted F=1, Fm=1 and no molar correction, an assumption the adjudication judged not acceptable. A second reader also disagreed on several extracted values, reading the absorption rate constant as 0.64 h−1 instead of 2.6 h−1 and reporting values of 22 and 27 where the record has none, while leaving 0.504, 124, 2781, 61 and 1.3 unread. Extracted — iron: CL/F 0.504 L/h, V 11.6 L, tlag 0.235 h, kabs 2.6 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 0.504, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 0.504, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025)
   ·  DOI: [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297)
 
-## Model component
-<dbs-pgx drug="Iron" model-id="Iron_Ekobena2025_reference" status="extracted" stale="true" population="" measured-compound="iron" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Iron" model-id="Iron_Ekobena2025_reference" status="extracted" stale="true" population="" measured-compound="iron" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
@@ -68,17 +67,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+| `gpt-oss-120b` | not confirmed | 0.154 (2/13 fields) | 11 |
 | `gpt-oss:120b` | not confirmed | 0.133 (2/15 fields) | 13 |
 
-<details><summary>25 field discrepancies</summary>
+<details><summary>24 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss-120b` | `values[Q27]` | 0.504 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `values[Q312]` | 124 | 22 | mismatch |
-| `gpt-oss-120b` | `values[Q316]` | not captured | 27 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q312]` | 124 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `values[Q37]` | 2781 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `values[Q40]` | 61 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `values[Q44]` | 1.3 | not captured | only_one_extracted |
@@ -144,10 +142,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_iron/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ekobena_2025` / `Ekobena_2025::reference`)
-- model: `../../../knowledgebase/drugs/drug_iron/models/modelica/Iron_Ekobena2025_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_iron/models/modelica/Iron_Ekobena2025_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_iron/models/modelica/Iron_Ekobena2025_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_iron/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ekobena_2025` / `Ekobena_2025::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_iron/models/modelica/Iron_Ekobena2025_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_iron/models/modelica/Iron_Ekobena2025_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_iron/models/modelica/Iron_Ekobena2025_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -165,7 +163,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_iron/Iron_Ekobena2025_reference/Iron_Ekobena2025_reference.svg" alt="Iron_Ekobena2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_iron/Iron_Ekobena2025_reference/Iron_Ekobena2025_reference.svg" alt="Iron_Ekobena2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -15,11 +15,11 @@
 
 **As extracted:** Total cariprazine (sum of cariprazine, DCAR, and DDCAR) (measured concentrations) drive Young Mania Rating Scale total score: direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Total cariprazine plasma concentration (sum of cariprazine, DCAR, and DDCAR, in nM) acts on YMRS total score via an Emax-type relationship modeled as an additive effect on baseline YMRS, with Emax 0.250 (25% placebo-corrected reduction), EC50 62.4 nM, and a Weibull placebo effect (PLmax 0.433, TD 8.41 days, WPOW 1.53) on a baseline YMRS0 of 32.7; the paper does not describe an inhibitory effect on production or elimination of the response.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Periclou_2020`
 - **model family:** `emax`
@@ -103,7 +103,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

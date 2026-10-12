@@ -5,7 +5,7 @@
 
 # rivaroxaban — `Rivaroxaban_Liu2022_simultaneous_modeling`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818), gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,9 +13,9 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
@@ -23,7 +23,7 @@
 
 The base model was simulated, not the covariate effects the record defines.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rivaroxaban, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rivaroxaban, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -86,15 +86,25 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.818 (9/11 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>16 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f]` | 5.03 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 5.03 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[egfr_on_cl_f]` | 0.53 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[egfr_on_pt_base]` | -0.0872 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[egfr_on_pt_base]` | not captured | -0.0872 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 0.617 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | not captured | 0.617 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_cl_f_egfr]` | not captured | 0.53 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 40.3 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | not captured | 40.3 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | rivaroxaban | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | rivaroxaban | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[egfr_on_cl_f]` | 0.53 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_cl_f_egfr]` | not captured | 0.53 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | rivaroxaban | unknown | mismatch |
@@ -143,10 +153,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_rivaroxaban/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Liu_2022` / `Liu_2022::simultaneous_modeling`)
-- model: `../../../knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Liu2022_simultaneous_modeling.mo`
-- deviation: `../../../knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Liu2022_simultaneous_modeling.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Liu2022_simultaneous_modeling.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rivaroxaban/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Liu_2022` / `Liu_2022::simultaneous_modeling`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Liu2022_simultaneous_modeling.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Liu2022_simultaneous_modeling.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_rivaroxaban/models/modelica/Rivaroxaban_Liu2022_simultaneous_modeling.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -158,13 +168,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling/Rivaroxaban_Liu2022_simultaneous_modeling_modelica.zip" download>Rivaroxaban_Liu2022_simultaneous_modeling_modelica.zip</a> <span class="pk-size">(5.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling/Rivaroxaban_Liu2022_simultaneous_modeling_fmi.zip" download>Rivaroxaban_Liu2022_simultaneous_modeling_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling/Rivaroxaban_Liu2022_simultaneous_modeling_matlab.zip" download>Rivaroxaban_Liu2022_simultaneous_modeling_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling/Rivaroxaban_Liu2022_simultaneous_modeling_matlab_simbio.zip" download>Rivaroxaban_Liu2022_simultaneous_modeling_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling/Rivaroxaban_Liu2022_simultaneous_modeling_matlab_simbio.zip" download>Rivaroxaban_Liu2022_simultaneous_modeling_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling/Rivaroxaban_Liu2022_simultaneous_modeling_sbml.zip" download>Rivaroxaban_Liu2022_simultaneous_modeling_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling/Rivaroxaban_Liu2022_simultaneous_modeling_cellml.zip" download>Rivaroxaban_Liu2022_simultaneous_modeling_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling/Rivaroxaban_Liu2022_simultaneous_modeling.svg" alt="Rivaroxaban_Liu2022_simultaneous_modeling diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling/Rivaroxaban_Liu2022_simultaneous_modeling.svg" alt="Rivaroxaban_Liu2022_simultaneous_modeling diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

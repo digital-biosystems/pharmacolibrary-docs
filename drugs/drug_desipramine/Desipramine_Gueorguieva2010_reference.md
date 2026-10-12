@@ -4,7 +4,7 @@
 
 # desipramine — `Desipramine_Gueorguieva2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667), gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667), gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Gueorguieva I et al., Desipramine, substrate for CYP2D6 activ…, British journal of clinical… (2010)
   ·  DOI: [10.1111/j.1365-2125.2010.03731.x](https://doi.org/10.1111/j.1365-2125.2010.03731.x)
 
-## Model component
-<dbs-pgx drug="desipramine" model-id="Desipramine_Gueorguieva2010_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="desipramine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="desipramine" model-id="Desipramine_Gueorguieva2010_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="desipramine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -151,10 +150,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_desipramine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gueorguieva_2010` / `Gueorguieva_2010::reference`)
-- model: `../../../knowledgebase/drugs/drug_desipramine/models/modelica/Desipramine_Gueorguieva2010_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_desipramine/models/modelica/Desipramine_Gueorguieva2010_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_desipramine/models/modelica/Desipramine_Gueorguieva2010_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_desipramine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gueorguieva_2010` / `Gueorguieva_2010::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_desipramine/models/modelica/Desipramine_Gueorguieva2010_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_desipramine/models/modelica/Desipramine_Gueorguieva2010_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_desipramine/models/modelica/Desipramine_Gueorguieva2010_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -175,7 +174,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

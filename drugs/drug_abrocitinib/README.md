@@ -33,35 +33,16 @@ Abrocitinib is a protein kinase inhibitor used to treat atopic dermatitis. It is
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.393). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T1_cmax</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Wojciechowski_2022_reference](drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 (+5 cov.) | Wojciechowski J et al., Population Pharmacokinetics of Abrociti…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01104-z](https://doi.org/10.1007/s40262-021-01104-z) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.393). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_cmax</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Wojciechowski_2022_reference](drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 (+5 cov.) | Wojciechowski J et al., Population Pharmacokinetics of Abrociti…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01104-z](https://doi.org/10.1007/s40262-021-01104-z) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> | [Soto_2020_PLT](drugs/drug_abrocitinib/pd_Soto_2020_PLT.md) | platelet count ← abrocitinib · indirect response — drug inhibits the production of platelet count | — | Soto E et al., Kinetic-Pharmacodynamic Model of Platel…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12548](https://doi.org/10.1002/psp4.12548) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Wojciechowski_2022_2_CIRC](drugs/drug_abrocitinib/pd_Wojciechowski_2022_2_CIRC.md) | platelet count ← abrocitinib · disease-progression model | model (no simulator) | Wojciechowski J et al., Population pharmacokinetic-pharmacodyna…, British journal of clinical… (2022) | [10.1111/bcp.15334](https://doi.org/10.1111/bcp.15334) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> | [Wang_2022_2_HR](drugs/drug_abrocitinib/pd_Wang_2022_2_HR.md) | change from baseline in HR (∆HR) ← abrocitinib · direct linear effect | model (no simulator) | Wang X et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1111](https://doi.org/10.1002/cpdd.1111) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> | [Wang_2022_2_QTcF](drugs/drug_abrocitinib/pd_Wang_2022_2_QTcF.md) | change from baseline in Fridericia-corrected QT (∆QTcF) ← abrocitinib · direct linear effect | model (no simulator) | Wang X et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1111](https://doi.org/10.1002/cpdd.1111) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=abrocitinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | liver | `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP3A4` substrate, `SLC22A1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | `SLC22A8` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: JAK1 (inhibitor), JAK2 (inhibitor), JAK3 (inhibitor), TYK2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> | [Soto_2020_PLT](drugs/drug_abrocitinib/pd_Soto_2020_PLT.md) | platelet count ← abrocitinib · indirect response — drug inhibits the production of platelet count | — | Soto E et al., Kinetic-Pharmacodynamic Model of Platel…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12548](https://doi.org/10.1002/psp4.12548) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Wojciechowski_2022_2_CIRC](drugs/drug_abrocitinib/pd_Wojciechowski_2022_2_CIRC.md) | platelet count ← abrocitinib · disease-progression model | model (no simulator) | Wojciechowski J et al., Population pharmacokinetic-pharmacodyna…, British journal of clinical… (2022) | [10.1111/bcp.15334](https://doi.org/10.1111/bcp.15334) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> | [Wang_2022_2_HR](drugs/drug_abrocitinib/pd_Wang_2022_2_HR.md) | change from baseline in HR (∆HR) ← abrocitinib · direct linear effect | model (no simulator) | Wang X et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1111](https://doi.org/10.1002/cpdd.1111) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> | [Wang_2022_2_QTcF](drugs/drug_abrocitinib/pd_Wang_2022_2_QTcF.md) | change from baseline in Fridericia-corrected QT (∆QTcF) ← abrocitinib · direct linear effect | model (no simulator) | Wang X et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1111](https://doi.org/10.1002/cpdd.1111) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

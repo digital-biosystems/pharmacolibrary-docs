@@ -22,7 +22,7 @@
 
 > Miltefosine (reference standard and Impavido® capsule extracts) was tested in the L. donovani intracellular amastigote–macrophage model, where miltefosine concentrations (μg/mL) directly inhibit the percentage of infected macrophages, described by a sigmoid Emax dose–response curve fitted by nonlinear regression. EC50 values ranged 2.68–4.02 μg/mL (Ethiopian strain) and 2.55–4.06 μg/mL (Indian strain) for capsule extracts, and 4.99 and 3.79 μg/mL (Ethiopian) and 5.92 and 3.02 μg/mL (Indian) for reference standards; no Imax, kin, kout, ke0, or gamma values are given and no mechanistic PD model beyond the direct sigmoid Emax effect is described.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kaur_2015`
 - **model family:** `sigmoid_emax`
@@ -70,7 +70,7 @@ Kaur H et al., Chemical and bioassay techniques to aut…, The American journal 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

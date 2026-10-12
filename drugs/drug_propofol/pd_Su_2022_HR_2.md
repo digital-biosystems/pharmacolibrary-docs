@@ -20,7 +20,7 @@
 
 > Propofol plasma concentrations directly inhibit the production rate of heart rate (HR) through a mechanism-based indirect response model, which did not significantly improve fit when an additional effect was added to the turnover equation; however, the best-fit model described in the paper instead links propofol to HR via decreased total peripheral resistance and stroke volume rather than a direct HR effect. The model estimates a shared elimination rate constant (kout) of 0.073 min⁻¹ for the HR turnover process, with a baseline heart rate of 54 beats min⁻¹.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Su_2022`
 - **model family:** `indirect_response_i`
@@ -63,7 +63,7 @@ Su H et al., Mechanism-based pharmacodynamic model f…, British journal of anae
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

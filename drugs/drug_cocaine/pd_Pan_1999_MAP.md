@@ -21,7 +21,7 @@
 
 > The record specifies an indirect response model with inhibition for the effect of cocaine on mean arterial blood pressure, but the paper excerpts are unavailable. Consequently, the specific mechanism and key potency or rate values (e.g., IC50, kout) cannot be verified or reported.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pan_1999`
 - **model family:** `indirect_response_i`
@@ -55,7 +55,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

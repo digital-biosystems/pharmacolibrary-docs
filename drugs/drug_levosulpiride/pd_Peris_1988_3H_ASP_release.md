@@ -21,7 +21,7 @@
 
 > S-sulpiride (levosulpiride) concentration (nM) stimulates K+-stimulated [3H]D-aspartate release via a direct Emax model, with Emax 75% and EC50 240 nM; the paper excerpts do not state a mechanism beyond this direct effect.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Peris_1988`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Peris J et al., Biphasic modulation of evoked [3H]D-asp…, Synapse (New York, N
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -28,31 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Babij_2003_beta_gal](drugs/drug_mifepristone/pd_Babij_2003_beta_gal.md) | beta-galactosidase activity ← mifepristone · stimulation effect | — | Babij P et al., "Blue heart": characterization of a mif…, Biochimica et biophysica ac… (2003) | [10.1016/s0167-4781(03)00052-6](https://doi.org/10.1016/s0167-4781(03)00052-6) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mifepristone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inducer/inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inducer/inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inducer/inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inducer/inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inducer/inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inducer/inhibitor | DrugBank actor |
-| distribution | blood-brain barrier | `ABCC1` inhibitor | DrugBank actor |
-| distribution | lung | `ABCC1` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | `ABCB11` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: NR1I2 (target), NR3C1 (target), PGR (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Babij_2003_beta_gal](drugs/drug_mifepristone/pd_Babij_2003_beta_gal.md) | beta-galactosidase activity ← mifepristone · stimulation effect | — | Babij P et al., "Blue heart": characterization of a mif…, Biochimica et biophysica ac… (2003) | [10.1016/s0167-4781(03)00052-6](https://doi.org/10.1016/s0167-4781(03)00052-6) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

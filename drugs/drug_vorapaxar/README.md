@@ -28,27 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Zhou_2025_FOXO1](drugs/drug_vorapaxar/pd_Zhou_2025_FOXO1.md) | FOXO1 biomarker turnover ← vorapaxar | — | Zhou Q et al., Vorapaxar enhanced mitochondria-associa…, Cell reports. Medicine (2025) | [10.1016/j.xcrm.2025.102371](https://doi.org/10.1016/j.xcrm.2025.102371) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=vorapaxar).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` unknown | DrugBank actor |
-| absorption | kidney | `ABCB1` unknown | DrugBank actor |
-| absorption | liver | `ABCB1` unknown | DrugBank actor |
-| absorption | placenta | `ABCB1` unknown | DrugBank actor |
-| absorption | small intestine | `ABCB1` unknown | DrugBank actor |
-| absorption | testis | `ABCB1` unknown | DrugBank actor |
-| metabolism | heart | `CYP2J2` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP2J2` substrate, `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: F2R (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Zhou_2025_FOXO1](drugs/drug_vorapaxar/pd_Zhou_2025_FOXO1.md) | FOXO1 biomarker turnover ← vorapaxar | — | Zhou Q et al., Vorapaxar enhanced mitochondria-associa…, Cell reports. Medicine (2025) | [10.1016/j.xcrm.2025.102371](https://doi.org/10.1016/j.xcrm.2025.102371) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

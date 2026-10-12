@@ -5,7 +5,7 @@
 
 # amoxicillin — `Amoxicillin_Spyker1977_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,8 +29,7 @@ A reported unit could not be converted (IIV), so that value has no SI equivalent
 Spyker DA et al., Pharmacokinetics of amoxicillin: dose d…, Antimicrobial agents and ch… (1977)
   ·  DOI: [10.1128/AAC.11.1.132](https://doi.org/10.1128/AAC.11.1.132)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Spyker1977_reference" status="needs_review" stale="true" population="healthy adult male volunteers" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Spyker1977_reference" status="needs_review" stale="true" population="healthy adult male volunteers" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -108,10 +107,10 @@ Spyker DA et al., Pharmacokinetics of amoxicillin: dose d…, Antimicrobial agen
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_amoxicillin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Spyker_1977` / `Spyker_1977::reference`)
-- model: `../../../knowledgebase/drugs/drug_amoxicillin/models/modelica/Amoxicillin_Spyker1977_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_amoxicillin/models/modelica/Amoxicillin_Spyker1977_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_amoxicillin/models/modelica/Amoxicillin_Spyker1977_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amoxicillin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Spyker_1977` / `Spyker_1977::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amoxicillin/models/modelica/Amoxicillin_Spyker1977_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amoxicillin/models/modelica/Amoxicillin_Spyker1977_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amoxicillin/models/modelica/Amoxicillin_Spyker1977_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -132,7 +131,7 @@ Spyker DA et al., Pharmacokinetics of amoxicillin: dose d…, Antimicrobial agen
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

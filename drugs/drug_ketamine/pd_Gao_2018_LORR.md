@@ -22,7 +22,7 @@
 
 > Ketamine administered as a single intravenous bolus induces a binary loss-of-righting reflex (LORR) with a sigmoidal dose-response relationship, where the EC50 decreases with developmental age from 14.09 ± 0.23 mg/kg in P14 mice to 9.82 ± 0.20 mg/kg in P35 mice. The paper attributes this age-dependent sensitivity to changes in HCN1 channel expression in the neocortex rather than providing specific PK-PD rate parameters like ke0 or Imax.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Gao_2018`
 - **model family:** `sigmoid_emax`
@@ -66,7 +66,7 @@ Gao J et al., HCN channels contribute to the sensitiv…, Oncotarget (2018)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

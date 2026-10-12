@@ -18,11 +18,11 @@
 
 **As extracted:** Buspirone (concentrations from the PK model of Chen_2024_2) drives [35S]GTPgammaS binding stimulation in hippocampus (in % stimulation): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Buspirone concentrations (nM) stimulate [35S]GTPgammaS binding in hippocampus via a direct Emax model, with Emax 78% and EC50 132 nM; no further mechanism is stated in the excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Waeber_1997`
 - **model family:** `emax`
@@ -101,7 +101,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -20,7 +20,7 @@
 
 > Alprazolam concentrations act on Digit symbol substitution (DSS) performance as an inhibitory effect with a tolerance model, characterized by a tolerance rate constant of 0.15 hr-1; the excerpts do not state the effect form or potency parameters (e.g., IC50/Emax).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kroboth_1988`
 - **model family:** `tolerance`
@@ -61,7 +61,7 @@ Kroboth PD et al., Tolerance to alprazolam after intraveno…, Clinical pharmaco
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

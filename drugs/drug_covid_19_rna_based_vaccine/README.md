@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | [Upreti_2022_Immunological_response](drugs/drug_covid_19_rna_based_vaccine/pd_Upreti_2022_Immunological_response.md) | Immunological response · stimulation effect | — | Upreti S et al., A Review on Immunological Responses to…, Pharmaceutical research (2022) | [10.1007/s11095-022-03323-w](https://doi.org/10.1007/s11095-022-03323-w) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span> | [Upreti_2022_Immunological_response](drugs/drug_covid_19_rna_based_vaccine/pd_Upreti_2022_Immunological_response.md) | Immunological response · stimulation effect | — | Upreti S et al., A Review on Immunological Responses to…, Pharmaceutical research (2022) | [10.1007/s11095-022-03323-w](https://doi.org/10.1007/s11095-022-03323-w) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

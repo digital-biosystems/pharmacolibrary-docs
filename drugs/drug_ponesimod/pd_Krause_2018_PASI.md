@@ -20,7 +20,7 @@
 
 > The paper does not provide full text excerpts, so the specific mechanism linking ponesimod concentrations to PASI score is not described. Consequently, key potency and rate values such as Imax, IC50, Emax, kin, kout, or ke0 are not available in the provided record.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Krause_2018`
 - **model family:** `transduction`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

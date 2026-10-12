@@ -4,7 +4,7 @@
 
 # gadoteric acid — `GadotericAcid_Scala2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.312). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -19,8 +19,6 @@
 **The gadoteric acid record was rejected because reported clearance (2.51 L/h) and volume (0.161 L) were flagged as physiologically implausible, consistent with unit/scale extraction error.**
 
 The record reports total clearance of 2.51 L/h and volume of distribution of 0.161 L for gadoteric acid. The finding attributes the clearance/volume failure to an implausible magnitude from a unit/scale extraction error but does not identify which value triggered it. Extracted — gadoteric acid: AUC 1.59e+03, CLnorm 0.0602 L/h/kg, Vss 0.0473 L/kg, t1/2β 1.35 h, CL 2.51 L/h, V 0.161 L, Q 0.335 L/h.
-
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has none, the second reading gadoterate meglumine → gadoteric acid (hydrolysis); it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by gpt-6-luna</sub>
 
@@ -78,37 +76,6 @@ Scala M et al., A Pharmacokinetics, Efficacy, and Safet…, Investigative radiol
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.312 (5/16 fields) | 11 |
-
-<details><summary>11 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `qwen3.8-27b` | `model.links` | [] | [['gadoterate meglumine', 'gadoteric acid', 'hydrolysis']] | mismatch |
-| `qwen3.8-27b` | `model.parameterization` | mechanistic | apparent | mismatch |
-| `qwen3.8-27b` | `parameters[auc, h umol/l]` | not captured | 1591.1 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[auc, h umol/l]` | 1591.1 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[cl/kg, l/h per kg*]` | not captured | 0.0602 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[cl/kg, l/h per kg*]` | 0.0602 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[cl].parameter_id` | Q22 | Q351 | mismatch |
-| `qwen3.8-27b` | `parameters[t1/2β]` | not captured | 1.3545 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[t1/2β]` | 1.3545 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[vss/kg]` | not captured | 0.0473 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[vss/kg]` | 0.0473 | not captured | only_one_extracted |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
-</details>
-
-
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -134,18 +101,18 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_gadoteric_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Scala_2018` / `Scala_2018::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_gadoteric_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Scala_2018` / `Scala_2018::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

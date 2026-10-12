@@ -19,7 +19,7 @@
 
 > The specific PD mechanism and quantitative parameters (such as IC50, Imax, or ke0) are not provided in the available paper excerpts, preventing a detailed description of how mivacurium concentrations inhibit adductor pollicis twitch tension. The record indicates the model is an Emax inhibition linked to a cited PK study, but the source text is unavailable to confirm specific values or mechanisms.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Markakis_1998`
 - **model family:** `emax`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > The (-)-baclofen model describes the inhibition of the residual kynurenate-insensitive potential, with a stated EC50 of 800 nM. The specific mechanism (e.g., effect compartment or rate constants) is not detailed in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Calabresi_1991`
 - **model family:** `emax`
@@ -49,11 +49,11 @@ Calabresi P et al., Involvement of GABA systems in feedback…, The Journal of p
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -32,27 +32,9 @@ Oxytocin is a peptide hormone used as a uterotonic drug to induce or support lab
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed</span> | [De_1995_reference](drugs/drug_oxytocin/Oxytocin_De1995_reference.md) | ▶ model + simulator | 1-compartment, IV | 6 | De Groot AN et al., Bioavailability and pharmacokinetics of…, The Journal of pharmacy and… (1995) | [10.1111/j.2042-7158.1995.tb06716.x](https://doi.org/10.1111/j.2042-7158.1995.tb06716.x) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Monks_2023_reference](drugs/drug_oxytocin/Oxytocin_Monks2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Monks DT et al., A study of the pharmacokinetics and pha…, Anaesthesia (2023) | [10.1111/anae.16109](https://doi.org/10.1111/anae.16109) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span> | [Nielsen_2017_reference](drugs/drug_oxytocin/Oxytocin_Nielsen2017_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Nielsen EI et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.961](https://doi.org/10.1002/jcph.961) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=oxytocin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | brain | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | mammary gland | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | placenta | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | testis | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: AGER (binder), AVPR1A (target), AVPR1B (target), AVPR2 (target), LNPEP (substrate), OXT (binder), OXTR (target), PREP (substrate).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span> | [De_1995_reference](drugs/drug_oxytocin/Oxytocin_De1995_reference.md) | ▶ model + simulator | 1-compartment, IV | 6 | De Groot AN et al., Bioavailability and pharmacokinetics of…, The Journal of pharmacy and… (1995) | [10.1111/j.2042-7158.1995.tb06716.x](https://doi.org/10.1111/j.2042-7158.1995.tb06716.x) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Monks_2023_reference](drugs/drug_oxytocin/Oxytocin_Monks2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Monks DT et al., A study of the pharmacokinetics and pha…, Anaesthesia (2023) | [10.1111/anae.16109](https://doi.org/10.1111/anae.16109) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span> | [Nielsen_2017_reference](drugs/drug_oxytocin/Oxytocin_Nielsen2017_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Nielsen EI et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.961](https://doi.org/10.1002/jcph.961) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

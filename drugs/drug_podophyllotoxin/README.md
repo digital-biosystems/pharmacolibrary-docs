@@ -28,18 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zefirov_2019_MTT](drugs/drug_podophyllotoxin/pd_Zefirov_2019_MTT.md) | cytotoxicity (MTT test) biomarker turnover ← podophyllotoxin analogue 2 | — | Zefirov NA et al., [Podophyllotoxin analogue with bicyclo[…, Biomeditsinskaia khimiia (2019) | [10.18097/PBMC20196502086](https://doi.org/10.18097/PBMC20196502086) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hour_2000_EC50](drugs/drug_podophyllotoxin/pd_Hour_2000_EC50.md) | cytotoxicity ← podophyllotoxin · inhibition effect | — | Hour MJ et al., 6-Alkylamino- and 2,3-dihydro-3'-methox…, Journal of medicinal chemis… (2000) | [10.1021/jm000151c](https://doi.org/10.1021/jm000151c) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=podophyllotoxin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: TOP2A (inhibitor), TOP2B (modulator), TUBA4A (inhibitor), TUBB (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zefirov_2019_MTT](drugs/drug_podophyllotoxin/pd_Zefirov_2019_MTT.md) | cytotoxicity (MTT test) biomarker turnover ← podophyllotoxin analogue 2 | — | Zefirov NA et al., [Podophyllotoxin analogue with bicyclo[…, Biomeditsinskaia khimiia (2019) | [10.18097/PBMC20196502086](https://doi.org/10.18097/PBMC20196502086) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hour_2000_EC50](drugs/drug_podophyllotoxin/pd_Hour_2000_EC50.md) | cytotoxicity ← podophyllotoxin · inhibition effect | — | Hour MJ et al., 6-Alkylamino- and 2,3-dihydro-3'-methox…, Journal of medicinal chemis… (2000) | [10.1021/jm000151c](https://doi.org/10.1021/jm000151c) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

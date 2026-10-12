@@ -32,8 +32,8 @@ Chlorpromazine is a phenothiazine antipsychotic used mainly for schizophrenia, a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Nawaz_1981_reference](drugs/drug_chlorpromazine/Chlorpromazine_Nawaz1981_reference.md) | — | 1-compartment (no model) | 2 | Nawaz M, Pharmacokinetics and dosage of chlorpro…, Journal of veterinary pharm… (1981) | [10.1111/j.1365-2885.1981.tb00725.x](https://doi.org/10.1111/j.1365-2885.1981.tb00725.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Nielsen_1983_reference](drugs/drug_chlorpromazine/Chlorpromazine_Nielsen1983_reference.md) | — | 1-compartment (no model) | 2 | Nielsen HC et al., Chlorpromazine excretion by the neonate…, Pediatric pharmacology (New… (1983) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Nawaz_1981_reference](drugs/drug_chlorpromazine/Chlorpromazine_Nawaz1981_reference.md) | — | 1-compartment (no model) | 2 | Nawaz M, Pharmacokinetics and dosage of chlorpro…, Journal of veterinary pharm… (1981) | [10.1111/j.1365-2885.1981.tb00725.x](https://doi.org/10.1111/j.1365-2885.1981.tb00725.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Nielsen_1983_reference](drugs/drug_chlorpromazine/Chlorpromazine_Nielsen1983_reference.md) | — | 1-compartment (no model) | 2 | Nielsen HC et al., Chlorpromazine excretion by the neonate…, Pediatric pharmacology (New… (1983) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -46,29 +46,6 @@ Chlorpromazine is a phenothiazine antipsychotic used mainly for schizophrenia, a
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Santone_1989_GSH_depletion](drugs/drug_chlorpromazine/pd_Santone_1989_GSH_depletion.md) | intracellular glutathione depletion ← chlorpromazine · inhibition effect | — | Santone KS et al., Studies of chemical toxicity to fresh a…, Toxicology and applied phar… (1989) | [10.1016/0041-008x(89)90341-4](https://doi.org/10.1016/0041-008x(89)90341-4) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Santone_1989_LDH_release](drugs/drug_chlorpromazine/pd_Santone_1989_LDH_release.md) | lactate dehydrogenase release ← chlorpromazine · inhibition effect | — | Santone KS et al., Studies of chemical toxicity to fresh a…, Toxicology and applied phar… (1989) | [10.1016/0041-008x(89)90341-4](https://doi.org/10.1016/0041-008x(89)90341-4) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Thomas_2003_HERG_block](drugs/drug_chlorpromazine/pd_Thomas_2003_HERG_block.md) | HERG potassium channel block ← chlorpromazine · direct sigmoid Emax (Hill) effect | — | Thomas D et al., The antipsychotic drug chlorpromazine i…, British journal of pharmaco… (2003) | [10.1038/sj.bjp.0705283](https://doi.org/10.1038/sj.bjp.0705283) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=chlorpromazine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | blood | `ALB` unknown, `ORM1` binder | DrugBank actor |
-| metabolism | blood | `BCHE` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `BCHE` inhibitor, `CYP1A2` substrate, `CYP2D6` inhibitor/substrate, `CYP2E1` inhibitor, `CYP3A4` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | `ABCB11` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA2A (target), CALM1 (inhibitor), CHRM1 (target), CHRM3 (target), DRD1 (target), DRD2 (target), DRD3 (target), DRD4 (target), DRD5 (inhibitor), HRH1 (target), HRH4 (binder), HTR1A (target), HTR2A (binder), HTR2A (target), HTR2C (target), HTR6 (target), HTR7 (target), KCNH2 (inhibitor), SMPD1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

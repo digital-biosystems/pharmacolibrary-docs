@@ -22,7 +22,7 @@
 
 > Suramin (μM) inhibits UTP-induced p44/p42 MAPK phosphorylation in TIC, acting as a P2 receptor antagonist that blocks the UTP-elicited response (UTP maximal increase 437 ± 12% of basal level); the paper reports an IC50 of 84.3 ± 10.2 μM for suramin's inhibition but does not describe a formal PD model or rate parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Vázquez-Cuevas_2010`
 - **model family:** `unknown`
@@ -64,7 +64,7 @@ Vázquez-Cuevas FG et al., Functional expression and intracellular…, Reproduct
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

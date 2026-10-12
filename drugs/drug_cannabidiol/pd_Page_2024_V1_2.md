@@ -22,7 +22,7 @@
 
 > CBD concentrations (1–20 µM) were directly applied to shift the voltage dependence of activation (V1/2) of HCN4 channels, a change fit with a sigmoid Emax model indicating direct binding to the channel rather than an effect on production or elimination. The paper reports an EC50 of 1.59 µM and a Hill slope of 2.50, suggesting positive cooperativity among multiple binding sites on the tetrameric channel.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Page_2024`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Page DA et al., Cannabidiol potentiates hyperpolarizati…, The Journal of gener
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

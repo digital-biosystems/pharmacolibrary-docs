@@ -21,7 +21,7 @@
 
 > Pentamidine concentrations (nM) inhibit 125I-von Willebrand factor binding to ADP-activated fixed platelets, with an IC50 of 60 nM; the paper excerpts provide no further mechanism or model details.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Cox_1992`
 - **model family:** `unknown`
@@ -61,7 +61,7 @@ Cox D et al., Pentamidine: a non-peptide GPIIb/IIIa a…, Thrombosis and haemost
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

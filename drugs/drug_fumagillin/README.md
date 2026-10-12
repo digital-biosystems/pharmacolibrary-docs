@@ -32,23 +32,14 @@ Fumagillin is an antibiotic-like compound with antiprotozoal and angiogenesis-in
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Laurén_1989_reference](drugs/drug_fumagillin/Fumagillin_Laurn1989_reference.md) | — | 1-compartment (no model) | 3 | Laurén DJ et al., Toxicity and pharmacokinetics of the an…, Toxicology and applied phar… (1989) | [10.1016/0041-008x(89)90173-7](https://doi.org/10.1016/0041-008x(89)90173-7) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Laurén_1989_reference](drugs/drug_fumagillin/Fumagillin_Laurn1989_reference.md) | — | 1-compartment (no model) | 3 | Laurén DJ et al., Toxicity and pharmacokinetics of the an…, Toxicology and applied phar… (1989) | [10.1016/0041-008x(89)90173-7](https://doi.org/10.1016/0041-008x(89)90173-7) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Park_2014_EC50](drugs/drug_fumagillin/pd_Park_2014_EC50.md) | parasite killing of Azumiobodo hoyamushi (24-h EC50) ← fumagillin · inhibition effect | — | Park KH et al., In vitro and in vivo efficacy of drugs…, Journal of fish diseases (2014) | [10.1111/jfd.12104](https://doi.org/10.1111/jfd.12104) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Dupuy_2006_Rho_123](drugs/drug_fumagillin/pd_Dupuy_2006_Rho_123.md) | intracellular rhodamine 123 accumulation (% of VSP) ← fumagillin · direct sigmoid Emax (Hill) effect | — | Dupuy J et al., Fumagillin, a new P-glycoprotein-interf…, Journal of veterinary pharm… (2006) | [10.1111/j.1365-2885.2006.00780.x](https://doi.org/10.1111/j.1365-2885.2006.00780.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fumagillin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: METAP2 (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Park_2014_EC50](drugs/drug_fumagillin/pd_Park_2014_EC50.md) | parasite killing of Azumiobodo hoyamushi (24-h EC50) ← fumagillin · inhibition effect | — | Park KH et al., In vitro and in vivo efficacy of drugs…, Journal of fish diseases (2014) | [10.1111/jfd.12104](https://doi.org/10.1111/jfd.12104) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Dupuy_2006_Rho_123](drugs/drug_fumagillin/pd_Dupuy_2006_Rho_123.md) | intracellular rhodamine 123 accumulation (% of VSP) ← fumagillin · direct sigmoid Emax (Hill) effect | — | Dupuy J et al., Fumagillin, a new P-glycoprotein-interf…, Journal of veterinary pharm… (2006) | [10.1111/j.1365-2885.2006.00780.x](https://doi.org/10.1111/j.1365-2885.2006.00780.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -28,20 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Wang_2023_APR](drugs/drug_zoledronic_acid/pd_Wang_2023_APR.md) | acute phase reaction ← zoledronic acid · model not identified | — | Wang H et al., Optimization of the dosage regimen of z…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1089774](https://doi.org/10.3389/fphar.2023.1089774) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span> | [Wang_2023_BMD](drugs/drug_zoledronic_acid/pd_Wang_2023_BMD.md) | bone mineral density ← zoledronic acid · indirect response — drug stimulates the production of bone mineral density | — | Wang H et al., Optimization of the dosage regimen of z…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1089774](https://doi.org/10.3389/fphar.2023.1089774) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=zoledronic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood-brain barrier | `ABCC1` substrate | DrugBank actor |
-| distribution | lung | `ABCC1` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: FDPS (inhibitor), GGPS1 (inhibitor), Hydroxylapatite (binder), Hydroxylapatite (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Wang_2023_APR](drugs/drug_zoledronic_acid/pd_Wang_2023_APR.md) | acute phase reaction ← zoledronic acid · model not identified | — | Wang H et al., Optimization of the dosage regimen of z…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1089774](https://doi.org/10.3389/fphar.2023.1089774) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span> | [Wang_2023_BMD](drugs/drug_zoledronic_acid/pd_Wang_2023_BMD.md) | bone mineral density ← zoledronic acid · indirect response — drug stimulates the production of bone mineral density | — | Wang H et al., Optimization of the dosage regimen of z…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1089774](https://doi.org/10.3389/fphar.2023.1089774) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

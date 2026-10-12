@@ -4,7 +4,7 @@
 
 # abicipar pegol — `AbiciparPegol_Luu2020_estimate_rabbit`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -22,7 +22,7 @@
 
 The record lists a first-order rate constant for irreversible elimination from the peripheral compartment at 34300 1/h. This value is orders of magnitude larger than physiological expectations for a molecule with a vitreous volume of 4.4 ml. The finding identifies this as a clearance or volume extraction error due to implausible magnitude. Extracted — abicipar pegol: kout_peripheral 3.43e+04 1/h, kint 404 1/h, V 4.4 ml.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has abicipar_pegol, the second reading abicipar pegol; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has abicipar_pegol, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -90,19 +90,20 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.273 (3/11 fields) | 8 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[k_rc]` | 34300 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k_rs]` | not captured | 869 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k_va]` | not captured | 0.00217 | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
+| `gpt-oss-120b` | `parameters[k_as]` | not captured | 0.253 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k_cr]` | not captured | 30400 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k_rc].parameter_id` | Q346 | Q329 | mismatch |
 | `gpt-oss-120b` | `parameters[v_s]` | not captured | 2530 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vitreous volume]` | 4.4 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | abicipar_pegol | abicipar pegol | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | abicipar_pegol | abicipar pegol | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | abicipar_pegol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | abicipar_pegol | unknown | mismatch |
 
 </details>
 
@@ -132,18 +133,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_abicipar_pegol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Luu_2020` / `Luu_2020::estimate_rabbit`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_abicipar_pegol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Luu_2020` / `Luu_2020::estimate_rabbit`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

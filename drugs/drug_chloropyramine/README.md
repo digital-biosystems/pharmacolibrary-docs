@@ -28,16 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span> | [Durand-Arczynska_1986_I0](drugs/drug_chloropyramine/pd_Durand_Arczynska_1986_I0.md) | short-circuit current I0 across bovine tracheal epithelium ← chloropyramine · inhibition effect | — | Durand-Arczynska W et al., Effects of chloropyramine, dimethindene…, Journal de physiologie (1986) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=chloropyramine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: HRH1 (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span> | [Durand-Arczynska_1986_I0](drugs/drug_chloropyramine/pd_Durand_Arczynska_1986_I0.md) | short-circuit current I0 across bovine tracheal epithelium ← chloropyramine · inhibition effect | — | Durand-Arczynska W et al., Effects of chloropyramine, dimethindene…, Journal de physiologie (1986) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -20,7 +20,7 @@
 
 > Serum nalbuphine concentration acts on the probability of severe pain (NIPS &gt; 4) via a log-linear inhibitory effect on the logit scale, where the odds ratio for doubling nalbuphine exposure was estimated at 0.49 (95% CI: 0.21–0.86). The baseline probability of severe pain at a nalbuphine concentration of 1 mcg/L was predicted to be 79.5%, and the paper identifies 12 mcg/L as a previously proposed efficacy threshold concentration.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pfiffner_2022`
 - **model family:** `log_linear`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

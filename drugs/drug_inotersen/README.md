@@ -23,24 +23,13 @@ Inotersen is a nervous system drug used to treat amyloidosis. It is authorised i
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C1_half_life_beta failed (ratio 24.0348)</sub><br><sub>route_to: `human_review`</sub> | [Yu_2020_2_reference](drugs/drug_inotersen/Inotersen_Yu2020v2_reference.md) | — | 2-compartment (no model) | 5 | Yu RZ et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeutics (2020) | [10.1089/nat.2019.0822](https://doi.org/10.1089/nat.2019.0822) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C1_half_life_beta failed (ratio 24.0348)</sub><br><sub>route_to: `human_review`</sub> | [Yu_2020_2_reference](drugs/drug_inotersen/Inotersen_Yu2020v2_reference.md) | — | 2-compartment (no model) | 5 | Yu RZ et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeutics (2020) | [10.1089/nat.2019.0822](https://doi.org/10.1089/nat.2019.0822) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Yu_2020_2_TTR](drugs/drug_inotersen/pd_Yu_2020_2_TTR.md) | serum TTR (transthyretin) level ← inotersen · indirect response — drug inhibits the production of serum TTR (transthyretin) level | — | Yu RZ et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeutics (2020) | [10.1089/nat.2019.0822](https://doi.org/10.1089/nat.2019.0822) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=inotersen).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: TTR (antisense oligonucleotide), Transthyretin mRNA (antisense oligonucleotide).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

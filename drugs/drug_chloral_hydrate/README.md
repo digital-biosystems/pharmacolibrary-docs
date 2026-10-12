@@ -28,23 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Fischer_2000_Ca2_i](drugs/drug_chloral_hydrate/pd_Fischer_2000_Ca2_i.md) | AMPA-induced rise of intracellular Ca2+ concentration ([Ca2+]i) inhibited by chloral hydrate ← chloral hydrate · direct Emax (saturable) effect | — | Fischer W et al., Inhibition by chloral hydrate and trich…, European journal of pharmac… (2000) | [10.1016/s0014-2999(00)00160-6](https://doi.org/10.1016/s0014-2999(00)00160-6) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Poon_2002_ALDH](drugs/drug_chloral_hydrate/pd_Poon_2002_ALDH.md) | liver aldehyde dehydrogenase (ALDH) activity ← chloral hydrate · inhibition effect | — | Poon R et al., Subchronic toxicity of chloral hydrate…, Journal of applied toxicolo… (2002) | [10.1002/jat.843](https://doi.org/10.1002/jat.843) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=chloral_hydrate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | placenta | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Fischer_2000_Ca2_i](drugs/drug_chloral_hydrate/pd_Fischer_2000_Ca2_i.md) | AMPA-induced rise of intracellular Ca2+ concentration ([Ca2+]i) inhibited by chloral hydrate ← chloral hydrate · direct Emax (saturable) effect | — | Fischer W et al., Inhibition by chloral hydrate and trich…, European journal of pharmac… (2000) | [10.1016/s0014-2999(00)00160-6](https://doi.org/10.1016/s0014-2999(00)00160-6) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Poon_2002_ALDH](drugs/drug_chloral_hydrate/pd_Poon_2002_ALDH.md) | liver aldehyde dehydrogenase (ALDH) activity ← chloral hydrate · inhibition effect | — | Poon R et al., Subchronic toxicity of chloral hydrate…, Journal of applied toxicolo… (2002) | [10.1002/jat.843](https://doi.org/10.1002/jat.843) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

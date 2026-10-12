@@ -4,7 +4,7 @@
 
 # ioxitalamic acid — `IoxitalamicAcid_Kees1989_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -25,8 +25,7 @@ The check had no reference to compare the clearance against, so the value is unv
 ## Citation
 Kees F et al., Pharmacokinetics of ciprofloxacin in el…, Arzneimittel-Forschung (1989)
 
-## Model component
-<dbs-pgx drug="ioxitalamic acid" model-id="IoxitalamicAcid_Kees1989_reference" status="needs_review" stale="false" population="" measured-compound="ioxitalamic_acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ioxitalamic acid" model-id="IoxitalamicAcid_Kees1989_reference" status="needs_review" stale="false" population="" measured-compound="ioxitalamic_acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -90,7 +89,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_ioxitalamic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kees_1989` / `Kees_1989::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_ioxitalamic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kees_1989` / `Kees_1989::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -111,7 +110,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

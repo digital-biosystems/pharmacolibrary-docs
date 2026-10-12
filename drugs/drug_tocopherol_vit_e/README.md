@@ -23,28 +23,8 @@ Tocopherol is a form of vitamin E, an antioxidant vitamin used as a vitamin supp
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7), gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Violet_2020_iv_d6_tocopherol](drugs/drug_tocopherol_vit_e/TocopherolVitE_Violet2020_iv_d6_tocopherol.md) | — | 1-compartment (no model) | 5 | Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020) | [10.1172/jci.insight.133309](https://doi.org/10.1172/jci.insight.133309) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Violet_2020_po_d3_tocopherol](drugs/drug_tocopherol_vit_e/TocopherolVitE_Violet2020_po_d3_tocopherol.md) | — | 1-compartment (no model) | 5 | Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020) | [10.1172/jci.insight.133309](https://doi.org/10.1172/jci.insight.133309) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tocopherol_vit_e).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` transporter | DrugBank actor |
-| absorption | kidney | `ABCB1` transporter | DrugBank actor |
-| absorption | liver | `ABCB1` transporter | DrugBank actor |
-| absorption | placenta | `ABCB1` transporter | DrugBank actor |
-| absorption | small intestine | `ABCB1` transporter | DrugBank actor |
-| absorption | testis | `ABCB1` transporter | DrugBank actor |
-| metabolism | kidney | `CYP4F2` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate, `CYP4F2` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: APOBR (transporter), Free radicals (binder), LDLR (binder), SCARB1 (transporter), SEC14L2 (substrate), SEC14L3 (substrate), SEC14L4 (substrate), TTPA (substrate), VLDLR (binder).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7), gpt-oss:120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Violet_2020_iv_d6_tocopherol](drugs/drug_tocopherol_vit_e/TocopherolVitE_Violet2020_iv_d6_tocopherol.md) | — | 1-compartment (no model) | 5 | Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020) | [10.1172/jci.insight.133309](https://doi.org/10.1172/jci.insight.133309) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Violet_2020_po_d3_tocopherol](drugs/drug_tocopherol_vit_e/TocopherolVitE_Violet2020_po_d3_tocopherol.md) | — | 1-compartment (no model) | 5 | Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020) | [10.1172/jci.insight.133309](https://doi.org/10.1172/jci.insight.133309) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

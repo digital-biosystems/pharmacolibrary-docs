@@ -37,27 +37,15 @@ Camostat is a protease inhibitor that blocks trypsin and has been investigated a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Kosinsky_2022_reference](drugs/drug_camostat/Camostat_Kosinsky2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Kosinsky Y et al., Semi-Mechanistic Pharmacokinetic-Pharma…, Microbiology spectrum (2022) | [10.1128/spectrum.02167-21](https://doi.org/10.1128/spectrum.02167-21) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Kim_2023_reference](drugs/drug_camostat/Camostat_Kim2023_reference.md) | — | general linear (no model) | 6 | Kim G et al., Safety Evaluation and Population Pharma…, Pharmaceutics (2023) | [10.3390/pharmaceutics15092357](https://doi.org/10.3390/pharmaceutics15092357) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kitagawa_2021_reference](drugs/drug_camostat/Camostat_Kitagawa2021_reference.md) | — | 2-compartment (no model) | 0 | Kitagawa J et al., A phase I study of high dose camostat m…, Clinical and translational… (2021) | [10.1111/cts.13052](https://doi.org/10.1111/cts.13052) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Kosinsky_2022_reference](drugs/drug_camostat/Camostat_Kosinsky2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Kosinsky Y et al., Semi-Mechanistic Pharmacokinetic-Pharma…, Microbiology spectrum (2022) | [10.1128/spectrum.02167-21](https://doi.org/10.1128/spectrum.02167-21) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Kim_2023_reference](drugs/drug_camostat/Camostat_Kim2023_reference.md) | — | general linear (no model) | 6 | Kim G et al., Safety Evaluation and Population Pharma…, Pharmaceutics (2023) | [10.3390/pharmaceutics15092357](https://doi.org/10.3390/pharmaceutics15092357) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kitagawa_2021_reference](drugs/drug_camostat/Camostat_Kitagawa2021_reference.md) | — | 2-compartment (no model) | 0 | Kitagawa J et al., A phase I study of high dose camostat m…, Clinical and translational… (2021) | [10.1111/cts.13052](https://doi.org/10.1111/cts.13052) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> | [Kosinsky_2022_SP](drugs/drug_camostat/pd_Kosinsky_2022_SP.md) | TMPRSS2 activity ← FOY-251 · target-mediated drug disposition | — | Kosinsky Y et al., Semi-Mechanistic Pharmacokinetic-Pharma…, Microbiology spectrum (2022) | [10.1128/spectrum.02167-21](https://doi.org/10.1128/spectrum.02167-21) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=camostat).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CCK (inhibitor), PRSS1 (inhibitor), ST14 (inhibitor), TMPRSS2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> | [Kosinsky_2022_SP](drugs/drug_camostat/pd_Kosinsky_2022_SP.md) | TMPRSS2 activity ← FOY-251 · target-mediated drug disposition | — | Kosinsky Y et al., Semi-Mechanistic Pharmacokinetic-Pharma…, Microbiology spectrum (2022) | [10.1128/spectrum.02167-21](https://doi.org/10.1128/spectrum.02167-21) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

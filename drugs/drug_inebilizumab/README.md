@@ -23,22 +23,13 @@ Inebilizumab is a monoclonal antibody used to treat neuromyelitis optica. It is 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.655). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yan_2022_reference](drugs/drug_inebilizumab/Inebilizumab_Yan2022_reference.md) | — | 2-compartment (no model) | 7 (+4 cov.) | Yan L et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01071-5](https://doi.org/10.1007/s40262-021-01071-5) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.655). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yan_2022_reference](drugs/drug_inebilizumab/Inebilizumab_Yan2022_reference.md) | — | 2-compartment (no model) | 7 (+4 cov.) | Yan L et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01071-5](https://doi.org/10.1007/s40262-021-01071-5) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Yan_2022_2_CD20](drugs/drug_inebilizumab/pd_Yan_2022_2_CD20.md) | CD20+ B-cell count ← inebilizumab · delayed effect through transit (transduction) compartments | — | Yan L et al., Pharmacodynamic modelling and exposure-…, British journal of clinical… (2022) | [10.1111/bcp.15332](https://doi.org/10.1111/bcp.15332) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=inebilizumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CD19 (binder).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

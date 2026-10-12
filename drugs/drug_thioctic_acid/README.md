@@ -32,19 +32,7 @@ Thioctic acid (alpha-lipoic acid) is used for conditions of the alimentary tract
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Field_2021_reference](drugs/drug_thioctic_acid/ThiocticAcid_Field2021_reference.md) | — | 1-compartment (no model) | 1 | Field CL et al., PHARMACOKINETICS OF SUBCUTANEOUS ALPHA…, Journal of zoo and wildlife… (2021) | [10.1638/2020-0223](https://doi.org/10.1638/2020-0223) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=thioctic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `POR` inhibitor | DrugBank actor |
-| — | blood | `ACHE` inhibitor | DrugBank actor |
-| — | neuromuscular junction | `ACHE` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: LIAS (unknown), LIPT1 (unknown), PTGS2 (inhibitor), SLC5A6 (unknown).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Field_2021_reference](drugs/drug_thioctic_acid/ThiocticAcid_Field2021_reference.md) | — | 1-compartment (no model) | 1 | Field CL et al., PHARMACOKINETICS OF SUBCUTANEOUS ALPHA…, Journal of zoo and wildlife… (2021) | [10.1638/2020-0223](https://doi.org/10.1638/2020-0223) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -18,11 +18,11 @@
 
 **As extracted:** Dexmedetomidine (concentrations from the PK model of Ashraf_2020) drives [35S]GTPγS binding stimulation at human α2A-AR (in % of UK-14304 maximum): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Dexmedetomidine concentration-dependently stimulates [35S]GTPγS binding at human α2A-adrenoceptors (direct agonist Emax model, 3-parameter logistic fit), with EC50 3.9 nM and maximal activity 89% of the UK-14304 maximum.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Yocca_2025`
 - **model family:** `emax`
@@ -101,7 +101,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

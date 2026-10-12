@@ -23,17 +23,7 @@ It is authorised in the European Union as an ophthalmological medicine.
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Mattioli_2025_reference](drugs/drug_cenegermin/Cenegermin_Mattioli2025_reference.md) | — | 1-compartment (no model) | 0 | Mattioli SL et al., Human nerve growth factor delivery to t…, PNAS nexus (2025) | [10.1093/pnasnexus/pgaf250](https://doi.org/10.1093/pnasnexus/pgaf250) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cenegermin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: NGFR (stimulator), NTRK1 (stimulator).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Mattioli_2025_reference](drugs/drug_cenegermin/Cenegermin_Mattioli2025_reference.md) | — | 1-compartment (no model) | 0 | Mattioli SL et al., Human nerve growth factor delivery to t…, PNAS nexus (2025) | [10.1093/pnasnexus/pgaf250](https://doi.org/10.1093/pnasnexus/pgaf250) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

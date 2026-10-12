@@ -32,8 +32,8 @@ Esketamine is used to treat treatment-resistant depression and is also classed a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Jonkman_2017_reference](drugs/drug_esketamine/Esketamine_Jonkman2017_reference.md) | — | parent + metabolite (no model) | 0 | Jonkman K et al., Pharmacokinetics and Bioavailability of…, Anesthesiology (2017) | [10.1097/ALN.0000000000001798](https://doi.org/10.1097/ALN.0000000000001798) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Kamp_2021_reference](drugs/drug_esketamine/Esketamine_Kamp2021_reference.md) | — | 1-compartment (no model) | 2 | Kamp J et al., Stereoselective ketamine effect on card…, British journal of anaesthe… (2021) | [10.1016/j.bja.2021.02.034](https://doi.org/10.1016/j.bja.2021.02.034) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.25). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Jonkman_2017_reference](drugs/drug_esketamine/Esketamine_Jonkman2017_reference.md) | — | parent + metabolite (no model) | 0 | Jonkman K et al., Pharmacokinetics and Bioavailability of…, Anesthesiology (2017) | [10.1097/ALN.0000000000001798](https://doi.org/10.1097/ALN.0000000000001798) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Kamp_2021_reference](drugs/drug_esketamine/Esketamine_Kamp2021_reference.md) | — | 1-compartment (no model) | 2 | Kamp J et al., Stereoselective ketamine effect on card…, British journal of anaesthe… (2021) | [10.1016/j.bja.2021.02.034](https://doi.org/10.1016/j.bja.2021.02.034) |
 
 ## Pharmacodynamics (PD)
 
@@ -46,19 +46,6 @@ Esketamine is used to treat treatment-resistant depression and is also classed a
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Flores_2015_HFO](drugs/drug_esketamine/pd_Flores_2015_HFO.md) | HFO power ← ketamine · stimulation effect | — | Flores FJ et al., A PK-PD model of ketamine-induced high-…, Journal of neural engineeri… (2015) | [10.1088/1741-2560/12/5/056006](https://doi.org/10.1088/1741-2560/12/5/056006) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kamp_2021_CO](drugs/drug_esketamine/pd_Kamp_2021_CO.md) | cardiac output ← S-ketamine · direct linear effect | — | Kamp J et al., Stereoselective ketamine effect on card…, British journal of anaesthe… (2021) | [10.1016/j.bja.2021.02.034](https://doi.org/10.1016/j.bja.2021.02.034) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Ko_1997_KATP_channel_activity](drugs/drug_esketamine/pd_Ko_1997_KATP_channel_activity.md) | KATP channel activity ← ketamine · direct sigmoid Emax (Hill) effect | — | Ko SH et al., Blockade of myocardial ATP-sensitive po…, Anesthesiology (1997) | [10.1097/00000542-199707000-00010](https://doi.org/10.1097/00000542-199707000-00010) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=esketamine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP2B6` inducer/substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP3A4` inducer/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: BDNF (target), EEF2 (inhibitor), GRIN1 (target), GRIN2B (target), NTRK2 (upregulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

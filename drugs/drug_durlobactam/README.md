@@ -15,6 +15,8 @@
 
 **Indication.** In combination with [sulbactam], durlobactam is indicated in adults for the treatment of hospital-acquired bacterial pneumonia and ventilator-associated bacterial pneumonia (HABP/VABP), caused by susceptible isolates of _Acinetobacter baumannii-calcoaceticus_ complex.[L47336]
 
+<p><small>Source: <a href="https://go.drugbank.com/drugs/DB16704">DrugBank DB16704</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
+
 ## Molecular properties
 
 > Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
@@ -33,7 +35,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Cammarata_2025_reference](drugs/drug_durlobactam/Durlobactam_Cammarata2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 9 (+1 cov.) | Cammarata AP et al., Population pharmacokinetic analyses for…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00485-24](https://doi.org/10.1128/aac.00485-24) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Cammarata_2025_reference](drugs/drug_durlobactam/Durlobactam_Cammarata2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 9 (+1 cov.) | Cammarata AP et al., Population pharmacokinetic analyses for…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00485-24](https://doi.org/10.1128/aac.00485-24) |
 
 ## Pharmacodynamics (PD)
 
@@ -41,15 +43,6 @@
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [ODonnell_2023_Bacterial_Survival](drugs/drug_durlobactam/pd_ODonnell_2023_Bacterial_Survival.md) | Bacterial Survival ← durlobactam · direct Emax (saturable) effect | — | O'Donnell JP et al., The Pharmacokinetics/Pharmacodynamic Re…, Clinical infectious disease… (2023) | [10.1093/cid/ciad096](https://doi.org/10.1093/cid/ciad096) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [ODonnell_2023_MIC](drugs/drug_durlobactam/pd_ODonnell_2023_MIC.md) | MIC ← durlobactam · direct linear effect | — | O'Donnell JP et al., The Pharmacokinetics/Pharmacodynamic Re…, Clinical infectious disease… (2023) | [10.1093/cid/ciad096](https://doi.org/10.1093/cid/ciad096) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=durlobactam).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | lung | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A6` substrate | DrugBank actor |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

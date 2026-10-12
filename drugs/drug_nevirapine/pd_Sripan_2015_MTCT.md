@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nevirapine_Mustafa2016_reference&quot;,&quot;label&quot;:&quot;Mustafa_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nevirapine/Nevirapine_Mustafa2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Paediatric Asthma Severity Score (bronchodilation effectiveness) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
+# intra-partum HIV mother-to-child transmission — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> Salbutamol plasma concentrations (ng/ml) were linked to the Paediatric Asthma Severity Score (PASS, fraction of 0–9 scale) in a sequential PKPD model, with a sigmoid Emax relationship in which salbutamol inhibits (reduces) the PASS score from a baseline E0 of 0.381 by a maximum EMAX of 0.25; EC50 was fixed to a literature-based FEV1 estimate of 1.15 ng/ml and the Hill slope to 3.2, as neither could be reliably estimated. The paper states current dosing achieves concentrations above the 90% maximal effect, with an infusion of 0.5 µg/kg/min achieving &gt;90% maximal bronchodilation.
+> Intra-partum MTCT was modelled with a logistic (categorical) model in which perinatal single-dose nevirapine entered only as a binary covariate (no concentration–response or Emax/IC50 relationship for NVP), lowering the transmission logit with a coefficient of -1.13 from a baseline intercept of -3.29, alongside covariates for VL at delivery (0.36), CD4 (-0.23) and premature labor (0.86); the paper does not state a mechanistic PD pathway for NVP beyond placental pre/post-exposure prophylaxis, and the Emax,ZDV of 0.285 pertains to the separate zidovudine viral-load model, not to nevirapine.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Sripan_2015`
 - **model family:** `categorical`
@@ -54,15 +54,18 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `effect_form` | proportional | additive | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q321].value` | 1.15 (fixed) | 1.15 | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q325].value` | 3.2 (fixed) | 3.2 | mismatch |
+| `einfracz:gpt-oss-120b` | `driver_compound` | nevirapine (perinatal single-dose NVP, binary covariate) | nevirapine (single-dose NVP, sdNVP) | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q100]` | not captured | 0.86 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q320]` | 0.285 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q324]` | not captured | -0.23 | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q344]` | -3.29 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q900]` | 0.86 | not captured | only_one_extracted |
 
 </details>
 
@@ -90,7 +93,7 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

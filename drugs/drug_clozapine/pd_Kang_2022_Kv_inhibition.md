@@ -22,7 +22,7 @@
 
 > Clozapine (0.01–300 µM, cumulative) inhibits voltage-dependent Kv current in rabbit coronary arterial smooth muscle cells in a concentration-dependent manner described by a Hill (sigmoid Emax) equation, with IC50 = 7.84 ± 4.86 µM and Hill coefficient 0.47 ± 0.06; the inhibition is use (state)-dependent, primarily affecting inactivated channels without shifting steady-state activation or inactivation curves, and appears to involve Kv1.5, Kv2.1, and Kv7 subtypes. The paper does not report an Imax/Emax value or kinetic parameters (kin, kout, ke0).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kang_2022`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Kang M et al., Inhibitory effects of the atypical anti…, The Korean journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

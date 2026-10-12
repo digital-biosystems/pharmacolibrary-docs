@@ -5,7 +5,7 @@
 
 # brigatinib — `Brigatinib_Gupta2023_fasted`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,8 +29,7 @@ Independently confirmed by `qwen3.8-27b`.
 Gupta N et al., Clinical Pharmacology of Brigatinib: A…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01284-w](https://doi.org/10.1007/s40262-023-01284-w)
 
-## Model component
-<dbs-pgx drug="brigatinib" model-id="Brigatinib_Gupta2023_fasted" status="rejected" stale="false" population="patients with advanced malignancies in phase I/II and phase II ALTA studies" measured-compound="brigatinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brigatinib" model-id="Brigatinib_Gupta2023_fasted" status="rejected" stale="false" population="patients with advanced malignancies in phase I/II and phase II ALTA studies" measured-compound="brigatinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -98,18 +97,18 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_brigatinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gupta_2023` / `Gupta_2023::fasted`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_brigatinib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gupta_2023` / `Gupta_2023::fasted`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

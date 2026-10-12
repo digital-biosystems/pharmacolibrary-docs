@@ -5,7 +5,7 @@
 
 # melphalan — `Melphalan_Shah2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Shah GL et al., Population Pharmacokinetics of Melphala…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01093-z](https://doi.org/10.1007/s40262-021-01093-z)
 
-## Model component
-<dbs-pgx drug="melphalan" model-id="Melphalan_Shah2022_reference" status="needs_review" stale="true" population="adults with autologous and allogeneic hematopoietic cell transplantation" measured-compound="melphalan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="melphalan" model-id="Melphalan_Shah2022_reference" status="needs_review" stale="true" population="adults with autologous and allogeneic hematopoietic cell transplantation" measured-compound="melphalan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -118,9 +117,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_melphalan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shah_2022` / `Shah_2022::reference`)
-- model: `../../../knowledgebase/drugs/drug_melphalan/models/modelica/_needs_review/Melphalan_Shah2022_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_melphalan/models/modelica/_needs_review/Melphalan_Shah2022_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_melphalan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shah_2022` / `Shah_2022::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_melphalan/models/modelica/_needs_review/Melphalan_Shah2022_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_melphalan/models/modelica/_needs_review/Melphalan_Shah2022_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -141,7 +140,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

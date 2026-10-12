@@ -21,7 +21,7 @@
 
 > Pentamidine (concentrations in microM, cited PK) inhibits [3H]dizocilpine binding to rat brain membranes, modelled with a sigmoid Emax inhibition model with proportional effect; the paper excerpts provide no mechanism and no numeric potency (IC50, Imax, gamma) or rate values.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Reynolds_1993`
 - **model family:** `sigmoid_emax`
@@ -55,7 +55,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -5,7 +5,7 @@
 
 # heparin — `Heparin_Lanoisele2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.091), gpt-oss:120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 Simulated as the paper dosed it, the model's terminal half-life is 8.77 h against the paper's 0.05, a ratio of 175.4939, far beyond tolerance. Parameter coverage also failed: of 4 expected parameters, only 3 were covered, with Q (intercompartmental clearance, 0.29 L/h) neither emitted nor defaulted. The model builder substituted library defaults for the missing bioavailability F and lag time Tlag. A second reader also disputed the heparin–protamine interconversion link, which this record leaves absent, and could not confirm the values for Q, ka (0.079 h⁻¹), clearance (1.5 L/h) and volume (3661.0 mL). Extracted — heparin: CL 1.5 L h -1, Q 0.29 L h -1, V 3.66e+03 mL, kabs 0.079 h -1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has heparin, protamine, the second reading UFH; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has heparin, protamine, the second reading UFH; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -93,13 +93,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.091 (1/11 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.125 (1/8 fields) | 7 |
 
-<details><summary>15 field discrepancies</summary>
+<details><summary>17 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
+| `gpt-oss-120b` | `parameters[4]` | not captured | 1 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[intercompartmental clearance]` | not captured | 0.29 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[intercompartmental clearance]` | 0.29 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ka]` | 0.079 | not captured | only_one_extracted |
@@ -158,10 +160,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_heparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lanoiselée_2026` / `Lanoiselée_2026::reference`)
-- model: `../../../knowledgebase/drugs/drug_heparin/models/modelica/Heparin_Lanoisele2026_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_heparin/models/modelica/Heparin_Lanoisele2026_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_heparin/models/modelica/Heparin_Lanoisele2026_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_heparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lanoiselée_2026` / `Lanoiselée_2026::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_heparin/models/modelica/Heparin_Lanoisele2026_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_heparin/models/modelica/Heparin_Lanoisele2026_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_heparin/models/modelica/Heparin_Lanoisele2026_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -182,7 +184,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

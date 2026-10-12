@@ -28,22 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Omori_1999_colony_forming_efficiency](drugs/drug_demeclocycline/pd_Omori_1999_colony_forming_efficiency.md) | colony-forming efficiency ← demeclocycline · inhibition effect | — | Omori N et al., Quantitative comparison of cytocidal ef…, Journal of periodontal rese… (1999) | [10.1111/j.1600-0765.1999.tb02256.x](https://doi.org/10.1111/j.1600-0765.1999.tb02256.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Leung_2007_cell_death](drugs/drug_demeclocycline/pd_Leung_2007_cell_death.md) | cell death ← demeclocycline · inhibition effect | — | Leung DW et al., Minocycline protects photoreceptors fro…, Investigative ophthalmology… (2007) | [10.1167/iovs.06-0522](https://doi.org/10.1167/iovs.06-0522) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=demeclocycline).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: 30S ribosomal protein (inhibitor), AVPR2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Omori_1999_colony_forming_efficiency](drugs/drug_demeclocycline/pd_Omori_1999_colony_forming_efficiency.md) | colony-forming efficiency ← demeclocycline · inhibition effect | — | Omori N et al., Quantitative comparison of cytocidal ef…, Journal of periodontal rese… (1999) | [10.1111/j.1600-0765.1999.tb02256.x](https://doi.org/10.1111/j.1600-0765.1999.tb02256.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Leung_2007_cell_death](drugs/drug_demeclocycline/pd_Leung_2007_cell_death.md) | cell death ← demeclocycline · inhibition effect | — | Leung DW et al., Minocycline protects photoreceptors fro…, Investigative ophthalmology… (2007) | [10.1167/iovs.06-0522](https://doi.org/10.1167/iovs.06-0522) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

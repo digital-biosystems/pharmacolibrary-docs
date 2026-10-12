@@ -21,7 +21,7 @@
 
 > The provided record lists physostigmine salicylate as a dose-only driver (micrograms/kg) for the stimulation of tremors, but the record assigns this to the drug choline salicylate and offers no pharmacodynamic model, mechanism, or potency parameters. No further details are available as the paper excerpts are not provided.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Matthew_1992`
 - **model family:** `unknown`
@@ -55,7 +55,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

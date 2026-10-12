@@ -20,7 +20,7 @@
 
 > The paper does not provide a full text or specific pharmacodynamic model details. The record indicates that ketamine dose was associated with Obsessive-Compulsive Disorder symptoms, but no mechanism, potency values, or rate constants are described.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Bottemanne_2021`
 - **model family:** `unknown`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

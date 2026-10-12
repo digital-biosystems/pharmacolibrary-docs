@@ -20,7 +20,7 @@
 
 > Zolpidem plasma concentrations (μg/L) increase sedation VAS (mm) via a sigmoid Emax direct response model (an effect-compartment model did not improve fit), with drug effect scaled by (100 − VASbaseline), where the time-varying baseline is described by linear splines (typical values 30.3, 36.2, 19.8, and 12.7 mm at 1, 2, 4, and 12 h). Potency was EC50 = 146 μg/L with Hill coefficient 1.92; no Emax/Imax value is stated.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kim_2026`
 - **model family:** `sigmoid_emax`
@@ -67,7 +67,7 @@ Kim HC et al., Population Pharmacokinetic-Pharmacodyna…, CPT: pharmacometrics 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

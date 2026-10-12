@@ -16,11 +16,11 @@
 
 **As extracted:** Remimazolam (the dose) drives Mean arterial pressure reduction (in %): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Remimazolam dose (mg kg-1) was related to the percentage reduction in mean arterial pressure (MAP) via a sigmoid Emax (inhibitory) model, with an ED50 of 0.14 mg kg-1, an ED95 of 2.60 mg kg-1, and a maximum MAP reduction of 27.8%. The paper excerpts do not describe the mechanism beyond this dose-response relation.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Chae_2022`
 - **model family:** `sigmoid_emax`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -21,7 +21,7 @@
 
 > Carbachol (CCh, 1×10−9 to 1×10−5 M) cumulatively relaxed PE (1×10−6 M)-precontracted aortic rings, fitted by an Emax concentration–response model; the paper does not state a kinetic mechanism beyond direct receptor-mediated endothelium-dependent relaxation. Potency (pD2, −log M) was 6.3±0.1 (young), 6.5±0.05 (adult), 6.2±0.01 (old), with Emax 86±3%, 83±4%, and 73±3% of PE maximum contraction, respectively.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Cupitra_2020`
 - **model family:** `emax`
@@ -53,11 +53,11 @@ Cupitra NI et al., Influence of Ageing on Vascular Reactiv…, Clinical interven
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

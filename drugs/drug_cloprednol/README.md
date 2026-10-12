@@ -28,20 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Möllmann_1996_granulocytes](drugs/drug_cloprednol/pd_M_llmann_1996_granulocytes.md) | granulocytes ← unbound cloprednol · direct Emax (saturable) effect | — | Möllmann H et al., Pharmacokinetics and pharmacodynamics o…, International journal of cl… (1996) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Möllmann_1996_lymphocytes](drugs/drug_cloprednol/pd_M_llmann_1996_lymphocytes.md) | lymphocytes ← unbound cloprednol · direct Emax (saturable) effect | — | Möllmann H et al., Pharmacokinetics and pharmacodynamics o…, International journal of cl… (1996) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cloprednol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | kidney | `CYP3A5` inducer | DrugBank actor |
-| metabolism | liver | `CYP3A4` inducer, `CYP3A5` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer, `CYP3A5` inducer | DrugBank actor |
-
-<sub>Actors without a tissue in the table: NR3C1 (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> | [Möllmann_1996_granulocytes](drugs/drug_cloprednol/pd_M_llmann_1996_granulocytes.md) | granulocytes ← unbound cloprednol · direct Emax (saturable) effect | — | Möllmann H et al., Pharmacokinetics and pharmacodynamics o…, International journal of cl… (1996) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> | [Möllmann_1996_lymphocytes](drugs/drug_cloprednol/pd_M_llmann_1996_lymphocytes.md) | lymphocytes ← unbound cloprednol · direct Emax (saturable) effect | — | Möllmann H et al., Pharmacokinetics and pharmacodynamics o…, International journal of cl… (1996) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

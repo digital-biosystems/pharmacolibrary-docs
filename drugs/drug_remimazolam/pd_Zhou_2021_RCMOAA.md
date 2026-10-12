@@ -20,7 +20,7 @@
 
 > Remimazolam effect-site concentration (μg/ml), with a synergistic fentanyl effect on EC50, drives a Markov categorical model of the recoded MOAA/S (RCMOAA) sedation score via an effect-compartment model with separate keo for remimazolam (0.619 min−1) and fentanyl (0.569 min−1). Potency values are EC50 0.258 μg/ml for remimazolam and 2.30 ng/ml for fentanyl, with separate Emax models for downward (11.6) and upward (5.12) transitions.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Zhou_2021`
 - **model family:** `categorical`
@@ -87,7 +87,7 @@ Zhou J et al., A population pharmacodynamic Markov mix…, Clinical and translat
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

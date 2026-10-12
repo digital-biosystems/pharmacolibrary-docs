@@ -5,7 +5,7 @@
 
 # loperamide — `Loperamide_Valenzuela2025_loperamide`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Valenzuela B et al., Evaluation of the Effect of Loperamide…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70114](https://doi.org/10.1111/cts.70114)
 
-## Model component
-<dbs-pgx drug="loperamide" model-id="Loperamide_Valenzuela2025_loperamide" status="rejected" stale="false" population="healthy adults" measured-compound="loperamide" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="loperamide" model-id="Loperamide_Valenzuela2025_loperamide" status="rejected" stale="false" population="healthy adults" measured-compound="loperamide" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 8 extracted.
@@ -186,17 +185,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_loperamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Valenzuela_2025` / `Valenzuela_2025::loperamide`)
-- model: `../../../knowledgebase/drugs/drug_loperamide/models/modelica/Loperamide_Valenzuela2025_loperamide.mo`
-- deviation: `../../../knowledgebase/drugs/drug_loperamide/models/modelica/Loperamide_Valenzuela2025_loperamide.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_loperamide/models/modelica/Loperamide_Valenzuela2025_loperamide.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_loperamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Valenzuela_2025` / `Valenzuela_2025::loperamide`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_loperamide/models/modelica/Loperamide_Valenzuela2025_loperamide.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_loperamide/models/modelica/Loperamide_Valenzuela2025_loperamide.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_loperamide/models/modelica/Loperamide_Valenzuela2025_loperamide.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

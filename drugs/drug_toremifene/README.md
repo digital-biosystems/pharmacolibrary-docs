@@ -28,26 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Mannerström_2002_WST_1](drugs/drug_toremifene/pd_Mannerstr_m_2002_WST_1.md) | cell proliferation and viability ← toremifene · direct sigmoid Emax (Hill) effect | — | Mannerström M et al., Evaluation of the cytotoxicity of selec…, Toxicology in vitro : an in… (2002) | [10.1016/s0887-2333(01)00113-8](https://doi.org/10.1016/s0887-2333(01)00113-8) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=toremifene).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| metabolism | lung | `CYP1A1` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ESR1 (modulator), SHBG (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Mannerström_2002_WST_1](drugs/drug_toremifene/pd_Mannerstr_m_2002_WST_1.md) | cell proliferation and viability ← toremifene · direct sigmoid Emax (Hill) effect | — | Mannerström M et al., Evaluation of the cytotoxicity of selec…, Toxicology in vitro : an in… (2002) | [10.1016/s0887-2333(01)00113-8](https://doi.org/10.1016/s0887-2333(01)00113-8) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

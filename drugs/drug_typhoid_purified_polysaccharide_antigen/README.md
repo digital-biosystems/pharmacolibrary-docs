@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Kroon_1999_Ab](drugs/drug_typhoid_purified_polysaccharide_antigen/pd_Kroon_1999_Ab.md) | antibody response ← Salmonella typhi TY2 Vi polysaccharide antigen · stimulation effect | — | Kroon FP et al., Impaired antibody response after immuni…, Vaccine (1999) | [10.1016/s0264-410x(99)00167-x](https://doi.org/10.1016/s0264-410x(99)00167-x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Kroon_1999_Ab](drugs/drug_typhoid_purified_polysaccharide_antigen/pd_Kroon_1999_Ab.md) | antibody response ← Salmonella typhi TY2 Vi polysaccharide antigen · stimulation effect | — | Kroon FP et al., Impaired antibody response after immuni…, Vaccine (1999) | [10.1016/s0264-410x(99)00167-x](https://doi.org/10.1016/s0264-410x(99)00167-x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

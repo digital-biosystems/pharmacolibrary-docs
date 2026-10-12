@@ -22,7 +22,7 @@
 
 > A linear logit model relates the probability of severe respiratory depression (a binary response) to buprenorphine plasma concentrations (ng/mL) using an intercept of -5.22 and a slope of 0.744. The paper attributes this effect to buprenorphine's action as a partial agonist at the μ-opioid receptor, noting a ceiling effect for respiratory depression, but does not provide specific Emax, IC50, or rate constants for this specific model.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Yassen_2008`
 - **model family:** `categorical`
@@ -64,7 +64,7 @@ Yassen A et al., Pharmacokinetic-pharmacodynamic modelin…, Pharmaceutical rese
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

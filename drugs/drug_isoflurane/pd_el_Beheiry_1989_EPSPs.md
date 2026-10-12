@@ -21,7 +21,7 @@
 
 > The model characterizes the inhibition of excitatory postsynaptic potentials by isoflurane using an Emax framework with an EC50 of 1 MAC. As the full text is unavailable, the specific mechanism of action (e.g., direct effect vs. indirect) and other rate or potency parameters are not described.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `el-Beheiry_1989`
 - **model family:** `emax`
@@ -48,11 +48,11 @@ el-Beheiry H et al., Anaesthetic depression of excitatory sy…, Experimental br
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

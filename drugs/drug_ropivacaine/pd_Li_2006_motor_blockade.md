@@ -20,7 +20,7 @@
 
 > Ropivacaine concentration drives the binary response of motor blockade via an Emax inhibition model with estimated EC50 values of 0.383 % and 0.536 %. The paper does not provide a mechanism, Imax, or rate parameters as no full text is available.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Li_2006`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Li Y et al., The effects of age on the median effect…, Anesthesia and analgesi
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

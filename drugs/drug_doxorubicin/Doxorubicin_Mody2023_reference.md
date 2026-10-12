@@ -5,7 +5,7 @@
 
 # doxorubicin — `Doxorubicin_Mody2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.091), gpt-oss:120b (not confirmed, agreement 0.091). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.091), gpt-oss:120b (not confirmed, agreement 0.091). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 Mody H et al., In vitro to clinical translational phar…, Scientific reports (2023)
   ·  DOI: [10.1038/s41598-023-29964-4](https://doi.org/10.1038/s41598-023-29964-4)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Mody2023_reference" status="needs_review" stale="true" population="unknown" measured-compound="doxorubicin and dexrazoxane" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Mody2023_reference" status="needs_review" stale="true" population="unknown" measured-compound="doxorubicin and dexrazoxane" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.
@@ -190,10 +189,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_doxorubicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mody_2023` / `Mody_2023::reference`)
-- model: `../../../knowledgebase/drugs/drug_doxorubicin/models/modelica/Doxorubicin_Mody2023_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_doxorubicin/models/modelica/Doxorubicin_Mody2023_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_doxorubicin/models/modelica/Doxorubicin_Mody2023_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_doxorubicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mody_2023` / `Mody_2023::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_doxorubicin/models/modelica/Doxorubicin_Mody2023_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_doxorubicin/models/modelica/Doxorubicin_Mody2023_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_doxorubicin/models/modelica/Doxorubicin_Mody2023_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -214,7 +213,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

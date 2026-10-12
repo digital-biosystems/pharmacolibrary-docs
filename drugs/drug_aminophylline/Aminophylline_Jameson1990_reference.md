@@ -5,7 +5,7 @@
 
 # aminophylline — `Aminophylline_Jameson1990_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -21,7 +21,7 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is aminophylline's own; they describe theophylline.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has theophylline, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,14 +61,28 @@ Jameson JP et al., Theophylline pharmacokinetics in black…, Therapeutic drug m
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>9 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[mean clearance]` | 0.62 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean clearance]` | not captured | 0.62 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean half-life]` | 10.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean half-life]` | not captured | 10.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean weight]` | not captured | 7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 0.55 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 0.55 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | theophylline | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | theophylline | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -109,10 +123,10 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_aminophylline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jameson_1990` / `Jameson_1990::reference`)
-- model: `../../../knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Jameson1990_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Jameson1990_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Jameson1990_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminophylline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jameson_1990` / `Jameson_1990::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Jameson1990_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Jameson1990_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Jameson1990_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -121,15 +135,16 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_aminophylline/Aminophylline_Jameson1990_reference/Aminophylline_Jameson1990_reference_modelica.zip" download>Aminophylline_Jameson1990_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_aminophylline/Aminophylline_Jameson1990_reference/Aminophylline_Jameson1990_reference_fmi.zip" download>Aminophylline_Jameson1990_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_aminophylline/Aminophylline_Jameson1990_reference/Aminophylline_Jameson1990_reference_matlab.zip" download>Aminophylline_Jameson1990_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_aminophylline/Aminophylline_Jameson1990_reference/Aminophylline_Jameson1990_reference_matlab_simbio.zip" download>Aminophylline_Jameson1990_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_aminophylline/Aminophylline_Jameson1990_reference/Aminophylline_Jameson1990_reference_sbml.zip" download>Aminophylline_Jameson1990_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_aminophylline/Aminophylline_Jameson1990_reference/Aminophylline_Jameson1990_reference_cellml.zip" download>Aminophylline_Jameson1990_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_aminophylline/Aminophylline_Jameson1990_reference/Aminophylline_Jameson1990_reference.svg" alt="Aminophylline_Jameson1990_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_aminophylline/Aminophylline_Jameson1990_reference/Aminophylline_Jameson1990_reference.svg" alt="Aminophylline_Jameson1990_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

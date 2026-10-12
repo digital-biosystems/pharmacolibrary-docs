@@ -19,7 +19,7 @@
 
 > Tem.savir plasma concentration ($C_{tau}$) drives the change in plasma HIV-1 RNA from Day 1 to Day 8 via an Emax inhibition model with additive residual error, where baseline plasma HIV-1 RNA and CD4+ count are significant covariates. The key parameters are $E_{max}$ = 1.00 log10 c/mL, EC50 = 64.3 ng/mL, and $E_0$ = -0.129 log10 c/mL.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Parasrampuria_2025`
 - **model family:** `emax`
@@ -48,11 +48,11 @@ Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

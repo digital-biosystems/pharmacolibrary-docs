@@ -22,7 +22,7 @@
 
 > Thiopental acts as a direct inhibitor of I(K1) conductance in an Emax model, characterized by a median inhibitory concentration of 10.5 µM. The provided excerpts do not specify the underlying kinetic mechanism or rate constants for this inhibition.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Carnes_1997`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Carnes CA et al., Effect of intravenous anesthetics on in…, Anesthesiology (19
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

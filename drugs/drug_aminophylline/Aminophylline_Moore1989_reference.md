@@ -5,7 +5,7 @@
 
 # aminophylline — `Aminophylline_Moore1989_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -81,12 +81,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[bioavailability]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl]` | not captured | 17.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance reduction]` | not captured | 12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v]` | 0.858 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v]` | not captured | 0.858 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[weight]` | not captured | 1.28 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[weight]` | not captured | 17.5 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | aminophylline | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | theophylline | unknown | mismatch |
 
@@ -117,7 +117,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_aminophylline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Moore_1989` / `Moore_1989::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminophylline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Moore_1989` / `Moore_1989::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -138,7 +138,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

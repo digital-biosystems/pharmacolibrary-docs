@@ -5,7 +5,7 @@
 
 # salmeterol — `Salmeterol_Himstedt2020_fluticasone_propionate`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,7 +15,7 @@
 
 > **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** Model withheld: a core parameter is unspecified.
 
 ### Reviewer guidance
 
@@ -147,9 +147,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_salmeterol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Himstedt_2020` / `Himstedt_2020::fluticasone_propionate`)
-- model: `../../../knowledgebase/drugs/drug_salmeterol/models/modelica/_needs_review/Salmeterol_Himstedt2020_fluticasone_propionate.mo`
-- deviation: `../../../knowledgebase/drugs/drug_salmeterol/models/modelica/_needs_review/Salmeterol_Himstedt2020_fluticasone_propionate.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_salmeterol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Himstedt_2020` / `Himstedt_2020::fluticasone_propionate`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_salmeterol/models/modelica/_needs_review/Salmeterol_Himstedt2020_fluticasone_propionate.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_salmeterol/models/modelica/_needs_review/Salmeterol_Himstedt2020_fluticasone_propionate.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -161,7 +161,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_salmeterol/Salmeterol_Himstedt2020_fluticasone_propionate/Salmeterol_Himstedt2020_fluticasone_propionate_matlab.zip" download>Salmeterol_Himstedt2020_fluticasone_propionate_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_salmeterol/Salmeterol_Himstedt2020_fluticasone_propionate/Salmeterol_Himstedt2020_fluticasone_propionate_matlab_simbio.zip" download>Salmeterol_Himstedt2020_fluticasone_propionate_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_salmeterol/Salmeterol_Himstedt2020_fluticasone_propionate/Salmeterol_Himstedt2020_fluticasone_propionate_matlab_simbio.zip" download>Salmeterol_Himstedt2020_fluticasone_propionate_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_salmeterol/Salmeterol_Himstedt2020_fluticasone_propionate/Salmeterol_Himstedt2020_fluticasone_propionate_sbml.zip" download>Salmeterol_Himstedt2020_fluticasone_propionate_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_salmeterol/Salmeterol_Himstedt2020_fluticasone_propionate/Salmeterol_Himstedt2020_fluticasone_propionate_cellml.zip" download>Salmeterol_Himstedt2020_fluticasone_propionate_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
@@ -170,7 +170,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

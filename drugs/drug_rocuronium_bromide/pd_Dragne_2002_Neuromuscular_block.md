@@ -20,7 +20,7 @@
 
 > The paper describes a sigmoidal Emax model where plasma rocuronium concentrations inhibit neuromuscular block (twitch tension), mediated by an effect compartment with a rate constant (ke0) of 0.14 min⁻¹ and a slope of 4.43. The estimated EC50 is 1008 ng•mL⁻¹, linking drug exposure to the observed reduction in muscle twitch tension under propofol or isoflurane anesthesia.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Dragne_2002`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Dragne A et al., Rocuronium pharmacokinetic-pharmacodyna…, Canadian journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

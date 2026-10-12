@@ -32,24 +32,13 @@ Biperiden is an anticholinergic drug used to treat Parkinson's disease and lingu
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Bakker_2021_reference](drugs/drug_biperiden/Biperiden_Bakker2021_reference.md) | — | 1-compartment (no model) | 2 | Bakker C et al., Biperiden Challenge Model in Healthy El…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1913](https://doi.org/10.1002/jcph.1913) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Bakker_2021_reference](drugs/drug_biperiden/Biperiden_Bakker2021_reference.md) | — | 1-compartment (no model) | 2 | Bakker C et al., Biperiden Challenge Model in Healthy El…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1913](https://doi.org/10.1002/jcph.1913) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Jackisch_1994_3H_ACh_release](drugs/drug_biperiden/pd_Jackisch_1994_3H_ACh_release.md) | [3H]acetylcholine release ← biperiden · inhibition effect | — | Jackisch R et al., The antiparkinsonian drugs budipine and…, European journal of pharmac… (1994) | [10.1016/0014-2999(94)00528-1](https://doi.org/10.1016/0014-2999(94)00528-1) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=biperiden).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2D6` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CHRM1 (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Jackisch_1994_3H_ACh_release](drugs/drug_biperiden/pd_Jackisch_1994_3H_ACh_release.md) | [3H]acetylcholine release ← biperiden · inhibition effect | — | Jackisch R et al., The antiparkinsonian drugs budipine and…, European journal of pharmac… (1994) | [10.1016/0014-2999(94)00528-1](https://doi.org/10.1016/0014-2999(94)00528-1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

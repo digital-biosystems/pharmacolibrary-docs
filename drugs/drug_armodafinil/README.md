@@ -34,25 +34,13 @@ Armodafinil, a wakefulness-promoting stimulant related to modafinil, is used to 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.545). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Willavize_2017_reference](drugs/drug_armodafinil/Armodafinil_Willavize2017_reference.md) | — | general linear (no model) | 4 | Willavize S et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.800](https://doi.org/10.1002/jcph.800) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.545). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Willavize_2017_reference](drugs/drug_armodafinil/Armodafinil_Willavize2017_reference.md) | — | general linear (no model) | 4 | Willavize S et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.800](https://doi.org/10.1002/jcph.800) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Darwish_2012_MSLT](drugs/drug_armodafinil/pd_Darwish_2012_MSLT.md) | Multiple Sleep Latency Test time (placebo-subtracted) ← armodafinil · direct Emax (saturable) effect | — | Darwish M et al., Armodafinil and modafinil in patients w…, Journal of clinical pharmac… (2012) | [10.1177/0091270011417825](https://doi.org/10.1177/0091270011417825) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=armodafinil).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | kidney | `CYP3A5` inducer | DrugBank actor |
-| metabolism | liver | `CYP1A2` inducer, `CYP2B6` inducer, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP3A4` inducer, `CYP3A5` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer, `CYP3A5` inducer | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1D (target), SLC6A3 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

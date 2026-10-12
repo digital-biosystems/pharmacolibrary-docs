@@ -32,7 +32,7 @@ Azelastine is an antihistamine used for allergic conditions such as seasonal all
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Dings_2022_reference](drugs/drug_azelastine/Azelastine_Dings2022_reference.md) | — | 1-compartment (no model) | 3 | Dings C et al., Pharmacometric Modeling of the Impact o…, Pharmaceutics (2022) | [10.3390/pharmaceutics14102059](https://doi.org/10.3390/pharmaceutics14102059) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Dings_2022_reference](drugs/drug_azelastine/Azelastine_Dings2022_reference.md) | — | 1-compartment (no model) | 3 | Dings C et al., Pharmacometric Modeling of the Impact o…, Pharmaceutics (2022) | [10.3390/pharmaceutics14102059](https://doi.org/10.3390/pharmaceutics14102059) |
 
 ## Pharmacodynamics (PD)
 
@@ -49,27 +49,6 @@ Azelastine is an antihistamine used for allergic conditions such as seasonal all
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2021_MERS_CoV_infectivity](drugs/drug_azelastine/pd_Yang_2021_MERS_CoV_infectivity.md) | MERS-CoV S pseudovirus infection (luciferase, % of control) ← azelastine · direct sigmoid Emax (Hill) effect | — | Yang L et al., Identification of SARS-CoV-2 entry inhi…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00556-6](https://doi.org/10.1038/s41401-020-00556-6) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2021_SARS2_S_infectivity](drugs/drug_azelastine/pd_Yang_2021_SARS2_S_infectivity.md) | SARS2-S pseudovirus infection (luciferase, % of control) ← azelastine · direct sigmoid Emax (Hill) effect | — | Yang L et al., Identification of SARS-CoV-2 entry inhi…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00556-6](https://doi.org/10.1038/s41401-020-00556-6) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2021_SARS_CoV_infectivity](drugs/drug_azelastine/pd_Yang_2021_SARS_CoV_infectivity.md) | SARS-CoV S pseudovirus infection (luciferase, % of control) ← azelastine · direct sigmoid Emax (Hill) effect | — | Yang L et al., Identification of SARS-CoV-2 entry inhi…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00556-6](https://doi.org/10.1038/s41401-020-00556-6) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=azelastine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP2A6` inhibitor/substrate, `CYP2B6` inhibitor, `CYP2C19` inhibitor/substrate, `CYP2C8` substrate, `CYP2C9` inhibitor/substrate, `CYP2D6` inhibitor/substrate, `CYP2E1` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| metabolism | lung | `CYP1A1` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: HRH1 (target), HRH2 (inhibitor), LTC4S (inhibitor), PLA2G1B (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

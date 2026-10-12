@@ -20,7 +20,7 @@
 
 > The paper characterizes the mechanism as a treatment effect for the anti-IL23 monoclonal antibody risankizumab, with no statistically significant exposure-response relationship found for the binary ACR50 response. The model includes a logistic regression parameter estimate of -1.214 for the placebo effect, but no potency or rate constants (such as EC50, Emax, or ke0) are reported.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Thakre_2022`
 - **model family:** `categorical`
@@ -61,7 +61,7 @@ Thakre N et al., Population Pharmacokinetics and Exposur…, Rheumatology and th
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -11,6 +11,8 @@
 
 **Description.** Cagrilintide is under investigation in clinical trial NCT06221969 (A Research Study to See How Much Cagrisema Lowers Blood Sugar and Body Weight Compared to Tirzepatide in People With Type 2 Diabetes Treated With Metformin With or Without an SGLT2 Inhibitor).
 
+<p><small>Source: <a href="https://go.drugbank.com/drugs/DB18887">DrugBank DB18887</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |

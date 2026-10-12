@@ -5,7 +5,7 @@
 
 # canrenone — `Canrenone_Suyagh2012_median`
 
-> ## <span class="pk-badge pk-badge--green" title="molar_mass_missing:canrenone: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889), gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green" title="molar_mass_missing:canrenone: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.889), gpt-oss:120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > **Caveat** (`molar_mass_missing:canrenone`): a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule
 
@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Suyagh M et al., Population pharmacokinetic model of can…, British journal of clinical… (2012)
   ·  DOI: [10.1111/j.1365-2125.2012.04257.x](https://doi.org/10.1111/j.1365-2125.2012.04257.x)
 
-## Model component
-<dbs-pgx drug="canrenone" model-id="Canrenone_Suyagh2012_median" status="extracted" stale="true" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="canrenone" model-id="Canrenone_Suyagh2012_median" status="extracted" stale="true" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
@@ -149,9 +148,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_canrenone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Suyagh_2012` / `Suyagh_2012::median`)
-- model: `../../../knowledgebase/drugs/drug_canrenone/models/modelica/Canrenone_Suyagh2012_median.mo`
-- deviation: `../../../knowledgebase/drugs/drug_canrenone/models/modelica/Canrenone_Suyagh2012_median.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_canrenone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Suyagh_2012` / `Suyagh_2012::median`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_canrenone/models/modelica/Canrenone_Suyagh2012_median.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_canrenone/models/modelica/Canrenone_Suyagh2012_median.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -169,7 +168,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_canrenone/Canrenone_Suyagh2012_median/Canrenone_Suyagh2012_median.svg" alt="Canrenone_Suyagh2012_median diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_canrenone/Canrenone_Suyagh2012_median/Canrenone_Suyagh2012_median.svg" alt="Canrenone_Suyagh2012_median diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

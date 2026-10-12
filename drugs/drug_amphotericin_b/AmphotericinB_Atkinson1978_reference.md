@@ -5,7 +5,7 @@
 
 # amphotericin B — `AmphotericinB_Atkinson1978_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Atkinson AJ et al., Amphotericin B pharmacokinetics in huma…, Antimicrobial agents and ch… (1978)
   ·  DOI: [10.1128/AAC.13.2.271](https://doi.org/10.1128/AAC.13.2.271)
 
-## Model component
-<dbs-pgx drug="amphotericin B" model-id="AmphotericinB_Atkinson1978_reference" status="needs_review" stale="true" population="adults with disseminated histoplasmosis" measured-compound="amphotericin B" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amphotericin B" model-id="AmphotericinB_Atkinson1978_reference" status="needs_review" stale="true" population="adults with disseminated histoplasmosis" measured-compound="amphotericin B" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -130,9 +129,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_amphotericin_b/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Atkinson_1978` / `Atkinson_1978::reference`)
-- model: `../../../knowledgebase/drugs/drug_amphotericin_b/models/modelica/_needs_review/AmphotericinB_Atkinson1978_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_amphotericin_b/models/modelica/_needs_review/AmphotericinB_Atkinson1978_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amphotericin_b/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Atkinson_1978` / `Atkinson_1978::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amphotericin_b/models/modelica/_needs_review/AmphotericinB_Atkinson1978_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amphotericin_b/models/modelica/_needs_review/AmphotericinB_Atkinson1978_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -153,7 +152,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -33,17 +33,7 @@ Bromopride is a dopamine antagonist antiemetic and propulsive drug used to treat
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Lachi-Silva_2020_reference](drugs/drug_bromopride/Bromopride_LachiSilva2020_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Lachi-Silva L et al., Population pharmacokinetics of orally a…, European journal of pharmac… (2020) | [10.1016/j.ejps.2019.105081](https://doi.org/10.1016/j.ejps.2019.105081) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bromopride).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: DRD2 (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Lachi-Silva_2020_reference](drugs/drug_bromopride/Bromopride_LachiSilva2020_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Lachi-Silva L et al., Population pharmacokinetics of orally a…, European journal of pharmac… (2020) | [10.1016/j.ejps.2019.105081](https://doi.org/10.1016/j.ejps.2019.105081) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -21,7 +21,7 @@
 
 > Blood glucose is described by an indirect response model where zero-order production and first-order elimination (utilization) are proportionally inhibited by two age-related disease factors representing insulin resistance and β-cell dysfunction, which are mitigated by salicylate concentrations. The salicylate effect is characterized by an efficacy index of 0.0116 ml/g/week, an improvement factor of 0.136, and a transduction rate of 1.49 1/week.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Cao_2011`
 - **model family:** `disease_progression`
@@ -64,7 +64,7 @@ Cao Y et al., Modeling diabetes disease progression a…, The Journal of pharmac
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

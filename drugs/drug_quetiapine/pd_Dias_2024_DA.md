@@ -22,7 +22,7 @@
 
 > Unbound brain quetiapine concentrations drive mPFC extracellular dopamine (DA, ng/mL) via a semimechanistic transduction model with a precursor pool compartment: QTP stimulates DA synthesis/release from the pool (zero-order Kin ≈0.313 ng/mL·h, Pool0 ≈2.19 ng/mL, DA0 ≈0.298 ng/mL), with an effect compartment (Ke0 ≈0.450–1.01 h−1) accounting for the delay between receptor binding and DA release, and a feedback regulation rate Kmod (≈0.529–1.27 h−1); the paper does not state an Imax/IC50/EC50/Emax or gamma, but reports a QTP effect parameter EQTP (≈37.3–100.7) and nanoparticle-related parameters KNP (≈2.56–3.79 h−1) and NP0 (≈6.3–8.4 × 10^4 ng/mL).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Dias_2024`
 - **model family:** `transduction`
@@ -56,11 +56,11 @@ Dias BB et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

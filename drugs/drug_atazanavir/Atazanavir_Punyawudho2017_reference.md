@@ -5,7 +5,7 @@
 
 # atazanavir — `Atazanavir_Punyawudho2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: partial 1/2</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 BaraleePunyawudho baralee.p@cmu.ac.th Department of Pharmaceutical Care Faculty of Pharmacy Chiang Mai University Chiang Mai 50200 Thailand et al., Population pharmacokinetics and dose op… (2017)
   ·  DOI: [10.1016/j.ijantimicag.2016.11.019](https://doi.org/10.1016/j.ijantimicag.2016.11.019)
 
-## Model component
-<dbs-pgx drug="atazanavir" model-id="Atazanavir_Punyawudho2017_reference" status="model_quarantined" stale="false" population="Thai HIV-infected patients" measured-compound="atazanavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atazanavir" model-id="Atazanavir_Punyawudho2017_reference" status="model_quarantined" stale="false" population="Thai HIV-infected patients" measured-compound="atazanavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -135,9 +134,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_atazanavir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Punyawudho_2017` / `Punyawudho_2017::reference`)
-- model: `../../../knowledgebase/drugs/drug_atazanavir/models/modelica/_needs_review/Atazanavir_Punyawudho2017_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_atazanavir/models/modelica/_needs_review/Atazanavir_Punyawudho2017_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atazanavir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Punyawudho_2017` / `Punyawudho_2017::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atazanavir/models/modelica/_needs_review/Atazanavir_Punyawudho2017_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atazanavir/models/modelica/_needs_review/Atazanavir_Punyawudho2017_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -158,7 +157,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

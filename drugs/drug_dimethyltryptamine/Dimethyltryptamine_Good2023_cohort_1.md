@@ -104,7 +104,7 @@ Good M et al., Pharmacokinetics of N,N-dimethyltryptam…, European journal of d
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs_non_atc/drug_dimethyltryptamine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Good_2023` / `Good_2023::cohort_1`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs_non_atc/drug_dimethyltryptamine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Good_2023` / `Good_2023::cohort_1`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -125,7 +125,7 @@ Good M et al., Pharmacokinetics of N,N-dimethyltryptam…, European journal of d
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

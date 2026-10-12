@@ -22,7 +22,7 @@
 
 > Suramin inhibited proliferation of A90 and A121 ovarian cancer cell lines, with IC50 values of 60 and 210 micrograms/ml; the paper excerpts do not state the mechanism or model form.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Crickard_1994`
 - **model family:** `unknown`
@@ -64,7 +64,7 @@ Crickard K et al., Basic fibroblast growth factor and rece…, Gynecologic oncol
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

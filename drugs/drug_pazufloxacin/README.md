@@ -33,15 +33,7 @@ Pazufloxacin is a fluoroquinolone antibacterial that has been investigated as an
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Umezaki_2022_reference](drugs/drug_pazufloxacin/Pazufloxacin_Umezaki2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Umezaki Y et al., Concentration-Dependent Activity of Paz…, Antibiotics (Basel, Switzer… (2022) | [10.3390/antibiotics11070982](https://doi.org/10.3390/antibiotics11070982) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pazufloxacin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Umezaki_2022_reference](drugs/drug_pazufloxacin/Pazufloxacin_Umezaki2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Umezaki Y et al., Concentration-Dependent Activity of Paz…, Antibiotics (Basel, Switzer… (2022) | [10.3390/antibiotics11070982](https://doi.org/10.3390/antibiotics11070982) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

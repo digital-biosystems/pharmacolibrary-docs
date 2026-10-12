@@ -32,19 +32,7 @@ Tenoxicam is a non-steroidal anti-inflammatory drug of the oxicam class, used to
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Heintz_1984_reference](drugs/drug_tenoxicam/Tenoxicam_Heintz1984_reference.md) | — | 1-compartment (no model) | 1 | Heintz RC et al., Pharmacokinetics of tenoxicam in health…, European journal of rheumat… (1984) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tenoxicam).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP2C9` substrate | DrugBank actor |
-| excretion | kidney | `SLC22A8` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Heintz_1984_reference](drugs/drug_tenoxicam/Tenoxicam_Heintz1984_reference.md) | — | 1-compartment (no model) | 1 | Heintz RC et al., Pharmacokinetics of tenoxicam in health…, European journal of rheumat… (1984) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

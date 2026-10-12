@@ -21,7 +21,7 @@
 
 > Pentamidine concentrations (microg/ml) inhibit the total number of P. carinii microorganisms in treated cultures relative to drug-free cultures, described by a sigmoid Emax model with an EC50 of 0.025 microg/ml; the paper excerpts do not state the mechanism beyond this inhibitory Emax relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Aviles_2000`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Aviles P et al., In vitro pharmacodynamic parameters of…, Antimicrobial agents
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

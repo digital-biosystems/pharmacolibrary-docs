@@ -20,7 +20,7 @@
 
 > The paper describes a dose-dependent inhibition of the train-of-four (TOF) force of contraction by atracurium, identifying an ED90 of 0.175 mg/kg. No specific mechanism or rate constants are provided in the available text.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Smith_1988`
 - **model family:** `categorical`
@@ -61,7 +61,7 @@ Smith CE et al., Cumulative dose-response with infusion:…, Clinical pharmacolo
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -32,9 +32,9 @@ Ciclosporin is an immunosuppressant used to treat autoimmune conditions such as 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Kauv_2025_reference](drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Kauv J et al., Population pharmacokinetics of mycophen…, European journal of pharmac… (2025) | [10.1016/j.ejps.2025.107290](https://doi.org/10.1016/j.ejps.2025.107290) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): k12, k21</sub><br><sub>route_to: `scholar`</sub> | [Han_2013_reference](drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Han K et al., Population pharmacokinetics of cyclospo…, The AAPS journal (2013) | [10.1208/s12248-013-9500-8](https://doi.org/10.1208/s12248-013-9500-8) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Gao_2022_reference](drugs/drug_ciclosporin/Ciclosporin_Gao2022_reference.md) | — | 2-compartment (no model) | 6 | Gao X et al., Population Pharmacokinetics of Cyclospo…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.933739](https://doi.org/10.3389/fphar.2022.933739) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Kauv_2025_reference](drugs/drug_ciclosporin/Ciclosporin_Kauv2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Kauv J et al., Population pharmacokinetics of mycophen…, European journal of pharmac… (2025) | [10.1016/j.ejps.2025.107290](https://doi.org/10.1016/j.ejps.2025.107290) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): k12, k21</sub><br><sub>route_to: `scholar`</sub> | [Han_2013_reference](drugs/drug_ciclosporin/Ciclosporin_Han2013_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Han K et al., Population pharmacokinetics of cyclospo…, The AAPS journal (2013) | [10.1208/s12248-013-9500-8](https://doi.org/10.1208/s12248-013-9500-8) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Gao_2022_reference](drugs/drug_ciclosporin/Ciclosporin_Gao2022_reference.md) | — | 2-compartment (no model) | 6 | Gao X et al., Population Pharmacokinetics of Cyclospo…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.933739](https://doi.org/10.3389/fphar.2022.933739) |
 
 ## Pharmacodynamics (PD)
 
@@ -44,31 +44,6 @@ Ciclosporin is an immunosuppressant used to treat autoimmune conditions such as 
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Albitar_2022_eGFR](drugs/drug_ciclosporin/pd_Albitar_2022_eGFR.md) | renal graft function response, quantified as estimated glomerular filtration rate (eGFR) ← cyclosporine · direct Emax (saturable) effect | model (no simulator) | Albitar O et al., Time-Dissociated Pharmacokinetic Pharma…, Therapeutic drug monitoring (2022) | [10.1097/FTD.0000000000000916](https://doi.org/10.1097/FTD.0000000000000916) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Wan_2025_EASI](drugs/drug_ciclosporin/pd_Wan_2025_EASI.md) | EASI scores ← ciclosporin · direct linear effect | model (no simulator) | Wan M et al., Exposure-response of ciclosporin and me…, Clinical and experimental d… (2025) | [10.1093/ced/llaf147](https://doi.org/10.1093/ced/llaf147) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Wan_2025_o_SCORAD](drugs/drug_ciclosporin/pd_Wan_2025_o_SCORAD.md) | o-SCORAD scores ← ciclosporin · direct linear effect | model (no simulator) | Wan M et al., Exposure-response of ciclosporin and me…, Clinical and experimental d… (2025) | [10.1093/ced/llaf147](https://doi.org/10.1093/ced/llaf147) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ciclosporin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| absorption | ileum | `SLC10A2` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C19` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate, `SLC10A1` inhibitor, `SLCO1B1` inhibitor/substrate, `SLCO1B3` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `ABCC2` inhibitor, `SLC22A6` inhibitor/substrate | DrugBank actor |
-| excretion | liver | `ABCB11` inhibitor/substrate, `ABCC2` inhibitor | DrugBank actor |
-| excretion | small intestine | `ABCC2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ABCC10 (inhibitor), ABCC10 (substrate), CAMLG (binder), PPIA (binder), PPIA (inhibitor), PPIF (binder), PPP3CA (inhibitor), PPP3R2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

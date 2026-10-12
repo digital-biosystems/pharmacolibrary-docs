@@ -20,7 +20,7 @@
 
 > Ziprasidone concentrations (from the cited Bao_2024 PK model) act on binary extrapyramidal symptom (EPS) indices via an inhibitory Emax model with a proportional effect form; the paper excerpts provide no mechanism detail and no numeric parameter values (Imax, IC50, etc.).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Matsui-Sakata_2005`
 - **model family:** `emax`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

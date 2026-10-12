@@ -34,29 +34,8 @@ Levamlodipine, the single active enantiomer of amlodipine, is a calcium channel 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714), gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Li_2025_base](drugs/drug_levamlodipine/Levamlodipine_Li2025_base.md) | ▶ model + simulator | 1-compartment, oral | 3 | Li G et al., Model-Informed Precision Dosing of Leva…, Drug design, development an… (2025) | [10.2147/DDDT.S501762](https://doi.org/10.2147/DDDT.S501762) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714), gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Li_2025_final](drugs/drug_levamlodipine/Levamlodipine_Li2025_final.md) | ▶ model + simulator | 1-compartment, oral | 3 | Li G et al., Model-Informed Precision Dosing of Leva…, Drug design, development an… (2025) | [10.2147/DDDT.S501762](https://doi.org/10.2147/DDDT.S501762) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=levamlodipine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | ileum | `SLC10A2` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate, `SLC22A5` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate, `SLC22A5` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CACNA1C (target), CACNA1D (target), NOS2 (inducer), NOS2 (target), NOS3 (inducer), NOS3 (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714), gpt-oss:120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Li_2025_base](drugs/drug_levamlodipine/Levamlodipine_Li2025_base.md) | ▶ model + simulator | 1-compartment, oral | 3 | Li G et al., Model-Informed Precision Dosing of Leva…, Drug design, development an… (2025) | [10.2147/DDDT.S501762](https://doi.org/10.2147/DDDT.S501762) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714), gpt-oss:120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Li_2025_final](drugs/drug_levamlodipine/Levamlodipine_Li2025_final.md) | ▶ model + simulator | 1-compartment, oral | 3 | Li G et al., Model-Informed Precision Dosing of Leva…, Drug design, development an… (2025) | [10.2147/DDDT.S501762](https://doi.org/10.2147/DDDT.S501762) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

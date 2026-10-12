@@ -22,7 +22,7 @@
 
 > Flunitrazepam concentrations (nM) act on [3H]flunitrazepam specific binding to the GABAA receptor (fmoles/mg protein), described by a saturable binding relationship with Bmax 488 ± 24 fmoles/mg protein and Kd 3.34 ± 0.36 nM (temperature-shifted values: Bmax,t 500 ± 25 fmoles/mg protein, Kd,t 5.86 ± 0.86 nM); the excerpts provide no further mechanistic description.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Perillo_1999`
 - **model family:** `unknown`
@@ -66,7 +66,7 @@ Perillo MA et al., Tagetone modulates the coupling of flun…, Molecular membran
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

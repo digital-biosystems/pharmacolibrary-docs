@@ -20,7 +20,7 @@
 
 > Lenalidomide and dexamethasone drive a linear, inhibitory effect on the elimination rate of the platelet precursor pool in a semimechanistic transit compartment model. The provided excerpt does not specify the quantitative parameter values (e.g., slope, kout, or IC50) for this effect.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Srimani_2022`
 - **model family:** `indirect_response_i`
@@ -63,7 +63,7 @@ Srimani JK et al., Population pharmacokinetic/pharmacodyna…, CPT: pharmacometr
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

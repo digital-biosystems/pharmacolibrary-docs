@@ -22,7 +22,7 @@
 
 > Lumefantrine concentrations (nM) inhibit schizont maturation in Plasmodium falciparum; the paper excerpts do not state the mechanism or model form. Reported potency values are EC50 = 27.3 nM, EC90 = 163.1 nM, and GMCOC = 943.2 nM.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Starzengruber_2007`
 - **model family:** `unknown`
@@ -65,7 +65,7 @@ Starzengruber P et al., Specific pharmacokinetic interaction be…, Wiener klini
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

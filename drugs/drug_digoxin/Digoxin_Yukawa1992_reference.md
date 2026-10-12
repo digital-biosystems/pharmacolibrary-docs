@@ -5,7 +5,7 @@
 
 # digoxin — `Digoxin_Yukawa1992_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Yukawa E et al., Digoxin population pharmacokinetics fro…, The Journal of pharmacy and… (1992)
   ·  DOI: [10.1111/j.2042-7158.1992.tb05515.x](https://doi.org/10.1111/j.2042-7158.1992.tb05515.x)
 
-## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_Yukawa1992_reference" status="rejected" stale="true" population="patients receiving digoxin" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Yukawa1992_reference" status="rejected" stale="true" population="patients receiving digoxin" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -106,21 +105,21 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_digoxin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yukawa_1992` / `Yukawa_1992::reference`)
-- model: `../../../knowledgebase/drugs/drug_digoxin/models/modelica/Digoxin_Yukawa1992_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_digoxin/models/modelica/Digoxin_Yukawa1992_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_digoxin/models/modelica/Digoxin_Yukawa1992_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_digoxin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yukawa_1992` / `Yukawa_1992::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_digoxin/models/modelica/Digoxin_Yukawa1992_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_digoxin/models/modelica/Digoxin_Yukawa1992_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_digoxin/models/modelica/Digoxin_Yukawa1992_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

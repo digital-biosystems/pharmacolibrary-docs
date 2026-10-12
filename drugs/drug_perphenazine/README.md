@@ -32,7 +32,7 @@ Perphenazine is an antipsychotic of the phenothiazine class used to treat schizo
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Jin_2010_reference](drugs/drug_perphenazine/Perphenazine_Jin2010_reference.md) | — | 1-compartment (no model) | 2 | Jin Y et al., Population pharmacokinetics of perphena…, Journal of clinical pharmac… (2010) | [10.1177/0091270009343694](https://doi.org/10.1177/0091270009343694) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Jin_2010_reference](drugs/drug_perphenazine/Perphenazine_Jin2010_reference.md) | — | 1-compartment (no model) | 2 | Jin Y et al., Population pharmacokinetics of perphena…, Journal of clinical pharmac… (2010) | [10.1177/0091270009343694](https://doi.org/10.1177/0091270009343694) |
 
 ## Pharmacodynamics (PD)
 
@@ -40,20 +40,6 @@ Perphenazine is an antipsychotic of the phenothiazine class used to treat schizo
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Otreba_2016_cell_viability](drugs/drug_perphenazine/pd_Otreba_2016_cell_viability.md) | cell viability ← perphenazine · direct Emax (saturable) effect | — | Otreba M et al., FLUPHENAZINE AND PERPHENAZINE IMPACT ON…, Acta poloniae pharmaceutica (2016) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Otręba_2018_cell_viability_U87_MG_cells](drugs/drug_perphenazine/pd_Otr_ba_2018_cell_viability_U87_MG_cells.md) | cell viability (U87-MG cells) ← perphenazine · inhibition effect | — | Otręba M et al., Perphenazine and prochlorperazine induc…, Die Pharmazie (2018) | [10.1691/ph.2018.7806](https://doi.org/10.1691/ph.2018.7806) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=perphenazine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` regulator | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CALM1 (inhibitor), CYP2C18 (substrate), DRD1 (target), DRD2 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -25,8 +25,8 @@ Promazine is a phenothiazine antipsychotic used to treat schizophreniform disord
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [McGree_2013_reference](drugs/drug_promazine/Promazine_McGree2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | McGree JM et al., A Bayesian approach for estimating dete…, Journal of veterinary pharm… (2013) | [10.1111/j.1365-2885.2013.01389.x](https://doi.org/10.1111/j.1365-2885.2013.01389.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Curry_1990_reference](drugs/drug_promazine/Promazine_Curry1990_reference.md) | — | 1-compartment (no model) | 0 | Curry SH et al., A third, "deep," compartment for phenot…, Psychopharmacology bulletin (1990) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [McGree_2013_reference](drugs/drug_promazine/Promazine_McGree2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | McGree JM et al., A Bayesian approach for estimating dete…, Journal of veterinary pharm… (2013) | [10.1111/j.1365-2885.2013.01389.x](https://doi.org/10.1111/j.1365-2885.2013.01389.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Curry_1990_reference](drugs/drug_promazine/Promazine_Curry1990_reference.md) | — | 1-compartment (no model) | 0 | Curry SH et al., A third, "deep," compartment for phenot…, Psychopharmacology bulletin (1990) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -34,18 +34,6 @@ Promazine is a phenothiazine antipsychotic used to treat schizophreniform disord
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Ashoor_2011_ACh_induced_current](drugs/drug_promazine/pd_Ashoor_2011_ACh_induced_current.md) | acetylcholine (100 μM)-induced current through α7-nicotinic acetylcholine receptor ← promazine · inhibition effect | — | Ashoor A et al., Effects of phenothiazine-class antipsyc…, European journal of pharmac… (2011) | [10.1016/j.ejphar.2011.10.020](https://doi.org/10.1016/j.ejphar.2011.10.020) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Jakubovic_1982_enkephalin_degradation_enkephalin_hydrolyzing_activity](drugs/drug_promazine/pd_Jakubovic_1982_enkephalin_degradation_enkephalin_hydrolyzing.md) | enkephalin degradation (enkephalin-hydrolyzing activity) ← promazine · inhibition effect | — | Jakubovic A, Degradation of met-enkephalin by extrac…, Peptides (1982) | [10.1016/0196-9781(82)90136-x](https://doi.org/10.1016/0196-9781(82)90136-x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=promazine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), CHRM1 (target), CHRM5 (binder), DRD2 (target), HRH1 (target), HTR2A (target), HTR2C (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

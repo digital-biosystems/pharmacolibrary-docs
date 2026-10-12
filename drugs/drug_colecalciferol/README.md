@@ -34,25 +34,9 @@ Colecalciferol (vitamin D3) is a vitamin used to treat or prevent vitamin D defi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Deb_2020_reference](drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Deb S et al., Simulation of Physicochemical and Pharm…, Pharmaceuticals (Basel, Swi… (2020) | [10.3390/ph13080160](https://doi.org/10.3390/ph13080160) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Hidiroglou_1979_reference](drugs/drug_colecalciferol/Colecalciferol_Hidiroglou1979_reference.md) | — | 1-compartment (no model) | 5 | Hidiroglou M et al., Pharmacokinetics and amounts of 25-hydr…, Journal of dairy science (1979) | [10.3168/jds.S0022-0302(79)83291-9](https://doi.org/10.3168/jds.S0022-0302(79)83291-9) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Jia_2026_reference](drugs/drug_colecalciferol/Colecalciferol_Jia2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=colecalciferol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | heart | `CYP2J2` substrate | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP2C8` inhibitor, `CYP3A4` substrate | DrugBank actor |
-| metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` inhibitor, `CYP2J2` substrate, `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CYP11A1 (substrate), CYP27A1 (substrate), CYP2R1 (substrate), GC (unknown), VDR (target).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Deb_2020_reference](drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Deb S et al., Simulation of Physicochemical and Pharm…, Pharmaceuticals (Basel, Swi… (2020) | [10.3390/ph13080160](https://doi.org/10.3390/ph13080160) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Hidiroglou_1979_reference](drugs/drug_colecalciferol/Colecalciferol_Hidiroglou1979_reference.md) | — | 1-compartment (no model) | 5 | Hidiroglou M et al., Pharmacokinetics and amounts of 25-hydr…, Journal of dairy science (1979) | [10.3168/jds.S0022-0302(79)83291-9](https://doi.org/10.3168/jds.S0022-0302(79)83291-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Jia_2026_reference](drugs/drug_colecalciferol/Colecalciferol_Jia2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

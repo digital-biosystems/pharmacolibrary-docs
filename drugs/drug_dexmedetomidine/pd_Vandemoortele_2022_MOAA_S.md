@@ -20,7 +20,7 @@
 
 > Dexmedetomidine plasma concentrations (ng/mL, from the Hannivoort PK model) were related to the probability of each MOAA/S sedation score via a categorical (logit-scaled cumulative probability) PD model with an effect-site equilibration delay; the excerpts do not state the mechanism beyond this probability model and give no numeric potency (e.g. Ce50) or rate (ke0) values for the MOAA/S endpoint.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Vandemoortele_2022`
 - **model family:** `categorical`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

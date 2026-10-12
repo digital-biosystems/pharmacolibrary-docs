@@ -1,5 +1,5 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07X&quot;,&quot;href&quot;:&quot;atc/N07X.md&quot;},{&quot;label&quot;:&quot;trofinetide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Trofinetide_Darwish2025_reference&quot;,&quot;label&quot;:&quot;Darwish_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_trofinetide/Trofinetide_Darwish2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Trofinetide_Darwish2025v2_reference&quot;,&quot;label&quot;:&quot;Darwish_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_trofinetide/Trofinetide_Darwish2025v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V08C&quot;,&quot;href&quot;:&quot;atc/V08C.md&quot;},{&quot;label&quot;:&quot;gadopiclenol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gadopiclenol_Eto2025_0_025_mmol_kg&quot;,&quot;label&quot;:&quot;Eto_2025_0_025_mmol_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_025_mmol_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gadopiclenol_Eto2025_0_05_mmol_kg&quot;,&quot;label&quot;:&quot;Eto_2025_0_05_mmol_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_05_mmol_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gadopiclenol_Eto2025_0_1_mmol_kg&quot;,&quot;label&quot;:&quot;Eto_2025_0_1_mmol_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_1_mmol_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # gadopiclenol
 
@@ -27,31 +27,16 @@ Gadopiclenol is a gadolinium-based contrast agent used to improve images in magn
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 05:03 | 2:37 | 0/1/2 | 1/0/0 | 0/0/0 | 128,038/8,608 | ollama / glm-5.3-flash | 4 | 1/3 | 4/0 | 0 |
+| 2026-10-07 18:16 | 3:20 | 3/1/0 | 0/0/0 | 0/0/0 | 77,357/15,584 | openai / gpt-6-luna | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Darwish_2025_reference](drugs/drug_trofinetide/Trofinetide_Darwish2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+9 cov.) | Darwish M et al., Population Pharmacokinetic Modeling to…, Advances in therapy (2025) | [10.1007/s12325-024-03056-9](https://doi.org/10.1007/s12325-024-03056-9) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.71). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Darwish_2025_2_reference](drugs/drug_trofinetide/Trofinetide_Darwish2025v2_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+6 cov.) | Darwish M et al., Population Pharmacokinetics of Trofinet…, Advances in therapy (2025) | [10.1007/s12325-024-03058-7](https://doi.org/10.1007/s12325-024-03058-7) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Oosterholt_2017_reference](drugs/drug_trofinetide/Trofinetide_Oosterholt2017_reference.md) | — | 1-compartment (no model) | 0 | Oosterholt SP et al., Population pharmacokinetics of NNZ-2566…, European journal of pharmac… (2017) | [10.1016/j.ejps.2017.05.032](https://doi.org/10.1016/j.ejps.2017.05.032) |
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> | [Darwish_2024_CSBS_DP_IT](drugs/drug_trofinetide/pd_Darwish_2024_CSBS_DP_IT.md) | CSBS-DP-IT Social Composite score ← trofinetide · direct linear effect | model (no simulator) | Darwish M et al., Exposure-Response Efficacy Modeling to…, Advances in therapy (2024) | [10.1007/s12325-024-02796-y](https://doi.org/10.1007/s12325-024-02796-y) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span> | [Darwish_2024_RSBQ](drugs/drug_trofinetide/pd_Darwish_2024_RSBQ.md) | RSBQ total score ← trofinetide · direct linear effect | model (no simulator) | Darwish M et al., Exposure-Response Efficacy Modeling to…, Advances in therapy (2024) | [10.1007/s12325-024-02796-y](https://doi.org/10.1007/s12325-024-02796-y) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> | [Darwish_2024_RTT_COMC](drugs/drug_trofinetide/pd_Darwish_2024_RTT_COMC.md) | RTT-COMC score ← trofinetide · categorical (graded) response model | — | Darwish M et al., Exposure-Response Efficacy Modeling to…, Advances in therapy (2024) | [10.1007/s12325-024-02796-y](https://doi.org/10.1007/s12325-024-02796-y) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=gadopiclenol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.267). Primary extraction retained.">cross-check: disputed</span> | [Eto_2025_0_025_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_025_mmol_kg.md) | ▶ model + simulator | 1-compartment, IV | 8 | Eto T et al., Pharmacokinetics and safety of gadopicl…, Japanese journal of radiolo… (2025) | [10.1007/s11604-025-01842-1](https://doi.org/10.1007/s11604-025-01842-1) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.267). Primary extraction retained.">cross-check: disputed</span> | [Eto_2025_0_05_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_05_mmol_kg.md) | ▶ model + simulator | 1-compartment, IV | 8 | Eto T et al., Pharmacokinetics and safety of gadopicl…, Japanese journal of radiolo… (2025) | [10.1007/s11604-025-01842-1](https://doi.org/10.1007/s11604-025-01842-1) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.267). Primary extraction retained.">cross-check: disputed</span> | [Eto_2025_0_1_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_1_mmol_kg.md) | ▶ model + simulator | 1-compartment, IV | 8 | Eto T et al., Pharmacokinetics and safety of gadopicl…, Japanese journal of radiolo… (2025) | [10.1007/s11604-025-01842-1](https://doi.org/10.1007/s11604-025-01842-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Jurkiewicz_2022_reference](drugs/drug_gadopiclenol/Gadopiclenol_Jurkiewicz2022_reference.md) | — | 2-compartment (no model) | 3 | Jurkiewicz E et al., Pharmacokinetics, Safety, and Efficacy…, Investigative radiology (2022) | [10.1097/RLI.0000000000000865](https://doi.org/10.1097/RLI.0000000000000865) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -63,7 +48,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 3  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

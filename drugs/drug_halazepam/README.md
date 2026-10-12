@@ -32,17 +32,7 @@ Halazepam is a benzodiazepine that was used to treat anxiety disorders. It has b
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Chung_1984_reference](drugs/drug_halazepam/Halazepam_Chung1984_reference.md) | — | parent + metabolite (no model) | 0 | Chung M et al., Multiple-dose halazepam kinetics, Clinical pharmacology and t… (1984) | [10.1038/clpt.1984.122](https://doi.org/10.1038/clpt.1984.122) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=halazepam).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: GABRA1 (positive allosteric modulator), GABRA1 (target), TSPO (modulator).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Chung_1984_reference](drugs/drug_halazepam/Halazepam_Chung1984_reference.md) | — | parent + metabolite (no model) | 0 | Chung M et al., Multiple-dose halazepam kinetics, Clinical pharmacology and t… (1984) | [10.1038/clpt.1984.122](https://doi.org/10.1038/clpt.1984.122) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

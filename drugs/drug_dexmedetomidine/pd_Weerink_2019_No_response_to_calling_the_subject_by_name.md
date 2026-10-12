@@ -20,7 +20,7 @@
 
 > Dexmedetomidine plasma concentrations (ng/ml) were linked to the binary endpoint 'no response to calling the subject by name' using a sigmoid Emax (inhibitory) model, with an EC50 of 2.1 ng/ml (90% CI, 1.6 to 2.8). The paper excerpts do not state the mechanism beyond this direct concentration–effect relation, and no Imax, gamma, or rate parameters are given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Weerink_2019`
 - **model family:** `sigmoid_emax`
@@ -61,7 +61,7 @@ Weerink MAS et al., Pharmacodynamic Interaction of Remifent…, Anesthesiology (
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

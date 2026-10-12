@@ -20,7 +20,7 @@
 
 > The record describes a categorical dose-response relationship for atracurium where the drug dose acts to inhibit the response, characterized by an ED50 of 0.12 mg/kg and an ED95 of 0.27 mg/kg. No full text is available to describe the specific mechanism (e.g., production or elimination) or rate constants.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sokoll_1983`
 - **model family:** `categorical`
@@ -62,7 +62,7 @@ Sokoll MD et al., Safety and efficacy of atracurium (BW33…, Anesthesiology (19
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

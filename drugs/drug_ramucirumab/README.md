@@ -24,18 +24,9 @@ Ramucirumab is a monoclonal antibody used as an anticancer treatment for tumours
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial</span> | [Marachelian_2016_reference](drugs/drug_ramucirumab/Ramucirumab_Marachelian2016_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Marachelian A et al., Comparative pharmacokinetics, safety, a…, Cancer chemotherapy and pha… (2016) | [10.1007/s00280-015-2955-9](https://doi.org/10.1007/s00280-015-2955-9) |
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [OBrien_2017_reference](drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 (+2 cov.) | O'Brien L et al., Population pharmacokinetic meta-analysi…, British journal of clinical… (2017) | [10.1111/bcp.13403](https://doi.org/10.1111/bcp.13403) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Kaneko_2023_reference](drugs/drug_ramucirumab/Ramucirumab_Kaneko2023_reference.md) | — | 1-compartment (no model) | 2 | Kaneko T et al., Effect of massive ascites on ramuciruma…, Cancer chemotherapy and pha… (2023) | [10.1007/s00280-023-04568-x](https://doi.org/10.1007/s00280-023-04568-x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ramucirumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: KDR (target).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909). Primary extraction retained.">cross-check: partial</span> | [Marachelian_2016_reference](drugs/drug_ramucirumab/Ramucirumab_Marachelian2016_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Marachelian A et al., Comparative pharmacokinetics, safety, a…, Cancer chemotherapy and pha… (2016) | [10.1007/s00280-015-2955-9](https://doi.org/10.1007/s00280-015-2955-9) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [OBrien_2017_reference](drugs/drug_ramucirumab/Ramucirumab_OBrien2017_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 (+2 cov.) | O'Brien L et al., Population pharmacokinetic meta-analysi…, British journal of clinical… (2017) | [10.1111/bcp.13403](https://doi.org/10.1111/bcp.13403) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Kaneko_2023_reference](drugs/drug_ramucirumab/Ramucirumab_Kaneko2023_reference.md) | — | 1-compartment (no model) | 2 | Kaneko T et al., Effect of massive ascites on ramuciruma…, Cancer chemotherapy and pha… (2023) | [10.1007/s00280-023-04568-x](https://doi.org/10.1007/s00280-023-04568-x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

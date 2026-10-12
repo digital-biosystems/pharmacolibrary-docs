@@ -32,7 +32,7 @@ Niflumic acid is a non-steroidal anti-inflammatory drug (a fenamate) used for in
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.529). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Jeong_2024_reference](drugs/drug_niflumic_acid/NiflumicAcid_Jeong2024_reference.md) | — | parent + metabolite (no model) | 5 | Jeong SH et al., Modeling population pharmacokinetics of…, Naunyn-Schmiedeberg's archi… (2024) | [10.1007/s00210-023-02640-0](https://doi.org/10.1007/s00210-023-02640-0) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.529). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Jeong_2024_reference](drugs/drug_niflumic_acid/NiflumicAcid_Jeong2024_reference.md) | — | parent + metabolite (no model) | 5 | Jeong SH et al., Modeling population pharmacokinetics of…, Naunyn-Schmiedeberg's archi… (2024) | [10.1007/s00210-023-02640-0](https://doi.org/10.1007/s00210-023-02640-0) |
 
 ## Pharmacodynamics (PD)
 
@@ -47,18 +47,6 @@ Niflumic acid is a non-steroidal anti-inflammatory drug (a fenamate) used for in
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Zhou_2005_I_Na](drugs/drug_niflumic_acid/pd_Zhou_2005_I_Na.md) | sodium current ← niflumic acid · inhibition effect | — | Zhou SS et al., Effect of Cl- channel blockers on aconi…, Experimental physiology (2005) | [10.1113/expphysiol.2005.031484](https://doi.org/10.1113/expphysiol.2005.031484) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Zhou_2005_polymorphic_ventricular_arrhythmias](drugs/drug_niflumic_acid/pd_Zhou_2005_polymorphic_ventricular_arrhythmias.md) | polymorphic ventricular arrhythmias ← niflumic acid · inhibition effect | — | Zhou SS et al., Effect of Cl- channel blockers on aconi…, Experimental physiology (2005) | [10.1113/expphysiol.2005.031484](https://doi.org/10.1113/expphysiol.2005.031484) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Zhou_2005_upstroke_of_the_AP](drugs/drug_niflumic_acid/pd_Zhou_2005_upstroke_of_the_AP.md) | upstroke of the AP ← niflumic acid · inhibition effect | — | Zhou SS et al., Effect of Cl- channel blockers on aconi…, Experimental physiology (2005) | [10.1113/expphysiol.2005.031484](https://doi.org/10.1113/expphysiol.2005.031484) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=niflumic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | `UGT1A9` inhibitor/unknown | DrugBank actor |
-| metabolism | liver | `UGT1A9` inhibitor/unknown | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CLCNKA (inducer), PLA2G1B (inhibitor), PLA2G4A (unknown), PTGS1 (unknown), PTGS2 (inhibitor), SLC16A1 (inhibitor), SLC16A7 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

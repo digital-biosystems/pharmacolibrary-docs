@@ -5,7 +5,7 @@
 
 # atogepant — `Atogepant_Schlachter2026_phase_3_modela`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.517), gpt-oss:120b (not confirmed, agreement 0.654). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.517), gpt-oss:120b (not confirmed, agreement 0.654). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,7 +15,7 @@
 
 **Model:** No model was generated from this record.
 
-> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-025-01566-5](https://doi.org/10.1007/s40262-025-01566-5)
 
-## Model component
-<dbs-pgx drug="atogepant" model-id="Atogepant_Schlachter2026_phase_3_modela" status="needs_review" stale="true" population="healthy participants and patients with migraine" measured-compound="atogepant" parameterization="apparent" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atogepant" model-id="Atogepant_Schlachter2026_phase_3_modela" status="needs_review" stale="true" population="healthy participants and patients with migraine" measured-compound="atogepant" parameterization="apparent" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 9 extracted, plus 6 covariate effects.
@@ -200,9 +199,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_atogepant/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Schlachter_2026` / `Schlachter_2026::phase_3_modela`)
-- model: `../../../knowledgebase/drugs/drug_atogepant/models/modelica/_needs_review/Atogepant_Schlachter2026_phase_3_modela.mo`
-- deviation: `../../../knowledgebase/drugs/drug_atogepant/models/modelica/_needs_review/Atogepant_Schlachter2026_phase_3_modela.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atogepant/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Schlachter_2026` / `Schlachter_2026::phase_3_modela`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atogepant/models/modelica/_needs_review/Atogepant_Schlachter2026_phase_3_modela.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atogepant/models/modelica/_needs_review/Atogepant_Schlachter2026_phase_3_modela.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -223,7 +222,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

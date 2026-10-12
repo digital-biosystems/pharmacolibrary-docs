@@ -19,7 +19,7 @@
 
 > The paper describes a shallow, linear positive exposure-response relationship where upadacitinib plasma exposure (ng/mL) is associated with a slight increase in the incidence of serious infections at Week 24/26, with a model-predicted incidence of 1.67% for the 15 mg q.d. regimen. No specific potency or rate parameters (e.g., IC50, Emax, kin, kout) for this safety endpoint were reported.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Nader_2020`
 - **model family:** `linear`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

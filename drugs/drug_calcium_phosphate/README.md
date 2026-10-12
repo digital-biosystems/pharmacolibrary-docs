@@ -28,17 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 0.50).">human + animal</span> | [Perez_2020_CAC_volume](drugs/drug_calcium_phosphate/pd_Perez_2020_CAC_volume.md) | percent change from baseline to week 52 in coronary artery calcium (CAC) volume ← inhibition of calcium phosphate crystallization · direct linear effect | — | Perez MM et al., A novel assay to measure calcification…, Scientific reports (2020) | [10.1038/s41598-020-74592-x](https://doi.org/10.1038/s41598-020-74592-x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=calcium_phosphate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CACNA1A (substrate), CACNA1C (substrate), CACNA1E (substrate), CACNA1G (substrate), CADPS (target), CADPS2 (target), CALB1 (substrate), CALB2 (target), CALM1 (target), CALM2 (target), CALM3 (target), CALR (target), CALR3 (target), CANX (target), CAPS (target), CASQ1 (target), CASQ2 (target), CASR (target), CATSPER1 (substrate), CHP1 (target), CIB1 (target), CIB2 (target), FBN2 (target), FBN3 (target), GCA (target), NCS1 (target), NRXN1 (target), NUCB1 (target), NUCB2 (target), PDCD6 (target), PEF1 (target), PKD1L3 (substrate), PKD2L1 (substrate), RGN (target), RYR1 (substrate), RYR2 (substrate), RYR3 (substrate), S100A13 (target), S100A16 (target), S100A6 (target), S100B (target), S100G (substrate), SLC20A1 (substrate), SLC20A2 (substrate), SLC34A1 (substrate), SLC34A2 (substrate), SLC34A3 (substrate), SLC8A1 (substrate), SPARC (target), SRI (target), TPT1 (target), TRPV5 (substrate), TRPV6 (substrate).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 0.50).">human + animal</span> | [Perez_2020_CAC_volume](drugs/drug_calcium_phosphate/pd_Perez_2020_CAC_volume.md) | percent change from baseline to week 52 in coronary artery calcium (CAC) volume ← inhibition of calcium phosphate crystallization · direct linear effect | — | Perez MM et al., A novel assay to measure calcification…, Scientific reports (2020) | [10.1038/s41598-020-74592-x](https://doi.org/10.1038/s41598-020-74592-x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

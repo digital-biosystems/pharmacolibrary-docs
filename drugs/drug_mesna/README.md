@@ -33,23 +33,14 @@ Mesna is a protective agent used to prevent bladder damage in patients receiving
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88, Q307 — no SI value to build fr…</sub><br><sub>route_to: `human_review`</sub> | [Smith_2003_reference](drugs/drug_mesna/Mesna_Smith2003_reference.md) | — | 1-compartment (no model) | 5 | Smith PF et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2003) | [10.1177/0091270003260332](https://doi.org/10.1177/0091270003260332) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [el-Yazigi_1997_reference](drugs/drug_mesna/Mesna_elYazigi1997_reference.md) | — | parent + metabolite (no model) | 11 | el-Yazigi A et al., Pharmacokinetics of mesna and dimesna a…, Journal of clinical pharmac… (1997) | [10.1002/j.1552-4604.1997.tb04344.x](https://doi.org/10.1002/j.1552-4604.1997.tb04344.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88, Q307 — no SI value to build fr…</sub><br><sub>route_to: `human_review`</sub> | [Smith_2003_reference](drugs/drug_mesna/Mesna_Smith2003_reference.md) | — | 1-compartment (no model) | 5 | Smith PF et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2003) | [10.1177/0091270003260332](https://doi.org/10.1177/0091270003260332) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [el-Yazigi_1997_reference](drugs/drug_mesna/Mesna_elYazigi1997_reference.md) | — | parent + metabolite (no model) | 11 | el-Yazigi A et al., Pharmacokinetics of mesna and dimesna a…, Journal of clinical pharmac… (1997) | [10.1002/j.1552-4604.1997.tb04344.x](https://doi.org/10.1002/j.1552-4604.1997.tb04344.x) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Smith_2003_plasma_cysteine](drugs/drug_mesna/pd_Smith_2003_plasma_cysteine.md) | plasma cysteine ← mesna · direct Emax (saturable) effect | — | Smith PF et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2003) | [10.1177/0091270003260332](https://doi.org/10.1177/0091270003260332) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mesna).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Smith_2003_plasma_cysteine](drugs/drug_mesna/pd_Smith_2003_plasma_cysteine.md) | plasma cysteine ← mesna · direct Emax (saturable) effect | — | Smith PF et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2003) | [10.1177/0091270003260332](https://doi.org/10.1177/0091270003260332) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

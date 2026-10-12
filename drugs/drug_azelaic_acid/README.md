@@ -28,23 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Gudin_2026_EC50](drugs/drug_azelaic_acid/pd_Gudin_2026_EC50.md) | fungal mycelia growth ← azelaic_acid · direct Emax (saturable) effect | — | Gudin GS et al., Azelaic Acid-Mediated Resistance in Ric…, Plants (Basel, Switzerland) (2026) | [10.3390/plants15040567](https://doi.org/10.3390/plants15040567) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Kang_2015_Ca2](drugs/drug_azelaic_acid/pd_Kang_2015_Ca2.md) | intracellular Ca(2+) mobilization ← azelaic_acid · direct Emax (saturable) effect | — | Kang N et al., Olfactory receptor Olfr544 responding t…, Biochemical and biophysical… (2015) | [10.1016/j.bbrc.2015.03.078](https://doi.org/10.1016/j.bbrc.2015.03.078) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=azelaic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| — | liver | `SRD5A1` inhibitor | DrugBank actor |
-| — | prostate gland | `SRD5A1` inhibitor, `SRD5A2` inhibitor | DrugBank actor |
-| — | skin | `SRD5A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: AKR1D1 (inhibitor), SRD5A3 (inhibitor), TYR (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Gudin_2026_EC50](drugs/drug_azelaic_acid/pd_Gudin_2026_EC50.md) | fungal mycelia growth ← azelaic_acid · direct Emax (saturable) effect | — | Gudin GS et al., Azelaic Acid-Mediated Resistance in Ric…, Plants (Basel, Switzerland) (2026) | [10.3390/plants15040567](https://doi.org/10.3390/plants15040567) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Kang_2015_Ca2](drugs/drug_azelaic_acid/pd_Kang_2015_Ca2.md) | intracellular Ca(2+) mobilization ← azelaic_acid · direct Emax (saturable) effect | — | Kang N et al., Olfactory receptor Olfr544 responding t…, Biochemical and biophysical… (2015) | [10.1016/j.bbrc.2015.03.078](https://doi.org/10.1016/j.bbrc.2015.03.078) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

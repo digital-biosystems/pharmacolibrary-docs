@@ -21,7 +21,7 @@
 
 > Clobazam plasma concentrations (ng/mL) stimulate EEG amplitude via a proportional transduction (indirect-response) model; the paper excerpts provide no mechanistic detail, only a potency parameter KPD of 436 ± 72 ng/mL.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Visser_2003`
 - **model family:** `transduction`
@@ -62,7 +62,7 @@ Visser SA et al., Mechanism-based pharmacokinetic/pharmac…, The Journal of pha
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

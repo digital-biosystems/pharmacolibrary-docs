@@ -33,10 +33,10 @@ Propofol is an intravenous medication used to induce and maintain general anaest
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Eleveld_2018_reference](drugs/drug_propofol/Propofol_Eleveld2018_reference.md) | ▶ model + simulator | 2-compartment, IV | 6 | Eleveld DJ et al., Pharmacokinetic-pharmacodynamic model f…, British journal of anaesthe… (2018) | [10.1016/j.bja.2018.01.018](https://doi.org/10.1016/j.bja.2018.01.018) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.545). The first reading is what the record holds.">cross-check: partial</span> | [Jones_1990_reference](drugs/drug_propofol/Propofol_Jones1990_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Jones RD et al., Pharmacokinetics of propofol in children, British journal of anaesthe… (1990) | [10.1093/bja/65.5.661](https://doi.org/10.1093/bja/65.5.661) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span> | [de_2025_reference](drugs/drug_propofol/Propofol_de2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | de Jong BT et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01548-7](https://doi.org/10.1007/s40262-025-01548-7) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kim_2023_reference](drugs/drug_propofol/Propofol_Kim2023_reference.md) | — | 2-compartment (no model) | 6 | Kim KM et al., Population pharmacokinetic and pharmaco…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-022-09836-6](https://doi.org/10.1007/s10928-022-09836-6) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Eleveld_2018_reference](drugs/drug_propofol/Propofol_Eleveld2018_reference.md) | ▶ model + simulator | 2-compartment, IV | 6 | Eleveld DJ et al., Pharmacokinetic-pharmacodynamic model f…, British journal of anaesthe… (2018) | [10.1016/j.bja.2018.01.018](https://doi.org/10.1016/j.bja.2018.01.018) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.545). Primary extraction retained.">cross-check: partial</span> | [Jones_1990_reference](drugs/drug_propofol/Propofol_Jones1990_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Jones RD et al., Pharmacokinetics of propofol in children, British journal of anaesthe… (1990) | [10.1093/bja/65.5.661](https://doi.org/10.1093/bja/65.5.661) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span> | [de_2025_reference](drugs/drug_propofol/Propofol_de2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | de Jong BT et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01548-7](https://doi.org/10.1007/s40262-025-01548-7) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kim_2023_reference](drugs/drug_propofol/Propofol_Kim2023_reference.md) | — | 2-compartment (no model) | 6 | Kim KM et al., Population pharmacokinetic and pharmaco…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-022-09836-6](https://doi.org/10.1007/s10928-022-09836-6) |
 
 ## Pharmacodynamics (PD)
 
@@ -52,30 +52,6 @@ Propofol is an intravenous medication used to induce and maintain general anaest
 | <span class="pk-badge pk-badge--green">extracted</span> | [Su_2022_PP](drugs/drug_propofol/pd_Su_2022_PP.md) | Pulse pressure ← propofol · direct Emax (saturable) effect | — | Su H et al., Mechanism-based pharmacodynamic model f…, British journal of anaesthe… (2022) | [10.1016/j.bja.2022.01.022](https://doi.org/10.1016/j.bja.2022.01.022) |
 | <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Su_2022_SV](drugs/drug_propofol/pd_Su_2022_SV.md) | Stroke volume ← propofol · direct Emax (saturable) effect | model (no simulator) | Su H et al., Mechanism-based pharmacodynamic model f…, British journal of anaesthe… (2022) | [10.1016/j.bja.2022.01.022](https://doi.org/10.1016/j.bja.2022.01.022) |
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Su_2022_TPR](drugs/drug_propofol/pd_Su_2022_TPR.md) | Total peripheral resistance ← propofol · direct sigmoid Emax (Hill) effect | model (no simulator) | Su H et al., Mechanism-based pharmacodynamic model f…, British journal of anaesthe… (2022) | [10.1016/j.bja.2022.01.022](https://doi.org/10.1016/j.bja.2022.01.022) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=propofol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inducer | DrugBank actor |
-| absorption | brain | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | kidney | `ABCB1` inducer | DrugBank actor |
-| absorption | liver | `ABCB1` inducer | DrugBank actor |
-| absorption | placenta | `ABCB1` inducer | DrugBank actor |
-| absorption | small intestine | `ABCB1` inducer | DrugBank actor |
-| absorption | testis | `ABCB1` inducer | DrugBank actor |
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor, `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP2E1` inhibitor, `UGT1A1` inhibitor/substrate, `UGT1A6` substrate, `UGT1A9` substrate | DrugBank actor |
-| metabolism | lung | `CYP1A1` inhibitor, `CYP1B1` inhibitor | DrugBank actor |
-| metabolism | skin | `CYP1B1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` inhibitor, `UGT1A1` inhibitor/substrate, `UGT1A6` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CYP2C18 (substrate), FAAH (substrate), GABRA1 (positive allosteric modulator), GABRB2 (potentiator), GABRB3 (potentiator), SCN2A (inhibitor), SCN4A (inhibitor), UGT1A8 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

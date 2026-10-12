@@ -16,11 +16,11 @@
 
 **As extracted:** Etanercept (concentrations from the PK model of Zhou_2004) drives interleukin-6 (in pg/mL): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The study applied a sigmoidal Emax model, characterized by a 28.11% maximum effect and an EC50 of 87 ng/mL, to describe the inhibition of interleukin-6 (IL-6) by etanercept steady-state concentrations. The paper does not specify the underlying mechanism of this concentration-response relationship beyond the direct association between drug exposure and cytokine levels.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Breedveld_2018`
 - **model family:** `sigmoid_emax`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

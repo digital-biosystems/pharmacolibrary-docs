@@ -15,11 +15,11 @@
 
 **As extracted:** 3,4-DAP (measured concentrations) drive Triple Timed Up & Go (in sec): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > 3,4-DAP plasma concentration (ng/mL) reduces 3TUG time (sec) via a fractional inhibitory Emax model: Effect = 18.2*[1−(0.816*Cp)/(29.8+Cp)], with baseline E0 = 18.2 sec, fractional Emax = 0.816, and EC50 = 29.8 ng/mL (273 nM); no effect-compartment or turnover mechanism is described.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Thakkar_2017`
 - **model family:** `emax`
@@ -101,7 +101,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

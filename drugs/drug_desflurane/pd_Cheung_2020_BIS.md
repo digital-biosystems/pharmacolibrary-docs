@@ -19,7 +19,7 @@
 
 > The paper does not describe a pharmacodynamic model mechanism for the bispectral index response, instead reporting only the diagnostic performance (Pk, AUC) of the aepEX and BIS monitors during desflurane anesthesia. The sigmoid Emax parameters (EC50 = 0.58 MAC, Emax = 100) listed in the record do not appear in the provided text.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Cheung_2020`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Cheung YM et al., Monitoring Depth of Hypnosis: Mid-Laten…, Anesthesia and ana
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

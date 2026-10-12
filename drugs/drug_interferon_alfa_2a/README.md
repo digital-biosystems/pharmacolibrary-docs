@@ -27,21 +27,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Jeon_2013_neopterin](drugs/drug_interferon_alfa_2a/pd_Jeon_2013_neopterin.md) | neopterin ← interferon_alfa_2a · direct sigmoid Emax (Hill) effect | — | Jeon S et al., Saturable human neopterin response to i…, Journal of translational me… (2013) | [10.1186/1479-5876-11-240](https://doi.org/10.1186/1479-5876-11-240) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Adiwijaya_2012_HCV_RNA](drugs/drug_interferon_alfa_2a/pd_Adiwijaya_2012_HCV_RNA.md) | HCV RNA ← peginterferon alfa-2a · disease-progression model | — | Adiwijaya BS et al., A viral dynamic model for treatment reg…, PLoS computational biology (2012) | [10.1371/journal.pcbi.1002339](https://doi.org/10.1371/journal.pcbi.1002339) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=interferon_alfa_2a).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: IFNAR1 (unknown), IFNAR2 (unknown).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> | [Jeon_2013_neopterin](drugs/drug_interferon_alfa_2a/pd_Jeon_2013_neopterin.md) | neopterin ← interferon_alfa_2a · direct sigmoid Emax (Hill) effect | — | Jeon S et al., Saturable human neopterin response to i…, Journal of translational me… (2013) | [10.1186/1479-5876-11-240](https://doi.org/10.1186/1479-5876-11-240) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> | [Adiwijaya_2012_HCV_RNA](drugs/drug_interferon_alfa_2a/pd_Adiwijaya_2012_HCV_RNA.md) | HCV RNA ← peginterferon alfa-2a · disease-progression model | — | Adiwijaya BS et al., A viral dynamic model for treatment reg…, PLoS computational biology (2012) | [10.1371/journal.pcbi.1002339](https://doi.org/10.1371/journal.pcbi.1002339) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

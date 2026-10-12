@@ -20,7 +20,7 @@
 
 > In pregnant women with SLE, pregnancy-average hydroxychloroquine serum concentrations (≤100 ng/mL vs &gt;100 ng/mL) were related to preterm birth by adjusted logistic regression (categorical exposure analysis, not a mechanistic PD model): concentrations ≤100 ng/mL were associated with higher odds of preterm birth (OR 11.2, 95% CI 2.3–54.2, p=0.003). The paper does not state a pharmacodynamic mechanism, and no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Balevic_2022`
 - **model family:** `categorical`
@@ -61,7 +61,7 @@ Balevic SJ et al., Hydroxychloroquine PK and exposure-resp…, Lupus science & m
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

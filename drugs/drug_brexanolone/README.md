@@ -32,7 +32,7 @@ Brexanolone is an antidepressant used to treat postpartum depression in adult wo
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Wald_2022_reference](drugs/drug_brexanolone/Brexanolone_Wald2022_reference.md) | — | general linear (no model) | 10 | Wald J et al., Allopregnanolone Concentrations in Brea…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01155-w](https://doi.org/10.1007/s40262-022-01155-w) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Wald_2022_reference](drugs/drug_brexanolone/Brexanolone_Wald2022_reference.md) | — | general linear (no model) | 10 | Wald J et al., Allopregnanolone Concentrations in Brea…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01155-w](https://doi.org/10.1007/s40262-022-01155-w) |
 
 ## Pharmacodynamics (PD)
 
@@ -60,17 +60,6 @@ Brexanolone is an antidepressant used to treat postpartum depression in adult wo
 | <span class="pk-badge pk-badge--green">extracted</span> | [unknown_2018_ataxia_and_sedation_CNS_PD_effect](drugs/drug_brexanolone/pd_unknown_2018_ataxia_and_sedation_CNS_PD_effect.md) | ataxia and sedation (CNS PD effect) ← allopregnanolone · model not identified | — | unknown, Abstracts of 20th Annual ASENT Meeting, Neurotherapeutics : the jou… (2018) | [10.1007/s13311-018-0641-4](https://doi.org/10.1007/s13311-018-0641-4) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Waters_1997_cytoprotection](drugs/drug_brexanolone/pd_Waters_1997_cytoprotection.md) | cytoprotection of rabbit renal proximal tubules (antimycin A exposure) ← allopregnanolone (AP) · direct Emax (saturable) effect | — | Waters SL et al., Neurosteroid inhibition of cell death, The American journal of phy… (1997) | [10.1152/ajprenal.1997.273.6.F869](https://doi.org/10.1152/ajprenal.1997.273.6.F869) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Jiang_2006_I_gly](drugs/drug_brexanolone/pd_Jiang_2006_I_gly.md) | glycine-induced current amplitude ← pregnanolone · direct sigmoid Emax (Hill) effect | — | Jiang P et al., Mechanisms of modulation of pregnanolon…, Neuroscience (2006) | [10.1016/j.neuroscience.2006.05.009](https://doi.org/10.1016/j.neuroscience.2006.05.009) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=brexanolone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: AKR1B1 (substrate), GABRA1 (inhibitor), GABRA1 (positive allosteric modulator), GABRB2 (inhibitor), GABRD (inhibitor), GABRG2 (inhibitor), GABRG3 (modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

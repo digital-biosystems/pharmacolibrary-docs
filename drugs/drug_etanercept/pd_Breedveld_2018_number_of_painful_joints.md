@@ -16,11 +16,11 @@
 
 **As extracted:** Etanercept (concentrations from the PK model of Zhou_2004) drives number of painful joints: direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > A sigmoidal Emax model was fitted to pooled steady-state etanercept concentrations to characterize the inhibition of the change from baseline in the number of painful joints. The paper reports a maximum effect (Emax) of 66.82% and a half-maximal effective concentration (EC50) of 573 ng/mL, with a sigmoidicity factor of 1.67.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Breedveld_2018`
 - **model family:** `sigmoid_emax`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

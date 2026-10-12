@@ -33,22 +33,7 @@ Valdecoxib, a COX-2 inhibitor painkiller, was used to treat osteoarthritis, rheu
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.278). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka, k13, k31</sub><br><sub>route_to: `scholar`</sub> | [Tan_2016_reference](drugs/drug_valdecoxib/Valdecoxib_Tan2016_reference.md) | ▶ model + simulator | 3-compartment, oral | 7 | Tan L et al., Pharmacokinetics and analgesic effectiv…, Paediatric anaesthesia (2016) | [10.1111/pan.13009](https://doi.org/10.1111/pan.13009) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=valdecoxib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C9` inhibitor/substrate, `CYP3A4` substrate, `UGT1A9` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CA2 (inhibitor), CA3 (inhibitor), PTGS2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.278). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka, k13, k31</sub><br><sub>route_to: `scholar`</sub> | [Tan_2016_reference](drugs/drug_valdecoxib/Valdecoxib_Tan2016_reference.md) | ▶ model + simulator | 3-compartment, oral | 7 | Tan L et al., Pharmacokinetics and analgesic effectiv…, Paediatric anaesthesia (2016) | [10.1111/pan.13009](https://doi.org/10.1111/pan.13009) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

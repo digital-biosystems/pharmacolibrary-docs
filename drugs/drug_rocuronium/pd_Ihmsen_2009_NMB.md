@@ -20,7 +20,7 @@
 
 > The model links rocuronium plasma concentrations (ng/mL) to the percentage of neuromuscular block via a sigmoid Emax mechanism of inhibition. Reported parameters include an effect compartment equilibration half-life (T1/2ke0) of 1.3 min in controls versus 9.7 min in DMD patients, with corresponding EC50 values of 1170 ng/mL and 512 ng/mL, respectively.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ihmsen_2009`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Ihmsen H et al., Pharmacodynamic modelling of rocuronium…, European journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

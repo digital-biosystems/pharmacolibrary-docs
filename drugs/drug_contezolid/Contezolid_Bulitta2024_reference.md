@@ -88,7 +88,7 @@ Bulitta JB et al., Population pharmacokinetic rationale fo…, Antimicrobial age
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs_non_atc/drug_contezolid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bulitta_2024` / `Bulitta_2024::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs_non_atc/drug_contezolid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bulitta_2024` / `Bulitta_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -109,7 +109,7 @@ Bulitta JB et al., Population pharmacokinetic rationale fo…, Antimicrobial age
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

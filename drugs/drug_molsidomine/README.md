@@ -28,20 +28,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Messin_2003_time_to_1_mm_ST_segment_depression](drugs/drug_molsidomine/pd_Messin_2003_time_to_1_mm_ST_segment_depression.md) | time to 1 mm ST-segment depression ← molsidomine · direct linear effect | — | Messin R et al., A pilot double-blind randomized placebo…, European journal of clinica… (2003) | [10.1007/s00228-003-0597-z](https://doi.org/10.1007/s00228-003-0597-z) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Messin_2003_total_exercise_time](drugs/drug_molsidomine/pd_Messin_2003_total_exercise_time.md) | total exercise time ← molsidomine · direct linear effect | — | Messin R et al., A pilot double-blind randomized placebo…, European journal of clinica… (2003) | [10.1007/s00228-003-0597-z](https://doi.org/10.1007/s00228-003-0597-z) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Messin_2003_total_workload](drugs/drug_molsidomine/pd_Messin_2003_total_workload.md) | total workload ← molsidomine · direct linear effect | — | Messin R et al., A pilot double-blind randomized placebo…, European journal of clinica… (2003) | [10.1007/s00228-003-0597-z](https://doi.org/10.1007/s00228-003-0597-z) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=molsidomine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: GUCY1A2 (inducer), GUCY1A2 (target), PDE5A (substrate).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Messin_2003_time_to_1_mm_ST_segment_depression](drugs/drug_molsidomine/pd_Messin_2003_time_to_1_mm_ST_segment_depression.md) | time to 1 mm ST-segment depression ← molsidomine · direct linear effect | — | Messin R et al., A pilot double-blind randomized placebo…, European journal of clinica… (2003) | [10.1007/s00228-003-0597-z](https://doi.org/10.1007/s00228-003-0597-z) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Messin_2003_total_exercise_time](drugs/drug_molsidomine/pd_Messin_2003_total_exercise_time.md) | total exercise time ← molsidomine · direct linear effect | — | Messin R et al., A pilot double-blind randomized placebo…, European journal of clinica… (2003) | [10.1007/s00228-003-0597-z](https://doi.org/10.1007/s00228-003-0597-z) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Messin_2003_total_workload](drugs/drug_molsidomine/pd_Messin_2003_total_workload.md) | total workload ← molsidomine · direct linear effect | — | Messin R et al., A pilot double-blind randomized placebo…, European journal of clinica… (2003) | [10.1007/s00228-003-0597-z](https://doi.org/10.1007/s00228-003-0597-z) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -22,7 +22,7 @@
 
 > Niclosamide (0–5 μM) inhibits SLC38A5-coupled macropinocytosis, measured as TMR-dextran uptake, with an IC50 of ~0.4 μM (versus ~5 μM for basal macropinocytosis, a 10-fold potency difference); the paper attributes this to niclosamide's function as an H+ channel causing intracellular acidification (which suppresses macropinocytosis) and to direct inhibition of the SLC38A5 transporter, though no explicit PD model structure (e.g., Emax form) is described.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Sennoune_2023`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Sennoune SR et al., Potent Inhibition of Macropinocytosis b…, Cancers (2023)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

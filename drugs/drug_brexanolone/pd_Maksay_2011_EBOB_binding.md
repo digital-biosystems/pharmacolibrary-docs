@@ -21,7 +21,7 @@
 
 > Brexanolone (via its allopregnanolone driver concentrations, in nM) stimulates enhancement of [(3)H]EBOB binding to rat cerebral cortex GABA(A) receptors, described by an Emax model with an EC50 of ~80 nM; the paper excerpts do not state Emax, gamma, or a more detailed mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Maksay_2011`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Maksay G et al., Differential effects of two major neuro…, European journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

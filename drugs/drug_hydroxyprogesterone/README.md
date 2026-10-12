@@ -25,17 +25,8 @@ Hydroxyprogesterone (17α-hydroxyprogesterone) is a progestogen steroid that has
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Al-Kofahi_2021_reference](drugs/drug_hydroxyprogesterone/Hydroxyprogesterone_AlKofahi2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Al-Kofahi M et al., An integrated PK-PD model for cortisol…, British journal of clinical… (2021) | [10.1111/bcp.14470](https://doi.org/10.1111/bcp.14470) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.167). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sharma_2016_reference](drugs/drug_hydroxyprogesterone/Hydroxyprogesterone_Sharma2016_reference.md) | — | 1-compartment (no model) | 0 | Sharma S et al., Population pharmacokinetics of 17α-hydr…, British journal of clinical… (2016) | [10.1111/bcp.12990](https://doi.org/10.1111/bcp.12990) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=hydroxyprogesterone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Al-Kofahi_2021_reference](drugs/drug_hydroxyprogesterone/Hydroxyprogesterone_AlKofahi2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Al-Kofahi M et al., An integrated PK-PD model for cortisol…, British journal of clinical… (2021) | [10.1111/bcp.14470](https://doi.org/10.1111/bcp.14470) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.167). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sharma_2016_reference](drugs/drug_hydroxyprogesterone/Hydroxyprogesterone_Sharma2016_reference.md) | — | 1-compartment (no model) | 0 | Sharma S et al., Population pharmacokinetics of 17α-hydr…, British journal of clinical… (2016) | [10.1111/bcp.12990](https://doi.org/10.1111/bcp.12990) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

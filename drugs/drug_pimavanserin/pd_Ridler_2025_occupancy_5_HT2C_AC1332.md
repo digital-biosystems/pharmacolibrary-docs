@@ -21,7 +21,7 @@
 
 > Pimavanserin plasma concentrations (ng/ml) reduce [11C]AC1332 binding, i.e. 5-HT2C receptor occupancy, described by a sigmoid Emax inhibition model; the paper reports an EC50 of 2.5 ng/ml, but the excerpts do not state Emax, gamma, or the mechanism beyond receptor occupancy displacement.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Ridler_2025`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Ridler K et al., Imaging the 5-HT, Journal of cerebral blood f… (2025)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > In the PK/PD model of MCF-7/Adr breast cancer xenografts, dexamethasone (DEX) inhibits tumor cell proliferation (tumor volume growth, exponential rate 0.0065 h−1, linear rate 28.1 mm3·h−1, initial volume 38 mm3) via a Hill (Emax/Imax fixed to 1) function with EC50 61.6 ng/mL, while sulpiride (SUL), inactive alone, sensitizes tumors to DEX by reducing the apparent DEX EC50, with a sensitization IC50 of 61.9 ng/mL.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Yao_2019`
 - **model family:** `disease_progression`
@@ -67,7 +67,7 @@ Yao QY et al., Preclinical PK/PD model for the combina…, Acta pharmacologica S
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

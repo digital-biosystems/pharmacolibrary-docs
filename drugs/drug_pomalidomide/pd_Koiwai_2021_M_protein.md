@@ -16,11 +16,11 @@
 
 **As extracted:** Pomalidomide (concentrations from the PK model of Fau_2020) drives serum M-protein (in g/L): disease-progression model.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Pomalidomide concentrations drive serum M-protein levels via a tumor growth inhibition model where the drug is tested as either inhibiting M-protein proliferation or stimulating elimination, though the text explicitly links isatuximab to linear stimulation of elimination. The model characterizes M-protein kinetics using a first-order proliferation rate constant ($K_L$) of 0.00312 d$^{-1}$ and a rate constant $K_D$ of 0.0125 mol$^{-1}\cdot$d$^{-1}$.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Koiwai_2021`
 - **model family:** `disease_progression`
@@ -94,7 +94,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

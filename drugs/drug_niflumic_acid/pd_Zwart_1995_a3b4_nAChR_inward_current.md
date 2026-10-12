@@ -21,7 +21,7 @@
 
 > Niflumic acid (niflumic_acid) stimulates the peak amplitude of a3b4 nAChR-mediated inward currents by a direct interaction with the receptor, as indicated by the Emax model fit of concentration-dependent potentiation. The paper states an EC50 of 30 pM, a slope factor of 0.88, and a maximum response amplitude of 159% relative to control, while noting that the mechanism is most likely a direct interaction but does not explicitly specify the pharmacodynamic differential equation (e.g., production/elimination rate constants).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Zwart_1995`
 - **model family:** `emax`
@@ -64,7 +64,7 @@ Zwart R et al., Differential modulation of alpha 3 beta…, The Journal of neuro
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -5,7 +5,7 @@
 
 # aminophylline — `Aminophylline_Goetz1989_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.385). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,7 +15,7 @@
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -23,7 +23,7 @@
 
 The paper reports only theophylline kel 0.07 h-1, V/F 0.8 l/kg, CL 0.06 l/kg/h and Fab 87% for healthy adult horses; ka and Tlag are absent, and the model builder filled ka with a default rather than an estimate, which the adjudication deemed not acceptable. The record is abstract-only, so summary statistics stood in for a fitted model, and the apparent parameterization assumes F=1 and Fm=1 with no molar correction. The established finding stands: the ka default affects the simulated profile but is not supported by this paper and must be extracted or explicitly justified as a convention. Extracted — theophylline: kel 0.07 h-1, V/F 0.8 l/kg, CL 0.06 l/kg/h, Fab 87 %.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminophylline, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absolute bioavailability: this record has none, the second reading 87; it also differs on 7 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -76,27 +76,25 @@ Goetz TE et al., Pharmacokinetic disposition of an immed…, Journal of veterina
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
+| `gpt-oss-120b` | partly confirmed | 0.385 (5/13 fields) | 8 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[absolute bioavailability]` | not captured | 87 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[absolute bioavailability]` | 87 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | not captured | 0.8 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 0.8 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | not captured | 0.06 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 0.06 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clearance]` | 0.06 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination rate constant]` | not captured | 0.07 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[elimination rate constant]` | 0.07 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | aminophylline | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | theophylline | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[lambda z]` | not captured | 0.07 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vz]` | not captured | 0.80 | only_one_extracted |
 
 </details>
 
@@ -141,10 +139,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_aminophylline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Goetz_1989` / `Goetz_1989::reference`)
-- model: `../../../knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Goetz1989_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Goetz1989_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Goetz1989_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminophylline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Goetz_1989` / `Goetz_1989::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Goetz1989_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Goetz1989_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_aminophylline/models/modelica/Aminophylline_Goetz1989_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -153,15 +151,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_aminophylline/Aminophylline_Goetz1989_reference/Aminophylline_Goetz1989_reference_modelica.zip" download>Aminophylline_Goetz1989_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_aminophylline/Aminophylline_Goetz1989_reference/Aminophylline_Goetz1989_reference_fmi.zip" download>Aminophylline_Goetz1989_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_aminophylline/Aminophylline_Goetz1989_reference/Aminophylline_Goetz1989_reference_matlab.zip" download>Aminophylline_Goetz1989_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_aminophylline/Aminophylline_Goetz1989_reference/Aminophylline_Goetz1989_reference_matlab_simbio.zip" download>Aminophylline_Goetz1989_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_aminophylline/Aminophylline_Goetz1989_reference/Aminophylline_Goetz1989_reference_sbml.zip" download>Aminophylline_Goetz1989_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_aminophylline/Aminophylline_Goetz1989_reference/Aminophylline_Goetz1989_reference_cellml.zip" download>Aminophylline_Goetz1989_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_aminophylline/Aminophylline_Goetz1989_reference/Aminophylline_Goetz1989_reference.svg" alt="Aminophylline_Goetz1989_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_aminophylline/Aminophylline_Goetz1989_reference/Aminophylline_Goetz1989_reference.svg" alt="Aminophylline_Goetz1989_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

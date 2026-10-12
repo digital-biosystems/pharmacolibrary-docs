@@ -21,7 +21,7 @@
 
 > Azelastine concentrations (µM) inhibit SARS2-S pseudovirus infection (luciferase, % of control) in Huh-7 cells, described by a sigmoid Emax inhibition model with EC50 = 1.81 µM; the paper does not state a detailed mechanism beyond interference with SARS-CoV-2 spike protein function, and no Imax, kin, kout, ke0 or gamma values are given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Yang_2021`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Yang L et al., Identification of SARS-CoV-2 entry inhi…, Acta pharmacologica S
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

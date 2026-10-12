@@ -4,7 +4,7 @@
 
 # mitomycin — `Mitomycin_Cerretani2005_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.267). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -28,8 +28,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 Cerretani D et al., Pharmacokinetics of mitomycin C after r…, Journal of chemotherapy (Fl… (2005)
   ·  DOI: [10.1179/joc.2005.17.6.668](https://doi.org/10.1179/joc.2005.17.6.668)
 
-## Model component
-<dbs-pgx drug="mitomycin" model-id="Mitomycin_Cerretani2005_reference" status="needs_review" stale="false" population="patients with peritoneal carcinomatosis" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Cerretani2005_reference" status="needs_review" stale="false" population="patients with peritoneal carcinomatosis" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -123,7 +122,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_mitomycin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cerretani_2005` / `Cerretani_2005::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mitomycin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cerretani_2005` / `Cerretani_2005::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -144,7 +143,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

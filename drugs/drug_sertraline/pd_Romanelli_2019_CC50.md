@@ -22,7 +22,7 @@
 
 > Sertraline concentration (μM) reduces NCTC cell viability (MTT assay, 72 h incubation), fitted with a sigmoid Emax inhibition model; the paper reports a CC50 of 27.4 μM (±0.8 per record) but does not state the mechanism beyond this direct cytotoxic effect, nor Imax, gamma, or rate parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Romanelli_2019`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Romanelli MM et al., Sertraline Delivered in Phosphatidylser…, Frontiers in ce
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -21,7 +21,7 @@
 
 > Niflumic acid concentration (in microM) was modelled against the continuous response gSCN using a sigmoidal Emax inhibition model. The paper reports an IC50 (labeled Ki) of 28 microM and a Hill coefficient of 1.2, but the full text is unavailable to confirm the specific mechanism (e.g., production vs. elimination) or rate constants.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Robson_1995`
 - **model family:** `sigmoid_emax`
@@ -49,11 +49,11 @@ Robson L et al., Activation of a Cl- conductance by SCN-…, The Journal of phys
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

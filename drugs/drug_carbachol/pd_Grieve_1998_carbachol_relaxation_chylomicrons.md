@@ -21,7 +21,7 @@
 
 > Carbachol concentration (M) produces endothelium-dependent % relaxation of phenylephrine-precontracted rabbit aortic rings after 45 min incubation with chylomicron remnants (16 µM cholesterol), described by a sigmoid Emax (single-site logistic) model with EC50 = 2.12 × 10^-6 M, Emax = 45.4% and Hill slope 1.04; chylomicron remnants reduce the maximum relaxation, and the paper does not state a specific molecular mechanism beyond impaired endothelium-dependent relaxation.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Grieve_1998`
 - **model family:** `sigmoid_emax`
@@ -50,11 +50,11 @@ Grieve DJ et al., Effects of chylomicrons and chylomicron…, European journal o
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -32,28 +32,8 @@ Colchicine is a medicine used mainly to treat gout, and also conditions such as 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Rochdi_1994_reference](drugs/drug_colchicine/Colchicine_Rochdi1994_reference.md) | — | 1-compartment (no model) | 7 | Rochdi M et al., Pharmacokinetics and absolute bioavaila…, European journal of clinica… (1994) | [10.1007/BF00194404](https://doi.org/10.1007/BF00194404) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.917). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Wright_2025_reference](drugs/drug_colchicine/Colchicine_Wright2025_reference.md) | — | 1-compartment (no model) | 3 | Wright DFB et al., The Influence of Patient Factors on the…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01551-y](https://doi.org/10.1007/s40262-025-01551-y) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=colchicine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inducer/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inducer/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inducer/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inducer/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inducer/substrate | DrugBank actor |
-| absorption | testis | `ABCB1` inducer/substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | liver | `CYP2B6` inhibitor, `CYP2C8` inhibitor, `CYP2E1` inducer, `CYP3A4` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: TUBB (binder), TUBB (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Rochdi_1994_reference](drugs/drug_colchicine/Colchicine_Rochdi1994_reference.md) | — | 1-compartment (no model) | 7 | Rochdi M et al., Pharmacokinetics and absolute bioavaila…, European journal of clinica… (1994) | [10.1007/BF00194404](https://doi.org/10.1007/BF00194404) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.917). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Wright_2025_reference](drugs/drug_colchicine/Colchicine_Wright2025_reference.md) | — | 1-compartment (no model) | 3 | Wright DFB et al., The Influence of Patient Factors on the…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01551-y](https://doi.org/10.1007/s40262-025-01551-y) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

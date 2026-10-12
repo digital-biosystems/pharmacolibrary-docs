@@ -32,7 +32,7 @@ Lisdexamfetamine is a stimulant medicine used to treat attention deficit hyperac
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Comiran_2021_reference](drugs/drug_lisdexamfetamine/Lisdexamfetamine_Comiran2021_reference.md) | — | general linear (no model) | 0 | Comiran E et al., Lisdexamfetamine and amphetamine pharma…, Biopharmaceutics & drug dis… (2021) | [10.1002/bdd.2254](https://doi.org/10.1002/bdd.2254) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Comiran_2021_reference](drugs/drug_lisdexamfetamine/Lisdexamfetamine_Comiran2021_reference.md) | — | general linear (no model) | 0 | Comiran E et al., Lisdexamfetamine and amphetamine pharma…, Biopharmaceutics & drug dis… (2021) | [10.1002/bdd.2254](https://doi.org/10.1002/bdd.2254) |
 
 ## Pharmacodynamics (PD)
 
@@ -43,18 +43,6 @@ Lisdexamfetamine is a stimulant medicine used to treat attention deficit hyperac
 | <span class="pk-badge pk-badge--green">extracted</span> | [Richards_2017_Pulse](drugs/drug_lisdexamfetamine/pd_Richards_2017_Pulse.md) | Change from augmentation baseline in pulse ← lisdexamfetamine dimesylate · direct linear effect | — | Richards C et al., A randomized, double-blind, placebo-con…, Journal of psychopharmacolo… (2017) | [10.1177/0269881117722998](https://doi.org/10.1177/0269881117722998) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Richards_2017_SBP](drugs/drug_lisdexamfetamine/pd_Richards_2017_SBP.md) | Change from augmentation baseline in systolic blood pressure ← lisdexamfetamine dimesylate · direct linear effect | — | Richards C et al., A randomized, double-blind, placebo-con…, Journal of psychopharmacolo… (2017) | [10.1177/0269881117722998](https://doi.org/10.1177/0269881117722998) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Tsuda_2020_ADHD_RS_IV](drugs/drug_lisdexamfetamine/pd_Tsuda_2020_ADHD_RS_IV.md) | ADHD Rating Scale IV (ADHD RS-IV) total score ← d-amphetamine · inhibition effect | — | Tsuda Y et al., Population pharmacokinetic and exposure…, Drug metabolism and pharmac… (2020) | [10.1016/j.dmpk.2020.08.005](https://doi.org/10.1016/j.dmpk.2020.08.005) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lisdexamfetamine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | `SLC15A1` substrate | DrugBank actor |
-| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: TAAR1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

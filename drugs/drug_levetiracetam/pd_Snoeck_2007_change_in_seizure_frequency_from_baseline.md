@@ -20,7 +20,7 @@
 
 > The model relates the daily dose of levetiracetam to a reduction in seizure frequency from baseline using an Emax framework for dose-response analysis. The extracted potency parameter, ED(50), is 1408 mg/day.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Snoeck_2007`
 - **model family:** `emax`
@@ -61,7 +61,7 @@ Snoeck E et al., Dose-response population analysis of le…, Epilepsy research (
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > The record links nimesulide to the inhibition of d8-TCA uptake transporters for organic anion-transporting proteins with an IC50 of 45.6 μM. The paper does not describe the mechanism, effect form, or other rate parameters, as no full text was available.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Zhou_2017`
 - **model family:** `unknown`
@@ -63,7 +63,7 @@ Zhou L et al., Nimesulide and 4'-Hydroxynimesulide as…, Drug metabolism and di
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

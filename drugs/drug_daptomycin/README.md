@@ -33,28 +33,10 @@ Daptomycin is an antibiotic used to treat serious bacterial infections, mainly t
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span> | [Lou_2021_reference](drugs/drug_daptomycin/Daptomycin_Lou2021_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Lou Y et al., Population pharmacokinetics and individ…, European journal of pharmac… (2021) | [10.1016/j.ejps.2021.105818](https://doi.org/10.1016/j.ejps.2021.105818) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Dvorchik_2004_reference](drugs/drug_daptomycin/Daptomycin_Dvorchik2004_reference.md) | — | 1-compartment (no model) | 0 | Dvorchik B et al., Population pharmacokinetics of daptomyc…, Antimicrobial agents and ch… (2004) | [10.1128/AAC.48.8.2799-2807.2004](https://doi.org/10.1128/AAC.48.8.2799-2807.2004) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [García-Martínez_2022_reference](drugs/drug_daptomycin/Daptomycin_GarcaMartnez2022_reference.md) | — | 2-compartment (no model) | 6 (+1 cov.) | García-Martínez T et al., Population Pharmacokinetic/Pharmacodyna…, Pharmaceutics (2022) | [10.3390/pharmaceutics14102226](https://doi.org/10.3390/pharmaceutics14102226) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Olney_2024_2_reference](drugs/drug_daptomycin/Daptomycin_Olney2024v2_reference.md) | — | 1-compartment (no model) | 0 | Olney KB et al., Daptomycin Dose Optimization in Pediatr…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2425](https://doi.org/10.1002/jcph.2425) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=daptomycin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: HPX (binder), LDLR (binder), SERPINA1 (binder), SHBG (binder).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span> | [Lou_2021_reference](drugs/drug_daptomycin/Daptomycin_Lou2021_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Lou Y et al., Population pharmacokinetics and individ…, European journal of pharmac… (2021) | [10.1016/j.ejps.2021.105818](https://doi.org/10.1016/j.ejps.2021.105818) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.25). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Dvorchik_2004_reference](drugs/drug_daptomycin/Daptomycin_Dvorchik2004_reference.md) | — | 1-compartment (no model) | 0 | Dvorchik B et al., Population pharmacokinetics of daptomyc…, Antimicrobial agents and ch… (2004) | [10.1128/AAC.48.8.2799-2807.2004](https://doi.org/10.1128/AAC.48.8.2799-2807.2004) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [García-Martínez_2022_reference](drugs/drug_daptomycin/Daptomycin_GarcaMartnez2022_reference.md) | — | 2-compartment (no model) | 6 (+1 cov.) | García-Martínez T et al., Population Pharmacokinetic/Pharmacodyna…, Pharmaceutics (2022) | [10.3390/pharmaceutics14102226](https://doi.org/10.3390/pharmaceutics14102226) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Olney_2024_2_reference](drugs/drug_daptomycin/Daptomycin_Olney2024v2_reference.md) | — | 1-compartment (no model) | 0 | Olney KB et al., Daptomycin Dose Optimization in Pediatr…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2425](https://doi.org/10.1002/jcph.2425) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

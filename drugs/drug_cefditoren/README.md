@@ -32,16 +32,7 @@ Cefditoren is a third-generation cephalosporin antibiotic used to treat bacteria
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Matsumoto_2013_reference](drugs/drug_cefditoren/Cefditoren_Matsumoto2013_reference.md) | — | 1-compartment (no model) | 2 | Matsumoto K et al., Population pharmacokinetic analysis of…, The Japanese journal of ant… (2013) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cefditoren).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>route_to: `human_review`</sub> | [Matsumoto_2013_reference](drugs/drug_cefditoren/Cefditoren_Matsumoto2013_reference.md) | — | 1-compartment (no model) | 2 | Matsumoto K et al., Population pharmacokinetic analysis of…, The Japanese journal of ant… (2013) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

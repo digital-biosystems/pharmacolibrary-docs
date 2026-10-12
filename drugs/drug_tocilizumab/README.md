@@ -23,9 +23,9 @@ Tocilizumab, a monoclonal antibody that blocks interleukin signalling, is used t
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Bastida_2019_reference](drugs/drug_tocilizumab/Tocilizumab_Bastida2019_reference.md) | — | 1-compartment (no model) | 2 | Bastida C et al., Exposure-response modeling of tocilizum…, British journal of clinical… (2019) | [10.1111/bcp.13954](https://doi.org/10.1111/bcp.13954) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hooijberg_2025_reference](drugs/drug_tocilizumab/Tocilizumab_Hooijberg2025_reference.md) | — | 1-compartment (no model) | 3 | Hooijberg F et al., Precision Dosing of Intravenous Tociliz…, Therapeutic drug monitoring (2025) | [10.1097/FTD.0000000000001258](https://doi.org/10.1097/FTD.0000000000001258) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Leung_2022_reference](drugs/drug_tocilizumab/Tocilizumab_Leung2022_reference.md) | — | 1-compartment (no model) | 0 | Leung E et al., Pharmacokinetic/Pharmacodynamic Conside…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01092-0](https://doi.org/10.1007/s40262-021-01092-0) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Bastida_2019_reference](drugs/drug_tocilizumab/Tocilizumab_Bastida2019_reference.md) | — | 1-compartment (no model) | 2 | Bastida C et al., Exposure-response modeling of tocilizum…, British journal of clinical… (2019) | [10.1111/bcp.13954](https://doi.org/10.1111/bcp.13954) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hooijberg_2025_reference](drugs/drug_tocilizumab/Tocilizumab_Hooijberg2025_reference.md) | — | 1-compartment (no model) | 3 | Hooijberg F et al., Precision Dosing of Intravenous Tociliz…, Therapeutic drug monitoring (2025) | [10.1097/FTD.0000000000001258](https://doi.org/10.1097/FTD.0000000000001258) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Leung_2022_reference](drugs/drug_tocilizumab/Tocilizumab_Leung2022_reference.md) | — | 1-compartment (no model) | 0 | Leung E et al., Pharmacokinetic/Pharmacodynamic Conside…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01092-0](https://doi.org/10.1007/s40262-021-01092-0) |
 
 ## Pharmacodynamics (PD)
 
@@ -38,17 +38,6 @@ Tocilizumab, a monoclonal antibody that blocks interleukin signalling, is used t
 | <span class="pk-badge pk-badge--green">extracted</span> | [Vaskeikina_2026_mRSS](drugs/drug_tocilizumab/pd_Vaskeikina_2026_mRSS.md) | modified Rodnan skin score ← tocilizumab · direct Emax (saturable) effect | — | Vaskeikina M et al., Systematic Review and Model-Based Meta-…, Pharmaceutics (2026) | [10.3390/pharmaceutics18020250](https://doi.org/10.3390/pharmaceutics18020250) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Bastida_2019_CRP_ESR](drugs/drug_tocilizumab/pd_Bastida_2019_CRP_ESR.md) | C-reactive protein and erythrocyte sedimentation rate ← tocilizumab · indirect response — drug inhibits the production of C-reactive protein and erythrocyte sedimentation rate | — | Bastida C et al., Exposure-response modeling of tocilizum…, British journal of clinical… (2019) | [10.1111/bcp.13954](https://doi.org/10.1111/bcp.13954) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Bastida_2019_TJC_SJC_PGA_VAS](drugs/drug_tocilizumab/pd_Bastida_2019_TJC_SJC_PGA_VAS.md) | Tender and swollen joint counts and patient and evaluator global assessment ← tocilizumab · indirect response — drug inhibits the production of Tender and swollen joint counts and patient and evaluator global assessment | — | Bastida C et al., Exposure-response modeling of tocilizum…, British journal of clinical… (2019) | [10.1111/bcp.13954](https://doi.org/10.1111/bcp.13954) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tocilizumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP3A4` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer | DrugBank actor |
-
-<sub>Actors without a tissue in the table: IL6R (antibody), IL6R (inhibitor), IL6ST (modulator).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

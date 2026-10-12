@@ -19,7 +19,7 @@
 
 > The model employs an effect compartment structure where ergotamine plasma concentrations drive the inhibition of toe-arm systolic gradients. Key parameters include a rate constant for equilibration of the drug between plasma and effector site of 0.07 hr-1 and a steady-state plasma concentration resulting in 50% of maximal effect of 0.24 ng/ml.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Tfelt-Hansen_1985`
 - **model family:** `effect_compartment`
@@ -61,7 +61,7 @@ Tfelt-Hansen P et al., Intramuscular ergotamine: plasma levels…, Clinical phar
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

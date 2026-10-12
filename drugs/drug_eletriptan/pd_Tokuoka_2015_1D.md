@@ -19,7 +19,7 @@
 
 > The paper describes a retrospective analysis where receptor occupancy (Φ1D) was calculated from the time-course of plasma drug concentrations, rather than fitting a specific mechanistic PD model; it reports that eletriptan achieved a maximum receptor occupancy of 80% or higher and that the time until occupancy dropped to 50%, 40%, or 30% was the key duration metric correlated with headache recurrence rate.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Tokuoka_2015`
 - **model family:** `linear`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

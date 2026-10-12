@@ -21,7 +21,7 @@
 
 > The paper models imipramine's effect on [3H]MPP+ release from C6-hSERT cells with an Emax-type model, with imipramine concentrations acting as the driver; the excerpts provide no mechanism, no potency (EC50/Emax) values, and no rate parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Johnson_1998`
 - **model family:** `emax`
@@ -55,7 +55,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

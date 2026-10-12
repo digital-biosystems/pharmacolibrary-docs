@@ -22,7 +22,7 @@
 
 > In NCB20 cells, quetiapine (3–30 μM co-applied) competitively inhibits 5-HT3 receptor-mediated peak currents evoked by 5-HT (0.3–100 μM), shifting the 5-HT concentration-response curve rightward without changing Emax: 5-HT EC50 rose from 2.64 ± 0.06 μM alone to 4.70 ± 0.23, 6.61 ± 0.20, and 9.99 ± 1.27 μM with 3, 10, and 30 μM quetiapine. Quetiapine's IC50 was 0.58 μM with 3 μM 5-HT, 25.23 μM with 10 μM 5-HT, 5.17 μM for the open state, and 0.20 μM with pretreatment; no kinetic parameters (kin, kout, ke0) are reported.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Park_2025`
 - **model family:** `sigmoid_emax`
@@ -66,7 +66,7 @@ Park YS et al., Quetiapine competitively inhibits 5-HT, The Korean journal of ph
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

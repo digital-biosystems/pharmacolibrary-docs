@@ -22,7 +22,7 @@
 
 > The paper does not provide a full text to specify the mechanism of ketamine's effect on KATP channel current, though the extraction record identifies a sigmoid Emax inhibition model. The model parameters cited are a half-maximal inhibitory concentration of 62.9 microM and a Hill coefficient of 0.54.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ko_1997`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Ko SH et al., Blockade of myocardial ATP-sensitive po…, Anesthesiology (1997)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

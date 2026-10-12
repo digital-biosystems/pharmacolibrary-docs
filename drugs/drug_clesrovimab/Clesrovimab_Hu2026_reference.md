@@ -4,7 +4,7 @@
 
 # clesrovimab — `Clesrovimab_Hu2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -28,8 +28,7 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 Hu Z et al., Population Pharmacokinetics of Clesrovi…, Clinical pharmacology and t… (2026)
   ·  DOI: [10.1002/cpt.70199](https://doi.org/10.1002/cpt.70199)
 
-## Model component
-<dbs-pgx drug="clesrovimab" model-id="Clesrovimab_Hu2026_reference" status="rejected" stale="true" population="preterm and full-term infants" measured-compound="clesrovimab" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clesrovimab" model-id="Clesrovimab_Hu2026_reference" status="rejected" stale="true" population="preterm and full-term infants" measured-compound="clesrovimab" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -124,18 +123,18 @@ Hu Z et al., Population Pharmacokinetics of Clesrovi…, Clinical pharmacology a
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_clesrovimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hu_2026` / `Hu_2026::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_clesrovimab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hu_2026` / `Hu_2026::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

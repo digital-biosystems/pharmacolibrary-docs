@@ -21,7 +21,7 @@
 
 > Linopirdine concentration inhibits TREK-2 current, with an IC50 of 0.310 ± 0.06 µM; the paper excerpts do not state the mechanism or effect model.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Rivas-Ramírez_2020`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Rivas-Ramírez P et al., Contribution of KCNQ and TREK Channels…, Internationa
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

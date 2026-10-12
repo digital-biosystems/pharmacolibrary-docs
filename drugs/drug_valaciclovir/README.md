@@ -34,29 +34,14 @@ Valaciclovir is an antiviral medicine used to treat infections caused by herpes 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Zeng_2009_reference](drugs/drug_valaciclovir/Valaciclovir_Zeng2009_reference.md) | — | 1-compartment (no model) | 1 | Zeng L et al., Population pharmacokinetics of acyclovi…, Antimicrobial agents and ch… (2009) | [10.1128/AAC.01138-08](https://doi.org/10.1128/AAC.01138-08) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Kably_2025_reference](drugs/drug_valaciclovir/Valaciclovir_Kably2025_reference.md) | — | parent + metabolite (no model) | 3 | Kably B et al., Population pharmacokinetics of aciclovi…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf070](https://doi.org/10.1093/jac/dkaf070) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Zeng_2009_reference](drugs/drug_valaciclovir/Valaciclovir_Zeng2009_reference.md) | — | 1-compartment (no model) | 1 | Zeng L et al., Population pharmacokinetics of acyclovi…, Antimicrobial agents and ch… (2009) | [10.1128/AAC.01138-08](https://doi.org/10.1128/AAC.01138-08) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Kably_2025_reference](drugs/drug_valaciclovir/Valaciclovir_Kably2025_reference.md) | — | parent + metabolite (no model) | 3 | Kably B et al., Population pharmacokinetics of aciclovi…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf070](https://doi.org/10.1093/jac/dkaf070) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hamilton_2020_HCMV_replication_in_HCMV_infected_first_trimester_TEV_1_trophoblasts_at_7_days_postinfection](drugs/drug_valaciclovir/pd_Hamilton_2020_HCMV_replication_in_HCMV_infected_first_trimes.md) | HCMV replication in HCMV-infected first-trimester TEV-1 trophoblasts at 7 days postinfection ← aciclovir (active metabolite of valaciclovir) · direct Emax (saturable) effect | — | Hamilton ST et al., Investigational Antiviral Therapy Model…, Antimicrobial agents and ch… (2020) | [10.1128/AAC.01627-20](https://doi.org/10.1128/AAC.01627-20) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=valaciclovir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | ileum | `SLC10A2` substrate | DrugBank actor |
-| absorption | small intestine | `SLC15A1` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC15A2` inhibitor/substrate, `SLC22A6` unknown, `SLC22A8` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: GUK1 (substrate), SLC6A14 (unknown), TK (substrate).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hamilton_2020_HCMV_replication_in_HCMV_infected_first_trimester_TEV_1_trophoblasts_at_7_days_postinfection](drugs/drug_valaciclovir/pd_Hamilton_2020_HCMV_replication_in_HCMV_infected_first_trimes.md) | HCMV replication in HCMV-infected first-trimester TEV-1 trophoblasts at 7 days postinfection ← aciclovir (active metabolite of valaciclovir) · direct Emax (saturable) effect | — | Hamilton ST et al., Investigational Antiviral Therapy Model…, Antimicrobial agents and ch… (2020) | [10.1128/AAC.01627-20](https://doi.org/10.1128/AAC.01627-20) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

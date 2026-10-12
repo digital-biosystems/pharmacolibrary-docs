@@ -4,7 +4,7 @@
 
 # omalizumab — `Omalizumab_Oh2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.759). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.69). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — omalizumab: CL/F 0.26 L/day, CL 1.68 L/day, V/F 8.92 L, kabs 0.92 1/day, tlag 0.06 day, KD 2.12, λ1 0.12.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading omalizumab → ige (interconversion); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has omalizumab, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -150,19 +150,21 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.759 (22/29 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.69 (20/29 fields) | 9 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['omalizumab', 'ige', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `model.links` | [] | [['omalizumab', 'omalizumab-ige complex', 'interconversion']] | mismatch |
 | `gpt-oss-120b` | `parameters[apparent clearance ige]` | 1.68 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[body mass index on cl x]` | not captured | 0.59 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[body_weight_kg_on_slope]` | 0.0143 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q324_ethnicity]` | 0.568 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q326_ethnicity]` | not captured | 0.568 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q335_body_weight]` | not captured | 0.0143 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | omalizumab | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | omalizumab | unknown | mismatch |
 
 </details>
 
@@ -200,7 +202,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_omalizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Oh_2023` / `Oh_2023::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_omalizumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Oh_2023` / `Oh_2023::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -221,7 +223,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

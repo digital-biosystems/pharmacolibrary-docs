@@ -27,18 +27,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Eto_2025_GIR](drugs/drug_insulin_icodec/pd_Eto_2025_GIR.md) | glucose infusion rate ← insulin_icodec · delayed effect through an effect compartment | — | Eto T et al., Pharmacological characteristics of once…, Journal of diabetes investi… (2025) | [10.1111/jdi.14384](https://doi.org/10.1111/jdi.14384) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Lingvay_2025_SMBG](drugs/drug_insulin_icodec/pd_Lingvay_2025_SMBG.md) | prebreakfast self-measured blood glucose ← insulin_icodec · delayed effect through an effect compartment | — | Lingvay I et al., Pharmacokinetic/Pharmacodynamic Modelin…, Endocrine practice : offici… (2025) | [10.1016/j.eprac.2024.11.009](https://doi.org/10.1016/j.eprac.2024.11.009) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=insulin_icodec).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` binder | DrugBank actor |
-
-<sub>Actors without a tissue in the table: IDE (substrate), IGF1R (target), INSR (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> | [Eto_2025_GIR](drugs/drug_insulin_icodec/pd_Eto_2025_GIR.md) | glucose infusion rate ← insulin_icodec · delayed effect through an effect compartment | — | Eto T et al., Pharmacological characteristics of once…, Journal of diabetes investi… (2025) | [10.1111/jdi.14384](https://doi.org/10.1111/jdi.14384) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Lingvay_2025_SMBG](drugs/drug_insulin_icodec/pd_Lingvay_2025_SMBG.md) | prebreakfast self-measured blood glucose ← insulin_icodec · delayed effect through an effect compartment | — | Lingvay I et al., Pharmacokinetic/Pharmacodynamic Modelin…, Endocrine practice : offici… (2025) | [10.1016/j.eprac.2024.11.009](https://doi.org/10.1016/j.eprac.2024.11.009) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

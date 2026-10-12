@@ -33,7 +33,7 @@ Ponesimod is an immunosuppressant used to treat relapsing-remitting multiple scl
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Valenzuela_2021_reference](drugs/drug_ponesimod/Ponesimod_Valenzuela2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Valenzuela B et al., Effect of Ponesimod Exposure on Total L…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01019-9](https://doi.org/10.1007/s40262-021-01019-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Valenzuela_2021_reference](drugs/drug_ponesimod/Ponesimod_Valenzuela2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Valenzuela B et al., Effect of Ponesimod Exposure on Total L…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01019-9](https://doi.org/10.1007/s40262-021-01019-9) |
 
 ## Pharmacodynamics (PD)
 
@@ -49,22 +49,6 @@ Ponesimod is an immunosuppressant used to treat relapsing-remitting multiple scl
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Hoch_2015_QTcI](drugs/drug_ponesimod/pd_Hoch_2015_QTcI.md) | QTcI ← ponesimod · direct linear effect | model (no simulator) | Hoch M et al., Effect of ponesimod, a selective S1P1 r…, Basic & clinical pharmacolo… (2015) | [10.1111/bcpt.12336](https://doi.org/10.1111/bcpt.12336) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Valenzuela_2021_TLC](drugs/drug_ponesimod/pd_Valenzuela_2021_TLC.md) | total lymphocyte counts ← ponesimod · indirect response — drug inhibits the production of total lymphocyte counts | model (no simulator) | Valenzuela B et al., Effect of Ponesimod Exposure on Total L…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01019-9](https://doi.org/10.1007/s40262-021-01019-9) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Valenzuela_2022_CUAL](drugs/drug_ponesimod/pd_Valenzuela_2022_CUAL.md) | Combined unique active lesions ← Ponesimod · direct log-linear effect | model (no simulator) | Valenzuela B et al., An exposure-response analysis of ponesi…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12778](https://doi.org/10.1002/psp4.12778) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ponesimod).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | heart | `CYP2J2` substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate, `CYP3A5` substrate, `UGT1A1` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP2J2` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `UGT1A1` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | lung | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CYP4F12 (substrate), CYP4F3 (substrate), S1PR1 (modulator), S1PR1 (regulator), S1PR1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

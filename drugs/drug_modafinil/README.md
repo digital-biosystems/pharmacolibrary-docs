@@ -37,31 +37,15 @@ Modafinil is a wakefulness-promoting stimulant used for sleep disorders such as 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span> | [Tao_2010_reference](drugs/drug_modafinil/Modafinil_Tao2010_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Tao G et al., Population pharmacokinetics of modafini…, Therapeutic drug monitoring (2010) | [10.1097/FTD.0b013e3181cf27d3](https://doi.org/10.1097/FTD.0b013e3181cf27d3) |
-| <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span> | [Wu_2012_reference](drugs/drug_modafinil/Modafinil_Wu2012_reference.md) | model (no simulator) | 1-compartment, oral | 7 | Wu KH et al., Population pharmacokinetics of modafini…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.124](https://doi.org/10.1038/aps.2012.124) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Willavize_2017_reference](drugs/drug_modafinil/Modafinil_Willavize2017_reference.md) | — | general linear (no model) | 4 | Willavize S et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.800](https://doi.org/10.1002/jcph.800) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span> | [Tao_2010_reference](drugs/drug_modafinil/Modafinil_Tao2010_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Tao G et al., Population pharmacokinetics of modafini…, Therapeutic drug monitoring (2010) | [10.1097/FTD.0b013e3181cf27d3](https://doi.org/10.1097/FTD.0b013e3181cf27d3) |
+| <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span> | [Wu_2012_reference](drugs/drug_modafinil/Modafinil_Wu2012_reference.md) | model (no simulator) | 1-compartment, oral | 7 | Wu KH et al., Population pharmacokinetics of modafini…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.124](https://doi.org/10.1038/aps.2012.124) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Willavize_2017_reference](drugs/drug_modafinil/Modafinil_Willavize2017_reference.md) | — | general linear (no model) | 4 | Willavize S et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.800](https://doi.org/10.1002/jcph.800) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Darwish_2012_MSLT](drugs/drug_modafinil/pd_Darwish_2012_MSLT.md) | Multiple Sleep Latency Test time (placebo-subtracted) ← modafinil · direct Emax (saturable) effect | — | Darwish M et al., Armodafinil and modafinil in patients w…, Journal of clinical pharmac… (2012) | [10.1177/0091270011417825](https://doi.org/10.1177/0091270011417825) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=modafinil).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `CYP2D6` inducer | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inducer/substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inducer, `CYP2B6` inducer/inhibitor, `CYP2C19` inhibitor, `CYP2C9` inducer/inhibitor, `CYP2D6` inducer, `CYP3A4` inducer/substrate, `CYP3A5` inducer/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` inducer/substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADRA1B (partial agonist), SLC6A3 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

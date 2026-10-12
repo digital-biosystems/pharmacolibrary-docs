@@ -34,23 +34,8 @@ Midostaurin is a protein kinase inhibitor used to treat acute myeloid leukemia a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Joisten_2026_reference](drugs/drug_midostaurin/Midostaurin_Joisten2026_reference.md) | — | 1-compartment (no model) | 2 | Joisten CS et al., Clinical impact of potential drug-drug…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01951-25](https://doi.org/10.1128/aac.01951-25) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yin_2008_reference](drugs/drug_midostaurin/Midostaurin_Yin2008_reference.md) | — | general linear (no model) | 2 | Yin OQ et al., A mechanism-based population pharmacoki…, Clinical pharmacokinetics (2008) | [10.2165/0003088-200847120-00005](https://doi.org/10.2165/0003088-200847120-00005) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=midostaurin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inducer | DrugBank actor |
-| metabolism | liver | `CYP1A2` inducer/inhibitor, `CYP2B6` inducer, `CYP2C19` inducer/inhibitor, `CYP2C8` inducer/inhibitor, `CYP2C9` inducer/inhibitor, `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inducer, `CYP3A7` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inducer | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CYP3A43 (inducer), FLT3 (inhibitor), FLT3 (target), KDR (inhibitor), KDR (target), KIT (inhibitor), KIT (target), PDGFRA (inhibitor), PDGFRA (target), PDGFRB (inhibitor), PDGFRB (target), PRKCA (inhibitor), PRKCA (target), PRKCG (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Joisten_2026_reference](drugs/drug_midostaurin/Midostaurin_Joisten2026_reference.md) | — | 1-compartment (no model) | 2 | Joisten CS et al., Clinical impact of potential drug-drug…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01951-25](https://doi.org/10.1128/aac.01951-25) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yin_2008_reference](drugs/drug_midostaurin/Midostaurin_Yin2008_reference.md) | — | general linear (no model) | 2 | Yin OQ et al., A mechanism-based population pharmacoki…, Clinical pharmacokinetics (2008) | [10.2165/0003088-200847120-00005](https://doi.org/10.2165/0003088-200847120-00005) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -16,11 +16,11 @@
 
 **As extracted:** Venlafaxine (the dose) drives Change from baseline in Hamilton Depression Rating (HAMD) scale at primary timepoint: direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Venlafaxine dose (mg/day) acts on change from baseline in HAMD score at the primary timepoint via an Emax dose–response model with a proportional (inhibitory) drug effect relative to placebo, with Emax −1.75, ED50 29.1 mg/day, and a multiplicative effect of baseline HAMD score on Emax of 0.0986 (larger baseline HAMD gives larger drug effect, P = 0.0122); the paper does not describe a pharmacological mechanism beyond this empirical dose–response.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Maringwa_2025`
 - **model family:** `emax`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

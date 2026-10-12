@@ -90,7 +90,7 @@ Kinsale TS et al., Pharmacokinetic Modeling to Guide Precl…, Pharmaceutics (20
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs_non_atc/drug_islatravir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kinsale_2024` / `Kinsale_2024::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs_non_atc/drug_islatravir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kinsale_2024` / `Kinsale_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -111,7 +111,7 @@ Kinsale TS et al., Pharmacokinetic Modeling to Guide Precl…, Pharmaceutics (20
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

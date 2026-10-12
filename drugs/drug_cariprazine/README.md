@@ -34,7 +34,7 @@ Cariprazine is an antipsychotic used to treat schizophrenia and bipolar I disord
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> | [Periclou_2021_reference](drugs/drug_cariprazine/Cariprazine_Periclou2021_reference.md) | model (no simulator) | 2-compartment general linear | 6 | Periclou A et al., Population Pharmacokinetics of Caripraz…, European journal of drug me… (2021) | [10.1007/s13318-020-00650-4](https://doi.org/10.1007/s13318-020-00650-4) |
+| <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> | [Periclou_2021_reference](drugs/drug_cariprazine/Cariprazine_Periclou2021_reference.md) | model (no simulator) | 2-compartment general linear | 6 | Periclou A et al., Population Pharmacokinetics of Caripraz…, European journal of drug me… (2021) | [10.1007/s13318-020-00650-4](https://doi.org/10.1007/s13318-020-00650-4) |
 
 ## Pharmacodynamics (PD)
 
@@ -52,26 +52,6 @@ Cariprazine is an antipsychotic used to treat schizophrenia and bipolar I disord
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Periclou_2020_PANSS_total](drugs/drug_cariprazine/pd_Periclou_2020_PANSS_total.md) | Positive and Negative Syndrome Scale total score ← total cariprazine (sum of cariprazine, DCAR, and DDCAR) · direct sigmoid Emax (Hill) effect | model (no simulator) | Periclou A et al., Relationship Between Plasma Concentrati…, Clinical and translational… (2020) | [10.1111/cts.12720](https://doi.org/10.1111/cts.12720) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Periclou_2020_PKC](drugs/drug_cariprazine/pd_Periclou_2020_PKC.md) | parkinsonism cluster (treatment-emergent adverse event) ← total cariprazine (TCave) · categorical (graded) response model | — | Periclou A et al., Relationship Between Plasma Concentrati…, Clinical and translational… (2020) | [10.1111/cts.12720](https://doi.org/10.1111/cts.12720) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Periclou_2020_YMRS_total](drugs/drug_cariprazine/pd_Periclou_2020_YMRS_total.md) | Young Mania Rating Scale total score ← total cariprazine (sum of cariprazine, DCAR, and DDCAR) · direct Emax (saturable) effect | model (no simulator) | Periclou A et al., Relationship Between Plasma Concentrati…, Clinical and translational… (2020) | [10.1111/cts.12720](https://doi.org/10.1111/cts.12720) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cariprazine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inducer | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP2E1` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inducer | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), DRD2 (partial agonist), DRD3 (partial agonist), HRH1 (target), HTR1A (partial agonist), HTR2A (target), HTR2B (target), HTR2C (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -22,7 +22,7 @@
 
 > Formoterol (nM concentrations) inhibits LPS-stimulated GM-CSF release from monocyte-derived macrophages according to an Emax-type model, with a reported EC50 of 24.6 nM; the excerpts do not state the mechanism or other parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Donnelly_2010`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Donnelly LE et al., Effects of formoterol and salmeterol on…, The European res
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

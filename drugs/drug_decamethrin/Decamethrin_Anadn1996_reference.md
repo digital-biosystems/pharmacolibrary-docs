@@ -4,7 +4,7 @@
 
 # decamethrin — `Decamethrin_Anadn1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.278). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -22,16 +22,13 @@
 
 The structure is parent–metabolite, with 4'-HO-deltamethrin formed from deltamethrin in the central compartment, but the metabolism link has link parameter 'none' of unknown kind, so the metabolite has no quantitative connection to the dose and counts as an unlinked metabolite. The record is also abstract-only, meaning reported summary statistics (e.g., t1/2z 33.0 hr for deltamethrin and 25.67 hr for 4'-HO-deltamethrin, CL 0.11 liter/hr, Fab 14.43%) stood in for a fitted model rather than being extracted from one. Extracted — decamethrin: t1/2z 33 hr, V2 5.33 liters, V 2.04 liters, CL 0.11 liter/hr, tmax 1.83 hr, Fab 14.4 %, Kp 2.32 deltamethrin, medulla oblongata, AUC ratio 295 deltamethrin, hypothalamus; 4'-HO-deltamethrin: t1/2z 25.7 hr.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auctissue/aucplasma: this record has 2.32, the second reading none; it also differs on 12 more fields. That field does not shape the model.
-
 <sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Anadón A et al., Toxicokinetics of deltamethrin and its…, Toxicology and applied phar… (1996)
   ·  DOI: [10.1006/taap.1996.0254](https://doi.org/10.1006/taap.1996.0254)
 
-## Model component
-<dbs-pgx drug="decamethrin" model-id="Decamethrin_Anadn1996_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="deltamethrin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="decamethrin" model-id="Decamethrin_Anadn1996_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="deltamethrin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 9 extracted.
@@ -87,39 +84,6 @@ Anadón A et al., Toxicokinetics of deltamethrin and its…, Toxicology and appl
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.278 (5/18 fields) | 13 |
-
-<details><summary>13 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[auctissue/aucplasma]` | 2.32 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-lives (t1/2 theta) from plasma after iv - 4'-ho-deltamethrin]` | not captured | 25.67 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-lives (t1/2 theta) from plasma after iv - deltamethrin]` | not captured | 33.0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[oral bioavailability of deltamethrin]` | not captured | 14.43 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[oral bioavailability]` | 14.43 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2 theta]` | 33.0 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2 theta]` | 25.67 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tmax after oral dose]` | not captured | 1.83 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tmax]` | 1.83 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total plasma clearance of deltamethrin]` | not captured | 0.11 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total plasma clearance]` | 0.11 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v alpha(area)]` | 5.33 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v d(m)]` | 2.04 | not captured | only_one_extracted |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
-</details>
-
-
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -146,18 +110,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_decamethrin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Anadón_1996` / `Anadón_1996::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_decamethrin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Anadón_1996` / `Anadón_1996::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

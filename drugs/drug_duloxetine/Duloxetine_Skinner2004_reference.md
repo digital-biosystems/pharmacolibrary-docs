@@ -5,7 +5,7 @@
 
 # duloxetine — `Duloxetine_Skinner2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833), gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833), gpt-oss:120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Skinner MH et al., Effect of age on the pharmacokinetics o…, British journal of clinical… (2004)
   ·  DOI: [10.1046/j.1365-2125.2003.01963.x](https://doi.org/10.1046/j.1365-2125.2003.01963.x)
 
-## Model component
-<dbs-pgx drug="duloxetine" model-id="Duloxetine_Skinner2004_reference" status="rejected" stale="true" population="healthy volunteers and women with urinary incontinence" measured-compound="duloxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Skinner2004_reference" status="rejected" stale="true" population="healthy volunteers and women with urinary incontinence" measured-compound="duloxetine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.
@@ -161,21 +160,21 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_duloxetine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Skinner_2004` / `Skinner_2004::reference`)
-- model: `../../../knowledgebase/drugs/drug_duloxetine/models/modelica/Duloxetine_Skinner2004_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_duloxetine/models/modelica/Duloxetine_Skinner2004_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_duloxetine/models/modelica/Duloxetine_Skinner2004_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_duloxetine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Skinner_2004` / `Skinner_2004::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_duloxetine/models/modelica/Duloxetine_Skinner2004_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_duloxetine/models/modelica/Duloxetine_Skinner2004_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_duloxetine/models/modelica/Duloxetine_Skinner2004_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

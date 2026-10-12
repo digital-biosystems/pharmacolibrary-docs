@@ -33,21 +33,7 @@ Yohimbine is an alpha-2 blocker used for erectile dysfunction and hypoactive sex
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Dimaio_2011_2_reference](drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Dimaio Knych HK et al., Pharmacokinetics of yohimbine following…, Journal of veterinary pharm… (2011) | [10.1111/j.1365-2885.2010.01194.x](https://doi.org/10.1111/j.1365-2885.2010.01194.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=yohimbine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA2A (target), ADRA2B (target), ADRA2C (target), DRD2 (target), DRD3 (target), HTR1A (partial agonist), HTR1B (partial agonist), HTR1D (partial agonist), HTR2A (target), HTR2B (target), HTR2C (target), KCNJ1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Dimaio_2011_2_reference](drugs/drug_yohimbine/Yohimbine_Dimaio2011v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Dimaio Knych HK et al., Pharmacokinetics of yohimbine following…, Journal of veterinary pharm… (2011) | [10.1111/j.1365-2885.2010.01194.x](https://doi.org/10.1111/j.1365-2885.2010.01194.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

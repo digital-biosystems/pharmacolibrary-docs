@@ -19,7 +19,7 @@
 
 > Steady-state danicopan concentrations (ng/mL) were linked to alternative pathway (AP) activity (%) using an inhibitory Emax model. The model estimated a baseline AP activity of 29.1%, an IC50 of 12.0 ng/mL, an Imax of 3.05%, and an IC90 of 108 ng/mL.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Chen_2026`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Chen J et al., Population PK-PD Modeling of Danicopan…, CPT: pharmacometrics &
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

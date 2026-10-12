@@ -23,16 +23,7 @@ Mepolizumab, a monoclonal antibody, is used to treat asthma, hypereosinophilic s
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Bellnier_2006_reference](drugs/drug_porfimer_sodium/PorfimerSodium_Bellnier2006_reference.md) | — | general linear (no model) | 0 | Bellnier DA et al., Clinical pharmacokinetics of the PDT ph…, Lasers in surgery and medic… (2006) | [10.1002/lsm.20340](https://doi.org/10.1002/lsm.20340) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mepolizumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: IL5 (regulator), IL5 (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Smith_2011_reference](drugs/drug_mepolizumab/Mepolizumab_Smith2011_reference.md) | — | 1-compartment (no model) | 0 | Smith DA et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacokinetics (2011) | [10.2165/11584340-000000000-00000](https://doi.org/10.2165/11584340-000000000-00000) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

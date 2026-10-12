@@ -34,16 +34,7 @@ Triheptanoin is a medium-chain triglyceride used as a calorie and fatty-acid sup
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Lee_2022_reference](drugs/drug_triheptanoin/Triheptanoin_Lee2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Lee SK et al., Population Pharmacokinetics of Heptanoa…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1145](https://doi.org/10.1002/cpdd.1145) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=triheptanoin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` binder | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727), gpt-oss:120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Lee_2022_reference](drugs/drug_triheptanoin/Triheptanoin_Lee2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Lee SK et al., Population Pharmacokinetics of Heptanoa…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1145](https://doi.org/10.1002/cpdd.1145) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

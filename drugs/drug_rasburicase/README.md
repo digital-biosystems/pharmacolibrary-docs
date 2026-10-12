@@ -27,16 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Cai_2014_2_C_urate_p](drugs/drug_rasburicase/pd_Cai_2014_2_C_urate_p.md) | changes in plasma uric acid ← uricase (recombinant urate oxidase) · indirect response — drug stimulates the production of changes in plasma uric acid | — | Cai NF et al., Pharmacodynamic analysis of intravenous…, Acta pharmacologica Sinica (2014) | [10.1038/aps.2014.81](https://doi.org/10.1038/aps.2014.81) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=rasburicase).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: Uric acid (metabolizer).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Cai_2014_2_C_urate_p](drugs/drug_rasburicase/pd_Cai_2014_2_C_urate_p.md) | changes in plasma uric acid ← uricase (recombinant urate oxidase) · indirect response — drug stimulates the production of changes in plasma uric acid | — | Cai NF et al., Pharmacodynamic analysis of intravenous…, Acta pharmacologica Sinica (2014) | [10.1038/aps.2014.81](https://doi.org/10.1038/aps.2014.81) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

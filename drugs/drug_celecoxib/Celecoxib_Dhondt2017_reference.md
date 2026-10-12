@@ -5,7 +5,7 @@
 
 # celecoxib — `Celecoxib_Dhondt2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.238), gpt-oss:120b (not confirmed, agreement 0.739). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.238), gpt-oss:120b (not confirmed, agreement 0.739). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Dhondt L et al., Comparative population pharmacokinetics…, Scientific reports (2017)
   ·  DOI: [10.1038/s41598-017-12159-z](https://doi.org/10.1038/s41598-017-12159-z)
 
-## Model component
-<dbs-pgx drug="celecoxib" model-id="Celecoxib_Dhondt2017_reference" status="rejected" stale="true" population="cockatiels" measured-compound="celecoxib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Dhondt2017_reference" status="rejected" stale="true" population="cockatiels" measured-compound="celecoxib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 11 extracted.
@@ -197,20 +196,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_celecoxib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dhondt_2017` / `Dhondt_2017::reference`)
-- model: `../../../knowledgebase/drugs/drug_celecoxib/models/modelica/_needs_review/Celecoxib_Dhondt2017_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_celecoxib/models/modelica/_needs_review/Celecoxib_Dhondt2017_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_celecoxib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dhondt_2017` / `Dhondt_2017::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_celecoxib/models/modelica/_needs_review/Celecoxib_Dhondt2017_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_celecoxib/models/modelica/_needs_review/Celecoxib_Dhondt2017_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

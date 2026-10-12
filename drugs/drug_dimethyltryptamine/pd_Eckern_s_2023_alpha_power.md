@@ -16,11 +16,11 @@
 
 **As extracted:** DMT drives alpha power: direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > DMT plasma concentrations act on EEG alpha power via a direct sigmoidal $I_{max}$ inhibitory effect, mediated through an effect compartment with a $k_{e0}$ of 0.59 min⁻¹. The model parameters are $R_0 = 0.83$, $I_{max}$ fixed to 1, $IC_{50,e} = 71$ nM, and $γ = 3.7$.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Eckernäs_2023`
 - **model family:** `sigmoid_emax`
@@ -92,11 +92,11 @@ Advisory:
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

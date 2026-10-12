@@ -22,7 +22,7 @@
 
 > Chloroquine (5–50 μM) stimulates JIMT-1 cell death in a transduction model of cellular viability over 72 h, with a stimulatory death rate constant Smax of 0.0405 h⁻¹, SC50 of 26.3 μM, Hill coefficient γ1 of 1.97, and a transduction delay (τCQ) of 17.5 h; control growth rate kg was 0.0217 h⁻¹, and in combination with trastuzumab the interaction parameter Ψ was 0.529, indicating synergy.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Franco_2023`
 - **model family:** `transduction`
@@ -55,11 +55,11 @@ Franco YL et al., Pharmacodynamic Modeling Identifies Syn…, Cancer diagnosis &
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > Droperidol concentration (µM) inhibits alpha7 nAChR activation (%), described by a sigmoid Emax (proportional inhibition) model with IC50 5.8 ± 0.53 µM and Hill coefficient 0.95 ± 0.1; the paper excerpts do not state a mechanism beyond this concentration–response inhibition.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Flood_2002`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Flood P et al., Droperidol inhibits GABA(A) and neurona…, Anesthesiology (2002
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -20,7 +20,7 @@
 
 > Flunitrazepam plasma concentrations (ng/ml) were linked to prose delayed recall impairment (Z-score) with an inhibitory Emax model; the paper reports an EC50 of 6.1 ng/ml, but no full text is available to confirm the mechanism or other parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Bareggi_1998`
 - **model family:** `emax`
@@ -61,7 +61,7 @@ Bareggi SR et al., Impairment of memory and plasma flunitr…, Psychopharmacolog
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

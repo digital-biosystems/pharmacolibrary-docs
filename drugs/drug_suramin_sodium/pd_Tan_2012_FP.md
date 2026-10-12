@@ -22,7 +22,7 @@
 
 > Suramin inhibits RISC loading (TAMRA-labeled RNA loaded to human Ago2, measured by fluorescence polarization) with an IC50 of 0.69 μM; the paper excerpts do not state the mechanism or model form.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Tan_2012`
 - **model family:** `unknown`
@@ -63,7 +63,7 @@ Tan GS et al., Small molecule inhibition of RISC loadi…, ACS chemical biology 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

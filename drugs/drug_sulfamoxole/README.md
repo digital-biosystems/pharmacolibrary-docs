@@ -28,15 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | [unknown_1976_Clinical_and_bacteriological_results](drugs/drug_sulfamoxole/pd_unknown_1976_Clinical_and_bacteriological_results.md) | Clinical and bacteriological results biomarker turnover ← endogenous kinetics | — | unknown, [The effect of a new broad-spectrum ant…, Medizinische Klinik (1976) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sulfamoxole).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP2C9` inhibitor | DrugBank actor |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span> | [unknown_1976_Clinical_and_bacteriological_results](drugs/drug_sulfamoxole/pd_unknown_1976_Clinical_and_bacteriological_results.md) | Clinical and bacteriological results biomarker turnover ← endogenous kinetics | — | unknown, [The effect of a new broad-spectrum ant…, Medizinische Klinik (1976) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

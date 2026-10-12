@@ -16,11 +16,11 @@
 
 **As extracted:** Galcanezumab (concentrations from this paper's PK model) drives capsaicin-induced dermal blood flow: delayed effect through an effect compartment.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Galcanemuzab concentrations (ng/mL) were linked to the inhibition of capsaicin-induced dermal blood flow (CIDBF) via an effect compartment model, characterized by a maximum inhibitory effect of 70.5% and an IC50 of 1060 ng/mL.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Fiedler-Kelly_2021`
 - **model family:** `effect_compartment`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

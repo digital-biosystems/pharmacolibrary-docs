@@ -21,7 +21,7 @@
 
 > The record states that (+)-tubocurarine inhibits the 5-HT evoked current with an IC50 of 31.9 nM. As no full text is available, the paper does not provide details on the underlying mechanism or rate constants.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mair_1998`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Mair ID et al., Pharmacological characterization of a r…, British journal of p
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

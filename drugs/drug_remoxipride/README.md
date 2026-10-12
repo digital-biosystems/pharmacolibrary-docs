@@ -32,7 +32,7 @@ Remoxipride is an antipsychotic of the benzamide class that was used to treat sc
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Widerlöv_1989_reference](drugs/drug_remoxipride/Remoxipride_Widerlv1989_reference.md) | — | 1-compartment (no model) | 3 | Widerlöv E et al., Effect of urinary pH on the plasma and…, European journal of clinica… (1989) | [10.1007/BF00558500](https://doi.org/10.1007/BF00558500) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Widerlöv_1989_reference](drugs/drug_remoxipride/Remoxipride_Widerlv1989_reference.md) | — | 1-compartment (no model) | 3 | Widerlöv E et al., Effect of urinary pH on the plasma and…, European journal of clinica… (1989) | [10.1007/BF00558500](https://doi.org/10.1007/BF00558500) |
 
 ## Pharmacodynamics (PD)
 
@@ -47,21 +47,6 @@ Remoxipride is an antipsychotic of the benzamide class that was used to treat sc
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Taneja_2016_PRL](drugs/drug_remoxipride/pd_Taneja_2016_PRL.md) | prolactin ← remoxipride · indirect response — drug inhibits the production of prolactin | — | Taneja A et al., A comparison of two semi-mechanistic mo…, European journal of pharmac… (2016) | [10.1016/j.ejphar.2016.07.005](https://doi.org/10.1016/j.ejphar.2016.07.005) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [van_2017_2_ACTH](drugs/drug_remoxipride/pd_van_2017_2_ACTH.md) | plasma adrenocorticotrophic hormone ← remoxipride · stimulation effect | — | van den Brink WJ et al., Revealing the Neuroendocrine Response A…, The AAPS journal (2017) | [10.1208/s12248-016-0002-3](https://doi.org/10.1208/s12248-016-0002-3) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [van_2017_2_PRL](drugs/drug_remoxipride/pd_van_2017_2_PRL.md) | plasma prolactin ← remoxipride · stimulation effect | — | van den Brink WJ et al., Revealing the Neuroendocrine Response A…, The AAPS journal (2017) | [10.1208/s12248-016-0002-3](https://doi.org/10.1208/s12248-016-0002-3) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=remoxipride).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ORM1` binder | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor, `CYP2D6` substrate, `CYP3A4` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: DRD2 (target), DRD3 (target), DRD4 (target), HTR2A (other/unknown), SIGMAR1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

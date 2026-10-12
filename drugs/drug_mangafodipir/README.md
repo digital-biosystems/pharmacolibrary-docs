@@ -33,21 +33,7 @@ Mangafodipir is a paramagnetic contrast agent used in magnetic resonance imaging
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.136), gpt-oss:120b (not confirmed, agreement 0.55). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Lo_2021_reference](drugs/drug_revefenacin/Revefenacin_Lo2021_reference.md) | — | parent + metabolite (no model) | 11 (+1 cov.) | Lo A et al., Population Pharmacokinetics of Revefena…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00938-3](https://doi.org/10.1007/s40262-020-00938-3) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mangafodipir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: A2M (binder), SLC11A2 (substrate), SOD2 (activator).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hirt_2009_reference](drugs/drug_mangafodipir/Mangafodipir_Hirt2009_reference.md) | — | 2-compartment (no model) | 5 | Hirt D et al., Pharmacokinetic-pharmacodynamic modelin…, Therapeutic drug monitoring (2009) | [10.1097/FTD.0b013e3181affd6d](https://doi.org/10.1097/FTD.0b013e3181affd6d) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

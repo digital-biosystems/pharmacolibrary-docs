@@ -28,22 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Al-Dhubaibi_2018_PGA](drugs/drug_alitretinoin/pd_Al_Dhubaibi_2018_PGA.md) | physician global assessment ← alitretinoin · inhibition effect | — | Al-Dhubaibi MS et al., The effectiveness of alitretinoin for t…, International journal of he… (2018) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=alitretinoin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CRABP1 (target), CRABP2 (target), CYP26C1 (unknown), IGFBP3 (unknown), PSG5 (unknown), RARA (target), RARB (target), RARG (target), RXRA (target), RXRB (target), RXRG (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Al-Dhubaibi_2018_PGA](drugs/drug_alitretinoin/pd_Al_Dhubaibi_2018_PGA.md) | physician global assessment ← alitretinoin · inhibition effect | — | Al-Dhubaibi MS et al., The effectiveness of alitretinoin for t…, International journal of he… (2018) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -5,7 +5,7 @@
 
 # amisulpride — `Amisulpride_Yan2024_base`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Yan D et al., External Validation of the Population P…, Drug design, development an… (2024)
   ·  DOI: [10.2147/DDDT.S469149](https://doi.org/10.2147/DDDT.S469149)
 
-## Model component
-<dbs-pgx drug="amisulpride" model-id="Amisulpride_Yan2024_base" status="needs_review" stale="false" population="Chinese adult inpatients with schizophrenia" measured-compound="amisulpride" parameterization="apparent" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amisulpride" model-id="Amisulpride_Yan2024_base" status="needs_review" stale="false" population="Chinese adult inpatients with schizophrenia" measured-compound="amisulpride" parameterization="apparent" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.
@@ -141,7 +140,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_amisulpride/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yan_2024` / `Yan_2024::base`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amisulpride/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yan_2024` / `Yan_2024::base`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -162,7 +161,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

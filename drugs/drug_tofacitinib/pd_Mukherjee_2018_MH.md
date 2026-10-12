@@ -16,11 +16,11 @@
 
 **As extracted:** Tofacitinib (the dose) drives Mucosal healing: direct linear effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Tofacitinib dose or exposure (Cav,ss, Ctrough,ss) linearly increases the log-odds of mucosal healing via a slope coefficient of 0.08 added to a placebo intercept of 3.21. The paper does not specify a direct PD mechanism (e.g., Emax or effect compartment) for this linear relationship.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mukherjee_2018`
 - **model family:** `linear`
@@ -97,7 +97,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

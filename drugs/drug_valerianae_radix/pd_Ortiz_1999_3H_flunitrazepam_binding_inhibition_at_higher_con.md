@@ -21,7 +21,7 @@
 
 > Valeriana officinalis extract (mg/ml) inhibits [3H]flunitrazepam binding at higher concentrations, described by an Emax-type inhibition model with IC50 = 4.82 x 10(-1) mg/ml; the paper excerpts provide no further mechanism, Emax, or rate values.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Ortiz_1999`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Ortiz JG et al., Effects of Valeriana officinalis extrac…, Neurochemical resea
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

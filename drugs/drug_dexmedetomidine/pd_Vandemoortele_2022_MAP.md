@@ -20,7 +20,7 @@
 
 > Dexmedetomidine effect-site concentrations (ng/mL) act on mean arterial pressure via a biphasic effect modelled by the Hannivoort-Colin model with two effect compartments, one for hypertensive and one for hypotensive effects, each with its own ke0 and Ce50; MAP decreases below baseline at concentrations &lt;2 ng/mL and rises toward hypertensive values at higher concentrations. The paper does not state the numeric ke0, Ce50, Emax or gamma values for the MAP model, and the model does not capture the early hypertensive response after fast administration because observations were made at steady state.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Vandemoortele_2022`
 - **model family:** `unknown`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

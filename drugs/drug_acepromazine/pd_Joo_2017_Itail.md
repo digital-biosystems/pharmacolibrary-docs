@@ -22,7 +22,7 @@
 
 > Acepromazine concentration-dependently inhibited hERG peak tail currents (Itail, % of control) in HEK293 cells expressing hERG channels, described by a sigmoid Emax (inhibitory) model with IC50 = 1.5±0.1 µM and Hill coefficient 1.1±0.1; the paper attributes this to direct channel block with high affinity for the open/activated state (open-state IC50 2.4±0.2 µM, Hill 1.2±0.1), and no indirect production/elimination (kin/kout) or effect-compartment parameters are given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Joo_2017`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Joo YS et al., Acepromazine inhibits hERG potassium io…, The Korean journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

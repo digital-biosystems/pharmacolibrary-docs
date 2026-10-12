@@ -5,7 +5,7 @@
 
 # meloxicam — `Meloxicam_Aoyama2017_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -29,8 +29,7 @@ The record contains meloxicam parameters CL = 0.390 L/h, V1 = 7.80 L, Q = 1.24 L
 Aoyama T et al., Pharmacokinetics and Pharmacodynamics o…, CPT: pharmacometrics & syst… (2017)
   ·  DOI: [10.1002/psp4.12259](https://doi.org/10.1002/psp4.12259)
 
-## Model component
-<dbs-pgx drug="meloxicam" model-id="Meloxicam_Aoyama2017_reference" status="extracted" stale="true" population="healthy males" measured-compound="meloxicam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="meloxicam" model-id="Meloxicam_Aoyama2017_reference" status="extracted" stale="true" population="healthy males" measured-compound="meloxicam" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted, plus 2 covariate effects.
@@ -130,7 +129,7 @@ Aoyama T et al., Pharmacokinetics and Pharmacodynamics o…, CPT: pharmacometric
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_meloxicam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Aoyama_2017` / `Aoyama_2017::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_meloxicam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Aoyama_2017` / `Aoyama_2017::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -148,7 +147,7 @@ Aoyama T et al., Pharmacokinetics and Pharmacodynamics o…, CPT: pharmacometric
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference/Meloxicam_Aoyama2017_reference.svg" alt="Meloxicam_Aoyama2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference/Meloxicam_Aoyama2017_reference.svg" alt="Meloxicam_Aoyama2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

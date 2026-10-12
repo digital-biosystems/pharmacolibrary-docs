@@ -20,7 +20,7 @@
 
 > Eculizumab serum concentrations directly inhibit terminal complement activity via a sigmoid Emax model, with a maximum effect of inhibition (Imax) of 0.93 in healthy subjects and 0.88 in PNH patients. The serum concentration achieving 50% of Imax (IC50) is 36.60 μg/mL with a Hill coefficient of 4.56.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Lee_2024`
 - **model family:** `sigmoid_emax`
@@ -70,7 +70,7 @@ Lee H et al., Population pharmacokinetic, pharmacodyn…, European journal of cl
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

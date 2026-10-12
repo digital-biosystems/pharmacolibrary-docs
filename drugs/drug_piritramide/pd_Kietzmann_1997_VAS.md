@@ -20,7 +20,7 @@
 
 > The paper does not describe the mechanism linking piritramide concentrations to perceived pain (VAS), although the record indicates a sigmoidal inhibition model. The record lists an EC50 of 12.1 ng/ml and a gamma value of 1.9, with no Imax or rate constants provided.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kietzmann_1997`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Kietzmann D et al., Pharmacodynamic modelling of the analge…, Acta anaesthesio
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

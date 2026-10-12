@@ -28,16 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span> | [Yamada_2003_P](drugs/drug_terguride/pd_Yamada_2003_P.md) | Plasma Prolactin Concentration ← terguride · indirect response — drug inhibits the production of Plasma Prolactin Concentration | — | Yamada Y et al., [Pharmacokinetic/pharmacodynamic analys…, Yakugaku zasshi : Journal o… (2003) | [10.1248/yakushi.123.255](https://doi.org/10.1248/yakushi.123.255) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=terguride).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span> | [Yamada_2003_P](drugs/drug_terguride/pd_Yamada_2003_P.md) | Plasma Prolactin Concentration ← terguride · indirect response — drug inhibits the production of Plasma Prolactin Concentration | — | Yamada Y et al., [Pharmacokinetic/pharmacodynamic analys…, Yakugaku zasshi : Journal o… (2003) | [10.1248/yakushi.123.255](https://doi.org/10.1248/yakushi.123.255) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

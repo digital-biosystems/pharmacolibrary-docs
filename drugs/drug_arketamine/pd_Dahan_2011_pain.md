@@ -20,7 +20,7 @@
 
 > S(+)-ketamine plasma concentrations inhibit pain scores via an effect compartment model, with an EC50 (C50) of 10.5 ng/ml and an effect compartment rate constant (ke0) of 0.063 1/day. The specific mathematical effect form is not specified in the available information.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Dahan_2011`
 - **model family:** `effect_compartment`
@@ -62,7 +62,7 @@ Dahan A et al., Population pharmacokinetic-pharmacodyna…, European journal of 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

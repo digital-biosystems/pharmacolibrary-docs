@@ -32,26 +32,8 @@ Brinzolamide is a carbonic anhydrase inhibitor used to treat glaucoma, especiall
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Lu_2015_reference](drugs/drug_vismodegib/Vismodegib_Lu2015_reference.md) | — | 1-compartment (no model) | 1 | Lu T et al., Semi-Mechanism-Based Population Pharmac…, CPT: pharmacometrics & syst… (2015) | [10.1002/psp4.12039](https://doi.org/10.1002/psp4.12039) |
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wong_2011_Gli1](drugs/drug_vismodegib/pd_Wong_2011_Gli1.md) | Gli1 ← vismodegib · direct Emax (saturable) effect | — | Wong H et al., Pharmacokinetic-pharmacodynamic analysi…, Clinical cancer research :… (2011) | [10.1158/1078-0432.CCR-11-0975](https://doi.org/10.1158/1078-0432.CCR-11-0975) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=brinzolamide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP2A6` substrate, `CYP2B6` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CA1 (inhibitor), CA2 (inhibitor), CA3 (inhibitor), CA4 (inhibitor), CA5A (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Naageshwaran_2021_aqueous_humor](drugs/drug_brinzolamide/Brinzolamide_Naageshwaran2021_aqueous_humor.md) | — | 2-compartment (no model) | 9 | Naageshwaran V et al., Comprehensive Ocular and Systemic Pharm…, Journal of pharmaceutical s… (2021) | [10.1016/j.xphs.2020.09.051](https://doi.org/10.1016/j.xphs.2020.09.051) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Naageshwaran_2021_iris_ciliary_body](drugs/drug_brinzolamide/Brinzolamide_Naageshwaran2021_iris_ciliary_body.md) | — | 2-compartment (no model) | 9 | Naageshwaran V et al., Comprehensive Ocular and Systemic Pharm…, Journal of pharmaceutical s… (2021) | [10.1016/j.xphs.2020.09.051](https://doi.org/10.1016/j.xphs.2020.09.051) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

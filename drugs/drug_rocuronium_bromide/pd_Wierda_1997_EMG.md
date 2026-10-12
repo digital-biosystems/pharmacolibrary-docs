@@ -20,7 +20,7 @@
 
 > The model describes rocuronium driving an effect compartment to inhibit neuromuscular block in a proportional manner, with an effect compartment constant (ke0) of 1.2 mg litre-1. The concentration-effect relationship is characterized by a slope of 5.7.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Wierda_1997`
 - **model family:** `effect_compartment`
@@ -62,7 +62,7 @@ Wierda JM et al., Pharmacokinetics and pharmacokinetic-dy…, British journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > Paliperidone (and risperidone, competing for the same receptors) brain concentrations drive D2 receptor occupancy (%) in rats via a TMDD receptor-binding model, with equilibrium dissociation constant KdD2 = 0.463 nM, association/dissociation rate constants konD2 = 1.45 1/nM/h and koffD2 = 0.671 1/h, and receptor capacity Bmax-D2 = 245 nM.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kozielska_2012`
 - **model family:** `tmdd`
@@ -67,7 +67,7 @@ Kozielska M et al., Pharmacokinetic-pharmacodynamic modelin…, Pharmaceutical r
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

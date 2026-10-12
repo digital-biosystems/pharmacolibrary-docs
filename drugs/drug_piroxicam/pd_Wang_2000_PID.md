@@ -19,7 +19,7 @@
 
 > Piroxicam plasma concentrations drive pain relief via an additive Emax model through a hypothetical effect compartment, with an equilibration rate constant (ke0) corresponding to a half-life of approximately 2.34 hours. The paper does not state specific numeric values for Imax, EC50, or other potency parameters.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Wang_2000`
 - **model family:** `effect_compartment`
@@ -52,7 +52,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

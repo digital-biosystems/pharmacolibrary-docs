@@ -5,7 +5,7 @@
 
 # nadroparin — `Nadroparin_Jaspers2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.917), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,7 +15,7 @@
 
 **Model:** No model was generated from this record.
 
-> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+> **Caveat** (`covariates_not_exercised`): Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 ### Reviewer guidance
 
@@ -23,7 +23,7 @@
 
 The record reports only apparent clearance (7.4 mL/min) and intercompartmental clearance (7.1 mL/min) for nadroparin in hemodialysis patients; clearance, volume of distribution, absorption rate constant and absorption lag time were missing, so placeholder values stood in and the model was held back rather than published with invented numbers. The absorption rate constant was defaulted, not reported in the source, and the first-order depot input reflects an apparent (F=1) parameterization. The covariate effects defined in the record (theta_q290_category 3864.2, theta_q82_category 34554.7) were not exercised: only the reference individual was simulated. Extracted — nadroparin: CL/F 7.4 mL/min, Q 7.1 mL/min.
 
-Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has anti-Xa, the second reading anti-Xa level. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -35,8 +35,7 @@ Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
 Jaspers TCC et al., Optimising the Nadroparin Dose for Thro…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-022-01162-x](https://doi.org/10.1007/s40262-022-01162-x)
 
-## Model component
-<dbs-pgx drug="nadroparin" model-id="Nadroparin_Jaspers2022_reference" status="needs_review" stale="true" population="hemodialysis patients" measured-compound="anti-Xa" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nadroparin" model-id="Nadroparin_Jaspers2022_reference" status="needs_review" stale="true" population="hemodialysis patients" measured-compound="anti-Xa" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted, plus 2 covariate effects.
@@ -74,15 +73,21 @@ Jaspers TCC et al., Optimising the Nadroparin Dose for Thro…, Clinical pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (12/12 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.917 (11/12 fields) | 1 |
 | `gpt-oss:120b` | confirmed | 1.0 (12/12 fields) | none |
 
-_All readers agree on the compared fields of this record._
+<details><summary>1 field discrepancy</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `screen.primary_analyte` | anti-Xa | anti-Xa level | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -121,9 +126,9 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_nadroparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jaspers_2022` / `Jaspers_2022::reference`)
-- model: `../../../knowledgebase/drugs/drug_nadroparin/models/modelica/_needs_review/Nadroparin_Jaspers2022_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_nadroparin/models/modelica/_needs_review/Nadroparin_Jaspers2022_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nadroparin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jaspers_2022` / `Jaspers_2022::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nadroparin/models/modelica/_needs_review/Nadroparin_Jaspers2022_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_nadroparin/models/modelica/_needs_review/Nadroparin_Jaspers2022_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -144,7 +149,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

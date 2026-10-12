@@ -20,7 +20,7 @@
 
 > Remimazolam effect-site concentrations (ng/ml) act on the categorical MOAA/S sedation score via an effect-compartment link with an equilibration half-time of 2.7 min; the half-maximum effect-site concentration is 695 ng/ml. The paper excerpts do not state the precise effect form (e.g. Emax or inhibitory production/elimination mechanism).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Schüttler_2020`
 - **model family:** `categorical`
@@ -62,7 +62,7 @@ Schüttler J et al., Pharmacokinetics and Pharmacodynamics o…, Anesthesiology 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

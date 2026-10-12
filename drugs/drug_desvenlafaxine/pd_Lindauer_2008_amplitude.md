@@ -20,7 +20,7 @@
 
 > The paper does not provide full text, so the mechanism linking desvenlafaxine concentrations to the amplitude of the pupillary light reflex cannot be confirmed from the excerpts; the record describes a tolerance model with a half-life of development and regression of tolerance of 30 minutes, but no potency values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are stated, and the driver compound is listed as O-desmethylvenlafaxine without a resolved concentration unit.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Lindauer_2008`
 - **model family:** `tolerance`
@@ -47,11 +47,11 @@ Lindauer A et al., Pharmacokinetic/pharmacodynamic modelli…, Clinical pharmaco
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

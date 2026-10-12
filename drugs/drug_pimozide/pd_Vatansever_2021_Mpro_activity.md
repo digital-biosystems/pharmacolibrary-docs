@@ -21,7 +21,7 @@
 
 > Pimozide directly inhibits SARS-CoV-2 main protease (Mpro) activity in a concentration-dependent manner, with an IC50 of 42 ± 2 µM and a Hill slope of 3.1 ± 0.4; the paper does not describe a kinetic mechanism (e.g., kin/kout or effect compartment) beyond direct enzyme inhibition.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Vatansever_2021`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Vatansever EC et al., Bepridil is potent against SARS-CoV-2 i…, Proceedings of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

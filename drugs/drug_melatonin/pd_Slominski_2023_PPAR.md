@@ -22,7 +22,7 @@
 
 > Melatonin concentrations (M) act as an agonist on the PPARγ ligand-binding domain in a TR-FRET coactivator assay, stimulating PPAR-mediated activation with an Emax-type relationship; the paper reports an EC50 of 1.2 × 10−3 ± 0.3 × 10−3 M (n = 2), with stimulation occurring in the 10−4–10−3 M range. No kinetic parameters (kin, kout, ke0) or Imax/IC50 values are given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Slominski_2023`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Slominski AT et al., Melatonin and Its Metabolites Can Serve…, International j
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

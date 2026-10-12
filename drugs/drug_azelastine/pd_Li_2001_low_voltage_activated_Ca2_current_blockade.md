@@ -21,7 +21,7 @@
 
 > Azelastine blocks low-voltage-activated Ca2+ currents with a sigmoid Emax-type inhibitory concentration-response relationship; the paper reports an IC50 of 24 microM, but no full text is available to confirm the mechanism or additional parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Li_2001`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Li S et al., Effects of azelastine on contractility,…, European journal of pha
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02D&quot;,&quot;href&quot;:&quot;atc/C02D.md&quot;},{&quot;label&quot;:&quot;hydralazine&quot;,&quot;href&quot;:&quot;drugs/drug_hydralazine/&quot;},{&quot;label&quot;:&quot;guideline \u00b7 PGx NAT2&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# NAT2 — PGx  <span class="pk-badge pk-badge--neutral" title="the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.">guideline estimate</span>
+# NAT2 — PGx  <span class="pk-badge pk-badge--neutral" title="CPIC/DPWG-derived estimate, not a primary-paper estimate.">guideline estimate</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -9,7 +9,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-- **what it is:** guideline estimate — the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.
+- **what it is:** guideline estimate — CPIC/DPWG-derived estimate, not a primary-paper estimate.
 - **source:** the CPIC dosing guideline ([ClinPGx PA166416341](https://www.clinpgx.org/guidelineAnnotation/PA166416341))
 - **gene:** NAT2
 - **mechanism:** metabolism — the gene's enzyme clears the drug
@@ -48,7 +48,7 @@ not matched (stem guideline)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

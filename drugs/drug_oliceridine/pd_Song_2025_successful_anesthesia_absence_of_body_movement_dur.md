@@ -19,7 +19,7 @@
 
 > The relationship between the oliceridine dose and the probability of successful anesthesia is described using dose-effect quantal parameters, with an ED50 of 0.01 mg kg−1 and an ED90 of 0.025 mg kg−1. The specific mechanistic form of the dose-response curve (e.g., Emax or Hill slope) is not detailed in the available excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Song_2025`
 - **model family:** `categorical`
@@ -61,7 +61,7 @@ Song CZ et al., Determination of the 90% Effective Dose…, Drug design, develop
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

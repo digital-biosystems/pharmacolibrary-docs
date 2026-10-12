@@ -20,7 +20,7 @@
 
 > Pancuronium concentrations (in micrograms X ml-1) inhibit the continuous EMG response via a sigmoid Emax model. The reported potency (ECp50) is 0.17 +/- 0.06 micrograms X ml-1, but the paper does not provide Emax, gamma, or rate constants.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Evans_1984`
 - **model family:** `sigmoid_emax`
@@ -61,7 +61,7 @@ Evans MA et al., Pharmacokinetic and pharmacodynamic mod…, European journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

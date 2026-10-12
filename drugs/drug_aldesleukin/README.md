@@ -24,26 +24,14 @@ Aldesleukin, a form of interleukin-2, is an immunostimulant used to treat cancer
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Chen_2000_reference](drugs/drug_aldesleukin/Aldesleukin_Chen2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Chen SA et al., Plasma and lymph pharmacokinetics of re…, The Journal of pharmacology… (2000) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Lotze_1985_reference](drugs/drug_aldesleukin/Aldesleukin_Lotze1985_reference.md) | — | 1-compartment (no model) | 1 | Lotze MT et al., In vivo administration of purified huma…, Journal of immunology (Balt… (1985) | — |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Chen_2000_reference](drugs/drug_aldesleukin/Aldesleukin_Chen2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Chen SA et al., Plasma and lymph pharmacokinetics of re…, The Journal of pharmacology… (2000) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Lotze_1985_reference](drugs/drug_aldesleukin/Aldesleukin_Lotze1985_reference.md) | — | 1-compartment (no model) | 1 | Lotze MT et al., In vivo administration of purified huma…, Journal of immunology (Balt… (1985) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">cattle</span> | [Nagi_1989_DNA_synthesis](drugs/drug_aldesleukin/pd_Nagi_1989_DNA_synthesis.md) | lymphocyte proliferation ← rHIL-2 · stimulation effect | — | Nagi AM et al., Recombinant human interleukin-2-induced…, Canadian journal of veterin… (1989) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=aldesleukin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP2E1` inhibitor, `CYP3A4` inhibitor, `XDH` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor, `XDH` inducer | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: IL2 (modulator), IL2RA (modulator), IL2RA (target), IL2RB (modulator), IL2RB (target), IL2RG (target), PLA2G4A (inducer), PTGS2 (inducer).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">cattle</span> | [Nagi_1989_DNA_synthesis](drugs/drug_aldesleukin/pd_Nagi_1989_DNA_synthesis.md) | lymphocyte proliferation ← rHIL-2 · stimulation effect | — | Nagi AM et al., Recombinant human interleukin-2-induced…, Canadian journal of veterin… (1989) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

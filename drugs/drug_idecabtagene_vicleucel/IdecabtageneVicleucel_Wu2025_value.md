@@ -4,7 +4,7 @@
 
 # idecabtagene vicleucel — `IdecabtageneVicleucel_Wu2025_value`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Wu F et al., Population Cellular Kinetics of Idecabt…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01531-2](https://doi.org/10.1007/s40262-025-01531-2)
 
-## Model component
-<dbs-pgx drug="idecabtagene vicleucel" model-id="IdecabtageneVicleucel_Wu2025_value" status="rejected" stale="false" population="patients with triple-class-exposed relapsed/refractory multiple myeloma" measured-compound="idecabtagene_vicleucel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="idecabtagene vicleucel" model-id="IdecabtageneVicleucel_Wu2025_value" status="rejected" stale="false" population="patients with triple-class-exposed relapsed/refractory multiple myeloma" measured-compound="idecabtagene_vicleucel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -134,18 +133,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_idecabtagene_vicleucel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wu_2025` / `Wu_2025::value`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_idecabtagene_vicleucel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wu_2025` / `Wu_2025::value`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

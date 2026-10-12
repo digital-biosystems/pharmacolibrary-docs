@@ -33,23 +33,9 @@ Zalcitabine is a nucleoside reverse transcriptase inhibitor that was used to tre
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span> | [Adams_1998_reference](drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Adams JM et al., Zalcitabine population pharmacokinetics…, Antimicrobial agents and ch… (1998) | [10.1128/AAC.42.2.409](https://doi.org/10.1128/AAC.42.2.409) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Ibrahim_1991_reference](drugs/drug_zalcitabine/Zalcitabine_Ibrahim1991_reference.md) | ▶ model + simulator | 1-compartment, oral | 7 | Ibrahim SS et al., Pharmacokinetics of 2',3'-dideoxycytidi…, Journal of pharmaceutical s… (1991) | [10.1002/jps.2600800110](https://doi.org/10.1002/jps.2600800110) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.98).">human + animal</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Kelley_1987_reference](drugs/drug_zalcitabine/Zalcitabine_Kelley1987_reference.md) | — | 1-compartment (no model) | 3 | Kelley JA et al., The disposition and metabolism of 2',3'…, Drug metabolism and disposi… (1987) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=zalcitabine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` unknown, `SLC29A1` unknown | DrugBank actor |
-| distribution | liver | `SLC29A1` unknown | DrugBank actor |
-| metabolism | kidney | `SLC22A7` substrate | DrugBank actor |
-| metabolism | liver | `SLC22A7` substrate | DrugBank actor |
-| excretion | kidney | `SLC22A6` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: DCK (substrate), SLC29A2 (unknown).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span> | [Adams_1998_reference](drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Adams JM et al., Zalcitabine population pharmacokinetics…, Antimicrobial agents and ch… (1998) | [10.1128/AAC.42.2.409](https://doi.org/10.1128/AAC.42.2.409) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Ibrahim_1991_reference](drugs/drug_zalcitabine/Zalcitabine_Ibrahim1991_reference.md) | ▶ model + simulator | 1-compartment, oral | 7 | Ibrahim SS et al., Pharmacokinetics of 2',3'-dideoxycytidi…, Journal of pharmaceutical s… (1991) | [10.1002/jps.2600800110](https://doi.org/10.1002/jps.2600800110) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.98).">human + animal</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Kelley_1987_reference](drugs/drug_zalcitabine/Zalcitabine_Kelley1987_reference.md) | — | 1-compartment (no model) | 3 | Kelley JA et al., The disposition and metabolism of 2',3'…, Drug metabolism and disposi… (1987) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

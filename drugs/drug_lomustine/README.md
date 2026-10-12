@@ -32,21 +32,7 @@ Lomustine is an alkylating anticancer drug used to treat cancers such as brain c
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Zhuang_2011_reference](drugs/drug_lomustine/Lomustine_Zhuang2011_reference.md) | — | 1-compartment (no model) | 3 | Zhuang L et al., HPLC method validation for the quantifi…, European journal of drug me… (2011) | [10.1007/s13318-011-0030-4](https://doi.org/10.1007/s13318-011-0030-4) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lomustine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2D6` inhibitor, `CYP3A4` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: DNA (cross-linking/alkylation), STMN4 (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Zhuang_2011_reference](drugs/drug_lomustine/Lomustine_Zhuang2011_reference.md) | — | 1-compartment (no model) | 3 | Zhuang L et al., HPLC method validation for the quantifi…, European journal of drug me… (2011) | [10.1007/s13318-011-0030-4](https://doi.org/10.1007/s13318-011-0030-4) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

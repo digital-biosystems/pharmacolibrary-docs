@@ -21,7 +21,7 @@
 
 > Imipramine concentrations (nmol/L) inhibit [3H]5-HT uptake, described by an inhibitory Emax model with proportional effect; the paper reports an IC50 of 1,795 ± 437 nmol/L. The excerpts do not state the uptake-inhibition mechanism beyond SERT blockade, though they show imipramine also causes concentration- and time-dependent [3H]5-HT efflux from rSERT-expressing cells.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Sitte_2000`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Sitte HH et al., Characterization of carrier-mediated ef…, Journal of neuroche
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

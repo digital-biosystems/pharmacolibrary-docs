@@ -28,23 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Barra_2018_pain_associated_to_endometriosis](drugs/drug_dienogest/pd_Barra_2018_pain_associated_to_endometriosis.md) | pain associated to endometriosis ← dienogest · inhibition effect | — | Barra F et al., Current understanding on pharmacokineti…, Expert opinion on drug meta… (2018) | [10.1080/17425255.2018.1461840](https://doi.org/10.1080/17425255.2018.1461840) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Jensen_2023_progestin_serum_concentrations](drugs/drug_dienogest/pd_Jensen_2023_progestin_serum_concentrations.md) | progestin serum concentrations ← dienogest · model not identified | — | Jensen JT et al., Development and validation of an expand…, Contraception (2023) | [10.1016/j.contraception.2023.110130](https://doi.org/10.1016/j.contraception.2023.110130) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dienogest).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| — | prostate gland | `AR` target | DrugBank actor |
-
-<sub>Actors without a tissue in the table: PGR (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Barra_2018_pain_associated_to_endometriosis](drugs/drug_dienogest/pd_Barra_2018_pain_associated_to_endometriosis.md) | pain associated to endometriosis ← dienogest · inhibition effect | — | Barra F et al., Current understanding on pharmacokineti…, Expert opinion on drug meta… (2018) | [10.1080/17425255.2018.1461840](https://doi.org/10.1080/17425255.2018.1461840) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Jensen_2023_progestin_serum_concentrations](drugs/drug_dienogest/pd_Jensen_2023_progestin_serum_concentrations.md) | progestin serum concentrations ← dienogest · model not identified | — | Jensen JT et al., Development and validation of an expand…, Contraception (2023) | [10.1016/j.contraception.2023.110130](https://doi.org/10.1016/j.contraception.2023.110130) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

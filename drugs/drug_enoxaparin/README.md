@@ -24,20 +24,9 @@ Enoxaparin is a low molecular weight heparin used as an antithrombotic to preven
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span> | [Oualha_2018_reference](drugs/drug_enoxaparin/Enoxaparin_Oualha2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Oualha M et al., Population pharmacokinetics of enoxapar…, British journal of clinical… (2018) | [10.1111/bcp.13543](https://doi.org/10.1111/bcp.13543) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Zufferey_2021_reference](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_reference.md) | — | 1-compartment (no model) | 1 | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Derbalah_2022_reference](drugs/drug_enoxaparin/Enoxaparin_Derbalah2022_reference.md) | — | 1-compartment (no model) | 0 | Derbalah A et al., Optimal dosing of enoxaparin in overwei…, British journal of clinical… (2022) | [10.1111/bcp.15459](https://doi.org/10.1111/bcp.15459) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=enoxaparin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: F10 (inhibitor), F2 (inhibitor), MPO (other), SERPINC1 (potentiator).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span> | [Oualha_2018_reference](drugs/drug_enoxaparin/Enoxaparin_Oualha2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Oualha M et al., Population pharmacokinetics of enoxapar…, British journal of clinical… (2018) | [10.1111/bcp.13543](https://doi.org/10.1111/bcp.13543) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Zufferey_2021_reference](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_reference.md) | — | 1-compartment (no model) | 1 | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Derbalah_2022_reference](drugs/drug_enoxaparin/Enoxaparin_Derbalah2022_reference.md) | — | 1-compartment (no model) | 0 | Derbalah A et al., Optimal dosing of enoxaparin in overwei…, British journal of clinical… (2022) | [10.1111/bcp.15459](https://doi.org/10.1111/bcp.15459) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

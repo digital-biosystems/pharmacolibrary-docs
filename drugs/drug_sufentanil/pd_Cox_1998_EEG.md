@@ -18,11 +18,11 @@
 
 **As extracted:** Sufentanil (concentrations from the PK model of Borsuk_2017) drives Amplitudes in the 0.5 to 4.5 Hz frequency band of the electroencephalogram (EEG) (in microV): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The paper does not specify the mechanism by which sufentanil affects EEG amplitudes in the 0.5 to 4.5 Hz band. The model describes a direct sigmoid Emax relationship where the drug concentration stimulates the response, with an EC50 of 0.29 ng/ml and an Emax of 104 microV.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Cox_1998`
 - **model family:** `sigmoid_emax`
@@ -98,7 +98,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

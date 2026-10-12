@@ -20,7 +20,7 @@
 
 > Brexpiprazole dose (mg/day) was related to prolactin change from baseline (mean difference vs placebo/0 mg, ng/mL) via a dose–response meta-analysis (restricted cubic splines), with an estimated maximum MD of prolactin of 2.11 ng/mL overall (6.43 ng/mL in females, 0.29 ng/mL in males); the paper does not state a specific PD model or potency parameters (Imax/IC50/EC50/kin/kout/ke0) for brexpiprazole, and notes that the exact pharmacological mechanisms of prolactin alterations are not fully understood, though D2 receptor binding is implicated.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Lin_2025`
 - **model family:** `unknown`
@@ -63,7 +63,7 @@ Lin X et al., Antipsychotic-Related Prolactin Changes…, CNS drugs (2025)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

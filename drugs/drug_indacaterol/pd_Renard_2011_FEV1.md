@@ -16,11 +16,11 @@
 
 **As extracted:** Indacaterol (the dose) drives trough FEV1 (improvement vs placebo, steady state) (in mL): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Indacaterol dose (18.75–600 μg once daily) was related to trough FEV1 improvement vs placebo (mL) at steady state by a direct Emax (stimulatory) dose-response model, with Emax 177 mL and ED50 28 μg; the paper does not describe a mechanistic production/elimination or effect-compartment structure, but notes baseline FEV1 (disease severity) strongly influences both Emax and ED50.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Renard_2011`
 - **model family:** `emax`
@@ -97,7 +97,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

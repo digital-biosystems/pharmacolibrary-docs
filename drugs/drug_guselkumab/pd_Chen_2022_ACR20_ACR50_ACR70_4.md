@@ -16,11 +16,11 @@
 
 **As extracted:** Guselkumab (concentrations from this paper's PK model) drives American College of Rheumatology [ACR] 20%, 50%, and 70% improvement criteria: indirect response — drug inhibits the production of American College of Rheumatology [ACR] 20%, 50%, and 70% improvement criteria.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The model describes an indirect response mechanism where guselkumab serum concentrations inhibit the production of the clinical response (ACR improvement) with an EC50 of 0.173 µg/ml and a kout of 0.0218 1/day. The paper characterizes this as a latent variable indirect response model where the drug exposure drives the time course of the ACR response, consistent with the proportional inhibition parameter set (PBMX=4.94, DEMX=2.75).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Chen_2022`
 - **model family:** `indirect_response_i`
@@ -100,7 +100,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

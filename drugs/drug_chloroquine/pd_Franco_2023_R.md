@@ -18,11 +18,11 @@
 
 **As extracted:** Chloroquine (concentrations from the PK model of Abd-Rahman_2020) drives JIMT-1 cell viability (% cell viability) (in %): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Chloroquine (5–50 μM) inhibits JIMT-1 cell viability (%), described by an inhibitory sigmoid Emax (Hill) function with baseline R0 = 98.2%, IC50 = 24.4 μM, Imax = 1 (fixed) and Hill coefficient γ = 1.7. In the time-course PD model, chloroquine stimulates cell death via transit compartments (2 compartments) with Smax = 0.0405 h⁻¹ and SC50 = 26.3 μM.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Franco_2023`
 - **model family:** `sigmoid_emax`
@@ -102,7 +102,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

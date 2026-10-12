@@ -33,19 +33,7 @@ Methocarbamol is a centrally acting muscle relaxant used for painful muscle spas
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Rumpler_2014_reference](drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference.md) | ▶ model + simulator | 1-compartment, oral | 8 | Rumpler MJ et al., The pharmacokinetics of methocarbamol a…, Journal of veterinary pharm… (2014) | [10.1111/jvp.12068](https://doi.org/10.1111/jvp.12068) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=methocarbamol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CA1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Rumpler_2014_reference](drugs/drug_methocarbamol/Methocarbamol_Rumpler2014_reference.md) | ▶ model + simulator | 1-compartment, oral | 8 | Rumpler MJ et al., The pharmacokinetics of methocarbamol a…, Journal of veterinary pharm… (2014) | [10.1111/jvp.12068](https://doi.org/10.1111/jvp.12068) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

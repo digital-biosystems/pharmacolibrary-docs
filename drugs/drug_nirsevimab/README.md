@@ -23,7 +23,7 @@ Nirsevimab is a monoclonal antibody used to protect against respiratory syncytia
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Clegg_2024_reference](drugs/drug_nirsevimab/Nirsevimab_Clegg2024_reference.md) | — | 1-compartment (no model) | 0 | Clegg L et al., Population Pharmacokinetics of Nirsevim…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2401](https://doi.org/10.1002/jcph.2401) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Clegg_2024_reference](drugs/drug_nirsevimab/Nirsevimab_Clegg2024_reference.md) | — | 1-compartment (no model) | 0 | Clegg L et al., Population Pharmacokinetics of Nirsevim…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2401](https://doi.org/10.1002/jcph.2401) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

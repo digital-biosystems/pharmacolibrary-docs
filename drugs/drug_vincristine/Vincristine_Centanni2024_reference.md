@@ -5,7 +5,7 @@
 
 # vincristine — `Vincristine_Centanni2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.933). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.933). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -125,9 +125,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_vincristine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Centanni_2024` / `Centanni_2024::reference`)
-- model: `../../../knowledgebase/drugs/drug_vincristine/models/modelica/_needs_review/Vincristine_Centanni2024_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_vincristine/models/modelica/_needs_review/Vincristine_Centanni2024_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_vincristine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Centanni_2024` / `Centanni_2024::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_vincristine/models/modelica/_needs_review/Vincristine_Centanni2024_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_vincristine/models/modelica/_needs_review/Vincristine_Centanni2024_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -139,13 +139,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_vincristine/Vincristine_Centanni2024_reference/Vincristine_Centanni2024_reference_modelica.zip" download>Vincristine_Centanni2024_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_vincristine/Vincristine_Centanni2024_reference/Vincristine_Centanni2024_reference_fmi.zip" download>Vincristine_Centanni2024_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_vincristine/Vincristine_Centanni2024_reference/Vincristine_Centanni2024_reference_matlab.zip" download>Vincristine_Centanni2024_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_vincristine/Vincristine_Centanni2024_reference/Vincristine_Centanni2024_reference_matlab_simbio.zip" download>Vincristine_Centanni2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_vincristine/Vincristine_Centanni2024_reference/Vincristine_Centanni2024_reference_matlab_simbio.zip" download>Vincristine_Centanni2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_vincristine/Vincristine_Centanni2024_reference/Vincristine_Centanni2024_reference_sbml.zip" download>Vincristine_Centanni2024_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_vincristine/Vincristine_Centanni2024_reference/Vincristine_Centanni2024_reference_cellml.zip" download>Vincristine_Centanni2024_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_vincristine/Vincristine_Centanni2024_reference/Vincristine_Centanni2024_reference.svg" alt="Vincristine_Centanni2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_vincristine/Vincristine_Centanni2024_reference/Vincristine_Centanni2024_reference.svg" alt="Vincristine_Centanni2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

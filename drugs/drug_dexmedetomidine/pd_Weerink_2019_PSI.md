@@ -20,7 +20,7 @@
 
 > Dexmedetomidine plasma concentrations (ng/ml) inhibit the Patient State Index (PSI) via an Emax-type model, with an EC50 of 0.49 [0.20 to 0.99] ng/ml. The excerpts do not state the mechanism beyond this inhibitory Emax effect, and no Imax, kin, kout, ke0, or gamma values are given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Weerink_2019`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Weerink MAS et al., Pharmacodynamic Interaction of Remifent…, Anesthesiology (
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

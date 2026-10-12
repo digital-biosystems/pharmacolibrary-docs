@@ -5,7 +5,7 @@
 
 # fluconazole — `Fluconazole_Vuong2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -27,8 +27,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 Vuong ML et al., A fluconazole population pharmacokineti…, Infection (2026)
   ·  DOI: [10.1007/s15010-025-02663-0](https://doi.org/10.1007/s15010-025-02663-0)
 
-## Model component
-<dbs-pgx drug="fluconazole" model-id="Fluconazole_Vuong2026_reference" status="needs_review" stale="false" population="critically ill patients" measured-compound="fluconazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluconazole" model-id="Fluconazole_Vuong2026_reference" status="needs_review" stale="false" population="critically ill patients" measured-compound="fluconazole" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -104,7 +103,7 @@ Vuong ML et al., A fluconazole population pharmacokineti…, Infection (2026)
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_fluconazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vuong_2026` / `Vuong_2026::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_fluconazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vuong_2026` / `Vuong_2026::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -125,7 +124,7 @@ Vuong ML et al., A fluconazole population pharmacokineti…, Infection (2026)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

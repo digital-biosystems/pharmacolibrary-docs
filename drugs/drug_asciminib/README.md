@@ -33,36 +33,14 @@ Asciminib is a BCR-ABL tyrosine kinase inhibitor used to treat chronic myeloid l
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Darstein_2025_reference](drugs/drug_asciminib/Asciminib_Darstein2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Darstein C et al., Population pharmacokinetic modeling of…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04755-y](https://doi.org/10.1007/s00280-025-04755-y) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Darstein_2025_reference](drugs/drug_asciminib/Asciminib_Darstein2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Darstein C et al., Population pharmacokinetic modeling of…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04755-y](https://doi.org/10.1007/s00280-025-04755-y) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Sy_2025_MMR](drugs/drug_asciminib/pd_Sy_2025_MMR.md) | week-48 major molecular response ← asciminib · direct linear effect | — | Sy SKB et al., Exposure-response analysis of asciminib…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04806-4](https://doi.org/10.1007/s00280-025-04806-4) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Sy_2025_worsening_event_for_grade_3_lipase_increase](drugs/drug_asciminib/pd_Sy_2025_worsening_event_for_grade_3_lipase_increase.md) | worsening event for grade ≥ 3 lipase increase ← asciminib · direct linear effect | — | Sy SKB et al., Exposure-response analysis of asciminib…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04806-4](https://doi.org/10.1007/s00280-025-04806-4) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=asciminib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
-| metabolism | liver | `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP3A4` inhibitor/substrate, `SLC22A1` inhibitor, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor, `UGT1A1` inhibitor, `UGT2B17` substrate, `UGT2B7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `UGT1A1` inhibitor, `UGT2B17` substrate, `UGT2B7` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ABL1 (allosteric modulator), ABL1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> | [Sy_2025_MMR](drugs/drug_asciminib/pd_Sy_2025_MMR.md) | week-48 major molecular response ← asciminib · direct linear effect | — | Sy SKB et al., Exposure-response analysis of asciminib…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04806-4](https://doi.org/10.1007/s00280-025-04806-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Sy_2025_worsening_event_for_grade_3_lipase_increase](drugs/drug_asciminib/pd_Sy_2025_worsening_event_for_grade_3_lipase_increase.md) | worsening event for grade ≥ 3 lipase increase ← asciminib · direct linear effect | — | Sy SKB et al., Exposure-response analysis of asciminib…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04806-4](https://doi.org/10.1007/s00280-025-04806-4) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

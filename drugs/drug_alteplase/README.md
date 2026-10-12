@@ -27,18 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Martin_1992_thrombolysis](drugs/drug_alteplase/pd_Martin_1992_thrombolysis.md) | thrombolysis ← alteplase · direct linear effect | — | Martin U et al., Pharmacokinetic and thrombolytic proper…, Naunyn-Schmiedeberg's archi… (1992) | [10.1007/BF00167579](https://doi.org/10.1007/BF00167579) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=alteplase).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: FGA (binder), FGG (binder), PLG (activator), SERPINE1 (unknown).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | [Martin_1992_thrombolysis](drugs/drug_alteplase/pd_Martin_1992_thrombolysis.md) | thrombolysis ← alteplase · direct linear effect | — | Martin U et al., Pharmacokinetic and thrombolytic proper…, Naunyn-Schmiedeberg's archi… (1992) | [10.1007/BF00167579](https://doi.org/10.1007/BF00167579) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

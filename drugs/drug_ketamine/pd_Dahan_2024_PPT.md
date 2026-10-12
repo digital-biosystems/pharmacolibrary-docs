@@ -20,7 +20,7 @@
 
 > The paper models the effect of S- and R-ketamine (and their metabolites) on pain pressure threshold (PPT) using an effect compartment model with an additive mechanism, where the drug stimulates PPT from a baseline of 48.9 N. Key parameters include C100 values of 0.47 nmol/mL for S-ketamine and 0.25 nmol/mL for S-norketamine, a potency factor of 0.52 for S-versus-R enantiomers, a gamma (γ) of 2.4, and an effect compartment half-life (t1/2ke0) of 13.2 min.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Dahan_2024`
 - **model family:** `effect_compartment`
@@ -52,11 +52,11 @@ Dahan A et al., Nitric Oxide Donor Sodium Nitroprusside…, ACS pharmacology & t
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

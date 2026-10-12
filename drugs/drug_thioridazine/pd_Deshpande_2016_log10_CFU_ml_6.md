@@ -21,7 +21,7 @@
 
 > Thioridazine concentrations (mg/liter) inhibit intracellular MAC burden (log10 CFU/ml) in 12-well plate time-kill studies via an inhibitory sigmoid Emax model, consistent with killing through inhibition of the mycobacterial electron transport chain; Emax was 3.2 log10 CFU/ml with an EC50 of 10.53 mg/liter (r2 = 0.999).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Deshpande_2016`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Deshpande D et al., Thioridazine as Chemotherapy for Mycoba…, Antimicrobial ag
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

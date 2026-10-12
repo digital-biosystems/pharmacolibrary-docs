@@ -4,7 +4,7 @@
 
 # mitomycin — `Mitomycin_Rump2002_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -28,8 +28,7 @@ Independently confirmed by `qwen3.8-27b`.
 Rump AF et al., Pharmacokinetics of intra-arterial mito…, European journal of clinica… (2002)
   ·  DOI: [10.1007/s00228-002-0496-8](https://doi.org/10.1007/s00228-002-0496-8)
 
-## Model component
-<dbs-pgx drug="mitomycin" model-id="Mitomycin_Rump2002_reference" status="needs_review" stale="false" population="patients with liver metastases undergoing chemoembolization" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Rump2002_reference" status="needs_review" stale="false" population="patients with liver metastases undergoing chemoembolization" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.
@@ -113,7 +112,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_mitomycin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rump_2002` / `Rump_2002::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mitomycin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rump_2002` / `Rump_2002::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -134,7 +133,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

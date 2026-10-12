@@ -19,7 +19,7 @@
 
 > The paper does not describe the mechanism by which naproxen (the active driver for naproxcinod) affects pain intensity, though the model fits a sigmoidal Emax inhibition with an EC50 of 0.135 µmol/L. The baseline pain intensity is recorded as 52.7 mm with a maximal placebo effect of 20.2%.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Björnsson_2011`
 - **model family:** `sigmoid_emax`
@@ -48,11 +48,11 @@ Björnsson MA et al., Modelling of pain intensity and informa…, British journa
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

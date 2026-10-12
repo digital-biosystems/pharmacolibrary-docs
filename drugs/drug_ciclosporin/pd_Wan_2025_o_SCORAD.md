@@ -16,11 +16,11 @@
 
 **As extracted:** Ciclosporin (concentrations from the PK model of Kauv_2025) drives o-SCORAD scores: direct linear effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The paper describes a linear association where trough ciclosporin concentrations are associated with o-SCORAD scores, indicated by a coefficient (β) of -4.495, but it does not specify the pharmacodynamic mechanism (e.g., inhibition of production, elimination, or Emax) or key potency and rate values (e.g., IC50, EC50, ke0) in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Wan_2025`
 - **model family:** `linear`
@@ -94,7 +94,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

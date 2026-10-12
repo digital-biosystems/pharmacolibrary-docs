@@ -5,7 +5,7 @@
 
 # bleomycin — `Bleomycin_Hall1982_patients_with`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (confirmed, agreement 1.0), gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial 1/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (confirmed, agreement 1.0), gpt-oss:120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 ## Citation
 StephenWHall Department of Medicine Reno School of Medicine Reno Veterans Administration University of Nevada 1000 Locust St. 89520 Reno Nevada et al., ancer hemotherapy harmacology (1982)
 
-## Model component
-<dbs-pgx drug="bleomycin" model-id="Bleomycin_Hall1982_patients_with" status="needs_review" stale="false" population="cancer patients" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Hall1982_patients_with" status="needs_review" stale="false" population="cancer patients" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -114,7 +113,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_bleomycin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hall_1982` / `Hall_1982::patients_with`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bleomycin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hall_1982` / `Hall_1982::patients_with`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -135,7 +134,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -21,7 +21,7 @@
 
 > Pentamidine concentrations (μM) inhibit P. carinii viability (% inhibition measured by SYTO-13 after 4 days of incubation), described by a sigmoid Emax (Hill) model with EC50 = 0.45 ± 0.05 μM and slope 1.20 ± 0.12; the paper does not state a mechanistic production/elimination or effect-compartment structure, only a direct concentration-effect relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Standaert-Vitse_2015`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Standaert-Vitse A et al., SYTO-13, a Viability Marker as a New To…, PloS one (
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

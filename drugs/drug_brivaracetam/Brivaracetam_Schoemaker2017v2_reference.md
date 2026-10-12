@@ -5,7 +5,7 @@
 
 # brivaracetam — `Brivaracetam_Schoemaker2017v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 Schoemaker R et al., Brivaracetam population pharmacokinetic…, European journal of clinica… (2017)
   ·  DOI: [10.1007/s00228-017-2230-6](https://doi.org/10.1007/s00228-017-2230-6)
 
-## Model component
-<dbs-pgx drug="brivaracetam" model-id="Brivaracetam_Schoemaker2017v2_reference" status="needs_review" stale="true" population="children with epilepsy aged 1 month to 16 years" measured-compound="brivaracetam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brivaracetam" model-id="Brivaracetam_Schoemaker2017v2_reference" status="needs_review" stale="true" population="children with epilepsy aged 1 month to 16 years" measured-compound="brivaracetam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -107,7 +106,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_brivaracetam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Schoemaker_2017_2` / `Schoemaker_2017_2::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_brivaracetam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Schoemaker_2017_2` / `Schoemaker_2017_2::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -128,7 +127,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

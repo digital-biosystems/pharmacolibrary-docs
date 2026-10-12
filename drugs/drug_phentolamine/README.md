@@ -28,17 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Shiraki_1998_cell_viability](drugs/drug_phentolamine/pd_Shiraki_1998_cell_viability.md) | cell viability ← phentolamine · direct Emax (saturable) effect | — | Shiraki Y, [Cell death induced by noradrenaline in…, Nihon Ika Daigaku zasshi (1998) | [10.1272/jnms1923.65.34](https://doi.org/10.1272/jnms1923.65.34) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=phentolamine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), ADRA2A (target), DRD2 (target), KCNJ11 (blocker).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Shiraki_1998_cell_viability](drugs/drug_phentolamine/pd_Shiraki_1998_cell_viability.md) | cell viability ← phentolamine · direct Emax (saturable) effect | — | Shiraki Y, [Cell death induced by noradrenaline in…, Nihon Ika Daigaku zasshi (1998) | [10.1272/jnms1923.65.34](https://doi.org/10.1272/jnms1923.65.34) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

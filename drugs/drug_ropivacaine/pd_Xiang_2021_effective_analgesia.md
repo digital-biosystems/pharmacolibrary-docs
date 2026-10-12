@@ -20,7 +20,7 @@
 
 > The binary response of effective analgesia (VAS ≤ 3) was modeled as a direct function of epidural ropivacaine concentration using a probit method, yielding an EC50 of 0.085% with sufentanil and 0.109% alone, and an EC95 of 0.096% and 0.116% respectively. The paper does not specify a pharmacodynamic mechanism such as Emax or effect compartments, relying instead on up-and-down sequential allocation to estimate these potency values.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Xiang_2021`
 - **model family:** `categorical`
@@ -64,7 +64,7 @@ Xiang B et al., Adjuvant Sufentanil Decreased the EC50…, Drug design, developm
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

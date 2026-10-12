@@ -16,11 +16,11 @@
 
 **As extracted:** Bupivacaine (concentrations from this paper's PK model) drives warmth detection threshold (in C): direct linear effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The linear model describes a direct additive effect where bupivacaine plasma concentration (in μg/L) stimulates the warmth detection threshold (in °C) with a slope of 0.0418 °C·L·μg⁻¹ from a baseline of 36.7 °C. The paper does not specify the physiological mechanism of this effect, but notes that the linear relationship was the best fit among tested models.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Storgaard_2024`
 - **model family:** `linear`
@@ -87,7 +87,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

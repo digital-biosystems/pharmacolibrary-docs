@@ -93,7 +93,7 @@ Adoke Y et al., A randomized, double-blind, phase 2b st…, Malaria journal (202
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs_non_atc/drug_artefenomel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Adoke_2021` / `Adoke_2021::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs_non_atc/drug_artefenomel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Adoke_2021` / `Adoke_2021::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -114,7 +114,7 @@ Adoke Y et al., A randomized, double-blind, phase 2b st…, Malaria journal (202
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

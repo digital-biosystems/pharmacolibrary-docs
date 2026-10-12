@@ -19,7 +19,7 @@
 
 > The paper does not provide excerpts, so the mechanism linking clobazam exposure to EEG amplitude in the 12-30 Hz band cannot be stated beyond the record: a sigmoid Emax model with stimulation (increase) of EEG amplitude driven by clobazam AUC0-inf (ng·h/mL); no Imax, IC50, EC50, Emax, gamma, kin, kout, or ke0 values are available.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Danhof_1992`
 - **model family:** `sigmoid_emax`
@@ -52,7 +52,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

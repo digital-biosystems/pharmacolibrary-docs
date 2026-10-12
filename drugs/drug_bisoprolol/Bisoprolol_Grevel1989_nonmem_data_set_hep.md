@@ -5,7 +5,7 @@
 
 # bisoprolol — `Bisoprolol_Grevel1989_nonmem_data_set_hep`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 Grevel J et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (1989)
   ·  DOI: [10.2165/00003088-198917010-00005](https://doi.org/10.2165/00003088-198917010-00005)
 
-## Model component
-<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Grevel1989_nonmem_data_set_hep" status="needs_review" stale="false" population="patients with essential hypertension, renal impairment, and hepatic impairment" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Grevel1989_nonmem_data_set_hep" status="needs_review" stale="false" population="patients with essential hypertension, renal impairment, and hepatic impairment" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -113,7 +112,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_bisoprolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Grevel_1989` / `Grevel_1989::nonmem_data_set_hep`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_bisoprolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Grevel_1989` / `Grevel_1989::nonmem_data_set_hep`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -134,7 +133,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

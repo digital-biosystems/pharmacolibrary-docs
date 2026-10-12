@@ -24,18 +24,9 @@ Basiliximab is an immunosuppressive monoclonal antibody used to prevent graft re
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> | [Kovarik_1999_reference](drugs/drug_basiliximab/Basiliximab_Kovarik1999_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Kovarik JM et al., Population pharmacokinetics and exposur…, Transplantation (1999) | [10.1097/00007890-199911150-00012](https://doi.org/10.1097/00007890-199911150-00012) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: partial</span> | [Kovarik_1999_2_reference](drugs/drug_basiliximab/Basiliximab_Kovarik1999v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Kovarik JM et al., Screening for basiliximab exposure-resp…, Clinical transplantation (1999) | [10.1034/j.1399-0012.1999.t01-2-130105.x](https://doi.org/10.1034/j.1399-0012.1999.t01-2-130105.x) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> | [Kovarik_2001_reference](drugs/drug_basiliximab/Basiliximab_Kovarik2001_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Kovarik JM et al., A population pharmacokinetic screen to…, Clinical pharmacology and t… (2001) | [10.1067/mcp.2001.114887](https://doi.org/10.1067/mcp.2001.114887) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=basiliximab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: IL2RA (antibody), IL2RB (antibody).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> | [Kovarik_1999_reference](drugs/drug_basiliximab/Basiliximab_Kovarik1999_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Kovarik JM et al., Population pharmacokinetics and exposur…, Transplantation (1999) | [10.1097/00007890-199911150-00012](https://doi.org/10.1097/00007890-199911150-00012) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span> | [Kovarik_1999_2_reference](drugs/drug_basiliximab/Basiliximab_Kovarik1999v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Kovarik JM et al., Screening for basiliximab exposure-resp…, Clinical transplantation (1999) | [10.1034/j.1399-0012.1999.t01-2-130105.x](https://doi.org/10.1034/j.1399-0012.1999.t01-2-130105.x) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> | [Kovarik_2001_reference](drugs/drug_basiliximab/Basiliximab_Kovarik2001_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Kovarik JM et al., A population pharmacokinetic screen to…, Clinical pharmacology and t… (2001) | [10.1067/mcp.2001.114887](https://doi.org/10.1067/mcp.2001.114887) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

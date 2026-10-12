@@ -22,7 +22,7 @@
 
 > Suramin inhibits the volume-activated chloride current I(Cl,swell) with an apparent dissociation constant of 66.5 microM at 0 mV, with the binding site located at a fractional distance of 49% into the membrane electric field; the paper excerpts do not state a mechanism beyond this voltage-dependent block.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Poletto_2008`
 - **model family:** `unknown`
@@ -64,7 +64,7 @@ Poletto Chaves LA et al., Volume-activated chloride channels in m…, Pflugers A
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

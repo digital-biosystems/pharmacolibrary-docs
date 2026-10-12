@@ -19,7 +19,7 @@
 
 > Ritlecitinib plasma concentrations (ng/mL) directly stimulate the production of the SALT score (0-100, where 0 is no hair loss) via an Indirect Response Type III (IRIII) model, with a maximum effect (Emax) of 15.8 and an EC50 of 53.6 ng/mL. The response is characterized by an elimination rate constant (kout2) with a half-life of 7.80 wk.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Huh_2024`
 - **model family:** `indirect_response_iii`
@@ -62,7 +62,7 @@ Huh Y et al., Moving Beyond Boundaries: Utilization o…, Clinical pharmacokinet
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

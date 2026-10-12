@@ -20,7 +20,7 @@
 
 > Dexmedetomidine plasma concentrations (predicted by the Hannivoort PK model, in ng/mL) were linked to measured Bispectral index (BIS, with and without stimulation) in the PD models of Colin et al.; the BIS effect-site concentration model combines a non-stimulated and a stimulated state to capture stimulus-induced BIS rises and their fade-out, with BIS inhibited by dexmedetomidine. The excerpts do not state the model's mechanism parameters (e.g., Imax, IC50, ke0, gamma) or any potency values.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Vandemoortele_2022`
 - **model family:** `unknown`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

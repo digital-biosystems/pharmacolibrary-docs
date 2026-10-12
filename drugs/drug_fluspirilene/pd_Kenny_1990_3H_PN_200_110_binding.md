@@ -21,7 +21,7 @@
 
 > Fluspirilene concentration-dependently displaces [3H]-PN-200-110 binding to rat cerebral cortical membranes, described by a sigmoid Emax inhibition model with EC50 30 nM and Hill slope 0.66; the paper excerpts do not state a mechanism beyond this binding displacement.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kenny_1990`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Kenny BA et al., Selective antagonism of calcium channel…, British journal of 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

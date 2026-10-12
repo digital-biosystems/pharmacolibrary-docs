@@ -16,11 +16,11 @@
 
 **As extracted:** Infliximab dose number (the dose) drives serum albumin (in g/dL): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The paper models serum albumin as an Emax function where infliximab treatment stimulates an additive maximum change of 0.110 g/dL. The dose required to achieve 50% of this maximum effect (D50) is estimated at 1.1, which the paper identifies as the number of infliximab doses (from baseline to dose 4) rather than a drug concentration.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Samuels_2025`
 - **model family:** `emax`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

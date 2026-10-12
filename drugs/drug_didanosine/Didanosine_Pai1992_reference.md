@@ -5,7 +5,7 @@
 
 # didanosine — `Didanosine_Pai1992_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 Pai SM et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (1992)
   ·  DOI: [10.1002/j.1552-4604.1992.tb03832.x](https://doi.org/10.1002/j.1552-4604.1992.tb03832.x)
 
-## Model component
-<dbs-pgx drug="didanosine" model-id="Didanosine_Pai1992_reference" status="needs_review" stale="true" population="patients with AIDS or AIDS-related complex" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Pai1992_reference" status="needs_review" stale="true" population="patients with AIDS or AIDS-related complex" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -143,10 +142,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_didanosine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pai_1992` / `Pai_1992::reference`)
-- model: `../../../knowledgebase/drugs/drug_didanosine/models/modelica/Didanosine_Pai1992_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_didanosine/models/modelica/Didanosine_Pai1992_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_didanosine/models/modelica/Didanosine_Pai1992_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_didanosine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pai_1992` / `Pai_1992::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_didanosine/models/modelica/Didanosine_Pai1992_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_didanosine/models/modelica/Didanosine_Pai1992_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_didanosine/models/modelica/Didanosine_Pai1992_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -167,7 +166,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -24,16 +24,7 @@ Benoxaprofen is a non-steroidal anti-inflammatory drug of the propionic acid typ
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Chatfield_1977_reference](drugs/drug_benoxaprofen/Benoxaprofen_Chatfield1977_reference.md) | — | 1-compartment (no model) | 0 | Chatfield DH et al., Pharmacokinetic studies with benoxaprof…, British journal of clinical… (1977) | [10.1111/j.1365-2125.1977.tb00789.x](https://doi.org/10.1111/j.1365-2125.1977.tb00789.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=benoxaprofen).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: ACAT1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Chatfield_1977_reference](drugs/drug_benoxaprofen/Benoxaprofen_Chatfield1977_reference.md) | — | 1-compartment (no model) | 0 | Chatfield DH et al., Pharmacokinetic studies with benoxaprof…, British journal of clinical… (1977) | [10.1111/j.1365-2125.1977.tb00789.x](https://doi.org/10.1111/j.1365-2125.1977.tb00789.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -16,11 +16,11 @@
 
 **As extracted:** Benznidazole (concentrations from this paper's PK model) drives qPCR positivity (proportion of T. cruzi qPCR-positive blood samples post-treatment): categorical (graded) response model.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Benznidazole exposure (CMAX, AUC∞, T&gt;IC90 with IC90,DBS = 29.3 µM, and treatment duration) was related to the log-odds of post-treatment qPCR positivity (proportion of T. cruzi qPCR-positive blood samples) via a logistic (categorical) model, with odds ratios per unit exposure of 0.640 (CMAX), 0.9995 (AUC∞), 0.236 (log AUC∞), 0.883 (T&gt;3 mg/L), 0.946 (T&gt;6 mg/L), 0.905 (total dosing days), 0.449 (weeks), and 0.888 (total duration days), and 0.911 (0.874 excluding placebo) per unit Ct. However, the paper identifies no clear PK/PD driver: the relationship was driven by the placebo group and was no longer significant after excluding placebo and one influential subject (p &gt; 0.05), with no improveme
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Assmus_2025_2`
 - **model family:** `categorical`
@@ -105,7 +105,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

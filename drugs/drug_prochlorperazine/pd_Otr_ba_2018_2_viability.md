@@ -21,7 +21,7 @@
 
 > Prochlorperazine (0.25–10 μM, 24 h) inhibited cell viability of lightly pigmented human melanocytes (WST-1 assay, % of control) in a concentration-dependent manner, with EC50 = 0.63 ± 0.018 μM; the paper does not state a specific PD mechanism or model for the viability loss, though it attributes reduced melanogenesis to inhibition of tyrosinase activity.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Otręba_2018_2`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Otręba M et al., In vitro melanogenesis inhibition by fl…, Daru : journal of 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

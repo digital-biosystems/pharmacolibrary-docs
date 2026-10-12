@@ -27,27 +27,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Zuo_2024_OS](drugs/drug_enfortumab_vedotin/pd_Zuo_2024_OS.md) | overall survival ← enfortumab vedotin · model not identified | — | Zuo P et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3383](https://doi.org/10.1002/cpt.3383) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Zuo_2024_grade_3_treatment_related_adverse_events](drugs/drug_enfortumab_vedotin/pd_Zuo_2024_grade_3_treatment_related_adverse_events.md) | grade ≥ 3 treatment-related adverse events ← enfortumab vedotin and free MMAE · model not identified | — | Zuo P et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3383](https://doi.org/10.1002/cpt.3383) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=enfortumab_vedotin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: NECTIN4 (antibody), NECTIN4 (binder).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Zuo_2024_OS](drugs/drug_enfortumab_vedotin/pd_Zuo_2024_OS.md) | overall survival ← enfortumab vedotin · model not identified | — | Zuo P et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3383](https://doi.org/10.1002/cpt.3383) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Zuo_2024_grade_3_treatment_related_adverse_events](drugs/drug_enfortumab_vedotin/pd_Zuo_2024_grade_3_treatment_related_adverse_events.md) | grade ≥ 3 treatment-related adverse events ← enfortumab vedotin and free MMAE · model not identified | — | Zuo P et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3383](https://doi.org/10.1002/cpt.3383) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

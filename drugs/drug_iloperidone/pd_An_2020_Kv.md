@@ -21,7 +21,7 @@
 
 > Iloperidone concentration inhibits the voltage-dependent K+ (Kv) current with a sigmoid Emax (proportional inhibition) model; the paper reports an IC50 of 2.11 ± 0.5 μM and a Hill coefficient of 0.68 ± 0.03, but the excerpts do not state a mechanism beyond this direct concentration–effect relation.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `An_2020`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ An JR et al., Inhibition of voltage-dependent K, Journal of applied toxicolo… 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

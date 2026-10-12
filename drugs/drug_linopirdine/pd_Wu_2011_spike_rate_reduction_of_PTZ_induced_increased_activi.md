@@ -21,7 +21,7 @@
 
 > Linopirdine concentrations (μM) were related to the reduction of PTZ-induced spike rate activity with an Emax (inhibitory) model; the paper reports an EC50 of 176±7.0 μM, but the excerpts do not state the mechanism or other parameters such as Emax or Hill factor.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Wu_2011`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Wu C et al., An in vitro model for testing drugs to…, European journal of phar
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

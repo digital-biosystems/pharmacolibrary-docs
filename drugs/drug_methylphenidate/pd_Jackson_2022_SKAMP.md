@@ -19,7 +19,7 @@
 
 > Methylphenidate concentrations (PK from the cited Giorgi record) act on placebo-corrected SKAMP composite scores via an indirect response model with inhibition of the response; the excerpts provide no mechanism detail beyond this and no potency (IC50/Imax) or rate (kin/kout) values.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Jackson_2022`
 - **model family:** `indirect_response_i`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

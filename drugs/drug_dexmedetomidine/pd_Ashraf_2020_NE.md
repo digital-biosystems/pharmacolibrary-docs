@@ -16,11 +16,11 @@
 
 **As extracted:** Dexmedetomidine (concentrations from this paper's PK model) drives Plasma norepinephrine concentration (in nM): indirect response — drug inhibits the production of Plasma norepinephrine concentration.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Dexmedetomidine plasma concentration inhibits the resting-state release rate constant (kIN,R) of norepinephrine from sympathetic nerve endings in an indirect response model, with plasma NE (~15% spill-over of released NE) modelled as a composite of release and plasma compartments. The inhibitory Emax effect (EMAX fixed at 1) has EC50,NE = 0.334 nM, with baseline effect-site concentration CE0 = 0.814 nM and NE turnover rate constants kOUT,R = 9.03 h−1 and kOUT,P = 11.4 h−1.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Ashraf_2020`
 - **model family:** `indirect_response_i`
@@ -104,7 +104,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

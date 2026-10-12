@@ -22,7 +22,7 @@
 
 > Escitalopram (PK taken from a cited study) was linked to inhibition of lung metastatic foci counts, but the excerpts provide no model family, effect form, or mechanism, and no potency or rate parameters; the only reported value is a synergy index of 2.25.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Wang_2025`
 - **model family:** `unknown`
@@ -63,7 +63,7 @@ Wang TY et al., PK/PD modeling of the effect of Escital…, Journal of pharmaceu
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

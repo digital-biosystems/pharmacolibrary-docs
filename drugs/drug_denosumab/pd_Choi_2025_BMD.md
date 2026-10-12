@@ -20,7 +20,7 @@
 
 > Denosumab inhibits the elimination rate constant (kout) of lumbar spine bone mineral density via a sigmoidal maximum effect mechanism. The model estimates an IC50 of 6.92 nmol/L, a Hill coefficient of 0.17, a baseline BMD of 0.76 g/cm2, kout of 0.00018 1/h, and kin of 0.00014 g/cm2/h.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Choi_2025`
 - **model family:** `indirect_response_ii`
@@ -67,7 +67,7 @@ Choi S et al., Population pharmacokinetics/pharmacodyn…, Frontiers in pharmaco
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

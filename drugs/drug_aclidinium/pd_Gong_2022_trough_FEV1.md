@@ -19,7 +19,7 @@
 
 > For the formoterol/aclidinium fixed-dose combination, dose (treatment arm, no PK driver) acts directly on change from baseline in trough FEV1 (L) via an Emax model with a first-order loss-of-efficacy over time, with Emax = 0.119 L (95% CI 0.103–0.135 L) and a decay rate τ = 0.0115 week⁻¹; the paper does not describe a mechanistic production/elimination or effect-compartment structure beyond this empirical time-decay.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Gong_2022`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

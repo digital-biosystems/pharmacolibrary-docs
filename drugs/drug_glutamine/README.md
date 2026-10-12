@@ -31,16 +31,7 @@ Glutamine, an amino acid, is used in the treatment of short bowel syndrome. It i
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182), gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Sadaf_2024_2_reference](drugs/drug_glutamine/Glutamine_Sadaf2024v2_reference.md) | — | 1-compartment (no model) | 3 | Sadaf A et al., A Population Pharmacokinetic Analysis o…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01349-4](https://doi.org/10.1007/s40262-024-01349-4) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=glutamine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: ASNS (substrate), CAD (substrate), CTPS1 (substrate), CTPS1 (target), F13A1 (substrate), GATB (substrate), GFPT2 (substrate), GLS (substrate), GLS2 (substrate), GLUL (product), GMPS (substrate), KYAT1 (substrate), NADSYN1 (substrate), PFAS (substrate), PPAT (substrate), QARS1 (substrate), SLC16A10 (inhibitor), SLC1A5 (substrate), SLC38A1 (substrate), SLC38A2 (substrate), SLC38A3 (substrate), SLC6A14 (substrate), SLC7A5 (substrate), SLC7A6 (substrate), SLC7A7 (substrate), SLC7A8 (substrate), SLC7A9 (substrate), TGM1 (substrate), TGM2 (substrate), TGM3 (substrate), TGM4 (substrate), TGM5 (substrate), TGM6 (substrate), TGM7 (substrate).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182), gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Sadaf_2024_2_reference](drugs/drug_glutamine/Glutamine_Sadaf2024v2_reference.md) | — | 1-compartment (no model) | 3 | Sadaf A et al., A Population Pharmacokinetic Analysis o…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01349-4](https://doi.org/10.1007/s40262-024-01349-4) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

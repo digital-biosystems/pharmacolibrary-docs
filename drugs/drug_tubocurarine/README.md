@@ -32,7 +32,7 @@ Tubocurarine, a curare alkaloid, is a non-depolarising muscle relaxant that was 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Matteo_1984_reference](drugs/drug_tubocurarine/Tubocurarine_Matteo1984_reference.md) | — | 1-compartment (no model) | 2 | Matteo RS et al., Distribution, elimination, and action o…, Anesthesia and analgesia (1984) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Matteo_1984_reference](drugs/drug_tubocurarine/Tubocurarine_Matteo1984_reference.md) | — | 1-compartment (no model) | 2 | Matteo RS et al., Distribution, elimination, and action o…, Anesthesia and analgesia (1984) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -45,20 +45,6 @@ Tubocurarine, a curare alkaloid, is a non-depolarising muscle relaxant that was 
 | <span class="pk-badge pk-badge--red">rejected</span> | [Orko_1984_twitch_response](drugs/drug_tubocurarine/pd_Orko_1984_twitch_response.md) | twitch response ← tubocurarine · direct linear effect | — | Orko R et al., Dose-response of tubocurarine in patien…, Acta anaesthesiologica Scan… (1984) | [10.1111/j.1399-6576.1984.tb02097.x](https://doi.org/10.1111/j.1399-6576.1984.tb02097.x) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">cat</span> | [Uceda_1992_catecholamines](drugs/drug_tubocurarine/pd_Uceda_1992_catecholamines.md) | catecholamines ← d-Tubocurarine (DTC) · direct sigmoid Emax (Hill) effect | — | Uceda G et al., Ca(2+)-activated K+ channels modulate m…, The Journal of physiology (1992) | [10.1113/jphysiol.1992.sp019261](https://doi.org/10.1113/jphysiol.1992.sp019261) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Unadkat_1986_twitch_tension](drugs/drug_tubocurarine/pd_Unadkat_1986_twitch_tension.md) | twitch tension ← tubocurarine · delayed effect through an effect compartment | — | Unadkat JD et al., An integrated model for the interaction…, Journal of applied physiolo… (1986) | [10.1152/jappl.1986.61.4.1593](https://doi.org/10.1152/jappl.1986.61.4.1593) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tubocurarine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | blood | `BCHE` substrate | DrugBank actor |
-| metabolism | liver | `BCHE` substrate, `SLC22A1` substrate | DrugBank actor |
-| excretion | kidney | `SLC22A2` unknown | DrugBank actor |
-| — | blood | `ACHE` inhibitor | DrugBank actor |
-| — | neuromuscular junction | `ACHE` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CHRNA2 (target), CHRNA7 (unknown), HTR3A (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

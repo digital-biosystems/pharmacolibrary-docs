@@ -22,7 +22,7 @@
 
 > Hydroxychloroquine (racemate, R- and S-enantiomers) concentrations in μM inhibit SARS-CoV-2 replication measured as viral RNA level in Vero E6 cell supernatant, with a direct inhibitory concentration–response (mechanism not modeled; biologically attributed to accumulation in acidic organelles raising endosomal/lysosomal pH and preventing viral fusion). Potency: R-HCQ EC50 = 3.05 μM, rac-HCQ EC50 = 5.09 μM, S-HCQ EC50 = 5.38 μM; complete inhibition of cytopathic effect was observed at 40 μM.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Ni_2022`
 - **model family:** `unknown`
@@ -65,7 +65,7 @@ Ni Y et al., Synthesis and evaluation of enantiomers…, Bioorganic & medicinal 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

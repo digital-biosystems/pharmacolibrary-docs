@@ -5,7 +5,7 @@
 
 # canakinumab — `Canakinumab_Chakraborty2012_3_paediatric_caps`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -27,8 +27,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 Chakraborty A et al., Pharmacokinetic and pharmacodynamic pro…, Clinical pharmacokinetics (2012)
   ·  DOI: [10.2165/11599820-000000000-00000](https://doi.org/10.2165/11599820-000000000-00000)
 
-## Model component
-<dbs-pgx drug="canakinumab" model-id="Canakinumab_Chakraborty2012_3_paediatric_caps" status="needs_review" stale="false" population="CAPS patients" measured-compound="canakinumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="canakinumab" model-id="Canakinumab_Chakraborty2012_3_paediatric_caps" status="needs_review" stale="false" population="CAPS patients" measured-compound="canakinumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -121,7 +120,7 @@ Chakraborty A et al., Pharmacokinetic and pharmacodynamic pro…, Clinical pharm
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_canakinumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chakraborty_2012` / `Chakraborty_2012::3_paediatric_caps`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_canakinumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chakraborty_2012` / `Chakraborty_2012::3_paediatric_caps`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -142,7 +141,7 @@ Chakraborty A et al., Pharmacokinetic and pharmacodynamic pro…, Clinical pharm
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

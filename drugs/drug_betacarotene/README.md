@@ -34,24 +34,8 @@ Betacarotene is a provitamin A carotenoid used as a vitamin A supplement and as 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Franken_2026_reference](drugs/drug_betacarotene/Betacarotene_Franken2026_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Franken LG et al., Pediatric pharmacokinetics and pharmaco…, Scientific reports (2026) | [10.1038/s41598-026-47959-9](https://doi.org/10.1038/s41598-026-47959-9) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Green_2021_reference](drugs/drug_betacarotene/Betacarotene_Green2021_reference.md) | — | general linear (no model) | 5 | Green MH et al., A Compartmental Model Describing the Ki…, The Journal of nutrition (2021) | [10.1093/jn/nxaa306](https://doi.org/10.1093/jn/nxaa306) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=betacarotene).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | adipose tissue | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: BCO1 (substrate), Free radicals (binder), RBP1 (substrate), RBP2 (substrate), RBP3 (substrate), RBP4 (substrate), RBP5 (substrate), VLDLR (substrate).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Franken_2026_reference](drugs/drug_betacarotene/Betacarotene_Franken2026_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Franken LG et al., Pediatric pharmacokinetics and pharmaco…, Scientific reports (2026) | [10.1038/s41598-026-47959-9](https://doi.org/10.1038/s41598-026-47959-9) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Green_2021_reference](drugs/drug_betacarotene/Betacarotene_Green2021_reference.md) | — | general linear (no model) | 5 | Green MH et al., A Compartmental Model Describing the Ki…, The Journal of nutrition (2021) | [10.1093/jn/nxaa306](https://doi.org/10.1093/jn/nxaa306) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -32,8 +32,8 @@ Cocaine is a stimulant and local anesthetic that has been used to treat pain and
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Pan_1998_reference](drugs/drug_cocaine/Cocaine_Pan1998_reference.md) | — | 1-compartment (no model) | 2 | Pan WJ et al., An animal model for simultaneous pharma…, Journal of pharmacological… (1998) | [10.1016/s1056-8719(97)00097-x](https://doi.org/10.1016/s1056-8719(97)00097-x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Pan_1999_reference](drugs/drug_cocaine/Cocaine_Pan1999_reference.md) | — | 1-compartment (no model) | 2 | Pan WJ et al., Cocaine and alcohol interactions in the…, Journal of pharmaceutical s… (1999) | [10.1021/js980282p](https://doi.org/10.1021/js980282p) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Pan_1998_reference](drugs/drug_cocaine/Cocaine_Pan1998_reference.md) | — | 1-compartment (no model) | 2 | Pan WJ et al., An animal model for simultaneous pharma…, Journal of pharmacological… (1998) | [10.1016/s1056-8719(97)00097-x](https://doi.org/10.1016/s1056-8719(97)00097-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Pan_1999_reference](drugs/drug_cocaine/Cocaine_Pan1999_reference.md) | — | 1-compartment (no model) | 2 | Pan WJ et al., Cocaine and alcohol interactions in the…, Journal of pharmaceutical s… (1999) | [10.1021/js980282p](https://doi.org/10.1021/js980282p) |
 
 ## Pharmacodynamics (PD)
 
@@ -55,25 +55,6 @@ Cocaine is a stimulant and local anesthetic that has been used to treat pain and
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [OLeary_2001_HERG](drugs/drug_cocaine/pd_OLeary_2001_HERG.md) | HERG currents biomarker turnover ← cocaine | — | O'Leary ME, Inhibition of human ether-a-go-go potas…, Molecular pharmacology (2001) | [10.1124/mol.59.2.269](https://doi.org/10.1124/mol.59.2.269) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Pan_1999_DA](drugs/drug_cocaine/pd_Pan_1999_DA.md) | change in dopamine concentration in the nucleus accumbens ← cocaine · direct sigmoid Emax (Hill) effect | — | Pan WJ et al., Cocaine and alcohol interactions in the…, Journal of pharmaceutical s… (1999) | [10.1021/js980282p](https://doi.org/10.1021/js980282p) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Pan_1998_change_in_dopamine_brain_ECF_concentration](drugs/drug_cocaine/pd_Pan_1998_change_in_dopamine_brain_ECF_concentration.md) | change in dopamine brain ECF concentration ← cocaine brain ECF · direct sigmoid Emax (Hill) effect | — | Pan WJ et al., An animal model for simultaneous pharma…, Journal of pharmacological… (1998) | [10.1016/s1056-8719(97)00097-x](https://doi.org/10.1016/s1056-8719(97)00097-x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cocaine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ORM1` binder | DrugBank actor |
-| metabolism | blood | `BCHE` substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `BCHE` substrate, `CES1` binder/substrate, `CYP2C8` downregulator, `CYP2D6` inhibitor, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
-| — | brain | `SLC6A4` inhibitor | DrugBank actor |
-| — | platelet | `SLC6A4` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), SCN1A (inhibitor), SIGMAR1 (target), SLC6A2 (inhibitor), SLC6A3 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

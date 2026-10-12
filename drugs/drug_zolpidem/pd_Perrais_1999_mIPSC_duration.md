@@ -18,11 +18,11 @@
 
 **As extracted:** Zolpidem (concentrations from the PK model of Cha_2024) drives mIPSC duration (relative to control) (in % of control): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Zolpidem concentrations act on the duration of miniature IPSCs (as % of control) in layer V pyramidal cells via a direct postsynaptic effect on GABA_A receptors, described by a sigmoid Emax model with EC50 5.8 µM, Hill coefficient 0.36, and maximal relative increase of duration 221% of control.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Perrais_1999`
 - **model family:** `sigmoid_emax`
@@ -102,7 +102,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -16,11 +16,11 @@
 
 **As extracted:** Levetiracetam (concentrations from this paper's PK model) drives seizure counts: direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Levetiracetam plasma concentrations (mg/L) inhibit daily seizure counts (count) via a direct concentration-dependent Emax mechanism within a mixture model that separates responders from a placebo-like subpopulation. The model reports an EC50 of 31.4 mg/L, an Emax of -95.6% change, a placebo effect of -14.8% change, and a turnover rate (S 0) of 0.337 day−1.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Schoemaker_2018`
 - **model family:** `emax`
@@ -101,7 +101,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

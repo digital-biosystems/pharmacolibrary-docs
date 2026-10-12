@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Reiners_1988_chondrogenesis](drugs/drug_motretinide/pd_Reiners_1988_chondrogenesis.md) | chondrogenesis ← motretinide · inhibition effect | — | Reiners J et al., Transplacental pharmacokinetics of tera…, Reproductive toxicology (El… (1988) | [10.1016/s0890-6238(88)80005-4](https://doi.org/10.1016/s0890-6238(88)80005-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Reiners_1988_chondrogenesis](drugs/drug_motretinide/pd_Reiners_1988_chondrogenesis.md) | chondrogenesis ← motretinide · inhibition effect | — | Reiners J et al., Transplacental pharmacokinetics of tera…, Reproductive toxicology (El… (1988) | [10.1016/s0890-6238(88)80005-4](https://doi.org/10.1016/s0890-6238(88)80005-4) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

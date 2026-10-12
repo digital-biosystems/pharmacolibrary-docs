@@ -20,7 +20,7 @@
 
 > The record identifies an Emax model linking tildrakizumab concentrations to the binary response PASI, with effect direction classified as stimulation and Emax values of 62.2%, 37.9%, and 14.6% of responders, but the paper does not provide a full text to describe the specific mechanism of action or state key potency and rate values such as EC50, IC50, kin, kout, or ke0.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kerbusch_2020`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Kerbusch T et al., Exposure-response characterisation of t…, British journal o
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

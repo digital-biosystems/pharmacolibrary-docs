@@ -19,7 +19,7 @@
 
 > Flupirtine stimulates the relaxation of bethanechol-precontracted strips via an Emax model, achieving a maximal relaxation of 51.6%. The paper does not provide information on the mechanism, potency, or rate constants.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Bientinesi_2017`
 - **model family:** `emax`
@@ -60,7 +60,7 @@ Bientinesi R et al., KV7 channels in the human detrusor: cha…, Naunyn-Schmiede
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

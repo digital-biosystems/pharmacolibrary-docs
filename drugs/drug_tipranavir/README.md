@@ -28,24 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Peatey_2010_EC50](drugs/drug_tipranavir/pd_Peatey_2010_EC50.md) | Plasmodium falciparum asexual-stage parasite growth inhibition ← tipranavir · direct sigmoid Emax (Hill) effect | — | Peatey CL et al., Antimalarial asexual stage-specific and…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.01512-09](https://doi.org/10.1128/AAC.01512-09) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tipranavir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inducer/inhibitor/substrate, `SLCO2B1` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inducer/inhibitor/substrate, `SLCO2B1` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2C19` inhibitor/substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor, `UGT1A1` inducer | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `UGT1A1` inducer | DrugBank actor |
-| excretion | liver | `ABCB11` inhibitor/substrate | DrugBank actor |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Peatey_2010_EC50](drugs/drug_tipranavir/pd_Peatey_2010_EC50.md) | Plasmodium falciparum asexual-stage parasite growth inhibition ← tipranavir · direct sigmoid Emax (Hill) effect | — | Peatey CL et al., Antimalarial asexual stage-specific and…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.01512-09](https://doi.org/10.1128/AAC.01512-09) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

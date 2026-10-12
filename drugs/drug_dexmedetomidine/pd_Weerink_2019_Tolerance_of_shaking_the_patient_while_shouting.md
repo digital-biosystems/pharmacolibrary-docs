@@ -20,7 +20,7 @@
 
 > Dexmedetomidine concentrations (ng/ml) act on tolerance of shaking the patient while shouting the name ('shake and shout'), modelled as a sigmoid Emax inhibitory effect with EC50 9.2 ng/ml (6.8 to 13); the excerpts do not state the mechanism beyond this.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Weerink_2019`
 - **model family:** `sigmoid_emax`
@@ -61,7 +61,7 @@ Weerink MAS et al., Pharmacodynamic Interaction of Remifent…, Anesthesiology (
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

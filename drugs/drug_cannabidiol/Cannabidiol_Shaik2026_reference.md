@@ -5,7 +5,7 @@
 
 # cannabidiol — `Cannabidiol_Shaik2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333), gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333), gpt-oss:120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,7 +15,7 @@
 
 > **Species: in vitro.** This record comes from an in-vitro study (cells, tissue or microsomes), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on paramet
 Shaik RB et al., Structural and In silico safety evaluat…, Scientific reports (2026)
   ·  DOI: [10.1038/s41598-026-44693-0](https://doi.org/10.1038/s41598-026-44693-0)
 
-## Model component
-<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Shaik2026_reference" status="extracted" stale="true" population="" measured-compound="cannabidiol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cannabidiol" model-id="Cannabidiol_Shaik2026_reference" status="extracted" stale="true" population="" measured-compound="cannabidiol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
@@ -114,10 +113,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_cannabidiol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shaik_2026` / `Shaik_2026::reference`)
-- model: `../../../knowledgebase/drugs/drug_cannabidiol/models/modelica/Cannabidiol_Shaik2026_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_cannabidiol/models/modelica/Cannabidiol_Shaik2026_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_cannabidiol/models/modelica/Cannabidiol_Shaik2026_reference.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cannabidiol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Shaik_2026` / `Shaik_2026::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cannabidiol/models/modelica/Cannabidiol_Shaik2026_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cannabidiol/models/modelica/Cannabidiol_Shaik2026_reference.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cannabidiol/models/modelica/Cannabidiol_Shaik2026_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -135,7 +134,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_cannabidiol/Cannabidiol_Shaik2026_reference/Cannabidiol_Shaik2026_reference.svg" alt="Cannabidiol_Shaik2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_cannabidiol/Cannabidiol_Shaik2026_reference/Cannabidiol_Shaik2026_reference.svg" alt="Cannabidiol_Shaik2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

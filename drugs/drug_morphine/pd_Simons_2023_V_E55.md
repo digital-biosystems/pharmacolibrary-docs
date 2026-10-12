@@ -20,7 +20,7 @@
 
 > Morphine plasma concentrations inhibit the measured ventilation response (V̇E55) via a proportional sigmoid Emax model linked to the plasma concentration through an effect compartment with a t½ke0 of 214 min. The model estimates a C50 of 21.5 ng/ml and a baseline V̇E55 of 27.8 l/min, with the Hill coefficient (gamma) fixed at 1.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Simons_2023`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Simons P et al., Respiratory Effects of Biased Ligand Ol…, Anesthesiology (202
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

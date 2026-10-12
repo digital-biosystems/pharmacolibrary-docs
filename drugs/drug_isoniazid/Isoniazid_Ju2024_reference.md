@@ -5,7 +5,7 @@
 
 # isoniazid — `Isoniazid_Ju2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -27,8 +27,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 Ju G et al., Model-Informed Precision Dosing of Ison…, Drug design, development an… (2024)
   ·  DOI: [10.2147/DDDT.S434919](https://doi.org/10.2147/DDDT.S434919)
 
-## Model component
-<dbs-pgx drug="isoniazid" model-id="Isoniazid_Ju2024_reference" status="needs_review" stale="false" population="adults and children with tuberculosis" measured-compound="isoniazid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isoniazid" model-id="Isoniazid_Ju2024_reference" status="needs_review" stale="false" population="adults and children with tuberculosis" measured-compound="isoniazid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -170,7 +169,7 @@ _No resolved parameters._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_isoniazid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ju_2024` / `Ju_2024::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_isoniazid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ju_2024` / `Ju_2024::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -191,7 +190,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

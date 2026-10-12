@@ -20,7 +20,7 @@
 
 > Formoterol concentration (mol.l-1) is related to bronchial relaxation, expressed as % of the response to theophylline 3 x 10(-3) mol.l-1, using an Emax-type concentration-response model; the paper excerpts provide no mechanism details and no parameter values (Emax, EC50, gamma).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Naline_1994`
 - **model family:** `emax`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

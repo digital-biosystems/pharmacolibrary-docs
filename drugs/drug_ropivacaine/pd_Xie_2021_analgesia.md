@@ -20,7 +20,7 @@
 
 > The paper describes a binary dose-response relationship where epidural ropivacaine concentration drives a bilateral pain block (analgesia) via direct effect, but the specific pharmacodynamic mechanism (e.g., Emax model, effect compartment, or production/elimination inhibition) is not described. The study reports median effective concentrations (EC50) of 0.399% for ropivacaine in the control group, and 0.396% and 0.487% in groups receiving oxycodone (though the text notes the high-dose and low-dose oxycodone groups had similar EC50s and suggests the curve may be plateauing).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Xie_2021`
 - **model family:** `unknown`
@@ -63,7 +63,7 @@ Xie K et al., The Median Effective Concentration (EC5…, Frontiers in medicine 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

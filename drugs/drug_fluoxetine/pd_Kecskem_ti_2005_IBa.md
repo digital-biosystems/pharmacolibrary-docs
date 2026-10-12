@@ -22,7 +22,7 @@
 
 > Fluoxetine concentration-dependently inhibits peak Ba2+ current (IBa) through voltage-gated Ca2+ channels, described by a sigmoid Emax (proportional inhibition) model with EC50 22.3 microM and a Hill coefficient of 0.87; the paper excerpts do not state a mechanism beyond this direct concentration–effect relation.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kecskeméti_2005`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Kecskeméti V et al., Norfluoxetine and fluoxetine have simil…, Brain research
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

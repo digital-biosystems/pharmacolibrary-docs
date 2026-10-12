@@ -28,16 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ma_2021_KDM1A](drugs/drug_monobenzone/pd_Ma_2021_KDM1A.md) | KDM1A inhibitory activity biomarker turnover ← monobenzone | — | Ma P et al., Monobenzone, a Novel and Potent KDM1A I…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.640949](https://doi.org/10.3389/fphar.2021.640949) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=monobenzone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: TYR (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ma_2021_KDM1A](drugs/drug_monobenzone/pd_Ma_2021_KDM1A.md) | KDM1A inhibitory activity biomarker turnover ← monobenzone | — | Ma P et al., Monobenzone, a Novel and Potent KDM1A I…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.640949](https://doi.org/10.3389/fphar.2021.640949) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

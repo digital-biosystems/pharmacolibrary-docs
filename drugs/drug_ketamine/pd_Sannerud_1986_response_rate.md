@@ -22,7 +22,7 @@
 
 > The paper does not describe a specific pharmacodynamic mechanism, but notes that ketamine dose inhibits the response rate. The effect magnitude is characterized as a 3 to 4-fold Emax, with no specific units or potency values provided.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sannerud_1986`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Sannerud CA et al., Modification of morphine tolerance by b…, The Journal of p
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

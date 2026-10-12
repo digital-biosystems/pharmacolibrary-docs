@@ -25,19 +25,8 @@ Biotin, a B vitamin, is used as a vitamin supplement and to treat inherited meta
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Wang_2023_reference](drugs/drug_biotin/Biotin_Wang2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wang Y et al., A picogram BA-ELISA quantification assa…, PLoS neglected tropical dis… (2023) | [10.1371/journal.pntd.0011568](https://doi.org/10.1371/journal.pntd.0011568) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wang_2001_reference](drugs/drug_biotin/Biotin_Wang2001_reference.md) | — | 1-compartment (no model) | 0 | Wang KS et al., The clearance and metabolism of biotin…, The Journal of nutrition (2001) | [10.1093/jn/131.4.1271](https://doi.org/10.1093/jn/131.4.1271) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=biotin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | lung | `CYP1B1` inducer | DrugBank actor |
-| metabolism | skin | `CYP1B1` inducer | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ACACA (cofactor), ACACB (cofactor), HLCS (substrate), MCCC1 (cofactor), MCCC2 (cofactor), PC (cofactor), PCCA (cofactor), PCCB (cofactor), SLC5A6 (substrate), SLC5A8 (substrate).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Wang_2023_reference](drugs/drug_biotin/Biotin_Wang2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wang Y et al., A picogram BA-ELISA quantification assa…, PLoS neglected tropical dis… (2023) | [10.1371/journal.pntd.0011568](https://doi.org/10.1371/journal.pntd.0011568) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.4). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wang_2001_reference](drugs/drug_biotin/Biotin_Wang2001_reference.md) | — | 1-compartment (no model) | 0 | Wang KS et al., The clearance and metabolism of biotin…, The Journal of nutrition (2001) | [10.1093/jn/131.4.1271](https://doi.org/10.1093/jn/131.4.1271) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

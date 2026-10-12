@@ -22,7 +22,7 @@
 
 > Sertraline (0.3–10 µM) reversibly inhibited Kv1.5 whole-cell current in CHO cells in a concentration-dependent manner, described by a sigmoid Emax relationship with IC50 0.71±0.01 µM and Hill coefficient 1.29±0.04; the paper does not give an explicit PD model, but mechanistically the block is open-state and use-dependent, with sertraline accelerating current decay without altering activation kinetics.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Lee_2016`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Lee HM et al., Blockade of Kv1.5 channels by the antid…, The Korean journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -24,31 +24,15 @@ Levocarnitine is an amino acid derivative used to treat carnitine deficiency and
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Fornasini_2007_reference](drugs/drug_levocarnitine/Levocarnitine_Fornasini2007_reference.md) | — | 1-compartment (no model) | 0 | Fornasini G et al., A pharmacokinetic model for L-carnitine…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02926.x](https://doi.org/10.1111/j.1365-2125.2007.02926.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (primary re-run, agreement 0.222), gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Uematsu_1988_reference](drugs/drug_levocarnitine/Levocarnitine_Uematsu1988_reference.md) | — | 1-compartment (no model) | 0 | Uematsu T et al., Pharmacokinetics and safety of l-carnit…, European journal of clinica… (1988) | [10.1007/BF00614562](https://doi.org/10.1007/BF00614562) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Fornasini_2007_reference](drugs/drug_levocarnitine/Levocarnitine_Fornasini2007_reference.md) | — | 1-compartment (no model) | 0 | Fornasini G et al., A pharmacokinetic model for L-carnitine…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02926.x](https://doi.org/10.1111/j.1365-2125.2007.02926.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (primary re-run, agreement 0.222), gpt-oss:120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Uematsu_1988_reference](drugs/drug_levocarnitine/Levocarnitine_Uematsu1988_reference.md) | — | 1-compartment (no model) | 0 | Uematsu T et al., Pharmacokinetics and safety of l-carnit…, European journal of clinica… (1988) | [10.1007/BF00614562](https://doi.org/10.1007/BF00614562) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wu_2014_spike_activity](drugs/drug_levocarnitine/pd_Wu_2014_spike_activity.md) | spike activity ← L-carnitine · direct sigmoid Emax (Hill) effect | — | Wu C et al., Antioxidants L-carnitine and D-methioni…, Journal of neural transmiss… (2014) | [10.1007/s00702-014-1170-x](https://doi.org/10.1007/s00702-014-1170-x) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span> | [Wang_2021_BMI](drugs/drug_levocarnitine/pd_Wang_2021_BMI.md) | Body Mass index ← l-carnitine · direct Emax (saturable) effect | — | Wang DD et al., The Effects of L-Carnitine, Acetyl-L-Ca…, Frontiers in nutrition (2021) | [10.3389/fnut.2021.748075](https://doi.org/10.3389/fnut.2021.748075) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=levocarnitine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | kidney | `SLC22A4` inhibitor/substrate/unknown, `SLC22A5` substrate/unknown | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` substrate/unknown | DrugBank actor |
-| absorption | small intestine | `SLC22A4` inhibitor/substrate/unknown, `SLC22A5` substrate/unknown | DrugBank actor |
-| metabolism | liver | `CES1` unknown, `SLCO1B1` inhibitor, `XDH` unknown | DrugBank actor |
-| metabolism | small intestine | `XDH` unknown | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A8` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CPT1A (activator), CPT1B (activator), CPT2 (unknown), CRAT (unknown), CROT (unknown), MPO (unknown), SLC22A16 (substrate), SLC25A20 (unknown), SLC25A29 (unknown).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wu_2014_spike_activity](drugs/drug_levocarnitine/pd_Wu_2014_spike_activity.md) | spike activity ← L-carnitine · direct sigmoid Emax (Hill) effect | — | Wu C et al., Antioxidants L-carnitine and D-methioni…, Journal of neural transmiss… (2014) | [10.1007/s00702-014-1170-x](https://doi.org/10.1007/s00702-014-1170-x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span> | [Wang_2021_BMI](drugs/drug_levocarnitine/pd_Wang_2021_BMI.md) | Body Mass index ← l-carnitine · direct Emax (saturable) effect | — | Wang DD et al., The Effects of L-Carnitine, Acetyl-L-Ca…, Frontiers in nutrition (2021) | [10.3389/fnut.2021.748075](https://doi.org/10.3389/fnut.2021.748075) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

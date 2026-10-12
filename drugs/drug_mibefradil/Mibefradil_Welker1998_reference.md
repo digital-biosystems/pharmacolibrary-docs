@@ -4,7 +4,7 @@
 
 # mibefradil — `Mibefradil_Welker1998_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -27,8 +27,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 ## Citation
 Welker HA et al., Mibefradil pharmacokinetic and pharmaco…, International journal of cl… (1998)
 
-## Model component
-<dbs-pgx drug="mibefradil" model-id="Mibefradil_Welker1998_reference" status="needs_review" stale="true" population="patients with hypertension and chronic stable angina pectoris" measured-compound="mibefradil" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mibefradil" model-id="Mibefradil_Welker1998_reference" status="needs_review" stale="true" population="patients with hypertension and chronic stable angina pectoris" measured-compound="mibefradil" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -94,7 +93,7 @@ Welker HA et al., Mibefradil pharmacokinetic and pharmaco…, International jour
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_mibefradil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Welker_1998` / `Welker_1998::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_mibefradil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Welker_1998` / `Welker_1998::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -115,7 +114,7 @@ Welker HA et al., Mibefradil pharmacokinetic and pharmaco…, International jour
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

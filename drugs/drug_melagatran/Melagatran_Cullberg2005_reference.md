@@ -5,7 +5,7 @@
 
 # melagatran — `Melagatran_Cullberg2005_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.455). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** Model withheld: a core parameter is unspecified.
 
 ### Reviewer guidance
 
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Cullberg M et al., Pharmacokinetics of ximelagatran and re…, Clinical pharmacology and t… (2005)
   ·  DOI: [10.1016/j.clpt.2004.11.001](https://doi.org/10.1016/j.clpt.2004.11.001)
 
-## Model component
-<dbs-pgx drug="melagatran" model-id="Melagatran_Cullberg2005_reference" status="model_quarantined" stale="false" population="patients with acute deep vein thrombosis" measured-compound="melagatran" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="melagatran" model-id="Melagatran_Cullberg2005_reference" status="model_quarantined" stale="false" population="patients with acute deep vein thrombosis" measured-compound="melagatran" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -127,9 +126,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_melagatran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cullberg_2005` / `Cullberg_2005::reference`)
-- model: `../../../knowledgebase/drugs/drug_melagatran/models/modelica/_needs_review/Melagatran_Cullberg2005_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_melagatran/models/modelica/_needs_review/Melagatran_Cullberg2005_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_melagatran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cullberg_2005` / `Cullberg_2005::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_melagatran/models/modelica/_needs_review/Melagatran_Cullberg2005_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_melagatran/models/modelica/_needs_review/Melagatran_Cullberg2005_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -150,7 +149,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

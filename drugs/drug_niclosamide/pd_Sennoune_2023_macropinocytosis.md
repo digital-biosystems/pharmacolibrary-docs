@@ -22,7 +22,7 @@
 
 > Niclosamide (0–5 μM) inhibits basal macropinocytosis (TMR-dextran uptake) in HPAF-II and TXBR-100 cancer cells, acting via its function as an H+ channel that causes intracellular acidification (alkaline pH normally promotes macropinocytosis); the paper reports an IC50 of approximately 5 μM for blockade of basal macropinocytosis, with no Imax, Emax, kin, kout, ke0, or gamma values given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Sennoune_2023`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Sennoune SR et al., Potent Inhibition of Macropinocytosis b…, Cancers (2023)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -5,7 +5,7 @@
 
 # lumasiran — `Lumasiran_Sten2023_model_fitted_to_olpasiran_data_only_estim`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875), gpt-oss:120b (partly confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.20).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875), gpt-oss:120b (partly confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.20).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -23,7 +23,7 @@
 
 All six extracted parameters describe olpasiran, not the target drug lumasiran. Consequently, lumasiran's clearance, volume of distribution, absorption lag time, and central-to-peripheral rate constant had no values. A second reader also disagreed on the specific numerical values for the olpasiran parameters. Extracted — olpasiran: kabs 0.635 1/h, V1/F 27.9 L, V2/F 1.47e+03 L, V3/F 296 L, CL/F 27.7 L/h, Q/F 2.62 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has GalNAc-siRNAs, the second reading lumasiran; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has GalNAc-siRNAs, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -75,7 +75,7 @@ Sten S et al., Plasma Pharmacokinetics of N-Acetylgala…, Clinical pharmacokine
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -86,8 +86,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `screen.dose_compound` | GalNAc-siRNAs | lumasiran | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | GalNAc-siRNAs | lumasiran | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | GalNAc-siRNAs | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | GalNAc-siRNAs | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl1/f]` | not captured | 23.8 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl1/f]` | 27.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl2/f]` | not captured | 3.02 | only_one_extracted |
@@ -147,9 +147,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_lumasiran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sten_2023` / `Sten_2023::model_fitted_to_olpasiran_data_only_estimate_se`)
-- model: `../../../knowledgebase/drugs/drug_lumasiran/models/modelica/_needs_review/Lumasiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.mo`
-- deviation: `../../../knowledgebase/drugs/drug_lumasiran/models/modelica/_needs_review/Lumasiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lumasiran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sten_2023` / `Sten_2023::model_fitted_to_olpasiran_data_only_estimate_se`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lumasiran/models/modelica/_needs_review/Lumasiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lumasiran/models/modelica/_needs_review/Lumasiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -170,7 +170,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

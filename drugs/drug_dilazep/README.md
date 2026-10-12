@@ -28,17 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">other organism</span> | [Endres_2004_3H_adenosine_transport](drugs/drug_dilazep/pd_Endres_2004_3H_adenosine_transport.md) | [3H]adenosine transport ← dilazep · direct Emax (saturable) effect | — | Endres CJ et al., Mutation of leucine-92 selectively redu…, The Biochemical journal 380… (2004) | [10.1042/BJ20031880](https://doi.org/10.1042/BJ20031880) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | [Shuralyova_2004_glucose_uptake](drugs/drug_dilazep/pd_Shuralyova_2004_glucose_uptake.md) | glucose uptake ← dilazep · direct sigmoid Emax (Hill) effect | — | Shuralyova I et al., Inhibition of glucose uptake in murine…, American journal of physiol… (2004) | [10.1152/ajpheart.00639.2003](https://doi.org/10.1152/ajpheart.00639.2003) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dilazep).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `SLC29A1` inhibitor | DrugBank actor |
-| distribution | liver | `SLC29A1` inhibitor | DrugBank actor |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">other organism</span> | [Endres_2004_3H_adenosine_transport](drugs/drug_dilazep/pd_Endres_2004_3H_adenosine_transport.md) | [3H]adenosine transport ← dilazep · direct Emax (saturable) effect | — | Endres CJ et al., Mutation of leucine-92 selectively redu…, The Biochemical journal 380… (2004) | [10.1042/BJ20031880](https://doi.org/10.1042/BJ20031880) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | [Shuralyova_2004_glucose_uptake](drugs/drug_dilazep/pd_Shuralyova_2004_glucose_uptake.md) | glucose uptake ← dilazep · direct sigmoid Emax (Hill) effect | — | Shuralyova I et al., Inhibition of glucose uptake in murine…, American journal of physiol… (2004) | [10.1152/ajpheart.00639.2003](https://doi.org/10.1152/ajpheart.00639.2003) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

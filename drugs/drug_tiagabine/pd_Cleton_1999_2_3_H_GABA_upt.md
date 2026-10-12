@@ -22,7 +22,7 @@
 
 > Tiagabine concentration (in nM) directly inhibits the basal uptake of [3H]-GABA (measured as % inhibition) in rat forebrain synaptoneurosomes via a direct sigmoidal Emax mechanism described by a Hill equation. The key parameters for the isomer comparison are a maximal inhibition (a) of 91% ± 3%, a difference in IC50 (d IC50) of 233 nM ± 91 nM, and a Hill slope (nH) of 0.84 ± 0.1, with E0 fixed at 102%.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Cleton_1999_2`
 - **model family:** `sigmoid_emax`
@@ -66,7 +66,7 @@ Cleton A et al., Stereoselective central nervous system…, British journal of p
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

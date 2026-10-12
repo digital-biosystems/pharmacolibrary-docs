@@ -19,7 +19,7 @@
 
 > The provided record does not specify the pharmacodynamic mechanism or quantitative parameters (e.g., IC50, ke0, Imax) for mivacurium's inhibition of twitch depression, and the full text is unavailable to verify these details.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Markakis_1996`
 - **model family:** `sigmoid_emax`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

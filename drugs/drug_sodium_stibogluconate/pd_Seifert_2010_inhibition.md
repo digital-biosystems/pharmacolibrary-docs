@@ -22,7 +22,7 @@
 
 > Sodium stibogluconate concentrations (microg Sb(v)/mL) were related to percentage inhibition of infected macrophages using a sigmoid Emax inhibitory model, with EC50 values reported as 1.38–1.89, 21.75–27.79, and 28.96–112.77 microg Sb(v)/mL; the paper excerpts do not state the mechanism (e.g., production vs. elimination inhibition) or Imax/Emax, gamma, or rate parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Seifert_2010`
 - **model family:** `sigmoid_emax`
@@ -51,11 +51,11 @@ Seifert K et al., In vitro activity of anti-leishmanial d…, The Journal of ant
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

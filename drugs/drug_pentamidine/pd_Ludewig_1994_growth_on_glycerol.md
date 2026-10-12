@@ -21,7 +21,7 @@
 
 > Pentamidine concentrations (µg/ml) inhibit growth on glycerol, with an IC50 of 1.25 µg/ml; the paper excerpts provide no further mechanism or model structure.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Ludewig_1994`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Ludewig G et al., Effects of pentamidine isethionate on S…, Antimicrobial agen
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

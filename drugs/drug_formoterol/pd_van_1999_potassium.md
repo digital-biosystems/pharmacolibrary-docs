@@ -16,11 +16,11 @@
 
 **As extracted:** Formoterol (concentrations from the PK model of Back_2020) drives plasma potassium concentration (hypokalemic effect) (in mmol/l): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Formoterol plasma concentrations (pg/ml) were linked to the hypokalemic drop in plasma potassium (mmol/l) via a sigmoid Emax inhibitory model, with Emax 2.29 mmol/l and EC50 128.4 pg/ml; the excerpts do not state the mechanism (e.g., kin/kout turnover) or a Hill factor.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `van_1999`
 - **model family:** `sigmoid_emax`
@@ -98,7 +98,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

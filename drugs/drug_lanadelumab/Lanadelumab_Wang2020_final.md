@@ -4,7 +4,7 @@
 
 # lanadelumab — `Lanadelumab_Wang2020_final`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -28,8 +28,7 @@ The reported ka (0.0179 1/h) is flagged as invented: the source did not report a
 Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020)
   ·  DOI: [10.1111/cts.12806](https://doi.org/10.1111/cts.12806)
 
-## Model component
-<dbs-pgx drug="lanadelumab" model-id="Lanadelumab_Wang2020_final" status="needs_review" stale="true" population="healthy subjects and patients with hereditary angioedema" measured-compound="lanadelumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lanadelumab" model-id="Lanadelumab_Wang2020_final" status="needs_review" stale="true" population="healthy subjects and patients with hereditary angioedema" measured-compound="lanadelumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 10 extracted.
@@ -183,10 +182,10 @@ Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translat
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_lanadelumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2020` / `Wang_2020::final`)
-- model: `../../../knowledgebase/drugs/drug_lanadelumab/models/modelica/Lanadelumab_Wang2020_final.mo`
-- deviation: `../../../knowledgebase/drugs/drug_lanadelumab/models/modelica/Lanadelumab_Wang2020_final.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_lanadelumab/models/modelica/Lanadelumab_Wang2020_final.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lanadelumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2020` / `Wang_2020::final`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lanadelumab/models/modelica/Lanadelumab_Wang2020_final.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lanadelumab/models/modelica/Lanadelumab_Wang2020_final.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lanadelumab/models/modelica/Lanadelumab_Wang2020_final.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -207,7 +206,7 @@ Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translat
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

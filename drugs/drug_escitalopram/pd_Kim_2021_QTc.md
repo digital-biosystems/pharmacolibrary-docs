@@ -20,7 +20,7 @@
 
 > Escitalopram plasma concentrations (from a cited PK model) drive QTc prolongation via an effect-compartment (additive stimulation) model, with an equilibrium half-life for delayed QT prolongation of 1.9 h and maximal QT prolongation (Emax) of 5.4 ms. The excerpts do not state the mechanism beyond this delayed effect-compartment link.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kim_2021`
 - **model family:** `effect_compartment`
@@ -62,7 +62,7 @@ Kim Y et al., Population pharmacokinetic/pharmacodyna…, Journal of affective d
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -32,7 +32,7 @@ Imipramine is a tricyclic antidepressant used for depression, panic disorder, at
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75), gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tamayo_1992_reference](drugs/drug_imipramine/Imipramine_Tamayo1992_reference.md) | — | parent + metabolite (no model) | 0 | Tamayo M et al., Population pharmacokinetics of imiprami…, European journal of clinica… (1992) | [10.1007/BF02280761](https://doi.org/10.1007/BF02280761) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75), gpt-oss:120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tamayo_1992_reference](drugs/drug_imipramine/Imipramine_Tamayo1992_reference.md) | — | parent + metabolite (no model) | 0 | Tamayo M et al., Population pharmacokinetics of imiprami…, European journal of clinica… (1992) | [10.1007/BF02280761](https://doi.org/10.1007/BF02280761) |
 
 ## Pharmacodynamics (PD)
 
@@ -47,33 +47,8 @@ Imipramine is a tricyclic antidepressant used for depression, panic disorder, at
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Meyerson_1987_3H_IMI_binding](drugs/drug_imipramine/pd_Meyerson_1987_3H_IMI_binding.md) | [3H]IMI binding ← imipramine · direct sigmoid Emax (Hill) effect | — | Meyerson LR et al., Allosteric interaction between the site…, Journal of neurochemistry (1987) | [10.1111/j.1471-4159.1987.tb04129.x](https://doi.org/10.1111/j.1471-4159.1987.tb04129.x) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sitte_2000_efflux](drugs/drug_imipramine/pd_Sitte_2000_efflux.md) | [3H]5-HT efflux (drug-induced efflux during first 8 min of drug exposure) ← imipramine · direct Emax (saturable) effect | — | Sitte HH et al., Characterization of carrier-mediated ef…, Journal of neurochemistry (2000) | [10.1046/j.1471-4159.2000.741317.x](https://doi.org/10.1046/j.1471-4159.2000.741317.x) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sitte_2000_uptake](drugs/drug_imipramine/pd_Sitte_2000_uptake.md) | [3H]5-HT uptake ← imipramine · direct Emax (saturable) effect | — | Sitte HH et al., Characterization of carrier-mediated ef…, Journal of neurochemistry (2000) | [10.1046/j.1471-4159.2000.741317.x](https://doi.org/10.1046/j.1471-4159.2000.741317.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Teschemacher_1999_I_HERG](drugs/drug_imipramine/pd_Teschemacher_1999_I_HERG.md) | HERG tail current (I HERG) inhibition ← imipramine · direct sigmoid Emax (Hill) effect | — | Teschemacher AG et al., Inhibition of the current of heterologo…, British journal of pharmaco… (1999) | [10.1038/sj.bjp.0702800](https://doi.org/10.1038/sj.bjp.0702800) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Teschemacher_1999_I_HERG](drugs/drug_imipramine/pd_Teschemacher_1999_I_HERG.md) | HERG tail current (I HERG) inhibition ← imipramine · direct sigmoid Emax (Hill) effect | — | Teschemacher AG et al., Inhibition of the current of heterologo…, British journal of pharmaco… (1999) | [10.1038/sj.bjp.0702800](https://doi.org/10.1038/sj.bjp.0702800) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Wölfel_1992_3H_5_HT_efflux](drugs/drug_imipramine/pd_W_lfel_1992_3H_5_HT_efflux.md) | drug-induced increase in 3H-5-HT efflux from platelets ← imipramine · direct Emax (saturable) effect | — | Wölfel R et al., Evidence for various tryptamines and re…, Naunyn-Schmiedeberg's archi… (1992) | [10.1007/BF00165727](https://doi.org/10.1007/BF00165727) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=imipramine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate, `SLC22A4` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate, `SLC22A4` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| distribution | blood | `ALB` unknown, `ORM1` unknown | DrugBank actor |
-| distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
-| distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2B6` substrate, `CYP2C19` inhibitor/substrate, `CYP2D6` inhibitor/substrate, `CYP2E1` inhibitor, `CYP3A4` substrate, `CYP3A7` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
-| — | brain | `SLC6A4` inhibitor | DrugBank actor |
-| — | platelet | `SLC6A4` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target), CYP2C18 (substrate), DRD1 (binder), DRD2 (binder), HRH1 (target), HTR1A (activator), HTR2A (target), HTR2C (target), HTR6 (binder), HTR7 (target), KCND2 (inhibitor), KCND3 (inhibitor), KCNH1 (inhibitor), KCNH2 (inhibitor), SLC6A2 (inhibitor), SLC6A3 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

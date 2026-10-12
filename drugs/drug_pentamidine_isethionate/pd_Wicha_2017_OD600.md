@@ -21,7 +21,7 @@
 
 > Pentamidine acts on fungal growth measured as OD600 via a sigmoidal Emax model (parameters Emax, EC50, Hill factor H), with inhibition of growth; in the GPDI framework the interaction is quantified as a competitive-type EC50 shift, with an INT value corresponding to a 432% increase in EC50. The excerpts do not state the numeric EC50, Emax, or Hill factor for pentamidine.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Wicha_2017`
 - **model family:** `sigmoid_emax`
@@ -48,11 +48,11 @@ Wicha SG et al., A general pharmacodynamic interaction m…, Nature communicatio
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

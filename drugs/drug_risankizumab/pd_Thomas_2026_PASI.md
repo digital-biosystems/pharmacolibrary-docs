@@ -16,11 +16,11 @@
 
 **As extracted:** Risankizumab (concentrations from this paper's PK model) drives Psoriasis Area and Severity Index (PASI): indirect response — drug inhibits the production of Psoriasis Area and Severity Index (PASI).
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The model describes risankizumab concentrations (mg/L) acting on the Psoriasis Area and Severity Index (PASI) via an indirect response mechanism where the drug inhibits the production of psoriasis skin lesions (Ki parameter) using an additive Emmax effect. The key parameters are a baseline (BSL) of 23.4 PASI, an EC50 of 0.106 mg/L, a maximal effect (Emax) of 1.00, and a turnover rate (Kout) of 0.0499 day⁻¹.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Thomas_2026`
 - **model family:** `indirect_response_i`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

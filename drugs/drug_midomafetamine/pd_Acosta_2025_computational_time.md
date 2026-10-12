@@ -22,7 +22,7 @@
 
 > The paper does not describe a pharmacodynamic model for midomafetamine; instead, it reports the computational time (144.9 s) required for a genetic algorithm-based mutation operator (GB-GA) in a virtual screening workflow. No drug concentrations, potency parameters (e.g., IC50), or effect mechanism are provided for midomafetamine in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Acosta_2025`
 - **model family:** `unknown`
@@ -42,11 +42,11 @@ _No resolved parameters._
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

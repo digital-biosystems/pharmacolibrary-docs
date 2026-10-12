@@ -20,7 +20,7 @@
 
 > The paper models Day 28 crude ACPR as a binary response using a logistic regression where artefenomel exposure is quantified by AUC0–∞, but the study does not demonstrate a statistically significant contribution of artefenomel to this response (odds ratio 1.0 [95% CI 0.98, 1.1], P = 0.21). The paper does not provide specific potency or rate parameters such as Imax, IC50, EC50, kin, kout, or ke0.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Gansane_2023`
 - **model family:** `categorical`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

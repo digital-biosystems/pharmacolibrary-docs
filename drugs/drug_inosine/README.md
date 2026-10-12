@@ -28,19 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Módis_2009_cytoprotective_effect](drugs/drug_inosine/pd_M_dis_2009_cytoprotective_effect.md) | cytoprotective effect ← inosine · stimulation effect | — | Módis K et al., Cytoprotective effects of adenosine and…, British journal of pharmaco… (2009) | [10.1111/j.1476-5381.2009.00432.x](https://doi.org/10.1111/j.1476-5381.2009.00432.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=inosine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `XDH` inducer/substrate | DrugBank actor |
-| metabolism | small intestine | `XDH` inducer/substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: PNP (unknown), SLC28A3 (unknown).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Módis_2009_cytoprotective_effect](drugs/drug_inosine/pd_M_dis_2009_cytoprotective_effect.md) | cytoprotective effect ← inosine · stimulation effect | — | Módis K et al., Cytoprotective effects of adenosine and…, British journal of pharmaco… (2009) | [10.1111/j.1476-5381.2009.00432.x](https://doi.org/10.1111/j.1476-5381.2009.00432.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

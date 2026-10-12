@@ -32,23 +32,14 @@ Piretanide is a loop (high-ceiling) diuretic used to treat conditions involving 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818), gpt-oss:120b (not confirmed, agreement 0.188). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Trenk_1987_reference](drugs/drug_piretanide/Piretanide_Trenk1987_reference.md) | — | 1-compartment (no model) | 5 | Trenk D et al., Pharmacokinetics and bioavailability of…, Arzneimittel-Forschung (1987) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.444), gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Marone_1984_reference](drugs/drug_piretanide/Piretanide_Marone1984_reference.md) | — | 1-compartment (no model) | 1 | Marone C et al., Pharmacokinetics of high doses of piret…, European journal of clinica… (1984) | [10.1007/BF00556897](https://doi.org/10.1007/BF00556897) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818), gpt-oss:120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Trenk_1987_reference](drugs/drug_piretanide/Piretanide_Trenk1987_reference.md) | — | 1-compartment (no model) | 5 | Trenk D et al., Pharmacokinetics and bioavailability of…, Arzneimittel-Forschung (1987) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.444), gpt-oss:120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Marone_1984_reference](drugs/drug_piretanide/Piretanide_Marone1984_reference.md) | — | 1-compartment (no model) | 1 | Marone C et al., Pharmacokinetics of high doses of piret…, European journal of clinica… (1984) | [10.1007/BF00556897](https://doi.org/10.1007/BF00556897) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Marone_1989_diuresis](drugs/drug_piretanide/pd_Marone_1989_diuresis.md) | diuresis ← urinary piretanide excretion · direct Emax (saturable) effect | — | Marone C et al., Efficacy and pharmacokinetics of pireta…, European journal of clinica… (1989) | [10.1111/j.1365-2362.1989.tb00245.x](https://doi.org/10.1111/j.1365-2362.1989.tb00245.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=piretanide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: SLC12A1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> | [Marone_1989_diuresis](drugs/drug_piretanide/pd_Marone_1989_diuresis.md) | diuresis ← urinary piretanide excretion · direct Emax (saturable) effect | — | Marone C et al., Efficacy and pharmacokinetics of pireta…, European journal of clinica… (1989) | [10.1111/j.1365-2362.1989.tb00245.x](https://doi.org/10.1111/j.1365-2362.1989.tb00245.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

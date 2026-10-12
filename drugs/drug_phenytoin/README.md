@@ -24,7 +24,7 @@ Phenytoin is an anti-seizure medication used to treat epilepsy, including tempor
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Della_1998_reference](drugs/drug_phenytoin/Phenytoin_Della1998_reference.md) | — | 1-compartment (no model) | 0 | Della Paschoa OE et al., Modelling of the pharmacodynamic intera…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0702235](https://doi.org/10.1038/sj.bjp.0702235) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Della_1998_reference](drugs/drug_phenytoin/Phenytoin_Della1998_reference.md) | — | 1-compartment (no model) | 0 | Della Paschoa OE et al., Modelling of the pharmacodynamic intera…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0702235](https://doi.org/10.1038/sj.bjp.0702235) |
 
 ## Pharmacodynamics (PD)
 
@@ -34,32 +34,6 @@ Phenytoin is an anti-seizure medication used to treat epilepsy, including tempor
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Della_1998_2_EEG](drugs/drug_phenytoin/pd_Della_1998_2_EEG.md) | electroencephalogram (EEG) effect ← phenytoin · direct sigmoid Emax (Hill) effect | — | Della Paschoa OE et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal of pharmacology… (1998) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Della_1998_2_TGS](drugs/drug_phenytoin/pd_Della_1998_2_TGS.md) | threshold for generalized seizure activity ← phenytoin · direct sigmoid Emax (Hill) effect | — | Della Paschoa OE et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal of pharmacology… (1998) | — |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Bettio_2025_Fraction_Seizing](drugs/drug_phenytoin/pd_Bettio_2025_Fraction_Seizing.md) | Fraction Seizing ← phenytoin · categorical (graded) response model | — | Bettio L et al., The Pharmacokinetic and Pharmacodynamic…, International journal of mo… (2025) | [10.3390/ijms26157029](https://doi.org/10.3390/ijms26157029) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=phenytoin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| metabolism | brain | `COMT` substrate, `CYP2D6` substrate | DrugBank actor |
-| metabolism | kidney | `COMT` substrate, `CYP3A5` inducer/substrate, `UGT1A9` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `COMT` substrate, `CYP1A2` inducer, `CYP2A6` substrate, `CYP2B6` inducer/substrate, `CYP2C19` inducer/substrate, `CYP2C8` inducer/substrate, `CYP2C9` inducer/inhibitor/substrate, `CYP2D6` substrate, `CYP2E1` substrate, `CYP3A4` inducer/substrate, `CYP3A5` inducer/substrate, `CYP3A7` inducer/substrate, `EPHX1` substrate, `NQO1` substrate, `UGT1A1` inducer/substrate, `UGT1A4` substrate, `UGT1A6` inhibitor/substrate, `UGT1A9` inhibitor/substrate | DrugBank actor |
-| metabolism | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` inducer/substrate, `UGT1A1` inducer/substrate, `UGT1A6` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `ABCC2` substrate | DrugBank actor |
-| excretion | liver | `ABCC2` substrate | DrugBank actor |
-| excretion | small intestine | `ABCC2` substrate | DrugBank actor |
-| — | adrenal gland | `CYP11B1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CACNA1C (inhibitor), CYP2C18 (substrate), KCNH2 (inhibitor), NR1I2 (target), SCN1A (inhibitor), SCN1B (inhibitor), SCN2A (inhibitor), SCN3A (inhibitor), SCN5A (inhibitor), SCN8A (inhibitor), SERPINA7 (substrate), SLCO1C1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -29,32 +29,12 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span> | [Kakehata_1996_Cm_pk](drugs/drug_choline_salicylate/pd_Kakehata_1996_Cm_pk.md) | reduction in nonlinear peak capacitance (Cm pk) ← salicylate · direct sigmoid Emax (Hill) effect | — | Kakehata S et al., Effects of salicylate and lanthanides o…, The Journal of neuroscience… (1996) | [10.1523/JNEUROSCI.16-16-04881.1996](https://doi.org/10.1523/JNEUROSCI.16-16-04881.1996) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> | [Koh_2025_TXB2](drugs/drug_choline_salicylate/pd_Koh_2025_TXB2.md) | thromboxane B2 ← acetylsalicylic acid · indirect response — drug inhibits the production of thromboxane B2 | — | Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, development an… (2025) | [10.2147/DDDT.S533428](https://doi.org/10.2147/DDDT.S533428) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> | [Koh_2025_TXB2](drugs/drug_choline_salicylate/pd_Koh_2025_TXB2.md) | thromboxane B2 ← acetylsalicylic acid · indirect response — drug inhibits the production of thromboxane B2 | — | Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, development an… (2025) | [10.2147/DDDT.S533428](https://doi.org/10.2147/DDDT.S533428) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Matthew_1992_defecation](drugs/drug_choline_salicylate/pd_Matthew_1992_defecation.md) | defecation ← physostigmine salicylate · stimulation effect | — | Matthew CB et al., Physostigmine: dose-response effects on…, Life sciences (1992) | [10.1016/0024-3205(92)90195-u](https://doi.org/10.1016/0024-3205(92)90195-u) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Matthew_1992_rate_of_rise_of_core_temperature](drugs/drug_choline_salicylate/pd_Matthew_1992_rate_of_rise_of_core_temperature.md) | rate of rise of core temperature ← physostigmine salicylate · stimulation effect | — | Matthew CB et al., Physostigmine: dose-response effects on…, Life sciences (1992) | [10.1016/0024-3205(92)90195-u](https://doi.org/10.1016/0024-3205(92)90195-u) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Matthew_1992_running_time_to_exhaustion](drugs/drug_choline_salicylate/pd_Matthew_1992_running_time_to_exhaustion.md) | running time to exhaustion ← physostigmine salicylate · inhibition effect | — | Matthew CB et al., Physostigmine: dose-response effects on…, Life sciences (1992) | [10.1016/0024-3205(92)90195-u](https://doi.org/10.1016/0024-3205(92)90195-u) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Matthew_1992_salivation](drugs/drug_choline_salicylate/pd_Matthew_1992_salivation.md) | salivation ← physostigmine salicylate · stimulation effect | — | Matthew CB et al., Physostigmine: dose-response effects on…, Life sciences (1992) | [10.1016/0024-3205(92)90195-u](https://doi.org/10.1016/0024-3205(92)90195-u) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Matthew_1992_tremors](drugs/drug_choline_salicylate/pd_Matthew_1992_tremors.md) | tremors ← physostigmine salicylate · stimulation effect | — | Matthew CB et al., Physostigmine: dose-response effects on…, Life sciences (1992) | [10.1016/0024-3205(92)90195-u](https://doi.org/10.1016/0024-3205(92)90195-u) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=choline_salicylate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | kidney | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
-| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
-| absorption | small intestine | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
-| distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
-| distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
-| metabolism | blood | `BCHE` product | DrugBank actor |
-| metabolism | liver | `BCHE` product, `SLC22A1` inhibitor/substrate | DrugBank actor |
-| excretion | kidney | `SLC22A2` inhibitor/substrate | DrugBank actor |
-| — | blood | `ACHE` product | DrugBank actor |
-| — | neuromuscular junction | `ACHE` product | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CEPT1 (substrate), CHAT (substrate), CHDH (substrate), CHKA (substrate), CHKB (substrate), CHRNA7 (unknown), PCYT1A (product), PCYT1B (product), PLD1 (product), PLD2 (product), SLC44A1 (substrate), SLC44A3 (substrate), SLC44A4 (substrate), SLC5A7 (substrate).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

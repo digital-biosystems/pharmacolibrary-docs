@@ -12,6 +12,8 @@
 
 **Description.** Bufuralol is a new, non-selective -adrenoceptor blocking agent.
 
+<p><small>Source: <a href="https://go.drugbank.com/drugs/DB06726">DrugBank DB06726</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
@@ -27,17 +29,6 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.00).">in vitro</span> | [He_2002_bufuralol_1_hydroxylation](drugs/drug_bufuralol/pd_He_2002_bufuralol_1_hydroxylation.md) | bufuralol 1'-hydroxylation ← H1-antihistamines · inhibition effect | — | He N et al., Inhibitory effects of H1-antihistamines…, European journal of clinica… (2002) | [10.1007/s00228-001-0399-0](https://doi.org/10.1007/s00228-001-0399-0) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bufuralol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CYP2D6` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ADRB1 (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

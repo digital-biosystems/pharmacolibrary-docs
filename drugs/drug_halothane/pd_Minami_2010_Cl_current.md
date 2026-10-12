@@ -21,7 +21,7 @@
 
 > Halothane concentrations (0.25 to 2 mM) inhibit the DAMGO-induced Ca2+-activated Cl-currents in a concentration-dependent manner, with the response decreasing to 75.1% to 48.6% of control values, respectively. The paper describes this as a direct inhibitory effect on the current but does not specify the underlying mechanism (e.g., receptor vs. channel) nor provide fitted potency parameters such as IC50 or Emax.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Minami_2010`
 - **model family:** `unknown`
@@ -55,7 +55,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

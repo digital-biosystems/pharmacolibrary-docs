@@ -20,7 +20,7 @@
 
 > Formoterol plasma concentrations (pg/ml) inhibit blood eosinophil counts via a sigmoid Emax model; the paper reports an EC50 of 91.4 pg/ml, but no full text is available so Imax, the Hill coefficient, and the mechanism description cannot be confirmed.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `van_1999`
 - **model family:** `sigmoid_emax`
@@ -61,7 +61,7 @@ van den Berg BT et al., Pharmacokinetic/pharmacodynamic modelli…, Pulmonary ph
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -5,7 +5,7 @@
 
 # daunorubicin — `Daunorubicin_Thompson2014v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,8 +29,7 @@ Independently confirmed by `qwen3.8-27b`.
 Thompson P et al., Pharmacokinetics and pharmacogenomics o…, Cancer chemotherapy and pha… (2014)
   ·  DOI: [10.1007/s00280-014-2535-4](https://doi.org/10.1007/s00280-014-2535-4)
 
-## Model component
-<dbs-pgx drug="daunorubicin" model-id="Daunorubicin_Thompson2014v2_reference" status="needs_review" stale="false" population="children with cancer" measured-compound="daunorubicin" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daunorubicin" model-id="Daunorubicin_Thompson2014v2_reference" status="needs_review" stale="false" population="children with cancer" measured-compound="daunorubicin" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -108,7 +107,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_daunorubicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Thompson_2014_2` / `Thompson_2014_2::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_daunorubicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Thompson_2014_2` / `Thompson_2014_2::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -129,7 +128,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -32,17 +32,7 @@ Imetelstat is an anticancer medicine used to treat anemia in people with myelody
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.76). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [González-Sales_2024_reference](drugs/drug_imetelstat/Imetelstat_GonzlezSales2024_reference.md) | — | 1-compartment (no model) | 8 (+2 cov.) | González-Sales M et al., Population pharmacokinetics of imetelst…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13160](https://doi.org/10.1002/psp4.13160) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=imetelstat).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: Human telomerase RNA component (binder), PTGES3 (unknown), SCYL1 (unknown), SMG6 (unknown), TERT (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.76). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [González-Sales_2024_reference](drugs/drug_imetelstat/Imetelstat_GonzlezSales2024_reference.md) | — | 1-compartment (no model) | 8 (+2 cov.) | González-Sales M et al., Population pharmacokinetics of imetelst…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13160](https://doi.org/10.1002/psp4.13160) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -20,7 +20,7 @@
 
 > The model describes ponesimod as inhibiting heart rate, with a maximal effect parameter of a 23.5% decrease, though the specific mechanism of action is not provided in the available excerpts. No other potency or rate parameters (such as EC50 or ke0) are stated in the record or the paper excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Valenzuela_2023`
 - **model family:** `unknown`
@@ -61,7 +61,7 @@ Valenzuela B et al., Pharmacokinetic-Pharmacodynamic Modelin…, Clinical pharma
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

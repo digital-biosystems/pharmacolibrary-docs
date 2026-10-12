@@ -21,7 +21,7 @@
 
 > Azelastine binds ACE2 with an SPR equilibrium dissociation constant KD of (2.58 ± 0.48) × 10−7 M; the paper does not describe a PD model linking concentrations to this binding response. Functionally, azelastine concentration-dependently inhibited SARS-CoV-2 pseudovirus entry into ACE2h cells (EC50 = 3.834 μM; CC50 = 84.140 μM; SI = 21.95), proposed to occur via ACE2 binding.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Ge_2021`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Ge S et al., Azelastine inhibits viropexis of SARS-C…, Virology (2021)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

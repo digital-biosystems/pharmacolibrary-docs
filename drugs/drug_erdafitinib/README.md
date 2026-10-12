@@ -32,34 +32,14 @@ Erdafitinib is a protein kinase inhibitor used to treat transitional cell carcin
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Dosne_2020_reference](drugs/drug_erdafitinib/Erdafitinib_Dosne2020_reference.md) | — | 1-compartment (no model) | 3 | Dosne AG et al., Population Pharmacokinetics of Total an…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1547](https://doi.org/10.1002/jcph.1547) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Dosne_2022_reference](drugs/drug_erdafitinib/Erdafitinib_Dosne2022_reference.md) | — | 1-compartment (no model) | 1 | Dosne AG et al., Erdafitinib's effect on serum phosphate…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12727](https://doi.org/10.1002/psp4.12727) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Dosne_2020_reference](drugs/drug_erdafitinib/Erdafitinib_Dosne2020_reference.md) | — | 1-compartment (no model) | 3 | Dosne AG et al., Population Pharmacokinetics of Total an…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1547](https://doi.org/10.1002/jcph.1547) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Dosne_2022_reference](drugs/drug_erdafitinib/Erdafitinib_Dosne2022_reference.md) | — | 1-compartment (no model) | 1 | Dosne AG et al., Erdafitinib's effect on serum phosphate…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12727](https://doi.org/10.1002/psp4.12727) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | [De_2024_serum_phosphate](drugs/drug_erdafitinib/pd_De_2024_serum_phosphate.md) | serum phosphate · model not identified | — | De Carlo A et al., Reinforcement Learning and PK-PD Models…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3176](https://doi.org/10.1002/cpt.3176) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=erdafitinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
-| distribution | blood | `ORM1` binder | DrugBank actor |
-| metabolism | liver | `CYP2C9` substrate, `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CSF1R (substrate), FGFR1 (inhibitor), FGFR2 (inhibitor), FGFR3 (inhibitor), FGFR4 (inhibitor), KDR (substrate), KIT (substrate), PDGFRA (substrate), PDGFRB (substrate), RET (substrate).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span> | [De_2024_serum_phosphate](drugs/drug_erdafitinib/pd_De_2024_serum_phosphate.md) | serum phosphate · model not identified | — | De Carlo A et al., Reinforcement Learning and PK-PD Models…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3176](https://doi.org/10.1002/cpt.3176) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -16,11 +16,11 @@
 
 **As extracted:** Monohydroxy derivative (concentrations from this paper's PK model) drives percent change from baseline 28-day seizure frequency: direct log-linear effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > A log-linear model relates the minimum concentration (Cmin) of the monohydroxy derivative (MHD) in µmol/L to the log-transformed percent change from baseline 28-day seizure frequency, with the drug described as providing an inhibitory effect. The paper does not explicitly state a mechanism of action such as effect compartment or Emax, using instead a regression where the slope is -0.00427 and the y-intercept is 4.36203.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Faison_2020`
 - **model family:** `log_linear`
@@ -95,7 +95,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

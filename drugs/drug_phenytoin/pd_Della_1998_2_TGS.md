@@ -21,7 +21,7 @@
 
 > The model assumes a sigmoid Emax relationship where phenytoin plasma concentrations (in microg ml-1) stimulate the threshold for generalized seizure activity (TGS) additively. The paper provides a parameter B of 2.0 microA ml microg-1 and a Hill coefficient n of 2.7, but does not describe the mechanism of action or specify rate constants such as ke0.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Della_1998_2`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Della Paschoa OE et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

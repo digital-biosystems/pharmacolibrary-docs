@@ -16,11 +16,11 @@
 
 **As extracted:** Ponesimod (concentrations from the PK model of Valenzuela_2021) drives Combined unique active lesions (in lesions/year): direct log-linear effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Ponesimod systemic exposure (AUCss) inhibits the rate of combined unique active lesions (CUAL) via a log-linear relationship, with a slope of -0.700 per unit log AUCss and a baseline mean rate of 0.874 lesions/year. The model does not specify an underlying biological mechanism such as an effect compartment or specific production/elimination kinetics, but rather describes the statistical exposure-response relationship using a negative binomial distribution.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Valenzuela_2022`
 - **model family:** `log_linear`
@@ -96,7 +96,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

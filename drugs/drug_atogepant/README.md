@@ -33,37 +33,15 @@ Atogepant is a CGRP antagonist used to treat migraine. It is an approved medicin
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.632), gpt-oss:120b (not confirmed, agreement 0.591). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Schlachter_2026_phase_2_modela](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela.md) | ▶ model + simulator | 2-compartment, oral | 8 (+2 cov.) | Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01566-5](https://doi.org/10.1007/s40262-025-01566-5) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667), gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q95 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Schlachter_2026_phase_1_model](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_1_model.md) | — | 2-compartment (no model) | 8 (+2 cov.) | Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01566-5](https://doi.org/10.1007/s40262-025-01566-5) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.517), gpt-oss:120b (not confirmed, agreement 0.654). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q82 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Schlachter_2026_phase_3_modela](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_3_modela.md) | — | 3-compartment (no model) | 9 (+6 cov.) | Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01566-5](https://doi.org/10.1007/s40262-025-01566-5) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.632), gpt-oss:120b (not confirmed, agreement 0.591). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Schlachter_2026_phase_2_modela](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela.md) | ▶ model + simulator | 2-compartment, oral | 8 (+2 cov.) | Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01566-5](https://doi.org/10.1007/s40262-025-01566-5) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667), gpt-oss:120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q95 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Schlachter_2026_phase_1_model](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_1_model.md) | — | 2-compartment (no model) | 8 (+2 cov.) | Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01566-5](https://doi.org/10.1007/s40262-025-01566-5) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.517), gpt-oss:120b (not confirmed, agreement 0.654). Primary extraction retained.">cross-check: disputed 0/2</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q82 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Schlachter_2026_phase_3_modela](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_3_modela.md) | — | 3-compartment (no model) | 9 (+6 cov.) | Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01566-5](https://doi.org/10.1007/s40262-025-01566-5) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Schlachter_2026_2_MMD](drugs/drug_atogepant/pd_Schlachter_2026_2_MMD.md) | Monthly migraine days ← atogepant · direct Emax (saturable) effect | ▶ model + simulator | Schlachter L et al., Exposure-Response Modeling of Monthly M…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70154](https://doi.org/10.1002/psp4.70154) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=atogepant).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP3A4` substrate, `SLC22A1` inhibitor, `SLCO1B1` inhibitor/substrate, `SLCO1B3` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A6` substrate, `SLC47A1` inhibitor | DrugBank actor |
-| excretion | liver | `SLC47A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CALCRL (target).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

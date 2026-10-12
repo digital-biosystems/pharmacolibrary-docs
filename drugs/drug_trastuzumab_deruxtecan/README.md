@@ -32,31 +32,9 @@ Trastuzumab deruxtecan is an antibody-drug conjugate used to treat breast cancer
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.211). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Yin_2021_final_final_released_drug_model](drugs/drug_trastuzumab_deruxtecan/TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode.md) | held back | 1-compartment, IV | 3 (+5 cov.) | Yin O et al., Population Pharmacokinetics of Trastuzu…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2096](https://doi.org/10.1002/cpt.2096) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Asiimwe_2025_reference](drugs/drug_trastuzumab_deruxtecan/TrastuzumabDeruxtecan_Asiimwe2025_reference.md) | — | 1-compartment (no model) | 0 | Asiimwe IG et al., Postmarketing Assessment of Antibody-Dr…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70013](https://doi.org/10.1002/psp4.70013) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.304). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub><br><sub>route_to: `engineer`</sub> | [Yin_2021_final](drugs/drug_trastuzumab_deruxtecan/TrastuzumabDeruxtecan_Yin2021_final.md) | ▶ model + simulator | 1-compartment, IV | 4 (+7 cov.) | Yin O et al., Population Pharmacokinetics of Trastuzu…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2096](https://doi.org/10.1002/cpt.2096) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=trastuzumab_deruxtecan).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
-| distribution | blood-brain barrier | `ABCC1` substrate | DrugBank actor |
-| distribution | lung | `ABCC1` substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate, `SLCO1B1` unknown, `SLCO1B3` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC47A2` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CTSB (substrate), CTSL (substrate), FCGR1A (antibody), GAA (substrate), TOP1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.211). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Yin_2021_final_final_released_drug_model](drugs/drug_trastuzumab_deruxtecan/TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode.md) | held back | 1-compartment, IV | 3 (+5 cov.) | Yin O et al., Population Pharmacokinetics of Trastuzu…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2096](https://doi.org/10.1002/cpt.2096) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Asiimwe_2025_reference](drugs/drug_trastuzumab_deruxtecan/TrastuzumabDeruxtecan_Asiimwe2025_reference.md) | — | 1-compartment (no model) | 0 | Asiimwe IG et al., Postmarketing Assessment of Antibody-Dr…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70013](https://doi.org/10.1002/psp4.70013) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.304). Primary extraction retained.">cross-check: disputed</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub><br><sub>route_to: `engineer`</sub> | [Yin_2021_final](drugs/drug_trastuzumab_deruxtecan/TrastuzumabDeruxtecan_Yin2021_final.md) | ▶ model + simulator | 1-compartment, IV | 4 (+7 cov.) | Yin O et al., Population Pharmacokinetics of Trastuzu…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2096](https://doi.org/10.1002/cpt.2096) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

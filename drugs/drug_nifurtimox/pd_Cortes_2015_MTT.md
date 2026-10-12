@@ -22,7 +22,7 @@
 
 > Nifurtimox concentrations (μM) inhibit T. cruzi Y strain trypomastigote viability measured by MTT reduction after 24 h exposure, described by a sigmoid Emax (concentration-response) relationship with EC50 = 4.1 ± 0.9 μM (abstract states 4.1 ± 0.6 μM); the paper does not state a mechanistic PD model (e.g., kin/kout or effect compartment) for this effect.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Cortes_2015`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Cortes LA et al., Novel Gallate Triphenylphosphonium Deri…, PloS one (2015)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

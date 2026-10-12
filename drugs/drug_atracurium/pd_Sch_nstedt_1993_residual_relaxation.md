@@ -20,7 +20,7 @@
 
 > The paper describes a dose-only model where atracurium inhibits residual relaxation, but the specific mechanism (e.g., direct Emax vs. indirect response) is not detailed in the available excerpts. No potency or rate parameters (such as IC50, EC50, kin, kout, ke0, or gamma) are provided in the text.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Schönstedt_1993`
 - **model family:** `unknown`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

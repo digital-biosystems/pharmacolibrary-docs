@@ -19,7 +19,7 @@
 
 > Tocilizumab plasma concentrations inhibit Absolute Neutrophil Count (ANC) via a direct proportional mechanism described by the formula ANC0 * (1 - Emax * C^gamma / (EC50^gamma + C^gamma)), incorporating a tolerance compartment with a rate constant of 0.281 1/day. The model parameters include a baseline ANC0 of 4.57 ×109/L, an Emax of 1.75, and an EC50 of 1.78 mg/L, though the specific value for the gamma parameter is not provided in the record or excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kovalenko_2020`
 - **model family:** `tolerance`
@@ -63,7 +63,7 @@ Kovalenko P et al., Population Pharmacodynamic Model of Neu…, CPT: pharmacomet
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

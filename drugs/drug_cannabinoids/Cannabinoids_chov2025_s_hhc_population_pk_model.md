@@ -5,7 +5,7 @@
 
 # cannabinoids — `Cannabinoids_chov2025_s_hhc_population_pk_model`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,7 +15,7 @@
 
 > **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -31,8 +31,7 @@ The record reports tlag 0.49 h, kabs 0.41 h−1, V/F 1925.9 mL and CL/F 3732.1 m
 Šíchová K et al., Hexahydrocannabinol: pharmacokinetics,…, The international journal o… (2025)
   ·  DOI: [10.1093/ijnp/pyaf041](https://doi.org/10.1093/ijnp/pyaf041)
 
-## Model component
-<dbs-pgx drug="cannabinoids" model-id="Cannabinoids_chov2025_s_hhc_population_pk_model" status="extracted" stale="true" population="male Wistar rats" measured-compound="hexahydrocannabinol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cannabinoids" model-id="Cannabinoids_chov2025_s_hhc_population_pk_model" status="extracted" stale="true" population="male Wistar rats" measured-compound="hexahydrocannabinol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
@@ -99,10 +98,10 @@ The record reports tlag 0.49 h, kabs 0.41 h−1, V/F 1925.9 mL and CL/F 3732.1 m
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_cannabinoids/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Šíchová_2025` / `Šíchová_2025::s_hhc_population_pk_model`)
-- model: `../../../knowledgebase/drugs/drug_cannabinoids/models/modelica/Cannabinoids_chov2025_s_hhc_population_pk_model.mo`
-- deviation: `../../../knowledgebase/drugs/drug_cannabinoids/models/modelica/Cannabinoids_chov2025_s_hhc_population_pk_model.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_cannabinoids/models/modelica/Cannabinoids_chov2025_s_hhc_population_pk_model.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cannabinoids/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Šíchová_2025` / `Šíchová_2025::s_hhc_population_pk_model`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cannabinoids/models/modelica/Cannabinoids_chov2025_s_hhc_population_pk_model.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cannabinoids/models/modelica/Cannabinoids_chov2025_s_hhc_population_pk_model.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_cannabinoids/models/modelica/Cannabinoids_chov2025_s_hhc_population_pk_model.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -120,7 +119,7 @@ The record reports tlag 0.49 h, kabs 0.41 h−1, V/F 1925.9 mL and CL/F 3732.1 m
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_cannabinoids/Cannabinoids_chov2025_s_hhc_population_pk_model/Cannabinoids_chov2025_s_hhc_population_pk_model.svg" alt="Cannabinoids_chov2025_s_hhc_population_pk_model diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_cannabinoids/Cannabinoids_chov2025_s_hhc_population_pk_model/Cannabinoids_chov2025_s_hhc_population_pk_model.svg" alt="Cannabinoids_chov2025_s_hhc_population_pk_model diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

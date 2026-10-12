@@ -28,16 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.99).">in vitro</span> | [Aziz_2005_size_of_calcium_oxalate_crystals](drugs/drug_potassium_citrate/pd_Aziz_2005_size_of_calcium_oxalate_crystals.md) | size of calcium oxalate crystals ← potassium citrate · inhibition effect | — | Aziz SA et al., In vitro effects of plantago major extr…, The Malaysian journal of me… (2005) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=potassium_citrate).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.99).">in vitro</span> | [Aziz_2005_size_of_calcium_oxalate_crystals](drugs/drug_potassium_citrate/pd_Aziz_2005_size_of_calcium_oxalate_crystals.md) | size of calcium oxalate crystals ← potassium citrate · inhibition effect | — | Aziz SA et al., In vitro effects of plantago major extr…, The Malaysian journal of me… (2005) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

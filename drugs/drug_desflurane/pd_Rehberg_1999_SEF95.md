@@ -19,7 +19,7 @@
 
 > The model describes the inhibition of spectral edge frequency at the 95th percentile (SEF95) by desflurane via a sigmoid Emax effect compartment model. Key parameters include an EC50 of 3.48 vol%, a ke0 of 0.61 min(-1), and a lambda (gamma) of 0.86.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Rehberg_1999`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Rehberg B et al., Comparative pharmacodynamic modeling of…, Anesthesiology (19
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -4,7 +4,7 @@
 
 # levocetirizine — `Levocetirizine_Hussein2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.438). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.176). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -20,7 +20,7 @@
 
 The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The apparent clearance and volume of distribution parameters caused double correction, violating parameter coherence. Fitted pharmacokinetic estimates were unavailable because only the abstract was read. Extracted — levocetirizine: CL/F 0.044 L/h/kg, Vnorm 0.639 l kg(-1), CL 0.6 l h(-1), Frel 0.28 in, AUCSS 1.95e+03 ng·h/mL, AUC/dose 2.04e+03 microg l(-1) h, kabs 0.095 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc: this record has none, the second reading 1952; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cetirizine, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -87,21 +87,26 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.438 (7/16 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.176 (3/17 fields) | 14 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>14 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc(ss) in compliant subjects]` | not captured | 1952 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[auc(ss), calculated in compliant subjects using posterior estimates of the final model, was]` | 1952 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc]` | not captured | 1952 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f increased linearly with weight by]` | 0.044 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f increased linearly with weight by]` | not captured | 0.044 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[estimated relative bioavailability]` | not captured | 0.28 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[in adults after intake of 5 mg oral solution]` | 2036 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[intercept of]` | not captured | 0.244 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ka]` | 0.095 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[population estimates in children with weights of 8 and 20 kg were]` | 0.6 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[relative bioavailability]` | not captured | 0.28 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[the estimated relative bioavailability was]` | 0.28 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f increased linearly with weight by].parameter_id` | Q352 | Q76 | mismatch |
+| `gpt-oss-120b` | `parameters[v/f increased linearly with weight by]` | 0.639 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f increased linearly with weight by]` | not captured | 0.639 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | cetirizine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | levocetirizine | unknown | mismatch |
 
 </details>
 
@@ -136,18 +141,18 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_levocetirizine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hussein_2005` / `Hussein_2005::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_levocetirizine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hussein_2005` / `Hussein_2005::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -19,7 +19,7 @@
 
 > The paper describes a longitudinal Emax model where tocilizumab dose acts on the modified Rodnan skin score (mRSS), noting that guselkumab showed a greater effect than other agents but not specifying the specific mechanism (e.g., production inhibition vs. direct effect) or key potency parameters (Emax, ET50) for tocilizumab. While the text states a shared ET50 parameter was estimated for mRSS and FVC, it does not provide the numerical value for this parameter or any drug-specific potency values in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Vaskeikina_2026`
 - **model family:** `emax`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

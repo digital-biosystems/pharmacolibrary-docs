@@ -21,7 +21,7 @@
 
 > Dantrolene was tested at concentrations (unit: μM) against the continuous response [(3)H]MK-801 binding, with an effect direction of inhibition. The only parameter stated is an IC50 of 58.4 μM; no further mechanism (e.g., effect compartment, kin/kout) or additional potency/rate values are given in the available text.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Salinska_2008`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Salinska E et al., Dantrolene antagonizes the glycineB sit…, Neuroscience lett
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

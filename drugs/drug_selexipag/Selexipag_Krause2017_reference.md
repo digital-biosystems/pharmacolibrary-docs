@@ -5,7 +5,7 @@
 
 # selexipag — `Selexipag_Krause2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.515). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.324). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -21,7 +21,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Km), so that value has no SI equivalent. Extracted — selexipag: tlag 0.67 h, kabs 0.71 1/h, V2/F 12.9 L, CL/F 19.1 L/h, Q 0.09, Q2 0.06; ACT-333679: V1/F 4.65 L, kfm 0.67 1/h, Q 1.04, Q2 0.18, kel 0.49 1/h, Km 0.15 ERA.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading 0.61; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has selexipag → act-333679 (metabolism), the second reading none; it also differs on 22 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -132,28 +132,35 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.515 (17/33 fields) | 16 |
+| `gpt-oss-120b` | not confirmed | 0.324 (11/34 fields) | 23 |
 
-<details><summary>16 field discrepancies</summary>
+<details><summary>23 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['selexipag', 'act-333679', 'metabolism']] | [] | mismatch |
 | `gpt-oss-120b` | `parameters[body_weight_on_vm_f]` | 0.88 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | ['linear_fractional', 'linear_fractional', 'linear_fractional'] | ['linear_fractional', 'linear_fractional'] | mismatch |
-| `gpt-oss-120b` | `parameters[cl]` | not captured | 0.61 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k21]` | 0.06 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k34].parameter_id` | Q30 | Q99 | mismatch |
+| `gpt-oss-120b` | `parameters[k12].parameter_id` | Q30 | Q301 | mismatch |
+| `gpt-oss-120b` | `parameters[k21].parameter_id` | Q99 | Q302 | mismatch |
+| `gpt-oss-120b` | `parameters[k34]` | not captured | 1.04 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k34]` | 1.04 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k43]` | 0.18 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[km]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km]` | not captured | 0.49 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km]` | 0.49 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kmet]` | not captured | 0.67 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kmet]` | 0.67 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pah comedication on km]` | 0.15 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_cl_f_bilirubin]` | not captured | -0.40 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_km_sex]` | not captured | 0.15 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_km_sex]` | 0.15 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q352_body_weight]` | 1.20 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q367_body_weight]` | not captured | 0.88 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_v2_f_body_weight]` | not captured | 1.20 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_vm_f_body_weight]` | not captured | 0.88 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[total_bilirubin_on_cl_f]` | -0.40 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vm]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vm]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vm/f]` | not captured | 4.65 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vm/f]` | 4.65 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vp/f].covariate_forms` | [] | ['linear_fractional'] | mismatch |
-| `gpt-oss-120b` | `parameters[vp]` | not captured | 1.2 | only_one_extracted |
 
 </details>
 
@@ -196,7 +203,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_selexipag/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Krause_2017` / `Krause_2017::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_selexipag/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Krause_2017` / `Krause_2017::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -217,7 +224,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -21,7 +21,7 @@
 
 > The record indicates that cocaine concentration acts as a driver with a sigmoid Emax mechanism on the shorter-response rate, with an EC50 of 0.467 microg/ml. However, the paper does not provide a full text, so the specific mechanism and other parameters are not explicitly described in the excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Lau_1999`
 - **model family:** `sigmoid_emax`
@@ -61,7 +61,7 @@ Lau CE et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal of pharma
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

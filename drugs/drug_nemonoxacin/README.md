@@ -32,22 +32,14 @@ Nemonoxacin is a quinolone antibacterial developed as an antibiotic for bacteria
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.235). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: F, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Chen_2023_bias](drugs/drug_nemonoxacin/Nemonoxacin_Chen2023_bias.md) | held back | 1-compartment, oral | 6 | Chen Y et al., Integrative population pharmacokinetic/…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.912962](https://doi.org/10.3389/fphar.2023.912962) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.294). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q64, Q30, Q77, Q49, Q83 — no S…</sub><br><sub>route_to: `human_review`</sub> | [Chen_2023_estimate_based_on_original_dataset](drugs/drug_nemonoxacin/Nemonoxacin_Chen2023_estimate_based_on_original_dataset.md) | — | 1-compartment (no model) | 6 | Chen Y et al., Integrative population pharmacokinetic/…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.912962](https://doi.org/10.3389/fphar.2023.912962) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.235). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: model_quarantined: F, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Chen_2023_bias](drugs/drug_nemonoxacin/Nemonoxacin_Chen2023_bias.md) | held back | 1-compartment, oral | 6 | Chen Y et al., Integrative population pharmacokinetic/…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.912962](https://doi.org/10.3389/fphar.2023.912962) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.294). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q64, Q30, Q77, Q49, Q83 — no S…</sub><br><sub>route_to: `human_review`</sub> | [Chen_2023_estimate_based_on_original_dataset](drugs/drug_nemonoxacin/Nemonoxacin_Chen2023_estimate_based_on_original_dataset.md) | — | 1-compartment (no model) | 6 | Chen Y et al., Integrative population pharmacokinetic/…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.912962](https://doi.org/10.3389/fphar.2023.912962) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">mouse</span> | [Li_2021_Log10CFU](drugs/drug_nemonoxacin/pd_Li_2021_Log10CFU.md) | log10 change in CFU per gram lung ← nemonoxacin · direct sigmoid Emax (Hill) effect | — | Li X et al., Pharmacokinetics and Pharmacodynamics o…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.658558](https://doi.org/10.3389/fphar.2021.658558) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nemonoxacin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">mouse</span> | [Li_2021_Log10CFU](drugs/drug_nemonoxacin/pd_Li_2021_Log10CFU.md) | log10 change in CFU per gram lung ← nemonoxacin · direct sigmoid Emax (Hill) effect | — | Li X et al., Pharmacokinetics and Pharmacodynamics o…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.658558](https://doi.org/10.3389/fphar.2021.658558) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

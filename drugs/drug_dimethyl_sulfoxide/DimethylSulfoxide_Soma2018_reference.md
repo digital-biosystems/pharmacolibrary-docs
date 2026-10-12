@@ -4,7 +4,7 @@
 
 # dimethyl sulfoxide — `DimethylSulfoxide_Soma2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss-120b`.
 Soma LR et al., Pharmacokinetics, disposition, and plas…, Journal of veterinary pharm… (2018)
   ·  DOI: [10.1111/jvp.12476](https://doi.org/10.1111/jvp.12476)
 
-## Model component
-<dbs-pgx drug="dimethyl sulfoxide" model-id="DimethylSulfoxide_Soma2018_reference" status="needs_review" stale="false" population="horses" measured-compound="dimethyl sulfoxide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dimethyl sulfoxide" model-id="DimethylSulfoxide_Soma2018_reference" status="needs_review" stale="false" population="horses" measured-compound="dimethyl sulfoxide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -108,7 +107,7 @@ _All readers agree on the compared fields of this record._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_dimethyl_sulfoxide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Soma_2018` / `Soma_2018::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_dimethyl_sulfoxide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Soma_2018` / `Soma_2018::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -129,7 +128,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

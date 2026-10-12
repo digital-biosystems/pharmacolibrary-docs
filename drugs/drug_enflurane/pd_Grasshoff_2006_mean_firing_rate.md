@@ -21,7 +21,7 @@
 
 > Enflurane inhibits the mean firing rate of spinal interneurones, an effect that is reduced by the GABA A receptor antagonist bicuculline and the glycine receptor antagonist strychnine. The paper states an EC50 of 0.50 mM but does not explicitly describe the mathematical mechanism (e.g., direct Emax vs. production/elimination) or provide Imax, kout, or ke0 values.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Grasshoff_2006`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Grasshoff C et al., Effects of isoflurane and enflurane on…, British journal o
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

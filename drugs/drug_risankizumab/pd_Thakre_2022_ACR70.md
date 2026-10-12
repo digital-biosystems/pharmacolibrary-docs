@@ -20,7 +20,7 @@
 
 > The paper uses logistic regression to evaluate the probability of achieving ACR70 responses at week 24 based on risankizumab exposure, finding a significant treatment effect but no statistically significant exposure–response relationship. No specific mechanism (e.g., production/elimination of the response) or quantitative potency/rate parameters (IC50, EC50, kout, etc.) are stated in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Thakre_2022`
 - **model family:** `categorical`
@@ -61,7 +61,7 @@ Thakre N et al., Population Pharmacokinetics and Exposur…, Rheumatology and th
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -32,16 +32,7 @@ Iopromide is an iodinated X-ray contrast agent used to make body structures visi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hackstein_2002_reference](drugs/drug_iopromide/Iopromide_Hackstein2002_reference.md) | — | 1-compartment (no model) | 3 | Hackstein N et al., Lopromide one-sample clearance as a mea…, Clinical physiology and fun… (2002) | [10.1046/j.1365-2281.2002.00394.x](https://doi.org/10.1046/j.1365-2281.2002.00394.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=iopromide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hackstein_2002_reference](drugs/drug_iopromide/Iopromide_Hackstein2002_reference.md) | — | 1-compartment (no model) | 3 | Hackstein N et al., Lopromide one-sample clearance as a mea…, Clinical physiology and fun… (2002) | [10.1046/j.1365-2281.2002.00394.x](https://doi.org/10.1046/j.1365-2281.2002.00394.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

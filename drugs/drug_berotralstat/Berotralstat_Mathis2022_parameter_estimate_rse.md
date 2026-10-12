@@ -5,7 +5,7 @@
 
 # berotralstat — `Berotralstat_Mathis2022_parameter_estimate_rse`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -13,7 +13,7 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022)
   ·  DOI: [10.1111/cts.13233](https://doi.org/10.1111/cts.13233)
 
-## Model component
-<dbs-pgx drug="berotralstat" model-id="Berotralstat_Mathis2022_parameter_estimate_rse" status="extracted" stale="true" population="healthy subjects and patients with hereditary angioedema" measured-compound="berotralstat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="berotralstat" model-id="Berotralstat_Mathis2022_parameter_estimate_rse" status="extracted" stale="true" population="healthy subjects and patients with hereditary angioedema" measured-compound="berotralstat" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.
@@ -133,10 +132,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_berotralstat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mathis_2022` / `Mathis_2022::parameter_estimate_rse`)
-- model: `../../../knowledgebase/drugs/drug_berotralstat/models/modelica/Berotralstat_Mathis2022_parameter_estimate_rse.mo`
-- deviation: `../../../knowledgebase/drugs/drug_berotralstat/models/modelica/Berotralstat_Mathis2022_parameter_estimate_rse.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_berotralstat/models/modelica/Berotralstat_Mathis2022_parameter_estimate_rse.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_berotralstat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mathis_2022` / `Mathis_2022::parameter_estimate_rse`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_berotralstat/models/modelica/Berotralstat_Mathis2022_parameter_estimate_rse.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_berotralstat/models/modelica/Berotralstat_Mathis2022_parameter_estimate_rse.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_berotralstat/models/modelica/Berotralstat_Mathis2022_parameter_estimate_rse.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -154,7 +153,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse.svg" alt="Berotralstat_Mathis2022_parameter_estimate_rse diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse.svg" alt="Berotralstat_Mathis2022_parameter_estimate_rse diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

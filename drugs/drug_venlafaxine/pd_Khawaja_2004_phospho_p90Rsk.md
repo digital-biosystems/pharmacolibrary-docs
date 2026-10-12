@@ -22,7 +22,7 @@
 
 > Venlafaxine concentrations (nM) stimulate p90Rsk phosphorylation (three-fold versus isoproterenol control) via a direct Emax model, with an EC50 of 3.75 nM; the paper excerpts do not state further mechanism or additional parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Khawaja_2004`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Khawaja XZ et al., Effects of venlafaxine on p90Rsk activi…, Neuroscience lett
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

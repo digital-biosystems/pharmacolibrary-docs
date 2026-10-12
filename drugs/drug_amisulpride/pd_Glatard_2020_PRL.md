@@ -16,11 +16,11 @@
 
 **As extracted:** Amisulpride (concentrations from this paper's PK model) drives Prolactin (in ng/mL): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Amisulpride plasma concentration (ng/mL) stimulates prolactin (ng/mL) via a direct Emax model (PRL = PRLbase + Emax·CP/(EC50+CP)), mechanistically reflecting D2 receptor antagonism on pituitary lactotroph cells. Potency EC50 = 42 ng/mL, Emax = 141 ng/mL (53% lower in males, θMALE_EMAX = -0.53), baseline PRLbase = 16 ng/mL; no effect-compartment or turnover components are described.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Glatard_2020`
 - **model family:** `emax`
@@ -100,7 +100,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

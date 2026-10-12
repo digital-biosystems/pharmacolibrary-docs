@@ -27,18 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Duan_2000_normalized_averaged_dose_response_curve](drugs/drug_glutamic_acid/pd_Duan_2000_normalized_averaged_dose_response_curve.md) | normalized, averaged dose-response curve ← glutamic acid · direct sigmoid Emax (Hill) effect | — | Duan S et al., Glutamate and GABA activate different r…, Journal of neurophysiology (2000) | [10.1152/jn.2000.83.1.31](https://doi.org/10.1152/jn.2000.83.1.31) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=glutamic_acid).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: AADAT (unknown), AASS (unknown), ABAT (unknown), ALDH18A1 (unknown), ASNS (unknown), BCAT1 (unknown), BCAT2 (unknown), CPQ (unknown), DNPEP (unknown), EARS2 (unknown), ENPEP (unknown), EPRS1 (unknown), FOLH1 (unknown), FPGS (unknown), FTCD (unknown), GAD1 (unknown), GAD2 (unknown), GCLC (substrate), GCLM (unknown), GGCX (unknown), GLS (unknown), GLS2 (unknown), GLUD1 (unknown), GLUD2 (substrate), GLUL (unknown), GMPS (unknown), GOT1 (substrate), GOT1 (unknown), GOT2 (unknown), GPT (unknown), GPT2 (product), GPT2 (substrate), GRIA1 (unknown), GRIA2 (unknown), GRIA3 (unknown), GRIA4 (unknown), GRIK1 (unknown), GRIK2 (unknown), GRIK3 (unknown), GRIK4 (unknown), GRIK5 (unknown), GRIN1 (unknown), GRIN2A (unknown), GRIN2B (unknown), GRIN2C (unknown), GRIN2D (unknown), GRIN3A (unknown), GRM1 (unknown), GRM4 (unknown), GRM7 (unknown), GRM8 (unknown), NADSYN1 (product), NAGS (unknown), OPLAH (unknown), PFAS (unknown), PSAT1 (unknown), SLC16A1 (substrate), SLC16A10 (inhibitor), SLC16A10 (substrate), SLC1A1 (unknown), SLC1A2 (unknown), SLC1A3 (unknown), SLC1A6 (unknown), SLC1A7 (unknown), SLC25A18 (unknown), SLC25A22 (unknown), SLC7A11 (unknown), TAT (unknown).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Duan_2000_normalized_averaged_dose_response_curve](drugs/drug_glutamic_acid/pd_Duan_2000_normalized_averaged_dose_response_curve.md) | normalized, averaged dose-response curve ← glutamic acid · direct sigmoid Emax (Hill) effect | — | Duan S et al., Glutamate and GABA activate different r…, Journal of neurophysiology (2000) | [10.1152/jn.2000.83.1.31](https://doi.org/10.1152/jn.2000.83.1.31) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -4,7 +4,7 @@
 
 # delamanid — `Delamanid_Wang2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -26,8 +26,7 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 Wang X et al., Population Pharmacokinetic Analysis of…, Antimicrobial agents and ch… (2020)
   ·  DOI: [10.1128/AAC.01202-20](https://doi.org/10.1128/AAC.01202-20)
 
-## Model component
-<dbs-pgx drug="delamanid" model-id="Delamanid_Wang2020_reference" status="needs_review" stale="false" population="patients with pulmonary multidrug-resistant tuberculosis" measured-compound="delamanid" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="delamanid" model-id="Delamanid_Wang2020_reference" status="needs_review" stale="false" population="patients with pulmonary multidrug-resistant tuberculosis" measured-compound="delamanid" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 10 extracted, plus 3 covariate effects.
@@ -160,7 +159,7 @@ Wang X et al., Population Pharmacokinetic Analysis of…, Antimicrobial agents a
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_delamanid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2020` / `Wang_2020::reference`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_delamanid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2020` / `Wang_2020::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -181,7 +180,7 @@ Wang X et al., Population Pharmacokinetic Analysis of…, Antimicrobial agents a
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

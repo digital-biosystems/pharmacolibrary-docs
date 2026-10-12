@@ -16,11 +16,11 @@
 
 **As extracted:** Tofacitinib (concentrations from this paper's PK model) drives IL-6–induced pSTAT3 (in AU): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Tofacitinib plasma concentrations directly inhibit IL-6–induced pSTAT3 (measured in AU) via a reversible, concentration-dependent mechanism described by an additive Emax model where Emax is fixed at -34 AU. The model estimated an EC50 of 119 nM for tofacitinib and a baseline intercept of 34 AU.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mohamed_2020`
 - **model family:** `emax`
@@ -101,7 +101,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

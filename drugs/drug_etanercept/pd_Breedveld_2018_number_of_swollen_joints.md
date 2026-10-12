@@ -16,11 +16,11 @@
 
 **As extracted:** Etanercept (concentrations from the PK model of Zhou_2004) drives number of swollen joints: direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The paper fits a direct sigmoidal Emax inhibition model to steady-state etanercept concentrations (Css) to describe the change in the number of swollen joints, without specifying an intermediate mechanism such as effect compartments. The model parameters for the number of swollen joints are an Emax of 56.97%, an EC50 of 567 ng/mL, and a sigmoidicity factor of 1.33.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Breedveld_2018`
 - **model family:** `sigmoid_emax`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > The paper describes a concentration-dependent inhibition of the peak (transient) INa (INa(T)) by mirogabalin in GH3 cells, modeled using a modified Hill equation, but does not specify the underlying mechanism or rate constants. The calculated IC50 for this inhibition is 19.5 μM.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Wu_2022`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Wu CL et al., The Evidence for Effective Inhibition o…, International journal 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

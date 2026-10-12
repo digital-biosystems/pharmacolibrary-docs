@@ -18,11 +18,11 @@
 
 **As extracted:** Sertraline (concentrations from the PK model of Castillo_2024) drives 5-HTP-potentiated behavioral syndrome score: direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Sertraline serum concentrations (ng mL−1) drive the 5-HTP-potentiated behavioral syndrome score via a sigmoid Emax model with an effect compartment (ke0 1.0/0.0/5.0 h−1 for low/medium/high dose), Emax fixed at 100%, and EC50 80 ng mL−1.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kreilgaard_2008`
 - **model family:** `sigmoid_emax`
@@ -100,7 +100,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

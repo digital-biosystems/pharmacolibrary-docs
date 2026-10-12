@@ -16,11 +16,11 @@
 
 **As extracted:** Propofol (concentrations from this paper's PK model) drives bispectral index: direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Propofol plasma concentrations inhibit the Bispectral Index (BIS) response via a sigmoid Emax model with an effect compartment, characterized by a baseline (E0) of 92.1, a maximum inhibition (Emax) of 18.7, a half-maximal effect concentration (Ce50) of 2.21 μg/mL, a Hill coefficient (γ) of 2.89, and a link constant (ke0) of 0.138 /min.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kim_2023`
 - **model family:** `sigmoid_emax`
@@ -96,7 +96,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

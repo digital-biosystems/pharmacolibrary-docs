@@ -21,7 +21,7 @@
 
 > Tranylcypromine (2-PCPA, 0–100 µM) concentration-dependently inhibits hLSD1-catalyzed production of H3K4me0 (and H3K4me1) from H3K4me2 substrate, measured in pmol by FI-TOF/MS; the paper reports an IC50 of 6.90 µM (the record lists 5.80 µM) and gives no further mechanism or rate parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Sakane_2015`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Sakane C et al., Measurement of lysine-specific demethyl…, Journal of clinical
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -21,7 +21,7 @@
 
 > Salicylate concentrations (used as a direct driver without PK linking) act on blood glucose by proportionally inhibiting its first-order elimination via the rate constant kout_glu. The model characterizes glucose production with a zero-order rate (kin_glu = 223 mg/dl/week) and baseline elimination with kout_glu = 1.34 1/week.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Cao_2011`
 - **model family:** `disease_progression`
@@ -72,7 +72,7 @@ Cao Y et al., Modeling diabetes disease progression a…, The Journal of pharmac
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

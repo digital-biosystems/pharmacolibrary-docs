@@ -28,19 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | [Martin_2025_RER](drugs/drug_gestodene/pd_Martin_2025_RER.md) | respiratory exchange ratio (RER) · inhibition effect | — | Martin D et al., Effect of oral contraceptive consumptio…, European journal of applied… (2025) | [10.1007/s00421-025-05733-1](https://doi.org/10.1007/s00421-025-05733-1) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=gestodene).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | kidney | `CYP3A5` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2C19` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor, `CYP3A7` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: PGR (activator), PGR (binder).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span> | [Martin_2025_RER](drugs/drug_gestodene/pd_Martin_2025_RER.md) | respiratory exchange ratio (RER) · inhibition effect | — | Martin D et al., Effect of oral contraceptive consumptio…, European journal of applied… (2025) | [10.1007/s00421-025-05733-1](https://doi.org/10.1007/s00421-025-05733-1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

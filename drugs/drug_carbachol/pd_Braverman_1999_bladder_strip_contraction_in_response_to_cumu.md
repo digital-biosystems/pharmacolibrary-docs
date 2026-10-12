@@ -21,7 +21,7 @@
 
 > Carbachol concentration-dependently stimulates bladder strip contraction, described by a sigmoid Emax model; the paper reports EC50 values of 0.7, 0.54, 0.93, and 1.2 µM, but the excerpts do not state a mechanism beyond this direct concentration–response relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Braverman_1999`
 - **model family:** `sigmoid_emax`
@@ -65,7 +65,7 @@ Braverman A et al., M2 receptors in genito-urinary smooth m…, Life sciences (1
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

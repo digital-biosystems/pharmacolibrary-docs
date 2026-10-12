@@ -21,7 +21,7 @@
 
 > Tranylcypromine concentrations (0–400 μg/ml, 24 h exposure) reduce the viability of THP-1-derived macrophages (% of mock-treated controls, MTT assay) in a sigmoid Emax inhibitory concentration–response relationship, with a reported CC50 of 282.3 μg/ml; the paper does not state a mechanism for this cytotoxic effect beyond the concentration-dependent decline in viability.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Oualha_2025`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Oualha R et al., Tranylcypromine: a promising repurposed…, Frontiers in microb
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

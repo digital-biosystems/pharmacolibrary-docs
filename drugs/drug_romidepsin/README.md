@@ -32,37 +32,16 @@ Romidepsin is an anticancer drug used to treat lymphoma, including cutaneous T-c
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Woo_2009_reference](drugs/drug_romidepsin/Romidepsin_Woo2009_reference.md) | — | 1-compartment (no model) | 1 | Woo S et al., Population pharmacokinetics of romideps…, Clinical cancer research :… (2009) | [10.1158/1078-0432.CCR-08-1215](https://doi.org/10.1158/1078-0432.CCR-08-1215) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Woo_2009_reference](drugs/drug_romidepsin/Romidepsin_Woo2009_reference.md) | — | 1-compartment (no model) | 1 | Woo S et al., Population pharmacokinetics of romideps…, Clinical cancer research :… (2009) | [10.1158/1078-0432.CCR-08-1215](https://doi.org/10.1158/1078-0432.CCR-08-1215) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Moltó_2021_apoptosis_markers_in_CD4_T_cells](drugs/drug_romidepsin/pd_Molt_2021_apoptosis_markers_in_CD4_T_cells.md) | apoptosis markers in CD4+ T cells ← romidepsin · direct linear effect | — | Moltó J et al., Pharmacokinetic/pharmacodynamic analysi…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkaa523](https://doi.org/10.1093/jac/dkaa523) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Moltó_2021_expression_of_exhaustion_markers_by_CD4_T_cells](drugs/drug_romidepsin/pd_Molt_2021_expression_of_exhaustion_markers_by_CD4_T_cells.md) | expression of exhaustion markers by CD4+ T cells ← romidepsin · direct linear effect | — | Moltó J et al., Pharmacokinetic/pharmacodynamic analysi…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkaa523](https://doi.org/10.1093/jac/dkaa523) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Moltó_2021_expression_of_exhaustion_markers_by_CD8_T_cells](drugs/drug_romidepsin/pd_Molt_2021_expression_of_exhaustion_markers_by_CD8_T_cells.md) | expression of exhaustion markers by CD8+ T cells ← romidepsin · direct linear effect | — | Moltó J et al., Pharmacokinetic/pharmacodynamic analysi…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkaa523](https://doi.org/10.1093/jac/dkaa523) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Moltó_2021_CD4](drugs/drug_romidepsin/pd_Molt_2021_CD4.md) | CD4+ counts ← romidepsin · direct linear effect | — | Moltó J et al., Pharmacokinetic/pharmacodynamic analysi…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkaa523](https://doi.org/10.1093/jac/dkaa523) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=romidepsin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP2B6` substrate, `CYP2C19` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
-| metabolism | lung | `CYP1A1` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
-| excretion | kidney | `SLC22A2` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB11` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: HDAC1 (inhibitor), HDAC1 (target), HDAC2 (inhibitor), HDAC2 (target), HDAC4 (inhibitor), HDAC6 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Moltó_2021_apoptosis_markers_in_CD4_T_cells](drugs/drug_romidepsin/pd_Molt_2021_apoptosis_markers_in_CD4_T_cells.md) | apoptosis markers in CD4+ T cells ← romidepsin · direct linear effect | — | Moltó J et al., Pharmacokinetic/pharmacodynamic analysi…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkaa523](https://doi.org/10.1093/jac/dkaa523) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Moltó_2021_expression_of_exhaustion_markers_by_CD4_T_cells](drugs/drug_romidepsin/pd_Molt_2021_expression_of_exhaustion_markers_by_CD4_T_cells.md) | expression of exhaustion markers by CD4+ T cells ← romidepsin · direct linear effect | — | Moltó J et al., Pharmacokinetic/pharmacodynamic analysi…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkaa523](https://doi.org/10.1093/jac/dkaa523) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Moltó_2021_expression_of_exhaustion_markers_by_CD8_T_cells](drugs/drug_romidepsin/pd_Molt_2021_expression_of_exhaustion_markers_by_CD8_T_cells.md) | expression of exhaustion markers by CD8+ T cells ← romidepsin · direct linear effect | — | Moltó J et al., Pharmacokinetic/pharmacodynamic analysi…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkaa523](https://doi.org/10.1093/jac/dkaa523) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> | [Moltó_2021_CD4](drugs/drug_romidepsin/pd_Molt_2021_CD4.md) | CD4+ counts ← romidepsin · direct linear effect | — | Moltó J et al., Pharmacokinetic/pharmacodynamic analysi…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkaa523](https://doi.org/10.1093/jac/dkaa523) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

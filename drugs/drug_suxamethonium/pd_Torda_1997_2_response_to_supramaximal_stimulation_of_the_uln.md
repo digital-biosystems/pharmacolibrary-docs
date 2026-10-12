@@ -19,7 +19,7 @@
 
 > The model applies an effect compartment structure where suxamethonium concentrations inhibit the response to supramaximal stimulation of the ulnar nerve proportionally. The paper states a half-life of effect compartment equilibration of 211 s and a slope exponent of 6.4, but does not provide explicit mechanistic details beyond this structure or standard potency parameters like IC50 or Emax.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Torda_1997_2`
 - **model family:** `effect_compartment`
@@ -61,7 +61,7 @@ Torda TA et al., Pharmacokinetics and pharmacodynamics o…, Anaesthesia and int
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

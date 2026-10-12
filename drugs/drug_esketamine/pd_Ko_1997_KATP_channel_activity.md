@@ -21,7 +21,7 @@
 
 > The model describes the inhibition of KATP channel activity by ketamine using a sigmoidal Emax equation with a half-maximal inhibitory concentration of 62.9 µM and a Hill coefficient of 0.54. As no full text is provided, the specific pharmacokinetic mechanism (e.g., direct effect vs. effect compartment) is not stated in the available excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ko_1997`
 - **model family:** `sigmoid_emax`
@@ -49,11 +49,11 @@ Ko SH et al., Blockade of myocardial ATP-sensitive po…, Anesthesiology (1997)
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

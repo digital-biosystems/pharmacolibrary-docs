@@ -18,11 +18,11 @@
 
 **As extracted:** Zolmitriptan (concentrations from the PK model of Zhou_2017) drives Coronary artery contraction (in % of contraction elicited by 100 mmol/L K+): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The paper describes a direct concentration-dependent effect of zolmitriptan on human isolated coronary artery contraction, characterized by an Emax of 11.8% of the 100 mmol/L K+ response and an EC50 of 476 nmol/L. The excerpts do not specify a molecular mechanism (such as receptor type or signal transduction pathway) beyond describing the direct contractile effect on the artery segment.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `MaassenVanDenBrink_1998`
 - **model family:** `emax`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

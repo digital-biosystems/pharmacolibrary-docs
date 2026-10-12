@@ -22,7 +22,7 @@
 
 > In chronically infected mice, benznidazole exposure (AUC∞, T&gt;IC90, Cmax) was related to binary parasitological cure via a logistic regression model (intercept −1.859, log-odds slope 1.497); the paper does not state a mechanistic PD model (no Imax/IC50/kin/kout/ke0). Key targets: AUC∞ ~1500 µg·h/mL for 95% and ~2000 µg·h/mL for 99% cure probability, T&gt;IC90 of 3.2 and 4.3 days for 95% and 99% cure, and Cmax ~50 µg/mL for 99% cure.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Assmus_2025`
 - **model family:** `categorical`
@@ -64,7 +64,7 @@ Assmus F et al., Pharmacokinetic-pharmacodynamic modelin…, PLoS neglected trop
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

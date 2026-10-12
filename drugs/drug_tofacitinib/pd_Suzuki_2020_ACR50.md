@@ -20,7 +20,7 @@
 
 > The tofacitinib dose (mg) drives the ACR50 response via a maximum effect (Emax) model fitted on the logit domain, characterized by a baseline effect (E0) of -2.3, a maximum effect (Emax) of 3.7, and a half-maximal effective dose (ED50) of 6.1 mg.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Suzuki_2020`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Suzuki M et al., Model-Based Comparison of Dose-Response…, Journal of clinical
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

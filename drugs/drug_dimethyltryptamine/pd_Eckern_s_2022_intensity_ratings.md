@@ -16,11 +16,11 @@
 
 **As extracted:** N,N-dimethyltryptamine (measured concentrations) drive psychedelic intensity: direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > The psychedelic intensity rating is modeled as an additive sigmoid Emax response driven by N,N-dimethyltryptamine concentrations in an effect compartment, which delays the response relative to plasma levels via an equilibrium rate constant (ke0). The model parameters include an Emax of 10 (fixed to the scale maximum), an effect-site EC50 (EC50,e) of 94.7 nM, a ke0 of 1.38 min⁻¹, and a Hill coefficient (γ) of 2.87.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Eckernäs_2022`
 - **model family:** `sigmoid_emax`
@@ -90,19 +90,19 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dimethyltryptamine/Dimethyltryptamine_Eckerns2022_PD_intensity_ratings/Dimethyltryptamine_Eckerns2022_PD_intensity_ratings_modelica.zip" download>Dimethyltryptamine_Eckerns2022_PD_intensity_ratings_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dimethyltryptamine/Dimethyltryptamine_Eckerns2022_PD_intensity_ratings/Dimethyltryptamine_Eckerns2022_PD_intensity_ratings_matlab.zip" download>Dimethyltryptamine_Eckerns2022_PD_intensity_ratings_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dimethyltryptamine/Dimethyltryptamine_Eckerns2022_PD_intensity_ratings/Dimethyltryptamine_Eckerns2022_PD_intensity_ratings_sbml.zip" download>Dimethyltryptamine_Eckerns2022_PD_intensity_ratings_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dimethyltryptamine/Dimethyltryptamine_Eckerns2022_PD_intensity_ratings/Dimethyltryptamine_Eckerns2022_PD_intensity_ratings_cellml.zip" download>Dimethyltryptamine_Eckerns2022_PD_intensity_ratings_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -28,21 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Zhou_2000_ANC_nadir](drugs/drug_ademetionine/pd_Zhou_2000_ANC_nadir.md) | absolute neutrophil count nadir ← SAM486A · direct sigmoid Emax (Hill) effect | — | Zhou H et al., Population pharmacokinetics/toxicodynam…, Journal of clinical pharmac… (2000) | [10.1177/00912700022008946](https://doi.org/10.1177/00912700022008946) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Zhou_2000_percent_decrease_in_neutrophil_count_from_baseline_to_nadir](drugs/drug_ademetionine/pd_Zhou_2000_percent_decrease_in_neutrophil_count_from_baseline.md) | percent decrease in neutrophil count from baseline to nadir ← SAM486A · direct Emax (saturable) effect | — | Zhou H et al., Population pharmacokinetics/toxicodynam…, Journal of clinical pharmac… (2000) | [10.1177/00912700022008946](https://doi.org/10.1177/00912700022008946) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ademetionine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `COMT` cofactor | DrugBank actor |
-| metabolism | kidney | `COMT` cofactor | DrugBank actor |
-| metabolism | liver | `COMT` cofactor, `CYP2E1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: AMD1 (cofactor), AS3MT (unknown), CBS (activator), CMTR1 (unknown), GNMT (cofactor), MAT1A (cofactor), MAT2A (cofactor), SRM (substrate).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Zhou_2000_ANC_nadir](drugs/drug_ademetionine/pd_Zhou_2000_ANC_nadir.md) | absolute neutrophil count nadir ← SAM486A · direct sigmoid Emax (Hill) effect | — | Zhou H et al., Population pharmacokinetics/toxicodynam…, Journal of clinical pharmac… (2000) | [10.1177/00912700022008946](https://doi.org/10.1177/00912700022008946) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Zhou_2000_percent_decrease_in_neutrophil_count_from_baseline_to_nadir](drugs/drug_ademetionine/pd_Zhou_2000_percent_decrease_in_neutrophil_count_from_baseline.md) | percent decrease in neutrophil count from baseline to nadir ← SAM486A · direct Emax (saturable) effect | — | Zhou H et al., Population pharmacokinetics/toxicodynam…, Journal of clinical pharmac… (2000) | [10.1177/00912700022008946](https://doi.org/10.1177/00912700022008946) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

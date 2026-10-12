@@ -5,7 +5,7 @@
 
 # lumasiran — `Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.20).">human + animal</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875), gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.20).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,7 +15,7 @@
 
 > **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 0.20).
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -23,7 +23,7 @@
 
 The record lists a two-compartment structure but includes a parameter for a second peripheral volume, creating a structural mismatch. The model builder explicitly defaulted the intercompartmental clearance k12 and lag time Tlag instead of extracting values from the source. Consequently, the simulated profile relies on unsupported library placeholders for k12 rather than data from the study. Extracted — lumasiran: kabs 0.157 1/h, V1/F 18.1 L, V2/F 1.34e+03 L, V3/F 100 L, CL/F 23.8 L/h, Q/F 3.02 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has GalNAc-siRNAs, the second reading lumasiran; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has GalNAc-siRNAs, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -74,7 +74,7 @@ Sten S et al., Plasma Pharmacokinetics of N-Acetylgala…, Clinical pharmacokine
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
-Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -85,8 +85,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `screen.dose_compound` | GalNAc-siRNAs | lumasiran | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | GalNAc-siRNAs | lumasiran | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | GalNAc-siRNAs | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | GalNAc-siRNAs | unknown | mismatch |
 
 </details>
 
@@ -135,10 +135,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_lumasiran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sten_2023` / `Sten_2023::model_simultaneously_fitted_to_all_data_estimate_se`)
-- model: `../../../knowledgebase/drugs/drug_lumasiran/models/modelica/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e.mo`
-- deviation: `../../../knowledgebase/drugs/drug_lumasiran/models/modelica/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_lumasiran/models/modelica/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lumasiran/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sten_2023` / `Sten_2023::model_simultaneously_fitted_to_all_data_estimate_se`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lumasiran/models/modelica/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lumasiran/models/modelica/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_lumasiran/models/modelica/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -156,7 +156,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e.svg" alt="Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e.svg" alt="Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

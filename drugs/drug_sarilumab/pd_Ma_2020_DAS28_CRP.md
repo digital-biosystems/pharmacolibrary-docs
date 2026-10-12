@@ -19,7 +19,7 @@
 
 > Sarilumab concentrations inhibit the production rate (Kin) of DAS28-CRP via a direct Emax effect with a gamma of 1. The model estimates an IC50 of 2.32 mg/L, a Kout of 0.0264 day−1, and a Log(Emax) of 0.237.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ma_2020`
 - **model family:** `indirect_response_i`
@@ -71,7 +71,7 @@ Ma L et al., Population Pharmacokinetic-Pharmacodyna…, Clinical pharmacokineti
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

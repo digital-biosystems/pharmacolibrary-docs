@@ -22,7 +22,7 @@
 
 > Quetiapine (0.1–100 μM) inhibits 5-HT3 receptor-mediated currents in NCB20 cells by competitive antagonism (rightward 5-HT EC50 shift without Emax change), with IC50 0.58 μM at 3 μM 5-HT, 25.23 μM at 10 μM 5-HT, and 0.20 μM with pretreatment; for the open-state current decay (association kinetics, 1/τ) the paper gives an IC50 of 5.17 μM with association rate constant k+1 = 0.08776 1/s and dissociation rate constant k-1 = 0.4539 1/s, indicating weaker affinity for the open state.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Park_2025`
 - **model family:** `linear`
@@ -65,7 +65,7 @@ Park YS et al., Quetiapine competitively inhibits 5-HT, The Korean journal of ph
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -28,40 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> | [Albin_2012_pubertal_growth_up_to_PHV](drugs/drug_estradiol/pd_Albin_2012_pubertal_growth_up_to_PHV.md) | pubertal growth up to PHV biomarker turnover ← estradiol | — | Albin AK et al., Estradiol and pubertal growth in girls, Hormone research in paediat… (2012) | [10.1159/000343076](https://doi.org/10.1159/000343076) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=estradiol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` downregulator/regulator/substrate, `ABCG2` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` downregulator/regulator/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` downregulator/regulator/substrate, `ABCG2` inhibitor | DrugBank actor |
-| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` downregulator/regulator/substrate | DrugBank actor |
-| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | skin | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | small intestine | `ABCB1` downregulator/regulator/substrate, `ABCG2` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` downregulator/regulator/substrate, `ABCG2` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
-| distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
-| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `COMT` substrate | DrugBank actor |
-| metabolism | kidney | `COMT` substrate, `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `COMT` substrate, `CYP1A2` inhibitor/substrate, `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate, `SLCO1B1` inhibitor, `SLCO1B3` unknown, `UGT1A1` inducer/substrate, `UGT2B15` inducer | DrugBank actor |
-| metabolism | lung | `CYP1A1` substrate, `CYP1B1` substrate | DrugBank actor |
-| metabolism | skin | `CYP1B1` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `UGT1A1` inducer/substrate | DrugBank actor |
-| excretion | kidney | `SLC22A2` downregulator/inhibitor, `SLC22A8` substrate | DrugBank actor |
-| — | adipose tissue | `CYP19A1` product | DrugBank actor |
-| — | ovary | `CYP19A1` product | DrugBank actor |
-| — | testis | `CYP19A1` product | DrugBank actor |
-
-<sub>Actors without a tissue in the table: ABCC10 (inhibitor), BECN1 (binder), CHRNA4 (binder), ESR1 (target), ESR2 (target), FABP2 (binder), GPER1 (binder), MT-ATP6 (inhibitor), NR1I2 (binder), SHBG (binder), SLC22A11 (inhibitor), SLCO1C1 (substrate).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> | [Albin_2012_pubertal_growth_up_to_PHV](drugs/drug_estradiol/pd_Albin_2012_pubertal_growth_up_to_PHV.md) | pubertal growth up to PHV biomarker turnover ← estradiol | — | Albin AK et al., Estradiol and pubertal growth in girls, Hormone research in paediat… (2012) | [10.1159/000343076](https://doi.org/10.1159/000343076) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

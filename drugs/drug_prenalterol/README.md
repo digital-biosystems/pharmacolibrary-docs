@@ -28,16 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wangemann_1999_Isc](drugs/drug_prenalterol/pd_Wangemann_1999_Isc.md) | transepithelial current ← prenalterol · direct Emax (saturable) effect | — | Wangemann P et al., Beta1-adrenergic receptors but not beta…, The Journal of membrane bio… (1999) | [10.1007/s002329900538](https://doi.org/10.1007/s002329900538) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=prenalterol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: ADRB3 (target).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wangemann_1999_Isc](drugs/drug_prenalterol/pd_Wangemann_1999_Isc.md) | transepithelial current ← prenalterol · direct Emax (saturable) effect | — | Wangemann P et al., Beta1-adrenergic receptors but not beta…, The Journal of membrane bio… (1999) | [10.1007/s002329900538](https://doi.org/10.1007/s002329900538) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

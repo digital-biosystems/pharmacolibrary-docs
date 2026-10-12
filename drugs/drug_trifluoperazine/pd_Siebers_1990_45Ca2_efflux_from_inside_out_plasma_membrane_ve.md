@@ -21,7 +21,7 @@
 
 > Trifluoperazine stimulates 45Ca2+ efflux from inside-out plasma membrane vesicles with an Emax-type concentration-response relationship; the paper reports an EC50 of 70 micromolar but the excerpts do not state the mechanism or other PD parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Siebers_1990`
 - **model family:** `emax`
@@ -48,11 +48,11 @@ Siebers B et al., Calcium Fluxes across the Plasma Membra…, Plant physiology (
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

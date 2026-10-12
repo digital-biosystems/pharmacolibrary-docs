@@ -21,7 +21,7 @@
 
 > Pseudoephedrine (1S,2S and 1R,2R isomers) directly stimulates cAMP accumulation via the human beta1-adrenoceptor in an Emax model, with EC50 of 309 microM and 1122 microM for the two isomers and a maximal response of 53% of the isoproterenol response; no rate parameters or further mechanism are stated.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Vansal_1999`
 - **model family:** `emax`
@@ -65,7 +65,7 @@ Vansal SS et al., Direct effects of ephedrine isomers on…, Biochemical pharmac
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

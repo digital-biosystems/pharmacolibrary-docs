@@ -20,7 +20,7 @@
 
 > Atracurium plasma concentrations inhibit the twitch tension of the adductor pollicis muscle via an effect compartment mechanism, with a steady-state plasma concentration for 50% neuromuscular blockade of 363 +/- 118 ng/ml. The paper does not provide the effect form or other specific rate constants.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Fisher_1990`
 - **model family:** `effect_compartment`
@@ -61,7 +61,7 @@ Fisher DM et al., Pharmacokinetics and pharmacodynamics o…, Anesthesiology (19
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

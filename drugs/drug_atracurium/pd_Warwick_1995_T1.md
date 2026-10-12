@@ -20,7 +20,7 @@
 
 > The record specifies an effect-compartment model where the dose of atracurium acts on the continuous response of first-twitch depression via a proportional inhibition mechanism. The only reported parameter is a Hill coefficient of 6.1 +/- 0.5, as no full text is available to confirm specific potency or rate constants.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Warwick_1995`
 - **model family:** `effect_compartment`
@@ -61,7 +61,7 @@ Warwick NR et al., Pharmacokinetic analysis of the time co…, Clinical pharmaco
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

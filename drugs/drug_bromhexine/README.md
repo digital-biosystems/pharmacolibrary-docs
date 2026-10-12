@@ -25,10 +25,10 @@ Bromhexine is a mucolytic medicine used to treat cough by helping clear mucus fr
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Behrens_2026_reference](drugs/drug_bromhexine/Bromhexine_Behrens2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Behrens E et al., Prospective study of pharmacokinetics o…, Annals of intensive care (2026) | [10.1016/j.aicoj.2026.100082](https://doi.org/10.1016/j.aicoj.2026.100082) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: partial</span> | [Gao_2026_reference](drugs/drug_bromhexine/Bromhexine_Gao2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Gao X et al., Population Pharmacokinetics of Trastuzu…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70259](https://doi.org/10.1002/psp4.70259) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): k21</sub><br><sub>route_to: `scholar`</sub> | [Barzel_2026_reference](drugs/drug_bromhexine/Bromhexine_Barzel2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 3 | Barzel I et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01636-2](https://doi.org/10.1007/s40262-026-01636-2) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Bechgaard_1982_reference](drugs/drug_bromhexine/Bromhexine_Bechgaard1982_reference.md) | — | 1-compartment (no model) | 0 | Bechgaard E et al., Bioavailability of bromhexine tablets a…, Biopharmaceutics & drug dis… (1982) | [10.1002/bdd.2510030407](https://doi.org/10.1002/bdd.2510030407) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span> | [Behrens_2026_reference](drugs/drug_bromhexine/Bromhexine_Behrens2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Behrens E et al., Prospective study of pharmacokinetics o…, Annals of intensive care (2026) | [10.1016/j.aicoj.2026.100082](https://doi.org/10.1016/j.aicoj.2026.100082) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.636). Primary extraction retained.">cross-check: partial</span> | [Gao_2026_reference](drugs/drug_bromhexine/Bromhexine_Gao2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Gao X et al., Population Pharmacokinetics of Trastuzu…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70259](https://doi.org/10.1002/psp4.70259) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: unreported model parameter default(s): k21</sub><br><sub>route_to: `scholar`</sub> | [Barzel_2026_reference](drugs/drug_bromhexine/Bromhexine_Barzel2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 3 | Barzel I et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01636-2](https://doi.org/10.1007/s40262-026-01636-2) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.667). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Bechgaard_1982_reference](drugs/drug_bromhexine/Bromhexine_Bechgaard1982_reference.md) | — | 1-compartment (no model) | 0 | Bechgaard E et al., Bioavailability of bromhexine tablets a…, Biopharmaceutics & drug dis… (1982) | [10.1002/bdd.2510030407](https://doi.org/10.1002/bdd.2510030407) |
 
 ## Pharmacodynamics (PD)
 
@@ -36,18 +36,6 @@ Bromhexine is a mucolytic medicine used to treat cough by helping clear mucus fr
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Bergogne-Bérézin_1985_bronchial_serum_ratio_of_amoxycillin](drugs/drug_bromhexine/pd_Bergogne_B_r_zin_1985_bronchial_serum_ratio_of_amoxycillin.md) | bronchial/serum ratio of amoxycillin biomarker turnover ← bromhexine | — | Bergogne-Bérézin E et al., Influence of a fluidifying agent (bromh…, International journal of cl… (1985) | — |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Kukita_1992_sorption_of_bromhexine_HCl](drugs/drug_bromhexine/pd_Kukita_1992_sorption_of_bromhexine_HCl.md) | sorption of bromhexine HCl ← bromhexine HCl · model not identified | — | Kukita T et al., Interaction between polyethylene films…, Chemical & pharmaceutical b… (1992) | [10.1248/cpb.40.3110](https://doi.org/10.1248/cpb.40.3110) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bromhexine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ACE2 (binder), TMPRSS2 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

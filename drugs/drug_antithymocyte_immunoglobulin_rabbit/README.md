@@ -24,16 +24,7 @@ Rabbit anti-thymocyte globulin is an immunosuppressant antibody medicine used to
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Admiraal_2015_2_reference](drugs/drug_antithymocyte_immunoglobulin_rabbit/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Admiraal R et al., Population pharmacokinetic modeling of…, Clinical pharmacokinetics (2015) | [10.1007/s40262-014-0214-6](https://doi.org/10.1007/s40262-014-0214-6) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=antithymocyte_immunoglobulin_rabbit).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CD1A (inhibitor), CD4 (inducer), CD86 (binder), FCGR2B (inducer), ITGAL (inducer), ITGAV (inducer), ITGB1 (inducer), ITGB3 (inducer), MR1 (target).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Admiraal_2015_2_reference](drugs/drug_antithymocyte_immunoglobulin_rabbit/AntithymocyteImmunoglobulinRabbit_Admiraal2015v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Admiraal R et al., Population pharmacokinetic modeling of…, Clinical pharmacokinetics (2015) | [10.1007/s40262-014-0214-6](https://doi.org/10.1007/s40262-014-0214-6) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

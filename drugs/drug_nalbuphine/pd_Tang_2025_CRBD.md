@@ -20,7 +20,7 @@
 
 > Nalbuphine dose (mg/kg) was related to the incidence of moderate-severe catheter-related bladder discomfort (CRBD) via probit regression, described as a dose-response inhibition without specification of the underlying pharmacodynamic mechanism (e.g., Emax or effect compartment). The median effective dose (ED50) for inhibiting CRBD was 0.03 mg/kg, and the effective dose for 95% inhibition (ED95) was 0.108 mg/kg.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Tang_2025`
 - **model family:** `categorical`
@@ -62,7 +62,7 @@ Tang J et al., Dose-Response Analysis of Nalbuphine fo…, Drug design, developm
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

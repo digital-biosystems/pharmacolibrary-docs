@@ -28,16 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Prichard_2006_antiviral_activity](drugs/drug_idoxuridine/pd_Prichard_2006_antiviral_activity.md) | antiviral activity ← idoxuridine · inhibition effect | — | Prichard MN et al., Distinct thymidine kinases encoded by c…, Antiviral research (2006) | [10.1016/j.antiviral.2006.01.013](https://doi.org/10.1016/j.antiviral.2006.01.013) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=idoxuridine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: DNA (other), TK1 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Prichard_2006_antiviral_activity](drugs/drug_idoxuridine/pd_Prichard_2006_antiviral_activity.md) | antiviral activity ← idoxuridine · inhibition effect | — | Prichard MN et al., Distinct thymidine kinases encoded by c…, Antiviral research (2006) | [10.1016/j.antiviral.2006.01.013](https://doi.org/10.1016/j.antiviral.2006.01.013) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

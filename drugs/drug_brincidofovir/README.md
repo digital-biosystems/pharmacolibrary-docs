@@ -28,28 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bua_2019_inhibition_of_B19V_replication](drugs/drug_brincidofovir/pd_Bua_2019_inhibition_of_B19V_replication.md) | inhibition of B19V replication ← brincidofovir · direct Emax (saturable) effect | — | Bua G et al., Antiviral activity of brincidofovir on…, Antiviral research (2019) | [10.1016/j.antiviral.2018.12.003](https://doi.org/10.1016/j.antiviral.2018.12.003) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=brincidofovir).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCG2` inhibitor | DrugBank actor |
-| absorption | liver | `ABCG2` inhibitor | DrugBank actor |
-| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCG2` inhibitor | DrugBank actor |
-| absorption | testis | `ABCG2` inhibitor | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | `CYP4F2` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` inhibitor, `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP4F2` inhibitor/substrate, `SLCO1B1` inhibitor/substrate, `SLCO1B3` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `ABCC2` inhibitor, `SLC22A6` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB11` inhibitor, `ABCC2` inhibitor | DrugBank actor |
-| excretion | small intestine | `ABCC2` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: POLB (inhibitor), POLD1 (inhibitor), POLD4 (inhibitor), POLE2 (inhibitor), POLG (inhibitor), POLG2 (inhibitor), POLN (inhibitor), POLQ (inhibitor), SMPD1 (substrate).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bua_2019_inhibition_of_B19V_replication](drugs/drug_brincidofovir/pd_Bua_2019_inhibition_of_B19V_replication.md) | inhibition of B19V replication ← brincidofovir · direct Emax (saturable) effect | — | Bua G et al., Antiviral activity of brincidofovir on…, Antiviral research (2019) | [10.1016/j.antiviral.2018.12.003](https://doi.org/10.1016/j.antiviral.2018.12.003) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

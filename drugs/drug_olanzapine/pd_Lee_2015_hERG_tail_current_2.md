@@ -22,7 +22,7 @@
 
 > Olanzapine inhibits the hERG tail current during repolarization (fast application), described by a sigmoid Emax model with an IC50 of 11.9 μM; the paper excerpts provide no further mechanism, Emax, or slope (gamma) values.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Lee_2015`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Lee HJ et al., Mechanism of inhibition by olanzapine o…, Neuroscience letters 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

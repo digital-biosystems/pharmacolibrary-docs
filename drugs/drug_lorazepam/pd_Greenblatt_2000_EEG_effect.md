@@ -16,11 +16,11 @@
 
 **As extracted:** Lorazepam (concentrations from this paper's PK model) drives Electroencephalographic activity in the 13- to 30-Hz range (in % over baseline): delayed effect through an effect compartment.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Lorazepam plasma concentrations (ng/mL) drive EEG activity in the 13- to 30-Hz range (% over baseline) via an effect-compartment model with a stimulatory Emax relationship: Emax 12.7% over baseline, EC50 13.1 ng/mL, and effect-site equilibration half-life 8.8 min.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Greenblatt_2000`
 - **model family:** `effect_compartment`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

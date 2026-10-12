@@ -20,7 +20,7 @@
 
 > Liposomal bupivacaine concentration directly drives the binary block success response, with EC50, EC90, and EC95 estimated via probit and isotonic regression, though the paper does not describe a specific pharmacodynamic mechanism. The estimated EC50 is 0.0347% (95% CI 0.0343–0.0350), EC90 is 0.0352% (95% CI 0.0348–0.0357), and EC95 is 0.0354% (95% CI 0.0349–0.0360).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `He_2026`
 - **model family:** `categorical`
@@ -61,7 +61,7 @@ He T et al., Median effective concentration of lipos…, BMC anesthesiology (202
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

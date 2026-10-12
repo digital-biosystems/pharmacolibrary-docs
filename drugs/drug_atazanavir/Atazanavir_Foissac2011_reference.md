@@ -5,7 +5,7 @@
 
 # atazanavir — `Atazanavir_Foissac2011_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857), gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857), gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 FrantzFoissac frantz.foissac@gmail.com EA 3620 Unité de Recherche Clinique Paris Centre Université Paris Descartes Assistance Publique Hôpitaux de Paris et al., Population pharmacokinetics of atazanav… (2011)
   ·  DOI: [10.1111/j.1365-2125.2011.04035.x](https://doi.org/10.1111/j.1365-2125.2011.04035.x)
 
-## Model component
-<dbs-pgx drug="atazanavir" model-id="Atazanavir_Foissac2011_reference" status="model_quarantined" stale="false" population="HIV-1-infected children and adolescents" measured-compound="atazanavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atazanavir" model-id="Atazanavir_Foissac2011_reference" status="model_quarantined" stale="false" population="HIV-1-infected children and adolescents" measured-compound="atazanavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -134,9 +133,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_atazanavir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Foissac_2011` / `Foissac_2011::reference`)
-- model: `../../../knowledgebase/drugs/drug_atazanavir/models/modelica/_needs_review/Atazanavir_Foissac2011_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_atazanavir/models/modelica/_needs_review/Atazanavir_Foissac2011_reference.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atazanavir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Foissac_2011` / `Foissac_2011::reference`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atazanavir/models/modelica/_needs_review/Atazanavir_Foissac2011_reference.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_atazanavir/models/modelica/_needs_review/Atazanavir_Foissac2011_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -157,7 +156,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

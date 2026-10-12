@@ -19,7 +19,7 @@
 
 > Average upadacitinib plasma concentrations over the dosing interval were related to the probability of achieving endoscopic response 50% (&gt; 50% decrease in SES-CD) using a maximum effect (Emax) regression model. The paper states an EC50 of 26 ng/mL for this end point but does not specify the effect mechanism beyond the Emax relationship.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Mohamed_2020`
 - **model family:** `emax`
@@ -60,7 +60,7 @@ Mohamed MF et al., Exposure-Response Analyses for Upadacit…, Clinical pharmaco
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > Formoterol concentrations (nM) inhibit methacholine (10 μM)-induced contraction of airway tissue in the presence of glycopyrronium (1 nM), described by a sigmoid Emax concentration-inhibition model with EC50 = 0.20 ± 0.04 nM and Emax = 96.4 ± 3.4% inhibition; the excerpts do not state a kinetic mechanism (e.g. kin/kout or effect compartment) for this effect.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kume_2018`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Kume H et al., Involvement of Allosteric Effect and K, International journal of 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

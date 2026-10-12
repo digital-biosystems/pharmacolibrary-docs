@@ -16,11 +16,11 @@
 
 **As extracted:** Monohydroxy derivative (concentrations from this paper's PK model) drives percent change from baseline 28-day seizure frequency: direct log-linear effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > A log-linear model relates the minimum concentration (Cmin) of oxcarbazepine's monohydroxy derivative (MHD) to the log-transformed percent change from baseline 28-day seizure frequency (PCH), with a slope of −0.006 µmol/L⁻¹ and a y-intercept (placebo response) of 4.36203. The paper describes this as a simple exposure-response regression where higher MHD concentrations are associated with greater seizure reduction, but it does not specify a mechanistic pharmacodynamic link (e.g., inhibition of elimination or direct Emax) beyond this statistical correlation.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Faison_2020`
 - **model family:** `log_linear`
@@ -95,7 +95,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -21,7 +21,7 @@
 
 > Rizatriptan concentrations directly stimulate coronary artery contraction in a dose-dependent manner, with the maximum response ($E_{max}$) of 10.1% of the K+ response and an $EC_{50}$ of 448 nmol/L. The paper describes this as a direct concentration-response relationship without specifying a distinct kinetic mechanism (e.g., effect compartment or indirect response model).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `MaassenVanDenBrink_1998`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circula
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

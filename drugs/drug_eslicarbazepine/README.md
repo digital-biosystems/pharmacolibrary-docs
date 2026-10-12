@@ -34,8 +34,8 @@ Eslicarbazepine is an antiepileptic drug used to treat epilepsy. It is an approv
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Sunkaraneni_2018_2_reference](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 (+2 cov.) | Sunkaraneni S et al., Modeling and simulations to support dos…, Journal of pharmacokinetics… (2018) | [10.1007/s10928-018-9596-7](https://doi.org/10.1007/s10928-018-9596-7) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Falcão_2012_reference](drugs/drug_eslicarbazepine/Eslicarbazepine_Falco2012_reference.md) | — | parent + metabolite (no model) | 0 | Falcão A et al., Pharmacokinetics, drug interactions and…, CNS drugs (2012) | [10.2165/11596290-000000000-00000](https://doi.org/10.2165/11596290-000000000-00000) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Sunkaraneni_2018_2_reference](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 (+2 cov.) | Sunkaraneni S et al., Modeling and simulations to support dos…, Journal of pharmacokinetics… (2018) | [10.1007/s10928-018-9596-7](https://doi.org/10.1007/s10928-018-9596-7) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4). Primary extraction retained.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Falcão_2012_reference](drugs/drug_eslicarbazepine/Eslicarbazepine_Falco2012_reference.md) | — | parent + metabolite (no model) | 0 | Falcão A et al., Pharmacokinetics, drug interactions and…, CNS drugs (2012) | [10.2165/11596290-000000000-00000](https://doi.org/10.2165/11596290-000000000-00000) |
 
 ## Pharmacodynamics (PD)
 
@@ -47,17 +47,6 @@ Eslicarbazepine is an antiepileptic drug used to treat epilepsy. It is an approv
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Sunkaraneni_2018_time_to_first_occurrence_of_headache](drugs/drug_eslicarbazepine/pd_Sunkaraneni_2018_time_to_first_occurrence_of_headache.md) | time to first occurrence of headache ← eslicarbazepine · time-to-event model | — | Sunkaraneni S et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1086](https://doi.org/10.1002/jcph.1086) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Sunkaraneni_2018_time_to_first_occurrence_of_nausea](drugs/drug_eslicarbazepine/pd_Sunkaraneni_2018_time_to_first_occurrence_of_nausea.md) | time to first occurrence of nausea ← eslicarbazepine · time-to-event model | — | Sunkaraneni S et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1086](https://doi.org/10.1002/jcph.1086) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Sunkaraneni_2018_time_to_study_exit](drugs/drug_eslicarbazepine/pd_Sunkaraneni_2018_time_to_study_exit.md) | time to study exit ← eslicarbazepine · time-to-event model | — | Sunkaraneni S et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1086](https://doi.org/10.1002/jcph.1086) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=eslicarbazepine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP2C19` inhibitor, `CYP3A4` inducer, `UGT1A1` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer, `UGT1A1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: P2RX4 (unknown), SCN11A (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

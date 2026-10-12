@@ -5,7 +5,7 @@
 
 # buprenorphine — `Buprenorphine_Robertson2005_otm`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -15,7 +15,7 @@
 
 > **Species: cat.** This record comes from an animal study (cat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 ### Reviewer guidance
 
@@ -143,10 +143,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_buprenorphine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Robertson_2005` / `Robertson_2005::otm`)
-- model: `../../../knowledgebase/drugs/drug_buprenorphine/models/modelica/Buprenorphine_Robertson2005_otm.mo`
-- deviation: `../../../knowledgebase/drugs/drug_buprenorphine/models/modelica/Buprenorphine_Robertson2005_otm.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_buprenorphine/models/modelica/Buprenorphine_Robertson2005_otm.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_buprenorphine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Robertson_2005` / `Robertson_2005::otm`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_buprenorphine/models/modelica/Buprenorphine_Robertson2005_otm.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_buprenorphine/models/modelica/Buprenorphine_Robertson2005_otm.deviation.json`
+- sim: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_buprenorphine/models/modelica/Buprenorphine_Robertson2005_otm.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -164,7 +164,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_buprenorphine/Buprenorphine_Robertson2005_otm/Buprenorphine_Robertson2005_otm.svg" alt="Buprenorphine_Robertson2005_otm diagram"><figcaption>Modelica diagram · Pharmacolibrary v26.09 · OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_buprenorphine/Buprenorphine_Robertson2005_otm/Buprenorphine_Robertson2005_otm.svg" alt="Buprenorphine_Robertson2005_otm diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

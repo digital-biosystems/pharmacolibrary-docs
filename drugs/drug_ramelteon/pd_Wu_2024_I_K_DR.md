@@ -21,7 +21,7 @@
 
 > Ramelteon inhibits the delayed-rectifier K+ current amplitude (I K(DR)) in a concentration-dependent manner, with an IC50 of 2.9 μM; the paper excerpts do not state the model form or mechanism beyond this inhibition.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Wu_2024`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Wu PM et al., An unidentified yet notable modificatio…, FASEB bioAdvances (202
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

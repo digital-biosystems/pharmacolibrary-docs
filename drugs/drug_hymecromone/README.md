@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Weiz_2024_cell_viability](drugs/drug_hymecromone/pd_Weiz_2024_cell_viability.md) | cell viability ← 4-methylumbelliferone · direct sigmoid Emax (Hill) effect | — | Weiz G et al., Rutinosides-derived from Sarocladium st…, Microbial cell factories (2024) | [10.1186/s12934-024-02395-0](https://doi.org/10.1186/s12934-024-02395-0) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Weiz_2024_cell_viability](drugs/drug_hymecromone/pd_Weiz_2024_cell_viability.md) | cell viability ← 4-methylumbelliferone · direct sigmoid Emax (Hill) effect | — | Weiz G et al., Rutinosides-derived from Sarocladium st…, Microbial cell factories (2024) | [10.1186/s12934-024-02395-0](https://doi.org/10.1186/s12934-024-02395-0) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

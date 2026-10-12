@@ -32,24 +32,8 @@ Dimethyl sulfoxide is used topically for joint and muscle pain and for certain b
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Soma_2018_reference](drugs/drug_dimethyl_sulfoxide/DimethylSulfoxide_Soma2018_reference.md) | — | 1-compartment (no model) | 1 | Soma LR et al., Pharmacokinetics, disposition, and plas…, Journal of veterinary pharm… (2018) | [10.1111/jvp.12476](https://doi.org/10.1111/jvp.12476) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Hagedorn_1998_reference](drugs/drug_dimethyl_sulfoxide/DimethylSulfoxide_Hagedorn1998_reference.md) | — | 1-compartment (no model) | 0 | Hagedorn M et al., Characterization of a major permeabilit…, Biology of reproduction (1998) | [10.1095/biolreprod59.5.1240](https://doi.org/10.1095/biolreprod59.5.1240) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dimethyl_sulfoxide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP2C19` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: IL5RA (downregulator), MUC16 (downregulator), MYC (downregulator), TTR (unknown).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Soma_2018_reference](drugs/drug_dimethyl_sulfoxide/DimethylSulfoxide_Soma2018_reference.md) | — | 1-compartment (no model) | 1 | Soma LR et al., Pharmacokinetics, disposition, and plas…, Journal of veterinary pharm… (2018) | [10.1111/jvp.12476](https://doi.org/10.1111/jvp.12476) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Hagedorn_1998_reference](drugs/drug_dimethyl_sulfoxide/DimethylSulfoxide_Hagedorn1998_reference.md) | — | 1-compartment (no model) | 0 | Hagedorn M et al., Characterization of a major permeabilit…, Biology of reproduction (1998) | [10.1095/biolreprod59.5.1240](https://doi.org/10.1095/biolreprod59.5.1240) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

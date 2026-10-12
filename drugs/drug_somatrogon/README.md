@@ -24,17 +24,8 @@ Somatrogon is a long-acting growth hormone analogue used to treat growth disorde
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: unreported model parameter default(s): k21</sub><br><sub>route_to: `scholar`</sub> | [Wang_2025_previous_nonmem_model_estimates](drugs/drug_somatrogon/Somatrogon_Wang2025_previous_nonmem_model_estimates.md) | ▶ model + simulator | 2-compartment, oral | 6 (+3 cov.) | Wang Y et al., Implementing a Bayesian approach using…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13279](https://doi.org/10.1002/psp4.13279) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wang_2025_nonmem_focei_estimates_previous_analysis](drugs/drug_somatrogon/Somatrogon_Wang2025_nonmem_focei_estimates_previous_analysis.md) | — | 1-compartment (no model) | 0 | Wang Y et al., Implementing a Bayesian approach using…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13279](https://doi.org/10.1002/psp4.13279) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=somatrogon).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: GHR (binder).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: unreported model parameter default(s): k21</sub><br><sub>route_to: `scholar`</sub> | [Wang_2025_previous_nonmem_model_estimates](drugs/drug_somatrogon/Somatrogon_Wang2025_previous_nonmem_model_estimates.md) | ▶ model + simulator | 2-compartment, oral | 6 (+3 cov.) | Wang Y et al., Implementing a Bayesian approach using…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13279](https://doi.org/10.1002/psp4.13279) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.5). Primary extraction retained.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wang_2025_nonmem_focei_estimates_previous_analysis](drugs/drug_somatrogon/Somatrogon_Wang2025_nonmem_focei_estimates_previous_analysis.md) | — | 1-compartment (no model) | 0 | Wang Y et al., Implementing a Bayesian approach using…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13279](https://doi.org/10.1002/psp4.13279) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

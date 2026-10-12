@@ -19,7 +19,7 @@
 
 > The model links esketamine concentrations (in μg/mL) to the categorical response of CHOWSS score less than 2, using an EC50 of 0.44 μg/mL and a slope of 5.3. The paper does not provide full text to specify the underlying mechanism of action (e.g., production inhibition vs. direct effect).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Coulter_2014`
 - **model family:** `categorical`
@@ -61,7 +61,7 @@ Coulter FL et al., Ketofol dosing simulations for procedur…, Pediatric emergen
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -22,7 +22,7 @@
 
 > Thiopental inhibits the I_Kur-type outward K+ current in H9c2 cells in a concentration-dependent manner via a direct, reversible block. The concentration-response relationship was fitted to a sigmoidal model with an IC50 of 97 µM and a Hill coefficient of 1.2.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Suzuki_2005`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Suzuki H et al., Inhibitory effect of thiopental on ultr…, Journal of pharmaco
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

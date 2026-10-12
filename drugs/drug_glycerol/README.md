@@ -30,21 +30,7 @@ Glycerol is used to treat constipation, and has also been used for dermatitis. I
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Huber_1990_haemodynamic_effects](drugs/drug_glycerol/pd_Huber_1990_haemodynamic_effects.md) | haemodynamic effects ← glycerol trinitrate · direct Emax (saturable) effect | — | Huber T et al., Bioaequivalence of sublingual glycerol…, Arzneimittel-Forschung (1990) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=glycerol).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | stomach | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | adipose tissue | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `ADH1B` unknown, `CYP2E1` inducer | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ALDH1A1 (substrate), AQP7 (unknown), AQP9 (unknown), ARF1 (unknown), GSTZ1 (unknown), ISYNA1 (unknown), ITPR1 (unknown), NAGA (unknown), PAEP (unknown), PAPSS1 (unknown), PLA2G2E (unknown), PPARD (target), TRDMT1 (unknown).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Huber_1990_haemodynamic_effects](drugs/drug_glycerol/pd_Huber_1990_haemodynamic_effects.md) | haemodynamic effects ← glycerol trinitrate · direct Emax (saturable) effect | — | Huber T et al., Bioaequivalence of sublingual glycerol…, Arzneimittel-Forschung (1990) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -22,7 +22,7 @@
 
 > The paper excerpt is unavailable to confirm the specific mechanism or rate constants governing the effect of bupivacaine on membrane potential. The record indicates a sigmoid Emax inhibition model where bupivacaine has an IC50 of 856 µM and a Hill coefficient of 2.4.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Punke_2003`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Punke MA et al., Inhibition of human TREK-1 channels by…, Anesthesia and analg
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -33,11 +33,11 @@ Pomalidomide is an immunomodulating and anti-angiogenic medicine used to treat m
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Fau_2020_reference](drugs/drug_pomalidomide/Pomalidomide_Fau2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Fau JB et al., Drug-Disease Interaction and Time-Depen…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12561](https://doi.org/10.1002/psp4.12561) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Ogasawara_2021_reference](drugs/drug_pomalidomide/Pomalidomide_Ogasawara2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Ogasawara K et al., Recurrent or progressive pediatric brai…, Pediatric research (2021) | [10.1038/s41390-020-01304-6](https://doi.org/10.1038/s41390-020-01304-6) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial</span> | [Papathanasiou_2025_reference](drugs/drug_pomalidomide/Pomalidomide_Papathanasiou2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Papathanasiou T et al., Population Pharmacokinetics for Belanta…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01508-1](https://doi.org/10.1007/s40262-025-01508-1) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.867). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q31 — no SI value to build from</sub><br><sub>blocking: C2_base_Q69 failed (ratio 3.6634)</sub><br><sub>route_to: `human_review`</sub> | [Li_2015_reference](drugs/drug_pomalidomide/Pomalidomide_Li2015_reference.md) | — | 1-compartment (no model) | 7 (+2 cov.) | Li Y et al., Population pharmacokinetics of pomalido…, Journal of clinical pharmac… (2015) | [10.1002/jcph.455](https://doi.org/10.1002/jcph.455) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Li_2017_reference](drugs/drug_pomalidomide/Pomalidomide_Li2017_reference.md) | — | 1-compartment (no model) | 8 | Li Y et al., Population pharmacokinetics of pomalido…, Clinical pharmacology : adv… (2017) | [10.2147/CPAA.S144606](https://doi.org/10.2147/CPAA.S144606) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> | [Fau_2020_reference](drugs/drug_pomalidomide/Pomalidomide_Fau2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Fau JB et al., Drug-Disease Interaction and Time-Depen…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12561](https://doi.org/10.1002/psp4.12561) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> | [Ogasawara_2021_reference](drugs/drug_pomalidomide/Pomalidomide_Ogasawara2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Ogasawara K et al., Recurrent or progressive pediatric brai…, Pediatric research (2021) | [10.1038/s41390-020-01304-6](https://doi.org/10.1038/s41390-020-01304-6) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span> | [Papathanasiou_2025_reference](drugs/drug_pomalidomide/Pomalidomide_Papathanasiou2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Papathanasiou T et al., Population Pharmacokinetics for Belanta…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01508-1](https://doi.org/10.1007/s40262-025-01508-1) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.867). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q31 — no SI value to build from</sub><br><sub>blocking: C2_base_Q69 failed (ratio 3.6634)</sub><br><sub>route_to: `human_review`</sub> | [Li_2015_reference](drugs/drug_pomalidomide/Pomalidomide_Li2015_reference.md) | — | 1-compartment (no model) | 7 (+2 cov.) | Li Y et al., Population pharmacokinetics of pomalido…, Journal of clinical pharmac… (2015) | [10.1002/jcph.455](https://doi.org/10.1002/jcph.455) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Li_2017_reference](drugs/drug_pomalidomide/Pomalidomide_Li2017_reference.md) | — | 1-compartment (no model) | 8 | Li Y et al., Population pharmacokinetics of pomalido…, Clinical pharmacology : adv… (2017) | [10.2147/CPAA.S144606](https://doi.org/10.2147/CPAA.S144606) |
 
 ## Pharmacodynamics (PD)
 
@@ -45,25 +45,6 @@ Pomalidomide is an immunomodulating and anti-angiogenic medicine used to treat m
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Koiwai_2021_M_protein](drugs/drug_pomalidomide/pd_Koiwai_2021_M_protein.md) | serum M-protein ← pomalidomide · disease-progression model | model (no simulator) | Koiwai K et al., PK/PD modeling analysis for dosing regi…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12666](https://doi.org/10.1002/psp4.12666) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Pitoy_2024_MPROT](drugs/drug_pomalidomide/pd_Pitoy_2024_MPROT.md) | serum M-protein ← Pomalidomide · disease-progression model | — | Pitoy A et al., Isatuximab-dexamethasone-pomalidomide c…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13206](https://doi.org/10.1002/psp4.13206) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=pomalidomide).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CRBN (inhibitor), PTGS2 (inhibitor), TNF (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

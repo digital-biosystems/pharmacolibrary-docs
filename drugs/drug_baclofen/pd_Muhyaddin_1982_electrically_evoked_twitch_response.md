@@ -22,7 +22,7 @@
 
 > The paper describes a direct Emax inhibitory model where baclofen concentration drives the inhibition of the electrically-evoked twitch response with an EC50 of 0.9 microM. The specific mechanism (e.g., whether inhibition acts on production or elimination of the response) is not stated in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Muhyaddin_1982`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Muhyaddin M et al., Presynaptic gamma-aminobutyric acid rec…, British journal 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

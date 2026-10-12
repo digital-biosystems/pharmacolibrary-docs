@@ -21,7 +21,7 @@
 
 > Flufenamic acid stimulates TAS2R14 activation, measured as IP1 accumulation, via an Emax model with an EC50 of 72 nM and a maximum efficacy of 129%. The paper does not provide a description of the specific mechanism by which the drug drives the response beyond this direct activation characterization.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Waterloo_2023`
 - **model family:** `emax`
@@ -49,11 +49,11 @@ Waterloo L et al., Discovery of 2-Aminopyrimidines as Pote…, Journal of medici
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

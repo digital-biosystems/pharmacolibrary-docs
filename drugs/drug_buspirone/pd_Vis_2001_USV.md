@@ -22,7 +22,7 @@
 
 > Buspirone concentrations (via a cited PK model) act on the reduction in fear-induced ultrasonic vocalisations (USV) through a sigmoid Emax inhibitory effect; the paper excerpts give only Emax = 90% and do not state IC50, gamma, or the mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Vis_2001`
 - **model family:** `sigmoid_emax`
@@ -63,7 +63,7 @@ Vis P et al., Population pharmacokinetic-pharmacodyna…, European journal of ph
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

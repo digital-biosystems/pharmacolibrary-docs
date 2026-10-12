@@ -28,22 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Madani_2016_CIG](drugs/drug_cyproheptadine/pd_Madani_2016_CIG.md) | clinical improvement ← cyproheptadine · categorical (graded) response model | — | Madani S et al., Cyproheptadine Use in Children With Fun…, Journal of pediatric gastro… (2016) | [10.1097/MPG.0000000000000964](https://doi.org/10.1097/MPG.0000000000000964) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">pig</span> | [Dohmoto_2003_Ca_2_currents](drugs/drug_cyproheptadine/pd_Dohmoto_2003_Ca_2_currents.md) | Ca(2+) currents ← cyproheptadine · inhibition effect | — | Dohmoto H et al., Cardiac Ca(2+) channel-blocking effects…, Journal of pharmacological… (2003) | [10.1254/jphs.91.163](https://doi.org/10.1254/jphs.91.163) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cyproheptadine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `SLC22A1` inhibitor, `UGT1A3` substrate, `UGT1A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target), HRH1 (target), HRH2 (target), HTR2A (target), HTR2B (target), HTR2C (target), HTR7 (target), UGT2B10 (substrate).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Madani_2016_CIG](drugs/drug_cyproheptadine/pd_Madani_2016_CIG.md) | clinical improvement ← cyproheptadine · categorical (graded) response model | — | Madani S et al., Cyproheptadine Use in Children With Fun…, Journal of pediatric gastro… (2016) | [10.1097/MPG.0000000000000964](https://doi.org/10.1097/MPG.0000000000000964) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">pig</span> | [Dohmoto_2003_Ca_2_currents](drugs/drug_cyproheptadine/pd_Dohmoto_2003_Ca_2_currents.md) | Ca(2+) currents ← cyproheptadine · inhibition effect | — | Dohmoto H et al., Cardiac Ca(2+) channel-blocking effects…, Journal of pharmacological… (2003) | [10.1254/jphs.91.163](https://doi.org/10.1254/jphs.91.163) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

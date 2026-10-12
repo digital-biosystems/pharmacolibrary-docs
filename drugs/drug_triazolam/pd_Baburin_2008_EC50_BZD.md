@@ -22,7 +22,7 @@
 
 > In Xenopus oocytes expressing α1β2γ1, α1β2γ2S or α1β2-R207Cγ2S GABAA receptors, saturating triazolam concentrations shift the GABA concentration–response curve (ΔEC50(BZD), in μM), which correlates linearly with the γ-subunit-mediated reduction of GABA sensitivity (EC50); the paper does not give an explicit PD mechanism beyond stating that BZDs partially relieve a γ-subunit-induced inhibition of GABA sensitivity. Reported values are slope factors of 1.8±0.1 (α1β2γ1), 1.4±0.1 (α1β2γ2S) and 1.1±0.1 (α1β2-R207Cγ2S), with ΔEC50(triazolam) of 16 μM.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Baburin_2008`
 - **model family:** `linear`
@@ -66,7 +66,7 @@ Baburin I et al., Estimating the efficiency of benzodiaze…, British journal of
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

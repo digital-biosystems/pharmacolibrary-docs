@@ -21,7 +21,7 @@
 
 > Ipratropium bromide concentrations (nmol/L) act on the percentage increase in airway area (reversal of ACh-induced airway contraction) via an Emax-type inhibitory model, with an EC50 of 2.3 nmol/L; the paper excerpts do not state the mechanism beyond this direct concentration-effect relation.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Herbert_2019`
 - **model family:** `emax`
@@ -62,7 +62,7 @@ Herbert J et al., COPD and asthma therapeutics for suppor…, Clinical toxicolog
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

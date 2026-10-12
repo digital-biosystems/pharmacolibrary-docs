@@ -20,7 +20,7 @@
 
 > Venlafaxine concentrations drive the amplitude of the pupillary light reflex (stimulatory direction) via a tolerance model, with a half-life of development and regression of tolerance of 30 minutes; the paper excerpts provide no further mechanism or potency values.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Lindauer_2008`
 - **model family:** `tolerance`
@@ -61,7 +61,7 @@ Lindauer A et al., Pharmacokinetic/pharmacodynamic modelli…, Clinical pharmaco
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -24,21 +24,7 @@ Furazolidone is a nitrofuran antimicrobial used against protozoal and bacterial 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Plakas_1994_2_reference](drugs/drug_furazolidone/Furazolidone_Plakas1994v2_reference.md) | — | 1-compartment (no model) | 0 | Plakas SM et al., Furazolidone disposition after intravas…, Xenobiotica; the fate of fo… (1994) | [10.3109/00498259409038669](https://doi.org/10.3109/00498259409038669) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=furazolidone).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `MAOA` inhibitor, `MAOB` inhibitor | DrugBank actor |
-| metabolism | liver | `MAOA` inhibitor | DrugBank actor |
-| metabolism | platelet | `MAOB` inhibitor | DrugBank actor |
-| metabolism | small intestine | `MAOA` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: DNA (cross-linking/alkylation).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.5). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Plakas_1994_2_reference](drugs/drug_furazolidone/Furazolidone_Plakas1994v2_reference.md) | — | 1-compartment (no model) | 0 | Plakas SM et al., Furazolidone disposition after intravas…, Xenobiotica; the fate of fo… (1994) | [10.3109/00498259409038669](https://doi.org/10.3109/00498259409038669) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

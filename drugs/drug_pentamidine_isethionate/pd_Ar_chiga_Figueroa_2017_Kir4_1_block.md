@@ -21,7 +21,7 @@
 
 > Pentamidine (concentrations in nM, from the cited PK record) inhibits Kir4.1 channel current with a sigmoid Emax (proportional inhibition) model; the paper reports an IC50 of 97 nM, but no excerpts are available to confirm the mechanism or additional parameters (Emax, gamma).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Aréchiga-Figueroa_2017`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Aréchiga-Figueroa IA et al., High-potency block of Kir4.1 channels b…, Europe
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

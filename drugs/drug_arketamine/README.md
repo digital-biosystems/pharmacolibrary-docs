@@ -13,6 +13,8 @@
 
 **Description.** Arketamine is under investigation in clinical trial NCT05414422 (A Randomized, Placebo-controlled, Double-blind Study to Assess Safety and Efficacy of PCN-101 in TRD).
 
+<p><small>Source: <a href="https://go.drugbank.com/drugs/DB19150">DrugBank DB19150</a> · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
+
 ## Molecular properties
 
 > Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).

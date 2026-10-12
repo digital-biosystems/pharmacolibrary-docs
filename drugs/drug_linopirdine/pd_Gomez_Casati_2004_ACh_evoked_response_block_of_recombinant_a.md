@@ -21,7 +21,7 @@
 
 > Linopirdine concentration-dependently inhibits the ACh-evoked response of recombinant alpha9alpha10 nicotinic cholinergic receptors, described by a sigmoid Emax model with an IC50 of 5.2 microM; the paper excerpts do not state Emax, gamma, or the mechanism beyond concentration-dependent blockade.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Gomez-Casati_2004`
 - **model family:** `sigmoid_emax`
@@ -48,11 +48,11 @@ Gomez-Casati ME et al., Linopirdine blocks alpha9alpha10-contai…, Journal of t
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

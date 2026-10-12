@@ -16,11 +16,11 @@
 
 **As extracted:** Risankizumab (concentrations from the PK model of Khatri_2019::chinese) drives sPGA0/1: direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Risankizumab plasma concentration (C avg) directly stimulates the sPGA0/1 response via a direct Emax relationship, where baseline hs-CRP shifts the EC50 (exponent 0.505). The estimated parameters are Emax = 0.916, EC50 = 0.431 μg/mL, and a placebo response of 0.069.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Khatri_2020`
 - **model family:** `emax`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -20,7 +20,7 @@
 
 > The PD model links cisatracurium concentrations (ng ml-1) to the inhibition of neuromuscular block using an effect compartment mechanism with a ke0 of 1.32 min-1. The relationship is characterized by an IC50 of 38.0 ng ml-1 and an Imax of 99.7%.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `De_1996`
 - **model family:** `effect_compartment`
@@ -63,7 +63,7 @@ De Wolf AM et al., Pharmacokinetics and pharmacodynamics o…, British journal o
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

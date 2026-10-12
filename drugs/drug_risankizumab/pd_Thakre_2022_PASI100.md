@@ -20,7 +20,7 @@
 
 > The paper characterizes the pharmacokinetics of risankizumab in psoriatic arthritis and observes that patients on the 150 mg dosing regimen achieved PASI 100 responses at week 24 at higher rates than placebo. However, the analysis found no statistically significant exposure–response relationship for PASI 100, and the provided text does not specify a quantitative PD model mechanism or parameters for this binary response.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Thakre_2022`
 - **model family:** `categorical`
@@ -61,7 +61,7 @@ Thakre N et al., Population Pharmacokinetics and Exposur…, Rheumatology and th
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

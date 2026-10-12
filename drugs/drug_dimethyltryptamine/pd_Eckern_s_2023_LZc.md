@@ -16,11 +16,11 @@
 
 **As extracted:** DMT drives Lempel-Ziv complexity score: direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > DMT plasma concentrations act on Lempel-Ziv complexity via an effect compartment mechanism, producing a sigmoidal maximum stimulatory response (Emax model). The estimated parameters were a baseline response (R0) of 0.321, a maximum increase (Emax) of 0.10, an effect compartment EC50 of 54 nM, a ke0 of 0.76 min−1, and a Hill slope (γ) of 4.8.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Eckernäs_2023`
 - **model family:** `sigmoid_emax`
@@ -91,11 +91,11 @@ Advisory:
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

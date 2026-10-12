@@ -20,7 +20,7 @@
 
 > The paper does not provide the mechanism details: risperidone (with its active moiety 9-hydroxy-risperidone, combined AUCtotal) is linked to the decrease in PANSS score in a transduction (indirect response) model with an inhibitory effect, but no potency (IC50/EC50/Imax) or rate (kin/kout/ke0) values are available from the excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Ji_2016`
 - **model family:** `transduction`
@@ -40,11 +40,11 @@ _No resolved parameters._
 
 ## Models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

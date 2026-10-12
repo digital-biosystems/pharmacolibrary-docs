@@ -32,39 +32,15 @@ Rucaparib is a PARP inhibitor anticancer drug used to treat ovarian, fallopian t
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Liao_2022_reference](drugs/drug_rucaparib/Rucaparib_Liao2022_reference.md) | — | 1-compartment (no model) | 7 | Liao M et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01157-8](https://doi.org/10.1007/s40262-022-01157-8) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Liao_2022_reference](drugs/drug_rucaparib/Rucaparib_Liao2022_reference.md) | — | 1-compartment (no model) | 7 | Liao M et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01157-8](https://doi.org/10.1007/s40262-022-01157-8) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Schwarcz_2024_MTT](drugs/drug_rucaparib/pd_Schwarcz_2024_MTT.md) | cell proliferation ← rucaparib · direct sigmoid Emax (Hill) effect | — | Schwarcz S et al., Cytostatic Bacterial Metabolites Interf…, Molecules (Basel, Switzerla… (2024) | [10.3390/molecules29133073](https://doi.org/10.3390/molecules29133073) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> | [Wang_2015_PARP_activity](drugs/drug_rucaparib/pd_Wang_2015_PARP_activity.md) | PARP activity in peripheral blood lymphocytes ← rucaparib · direct Emax (saturable) effect | — | Wang DD et al., PARP activity in peripheral blood lymph…, Clinical pharmacology in dr… (2015) | [10.1002/cpdd.176](https://doi.org/10.1002/cpdd.176) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> | [Wang_2015_PARP_activity_2](drugs/drug_rucaparib/pd_Wang_2015_PARP_activity_2.md) | PARP activity in tumor tissues ← rucaparib · direct Emax (saturable) effect | — | Wang DD et al., PARP activity in peripheral blood lymph…, Clinical pharmacology in dr… (2015) | [10.1002/cpdd.176](https://doi.org/10.1002/cpdd.176) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=rucaparib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
-| metabolism | kidney | `CYP3A5` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP1A2` inducer/inhibitor/substrate, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor, `CYP3A7` inhibitor, `SLC22A1` inhibitor, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor, `UGT1A1` inhibitor | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor, `UGT1A1` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `ABCC4` inhibitor, `SLC22A6` inhibitor, `SLC22A8` inhibitor, `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
-| excretion | liver | `ABCC4` inhibitor, `SLC47A1` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CYP3A43 (inhibitor), PARP1 (inhibitor), PARP2 (inhibitor), PARP3 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Schwarcz_2024_MTT](drugs/drug_rucaparib/pd_Schwarcz_2024_MTT.md) | cell proliferation ← rucaparib · direct sigmoid Emax (Hill) effect | — | Schwarcz S et al., Cytostatic Bacterial Metabolites Interf…, Molecules (Basel, Switzerla… (2024) | [10.3390/molecules29133073](https://doi.org/10.3390/molecules29133073) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span> | [Wang_2015_PARP_activity](drugs/drug_rucaparib/pd_Wang_2015_PARP_activity.md) | PARP activity in peripheral blood lymphocytes ← rucaparib · direct Emax (saturable) effect | — | Wang DD et al., PARP activity in peripheral blood lymph…, Clinical pharmacology in dr… (2015) | [10.1002/cpdd.176](https://doi.org/10.1002/cpdd.176) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span> | [Wang_2015_PARP_activity_2](drugs/drug_rucaparib/pd_Wang_2015_PARP_activity_2.md) | PARP activity in tumor tissues ← rucaparib · direct Emax (saturable) effect | — | Wang DD et al., PARP activity in peripheral blood lymph…, Clinical pharmacology in dr… (2015) | [10.1002/cpdd.176](https://doi.org/10.1002/cpdd.176) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

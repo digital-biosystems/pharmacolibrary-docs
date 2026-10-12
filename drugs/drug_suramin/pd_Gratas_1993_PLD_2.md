@@ -22,7 +22,7 @@
 
 > Suramin (mM) inhibits PLD in fibroblast membranes, with an IC50 of 4.2 mM; the paper excerpts do not state the mechanism or model form.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Gratas_1993`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Gratas C et al., Inhibition of phospholipase D by agents…, Anticancer research
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

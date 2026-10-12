@@ -33,20 +33,7 @@ Tripelennamine is an antihistamine used to treat allergic conditions such as urt
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Wasfi_2000_reference](drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Wasfi IA et al., Comparative disposition of tripelennami…, Journal of veterinary pharm… (2000) | [10.1046/j.1365-2885.2000.00261.x](https://doi.org/10.1046/j.1365-2885.2000.00261.x) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tripelennamine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
-| distribution | blood | `ALB` binder/regulator | DrugBank actor |
-| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
-| metabolism | liver | `CYP2D6` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: HRH1 (target).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Wasfi_2000_reference](drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Wasfi IA et al., Comparative disposition of tripelennami…, Journal of veterinary pharm… (2000) | [10.1046/j.1365-2885.2000.00261.x](https://doi.org/10.1046/j.1365-2885.2000.00261.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

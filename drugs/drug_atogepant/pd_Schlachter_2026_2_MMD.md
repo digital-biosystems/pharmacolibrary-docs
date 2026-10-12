@@ -16,11 +16,11 @@
 
 **As extracted:** Atogepant (concentrations from the PK model of Schlachter_2026::phase_1_model) drives Monthly migraine days (in days): direct Emax (saturable) effect.
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > Atogepant minimum concentration (Cmin) inhibits monthly migraine days (MMD) via a direct Emax exposure-response relationship, with an EC50 of 0.412 nM and an Emax of 0.665. The time course of this effect is characterized by a TEF50 of 0.407 months, and the model indicates MMD plateaus at a Cmin EC90 of 3.71 nM.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Schlachter_2026_2`
 - **model family:** `emax`

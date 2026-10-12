@@ -27,8 +27,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 ## Citation
 Beylot M et al., Determination of steady state and nonst…, Journal of lipid research (1987)
 
-## Model component
-<dbs-pgx drug="glycerol" model-id="Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia" status="" stale="true" population="normal subjects and insulin-dependent diabetic patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glycerol" model-id="Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia" status="" stale="true" population="normal subjects and insulin-dependent diabetic patients" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -50,7 +49,7 @@ _No comparable checks._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_glycerol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Beylot_1987` / `Beylot_1987::healthy adults and insulin-dependent diabetic patients`)
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_glycerol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Beylot_1987` / `Beylot_1987::healthy adults and insulin-dependent diabetic patients`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -71,7 +70,7 @@ _No comparable checks._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

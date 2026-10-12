@@ -16,11 +16,11 @@
 
 **As extracted:** Risankizumab (concentrations from the PK model of Khatri_2019::chinese) drives PASI75: direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Risankizumab plasma C_avg directly modulates the probability of achieving the binary PASI75 response via an Emax stimulation function (P = PL + (Emax - PL) * C_avg^gamma / (EC50^gamma + C_avg^gamma)), with the maximum effect (Emax) estimated as 1 and an EC50 of 0.300 μg/mL. The paper does not specify the value of the gamma parameter, nor does it describe any intermediate mechanistic steps such as an effect compartment or inhibition of production/elimination.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Khatri_2020`
 - **model family:** `emax`
@@ -97,7 +97,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

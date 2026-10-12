@@ -19,7 +19,7 @@
 
 > The paper describes remoxipride concentrations acting on plasma prolactin (PRL) levels via an indirect response model (model III) with a stimulatory effect direction, but no full text is available, so the mechanism, potency parameters (Imax, IC50/EC50, gamma), and rate constants (kin, kout) are not stated in the available excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Movin-Osswald_1995`
 - **model family:** `indirect_response_iii`
@@ -52,7 +52,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

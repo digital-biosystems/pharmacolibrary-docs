@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;irinotecan&quot;,&quot;href&quot;:&quot;drugs/drug_irinotecan/&quot;},{&quot;label&quot;:&quot;Zhu_2023 \u00b7 PD PDTO volume&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# initial rate of cAMP GloSensor luminescence response to salbutamol — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+# PDTO volume — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -19,11 +19,11 @@
 
 **Model:** No model was generated from this record.
 
-> Salbutamol concentrations (M) stimulate cAMP GloSensor luminescence in HEK293 cells expressing endogenous β2-adrenoceptors, modelled with a sigmoid Emax (Hill) equation fitted to the initial rate of response (IRmax, from the rise-and-fall time-course equation of Hoare et al.). Salbutamol showed IRmax = 30.34 ± 2.75 % of 1 μM isoprenaline with log L50 = −6.68 ± 0.14; the paper does not state a production/elimination mechanism beyond agonist-stimulated cAMP generation with desensitisation (k1) and phosphodiesterase-mediated decay (k2) attenuating the response.
+> The active metabolite SN-38 of irinotecan inhibits the net change in PDTO volume (tumor growth), which is modeled as the difference between a fixed natural growth rate (kg = 0.03) and a direct sigmoidal Emax killing effect. For SN-38, the estimated potency (EC50) was 15.50 μmol/L, the maximum inhibition (Emax) was 0.076, and the Hill coefficient was 0.349.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
-- **paper:** `Cullum_2023`
+- **paper:** `Zhu_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
 - **tier:** descriptive
@@ -52,18 +52,20 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | secondary_empty | 0.0 (0/6 fields) | 6 |
+| `einfracz:gpt-oss-120b` | secondary_empty | 0.0 (0/8 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `driver_compound` | salbutamol | not captured | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_direction` | stimulation | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `driver_compound` | SN-38 | not captured | mismatch |
+| `einfracz:gpt-oss-120b` | `effect_direction` | inhibition | not captured | mismatch |
 | `einfracz:gpt-oss-120b` | `effect_form` | proportional | not captured | mismatch |
 | `einfracz:gpt-oss-120b` | `model_family` | sigmoid_emax | not captured | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q320]` | 30.34 ± 2.75 | not captured | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q321]` | −6.68 ± 0.14 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q321]` | 15.50 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q323]` | 0.076 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q325]` | 0.349 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `parameters[Q327]` | 0.03 | not captured | only_one_extracted |
 
 </details>
 
@@ -91,7 +93,7 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -18,11 +18,11 @@
 
 **As extracted:** Clozapine (concentrations from this paper's PK model) drives Increase in amplitude in the theta EEG frequency band (in µV s−1): direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Clozapine plasma concentrations (ng ml−1) stimulate the amplitude of the theta EEG band (µV s−1) in rat via a sigmoid Emax model linked to an effect compartment, with an effect-site disappearance half-life of 2.9 min for theta (Kco 14 h−1). The record reports baseline E0 80 µV s−1 and two stimulatory components (Emax 18 µV s−1, EC50 1260 ng ml−1, N 5.9; and Emax 29 µV s−1, EC50 99 ng ml−1, N 2.4); the excerpts give no theta-band Emax/EC50 values (only beta Emax 45 µV s−1) and do not otherwise describe the mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Parker_2001`
 - **model family:** `sigmoid_emax`
@@ -100,7 +100,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

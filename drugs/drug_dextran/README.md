@@ -23,16 +23,7 @@ Dextran, a glucose polymer, is used as a plasma substitute and as an anticoagula
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Schwarz_1981_reference](drugs/drug_dextran/Dextran_Schwarz1981_reference.md) | — | 1-compartment (no model) | 4 | Schwarz JA et al., Pharmacokinetics of low molecular (mono…, International journal of cl… (1981) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dextran).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Schwarz_1981_reference](drugs/drug_dextran/Dextran_Schwarz1981_reference.md) | — | 1-compartment (no model) | 4 | Schwarz JA et al., Pharmacokinetics of low molecular (mono…, International journal of cl… (1981) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

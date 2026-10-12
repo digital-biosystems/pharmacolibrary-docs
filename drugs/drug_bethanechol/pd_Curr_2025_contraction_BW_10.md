@@ -21,7 +21,7 @@
 
 > Bethanechol concentration-dependently contracted mouse gastric fundus circular muscle (expressed as % of the maximum carbachol 100 μM contraction) in the presence of BW-10 (1 μM), described by a direct Emax (stimulatory, proportional) model with pD2 5.0 ± 0.1 (EC50 ≈ 10 μM) and Emax 67.2% ± 6.1%; the paper states BW-10 did not inhibit bethanechol-evoked contractions, and no rate parameters (kin, kout, ke0) are given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Currò_2025`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Currò D et al., Gastrin-Releasing Peptide Facilitates C…, Pharmacology resear
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

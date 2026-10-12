@@ -28,30 +28,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Fici_1997_cAMP](drugs/drug_bromocriptine/pd_Fici_1997_cAMP.md) | cAMP formation ← bromocriptine · direct sigmoid Emax (Hill) effect | — | Fici GJ et al., D1 dopamine receptor activity of anti-p…, Life sciences (1997) | [10.1016/s0024-3205(97)00126-4](https://doi.org/10.1016/s0024-3205(97)00126-4) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Valente_1997_PRL](drugs/drug_bromocriptine/pd_Valente_1997_PRL.md) | prolactin biomarker turnover ← bromocriptine | — | Valente D et al., Metabolite involvement in bromocriptine…, The Journal of pharmacology… (1997) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Coronas_1999_adenylyl_cyclase_activity](drugs/drug_bromocriptine/pd_Coronas_1999_adenylyl_cyclase_activity.md) | adenylyl cyclase activity ← bromocriptine · direct sigmoid Emax (Hill) effect | — | Coronas V et al., Dopamine receptor coupling to adenylyl…, Neuroscience (1999) | [10.1016/s0306-4522(98)00460-6](https://doi.org/10.1016/s0306-4522(98)00460-6) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bromocriptine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood | <sub>named in DrugBank's ADME text</sub> | prose |
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
-| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), ADRA2A (target), ADRA2B (target), ADRA2C (target), DRD1 (target), DRD2 (target), DRD3 (target), DRD4 (target), DRD5 (target), HTR1A (target), HTR1B (target), HTR1D (target), HTR2A (target), HTR2B (target), HTR2C (target), HTR7 (target).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Fici_1997_cAMP](drugs/drug_bromocriptine/pd_Fici_1997_cAMP.md) | cAMP formation ← bromocriptine · direct sigmoid Emax (Hill) effect | — | Fici GJ et al., D1 dopamine receptor activity of anti-p…, Life sciences (1997) | [10.1016/s0024-3205(97)00126-4](https://doi.org/10.1016/s0024-3205(97)00126-4) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Valente_1997_PRL](drugs/drug_bromocriptine/pd_Valente_1997_PRL.md) | prolactin biomarker turnover ← bromocriptine | — | Valente D et al., Metabolite involvement in bromocriptine…, The Journal of pharmacology… (1997) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Coronas_1999_adenylyl_cyclase_activity](drugs/drug_bromocriptine/pd_Coronas_1999_adenylyl_cyclase_activity.md) | adenylyl cyclase activity ← bromocriptine · direct sigmoid Emax (Hill) effect | — | Coronas V et al., Dopamine receptor coupling to adenylyl…, Neuroscience (1999) | [10.1016/s0306-4522(98)00460-6](https://doi.org/10.1016/s0306-4522(98)00460-6) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

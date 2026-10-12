@@ -20,7 +20,7 @@
 
 > No numerical mechanism, potency, or rate values (such as Imax, IC50, kin, or kout) are stated in the provided record or paper excerpts. The record describes the model as an indirect response type I where golimumab concentrations exert a proportional inhibitory effect on Mayo scores, but the specific mechanism and parameters are not detailed.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Hu_2018`
 - **model family:** `indirect_response_i`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

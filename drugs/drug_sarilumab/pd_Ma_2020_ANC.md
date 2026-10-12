@@ -19,7 +19,7 @@
 
 > Sarialumab concentrations stimulate the elimination rate (Kout) of absolute neutrophil counts (ANC), a mechanism the paper attributes to the margination of neutrophils from circulation. The model parameters include an Emax of 1.50, an EC50 of 10.3 mg/L, and a Kout of 2.17 day−1.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Ma_2020`
 - **model family:** `indirect_response_iv`
@@ -67,7 +67,7 @@ Ma L et al., Population Pharmacokinetic-Pharmacodyna…, Clinical pharmacokineti
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

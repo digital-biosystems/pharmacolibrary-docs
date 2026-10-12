@@ -20,7 +20,7 @@
 
 > The provided record identifies a categorical therapeutic drug monitoring (TDM) response for golimumab, but the model family, effect direction, and effect form are explicitly listed as unknown. Since no full text is available and the record does not specify a mechanism, driver units, or any potency and rate parameters (such as IC50, Emax, or ke0), no pharmacodynamic model can be summarized.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Roblin_2024`
 - **model family:** `unknown`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

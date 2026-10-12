@@ -22,7 +22,7 @@
 
 > Cannabidiol concentrations inhibit the 2-AG-stimulated GRABeCB2.0 fluorescent signal (ΔF/F0) in a concentration-dependent manner, with a potency of IC50 = 9.7 nM. The paper describes this as a direct effect on the sensor signal but does not specify the mechanistic basis for the inhibition (e.g., whether it inhibits 2-AG production, receptor binding, or another process).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Singh_2023`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Singh S et al., Pharmacological characterization of the…, bioRxiv : the prepri
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

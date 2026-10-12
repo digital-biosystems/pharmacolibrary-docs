@@ -28,17 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Dong_2025_Anthelmintic_efficacy_against_Gyrodactylus_kobayashii](drugs/drug_flubendazole/pd_Dong_2025_Anthelmintic_efficacy_against_Gyrodactylus_kobayas.md) | Anthelmintic efficacy against Gyrodactylus kobayashii ← flubendazole · inhibition effect | — | Dong J et al., Discovery of Potential Anthelmintic Age…, Journal of fish diseases (2025) | [10.1111/jfd.14102](https://doi.org/10.1111/jfd.14102) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Poulopoulou_2023_ED](drugs/drug_flubendazole/pd_Poulopoulou_2023_ED.md) | embryonation rate of Ascaridia galli eggs ← flubendazole · categorical (graded) response model | — | Poulopoulou I et al., In vitro evaluation of the effects of m…, Veterinary research communi… (2023) | [10.1007/s11259-022-09958-9](https://doi.org/10.1007/s11259-022-09958-9) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=flubendazole).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: TUBA1A (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Dong_2025_Anthelmintic_efficacy_against_Gyrodactylus_kobayashii](drugs/drug_flubendazole/pd_Dong_2025_Anthelmintic_efficacy_against_Gyrodactylus_kobayas.md) | Anthelmintic efficacy against Gyrodactylus kobayashii ← flubendazole · inhibition effect | — | Dong J et al., Discovery of Potential Anthelmintic Age…, Journal of fish diseases (2025) | [10.1111/jfd.14102](https://doi.org/10.1111/jfd.14102) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Poulopoulou_2023_ED](drugs/drug_flubendazole/pd_Poulopoulou_2023_ED.md) | embryonation rate of Ascaridia galli eggs ← flubendazole · categorical (graded) response model | — | Poulopoulou I et al., In vitro evaluation of the effects of m…, Veterinary research communi… (2023) | [10.1007/s11259-022-09958-9](https://doi.org/10.1007/s11259-022-09958-9) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

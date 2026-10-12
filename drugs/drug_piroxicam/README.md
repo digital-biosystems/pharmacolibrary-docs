@@ -32,7 +32,7 @@ Piroxicam is a non-steroidal anti-inflammatory drug used to treat inflammatory a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Schiantarelli_1981_reference](drugs/drug_piroxicam/Piroxicam_Schiantarelli1981_reference.md) | — | 1-compartment (no model) | 2 | Schiantarelli P et al., Some pharmacokinetic properties and bio…, Arzneimittel-Forschung (1981) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Schiantarelli_1981_reference](drugs/drug_piroxicam/Piroxicam_Schiantarelli1981_reference.md) | — | 1-compartment (no model) | 2 | Schiantarelli P et al., Some pharmacokinetic properties and bio…, Arzneimittel-Forschung (1981) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -40,24 +40,6 @@ Piroxicam is a non-steroidal anti-inflammatory drug used to treat inflammatory a
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Baird_1989_ISC](drugs/drug_piroxicam/pd_Baird_1989_ISC.md) | short circuit current (bradykinin response) ← piroxicam · inhibition effect | — | Baird AW et al., Bradykinin stimulates electrogenic bica…, The Journal of pharmacology… (1989) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2000_PID](drugs/drug_piroxicam/pd_Wang_2000_PID.md) | pain relief ← piroxicam · delayed effect through an effect compartment | — | Wang D et al., Comparative population pharmacokinetic-…, Journal of clinical pharmac… (2000) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=piroxicam).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | liver | `SLCO2B1` inhibitor | DrugBank actor |
-| absorption | small intestine | `SLCO2B1` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` unknown | DrugBank actor |
-| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| metabolism | liver | `CYP2C8` substrate, `CYP2C9` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | `SLC22A6` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
-| excretion | liver | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | mammary gland | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor), SLC22A11 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -21,7 +21,7 @@
 
 > No specific mechanism is described in the available record or excerpts, but phenylbutazone concentrations are linked to a stimulated response in stride length via an Emax model. The stated parameters are an EC50 of 3.6 micrograms/ml and an Emax of 10.7 %.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Toutain_1994`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Toutain PL et al., Plasma concentrations and therapeutic e…, Journal of veteri
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

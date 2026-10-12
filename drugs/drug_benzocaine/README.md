@@ -28,25 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Long_2024_inhibitory_rate_of_A_alternata_mycelial_growth](drugs/drug_benzocaine/pd_Long_2024_inhibitory_rate_of_A_alternata_mycelial_growth.md) | inhibitory rate of A. alternata mycelial growth biomarker turnover ← benzocaine | — | Long LF et al., Inhibitory effect of benzocaine from Sc…, Scientific reports (2024) | [10.1038/s41598-024-57237-1](https://doi.org/10.1038/s41598-024-57237-1) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=benzocaine).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
-| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
-| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
-| metabolism | liver | `CES1` inhibitor, `CYP1A2` substrate, `CYP2B6` substrate, `CYP2C19` substrate, `CYP2D6` substrate, `CYP2E1` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: SCN10A (inhibitor).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Long_2024_inhibitory_rate_of_A_alternata_mycelial_growth](drugs/drug_benzocaine/pd_Long_2024_inhibitory_rate_of_A_alternata_mycelial_growth.md) | inhibitory rate of A. alternata mycelial growth biomarker turnover ← benzocaine | — | Long LF et al., Inhibitory effect of benzocaine from Sc…, Scientific reports (2024) | [10.1038/s41598-024-57237-1](https://doi.org/10.1038/s41598-024-57237-1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

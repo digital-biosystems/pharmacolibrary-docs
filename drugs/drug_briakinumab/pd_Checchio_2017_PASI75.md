@@ -19,7 +19,7 @@
 
 > The paper models the time course of briakinumab-induced PASI75 response using a sigmoid Emax function where the effect increases toward a maximum over time, although it does not explicitly state the underlying biological mechanism of the drug's action. For briakinumab, the time to reach 50% and 90% of the maximal effect (ET50 and ET90) were estimated at 5.8 weeks and 10.9 weeks, respectively.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Checchio_2017`
 - **model family:** `sigmoid_emax`
@@ -61,7 +61,7 @@ Checchio T et al., Quantitative Evaluations of Time-Course…, Clinical pharmaco
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

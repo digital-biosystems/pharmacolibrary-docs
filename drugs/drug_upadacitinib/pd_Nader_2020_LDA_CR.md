@@ -19,7 +19,7 @@
 
 > Upadacitinib plasma concentrations (ng/mL) directly stimulate the transition rates from nonresponder to LDA and from LDA to CR states via an Emax model with separate Emax parameters for each transition but a single shared EC50 parameter. The paper states that onset of effect occurred as early as Week 1 and that baseline anti-CCP status, DAS28-CRP, and body weight significantly affected the EC50, but specific numerical values for Emax, EC50, or rate constants are not provided in the excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Nader_2020`
 - **model family:** `categorical`
@@ -53,7 +53,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

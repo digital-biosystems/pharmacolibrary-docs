@@ -20,7 +20,7 @@
 
 > Remimazolam effect-site concentrations (ng/ml), together with predicted fentanyl effect-site concentrations, drive the probability of UMSS sedation scores via a proportional odds logistic model combined with a simplified Minto (nonlinear Emax-type) interaction model, where normalized effect-site concentrations relative to score-specific EC50 values are summed with Hill coefficient γ = 3.56. Remimazolam EC50 for UMSS 1 was 206 ng/ml with ΔEC50 of 224 ng/ml (UMSS 2 vs 1) and 347 ng/ml (UMSS 3 vs 2), EC50 for UMSS ≥3 was 777 ng/ml, and the remimazolam effect-site equilibration rate constant ke0 was 0.230 min−1 (fentanyl: EC50 0.560 ng/ml, ke0 0.125 min−1).
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Colin_2025`
 - **model family:** `categorical`
@@ -70,7 +70,7 @@ Colin PJ et al., Pharmacokinetics and Pharmacodynamics o…, Anesthesiology (202
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

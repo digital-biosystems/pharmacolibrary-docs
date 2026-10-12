@@ -22,7 +22,7 @@
 
 > Formoterol concentration (nM) inhibits methacholine (10 μM)-induced contraction, described by a sigmoid Emax model with EC50 of 2.1 ± 0.3 nM and Emax of 71.0 ± 8.1% inhibition; the excerpts do not state the formoterol concentration–response data or mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Kume_2018`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Kume H et al., Involvement of Allosteric Effect and K, International journal of 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

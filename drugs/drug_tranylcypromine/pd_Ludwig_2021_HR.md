@@ -19,7 +19,7 @@
 
 > Tranylcypromine daily dose (mg/day) was related to the change in heart rate during esketamine administration (ΔHR, bpm) via a linear dose–response model with slope B = −0.002 bpm per mg; the paper does not report a pharmacodynamic mechanism for this relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Ludwig_2021`
 - **model family:** `linear`
@@ -60,7 +60,7 @@ Ludwig VM et al., Cardiovascular Effects of Combining Sub…, CNS drugs (2021)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

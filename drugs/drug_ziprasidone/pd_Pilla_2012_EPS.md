@@ -20,7 +20,7 @@
 
 > Ziprasidone steady-state concentrations (Css, ng/ml; also dose and D2 receptor occupancy) act as exposure predictors on the probability of transitions between three EPS severity states (no EPS, mild, moderate/severe) in a continuous-time Markov transition (categorical) model; the paper does not state ziprasidone-specific potency values (Imax/IC50/EC50/Emax/kin/kout/ke0/gamma), but confirms ~80% receptor occupancy as a level of increased EPS occurrence.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Pilla_2012`
 - **model family:** `categorical`
@@ -54,7 +54,7 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

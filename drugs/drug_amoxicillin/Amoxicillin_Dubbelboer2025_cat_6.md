@@ -5,7 +5,7 @@
 
 # amoxicillin — `Amoxicillin_Dubbelboer2025_cat_6`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818), gpt-oss:120b (not confirmed, agreement 0.143), gpt-5.6-luna (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 0/3</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818), gpt-oss:120b (not confirmed, agreement 0.143), gpt-5.6-luna (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 0/3</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Dubbelboer IR et al., Pharmacokinetics of Amoxicillin in the…, Journal of veterinary pharm… (2025)
   ·  DOI: [10.1111/jvp.70003](https://doi.org/10.1111/jvp.70003)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Dubbelboer2025_cat_6" status="needs_review" stale="true" population="healthy cats" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Dubbelboer2025_cat_6" status="needs_review" stale="true" population="healthy cats" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.
@@ -174,9 +173,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_amoxicillin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dubbelboer_2025` / `Dubbelboer_2025::cat_6`)
-- model: `../../../knowledgebase/drugs/drug_amoxicillin/models/modelica/_needs_review/Amoxicillin_Dubbelboer2025_cat_6.mo`
-- deviation: `../../../knowledgebase/drugs/drug_amoxicillin/models/modelica/_needs_review/Amoxicillin_Dubbelboer2025_cat_6.deviation.json`
+- scholar stages: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amoxicillin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dubbelboer_2025` / `Dubbelboer_2025::cat_6`)
+- model: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amoxicillin/models/modelica/_needs_review/Amoxicillin_Dubbelboer2025_cat_6.mo`
+- deviation: `../../..//mnt/Pharmacolibrary/knowledgebase/drugs/drug_amoxicillin/models/modelica/_needs_review/Amoxicillin_Dubbelboer2025_cat_6.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -197,7 +196,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

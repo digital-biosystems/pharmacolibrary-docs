@@ -22,7 +22,7 @@
 
 > The record indicates that baclofen concentrations (in µM) inhibit the monosynaptic reflex via a proportional Emax model with an EC50 of 0.18 µM, but the paper does not provide the full text to confirm the specific mechanism or other rate parameters.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Li_2004`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Li Y et al., Effects of baclofen on spinal reflexes…, Journal of neurophysiolo
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

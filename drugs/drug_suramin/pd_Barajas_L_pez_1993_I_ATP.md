@@ -22,7 +22,7 @@
 
 > Suramin concentrations (microM) act on the ATP-activated inward current amplitude (I_ATP) according to a sigmoid Emax model; the paper excerpts do not state the mechanism beyond this. Potency depends on ATP concentration: EC50 of suramin was 5 +/- 1.1 microM with ATP 30 microM and 143 +/- 48 nM with ATP 10 microM; no Emax, gamma, kin, kout, or ke0 values are given.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Barajas-López_1993`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Barajas-López C et al., Suramin increases the efficacy of ATP t…, European jo
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -21,7 +21,7 @@
 
 > Brexanolone (allopregnanolone) potentiates GABA-induced chloride current (IGABA) in a direct concentration–effect relationship, with an EC50 of 1.2 µM; the paper excerpts do not state the model family or further mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Bukanova_2025`
 - **model family:** `unknown`
@@ -62,7 +62,7 @@ Bukanova JV et al., Interaction Between Allopregnanolone an…, Cell biochemistr
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

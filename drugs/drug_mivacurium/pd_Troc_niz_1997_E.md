@@ -21,7 +21,7 @@
 
 > Mivacurium concentrations (microgram/mL) inhibit the evoked tibialis anterior muscle tension (expressed as % depression of initial twitch tension) via an effect compartment model, with a Cess50 of 0.65 microgram/mL and a Ke0 of 0.32 min-1. The specific mechanism of inhibition and Emax/Imax values are not provided in the record or paper excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Trocóniz_1997`
 - **model family:** `effect_compartment`
@@ -63,7 +63,7 @@ Trocóniz IF et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of phar
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

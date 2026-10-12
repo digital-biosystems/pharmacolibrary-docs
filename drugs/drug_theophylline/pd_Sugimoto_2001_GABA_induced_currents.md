@@ -22,7 +22,7 @@
 
 > The model describes theophylline inhibiting GABA-induced currents in a sigmoidal manner. The estimated IC50 is 1841 µM with a Hill coefficient of 1.09, though the specific molecular mechanism of inhibition is not stated in the available excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Sugimoto_2001`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Sugimoto T et al., Inhibitory effect of theophylline on re…, Neuroreport (2001
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

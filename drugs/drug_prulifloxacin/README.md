@@ -28,15 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Tellone_2018_plasma_and_urine_ulifloxacin_levels](drugs/drug_prulifloxacin/pd_Tellone_2018_plasma_and_urine_ulifloxacin_levels.md) | plasma and urine ulifloxacin levels ← ulifloxacin · model not identified | — | Tellone V et al., New Insights on the Pharmacokinetics of…, Drugs in R&D (2018) | [10.1007/s40268-018-0245-9](https://doi.org/10.1007/s40268-018-0245-9) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=prulifloxacin).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Tellone_2018_plasma_and_urine_ulifloxacin_levels](drugs/drug_prulifloxacin/pd_Tellone_2018_plasma_and_urine_ulifloxacin_levels.md) | plasma and urine ulifloxacin levels ← ulifloxacin · model not identified | — | Tellone V et al., New Insights on the Pharmacokinetics of…, Drugs in R&D (2018) | [10.1007/s40268-018-0245-9](https://doi.org/10.1007/s40268-018-0245-9) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

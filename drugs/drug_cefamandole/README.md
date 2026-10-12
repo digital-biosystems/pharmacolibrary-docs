@@ -33,21 +33,9 @@ Cefamandole is a second-generation cephalosporin antibiotic that was used to tre
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Campillo_1979_reference](drugs/drug_cefamandole/Cefamandole_Campillo1979_reference.md) | — | 2-compartment (no model) | 8 | Campillo JA et al., Pharmacokinetics of cefamandole in pati…, International journal of cl… (1979) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Nielsen_1979_disappearance_of_cn](drugs/drug_cefamandole/Cefamandole_Nielsen1979_disappearance_of_cn.md) | — | general linear (no model) | 2 | Nielsen RL et al., Hydrolysis of cefamandole nafate in dia…, Antimicrobial agents and ch… (1979) | [10.1128/AAC.16.5.683](https://doi.org/10.1128/AAC.16.5.683) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Nielsen_1979_rate_constant](drugs/drug_cefamandole/Cefamandole_Nielsen1979_rate_constant.md) | — | general linear (no model) | 2 | Nielsen RL et al., Hydrolysis of cefamandole nafate in dia…, Antimicrobial agents and ch… (1979) | [10.1128/AAC.16.5.683](https://doi.org/10.1128/AAC.16.5.683) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cefamandole).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| metabolism | kidney | `SLC22A7` inhibitor | DrugBank actor |
-| metabolism | liver | `SLC22A7` inhibitor | DrugBank actor |
-| excretion | kidney | `SLC22A6` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: SLC22A11 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Campillo_1979_reference](drugs/drug_cefamandole/Cefamandole_Campillo1979_reference.md) | — | 2-compartment (no model) | 8 | Campillo JA et al., Pharmacokinetics of cefamandole in pati…, International journal of cl… (1979) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Nielsen_1979_disappearance_of_cn](drugs/drug_cefamandole/Cefamandole_Nielsen1979_disappearance_of_cn.md) | — | general linear (no model) | 2 | Nielsen RL et al., Hydrolysis of cefamandole nafate in dia…, Antimicrobial agents and ch… (1979) | [10.1128/AAC.16.5.683](https://doi.org/10.1128/AAC.16.5.683) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Nielsen_1979_rate_constant](drugs/drug_cefamandole/Cefamandole_Nielsen1979_rate_constant.md) | — | general linear (no model) | 2 | Nielsen RL et al., Hydrolysis of cefamandole nafate in dia…, Antimicrobial agents and ch… (1979) | [10.1128/AAC.16.5.683](https://doi.org/10.1128/AAC.16.5.683) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

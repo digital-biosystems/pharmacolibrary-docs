@@ -22,7 +22,7 @@
 
 > Cannabidiol stimulates hCMEC/D3 cell number in an Emax model with an EC50 of 0.3 ± 0.1 μM. The paper does not provide the full text or further mechanistic details, such as Imax or rate constants.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Luo_2019`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Luo H et al., Cannabidiol Increases Proliferation, Mi…, Molecular pharmaceutic
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

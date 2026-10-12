@@ -28,30 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> | [Sidharta_2019_QTcF](drugs/drug_aprocitentan/pd_Sidharta_2019_QTcF.md) | ΔQTcF ← aprocitentan · direct linear effect | — | Sidharta PN et al., Single- and multiple-dose tolerability,…, Drug design, development an… (2019) | [10.2147/DDDT.S199051](https://doi.org/10.2147/DDDT.S199051) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=aprocitentan).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` substrate | DrugBank actor |
-| absorption | liver | `ABCB1` substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| absorption | testis | `ABCB1` substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
-| distribution | blood | `ALB` binder | DrugBank actor |
-| metabolism | kidney | `UGT2B7` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP3A4` inducer/inhibitor, `SLC10A1` inhibitor, `UGT1A1` inhibitor/substrate, `UGT2B7` inhibitor/substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/inhibitor, `UGT1A1` inhibitor/substrate, `UGT2B7` inhibitor/substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | liver | `ABCB11` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: CYP2C18 (inhibitor), EDNRA (target), EDNRB (target).</sub>
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span> | [Sidharta_2019_QTcF](drugs/drug_aprocitentan/pd_Sidharta_2019_QTcF.md) | ΔQTcF ← aprocitentan · direct linear effect | — | Sidharta PN et al., Single- and multiple-dose tolerability,…, Drug design, development an… (2019) | [10.2147/DDDT.S199051](https://doi.org/10.2147/DDDT.S199051) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

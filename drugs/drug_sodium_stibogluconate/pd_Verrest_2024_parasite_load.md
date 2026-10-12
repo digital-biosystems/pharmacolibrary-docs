@@ -16,11 +16,11 @@
 
 **As extracted:** Sodium stibogluconate (the dose) drives blood parasite load (Leishmania kDNA by qPCR) (in parasites/mL): direct linear effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Sodium stibogluconate dose (mg/kg) acts on blood Leishmania kDNA parasite load (parasites/mL) in a linear, dose-proportional model in which the drug stimulates parasite clearance (kill rate λSSG = 0.0112 mg⁻¹·kg·h⁻¹) against parasite growth (kGR = 0.0037 h⁻¹) from a baseline load (EBASE = 5324 parasites/mL); the paper does not state an Emax/IC50-type mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Verrest_2024`
 - **model family:** `linear`
@@ -88,7 +88,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

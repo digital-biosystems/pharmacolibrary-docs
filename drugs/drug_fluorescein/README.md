@@ -25,21 +25,8 @@ Fluorescein is a fluorescent dye used in eye examinations as a diagnostic colour
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Min_2015_reference](drugs/drug_fluorescein/Fluorescein_Min2015_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Min T et al., Microanalysis, Pharmacokinetics and Tis…, International journal of mo… (2015) | [10.3390/ijms161024403](https://doi.org/10.3390/ijms161024403) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tsuru_1984_reference](drugs/drug_fluorescein/Fluorescein_Tsuru1984_reference.md) | — | 1-compartment (no model) | 0 | Tsuru T et al., Endothelial wound-healing of monkey cor…, Japanese journal of ophthal… (1984) | — |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fluorescein).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| distribution | blood-brain barrier | `ABCC1` substrate | DrugBank actor |
-| distribution | lung | `ABCC1` substrate | DrugBank actor |
-| excretion | kidney | `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor | DrugBank actor |
-| excretion | liver | `ABCB11` substrate | DrugBank actor |
-
-<sub>Actors without a tissue in the table: DNA (other), IGKV2-30 (other).</sub>
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Min_2015_reference](drugs/drug_fluorescein/Fluorescein_Min2015_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Min T et al., Microanalysis, Pharmacokinetics and Tis…, International journal of mo… (2015) | [10.3390/ijms161024403](https://doi.org/10.3390/ijms161024403) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Tsuru_1984_reference](drugs/drug_fluorescein/Fluorescein_Tsuru1984_reference.md) | — | 1-compartment (no model) | 0 | Tsuru T et al., Endothelial wound-healing of monkey cor…, Japanese journal of ophthal… (1984) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

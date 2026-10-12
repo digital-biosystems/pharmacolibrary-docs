@@ -21,7 +21,7 @@
 
 > Zafirlukast directly inhibits rosiglitazone-induced PPARγ cofactor (CBP) recruitment in a concentration-dependent manner, characterized by a sigmoidal Emax model. The calculated IC50 for this inhibitory effect is 4.7 μM.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Göbel_2019`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Göbel T et al., Zafirlukast Is a Dual Modulator of Huma…, Frontiers in pharma
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

@@ -16,11 +16,11 @@
 
 **As extracted:** Infliximab dose number (the dose) drives weight (in kg): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Infliximab treatment was modeled to induce a time-varying change in patient weight, a covariate used in the PK model, using an Emax model with an Emax of 0.046 (a 4.7% increase) and a D50 of 1.1. The paper does not explicitly state the mechanism (e.g., inhibition or stimulation) by which the drug acts on this response, only that the Emax model was used to estimate the mean changes in covariate data after starting treatment.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Samuels_2025`
 - **model family:** `emax`
@@ -99,7 +99,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

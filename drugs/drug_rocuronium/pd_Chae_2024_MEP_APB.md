@@ -20,7 +20,7 @@
 
 > Rocuronium plasma concentrations (driver in µM) inhibit the abductor pollicis brevis mean MEP amplitude (µ) via a sigmoidal Emax mechanism with an EC50 of 2.64 µM, a Hill coefficient of 2.03, and a baseline µ of 1520. The model describes the suppression of the response relative to this baseline, with the paper noting substantial between-subject variability in the baseline (80–110%).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Chae_2024`
 - **model family:** `sigmoid_emax`
@@ -66,7 +66,7 @@ Chae D et al., Quantitative Analysis of the Effect of…, Journal of clinical me
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

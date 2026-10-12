@@ -28,28 +28,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Mercier_2022_SAEs](drugs/drug_entrectinib/pd_Mercier_2022_SAEs.md) | serious adverse events ← entrectinib · categorical (graded) response model | — | Mercier F et al., Efficacy and safety exposure-response a…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04402-w](https://doi.org/10.1007/s00280-022-04402-w) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Mercier_2022_TEAEs](drugs/drug_entrectinib/pd_Mercier_2022_TEAEs.md) | Grade ≥ 3 treatment-emergent adverse events ← entrectinib · categorical (graded) response model | — | Mercier F et al., Efficacy and safety exposure-response a…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04402-w](https://doi.org/10.1007/s00280-022-04402-w) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Mercier_2022_tumor_size_data](drugs/drug_entrectinib/pd_Mercier_2022_tumor_size_data.md) | tumor size data ← entrectinib · disease-progression model | — | Mercier F et al., Efficacy and safety exposure-response a…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04402-w](https://doi.org/10.1007/s00280-022-04402-w) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=entrectinib).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
-| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
-| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
-
-<sub>Actors without a tissue in the table: ALK (inhibitor), JAK2 (inhibitor), NTRK1 (inhibitor), NTRK2 (inhibitor), NTRK3 (inhibitor), ROS1 (inhibitor), TNK2 (inhibitor).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Mercier_2022_SAEs](drugs/drug_entrectinib/pd_Mercier_2022_SAEs.md) | serious adverse events ← entrectinib · categorical (graded) response model | — | Mercier F et al., Efficacy and safety exposure-response a…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04402-w](https://doi.org/10.1007/s00280-022-04402-w) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Mercier_2022_TEAEs](drugs/drug_entrectinib/pd_Mercier_2022_TEAEs.md) | Grade ≥ 3 treatment-emergent adverse events ← entrectinib · categorical (graded) response model | — | Mercier F et al., Efficacy and safety exposure-response a…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04402-w](https://doi.org/10.1007/s00280-022-04402-w) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span> | [Mercier_2022_tumor_size_data](drugs/drug_entrectinib/pd_Mercier_2022_tumor_size_data.md) | tumor size data ← entrectinib · disease-progression model | — | Mercier F et al., Efficacy and safety exposure-response a…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04402-w](https://doi.org/10.1007/s00280-022-04402-w) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

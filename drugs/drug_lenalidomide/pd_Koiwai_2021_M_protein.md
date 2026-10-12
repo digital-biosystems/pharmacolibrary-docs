@@ -20,7 +20,7 @@
 
 > In a sequential fit driven by isatuximab and lenalidomide concentrations (mol/L), the tumor growth inhibition model describes isatuximab as linearly stimulating the elimination of serum M-protein (g/L) via the rate constant KD, while lenalidomide acts via the rate constant R.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Koiwai_2021`
 - **model family:** `indirect_response_ii`
@@ -68,7 +68,7 @@ Koiwai K et al., PK/PD modeling analysis for dosing regi…, CPT: pharmacometric
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

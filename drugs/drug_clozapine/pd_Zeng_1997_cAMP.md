@@ -18,11 +18,11 @@
 
 **As extracted:** Clozapine (concentrations from the PK model of Albitar_2024) drives forskolin-stimulated cAMP accumulation (inhibition of cAMP formation) (in % of carbachol maximum): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Clozapine concentration-dependently inhibits forskolin-stimulated cAMP accumulation (expressed as % of carbachol maximum) with a direct Emax model: EC50 60 nM and Emax 74% of carbachol maximum. The paper excerpts do not state a mechanism beyond this inhibitory concentration-response relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Zeng_1997`
 - **model family:** `emax`
@@ -102,7 +102,7 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

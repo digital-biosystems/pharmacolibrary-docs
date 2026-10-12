@@ -16,11 +16,11 @@
 
 **As extracted:** Remimazolam (concentrations from this paper's PK model) drives bispectral index: direct sigmoid Emax (Hill) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Remimazolam plasma concentrations (ng/mL) inhibit the bispectral index (BIS) via an effect-compartment link to an inhibitory sigmoid Emax model, with Imax 80.7, IC50 809 ng/mL, BIS baseline 91.9, ke0 0.13 min−1, and Hill coefficient 1.65.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Chen_2025_2`
 - **model family:** `sigmoid_emax`
@@ -99,7 +99,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

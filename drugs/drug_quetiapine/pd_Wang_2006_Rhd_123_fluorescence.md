@@ -22,7 +22,7 @@
 
 > Quetiapine concentrations (microM) inhibit P-gp activity, measured as intracellular rhodamine 123 accumulation, described by an Emax-type inhibitory model with EC50 = 9.8 microM; the paper excerpts provide no further mechanism detail or additional parameters.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Wang_2006`
 - **model family:** `emax`
@@ -63,7 +63,7 @@ Wang JS et al., Evaluation of antipsychotic drugs as in…, Psychopharmacology (
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

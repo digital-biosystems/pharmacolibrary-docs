@@ -22,7 +22,7 @@
 
 > Fluvoxamine concentration-dependently inhibits the fractional Kv current (f) in rabbit coronary arterial smooth muscle cells, described by a Hill/sigmoid Emax equation with IC50 = 3.71±1.09 µM and Hill coefficient 0.62±0.14 for steady-state inhibition; the paper does not state an Emax or kinetic parameters, and suggests the inhibition occurs via a closed-state channel interaction (leftward shift of steady-state inactivation) independent of serotonin reuptake inhibition.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Hong_2015`
 - **model family:** `sigmoid_emax`
@@ -64,7 +64,7 @@ Hong DH et al., The Effects of the Selective Serotonin…, Biological & pharmace
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

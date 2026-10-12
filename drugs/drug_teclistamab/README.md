@@ -24,16 +24,7 @@ Teclistamab is a monoclonal antibody used to treat multiple myeloma. It is an ap
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.789). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Miao_2023_reference](drugs/drug_teclistamab/Teclistamab_Miao2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 | Miao X et al., Population Pharmacokinetics and Exposur…, Targeted oncology (2023) | [10.1007/s11523-023-00989-z](https://doi.org/10.1007/s11523-023-00989-z) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=teclistamab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: CD3D (antibody), TNFRSF17 (antibody).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.789). Primary extraction retained.">cross-check: disputed</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Miao_2023_reference](drugs/drug_teclistamab/Teclistamab_Miao2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 | Miao X et al., Population Pharmacokinetics and Exposur…, Targeted oncology (2023) | [10.1007/s11523-023-00989-z](https://doi.org/10.1007/s11523-023-00989-z) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

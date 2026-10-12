@@ -21,7 +21,7 @@
 
 > Flupirtine maleate concentration (μM) directly inhibits the percent inhibition of tissue activity score in isolated goat ureter via a sigmoid Emax model with an EC50 of 17.7 μM, acting by opening Kv7 potassium channels.
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Naik_2018`
 - **model family:** `sigmoid_emax`
@@ -62,7 +62,7 @@ Naik GS et al., Inhibition of Spontaneous Contractility…, International journa
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

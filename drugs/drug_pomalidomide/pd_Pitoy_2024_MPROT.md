@@ -20,7 +20,7 @@
 
 > The record specifies a continuous disease progression model where pomalidomide concentration (mol.L-1) acts to inhibit serum M-protein (g.L-1) in an additive manner, but the provided paper excerpts do not describe the specific pharmacodynamic mechanism or define the parameter k Pom (5.52).
 >
-> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Pitoy_2024`
 - **model family:** `disease_progression`
@@ -61,7 +61,7 @@ Pitoy A et al., Isatuximab-dexamethasone-pomalidomide c…, CPT: pharmacometrics
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 

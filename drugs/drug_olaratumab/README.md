@@ -24,24 +24,15 @@ Olaratumab is a monoclonal antibody anticancer drug that was used to treat soft-
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 1/2</span> | [Mo_2018_base](drugs/drug_olaratumab/Olaratumab_Mo2018_base.md) | ▶ model + simulator | 2-compartment, IV | 4 | Mo G et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0562-0](https://doi.org/10.1007/s40262-017-0562-0) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 1/2</span> | [Mo_2018_final](drugs/drug_olaratumab/Olaratumab_Mo2018_final.md) | ▶ model + simulator | 2-compartment, IV | 4 | Mo G et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0562-0](https://doi.org/10.1007/s40262-017-0562-0) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 1/2</span> | [Mo_2018_base](drugs/drug_olaratumab/Olaratumab_Mo2018_base.md) | ▶ model + simulator | 2-compartment, IV | 4 | Mo G et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0562-0](https://doi.org/10.1007/s40262-017-0562-0) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 1/2</span> | [Mo_2018_final](drugs/drug_olaratumab/Olaratumab_Mo2018_final.md) | ▶ model + simulator | 2-compartment, IV | 4 | Mo G et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0562-0](https://doi.org/10.1007/s40262-017-0562-0) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span> | [Jones_2019_OS](drugs/drug_olaratumab/pd_Jones_2019_OS.md) | overall survival ← olaratumab · time-to-event model | — | Jones RL et al., Exposure-response relationship of olara…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-018-3723-4](https://doi.org/10.1007/s00280-018-3723-4) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span> | [Jones_2019_PFS](drugs/drug_olaratumab/pd_Jones_2019_PFS.md) | progression-free survival ← olaratumab · time-to-event model | — | Jones RL et al., Exposure-response relationship of olara…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-018-3723-4](https://doi.org/10.1007/s00280-018-3723-4) |
-
-## ADME sites
-
-Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=olaratumab).
-
-| process | tissue | actors (role) | evidence |
-|---|---|---|---|
-
-<sub>Actors without a tissue in the table: PDGFRA (target).</sub>
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span> | [Jones_2019_OS](drugs/drug_olaratumab/pd_Jones_2019_OS.md) | overall survival ← olaratumab · time-to-event model | — | Jones RL et al., Exposure-response relationship of olara…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-018-3723-4](https://doi.org/10.1007/s00280-018-3723-4) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span> | [Jones_2019_PFS](drugs/drug_olaratumab/pd_Jones_2019_PFS.md) | progression-free survival ← olaratumab · time-to-event model | — | Jones RL et al., Exposure-response relationship of olara…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-018-3723-4](https://doi.org/10.1007/s00280-018-3723-4) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
