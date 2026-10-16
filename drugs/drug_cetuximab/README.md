@@ -72,6 +72,231 @@ Cetuximab is a monoclonal antibody used to treat several cancers, mainly head an
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+## Adverse drug reactions (ADR)
+
+25 reaction(s) reported in 11 paper(s). Read from the full texts by a language model, which also wrote the one-sentence descriptions; each sentence quoted under a reaction was checked to occur in the paper, the rest is not checked by a person. Frequencies are as the papers print them, for their own populations and definitions.
+
+### Cardiovascular
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Tongue edema | Serious adverse event occurring in 1 of 18 patients (5.6%) in the photoimmunotherapy-evaluable population, with a total incidence of 4/19 (21.1%) in the treated population, one instance of which was severe enough to require post-procedure tracheostomy. | 4 (21.1) | — | — | [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+
+<details><summary>Evidence: tongue edema (1)</summary>
+
+> “Five patients experienced serious TEAEs related to ASP‐1929 photoimmunotherapy: ... one had grade 3 dysphagia and tongue edema that required post‐procedure tracheostomy; one had grade 3 tongue edema and grade 2 hypoxia; ... The serious TEAEs dysphagia and tongue edema are local effects of ASP‐1929 photoimmunotherapy” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(case report)</sub>
+
+</details>
+
+### Eye
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Eye disorders | In patients with EGFR positive refractory colorectal cancer, inhibition of EGFR functions by cetuximab leads to additional side effects including nail and eye disorders. | — | unspecified | — | [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) |
+
+<details><summary>Evidence: eye disorders (1)</summary>
+
+> “By inhibiting EGFR functions, additional side effects arise as changes in the scalp and hair growth, xerosis and pruritus, as well as nail and eye disorders (27–29).” — [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) <sub>(case series)</sub>
+
+</details>
+
+### Gastrointestinal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Dysphagia | Dysphagia was reported as a serious treatment-emergent adverse event in 2 out of 19 patients (10.5%) in the treated population, including one patient with grade 3 dysphagia and another with grade 3 dysphagia and tongue edema requiring post-procedure tracheostomy. | each n = 2; 10.5% | — | — | [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+| Stomach cramps/ache | Stomach cramps/ache was reported as a non-serious grade 1 or 2 infusion reaction in five patients related to ASP-1929. | five patients | — | — | [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+
+<details><summary>Evidence: dysphagia (1)</summary>
+
+> “The most common serious adverse reactions were dysphagia and tongue edema (each n = 2; 10.5%).” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: stomach cramps/ache (1)</summary>
+
+> “Infusion reactions, all related to ASP‐1929, were reported for five patients and consisted of non‐serious grade 1 or 2 events (rash, itching, back pain, dyspnea, hyperhidrosis, stomach cramps/ache, tightness of throat, fever, myalgia diarrhea, headache, chills, nausea, and vomiting).” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(case series)</sub>
+
+</details>
+
+### Immune / hypersensitivity
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Hypersensitivity | Epidermal growth factor receptor inhibitors cetuximab and panitumumab, restricted to specific wild-type patients, carry risks of drug resistance and potential hypersensitivity reactions. | — | — | — | [Li 2026](https://pubmed.ncbi.nlm.nih.gov/42505275) |
+| Immune-mediated adverse events | In patients with high-risk/very high-risk MDS and newly diagnosed AML treated with sabatolimab + hypomethylating agents, few clinically significant, possible immune-mediated adverse events were observed. | — | — | — | [Xu 2023](https://pubmed.ncbi.nlm.nih.gov/37186155) |
+
+<details><summary>Evidence: hypersensitivity (1)</summary>
+
+> “Epidermal growth factor receptor inhibitors cetuximab and panitumumab are restricted to specific wild-type patients, with risks of drug resistance and potential hypersensitivity reactions.” — [Li 2026](https://pubmed.ncbi.nlm.nih.gov/42505275) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: immune-mediated adverse events (1)</summary>
+
+> “A phase Ib study (NCT03066648) investigating the safety, tolerability, and efficacy of sabatolimab + hypomethylating agents (HMAs) in patients with high‐risk/very high‐risk MDS and newly diagnosed AML demonstrated a tolerable safety profile with few clinically significant, possible immune‐mediated adverse events (AEs) regardless of the relationship to study treatment.” — [Xu 2023](https://pubmed.ncbi.nlm.nih.gov/37186155) <sub>(case series)</sub>
+
+</details>
+
+### Infection
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Fever | Fever was reported in 5 patients as a non-serious grade 1 or 2 event among the infusion reactions related to ASP‐1929. | — | — | — | [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+| Tightness of throat | Tightness of throat was reported as part of infusion reactions in 5 patients receiving ASP-1929, all of which were non-serious grade 1 or 2 events. | — | — | — | [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+
+<details><summary>Evidence: fever (1)</summary>
+
+> “Infusion reactions, all related to ASP‐1929, were reported for five patients and consisted of non‐serious grade 1 or 2 events (rash, itching, back pain, dyspnea, hyperhidrosis, stomach cramps/ache, tightness of throat, fever, myalgia diarrhea, headache, chills, nausea, and vomiting).” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: tightness of throat (1)</summary>
+
+> “Infusion reactions, all related to ASP‐1929, were reported for five patients and consisted of non‐serious grade 1 or 2 events (rash, itching, back pain, dyspnea, hyperhidrosis, stomach cramps/ache, tightness of throat, fever, myalgia diarrhea, headache, chills, nausea, and vomiting).” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(case report)</sub>
+
+</details>
+
+### Musculoskeletal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Back pain | Back pain was reported as part of non-serious infusion reactions in five patients treated with ASP-1929 photoimmunotherapy. | 5 patients | — | — | [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+| Facial pain | One patient in the study experienced serious treatment-emergent adverse events related to ASP-1929 photoimmunotherapy, specifically grade 3 facial pain. | 1 | — | — | [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+
+<details><summary>Evidence: back pain (1)</summary>
+
+> “Infusion reactions, all related to ASP‐1929, were reported for five patients and consisted of non‐serious grade 1 or 2 events (rash, itching, back pain, dyspnea, hyperhidrosis, stomach cramps/ache, tightness of throat, fever, myalgia diarrhea, headache, chills, nausea, and vomiting).” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: facial pain (1)</summary>
+
+> “Five patients experienced serious TEAEs related to ASP‐1929 photoimmunotherapy: one had grade 3 dysphagia; one had grade 3 dysphagia and tongue edema that required post‐procedure tracheostomy; one had grade 3 tongue edema and grade 2 hypoxia; one had grade 4 laryngeal edema that required post‐procedure tracheostomy; and one had grade 3 facial pain.” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(case report)</sub>
+
+</details>
+
+### Respiratory
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Dyspnea | Dyspnea was reported as a non-serious grade 1 or 2 event in five patients, associated with ASP-1929 infusion reactions. | 5 patients | — | — | [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+| Laryngeal edema | One patient experienced grade 4 laryngeal edema related to photoimmunotherapy, which required post-procedure tracheostomy. | — | — | — | [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+
+<details><summary>Evidence: dyspnea (1)</summary>
+
+> “Infusion reactions, all related to ASP‐1929, were reported for five patients and consisted of non‐serious grade 1 or 2 events (rash, itching, back pain, dyspnea, hyperhidrosis, stomach cramps/ache, tightness of throat, fever, myalgia diarrhea, headache, chills, nausea, and vomiting).” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: laryngeal edema (1)</summary>
+
+> “Two patients experienced grade 4 events: tumor hemorrhage related to advanced disease and laryngeal edema related to photoimmunotherapy. ... one had grade 4 laryngeal edema that required post‐procedure tracheostomy” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(case report)</sub>
+
+</details>
+
+### Skin
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Rash | One patient at the 900-mg BI-1607 dose experienced a dose-limiting toxicity (grade 3) manifesting as rash, leading to treatment discontinuation. | 1/18 | ASP-1929 photoimmunotherapy | hospital: skin reactions (erythema, pruritus, urticaria, rash) | [Cortés 2025](https://pubmed.ncbi.nlm.nih.gov/41071338), [Xu 2024](https://pubmed.ncbi.nlm.nih.gov/39179622), [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+| Skin rash | The paper reports that a pre-specified analysis of the interaction between FCGR2A and FCGR3A polymorphisms and skin rash found no statistically significant interaction. | — | FCGR2A (rs1801274); FCGR3A (rs396991) | — | [Shepshelovich 2018](https://pubmed.ncbi.nlm.nih.gov/30318772), [Scarabel 2022](https://pubmed.ncbi.nlm.nih.gov/36432658) |
+| Acne-like skin rash | More than 86% of patients with epidermal growth factor receptor (EGFR) positive refractory colorectal cancer treated with cetuximab in Phase II trials developed acne-like skin rash, with 18% developing grade 3 symptoms. | more than 86% | — | — | [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) |
+| Acneiform rash | Maximum observed cetuximab-related acneiform rash was grade 2 or 3 in 37 of 58 patients (63.8%), with grade 2 occurring in 28 patients and grade 3 in 9 patients. | 63.8% toxicity grade 2-3 | EGFR intron 1 CA repeats (sum ≤ 35); Male gender | hospital: Maximum observed toxicity grade recorded according to NCI-CTCAE v3.0 | [Dahan 2011](https://pubmed.ncbi.nlm.nih.gov/22117530) |
+| Edema | Localized edema at the irradiation site was observed in mice in the iTAP and PDT groups starting the day after light exposure and resolved within several days. | some animals | — | — | [Hamakubo 2026](https://pubmed.ncbi.nlm.nih.gov/41898220) |
+| Folliculitis | In the 21 patients with locally advanced head and neck squamous cell carcinoma treated with cetuximab and radiotherapy, 9 patients presented with low-grade folliculitis (grades 0-1) and 12 patients with severe folliculitis (grades 2-3). | Low = 9; Severe = 12 | — | — | [Pointreau 2016](https://pubmed.ncbi.nlm.nih.gov/27631463) |
+| Hyperhidrosis | Hyperhidrosis was reported in five patients as part of non-serious grade 1 or 2 infusion reactions related to ASP-1929. | 5 (26.3) | — | — | [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+| Itching | Itching was reported as a non-serious grade 1 or 2 event in five patients experiencing infusion reactions related to ASP-1929 photoimmunotherapy. | — | — | — | [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+| Pruritus | Pruritus arises as a side effect when cetuximab inhibits EGFR functions, occurring alongside changes in the scalp and hair growth, xerosis, and nail and eye disorders. | — | — | home: pruritus | [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) |
+| Radiation dermatitis | In the 21 patients with LAHNSCC treated with cetuximab and radiotherapy, 13 patients developed severe radiation dermatitis (grades 3 to 4), while 8 had low toxicity (grades 0 to 2). | Severe = 13 | radiotherapy | — | [Pointreau 2016](https://pubmed.ncbi.nlm.nih.gov/27631463) |
+| Scalp and hair growth changes | The paper states that by inhibiting EGFR functions, additional side effects arise as changes in the scalp and hair growth, but it does not specify the patient population, frequency, or specific nature of these changes in the provided text. | — | inhibiting EGFR functions | — | [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) |
+| Ulceration | In the iTAP group, ulcer formation was observed in one out of five mice beginning on day 6 after irradiation, followed by eschar formation within a few days, which subsequently progressed to complete healing. | one out of five | — | — | [Hamakubo 2026](https://pubmed.ncbi.nlm.nih.gov/41898220) |
+| Xerosis | Xerosis is reported as an additional side effect arising in patients treated with cetuximab due to the inhibition of EGFR functions in healthy tissue. | — | — | — | [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) |
+
+<details><summary>Evidence: rash (3)</summary>
+
+> “One patient at the 900-mg BI-1607 dose experienced a DLT leading to treatment discontinuation (rash, grade 3).” — [Cortés 2025](https://pubmed.ncbi.nlm.nih.gov/41071338) <sub>(case report)</sub>
+
+> “The cetuximab dose was reduced in 9 patients (27%) due to rash, and irinotecan dose was reduced in 11 patients (33%) due to diarrhea or hematologic toxicity or vomiting.” — [Xu 2024](https://pubmed.ncbi.nlm.nih.gov/39179622) <sub>(case-control)</sub>
+
+> “Infusion reactions, all related to ASP‐1929, were reported for five patients and consisted of non‐serious grade 1 or 2 events (rash, itching, back pain, dyspnea, hyperhidrosis, stomach cramps/ache, tightness of throat, fever, myalgia diarrhea, headache, chills, nausea, and vomiting).” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Skin rash (2)</summary>
+
+> “A pre‐specified analysis of the interaction between FCGR2A and FCGR3A polymorphisms and skin rash also found no statistically significant interaction, P = 0.20 and P = 0.71, respectively.” — [Shepshelovich 2018](https://pubmed.ncbi.nlm.nih.gov/30318772) <sub>(case-control)</sub>
+
+> “Because the main toxicity of cetuximab is skin rash and the high degree of toxicity has very often been correlated with a good response to the drug, some studies have attempted to evaluate these polymorphisms as markers of toxicity, but insignificant results have been obtained [31,70,78].” — [Scarabel 2022](https://pubmed.ncbi.nlm.nih.gov/36432658) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: acne-like skin rash (1)</summary>
+
+> “In Phase II trials of cetuximab treatment in patients with epidermal growth factor receptor (EGFR) positive refractory colorectal cancer, more than 86% of patients developed acne-like skin rash, including 18% developing grade 3 symptoms (26).” — [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: acneiform rash (1)</summary>
+
+> “Maximum observed cetuximab-related acneiform rash was grade 0 in 7 patients, grade 1 in 14 patients, grade 2 in 28 patients and grade 3 in 9 patients, accounting for a total of 63.8% toxicity grade 2-3.” — [Dahan 2011](https://pubmed.ncbi.nlm.nih.gov/22117530) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Edema (1)</summary>
+
+> “In the iTAP and PDT groups, edema at the irradiation site was noted from the day following light exposure but resolved within several days.” — [Hamakubo 2026](https://pubmed.ncbi.nlm.nih.gov/41898220) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: folliculitis (1)</summary>
+
+> “Toxicities (radiation dermatitis, mucositis, and folliculitis) were graded for severity from grades 1 to 5, according to the CTCAE v4.02 scale (http://ctep.cancer.gov/protocolDevelopment/ electronic_applications/ctc.htm). To analyze the association of folliculitis toxicity with survival, low toxicities were defined as grades 0 to 1 and severe as grades 2 to 3.” — [Pointreau 2016](https://pubmed.ncbi.nlm.nih.gov/27631463) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: hyperhidrosis (1)</summary>
+
+> “Infusion reactions, all related to ASP‐1929, were reported for five patients and consisted of non‐serious grade 1 or 2 events (rash, itching, back pain, dyspnea, hyperhidrosis, stomach cramps/ache, tightness of throat, fever, myalgia diarrhea, headache, chills, nausea, and vomiting).” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: itching (1)</summary>
+
+> “Infusion reactions, all related to ASP‐1929, were reported for five patients and consisted of non‐serious grade 1 or 2 events (rash, itching, back pain, dyspnea, hyperhidrosis, stomach cramps/ache, tightness of throat, fever, myalgia diarrhea, headache, chills, nausea, and vomiting).” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: pruritus (1)</summary>
+
+> “By inhibiting EGFR functions, additional side effects arise as changes in the scalp and hair growth, xerosis and pruritus, as well as nail and eye disorders (27–29).” — [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: radiation dermatitis (1)</summary>
+
+> “Patients with LAHNSCC who developed severe radiation dermatitis toxicity (grade more than 3) had a longer OS than that of the other patients (P = 0.005, Fig. 3). No association was observed for mucositis (P = 0.221) or folliculitis (P =0 . 2 2 7 ) .” — [Pointreau 2016](https://pubmed.ncbi.nlm.nih.gov/27631463) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: scalp and hair growth changes (1)</summary>
+
+> “By inhibiting EGFR functions, additional side effects arise as changes in the scalp and hair growth, xerosis and pruritus, as well as nail and eye disorders (27–29).” — [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Ulceration (1)</summary>
+
+> “In the iTAP group, ulcer formation was observed in one out of five mice beginning on day 6 after irradiation, followed by eschar formation within a few days, which subsequently progressed to complete healing.” — [Hamakubo 2026](https://pubmed.ncbi.nlm.nih.gov/41898220) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: xerosis (1)</summary>
+
+> “In healthy tissue, EFGR is commonly expressed in the basal layer of the epidermis and regulates growth, differentiation, and wound healing. By inhibiting EGFR functions, additional side effects arise as changes in the scalp and hair growth, xerosis and pruritus, as well as nail and eye disorders (27–29).” — [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) <sub>(review)</sub>
+
+</details>
+
 ## ADME sites
 
 Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cetuximab).

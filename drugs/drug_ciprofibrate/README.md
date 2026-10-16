@@ -18,7 +18,7 @@ Ciprofibrate is a fibrate lipid-lowering drug used to treat hyperlipidemia, incl
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-15 01:12 | 0:15 | 0/0/0 | 0/0/0 | 0/0/0 | 20,964/1,164 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-16 08:41 | 0:06 | 0/0/0 | 0/0/0 | 0/0/0 | 7,306/385 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
@@ -42,7 +42,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 ## Coverage
 
 - **PubMed hits:** 17 matched, 17 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 2  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -55,7 +55,7 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Kocarek_1989.pdf` | Kocarek TA et al., Quantitative assessment of enzyme induc…, Biochemical pharmacology (1989) | pd | 4 | [10.1016/0006-2952(89)90511-x](https://doi.org/10.1016/0006-2952(89)90511-x) | [2597188](https://www.ncbi.nlm.nih.gov/pubmed/2597188) | metadata signals extractable PD data (EC50) |
 | `Gallagher_1995.pdf` | Gallagher EP et al., The effects of diquat and ciprofibrate…, Toxicology and applied phar… (1995) | pgx | 8 | [10.1006/taap.1995.1171](https://doi.org/10.1006/taap.1995.1171) | [7676460](https://www.ncbi.nlm.nih.gov/pubmed/7676460) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-10-15T01:12:29.465511+00:00</sub>
+<sub>queue written 2026-10-16T08:41:58.463785+00:00</sub>
 
 ## Screened and excluded
 

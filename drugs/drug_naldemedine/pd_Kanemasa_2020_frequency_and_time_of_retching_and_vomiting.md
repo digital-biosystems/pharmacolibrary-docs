@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes an Emax inhibition model where naldemedine concentrations in ng/mL reduce the frequency and time of retching and vomiting with an EC50 of 3.51 ng/mL. The paper does not provide a full text, so the specific mechanism of action and rate parameters are not described.
+>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+
 - **paper:** `Kanemasa_2020`
 - **model family:** `emax`
 - **driver:** `cited_pk`

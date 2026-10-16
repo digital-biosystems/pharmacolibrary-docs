@@ -17,7 +17,7 @@ Sasanlimab, a PD-1 inhibitor monoclonal antibody, was investigated as a treatmen
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 0/0/0 | 0/0/0 | 0/0/0 | not captured | not captured | 3 | 0/0 | 3/0 | 0 |
+| 2026-10-16 08:52 | 0:09 | 0/0/0 | 0/0/0 | 0/0/0 | 8,512/788 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
@@ -32,7 +32,7 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 3  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

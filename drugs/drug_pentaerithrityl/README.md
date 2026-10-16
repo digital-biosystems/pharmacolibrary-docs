@@ -18,7 +18,7 @@ Pentaerithrityl (pentaerythritol) is a polyol chemical compound classified as an
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-15 01:14 | 0:29 | 0/0/0 | 0/0/0 | 0/0/0 | 27,321/829 | einfracz / qwen3.8-27b | 1 | 1/0 | 0/1 | 0 |
+| 2026-10-16 08:33 | 0:27 | 0/0/0 | 0/0/0 | 0/0/0 | 3,459/319 | einfracz / qwen3.8-27b | 1 | 1/0 | 0/1 | 0 |
 
 ## popPK records
 
@@ -33,7 +33,7 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 27 matched, 27 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -46,7 +46,7 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Xu_2023.pdf` | Xu Y et al., Novel macromolecular synthetic phenolic…, The Science of the total en… (2023) | pd | 4 | [10.1016/j.scitotenv.2023.164928](https://doi.org/10.1016/j.scitotenv.2023.164928) | [37348711](https://www.ncbi.nlm.nih.gov/pubmed/37348711) | metadata signals extractable PD data (EC50) |
 | `Zhuang_2008.pdf` | Zhuang L et al., Degradation of pentaerythritol tetranit…, Environmental science & tec… (2008) | pd | 4 | [10.1021/es7029703](https://doi.org/10.1021/es7029703) | [18605582](https://www.ncbi.nlm.nih.gov/pubmed/18605582) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-15T01:13:45.140820+00:00</sub>
+<sub>queue written 2026-10-16T08:33:21.322288+00:00</sub>
 
 ## Screened and excluded
 

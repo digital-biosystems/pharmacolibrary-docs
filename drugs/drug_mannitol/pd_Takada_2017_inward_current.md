@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> Mannitol concentration (mM) stimulates an inward current in TcGr20-expressing Xenopus oocytes by acting as a ligand to the receptor, modeled as a sigmoidal Emax response. The paper reports an EC50 of 72.6 mM for mannitol but does not provide kinetic rate parameters (e.g., ke0, kin, kout).
+>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+
 - **paper:** `Takada_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

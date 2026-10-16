@@ -46,7 +46,7 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Chijioke_1992.pdf` | Chijioke CP et al., Lack of acipimox-digoxin interaction in…, Human & experimental toxico… (1992) | popPK | 8 | [10.1177/096032719201100509](https://doi.org/10.1177/096032719201100509) | [1358150](https://pubmed.ncbi.nlm.nih.gov/1358150) | The study investigates the pharmacokinetics of acipimox in human subjects and reports that parameters were computed, but no numeric values are provided in the extracted evidence. |
 | `Musatti_1981.pdf` | Musatti L et al., Bioavailability and pharmacokinetics in…, The Journal of internationa… (1981) | popPK | 5 | [10.1177/030006058100900515](https://doi.org/10.1177/030006058100900515) | [7028536](https://pubmed.ncbi.nlm.nih.gov/7028536) | The study reports the half-life of acipimox in humans but lacks specific values for clearance, volume of distribution, or absorption rate. |
 
-<sub>queue written 2026-10-15T00:46:33.261122+00:00</sub>
+<sub>queue written 2026-10-16T08:38:35.612856+00:00</sub>
 
 ## Screened and excluded
 

@@ -48,7 +48,7 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Ko_2023.pdf` | Ko J et al., Pharmacokinetic Analyses of Liposomal a…, Nutrients (2023) | popPK | 8 | [10.3390/nu15133073](https://doi.org/10.3390/nu15133073) | [37447400](https://pubmed.ncbi.nlm.nih.gov/37447400) | The study reports qualitative PK parameters (clearance, volume, half-life) for minerals (iron, calcium) in humans, but the specific numeric values are not present in the evidence text, only statistical significance and direction of effect are described. |
 | `Biesenbach_2018_2.pdf` | Biesenbach P et al., Magnesium supplementation: Pharmacokine…, Journal of critical care (2018) | popPK | 5 | [10.1016/j.jcrc.2018.01.011](https://doi.org/10.1016/j.jcrc.2018.01.011) | [29353118](https://pubmed.ncbi.nlm.nih.gov/29353118) | The study reports pharmacokinetics for magnesium alone, not the combination of mineral salts. |
 
-<sub>queue written 2026-10-15T01:00:00.635939+00:00</sub>
+<sub>queue written 2026-10-16T08:23:54.323399+00:00</sub>
 
 ## Screened and excluded
 

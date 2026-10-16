@@ -228,6 +228,870 @@ Fluorouracil is an antimetabolite anticancer drug used to treat many cancers, in
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+## Adverse drug reactions (ADR)
+
+95 reaction(s) reported in 60 paper(s). Read from the full texts by a language model, which also wrote the one-sentence descriptions; each sentence quoted under a reaction was checked to occur in the paper, the rest is not checked by a person. Frequencies are as the papers print them, for their own populations and definitions.
+
+### Blood
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Neutropenia | Grade 4 neutropenia was observed in three of seven DPD-deficient patients treated with standard 5FU-containing chemotherapy regimens, and it was identified as the main toxicity experienced by patients heterozygous for the c.1905+1G&gt;A mutation following regular 5FU-based chemotherapy. | 3/7 | c.1905+1G&gt;A mutation in DPYD (heterozygous) (DPYD c.1905+1G&gt;A); standard 5FU-containing chemotherapy regimens; FU/LV regimen; DPYD*9A, 85 A &gt; G (rs1801265) (DPYD G) | laboratory: CBC; laboratory: DPYD genotype | [van 2012](https://pubmed.ncbi.nlm.nih.gov/22339448), [Hirose 2010](https://pubmed.ncbi.nlm.nih.gov/20596643), [Walko 2005](https://doi.org/10.1016/j.clinthera), [Atasilp 2024](https://pubmed.ncbi.nlm.nih.gov/39652193), [Amstutz 2018](https://pubmed.ncbi.nlm.nih.gov/29152729), [PMID23988873 2013](https://pubmed.ncbi.nlm.nih.gov/23988873) +8 |
+| Leukopenia | Leukopenia (Grade 1–4) occurred in 27.33% (20/73) of DPYD*9A wild-type/heterozygous patients and 100% (2/2) of homozygous variant patients in the first cycle, with a total incidence of 29.33% (22/75) in the first cycle and 42.67% (32/75) in the second cycle across the cohort. | 22 (29.33%) in first cycle; 32 (42.67%) in second cycle | DPYD*9A (c.85 A &gt; G) homozygous (G/G) (DPYD G); DPYD 1896 T &gt; C (DPYD C); FUra steady-state plasma concentration; DPYS -58C allele | laboratory: blood count; laboratory: blood counts (implied by leukopenia) | [Atasilp 2024](https://pubmed.ncbi.nlm.nih.gov/39652193), [Ratain 1990](https://pubmed.ncbi.nlm.nih.gov/2213109), [Hirose 2010](https://pubmed.ncbi.nlm.nih.gov/20596643), [Álvarez 2012](https://pubmed.ncbi.nlm.nih.gov/22329541), [Maslarinou 2023](https://pubmed.ncbi.nlm.nih.gov/37256234), [Turner 2024](https://pubmed.ncbi.nlm.nih.gov/38129972) +3 |
+| Myelosuppression | Myelosuppression is one of the most frequent dose-limiting toxicities related to 5-FU treatment in patients, involving time-course alterations in blood cell counts. | approximately 10-30% | dose-limiting; DPYD variants; DPYD variants (e.g. DPYD*2A) (DPYD DPYD*2A); full dose | hospital: blood cell counts; laboratory: DPYD genotype | [Kobuchi 2020](https://pubmed.ncbi.nlm.nih.gov/33288553), [Henricks 2018](https://pubmed.ncbi.nlm.nih.gov/30348537), [Lunenburg 2020](https://pubmed.ncbi.nlm.nih.gov/31745289), [Knikman 2025](https://pubmed.ncbi.nlm.nih.gov/40466468), [Canal 1998](https://pubmed.ncbi.nlm.nih.gov/9878990), [Koleva-Kolarova 2023](https://pubmed.ncbi.nlm.nih.gov/37665240) +3 |
+| Thrombocytopenia | In the first cycle of 5-FU administration, 2 patients (2.70%) experienced Grade 3 thrombocytopenia, 1 patient (1.30%) experienced Grade 4 thrombocytopenia, and 2 patients (2.70%) experienced Grade 1 thrombocytopenia, with a statistically significant association observed in patients carrying the… | Grade 3: 1 (1.30%), Grade 4: 0 (0.00%) in first cycle; Grade 3: 1 (1.30%), Grade 4: 1 (1.30%) in second cycle | DPYD*9A (c.85 A &gt; G) (DPYD G); rs4294451 T-allele (DPYD T); DPYD c.496A&gt;G GG homozygous; DPYD HapB3 haplotype / c.1129-5923C&gt;G variant (DPYD c.1129-5923C&gt;G) | laboratory: platelet count; laboratory: thrombocytopenia | [Atasilp 2024](https://pubmed.ncbi.nlm.nih.gov/39652193), [Brooks 2025](https://pubmed.ncbi.nlm.nih.gov/41339584), [Hirose 2010](https://pubmed.ncbi.nlm.nih.gov/20596643), [PMID37534027 2022](https://pubmed.ncbi.nlm.nih.gov/37534027), [Turner 2024](https://pubmed.ncbi.nlm.nih.gov/38129972), [Álvarez 2012](https://pubmed.ncbi.nlm.nih.gov/22329541) +1 |
+| Hematological toxicity | Hematological toxicity is reported as one of the most common toxicities in fluoropyrimidine-treated patients, with approximately 10%–40% of patients presenting with severe or life-threatening, even fatal, toxicity. | Approximately 10%–40% | DPYD*2A (rs3918290), DPYD*13 (rs55886062), c.2846T&gt;A (rs67376798), c.1129–5923C&gt;G (rs75017182, HapB3) (DPYD unknown); Advanced age (unknown unknown); DPYD c.1627A&gt;G and 1896T&gt;C (DPYD c.1627A&gt;G, 1896T&gt;C); Bolus intravenous infusion | — | [Maslarinou 2023](https://pubmed.ncbi.nlm.nih.gov/37256234), [Matsusaka 2015](https://pubmed.ncbi.nlm.nih.gov/25800061), [van 2013](https://doi.org/10.2217/PGS.13.54), [Lam 2016](https://pubmed.ncbi.nlm.nih.gov/27569869) |
+| Anemia | Anemia was one of the hematological toxicities assessed in 75 Thai colorectal cancer patients receiving 5-FU-based chemotherapy, with 34.70% of patients experiencing Grade 1 anemia and 46.70% experiencing Grade 2 anemia during the first cycle of treatment. | Grade 0: 26 (34.70); Grade 1: 35 (46.70); Grade 2: 12 (16.00); Grade 3: 2 (2.70); Grade 4: 0 (0.00) [First cycle]; Grade 0: 29 (38.70)… | DPYD variants (e.g., HapB3, c.1129‐5923C&gt;G) (DPYD c.1129‐5923C&gt;G) | hospital: CBC | [Atasilp 2024](https://pubmed.ncbi.nlm.nih.gov/39652193), [Hirose 2010](https://pubmed.ncbi.nlm.nih.gov/20596643), [Turner 2024](https://pubmed.ncbi.nlm.nih.gov/38129972) |
+| Bone marrow depression | Systemic bone marrow depression is a toxicity of 5-fluorouracil that can be diminished by intraperitoneal administration because the drug is catabolised in the liver, reducing systemic blood drug concentrations. | — | intraperitoneal administration | — | [Diasio 1989](https://pubmed.ncbi.nlm.nih.gov/2656050) |
+| Hyperbilirubinemia | Grade 3 or 4 hyperbilirubinemia was observed in 23% of patients with advanced or metastatic colorectal cancer treated with capecitabine in Phase III trials, with a positive association found between systemic exposure (AUC) to the metabolite 5-FU and the occurrence of the event. | 23% | Systemic exposure to 5-FU | — | [Blesch 2003](https://pubmed.ncbi.nlm.nih.gov/12889740), [Maslarinou 2023](https://pubmed.ncbi.nlm.nih.gov/37256234) |
+| Agranulocytosis | A patient died from sepsis caused by agranulocytosis after receiving a therapeutic dose of 5-fluorouracil administered at an erroneously high infusion rate. | — | — | — | [Mielke 2025](https://pubmed.ncbi.nlm.nih.gov/40430472) |
+| Bone marrow suppression | Injurious or life-threatening bone marrow suppression occurs with standard doses of 5FU in approximately 11% of patients on infusion therapy and 25% with bolus therapy. | approximately 11% of patients on infusion therapy and 25% with bolus therapy | mode of delivery (infusion vs bolus) | — | [Duley 2016](https://pubmed.ncbi.nlm.nih.gov/26435217) |
+| Early 5-FU-related toxicity | The composite outcome of early 5-FU-related toxicity, defined as the occurrence of grade 3 neutropenia, grade 3 thrombocytopenia, or reduction of the 5-FU infusion dose, occurred in 12 of 29 subjects (41%). | 12 of 29 subjects (41%) | — | — | [Brooks 2025](https://pubmed.ncbi.nlm.nih.gov/41339584) |
+| Elevated international normalized ratio | The paper reports that clinically relevant increases in prothrombin time/international normalized ratio (INR) were reported in the literature and to the FDA, with an average elevated INR of 12.4 (range 5.2-28.7) in 15 warfarin cases, and a 2.8-fold increase in the baseline-corrected AUC of the INR… | 15 cases | warfarin; &gt;60 years of age | laboratory: INR | [Janney 2005](https://doi.org/10.1345/aph.1G153) |
+| Elevated serum creatinine | In the cohort of 56 patients receiving S-1 monotherapy, 1 patient experienced grade 3 elevation of serum creatinine (1.8% of patients). | 1.8 | — | — | [Hirose 2010](https://pubmed.ncbi.nlm.nih.gov/20596643) |
+| Haematological toxicity | Among the evaluable patients treated with fluoropyrimidines, 65 (6%) of 1018 wild-type patients and 13 (15%) of 85 DPYD variant allele carriers experienced grade 3 or worse haematological toxicity. | 13 (15%) vs 65 (6%) | DPYD variant allele (heterozygous) (DPYD c.1236G&gt;A, c.2846A&gt;T, DPYD*2A, c.1679T&gt;G) | — | [Henricks 2018](https://pubmed.ncbi.nlm.nih.gov/30348537) |
+| Hematotoxicity | Some patients receiving 1000 mg/m² per 24 h experienced minor hematotoxicity as a non-lethal toxicity symptom. | some patients | Css &gt; 3 mg/L | laboratory: hematotoxicity | [Mielke 2025](https://pubmed.ncbi.nlm.nih.gov/40430472) |
+| Leucopenia | The monthly week-long schedule of 5FU regimens is associated with a higher incidence of leucopenia, occurring in approximately 20-30% of patients. | approximately 20-30% | folinic acid | — | [Thomas 1998](https://pubmed.ncbi.nlm.nih.gov/9807659) |
+| Life-threatening myelosuppression | Carriers of the DPyD IVS14+1G&gt;A mutation are at significantly increased risk to experience life-threatening myelosuppression upon fluorouracil treatment, even at the heterozygous status. | — | DPyD IVS14 + 1G&gt;A | — | [Robert 2005](https://pubmed.ncbi.nlm.nih.gov/15890268) |
+| Neutropenic fever | The paper lists neutropenic fever as a common adverse effect of intravenous 5-fluorouracil, noting that patients who are DPD intermediate or poor metabolizers are at an elevated risk of toxicity when treated with anticancer regimens containing fluoropyrimidines. | — | DPYD variants (intermediate or poor metabolizers) (DPYD decreased function variants) | — | [Turner 2024](https://pubmed.ncbi.nlm.nih.gov/38129972) |
+| Pancytopenia | The paper reports that an 80-year-old man with rectal cancer, who was double heterozygous for c.496A&gt;G and a nearby c.497 variant, had his capecitabine and radiotherapy treatment stopped due to pancytopenia. | — | DPYD c.496A&gt;G (rs2297595) and c.497 (rs763061658) double heterozygosity (DPYD c.496A&gt;G; c.497T&gt;C) | — | [PMID37534027 2022](https://pubmed.ncbi.nlm.nih.gov/37534027) |
+| Severe multiorgan toxicities | Severe multiorgan toxicities, lethal in 0.3% of patients, can occur in patients with DPD deficiency if not taken into account in dosing strategies. | lethal in 0.3% of patients | DPD deficiency; overdosing | laboratory: DPD activity levels | [Boisdron-Celle 2012](https://pubmed.ncbi.nlm.nih.gov/23057541) |
+| Thrombopenia | Thrombopenia is listed as an adverse event under hematological toxicity in patients treated with 5-fluorouracil. | — | — | — | [Matsusaka 2015](https://pubmed.ncbi.nlm.nih.gov/25800061) |
+
+<details><summary>Evidence: neutropenia (14)</summary>
+
+> “Grade 3 or 4 toxicity was observed in all seven DPD-deficient patients and grade 4 neutropenia had been observed in three of seven patients. ... The main toxicity experienced by the patients heterozygous for the c.1905+1G&gt;A mutation, following regular 5FU-based chemotherapy, was grade 4 neutropenia and grade 3-4 gastrointestinal toxicity.” — [van 2012](https://pubmed.ncbi.nlm.nih.gov/22339448) <sub>(case series)</sub>
+
+> “Table III lists the maxmum toxicities experienced during S-1 administration. The most frequent toxicity was myelosuppression, especially anemia.” — [Hirose 2010](https://pubmed.ncbi.nlm.nih.gov/20596643) <sub>(randomised trial)</sub>
+
+> “Systemic toxicity, including nentropenia, stomatitis, and diarrhea, often occur due to cytotoxic nonselectivity. ... The safety profile favored capecitabine, with a lower incidence of ... grade 3-4 neutropenia (2.3% vs 22.8%) ...” — [Walko 2005](https://doi.org/10.1016/j.clinthera) <sub>(randomised trial)</sub>
+
+> “The results reveal significant findings with neutropenia occurring in 100% (2/2) of the patients with homozygous variant DPYD*9A (GG) from the first cycle of treatment for both Grade 1–4 and Grade 3–4 toxicities (P = 0.003 and P &lt; 0.001 respectively).” — [Atasilp 2024](https://pubmed.ncbi.nlm.nih.gov/39652193) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: leukopenia (10)</summary>
+
+> “DPYD *9A was related to Grade 1–4 leukopenia (P = 0.001) and both Grade 1–4 and severe thrombocytopenia (P &lt; 0.001 and P &lt; 0.001) in the first cycle.” — [Atasilp 2024](https://pubmed.ncbi.nlm.nih.gov/39652193) <sub>(cohort)</sub>
+
+> “Au et a1 30 studied 29 colorectal cancer patients treated with 5-day continuous infusion fluorouracil (FUra) plus thymidine. The dose-limiting toxicity was leukopenia, occurring in 22 of 50 treatment courses.” — [Ratain 1990](https://pubmed.ncbi.nlm.nih.gov/2213109) <sub>(case series)</sub>
+
+> “Table III lists the maxmum toxicities experienced during S-1 administration. ... Leukopenia 5 3 5 0 8.9” — [Hirose 2010](https://pubmed.ncbi.nlm.nih.gov/20596643) <sub>(cohort)</sub>
+
+> “An intravenous bolus typically causes depression of both white blood cell and platelet counts, while continuous intravenous infusions often lead to more severe stomatitis, diarrhea and hand-foot syndrome” — [Álvarez 2012](https://pubmed.ncbi.nlm.nih.gov/22329541) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: myelosuppression (9)</summary>
+
+> “Myelosuppression is one of the most frequent dose-limiting toxicities related to this treatment (48).” — [Kobuchi 2020](https://pubmed.ncbi.nlm.nih.gov/33288553) <sub>(review)</sub>
+
+> “Although these drugs are generally well tolerated, up to 30% of patients have severe treatment related toxicity, including diarrhoea, mucositis, myelo suppression, and handfoot syndrome.” — [Henricks 2018](https://pubmed.ncbi.nlm.nih.gov/30348537) <sub>(review)</sub>
+
+> “Up to 30% of patients experience severe toxicity (Common Terminology Criteria for Adverse Events, CTCAE, Grade ≥3), including diarrhoea, hand-foot syndrome, mucositis and myelosuppression.” — [Lunenburg 2020](https://pubmed.ncbi.nlm.nih.gov/31745289) <sub>(review)</sub>
+
+> “Although fluoropyrimidines are relatively well tolerated, up to 30 % of patients experiences severe toxicity, including mucositis, diarrhoea and myelosuppresion [1,2].” — [Knikman 2025](https://pubmed.ncbi.nlm.nih.gov/40466468) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: thrombocytopenia (7)</summary>
+
+> “DPYD *9A was related to Grade 1–4 leukopenia (P = 0.001) and both Grade 1–4 and severe thrombocytopenia (P &lt; 0.001 and P &lt; 0.001) in the first cycle.” — [Atasilp 2024](https://pubmed.ncbi.nlm.nih.gov/39652193) <sub>(case series)</sub>
+
+> “Thrombocytopenia of grade 3 or higher did not occur in any subjects.” — [Brooks 2025](https://pubmed.ncbi.nlm.nih.gov/41339584) <sub>(cohort)</sub>
+
+> “Table III lists the maxmum toxicities experienced during S-1 administration. The most frequent toxicity was myelosuppression, especially anemia.” — [Hirose 2010](https://pubmed.ncbi.nlm.nih.gov/20596643) <sub>(case series)</sub>
+
+> “This was not the only case we encountered in our clinical practice; another representative one was of a 64-year-old patient diagnosed with low-grade intestinal adenocarcinoma, who underwent the test because he developed an unexpected severe haematological toxicity (neutropenia and thrombocytopenia of grade 4) after the first cycle of adjuvant chemotherapy with capecitabine at 70% of the standard dose and he was GG…” — [PMID37534027 2022](https://pubmed.ncbi.nlm.nih.gov/37534027) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Hematological toxicity (4)</summary>
+
+> “Approximately 10%–40% of FP-treated patients present with severe or life-threatening, even fatal, toxicity (Barin-Le Guellec et al., 2020; Deac et al., 2020); the most common reported toxicities are hematological and gastrointestinal (nausea, vomiting, diarrhea), whereas other complications of FP treatment include hand and foot syndrome (HFS) (Thorn et al., 2011).” — [Maslarinou 2023](https://pubmed.ncbi.nlm.nih.gov/37256234) <sub>(review)</sub>
+
+> “Adverse events have been reported in patients treated with 5-FU, including hematological toxicity, non-hematological toxicities including mucositis, diarrhea, hand-foot syndrome (HFS) and cardiac toxicity [2].” — [Matsusaka 2015](https://pubmed.ncbi.nlm.nih.gov/25800061) <sub>(review)</sub>
+
+> “Fety et al. (1998) H&N Cisplatin and 5-FU 49 AUC 0-48 h : 20 µg.h.ml -1 -40-50 Hematological: 7.6% Mucositis: 0% Hematological: 17.5% Mucositis: 5.1% OR: 81.7% OR: 77.2% [52]” — [van 2013](https://doi.org/10.2217/PGS.13.54) <sub>(case report)</sub>
+
+> “Carriers of the MTHFR -1298AA genotype experienced more AEs, including grade 3-4 neutropenia (p=0.035), hematological (p=0.05) and gastrointestinal toxicity (p=0.023).” — [Lam 2016](https://pubmed.ncbi.nlm.nih.gov/27569869) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: anemia (3)</summary>
+
+> “Hematological toxicities were assessed using levels of neutropenia, leukopenia, thrombocytopenia and anemia, shown in Table 4.” — [Atasilp 2024](https://pubmed.ncbi.nlm.nih.gov/39652193) <sub>(cohort)</sub>
+
+> “Table III lists the maxmum toxicities experienced during S-1 administration. The most frequent toxicity was myelosuppression, especially anemia.” — [Hirose 2010](https://pubmed.ncbi.nlm.nih.gov/20596643) <sub>(cohort)</sub>
+
+> “Common adverse effects (AEs) can include leukopenia, neutropenic fever, anemia, thrombocytopenia, oral/intestinal mucositis, stomatitis, diarrhea, nausea, vomiting, hand‐foot syndrome, hair loss, and dry skin.” — [Turner 2024](https://pubmed.ncbi.nlm.nih.gov/38129972) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: bone marrow depression (2)</summary>
+
+> “Moreover, as the peritoneal cavity drains into the portal venous system, the remaining 5-fluorouracil is catabolised in the liver, reducing systemic blood drug concentrations and diminishing the occurrence of systemic toxicities such as bone marrow depression or gastrointestinal mucositis.” — [Diasio 1989](https://pubmed.ncbi.nlm.nih.gov/2656050) <sub>(review)</sub>
+
+> “Moreover, as the peritoneal cavity drains into the portal venous system, the remaining 5-fluorouracil is catabolised in the liver, reducing systemic blood drug concentrations and diminishing the occurrence of systemic toxicities such as bone marrow depression or gastrointestinal mucositis.” — [Diasio 1989](https://pubmed.ncbi.nlm.nih.gov/2656050) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: hyperbilirubinemia (2)</summary>
+
+> “Grade 3 or 4 hyperbilirubinemia was seen in 23% of capecitabine patients.” — [Blesch 2003](https://pubmed.ncbi.nlm.nih.gov/12889740) <sub>(review)</sub>
+
+> “In this study, UMPS 638G&gt;A variant was associated with grade 3 toxicity (OR 17.60, p = 0.02), grade 3 diarrhea (p = 0.031), grade 2–3 anorexia (p = 0.035), hyperbilirubinemia (p = 0.013) and a shorter time of toxicity onset (p &lt; 0.0002)” — [Maslarinou 2023](https://pubmed.ncbi.nlm.nih.gov/37256234) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Agranulocytosis (1)</summary>
+
+> “The patient died from sepsis caused by agranulocytosis after receiving a therapeutic dose administered at an erroneously high infusion rate.” — [Mielke 2025](https://pubmed.ncbi.nlm.nih.gov/40430472) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: bone marrow suppression (1)</summary>
+
+> “More recent constant infusion modalities have lowered the rate of severe toxicity, but injurious or life-threatening mucositis or bone marrow suppression still occurs with standard doses of 5FU in approximately 11% of patients on infusion therapy and 25% with bolus therapy (Andre et al., 2003;Twelves et al., 2005).” — [Duley 2016](https://pubmed.ncbi.nlm.nih.gov/26435217) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: early 5-FU-related toxicity (1)</summary>
+
+> “We defined early 5-FU-related toxicity as occurrence of grade 3 + neutropenia, grade 3 + thrombocytopenia, or reduction of the 5-FU infusion dose for any reason during the first 4 cycles of chemotherapy.” — [Brooks 2025](https://pubmed.ncbi.nlm.nih.gov/41339584) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: elevated international normalized ratio (1)</summary>
+
+> “Clinically relevant increases in prothrombin time/international normalized ratio (INR), major bleeding events, and 2 deaths have been reported in the literature and to the Food and Drug Administration (FDA). ... Average time to reported elevated INR was 30.5 days (range 6-61), with an average INR of 12.4 (range 5.2-28.7).” — [Janney 2005](https://doi.org/10.1345/aph.1G153) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: elevated serum creatinine (1)</summary>
+
+> “Table III lists the maxmum toxicities experienced during S-1 administration. ... Elevation of serum creatinine 0 0 1 0 1.8” — [Hirose 2010](https://pubmed.ncbi.nlm.nih.gov/20596643) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: haematological toxicity (1)</summary>
+
+> “Grade ≥3 haematological toxicity 13 (15%) 65 (6%) 0•0043 ‡ 7 (14%) 4 (24%) 2 (13%) 0” — [Henricks 2018](https://pubmed.ncbi.nlm.nih.gov/30348537) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: Hematotoxicity (1)</summary>
+
+> “None of the patients died because of the treatment; however, some patients experienced non-lethal toxicity, such as gastrointestinal toxicity or minor hematotoxicity.” — [Mielke 2025](https://pubmed.ncbi.nlm.nih.gov/40430472) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: leucopenia (1)</summary>
+
+> “The monthly week-long schedule is associated with a higher incidence (approximately 20-30%) of mucositis and leucopenia.” — [Thomas 1998](https://pubmed.ncbi.nlm.nih.gov/9807659) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: life-threatening myelosuppression (1)</summary>
+
+> “Carriers of this mutation are at significantly increased risk to experience life-threatening myelosuppression upon fluorouracil treatment, even at the heterozygous status [44].” — [Robert 2005](https://pubmed.ncbi.nlm.nih.gov/15890268) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: neutropenic fever (1)</summary>
+
+> “Common adverse effects (AEs) can include leukopenia, neutropenic fever, anemia, thrombocytopenia, oral/intestinal mucositis, stomatitis, diarrhea, nausea, vomiting, hand‐foot syndrome, hair loss, and dry skin.” — [Turner 2024](https://pubmed.ncbi.nlm.nih.gov/38129972) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: pancytopenia (1)</summary>
+
+> “We also analyze the more frequent c.496A&gt;G that, especially in cases of homozygosity for the alternative allele or in combination with other variants, seems to increase the risk of developing toxicity. Some studies in the literature state this24–27 and we also have evidence in support, as shown by the results on the patient with the double heterozygosity for the c.496 and the close c.497, an 80-year-old man…” — [PMID37534027 2022](https://pubmed.ncbi.nlm.nih.gov/37534027) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: severe multiorgan toxicities (1)</summary>
+
+> “These parameters taken together can be considered the source of a potentially serious DPD deficiency, which if not taken into account in dosing strategies, can cause severe multiorgan toxicities (lethal in 0.3% of patients).” — [Boisdron-Celle 2012](https://pubmed.ncbi.nlm.nih.gov/23057541) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: thrombopenia (1)</summary>
+
+> “Box 1. Drug summary. Drug name 5-fluorouracil Phase In clinical use Indication Head and neck, breast, pancreas and gastrointestinal tract Administration Bolus intravenous infusion, continuous infusion Orally prodrug (capecitabine, UFT, S-1, TAS-102) Combination therapy (cisplatin, carboplatin, oxaliplatin) Adverse events Hematological toxicity (leukopenia, thrombopenia, etc.)” — [Matsusaka 2015](https://pubmed.ncbi.nlm.nih.gov/25800061) <sub>(review)</sub>
+
+</details>
+
+### Cardiovascular
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Cardiac toxicity | In the study cohort, 1 DPYD variant allele carrier (1%) and 9 wild-type patients (1%) experienced grade 3 or higher cardiac toxicity. | 1 (1%) | DPYD variants (DPYD*2A, c.2846A&gt;T, c.1679T&gt;G, c.1236G&gt;A); Bolus 5-FU can be used with vigilance in patients developing cardiotoxicity due to 5-FU infusion or capecitabine. | — | [Henricks 2018](https://pubmed.ncbi.nlm.nih.gov/30348537), [Matsusaka 2015](https://pubmed.ncbi.nlm.nih.gov/25800061) |
+| Cardiotoxicity | An uncommon but important complication attributable to 5FU, reported in up to 1.6% of patients, whose most common manifestation is vasospastic angina that may result in myocardial infarction. | up to 1.6% | continuous infusion | — | [Thomas 1998](https://pubmed.ncbi.nlm.nih.gov/9807659), [Álvarez 2012](https://pubmed.ncbi.nlm.nih.gov/22329541) |
+| 5-FU toxicity | In 1985, Tuchman et al. observed pyrimidinemia and pyrimidinuria in the family of a patient with severe fluorouracil toxicity, suggesting a hereditary basis for inadequate 5-FU metabolism [18]. | — | DPYD gene allelic variants (DPYD DPYD*2A) | — | [Mattison 2002](https://pubmed.ncbi.nlm.nih.gov/12164772) |
+| Cardiovascular toxicity | Capecitabine and 5-FU are known for a low prevalence of cardiovascular toxicity. | — | — | — | [Lam 2016](https://pubmed.ncbi.nlm.nih.gov/27569869) |
+| Myocardial infarction | Cardiotoxicity, an uncommon but important complication attributable to 5FU, has been reported in up to 1.6% of patients, where the most common manifestation is vasospastic angina which may result in myocardial infarction. | up to 1.6% | — | — | [Thomas 1998](https://pubmed.ncbi.nlm.nih.gov/9807659) |
+| Vasospastic angina | The paper states that vasospastic angina is the most common manifestation of 5FU cardiotoxicity, which is an uncommon but important complication reported in up to 1.6% of patients. | up to 1.6% | — | — | [Thomas 1998](https://pubmed.ncbi.nlm.nih.gov/9807659) |
+
+<details><summary>Evidence: cardiac toxicity (2)</summary>
+
+> “Grade ≥3 cardiac toxicity 1 (1%) 9 (1%) 1•0 ¶ 1 (2%) 0 0 0” — [Henricks 2018](https://pubmed.ncbi.nlm.nih.gov/30348537) <sub>(cohort)</sub>
+
+> “Adverse events have been reported in patients treated with 5-FU, including hematological toxicity, non-hematological toxicities including mucositis, diarrhea, hand-foot syndrome (HFS) and cardiac toxicity [2].” — [Matsusaka 2015](https://pubmed.ncbi.nlm.nih.gov/25800061) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: cardiotoxicity (2)</summary>
+
+> “Cardiotoxicity, an uncommon but important complication attributable to 5FU, has been reported in up to 1.6% of patient^.'^ The most common manifestation is vasospastic angina, which may result in myocardial infarction.” — [Thomas 1998](https://pubmed.ncbi.nlm.nih.gov/9807659) <sub>(review)</sub>
+
+> “Hand-foot syndrome (palmar-plantar erythrodysesthesia), stomatitis, neuro-and cardiotoxicity are associated with continuous infusions.” — [Álvarez 2012](https://pubmed.ncbi.nlm.nih.gov/22329541) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: 5-FU toxicity (1)</summary>
+
+> “The significance of DPD in 5-FU metabolism emerged from observations demonstrating the inherited nature of DPD deficiency in patients with severe 5-FU toxicity. In 1985, Tuchman et al. observed pyrimidinemia and pyrimidinuria in the family of a patient with severe fluorouracil toxicity, suggesting a hereditary basis for inadequate 5-FU metabolism [18].” — [Mattison 2002](https://pubmed.ncbi.nlm.nih.gov/12164772) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Cardiovascular toxicity (1)</summary>
+
+> “Both drugs are known for a low prevalence of cardiovascular toxicity 8.” — [Lam 2016](https://pubmed.ncbi.nlm.nih.gov/27569869) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: myocardial infarction (1)</summary>
+
+> “Cardiotoxicity, an uncommon but important complication attributable to 5FU, has been reported in up to 1.6% of patient^.'^ The most common manifestation is vasospastic angina, which may result in myocardial infarction.” — [Thomas 1998](https://pubmed.ncbi.nlm.nih.gov/9807659) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: vasospastic angina (1)</summary>
+
+> “Cardiotoxicity, an uncommon but important complication attributable to 5FU, has been reported in up to 1.6% of patient^.'^ The most common manifestation is vasospastic angina, which may result in myocardial infarction.” — [Thomas 1998](https://pubmed.ncbi.nlm.nih.gov/9807659) <sub>(review)</sub>
+
+</details>
+
+### Eye
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Blepharitis | Blepharitis is listed as a common toxicity associated with the usual oral regimen of capecitabine administration. | common | DPYD variants; Advanced age; Kidney failure | — | [PMID34773566 2022](https://pubmed.ncbi.nlm.nih.gov/34773566) |
+| Epiphora | Epiphora is listed as one of the common toxicities associated with the usual oral regimen of capecitabine administration. | — | — | — | [PMID34773566 2022](https://pubmed.ncbi.nlm.nih.gov/34773566) |
+
+<details><summary>Evidence: Blepharitis (1)</summary>
+
+> “With the usual oral regimen of capecitabine administration, the most frequent toxicities that lead to dose reduction or treatment interruption are hand–foot syndrome, diarrhea, and nausea [16]. Other common toxicities are fatigue, stomatitis, skin hyperpigmentation, photosensitivity, blepharitis, and epiphora.” — [PMID34773566 2022](https://pubmed.ncbi.nlm.nih.gov/34773566) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Epiphora (1)</summary>
+
+> “With the usual oral regimen of capecitabine administration, the most frequent toxicities that lead to dose reduction or treatment interruption are hand–foot syndrome, diarrhea, and nausea [16]. Other common toxicities are fatigue, stomatitis, skin hyperpigmentation, photosensitivity, blepharitis, and epiphora.” — [PMID34773566 2022](https://pubmed.ncbi.nlm.nih.gov/34773566) <sub>(review)</sub>
+
+</details>
+
+### Gastrointestinal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Diarrhea | Approximately 10–40% of fluoropyrimidine-treated patients develop severe and sometimes life-threatening toxicity, which includes severe diarrhea. | 10–40% | DPYD c.1905+1G&gt;A (*2A); DPYD c.2846A&gt;T; DPYD c.1679T&gt;G (*13); DPYD c.1129–5923C&gt;G (HapB3) | hospital: toxicity; primary_care: diarrhea | [Amstutz 2018](https://pubmed.ncbi.nlm.nih.gov/29152729), [van 2013](https://doi.org/10.2217/PGS.13.54), [PMID34773566 2022](https://pubmed.ncbi.nlm.nih.gov/34773566), [Maslarinou 2023](https://pubmed.ncbi.nlm.nih.gov/37256234), [Koleva-Kolarova 2023](https://pubmed.ncbi.nlm.nih.gov/37665240), [Matsusaka 2015](https://pubmed.ncbi.nlm.nih.gov/25800061) +11 |
+| Mucositis | The paper reports that the AUC obtained at midcycle predicts the incidence of fluorouracil-induced stomatitis, and that adaptation of the dose at mid-cycle resulted in a decrease in the incidence of stomatitis from 20 to 12%. | 20 to 12% | unknown; cisplatin; DPYS -1CC; DPYD variants (DPYD*2A, c.2846A&gt;T, c.1679T&gt;G, c.1236G&gt;A) (DPYD DPYD*2A [rs3918290], c.2846A&gt;T [rs67376798], c.1679T&gt;G [rs55886062], c.1236G&gt;A [rs56038477]) | hospital: plasma concentrations; hospital: AUC | [Canal 1998](https://pubmed.ncbi.nlm.nih.gov/9878990), [Maslarinou 2023](https://pubmed.ncbi.nlm.nih.gov/37256234), [Henricks 2018](https://pubmed.ncbi.nlm.nih.gov/30348537), [Lunenburg 2020](https://pubmed.ncbi.nlm.nih.gov/31745289), [Patel 2015](https://pubmed.ncbi.nlm.nih.gov/26298089), [Arshad 2020](https://pubmed.ncbi.nlm.nih.gov/32152679) +9 |
+| Nausea | Higher rates of nausea and vomiting have been observed in women treated with 5-fluorouracil, a drug established to have a difference in pharmacokinetics and higher plasma levels in females. | higher rates | female; higher plasma levels; DPYD genotype (decreased/no function variants) (DPYD c.1905+1G&gt;A, c.1679T&gt;G, c.2846A&gt;T, c.1129-5923C&gt;G); dose | laboratory: DPYD; hospital: DPYD | [Delahousse 2024](https://pubmed.ncbi.nlm.nih.gov/39662226), [Amstutz 2018](https://pubmed.ncbi.nlm.nih.gov/29152729), [Mueller 2013](https://pubmed.ncbi.nlm.nih.gov/23139054), [Walko 2005](https://doi.org/10.1016/j.clinthera), [Turner 2024](https://pubmed.ncbi.nlm.nih.gov/38129972), [Duley 2016](https://pubmed.ncbi.nlm.nih.gov/26435217) +5 |
+| Vomiting | Vomiting was one of the adverse effects occurring in &gt;25% of 758 patients with breast or colorectal cancer treated with capecitabine, and was also reported in &gt;10% of patients in both capecitabine and FU/LV arms of colorectal cancer trials (23.3% vs 27%). | &gt;25% | female; gender: Female (unknown unknown); AUC 5FU; TYMS 3'UTR del6/del6 (TYMS del6) | — | [Walko 2005](https://doi.org/10.1016/j.clinthera), [Delahousse 2024](https://pubmed.ncbi.nlm.nih.gov/39662226), [Mueller 2013](https://pubmed.ncbi.nlm.nih.gov/23139054), [PMID23988873 2013](https://pubmed.ncbi.nlm.nih.gov/23988873), [Lam 2016](https://pubmed.ncbi.nlm.nih.gov/27569869), [Briki 2026](https://pubmed.ncbi.nlm.nih.gov/42283826) +3 |
+| Diarrhoea | The clinical relevance of specific ABC gene polymorphisms (rs1128503, rs2032582, or rs1045642) has been statistically linked to a higher risk of grade II diarrhoea or higher in colorectal cancer patients treated with capecitabine. | 22 vs 8.6% | rs1128503 (ABC); rs2032582 (ABC); rs1045642 (ABC); DPYD variants (DPYD*2A, c.2846A&gt;T, c.1679T&gt;G, c.1236G&gt;A) (DPYD heterozygous carrier) | primary_care: adverse events; laboratory: DPYD variants | [Sáez-Belló 2021](https://pubmed.ncbi.nlm.nih.gov/32559325), [Henricks 2018](https://pubmed.ncbi.nlm.nih.gov/30348537), [Lunenburg 2020](https://pubmed.ncbi.nlm.nih.gov/31745289), [Knikman 2025](https://pubmed.ncbi.nlm.nih.gov/40466468), [Duley 2016](https://pubmed.ncbi.nlm.nih.gov/26435217), [Gieschke 2003](https://pubmed.ncbi.nlm.nih.gov/12630975) +1 |
+| Gastrointestinal toxicity | In 53 patients with metastatic colorectal cancer treated with 5-FU and LV using a PK-guided dose adjustment strategy, gastrointestinal toxicity was observed in 18.9% of patients. | 18.9% | DPYD variants (c.1236G&gt;A, c.2846A&gt;T, DPYD*2A, c.1679T&gt;G) (DPYD heterozygous); reduced dose (genotype-guided); 1000 mg/m² per 24 h; c.1905+1G&gt;A mutation in DPYD (DPYD c.1905+1G&gt;A) | hospital: toxicity | [van 2013](https://doi.org/10.2217/PGS.13.54), [Henricks 2018](https://pubmed.ncbi.nlm.nih.gov/30348537), [Mielke 2025](https://pubmed.ncbi.nlm.nih.gov/40430472), [van 2012](https://pubmed.ncbi.nlm.nih.gov/22339448), [Diasio 2021](https://pubmed.ncbi.nlm.nih.gov/34114648) |
+| Nausea and vomiting | Common toxicities of 5FU include myelosuppression, mucositis, diarrhoea and mild nausea and vomiting, which are seen with all forms of administration of 5FU but vary in incidence and severity with scheduling and biomodulation. | mild | ununknown; biomodulation; DPYD*2A (DPYD c.1905 + 1G &gt; A) | — | [Thomas 1998](https://pubmed.ncbi.nlm.nih.gov/9807659), [Atasilp 2024](https://pubmed.ncbi.nlm.nih.gov/39652193), [Álvarez 2012](https://pubmed.ncbi.nlm.nih.gov/22329541) |
+| Gastrointestinal mucositis | The paper states that intraperitoneal administration of 5-fluorouracil diminishes the occurrence of this systemic toxicity by reducing systemic blood drug concentrations via hepatic catabolism of the remaining drug. | — | systemic blood drug concentration; intraperitoneal administration | — | [Diasio 1989](https://pubmed.ncbi.nlm.nih.gov/2656050) |
+| Abdominal pain | Abdominal pain was reported as an adverse effect of capecitabine, with a grade 3 incidence of 9% in colorectal cancer patients and 4% in breast cancer patients. | grade 3: 9% (colorectal), 4% (breast) | — | — | [Walko 2005](https://doi.org/10.1016/j.clinthera) |
+| Decreased appetite | Daily food intake decreased rapidly just after 5-FU administration in the chemotherapy groups (CC and HC) in male Wistar rats. | — | male; hepatectomy | — | [Tada 2020](https://doi.org/10.1007/s00280-019-03969-1) |
+| Intestinal injury | The paper states that 5-FU induced intestinal injury in animal models and that the severity was well correlated with dosage; in the current study, ileal villous height was used as an indicator of 5-FU toxicity, and greater villous damage was recognized in the chemotherapy groups (CC and HC)… | — | dosage of 5-FU; major hepatectomy | — | [Tada 2020](https://doi.org/10.1007/s00280-019-03969-1) |
+
+<details><summary>Evidence: diarrhea (17)</summary>
+
+> “Approximately 10–40% of fluoropyrimidine-treated patients develop severe and sometimes life-threatening toxicity (neutropenia, nausea, vomiting, severe diarrhea, stomatitis, mucositis, hand-foot syndrome) (7, 11, 20).” — [Amstutz 2018](https://pubmed.ncbi.nlm.nih.gov/29152729) <sub>(guideline)</sub>
+
+> “Diarrhea: 1.7% Neutropenia: 18% Mucositis: 0.8% Diarrhea: 12% Neutropenia: 25% Mucositis: 15%” — [van 2013](https://doi.org/10.2217/PGS.13.54) <sub>(review)</sub>
+
+> “Approximately 10–40% of patients treated with fluoropyrimidines develop severe toxicity (grade ≥ 3 on the Common Terminology Criteria for Adverse Events [CTCAE]), which may include myelosuppression, severe diarrhea, vomiting, stomatitis, mucositis, hand–foot syndrome (palmar–plantar erythrodysaesthesia), or neuropathy [3–6].” — [PMID34773566 2022](https://pubmed.ncbi.nlm.nih.gov/34773566) <sub>(meta-analysis)</sub>
+
+> “the most common reported toxicities are hematological and gastrointestinal (nausea, vomiting, diarrhea), whereas other complications of FP treatment include hand and foot syndrome (HFS) (Thorn et al., 2011).” — [Maslarinou 2023](https://pubmed.ncbi.nlm.nih.gov/37256234) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Mucositis (16)</summary>
+
+> “Thyss et al. [187] have shown that the AUC obtained at midcycle predicts the incidence of fluorouracil-induced stomatitis. Consequently, nomograms have been developed to adjust the dose of fluorouracil based on its plasma concentrations. Adaptation of the dose at mid-cycle resulted in a decrease in the incidence of stomatitis from 20 to 12%.” — [Canal 1998](https://pubmed.ncbi.nlm.nih.gov/9878990) <sub>(review)</sub>
+
+> “DPYS −1CC genotype was more frequent within the patient group who experienced diarrhea (OR 2.12, p = 0.007), gastrointestinal toxicity (OR 3.54, p = 0.002), and severe mucositis (OR 4.13, p = 0.006)” — [Maslarinou 2023](https://pubmed.ncbi.nlm.nih.gov/37256234) <sub>(cohort)</sub>
+
+> “Although these drugs are generally well tolerated, up to 30% of patients have severe treatment related toxicity, including diarrhoea, mucositis, myelo suppression, and handfoot syndrome.” — [Henricks 2018](https://pubmed.ncbi.nlm.nih.gov/30348537) <sub>(meta-analysis)</sub>
+
+> “Up to 30% of patients experience severe toxicity (Common Terminology Criteria for Adverse Events, CTCAE, Grade ≥3), including diarrhoea, hand-foot syndrome, mucositis and myelosuppression.” — [Lunenburg 2020](https://pubmed.ncbi.nlm.nih.gov/31745289) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: nausea (11)</summary>
+
+> “In fact, higher rates of nausea and vomiting in women have been observed not only for treatments with an established difference in PK and higher plasma levels in females, such as 5-FU,23,134,145 but also cisplatin and gemcitabine,156 for which no such difference has been described.” — [Delahousse 2024](https://pubmed.ncbi.nlm.nih.gov/39662226) <sub>(review)</sub>
+
+> “Approximately 10–40% of fluoropyrimidine-treated patients develop severe and sometimes life-threatening toxicity (neutropenia, nausea, vomiting, severe diarrhea, stomatitis, mucositis, hand-foot syndrome) (7, 11, 20).” — [Amstutz 2018](https://pubmed.ncbi.nlm.nih.gov/29152729) <sub>(guideline)</sub>
+
+> “Women experienced significantly more nausea of any grade (80 vs. 33 %, p = 0.015) and vomiting of any grade (60 vs. 24 %, p = 0.049) compared to men.” — [Mueller 2013](https://pubmed.ncbi.nlm.nih.gov/23139054) <sub>(case series)</sub>
+
+> “The safety profile favored capecitabine, with a lower incidence of ... nausea (37.9% vs 47.6%) ... Gastrointestinal adverse effects (grade 3 or 4 ... nausea: 6% vs 2%) ...” — [Walko 2005](https://doi.org/10.1016/j.clinthera) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: vomiting (9)</summary>
+
+> “The effects occurring in &gt;25% of patients included anemia, diarrhea, hand-foot syndrome, nausea, hyperbilirubinemia, fatigue/weakness, abdominal pain, vomiting, and dermatitis. ... The most common toxicities (all grades) reported in &gt;10% of patients for both capecitabine and FU/LV were vomiting (23.3% vs 27%) and fatigue (21.1% vs 25%).” — [Walko 2005](https://doi.org/10.1016/j.clinthera) <sub>(review)</sub>
+
+> “higher rates of nausea and vomiting in women have been observed not only for treatments with an established difference in PK and higher plasma levels in females, such as 5-FU,23,134,145 but also cisplatin and gemcitabine,156 for which no such difference has been described.” — [Delahousse 2024](https://pubmed.ncbi.nlm.nih.gov/39662226) <sub>(review)</sub>
+
+> “Women experienced significantly more nausea of any grade (80 vs. 33 %, p = 0.015) and vomiting of any grade (60 vs. 24 %, p = 0.049) compared to men.” — [Mueller 2013](https://pubmed.ncbi.nlm.nih.gov/23139054) <sub>(case report)</sub>
+
+> “Approximately 10-40% of 5-fluorouracil patients develop severe, and sometimes life-threatening, toxicity (neutropenia, nausea, vomiting, severe diarrhea, stomatitis, mucositis, hand-foot syndrome, and neuropathy).” — [PMID23988873 2013](https://pubmed.ncbi.nlm.nih.gov/23988873) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: diarrhoea (7)</summary>
+
+> “The clinical relevance of rs1128503, rs2032582 or rs1045642 polymorphisms of the ATP-binding cassette (ABC) gene has been statistically linked to a higher risk of administration delays and dose reductions, grade II diarrhoea or higher, and general toxicity after CAP administration. ... However, the use of pharmacogenetic variables, such as polymorphisms of the ABC gene (rs1128503, rs2032582 or rs1045642), which have…” — [Sáez-Belló 2021](https://pubmed.ncbi.nlm.nih.gov/32559325) <sub>(case report)</sub>
+
+> “Although these drugs are generally well tolerated, up to 30% of patients have severe treatment related toxicity, including diarrhoea, mucositis, myelo suppression, and handfoot syndrome.” — [Henricks 2018](https://pubmed.ncbi.nlm.nih.gov/30348537) <sub>(review)</sub>
+
+> “Up to 30% of patients experience severe toxicity (Common Terminology Criteria for Adverse Events, CTCAE, Grade ≥3), including diarrhoea, hand-foot syndrome, mucositis and myelosuppression.” — [Lunenburg 2020](https://pubmed.ncbi.nlm.nih.gov/31745289) <sub>(guideline)</sub>
+
+> “Although fluoropyrimidines are relatively well tolerated, up to 30 % of patients experiences severe toxicity, including mucositis, diarrhoea and myelosuppresion [1,2].” — [Knikman 2025](https://pubmed.ncbi.nlm.nih.gov/40466468) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Gastrointestinal toxicity (5)</summary>
+
+> “Hematological: 30.2% Gastrointestinal: 18.9%” — [van 2013](https://doi.org/10.2217/PGS.13.54) <sub>(meta-analysis)</sub>
+
+> “Grade ≥3 gastrointestinal toxicity 17 (20%) 86 (8%) 0•00089 ‡ 11 (22%) 4 (24%) 2 (13%) 0” — [Henricks 2018](https://pubmed.ncbi.nlm.nih.gov/30348537) <sub>(cohort)</sub>
+
+> “None of the patients died because of the treatment; however, some patients experienced non-lethal toxicity, such as gastrointestinal toxicity or minor hematotoxicity.” — [Mielke 2025](https://pubmed.ncbi.nlm.nih.gov/40430472) <sub>(cohort)</sub>
+
+> “The main toxicity experienced by the patients heterozygous for the c.1905+1G&gt;A mutation, following regular 5FU-based chemotherapy, was grade 4 neutropenia and grade 3-4 gastrointestinal toxicity. ... one DPD-deficient patient developed grade 2 gastrointestinal toxicity after the administration of 5FU 450 mg m 2 .” — [van 2012](https://pubmed.ncbi.nlm.nih.gov/22339448) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: nausea and vomiting (3)</summary>
+
+> “Common toxicities of 5FU include myelosuppression, mucositis, diarrhoea and mild nausea and vomiting. These side effects are seen with all forms of administration of 5FU, but their incidence and severity vary with scheduling and biomodulation (vide infra).” — [Thomas 1998](https://pubmed.ncbi.nlm.nih.gov/9807659) <sub>(review)</sub>
+
+> “DPYD*2A was found to have statistically significant associations with Grade 3 or higher 5-FU adverse events (more specifically, neutropenia, nausea, and vomiting) [10]; however, no allele frequencies were found within this study’s sample of colorectal cancer patients.” — [Atasilp 2024](https://pubmed.ncbi.nlm.nih.gov/39652193) <sub>(review)</sub>
+
+> “Other adverse effects associated with both bolus-dose and continuous infusion regimens include nausea and vomiting, diarrhea, alopecia and dermatitis.” — [Álvarez 2012](https://pubmed.ncbi.nlm.nih.gov/22329541) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: gastrointestinal mucositis (2)</summary>
+
+> “Moreover, as the peritoneal cavity drains into the portal venous system, the remaining 5-fluorouracil is catabolised in the liver, reducing systemic blood drug concentrations and diminishing the occurrence of systemic toxicities such as bone marrow depression or gastrointestinal mucositis.” — [Diasio 1989](https://pubmed.ncbi.nlm.nih.gov/2656050) <sub>(case series)</sub>
+
+> “Moreover, as the peritoneal cavity drains into the portal venous system, the remaining 5-fluorouracil is catabolised in the liver, reducing systemic blood drug concentrations and diminishing the occurrence of systemic toxicities such as bone marrow depression or gastrointestinal mucositis.” — [Diasio 1989](https://pubmed.ncbi.nlm.nih.gov/2656050) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: abdominal pain (1)</summary>
+
+> “Myelosuppression, fatigue and weakness, abdominal pain, and nausea have also been reported. Of those, the most common grade 3 toxicities in the 596 colorectal cancer patients were ... abdominal pain (9%) ... In the 162 patients with breast cancer, the most common grade 3 toxicities were ... abdominal pain (4%)...” — [Walko 2005](https://doi.org/10.1016/j.clinthera) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Decreased appetite (1)</summary>
+
+> “The daily food intake was also significantly lower in the hepatectomy (H and HC) groups just after surgery, and decreased rapidly just after 5-FU administration in the chemotherapy (CC and HC) groups (Fig. 1b).” — [Tada 2020](https://doi.org/10.1007/s00280-019-03969-1) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Intestinal injury (1)</summary>
+
+> “5-FU induced intestinal injury and its severity was well correlated with dosage of 5-FU in animal models [12]. We hypothesized that the reduction in liver DPD after major hepatectomy induces adverse effects of 5-FU, and analyzed not only serum 5-FU levels and liver DPD, but also the ileal villous height as an indicator of 5-FU toxicity in this study.” — [Tada 2020](https://doi.org/10.1007/s00280-019-03969-1) <sub>(animal)</sub>
+
+</details>
+
+### General
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Fatigue | In a comparison of 1207 patients with colorectal cancer, fatigue occurred in 21.1% of those treated with capecitabine and 25% of those treated with FU/LV. | 21.1% | CYP2A6 (CYP2A6 variant); renal function; MTHFR -677CT or TT genotype (MTHFR -677CT, -677TT); UMPS rs4678145 | home: symptoms; primary_care: general | [Walko 2005](https://doi.org/10.1016/j.clinthera), [Hirose 2010](https://pubmed.ncbi.nlm.nih.gov/20596643), [Lam 2016](https://pubmed.ncbi.nlm.nih.gov/27569869), [Maslarinou 2023](https://pubmed.ncbi.nlm.nih.gov/37256234), [Schmulenson 2023](https://pubmed.ncbi.nlm.nih.gov/35941837), [PMID34773566 2022](https://pubmed.ncbi.nlm.nih.gov/34773566) |
+| Toxicity | In a multicenter trial of 683 patients with various cancers treated with 5-FU, patients with the DPYD splice-site mutation (IVS14+1G&gt;A) had a positive predictive value of 0.46 and negative predictive value of 0.95 for overall toxicity. | PPV 0.46; NPV 0.95 | DPYD splice-site mutation (IVS14+1G&gt;A) (DPYD IVS14+1G&gt;A); male; female; DPD deficiency (DPYD) | laboratory: 5-FU | [Patel 2015](https://pubmed.ncbi.nlm.nih.gov/26298089), [Marok 2024](https://pubmed.ncbi.nlm.nih.gov/38264789), [ODonnell 2012](https://pubmed.ncbi.nlm.nih.gov/22321460), [Briki 2026](https://pubmed.ncbi.nlm.nih.gov/42283826), [Canal 1998](https://pubmed.ncbi.nlm.nih.gov/9878990) |
+| Severe toxicity | Complete or partial DPD deficiency results in severe toxicities from 5-fluorouracil, occurring in approximately 0.1% and 3% to 5% of individuals, respectively, with at least 20 functional DYPD variants described. | 0.1% and 3% to 5% | Complete or partial DPD deficiency (DPD DYPD*2A splice site variant (most common), at least 20 functional DYPD variants); decreased DPD enzyme activity, independently of genotype (DPYD); DPD deficiency (DPYD); DPYD c.2194G&gt;A (*6 rs1801160) | laboratory: DPYD genotyping | [Tan 2008](https://pubmed.ncbi.nlm.nih.gov/19088019), [Patel 2015](https://pubmed.ncbi.nlm.nih.gov/26298089), [Ho 2025](https://pubmed.ncbi.nlm.nih.gov/39887719), [PMID37534027 2022](https://pubmed.ncbi.nlm.nih.gov/37534027) |
+| Death | One DPYD wt /U high patient died due to pneumonia during fluoropyrimidine treatment. | 1/20 | DPYD wild-type; 50% reduced dose; DPYD (DPYD pathogenic variants) | hospital: pneumonia | [Knikman 2025](https://pubmed.ncbi.nlm.nih.gov/40466468), [Maslarinou 2023](https://pubmed.ncbi.nlm.nih.gov/37256234) |
+| Fatal toxicity | For ~1% of patients receiving fluoropyrimidines, toxicity is fatal. | ~1% | DPYD variants resulting in reduced DPD enzyme activity (gene activity score 0 to 1.5, and PHENO) (DPYD unknown); standard dose | laboratory: DPYD variants (DPYD*2A, DPYD*13, c.2846A&gt;T, c.1236G&gt;A); laboratory: PBMCs or plasma/urine | [Lunenburg 2020](https://pubmed.ncbi.nlm.nih.gov/31745289), [Henricks 2015](https://pubmed.ncbi.nlm.nih.gov/26265346) |
+| Severe toxicities | 22% of patients in the standard dose arm (arm A) experienced severe toxicities. | 22% | standard (BSA) dose vs PK-guided dose; lack of DPD activity | laboratory: severe_toxicities | [Boisdron-Celle 2012](https://pubmed.ncbi.nlm.nih.gov/23057541), [Deyme 2019](https://pubmed.ncbi.nlm.nih.gov/30446786) |
+| Adverse events | The paper analyzed the relationship between systemic exposure to capecitabine metabolites and the occurrence of all treatment-related grade 3-4 adverse events in 481 patients with advanced or metastatic colorectal cancer. | no. of events: 184 | — | — | [Gieschke 2003](https://pubmed.ncbi.nlm.nih.gov/12630975) |
+| Body weight loss | Body weight loss was observed in rats following intravenous administration of 5-FU for 4 days, with the paper noting that one rat in the 20 mg/kg dose group experienced rapid weight loss ([15%) during the treatment period. | one rat in 20 mg/kg dose group | 20 mg/kg | hospital: body weight | [Kobuchi 2017](https://pubmed.ncbi.nlm.nih.gov/27889876) |
+| Cytotoxicity | The reference standard 5-flurouracil exhibited a dose-dependent increase in cell death in L929 fibroblast cells, with percentage inhibition rising from 38.51% at 200 µl/mL to 85.81% at 1000 µl/mL, indicating substantial cytotoxic effects at higher concentrations. | — | concentration | — | [Lad 2026](https://pubmed.ncbi.nlm.nih.gov/41965411) |
+| Drug-induced death | In colorectal cancer patients carrying the DPYD*2A allele, drug-induced death was reduced from 10% in historical controls receiving full-dose 5-FU to 0% in patients receiving genotype-guided dosing. | 10 to 0 % | DPYD*2A allele (DPYD *2A) | — | [Patel 2015](https://pubmed.ncbi.nlm.nih.gov/26298089) |
+| Fatal potentiation of FU toxicity | In Japanese patients fatal potentiation of FU toxicity occurred after a few days of dosing with the antiviral agent sorivudine. | — | sorivudine | — | [Lennard 2001](https://pubmed.ncbi.nlm.nih.gov/11564055) |
+| Fluoropyrimidine-related death | In the wild-type cohort, three patients died because of fluoropyrimidine-related toxicity, representing a frequency of less than 1%. | &lt;1% | — | — | [Henricks 2018](https://pubmed.ncbi.nlm.nih.gov/30348537) |
+| Grade III/IV toxicity | In 50 colorectal cancer patients receiving 5FU chemotherapy, patients homozygous for TSER * 2 and heterozygous for TSER * 2/TSER * 3 experienced a significantly lower incidence of Grade III/IV toxicity than patients homozygous for TSER * 3. | 27% and 32% versus 63% | TSER * 3/TSER * 3 (TYMS TSER * 3) | — | [Marsh 2005](https://pubmed.ncbi.nlm.nih.gov/16267625) |
+| Lethal toxicity | One female patient with a DPD deficiency developed lethal toxicity following treatment with standard 5FU-containing chemotherapy. | 1 case | c.1905+1G&gt;A mutation in DPYD (DPYD c.1905+1G&gt;A); standard 5FU-containing chemotherapy regimens | — | [van 2012](https://pubmed.ncbi.nlm.nih.gov/22339448) |
+| Life-threatening toxicity | Germline DPD deficiency leads to reduced 5-FU clearance and causes severe life-threatening toxicity with standard doses of 5-FU. | 2-3% | DPD deficiency / DPYD mutations (DPYD unknown) | — | [Maring 2005](https://pubmed.ncbi.nlm.nih.gov/16041392) |
+| Multiorgan failure | The paper states that patients with DPYD variants that cause slow drug metabolism have a higher risk of severe toxicity, including multiorgan failure, when they receive standard-dose fluoropyrimidine therapy. | ∼20% of patients receiving these chemotherapies develop mild to severe adverse reactions | DPYD variants that cause slow drug metabolism | — | [Koleva-Kolarova 2023](https://pubmed.ncbi.nlm.nih.gov/37665240) |
+| Severe 5-FU toxicity | Deficiency in dihydropyrimidinase (DHP) can result in severe 5-FU toxicity in patients, with the frequency not specified in the text. | — | dihydropyrimidinase (DHP) deficiency / Missense mutation G883A in exon 5 (DHP encoding gene G883A) | — | [Maring 2005](https://pubmed.ncbi.nlm.nih.gov/16041392) |
+| Severe 5-FU-associated toxicity | Patients with a partial or complete dihydropyrimidine dehydrogenase (DPD) deficiency have a reduced capacity to degrade 5-FU and are at risk of developing severe 5-FU-associated toxicity. | — | DPYD mutation (partial or complete DPD deficiency) | — | [Bertholee 2017](https://pubmed.ncbi.nlm.nih.gov/27641154) |
+| Severe toxic side effects | Patients with the DPYD*13 variant showed severe toxic side effects in several studies. | — | DPYD*13 (rs55886062) (DPYD DPYD*13) | — | [Henricks 2015](https://pubmed.ncbi.nlm.nih.gov/26265346) |
+| Severe, life-threatening adverse events | Due to heterogeneity in drug response and tolerability, up to one-third of exposed patients are at risk of developing these events which negatively impact patient safety and quality of life. | up to one-third | germline variants in the dihydropyrimidine dehydrogenase (DPYD) and uridine diphosphate-glucuronosyltransferase isoform 1A1 (UGT1A1) genes (DPYD unknown) | hospital: DPYD; hospital: UGT1A1 | [PMID37534027 2022](https://pubmed.ncbi.nlm.nih.gov/37534027) |
+| Side effects | The MTHFR C677T genotype increases the risk of unnecessary side effects in CRC patients, which results in significantly shorter survival times. | — | MTHFR C677T | — | [Xie 2020](https://pubmed.ncbi.nlm.nih.gov/32474853) |
+| Tiredness | The paper lists tiredness as one of the toxicities patients with DPYD variants that cause slow drug metabolism have a higher risk of developing when they receive standard-dose fluoropyrimidine therapy. | — | DPYD variants that cause slow drug metabolism | — | [Koleva-Kolarova 2023](https://pubmed.ncbi.nlm.nih.gov/37665240) |
+| Weakness | Fatigue and weakness were reported as adverse effects associated with capecitabine monotherapy. | — | — | — | [Walko 2005](https://doi.org/10.1016/j.clinthera) |
+| Weight loss | In male Wistar rats receiving 5-FU (CC and HC groups), body weight decreased rapidly just after 5-FU administration starting on Day 4. | — | male (unknown unknown) | — | [Tada 2020](https://doi.org/10.1007/s00280-019-03969-1) |
+
+<details><summary>Evidence: fatigue (6)</summary>
+
+> “The most common toxicities (all grades) reported in &gt;10% of patients for both capecitabine and FU/LV were vomiting (23.3% vs 27%) and fatigue (21.1% vs 25%).” — [Walko 2005](https://doi.org/10.1016/j.clinthera) <sub>(cohort)</sub>
+
+> “The most frequent non-hematologic toxicity was fatigue, followed by gastrointestinal toxicity. ... Fatigue 14 11 8 1 16.1” — [Hirose 2010](https://pubmed.ncbi.nlm.nih.gov/20596643) <sub>(cohort)</sub>
+
+> “Sharma et al. 45 reported in 54 advanced colorectal cancer patients on capecitabine monotherapy that patients with the MTHFR -677TT genotype experienced less overall grade 2-3 toxicity (OR = 0.1, p&lt;0.05), while CT and TT individuals experienced less grade 2-3 fatigue (OR = 0.08, p&lt;0.05).” — [Lam 2016](https://pubmed.ncbi.nlm.nih.gov/27569869) <sub>(review)</sub>
+
+> “rs4678145 associated with grade &gt;2 fatigue (OR 4.542, 95% CI 1.557–13.243, p = 0.006)” — [Maslarinou 2023](https://pubmed.ncbi.nlm.nih.gov/37256234) <sub>(case-control)</sub>
+
+</details>
+
+<details><summary>Evidence: toxicity (5)</summary>
+
+> “In a multicenter trial of 683 patients with various cancers treated with 5-FU and genotyped for DPYD, investigators noted a positive predictive value of 0.46 and negative predictive value of 0.95 for overall toxicity in patients with the splice-site mutation.” — [Patel 2015](https://pubmed.ncbi.nlm.nih.gov/26298089) <sub>(review)</sub>
+
+> “Compared with constantrate infusions, chronomodulated infusions with peak delivery at 4 am were better tolerated by male patients, whereas female patients experienced more grade 3-4 toxicities and demonstrated decreased response rates and overall survival under chronomodulated treatment.” — [Marok 2024](https://pubmed.ncbi.nlm.nih.gov/38264789) <sub>(case series)</sub>
+
+> “DPD catabolizes &gt;80% of 5-FU into fluorinated b-alanine (Heggie et al., 1987). A causative link between DPD deficiency and severe toxicity in response to 5-FU treatment has been repeatedly shown (Milano et al., 1999;van Kuilenburg et al., 2000;Johnson et al., 1999).” — [ODonnell 2012](https://pubmed.ncbi.nlm.nih.gov/22321460) <sub>(review)</sub>
+
+> “Consequently, some patients with high bodyfat but low LBM may be overdosed, heightening the risk of toxicity” — [Briki 2026](https://pubmed.ncbi.nlm.nih.gov/42283826) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: severe toxicity (4)</summary>
+
+> “Complete or partial DPD deficiency resulting in severe 5-FU toxicities occurs in approximately 0.1% and 3% to 5% of individuals, and at least 20 functional DYPD variants have been described, with the DYPD*2A splice site variant being the most common.” — [Tan 2008](https://pubmed.ncbi.nlm.nih.gov/19088019) <sub>(review)</sub>
+
+> “Another study demonstrated that 60 % of 60 patients who had experienced severe 5-FU-related toxicity had decreased DPD enzyme activity, independently of genotype” — [Patel 2015](https://pubmed.ncbi.nlm.nih.gov/26298089) <sub>(case series)</sub>
+
+> “The incidence of severe toxicity (grade 3 or higher) among patients with DPD deficiency receiving standard doses of fluoropyrimidines is estimated to be 70–80%.” — [Ho 2025](https://pubmed.ncbi.nlm.nih.gov/39887719) <sub>(meta-analysis)</sub>
+
+> “The added value of the DPYD FRET assay is the possibility of detecting, with the same amplification profile of the polymorphisms detailed in the guidelines, also the c.2194G&gt;A (*6 rs1801160), cited in the recommendations as a variant to be investigated in case of severe toxicity.” — [PMID37534027 2022](https://pubmed.ncbi.nlm.nih.gov/37534027) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: death (2)</summary>
+
+> “One DPYD wt /U high patient died due to pneumonia during fluoropyrimidine treatment.” — [Knikman 2025](https://pubmed.ncbi.nlm.nih.gov/40466468) <sub>(case report)</sub>
+
+> “A significant proportion of FP-treated patients develop severe or life-threatening, even fatal, toxicity. It is well known that FP-induced toxicity is governed by genetic factors, with dihydropyrimidine dehydrogenase (DPYD), the rate limiting enzyme in 5-FU catabolism, being currently the cornerstone of FP pharmacogenomics.” — [Maslarinou 2023](https://pubmed.ncbi.nlm.nih.gov/37256234) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: fatal toxicity (2)</summary>
+
+> “For ~1% of patients toxicity is fatal [8, 9].” — [Lunenburg 2020](https://pubmed.ncbi.nlm.nih.gov/31745289) <sub>(review)</sub>
+
+> “The only prospective randomized study was terminated prematurely for ethical reasons as one patient in the control arm died due to 5-FU-related toxicity” — [Henricks 2015](https://pubmed.ncbi.nlm.nih.gov/26265346) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: severe toxicities (2)</summary>
+
+> “Drug tolerability was also better in arm B compared with A (6 vs 22% severe toxicities reported, respectively) with an improved overall performance status throughout treatment.” — [Boisdron-Celle 2012](https://pubmed.ncbi.nlm.nih.gov/23057541) <sub>(randomised trial)</sub>
+
+> “Therefore, patients with a lack of DPD activity are risking severe toxicities due to high concentrations of active 5FU [2].” — [Deyme 2019](https://pubmed.ncbi.nlm.nih.gov/30446786) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: adverse events (1)</summary>
+
+> “This finding is consistent with the results for all grade 3-4 adverse events.” — [Gieschke 2003](https://pubmed.ncbi.nlm.nih.gov/12630975) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: body weight loss (1)</summary>
+
+> “One and two rats in 10 and 20 mg/kg dose group, respectively, died within the experimental period [12], and the rapid weight loss ([15%) of one rat in 20 mg/kg dose group was observed during the 5-FU treatment of 4 days; these rats were excluded from the source of data for population pharmacokinetic-pharmacodynamic analysis.” — [Kobuchi 2017](https://pubmed.ncbi.nlm.nih.gov/27889876) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Cytotoxicity (1)</summary>
+
+> “The reference standard 5-flurouracil exhibited a dose-dependent increase in cell death, with percentage inhibition rising from 38.51% at 200 µl/mL to 85.81% at 1000 µl/mL, indicating substantial cytotoxic effects at higher concentrations.” — [Lad 2026](https://pubmed.ncbi.nlm.nih.gov/41965411) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: drug-induced death (1)</summary>
+
+> “Drug-induced death was reduced from 10 to 0 %.” — [Patel 2015](https://pubmed.ncbi.nlm.nih.gov/26298089) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: fatal potentiation of FU toxicity (1)</summary>
+
+> “In Japanese patients fatal potentiation of FU toxicity occurred after a few days of dosing with the antiviral agent sorivudine.” — [Lennard 2001](https://pubmed.ncbi.nlm.nih.gov/11564055) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: fluoropyrimidine-related death (1)</summary>
+
+> “In the wildtype cohort, three patients died because of fluoropyrimidinerelated toxicity (&lt;1%), which is similar to previously reported data.” — [Henricks 2018](https://pubmed.ncbi.nlm.nih.gov/30348537) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: Grade III/IV toxicity (1)</summary>
+
+> “The TSER polymorphism also appears to have an impact on 5FU toxicity. In 50 colorectal cancer patients who received 5FU chemotherapy, patients homozygous for TSER * 2 and heterozygous for TSER * 2/TSER * 3 experienced a significantly lower incidence of Grade III/IV toxicity than patients homozygous for TSER * 3 (27% and 32% versus 63%; p = 0.008) [16].” — [Marsh 2005](https://pubmed.ncbi.nlm.nih.gov/16267625) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: lethal toxicity (1)</summary>
+
+> “All seven DPD-deficient patients (two males and five females) who had been genotyped prior to initiation of standard 5FU-containing chemotherapy developed grade 3-4 toxicity, with one case of lethal toxicity in a female patient.” — [van 2012](https://pubmed.ncbi.nlm.nih.gov/22339448) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: life-threatening toxicity (1)</summary>
+
+> “The impact of germline DPD deficiency on 5-FU pharmacokinetics and the development of severe lifethreatening toxicity is obvious. Whether or not to screen patients on DPD deficiency before starting chemotherapy is, however, an issue of debate.” — [Maring 2005](https://pubmed.ncbi.nlm.nih.gov/16041392) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: multiorgan failure (1)</summary>
+
+> “Patients with DPYD variants that cause slow drug metabolism have a higher risk of severe toxicity when they receive standarddose fluoropyrimidine therapy. Toxicities include hand-foot syndrome (HFS), mucositis, diarrhea, skin toxicity, tiredness, myelosuppression and multiorgan failure. Severe toxicities are usually managed in inpatient settings and involve dose moderation or treatment discontinuation [11-14].” — [Koleva-Kolarova 2023](https://pubmed.ncbi.nlm.nih.gov/37665240) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: severe 5-FU toxicity (1)</summary>
+
+> “Apart from DPD, it was recently discovered that deficiency in dihydropyrimidinase (DHP), the second enzyme in 5-FU catabolism, can also result in severe 5-FU toxicity.” — [Maring 2005](https://pubmed.ncbi.nlm.nih.gov/16041392) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: severe 5-FU-associated toxicity (1)</summary>
+
+> “Compelling results, however, have shown that patients with a partial or complete DPD deficiency have a reduced capacity to degrade 5-FU and are at risk of developing severe 5-FU-associated toxicity [53].” — [Bertholee 2017](https://pubmed.ncbi.nlm.nih.gov/27641154) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: severe toxic side effects (1)</summary>
+
+> “Patients with DPYD*13 showed severe toxic side effects in several studies [4,24,29,44,48,49].” — [Henricks 2015](https://pubmed.ncbi.nlm.nih.gov/26265346) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: severe, life-threatening adverse events (1)</summary>
+
+> “Due to heterogeneity in drug response and tolerability, up to one-third of exposed patients are at risk of developing severe, life-threatening adverse events, that negatively impact patient safety and quality of life and may compromise drug efficacy.” — [PMID37534027 2022](https://pubmed.ncbi.nlm.nih.gov/37534027) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: side effects (1)</summary>
+
+> “Derwger et al. also observed this correlation, and they concluded that MTHFR C677T not only affects sensitivity to 5-FU, but also increases the risk of unnecessary side effects, resulting in significantly shorter survival times of CRC patients [77].” — [Xie 2020](https://pubmed.ncbi.nlm.nih.gov/32474853) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: tiredness (1)</summary>
+
+> “Patients with DPYD variants that cause slow drug metabolism have a higher risk of severe toxicity when they receive standarddose fluoropyrimidine therapy. Toxicities include hand-foot syndrome (HFS), mucositis, diarrhea, skin toxicity, tiredness, myelosuppression and multiorgan failure.” — [Koleva-Kolarova 2023](https://pubmed.ncbi.nlm.nih.gov/37665240) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: weakness (1)</summary>
+
+> “Myelosuppression, fatigue and weakness, abdominal pain, and nausea have also been reported.” — [Walko 2005](https://doi.org/10.1016/j.clinthera) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Weight loss (1)</summary>
+
+> “Body weight was significantly lower in the hepatectomy groups (H and HC) after surgery, and decreased rapidly just after 5-FU administration (since Day 4) in the chemotherapy groups (CC and HC) (Fig. 1a).” — [Tada 2020](https://doi.org/10.1007/s00280-019-03969-1) <sub>(animal)</sub>
+
+</details>
+
+### Immune / hypersensitivity
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Graft rejection | There are case reports of graft rejection in liver transplant recipients receiving fluoropyrimidine-based chemotherapy. | — | orthotopic liver transplant | — | [Wigle 2019](https://pubmed.ncbi.nlm.nih.gov/31052357) |
+| Immune suppression | Immune suppression is listed as one of the common adverse events observed with fluoropyrimidine chemotherapies, a class of antimetabolites targeting rapidly regenerating tissues including bone marrow. | up to 30% | — | — | [Wigle 2019](https://pubmed.ncbi.nlm.nih.gov/31052357) |
+| Immunosuppression | The paper states that 5-FU induces immunosuppression, noting that polysaccharides possess immunoregulatory effects which could reduce this effect. | — | — | — | [Álvarez 2012](https://pubmed.ncbi.nlm.nih.gov/22329541) |
+
+<details><summary>Evidence: Graft rejection (1)</summary>
+
+> “There are case reports of both liver injury and graft rejection in liver transplant recipients receiving fluoropyrimidine-based chemotherapy [124,125].” — [Wigle 2019](https://pubmed.ncbi.nlm.nih.gov/31052357) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Immune suppression (1)</summary>
+
+> “Common AEs observed with fluoropyrimidine chemotherapies include non-bloody diarrhea, mucosal ulceration, immune suppression, and a painful skin condition known as hand-foot syndrome.” — [Wigle 2019](https://pubmed.ncbi.nlm.nih.gov/31052357) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Immunosuppression (1)</summary>
+
+> “Moreover, it has been shown that many polysaccharides possess immunoregulatory effects, which could reduce the immunosuppression induced by 5-FU.” — [Álvarez 2012](https://pubmed.ncbi.nlm.nih.gov/22329541) <sub>(review)</sub>
+
+</details>
+
+### Infection
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Infection | The paper states that infection is one of the toxicities from 5-FU that remain common in patients with cancer and can sometimes result in hospitalization or even death. | common | — | — | [Brooks 2025](https://pubmed.ncbi.nlm.nih.gov/41339584), [Hirose 2010](https://pubmed.ncbi.nlm.nih.gov/20596643) |
+| Sepsis | The paper reports a single case of a patient who died from sepsis caused by agranulocytosis after receiving a therapeutic dose of 5-fluorouracil administered at an erroneously high infusion rate. | — | erroneously high infusion rate | laboratory: bone marrow | [Mielke 2025](https://pubmed.ncbi.nlm.nih.gov/40430472) |
+
+<details><summary>Evidence: infection (2)</summary>
+
+> “Still, toxicities from 5-FU (including mucositis, diarrhea, neutropenia, and infection) remain common, and can sometimes result in hospitalization or even death [5, 6].” — [Brooks 2025](https://pubmed.ncbi.nlm.nih.gov/41339584) <sub>(review)</sub>
+
+> “Table III lists the maxmum toxicities experienced during S-1 administration. ... Infection 7 5 5 0 8.9” — [Hirose 2010](https://pubmed.ncbi.nlm.nih.gov/20596643) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Sepsis (1)</summary>
+
+> “The patient died from sepsis caused by agranulocytosis after receiving a therapeutic dose administered at an erroneously high infusion rate.” — [Mielke 2025](https://pubmed.ncbi.nlm.nih.gov/40430472) <sub>(case report)</sub>
+
+</details>
+
+### Liver
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Elevated transaminase | In a population of 56 Japanese patients receiving S-1 monotherapy for advanced cancer, the maximum toxicity recorded was elevation of transaminase, with 1 patient experiencing grade 3 toxicity and 1 patient experiencing grade 4 toxicity (7.1% total for grades 3 or 4). | 7.1% | — | — | [Hirose 2010](https://pubmed.ncbi.nlm.nih.gov/20596643) |
+| Hepatic toxicity | In patients receiving 5-fluorouracil via hepatic arterial infusion, the major toxicities observed were hepatic, which recent studies demonstrated to be mainly cholestatic. | — | — | — | [Diasio 1989](https://pubmed.ncbi.nlm.nih.gov/2656050) |
+| Hepatotoxicity | The paper identifies hepatotoxicity as a known property of fluoropyrimidines and cites case reports of liver injury in liver transplant recipients receiving fluoropyrimidine-based chemotherapy. | — | — | — | [Wigle 2019](https://pubmed.ncbi.nlm.nih.gov/31052357) |
+| Impaired liver regeneration | In a rat model, 5-FU administration after 70% hepatectomy resulted in a significantly lower liver regeneration rate on day 7 compared to rats that underwent hepatectomy without chemotherapy (33.0 ± 5.7% vs 67.3 ± 7.4%). | — | male; female; liver | laboratory: liver DPD; laboratory: 5-FU plasma levels | [Tada 2020](https://doi.org/10.1007/s00280-019-03969-1) |
+| Liver injury | The paper notes that case reports exist of liver injury in liver transplant recipients receiving fluoropyrimidine-based chemotherapy, which contributes to the caution used in treating such patients due to the known hepatotoxicity of fluoropyrimidines. | — | — | — | [Wigle 2019](https://pubmed.ncbi.nlm.nih.gov/31052357) |
+
+<details><summary>Evidence: elevated transaminase (1)</summary>
+
+> “Table III lists the maxmum toxicities experienced during S-1 administration. ... Elevation of transaminase 9 0 3 1 7.1” — [Hirose 2010](https://pubmed.ncbi.nlm.nih.gov/20596643) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: hepatic toxicity (1)</summary>
+
+> “Unfortunately, this approach is not without toxic effect. The major toxicities observed have been hepatic. While it was initially thought to be hepatocellular, recent studies have demonstrated that this toxicity is mainly cholestatic (Hohn et al. 1985;Kemeny et al. 1985Kemeny et al. , 1986)).” — [Diasio 1989](https://pubmed.ncbi.nlm.nih.gov/2656050) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Hepatotoxicity (1)</summary>
+
+> “This remains an intimidating dilemma owing to the known hepatotoxicity of fluoropyrimidines. There are case reports of both liver injury and graft rejection in liver transplant recipients receiving fluoropyrimidine-based chemotherapy [124,125].” — [Wigle 2019](https://pubmed.ncbi.nlm.nih.gov/31052357) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Impaired liver regeneration (1)</summary>
+
+> “Results indicated that 5-FU administration inhibited liver regeneration following hepatectomy. Gravimetric analysis revealed that the liver regeneration rate was significantly lower in the HC group on day 7 compared with that in the H group (67.3 ± 7.4 vs 33.0 ± 5.7%, p &lt; 0.001, Fig. 2).” — [Tada 2020](https://doi.org/10.1007/s00280-019-03969-1) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Liver injury (1)</summary>
+
+> “This remains an intimidating dilemma owing to the known hepatotoxicity of fluoropyrimidines. There are case reports of both liver injury and graft rejection in liver transplant recipients receiving fluoropyrimidine-based chemotherapy [124,125].” — [Wigle 2019](https://pubmed.ncbi.nlm.nih.gov/31052357) <sub>(case series)</sub>
+
+</details>
+
+### Musculoskeletal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Stomatitis | Approximately 10-40% of 5-fluorouracil patients develop severe, and sometimes life-threatening, toxicity (neutropenia, nausea, vomiting, severe diarrhea, stomatitis, mucositis, hand-foot syndrome, and neuropathy). | Approximately 10-40% | DPYD*2A, *13, rs67376798 (DPYD *2A, *13, rs67376798); bolus-based administration; dose adaptation at mid-cycle; 5-fluorouracil AUC [35 mg·h/L | hospital: plasma concentrations of fluorouracil; primary_care: symptoms | [PMID23988873 2013](https://pubmed.ncbi.nlm.nih.gov/23988873), [Canal 1998](https://pubmed.ncbi.nlm.nih.gov/9878990), [Ma 2016](https://doi.org/10.1007/s40262-016-0395-2), [Turner 2024](https://pubmed.ncbi.nlm.nih.gov/38129972), [Amstutz 2018](https://pubmed.ncbi.nlm.nih.gov/29152729), [Duley 2016](https://pubmed.ncbi.nlm.nih.gov/26435217) +6 |
+| Mucosal ulceration | Mucosal ulceration is listed as a common adverse event observed with fluoropyrimidine chemotherapies. | up to 30% | — | — | [Wigle 2019](https://pubmed.ncbi.nlm.nih.gov/31052357) |
+
+<details><summary>Evidence: stomatitis (12)</summary>
+
+> “Approximately 10-40% of 5-fluorouracil patients develop severe, and sometimes life-threatening, toxicity (neutropenia, nausea, vomiting, severe diarrhea, stomatitis, mucositis, hand-foot syndrome, and neuropathy).” — [PMID23988873 2013](https://pubmed.ncbi.nlm.nih.gov/23988873) <sub>(review)</sub>
+
+> “Thyss et al. [187] have shown that the AUC obtained at midcycle predicts the incidence of fluorouracil-induced stomatitis. Consequently, nomograms have been developed to adjust the dose of fluorouracil based on its plasma concentrations. Adaptation of the dose at mid-cycle resulted in a decrease in the incidence of stomatitis from 20 to 12%.” — [Canal 1998](https://pubmed.ncbi.nlm.nih.gov/9878990) <sub>(review)</sub>
+
+> “Stomatitis, diarrhea, and hand-foot syndrome were considered to be toxicity events highly-related to 5-fluorouracil... The most common grade 3-4 toxicities were stomatitis (15 %), diarrhea (13 %), and leucopenia (10 %)” — [Ma 2016](https://doi.org/10.1007/s40262-016-0395-2) <sub>(cohort)</sub>
+
+> “Common adverse effects (AEs) can include leukopenia, neutropenic fever, anemia, thrombocytopenia, oral/intestinal mucositis, stomatitis, diarrhea, nausea, vomiting, hand‐foot syndrome, hair loss, and dry skin.” — [Turner 2024](https://pubmed.ncbi.nlm.nih.gov/38129972) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Mucosal ulceration (1)</summary>
+
+> “Common AEs observed with fluoropyrimidine chemotherapies include non-bloody diarrhea, mucosal ulceration, immune suppression, and a painful skin condition known as hand-foot syndrome.” — [Wigle 2019](https://pubmed.ncbi.nlm.nih.gov/31052357) <sub>(review)</sub>
+
+</details>
+
+### Neoplasm
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Encephalopathy | Encephalopathy was reported as a severe toxicity in two adult female breast cancer patients (aged 27 and 40 years) receiving CMF chemotherapy, with one case associated with undetectable DPD activity and another with familial thymine/uracil-urea. | — | familial thymine/uracil-urea (DPYD) | — | [Kubota 2003](https://doi.org/10.1007/s10147-003-0319-7) |
+| Polyneuropathy | Lower SMI of the back muscle increased the probability for polyneuropathy (CTCAE grade ≥ 2) in patients treated with fluorouracil-based chemotherapy. | — | unknown; unknown (DPYD unknown) | — | [Schmulenson 2023](https://pubmed.ncbi.nlm.nih.gov/35941837) |
+
+<details><summary>Evidence: Encephalopathy (1)</summary>
+
+> “Tuchman et al. Female, 27 yr, breast cancer CMF Neutropenia, thrombocytopenia, diarrhea, stomatitis, DPD not evaluated (1985) encephalopathy Familial thymine/uracil-urea Diasio et al. Female, 40 yr, breast cancer CMF Neutropenia, encephalopathy DPD activity undetectable” — [Kubota 2003](https://doi.org/10.1007/s10147-003-0319-7) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Polyneuropathy (1)</summary>
+
+> “Lower SMI values of the back muscle increased the probability for polyneuropathy and lower SMI of the psoas increased the probability for fatigue. ... The logistic regression analysis showed statistically significant correlations for two AE. The SMI of the psoas major was significantly correlated to the fatigue syndrome as well as the SMI of the back muscle to the occurrence of clinically relevant polyneuropathy.” — [Schmulenson 2023](https://pubmed.ncbi.nlm.nih.gov/35941837) <sub>(other)</sub>
+
+</details>
+
+### Nervous system
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Neurotoxicity | In mice, the combination of 5-FU and cefepime increases the risk of neurotoxic side effects by exacerbating early-onset convulsive seizures and eliciting delayed-onset convulsive status epilepticus. | — | cefepime; DPYD *2A, 1905 + 1 G &gt; A (rs3918290), DPYD *13, 1679 T &gt; G (rs55886062) and DPYD 2846 A &gt; T (rs67376798) (DPYD 1905 + 1 G &gt; A (rs3918290), 1679 T &gt; G (rs55886062), 2846 A &gt; T (rs67376798)); familial pyrimidinemia and pyrimidinuria (DPYD); continuous infusion | — | [Pfab 2022](https://pubmed.ncbi.nlm.nih.gov/35100987), [Atasilp 2024](https://pubmed.ncbi.nlm.nih.gov/39652193), [Wigle 2019](https://pubmed.ncbi.nlm.nih.gov/31052357), [Álvarez 2012](https://pubmed.ncbi.nlm.nih.gov/22329541), [PMID23988873 2013](https://pubmed.ncbi.nlm.nih.gov/23988873) |
+| Chemo brain | Exaggerated dosing may cause the infamous "chemo brain" among other side effects during two months of treatment. | — | exaggerated dosing | — | [Briki 2026](https://pubmed.ncbi.nlm.nih.gov/42283826) |
+| Dizziness | Dizziness was identified as a specific dose-limiting toxicity in two Phase I clinical trials of capecitabine. | — | — | — | [Blesch 2003](https://pubmed.ncbi.nlm.nih.gov/12889740) |
+| Severe adverse reactions | In a patient undergoing severe fluorouracil-related toxicity, partial deficiency in dihydropyrimidinase enzyme activity was observed. | — | dihydropyrimidinase SNP (gly278asp) heterozygous (dihydropyrimidinase gly278asp) | — | [Robert 2005](https://pubmed.ncbi.nlm.nih.gov/15890268) |
+| Severe multivisceral toxicity | Patients with a complete or partial deficiency of dihydropyrimidine dehydrogenase suffered from severe multivisceral toxicity, including death, following the administration of 5-FU. | — | DPYD mutation (DPYD c.1905+1G&gt;A); dihydropyrimidine dehydrogenase deficiency | laboratory: DPYD; laboratory: peripheral blood mononuclear cells | [van 2013](https://doi.org/10.2217/PGS.13.54) |
+
+<details><summary>Evidence: neurotoxicity (5)</summary>
+
+> “Recently, it has been shown that a combination of 5-FU and cefepime (ß-lactam antibiotic) increases the risk of induction of neurotoxic side effects by the latter one through exacerbating early-onset convulsive seizures and eliciting delayed-onset convulsive status epilepticus in mice” — [Pfab 2022](https://pubmed.ncbi.nlm.nih.gov/35100987) <sub>(case report)</sub>
+
+> “while another study stated that bone marrow depression and neurotoxicity were found to be associated with DPYD *2A, 1905 + 1 G &gt; A (rs3918290), DPYD *13, 1679 T &gt; G (rs55886062) and DPYD 2846 A &gt; T (rs67376798) [6].” — [Atasilp 2024](https://pubmed.ncbi.nlm.nih.gov/39652193) <sub>(other)</sub>
+
+> “The first case report presented a patient treated with 5-FU who had oral ulceration, neurotoxicity, and severe myelosuppression leading to hospitalization.” — [Wigle 2019](https://pubmed.ncbi.nlm.nih.gov/31052357) <sub>(case report)</sub>
+
+> “Hand-foot syndrome (palmar-plantar erythrodysesthesia), stomatitis, neuro-and cardiotoxicity are associated with continuous infusions.” — [Álvarez 2012](https://pubmed.ncbi.nlm.nih.gov/22329541) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: chemo brain (1)</summary>
+
+> “Indeed, five cycles represent two months of treatment, during which exaggerated dosing may cause uncomfortable side effects such as nausea, vomiting, and the infamous "chemo brain" among others” — [Briki 2026](https://pubmed.ncbi.nlm.nih.gov/42283826) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: dizziness (1)</summary>
+
+> “In these studies, the specific DLTs were diarrhea, vomiting, nausea, neutropenia, dizziness, and hand±foot syndrome (palmar±plantar erythrodysesthesia, HFS).” — [Blesch 2003](https://pubmed.ncbi.nlm.nih.gov/12889740) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: severe adverse reactions (1)</summary>
+
+> “In a patient undergoing severe fluorouracil-related toxicity, partial deficiency in enzyme activity was observed and attributed to a SNP (gly278asp) present at the heterozygous status [47], extending thus the genetic origins of fluorouracil severe adverse reactions.” — [Robert 2005](https://pubmed.ncbi.nlm.nih.gov/15890268) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Severe multivisceral toxicity (1)</summary>
+
+> “These patients suffered from severe multivisceral toxicity, including death, following the administration of 5-FU [25][26][27][28][29].” — [van 2013](https://doi.org/10.2217/PGS.13.54) <sub>(case report)</sub>
+
+</details>
+
+### Skin
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Hand-foot syndrome | In a study of 92 patients with metastatic colorectal cancer, the incidence of hand-foot syndrome was 11% in the even infusion group compared with 4% in the chronotherapy group. | 11% vs 4% | dose reduction; systemic exposure to capecitabine metabolites 5¢-DFUR, 5-FU and FBAL; DPYD variants (partial or complete deficiency of the dihydropyrimidine dehydrogenase enzyme) (DPYD DPYD*2A, DPYD*13, c.2846A&gt;T, HapB3); Advanced age | home: numbness, dysesthesia/paresthesia, tingling, painless swelling, erythema, or discomfort of the hands and/or feet; hospital: toxicity related to the treatment | [Thomas 1998](https://pubmed.ncbi.nlm.nih.gov/9807659), [Walko 2005](https://doi.org/10.1016/j.clinthera), [Gieschke 2003](https://pubmed.ncbi.nlm.nih.gov/12630975), [PMID34773566 2022](https://pubmed.ncbi.nlm.nih.gov/34773566), [Henricks 2018](https://pubmed.ncbi.nlm.nih.gov/30348537), [Blesch 2003](https://pubmed.ncbi.nlm.nih.gov/12889740) +9 |
+| Alopecia | Alopecia was reported in patients treated with capecitabine, with a lower incidence compared to those treated with bolus FU/LV (6.0% vs 20.6%). | 6.0% vs 20.6% | — | — | [Walko 2005](https://doi.org/10.1016/j.clinthera), [Álvarez 2012](https://pubmed.ncbi.nlm.nih.gov/22329541) |
+| Dehydration | In 244 patients with different cancer types receiving capecitabine-based therapy, carriers of CDA -92A&gt;G had grade 2-4 dehydration. | — | CDA -92A&gt;G | — | [Lam 2016](https://pubmed.ncbi.nlm.nih.gov/27569869) |
+| Dermatitis | Dermatitis occurred in more than 25% of 758 patients with breast or colorectal cancer who received capecitabine 2500 mg/m2 per day for 14 days followed by 1 week with no drug. | &gt;25% | — | — | [Walko 2005](https://doi.org/10.1016/j.clinthera) |
+| Dry skin | The paper lists dry skin as one of the common adverse effects that can occur in patients treated with intravenous 5-fluorouracil or capecitabine. | unknown | — | — | [Turner 2024](https://pubmed.ncbi.nlm.nih.gov/38129972) |
+| Hair loss | Hair loss is listed as one of the common adverse effects of fluoropyrimidine therapy. | — | — | — | [Turner 2024](https://pubmed.ncbi.nlm.nih.gov/38129972) |
+| Hand and foot syndrome (HFS) | Hand and foot syndrome (HFS) is reported as a complication of fluoropyrimidine treatment, with specific genetic variants (e.g., TYMS, ENOSF1, CES1, CDA) associated with increased risk of grade 2 or higher HFS. | unknown | TYMS 2R allele (TYMS rs45445694); TYMS 3′UTR 6bp ins/del (TYMS rs11280056); ENOSF1 rs2612091; CES2 rs11075646 | — | [Maslarinou 2023](https://pubmed.ncbi.nlm.nih.gov/37256234) |
+| Hand‐foot syndrome | Hand-foot syndrome, defined as pain, erythema, and desquamation of the palms and soles, is associated with systemic fluoropyrimidines, including 5-fluorouracil, and the risk of severe toxicities is significantly higher among patients with dihydropyrimidine dehydrogenase (DPD) deficiency. | — | DPYD variants (DPYD loss‐of‐function variants (including DPYD*2A, *13, c.2846A&gt;T, c.[1,129‐5923C&gt;G; 1236G&gt;A])); DPD deficiency | — | [Ho 2025](https://pubmed.ncbi.nlm.nih.gov/39887719) |
+| Palmar-plantar erythroderma | Between 5 and 25% of patients receiving continuous infusion 5FU at 300 mg/m2 per day experienced painful palmar-plantar erythroderma. | between 5 and 25% | 300mg/m2 per day by CI | — | [Thomas 1998](https://pubmed.ncbi.nlm.nih.gov/9807659) |
+| Skin hyperpigmentation | Skin hyperpigmentation is listed as one of the other common toxicities associated with the usual oral regimen of capecitabine (a prodrug of 5-FU). | unknown | — | — | [PMID34773566 2022](https://pubmed.ncbi.nlm.nih.gov/34773566) |
+| Skin toxicity | Skin toxicity is listed among the toxicities experienced by patients with DPYD variants that cause slow drug metabolism when they receive standard-dose fluoropyrimidine therapy, often requiring inpatient management. | — | DPYD variants; standard-dose fluoropyrimidine therapy | — | [Koleva-Kolarova 2023](https://pubmed.ncbi.nlm.nih.gov/37665240) |
+
+<details><summary>Evidence: hand-foot syndrome (16)</summary>
+
+> “Unexpectedly, the incidence of severe mucositis was four-fold greater in the even infusion group (89 vs I S%, respectively), as was the incidence of hand-foot syndrome (1 1 vs 4%, respectively).” — [Thomas 1998](https://pubmed.ncbi.nlm.nih.gov/9807659) <sub>(case series)</sub>
+
+> “Hand-foot syndrome occurred more frequently in the capecitabine groups (53.5% vs 6.2%). ... Hand-foot syndrome is a cutaneous adverse effect also referred to as palmar-plantar erythrodysesthesia or chemotherapy-induced acral erythema. The median time to onset is 79 days but can range from 11 to 360 days.” — [Walko 2005](https://doi.org/10.1016/j.clinthera) <sub>(meta-analysis)</sub>
+
+> “Although hand-foot syndrome is the most frequently encountered specific adverse event following capecitabine treatment (data on file), there were no statistically significant relationships between systemic exposure to capecitabine metabolites 5¢-DFUR, 5-FU and FBAL and grade 3 hand-foot syndrome.” — [Gieschke 2003](https://pubmed.ncbi.nlm.nih.gov/12630975) <sub>(case report)</sub>
+
+> “Approximately 10–40% of patients treated with fluoropyrimidines develop severe toxicity (grade ≥ 3 on the Common Terminology Criteria for Adverse Events [CTCAE]), which may include myelosuppression, severe diarrhea, vomiting, stomatitis, mucositis, hand–foot syndrome (palmar–plantar erythrodysaesthesia), or neuropathy [3–6].” — [PMID34773566 2022](https://pubmed.ncbi.nlm.nih.gov/34773566) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: alopecia (2)</summary>
+
+> “The safety profile favored capecitabine, with a lower incidence of diarrhea (47.7% vs 58.2%), stomatitis (24.3% vs 61.6%), nausea (37.9% vs 47.6%), alopecia (6.0% vs 20.6%), grade 3-4 neutropenia (2.3% vs 22.8%), and subsequently less neutropenic fever or sepsis (0.2% vs 3.4%).” — [Walko 2005](https://doi.org/10.1016/j.clinthera) <sub>(review)</sub>
+
+> “Other adverse effects associated with both bolus-dose and continuous infusion regimens include nausea and vomiting, diarrhea, alopecia and dermatitis.” — [Álvarez 2012](https://pubmed.ncbi.nlm.nih.gov/22329541) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Dehydration (1)</summary>
+
+> “In that study, CDA -92A&gt;G was associated with grade 2-4 diarrhea and grade 2-4 dehydration.” — [Lam 2016](https://pubmed.ncbi.nlm.nih.gov/27569869) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: dermatitis (1)</summary>
+
+> “The effects occurring in &gt;25% of patients included anemia, diarrhea, hand-foot syndrome, nausea, hyperbilirubinemia, fatigue/weakness, abdominal pain, vomiting, and dermatitis.” — [Walko 2005](https://doi.org/10.1016/j.clinthera) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: dry skin (1)</summary>
+
+> “Common adverse effects (AEs) can include leukopenia, neutropenic fever, anemia, thrombocytopenia, oral/intestinal mucositis, stomatitis, diarrhea, nausea, vomiting, hand‐foot syndrome, hair loss, and dry skin.” — [Turner 2024](https://pubmed.ncbi.nlm.nih.gov/38129972) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: hair loss (1)</summary>
+
+> “Common adverse effects (AEs) can include leukopenia, neutropenic fever, anemia, thrombocytopenia, oral/intestinal mucositis, stomatitis, diarrhea, nausea, vomiting, hand‐foot syndrome, hair loss, and dry skin.” — [Turner 2024](https://pubmed.ncbi.nlm.nih.gov/38129972) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Hand and foot syndrome (HFS) (1)</summary>
+
+> “the most common reported toxicities are hematological and gastrointestinal (nausea, vomiting, diarrhea), whereas other complications of FP treatment include hand and foot syndrome (HFS) (Thorn et al., 2011).” — [Maslarinou 2023](https://pubmed.ncbi.nlm.nih.gov/37256234) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: hand‐foot syndrome (1)</summary>
+
+> “Despite their efficacy, fluoropyrimidines are associated with significant toxicities, including gastrointestinal (e.g., vomiting, diarrhea, and mucositis), hematologic (e.g., neutropenia), and hand‐foot syndrome (i.e., pain, erythema, and desquamation of the palms and soles). Importantly, the risk of severe fluoropyrimidine‐associated toxicities is significantly higher among patients who have dihydropyrimidine…” — [Ho 2025](https://pubmed.ncbi.nlm.nih.gov/39887719) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: palmar-plantar erythroderma (1)</summary>
+
+> “The major toxic effect of 5FU at 300mg/m2 per day by CI appears to be mucositis, with between 5 and 25% of patients experiencing painful palmar-plantar erythroderma.” — [Thomas 1998](https://pubmed.ncbi.nlm.nih.gov/9807659) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Skin hyperpigmentation (1)</summary>
+
+> “Other common toxicities are fatigue, stomatitis, skin hyperpigmentation, photosensitivity, blepharitis, and epiphora.” — [PMID34773566 2022](https://pubmed.ncbi.nlm.nih.gov/34773566) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: skin toxicity (1)</summary>
+
+> “Patients with DPYD variants that cause slow drug metabolism have a higher risk of severe toxicity when they receive standarddose fluoropyrimidine therapy. Toxicities include hand-foot syndrome (HFS), mucositis, diarrhea, skin toxicity, tiredness, myelosuppression and multiorgan failure.” — [Koleva-Kolarova 2023](https://pubmed.ncbi.nlm.nih.gov/37665240) <sub>(review)</sub>
+
+</details>
+
+### Other
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Other treatment-related toxicity | In the study population of patients with cancer treated with fluoropyrimidine-based therapy, 9 (11%) of 85 DPYD variant allele carriers and 78 (8%) of 1018 wild-type patients experienced Grade ≥3 other treatment-related toxicity. | 9 (11%) 78 (8%) | DPYD variant allele carriers | primary_care: toxicity | [Henricks 2018](https://pubmed.ncbi.nlm.nih.gov/30348537) |
+
+<details><summary>Evidence: other treatment-related toxicity (1)</summary>
+
+> “Grade ≥3 other treatment-related toxicity 9 (11%) 78 (8%) 0•45 ‡ 7 (14%) 1 (6%) 1 (6%) 0” — [Henricks 2018](https://pubmed.ncbi.nlm.nih.gov/30348537) <sub>(cohort)</sub>
+
+</details>
+
 ## ADME sites
 
 Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fluorouracil).

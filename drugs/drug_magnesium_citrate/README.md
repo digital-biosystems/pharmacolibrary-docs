@@ -55,7 +55,7 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Bertrand_1997.pdf` | Bertrand L et al., Mutagenesis of charged residues in a co…, The Biochemical journal (1997) | pd | 4 | [10.1042/bj3210609](https://doi.org/10.1042/bj3210609) | [9032444](https://www.ncbi.nlm.nih.gov/pubmed/9032444) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-15T00:45:56.331238+00:00</sub>
+<sub>queue written 2026-10-16T08:20:56.175575+00:00</sub>
 
 ## Screened and excluded
 

@@ -17,7 +17,7 @@ Alipogene tiparvovec (Glybera) is a gene therapy that was used to treat a rare i
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-15 00:46 | 0:05 | 0/0/0 | 0/0/0 | 0/0/0 | 10,475/145 | einfracz / qwen3.8-27b | 2 | 0/1 | 2/0 | 0 |
+| 2026-10-16 08:38 | 0:11 | 0/0/0 | 0/0/0 | 0/0/0 | 18,993/162 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
@@ -41,7 +41,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 ## Coverage
 
 - **PubMed hits:** 3 matched, 3 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

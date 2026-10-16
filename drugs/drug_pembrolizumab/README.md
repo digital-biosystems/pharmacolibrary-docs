@@ -70,7 +70,7 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Peer_2022.pdf` | Peer CJ et al., Pharmacokinetic Simulation Analysis of…, Journal of clinical pharmac… (2022) | popPK | 8 | [10.1002/jcph.1984](https://doi.org/10.1002/jcph.1984) | [34648187](https://pubmed.ncbi.nlm.nih.gov/34648187) | The paper uses established population PK models to simulate dosing regimens but does not provide the specific quantitative parameter values (CL, V, etc.) within the text. |
 | `Lala_2020.pdf` | Lala M et al., A six-weekly dosing schedule for pembro…, European journal of cancer… (2020) | popPK | 6 | [10.1016/j.ejca.2020.02.016](https://doi.org/10.1016/j.ejca.2020.02.016) | [32305010](https://pubmed.ncbi.nlm.nih.gov/32305010) | The paper uses a population PK model for pembrolizumab in humans to simulate dose regimens, reporting derived exposure metrics (Cavg, Cmin, Cmax) rather than raw model parameter estimates (CL, V) in the text provided. |
 
-<sub>queue written 2026-10-15T00:55:04.228009+00:00</sub>
+<sub>queue written 2026-10-16T08:48:35.448545+00:00</sub>
 
 ## Screened and excluded
 

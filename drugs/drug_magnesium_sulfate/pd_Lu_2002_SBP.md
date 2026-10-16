@@ -18,9 +18,9 @@
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
-> The model describes an effect compartment mechanism where magnesium concentrations (mmol/L) inhibit systolic blood pressure (mm Hg) with a maximum decrease of 36.8 mm Hg and a half-maximum effect concentration of 0.75 mmol/L. The equilibrium rate constant (ke0) is 0.76 h(-1).
+> The model describes magnesium as an additive inhibitor of systolic blood pressure via an effect compartment linked by a ke0 of 0.76 h-1. It specifies an E(max) of 36.8 mm Hg and an EC(50) of 0.75 mmol/L.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Lu_2002`
 - **model family:** `effect_compartment`
@@ -72,7 +72,7 @@ Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to 
 |---|---|---|
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.00%) |
 | `T2_direction` | pass | the response falls, as direct effect predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | fail | a core parameter took a library default: E0 |
@@ -89,7 +89,7 @@ Advisory:
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Lu2002_PD_sbp/MagnesiumSulfate_Lu2002_PD_sbp_modelica.zip" download>MagnesiumSulfate_Lu2002_PD_sbp_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Lu2002_PD_sbp/MagnesiumSulfate_Lu2002_PD_sbp_fmi.zip" download>MagnesiumSulfate_Lu2002_PD_sbp_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Lu2002_PD_sbp/MagnesiumSulfate_Lu2002_PD_sbp_matlab.zip" download>MagnesiumSulfate_Lu2002_PD_sbp_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Lu2002_PD_sbp/MagnesiumSulfate_Lu2002_PD_sbp_sbml.zip" download>MagnesiumSulfate_Lu2002_PD_sbp_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

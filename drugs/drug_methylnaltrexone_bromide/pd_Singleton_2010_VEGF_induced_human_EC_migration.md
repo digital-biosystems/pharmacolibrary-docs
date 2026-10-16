@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methylnaltrexone inhibits VEGF-induced human EC migration, exhibiting an IC50 of ~100 nM. The paper describes this effect as resulting from the drug's inhibition of the mu opioid receptor and stimulation of tyrosine phosphatase activity, but does not specify a mathematical model form or rate constants for this single-agent response.
+>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+
 - **paper:** `Singleton_2010`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

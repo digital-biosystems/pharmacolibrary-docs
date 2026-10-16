@@ -112,6 +112,235 @@ Carboplatin is a platinum-based anticancer drug used to treat many cancers, incl
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+## Adverse drug reactions (ADR)
+
+22 reaction(s) reported in 11 paper(s). Read from the full texts by a language model, which also wrote the one-sentence descriptions; each sentence quoted under a reaction was checked to occur in the paper, the rest is not checked by a person. Frequencies are as the papers print them, for their own populations and definitions.
+
+### Blood
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Neutropenia | Three dogs with elevated SDMA experienced grade 4 neutropenia, and 10 of 25 dogs (40%) with normal serum SDMA experienced asymptomatic grade 3 or 4 neutropenia following carboplatin chemotherapy. | 3/4 a (75%) | 300 mg/m2; elevated serum SDMA (&gt; 14 μg/dL); germline genetic variation; gemcitabine | laboratory: CBC; laboratory: neutrophil | [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140), [Björn 2020](https://pubmed.ncbi.nlm.nih.gov/32839457), [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361), [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252), [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) |
+| Thrombocytopenia | Two dogs treated with carboplatin experienced grade 1 thrombocytopenia, with one of the affected dogs having elevated serum SDMA. | 2 dogs | elevated serum SDMA; multiple treatment cycles; serum albumin &lt; 44 g/L; low eGFR | laboratory: complete blood count (CBC); hospital: platelets (PLT) count | [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140), [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829), [Subramani 2026](https://pubmed.ncbi.nlm.nih.gov/42291217), [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252), [Björn 2020](https://pubmed.ncbi.nlm.nih.gov/32839457) |
+| Myelosuppression | Severe myelosuppression, mainly expressed in the form of neutropenia, leukopenia, and thrombocytopenia, is commonly induced in NSCLC patients treated with gemcitabine/carboplatin, with CTCAE grade 3–4 experienced by roughly 50% of treated patients. | roughly experienced by 50% of treated patients | germline genetic variation (multiple (e.g., PLG, PDGFRA, SOX13, LDLR) specific SNVs/INDELs (e.g., rs1247572, rs1498830)); gemcitabine; paclitaxel; pemetrexed | laboratory: Neutrophil, leukocyte, and platelet counts; laboratory: Platelets (PLT) and Neutrophils (NT) counts | [Björn 2020](https://pubmed.ncbi.nlm.nih.gov/32839457), [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) |
+| Myelotoxicity | Carboplatin causes substantial myelotoxicity, as noted in the context of it being generally less toxic than cisplatin (which causes neurotoxicity, nephrotoxicity, and ototoxicity). | — | — | — | [Vella 2011](https://pubmed.ncbi.nlm.nih.gov/21687948), [Jeon 2026](https://pubmed.ncbi.nlm.nih.gov/42076051) |
+| Grade IV neutropenia | In common arm trials comparing Japanese and US patients treated with carboplatin plus paclitaxel for NSCLC, the frequency of grade IV neutropenia was significantly higher among Japanese patients. | — | Japanese ethnicity (unknown unknown) | — | [Saijo 2013](https://pubmed.ncbi.nlm.nih.gov/23225792) |
+| Leukopenia | The paper reports that gemcitabine/carboplatin treatment commonly induces myelosuppression, including leukopenia, in non-small cell lung cancer (NSCLC) patients, with severe (CTCAE grade 3-4) toxicity experienced by roughly 50% of treated patients overall, while Table 2 specifies that 29.2% (grade… | 29.2% (grade 3), 4.2% (grade 4) | 62 SNVs/INDELs in the toxicity module (multiple); gemcitabine | laboratory: leukocyte counts | [Björn 2020](https://pubmed.ncbi.nlm.nih.gov/32839457) |
+
+<details><summary>Evidence: Neutropenia (5)</summary>
+
+> “Three dogs with elevated SDMA experienced grade 4 neutropenia; one was euthanized due to sepsis. In comparison, 10 of 25 dogs (40%) with normal serum SDMA experienced asymptomatic grade 3 or 4 neutropenia (Table 4).” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(cohort)</sub>
+
+> “It is well known that the use of classical chemotherapeutic agents is associated with the induction of considerable adverse drug reactions (ADRs). This is also the case for gemcitabine/carboplatin treatment, which commonly induces severe myelosuppression (mainly expressed in the form of neutropenia, leukopenia, and thrombocytopenia) that may lead to non-optimal treatments in terms of postponements, reduction, or…” — [Björn 2020](https://pubmed.ncbi.nlm.nih.gov/32839457) <sub>(case-control)</sub>
+
+> “Despite the therapeutic impact of platinum in conjunction with taxane agents in the management of ovarian cancer, 20-30% of patients will face grade III/IV peripheral neuropathy, 30-40% grade IV neutropenia and 20% grade III/IV gastrointestinal (GI) toxicity.” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) <sub>(review)</sub>
+
+> “myelosuppression, i.e., excessive reduction of blood cells levels, remains the main dose‐limiting toxicity for carboplatin, with thrombocytopenia and neutropenia frequently leading to dose reductions, treatment delays or interruptions.” — [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: Thrombocytopenia (5)</summary>
+
+> “Two dogs experienced grade 1 thrombocytopenia (one with elevated SDMA).” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(case report)</sub>
+
+> “The most common reason for dose delay or hold was hematological toxicity (thrombocytopenia, neutropenia without fever), which was most likely due to the carboplatin. ... The most common reason for carboplatin dose reduction was thrombocytopenia (n = 22).” — [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) <sub>(case report)</sub>
+
+> “The most common grade ≥3 TEAEs were anemia (n = 15, 16%) and thrombocytopenia (n = 8, 8%), but 2 (2%) patients suffered grade 4 sepsis, and 1 (1%) patient died of unspecified causes.” — [Subramani 2026](https://pubmed.ncbi.nlm.nih.gov/42291217) <sub>(case series)</sub>
+
+> “thrombocytopenia and neutropenia frequently leading to dose reductions, treatment delays or interruptions.” — [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: myelosuppression (2)</summary>
+
+> “This is also the case for gemcitabine/carboplatin treatment, which commonly induces severe myelosuppression (mainly expressed in the form of neutropenia, leukopenia, and thrombocytopenia) that may lead to non-optimal treatments in terms of postponements, reduction, or discontinuation2–6. Severe myelosuppression of Common Terminology Criteria for Adverse Events (CTCAE) grade 3–4 is roughly experienced by 50% of…” — [Björn 2020](https://pubmed.ncbi.nlm.nih.gov/32839457) <sub>(case series)</sub>
+
+> “Despite its established role in oncology, myelosuppression, i.e., excessive reduction of blood cells levels, remains the main dose‐limiting toxicity for carboplatin, with thrombocytopenia and neutropenia frequently leading to dose reductions, treatment delays or interruptions.” — [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: myelotoxicity (2)</summary>
+
+> “A platinum derivative, carboplatin, has a similar activity to cisplatin, but is different and gene rally less toxic (absence of nephrotoxicity, ototoxicity and neurotoxicity, but substantial myelotoxicity).” — [Vella 2011](https://pubmed.ncbi.nlm.nih.gov/21687948) <sub>(review)</sub>
+
+> “The target AUC was set at 4–6 mg·min/mL, as this range is most appropriate in previously treated patients, while escalation beyond 7 mg·min/mL increases myelotoxicity without improving response [13].” — [Jeon 2026](https://pubmed.ncbi.nlm.nih.gov/42076051) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Grade IV neutropenia (1)</summary>
+
+> “In addition the frequency of hematological toxicities such as grade IV neutropenia and febrile neutropenia were significantly higher among the Japanese patients (Table 4).” — [Saijo 2013](https://pubmed.ncbi.nlm.nih.gov/23225792) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: leukopenia (1)</summary>
+
+> “This is also the case for gemcitabine/carboplatin treatment, which commonly induces severe myelosuppression (mainly expressed in the form of neutropenia, leukopenia, and thrombocytopenia) that may lead to non-optimal treatments in terms of postponements, reduction, or discontinuation2–6. Severe myelosuppression of Common Terminology Criteria for Adverse Events (CTCAE) grade 3–4 is roughly experienced by 50% of…” — [Björn 2020](https://pubmed.ncbi.nlm.nih.gov/32839457) <sub>(case series)</sub>
+
+</details>
+
+### Ear
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Otoxicity | The paper states that ototoxicity is a non-hematologic adverse event for carboplatin that occurs less frequently and is generally not strongly correlated with dose or exposure, nor with myelosuppression. | less frequently | — | — | [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) |
+
+<details><summary>Evidence: Otoxicity (1)</summary>
+
+> “Non‐hematologic adverse events, such as nephrotoxicity, nausea/vomiting, peripheral neuropathy/ototoxicity and hypersensitivity reactions, occur less frequently and are generally not strongly correlated with either the dose or exposure nor with the depth or duration of myelosuppression.” — [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) <sub>(review)</sub>
+
+</details>
+
+### Gastrointestinal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Gastrointestinal toxicity | In dogs treated with carboplatin, gastrointestinal toxicity occurred in 8 out of 30 dogs (27%), with specific severe manifestations including regurgitation, anorexia, lethargy, vomiting, and diarrhoea, and was more frequent in dogs with elevated SDMA. | Eight (27%) | unknown; 300 mg/m2; Elevated SDMA; ATP7B rs1061472, rs1801249; GSR rs3594; VEGFA rs6900017, rs879825, rs9369421; SCN10A rs9825762 (ATP7B, GSR, VEGFA, SCN10A) | primary_care: owner assessment forms; laboratory: CBC | [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140), [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) |
+| Anorexia | Persistent grade 4 anorexia and lethargy occurred in one dog with elevated SDMA, and grade 3 lethargy and anorexia occurred in three dogs (12%) with normal SDMA. | 1/1 (elevated SDMA); 3/25 (12%) (normal SDMA) | elevated serum SDMA (reduced GFR) | primary_care: Complete blood count (CBC) and owner assessment | [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) |
+| Diarrhea | Diarrhea is reported as a major gastrointestinal toxicity encountered by patients in the SCOTROC1 trial who received carboplatin/taxane chemotherapy. | — | — | — | [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) |
+| Diarrhoea | One dog with normal serum SDMA concentrations experienced grade 4 diarrhoea following carboplatin chemotherapy. | — | renal function (SDMA) | home: gastrointestinal signs | [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) |
+| Mucositis | Patients in the SCOTROC1 trial, who were treated with docetaxel-carboplatin or paclitaxel-carboplatin, experienced mucositis as part of carboplatin/taxane-induced gastrointestinal toxicity, with the worst grade of GI toxicity (including mucositis, vomiting, and diarrhea) recorded as grade 0 in 19… | 16.3% (grade 3), 1.5% (grade 4) in discovery set | VEGFA rs879825 GG (VEGFA G) | — | [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) |
+| Nausea/vomiting | Nausea and vomiting with carboplatin is described as typically moderate-emetogenic and is largely mitigated by guideline-concordant prophylaxis, with no consistent relationship to hematologic nadirs. | — | — | — | [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) |
+| Regurgitation | One dog with elevated serum SDMA (19 μg/dL) was euthanized due to severe regurgitation and respiratory complications 5 days after receiving carboplatin. | 1/30 | — | primary_care: regurgitation | [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) |
+| Vomiting | One dog with normal serum SDMA concentrations experienced grade 3 vomiting following carboplatin treatment. | 1/25 | — | home: clinical status; laboratory: hematologic toxicity | [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) |
+
+<details><summary>Evidence: Gastrointestinal toxicity (2)</summary>
+
+> “Eight (27%) developed GI toxicity... Of the five dogs with elevated SDMA, four (80%) experienced grades 3‐4 GI toxicity. As noted above, one dog with adverse GI signs was euthanized due to severe regurgitation and respiratory complications. Another dog was euthanized 13 days post‐chemotherapy due to persistent grade 4 anorexia and lethargy.” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(case series)</sub>
+
+> “20-30% of patients will face grade III/IV peripheral neuropathy, 30-40% grade IV neutropenia and 20% grade III/IV gastrointestinal (GI) toxicity. Carboplatin/taxane-induced mucositis, diarrhea and vomiting represent a major GI toxicity that patients encountered in the SCOTROC1 trial, which recruited 1077 ovarian cancer patients to treatment with either docetaxel-carboplatin or paclitaxelcarboplatin.” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Anorexia (1)</summary>
+
+> “Another dog was euthanized 13 days post‐chemotherapy due to persistent grade 4 anorexia and lethargy. In comparison, three dogs (12%) with normal SDMA concentrations developed grade 3 lethargy and anorexia, with one dog experiencing grade 3 vomiting and grade 4 diarrhoea (Table 4).” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: diarrhea (1)</summary>
+
+> “Carboplatin/taxane-induced mucositis, diarrhea and vomiting represent a major GI toxicity that patients encountered in the SCOTROC1 trial, which recruited 1077 ovarian cancer patients to treatment with either docetaxel-carboplatin or paclitaxelcarboplatin.” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: Diarrhoea (1)</summary>
+
+> “In comparison, three dogs (12%) with normal SDMA concentrations developed grade 3 lethargy and anorexia, with one dog experiencing grade 3 vomiting and grade 4 diarrhoea (Table 4).” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: mucositis (1)</summary>
+
+> “Carboplatin/taxane-induced mucositis, diarrhea and vomiting represent a major GI toxicity that patients encountered in the SCOTROC1 trial, which recruited 1077 ovarian cancer patients to treatment with either docetaxel-carboplatin or paclitaxelcarboplatin.” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Nausea/vomiting (1)</summary>
+
+> “Nausea/vomiting with carboplatin is typically moderate‐emetogenic and largely mitigated by guideline‐concordant prophylaxis, with no consistent relationship to hematologic nadirs.” — [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Regurgitation (1)</summary>
+
+> “The fifth dog with an elevated serum SDMA (19 μg/dL) was euthanized due to severe regurgitation and respiratory complications 5 days after receiving carboplatin.” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Vomiting (1)</summary>
+
+> “In comparison, three dogs (12%) with normal SDMA concentrations developed grade 3 lethargy and anorexia, with one dog experiencing grade 3 vomiting and grade 4 diarrhoea (Table 4).” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(animal)</sub>
+
+</details>
+
+### General
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Death | Three of five dogs with elevated SDMA died or were euthanized following carboplatin treatment, while none of the dogs with normal SDMA died as a result of treatment. | 3/5 (60%) | elevated serum SDMA (&gt; 14 μg/dL); reduced carboplatin clearance | home: clinical status; home: drug administration | [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) |
+| Lethargy | In dogs treated with carboplatin, lethargy occurred as part of gastrointestinal toxicity, with three dogs (12%) with normal SDMA concentrations developing grade 3 lethargy and anorexia, and one dog with elevated SDMA being euthanized 13 days post-chemotherapy due to persistent grade 4 anorexia and… | 3/25 (12%) | elevated serum SDMA (&gt; 14 μg/dL) | home: clinical status | [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) |
+
+<details><summary>Evidence: Death (1)</summary>
+
+> “Three of five dogs with elevated SDMA died or were euthanized following treatment. Dogs with elevated serum SDMA had significantly higher odds of death following carboplatin chemotherapy compared with dogs with normal SDMA, none of which died as a result of treatment (OR = 1.84, 95% CI: 1.22–14.0; p &lt; 0.001).” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Lethargy (1)</summary>
+
+> “Another dog was euthanized 13 days post‐chemotherapy due to persistent grade 4 anorexia and lethargy. In comparison, three dogs (12%) with normal SDMA concentrations developed grade 3 lethargy and anorexia, with one dog experiencing grade 3 vomiting and grade 4 diarrhoea (Table 4).” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(animal)</sub>
+
+</details>
+
+### Infection
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Sepsis | One dog with elevated SDMA treated with carboplatin was euthanized due to sepsis. | 1 of 5 dogs with elevated SDMA | elevated SDMA | — | [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140), [Subramani 2026](https://pubmed.ncbi.nlm.nih.gov/42291217) |
+
+<details><summary>Evidence: Sepsis (2)</summary>
+
+> “Three dogs with elevated SDMA experienced grade 4 neutropenia; one was euthanized due to sepsis.” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(case report)</sub>
+
+> “The most common grade ≥3 TEAEs were anemia (n = 15, 16%) and thrombocytopenia (n = 8, 8%), but 2 (2%) patients suffered grade 4 sepsis, and 1 (1%) patient died of unspecified causes.” — [Subramani 2026](https://pubmed.ncbi.nlm.nih.gov/42291217) <sub>(case series)</sub>
+
+</details>
+
+### Kidney and urinary tract
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Nephrotoxicity | The paper states that large amounts of ginseng, aristolochic acid-containing herbs and some green tea extracts cause acute tubular necrosis, interstitial nephritis, or CKD either alone or in combination with nephrotoxic chemotherapy agents (e.g., cisplatin, carboplatin; or methotrexate). | — | ginseng, aristolochic acid-containing herbs and some green tea extracts; impaired organ function; prior cisplatin exposure (unknown); co-medications (unknown) | hospital: renal function | [Talath 2026](https://pubmed.ncbi.nlm.nih.gov/42147231), [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252), [Morita 2026](https://pubmed.ncbi.nlm.nih.gov/42654063) |
+
+<details><summary>Evidence: Nephrotoxicity (3)</summary>
+
+> “Large amounts of ginseng, aristolochic acid-containing herbs and some green tea extracts cause acute tubular necrosis, interstitial nephritis, or CKD either alone or in combination with nephrotoxic chemotherapy agents (e.g., cisplatin, carboplatin; or methotrexate).” — [Talath 2026](https://pubmed.ncbi.nlm.nih.gov/42147231) <sub>(review)</sub>
+
+> “Nephrotoxicity with carboplatin is uncommon relative to cisplatin 91 and is influenced mainly by baseline renal function, prior cisplatin exposure, hydration status and co‐medications.” — [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) <sub>(review)</sub>
+
+> “Cisplatin is generally administered at a fixed dose based on body surface area, although it is often avoided or dose-reduced in patients with impaired renal function (e.g., GFR &lt; 60 mL/min) due to its nephrotoxicity [9].” — [Morita 2026](https://pubmed.ncbi.nlm.nih.gov/42654063) <sub>(case report)</sub>
+
+</details>
+
+### Neoplasm
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Headache | Head/headache was reported in 20 (53%) of all patients, with 4 (44%) in the HER2-negative cohort and 10 (34%) in the HER2-positive cohort experiencing grade 1, and 6 (21%) in the HER2-positive cohort experiencing grade 2. | 20 (53%) | — | — | [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) |
+
+<details><summary>Evidence: headache (1)</summary>
+
+> “Head/headache20 (53%)4 (44%)10 (34%)6 (21%)” — [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) <sub>(cohort)</sub>
+
+</details>
+
+### Nervous system
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Peripheral neuropathy | 20-30% of ovarian cancer patients treated with platinum (cisplatin or carboplatin)-based chemotherapy in combination with a taxane agent face grade III/IV peripheral neuropathy. | 20-30% | — | — | [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361), [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) |
+
+<details><summary>Evidence: peripheral neuropathy (2)</summary>
+
+> “Despite the therapeutic impact of platinum in conjunction with taxane agents in the management of ovarian cancer, 20-30% of patients will face grade III/IV peripheral neuropathy, 30-40% grade IV neutropenia and 20% grade III/IV gastrointestinal (GI) toxicity.” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) <sub>(review)</sub>
+
+> “Non‐hematologic adverse events, such as nephrotoxicity, nausea/vomiting, peripheral neuropathy/ototoxicity and hypersensitivity reactions, occur less frequently and are generally not strongly correlated with either the dose or exposure nor with the depth or duration of myelosuppression.” — [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) <sub>(review)</sub>
+
+</details>
+
+### Other
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Hypersensitivity reactions | The paper states that hypersensitivity reactions are non-hematologic adverse events that occur less frequently than myelosuppression and are more closely related to cumulative exposure, such as after multiple cycles. | occur less frequently | cumulative exposure | hospital: late hypersensitivity | [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) |
+
+<details><summary>Evidence: Hypersensitivity reactions (1)</summary>
+
+> “Hypersensitivity reactions are more closely related to cumulative exposure (e.g., after multiple cycles) and are not predicted by myelosuppression; if biomarker‐guided dosing enables longer treatment duration at tolerable counts, vigilance for late hypersensitivity remains warranted.” — [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) <sub>(review)</sub>
+
+</details>
+
 ## ADME sites
 
 Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=carboplatin).

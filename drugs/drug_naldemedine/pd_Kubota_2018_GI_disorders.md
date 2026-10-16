@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper describes a logistic exposure-response model where naldemedine exposure (AUCss) is associated with the binary occurrence of gastrointestinal disorders, but it does not specify the underlying pharmacodynamic mechanism (e.g., direct effect, effect compartment, or production/elimination kinetics). The record lists logistic coefficients (a and b) for the relationship, but the paper does not provide specific potency or rate parameters such as EC50, Emax, or ke0.
+> Naldemedine plasma concentrations were modeled to increase the probability of gastrointestinal disorders (defined as mild, moderate, or severe) using a categorical logistic model. The analysis included multiple parameter estimates (a: -1.76, -2.75, -1.72, -4.39; b: 0.0310, 0.0254, 0.0106, 0.0125, 0.015) without specific potency values like EC50 or mechanistic rate constants, indicating a direct exposure-response relationship driven by AUCss.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kubota_2018`
 - **model family:** `categorical`

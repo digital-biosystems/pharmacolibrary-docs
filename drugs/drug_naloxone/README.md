@@ -28,7 +28,7 @@ Naloxone is an opioid antagonist used to reverse opioid overdose, and it has als
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-15 01:05 | 2:51 | 0/1/1 | 1/0/0 | 0/0/0 | 188,207/13,693 | einfracz / qwen3.8-27b | 12 | 4/8 | 10/2 | 1 |
+| 2026-10-16 08:27 | 0:26 | 0/1/1 | 1/0/0 | 0/0/0 | 20,216/1,661 | einfracz / qwen3.8-27b | 12 | 4/8 | 10/2 | 1 |
 
 ## popPK records
 
@@ -72,7 +72,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 ## Coverage
 
 - **PubMed hits:** 432 matched, 61 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 7  ·  **relevant:** 2
 - **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -93,7 +93,7 @@ _10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Ershad_2020.pdf` | Ershad M et al., Opioid Toxidrome Following Grapefruit J…, Journal of addiction medici… (2020) | pgx | 7 | [10.1097/ADM.0000000000000535](https://doi.org/10.1097/ADM.0000000000000535) | [31206401](https://www.ncbi.nlm.nih.gov/pubmed/31206401) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Grahl_2025.pdf` | Grahl J et al., Pharmacogenetic Evaluation of Hospitali…, Hospital pharmacy (2025) | pgx | 5 | [10.1177/00185787251339360](https://doi.org/10.1177/00185787251339360) | [40406364](https://www.ncbi.nlm.nih.gov/pubmed/40406364) | metadata signals extractable PGX data (CYP1A2) |
 
-<sub>queue written 2026-10-15T01:03:30.481998+00:00</sub>
+<sub>queue written 2026-10-16T08:27:32.683024+00:00</sub>
 
 ## Screened and excluded
 

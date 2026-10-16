@@ -67,7 +67,7 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Lin_2014.pdf` | Lin DH et al., Bioavailability of oral methylnaltrexon…, Drug development and indust… (2014) | popPK | 8 | [10.3109/03639045.2012.753899](https://doi.org/10.3109/03639045.2012.753899) | [23327357](https://pubmed.ncbi.nlm.nih.gov/23327357) | Reports quantitative PK parameters (Cmax, Tmax, T1/2, AUC) for methylnaltrexone in rats, though specific clearance/volume values are not provided. |
 | `Kolbow_2016.pdf` | Kolbow J et al., Extended-release but not immediate-rele…, Journal of clinical pharmac… (2016) | popPK | 5 | [10.1002/jcph.624](https://doi.org/10.1002/jcph.624) | [26313157](https://pubmed.ncbi.nlm.nih.gov/26313157) | The study is a pharmacodynamic trial focusing on gut transit time and only reports relative bioavailability percentages rather than quantitative compartmental PK parameters like CL or V for methylnaltrexone. |
 
-<sub>queue written 2026-10-15T00:58:17.874919+00:00</sub>
+<sub>queue written 2026-10-16T08:23:53.612152+00:00</sub>
 
 ## Screened and excluded
 

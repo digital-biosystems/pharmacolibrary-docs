@@ -27,7 +27,7 @@ Bempedoic acid is a lipid-lowering medicine used to treat high cholesterol and o
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-15 01:08 | 1:05 | 0/0/2 | 0/0/0 | 0/0/0 | 70,798/4,899 | einfracz / qwen3.8-27b | 5 | 0/3 | 5/0 | 0 |
+| 2026-10-16 08:40 | 0:11 | 0/0/2 | 0/0/0 | 0/0/0 | 5,742/792 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
 
 ## popPK records
 
@@ -62,7 +62,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 ## Coverage
 
 - **PubMed hits:** 12 matched, 9 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 4  ·  **relevant:** 2
 - **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

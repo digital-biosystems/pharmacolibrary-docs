@@ -18,9 +18,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper describes a univariate logistic regression analysis linking model-predicted pertuzumab cycle 7 Ctrough (µg/mL) to the binary response of total pathologic complete response (tpCR), but it does not specify a mechanistic model (e.g., Emax, indirect response) or provide potency parameters such as EC50 or Imax. The analysis found a slightly positive trend (p = 0.048) that was not statistically significant after adjusting for baseline hormone receptor status (p = 0.069), with median Ctrough values of 92 µg/mL for responders and 86 µg/mL for non-responders.
+> The paper describes an univariate logistic exposure-response analysis assessing the association between model-predicted pertuzumab cycle 7 Ctrough (in μg/mL) and the binary total pathologic complete response (tpCR), finding a slightly positive trend that was not statistically significant after adjustment for baseline hormone receptor status. The excerpt does not specify the pharmacodynamic mechanism (e.g., Emax, inhibition) or provide potency parameters (such as IC50, EC50, or Imax) or rate constants (ke0, kin, kout).
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Wang_2021`
 - **model family:** `categorical`

@@ -73,7 +73,7 @@ Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `schola
 |---|---|---|
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T1b_fmu` | skipped | FMU check not run: fmi2GetReal failed with status 3 (error). |
 | `T2_direction` | skipped | effect_direction 'inhibition' |
 | `T3_plausibility` | fail | gamma 11.6 outside 0.1–10 |
 | `T4_defaults` | fail | a core parameter took a library default: E0 |

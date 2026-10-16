@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper describes a logistic exposure-response model where the steady-state AUC (AUCss) of naldemedine directly predicts the probability of being a spontaneous bowel movement (SBM) responder, without specifying a physiological mechanism such as production or elimination rates. The model parameters are reported as intercepts (a = -0.314, -0.537) and slopes (b = 0.0191, 0.0194) for the phase 2b and phase 3 studies, respectively, but no potency values (e.g., EC50) or rate constants are provided.
+> Naldemedine exposure, specifically steady-state AUC, directly drives the probability of becoming a spontaneous bowel movement (SBM) responder through a logistic model with a positive proportional effect (intercept $a = -0.314$, slope $b = 0.0191$). The paper does not provide an underlying mechanism of action (e.g., inhibition or direct Emax) or specific potency metrics (IC50, EC50) for this statistical model.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Kubota_2018`
 - **model family:** `categorical`

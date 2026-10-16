@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;oil&quot;,&quot;href&quot;:&quot;drugs/drug_oil/&quot;},{&quot;label&quot;:&quot;Ornano_2015 \u00b7 PD cell viability (MDA-MB 231)&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;oil&quot;,&quot;href&quot;:&quot;drugs/drug_oil/&quot;},{&quot;label&quot;:&quot;Eftekhari_2019 \u00b7 PD Acetylcholinesterase activity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cell viability (MDA-MB 231) — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+# Acetylcholinesterase activity — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -11,32 +11,31 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-> **Species: in vitro.** This record comes from an in-vitro study (cells, tissue or microsomes), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
+> **Species: other animal.** This record comes from an animal study (other animal), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
 ## Record summary
 
-**As extracted:** Essential oil (measured concentrations) drives cell viability (MDA-MB 231) (in µg/ml) (inhibition; the model form was not identified).
+**As extracted:** Essential oil (measured concentrations) drives Acetylcholinesterase activity: direct linear effect.
 
 **Model:** No model was generated from this record.
 
-> The essential oil exerts a concentration-dependent inhibitory effect on MDA-MB 231 cell viability, with an IC50 of 44.29 µg/ml. The paper does not specify the mechanism of action or rate constants.
+> The essential oil directly inhibits Acetylcholinesterase (AChE) activity, as determined by a linear regression of the Ellman assay response. The paper reports an IC50 of 0.117 µg/mL, with no kinetic or mechanistic parameters (e.g., effect compartment or rate constants) provided.
 >
 > <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
-- **paper:** `Ornano_2015`
-- **model family:** `unknown`
+- **paper:** `Eftekhari_2019`
+- **model family:** `linear`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
 - **effect:** inhibition/unknown
 
 ## Citation
-Ornano L et al., Chemical composition and biological act…, Journal of oleo science (2015)
-  ·  DOI: [10.5650/jos.ess14171](https://doi.org/10.5650/jos.ess14171)
+Eftekhari M et al., Oliveria decumbens, a Bioactive Essenti…, Iranian journal of pharmace… (2019)
 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | IC50 | `Q322` · not captured | 44.29 | µg/ml | not captured | llm (not captured) | Ornano_2015:pdv3 |
+| PD (effect) | IC50 | `Q322` · not captured | 0.117 | µg/mL | not captured | llm (not captured) | Eftekhari_2019:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>

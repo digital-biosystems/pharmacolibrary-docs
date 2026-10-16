@@ -29,7 +29,7 @@ Clofibrate is a fibrate lipid-lowering drug that was used to treat high blood li
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-15 01:15 | 2:25 | 1/1/0 | 2/0/0 | 0/0/0 | 231,660/6,121 | einfracz / qwen3.8-27b | 8 | 0/7 | 8/0 | 0 |
+| 2026-10-16 08:42 | 0:11 | 1/1/0 | 2/0/0 | 0/0/0 | 8,814/709 | einfracz / qwen3.8-27b | 8 | 0/8 | 8/0 | 0 |
 
 ## popPK records
 
@@ -69,7 +69,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 ## Coverage
 
 - **PubMed hits:** 99 matched, 87 returned
-- **screened:** 1  ·  **relevant:** 0
+- **screened:** 4  ·  **relevant:** 0
 - **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

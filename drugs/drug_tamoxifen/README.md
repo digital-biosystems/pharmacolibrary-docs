@@ -104,6 +104,416 @@ Tamoxifen is an anti-estrogen medicine used to treat breast cancer, and it has a
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+## Adverse drug reactions (ADR)
+
+47 reaction(s) reported in 13 paper(s). Read from the full texts by a language model, which also wrote the one-sentence descriptions; each sentence quoted under a reaction was checked to occur in the paper, the rest is not checked by a person. Frequencies are as the papers print them, for their own populations and definitions.
+
+### Blood
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Leucopenia | Mild and transient leucopenia is reported with some frequency in about 2% of patients, but the association with tamoxifen treatment is uncertain. | 2% | — | — | Buckley 1989 |
+| Thrombocytopenia | Haematological changes such as thrombocytopenia are reported infrequently in patients, generally occurring in about 2% of patients, though the association with tamoxifen treatment in the presence of malignant disease is uncertain. | about 2% | — | — | Buckley 1989 |
+| Thrombosis | The paper states that tamoxifen has serious risks such as thrombosis. | — | — | — | [Sifontes-Rodríguez 2024](https://pubmed.ncbi.nlm.nih.gov/39457604) |
+
+<details><summary>Evidence: leucopenia (1)</summary>
+
+> “Haematological changes such as thrombocytopenia and leucopenia are reported infrequently, but the relationship to treatment is uncertain.” — Buckley 1989 <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: thrombocytopenia (1)</summary>
+
+> “Haematological changes such as thrombocytopenia and leucopenia are reported infrequently, but the relationship to treatment is uncertain.” — Buckley 1989 <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: thrombosis (1)</summary>
+
+> “However, tamoxifen has serious risks such as thrombosis, strokes, endometrial cancer and hepatotoxicity, while clomiphene can cause ovarian hyperstimulation syndrome and multiple pregnancies.” — [Sifontes-Rodríguez 2024](https://pubmed.ncbi.nlm.nih.gov/39457604) <sub>(review)</sub>
+
+</details>
+
+### Cardiovascular
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Thromboembolic events | Thromboembolic events have been reported very rarely as an adverse effect of tamoxifen therapy. | very rarely | warfarin | — | Buckley 1989, [Lintermans 2011](https://pubmed.ncbi.nlm.nih.gov/21428848/) |
+| Breast cancer recurrence | In a retrospective analysis of 213 patients coprescribed moderate or potent CYP2D6 inhibitors with tamoxifen, the paper reports a greater than two-fold higher risk of breast cancer recurrence compared to patients not receiving such inhibitors. | — | CYP2D6 poor metabolizer genotype (eg, *3, *4, *5, *6) (CYP2D6 null_activity); coprescription of potent CYP2D6 inhibitors (e.g., paroxetine, fluoxetine, quinidine, thioridazine); CYP2D6 extensive metabolizer (CYP2D6 functional) | home: breast cancer recurrence; primary_care: breast cancer recurrence | [Sideras 2010](https://pubmed.ncbi.nlm.nih.gov/20439629) |
+| Cerebrovascular events | In the ATAC trial at 100 months of follow-up, patients treated with tamoxifen experienced more cerebrovascular events than those treated with anastrozole. | 91 events | — | — | [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) |
+| Hypercholesterolemia | Postmenopausal women carrying specific ESR1-Xba I and ESR2-02 genotypes experienced tamoxifen-induced changes in total cholesterol. | — | ESR1-Xba I (ESR1 Xba I) | — | [Tan 2008](https://pubmed.ncbi.nlm.nih.gov/19088019/) |
+| QT interval prolongation | Tamoxifen is a CYP2D6 substrate and an inhibitor of repolarizing potassium currents (Ikr), which may explain a pronounced effect on QTc interval when administered in combination with SSRIs, including paroxetine. | — | SSRIs, including paroxetine | — | [van 2026](https://pubmed.ncbi.nlm.nih.gov/41535245) |
+| Strokes | The paper lists strokes among the serious risks of tamoxifen, without specifying the population, frequency, or context in which they occurred. | — | — | — | [Sifontes-Rodríguez 2024](https://pubmed.ncbi.nlm.nih.gov/39457604) |
+| Thromboembolic disease | Tamoxifen use is associated with an increased incidence of thromboembolic disease due to its activity as a partial agonist at the ER. | — | — | — | [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) |
+| Venous thromboembolism | Venous thromboembolism is reported as a more rare and more severe adverse reaction to tamoxifen. | more rare | — | — | [Cronin-Fenton 2018](https://pubmed.ncbi.nlm.nih.gov/29801584) |
+
+<details><summary>Evidence: thromboembolic events (2)</summary>
+
+> “Thromboembolic events have been reported very rarely, and in contrast, potentiation of the anticoagulant effect of warfarin; ocular disturbances, generally in association with very high dosages, have also been described in rare instances.” — Buckley 1989 <sub>(case report)</sub>
+
+> “In IES, the switch to exemestane clearly showed a significant reduction in thromboembolic events compared with tamoxifen (2.3 vs 1.2%, respectively; p = 0.004).” — [Lintermans 2011](https://pubmed.ncbi.nlm.nih.gov/21428848/) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: breast cancer recurrence (1)</summary>
+
+> “Aubert et al 16 demonstrated a greater than two-fold higher risk of breast cancer recurrence when moderate or potent CYP2D6 inhibitors were coprescribed with tamoxifen (n ϭ 213), while there was no statistically significant association with recurrence in patients coadministered weak inhibitors (n ϭ 137).” — [Sideras 2010](https://pubmed.ncbi.nlm.nih.gov/20439629) <sub>(case-control)</sub>
+
+</details>
+
+<details><summary>Evidence: cerebrovascular events (1)</summary>
+
+> “Consistent with data at 68 month follow-up at 100 months ATAC revealed that tamoxifen was associated with more cerebrovascular events compared to anastrozole (91 vs 64, odds ratio 1.44 (95% CI 1.04 --1.99), p = 0.03).” — [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) <sub>(randomised trial)</sub>
+
+</details>
+
+<details><summary>Evidence: hypercholesterolemia (1)</summary>
+
+> “ESR1-Xba I and ESR2-02 genotypes associated with tamoxifen-induced changes in total cholesterol and triglycerides, respectively, in postmenopausal women (41).” — [Tan 2008](https://pubmed.ncbi.nlm.nih.gov/19088019/) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: QT interval prolongation (1)</summary>
+
+> “There are cases, where interactions may occur at pharmacodynamic level, as with tamoxifen, a drug known to prolong QT interval. Tamoxifen is not only a CYP2D6 substrate but also an inhibitor of repolarizing potassium currents (Ikr), which may explain the pronounced effect on QTc interval when administered in combination with SSRIs, including paroxetine.” — [van 2026](https://pubmed.ncbi.nlm.nih.gov/41535245) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: strokes (1)</summary>
+
+> “However, tamoxifen has serious risks such as thrombosis, strokes, endometrial cancer and hepatotoxicity, while clomiphene can cause ovarian hyperstimulation syndrome and multiple pregnancies.” — [Sifontes-Rodríguez 2024](https://pubmed.ncbi.nlm.nih.gov/39457604) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: thromboembolic disease (1)</summary>
+
+> “the use of tamoxifen is limited by its activity as a partial agonist at the ER, which results in adverse effects that include an increased incidence of endometrial cancer, uterine sarcoma and thromboembolic disease [4,5].” — [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Venous thromboembolism (1)</summary>
+
+> “Tamoxifen induces mild to moderate adverse effects, including hot flashes and vasomotor symptoms, but more rare and more severe adverse reactions including depression, venous thromboembolism, and endometrial cancer have also been reported.” — [Cronin-Fenton 2018](https://pubmed.ncbi.nlm.nih.gov/29801584) <sub>(review)</sub>
+
+</details>
+
+### Endocrine and metabolic
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Hot flashes | Hot flashes were reported in 47.8% of rapid metabolizers (RM) and 36.7% of slow metabolizers (SM) of tamoxifen, with no significant statistical difference between the groups (p = 0.526). | 47.8% of RM vs. 36.7% of SM | CYP2D6 polymorphisms (RM vs SM); postmenopausal (un unknown) | home: symptoms the patient reports, self-measurements | [Blancas 2025](https://pubmed.ncbi.nlm.nih.gov/40214721), [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/), [Lintermans 2011](https://pubmed.ncbi.nlm.nih.gov/21428848/), [Sifontes-Rodríguez 2024](https://pubmed.ncbi.nlm.nih.gov/39457604) |
+| Hot flushes | Hot flushes were observed in 10 to 20% of patients, with the incidence being higher in premenopausal women compared to postmenopausal women. | 10 to 20%of patients | premenopausal | — | Buckley 1989 |
+
+<details><summary>Evidence: hot flashes (4)</summary>
+
+> “Osteoarticular pain occurred in 60% of RM vs. 50% of SM (p = 0.566), hot flashes in 47.8% of RM vs. 36.7% of SM (p = 0.526), and asthenia in 40% of RM vs. 51.7% of SM (p = 0.164).” — [Blancas 2025](https://pubmed.ncbi.nlm.nih.gov/40214721) <sub>(cohort)</sub>
+
+> “In the ATAC study at 68 and 100 months of follow-up, the incidence of vaginal bleeding, vaginal discharge and hot flashes was higher in the tamoxifen group.” — [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) <sub>(randomised trial)</sub>
+
+> “In a TEAM substudy, hot flashes were reported to be significantly worse during treatment with tamoxifen than with exemestane. Both frequency and intensity increased by month 3 and decreased thereafter for both patient groups [71].” — [Lintermans 2011](https://pubmed.ncbi.nlm.nih.gov/21428848/) <sub>(case report)</sub>
+
+> “They both can cause hot flashes, nausea, headaches, and cataracts; affect mood; and have effects on the reproductive system (tamoxifen can cause menstrual changes and clomiphene can induce multiple ovulation).” — [Sifontes-Rodríguez 2024](https://pubmed.ncbi.nlm.nih.gov/39457604) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: hot flushes (1)</summary>
+
+> “The most frequent adverse effects overall are hot flushes, apparent in 10 to 20%of patients, and more common in premenopausal women.” — Buckley 1989 <sub>(review)</sub>
+
+</details>
+
+### Eye
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Cataracts | The paper states that tamoxifen can cause cataracts, noting it is more associated with long-term adverse effects than clomiphene. | — | — | — | [Sifontes-Rodríguez 2024](https://pubmed.ncbi.nlm.nih.gov/39457604) |
+| Ocular disturbances | Ocular disturbances, including retinopathy and corneal changes, have been reported rarely in association with very high dosages of tamoxifen (more than 180mg daily for over a year) and also, rarely, in patients receiving dosages of 30mg or less daily. | rarely | — | — | Buckley 1989 |
+| Visual disturbances | The paper reports an increased incidence of visual disturbances in patients treated with exemestane compared with those treated with tamoxifen in the IES trial. | 5.0% | — | — | [Lintermans 2011](https://pubmed.ncbi.nlm.nih.gov/21428848/) |
+
+<details><summary>Evidence: cataracts (1)</summary>
+
+> “They both can cause hot flashes, nausea, headaches, and cataracts; affect mood; and have effects on the reproductive system (tamoxifen can cause menstrual changes and clomiphene can induce multiple ovulation). However, tamoxifen has serious risks such as thrombosis, strokes, endometrial cancer and hepatotoxicity, while clomiphene can cause ovarian hyperstimulation syndrome and multiple pregnancies. Tamoxifen is more…” — [Sifontes-Rodríguez 2024](https://pubmed.ncbi.nlm.nih.gov/39457604) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: ocular disturbances (1)</summary>
+
+> “Thromboembolic events have been reported very rarely, and in contrast, potentiation of the anticoagulant effect of warfarin; ocular disturbances, generally in association with very high dosages, have also been described in rare instances.” — Buckley 1989 <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Visual disturbances (1)</summary>
+
+> “Unlike the nonsteroidal AIs, exemestane has also been associated with an increased incidence of mild grade 1/2 diarrhea (exemestane, 4.7% vs tamoxifen, 2.7%; p = 0.0002) in IES [22] and visual disturbances (exemestane, 5.0% vs tamoxifen, 3.8%; p = 0.04).” — [Lintermans 2011](https://pubmed.ncbi.nlm.nih.gov/21428848/) <sub>(randomised trial)</sub>
+
+</details>
+
+### Gastrointestinal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Nausea | Smoking patients treated with tamoxifen had a higher probability of experiencing nausea compared to non-smokers. | — | smoking | — | [Sanchez-Spitman 2019](https://pubmed.ncbi.nlm.nih.gov/31008668/), [Sanchez-Spitman 2019](https://pubmed.ncbi.nlm.nih.gov/31008668) |
+| Diarrhea | Patients in the IES trial treated with exemestane had a higher incidence of mild grade 1/2 diarrhea (4.7%) compared with those treated with tamoxifen (2.7%). | 4.7% | — | — | [Lintermans 2011](https://pubmed.ncbi.nlm.nih.gov/21428848/) |
+| Hysterectomy | Retrospective data from the ATAC trial indicated that women taking tamoxifen had an almost fourfold increase in the number of hysterectomies compared to those taking anastrozole. | 5.1% | — | — | [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) |
+| Nausea and vomiting | Nausea and vomiting occur in around 10% of patients. | around 10% | — | — | Buckley 1989 |
+| Night sweats | Patients taking tamoxifen in the ATAC trial reported night sweats at a rate of 21.3%. | 21.3 | — | — | [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) |
+| Vaginal bleeding | In postmenopausal women treated with tamoxifen in the ATAC trial, the incidence of vaginal bleeding was higher compared to those treated with anastrozole, with a reported rate of 10.2% at 68 months follow-up. | 10.2 | anastrozole | — | [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) |
+| Vaginal discharge | In the ATAC study at 68 and 100 months of follow-up, the incidence of vaginal bleeding, vaginal discharge and hot flashes was higher in the tamoxifen group. | 13.2 | — | — | [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) |
+
+<details><summary>Evidence: Nausea (2)</summary>
+
+> “However, Zhan and colleagues reported that smoking patients treated with tamoxifen presented higher probability of side effects like nausea, headaches, and depression in comparison with non-smokers [96].” — [Sanchez-Spitman 2019](https://pubmed.ncbi.nlm.nih.gov/31008668/) <sub>(case report)</sub>
+
+> “However, Zhan and colleagues reported that smoking patients treated with tamoxifen presented higher probability of side effects like nausea, headaches, and depression in comparison with non-smokers [96].” — [Sanchez-Spitman 2019](https://pubmed.ncbi.nlm.nih.gov/31008668) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Diarrhea (1)</summary>
+
+> “Unlike the nonsteroidal AIs, exemestane has also been associated with an increased incidence of mild grade 1/2 diarrhea (exemestane, 4.7% vs tamoxifen, 2.7%; p = 0.0002) in IES [22] and visual disturbances (exemestane, 5.0% vs tamoxifen, 3.8%; p = 0.04).” — [Lintermans 2011](https://pubmed.ncbi.nlm.nih.gov/21428848/) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: hysterectomy (1)</summary>
+
+> “Retrospective data from ATAC assessing all gynecologic adverse events and interventions found that women taking tamoxifen experienced significantly more gynecologic adverse events than those taking anastrozole (34.2 vs 20.5%; p &lt; 0.0001) and this led to more diagnostic and/or therapeutic interventions, including an almost fourfold increase in the number of hysterectomies (5.1 vs 1.3%; p &lt; 0.0001).” — [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: nausea and vomiting (1)</summary>
+
+> “Nausea and/ or vomiting are reported to occur in around 10% of patients (Legha 1988)” — Buckley 1989 <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: night sweats (1)</summary>
+
+> “In the health-related quality of life (HRQoL) substudy from ATAC discussed in the next section, patients taking tamoxifen reported more vaginal discharge (5.2 vs 1.2%), cold sweats (9.1 vs 7.7%) and night sweats (21.3 vs 17.8%) while those taking anastrozole reported more vaginal dryness (18.5 vs 9.1%) dyspareunia (17.3 vs 8.1%) and reduced libido (34 vs 26.1%) [42,43].” — [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) <sub>(meta-analysis)</sub>
+
+</details>
+
+<details><summary>Evidence: vaginal bleeding (1)</summary>
+
+> “In the ATAC study at 68 and 100 months of follow-up, the incidence of vaginal bleeding, vaginal discharge and hot flashes was higher in the tamoxifen group.” — [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) <sub>(other)</sub>
+
+</details>
+
+<details><summary>Evidence: vaginal discharge (1)</summary>
+
+> “In the ATAC study at 68 and 100 months of follow-up, the incidence of vaginal bleeding, vaginal discharge and hot flashes was higher in the tamoxifen group.” — [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) <sub>(case series)</sub>
+
+</details>
+
+### General
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Asthenia | Asthenia occurred in 40% of rapid metabolizers (RM) and 51.7% of slow metabolizers (SM) among breast cancer patients treated with tamoxifen, with no significant association found with CYP2D6 phenotype (p = 0.164). | 40% of RM vs. 51.7% of SM | — | — | [Blancas 2025](https://pubmed.ncbi.nlm.nih.gov/40214721) |
+| Cold sweats | In the health-related quality of life (HRQoL) substudy from the ATAC trial, patients taking tamoxifen reported cold sweats in 9.1% of cases compared to 7.7% in the anastrozole group. | 9.1 | — | — | [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) |
+| Decreased survival | Tamoxifen-treated homozygotes had three times the risk of death compared with heterozygotes or wild-type. | — | SULT1A1*2 homozygotes (SULT1A1 SULT1A1*2) | — | [Tan 2008](https://pubmed.ncbi.nlm.nih.gov/19088019/) |
+| Discontinuation | In the study of 667 patients with non-metastatic breast cancer receiving tamoxifen, the proportion of patients who discontinued treatment due to side effects was similar between those younger than 65 years (9%) and those 65 years and older (10%). | 10% versus 9% | — | — | [Souwer 2023](https://pubmed.ncbi.nlm.nih.gov/37067610/) |
+| Disease flare | A 'flare' reaction, characterized by an increase in pain, swelling or erythema in a soft tissue lesion, increase in pain associated with osseous metastases, or evidence of hypercalcaemia predominantly in patients with bone metastases, occurs early in therapy. | a number of patients | unknown | hospital: signs of hypercalcaemia | Buckley 1989 |
+| Fatigue | Fatigue was frequently reported in patients receiving treatment in the clinical trials discussed, specifically in both the exemestane and tamoxifen treatment groups. | — | — | — | [Lintermans 2011](https://pubmed.ncbi.nlm.nih.gov/21428848/) |
+| Side effects | The paper states that side effects were a reason for treatment discontinuation in 56 patients (8% of the total cohort), with the proportion being similar across age groups (10% in older vs 9% in younger, p = 0.57). | n = 56, 8% | age groups &lt; 65 and 65 and older | — | [Souwer 2023](https://pubmed.ncbi.nlm.nih.gov/37067610/) |
+| Treatment discontinuation due to side effects | The paper reports a small increased risk for tamoxifen treatment discontinuation due to side effects in patients with higher endoxifen concentrations. | OR: 1.006 95% CI 0.961–1.053, p value: 0.798 | higher endoxifen concentrations | — | [Sanchez-Spitman 2020](https://pubmed.ncbi.nlm.nih.gov/32468081) |
+
+<details><summary>Evidence: asthenia (1)</summary>
+
+> “Osteoarticular pain occurred in 60% of RM vs. 50% of SM (p = 0.566), hot flashes in 47.8% of RM vs. 36.7% of SM (p = 0.526), and asthenia in 40% of RM vs. 51.7% of SM (p = 0.164).” — [Blancas 2025](https://pubmed.ncbi.nlm.nih.gov/40214721) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: cold sweats (1)</summary>
+
+> “In the health-related quality of life (HRQoL) substudy from ATAC discussed in the next section, patients taking tamoxifen reported more vaginal discharge (5.2 vs 1.2%), cold sweats (9.1 vs 7.7%) and night sweats (21.3 vs 17.8%)” — [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) <sub>(other)</sub>
+
+</details>
+
+<details><summary>Evidence: decreased survival (1)</summary>
+
+> “Tamoxifen-treated homozygotes had three times the risk of death compared with heterozygotes or wild-type (39).” — [Tan 2008](https://pubmed.ncbi.nlm.nih.gov/19088019/) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: discontinuation (1)</summary>
+
+> “The proportion of patients that discontinued treatment due to side effects was similar across age groups (10% versus 9%, p = 0.57).” — [Souwer 2023](https://pubmed.ncbi.nlm.nih.gov/37067610/) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: disease flare (1)</summary>
+
+> “There have been reports of a 'flare' reaction, similar to that seen with other endocrine therapies, occurring early in tamoxifen therapy (for example, Plotkin et al. 1978); the term 'flare' appears to be used in the literature to apply to several different phenomena: an increase in pain, swelling or erythema in a soft tissue lesion (Pritchard et al. 1980), increase in pain associated with osseous metastases (Glick…” — Buckley 1989 <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Fatigue (1)</summary>
+
+> “Fatigue and insomnia were also frequently reported in both treatment groups.” — [Lintermans 2011](https://pubmed.ncbi.nlm.nih.gov/21428848/) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: side effects (1)</summary>
+
+> “A total of 424 patients (64%) switched to an Aromatase Inhibitor (AI) as treatment strategy; other reasons were side effects (n = 56, 8%), disease recurrence (n = 37, 6%), or other (n = 112, 17%).” — [Souwer 2023](https://pubmed.ncbi.nlm.nih.gov/37067610/) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: Treatment discontinuation due to side effects (1)</summary>
+
+> “In our opinion, whilst the hypothesis of lower probability of relapse by higher endoxifen concentrations might be plausible, we also showed that the chance of tamoxifen treatment discontinuation might be higher at higher endoxifen concentrations” — [Sanchez-Spitman 2020](https://pubmed.ncbi.nlm.nih.gov/32468081) <sub>(other)</sub>
+
+</details>
+
+### Liver
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Hepatotoxicity | The paper lists hepatotoxicity as a serious risk of tamoxifen in a comparative discussion of side effects between tamoxifen and clomiphene, but provides no specific details on incidence, population, or mechanism. | — | — | — | [Sifontes-Rodríguez 2024](https://pubmed.ncbi.nlm.nih.gov/39457604) |
+
+<details><summary>Evidence: hepatotoxicity (1)</summary>
+
+> “However, tamoxifen has serious risks such as thrombosis, strokes, endometrial cancer and hepatotoxicity, while clomiphene can cause ovarian hyperstimulation syndrome and multiple pregnancies.” — [Sifontes-Rodríguez 2024](https://pubmed.ncbi.nlm.nih.gov/39457604) <sub>(review)</sub>
+
+</details>
+
+### Musculoskeletal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Osteoarticular pain | Osteoarticular pain was observed in 60% of rapid metabolizers (RM) and 50% of slow metabolizers (SM) in the complete cohort, with no significant difference between the groups (p = 0.566). | 60% of RM vs. 50% of SM | — | — | [Blancas 2025](https://pubmed.ncbi.nlm.nih.gov/40214721) |
+
+<details><summary>Evidence: osteoarticular pain (1)</summary>
+
+> “Osteoarticular pain occurred in 60% of RM vs. 50% of SM (p = 0.566), hot flashes in 47.8% of RM vs. 36.7% of SM (p = 0.526), and asthenia in 40% of RM vs. 51.7% of SM (p = 0.164).” — [Blancas 2025](https://pubmed.ncbi.nlm.nih.gov/40214721) <sub>(cohort)</sub>
+
+</details>
+
+### Nervous system
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Dizziness | CNS disturbances, including dizziness, have been described in patients, although infrequently. | low incidence | — | — | Buckley 1989 |
+| Headaches | Tamoxifen can cause headaches. | — | — | home: headaches | [Sifontes-Rodríguez 2024](https://pubmed.ncbi.nlm.nih.gov/39457604) |
+
+<details><summary>Evidence: dizziness (1)</summary>
+
+> “A low incidence of CNS disturbances such as dizziness, depression, nervousness, fatigue and lethargy, and irritability, have also been reported (for example, Cocconi et al. 1983;Gasparini et al. 1987;Margreiter & Wiegele 1984;Sawka et al. 1986).” — Buckley 1989 <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: headaches (1)</summary>
+
+> “They both can cause hot flashes, nausea, headaches, and cataracts; affect mood; and have effects on the reproductive system (tamoxifen can cause menstrual changes and clomiphene can induce multiple ovulation).” — [Sifontes-Rodríguez 2024](https://pubmed.ncbi.nlm.nih.gov/39457604) <sub>(review)</sub>
+
+</details>
+
+### Psychiatric
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Depression | Smoking patients treated with tamoxifen presented a higher probability of side effects, including depression, compared with non-smokers. | — | smoking; depression and / or to treat the vasomotor side effects | — | [Sanchez-Spitman 2019](https://pubmed.ncbi.nlm.nih.gov/31008668/), [Sanchez-Spitman 2019](https://pubmed.ncbi.nlm.nih.gov/31008668), [Cronin-Fenton 2018](https://pubmed.ncbi.nlm.nih.gov/29801584) |
+| Headache | Smoking patients treated with tamoxifen presented higher probability of headaches in comparison with non-smokers. | — | smoking | — | [Sanchez-Spitman 2019](https://pubmed.ncbi.nlm.nih.gov/31008668/), [Sanchez-Spitman 2019](https://pubmed.ncbi.nlm.nih.gov/31008668) |
+| Affect mood | The paper states that tamoxifen can affect mood as a common side effect due to its action on estrogen receptors. | — | — | — | [Sifontes-Rodríguez 2024](https://pubmed.ncbi.nlm.nih.gov/39457604) |
+| Insomnia | Insomnia was frequently reported in both treatment groups (exemestane and tamoxifen) within the context of the IES trial. | — | — | — | [Lintermans 2011](https://pubmed.ncbi.nlm.nih.gov/21428848/) |
+
+<details><summary>Evidence: depression (3)</summary>
+
+> “However, Zhan and colleagues reported that smoking patients treated with tamoxifen presented higher probability of side effects like nausea, headaches, and depression in comparison with non-smokers [96].” — [Sanchez-Spitman 2019](https://pubmed.ncbi.nlm.nih.gov/31008668/) <sub>(review)</sub>
+
+> “However, Zhan and colleagues reported that smoking patients treated with tamoxifen presented higher probability of side effects like nausea, headaches, and depression in comparison with non-smokers [96].” — [Sanchez-Spitman 2019](https://pubmed.ncbi.nlm.nih.gov/31008668) <sub>(review)</sub>
+
+> “Tamoxifen induces mild to moderate adverse effects, including hot flashes and vasomotor symptoms, but more rare and more severe adverse reactions including depression, venous thromboembolism, and endometrial cancer have also been reported.” — [Cronin-Fenton 2018](https://pubmed.ncbi.nlm.nih.gov/29801584) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Headache (2)</summary>
+
+> “However, Zhan and colleagues reported that smoking patients treated with tamoxifen presented higher probability of side effects like nausea, headaches, and depression in comparison with non-smokers [96].” — [Sanchez-Spitman 2019](https://pubmed.ncbi.nlm.nih.gov/31008668/) <sub>(review)</sub>
+
+> “However, Zhan and colleagues reported that smoking patients treated with tamoxifen presented higher probability of side effects like nausea, headaches, and depression in comparison with non-smokers [96].” — [Sanchez-Spitman 2019](https://pubmed.ncbi.nlm.nih.gov/31008668) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: affect mood (1)</summary>
+
+> “They both can cause hot flashes, nausea, headaches, and cataracts; affect mood; and have effects on the reproductive system (tamoxifen can cause menstrual changes and clomiphene can induce multiple ovulation).” — [Sifontes-Rodríguez 2024](https://pubmed.ncbi.nlm.nih.gov/39457604) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Insomnia (1)</summary>
+
+> “Fatigue and insomnia were also frequently reported in both treatment groups.” — [Lintermans 2011](https://pubmed.ncbi.nlm.nih.gov/21428848/) <sub>(other)</sub>
+
+</details>
+
+### Reproductive and foetal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Endometrial cancer | The paper states that the incidence of endometrial cancer was 0.4% with tamoxifen treatment, compared with 0.2% with exemestane in the IES trial, a difference that was not statistically significant. | 0.4% | CYP3A4*1B (CYP3A4 *1B) | — | [Lintermans 2011](https://pubmed.ncbi.nlm.nih.gov/21428848/), [Tan 2008](https://pubmed.ncbi.nlm.nih.gov/19088019/), [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/), [Cronin-Fenton 2018](https://pubmed.ncbi.nlm.nih.gov/29801584), [Sifontes-Rodríguez 2024](https://pubmed.ncbi.nlm.nih.gov/39457604) |
+| Endometrial thickening | The paper states that tamoxifen induces endometrial thickening, described as a surrogate marker for endometrial pathologies. | — | — | — | [Lintermans 2011](https://pubmed.ncbi.nlm.nih.gov/21428848/) |
+| Menstrual changes | Tamoxifen can cause menstrual changes in women treated with the drug, as part of its effects on the reproductive system due to its action on estrogen receptors. | — | — | — | [Sifontes-Rodríguez 2024](https://pubmed.ncbi.nlm.nih.gov/39457604) |
+| Menstrual disturbances | Menstrual disturbances occur in a significant proportion of premenopausal patients, with up to 20 to 35% of such patients experiencing them. | up to 20 to 35% | female; premenopausal | — | Buckley 1989 |
+| Uterine changes | In the complete cohort of breast cancer patients, uterine changes were reported in 44.8% of slow metabolizers (SM) compared to 15.2% of rapid metabolizers (RM), with an incidence of 13/29 events in the SM group and 7/46 in the RM group. | 44.8% | CYP2D6 (CYP2D6 unknown) | primary_care: CYP2D6 phenotype | [Blancas 2025](https://pubmed.ncbi.nlm.nih.gov/40214721) |
+| Uterine sarcoma | The use of tamoxifen results in an increased incidence of uterine sarcoma as an adverse effect. | — | partial agonist activity | — | [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) |
+| Vaginal bleeding or discharge | Vaginal bleeding or discharge is reported to occur occasionally as an adverse effect of tamoxifen, related to the drug's antioestrogenic activity. | may occur occasionally | — | — | Buckley 1989 |
+| Vaginal dryness | The paper notes that a study by Helland and colleagues suggests that higher tamoxifen metabolite concentrations may be associated with adverse effects, such as vaginal dryness, although it clarifies that endoxifen concentration itself was not related to this specific adverse effect. | — | unknown (unknown unknown) | — | [Sanchez-Spitman 2020](https://pubmed.ncbi.nlm.nih.gov/32468081) |
+
+<details><summary>Evidence: Endometrial cancer (5)</summary>
+
+> “In IES, the incidence of endometrial cancer was twice as high with tamoxifen (0.4%) than with exemestane (0.2%), although this difference was not statistically significant.” — [Lintermans 2011](https://pubmed.ncbi.nlm.nih.gov/21428848/) <sub>(randomised trial)</sub>
+
+> “Three-fold increased risk of endometrial cancer in tamoxifen-treated women (36).” — [Tan 2008](https://pubmed.ncbi.nlm.nih.gov/19088019/) <sub>(case-control)</sub>
+
+> “Although clearly an effective treatment, the use of tamoxifen is limited by its activity as a partial agonist at the ER, which results in adverse effects that include an increased incidence of endometrial cancer, uterine sarcoma and thromboembolic disease [4,5]. ... The incidence of endometrial cancers were lower in the anastrozole group (5 events) compared to the tamoxifen group (24 events) (odds ratio 0.2, 95% CI…” — [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) <sub>(cohort)</sub>
+
+> “Tamoxifen induces mild to moderate adverse effects, including hot flashes and vasomotor symptoms, but more rare and more severe adverse reactions including depression, venous thromboembolism, and endometrial cancer have also been reported.” — [Cronin-Fenton 2018](https://pubmed.ncbi.nlm.nih.gov/29801584) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Endometrial thickening (1)</summary>
+
+> “It is known that tamoxifen induces endometrial thickening, a surrogate marker for endometrial pathologies, which was not seen with exemestane treatment in the IES and TEAM trials [1,26,60].” — [Lintermans 2011](https://pubmed.ncbi.nlm.nih.gov/21428848/) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: menstrual changes (1)</summary>
+
+> “They both can cause hot flashes, nausea, headaches, and cataracts; affect mood; and have effects on the reproductive system (tamoxifen can cause menstrual changes and clomiphene can induce multiple ovulation).” — [Sifontes-Rodríguez 2024](https://pubmed.ncbi.nlm.nih.gov/39457604) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: menstrual disturbances (1)</summary>
+
+> “The most frequent adverse effects are related to the drug's antioestrogenic activity. and include hot flushes, nausea and/or vomiting. vaginal bleeding or discharge, and menstrual disturbances in premenopausal patients. ... The incidence of adverse effects related to tamoxifen's antioestrogenic activity is naturally higher in premenopausal patients; up to 20 to 35% of such patients experience menstrual disturbances.” — Buckley 1989 <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: uterine changes (1)</summary>
+
+> “However, uterine changes were significantly more frequent in SM (44.8%) vs. RM (15.2%) (p &lt; 0.001), with an HR of 0.20 (p = 0.001).” — [Blancas 2025](https://pubmed.ncbi.nlm.nih.gov/40214721) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: uterine sarcoma (1)</summary>
+
+> “the use of tamoxifen is limited by its activity as a partial agonist at the ER, which results in adverse effects that include an increased incidence of endometrial cancer, uterine sarcoma and thromboembolic disease [4,5].” — [Kelly 2010](https://pubmed.ncbi.nlm.nih.gov/20923259/) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: vaginal bleeding or discharge (1)</summary>
+
+> “The most frequent adverse effects are related to the drug's antioestrogenic activity. and include hot flushes, nausea and/or vomiting. vaginal bleeding or discharge, and menstrual disturbances in premenopausal patients.” — Buckley 1989 <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Vaginal dryness (1)</summary>
+
+> “In contrast to Groenland, another study by Helland and colleagues [13] suggest that higher tamoxifen metabolite concentrations, may be associated with adverse effects, such as vaginal dryness. Of note, endoxifen concentration was not related to any of the analysed adverse effects.” — [Sanchez-Spitman 2020](https://pubmed.ncbi.nlm.nih.gov/32468081) <sub>(review)</sub>
+
+</details>
+
 ## ADME sites
 
 Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tamoxifen).

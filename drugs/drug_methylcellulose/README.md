@@ -17,7 +17,7 @@ Methylcellulose is a bulk-forming laxative used to treat constipation. It is an 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-15 00:57 | 2:45 | 0/0/0 | 0/0/0 | 0/0/0 | 367,693/4,825 | einfracz / qwen3.8-27b | 32 | 5/20 | 30/2 | 0 |
+| 2026-10-16 08:23 | 2:48 | 0/0/0 | 0/0/0 | 0/0/0 | 100,242/4,946 | einfracz / qwen3.8-27b | 32 | 8/23 | 30/2 | 0 |
 
 ## popPK records
 
@@ -40,7 +40,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 ## Coverage
 
 - **PubMed hits:** 298 matched, 103 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 19  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -54,7 +54,7 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Yi_2010.pdf` | Yi J et al., [Effect of parthenolide on leukemia K56…, Zhongguo Zhong yao za zhi =… (2010) | pd | 4 | [10.4268/cjcmm20100223](https://doi.org/10.4268/cjcmm20100223) | [20394299](https://www.ncbi.nlm.nih.gov/pubmed/20394299) | metadata signals extractable PD data (IC50) |
 | `Kang_2026.pdf` | Kang HE et al., Physiologically based pharmacokinetic m…, Drug metabolism and disposi… (2026) | pgx | 7 | [10.1016/j.dmd.2026.100355](https://doi.org/10.1016/j.dmd.2026.100355) | [42485828](https://www.ncbi.nlm.nih.gov/pubmed/42485828) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-15T00:56:02.349477+00:00</sub>
+<sub>queue written 2026-10-16T08:23:38.071547+00:00</sub>
 
 ## Screened and excluded
 

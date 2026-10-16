@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper describes a time-to-event model for diary entry discontinuation (DED) that incorporates covariates such as age, sex, and baseline opioid dose, but it does not specify a direct pharmacodynamic mechanism (e.g., Emax, IC50, or rate constants) linking naloxegol dose or concentration to the DED response. Consequently, no potency or rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are provided for the DED endpoint in the excerpts.
+> The paper describes a dose-only time-to-event model for naloxegol's effect on diary entry discontinuation, with the WAM procedure identifying the base structural model as most parsimonious after testing covariates. No specific potency parameters (such as IC50 or EC50) or rate constants were reported for the DED model in the provided excerpts.
 >
-> <sub>Source-based summary by qwen3.8:27b-mtp-q8_0 from the paper's text; not human-verified</sub>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
 
 - **paper:** `Al-Huniti_2016_2`
 - **model family:** `tte`

@@ -17,7 +17,7 @@ Relatlimab is a monoclonal antibody used as an anticancer agent in combination w
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-15 03:06 | 2:35 | 0/3/0 | 0/0/0 | 0/0/0 | 289,274/6,337 | einfracz / qwen3.8-27b | 7 | 0/7 | 7/0 | 0 |
+| 2026-10-16 08:52 | 0:18 | 0/3/0 | 0/0/0 | 0/0/0 | 2,093/129 | einfracz / qwen3.8-27b | 7 | 0/7 | 7/0 | 0 |
 
 ## popPK records
 
@@ -45,7 +45,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 ## Coverage
 
 - **PubMed hits:** 16 matched, 16 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 2  ·  **relevant:** 1
 - **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -58,7 +58,7 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Gopalakrishnan_2024.pdf` | Gopalakrishnan M et al., Project Optimus Elicits the "Holistic"…, Clinical cancer research :… (2024) | pd | 5 | [10.1158/1078-0432.CCR-24-0553](https://doi.org/10.1158/1078-0432.CCR-24-0553) | [38743418](https://www.ncbi.nlm.nih.gov/pubmed/38743418) | metadata signals extractable PD data (PK/PD) |
 | `Thomas_2023.pdf` | Thomas B et al., Nivolumab/Relatlimab-rmbw: A Novel Dual…, American journal of therape… (2023) | pd | 5 | [10.1097/MJT.0000000000001680](https://doi.org/10.1097/MJT.0000000000001680) | [37921680](https://www.ncbi.nlm.nih.gov/pubmed/37921680) | metadata signals extractable PD data (exposure-response) |
 
-<sub>queue written 2026-10-15T03:04:07.337423+00:00</sub>
+<sub>queue written 2026-10-16T08:52:24.580428+00:00</sub>
 
 ## Screened and excluded
 

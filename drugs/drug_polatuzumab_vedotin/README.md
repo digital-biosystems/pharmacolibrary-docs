@@ -28,7 +28,7 @@ Polatuzumab vedotin is an antibody-based anticancer drug used to treat B-cell ly
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-15 02:20 | 1:08:04 | 0/11/0 | 0/0/0 | 0/0/0 | 101,787/11,849 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
+| 2026-10-16 08:51 | 0:09 | 0/11/0 | 0/0/0 | 0/0/0 | 12,024/34 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 

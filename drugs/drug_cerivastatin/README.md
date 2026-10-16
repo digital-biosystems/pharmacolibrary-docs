@@ -26,7 +26,7 @@ Cerivastatin is a statin that was used to lower blood lipids in conditions such 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-15 01:12 | 2:52 | 0/0/1 | 2/0/0 | 0/0/1 | 322,898/6,404 | einfracz / qwen3.8-27b | 14 | 2/9 | 12/2 | 0 |
+| 2026-10-16 08:41 | 0:21 | 0/0/1 | 2/0/0 | 0/0/1 | 16,349/1,533 | einfracz / qwen3.8-27b | 14 | 4/10 | 12/2 | 0 |
 
 ## popPK records
 
@@ -91,7 +91,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 ## Coverage
 
 - **PubMed hits:** 168 matched, 104 returned
-- **screened:** 1  ·  **relevant:** 0
+- **screened:** 7  ·  **relevant:** 0
 - **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -123,7 +123,7 @@ _21 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Marciante_2011.pdf` | Marciante KD et al., Cerivastatin, genetic variants, and the…, Pharmacogenetics and genomi… (2011) | pgx | 5 | [10.1097/FPC.0b013e328343dd7d](https://doi.org/10.1097/FPC.0b013e328343dd7d) | [21386754](https://www.ncbi.nlm.nih.gov/pubmed/21386754) | metadata signals extractable PGX data (CYP2C8) |
 | `Vermes_2004.pdf` | Vermes A et al., Genetic polymorphisms in cytochrome P45…, American journal of cardiov… (2004) | pgx | 5 | [10.2165/00129784-200404040-00005](https://doi.org/10.2165/00129784-200404040-00005) | [15285699](https://www.ncbi.nlm.nih.gov/pubmed/15285699) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-10-15T01:09:54.637492+00:00</sub>
+<sub>queue written 2026-10-16T08:41:51.354215+00:00</sub>
 
 ## Screened and excluded
 

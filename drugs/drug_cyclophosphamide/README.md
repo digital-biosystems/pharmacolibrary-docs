@@ -78,6 +78,296 @@ Cyclophosphamide is an alkylating anticancer drug used to treat many cancers, in
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>Not recorded; not equivalent to zero.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+## Adverse drug reactions (ADR)
+
+32 reaction(s) reported in 13 paper(s). Read from the full texts by a language model, which also wrote the one-sentence descriptions; each sentence quoted under a reaction was checked to occur in the paper, the rest is not checked by a person. Frequencies are as the papers print them, for their own populations and definitions.
+
+### Blood
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Neutropenia | Neutropenia was observed in both groups of female dogs with mammary carcinoma treated with carboplatin (G1) or carboplatin plus cyclophosphamide (G2), with a lower number of segmented neutrophils in the combination group. | more frequent in G2 | carboplatin; combination therapy; CYP2J2*7 (CYP2J2 *7); MTHFR (MTHFR rs1801133) | laboratory: neutrophil granulocytes; laboratory: absolute neutrophil count | [Machado 2022](https://pubmed.ncbi.nlm.nih.gov/36428336), [Sánchez-Salinas 2026](https://pubmed.ncbi.nlm.nih.gov/42269079), [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608), [Ahmed 2020](https://pubmed.ncbi.nlm.nih.gov/32390827), [Mlakar 2016](https://pubmed.ncbi.nlm.nih.gov/27618021) |
+| Leukopenia | Reduced white blood cell (WBC) count was reported in 10 of the 25 infant patients following cyclophosphamide treatment. | 10 in 25 | SR2508; CYP2C19 rs4244285 (CYP2C19 A); MTHFR rs1801133 | laboratory: white blood cell (WBC); laboratory: white cell count | [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608), [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704), [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145), [Mlakar 2016](https://pubmed.ncbi.nlm.nih.gov/27618021) |
+| Thrombocytopenia | reduced platelet count (three in 25), fever (four in 25), infection (four in 25) and diarrhoea (two in 25) were reported in patients but to a lesser frequency. | three in 25 | CYP2C19 rs4244285 (G&gt;A) (CYP2C19 G (homozygous GG)); prescription duration | laboratory: platelets | [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608), [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145), [Machado 2022](https://pubmed.ncbi.nlm.nih.gov/36428336) |
+| Anemia | Anemia was reported as part of drug hematologic toxicity in children treated for osteosarcoma, with associations found between MTHFR and this toxicity. | — | MTHFR (MTHFR rs1801133) | — | [Mlakar 2016](https://pubmed.ncbi.nlm.nih.gov/27618021) |
+| Aplasia | The paper reports associations between MTHFR and drug hematologic toxicity (including aplasia) in children treated for osteosarcoma. | — | MTHFR variants | — | [Mlakar 2016](https://pubmed.ncbi.nlm.nih.gov/27618021) |
+
+<details><summary>Evidence: Neutropenia (5)</summary>
+
+> “Neutropenia was observed in both groups, being more frequent in G2, with a lower numbers of total leukocytes (p = 0.0002) and segmented neutrophils (p = 0.0007)” — [Machado 2022](https://pubmed.ncbi.nlm.nih.gov/36428336) <sub>(animal)</sub>
+
+> “Immune effector cell–associated hematotoxicity for neutropenia (N-ICAHT) was graded retrospectively using the European Hematology Association/European Society for Blood and Marrow Transplantation criteria. N-ICAHT was reported in 45 (83%) patients, with grade ≥3 in 7 (13%).” — [Sánchez-Salinas 2026](https://pubmed.ncbi.nlm.nih.gov/42269079) <sub>(case series)</sub>
+
+> “The most common toxicities observed were haematological, with decreased neutrophil and haemoglobin count occurring in approximately half of the patients (12 in 25).” — [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608) <sub>(case series)</sub>
+
+> “Neutropenia remains the major adverse event of CPA at conventional doses and the main concern in the delivery of CPA-based chemotherapy (Crawford et al., 2004). CPA-based chemotherapy-associated neutropenia is the primary reason for change in the schedule of chemotherapy delivery to cancer patients (Kozma et al., 2012).” — [Ahmed 2020](https://pubmed.ncbi.nlm.nih.gov/32390827) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Leukopenia (4)</summary>
+
+> “In addition, reduced WBC count (10 in 25), reduced platelet count (three in 25), fever (four in 25), infection (four in 25) and diarrhoea (two in 25) were reported in patients but to a lesser frequency.” — [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608) <sub>(case series)</sub>
+
+> “At the doses at which cyc- lophosphamide was administered at 1 gm-2 there is a clear increase in the grade of leukopenia with increasing SR2508 dose in the range 2.5 to 7.2 g m-2 (Table III).” — [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704) <sub>(cohort)</sub>
+
+> “The A allele is associated with a reduced risk of gastrointestinal toxicity and leukopenia in people with SLE when exposed to cyclophosphamide, compared with the G allele.” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(review)</sub>
+
+> “Associations were also found between MTHFR and drug hematologic toxicity (aplasia, neutropenia, anemia and leukopenia) in children treated for osteosarcoma [188].” — [Mlakar 2016](https://pubmed.ncbi.nlm.nih.gov/27618021) <sub>(meta-analysis)</sub>
+
+</details>
+
+<details><summary>Evidence: Thrombocytopenia (3)</summary>
+
+> “In addition, reduced WBC count (10 in 25), reduced platelet count (three in 25), fever (four in 25), infection (four in 25) and diarrhoea (two in 25) were reported in patients but to a lesser frequency.” — [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608) <sub>(case report)</sub>
+
+> “Meanwhile, severe and rare side effects of this medication affects gonads (amenorrhea) and bladder (hemorrhagic cystitis), as well as includes its myelotoxicity (risk of thrombocytopenia and granulocytopenia leading to bacterial and opportunistic infections) and malignancy (myelodysplastic syndrome, acute leukemia, and non-Hodgkin's lymphoma, especially for prescription of &gt; 2-3 years and cumulative dose of &gt;100…” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(review)</sub>
+
+> “The major hematological adverse drug events included anemia, thrombocytopenia, and neutropenia. Thrombocytopenia was the most critical finding in both of the groups. ... A marked reduction in the red blood cells (p &lt; 0.0001) and platelets (p = 0.0005) was observed in G2 when it was compared to G1” — [Machado 2022](https://pubmed.ncbi.nlm.nih.gov/36428336) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: anemia (1)</summary>
+
+> “Associations were also found between MTHFR and drug hematologic toxicity (aplasia, neutropenia, anemia and leukopenia) in children treated for osteosarcoma [188].” — [Mlakar 2016](https://pubmed.ncbi.nlm.nih.gov/27618021) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: aplasia (1)</summary>
+
+> “Associations were also found between MTHFR and drug hematologic toxicity (aplasia, neutropenia, anemia and leukopenia) in children treated for osteosarcoma [188].” — [Mlakar 2016](https://pubmed.ncbi.nlm.nih.gov/27618021) <sub>(review)</sub>
+
+</details>
+
+### Cardiovascular
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Acute leukemia | The paper lists acute leukemia as a severe and rare side effect of cyclophosphamide, particularly associated with prescriptions lasting &gt; 2-3 years and a cumulative dose of &gt;100 grams. | — | prescription of &gt; 2-3 years; cumulative dose of &gt;100 grams | — | [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) |
+| Myelodysplastic syndrome | Myelodysplastic syndrome is a severe and rare malignancy side effect of cyclophosphamide, especially associated with prescription duration of &gt; 2-3 years and cumulative dose of &gt;100 grams. | severe and rare | prescription duration; cumulative dose | — | [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) |
+
+<details><summary>Evidence: Acute leukemia (1)</summary>
+
+> “Meanwhile, severe and rare side effects of this medication affects gonads (amenorrhea) and bladder (hemorrhagic cystitis), as well as includes its myelotoxicity (risk of thrombocytopenia and granulocytopenia leading to bacterial and opportunistic infections) and malignancy (myelodysplastic syndrome, acute leukemia, and non-Hodgkin's lymphoma, especially for prescription of &gt; 2-3 years and cumulative dose of &gt;100…” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Myelodysplastic syndrome (1)</summary>
+
+> “Meanwhile, severe and rare side effects of this medication affects gonads (amenorrhea) and bladder (hemorrhagic cystitis), as well as includes its myelotoxicity (risk of thrombocytopenia and granulocytopenia leading to bacterial and opportunistic infections) and malignancy (myelodysplastic syndrome, acute leukemia, and non-Hodgkin's lymphoma, especially for prescription of &gt; 2-3 years and cumulative dose of &gt;100…” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(review)</sub>
+
+</details>
+
+### Endocrine and metabolic
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Decreased serum testosterone level | Decreased serum testosterone levels occur in men of reproductive age treated with cyclophosphamide. | — | — | — | [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) |
+
+<details><summary>Evidence: decreased serum testosterone level (1)</summary>
+
+> “These adverse effects comprise azoospermia, oligospermia, atrophy of testicular seminiferous tubules and decreased serum testosterone levels (Abarikwu et al. 2012; Gerres et al. 1998; Pectasides et al. 2009), which severely threatens fertility in men of reproductive age.” — [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) <sub>(review)</sub>
+
+</details>
+
+### Gastrointestinal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Diarrhoea | Diarrhoea was reported in two out of 25 infants treated with cyclophosphamide as part of their standard clinical treatment, occurring to a lesser frequency than haematological toxicities. | two in 25 | other chemotherapeutic agents | — | [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608) |
+| Gastrointestinal toxicity | In people with SLE, the A allele of the rs4244285 SNP (CYP2C19) is associated with a reduced risk of gastrointestinal toxicity when exposed to cyclophosphamide, compared with the G allele. | — | rs4244285 (CYP2C19) (CYP2C19 A allele (rs4244285) associated with reduced risk compared to G allele) | — | [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) |
+| Nausea | Some of the most common side effects of cyclophosphamide are nausea. | common | — | — | [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) |
+| Nausea and vomiting | Thirty-one of the 47 patients (66%) had nausea and vomiting following SR2508 administration. | 66% | — | home: nausea; home: vomiting | [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704) |
+
+<details><summary>Evidence: Diarrhoea (1)</summary>
+
+> “In addition, reduced WBC count (10 in 25), reduced platelet count (three in 25), fever (four in 25), infection (four in 25) and diarrhoea (two in 25) were reported in patients but to a lesser frequency.” — [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Gastrointestinal toxicity (1)</summary>
+
+> “The A allele is associated with a reduced risk of gastrointestinal toxicity and leukopenia in people with SLE when exposed to cyclophosphamide, compared with the G allele.” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(meta-analysis)</sub>
+
+</details>
+
+<details><summary>Evidence: Nausea (1)</summary>
+
+> “Some of the most common side effects of cyclophosphamide are nausea, vomiting, thinning hair, and reversible alopecia.” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: nausea and vomiting (1)</summary>
+
+> “The only other reproducible side-effect was nausea and vomiting which was controllable with antiemetics. Thirty-one of the 47 patients (66%) had nausea and vomiting following SR2508 administration.” — [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704) <sub>(case series)</sub>
+
+</details>
+
+### General
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Hemorrhagic cystitis | Hemorrhagic cystitis, characterized by hematuria, occurred in 10–40% of patients receiving high or long-term cyclophosphamide chemotherapy, with a reported prevalence of 17.5% at Dharmais Cancer Hospital, attributed to the urotoxic metabolite acrolein. | 10–40%; 17.5% | high dose; long-term CP chemotherapy; cumulative dose | — | [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743), [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145), [Balasubramanian 2012](https://pubmed.ncbi.nlm.nih.gov/22231460) |
+| Bladder toxicity | The paper notes that the metabolic breakdown of cyclophosphamide releases the urotoxic metabolite acrolein, which is implicated in the drug's toxicity profile. | — | — | — | [Veal 2016](https://pubmed.ncbi.nlm.nih.gov/26773420) |
+| Chromosome aberrations | The paper states that the most deleterious effects of cyclophosphamide free radicals in vivo include chromosome aberrations, which can lead to pathological conditions including cancer. | — | — | — | [de 2019](https://pubmed.ncbi.nlm.nih.gov/30563925) |
+| Death | In a study of 49 children with B-cell non-Hodgkin's lymphoma, seven patients (14%) died following disease relapse or due to treatment-related deaths during a follow-up period with a median of 6 years. | 14% | — | — | [Veal 2016](https://pubmed.ncbi.nlm.nih.gov/26773420) |
+| DNA damage | The paper states that the most deleterious effects of cyclophosphamide free radicals in vivo were genotoxic activities including DNA damages. | — | — | — | [de 2019](https://pubmed.ncbi.nlm.nih.gov/30563925) |
+| Gene mutation | The paper states that the most deleterious effects of cyclophosphamide free radicals in vivo were genotoxic activities including gene mutations, which can lead to many pathological conditions including cancer, citing references 44-49. | — | — | — | [de 2019](https://pubmed.ncbi.nlm.nih.gov/30563925) |
+| Genotoxicity | Animals treated with cyclophosphamide showed an increased number of micronucleated bone marrow cells. | 1.64% | — | — | [de 2019](https://pubmed.ncbi.nlm.nih.gov/30563925) |
+| Haemorrhagic cystitis | The paper states that acrolein, a toxic metabolite of cyclophosphamide, is water-soluble, clears out of the system via urine, and due to its high toxicity can cause haemorrhagic cystitis. | — | — | — | [Mlakar 2016](https://pubmed.ncbi.nlm.nih.gov/27618021) |
+| Lower overall survival | Patients with high phosphoramide mustard (PM) exposure experienced lower overall survival in hematopoietic cell transplantation. | — | high PM exposure | — | [Jaber 2023](https://pubmed.ncbi.nlm.nih.gov/36063026) |
+| Nonrelapse mortality | Patients undergoing allogeneic hematopoietic cell transplantation who received cyclophosphamide and had phosphoramide mustard AUC from 0 to 8 hours greater than 34235 ng • h/mL had greater nonrelapse mortality, an increase of approximately more than 20% from the median value. | ≈&gt;20% from the median value | phosphoramide mustard AUC0‐8h &gt;34235 ng • h/mL | hospital: signs and symptoms of toxicity | [Jaber 2023](https://pubmed.ncbi.nlm.nih.gov/36063026) |
+| Sepsis | Three episodes of sepsis occurred among 19 patients who developed grade 4 neutropenia. | 3 of 19 patients with grade 4 neutropenia | SR2508 dose (potentiates cyclophosphamide myelosuppression) | laboratory: white cell count, neutrophil count | [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704) |
+| Toxicity | The paper notes that the cyclophosphamide package insert recommends monitoring signs and symptoms of toxicity in severe renal failure patients due to elevated exposures. | — | severe renal failure | primary_care: signs and symptoms of toxicity | [Jaber 2023](https://pubmed.ncbi.nlm.nih.gov/36063026) |
+
+<details><summary>Evidence: hemorrhagic cystitis (3)</summary>
+
+> “In many cases, side effects of hemorrhagic cystitis generally occur in 10–40% of patients receiving high or long-term CP chemotherapy. Hemorrhagic cystitis cases were also found based on indicators of hematuria formation with a prevalence of 17.5% (n=40) at “Dharmais” Cancer Hospital.” — [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743) <sub>(case series)</sub>
+
+> “Meanwhile, severe and rare side effects of this medication affects gonads (amenorrhea) and bladder (hemorrhagic cystitis), as well as includes its myelotoxicity (risk of thrombocytopenia and granulocytopenia leading to bacterial and opportunistic infections) and malignancy (myelodysplastic syndrome, acute leukemia, and non-Hodgkin's lymphoma, especially for prescription of &gt; 2-3 years and cumulative dose of &gt;100…” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(review)</sub>
+
+> “Even though advances in transplantation practices including reducing the intensity of the conditioning regimen have improved the outcome of HSCT in recent years, 4,5 doselimiting toxicities such as sinusoidal obstruction syndrome (SOS) and hemorrhagic cystitis 6,7 remain as the major problems associated with BU-CY-based myeloablative-conditioning regimen.” — [Balasubramanian 2012](https://pubmed.ncbi.nlm.nih.gov/22231460) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: bladder toxicity (1)</summary>
+
+> “Further spontaneous breakdown is required to form the active DNA-crosslinking metabolite, phosphoramide mustard, with the release of the urotoxic metabolite, acrolein [7].” — [Veal 2016](https://pubmed.ncbi.nlm.nih.gov/26773420) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Chromosome aberrations (1)</summary>
+
+> “The most deleterious effects of cyclophosphamide free radicals in vivo were genotoxic activities including DNA damages, chromosome aberrations, sister chromatid exchanges, and gene mutations, which can lead to many pathological conditions including cancer [44–49].” — [de 2019](https://pubmed.ncbi.nlm.nih.gov/30563925) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: death (1)</summary>
+
+> “Of the remaining patients, two (4%) were alive with disease progression and seven (14%) had died following disease relapse or due to treatment-related deaths.” — [Veal 2016](https://pubmed.ncbi.nlm.nih.gov/26773420) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: DNA damage (1)</summary>
+
+> “The most deleterious effects of cyclophosphamide free radicals in vivo were genotoxic activities including DNA damages, chromosome aberrations, sister chromatid exchanges, and gene mutations, which can lead to many pathological conditions including cancer [44–49].” — [de 2019](https://pubmed.ncbi.nlm.nih.gov/30563925) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Gene mutation (1)</summary>
+
+> “The most deleterious effects of cyclophosphamide free radicals in vivo were genotoxic activities including DNA damages, chromosome aberrations, sister chromatid exchanges, and gene mutations, which can lead to many pathological conditions including cancer [44–49].” — [de 2019](https://pubmed.ncbi.nlm.nih.gov/30563925) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Genotoxicity (1)</summary>
+
+> “The modulating genotoxicity assay showed, as expected, an increased number of micronucleated bone marrow cells in animals treated with cyclophosphamide: 1.64% in control (+) compared with 0.23% in control (−); 0.81% on EXP 1 (+) compared with 0.45% EXP 1 (−); and 1.74% on EXP 2 (+) compared with 1.28% on EXP 2 (−) (Table 3, P&lt;0.05).” — [de 2019](https://pubmed.ncbi.nlm.nih.gov/30563925) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: haemorrhagic cystitis (1)</summary>
+
+> “Acrolein is water soluble and clears out of the system via urine, due to its high toxicity can cause haemorrhagic cystitis and other ADRs [303].” — [Mlakar 2016](https://pubmed.ncbi.nlm.nih.gov/27618021) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: lower overall survival (1)</summary>
+
+> “our group recently studied PM exposure‐response relationships and showed that patients with high PM exposure had greater nonrelapse mortality and lower overall survival in HCT” — [Jaber 2023](https://pubmed.ncbi.nlm.nih.gov/36063026) <sub>(other)</sub>
+
+</details>
+
+<details><summary>Evidence: nonrelapse mortality (1)</summary>
+
+> “our previous study demonstrated that patients with PM AUC0‐8h &gt;34235 ng • h/mL had greater nonrelapse mortality (≈&gt;20% from the median value).” — [Jaber 2023](https://pubmed.ncbi.nlm.nih.gov/36063026) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: sepsis (1)</summary>
+
+> “Of a total of 19 patients who developed grade 4 neutropenia, there were only three episodes of sepsis: one of these patients who also had Grade 4 thrombocytopenia, developed a fever, fell at home, and died of an apparent intracerebral hemorrhage.” — [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: toxicity (1)</summary>
+
+> “In the cyclophosphamide package insert, 28 elevated exposures in severe renal failure patients are noted with the recommendation to monitor signs and symptoms of toxicity.” — [Jaber 2023](https://pubmed.ncbi.nlm.nih.gov/36063026) <sub>(product label)</sub>
+
+</details>
+
+### Immune / hypersensitivity
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Infection | Infection was reported in four of the 25 infants treated with cyclophosphamide. | 4 in 25 | other chemotherapeutic agents; myelotoxicity (risk of thrombocytopenia and granulocytopenia) | hospital: infection | [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608), [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) |
+
+<details><summary>Evidence: Infection (2)</summary>
+
+> “In addition, reduced WBC count (10 in 25), reduced platelet count (three in 25), fever (four in 25), infection (four in 25) and diarrhoea (two in 25) were reported in patients but to a lesser frequency.” — [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608) <sub>(case series)</sub>
+
+> “Meanwhile, severe and rare side effects of this medication affects gonads (amenorrhea) and bladder (hemorrhagic cystitis), as well as includes its myelotoxicity (risk of thrombocytopenia and granulocytopenia leading to bacterial and opportunistic infections) and malignancy (myelodysplastic syndrome, acute leukemia, and non-Hodgkin's lymphoma, especially for prescription of &gt; 2-3 years and cumulative dose of &gt;100…” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(review)</sub>
+
+</details>
+
+### Liver
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Hepatic toxicity | Mild to moderate hepatic toxicity, characterized by increased liver enzymes or bilirubin, was identified in 13 of 47 patients (28%) treated with the combination. | 13 patients (28%) | dose-related; liver involvement with tumour | — | [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704) |
+
+<details><summary>Evidence: hepatic toxicity (1)</summary>
+
+> “Mild to moderate hepatic toxicity (as evidenced by in- creased liver enzymes or bilirubin) was also identified in 13 patients (28%). Many of those affected had liver involvement with tumour.” — [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704) <sub>(case series)</sub>
+
+</details>
+
+### Reproductive and foetal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Amenorrhea | The paper states that severe and rare side effects of cyclophosphamide affect the gonads, specifically causing amenorrhea. | rare | &gt;100 grams | — | [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) |
+| Azoospermia | CTX can produce adverse effects such as azoospermia, which severely threatens fertility in men of reproductive age. | — | increasing CTX concentrations | — | [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) |
+| Oligospermia | Oligospermia is reported as an adverse effect of cyclophosphamide in men of reproductive age. | — | — | — | [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) |
+| Reproductive disorders | In C. elegans nematodes, cyclophosphamide treatment resulted in a significant reduction in the total number of offspring produced compared with the blank control group, with offspring numbers decreasing as the concentration of CTX increased from 500 μg/mL to 2 mg/mL. | — | Increasing CTX concentration; E. coli mutant strain (e.g., Ecn Δpal) (pal Δpal (knockout)) | laboratory: total offspring number | [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) |
+| Spermatogonia shedding | In the CTX + Ecn group of mice, disrupted testicular tissue structure was observed, including severe atrophy of the seminiferous tubules, and spermatogonia shedding. | — | — | — | [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) |
+| Testicular seminiferous tubule atrophy | CTX causes atrophy of testicular seminiferous tubules in men of reproductive age, which severely threatens fertility. | — | reproductive age | — | [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) |
+
+<details><summary>Evidence: Amenorrhea (1)</summary>
+
+> “Meanwhile, severe and rare side effects of this medication affects gonads (amenorrhea) and bladder (hemorrhagic cystitis), as well as includes its myelotoxicity (risk of thrombocytopenia and granulocytopenia leading to bacterial and opportunistic infections) and malignancy (myelodysplastic syndrome, acute leukemia, and non-Hodgkin's lymphoma, especially for prescription of &gt; 2-3 years and cumulative dose of &gt;100…” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: azoospermia (1)</summary>
+
+> “CTX—a common chemotherapy drug—effectively treats cancer but can produce some adverse effects, such as male reproductive toxicity. These adverse effects comprise azoospermia, oligospermia, atrophy of testicular seminiferous tubules and decreased serum testosterone levels (Abarikwu et al. 2012; Gerres et al. 1998; Pectasides et al. 2009), which severely threatens fertility in men of reproductive age.” — [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: oligospermia (1)</summary>
+
+> “These adverse effects comprise azoospermia, oligospermia, atrophy of testicular seminiferous tubules and decreased serum testosterone levels (Abarikwu et al. 2012; Gerres et al. 1998; Pectasides et al. 2009), which severely threatens fertility in men of reproductive age.” — [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: reproductive disorders (1)</summary>
+
+> “Compared with the blank group, the offspring number was significantly reduced in the CTX‐treated groups. Offspring numbers decreased with increasing CTX concentrations from 500 μg/mL to 2 mg/mL.” — [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: spermatogonia shedding (1)</summary>
+
+> “Compared with the Ecn group, the CTX + Ecn group demonstrated a significant decrease in sperm count and disrupted testicular tissue structure, including severe atrophy of the seminiferous tubules, and spermatogonia shedding.” — [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: testicular seminiferous tubule atrophy (1)</summary>
+
+> “These adverse effects comprise azoospermia, oligospermia, atrophy of testicular seminiferous tubules and decreased serum testosterone levels (Abarikwu et al. 2012; Gerres et al. 1998; Pectasides et al. 2009), which severely threatens fertility in men of reproductive age.” — [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) <sub>(review)</sub>
+
+</details>
+
 ## ADME sites
 
 Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cyclophosphamide).

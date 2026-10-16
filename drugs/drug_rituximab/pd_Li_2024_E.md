@@ -74,7 +74,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 |---|---|---|
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T1b_fmu` | pass | shared PD_IndirectTurnoverSweep FMU reproduces the reference points (worst 0.82%) |
 | `T2_direction` | pass | the response falls, as IDR-IV predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | pass | nothing defaulted |
@@ -87,7 +87,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rituximab/Rituximab_Li2024_PD_e/Rituximab_Li2024_PD_e_modelica.zip" download>Rituximab_Li2024_PD_e_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rituximab/Rituximab_Li2024_PD_e/Rituximab_Li2024_PD_e_fmi.zip" download>Rituximab_Li2024_PD_e_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PD_IndirectTurnoverSweep.fmu" download>PD_IndirectTurnoverSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rituximab/Rituximab_Li2024_PD_e/Rituximab_Li2024_PD_e_matlab.zip" download>Rituximab_Li2024_PD_e_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rituximab/Rituximab_Li2024_PD_e/Rituximab_Li2024_PD_e_sbml.zip" download>Rituximab_Li2024_PD_e_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

@@ -26,7 +26,7 @@ Naldemedine is a peripheral opioid receptor antagonist used to treat constipatio
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-15 01:02 | 1:56 | 0/0/1 | 1/0/1 | 0/0/2 | 83,647/13,104 | einfracz / qwen3.8-27b | 6 | 2/4 | 6/0 | 0 |
+| 2026-10-16 08:26 | 2:42 | 0/0/1 | 1/0/1 | 0/0/2 | 14,782/33,049 | einfracz / qwen3.8-27b | 6 | 2/4 | 6/0 | 0 |
 
 ## popPK records
 
@@ -85,7 +85,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 6  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

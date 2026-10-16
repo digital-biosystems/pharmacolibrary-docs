@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> No mechanism, potency, or rate parameters are provided because the full paper text is unavailable. The record indicates mannitol dose (mOsm) stimulates bronchoconstriction (% of maximum), but no quantitative model is derivable.
+>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+
 - **paper:** `Säfholm_2019`
 - **model family:** `unknown`
 - **driver:** `dose_only`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Methylnaltrexone concentrations act to inhibit VEGF-induced human EC proliferation, a direct effect with an IC50 of approximately 100 nM. The paper states that this inhibition is mediated by the drug activating tyrosine phosphatase activity, which in turn inhibits VEGF-induced Src activation, rather than through a simple direct Emax mechanism.
+>
+> <sub>Source-based summary by qwen3.8-27b from the paper's text; not human-verified</sub>
+
 - **paper:** `Singleton_2010`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -17,7 +17,7 @@ Methylnaltrexone is a peripheral opioid receptor antagonist used to treat consti
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-15 00:57 | 0:48 | 0/0/0 | 0/0/0 | 0/0/0 | 44,279/1,153 | einfracz / qwen3.8-27b | 4 | 1/3 | 4/0 | 0 |
+| 2026-10-16 08:23 | 0:08 | 0/0/0 | 0/0/0 | 0/0/0 | 13,614/523 | einfracz / qwen3.8-27b | 4 | 1/3 | 4/0 | 0 |
 
 ## popPK records
 
@@ -43,7 +43,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 ## Coverage
 
 - **PubMed hits:** 38 matched, 46 returned
-- **screened:** 3  ·  **relevant:** 3
+- **screened:** 5  ·  **relevant:** 3
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -59,7 +59,7 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Murph_2001.pdf` | Murph DB et al., Pharmacokinetic profile of epidurally a…, British journal of anaesthe… (2001) | popPK | 5 | [10.1093/bja/86.1.120](https://doi.org/10.1093/bja/86.1.120) | [11575386](https://pubmed.ncbi.nlm.nih.gov/11575386) | The study describes a two-compartment model but the evidence provided only contains a single concentration measurement (40 ng/ml in CSF) and lacks the specific quantitative disposition parameters (CL, V, Q, ka, t1/2) required for extraction. |
 | `Meyer_2019.pdf` | Meyer MJ et al., Opioids as Substrates and Inhibitors of…, Journal of medicinal chemis… (2019) | pd | 5 | [10.1021/acs.jmedchem.9b01301](https://doi.org/10.1021/acs.jmedchem.9b01301) | [31597043](https://www.ncbi.nlm.nih.gov/pubmed/31597043) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-15T00:57:45.793008+00:00</sub>
+<sub>queue written 2026-10-16T08:23:53.093370+00:00</sub>
 
 ## Screened and excluded
 

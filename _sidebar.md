@@ -1814,7 +1814,7 @@
         - [ciprofibrate <sub>(0/0/0)</sub>](drugs/drug_ciprofibrate/)
         - [clofibrate <sub>(1/2/0)</sub>](drugs/drug_clofibrate/)
         - [clofibride <sub>(0/0/0)</sub>](drugs/drug_clofibride/)
-        - [colesevelam <sub>(0/0/0)</sub>](drugs/drug_colesevelam/)
+        - [colesevelam <sub>(0/1/0)</sub>](drugs/drug_colesevelam/)
         - [colestipol <sub>(0/0/0)</sub>](drugs/drug_colestipol/)
         - [colestyramine <sub>(0/0/0)</sub>](drugs/drug_colestyramine/)
         - colextran <sub>(0/0/0)</sub>
